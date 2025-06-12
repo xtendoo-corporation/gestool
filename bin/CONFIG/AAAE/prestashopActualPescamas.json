@@ -1,0 +1,150 @@
+{
+  "HideExportButton": false,
+  "RealTimeConexion": true,
+  "InvertedNameFormat": false,
+  "Webs":
+  {
+    "p-escamas":
+    {
+      "Active": true,
+      "MySqlServer": "POAPMYSQL100.dns-servicio.com",
+      "MySqlPort": 3306,
+      "MySqlDatabase": "7470590_presta",
+      "MySqlUser": "presta",
+      "MySqlPassword": "tY175rq&",
+      "MySqlTimeOut": 60,
+      "CookieKey": "",
+      "PrefixDatabase": "ps_",
+      "OrderSerie": "A",
+      "BudgetSerie": "A",
+      "DateStart": "2016-01-01",
+      "FtpService": "Curl",
+      "FtpServer": "39422377.servicio-online.net",
+      "FtpPort": 21,
+      "FtpUser": "dario",
+      "FtpPassword": "123456Zx!",
+      "FtpPassive": false,
+      "ImagesDirectory": "img/",
+      "Store": "000",
+      "SyncronizeManufacturers": true,
+      "ProcessWithoutStock": true,
+      "CoverValueNull": true,
+      "ProcessWithoutImage": true,
+      "IdProduct": "",
+      "IdStock": "4089              ",
+      "Langs":
+      {
+        "ESP": "1"
+      },
+      "WebServices":
+      {
+        "url": "https://www.gestoolsoftware.es/tienda/api/",
+        "languages":
+        {
+          "GET": "X87RHWPVBAEM8XB8NHKCAWD33TXJYVCM",
+          "POST": "X87RHWPVBAEM8XB8NHKCAWD33TXJYVCM",
+          "PUT": "X87RHWPVBAEM8XB8NHKCAWD33TXJYVCM",
+          "DELETE": "X87RHWPVBAEM8XB8NHKCAWD33TXJYVCM",
+          "HEAD": "X87RHWPVBAEM8XB8NHKCAWD33TXJYVCM"
+        },
+        "categories":
+        {
+          "GET": "CEXMFNVZLWDCZR2RCFN9LD95Q1L6QQE4",
+          "POST": "CEXMFNVZLWDCZR2RCFN9LD95Q1L6QQE4",
+          "PUT": "CEXMFNVZLWDCZR2RCFN9LD95Q1L6QQE4",
+          "DELETE": "CEXMFNVZLWDCZR2RCFN9LD95Q1L6QQE4",
+          "HEAD": "CEXMFNVZLWDCZR2RCFN9LD95Q1L6QQE4"
+        },
+        "products":
+        {
+          "GET": "AMG1S1M615NQTE61MBM6I1ECYZBCRXHN",
+          "POST": "AMG1S1M615NQTE61MBM6I1ECYZBCRXHN",
+          "PUT": "AMG1S1M615NQTE61MBM6I1ECYZBCRXHN",
+          "DELETE": "AMG1S1M615NQTE61MBM6I1ECYZBCRXHN",
+          "HEAD": "AMG1S1M615NQTE61MBM6I1ECYZBCRXHN"
+        },
+        "images":
+        {
+          "GET": "JHNJP97PF1VTJIWZCAIFRXD8HD82FR7W",
+          "POST": "JHNJP97PF1VTJIWZCAIFRXD8HD82FR7W",
+          "PUT": "JHNJP97PF1VTJIWZCAIFRXD8HD82FR7W",
+          "DELETE": "JHNJP97PF1VTJIWZCAIFRXD8HD82FR7W",
+          "HEAD": "JHNJP97PF1VTJIWZCAIFRXD8HD82FR7W"
+        },
+        "image_types":
+        {
+          "GET": "WQNJ32RTQEGP7ADJ3JM62YHCP81LTGSX",
+          "POST": "WQNJ32RTQEGP7ADJ3JM62YHCP81LTGSX",
+          "PUT": "WQNJ32RTQEGP7ADJ3JM62YHCP81LTGSX",
+          "DELETE": "WQNJ32RTQEGP7ADJ3JM62YHCP81LTGSX",
+          "HEAD": "WQNJ32RTQEGP7ADJ3JM62YHCP81LTGSX9"
+        },
+        "manufacturers":
+        {
+          "GET": "NF3R1N677LQYSFQA8854ZDX2SMKDM9AG",
+          "POST": "NF3R1N677LQYSFQA8854ZDX2SMKDM9AG",
+          "PUT": "NF3R1N677LQYSFQA8854ZDX2SMKDM9AG",
+          "DELETE": "NF3R1N677LQYSFQA8854ZDX2SMKDM9AG",
+          "HEAD": "NF3R1N677LQYSFQA8854ZDX2SMKDM9AG"
+        },
+        "tax_rule_groups":
+        {
+          "GET": "P72CDA79X1M36VS6X1MEVFQYDE7HBTKU",
+          "POST": "P72CDA79X1M36VS6X1MEVFQYDE7HBTKU",
+          "PUT": "P72CDA79X1M36VS6X1MEVFQYDE7HBTKU",
+          "DELETE": "P72CDA79X1M36VS6X1MEVFQYDE7HBTKU",
+          "HEAD": "P72CDA79X1M36VS6X1MEVFQYDE7HBTKU"
+        },
+        "tax_rules":
+        {
+          "GET": "7YWW7WLYNEBXZD5ASE4JIWN2A777BG37",
+          "POST": "7YWW7WLYNEBXZD5ASE4JIWN2A777BG37",
+          "PUT": "7YWW7WLYNEBXZD5ASE4JIWN2A777BG37",
+          "DELETE": "7YWW7WLYNEBXZD5ASE4JIWN2A777BG37",
+          "HEAD": "7YWW7WLYNEBXZD5ASE4JIWN2A777BG37"
+        },
+        "taxes":
+        {
+          "GET": "HWIMZABAXPD6XC261ZPLGZZ8PHKM4YLN",
+          "POST": "HWIMZABAXPD6XC261ZPLGZZ8PHKM4YLN",
+          "PUT": "HWIMZABAXPD6XC261ZPLGZZ8PHKM4YLN",
+          "DELETE": "HWIMZABAXPD6XC261ZPLGZZ8PHKM4YLN",
+          "HEAD": "HWIMZABAXPD6XC261ZPLGZZ8PHKM4YLN"
+        },
+        "stock_availables":
+        {
+          "GET": "AVQF3S7ELWC4MR7RES5MZEFXNJXNENLR",
+          "POST": "AVQF3S7ELWC4MR7RES5MZEFXNJXNENLR",
+          "PUT": "AVQF3S7ELWC4MR7RES5MZEFXNJXNENLR",
+          "DELETE": "AVQF3S7ELWC4MR7RES5MZEFXNJXNENLR",
+          "HEAD": "AVQF3S7ELWC4MR7RES5MZEFXNJXNENLR"
+        },
+        "product_options":
+        {
+          "GET": "XW1RZEC2Q7SYNS5ZFC6UUSST9C4WK3GH",
+          "POST": "XW1RZEC2Q7SYNS5ZFC6UUSST9C4WK3GH",
+          "PUT": "XW1RZEC2Q7SYNS5ZFC6UUSST9C4WK3GH",
+          "DELETE": "XW1RZEC2Q7SYNS5ZFC6UUSST9C4WK3GH",
+          "HEAD": "XW1RZEC2Q7SYNS5ZFC6UUSST9C4WK3GH"
+        },
+        "product_option_values":
+        {
+          "GET": "BLRF4IJ2WFDJYB4II3WABKH1D9K6LTP6",
+          "POST": "BLRF4IJ2WFDJYB4II3WABKH1D9K6LTP6",
+          "PUT": "BLRF4IJ2WFDJYB4II3WABKH1D9K6LTP6",
+          "DELETE": "BLRF4IJ2WFDJYB4II3WABKH1D9K6LTP6",
+          "HEAD": "BLRF4IJ2WFDJYB4II3WABKH1D9K6LTP6"
+        },
+        "combinations":
+        {
+          "GET": "SQ7NH96TXA92HN4KKE8EAISUTVS32BPD",
+          "POST": "SQ7NH96TXA92HN4KKE8EAISUTVS32BPD",
+          "PUT": "SQ7NH96TXA92HN4KKE8EAISUTVS32BPD",
+          "DELETE": "SQ7NH96TXA92HN4KKE8EAISUTVS32BPD",
+          "HEAD": "SQ7NH96TXA92HN4KKE8EAISUTVS32BPD"
+        }
+      }
+    }
+  }
+}
+

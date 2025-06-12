@@ -1,0 +1,2621 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 7 ".\.\Prg\Grpfacauto.prg"
+_HB_CLASS TGrpFacturasAutomaticas ; function TGrpFacturasAutomaticas ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TGrpFacturasAutomaticas", iif( .T., { @TMant() }, { @HBObject() } ), @TGrpFacturasAutomaticas() ) ) ;
+
+   _HB_MEMBER { cMru } ; oClass:AddMultiData(, "gc_folder_gear_16", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cMru"}, .F. )
+   _HB_MEMBER { cBitmap } ; oClass:AddMultiData(, ( 190 + ( 57 * 256 ) + ( 0 * 65536 ) ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cBitmap"}, .F. )
+
+   _HB_MEMBER { cParentSelect } ; oClass:AddMultiData(, Space( 4 ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cParentSelect"}, .F. )
+
+   _HB_MEMBER { oGetCodigo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetCodigo"}, .F. )
+   _HB_MEMBER { oGetNombre } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetNombre"}, .F. )
+
+   _HB_MEMBER { oTreePadre } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTreePadre"}, .F. )
+
+   _HB_MEMBER { oBrwFacturaAutomatica } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwFacturaAutomatica"}, .F. )
+   _HB_MEMBER { aData } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aData"}, .F. )
+
+   _HB_MEMBER New( cPath, oWndParent, oMenuItem) AS CLASS TGrpFacturasAutomaticas; oClass:AddMethod( "New", @TGrpFacturasAutomaticas_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Create( cPath) AS CLASS TGrpFacturasAutomaticas; oClass:AddMethod( "Create", @TGrpFacturasAutomaticas_Create(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Activate(); oClass:AddMethod( "Activate", @TGrpFacturasAutomaticas_Activate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles( lExclusive); oClass:AddMethod( "OpenFiles", @TGrpFacturasAutomaticas_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER OpenService( lExclusive); oClass:AddMethod( "OpenService", @TGrpFacturasAutomaticas_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DefineFiles(); oClass:AddMethod( "DefineFiles", @TGrpFacturasAutomaticas_DefineFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Resource( nMode); oClass:AddMethod( "Resource", @TGrpFacturasAutomaticas_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER lSaveResource(); oClass:AddMethod( "lSaveResource", @TGrpFacturasAutomaticas_lSaveResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER StartResource( oGet); oClass:AddMethod( "StartResource", @TGrpFacturasAutomaticas_StartResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER aChild( cCodGrupo); oClass:AddMethod( "aChild", @TGrpFacturasAutomaticas_aChild(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER IsPadreMayor( cCodGrupo, cCodDesde); oClass:AddMethod( "IsPadreMayor", @TGrpFacturasAutomaticas_IsPadreMayor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER IsPadreMenor( cCodGrupo, cCodDesde); oClass:AddMethod( "IsPadreMenor", @TGrpFacturasAutomaticas_IsPadreMenor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Tree( oGet); oClass:AddMethod( "Tree", @TGrpFacturasAutomaticas_Tree(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER LoadTree( cCodGrupo); oClass:AddMethod( "LoadTree", @TGrpFacturasAutomaticas_LoadTree(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ChangeTreeState( oTree, aItems); oClass:AddMethod( "ChangeTreeState", @TGrpFacturasAutomaticas_ChangeTreeState(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetTreeState( oTree, aItems); oClass:AddMethod( "GetTreeState", @TGrpFacturasAutomaticas_GetTreeState(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetTreeState( oTree, aItems); oClass:AddMethod( "SetTreeState", @TGrpFacturasAutomaticas_SetTreeState(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER RedefineBrowse( id, oDlg); oClass:AddMethod( "RedefineBrowse", @TGrpFacturasAutomaticas_RedefineBrowse(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER LoadBrowse( aGrupos); oClass:AddMethod( "LoadBrowse", @TGrpFacturasAutomaticas_LoadBrowse(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ClickBrowse(); oClass:AddMethod( "ClickBrowse", @TGrpFacturasAutomaticas_ClickBrowse(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER BrowseToChar(); oClass:AddMethod( "BrowseToChar", @TGrpFacturasAutomaticas_BrowseToChar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER RunPlantillaAutomatica( cCodigoGrupo); oClass:AddMethod( "RunPlantillaAutomatica", @TGrpFacturasAutomaticas_RunPlantillaAutomatica(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TGrpFacturasAutomaticas ;
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_New( cPath, oWndParent, oMenuItem ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+   If( oWndParent == nil, oWndParent := GetWndFrame(), ) ;
+   If( oMenuItem == nil, oMenuItem := "04018", ) ;
+
+   if Empty( ::nLevel )
+      ::nLevel          := Auth():Level( oMenuItem )
+   end
+
+
+
+
+
+   if oWndParent <> nil
+      oWndParent:CloseAll()
+   end
+
+   ::cPath              := cPath
+   ::oWndParent         := oWndParent
+   ::oDbf               := nil
+
+
+   ::lCreateShell       := .F.
+   ::cHtmlHelp          := "Grupos de plantillas automáticas"
+
+RETURN ( Self )
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_Create( cPath ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+
+   ::cPath              := cPath
+   ::oDbf               := nil
+
+RETURN ( Self )
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_Activate( ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+   local oGen
+
+   if nAnd( ::nLevel, 1 ) == 0
+      msgStop( "Acceso no permitido." )
+      Return ( Self )
+   end
+
+
+
+
+
+   if ::oWndParent <> nil
+      ::oWndParent:CloseAll()
+   end
+
+   if Empty( ::oDbf ) .OR. !::oDbf:Used()
+      ::lOpenFiles      := ::OpenFiles()
+   end
+
+
+
+
+
+   if ::lOpenFiles
+
+      if !::lCreateShell
+         ::CreateShell( ::nLevel )
+      end
+
+      ::oWndBrw:GralButtons( Self )
+
+
+
+
+
+      oGen := ::oWndBrw:NewAt( "GC_FLASH_",,, {||( ::RunPlantillaAutomatica( ::oDbf:cCodGrp ) )}, "(G)enerar ahora", "G",,,,, .F. )
+
+
+
+
+         ::oWndBrw:NewAt( "GC_FLASH_",,, {||( ::RunPlantillaAutomatica() )}, "Generar todas ahora",,,,, oGen, .F. )
+
+      ::oWndBrw:EndButtons( Self )
+
+      if ::cHtmlHelp <> nil
+         ::oWndBrw:cHtmlHelp  := ::cHtmlHelp
+      end
+
+      ::oWndBrw:Activate( nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, {|| ::CloseFiles() } )
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_OpenFiles( lExclusive, cPath ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+   local lOpen          := .T.
+   local oError
+   local oBlock
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   oBlock               := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      if Empty( ::oDbf )
+         ::DefineFiles( cPath )
+      end
+
+      ::oDbf:Activate( .F., !( lExclusive ) )
+
+   RECOVER USING oError
+
+      lOpen             := .F.
+      msgStop( ErrorMessage( oError ), "Imposible abrir todas las bases de datos de grupos de plantillas automáticas" )
+
+   end
+   ErrorBlock( oBlock )
+
+   if !lOpen
+      ::CloseFiles()
+   end
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_DefineFiles( cPath, cDriver ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+   If( cPath == nil, cPath := ::cPath, ) ;
+   If( cDriver == nil, cDriver := cDriver(), ) ;
+
+   ::oDbf := DbfServer( "GrpFac.Dbf", "GrpFac" ):New( "GrpFac.Dbf", "GrpFac", ( cDriver ), "Grupos de plantillas automáticas", ( cPath ) )
+
+      ::oDbf:AddField( "cCodGrp", "C", 4, 0,,,,, "Código", .F., 80, .F., {} )
+      ::oDbf:AddField( "cNomGrp", "C", 30, 0,,,,, "Nombre", .F., 200, .F., {} )
+      ::oDbf:AddField( "cCodPdr", "C", 4, 0,,,,, "Grupo padre", .F., 80, .F., {} )
+
+      ::oDbf:AddIndex( "cCodGrp", "GrpFac.Cdx", "cCodGrp",,, .F., .F., "Código",,, .T., .F. )
+      ::oDbf:AddIndex( "cNomGrp", "GrpFac.Cdx", "cNomGrp",,, .F., .F., "Nombre",,, .T., .F. )
+      ::oDbf:AddIndex( "cCodPdr", "GrpFac.Cdx", "cCodPdr",,, .F., .F., "Grupo padre",,, .T., .F. )
+
+
+
+RETURN ( ::oDbf )
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_Resource( nMode ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+    local oDlg
+
+   oDlg = TDialog():New(,,,, LblTitle( nMode ) + "Grupos de plantillas automáticas", "GRPAUT",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+
+
+      ::oGetCodigo := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, ::oDbf:cCodGrp, ::oDbf:cCodGrp:= u ) }, oDlg,, "@!", {||    NotValid( ::oGetCodigo, ::oDbf:cAlias, .T., "0" )},,,,,, .F., {||     ( nMode == 1 .OR. nMode == 4 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      ::oGetNombre := TGetHlp():ReDefine( 110, { | u | If( PCount()==0, ::oDbf:cNomGrp, ::oDbf:cNomGrp:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      ::oTreePadre                     := TTreeView():Redefine( 130, oDlg )
+      ::oTreePadre:bItemSelectChanged  := {|| ::ChangeTreeState() }
+
+
+
+
+
+
+
+
+
+      TButton():ReDefine( 1, {||( ::lSaveResource( nMode, oDlg ) )}, oDlg,,, .F., {||         ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+        TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+   oDlg:AddFastKey( 116, {|| ::lSaveResource( nMode, oDlg ) } )
+
+   oDlg:bStart          := {|| ::StartResource() }
+
+    oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_lSaveResource( nMode, oDlg ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+   local aGrp
+
+   ::oDbf:cCodPdr    := Space( 4 )
+
+   if ( nMode == 1 .OR. nMode == 4 )
+
+      if Empty( ::oDbf:cCodGrp )
+         MsgStop( "Código de grupo de facturas no puede estar vacío" )
+         ::oGetCodigo:SetFocus()
+         Return nil
+      end
+
+      if ::oDbf:SeekInOrd( ::oDbf:cCodGrp, "cCodGrp" )
+         msgStop( "Código existente" )
+         ::oGetCodigo:SetFocus()
+         Return nil
+      end
+
+   end
+
+   if Empty( ::oDbf:cNomGrp )
+      MsgStop( "Nombre de grupo de facturas no puede estar vacío" )
+      ::oGetNombre:SetFocus()
+      Return nil
+   end
+
+   ::GetTreeState( ::oTreePadre )
+
+   if ( ::oDbf:cCodGrp == ::oDbf:cCodPdr )
+      MsgStop( "Grupo padre no puede ser el mismo" )
+      ::oTreePadre:SetFocus()
+      Return nil
+   end
+
+   aGrp  := ::aChild( ::oDbf:cCodGrp )
+   if aScan( aGrp, ::oDbf:cCodPdr ) <> 0
+      MsgStop( "Grupo padre contiene referencia circular" )
+      ::oTreePadre:SetFocus()
+      Return nil
+   end
+
+Return oDlg:end( 1 )
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_StartResource( ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+   ::LoadTree()
+
+   ::SetTreeState()
+
+   ::oGetCodigo:SetFocus()
+
+Return ( Self )
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_aChild( cCodGrupo, aChild ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+   local nRec
+   local nOrd
+
+   if Empty( aChild )
+      aChild   := {}
+   end
+
+   CursorWait()
+
+   nRec        := ( ::oDbf:cAlias )->( Recno() )
+   nOrd        := ( ::oDbf:cAlias )->( OrdSetFocus( "cCodPdr" ) )
+
+   if ( ::oDbf:cAlias )->( dbSeek( cCodGrupo ) )
+
+      while ( ( ::oDbf:cAlias )->cCodPdr == cCodGrupo .AND. !( ::oDbf:cAlias )->( Eof() ) )
+
+         aAdd( aChild, ( ::oDbf:cAlias )->cCodGrp )
+
+         ::aChild( ( ::oDbf:cAlias )->cCodGrp, aChild )
+
+         ( ::oDbf:cAlias )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::oDbf:cAlias )->( OrdSetFocus( nOrd ) )
+   ( ::oDbf:cAlias )->( dbGoTo( nRec ) )
+
+   CursorWE()
+
+Return ( aChild )
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_IsPadreMayor( cCodGrupo, cCodDesde ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+   local cPadre
+   local aPadre
+
+   if cCodGrupo >= cCodDesde
+      Return .T.
+   end
+
+   if !Empty( cCodGrupo )
+
+      aPadre         := ::aChild( cCodGrupo )
+
+      for each cPadre in aPadre
+         if cPadre >= cCodDesde
+            Return .T.
+         end
+      next
+
+   end
+
+Return ( .F. )
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_IsPadreMenor( cCodGrupo, cCodHasta ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+   local cPadre
+   local aPadre
+
+   if cCodGrupo <= cCodHasta
+      Return .T.
+   end
+
+   if !Empty( cCodGrupo )
+
+      aPadre         := ::aChild( cCodGrupo )
+
+      for each cPadre in aPadre
+         if cPadre <= cCodHasta
+            Return .T.
+         end
+      next
+
+   end
+
+Return ( .F. )
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_LoadTree( oTree, cCodGrupo ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+   local nRec
+   local nOrd
+   local oNode
+
+   If( oTree == nil, oTree := ::oTreePadre, ) ;
+
+   if Empty( cCodGrupo )
+      cCodGrupo      := Space( 4 )
+   end
+
+   CursorWait()
+
+   nRec              := ( ::oDbf:cAlias )->( Recno() )
+   nOrd              := ( ::oDbf:cAlias )->( OrdSetFocus( "cCodPdr" ) )
+
+   if ( ::oDbf:cAlias )->( dbSeek( cCodGrupo ) )
+
+      while ( ( ::oDbf:cAlias )->cCodPdr == cCodGrupo .AND. !( ::oDbf:cAlias )->( Eof() ) )
+
+         oNode       := oTree:Add( Alltrim( ( ::oDbf:cAlias )->cNomGrp ) )
+         oNode:Cargo := ( ::oDbf:cAlias )->cCodGrp
+
+         ::LoadTree( oNode, ( ::oDbf:cAlias )->cCodGrp )
+
+         ( ::oDbf:cAlias )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::oDbf:cAlias )->( OrdSetFocus( nOrd ) )
+   ( ::oDbf:cAlias )->( dbGoTo( nRec ) )
+
+   CursorWE()
+
+   oTree:Expand()
+
+Return ( Self )
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_ChangeTreeState( oTree, aItems ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+   local oItem
+
+   If( oTree == nil, oTree := ::oTreePadre, ) ;
+
+   if Empty( aItems )
+      aItems      := oTree:aItems
+   end
+
+   for each oItem in aItems
+
+      SysRefresh()
+
+
+
+      oTree:SetCheck( oItem, .F. )
+
+      if len( oItem:aItems ) > 0
+         ::ChangeTreeState( oTree, oItem:aItems )
+      end
+
+   next
+
+Return ( Self )
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_GetTreeState( oTree, aItems ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+   local oItem
+
+   If( oTree == nil, oTree := ::oTreePadre, ) ;
+
+   if Empty( aItems )
+      aItems      := oTree:aItems
+   end
+
+   for each oItem in aItems
+
+
+
+      if oTree:GetCheck( oItem )
+         ::oDbf:cCodPdr    := oItem:Cargo
+      end
+
+      if len( oItem:aItems ) > 0
+         ::GetTreeState( oTree, oItem:aItems )
+      end
+
+   next
+
+Return ( Self )
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_SetTreeState( oTree, aItems ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+   local oItem
+
+   If( oTree == nil, oTree := ::oTreePadre, ) ;
+
+   if Empty( aItems )
+      aItems      := oTree:aItems
+   end
+
+   for each oItem in aItems
+
+      if ( ::oDbf:cCodPdr == oItem:Cargo )
+
+         oTree:Select( oItem )
+
+
+
+         oTree:SetCheck( oItem, .T. )
+
+      end
+
+      if len( oItem:aItems ) > 0
+         ::SetTreeState( oTree, oItem:aItems )
+      end
+
+   next
+
+Return ( Self )
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_Tree( oGet ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+   local oDlg
+   local uVal
+   local oTree
+
+   uVal                    := oGet:VarGet()
+
+
+
+
+
+   oDlg                    := TDialog():New( , , , , "cDlgName", "TreeGruposCliente" )
+
+   oTree                   := TTreeView():Redefine( 100, oDlg  )
+
+   TButton():ReDefine( 1, {|| oDlg:end( 1 ) }, oDlg, , , .F. )
+
+   TButton():ReDefine( 2, {|| oDlg:end() }, oDlg, , , .F. )
+
+   oDlg:bStart             := {|| ::StartTree( nil, oTree ) }
+
+   oDlg:AddFastKey( 116, {|| oDlg:end( 1 ) } )
+
+   oDlg:Activate( , , , .T. )
+
+
+
+
+
+   if oDlg:nResult == 1
+      msgStop( "valor" )
+   end
+
+RETURN ( uVal )
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_RedefineBrowse( id, oDlg ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+
+
+
+
+   ::oBrwFacturaAutomatica                   := IXBrowse():New( oDlg )
+
+   ::oBrwFacturaAutomatica:bClrSel           := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+   ::oBrwFacturaAutomatica:bClrSelFocus      := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+   ::oBrwFacturaAutomatica:SetArray( ::aData, , , .F. )
+
+   ::oBrwFacturaAutomatica:lHScroll          := .F.
+   ::oBrwFacturaAutomatica:lVScroll          := .F.
+
+   ::oBrwFacturaAutomatica:nMarqueeStyle     := 5
+
+   ::oBrwFacturaAutomatica:lRecordSelector   := .F.
+
+   ::oBrwFacturaAutomatica:bLDblClick        := {|| ::ClickBrowse() }
+
+   ::oBrwFacturaAutomatica:CreateFromResource( id )
+
+   with object ( ::oBrwFacturaAutomatica:AddCol() )
+      :cHeader       := "Sel."
+      :bEditValue    := {|| ::aData[ ::oBrwFacturaAutomatica:nArrayAt, 1 ] }
+      :nWidth        := 25
+      :SetCheck( { "gc_check_16", "Nil16" } )
+   end
+
+   with object ( ::oBrwFacturaAutomatica:AddCol() )
+      :cHeader       := "Código"
+      :bEditValue    := {|| ::aData[ ::oBrwFacturaAutomatica:nArrayAt, 2 ] }
+      :nWidth        := 60
+   end
+
+   with object ( ::oBrwFacturaAutomatica:AddCol() )
+      :cHeader       := "Nombre"
+      :bEditValue    := {|| ::aData[ ::oBrwFacturaAutomatica:nArrayAt, 3 ] }
+      :nWidth        := 200
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_LoadBrowse( cGrupos ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+   local aGrupos     := hb_ATokens( cGrupos, "," )
+
+   ::aData           := {}
+
+   ::oDbf:GoTop()
+   while !::oDbf:Eof()
+      aAdd( ::aData, { aScan( aGrupos, Alltrim( ::oDbf:cCodGrp ) ) <> 0, ::oDbf:cCodGrp, ::oDbf:cNomGrp } )
+      ::oDbf:Skip()
+   end
+
+   ::oBrwFacturaAutomatica:SetArray( ::aData, , , .F. )
+
+Return ( Self )
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_ClickBrowse( ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+   ::aData[ ::oBrwFacturaAutomatica:nArrayAt, 1 ]  := !::aData[ ::oBrwFacturaAutomatica:nArrayAt, 1 ]
+
+   ::oBrwFacturaAutomatica:Refresh()
+
+Return ( Self )
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_BrowseToChar( ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+   local cMemo := ""
+
+   aEval( ::aData, {|aItem| if( aItem[ 1 ], cMemo += Rtrim( aItem[ 2 ] ) + ",", ) } )
+
+Return ( cMemo )
+
+
+
+static FUNCTION TGrpFacturasAutomaticas_RunPlantillaAutomatica( cCodigoGrupo ) ; local Self AS CLASS TGrpFacturasAutomaticas := QSelf() AS CLASS TGrpFacturasAutomaticas
+
+   if SuperUsuarioController():New():isNotDialogViewActivate()
+      RETURN ( Self )
+   end
+
+   with object ( TCreaFacAutomaticas():New() )
+
+      if :OpenFiles()
+
+         :cCodigoGrupo  := cCodigoGrupo
+
+         if :lSelectCodigoPlantilla()
+            :Run()
+         end
+
+         :CloseFiles()
+
+      end
+
+   end
+
+Return ( Self )
+
+
+
+Function cCodigoFacturasAutomaticas( cCodigoFacturasAutomaticas, oDbf )
+
+   local cCodigo  := ""
+
+   if oDbf:Seek( cCodigoFacturasAutomaticas )
+      cCodigo     := oDbf:cCodGrp
+   end
+
+Return( cCodigo )
+
+
+
+Function cNombreFacturasAutomaticas( cCodigoFacturasAutomaticas, oDbf )
+
+   local cNombre  := ""
+
+   if oDbf:Seek( cCodigoFacturasAutomaticas )
+      cNombre     := oDbf:Nombre
+   end
+
+Return( cNombre )

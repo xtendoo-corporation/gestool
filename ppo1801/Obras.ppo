@@ -1,0 +1,2842 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 6 ".\.\Prg\Obras.prg"
+static oWndBrw
+static dbfObrasT
+
+static bEdit         := {| aBlank, aoGet, dbfObrasT, oBrw, bWhen, bValid, nMode, cCodCli | EdtRec( aBlank, aoGet, dbfObrasT, oBrw, bWhen, bValid, nMode, cCodCli ) }
+
+static aTipoObra     := { "Defecto", "Envio", "Factura", "Otras" }
+
+
+
+
+
+STATIC FUNCTION EdtRec( aBlank, aoGet, dbfObrasT, oBrw, bWhen, bValid, nMode, cCodCli )
+
+    local oDlg
+    local oGet
+   local oGet2
+
+   if nMode == 1 .AND. !Empty( cCodCli )
+      aBlank[ ( dbfObrasT )->( FieldPos( "CCODCLI" ) ) ] := cCodCli
+   end
+
+   oDlg = TDialog():New(,,,, LblTitle( nMode ) + "direcciones de clientes", "OBRAS",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+
+      oGet := TGetHlp():ReDefine( 120, { | u | If( PCount()==0, aBlank[ ( dbfObrasT )->( FieldPos( "CCODOBR" ) ) ], aBlank[ ( dbfObrasT )->( FieldPos( "CCODOBR" ) ) ]:= u ) }, oDlg,,, {||    ( If ( nMode == 1, ChkObra( oGet, cCodCli, dbfObrasT ), .T. ) )}, "N/W*",,,,, .F., {||         ( nMode == 1 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      oGet2 := TGetHlp():ReDefine( 130, { | u | If( PCount()==0, aBlank[ ( dbfObrasT )->( FieldPos( "CNOMOBR" ) ) ], aBlank[ ( dbfObrasT )->( FieldPos( "CNOMOBR" ) ) ]:= u ) }, oDlg,, "@!",,,,,,, .F., {||         ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 140, { | u | If( PCount()==0, aBlank[ ( dbfObrasT )->( FieldPos( "CDIROBR" ) ) ], aBlank[ ( dbfObrasT )->( FieldPos( "CDIROBR" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||         ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+        TGetHlp():ReDefine( 150, { | u | If( PCount()==0, aBlank[ (dbfObrasT)->( FieldPos( "CPOBOBR" ) ) ], aBlank[ (dbfObrasT)->( FieldPos( "CPOBOBR" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||         ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+        TGetHlp():ReDefine( 160, { | u | If( PCount()==0, aBlank[ (dbfObrasT)->( FieldPos( "CPRVOBR" ) ) ], aBlank[ (dbfObrasT)->( FieldPos( "CPRVOBR" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||         ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+        TGetHlp():ReDefine( 170, { | u | If( PCount()==0, aBlank[ (dbfObrasT)->( FieldPos( "CPOSOBR" ) ) ], aBlank[ (dbfObrasT)->( FieldPos( "CPOSOBR" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||         ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+        TGetHlp():ReDefine( 180, { | u | If( PCount()==0, aBlank[ (dbfObrasT)->( FieldPos( "CTELOBR" ) ) ], aBlank[ (dbfObrasT)->( FieldPos( "CTELOBR" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||         ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+        TGetHlp():ReDefine( 190, { | u | If( PCount()==0, aBlank[ (dbfObrasT)->( FieldPos( "CFAXOBR" ) ) ], aBlank[ (dbfObrasT)->( FieldPos( "CFAXOBR" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||         ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 230, { | u | If( PCount()==0, aBlank[ (dbfObrasT)->( FieldPos( "CCODEDI" ) ) ], aBlank[ (dbfObrasT)->( FieldPos( "CCODEDI" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 250, { | u | If( PCount()==0, aBlank[ (dbfObrasT)->( FieldPos( "CDEPARTA" ) ) ], aBlank[ (dbfObrasT)->( FieldPos( "CDEPARTA" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 260, { | u | If( PCount()==0, aBlank[ (dbfObrasT)->( FieldPos( "CPROVEE" ) ) ], aBlank[ (dbfObrasT)->( FieldPos( "CPROVEE" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 231, { | u | If( PCount()==0, aBlank[ (dbfObrasT)->( FieldPos( "CCODBIC" ) ) ], aBlank[ (dbfObrasT)->( FieldPos( "CCODBIC" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 232, { | u | If( PCount()==0, aBlank[ (dbfObrasT)->( FieldPos( "CHORARIO" ) ) ], aBlank[ (dbfObrasT)->( FieldPos( "CHORARIO" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 240, { | u | If( PCount()==0, aBlank[ (dbfObrasT)->( FieldPos( "CESTOBR" ) ) ], aBlank[ (dbfObrasT)->( FieldPos( "CESTOBR" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TCheckBox():ReDefine( 220, { | u | If( PCount()==0, aBlank[ (dbfObrasT)->( FieldPos( "LDEFOBR" ) ) ], aBlank[ (dbfObrasT)->( FieldPos( "LDEFOBR" ) ) ]:= u ) }, oDlg,,,,,,, .F., {||     ( nMode <> 3 )}, .F. )
+
+
+
+
+      TGetHlp():ReDefine( 200, { | u | If( PCount()==0, aBlank[ ( dbfObrasT )->( FieldPos( "CCNTOBR" ) ) ], aBlank[ ( dbfObrasT )->( FieldPos( "CCNTOBR" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 210, { | u | If( PCount()==0, aBlank[ ( dbfObrasT )->( FieldPos( "CMOVOBR" ) ) ], aBlank[ ( dbfObrasT )->( FieldPos( "CMOVOBR" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||         ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 300, { | u | If( PCount()==0, aBlank[ ( dbfObrasT )->( FieldPos( "cCodPos" ) ) ], aBlank[ ( dbfObrasT )->( FieldPos( "cCodPos" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||         ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      aoGet[ ( dbfObrasT )->( FieldPos( "Nif" ) ) ] := TGetHlp():ReDefine( 310, { | u | If( PCount()==0, aBlank[ ( dbfObrasT )->( FieldPos( "Nif" ) ) ], aBlank[ ( dbfObrasT )->( FieldPos( "Nif" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      aoGet[ ( dbfObrasT )->( FieldPos( "cDomEnt" ) ) ] := TGetHlp():ReDefine( 320, { | u | If( PCount()==0, aBlank[ ( dbfObrasT )->( FieldPos( "cDomEnt" ) ) ], aBlank[ ( dbfObrasT )->( FieldPos( "cDomEnt" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      aoGet[ ( dbfObrasT )->( FieldPos( "cPobEnt" ) ) ] := TGetHlp():ReDefine( 330, { | u | If( PCount()==0, aBlank[ ( dbfObrasT )->( FieldPos( "cPobEnt" ) ) ], aBlank[ ( dbfObrasT )->( FieldPos( "cPobEnt" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      aoGet[ ( dbfObrasT )->( FieldPos( "cCPEnt" ) ) ] := TGetHlp():ReDefine( 340, { | u | If( PCount()==0, aBlank[ ( dbfObrasT )->( FieldPos( "cCPEnt" ) ) ], aBlank[ ( dbfObrasT )->( FieldPos( "cCPEnt" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      aoGet[ ( dbfObrasT )->( FieldPos( "cPrvEnt" ) ) ] := TGetHlp():ReDefine( 350, { | u | If( PCount()==0, aBlank[ ( dbfObrasT )->( FieldPos( "cPrvEnt" ) ) ], aBlank[ ( dbfObrasT )->( FieldPos( "cPrvEnt" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+      aoGet[ ( dbfObrasT )->( FieldPos( "cTipo" ) ) ] := TComboBox():ReDefine( 360, { | u | If( PCount()==0, aBlank[ ( dbfObrasT )->( FieldPos( "cTipo" ) ) ], aBlank[ ( dbfObrasT )->( FieldPos( "cTipo" ) ) ]:= u ) }, aTipoObra, oDlg,,,,,,, .F., {||     ( nMode <> 3 )},,,,,, 'aoGet[ ( dbfObrasT )->( FieldPos( "cTipo" ) ) ]',,,,,,, )
+
+
+
+
+
+      TButton():ReDefine( 1, {||( EndTrans( aBlank, aoGet, dbfObrasT, oBrw, nMode, oDlg, oGet, oGet2 ) )}, oDlg,,, .F., {||         ( nMode <> 3 )},,, .F. )
+
+
+
+
+        TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .F. )
+
+      if nMode <> 3
+         oDlg:AddFastKey( 116, {|| EndTrans( aBlank, aoGet, dbfObrasT, oBrw, nMode, oDlg, oGet, oGet2 ) } )
+      end
+
+      oDlg:AddFastKey( 112, {|| ChmHelp( "Clientes" ) } )
+
+    oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted := {|hDC,cPS|( oGet:lValid() )}, .T.,,,, oDlg:bRClicked,,, )
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+Static Function EndTrans( aBlank, aoGet, dbfObrasT, oBrw, nMode, oDlg, oGet, oGet2 )
+
+   local nRec  := ( dbfObrasT )->( Recno() )
+
+   if nMode == 1 .OR. nMode == 4
+
+      if Empty( aBlank[ ( dbfObrasT )->( FieldPos( "CCODOBR" ) ) ] )
+         MsgStop( "Código no puede estar vacío" )
+         oGet:SetFocus()
+         return nil
+      end
+
+   end
+
+   if Empty( aBlank[ ( dbfObrasT )->( FieldPos( "CNOMOBR" ) ) ] )
+      MsgStop( "Nombre no puede estar vacío" )
+      oGet2:SetFocus()
+      return nil
+   end
+
+   if aBlank[ ( dbfObrasT )->( FieldPos( "LDEFOBR" ) ) ]
+
+      ( dbfObrasT )->( dbGoTop() )
+
+      while !( dbfObrasT )->( Eof() )
+
+         if dbLock( dbfObrasT )
+            ( dbfObrasT )->lDefObr := .F.
+            ( dbfObrasT )->( dbUnlock() )
+         end
+
+         ( dbfObrasT )->( dbSkip() )
+
+      end
+
+   end
+
+   ( dbfObrasT )->( dbGoTo( nRec ) )
+
+   WinGather( aBlank, aoGet, dbfObrasT, oBrw, nMode )
+
+   oBrw:Refresh()
+
+Return ( oDlg:end( 1 ) )
+
+
+
+STATIC FUNCTION OpenFiles()
+
+   local lOpen    := .T.
+   local oBlock   := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   BEGIN SEQUENCE
+
+   dbUseArea( .T., ( cDriver() ), ( cPatEmp() + "ObrasT.Dbf" ), ( cCheckArea( "OBRAST", @dbfObrasT ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+   if !lAIS() ; ordListAdd( ( cPatEmp() + "ObrasT.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   RECOVER
+
+      msgStop( "Imposible abrir todas las bases de datos" )
+      CloseFiles()
+      lOpen       := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+STATIC FUNCTION CloseFiles()
+
+   if oWndBrw <> nil
+      oWndBrw  := nil
+   end
+
+   if !Empty( dbfObrasT )
+      ( dbfObrasT )->( dbCloseArea() )
+   end
+
+   dbfObrasT   := nil
+
+RETURN ( .T. )
+
+
+
+FUNCTION retObras( cCodCli, cCodObr, dbfObrasT )
+
+   local lClose   := .F.
+    local cTemp        := Space( 30 )
+
+    IF ( dbfObrasT ) == NIL
+      dbUseArea( .T., ( cDriver() ), ( cPatEmp() + "" + "OBRAST" + ".DBF" ), ( cCheckArea( "OBRAST", @dbfObrasT ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "" + "OBRAST" + ".CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+      lClose      := .T.
+    end
+
+   IF ( dbfObrasT )->( DbSeek( cCodCli + cCodObr ) )
+      cTemp       := ( dbfObrasT )->cNomObr
+   end
+
+    IF lClose
+        ( dbfObrasT )->( dbCloseArea() )
+    end
+
+RETURN cTemp
+
+
+
+FUNCTION AppObras( cCodCli, dbfObrasT, oBrw )
+
+   WinAppRec( oBrw, bEdit, dbfObrasT, nil, nil, cCodCli )
+
+RETURN NIL
+
+
+
+FUNCTION EdtObras( cCodCli, cCodObr, dbfObrasT, oBrw, lControl )
+
+   local nLevel   := Auth():Level( "01032" )
+
+   If( cCodObr == nil, cCodObr := ( dbfObrasT )->cCodObr, ) ;
+   If( lControl == nil, lControl := .F., ) ;
+
+   if nAnd( nLevel, 1 ) == 0 .OR. nAnd( nLevel, 4 ) == 0
+      msgStop( "Acceso no permitido." )
+      return .T.
+   end
+
+   if lControl
+      WinEdtRec( oBrw, bEdit, dbfObrasT, nil, nil, cCodCli )
+   else
+
+      if ( dbfObrasT )->( dbSeek( cCodCli + cCodObr ) )
+         WinEdtRec( oBrw, bEdit, dbfObrasT, nil, nil, cCodCli )
+      else
+         MsgStop( "No se encuentra la dirección" )
+      end
+
+   end
+
+RETURN NIL
+
+
+
+FUNCTION ZoomObras( dbfObrasT, oBrw )
+
+   WinZooRec( oBrw, bEdit, dbfObrasT )
+
+RETURN NIL
+
+
+
+FUNCTION delObras( dbfObrasT, oBrw )
+
+   if dbDelRec( oBrw, dbfObrasT )
+      oBrw:Refresh()
+   end
+
+RETURN NIL
+
+
+
+STATIC FUNCTION ChkObra( oGet, cCodCli, dbfObrasT )
+
+    local lFound
+    local xValor
+    local nRecno   := ( dbfObrasT )->( RecNo() )
+
+    xValor            := cCodCli + oGet:varGet()
+   lFound         := ( dbfObrasT )->( dbSeek( xValor ) )
+
+   ( dbfObrasT )->( dbGoTo( nRecno ) )
+
+   if lFound
+        MsgStop( "Obra ya existe" )
+   end
+
+RETURN ( !lFound )
+
+
+
+function PredObras( dbfTmpObr, oBrwObr )
+
+   local nRec  := ( dbfTmpObr )->( Recno() )
+
+   if !( dbfTmpObr )->lDefObr
+
+      ( dbfTmpObr )->( dbGoTop() )
+
+      while !( dbfTmpObr )->( Eof() )
+
+         if dbLock( dbfTmpObr )
+            ( dbfTmpObr )->lDefObr := .F.
+            ( dbfTmpObr )->( dbUnlock() )
+         end
+
+         ( dbfTmpObr )->( dbSkip() )
+
+      end
+
+      ( dbfTmpObr )->( dbGoTo( nRec ) )
+
+      if dbLock( dbfTmpObr )
+         ( dbfTmpObr )->lDefObr := .T.
+         ( dbfTmpObr )->( dbUnlock() )
+      end
+
+   end
+
+   oBrwObr:Refresh()
+
+return ( .T. )
+
+
+
+function cObraDir( cCodCli, dbfClient, dbfObrasT )
+
+   local cDireccion     := ""
+   local nRecObr        := ( dbfObrasT )->( Recno() )
+   local nRecCli        := ( dbfClient )->( Recno() )
+
+   if dbSeekInOrd( cCodCli, "LDEFOBR", dbfObrasT )
+
+      cDireccion  := ( dbfObrasT )->cDirObr
+
+   end
+
+   if Empty( cDireccion ) .AND. dbSeekInOrd( cCodCli, "COD", dbfClient )
+
+      cDireccion     := ( dbfClient )->Domicilio
+
+   end
+
+   ( dbfObrasT )->( dbGoTo( nRecObr ) )
+   ( dbfClient )->( dbGoTo( nRecCli ) )
+
+return ( cDireccion )
+
+
+
+function cObraPob( cCodCli, dbfClient, dbfObrasT )
+
+   local cPoblacion     := ""
+   local nRecObr        := ( dbfObrasT )->( Recno() )
+   local nRecCli        := ( dbfClient )->( Recno() )
+
+   if dbSeekInOrd( cCodCli, "LDEFOBR", dbfObrasT )
+
+      cPoblacion  := ( dbfObrasT )->cPobObr
+
+   end
+
+   if Empty( cPoblacion ) .AND. dbSeekInOrd( cCodCli, "COD", dbfClient )
+
+      cPoblacion     := ( dbfClient )->Poblacion
+
+   end
+
+   ( dbfObrasT )->( dbGoTo( nRecObr ) )
+   ( dbfClient )->( dbGoTo( nRecCli ) )
+
+return ( cPoblacion )
+
+
+
+function cObraPrv( cCodCli, dbfClient, dbfObrasT )
+
+   local cProvincia     := ""
+   local nRecObr        := ( dbfObrasT )->( Recno() )
+   local nRecCli        := ( dbfClient )->( Recno() )
+
+   if dbSeekInOrd( cCodCli, "LDEFOBR", dbfObrasT )
+
+      cProvincia  := ( dbfObrasT )->cPrvObr
+
+   end
+
+   if Empty( cProvincia ) .AND. dbSeekInOrd( cCodCli, "COD", dbfClient )
+
+      cProvincia     := ( dbfClient )->Provincia
+
+   end
+
+   ( dbfObrasT )->( dbGoTo( nRecObr ) )
+   ( dbfClient )->( dbGoTo( nRecCli ) )
+
+return ( cProvincia )
+
+
+
+function cObraPos( cCodCli, dbfClient, dbfObrasT )
+
+   local cCodPostal     := ""
+   local nRecObr        := ( dbfObrasT )->( Recno() )
+   local nRecCli        := ( dbfClient )->( Recno() )
+
+   if dbSeekInOrd( cCodCli, "LDEFOBR", dbfObrasT )
+      cCodPostal        := ( dbfObrasT )->cPosObr
+   end
+
+   if Empty( cCodPostal ) .AND. dbSeekInOrd( cCodCli, "COD", dbfClient )
+      cCodPostal        := ( dbfClient )->CodPostal
+   end
+
+   ( dbfObrasT )->( dbGoTo( nRecObr ) )
+   ( dbfClient )->( dbGoTo( nRecCli ) )
+
+return ( cCodPostal )
+
+
+
+function cObraNbr( cCodCli, dbfClient, dbfObrasT )
+
+   local cNombre        := ""
+   local nRecObr        := ( dbfObrasT )->( Recno() )
+   local nRecCli        := ( dbfClient )->( Recno() )
+
+   if dbSeekInOrd( cCodCli, "LDEFOBR", dbfObrasT )
+
+      cNombre           := ( dbfObrasT )->cNomObr
+
+   end
+
+   if Empty( cNombre ) .AND. dbSeekInOrd( cCodCli, "COD", dbfClient )
+
+      cNombre           := ( dbfClient )->Titulo
+
+   end
+
+   ( dbfObrasT )->( dbGoTo( nRecObr ) )
+   ( dbfClient )->( dbGoTo( nRecCli ) )
+
+return ( cNombre )
+
+
+
+Function aCalObrCli()
+
+   local aCalObrCli  := {}
+
+   aAdd( aCalObrCli, { "cObraNbr( ( cDbfCli )->Cod, cDbfCli, cDbfObr )",  "C", 100, 0, "Nombre defecto",        "",  "Nombre",      "" } )
+   aAdd( aCalObrCli, { "cObraDir( ( cDbfCli )->Cod, cDbfCli, cDbfObr )",  "C", 100, 0, "Domicilio defecto",     "",  "Domicilio",   "" } )
+   aAdd( aCalObrCli, { "cObraPob( ( cDbfCli )->Cod, cDbfCli, cDbfObr )",  "C", 100, 0, "Población defecto",     "",  "Población",   "" } )
+   aAdd( aCalObrCli, { "cObraPrv( ( cDbfCli )->Cod, cDbfCli, cDbfObr )",  "C",  20, 0, "Provincia defecto",     "",  "Provincia",   "" } )
+   aAdd( aCalObrCli, { "cObraPos( ( cDbfCli )->Cod, cDbfCli, cDbfObr )",  "C",  20, 0, "Código postal defecto", "",  "Cód. postal", "" } )
+
+Return ( aCalObrCli )
+
+
+
+FUNCTION aItmObr()
+
+   local aItmObr  := {}
+
+   aAdd( aItmObr, { "cCodCli",   "C",   12,    0, "" ,                                 "",                  "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cCodObr",   "C",   10,    0, "Código de la dirección" ,           "",                  "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cNomObr",   "C",  150,    0, "Nombre de la dirección" ,           "'@!'",              "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cDirObr",   "C",  100,    0, "Domicilio de la dirección" ,        "'@!'",              "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cPobObr",   "C",  100,    0, "Población de la dirección" ,        "'@!'",              "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cPrvObr",   "C",   20,    0, "Provincia de la dirección" ,        "'@!'",              "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cPosObr",   "C",   10,    0, "Código postal de la dirección" ,    "'@!'",              "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cTelObr",   "C",   17,    0, "Teléfono de la dirección" ,         "",                  "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cFaxObr",   "C",   17,    0, "Fax de la dirección" ,              "",                  "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cCntObr",   "C",  100,    0, "Contacto de la dirección" ,         "'@!'",              "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cMovObr",   "C",   17,    0, "Móvil de la dirección" ,            "",                  "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "lDefObr",   "L",    1,    0, "Lógico de dirección por defecto" ,  "",                  "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cCodEdi",   "C",   17,    0, "Código del cliente en EDI (EAN)",   "",                  "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cCodWeb",   "N",   11,    0, "Codigo para la web             ",   "",                  "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cEstObr",   "C",   35,    0, "Nombre del establecimiento     ",   "",                  "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cCodPos",   "C",   12,    0, "Número operacional" ,               "",                  "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cDeparta",  "C",    4,    0, "Departamento" ,                     "",                  "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "Nif",       "C",   30,    0, "Nif de la dirección" ,              "",                  "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cDomEnt",   "C",  200,    0, "Domicilio de entrega" ,             "",                  "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cPobEnt",   "C",  200,    0, "Población de entrega" ,             "",                  "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cCPEnt",    "C",   15,    0, "Código postal de entrega" ,         "",                  "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cPrvEnt",   "C",  100,    0, "Provincia de entrega" ,             "",                  "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cProvee",   "C",   50,    0, "Código de proveedor" ,              "",                  "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cCodBic",   "C",   50,    0, "Código Bic" ,                       "",                  "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cHorario",  "C",   50,    0, "Horario" ,                          "",                  "", "( cDbfObr )" } )
+   aAdd( aItmObr, { "cTipo",     "C",   50,    0, "Tipo de obra" ,                     "",                  "", "( cDbfObr )" } )
+
+RETURN ( aItmObr )
+
+
+
+FUNCTION BrwObrasOLD( oGet, oGet2, cCodigoCliente, dbfObrasT )
+
+    local oDlg
+    local oBrw
+   local oFont
+   local oBtn
+    local oGet1
+    local cGet1
+   local nOrd        := GetBrwOpt( "BrwObras" )
+    local oCbxOrd
+   local aCbxOrd     := { "Código", "Nombre" }
+   local aIndOrd     := { "cCodigo", "cNombre" }
+   local cCbxOrd     := "Código"
+   local nLevel      := Auth():Level( "01032" )
+   local lClose      := .F.
+   local oSayText
+   local cSayText    := "Listado de obras"
+
+   nOrd              := Min( Max( nOrd, 1 ), len( aCbxOrd ) )
+   cCbxOrd           := aCbxOrd[ nOrd ]
+
+   if Empty( cCodigoCliente )
+        MsgStop( "Es necesario codificar un cliente" )
+      return .T.
+   end
+
+   if !lExistTable( cPatEmp() + "ObrasT.Dbf" )
+      MsgStop( "No existe el fichero de obras" )
+      Return .F.
+   end
+
+   if Empty( dbfObrasT )
+      dbUseArea( .T., ( cDriver() ), ( cPatEmp() + "ObrasT.Dbf" ), ( cCheckArea( "OBRAST", @dbfObrasT ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "ObrasT.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+      lClose         := .T.
+   end
+
+   ( dbfObrasT )->( ordSetFocus( nOrd ) )
+
+   ( dbfObrasT )->( dbSetFilter( {|| alltrim( Field->cCodCli ) = alltrim( cCodigoCliente ) }, "Field->cCodigoCliente = 'cCodCli'" ) )
+   ( dbfObrasT )->( dbGoTop() )
+
+
+
+   oDlg = TDialog():New(,,,, "Seleccionar direcciones", "HELPENTRY",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+      oGet1 := TGetHlp():ReDefine( 104, { | u | If( PCount()==0, cGet1, cGet1:= u ) }, oDlg,,,,,,,,, .F.,, {|nKey,nFlags,Self| ( AutoSeek( nKey, nFlags, Self, oBrw, dbfObrasT, nil, cCodigoCliente ) ) }, .F., .F.,,,,,, nil, "FIND",, )
+
+
+
+
+
+
+
+
+        oCbxOrd := TComboBox():ReDefine( 102, { | u | If( PCount()==0, cCbxOrd, cCbxOrd:= u ) }, aCbxOrd, oDlg,,, {|Self|( ( dbfObrasT )->( ordsetfocus( oCbxOrd:nAt ) ), oBrw:Refresh(), oGet1:SetFocus() )},,,, .F.,,,,,,, "oCbxOrd",,,,,,, )
+
+      oBrw                 := IXBrowse():New( oDlg )
+
+      oBrw:bClrSel         := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      oBrw:bClrSelFocus    := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      oBrw:cAlias          := dbfObrasT
+      oBrw:nMarqueeStyle   := 5
+
+      with object ( oBrw:AddCol() )
+         :cHeader          := "Código"
+         :cSortOrder       := "Codigo"
+         :bEditValue       := {|| ( dbfObrasT )->cCodObr }
+         :nWidth           := 80
+         :bLClickHeader    := {| nMRow, nMCol, nFlags, oCol | oCbxOrd:Set( oCol:cHeader ), eval( oCbxOrd:bChange ) }
+      end
+
+      with object ( oBrw:AddCol() )
+         :cHeader          := "Nombre"
+         :cSortOrder       := "Nombre"
+         :bEditValue       := {|| ( dbfObrasT )->cNomObr }
+         :nWidth           := 360
+         :bLClickHeader    := {| nMRow, nMCol, nFlags, oCol | oCbxOrd:Set( oCol:cHeader ), eval( oCbxOrd:bChange ) }
+      end
+
+      oBrw:bLDblClick      := {|| oDlg:end( 1 ) }
+
+      oBrw:CreateFromResource( 105 )
+
+
+
+
+
+        TButton():ReDefine( 500, {||( WinAppRec( oBrw, bEdit, dbfObrasT, nil, nil, cCodigoCliente ) )}, oDlg,,, .F., {||     ( nAnd( nLevel, 2 ) <> 0 .AND. !IsReport() )},,, .F. )
+
+
+
+
+
+        TButton():ReDefine( 501, {||( WinEdtRec( oBrw, bEdit, dbfObrasT, nil, nil, cCodigoCliente ) )}, oDlg,,, .F., {||     ( nAnd( nLevel, 4 ) <> 0 .AND. !IsReport() )},,, .F. )
+
+      if !IsReport()
+         oDlg:AddFastKey( 113, {|| if( nAnd( nLevel, 2 ) <> 0, WinAppRec( oBrw, bEdit, dbfObrasT, nil, nil, cCodigoCliente ), ) } )
+         oDlg:AddFastKey( 114, {|| if( nAnd( nLevel, 4 ) <> 0, WinEdtRec( oBrw, bEdit, dbfObrasT, nil, nil, cCodigoCliente ), ) } )
+      end
+
+   oDlg:AddFastKey( 116,       {|| oDlg:end( 1 ) } )
+   oDlg:AddFastKey( 13,   {|| oDlg:end( 1 ) } )
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   if oDlg:nResult == 1
+
+      oGet:cText( ( dbfObrasT )->cCodObr )
+
+      if !Empty( oGet2 )
+         oGet2:cText( ( dbfObrasT )->cNomObr )
+      end
+
+   end
+
+   DestroyFastFilter( dbfObrasT )
+
+   SetBrwOpt( "BrwObras", ( dbfObrasT )->( OrdNumber() ) )
+
+   if lClose
+      ( dbfObrasT )->( dbCloseArea() )
+   else
+      ( dbfObrasT )->( dbsetfilter() )
+   end
+
+    oGet:setFocus()
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+FUNCTION cObras( oGet, oGet2, cCodigoCliente, dbfObrasT )
+
+    local lValid     := .F.
+    local lClose     := .F.
+    local xValor     := oGet:VarGet()
+
+    if Empty( xValor )
+        if !Empty( oGet2 )
+            oGet2:cText( "" )
+      end
+      return .T.
+   end
+
+   if Empty( cCodigoCliente )
+        MsgStop( "Es necesario codificar un cliente" )
+        return .T.
+    end
+
+   if Empty( dbfObrasT )
+      dbUseArea( .T., ( cDriver() ), ( cPatEmp() + "OBRAST.DBF" ), ( cCheckArea( "OBRAST", @dbfObrasT ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "OBRAST.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+      lClose      := .T.
+   end
+
+   ( dbfObrasT )->( OrdSetFocus( "cCodCli" ) )
+
+   xValor         := cCodigoCliente + xValor
+
+   if ( dbfObrasT )->( dbSeek( xValor ) )
+
+      oGet:cText( ( dbfObrasT )->cCodObr )
+
+        if !Empty( oGet2 )
+            oGet2:cText( ( dbfObrasT )->cNomObr )
+        end
+
+      lValid      := .T.
+
+    else
+
+      msgStop( "Obra no encontrada", ( dbfObrasT )->( OrdSetFocus() ) )
+
+    end
+
+   if lClose
+      ( dbfObrasT )->( dbCloseArea() )
+   end
+
+Return lValid
+
+
+
+FUNCTION BrwObras( oGet, oGet2, cCodigoCliente, dbfObrasT )
+
+   local oDlg
+   local oBrw
+   local oFont
+   local oBtn
+   local oGet1
+   local cGet1
+   local nOrd        := GetBrwOpt( "BrwObras" )
+   local oCbxOrd
+   local aCbxOrd     := { "Código", "Nombre" }
+   local aIndOrd     := { "cCodigo", "cNombre" }
+   local cCbxOrd     := "Código"
+   local nLevel      := Auth():Level( "01032" )
+   local lClose      := .F.
+   local oSayText
+   local cSayText    := "Listado de obras"
+   local dbfSql      := "BrowseObras"
+   local nOrdAnt
+   local nRecAnt
+
+   nOrd              := Min( Max( nOrd, 1 ), len( aCbxOrd ) )
+   cCbxOrd           := aCbxOrd[ nOrd ]
+
+   if Empty( cCodigoCliente )
+      MsgStop( "Es necesario codificar un cliente" )
+      return .T.
+   end
+
+   if !lExistTable( cPatEmp() + "ObrasT.Dbf" )
+      MsgStop( "No existe el fichero de obras" )
+      Return .F.
+   end
+
+   ClientesModel():getObrasPorCliente( @dbfSql, cCodigoCliente )
+
+   ( dbfSql )->( OrdSetFocus( aIndOrd[ nOrd ] ) )
+   ( dbfSql )->( dbGoTop() )
+
+   if Empty( dbfObrasT )
+      dbUseArea( .T., ( cDriver() ), ( cPatEmp() + "ObrasT.Dbf" ), ( cCheckArea( "OBRAST", @dbfObrasT ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "ObrasT.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+      lClose         := .T.
+   end
+
+
+
+   oDlg = TDialog():New(,,,, "Seleccionar direcciones", "HELPENTRY",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+      oGet1 := TGetHlp():ReDefine( 104, { | u | If( PCount()==0, cGet1, cGet1:= u ) }, oDlg,,,,,,,,, .F.,, {|nKey,nFlags,Self| ( AutoSeek( nKey, nFlags, Self, oBrw, dbfSql ) ) }, .F., .F.,,,,,, nil, "FIND",, )
+
+
+
+
+
+
+
+
+      oCbxOrd := TComboBox():ReDefine( 102, { | u | If( PCount()==0, cCbxOrd, cCbxOrd:= u ) }, aCbxOrd, oDlg,,, {|Self|( ( dbfSql )->( ordsetfocus( aIndOrd[ oCbxOrd:nAt ] ) ), oBrw:Refresh(), oGet1:SetFocus() )},,,, .F.,,,,,,, "oCbxOrd",,,,,,, )
+
+      oBrw                 := IXBrowse():New( oDlg )
+
+      oBrw:bClrSel         := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      oBrw:bClrSelFocus    := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      oBrw:cAlias          := dbfSql
+      oBrw:nMarqueeStyle   := 5
+
+      with object ( oBrw:AddCol() )
+         :cHeader          := "Código"
+         :cSortOrder       := "cCodigo"
+         :bEditValue       := {|| ( dbfSql )->cCodObr }
+         :nWidth           := 80
+         :bLClickHeader    := {| nMRow, nMCol, nFlags, oCol | oCbxOrd:Set( oCol:cHeader ), eval( oCbxOrd:bChange ) }
+      end
+
+      with object ( oBrw:AddCol() )
+         :cHeader          := "Nombre"
+         :cSortOrder       := "cNombre"
+         :bEditValue       := {|| ( dbfSql )->cNomObr }
+         :nWidth           := 360
+         :bLClickHeader    := {| nMRow, nMCol, nFlags, oCol | oCbxOrd:Set( oCol:cHeader ), eval( oCbxOrd:bChange ) }
+      end
+
+      oBrw:bLDblClick      := {|| oDlg:end( 1 ) }
+
+      oBrw:CreateFromResource( 105 )
+
+
+
+
+
+      TButton():ReDefine( 500, {||( WinAppRecFromBrowse( oBrw, bEdit, dbfObrasT, cCodigoCliente, dbfSql, nOrd ) )}, oDlg,,, .F., {||     ( nAnd( nLevel, 2 ) <> 0 .AND. !IsReport() )},,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 501, {||( WinEdtRecFromBrowse( oBrw, bEdit, dbfObrasT, cCodigoCliente, ( dbfSql )->cCodObr, dbfSql, nOrd ) )}, oDlg,,, .F., {||     ( nAnd( nLevel, 4 ) <> 0 .AND. !IsReport() )},,, .F. )
+
+      if !IsReport()
+         oDlg:AddFastKey( 113, {|| if( nAnd( nLevel, 2 ) <> 0, WinAppRecFromBrowse( oBrw, bEdit, dbfObrasT, cCodigoCliente, dbfSql, nOrd ), ) } )
+         oDlg:AddFastKey( 114, {|| if( nAnd( nLevel, 4 ) <> 0, WinEdtRecFromBrowse( oBrw, bEdit, dbfObrasT, cCodigoCliente, ( dbfSql )->cCodObr, dbfSql, nOrd ), ) } )
+      end
+
+   oDlg:AddFastKey( 116,       {|| oDlg:end( 1 ) } )
+   oDlg:AddFastKey( 13,   {|| oDlg:end( 1 ) } )
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   if oDlg:nResult == 1
+
+      oGet:cText( ( dbfSql )->cCodObr )
+
+      if !Empty( oGet2 )
+         oGet2:cText( ( dbfSql )->cNomObr )
+      end
+
+   end
+
+   SetBrwOpt( "BrwObras", ( dbfSql )->( OrdNumber() ) )
+
+   if lClose
+      ( dbfObrasT )->( dbCloseArea() )
+   end
+
+   oGet:setFocus()
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+Function WinAppRecFromBrowse( oBrw, bEdit, dbfObrasT, cCodigoCliente, dbfSql, nOrd )
+
+   WinAppRec( oBrw, bEdit, dbfObrasT, nil, nil, cCodigoCliente )
+
+   ClientesModel():getObrasPorCliente( @dbfSql, cCodigoCliente )
+
+   ( dbfSql )->( ordSetFocus( nOrd ) )
+   ( dbfSql )->( dbGoTop() )
+
+   if !Empty( oBrw )
+      oBrw:Refresh()
+   end
+
+RETURN ( nil )
+
+
+
+Function WinEdtRecFromBrowse( oBrw, bEdit, dbfObrasT, cCodigoCliente, cCodObr, dbfSql, nOrd )
+
+   if ( dbfObrasT )->( dbSeek( cCodigoCliente + cCodObr ) )
+      WinEdtRec( oBrw, bEdit, dbfObrasT, nil, nil, cCodigoCliente )
+   end
+
+   ClientesModel():getObrasPorCliente( @dbfSql, cCodigoCliente )
+
+   ( dbfSql )->( ordSetFocus( "cCodCli" ) )
+
+   ( dbfSql )->( dbSeek( cCodigoCliente + cCodObr ) )
+
+   ( dbfSql )->( ordSetFocus( nOrd ) )
+
+   if !Empty( oBrw )
+      oBrw:Refresh()
+   end
+
+RETURN ( nil )

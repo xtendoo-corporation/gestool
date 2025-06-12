@@ -1,0 +1,392 @@
+#line 38 "C:\Gestool\include\FiveWin.Ch"
+      static bError
+#line 203 "C:\Gestool\include\hbclass.ch"
+DECLARE HBClass  New( cName AS STRING, OPTIONAL SuperParams ) AS CLASS HBClass  Create() AS OBJECT  Instance() AS OBJECT  AddClsMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC, n2 AS NUMERIC, n3 AS NUMERIC )  AddMultiClsData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING )  AddMultiData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING, x AS LOGICAL, lPer AS LOGICAL )  AddMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC )  AddInLine( cName AS STRING, bBlock AS CODEBLOCK, nScope AS NUMERIC )  AddVirtual( cName AS STRING )
+#line 79 "C:\Gestool\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+#line 6 "C:\Gestool\Script\Produccion\prueba.prg"
+function InicioHRB( oParte )
+
+   MsgInfo( "Ruta normal" )
+
+return ( .T. )
+
+
+
+_HB_CLASS createParte ; function createParte ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "createParte", iif( .F., { }, { @HBObject() } ), @createParte() ) ) ;
+
+; _HB_MEMBER { fechaProceso } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"fechaProceso"}, .F. )
+; _HB_MEMBER { grupoParte } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"grupoParte"}, .F. )
+; _HB_MEMBER { arrayGrupos } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"arrayGrupos"}, .F. )
+; _HB_MEMBER { oParteProduccion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oParteProduccion"}, .F. )
+; _HB_MEMBER { cDocumento } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDocumento"}, .F. )
+; _HB_MEMBER { newNumero } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"newNumero"}, .F. )
+
+   _HB_MEMBER new(); oClass:AddMethod( "new", @createParte_new(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER run(); oClass:AddMethod( "run", @createParte_run(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER runTest(); oClass:AddMethod( "runTest", @createParte_runTest(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getFechaProceso(); oClass:AddMethod( "getFechaProceso", @createParte_getFechaProceso(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER compruebaFechaProceso(); oClass:AddMethod( "compruebaFechaProceso", @createParte_compruebaFechaProceso(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getGrupoParte(); oClass:AddMethod( "getGrupoParte", @createParte_getGrupoParte(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER compruebaGrupoParte(); oClass:AddMethod( "compruebaGrupoParte", @createParte_compruebaGrupoParte(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER compruebaArrayGrupoParte(); oClass:AddMethod( "compruebaArrayGrupoParte", @createParte_compruebaArrayGrupoParte(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getArrayGruposOfParte(); oClass:AddMethod( "getArrayGruposOfParte", @createParte_getArrayGruposOfParte(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER isOnlyOneGrupoOfParte(); oClass:AddInline( "isOnlyOneGrupoOfParte", {|Self | ( ( Self ) ), ( Len( ::getArrayGruposOfParte() ) <= 1 ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER isOnlyOneGrupoToProcess(); oClass:AddInline( "isOnlyOneGrupoToProcess", {|Self | ( ( Self ) ), ( Len( ::arrayGrupos ) <= 0 ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER procesaGrupo(); oClass:AddMethod( "procesaGrupo", @createParte_procesaGrupo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER procesaParte( cGrupo); oClass:AddMethod( "procesaParte", @createParte_procesaParte(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER createCabecera(); oClass:AddMethod( "createCabecera", @createParte_createCabecera(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER updateElaborado(); oClass:AddMethod( "updateElaborado", @createParte_updateElaborado(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER updateMateriaPrima(); oClass:AddMethod( "updateMateriaPrima", @createParte_updateMateriaPrima(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS createParte ;
+
+
+
+static FUNCTION createParte_new( oParte ) ; local Self AS CLASS createParte := QSelf() AS CLASS createParte
+
+   ::fechaProceso         := GetSysDate()
+   ::grupoParte           := Padr( "Todos", 20 )
+   ::oParteProduccion     := oParte
+
+Return ( self )
+
+
+
+static FUNCTION createParte_run( ) ; local Self AS CLASS createParte := QSelf() AS CLASS createParte
+
+   ::getFechaProceso()
+   ::getGrupoParte()
+
+   if ::isOnlyOneGrupoOfParte()
+      MsgStop( "Existe un solo grupo de parte" )
+      Return .T.
+   end
+
+   ::procesaGrupo()
+
+Return .T.
+
+
+
+static FUNCTION createParte_runTest( ) ; local Self AS CLASS createParte := QSelf() AS CLASS createParte
+
+   ::arrayGrupos  := { "Todos" }
+   ::cDocumento   := "P        7  "
+
+   if ::isOnlyOneGrupoOfParte()
+      MsgStop( "Existe un solo grupo de parte" )
+      Return .T.
+   end
+
+   ::procesaGrupo()
+
+Return .T.
+
+
+
+static FUNCTION createParte_getFechaProceso( ) ; local Self AS CLASS createParte := QSelf() AS CLASS createParte
+
+   while .T.
+      if MsgGet( "Seleccione una fecha", "Fecha: ", @::fechaProceso )
+         if ::compruebaFechaProceso()
+            exit
+         end
+      else
+         exit
+      end
+   end
+
+Return .T.
+
+
+
+static FUNCTION createParte_compruebaFechaProceso( ) ; local Self AS CLASS createParte := QSelf() AS CLASS createParte
+
+   local lResult  := .F.
+
+   ::oParteProduccion:oDbf:getStatus()
+
+   ::oParteProduccion:oDbf:OrdSetFocus( "dFecOrd" )
+
+   if ::oParteProduccion:oDbf:Seek( dTos( ::fechaProceso ) )
+      ::cDocumento   := ::oParteProduccion:oDbf:cSerOrd + Str( ::oParteProduccion:oDbf:nNumOrd ) + ::oParteProduccion:oDbf:cSufOrd
+      lResult        := .T.
+   else
+      MsgStop( "No existen partes para la fecha seleccionada" )
+   end
+
+   ::oParteProduccion:oDbf:setStatus()
+
+Return lResult
+
+
+
+static FUNCTION createParte_getGrupoParte( ) ; local Self AS CLASS createParte := QSelf() AS CLASS createParte
+
+   while .T.
+      if !msgGet( "Seleccione un grupo", "Grupo: ", @::grupoParte )
+         exit
+      end
+
+      if ::compruebaGrupoParte()
+         exit
+      end
+
+   end
+
+Return .T.
+
+
+
+static FUNCTION createParte_compruebaGrupoParte( ) ; local Self AS CLASS createParte := QSelf() AS CLASS createParte
+
+   local lResult  := .F.
+
+   ::arrayGrupos    := hb_aTokens( ::grupoParte, "," )
+
+return ::compruebaArrayGrupoParte()
+
+
+
+static FUNCTION createParte_compruebaArrayGrupoParte( ) ; local Self AS CLASS createParte := QSelf() AS CLASS createParte
+
+   local lReturn     := .T.
+   local aGrupoParte
+
+   if len( ::arrayGrupos ) == 0
+      Return .F.
+   end
+
+   if len( ::arrayGrupos ) == 1 .AND. AllTrim( ::arrayGrupos[1] ) == "Todos"
+      Return .T.
+   end
+
+   ::oParteProduccion:oTemporada:getStatus()
+
+   ::oParteProduccion:oTemporada:OrdSetFocus( "Codigo" )
+
+   for each aGrupoParte in ::arrayGrupos
+
+      if !::oParteProduccion:oTemporada:Seek( Padr( aGrupoParte, 10 ) )
+         lReturn     := .F.
+      end
+
+   next
+
+   ::oParteProduccion:oTemporada:setStatus()
+
+   if !lReturn
+      msgInfo( "Algunos de los valores introducidos no son válidos" )
+   end
+
+Return lReturn
+
+
+
+static FUNCTION createParte_getArrayGruposOfParte( ) ; local Self AS CLASS createParte := QSelf() AS CLASS createParte
+
+   local arrayGruposOfParte   := {}
+
+   if Empty( ::cDocumento )
+      Return .F.
+   end
+
+
+
+   ::oParteProduccion:oDetProduccion:oDbf:getStatus()
+
+   ::oParteProduccion:oDetProduccion:oDbf:OrdSetFocus( "cNumOrd" )
+
+   ::oParteProduccion:oDetProduccion:oDbf:GoTop()
+
+   if ::oParteProduccion:oDetProduccion:oDbf:Seek( ::cDocumento )
+
+
+      while ::oParteProduccion:oDetProduccion:oDbf:cSerOrd + Str( ::oParteProduccion:oDetProduccion:oDbf:nNumOrd ) + ::oParteProduccion:oDetProduccion:oDbf:cSufOrd == ::cDocumento .AND. !::oParteProduccion:oDetProduccion:oDbf:Eof()
+
+         if aScan( arrayGruposOfParte, ::oParteProduccion:oDetProduccion:oDbf:cCodTmp ) == 0
+            aAdd( arrayGruposOfParte, AllTrim( ::oParteProduccion:oDetProduccion:oDbf:cCodTmp ) )
+         end
+
+         ::oParteProduccion:oDetProduccion:oDbf:Skip()
+
+      end
+
+   end
+
+   ::oParteProduccion:oDetProduccion:oDbf:setStatus()
+
+
+
+   ::oParteProduccion:oDetMaterial:oDbf:getStatus()
+
+   ::oParteProduccion:oDetMaterial:oDbf:OrdSetFocus( "cNumOrd" )
+
+   ::oParteProduccion:oDetMaterial:oDbf:GoTop()
+
+   if ::oParteProduccion:oDetMaterial:oDbf:Seek( ::cDocumento )
+
+
+      while ::oParteProduccion:oDetMaterial:oDbf:cSerOrd + Str( ::oParteProduccion:oDetMaterial:oDbf:nNumOrd ) + ::oParteProduccion:oDetMaterial:oDbf:cSufOrd == ::cDocumento .AND. !::oParteProduccion:oDetMaterial:oDbf:Eof()
+
+         if aScan( arrayGruposOfParte, ::oParteProduccion:oDetMaterial:oDbf:cCodTmp ) == 0
+            aAdd( arrayGruposOfParte, AllTrim( ::oParteProduccion:oDetMaterial:oDbf:cCodTmp ) )
+         end
+
+         ::oParteProduccion:oDetMaterial:oDbf:Skip()
+
+      end
+
+   end
+
+   ::oParteProduccion:oDetMaterial:oDbf:setStatus()
+
+Return arrayGruposOfParte
+
+
+
+static FUNCTION createParte_procesaGrupo( ) ; local Self AS CLASS createParte := QSelf() AS CLASS createParte
+
+   local cGrupo
+   local arrayTodos  := {}
+
+   if ::isOnlyOneGrupoToProcess()
+      Return .F.
+   end
+
+
+
+   if len( ::arrayGrupos ) == 1 .AND. AllTrim( ::arrayGrupos[1] ) == "Todos"
+
+      arrayTodos  := ::getArrayGruposOfParte()
+
+      for each cGrupo in arrayTodos
+
+         if !::isOnlyOneGrupoOfParte()
+            ::procesaParte( cGrupo )
+         end
+
+      next
+
+   end
+
+
+
+   for each cGrupo in ::arrayGrupos
+
+      if !::isOnlyOneGrupoOfParte()
+
+         if aScan( ::getArrayGruposOfParte(), AllTrim( cGrupo ) ) <> 0
+            ::procesaParte( cGrupo )
+         else
+            MsgStop( "El grupo que intenta crear no existe en el parte: " + ::cDocumento )
+         end
+
+      end
+
+   next
+
+Return .T.
+
+
+
+static FUNCTION createParte_procesaParte( cGrupo ) ; local Self AS CLASS createParte := QSelf() AS CLASS createParte
+
+   ::createCabecera()
+
+   ::updateElaborado( cGrupo )
+
+   ::updateMateriaPrima( cGrupo )
+
+Return .T.
+
+
+
+static FUNCTION createParte_createCabecera( ) ; local Self AS CLASS createParte := QSelf() AS CLASS createParte
+
+   local aCabecera
+
+   ::oParteProduccion:oDbf:getStatus()
+
+   ::oParteProduccion:oDbf:OrdSetFocus( "cNumOrd" )
+
+   if ::oParteProduccion:oDbf:Seek( ::cDocumento )
+
+      ::newNumero    := nNewDoc( ::oParteProduccion:oDbf:cSerOrd, ::oParteProduccion:oDbf:nArea, "nParPrd" )
+
+      aCabecera      := dbScatter( ::oParteProduccion:oDbf:cAlias )
+
+      aCabecera[2]   := ::newNumero
+
+      dbGather( aCabecera, ::oParteProduccion:oDbf:cAlias, .T. )
+
+   end
+
+   ::oParteProduccion:oDbf:setStatus()
+
+Return .T.
+
+
+
+static FUNCTION createParte_updateElaborado( cGrupo ) ; local Self AS CLASS createParte := QSelf() AS CLASS createParte
+
+   ::oParteProduccion:oDetProduccion:oDbf:getStatus()
+
+   ::oParteProduccion:oDetProduccion:oDbf:OrdSetFocus( "cCodTmp" )
+
+   while ::oParteProduccion:oDetProduccion:oDbf:Seek( ::cDocumento + Padr( cGrupo, 10 ) )
+
+      ::oParteProduccion:oDetProduccion:oDbf:Load()
+      ::oParteProduccion:oDetProduccion:oDbf:nNumOrd    := ::newNumero
+      ::oParteProduccion:oDetProduccion:oDbf:Save()
+
+   end
+
+   ::oParteProduccion:oDetProduccion:oDbf:setStatus()
+
+Return .T.
+
+
+
+static FUNCTION createParte_updateMateriaPrima( cGrupo ) ; local Self AS CLASS createParte := QSelf() AS CLASS createParte
+
+   ::oParteProduccion:oDetMaterial:oDbf:getStatus()
+
+   ::oParteProduccion:oDetMaterial:oDbf:OrdSetFocus( "cCodTmp" )
+
+   while ::oParteProduccion:oDetMaterial:oDbf:Seek( ::cDocumento + Padr( cGrupo, 10 ) )
+
+      ::oParteProduccion:oDetMaterial:oDbf:Load()
+      ::oParteProduccion:oDetMaterial:oDbf:nNumOrd    := ::newNumero
+      ::oParteProduccion:oDetMaterial:oDbf:Save()
+
+   end
+
+   ::oParteProduccion:oDetMaterial:oDbf:setStatus()
+
+Return .T.

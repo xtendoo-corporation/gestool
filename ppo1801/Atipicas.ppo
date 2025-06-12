@@ -1,0 +1,3745 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 8 ".\.\Prg\Atipicas.prg"
+_HB_CLASS TAtipicas ; function TAtipicas ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TAtipicas", iif( .T., { @TDet() }, { @HBObject() } ), @TAtipicas() ) ) ;
+
+   _HB_MEMBER { oDlg } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDlg"}, .F. )
+   _HB_MEMBER { oFld } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFld"}, .F. )
+
+   _HB_MEMBER { oSayLabels } ; oClass:AddMultiData(, array( 16 ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayLabels"}, .F. )
+
+   _HB_MEMBER { oSayPr1 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayPr1"}, .F. )
+   _HB_MEMBER { oSayPr2 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayPr2"}, .F. )
+   _HB_MEMBER { oSayVp1 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayVp1"}, .F. )
+   _HB_MEMBER { oSayVp2 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayVp2"}, .F. )
+   _HB_MEMBER { cSayPr1 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSayPr1"}, .F. )
+   _HB_MEMBER { cSayPr2 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSayPr2"}, .F. )
+   _HB_MEMBER { cSayVp1 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSayVp1"}, .F. )
+   _HB_MEMBER { cSayVp2 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSayVp2"}, .F. )
+
+   _HB_MEMBER { oCosto } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCosto"}, .F. )
+   _HB_MEMBER { cCosto } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCosto"}, .F. )
+
+   _HB_MEMBER { oSobre } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSobre"}, .F. )
+   _HB_MEMBER { cSobre } ; oClass:AddMultiData(, "Precio 1", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSobre"}, .F. )
+   _HB_MEMBER { aSobre } ; oClass:AddMultiData(, { "Precio 1", "Precio 2", "Precio 3", "Precio 4", "Precio 5", "Precio 6" }, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aSobre"}, .F. )
+
+   _HB_MEMBER { oNaturaleza } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oNaturaleza"}, .F. )
+   _HB_MEMBER { cNaturaleza } ; oClass:AddMultiData(, "Artículo", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNaturaleza"}, .F. )
+   _HB_MEMBER { aNaturaleza } ; oClass:AddMultiData(, { "Artículo", "Familia" }, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aNaturaleza"}, .F. )
+
+   _HB_MEMBER { oTarifaFamilia } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTarifaFamilia"}, .F. )
+   _HB_MEMBER { nTarifaFamilia } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTarifaFamilia"}, .F. )
+   _HB_MEMBER { oSayTarifaFamila } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayTarifaFamila"}, .F. )
+
+   _HB_MEMBER { oBrwRen } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwRen"}, .F. )
+
+   _HB_MEMBER { cPouEmp } ; oClass:AddMultiData(, cPouDiv( cDivEmp() ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPouEmp"}, .F. )
+   _HB_MEMBER { cPouChg } ; oClass:AddMultiData(, cPouDiv( cDivChg() ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPouChg"}, .F. )
+
+   _HB_MEMBER { cRoundPrice } ; oClass:AddMultiData(, cPorDiv(), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cRoundPrice"}, .F. )
+
+   _HB_MEMBER { lExpandida } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lExpandida"}, .F. )
+   _HB_MEMBER { oBtnExpandir } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnExpandir"}, .F. )
+
+   _HB_MEMBER { oBrwAtipica } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwAtipica"}, .F. )
+   _HB_MEMBER { oBrwRentabilidad } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwRentabilidad"}, .F. )
+
+   _HB_MEMBER { aRentabilidad } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aRentabilidad"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @TAtipicas_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DefineFiles(); oClass:AddMethod( "DefineFiles", @TAtipicas_DefineFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER { oCodigoArticulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCodigoArticulo"}, .F. )
+   _HB_MEMBER { cCodigoArticulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoArticulo"}, .F. )
+
+   _HB_MEMBER { oCodigoFamilia } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCodigoFamilia"}, .F. )
+   _HB_MEMBER { cCodigoFamilia } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoFamilia"}, .F. )
+
+   _HB_MEMBER { oNombreArticulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oNombreArticulo"}, .F. )
+   _HB_MEMBER { cNombreArticulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNombreArticulo"}, .F. )
+
+   _HB_MEMBER { oNombreFamilia } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oNombreFamilia"}, .F. )
+   _HB_MEMBER { cNombreFamilia } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNombreFamilia"}, .F. )
+
+   _HB_MEMBER { oTextoPrimeraPropiedad } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTextoPrimeraPropiedad"}, .F. )
+   _HB_MEMBER { cTextoPrimeraPropiedad } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTextoPrimeraPropiedad"}, .F. )
+
+   _HB_MEMBER { oCodigoPrimeraPropiedad } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCodigoPrimeraPropiedad"}, .F. )
+
+   _HB_MEMBER { oValorPrimeraPropiedad } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oValorPrimeraPropiedad"}, .F. )
+   _HB_MEMBER { cValorPrimeraPropiedad } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cValorPrimeraPropiedad"}, .F. )
+
+   _HB_MEMBER { oTextoSegundaPropiedad } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTextoSegundaPropiedad"}, .F. )
+   _HB_MEMBER { cTextoSegundaPropiedad } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTextoSegundaPropiedad"}, .F. )
+
+   _HB_MEMBER { oCodigoSegundaPropiedad } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCodigoSegundaPropiedad"}, .F. )
+
+   _HB_MEMBER { oValorSegundaPropiedad } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oValorSegundaPropiedad"}, .F. )
+   _HB_MEMBER { cValorSegundaPropiedad } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cValorSegundaPropiedad"}, .F. )
+
+   _HB_MEMBER { oPrecioArticulo1 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oPrecioArticulo1"}, .F. )
+   _HB_MEMBER { oPrecioArticulo2 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oPrecioArticulo2"}, .F. )
+   _HB_MEMBER { oPrecioArticulo3 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oPrecioArticulo3"}, .F. )
+   _HB_MEMBER { oPrecioArticulo4 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oPrecioArticulo4"}, .F. )
+   _HB_MEMBER { oPrecioArticulo5 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oPrecioArticulo5"}, .F. )
+   _HB_MEMBER { oPrecioArticulo6 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oPrecioArticulo6"}, .F. )
+
+   _HB_MEMBER { oIvaArticulo1 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oIvaArticulo1"}, .F. )
+   _HB_MEMBER { oIvaArticulo2 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oIvaArticulo2"}, .F. )
+   _HB_MEMBER { oIvaArticulo3 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oIvaArticulo3"}, .F. )
+   _HB_MEMBER { oIvaArticulo4 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oIvaArticulo4"}, .F. )
+   _HB_MEMBER { oIvaArticulo5 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oIvaArticulo5"}, .F. )
+   _HB_MEMBER { oIvaArticulo6 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oIvaArticulo6"}, .F. )
+
+   _HB_MEMBER { oDescuento1 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDescuento1"}, .F. )
+   _HB_MEMBER { oDescuento2 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDescuento2"}, .F. )
+   _HB_MEMBER { oDescuento3 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDescuento3"}, .F. )
+   _HB_MEMBER { oDescuento4 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDescuento4"}, .F. )
+   _HB_MEMBER { oDescuento5 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDescuento5"}, .F. )
+   _HB_MEMBER { oDescuento6 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDescuento6"}, .F. )
+
+   _HB_MEMBER { oCodEnvase } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCodEnvase"}, .F. )
+
+   _HB_MEMBER { oPrecioCompra } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oPrecioCompra"}, .F. )
+   _HB_MEMBER { nPrecioCompra } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nPrecioCompra"}, .F. )
+
+   _HB_MEMBER { oChangeCostoParticular } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oChangeCostoParticular"}, .F. )
+
+   _HB_MEMBER { oCostoParticular } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCostoParticular"}, .F. )
+
+   _HB_MEMBER { oSayLabels } ; oClass:AddMultiData(, array( 16 ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayLabels"}, .F. )
+
+   _HB_MEMBER { oDescuentoPorcentualArticulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDescuentoPorcentualArticulo"}, .F. )
+   _HB_MEMBER { oDescuentoLinealArticulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDescuentoLinealArticulo"}, .F. )
+   _HB_MEMBER { oDescuentoPromocionArticulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDescuentoPromocionArticulo"}, .F. )
+
+   _HB_MEMBER { oComisionAgente } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oComisionAgente"}, .F. )
+
+   _HB_MEMBER { oOfertaXbY } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oOfertaXbY"}, .F. )
+   _HB_MEMBER { oUnidadesVender } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oUnidadesVender"}, .F. )
+   _HB_MEMBER { oUnidadesCobrar } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oUnidadesCobrar"}, .F. )
+
+   _HB_MEMBER { oRentabilidadSobre } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oRentabilidadSobre"}, .F. )
+   _HB_MEMBER { cRentabilidadSobre } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cRentabilidadSobre"}, .F. )
+   _HB_MEMBER { aRentabilidadSobre } ; oClass:AddMultiData(, { "Precio 1", "Precio 2", "Precio 3", "Precio 4", "Precio 5", "Precio 6" }, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aRentabilidadSobre"}, .F. )
+
+   _HB_MEMBER Resource(); oClass:AddMethod( "Resource", @TAtipicas_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER StartResource(); oClass:AddInline( "StartResource", {|Self | ( ( Self ) ), ( MsgStop( "Start" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER SaveResource(); oClass:AddMethod( "SaveResource", @TAtipicas_SaveResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PreSaveDetail(); oClass:AddInline( "PreSaveDetail", {|Self | ( ( Self ) ), ( MsgStop( "PreSaveDetail" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER WhenTipoArticulo(); oClass:AddInline( "WhenTipoArticulo", {|Self | ( ( Self ) ), ( ::oDbfVir:nTipAtp <= 1 .AND. ::nMode <> 3 ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER WhenOfertaXbY(); oClass:AddInline( "WhenOfertaXbY", {|Self | ( ( Self ) ), ( ::oDbfVir:nTipXby <= 1 .AND. ::nMode <> 3 ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER WhenTipoArticuloIva(); oClass:AddInline( "WhenTipoArticuloIva", {|Self | ( ( Self ) ), ( ::WhenTipoArticulo() .AND. !( D():Get( "Articulo", ::View() ) )->lIvaInc ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER WhenTipoArticuloBase(); oClass:AddInline( "WhenTipoArticuloBase", {|Self | ( ( Self ) ), ( ::WhenTipoArticulo() .AND. ( D():Get( "Articulo", ::View() ) )->lIvaInc ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER ChangeNaturaleza(); oClass:AddMethod( "ChangeNaturaleza", @TAtipicas_ChangeNaturaleza(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER lChangeCostoParticular(); oClass:AddInline( "lChangeCostoParticular", {|Self | ( ( Self ) ), ( if( ::oDbfVir:lPrcCom, ( ::oCostoParticular:Show(), ::oPrecioCompra:Hide() ), ( ::oCostoParticular:Hide(), ::oPrecioCompra:Show() ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER ShowPrimeraPropiedad(); oClass:AddInline( "ShowPrimeraPropiedad", {|Self | ( ( Self ) ), ( ::oTextoPrimeraPropiedad:Show(), ::oValorPrimeraPropiedad:Show(), ::oCodigoPrimeraPropiedad:Show() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER ShowSegundaPropiedad(); oClass:AddInline( "ShowSegundaPropiedad", {|Self | ( ( Self ) ), ( ::oTextoSegundaPropiedad:Show(), ::oValorSegundaPropiedad:Show(), ::oCodigoSegundaPropiedad:Show() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER HidePrimeraPropiedad(); oClass:AddInline( "HidePrimeraPropiedad", {|Self | ( ( Self ) ), ( ::oTextoPrimeraPropiedad:Hide(), ::oValorPrimeraPropiedad:Hide(), ::oCodigoPrimeraPropiedad:Hide() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER HideSegundaPropiedad(); oClass:AddInline( "HideSegundaPropiedad", {|Self | ( ( Self ) ), ( ::oTextoSegundaPropiedad:Hide(), ::oValorSegundaPropiedad:Hide(), ::oCodigoSegundaPropiedad:Hide() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER Expandir(); oClass:AddMethod( "Expandir", @TAtipicas_Expandir(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ButtonAppend( Id, oDialog); oClass:AddMethod( "ButtonAppend", @TAtipicas_ButtonAppend(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ButtonEdit( Id, oDialog); oClass:AddMethod( "ButtonEdit", @TAtipicas_ButtonEdit(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ButtonDel( Id, oDialog); oClass:AddMethod( "ButtonDel", @TAtipicas_ButtonDel(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Browse( Id, oDialog); oClass:AddMethod( "Browse", @TAtipicas_Browse(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER NombreArticulo(); oClass:AddInline( "NombreArticulo", {|Self | ( ( Self ) ), ( retfld( ::oDbfVir:cCodArt, D():Get( "Articulo", ::View() ), "Nombre", "Codigo" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER NombreFamilia(); oClass:AddInline( "NombreFamilia", {|Self | ( ( Self ) ), ( retfld( ::oDbfVir:cCodFam, D():Get( "Familias", ::View() ), "cNomFam", "cCodFam" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LoadAtipica(); oClass:AddMethod( "LoadAtipica", @TAtipicas_LoadAtipica(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CalculaRentabilidad(); oClass:AddMethod( "CalculaRentabilidad", @TAtipicas_CalculaRentabilidad(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AlertaRentabilidad(); oClass:AddInline( "AlertaRentabilidad", {|Self | ( ( Self ) ), ( hHasKey( ::aRentabilidad[ ::oBrwRentabilidad:nArrayAt ], "Alerta" ) .AND. hGet( ::aRentabilidad[ ::oBrwRentabilidad:nArrayAt ], "Alerta" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER NaturalezaRentabilidad(); oClass:AddInline( "NaturalezaRentabilidad", {|Self | ( ( Self ) ), ( hGet( ::aRentabilidad[ ::oBrwRentabilidad:nArrayAt ], "Naturaleza" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER TipoRentabilidad(); oClass:AddInline( "TipoRentabilidad", {|Self | ( ( Self ) ), ( hGet( ::aRentabilidad[ ::oBrwRentabilidad:nArrayAt ], "Tipo" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+      _HB_MEMBER ImporteRentabilidad(); oClass:AddInline( "ImporteRentabilidad", {|Self | ( ( Self ) ), ( if (  hHasKey( ::aRentabilidad[ ::oBrwRentabilidad:nArrayAt ], "Porcentual" ) .AND. hGet( ::aRentabilidad[ ::oBrwRentabilidad:nArrayAt ], "Porcentual" ), Trans( hGet( ::aRentabilidad[ ::oBrwRentabilidad:nArrayAt ], "Importe" ), "999.99" ) + " %", Trans( hGet( ::aRentabilidad[ ::oBrwRentabilidad:nArrayAt ], "Importe" ), cPouDiv() ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CalculaIva(); oClass:AddMethod( "CalculaIva", @TAtipicas_CalculaIva(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CalculaBase(); oClass:AddMethod( "CalculaBase", @TAtipicas_CalculaBase(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PrecioIva( nTarifa); oClass:AddMethod( "PrecioIva", @TAtipicas_PrecioIva(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PrecioBase( nTarifa); oClass:AddMethod( "PrecioBase", @TAtipicas_PrecioBase(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetPrimeraPropiedad( cValue); oClass:AddMethod( "SetPrimeraPropiedad", @TAtipicas_SetPrimeraPropiedad(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetSegundaPropiedad( cValue); oClass:AddMethod( "SetSegundaPropiedad", @TAtipicas_SetSegundaPropiedad(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER View(); oClass:AddInline( "View", {|Self | ( ( Self ) ), ( ::oParent:View() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SaveDetails(); oClass:AddMethod( "SaveDetails", @TAtipicas_SaveDetails(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DeleteDetails(); oClass:AddMethod( "DeleteDetails", @TAtipicas_DeleteDetails(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TAtipicas ;
+
+
+
+static FUNCTION TAtipicas_New( cPath, cDriver, oParent ) ; local Self AS CLASS TAtipicas := QSelf() AS CLASS TAtipicas
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+   If( cDriver == nil, cDriver := cDriver(), ) ;
+
+   ::cPath              := cPath
+   ::cDriver            := cDriver
+   ::oParent            := oParent
+
+   ::bOnPreSaveDetail   := {|| ::SaveDetails() }
+   ::bOnPreDelete       := {|| ::DeleteDetails() }
+
+RETURN ( Self )
+
+
+
+static FUNCTION TAtipicas_DefineFiles( cPath, cDriver, lUniqueName, cFileName ) ; local Self AS CLASS TAtipicas := QSelf() AS CLASS TAtipicas
+
+   local oDbf
+
+   If( cPath == nil, cPath := ::cPath, ) ;
+   If( cDriver == nil, cDriver := ::cDriver, ) ;
+   If( lUniqueName == nil, lUniqueName := .F., ) ;
+   If( cFileName == nil, cFileName := "CliAtp", ) ;
+
+   if lUniqueName
+      cFileName         := cGetNewFileName( cFileName, , , cPath )
+   end
+
+   oDbf := DbfServer( ( cFileName ), ( cFileName ) ):New( ( cFileName ), ( cFileName ), ( cDriver ), "Atipicas de clientes y grupos", ( cPath ) )
+
+      oDbf:AddField( "cCodCli", "C", 12, 0,,,,, "Código del cliente", .F.,, .F., {} )
+      oDbf:AddField( "cCodGrp", "C", 4, 0,,,,, "Código de grupo de cliente", .F.,, .F., {} )
+      oDbf:AddField( "cCodArt", "C", 18, 0,,,,, "Código de artículo en atipicas", .F.,, .F., {} )
+      oDbf:AddField( "cCodFam", "C", 16, 0,,,,, "Código de familias en atipicas", .F.,, .F., {} )
+      oDbf:AddField( "nTipAtp", "N", 1, 0,,,,, "Tipo de atípicas", .F.,, .F., {} )
+      oDbf:AddField( "cCodPr1", "C", 20, 0,,,,, "Código propiedad 1", .F.,, .F., {} )
+      oDbf:AddField( "cValPr1", "C", 20, 0,,,,, "Valor propiedad 1", .F.,, .F., {} )
+      oDbf:AddField( "cCodPr2", "C", 20, 0,,,,, "Código propiedad 2", .F.,, .F., {} )
+      oDbf:AddField( "cValPr2", "C", 20, 0,,,,, "Valor propiedad 2", .F.,, .F., {} )
+      oDbf:AddField( "dFecIni", "D", 8, 0,,,,, "Fecha inicio de la situación atipica", .F.,, .F., {} )
+      oDbf:AddField( "dFecFin", "D", 8, 0,,,,, "Fecha fin de la situación atipica", .F.,, .F., {} )
+      oDbf:AddField( "lPrcCom", "L", 1, 0,,,,, "Lógico para precio de compras personal", .F.,, .F., {} )
+      oDbf:AddField( "nPrcCom", "N", 16, 6,,,,, "Precio de coste", .F.,, .F., {} )
+      oDbf:AddField( "nPrcArt", "N", 16, 6,,,,, "Precio de venta 1 del artículo", .F.,, .F., {} )
+      oDbf:AddField( "nPrcArt2", "N", 16, 6,,,,, "Precio de venta 2 del artículo", .F.,, .F., {} )
+      oDbf:AddField( "nPrcArt3", "N", 16, 6,,,,, "Precio de venta 3 del artículo", .F.,, .F., {} )
+      oDbf:AddField( "nPrcArt4", "N", 16, 6,,,,, "Precio de venta 4 del artículo", .F.,, .F., {} )
+      oDbf:AddField( "nPrcArt5", "N", 16, 6,,,,, "Precio de venta 5 del artículo", .F.,, .F., {} )
+      oDbf:AddField( "nPrcArt6", "N", 16, 6,,,,, "Precio de venta 6 del artículo", .F.,, .F., {} )
+      oDbf:AddField( "nPreIva1", "N", 16, 6,,,,, "Precio de venta 1 con " + cImp(), .F.,, .F., {} )
+      oDbf:AddField( "nPreIva2", "N", 16, 6,,,,, "Precio de venta 2 con " + cImp(), .F.,, .F., {} )
+      oDbf:AddField( "nPreIva3", "N", 16, 6,,,,, "Precio de venta 3 con " + cImp(), .F.,, .F., {} )
+      oDbf:AddField( "nPreIva4", "N", 16, 6,,,,, "Precio de venta 4 con " + cImp(), .F.,, .F., {} )
+      oDbf:AddField( "nPreIva5", "N", 16, 6,,,,, "Precio de venta 5 con " + cImp(), .F.,, .F., {} )
+      oDbf:AddField( "nPreIva6", "N", 16, 6,,,,, "Precio de venta 6 con " + cImp(), .F.,, .F., {} )
+      oDbf:AddField( "nDtoArt", "N", 6, 2,,,,, "Descuento del articulo", .F.,, .F., {} )
+      oDbf:AddField( "nDprArt", "N", 6, 2,,,,, "Descuento promocional del articulo", .F.,, .F., {} )
+      oDbf:AddField( "lComAge", "L", 1, 0,,,,, "Lógico para tener en cuenta el porcentaje", .F.,, .F., {} )
+      oDbf:AddField( "nComAge", "N", 6, 2,,,,, "Comisión del agente", .F.,, .F., {} )
+      oDbf:AddField( "nDtoDiv", "N", 16, 6,,,,, "Descuento lineal", .F.,, .F., {} )
+      oDbf:AddField( "lAplPre", "L", 1, 0,,,,, "Aplicar en presupuestos", .F.,, .F., {} )
+      oDbf:AddField( "lAplPed", "L", 1, 0,,,,, "Aplicar en pedidos", .F.,, .F., {} )
+      oDbf:AddField( "lAplAlb", "L", 1, 0,,,,, "Aplicar en albaranes", .F.,, .F., {} )
+      oDbf:AddField( "lAplFac", "L", 1, 0,,,,, "Aplicar en facturas", .F.,, .F., {} )
+      oDbf:AddField( "lAplSat", "L", 1, 0,,,,, "Aplicar en S.A.T.", .F.,, .F., {} )
+      oDbf:AddField( "nUnvOfe", "N", 3, 0,,,,, "Unidades a vender en la oferta", .F.,, .F., {} )
+      oDbf:AddField( "nUncOfe", "N", 3, 0,,,,, "Unidades a cobrar en la oferta", .F.,, .F., {} )
+      oDbf:AddField( "nTipXby", "N", 1, 0,,,,, "Tipo de oferta", .F.,, .F., {} )
+      oDbf:AddField( "nDto1", "N", 6, 2,,,,, "Descuento de tarifa de venta 1", .F.,, .F., {} )
+      oDbf:AddField( "nDto2", "N", 6, 2,,,,, "Descuento de tarifa de venta 2", .F.,, .F., {} )
+      oDbf:AddField( "nDto3", "N", 6, 2,,,,, "Descuento de tarifa de venta 3", .F.,, .F., {} )
+      oDbf:AddField( "nDto4", "N", 6, 2,,,,, "Descuento de tarifa de venta 4", .F.,, .F., {} )
+      oDbf:AddField( "nDto5", "N", 6, 2,,,,, "Descuento de tarifa de venta 5", .F.,, .F., {} )
+      oDbf:AddField( "nDto6", "N", 6, 2,,,,, "Descuento de tarifa de venta 6", .F.,, .F., {} )
+      oDbf:AddField( "cCodAge", "C", 3, 0,,,,, "Código del agente", .F.,, .F., {} )
+      oDbf:AddField( "cCodEnv", "C", 3, 0,,,,, "Código del envase", .F.,, .F., {} )
+      oDbf:AddField( "cDesEsp", "C", 150, 0,,,,, "Descripción especial", .F.,, .F., {} )
+      oDbf:AddField( "dUltPrc", "D", 8, 0,,,,, "Fecha ultimo cambio precio", .F.,, .F., {} )
+      oDbf:AddField( "cTimUPr", "C", 6, 0,,,,, "Hora último cambio precio", .F.,, .F., {} )
+      oDbf:AddField( "nTarifa", "N", 1, 0,,,,, "Tarifa a aplicar en atipica por familia", .F.,, .F., {} )
+
+      oDbf:AddIndex( "cCodCli", ( cFileName ), "cCodCli",,, .F., .F.,,,, .T., .F. )
+      oDbf:AddIndex( "cCodGrp", ( cFileName ), "cCodGrp",,, .F., .F.,,,, .T., .F. )
+      oDbf:AddIndex( "cCliArt", ( cFileName ), "cCodCli + cCodArt + cCodPr1 + cCodPr2 + cValPr1 + cValPr2",,, .F., .F.,,,, .T., .F. )
+      oDbf:AddIndex( "cCodFam", ( cFileName ), "cCodCli + cCodFam",,, .F., .F.,,,, .T., .F. )
+      oDbf:AddIndex( "cGrpArt", ( cFileName ), "cCodGrp + cCodArt + cCodPr1 + cCodPr2 + cValPr1 + cValPr2",,, .F., .F.,,,, .T., .F. )
+      oDbf:AddIndex( "cGrpFam", ( cFileName ), "cCodGrp + cCodFam",,, .F., .F.,,,, .T., .F. )
+      oDbf:AddIndex( "cCodAge", ( cFileName ), "cCodAge",,, .F., .F.,,,, .T., .F. )
+      oDbf:AddIndex( "cAgeArt", ( cFileName ), "cCodAge + cCodArt + cCodPr1 + cCodPr2 + cValPr1 + cValPr2",,, .F., .F.,,,, .T., .F. )
+      oDbf:AddIndex( "cCodArt", ( cFileName ), "cCodArt",,, .F., .F.,,,, .T., .F. )
+
+
+
+RETURN ( oDbf )
+
+
+
+static FUNCTION TAtipicas_Resource( nMode ) ; local Self AS CLASS TAtipicas := QSelf() AS CLASS TAtipicas
+
+   if ( nMode == 1 )
+
+      ::cCosto          := 0
+      ::oDbfVir:dFecIni := Ctod( "" )
+      ::oDbfVir:dFecFin := Ctod( "" )
+      ::oDbfVir:lAplPre := .T.
+      ::oDbfVir:lAplPed := .T.
+      ::oDbfVir:lAplAlb := .T.
+      ::oDbfVir:lAplFac := .T.
+      ::oDbfVir:lAplSat := .T.
+      ::oDbfVir:nTipXby := 2
+      ::oDbfVir:nUnvOfe := 1
+      ::oDbfVir:nUncOfe := 1
+
+      ::cNombreArticulo := ""
+      ::cNombreFamilia  := ""
+
+   else
+
+      ::cNaturaleza     := Max( Min( ::oDbfVir:nTipAtp, len( ::aNaturaleza ) ), 1 )
+
+      ::cNombreArticulo := ::NombreArticulo()
+      ::cNombreFamilia  := ::NombreFamilia()
+
+      if !Empty( ::oDbfVir:cCodPr1 )
+         ::cSayPr1      := retProp( ::oDbfVir:cCodPr1 )
+         ::cSayVp1      := retValProp( ::oDbfVir:cCodPr1 + ::oDbfVir:cValPr1 )
+      end
+
+      if !Empty( ::oDbfVir:cCodPr2 )
+         ::cSayPr2      := retProp( ::oDbfVir:cCodPr2 )
+         ::cSayVp2      := retValProp( ::oDbfVir:cCodPr2 + ::oDbfVir:cValPr2 )
+      end
+
+   end
+
+   ::nTarifaFamilia     := ::oDbfVir:nTarifa
+
+   ::oDlg = TDialog():New(,,,, LblTitle( nMode ) + "tarifas de clientes", "CLIATP",, .F.,,,,,, .F.,,,,,, .F.,, "::oDlg", nil, )
+
+
+
+
+
+
+
+      ::oFld := TFolder():ReDefine( 100, {"&General" , "A&mbito"}, { "CLIATP_0","CLIATP_1" }, ::oDlg,,,,, .F., )
+
+
+
+
+
+
+      ::oNaturaleza := TComboBox():ReDefine( 90, { | u | If( PCount()==0, ::cNaturaleza, ::cNaturaleza:= u ) }, ::aNaturaleza, ::oFld:aDialogs[1],,,,,,, .F., {||           ( nMode == 1 )},,,,,, "::oNaturaleza",,,,,,, )
+
+      ::oNaturaleza:bChange      := {|| ::ChangeNaturaleza() }
+
+
+
+
+
+
+      ::oCodigoArticulo := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, ::oDbfVir:cCodArt, ::oDbfVir:cCodArt:= u ) }, ::oFld:aDialogs[1],,,,,,,,, .F., {||           ( ::nMode == 1 )},, .F., .F.,,,,,, nil, "Lupa",, )
+
+      ::oCodigoArticulo:bHelp    := {|| BrwArticulo( ::oCodigoArticulo, ::oNombreArticulo ) }
+      ::oCodigoArticulo:bChange  := {|| ::CalculaRentabilidad() }
+      ::oCodigoArticulo:bValid   := {|| ::LoadAtipica() }
+
+
+
+
+
+      ::oNombreArticulo := TGetHlp():ReDefine( 110, { | u | If( PCount()==0, ::cNombreArticulo, ::cNombreArticulo:= u ) }, ::oFld:aDialogs[1],,,,,,,,, .F., {||           ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+      ::oCodigoFamilia := TGetHlp():ReDefine( 105, { | u | If( PCount()==0, ::oDbfVir:cCodFam, ::oDbfVir:cCodFam:= u ) }, ::oFld:aDialogs[1],,,,,,,,, .F., {||           ( ::nMode == 1 )},, .F., .F.,,,,,, nil, "LUPA",, )
+
+         ::oCodigoFamilia:bValid := {|| cFamilia( ::oCodigoFamilia, D():Get( "Familias", ::View() ), ::oNombreFamilia ) }
+         ::oCodigoFamilia:bHelp  := {|| BrwFamilia( ::oCodigoFamilia, ::oNombreFamilia ) }
+
+
+
+
+
+      ::oNombreFamilia := TGetHlp():ReDefine( 106, { | u | If( PCount()==0, ::cNombreFamilia, ::cNombreFamilia:= u ) }, ::oFld:aDialogs[1],,,,,,,,, .F., {||           ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+      ::oTarifaFamilia  := comboTarifa():Build( { "idCombo" => 610, "uValue" => ::nTarifaFamilia } )
+      ::oTarifaFamilia:Resource( ::oFld:aDialogs[ 1 ] )
+
+
+
+      ::oSayTarifaFamila := TSay():ReDefine( 611,, ::oFld:aDialogs[1],,,, .F.,, .F., .F., )
+
+
+
+
+
+
+
+
+      ::oTextoPrimeraPropiedad := TSay():ReDefine( 888, {||            ::cTextoPrimeraPropiedad}, ::oFld:aDialogs[1],,,, .F.,, .F., .F., )
+
+
+
+
+
+
+      ::oCodigoPrimeraPropiedad := TGetHlp():ReDefine( 250, { | u | If( PCount()==0, ::oDbfVir:cValPr1, ::oDbfVir:cValPr1:= u ) }, ::oFld:aDialogs[1],,,,,,,,, .F., {||           ( ::nMode == 1 )},, .F., .F.,,,,,, nil, "LUPA",, )
+
+         ::oCodigoPrimeraPropiedad:bHelp     := {|| brwPropiedadActual( ::oCodigoPrimeraPropiedad, ::oTextoPrimeraPropiedad, ::oDbfVir:cCodPr1 ) }
+         ::oCodigoPrimeraPropiedad:bValid    := {|| ::LoadAtipica() }
+
+
+
+
+
+      ::oValorPrimeraPropiedad := TGetHlp():ReDefine( 251, { | u | If( PCount()==0, ::cValorPrimeraPropiedad, ::cValorPrimeraPropiedad:= u ) }, ::oFld:aDialogs[1],,,,,,,,, .F., {||           .F.},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+
+
+      ::oTextoSegundaPropiedad := TSay():ReDefine( 999, {||            ::cTextoSegundaPropiedad}, ::oFld:aDialogs[1],,,, .F.,, .F., .F., )
+
+
+
+
+
+
+      ::oCodigoSegundaPropiedad := TGetHlp():ReDefine( 260, { | u | If( PCount()==0, ::oDbfVir:cValPr2, ::oDbfVir:cValPr2:= u ) }, ::oFld:aDialogs[1],,,,,,,,, .F., {||           ( ::nMode == 1 )},, .F., .F.,,,,,, nil, "LUPA",, )
+
+         ::oCodigoSegundaPropiedad:bHelp     := {|| brwPropiedadActual( ::oCodigoSegundaPropiedad, ::oTextoSegundaPropiedad, ::oDbfVir:cCodPr2 ) }
+         ::oCodigoSegundaPropiedad:bValid    := {|| ::LoadAtipica() }
+
+
+
+
+
+      ::oValorSegundaPropiedad := TGetHlp():ReDefine( 261, { | u | If( PCount()==0, ::cValorSegundaPropiedad, ::cValorSegundaPropiedad:= u ) }, ::oFld:aDialogs[1],,,,,,,,, .F., {||           .F.},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+
+
+
+
+      ::oChangeCostoParticular := TCheckBox():ReDefine( 122, { | u | If( PCount()==0, ::oDbfVir:lPrcCom, ::oDbfVir:lPrcCom:= u ) }, ::oFld:aDialogs[ 1 ],, {||      ( ::lChangeCostoParticular() )},,,,, .F., {||           ( ::oDbfVir:nTipAtp <= 1 .AND. ::nMode <> 3 )}, .F. )
+
+
+
+
+
+
+
+      ::oCostoParticular := TGetHlp():ReDefine( 120, { | u | If( PCount()==0, ::oDbfVir:nPrcCom, ::oDbfVir:nPrcCom:= u ) }, ::oFld:aDialogs[1],, cPinDiv(),,,,,,, .F., {||           ( ::nMode <> 3 )},, .F., .T.,,,,,, nil,,, )
+
+      ::oCostoParticular:bChange              := {|| ::CalculaRentabilidad() }
+      ::oCostoParticular:bValid               := {|| ::CalculaRentabilidad() }
+
+
+
+
+
+
+
+      ::oPrecioCompra := TGetHlp():ReDefine( 123, { | u | If( PCount()==0, ::nPrecioCompra, ::nPrecioCompra:= u ) }, ::oFld:aDialogs[ 1 ],, cPinDiv(),,,,,,, .F., {||           ( .F. )},, .F., .T.,,,,,, nil,,, )
+
+      ::oPrecioCompra:bChange                := {|| ::CalculaRentabilidad() }
+      ::oPrecioCompra:bValid                 := {|| ::CalculaRentabilidad() }
+
+
+
+
+
+
+
+
+
+
+
+
+      ::oPrecioArticulo1 := TGetHlp():ReDefine( 121, { | u | If( PCount()==0, ::oDbfVir:nPrcArt, ::oDbfVir:nPrcArt:= u ) }, ::oFld:aDialogs[1],, cPouDiv(), {||    ( ::CalculaIva( ::oPrecioArticulo1, ::oIvaArticulo1 ) )},,,,,, .F., {||     ( ::WhenTipoArticuloIva() )},, .F., .T.,,,,,, nil,,, )
+
+      ::oPrecioArticulo1:bChange             := {|| ::CalculaRentabilidad() }
+
+
+
+
+
+
+
+
+      ::oPrecioArticulo2 := TGetHlp():ReDefine( 124, { | u | If( PCount()==0, ::oDbfVir:nPrcArt2, ::oDbfVir:nPrcArt2:= u ) }, ::oFld:aDialogs[1],, cPouDiv(), {||    ( ::CalculaIva( ::oPrecioArticulo2, ::oIvaArticulo2 ) )},,,,,, .F., {||     ( ::WhenTipoArticuloIva() )},, .F., .T.,,,,,, nil,,, )
+
+      ::oPrecioArticulo2:bChange             := {|| ::CalculaRentabilidad() }
+
+
+
+
+
+
+
+
+      ::oPrecioArticulo3 := TGetHlp():ReDefine( 125, { | u | If( PCount()==0, ::oDbfVir:nPrcArt3, ::oDbfVir:nPrcArt3:= u ) }, ::oFld:aDialogs[1],, cPouDiv(), {||    ( ::CalculaIva( ::oPrecioArticulo3, ::oIvaArticulo3 ) )},,,,,, .F., {||     ( ::WhenTipoArticuloIva() )},, .F., .T.,,,,,, nil,,, )
+
+      ::oPrecioArticulo3:bChange             := {|| ::CalculaRentabilidad() }
+
+
+
+
+
+
+
+
+      ::oPrecioArticulo4 := TGetHlp():ReDefine( 126, { | u | If( PCount()==0, ::oDbfVir:nPrcArt4, ::oDbfVir:nPrcArt4:= u ) }, ::oFld:aDialogs[1],, cPouDiv(), {||    ( ::CalculaIva( ::oPrecioArticulo4, ::oIvaArticulo4 ) )},,,,,, .F., {||     ( ::WhenTipoArticuloIva() )},, .F., .T.,,,,,, nil,,, )
+
+      ::oPrecioArticulo4:bChange             := {|| ::CalculaRentabilidad() }
+
+
+
+
+
+
+
+
+      ::oPrecioArticulo5 := TGetHlp():ReDefine( 127, { | u | If( PCount()==0, ::oDbfVir:nPrcArt5, ::oDbfVir:nPrcArt5:= u ) }, ::oFld:aDialogs[1],, cPouDiv(), {||    ( ::CalculaIva( ::oPrecioArticulo5, ::oIvaArticulo5 ) )},,,,,, .F., {||     ( ::WhenTipoArticuloIva() )},, .F., .T.,,,,,, nil,,, )
+
+      ::oPrecioArticulo5:bChange             := {|| ::CalculaRentabilidad() }
+
+
+
+
+
+
+
+
+      ::oPrecioArticulo6 := TGetHlp():ReDefine( 128, { | u | If( PCount()==0, ::oDbfVir:nPrcArt6, ::oDbfVir:nPrcArt6:= u ) }, ::oFld:aDialogs[1],, cPouDiv(), {||    ( ::CalculaIva( ::oPrecioArticulo6, ::oIvaArticulo6 ) )},,,,,, .F., {||     ( ::WhenTipoArticuloIva() )},, .F., .T.,,,,,, nil,,, )
+
+      ::oPrecioArticulo6:bChange             := {|| ::CalculaRentabilidad() }
+
+
+
+
+
+
+
+
+
+
+
+
+      ::oIvaArticulo1 := TGetHlp():ReDefine( 300, { | u | If( PCount()==0, ::oDbfVir:nPreIva1, ::oDbfVir:nPreIva1:= u ) }, ::oFld:aDialogs[1],, cPouDiv(), {||    ( ::CalculaBase( ::oIvaArticulo1, ::oPrecioArticulo1 ) )},,,,,, .F., {||     ( ::WhenTipoArticuloBase() )},, .F., .T.,,,,,, nil,,, )
+
+      ::oIvaArticulo1:bChange             := {|| ::CalculaRentabilidad() }
+
+
+
+
+
+
+
+
+      ::oIvaArticulo2 := TGetHlp():ReDefine( 310, { | u | If( PCount()==0, ::oDbfVir:nPreIva2, ::oDbfVir:nPreIva2:= u ) }, ::oFld:aDialogs[1],, cPouDiv(), {||    ( ::CalculaBase( ::oIvaArticulo2, ::oPrecioArticulo2 ) )},,,,,, .F., {||     ( ::WhenTipoArticuloBase() )},, .F., .T.,,,,,, nil,,, )
+
+      ::oIvaArticulo2:bChange             := {|| ::CalculaRentabilidad() }
+
+
+
+
+
+
+
+
+      ::oIvaArticulo3 := TGetHlp():ReDefine( 320, { | u | If( PCount()==0, ::oDbfVir:nPreIva3, ::oDbfVir:nPreIva3:= u ) }, ::oFld:aDialogs[1],, cPouDiv(), {||    ( ::CalculaBase( ::oIvaArticulo3, ::oPrecioArticulo3 ) )},,,,,, .F., {||     ( ::WhenTipoArticuloBase() )},, .F., .T.,,,,,, nil,,, )
+
+      ::oIvaArticulo3:bChange             := {|| ::CalculaRentabilidad() }
+
+
+
+
+
+
+
+
+      ::oIvaArticulo4 := TGetHlp():ReDefine( 330, { | u | If( PCount()==0, ::oDbfVir:nPreIva4, ::oDbfVir:nPreIva4:= u ) }, ::oFld:aDialogs[1],, cPouDiv(), {||    ( ::CalculaBase( ::oIvaArticulo4, ::oPrecioArticulo4 ) )},,,,,, .F., {||     ( ::WhenTipoArticuloBase() )},, .F., .T.,,,,,, nil,,, )
+
+      ::oIvaArticulo4:bChange             := {|| ::CalculaRentabilidad() }
+
+
+
+
+
+
+
+
+      ::oIvaArticulo5 := TGetHlp():ReDefine( 340, { | u | If( PCount()==0, ::oDbfVir:nPreIva5, ::oDbfVir:nPreIva5:= u ) }, ::oFld:aDialogs[1],, cPouDiv(), {||    ( ::CalculaBase( ::oIvaArticulo5, ::oPrecioArticulo5 ) )},,,,,, .F., {||     ( ::WhenTipoArticuloBase() )},, .F., .T.,,,,,, nil,,, )
+
+      ::oIvaArticulo5:bChange             := {|| ::CalculaRentabilidad() }
+
+
+
+
+
+
+
+
+      ::oIvaArticulo6 := TGetHlp():ReDefine( 350, { | u | If( PCount()==0, ::oDbfVir:nPreIva6, ::oDbfVir:nPreIva6:= u ) }, ::oFld:aDialogs[1],, cPouDiv(), {||    ( ::CalculaBase( ::oIvaArticulo6, ::oPrecioArticulo6 ) )},,,,,, .F., {||     ( ::WhenTipoArticuloBase() )},, .F., .T.,,,,,, nil,,, )
+
+      ::oIvaArticulo6:bChange             := {|| ::CalculaRentabilidad() }
+
+
+
+
+
+
+
+
+
+
+
+
+      ::oDescuentoPorcentualArticulo := TGetHlp():ReDefine( 130, { | u | If( PCount()==0, ::oDbfVir:nDtoArt, ::oDbfVir:nDtoArt:= u ) }, ::oFld:aDialogs[1],, "@E 999.99", {||    ( ::oDbfVir:nDtoArt >= 0 .AND. ::oDbfVir:nDtoArt <= 100 )},,,,,, .F., {||     ( ::nMode <> 3 )},, .F., .T.,,,,,, nil,,, )
+
+      ::oDescuentoPorcentualArticulo:bChange    := {|| ::CalculaRentabilidad() }
+
+
+
+
+
+
+
+
+      ::oDescuentoLinealArticulo := TGetHlp():ReDefine( 135, { | u | If( PCount()==0, ::oDbfVir:nDtoDiv, ::oDbfVir:nDtoDiv:= u ) }, ::oFld:aDialogs[1],, cPouDiv(), {||    ( ::CalculaRentabilidad() )},,,,,, .F., {||     ( ::nMode <> 3 )},, .F., .T.,,,,,, nil,,, )
+
+      ::oDescuentoLinealArticulo:bChange    := {|| ::CalculaRentabilidad() }
+
+
+
+
+
+
+
+
+      ::oDescuentoPromocionArticulo := TGetHlp():ReDefine( 601, { | u | If( PCount()==0, ::oDbfVir:nDprArt, ::oDbfVir:nDprArt:= u ) }, ::oFld:aDialogs[1],, "@E 999.99", {||    ( ::oDbfVir:nDprArt >= 0 .AND. ::oDbfVir:nDprArt <= 100 )},,,,,, .F., {||     ( ::nMode <> 3 )},, .F., .T.,,,,,, nil,,, )
+
+      ::oDescuentoPromocionArticulo:bChange  := {|| ::CalculaRentabilidad() }
+
+
+
+
+
+      TCheckBox():ReDefine( 151, { | u | If( PCount()==0, ::oDbfVir:lComAge, ::oDbfVir:lComAge:= u ) }, ::oFld:aDialogs[1],, {||( ::CalculaRentabilidad() )},,,,, .F., {||     ( ::nMode <> 3 )}, .F. )
+
+
+
+
+
+
+
+
+      ::oComisionAgente := TGetHlp():ReDefine( 150, { | u | If( PCount()==0, ::oDbfVir:nComAge, ::oDbfVir:nComAge:= u ) }, ::oFld:aDialogs[1],, "@E 999.99", {||    ( ::oDbfVir:nComAge >= 0 .AND. ::oDbfVir:nComAge <= 100 )},,,,,, .F., {||     ( ::nMode <> 3 )},, .F., .T.,,,,,, nil,,, )
+
+      ::oComisionAgente:bChange              := {|| ::CalculaRentabilidad() }
+
+      ::oSayLabels[ 1 ] := TGroup():ReDefine( 700,, ::oFld:aDialogs[ 1 ],,,, .T. )
+      ::oSayLabels[ 2 ] := TGroup():ReDefine( 701,, ::oFld:aDialogs[ 1 ],,,, .T. )
+      ::oSayLabels[ 3 ] := TGroup():ReDefine( 702,, ::oFld:aDialogs[ 1 ],,,, .T. )
+      ::oSayLabels[ 4 ] := TSay():ReDefine( 703,, ::oFld:aDialogs[ 1 ],,,, .F.,, .F., .F., )
+      ::oSayLabels[ 5 ] := TSay():ReDefine( 704,, ::oFld:aDialogs[ 1 ],,,, .F.,, .F., .F., )
+      ::oSayLabels[ 6 ] := TSay():ReDefine( 705,, ::oFld:aDialogs[ 1 ],,,, .F.,, .F., .F., )
+      ::oSayLabels[ 7 ] := TSay():ReDefine( 706,, ::oFld:aDialogs[ 1 ],,,, .F.,, .F., .F., )
+      ::oSayLabels[ 8 ] := TSay():ReDefine( 707,, ::oFld:aDialogs[ 1 ],,,, .F.,, .F., .F., )
+      ::oSayLabels[ 9 ] := TSay():ReDefine( 708,, ::oFld:aDialogs[ 1 ],,,, .F.,, .F., .F., )
+      ::oSayLabels[ 10] := TSay():ReDefine( 709,, ::oFld:aDialogs[ 1 ],,,, .F.,, .F., .F., )
+      ::oSayLabels[ 11] := TSay():ReDefine( 710,, ::oFld:aDialogs[ 1 ],,,, .F.,, .F., .F., )
+      ::oSayLabels[ 12] := TSay():ReDefine( 711,, ::oFld:aDialogs[ 1 ],,,, .F.,, .F., .F., )
+      ::oSayLabels[ 13] := TSay():ReDefine( 712,, ::oFld:aDialogs[ 1 ],,,, .F.,, .F., .F., )
+      ::oSayLabels[ 14] := TSay():ReDefine( 713,, ::oFld:aDialogs[ 1 ],,,, .F.,, .F., .F., )
+      ::oSayLabels[ 15] := TSay():ReDefine( 714,, ::oFld:aDialogs[ 1 ],,,, .F.,, .F., .F., )
+      ::oSayLabels[ 16] := TGroup():ReDefine( 715,, ::oFld:aDialogs[ 1 ],,,, .T. )
+
+
+
+
+
+
+
+
+      ::oDescuento1 := TGetHlp():ReDefine( 400, { | u | If( PCount()==0, ::oDbfVir:nDto1, ::oDbfVir:nDto1:= u ) }, ::oFld:aDialogs[1],, "@E 999.99", {||    ( ::oDbfVir:nDto1 >= 0 .AND. ::oDbfVir:nDto1 <= 100 )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,,,,, nil,,, )
+
+
+
+
+
+
+
+
+      ::oDescuento2 := TGetHlp():ReDefine( 410, { | u | If( PCount()==0, ::oDbfVir:nDto2, ::oDbfVir:nDto2:= u ) }, ::oFld:aDialogs[1],, "@E 999.99", {||    ( ::oDbfVir:nDto2 >= 0 .AND. ::oDbfVir:nDto2 <= 100 )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,,,,, nil,,, )
+
+
+
+
+
+
+
+
+      ::oDescuento3 := TGetHlp():ReDefine( 420, { | u | If( PCount()==0, ::oDbfVir:nDto3, ::oDbfVir:nDto3:= u ) }, ::oFld:aDialogs[1],, "@E 999.99", {||    ( ::oDbfVir:nDto3 >= 0 .AND. ::oDbfVir:nDto3 <= 100 )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,,,,, nil,,, )
+
+
+
+
+
+
+
+
+      ::oDescuento4 := TGetHlp():ReDefine( 430, { | u | If( PCount()==0, ::oDbfVir:nDto4, ::oDbfVir:nDto4:= u ) }, ::oFld:aDialogs[1],, "@E 999.99", {||    ( ::oDbfVir:nDto4 >= 0 .AND. ::oDbfVir:nDto4 <= 100 )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,,,,, nil,,, )
+
+
+
+
+
+
+
+
+      ::oDescuento5 := TGetHlp():ReDefine( 440, { | u | If( PCount()==0, ::oDbfVir:nDto5, ::oDbfVir:nDto5:= u ) }, ::oFld:aDialogs[1],, "@E 999.99", {||    ( ::oDbfVir:nDto5 >= 0 .AND. ::oDbfVir:nDto5 <= 100 )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,,,,, nil,,, )
+
+
+
+
+
+
+
+
+      ::oDescuento6 := TGetHlp():ReDefine( 450, { | u | If( PCount()==0, ::oDbfVir:nDto6, ::oDbfVir:nDto6:= u ) }, ::oFld:aDialogs[1],, "@E 999.99", {||    ( ::oDbfVir:nDto6 >= 0 .AND. ::oDbfVir:nDto6 <= 100 )},,,,,, .F., {||     ( ::nMode <> 3 )},, .F., .T.,,,,,, nil,,, )
+
+
+
+
+
+
+
+      ::oCodEnvase := TGetHlp():ReDefine( 460, { | u | If( PCount()==0, ::oDbfVir:CCODENV, ::oDbfVir:CCODENV:= u ) }, ::oFld:aDialogs[1],,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil, "LUPA",, 461 )
+
+         ::oCodEnvase:bValid := {|| ::oParent:oEnvases:Existe( ::oCodEnvase, ::oCodEnvase:oHelpText ) }
+         ::oCodEnvase:bHelp  := {|| ::oParent:oEnvases:Buscar( ::oCodEnvase ) }
+
+
+
+
+
+
+
+
+
+      TGetHlp():ReDefine( 160, { | u | If( PCount()==0, ::oDbfVir:dFecIni, ::oDbfVir:dFecIni:= u ) }, ::oFld:aDialogs[2],,,,,,,,, .F., {||     ( ::nMode <> 3 )},, .F., .T.,,,,,, nil,,, )
+
+
+
+
+
+      TGetHlp():ReDefine( 170, { | u | If( PCount()==0, ::oDbfVir:dFecFin, ::oDbfVir:dFecFin:= u ) }, ::oFld:aDialogs[2],,,,,,,,, .F., {||     ( ::nMode <> 3 )},, .F., .T.,,,,,, nil,,, )
+
+
+
+
+      TCheckBox():ReDefine( 180, { | u | If( PCount()==0, ::oDbfVir:lAplPre, ::oDbfVir:lAplPre:= u ) }, ::oFld:aDialogs[2],,,,,,, .F., {||     ( ::nMode <> 3 )}, .F. )
+
+
+
+
+      TCheckBox():ReDefine( 190, { | u | If( PCount()==0, ::oDbfVir:lAplPed, ::oDbfVir:lAplPed:= u ) }, ::oFld:aDialogs[2],,,,,,, .F., {||     ( ::nMode <> 3 )}, .F. )
+
+
+
+
+      TCheckBox():ReDefine( 200, { | u | If( PCount()==0, ::oDbfVir:lAplAlb, ::oDbfVir:lAplAlb:= u ) }, ::oFld:aDialogs[2],,,,,,, .F., {||     ( ::nMode <> 3 )}, .F. )
+
+
+
+
+      TCheckBox():ReDefine( 210, { | u | If( PCount()==0, ::oDbfVir:lAplFac, ::oDbfVir:lAplFac:= u ) }, ::oFld:aDialogs[2],,,,,,, .F., {||     ( ::nMode <> 3 )}, .F. )
+
+
+
+
+      TCheckBox():ReDefine( 250, { | u | If( PCount()==0, ::oDbfVir:lAplSat, ::oDbfVir:lAplSat:= u ) }, ::oFld:aDialogs[2],,,,,,, .F., {||     ( ::nMode <> 3 )}, .F. )
+
+
+
+
+
+
+
+
+
+      ::oOfertaXbY := TRadMenu():Redefine( { | u | If( PCount()==0, ::oDbfVir:nTipXby, ::oDbfVir:nTipXby:= u ) }, ::oFld:aDialogs[2],, { 220, 221 },,,,, .F., {||     ( ::WhenTipoArticulo() )}, )
+
+      ::oOfertaXbY:bChange       := {|| ::CalculaRentabilidad() }
+
+
+
+
+
+
+
+
+      ::oUnidadesVender := TGetHlp():ReDefine( 230, { | u | If( PCount()==0, ::oDbfVir:nUnvOfe, ::oDbfVir:nUnvOfe:= u ) }, ::oFld:aDialogs[2],, "@E 999", {||    ( isBig( ::oDbfVir:nUnvOfe, ::oDbfVir:nUncOfe ), ::CalculaRentabilidad() )},,,,,, .F., {||     ( ::WhenTipoArticulo() )},, .F., .T.,,,,,, nil,,, )
+
+      ::oUnidadesVender:bChange  := {|| ::CalculaRentabilidad() }
+
+
+
+
+
+
+
+
+      ::oUnidadesCobrar := TGetHlp():ReDefine( 240, { | u | If( PCount()==0, ::oDbfVir:nUncOfe, ::oDbfVir:nUncOfe:= u ) }, ::oFld:aDialogs[2],, "@E 999", {||    ( isBig( ::oDbfVir:nUnvOfe, ::oDbfVir:nUncOfe ), ::CalculaRentabilidad() )},,,,,, .F., {||     ( ::WhenTipoArticulo() )},, .F., .T.,,,,,, nil,,, )
+
+      ::oUnidadesCobrar:bChange  := {|| ::CalculaRentabilidad() }
+
+
+
+
+
+
+
+
+
+
+      ::oRentabilidadSobre := TComboBox():ReDefine( 400, { | u | If( PCount()==0, ::cRentabilidadSobre, ::cRentabilidadSobre:= u ) }, ::aRentabilidadSobre, ::oDlg,,,,,,, .F., {||     ( ::nMode <> 3 )},,,,,, "::oRentabilidadSobre",,,,,,, )
+
+      ::oRentabilidadSobre:bChange        := {|| ::CalculaRentabilidad() }
+
+
+      ::oBrwRentabilidad                  := IXBrowse():New( ::oDlg )
+      ::oBrwRentabilidad:bClrSel          := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      ::oBrwRentabilidad:bClrSelFocus     := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+      ::oBrwRentabilidad:lVScroll         := .T.
+      ::oBrwRentabilidad:lHScroll         := .F.
+      ::oBrwRentabilidad:nMarqueeStyle    := 5
+      ::oBrwRentabilidad:lFooter          := .F.
+      ::oBrwRentabilidad:lRecordSelector  := .T.
+
+      ::oBrwRentabilidad:SetArray( ::aRentabilidad, , , .F. )
+
+      with object ( ::oBrwRentabilidad:AddCol() )
+         :cHeader                         := ""
+         :bStrData                        := {|| "" }
+         :bEditValue                      := {|| ::AlertaRentabilidad() }
+         :nWidth                          := 18
+         :SetCheck( { "Alert", "Nil16" } )
+      end
+
+      with object ( ::oBrwRentabilidad:AddCol() )
+         :cHeader                         := "Naturaleza"
+         :bEditValue                      := {|| ::NaturalezaRentabilidad() }
+         :nWidth                          := 96
+      end
+
+      with object ( ::oBrwRentabilidad:AddCol() )
+         :cHeader                         := "Tipo"
+         :bEditValue                      := {|| ::TipoRentabilidad() }
+         :nWidth                          := 48
+      end
+
+      with object ( ::oBrwRentabilidad:AddCol() )
+         :cHeader                         := "Importe " + cDivEmp()
+         :bEditValue                      := {|| ::ImporteRentabilidad() }
+         :nDataStrAlign                   := 1
+         :nHeadStrAlign                   := 1
+         :nWidth                          := 68
+      end
+
+      ::oBrwRentabilidad:CreateFromResource( 450 )
+
+
+
+
+
+
+
+
+
+      ::oBtnExpandir := TButton():ReDefine( 600, {||( ::Expandir( .T. ) )}, ::oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 1, {||( ::SaveResource() )}, ::oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 2, {||( ::oDlg:end() )}, ::oDlg,,, .F.,,,, .T. )
+
+   if nMode <> 3
+      ::oDlg:AddFastKey( 116, {|| ::SaveResource() } )
+   end
+
+   ::oDlg:bStart  := {|| ::ChangeNaturaleza(), ::Expandir(), ::CalculaRentabilidad() }
+
+   ::oDlg:Activate( , , , .T.,,, {|| EdtDetMenu( ::oCodigoArticulo, ::oDlg ) } )
+
+RETURN ( ::oDlg:nResult == 1 )
+
+
+
+static FUNCTION TAtipicas_SaveResource( ) ; local Self AS CLASS TAtipicas := QSelf() AS CLASS TAtipicas
+
+   if empty( ::oDbfVir:cCodArt ) .AND. empty( ::oDbfVir:cCodFam )
+      MsgStop( "La tarifa debe contener un código de artículo o de familia." )
+      RETURN( Self )
+   end
+
+   ::oDbfVir:nTipAtp := ::oNaturaleza:nAt
+
+   ::oDbfVir:nTarifa := ::oTarifaFamilia:getTarifa()
+
+   ::oDlg:end( 1 )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TAtipicas_SaveDetails( ) ; local Self AS CLASS TAtipicas := QSelf() AS CLASS TAtipicas
+
+   ::oDbfVir:cCodGrp    := ::oParent:oDbf:cCodGrp
+
+RETURN ( Self )
+
+
+
+static FUNCTION TAtipicas_DeleteDetails( ) ; local Self AS CLASS TAtipicas := QSelf() AS CLASS TAtipicas
+
+RETURN ( Self )
+
+
+
+static FUNCTION TAtipicas_ChangeNaturaleza( ) ; local Self AS CLASS TAtipicas := QSelf() AS CLASS TAtipicas
+
+   if ( ::nMode == 1 )
+
+      ::oCodigoArticulo:cText( space( 18 ) )
+      ::oNombreArticulo:cText( "" )
+
+      ::oCodigoFamilia:cText( space( 5 ) )
+      ::oNombreFamilia:cText( "" )
+
+      ::oCostoParticular:cText( 0 )
+      ::oPrecioCompra:cText( 0 )
+
+      ::oPrecioArticulo1:cText( 0 )
+      ::oPrecioArticulo2:cText( 0 )
+      ::oPrecioArticulo3:cText( 0 )
+      ::oPrecioArticulo4:cText( 0 )
+      ::oPrecioArticulo5:cText( 0 )
+      ::oPrecioArticulo6:cText( 0 )
+
+      ::oIvaArticulo1:cText( 0 )
+      ::oIvaArticulo2:cText( 0 )
+      ::oIvaArticulo3:cText( 0 )
+      ::oIvaArticulo4:cText( 0 )
+      ::oIvaArticulo5:cText( 0 )
+      ::oIvaArticulo6:cText( 0 )
+
+      ::oTextoPrimeraPropiedad:SetText( "" )
+      ::oTextoSegundaPropiedad:SetText( "" )
+
+      ::oValorPrimeraPropiedad:cText( "" )
+      ::oValorSegundaPropiedad:cText( "" )
+
+      ::oCodigoPrimeraPropiedad:cText( space( 20 ) )
+      ::oCodigoSegundaPropiedad:cText( space( 20 ) )
+
+      ::nTarifaFamilia  := 0
+
+   end
+
+   if ( ::oNaturaleza:nAt <= 1 )
+
+      ::oCodigoArticulo:Show()
+      ::oNombreArticulo:Show()
+
+      ::oCodigoFamilia:Hide()
+      ::oNombreFamilia:Hide()
+
+      ::oTarifaFamilia:oControl:Hide()
+      ::oSayTarifaFamila:Hide()
+
+      ::oChangeCostoParticular:Show()
+
+      ::oCostoParticular:Show()
+      ::oPrecioCompra:Show()
+      ::oCostoParticular:Show()
+
+      ::oPrecioArticulo1:Show()
+      ::oPrecioArticulo2:Show()
+      ::oPrecioArticulo3:Show()
+      ::oPrecioArticulo4:Show()
+      ::oPrecioArticulo5:Show()
+      ::oPrecioArticulo6:Show()
+
+      ::oIvaArticulo1:Show()
+      ::oIvaArticulo2:Show()
+      ::oIvaArticulo3:Show()
+      ::oIvaArticulo4:Show()
+      ::oIvaArticulo5:Show()
+      ::oIvaArticulo6:Show()
+
+      ::oDescuento1:Show()
+      ::oDescuento2:Show()
+      ::oDescuento3:Show()
+      ::oDescuento4:Show()
+      ::oDescuento5:Show()
+      ::oDescuento6:Show()
+
+      aEval( ::oSayLabels, {|o| o:Show() } )
+
+   else
+
+      ::oCodigoArticulo:Hide()
+      ::oNombreArticulo:Hide()
+
+      ::oCodigoFamilia:Show()
+      ::oNombreFamilia:Show()
+      ::oTarifaFamilia:oControl:Show()
+      ::oSayTarifaFamila:Show()
+
+      ::oChangeCostoParticular:Hide()
+
+      ::oCostoParticular:Hide()
+      ::oPrecioCompra:Hide()
+
+      ::oPrecioArticulo1:Hide()
+      ::oPrecioArticulo2:Hide()
+      ::oPrecioArticulo3:Hide()
+      ::oPrecioArticulo4:Hide()
+      ::oPrecioArticulo5:Hide()
+      ::oPrecioArticulo6:Hide()
+
+      ::oIvaArticulo1:Hide()
+      ::oIvaArticulo2:Hide()
+      ::oIvaArticulo3:Hide()
+      ::oIvaArticulo4:Hide()
+      ::oIvaArticulo5:Hide()
+      ::oIvaArticulo6:Hide()
+
+      ::oDescuento1:Hide()
+      ::oDescuento2:Hide()
+      ::oDescuento3:Hide()
+      ::oDescuento4:Hide()
+      ::oDescuento5:Hide()
+      ::oDescuento6:Hide()
+
+      aEval( ::oSayLabels, {|o| o:Hide() } )
+
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TAtipicas_Expandir( lSet ) ; local Self AS CLASS TAtipicas := QSelf() AS CLASS TAtipicas
+
+   local oRect       := ::oDlg:GetRect()
+
+   If( lSet == nil, lSet := .F., ) ;
+
+   if lSet
+      ::lExpandida   := !::lExpandida
+   end
+
+   if ::lExpandida
+      SetWindowText( ::oBtnExpandir:hWnd, "Retabilidad <" )
+      ::oDlg:Move( oRect:nTop, oRect:nLeft, 800, 550, .T. )
+   else
+      SetWindowText( ::oBtnExpandir:hWnd, "Retabilidad >" )
+      ::oDlg:Move( oRect:nTop, oRect:nLeft, 463, 550, .T. )
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TAtipicas_ButtonAppend( Id, oDialog ) ; local Self AS CLASS TAtipicas := QSelf() AS CLASS TAtipicas
+
+
+
+
+
+   TButton():ReDefine( ( Id ), {||( ::Append( ::oBrwAtipica ) )}, ( oDialog ),,, .F., {||     ( ( RolesModel():getRolCambiarPrecios( Auth():rolUuid() ) ) )},,, .F. )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TAtipicas_ButtonEdit( Id, oDialog ) ; local Self AS CLASS TAtipicas := QSelf() AS CLASS TAtipicas
+
+
+
+
+
+   TButton():ReDefine( ( Id ), {||( ::Edit( ::oBrwAtipica ) )}, ( oDialog ),,, .F., {||     ( ( RolesModel():getRolCambiarPrecios( Auth():rolUuid() ) ) )},,, .F. )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TAtipicas_ButtonDel( Id, oDialog ) ; local Self AS CLASS TAtipicas := QSelf() AS CLASS TAtipicas
+
+
+
+
+
+   TButton():ReDefine( ( Id ), {||( ::Del( ::oBrwAtipica ) )}, ( oDialog ),,, .F., {||     ( ( RolesModel():getRolCambiarPrecios( Auth():rolUuid() ) ) )},,, .F. )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TAtipicas_Browse( Id, oDialog ) ; local Self AS CLASS TAtipicas := QSelf() AS CLASS TAtipicas
+
+   ::oBrwAtipica                 := IXBrowse():New( oDialog )
+
+   ::oBrwAtipica:bClrSel         := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+   ::oBrwAtipica:bClrSelFocus    := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+   ::oBrwAtipica:nMarqueeStyle   := 6
+   ::oBrwAtipica:cName           := "Clientes.Atipicas"
+
+   ::oDbfVir:SetBrowse( ::oBrwAtipica )
+
+   with object ( ::oBrwAtipica:AddCol() )
+      :cHeader          := "Tipo"
+      :bEditValue       := {|| if( ::oDbfVir:nTipAtp <= 1, "Artículo", "Familia" ) }
+      :nWidth           := 60
+   end
+
+   with object ( ::oBrwAtipica:AddCol() )
+      :cHeader          := "Of. Artículo en oferta"
+      :bEditValue       := {|| ::oDbfVir:nTipAtp <= 1 }
+      :nWidth           := 20
+      :SetCheck( { "Sel16", "Nil16" } )
+   end
+
+   with object ( ::oBrwAtipica:AddCol() )
+      :cHeader          := "Código"
+      :bEditValue       := {|| if( ::oDbfVir:nTipAtp <= 1, ::oDbfVir:cCodArt, ::oDbfVir:cCodFam ) }
+      :nWidth           := 80
+   end
+
+   with object ( ::oBrwAtipica:AddCol() )
+      :cHeader          := "Nombre"
+      :bEditValue       := {|| if( ::oDbfVir:nTipAtp <= 1, ::NombreArticulo(), ::NombreFamilia() ) }
+      :nWidth           := 160
+   end
+
+   with object ( ::oBrwAtipica:AddCol() )
+      :cHeader          := "Prop.1"
+      :bEditValue       := {|| ::oDbfVir:cValPr1 }
+      :nWidth           := 40
+      :lHide            := .T.
+   end
+
+   with object ( ::oBrwAtipica:AddCol() )
+      :cHeader          := "Prop.2"
+      :bEditValue       := {|| ::oDbfVir:cValPr2 }
+      :nWidth           := 40
+      :lHide            := .T.
+   end
+
+   with object ( ::oBrwAtipica:AddCol() )
+      :cHeader          := uFieldEmpresa( "cTxtTar1", "Precio 1" )
+      :bEditValue       := {|| ::oDbfVir:nPrcArt }
+      :cEditPicture     := ::cRoundPrice
+      :nWidth           := 80
+      :nDataStrAlign    := 1
+      :nHeadStrAlign    := 1
+   end
+
+   with object ( ::oBrwAtipica:AddCol() )
+      :cHeader          := uFieldEmpresa( "cTxtTar2", "Precio 2" )
+      :bEditValue       := {|| ::oDbfVir:nPrcArt2 }
+      :cEditPicture     := ::cRoundPrice
+      :nWidth           := 80
+      :nDataStrAlign    := 1
+      :nHeadStrAlign    := 1
+   end
+
+   with object ( ::oBrwAtipica:AddCol() )
+      :cHeader          := uFieldEmpresa( "cTxtTar3", "Precio 3" )
+      :bEditValue       := {|| ::oDbfVir:nPrcArt3 }
+      :cEditPicture     := ::cRoundPrice
+      :nWidth           := 80
+      :nDataStrAlign    := 1
+      :nHeadStrAlign    := 1
+   end
+
+   with object ( ::oBrwAtipica:AddCol() )
+      :cHeader          := uFieldEmpresa( "cTxtTar4", "Precio 4" )
+      :bEditValue       := {|| ::oDbfVir:nPrcArt4 }
+      :cEditPicture     := ::cRoundPrice
+      :nWidth           := 80
+      :nDataStrAlign    := 1
+      :nHeadStrAlign    := 1
+   end
+
+   with object ( ::oBrwAtipica:AddCol() )
+      :cHeader          := uFieldEmpresa( "cTxtTar5", "Precio 5" )
+      :bEditValue       := {|| ::oDbfVir:nPrcArt5 }
+      :cEditPicture     := ::cRoundPrice
+      :nWidth           := 80
+      :nDataStrAlign    := 1
+      :nHeadStrAlign    := 1
+   end
+
+   with object ( ::oBrwAtipica:AddCol() )
+      :cHeader          := uFieldEmpresa( "cTxtTar6", "Precio 6" )
+      :bEditValue       := {|| ::oDbfVir:nPrcArt6 }
+      :cEditPicture     := ::cRoundPrice
+      :nWidth           := 80
+      :nDataStrAlign    := 1
+      :nHeadStrAlign    := 1
+   end
+
+   with object ( ::oBrwAtipica:AddCol() )
+      :cHeader          := "% Descuento"
+      :bEditValue       := {|| ::oDbfVir:nDtoArt }
+      :cEditPicture     := "@E 999.99"
+      :nWidth           := 80
+      :nDataStrAlign    := 1
+      :nHeadStrAlign    := 1
+   end
+
+   with object ( ::oBrwAtipica:AddCol() )
+      :cHeader          := "Descuento lineal"
+      :bEditValue       := {|| ::oDbfVir:nDtoDiv }
+      :cEditPicture     := ::cRoundPrice
+      :nWidth           := 80
+      :nDataStrAlign    := 1
+      :nHeadStrAlign    := 1
+   end
+
+   with object ( ::oBrwAtipica:AddCol() )
+      :cHeader          := "% Agente"
+      :bEditValue       := {|| ::oDbfVir:nComAge }
+      :cEditPicture     := "@E 999.99"
+      :nWidth           := 80
+      :nDataStrAlign    := 1
+      :nHeadStrAlign    := 1
+   end
+
+   with object ( ::oBrwAtipica:AddCol() )
+      :cHeader          := "Inicio"
+      :bEditValue       := {|| ::oDbfVir:dFecIni }
+      :nWidth           := 80
+   end
+
+   with object ( ::oBrwAtipica:AddCol() )
+      :cHeader          := "Fin"
+      :bEditValue       := {|| ::oDbfVir:dFecFin }
+      :nWidth           := 80
+   end
+
+   if ( RolesModel():getRolCambiarPrecios( Auth():rolUuid() ) )
+      ::oBrwAtipica:bLDblClick   := {|| ::Edit( ::oBrwAtipica ) }
+   end
+
+   ::oBrwAtipica:bRClicked       := {| nRow, nCol, nFlags | ::oBrwAtipica:RButtonDown( nRow, nCol, nFlags ) }
+
+   ::oBrwAtipica:CreateFromResource( Id )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TAtipicas_LoadAtipica( ) ; local Self AS CLASS TAtipicas := QSelf() AS CLASS TAtipicas
+
+   local nPrecio
+
+   if Empty( ::oDbfVir:cCodArt )
+      ::oNombreArticulo:cText( "" )
+      Return ( .T. )
+   end
+
+   if ( D():Get( "Articulo", ::View() ) )->( dbSeek( ::oDbfVir:cCodArt ) )
+
+      ::oNombreArticulo:cText( ( D():Get( "Articulo", ::View() ) )->Nombre )
+
+      ::oDbfVir:cCodPr1    := ( D():Get( "Articulo", ::View() ) )->cCodPrp1
+      ::oDbfVir:cCodPr2    := ( D():Get( "Articulo", ::View() ) )->cCodPrp2
+
+      ::SetPrimeraPropiedad( ::oDbfVir:cCodPr1, ( D():Get( "Articulo", ::View() ) )->cValPrp1 )
+
+      ::SetSegundaPropiedad( ::oDbfVir:cCodPr2, ( D():Get( "Articulo", ::View() ) )->cValPrp2 )
+
+
+
+
+
+      ::oPrecioCompra:cText( nCosto( nil, D():Get( "Articulo", ::View() ), D():Get( "Artkit", ::View() ) ) )
+
+
+
+
+
+      ::oPrecioArticulo1:cText( ::PrecioBase( 1 ) )
+      ::oPrecioArticulo2:cText( ::PrecioBase( 2 ) )
+      ::oPrecioArticulo3:cText( ::PrecioBase( 3 ) )
+      ::oPrecioArticulo4:cText( ::PrecioBase( 4 ) )
+      ::oPrecioArticulo5:cText( ::PrecioBase( 5 ) )
+      ::oPrecioArticulo6:cText( ::PrecioBase( 6 ) )
+
+
+
+
+
+      ::oIvaArticulo1:cText( ::PrecioIva( 1 ) )
+      ::oIvaArticulo2:cText( ::PrecioIva( 2 ) )
+      ::oIvaArticulo3:cText( ::PrecioIva( 3 ) )
+      ::oIvaArticulo4:cText( ::PrecioIva( 4 ) )
+      ::oIvaArticulo5:cText( ::PrecioIva( 5 ) )
+      ::oIvaArticulo6:cText( ::PrecioIva( 6 ) )
+
+   else
+
+      Return ( .F. )
+
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TAtipicas_SetPrimeraPropiedad( cCodigoPropiedad, cValorPropiedad ) ; local Self AS CLASS TAtipicas := QSelf() AS CLASS TAtipicas
+
+   if !empty( cCodigoPropiedad )
+      ::oCodigoPrimeraPropiedad:cText( cCodigoPropiedad )
+      ::oTextoPrimeraPropiedad:SetText( cValorPropiedad )
+      ::ShowPrimeraPropiedad()
+   else
+      ::HidePrimeraPropiedad()
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TAtipicas_SetSegundaPropiedad( cCodigoPropiedad, cValorPropiedad ) ; local Self AS CLASS TAtipicas := QSelf() AS CLASS TAtipicas
+
+   if !empty( cCodigoPropiedad )
+      ::oCodigoSegundaPropiedad:cText( cCodigoPropiedad )
+      ::oTextoSegundaPropiedad:SetText( cValorPropiedad )
+      ::ShowSegundaPropiedad()
+   else
+      ::HideSegundaPropiedad()
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TAtipicas_CalculaRentabilidad( ) ; local Self AS CLASS TAtipicas := QSelf() AS CLASS TAtipicas
+
+   local nCosto      := 0
+   local nDtoAtpico  := 0
+   local nNetoBase   := 0
+   local nResultado  := 0
+
+   CursorWait()
+
+   ::aRentabilidad   := {}
+
+
+
+   if ::oDbfVir:lPrcCom
+      nCosto         := ::nCostoParticular
+   else
+      nCosto         := ::oDbfVir:nPrcCom
+   end
+
+   aAdd( ::aRentabilidad, { "Naturaleza" => "Costo",     "Tipo" => "", "Importe" => nCosto } )
+
+
+
+   switch ::oRentabilidadSobre:nAt
+      case 1
+         nNetoBase   := ::oDbf:nPrcArt
+      case 2
+         nNetoBase   := ::oDbf:nPrcArt2
+      case 3
+         nNetoBase   := ::oDbf:nPrcArt3
+      case 4
+         nNetoBase   := ::oDbf:nPrcArt4
+      case 5
+         nNetoBase   := ::oDbf:nPrcArt5
+      case 6
+         nNetoBase   := ::oDbf:nPrcArt6
+   end
+
+   aAdd( ::aRentabilidad, { "Naturaleza" => "Neto base", "Tipo" => "", "Importe" => nNetoBase } )
+
+
+
+   if ( ::oDbfVir:nUncOfe > 1 .AND. ::oDbfVir:nUnvOfe >= 1 )
+
+      nResultado     := nNetoBase - ( Div( ( nNetoBase * ::oDbf:nUncOfe ), ::oDbfVir:nUnvOfe ) )
+
+      aAdd( ::aRentabilidad, { "Naturaleza" => Space( 3 ) + "Dto. X*Y", "Tipo" => alltrim( str( ::oDbfVir:nUnvOfe ) ) + " * " + alltrim( str( ::oDbfVir:nUncOfe ) ), "Importe" => - ( nResultado ) } )
+
+      nNetoBase      -= nResultado
+
+   end
+
+
+
+   if ::oDbfVir:nDtoArt <> 0
+
+      nResultado     := ( ( nNetoBase * ::oDbfVir:nDtoArt ) / 100 )
+
+      aAdd( ::aRentabilidad, { "Naturaleza" => space(3) + "Dto. art.", "Tipo" => alltrim( str( ::oDbfVir:nDtoArt  ) ) + " %", "Importe" => - ( nResultado ) } )
+
+      nNetoBase      -= nResultado
+
+   end
+
+
+
+   if ::oDbfVir:nDtoDiv <> 0
+
+      aAdd( ::aRentabilidad, { "Naturaleza" => space(3) + "Dto. lineal", "Tipo" => Trans( ::oDbfVir:nDtoDiv, cPouDiv( cDivEmp() ) ), "Importe" => - ( ::oDbfVir:nDtoDiv ) } )
+
+      nNetoBase      -= ::oDbfVir:nDtoDiv
+
+   end
+
+
+
+   if ::oDbfVir:nDprArt <> 0
+
+      nResultado     := ( ( nNetoBase * ::oDbfVir:nDprArt ) / 100 )
+
+      aAdd( ::aRentabilidad, { "Naturaleza" => space(3) + "Dto. promo.", "Tipo" => alltrim( str( ::oDbfVir:nDprArt ) ) + " %", "Importe" => - ( nResultado ) } )
+
+      nNetoBase      -= nResultado
+
+   end
+
+
+
+   if ::oDbfVir:nComAge <> 0
+
+      nResultado     := ( ( nNetoBase * ::oDbfVir:nComAge ) / 100 )
+
+      if ::oDbfVir:lComAge
+         aAdd( ::aRentabilidad, { "Naturaleza" => space(3) + "Com. agente", "Tipo" => AllTrim( Str( ::oDbfVir:nComAge ) ) + " %", "Importe" => - ( nResultado ) } )
+         nNetoBase   -= nResultado
+      else
+         aAdd( ::aRentabilidad, { "Naturaleza" => space(3) + "Com. agente", "Tipo" => AllTrim( Str( ::oDbfVir:nComAge ) ) + " %", "Importe" => nResultado } )
+      end
+
+   end
+
+   CursorWE()
+
+   ::oBrwRentabilidad:SetArray( ::aRentabilidad )
+   ::oBrwRentabilidad:Refresh()
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TAtipicas_CalculaBase( oPrecioIva, oPrecioBase ) ; local Self AS CLASS TAtipicas := QSelf() AS CLASS TAtipicas
+
+   local nBase          := 0
+   local nPorcentajeIVA := 0
+   local cTipoIVA       := retfld( ::oDbfVir:cCodArt, D():Get( "Articulo", ::View() ), "TipoIva", "Codigo" )
+
+   if !empty( cTipoIVA )
+      nPorcentajeIVA    := nIva( D():Get( "TIva", ::View() ), cTipoIva )
+   end
+
+
+
+
+
+   nBase                := Div( oPrecioIva:varGet(), ( 1 + nPorcentajeIVA / 100 ) )
+
+
+
+
+
+   oPrecioBase:cText( nBase )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TAtipicas_CalculaIva( oPrecioBase, oPrecioIva ) ; local Self AS CLASS TAtipicas := QSelf() AS CLASS TAtipicas
+
+   local nPrecio        := oPrecioBase:varGet()
+   local nPorcentajeIVA := 0
+   local cTipoIVA       := retfld( ::oDbfVir:cCodArt, D():Get( "Articulo", ::View() ), "TipoIva", "Codigo" )
+
+   if !empty( cTipoIVA )
+      nPorcentajeIVA    := nIva( D():Get( "TIva", ::View() ), cTipoIva )
+   end
+
+
+
+
+
+   nPrecio              += ( nPrecio * nPorcentajeIVA / 100 )
+
+
+
+
+
+   oPrecioIva:cText( nPrecio )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TAtipicas_PrecioBase( nTarifa ) ; local Self AS CLASS TAtipicas := QSelf() AS CLASS TAtipicas
+
+   local nPrecio     := 0
+
+   If( nTarifa == nil, nTarifa := 1, ) ;
+
+   nPrecio           := nPrePro( ::oDbfVir:cCodArt, ::oDbfVir:cCodPr1, ::oDbfVir:cValPr1, ::oDbfVir:cCodPr2, ::oDbfVir:cValPr2, nTarifa, .F., D():Get( "Artdiv", ::View() ) )
+   if nPrecio == 0
+      nPrecio        := ( D():Get( "Articulo", ::View() ) )->( FieldGet( FieldPos( "pVenta" + alltrim(str( nTarifa ) ) ) ) )
+   end
+
+RETURN ( nPrecio )
+
+
+
+static FUNCTION TAtipicas_PrecioIva( nTarifa ) ; local Self AS CLASS TAtipicas := QSelf() AS CLASS TAtipicas
+
+   local nPrecio     := 0
+
+   If( nTarifa == nil, nTarifa := 1, ) ;
+
+   nPrecio           := nPrePro( ::oDbfVir:cCodArt, ::oDbfVir:cCodPr1, ::oDbfVir:cValPr1, ::oDbfVir:cCodPr2, ::oDbfVir:cValPr2, nTarifa, .T., D():Get( "Artdiv", ::View() ) )
+   if nPrecio == 0
+      nPrecio        := ( D():Get( "Articulo", ::View() ) )->( FieldGet( FieldPos( "pVtaIva" + alltrim(str( nTarifa ) ) ) ) )
+   end
+
+RETURN ( nPrecio )
+
+
+
+
+
+
+
+Function getEspecialName( cCodigoCliente, cCodigoArticulo )
+
+   if Empty( cCodigoCliente ) .OR. Empty( cCodigoArticulo )
+      return ( "" )
+   end
+
+return ( AtipicasModel():getEspecialName( cCodigoCliente, cCodigoArticulo ) )
+
+
+
+
+
+
+
+_HB_CLASS ArticulosAtipicas ; function ArticulosAtipicas ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "ArticulosAtipicas", iif( .F., { }, { @HBObject() } ), @ArticulosAtipicas() ) ) ;
+
+   _HB_MEMBER { oDialog } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDialog"}, .F. )
+   _HB_MEMBER { oBrowse } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrowse"}, .F. )
+   _HB_MEMBER { oBmpGeneral } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBmpGeneral"}, .F. )
+
+   _HB_MEMBER { cCodigoArticulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoArticulo"}, .F. )
+
+   _HB_MEMBER { cSayArticulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSayArticulo"}, .F. )
+
+   _HB_MEMBER { aAtipicas } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aAtipicas"}, .F. )
+
+   _HB_MEMBER run( cCodigoArticulo); oClass:AddMethod( "run", @ArticulosAtipicas_run(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER initSay(); oClass:AddMethod( "initSay", @ArticulosAtipicas_initSay(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER initArrayAtipicas(); oClass:AddMethod( "initArrayAtipicas", @ArticulosAtipicas_initArrayAtipicas(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Resource(); oClass:AddMethod( "Resource", @ArticulosAtipicas_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS ArticulosAtipicas ;
+
+
+
+static FUNCTION ArticulosAtipicas_run( cCodigoArticulo ) ; local Self AS CLASS ArticulosAtipicas := QSelf() AS CLASS ArticulosAtipicas
+
+   ::cCodigoArticulo       := cCodigoArticulo
+
+   if Empty( ::cCodigoArticulo )
+      MsgStop( "Artículo no seleccionado" )
+      Return .F.
+   end
+
+   ::initSay()
+
+   ::initArrayAtipicas()
+
+   if Len( ::aAtipicas ) == 0
+      MsgStop( "No hay tarifas atipicas para el artículo seleccionado" )
+      Return .T.
+   end
+
+   ::Resource()
+
+Return ( .T. )
+
+
+
+static FUNCTION ArticulosAtipicas_initSay( ) ; local Self AS CLASS ArticulosAtipicas := QSelf() AS CLASS ArticulosAtipicas
+
+   ::cSayArticulo       := "Artículo: " + AllTrim( ::cCodigoArticulo ) + " - " + AllTrim( retArticulo( ::cCodigoArticulo ) )
+
+Return ( .T. )
+
+
+
+static FUNCTION ArticulosAtipicas_initArrayAtipicas( ) ; local Self AS CLASS ArticulosAtipicas := QSelf() AS CLASS ArticulosAtipicas
+
+   ::aAtipicas           := {}
+
+   aEval( AtipicasModel():getAtipicasFromArticulo( ::cCodigoArticulo ), { |a| aAdd( ::aAtipicas, a ) } )
+
+   if len( ::aAtipicas ) > 0
+      asort( ::aAtipicas, , , {|x,y| hget( x, "nombrecliente" ) < hget( y, "nombrecliente" ) } )
+   end
+
+Return ( .T. )
+
+
+
+static FUNCTION ArticulosAtipicas_Resource( ) ; local Self AS CLASS ArticulosAtipicas := QSelf() AS CLASS ArticulosAtipicas
+
+   ::oDialog = TDialog():New(,,,, "Atípicas de clientes", "ARTATIPICAS",, .F.,,,,,, .F.,,,,,, .F.,, "::oDialog", nil, )
+
+
+
+
+
+      ::oBmpGeneral := TBitmap():ReDefine( 500, "gc_symbol_euro_48",, ::oDialog,,, .F., .F.,,, .F.,,, .T. )
+
+
+
+      TSay():ReDefine( 110, {|| ::cSayArticulo}, ::oDialog,,,, .F.,, .F., .F., )
+
+      ::oBrowse                  := IXBrowse():New( ::oDialog )
+
+      ::oBrowse:bClrSel          := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      ::oBrowse:bClrSelFocus     := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      ::oBrowse:SetArray( ::aAtipicas, , , .F. )
+
+      ::oBrowse:nMarqueeStyle    := 6
+      ::oBrowse:lRecordSelector  := .F.
+      ::oBrowse:lHScroll         := .F.
+      ::oBrowse:cName            := "articulo.atipica"
+
+      ::oBrowse:CreateFromResource( 100 )
+
+      with object ( ::oBrowse:AddCol() )
+         :cHeader                := "Cod. cli."
+         :bStrData               := {|| hget( ::aAtipicas[ ::oBrowse:nArrayAt ], "codigocliente" ) }
+         :nWidth                 := 150
+      end
+
+      with object ( ::oBrowse:AddCol() )
+         :cHeader                := "Cliente"
+         :bStrData               := {|| hget( ::aAtipicas[ ::oBrowse:nArrayAt ], "nombrecliente" ) }
+         :nWidth                 := 200
+      end
+
+      with object ( ::oBrowse:AddCol() )
+         :cHeader                := "Costo"
+         :bStrData               := {|| hget( ::aAtipicas[ ::oBrowse:nArrayAt ], "costo" ) }
+         :cEditPicture           := cPorDiv()
+         :nWidth                 := 90
+         :nDataStrAlign          := 1
+         :nHeadStrAlign          := 1
+      end
+
+      with object ( ::oBrowse:AddCol() )
+         :cHeader                := "Precio 1"
+         :bStrData               := {|| hget( ::aAtipicas[ ::oBrowse:nArrayAt ], "precio1" ) }
+         :cEditPicture           := cPorDiv()
+         :nWidth                 := 90
+         :nDataStrAlign          := 1
+         :nHeadStrAlign          := 1
+      end
+
+      with object ( ::oBrowse:AddCol() )
+         :cHeader                := "Precio IVA 1"
+         :bStrData               := {|| hget( ::aAtipicas[ ::oBrowse:nArrayAt ], "prciva1" ) }
+         :cEditPicture           := cPorDiv()
+         :nWidth                 := 90
+         :nDataStrAlign          := 1
+         :nHeadStrAlign          := 1
+      end
+
+      with object ( ::oBrowse:AddCol() )
+         :cHeader                := "Precio 2"
+         :bStrData               := {|| hget( ::aAtipicas[ ::oBrowse:nArrayAt ], "precio2" ) }
+         :cEditPicture           := cPorDiv()
+         :nWidth                 := 90
+         :nDataStrAlign          := 1
+         :nHeadStrAlign          := 1
+         :lHide                  := .T.
+      end
+
+      with object ( ::oBrowse:AddCol() )
+         :cHeader                := "Precio IVA 2"
+         :bStrData               := {|| hget( ::aAtipicas[ ::oBrowse:nArrayAt ], "prciva2" ) }
+         :cEditPicture           := cPorDiv()
+         :nWidth                 := 90
+         :nDataStrAlign          := 1
+         :nHeadStrAlign          := 1
+         :lHide                  := .T.
+      end
+
+      with object ( ::oBrowse:AddCol() )
+         :cHeader                := "Precio 3"
+         :bStrData               := {|| hget( ::aAtipicas[ ::oBrowse:nArrayAt ], "precio3" ) }
+         :cEditPicture           := cPorDiv()
+         :nWidth                 := 90
+         :nDataStrAlign          := 1
+         :nHeadStrAlign          := 1
+         :lHide                  := .T.
+      end
+
+      with object ( ::oBrowse:AddCol() )
+         :cHeader                := "Precio IVA 3"
+         :bStrData               := {|| hget( ::aAtipicas[ ::oBrowse:nArrayAt ], "prciva3" ) }
+         :cEditPicture           := cPorDiv()
+         :nWidth                 := 90
+         :nDataStrAlign          := 1
+         :nHeadStrAlign          := 1
+         :lHide                  := .T.
+      end
+
+      with object ( ::oBrowse:AddCol() )
+         :cHeader                := "Precio 4"
+         :bStrData               := {|| hget( ::aAtipicas[ ::oBrowse:nArrayAt ], "precio4" ) }
+         :cEditPicture           := cPorDiv()
+         :nWidth                 := 90
+         :nDataStrAlign          := 1
+         :nHeadStrAlign          := 1
+         :lHide                  := .T.
+      end
+
+      with object ( ::oBrowse:AddCol() )
+         :cHeader                := "Precio IVA 4"
+         :bStrData               := {|| hget( ::aAtipicas[ ::oBrowse:nArrayAt ], "prciva4" ) }
+         :cEditPicture           := cPorDiv()
+         :nWidth                 := 90
+         :nDataStrAlign          := 1
+         :nHeadStrAlign          := 1
+         :lHide                  := .T.
+      end
+
+      with object ( ::oBrowse:AddCol() )
+         :cHeader                := "Precio 5"
+         :bStrData               := {|| hget( ::aAtipicas[ ::oBrowse:nArrayAt ], "precio5" ) }
+         :cEditPicture           := cPorDiv()
+         :nWidth                 := 90
+         :nDataStrAlign          := 1
+         :nHeadStrAlign          := 1
+         :lHide                  := .T.
+      end
+
+      with object ( ::oBrowse:AddCol() )
+         :cHeader                := "Precio IVA 5"
+         :bStrData               := {|| hget( ::aAtipicas[ ::oBrowse:nArrayAt ], "prciva5" ) }
+         :cEditPicture           := cPorDiv()
+         :nWidth                 := 90
+         :nDataStrAlign          := 1
+         :nHeadStrAlign          := 1
+         :lHide                  := .T.
+      end
+
+      with object ( ::oBrowse:AddCol() )
+         :cHeader                := "Precio 6"
+         :bStrData               := {|| hget( ::aAtipicas[ ::oBrowse:nArrayAt ], "precio6" ) }
+         :cEditPicture           := cPorDiv()
+         :nWidth                 := 90
+         :nDataStrAlign          := 1
+         :nHeadStrAlign          := 1
+         :lHide                  := .T.
+      end
+
+      with object ( ::oBrowse:AddCol() )
+         :cHeader                := "Precio IVA 6"
+         :bStrData               := {|| hget( ::aAtipicas[ ::oBrowse:nArrayAt ], "prciva6" ) }
+         :cEditPicture           := cPorDiv()
+         :nWidth                 := 90
+         :nDataStrAlign          := 1
+         :nHeadStrAlign          := 1
+         :lHide                  := .T.
+      end
+
+      with object ( ::oBrowse:AddCol() )
+         :cHeader                := "% Dto"
+         :bStrData               := {|| hget( ::aAtipicas[ ::oBrowse:nArrayAt ], "ndto" ) }
+         :cEditPicture           := cPorDiv()
+         :nWidth                 := 75
+         :nDataStrAlign          := 1
+         :nHeadStrAlign          := 1
+      end
+
+
+
+
+
+      TButton():ReDefine( 2, {||( ::oDialog:end() )}, ::oDialog,,, .F.,,,, .T. )
+
+         ::oDialog:bStart        := {|| ::oBrowse:Load() }
+
+      ::oDialog:Activate( ::oDialog:bLClicked, ::oDialog:bMoved, ::oDialog:bPainted, .T.,,,, ::oDialog:bRClicked,,, )
+
+   ::oBmpGeneral:End()
+
+Return ( .T. )

@@ -1,0 +1,36 @@
+{
+  "HideExportButton" : false,
+  "RealTimeConexion" : true,
+  "InvertedNameFormat" : false,
+  "Webs" : 
+  {
+    "ibipelmar" : 
+    {
+      "Active" : true,
+      "MySqlServer" : "149.202.127.221",
+      "MySqlPort" : 3306,
+      "MySqlDatabase" : "ibipelma_psibipelmar",
+      "MySqlUser" : "ibipelma_psuibip",
+      "MySqlPassword" : "~%roIP%3mEtF",
+      "MySqlTimeOut" : 60,
+      "CookieKey" : "",
+      "PrefixDatabase" : "ibpel_",
+      "OrderSerie" : "A",
+      "BudgetSerie" : "A",
+      "DateStart" : "2017-01-01",
+      "FtpService" : "Curl",
+      "FtpServer" : "178.33.115.51",
+      "FtpPort" : 21,
+      "FtpUser" : "ibipelma",
+      "FtpPassword" : "1Mt6g3q9Zr",
+      "FtpPassive" : false,
+      "ImagesDirectory" : "",
+      "Store" : "000",
+      "SyncronizeManufacturers" : true,
+      "ProcessWithoutStock" : true,
+      "ProcessWithoutImage" : true,
+      "IdProduct" : "",
+      "IdStock" : "100               "
+    }
+  }
+}

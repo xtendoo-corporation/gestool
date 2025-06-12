@@ -1,0 +1,43 @@
+{
+  "HideExportButton" : false,
+  "RealTimeConexion" : true,
+  "InvertedNameFormat" : false,
+  "Webs" : 
+  {
+    "Delicado" : 
+    {
+      "Active" : true,
+      "MySqlServer" : "82.223.113.46",
+      "MySqlPort" : 3306,
+      "MySqlDatabase" : "qxa026",
+      "MySqlUser" : "qxa027",
+      "MySqlPassword" : "ZUO8O9y5",
+      "MySqlTimeOut" : 60,
+      "CookieKey" : "",
+      "PrefixDatabase" : "del_",
+      "OrderSerie" : "A",
+      "BudgetSerie" : "A",
+      "DateStart" : "2016-01-01",
+      "FtpService" : "Curl",
+      "FtpServer" : "ftp.delicado48.net",
+      "FtpPort" : 21,
+      "FtpUser" : "delicado48.net",
+      "FtpPassword" : "Fm2CHyvk41",
+      "FtpPassive" : false,
+      "ImagesDirectory" : "html/img/",
+      "Store" : "000",
+      "SyncronizeManufacturers" : false,
+      "ProcessWithoutStock" : true,
+      "ProcessWithoutImage" : true,
+      "IdProduct" : "",
+      "IdStock" : "1                 ",
+      "__panel" : "http://delicado48.net/backoffice/",
+      "__panelUsuario" : "mcalero@gestool.es",
+      "__panelPassword" : "delicado482017",
+      "Langs" : 
+      {
+        "ENG" : "1"
+      }
+    }
+  }
+}

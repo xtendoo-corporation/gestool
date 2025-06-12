@@ -1,0 +1,426 @@
+#line 203 "C:\Gestool\include\hbclass.ch"
+DECLARE HBClass  New( cName AS STRING, OPTIONAL SuperParams ) AS CLASS HBClass  Create() AS OBJECT  Instance() AS OBJECT  AddClsMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC, n2 AS NUMERIC, n3 AS NUMERIC )  AddMultiClsData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING )  AddMultiData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING, x AS LOGICAL, lPer AS LOGICAL )  AddMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC )  AddInLine( cName AS STRING, bBlock AS CODEBLOCK, nScope AS NUMERIC )  AddVirtual( cName AS STRING )
+#line 7 "C:\Gestool\Script\AlbaranesClientes\REDUR.prg"
+Function Inicio()
+
+   local oAlbarenesClientesRedur
+
+   oAlbarenesClientesRedur    := AlbarenesClientesRedur():New()
+
+Return ( nil )
+
+
+
+_HB_CLASS AlbarenesClientesRedur ; function AlbarenesClientesRedur ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "AlbarenesClientesRedur", iif( .F., { }, { @HBObject() } ), @AlbarenesClientesRedur() ) ) ;
+
+; _HB_MEMBER { nView } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nView"}, .F. )
+
+; _HB_MEMBER { oAlbaran } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAlbaran"}, .F. )
+; _HB_MEMBER { aAlbaranes } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aAlbaranes"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @AlbarenesClientesRedur_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SendFile(); oClass:AddMethod( "SendFile", @AlbarenesClientesRedur_SendFile(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles(); oClass:AddMethod( "OpenFiles", @AlbarenesClientesRedur_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @AlbarenesClientesRedur_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS AlbarenesClientesRedur ;
+
+
+
+   static FUNCTION AlbarenesClientesRedur_New( ) ; local Self AS CLASS AlbarenesClientesRedur := QSelf() AS CLASS AlbarenesClientesRedur
+
+   local cExpresion     := ""
+
+      if ::OpenFiles()
+
+
+         ( D():AlbaranesClientes( ::nView ) )->( dbSetFilter( {|| Field->lEntregado .AND. rTrim( Field->cCodTrn ) == "001" .AND. Field->dFecEnv == Date() }, "lEntregado .and. rTrim( cCodTrn ) == 001 .and. dFecEnv == Date()") )
+
+         ( D():AlbaranesClientes( ::nView ) )->( dbGoTop() )
+
+         while !( D():AlbaranesClientes( ::nView ) )->( eof() )
+
+
+
+               if Empty( ::oAlbaran )
+                  ::oAlbaran                          := Redur():New()
+               end
+
+               ::oAlbaran:Tracking(                   "500324" + strzero( ( D():AlbaranesClientes( ::nView ) )->nNumAlb, 8 ) )
+               ::oAlbaran:Remitente(                  "CAZU" )
+               ::oAlbaran:NombreConsignatario(        ( D():AlbaranesClientes( ::nView ) )->cNomCli )
+
+               if Empty( ( D():AlbaranesClientes( ::nView ) )->cCodObr )
+
+                  ::oAlbaran:DireccionConsignatario(     ( D():AlbaranesClientes( ::nView ) )->cDirCli )
+                  ::oAlbaran:PoblacionConsignatario(     ( D():AlbaranesClientes( ::nView ) )->cPobCli )
+                  ::oAlbaran:CodigoPostalConsignatario(  ( D():AlbaranesClientes( ::nView ) )->cPosCli )
+                  ::oAlbaran:ProvinciaConsignatario(     "00" + left( ( D():AlbaranesClientes( ::nView ) )->cPosCli, 2 ) )
+
+               else
+
+                  if dbSeekInOrd( ( D():AlbaranesClientes( ::nView ) )->cCodCli + ( D():AlbaranesClientes( ::nView ) )->cCodObr, "cCodCli", D():Get( "ObrasT", ::nView ) )
+                     ::oAlbaran:DireccionConsignatario(     ( D():Get( "ObrasT", ::nView ) )->cDirObr )
+                     ::oAlbaran:PoblacionConsignatario(     ( D():Get( "ObrasT", ::nView ) )->cPobObr )
+                     ::oAlbaran:CodigoPostalConsignatario(  ( D():Get( "ObrasT", ::nView ) )->cPosObr )
+                     ::oAlbaran:ProvinciaConsignatario(     "00" + left( ( D():Get( "ObrasT", ::nView ) )->cPosObr, 2 ) )
+                  end
+
+               end
+
+               ::oAlbaran:Bultos(                     ( D():AlbaranesClientes( ::nView ) )->nBultos )
+               ::oAlbaran:Referencia(                 str( ( D():AlbaranesClientes( ::nView ) )->nNumAlb ) )
+               ::oAlbaran:Peso(                       nTotalPesoAlbaranCliente( ( D():AlbaranesClientesId( ::nView ) ), ::nView ) )
+
+               ::oAlbaran:SerializeASCII()
+
+
+
+
+            msgWait( "Procesando " + str( ( D():AlbaranesClientes( ::nView ) )->( ordkeyNo() ) ) + " de " +  str( ( D():AlbaranesClientes( ::nView ) )->( ordkeyCount() ) ), , 0.3 )
+
+            ( D():AlbaranesClientes( ::nView ) )->( dbSkip() )
+
+         end
+
+         DestroyFastFilter( D():AlbaranesClientes( ::nView ) )
+
+         if !empty( ::oAlbaran )
+            ::oAlbaran:WriteASCII()
+            ::SendFile()
+         end
+
+         ::CloseFiles()
+
+      end
+
+   Return ( Self )
+
+
+
+   static FUNCTION AlbarenesClientesRedur_OpenFiles( ) ; local Self AS CLASS AlbarenesClientesRedur := QSelf() AS CLASS AlbarenesClientesRedur
+
+   local oError
+   local oBlock
+   local lOpenFiles     := .T.
+
+   oBlock               := ErrorBlock( { | oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      ::nView           := D():CreateView()
+
+      D():AlbaranesClientes( ::nView )
+
+      D():AlbaranesClientesLineas( ::nView )
+
+      D():Get( "ObrasT", ::nView )
+
+   RECOVER USING oError
+
+      lOpenFiles        := .F.
+
+      msgStop( "Imposible abrir todas las bases de datos" + chr( 13 ) + chr( 10 ) + ErrorMessage( oError ) )
+
+   end
+
+   ErrorBlock( oBlock )
+
+   Return ( lOpenFiles )
+
+
+
+   static FUNCTION AlbarenesClientesRedur_CloseFiles ; local Self AS CLASS AlbarenesClientesRedur := QSelf() AS CLASS AlbarenesClientesRedur
+
+      D():DeleteView( ::nView )
+
+   Return ( Self )
+
+
+
+   static FUNCTION AlbarenesClientesRedur_SendFile( ) ; local Self AS CLASS AlbarenesClientesRedur := QSelf() AS CLASS AlbarenesClientesRedur
+
+      local oFtp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      oFtp         := TFtpCurl():New( "CAZU", "bU5B80rU", "redlab.redur.es", 21 )
+      oFtp:setPassive( .F. )
+
+      if !oFtp:CreateConexion()
+         msgWait( "Imposible crear la conexión", "Error", 1 )
+         return .F.
+      end
+
+      if File( ::oAlbaran:cFile )
+         oFtp:createFile( ::oAlbaran:cFile )
+      end
+
+      if !empty( oFTP )
+         oFTP:endConexion()
+      end
+
+      MsgInfo( "Fichero enviado correctamente" )
+
+
+
+
+
+
+
+
+
+
+
+   RETURN ( Self)
+
+
+
+_HB_CLASS Redur ; function Redur ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "Redur", iif( .T., { @Cuaderno() }, { @HBObject() } ), @Redur() ) ) ;
+
+; _HB_MEMBER { cFile } ; oClass:AddMultiData(, "redur_CAZU_" + dateToEU( date() ) + ".dcf", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFile"}, .F. )
+; _HB_MEMBER { cBuffer } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cBuffer"}, .F. )
+
+; _HB_MEMBER { cTipoRegisto } ; oClass:AddMultiData(, "R00", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTipoRegisto"}, .F. )
+; _HB_MEMBER { cCodigoCliente } ; oClass:AddMultiData(, "CAZU", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoCliente"}, .F. )
+; _HB_MEMBER { cTracking } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTracking"}, .F. )
+; _HB_MEMBER { cRemitente } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cRemitente"}, .F. )
+; _HB_MEMBER { cCodigoConsignatario } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoConsignatario"}, .F. )
+; _HB_MEMBER { cDocumentacion } ; oClass:AddMultiData(, "SALIDAS NACIONALES", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDocumentacion"}, .F. )
+; _HB_MEMBER { cProducto } ; oClass:AddMultiData(, "002", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cProducto"}, .F. )
+; _HB_MEMBER { dPreparacion } ; oClass:AddMultiData(, date(), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dPreparacion"}, .F. )
+; _HB_MEMBER { dRecogida } ; oClass:AddMultiData(, date(), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dRecogida"}, .F. )
+; _HB_MEMBER { cNombreConsignatario } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNombreConsignatario"}, .F. )
+; _HB_MEMBER { cDireccionConsignatario } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDireccionConsignatario"}, .F. )
+; _HB_MEMBER { cPoblacionConsignatario } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPoblacionConsignatario"}, .F. )
+; _HB_MEMBER { cCodigoPostalConsignatario } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoPostalConsignatario"}, .F. )
+; _HB_MEMBER { cProvinciaConsignatario } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cProvinciaConsignatario"}, .F. )
+; _HB_MEMBER { cTipoMercancia } ; oClass:AddMultiData(, "05", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTipoMercancia"}, .F. )
+; _HB_MEMBER { nBultos } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nBultos"}, .F. )
+; _HB_MEMBER { nPeso } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nPeso"}, .F. )
+; _HB_MEMBER { nVolumen } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nVolumen"}, .F. )
+; _HB_MEMBER { cTipoPortes } ; oClass:AddMultiData(, "P", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTipoPortes"}, .F. )
+; _HB_MEMBER { cReferencia } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cReferencia"}, .F. )
+; _HB_MEMBER { cObservaciones1 } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cObservaciones1"}, .F. )
+; _HB_MEMBER { cObservaciones2 } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cObservaciones2"}, .F. )
+; _HB_MEMBER { cObservaciones3 } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cObservaciones3"}, .F. )
+; _HB_MEMBER { nValorAsegurado } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nValorAsegurado"}, .F. )
+; _HB_MEMBER { cNumeroFactura } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNumeroFactura"}, .F. )
+; _HB_MEMBER { dFechaFactura } ; oClass:AddMultiData(, date(), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dFechaFactura"}, .F. )
+; _HB_MEMBER { nImporteFactura } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nImporteFactura"}, .F. )
+; _HB_MEMBER { nImporteReembolso } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nImporteReembolso"}, .F. )
+; _HB_MEMBER { cTipoServicio } ; oClass:AddMultiData(, "U", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTipoServicio"}, .F. )
+; _HB_MEMBER { cCodigoPais } ; oClass:AddMultiData(, "724", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoPais"}, .F. )
+; _HB_MEMBER { cVersionRedur } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cVersionRedur"}, .F. )
+; _HB_MEMBER { cNombreRemitente } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNombreRemitente"}, .F. )
+; _HB_MEMBER { cDireccionRemitente } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDireccionRemitente"}, .F. )
+; _HB_MEMBER { cPoblacionRemitente } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPoblacionRemitente"}, .F. )
+; _HB_MEMBER { cCodigoPostalRemitente } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoPostalRemitente"}, .F. )
+; _HB_MEMBER { cColaborador } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cColaborador"}, .F. )
+; _HB_MEMBER { cPlazaSalida } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPlazaSalida"}, .F. )
+; _HB_MEMBER { nTotalBultosADR } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalBultosADR"}, .F. )
+; _HB_MEMBER { cNivelInformacionADR } ; oClass:AddMultiData(, "0", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNivelInformacionADR"}, .F. )
+; _HB_MEMBER { cAlbaranCliente } ; oClass:AddMultiData(, "N", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAlbaranCliente"}, .F. )
+; _HB_MEMBER { cDevolverAlbaranFirmado } ; oClass:AddMultiData(, "N", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDevolverAlbaranFirmado"}, .F. )
+; _HB_MEMBER { cInformacionAdicionalCliente } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cInformacionAdicionalCliente"}, .F. )
+; _HB_MEMBER { cNombreContacto } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNombreContacto"}, .F. )
+; _HB_MEMBER { cTelefonoContacto } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTelefonoContacto"}, .F. )
+; _HB_MEMBER { cTelefonoAlternativo } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTelefonoAlternativo"}, .F. )
+; _HB_MEMBER { cEmailContacto } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cEmailContacto"}, .F. )
+; _HB_MEMBER { cSmsContacto } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSmsContacto"}, .F. )
+; _HB_MEMBER { cDireccionAdicional } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDireccionAdicional"}, .F. )
+; _HB_MEMBER { cDireccionAdicionalContinuacion } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDireccionAdicionalContinuacion"}, .F. )
+; _HB_MEMBER { cInstruccionesAdicionales } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cInstruccionesAdicionales"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @Redur_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER WriteASCII(); oClass:AddMethod( "WriteASCII", @Redur_WriteASCII(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SerializeASCII(); oClass:AddMethod( "SerializeASCII", @Redur_SerializeASCII(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TipoRegisto(); oClass:AddInline( "TipoRegisto", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cTipoRegisto                     := uValue, padr( ::cTipoRegisto, 3 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CodigoCliente(); oClass:AddInline( "CodigoCliente", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cCodigoCliente                   := uValue, padr( ::cCodigoCliente, 12 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Tracking(); oClass:AddInline( "Tracking", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cTracking                        := uValue, padr( ::cTracking, 14 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Remitente(); oClass:AddInline( "Remitente", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cRemitente                       := uValue, padr( ::cRemitente, 12 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CodigoConsignatario(); oClass:AddInline( "CodigoConsignatario", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cCodigoConsignatario             := uValue, padr( ::cCodigoConsignatario, 12 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Documentacion(); oClass:AddInline( "Documentacion", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cDocumentacion                   := uValue, padr( ::cDocumentacion, 20 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Producto(); oClass:AddInline( "Producto", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cProducto                        := uValue, padr( ::cProducto, 3 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Preparacion(); oClass:AddInline( "Preparacion", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::dPreparacion                     := uValue, dateToEU( ::dPreparacion ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Recogida(); oClass:AddInline( "Recogida", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::dRecogida                        := uValue, dateToEU( ::dRecogida ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER NombreConsignatario(); oClass:AddInline( "NombreConsignatario", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cNombreConsignatario             := uValue, padr( ::cNombreConsignatario, 35 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DireccionConsignatario(); oClass:AddInline( "DireccionConsignatario", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cDireccionConsignatario          := uValue, padr( ::cDireccionConsignatario, 60 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PoblacionConsignatario(); oClass:AddInline( "PoblacionConsignatario", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cPoblacionConsignatario          := uValue, padr( ::cPoblacionConsignatario, 35 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CodigoPostalConsignatario(); oClass:AddInline( "CodigoPostalConsignatario", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cCodigoPostalConsignatario       := uValue, padr( ::cCodigoPostalConsignatario, 10 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ProvinciaConsignatario(); oClass:AddInline( "ProvinciaConsignatario", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cProvinciaConsignatario          := uValue, padr( ::cProvinciaConsignatario, 25 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TipoMercancia(); oClass:AddInline( "TipoMercancia", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cTipoMercancia                   := uValue, padr( ::cTipoMercancia, 2 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Bultos(); oClass:AddInline( "Bultos", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::nBultos                          := uValue, strzero( ::nBultos, 6 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Peso(); oClass:AddInline( "Peso", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::nPeso                            := uValue, strzero( round( ::nPeso * 10, 0 ), 8 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Volumen(); oClass:AddInline( "Volumen", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::nVolumen                         := uValue, strzero( round( ::nVolumen * 100, 0 ), 6 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TipoPortes(); oClass:AddInline( "TipoPortes", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cTipoPortes                      := uValue, padr( ::cTipoPortes, 1 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER Referencia(); oClass:AddInline( "Referencia", {|Self, uValue | ( ( Self ) ), ( if(  !Empty(uValue), ::cReferencia := alltrim( uValue ), padr( ::cReferencia, 22 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Observaciones1(); oClass:AddInline( "Observaciones1", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cObservaciones1                  := uValue, padr( ::cObservaciones1, 40 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Observaciones2(); oClass:AddInline( "Observaciones2", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cObservaciones2                  := uValue, padr( ::cObservaciones2, 40 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Observaciones3(); oClass:AddInline( "Observaciones3", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cObservaciones3                  := uValue, padr( ::cObservaciones3, 40 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ValorAsegurado(); oClass:AddInline( "ValorAsegurado", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::nValorAsegurado                  := uValue, strzero( round( ::nValorAsegurado * 100, 0 ), 11 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER NumeroFactura(); oClass:AddInline( "NumeroFactura", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cNumeroFactura                   := uValue, padr( ::cNumeroFactura, 12 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER FechaFactura(); oClass:AddInline( "FechaFactura", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::dFechaFactura                    := uValue, dateToEU( ::dFechaFactura ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ImporteFactura(); oClass:AddInline( "ImporteFactura", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::nImporteFactura                  := uValue, strzero( round( ::nImporteFactura * 100, 0 ), 13 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ImporteReembolso(); oClass:AddInline( "ImporteReembolso", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::nImporteReembolso                := uValue, strzero( round( ::nImporteReembolso * 100, 0 ), 13 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TipoServicio(); oClass:AddInline( "TipoServicio", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cTipoServicio                    := uValue, padr( ::cTipoServicio, 1 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CodigoPais(); oClass:AddInline( "CodigoPais", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cCodigoPais                      := uValue, padr( ::cCodigoPais, 3 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER VersionRedur(); oClass:AddInline( "VersionRedur", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cVersionRedur                    := uValue, padr( ::cVersionRedur, 3 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER NombreRemitente(); oClass:AddInline( "NombreRemitente", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cNombreRemitente                 := uValue, padr( ::cNombreRemitente, 35 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DireccionRemitente(); oClass:AddInline( "DireccionRemitente", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cDireccionRemitente              := uValue, padr( ::cDireccionRemitente, 60 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PoblacionRemitente(); oClass:AddInline( "PoblacionRemitente", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cPoblacionRemitente              := uValue, padr( ::cPoblacionRemitente, 25 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CodigoPostalRemitente(); oClass:AddInline( "CodigoPostalRemitente", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cCodigoPostalRemitente           := uValue, padr( ::cCodigoPostalRemitente, 10 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Colaborador(); oClass:AddInline( "Colaborador", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cColaborador                     := uValue, padr( ::cColaborador, 3 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PlazaSalida(); oClass:AddInline( "PlazaSalida", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cPlazaSalida                     := uValue, padr( ::cPlazaSalida, 3 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TotalBultosADR(); oClass:AddInline( "TotalBultosADR", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::nTotalBultosADR                  := uValue, padr( str( ::nTotalBultosADR ), 6 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER NivelInformacionADR(); oClass:AddInline( "NivelInformacionADR", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cNivelInformacionADR             := uValue, padr( ::cNivelInformacionADR, 1 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AlbaranCliente(); oClass:AddInline( "AlbaranCliente", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cAlbaranCliente                  := uValue, padr( ::cAlbaranCliente, 1 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DevolverAlbaranFirmado(); oClass:AddInline( "DevolverAlbaranFirmado", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cDevolverAlbaranFirmado          := uValue, padr( ::cDevolverAlbaranFirmado, 1 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InformacionAdicionalCliente(); oClass:AddInline( "InformacionAdicionalCliente", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cInformacionAdicionalCliente     := uValue, padr( ::cInformacionAdicionalCliente, 100 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER NombreContacto(); oClass:AddInline( "NombreContacto", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cNombreContacto                  := uValue, padr( ::cNombreContacto, 40 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TelefonoContacto(); oClass:AddInline( "TelefonoContacto", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cTelefonoContacto                := uValue, padr( ::cTelefonoContacto, 30 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TelefonoAlternativo(); oClass:AddInline( "TelefonoAlternativo", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cTelefonoAlternativo             := uValue, padr( ::cTelefonoAlternativo, 30 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER EmailContacto(); oClass:AddInline( "EmailContacto", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cEmailContacto                   := uValue, padr( ::cEmailContacto, 80 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SmsContacto(); oClass:AddInline( "SmsContacto", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cSmsContacto                     := uValue, padr( ::cSmsContacto, 35 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DireccionAdicional(); oClass:AddInline( "DireccionAdicional", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cDireccionAdicional              := uValue, padr( ::cDireccionAdicional, 40 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DireccionAdicionalContinuacion(); oClass:AddInline( "DireccionAdicionalContinuacion", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cDireccionAdicionalContinuacion  := uValue, padr( ::cDireccionAdicionalContinuacion, 40 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InstruccionesAdicionales(); oClass:AddInline( "InstruccionesAdicionales", {|Self, uValue | ( ( Self ) ), ( if( !Empty(uValue), ::cInstruccionesAdicionales        := uValue, padr( ::cInstruccionesAdicionales, 70 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS Redur ;
+
+
+
+   static FUNCTION Redur_New( ) ; local Self AS CLASS Redur := QSelf() AS CLASS Redur
+
+   Return ( Self )
+
+
+
+   static FUNCTION Redur_WriteASCII( ) ; local Self AS CLASS Redur := QSelf() AS CLASS Redur
+
+      if empty( ::cBuffer )
+         Return ( .F. )
+      end
+
+      ::hFile           := fCreate( ::cFile )
+
+      if !Empty( ::hFile )
+         fWrite( ::hFile, ::cBuffer )
+         fClose( ::hFile )
+      end
+
+   Return ( .T. )
+
+
+
+   static FUNCTION Redur_SerializeASCII( ) ; local Self AS CLASS Redur := QSelf() AS CLASS Redur
+
+      ::cBuffer         += ::TipoRegisto()
+      ::cBuffer         += ::CodigoCliente()
+      ::cBuffer         += ::Tracking()
+      ::cBuffer         += ::Remitente()
+      ::cBuffer         += ::CodigoConsignatario()
+      ::cBuffer         += ::Documentacion()
+      ::cBuffer         += ::Producto()
+      ::cBuffer         += ::Preparacion()
+      ::cBuffer         += ::Recogida()
+      ::cBuffer         += ::NombreConsignatario()
+      ::cBuffer         += ::DireccionConsignatario()
+      ::cBuffer         += ::PoblacionConsignatario()
+      ::cBuffer         += ::CodigoPostalConsignatario()
+      ::cBuffer         += ::ProvinciaConsignatario()
+      ::cBuffer         += ::TipoMercancia()
+      ::cBuffer         += ::Bultos()
+      ::cBuffer         += ::Peso()
+      ::cBuffer         += ::Volumen()
+      ::cBuffer         += ::TipoPortes()
+      ::cBuffer         += ::Referencia()
+      ::cBuffer         += ::Observaciones1()
+      ::cBuffer         += ::Observaciones2()
+      ::cBuffer         += ::Observaciones3()
+      ::cBuffer         += ::ValorAsegurado()
+      ::cBuffer         += ::NumeroFactura()
+      ::cBuffer         += ::FechaFactura()
+      ::cBuffer         += ::ImporteFactura()
+      ::cBuffer         += ::ImporteReembolso()
+      ::cBuffer         += ::TipoServicio()
+      ::cBuffer         += ::CodigoPais()
+      ::cBuffer         += ::VersionRedur()
+      ::cBuffer         += ::NombreRemitente()
+      ::cBuffer         += ::DireccionRemitente()
+      ::cBuffer         += ::PoblacionRemitente()
+      ::cBuffer         += ::CodigoPostalRemitente()
+      ::cBuffer         += ::Colaborador()
+      ::cBuffer         += ::PlazaSalida()
+      ::cBuffer         += ::TotalBultosADR()
+      ::cBuffer         += ::NivelInformacionADR()
+      ::cBuffer         += ::AlbaranCliente()
+      ::cBuffer         += ::DevolverAlbaranFirmado()
+      ::cBuffer         += ::InformacionAdicionalCliente()
+      ::cBuffer         += ::NombreContacto()
+      ::cBuffer         += ::TelefonoContacto()
+      ::cBuffer         += ::TelefonoAlternativo()
+      ::cBuffer         += ::EmailContacto()
+      ::cBuffer         += ::SmsContacto()
+      ::cBuffer         += ::DireccionAdicional()
+      ::cBuffer         += ::DireccionAdicionalContinuacion()
+      ::cBuffer         += ::InstruccionesAdicionales()
+      ::cBuffer         += chr( 13 ) + chr( 10 )
+
+   Return ( ::cBuffer )
+
+
+
+Function DateToEU( dDate )
+
+   local strDate  := if( dDate <> NIL, dtoc( dDate ), dtoc( date() ) )
+   strDate        := strtran( strDate, "/", "" )
+
+Return( strDate )

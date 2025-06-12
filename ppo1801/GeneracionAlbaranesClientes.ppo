@@ -1,0 +1,2555 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 9 ".\.\Prg\GeneracionAlbaranesClientes.prg"
+_HB_CLASS TGeneracionAlbaranesClientes ; function TGeneracionAlbaranesClientes ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TGeneracionAlbaranesClientes", iif( .T., { @TConversionDocumentos() }, { @HBObject() } ), @TGeneracionAlbaranesClientes() ) ) ;
+
+   _HB_MEMBER { oAlmacen } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAlmacen"}, .F. )
+
+   _HB_MEMBER { aDocuments } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aDocuments"}, .F. )
+
+   _HB_MEMBER { dialogCustomerOrderLines } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dialogCustomerOrderLines"}, .F. )
+
+   _HB_MEMBER { dialogDeliveryNoteLines } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dialogDeliveryNoteLines"}, .F. )
+
+   _HB_MEMBER { deliveryNoteCustomer } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"deliveryNoteCustomer"}, .F. )
+
+   _HB_MEMBER { currentClient } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"currentClient"}, .F. )
+   _HB_MEMBER { currentDocument } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"currentDocument"}, .F. )
+
+   _HB_MEMBER { oWaitMeter } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oWaitMeter"}, .F. )
+
+   _HB_MEMBER New( nView, oStock); oClass:AddMethod( "New", @TGeneracionAlbaranesClientes_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER End(); oClass:AddMethod( "End", @TGeneracionAlbaranesClientes_End(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Dialog(); oClass:AddMethod( "Dialog", @TGeneracionAlbaranesClientes_Dialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER buildDialogSelectionCriteria( oDlg); oClass:AddMethod( "buildDialogSelectionCriteria", @TGeneracionAlbaranesClientes_buildDialogSelectionCriteria(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER validDialogSelectionCriteria(); oClass:AddMethod( "validDialogSelectionCriteria", @TGeneracionAlbaranesClientes_validDialogSelectionCriteria(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER notValidDialogSelectionCriteria(); oClass:AddInline( "notValidDialogSelectionCriteria", {|Self | ( ( Self ) ), ( !::validDialogSelectionCriteria() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER buildDialogCustomerOrderLines(); oClass:AddMethod( "buildDialogCustomerOrderLines", @TGeneracionAlbaranesClientes_buildDialogCustomerOrderLines(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER buildDialogDeliveryNoteLines(); oClass:AddMethod( "buildDialogDeliveryNoteLines", @TGeneracionAlbaranesClientes_buildDialogDeliveryNoteLines(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER isHeadersConditions(); oClass:AddMethod( "isHeadersConditions", @TGeneracionAlbaranesClientes_isHeadersConditions(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER isLineConditions(); oClass:AddMethod( "isLineConditions", @TGeneracionAlbaranesClientes_isLineConditions(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER startDialog(); oClass:AddMethod( "startDialog", @TGeneracionAlbaranesClientes_startDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER botonSiguiente(); oClass:AddMethod( "botonSiguiente", @TGeneracionAlbaranesClientes_botonSiguiente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER botonAnterior(); oClass:AddInline( "botonAnterior", {|Self | ( ( Self ) ), ( ::oFld:goPrev(), if( ::oFld:nOption == 1, ::buttonPrior:Hide(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER loadLinesDocument(); oClass:AddMethod( "loadLinesDocument", @TGeneracionAlbaranesClientes_loadLinesDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER scanStock( oDocumentLine); oClass:AddMethod( "scanStock", @TGeneracionAlbaranesClientes_scanStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER assignStock( oDocumentLine); oClass:AddMethod( "assignStock", @TGeneracionAlbaranesClientes_assignStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER assertCodeStock( oDocumentLine); oClass:AddMethod( "assertCodeStock", @TGeneracionAlbaranesClientes_assertCodeStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER isUnitsStock( oDocumentLine); oClass:AddMethod( "isUnitsStock", @TGeneracionAlbaranesClientes_isUnitsStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getUnitsInStock(); oClass:AddMethod( "getUnitsInStock", @TGeneracionAlbaranesClientes_getUnitsInStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER minusUnitsStock(); oClass:AddMethod( "minusUnitsStock", @TGeneracionAlbaranesClientes_minusUnitsStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER processLines(); oClass:AddMethod( "processLines", @TGeneracionAlbaranesClientes_processLines(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER processLine(); oClass:AddMethod( "processLine", @TGeneracionAlbaranesClientes_processLine(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+         _HB_MEMBER appendDeliveryNoteLines(); oClass:AddMethod( "appendDeliveryNoteLines", @TGeneracionAlbaranesClientes_appendDeliveryNoteLines(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+         _HB_MEMBER getValidDeliveryNoteForClient(); oClass:AddMethod( "getValidDeliveryNoteForClient", @TGeneracionAlbaranesClientes_getValidDeliveryNoteForClient(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER processDeliveryNoteLines(); oClass:AddMethod( "processDeliveryNoteLines", @TGeneracionAlbaranesClientes_processDeliveryNoteLines(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER processDeliveryNoteLine( oLine); oClass:AddMethod( "processDeliveryNoteLine", @TGeneracionAlbaranesClientes_processDeliveryNoteLine(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getCustomerOrderLines(); oClass:AddInline( "getCustomerOrderLines", {|Self | ( ( Self ) ), ( ::dialogCustomerOrderLines:oDocumentLines ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getCustomerOrderLine(); oClass:AddInline( "getCustomerOrderLine", {|Self, nPosition | ( ( Self ) ), ( ::dialogCustomerOrderLines:getDocumentLine( nPosition ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getDeliveryNoteLines(); oClass:AddInline( "getDeliveryNoteLines", {|Self | ( ( Self ) ), ( ::dialogDeliveryNoteLines:oDocumentLines ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getDeliveryNoteLine(); oClass:AddInline( "getDeliveryNoteLine", {|Self, nPosition | ( ( Self ) ), ( ::dialogDeliveryNoteLines:getDocumentLine( nPosition ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setCurrentClient(); oClass:AddInline( "setCurrentClient", {|Self, currentClient | ( ( Self ) ), ( ::currentClient   := currentClient ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setCurrentDocument(); oClass:AddInline( "setCurrentDocument", {|Self, currentDocument | ( ( Self ) ), ( ::currentDocument := currentDocument ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cleanCurrents(); oClass:AddInline( "cleanCurrents", {|Self | ( ( Self ) ), ( ::setCurrentClient(), ::setCurrentDocument() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER appendDeliveryNoteCustomer( oLine); oClass:AddMethod( "appendDeliveryNoteCustomer", @TGeneracionAlbaranesClientes_appendDeliveryNoteCustomer(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER addDeliveryNoteCustomer( oLine); oClass:AddMethod( "addDeliveryNoteCustomer", @TGeneracionAlbaranesClientes_addDeliveryNoteCustomer(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER saveDeliveryNoteCustomer(); oClass:AddMethod( "saveDeliveryNoteCustomer", @TGeneracionAlbaranesClientes_saveDeliveryNoteCustomer(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addLineDeliveryNoteCustomer( oLine, currentDocument); oClass:AddMethod( "addLineDeliveryNoteCustomer", @TGeneracionAlbaranesClientes_addLineDeliveryNoteCustomer(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TGeneracionAlbaranesClientes ;
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_New( nView, oStock ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   ::Super:New( nView, oStock )
+
+   ::dialogCustomerOrderLines    := TBrowseLineConversionDocumentos():New( Self )
+
+   ::dialogDeliveryNoteLines     := TBrowseLineConversionDocumentos():New( Self )
+
+   ::deliveryNoteCustomer        := DeliveryNoteCustomer():Build()
+   ::deliveryNoteCustomer:setView( ::nView )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_End( ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   ::CloseFiles()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_Dialog( ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   local oBmp
+
+
+   ::oDlg = TDialog():New(,,,,, "ASS_CONVERSION_DOCUMENTO",, .F.,,,,,, .F.,,,,,, .F.,, "::oDlg", nil, )
+
+
+
+
+
+   oBmp := TBitmap():ReDefine( 500, "gc_hand_touch_48",, ::oDlg,,, .F., .F.,,, .F.,,, .T. )
+
+
+
+
+
+
+   ::oFld := TPages():Redefine( 100, ::oDlg, {"ASS_CONVERSION_DOCUMENTO_5", "ASS_CONVERSION_DOCUMENTO_3", "ASS_CONVERSION_DOCUMENTO_3"},,,, )
+
+   ::buildDialogSelectionCriteria()
+
+   ::buildDialogCustomerOrderLines()
+
+   ::buildDialogDeliveryNoteLines()
+
+
+
+
+
+
+   ::buttonPrior := TButton():ReDefine( 3, {||( ::botonAnterior() )}, ::oDlg,,, .F.,,,, .F. )
+
+
+
+
+   ::buttonNext := TButton():ReDefine( 1, {||( ::botonSiguiente() )}, ::oDlg,,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 2, {||( ::oDlg:End() )}, ::oDlg,,, .F.,,,, .F. )
+
+   ::oDlg:bStart  := {|| ::startDialog() }
+
+   ::oDlg:addFastKey( 116, {|| ::botonSiguiente() } )
+
+   ::oDlg:Activate( ::oDlg:bLClicked, ::oDlg:bMoved, ::oDlg:bPainted, .T.,,,, ::oDlg:bRClicked,,, )
+
+   oBmp:End()
+
+RETURN ( ::oDlg:nResult == 1 )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_buildDialogSelectionCriteria( ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   ::oPeriodo     := GetPeriodo()
+      ::oPeriodo:New( 110, 120, 130 )
+      ::oPeriodo:Resource( ::oFld:aDialogs[1] )
+
+   ::oCliente     := GetCliente()
+      ::oCliente:New( 140, 141, 142 )
+      ::oCliente:Resource( ::oFld:aDialogs[1] )
+      ::oCliente:setView( ::nView )
+
+   ::oArticulo    := GetArticulo()
+      ::oArticulo:New( 200, 201, 202 )
+      ::oArticulo:Resource( ::oFld:aDialogs[1] )
+      ::oArticulo:setView( ::nView )
+
+   ::oAlmacen     := GetAlmacen()
+      ::oAlmacen:New( 210, 211, 212 )
+      ::oAlmacen:Resource( ::oFld:aDialogs[1] )
+      ::oAlmacen:setView( ::nView )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_startDialog( ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   ::oAlmacen:cText( cDefAlm() )
+   ::oAlmacen:Valid()
+
+   ::setDocumentPedidosClientes()
+
+   ::dialogCustomerOrderLines:Load()
+
+   ::dialogDeliveryNoteLines:Load()
+
+   ::buttonPrior:Hide()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_validDialogSelectionCriteria( ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   if empty( ::oAlmacen:varget() )
+      msgStop( "Código de almacén no puede estar vacio." )
+      Return .F.
+   end
+
+   if empty( ::oCliente:varget() ) .AND. empty( ::oArticulo:varget() )
+      msgStop( "Código de cliente o código de artículo deben cumplimentarse." )
+      Return .F.
+   end
+
+Return .T.
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_buildDialogCustomerOrderLines( ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   ::dialogCustomerOrderLines:setTitle( "Seleccione líneas de pedidos de clientes" )
+
+   ::dialogCustomerOrderLines:Dialog( ::oFld:aDialogs[ 2 ] )
+
+   ::dialogCustomerOrderLines:setName( "CustomerOrderLines" )
+
+   with object ( ::dialogCustomerOrderLines:AddCol() )
+      :cHeader       := "Pendientes"
+      :Cargo         := "getUnitsAwaitingProvided"
+      :bEditValue    := {|| ::getCustomerOrderLine():getUnitsAwaitingProvided() }
+      :cEditPicture  := masUnd()
+      :nWidth        := 80
+      :nDataStrAlign := 1
+      :nHeadStrAlign := 1
+      :bLClickHeader := {|nMRow, nMCol, nFlags, oColumn| ::dialogCustomerOrderLines:clickOnHeader( oColumn ) }
+      :bLDClickData  := {|| ::dialogCustomerOrderLines:toogleSelectLine() }
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_buildDialogDeliveryNoteLines( oDlg ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   ::dialogCustomerOrderLines:setTitle( "Seleccione líneas de albaranes de clientes" )
+
+   ::dialogDeliveryNoteLines:Dialog( ::oFld:aDialogs[ 3 ] )
+
+   ::dialogDeliveryNoteLines:setName( "DeliveryNoteLines" )
+
+   with object ( ::dialogDeliveryNoteLines:InsCol( 1 ) )
+      :cHeader       := "Albaran"
+      :Cargo         := "getAlbaranCliente"
+
+
+      :bEditValue    := {||   iif(  empty( ::getDeliveryNoteLine():getValue( "AlbaranCliente" ) ), "Nuevo", transIdDocument( ::getDeliveryNoteLine():getValue( "AlbaranCliente" ) ) ) }
+      :nWidth        := 80
+      :bLDClickData  := {|| ::dialogDeliveryNoteLines:toogleSelectLine() }
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_botonSiguiente( ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   do case
+      case ::oFld:nOption == 1
+
+         if ::notValidDialogSelectionCriteria()
+            Return .F.
+         end
+
+         ::loadLinesDocument()
+
+         ::oFld:goNext()
+
+         ::buttonPrior:Show()
+
+      case ::oFld:nOption == 2
+
+         ::getDeliveryNoteLines():Reset()
+
+         if ( ::getCustomerOrderLines():anySelect() )
+
+            ::processLines()
+
+            ::oFld:goNext()
+
+         else
+
+            msgStop( "No hay líneas seleccionadas." )
+
+         end
+
+         ::dialogDeliveryNoteLines:setBrowseLinesDocument()
+
+      case ::oFld:nOption == 3
+
+         ::processDeliveryNoteLines()
+
+         ::oDlg:end()
+
+   end
+
+Return ( Self )
+
+
+
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_isHeadersConditions( ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   if !( ::oPeriodo:inRange( ( ::getHeaderAlias() )->dFecPed ) )
+      Return .F.
+   end
+
+   if ( ( ::getHeaderAlias() )->lCancel )
+      Return .F.
+   end
+
+   if empty( ::oCliente:Value() )
+      Return .T.
+   end
+
+Return ( ( ::getHeaderAlias() )->cCodCli == ::oCliente:Value() )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_isLineConditions( ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   if empty( ::oArticulo:Value() )
+      Return .T.
+   end
+
+Return ( ::aliasDocumentLine:getCode() == ::oArticulo:Value() )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_loadLinesDocument( ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   local oDocumentLine
+
+   autoMeterDialog( ::oDlg )
+
+   setTotalAutoMeterDialog( ::getHeaderOrdKeyCount()  )
+
+   ::getCustomerOrderLines():Reset()
+
+   ::oStock:Reset()
+
+   ( ::getHeaderAlias() )->( ordsetfocus( "dFecGen" ) )
+
+   ( ::getHeaderAlias() )->( dbgotop() )
+   while ( ::getHeaderAlias() )->dFecPed <= ::oPeriodo:getFechaFin() .AND. !::getHeaderEof()
+
+      if ::isHeadersConditions() .AND. ::seekLineId()
+
+         while ( ::getHeaderId() == ::getLineId() ) .AND. !( ::getLineAlias() )->( eof() )
+
+            if ::isLineConditions()
+
+               oDocumentLine     := CustomerOrderDocumentLine():new( self )
+
+               if oDocumentLine:getUnitsAwaitingReception() > 0
+                  ::getCustomerOrderLines():addLines( oDocumentLine )
+               end
+
+               ::assignStock( oDocumentLine )
+
+            end
+
+            ( ::getLineAlias() )->( dbskip() )
+
+         end
+
+      end
+
+      setAutoMeterDialog( ::getHeaderOrdKeyNo() )
+
+      ( ::getHeaderAlias() )->( dbSkip() )
+
+   end
+
+   endAutoMeterDialog( ::oDlg )
+
+   ::dialogCustomerOrderLines:setBrowseLinesDocument()
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_assignStock( oDocumentLine ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   ::assertCodeStock( oDocumentLine )
+
+   if ::isUnitsStock( oDocumentLine )
+
+      ::minusUnitsStock( oDocumentLine )
+
+      oDocumentLine:selectLine()
+
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_assertCodeStock( oDocumentLine ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   local nScan
+
+   nScan := ascan( ::oStock:aStocks, {|o| o:cCodigo == oDocumentLine:getCode() } )
+   if nScan == 0
+      ::oStock:aStockArticulo( oDocumentLine:getCode() )
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_scanStock( oDocumentLine ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   local nScan
+   local oStock
+
+
+
+
+   nScan := ascan( ::oStock:aStocks,   {|o|  rtrim( o:cCodigo ) == rtrim( oDocumentLine:getCode() )                        .AND. rtrim( o:cCodigoAlmacen ) == rtrim( oDocumentLine:getAlmacen() )              .AND. rtrim( o:cValorPropiedad1 ) == rtrim( oDocumentLine:getValueFirstProperty() ) .AND. rtrim( o:cValorPropiedad2 ) == rtrim( oDocumentLine:getValueSecondProperty() ) } )
+   if nScan <> 0
+      oStock   := ::oStock:aStocks[ nScan ]
+   end
+
+Return ( oStock )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_getUnitsInStock( oDocumentLine ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   local oStock      := ::scanStock( oDocumentLine )
+   local nUnidades   := 0
+
+   if !empty( oStock )
+      nUnidades      := oStock:nUnidades
+   end
+
+Return ( nUnidades )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_isUnitsStock( oDocumentLine ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+Return ( ::getUnitsInStock( oDocumentLine ) >= oDocumentLine:getTotalUnits() )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_minusUnitsStock( oDocumentLine ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   local oStock         := ::scanStock( oDocumentLine )
+
+   if !empty(oStock)
+      oStock:nUnidades  -= oDocumentLine:getTotalUnits()
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_processLines( ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   local oLine
+
+   for each oLine in ( ::getCustomerOrderLines():getLines() )
+      if oLine:isSelectLine()
+         ::processLine( oLine )
+      end
+   next
+
+Return ( .T. )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_processLine( oLine ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   ::appendDeliveryNoteLines( oLine:getClone(), ::getValidDeliveryNoteForClient( oLine ) )
+
+   ::dialogDeliveryNoteLines:setBrowseLinesDocument()
+
+Return ( .T. )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_getValidDeliveryNoteForClient( oLine ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   local deliveryNote
+
+   D():getStatusAlbaranesClientes( ::nView )
+   D():setFocusAlbaranesClientes( "cNumPed", ::nView )
+
+   if D():gotoPedidoIdAlbaranesClientes( oLine:getDocumentId(), ::nView )
+      while ( D():AlbaranesClientes( ::nView ) )->cNumPed == oLine:getDocumentId() .AND. !( D():AlbaranesClientes( ::nView ) )->( eof() )
+
+         if ( D():AlbaranesClientes( ::nView ) )->lEntregado
+            deliveryNote   := D():AlbaranesClientesId( ::nView )
+            exit
+         end
+
+         ( D():AlbaranesClientes( ::nView ) )->( dbskip() )
+
+      end
+   end
+
+   D():setStatusAlbaranesClientes( ::nView )
+
+Return ( deliveryNote )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_appendDeliveryNoteLines( oLine, cNumeroAlbaran ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   if !empty( cNumeroAlbaran )
+      oLine:setValue( "AlbaranCliente", cNumeroAlbaran )
+   end
+
+   ::getDeliveryNoteLines():addLines( oLine )
+
+Return ( nil )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_processDeliveryNoteLines( ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   local oLine
+   local aLines         := ::getDeliveryNoteLines():getLines()
+
+   ::oWaitMeter         := TWaitMeter():New( "Generando albaranes", "Espere por favor...", len( ::getDeliveryNoteLines():getLines() ) )
+   ::oWaitMeter:Run()
+
+   asort( ::getDeliveryNoteLines():getLines(), , , {|x,y| x:getHeaderClient() + x:getValueFirstProperty() + x:getValueSecondProperty() <= y:getHeaderClient() + y:getValueFirstProperty() + y:getValueSecondProperty() } )
+
+   for each oLine in aLines
+      if oLine:isSelectLine()
+         ::processDeliveryNoteLine( oLine, hb_enumindex() )
+      end
+   next
+
+   ::oWaitMeter:end()
+
+Return ( .T. )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_processDeliveryNoteLine( oLine, nLine ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   ::oWaitMeter:incMeter()
+
+   if !( empty( oLine:getValue( "AlbaranCliente" ) ) )
+      ::addLineDeliveryNoteCustomer( oLine, nLine, oLine:getValue( "AlbaranCliente" ) )
+      ::cleanCurrents()
+      Return .T.
+   end
+
+   if empty( oLine:getValue( "AlbaranCliente" ) ) .AND. ( !empty( ::currentClient ) .AND. ::currentClient == oLine:getHeaderClient() )
+      ::addLineDeliveryNoteCustomer( oLine, nLine, ::currentDocument )
+      Return .T.
+   end
+
+   if empty( oLine:getValue( "AlbaranCliente" ) )
+      ::appendDeliveryNoteCustomer( oLine )
+      ::addDeliveryNoteCustomer( oLine, nLine )
+      ::saveDeliveryNoteCustomer()
+   end
+
+Return ( .T. )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_appendDeliveryNoteCustomer( oLine ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   ::DeliveryNoteCustomer:setAppendMode()
+
+   ::DeliveryNoteCustomer:getAppendDocumento()
+
+   ::DeliveryNoteCustomer:hSetMaster( "Entregado", .T. )
+
+   ::DeliveryNoteCustomer:hSetMaster( "NumeroPedido", oLine:getId() )
+
+   ::DeliveryNoteCustomer:setClientToDocument( oLine:getHeaderClient() )
+
+   ::setCurrentClient( oLine:getHeaderClient() )
+
+Return ( .T. )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_addDeliveryNoteCustomer( oLine, nLine ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   local oDeliveryNoteLine
+
+   ::oWaitMeter:setMessage( "Añadiendo línea " + alltrim( str( nLine ) ) + " a cliente : " + alltrim( oLine:getHeaderClient() ) + space( 1 ) + alltrim( oLine:getHeaderClientName() ) )
+
+   oDeliveryNoteLine    := DeliveryNoteDocumentLine():New( ::DeliveryNoteCustomer )
+
+   oDeliveryNoteLine:setDictionary( oLine:hDictionary )
+
+   ::DeliveryNoteCustomer:oDocumentLines:addLines( oDeliveryNoteLine )
+
+Return ( .T. )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_saveDeliveryNoteCustomer( oLine ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   ::DeliveryNoteCustomer:onPreSaveAppend()
+
+   ::DeliveryNoteCustomer:saveAppendDocumento( oLine )
+
+   ::setCurrentDocument( ::DeliveryNoteCustomer:getId() )
+
+   ::DeliveryNoteCustomer:onPreEnd()
+
+Return ( .T. )
+
+
+
+static FUNCTION TGeneracionAlbaranesClientes_addLineDeliveryNoteCustomer( oLine, nLine, currentDocument ) ; local Self AS CLASS TGeneracionAlbaranesClientes := QSelf() AS CLASS TGeneracionAlbaranesClientes
+
+   if !( D():gotoIdAlbaranesClientes( currentDocument, ::nView ) )
+      msgStop( "Albarán de cliente " + transIdDocument( currentDocument ) + " no encontrado." )
+      Return .F.
+   end
+
+   ::DeliveryNoteCustomer:getEditDocumento()
+
+   ::addDeliveryNoteCustomer( oLine, nLine )
+
+   ::DeliveryNoteCustomer:setDatasInDictionaryMaster()
+
+   ::DeliveryNoteCustomer:saveEditDocumento()
+
+   ::DeliveryNoteCustomer:onPreEnd()
+
+Return ( .T. )

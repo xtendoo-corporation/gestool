@@ -1,0 +1,2437 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 6 ".\Prg\Controllers\PermisosController.prg"
+_HB_CLASS PermisosController ; function PermisosController ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "PermisosController", iif( .T., { @SQLNavigatorController() }, { @HBObject() } ), @PermisosController() ) ) ;
+
+   _HB_MEMBER { cUuidRoles } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cUuidRoles"}, .F. )
+
+   _HB_MEMBER { oOpcionesModel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oOpcionesModel"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @PermisosController_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER End(); oClass:AddMethod( "End", @PermisosController_End(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER saveOptions(); oClass:AddMethod( "saveOptions", @PermisosController_saveOptions(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER saveOption(); oClass:AddMethod( "saveOption", @PermisosController_saveOption(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER loadOption(); oClass:AddMethod( "loadOption", @PermisosController_loadOption(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS PermisosController ;
+
+
+
+static FUNCTION PermisosController_New( ) ; local Self AS CLASS PermisosController := QSelf() AS CLASS PermisosController
+
+   ::Super:New()
+
+   ::cTitle                := "Permisos"
+
+   ::setName( "permisos" )
+
+   ::lTransactional        := .T.
+
+   ::hImage                := { "16" => "gc_id_badge_16" }
+
+   ::oModel                := SQLPermisosModel():New( self )
+
+   ::oOpcionesModel        := SQLPermisosOpcionesModel():New( self )
+
+   ::oRepository           := PermisosRepository():New( self )
+
+   ::oBrowseView           := PermisosBrowseView():New( self )
+
+   ::oDialogView           := PermisosView():New( self )
+
+   ::oValidator            := PermisosValidator():New( self )
+
+   ::setEvent( "openingDialog",  {|| ::oDialogView:openingDialog() } )
+
+   ::setEvent( "closedDialog",   {|| ::oDialogView:closedDialog() } )
+
+RETURN ( Self )
+
+
+
+static FUNCTION PermisosController_End( ) ; local Self AS CLASS PermisosController := QSelf() AS CLASS PermisosController
+
+   if !empty( ::oModel )
+      ::oModel:End()
+   endif
+
+   if !empty( ::oOpcionesModel )
+      ::oOpcionesModel:End()
+   endif
+
+   if !empty( ::oDialogView )
+      ::oDialogView:End()
+   endif
+
+   ::Super:End()
+
+RETURN ( nil )
+
+
+
+static FUNCTION PermisosController_saveOptions( cUuid, oTree ) ; local Self AS CLASS PermisosController := QSelf() AS CLASS PermisosController
+
+   oTree:eval( {|oItem| iif( !empty( hget( oItem:Cargo, "Id" ) ), ::saveOption( cUuid, oItem ), ) } )
+
+RETURN ( nil )
+
+
+
+static FUNCTION PermisosController_saveOption( cUuid, oTree ) ; local Self AS CLASS PermisosController := QSelf() AS CLASS PermisosController
+
+   local hBuffer  := {=>}
+
+   hset( hBuffer, "uuid",           win_uuidcreatestring() )
+   hset( hBuffer, "permiso_uuid",   cUuid )
+   hset( hBuffer, "nombre",         hget( oTree:Cargo, "Id" ) )
+   hset( hBuffer, "nivel",          nPermiso( oTree:Cargo ) )
+
+   ::oOpcionesModel:insertOnDuplicate( hBuffer )
+
+RETURN ( nil )
+
+
+
+static FUNCTION PermisosController_loadOption( cPermisoUuid, cNombre ) ; local Self AS CLASS PermisosController := QSelf() AS CLASS PermisosController
+
+   local nPermiso
+
+   nPermiso       := PermisosOpcionesRepository():getNivel( cPermisoUuid, cNombre )
+
+   if hb_isnil( nPermiso )
+      RETURN ( 63 )
+   end
+
+RETURN ( nPermiso )
+
+
+
+
+
+
+
+_HB_CLASS PermisosBrowseView ; function PermisosBrowseView ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "PermisosBrowseView", iif( .T., { @SQLBrowseView() }, { @HBObject() } ), @PermisosBrowseView() ) ) ;
+
+   _HB_MEMBER addColumns(); oClass:AddMethod( "addColumns", @PermisosBrowseView_addColumns(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS PermisosBrowseView ;
+
+
+
+static FUNCTION PermisosBrowseView_addColumns( ) ; local Self AS CLASS PermisosBrowseView := QSelf() AS CLASS PermisosBrowseView
+
+   with object ( ::oBrowse:AddCol() )
+      :cSortOrder          := "id"
+      :cHeader             := "Id"
+      :nWidth              := 80
+      :bEditValue          := {|| ::getRowSet():fieldGet( "id" ) }
+      :bLClickHeader       := {| row, col, flags, oColumn | ::onClickHeader( oColumn ) }
+   end
+
+   with object ( ::oBrowse:AddCol() )
+      :cSortOrder          := "uuid"
+      :cHeader             := "Uuid"
+      :nWidth              := 180
+      :bEditValue          := {|| ::getRowSet():fieldGet( "uuid" ) }
+      :bLClickHeader       := {| row, col, flags, oColumn | ::onClickHeader( oColumn ) }
+      :lHide               := .T.
+   end
+
+   with object ( ::oBrowse:AddCol() )
+      :cSortOrder          := "nombre"
+      :cHeader             := "Nombre"
+      :nWidth              := 300
+      :bEditValue          := {|| ::getRowSet():fieldGet( "nombre" ) }
+      :bLClickHeader       := {| row, col, flags, oColumn | ::onClickHeader( oColumn ) }
+   end
+
+   with object ( ::oBrowse:AddCol() )
+      :cSortOrder          := "creado"
+      :cHeader             := "Creado"
+      :cEditPicture        := "@DT"
+      :nWidth              := 140
+      :nHeadStrAlign       := 0
+      :nDataStrAlign       := 0
+      :lHide               := .T.
+      :bEditValue          := {|| ::getRowSet():fieldGet( "created_at" ) }
+      :bLClickHeader       := {| row, col, flags, oColumn | ::onClickHeader( oColumn ) }
+   end
+
+   with object ( ::oBrowse:AddCol() )
+      :cSortOrder          := "modificado"
+      :cHeader             := "Modificado"
+      :cEditPicture        := "@DT"
+      :nWidth              := 140
+      :nHeadStrAlign       := 0
+      :nDataStrAlign       := 0
+      :lHide               := .T.
+      :bEditValue          := {|| ::getRowSet():fieldGet( "updated_at" ) }
+      :bLClickHeader       := {| row, col, flags, oColumn | ::onClickHeader( oColumn ) }
+   end
+
+RETURN ( self )
+
+
+
+
+
+
+
+_HB_CLASS PermisosView ; function PermisosView ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "PermisosView", iif( .T., { @SQLBaseView() }, { @HBObject() } ), @PermisosView() ) ) ;
+
+   _HB_MEMBER { oTree } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTree"}, .F. )
+
+   _HB_MEMBER { oBrowse } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrowse"}, .F. )
+
+   _HB_MEMBER openingDialog(); oClass:AddMethod( "openingDialog", @PermisosView_openingDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addTreeItems( aAccesos); oClass:AddMethod( "addTreeItems", @PermisosView_addTreeItems(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER addTreeItem( oAcceso); oClass:AddMethod( "addTreeItem", @PermisosView_addTreeItem(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER getTreeItem( cKey); oClass:AddMethod( "getTreeItem", @PermisosView_getTreeItem(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getTreeItemAccess(); oClass:AddInline( "getTreeItemAccess", {|Self | ( ( Self ) ), ( ::getTreeItem( "Access" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getTreeItemAppend(); oClass:AddInline( "getTreeItemAppend", {|Self | ( ( Self ) ), ( ::getTreeItem( "Append" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getTreeItemEdit(); oClass:AddInline( "getTreeItemEdit", {|Self | ( ( Self ) ), ( ::getTreeItem( "Edit" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getTreeItemZoom(); oClass:AddInline( "getTreeItemZoom", {|Self | ( ( Self ) ), ( ::getTreeItem( "Zoom" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getTreeItemDelete(); oClass:AddInline( "getTreeItemDelete", {|Self | ( ( Self ) ), ( ::getTreeItem( "Delete" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getTreeItemPrint(); oClass:AddInline( "getTreeItemPrint", {|Self | ( ( Self ) ), ( ::getTreeItem( "Print" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER setTreeItem( cKey, uValue); oClass:AddMethod( "setTreeItem", @PermisosView_setTreeItem(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setTreeItemAccess(); oClass:AddInline( "setTreeItemAccess", {|Self, uValue | ( ( Self ) ), ( ::setTreeItem( "Access", uValue ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setTreeItemAppend(); oClass:AddInline( "setTreeItemAppend", {|Self, uValue | ( ( Self ) ), ( ::setTreeItem( "Append", uValue ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setTreeItemEdit(); oClass:AddInline( "setTreeItemEdit", {|Self, uValue | ( ( Self ) ), ( ::setTreeItem( "Edit", uValue ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setTreeItemZoom(); oClass:AddInline( "setTreeItemZoom", {|Self, uValue | ( ( Self ) ), ( ::setTreeItem( "Zoom", uValue ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setTreeItemDelete(); oClass:AddInline( "setTreeItemDelete", {|Self, uValue | ( ( Self ) ), ( ::setTreeItem( "Delete", uValue ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setTreeItemPrint(); oClass:AddInline( "setTreeItemPrint", {|Self, uValue | ( ( Self ) ), ( ::setTreeItem( "Print", uValue ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER closedDialog(); oClass:AddMethod( "closedDialog", @PermisosView_closedDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Activate(); oClass:AddMethod( "Activate", @PermisosView_Activate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER saveView( oDlg); oClass:AddMethod( "saveView", @PermisosView_saveView(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS PermisosView ;
+
+
+
+static FUNCTION PermisosView_openingDialog( ) ; local Self AS CLASS PermisosView := QSelf() AS CLASS PermisosView
+
+   ::addTreeItems( oWndBar():aAccesos )
+
+RETURN ( self )
+
+
+
+static FUNCTION PermisosView_addTreeItems( aAccesos ) ; local Self AS CLASS PermisosView := QSelf() AS CLASS PermisosView
+
+   if empty( ::oTree )
+      ::oTree  := TreeBegin()
+   else
+      TreeBegin()
+   end
+
+
+
+
+   aeval( aAccesos, {|oAcceso|  ::addTreeItem( oAcceso ), iif(  len( oAcceso:aAccesos ) > 0, ::addTreeItems( oAcceso:aAccesos ), ) } )
+
+   TreeEnd()
+
+RETURN ( self )
+
+
+
+static FUNCTION PermisosView_addTreeItem( oAcceso ) ; local Self AS CLASS PermisosView := QSelf() AS CLASS PermisosView
+
+   local cUuid
+   local oItem
+
+   cUuid          := ::getModel():hBuffer[ "uuid" ]
+   oItem          := treeAddItem( oAcceso:cPrompt )
+
+   if empty( oAcceso:cId )
+      oItem:Cargo := hPermiso()
+   else
+      oItem:Cargo := hPermiso( oAcceso:cId, ::oController:loadOption( cUuid, oAcceso:cId ) )
+   end
+
+RETURN ( self )
+
+
+
+static FUNCTION PermisosView_getTreeItem( cKey ) ; local Self AS CLASS PermisosView := QSelf() AS CLASS PermisosView
+
+   if !empty( ::oBrowse:oTreeItem )
+      RETURN ( hget( ::oBrowse:oTreeItem:Cargo, cKey ) )
+   endif
+
+RETURN ( "" )
+
+
+
+static FUNCTION PermisosView_setTreeItem( cKey, uValue ) ; local Self AS CLASS PermisosView := QSelf() AS CLASS PermisosView
+
+   if empty( ::oBrowse:oTreeItem )
+      RETURN ( uValue )
+   end
+
+   if empty( ::oBrowse:oTreeItem:oTree )
+      hset( ::oBrowse:oTreeItem:Cargo, cKey, uValue )
+      RETURN ( uValue )
+   end
+
+   if msgyesno( "¿Desea cambiar los valores de los nodos inferiores?", "Seleccione una opción" )
+      hset( ::oBrowse:oTreeItem:Cargo, cKey, uValue )
+      ::oBrowse:oTreeItem:oTree:eval( {|oItem| hset( oItem:Cargo, cKey, uValue ) } )
+   end
+
+RETURN ( uValue )
+
+
+
+static FUNCTION PermisosView_closedDialog( ) ; local Self AS CLASS PermisosView := QSelf() AS CLASS PermisosView
+
+   ::oController:saveOptions( ::getModel():hBuffer[ "uuid" ], ::oBrowse:oTree )
+
+RETURN ( self )
+
+
+
+static FUNCTION PermisosView_Activate( ) ; local Self AS CLASS PermisosView := QSelf() AS CLASS PermisosView
+
+
+
+   ::oDialog = TDialog():New(,,,, ::lblTitle() + "permisos", "PERMISOS",, .F.,,,,,, .F.,,,,,, .F.,, "::oDialog", nil, )
+
+
+
+
+
+   ::oBitmap := TBitmap():ReDefine( 900, "gc_id_badge_48",, ::oDialog,,, .F., .F.,,, .F.,,, .T. )
+
+
+
+
+
+   TGetHlp():ReDefine( 110, { | u | If( PCount()==0, ::getModel():hBuffer[ "nombre" ], ::getModel():hBuffer[ "nombre" ]:= u ) }, ::oDialog,,, {||       ( ::oController:validate( "nombre" ) )},,,,,, .F., {||        ( ::oController:isNotZoomMode() )},, .F., .F.,,,,,, nil,,, )
+
+   ::oBrowse                  := IXBrowse():New( ::oDialog )
+   ::oBrowse:bWhen            := {|| ::oController:isNotZoomMode() }
+
+   ::oBrowse:bClrSel          := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+   ::oBrowse:bClrSelFocus     := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+   ::oBrowse:lVScroll         := .T.
+   ::oBrowse:lHScroll         := .F.
+   ::oBrowse:nMarqueeStyle    := 5
+   ::oBrowse:lRecordSelector  := .F.
+
+   with object ( ::oBrowse:AddCol() )
+      :cHeader                := "Acceso"
+      :bStrData               := {|| "" }
+      :bEditValue             := {|| ::getTreeItemAccess() }
+      :nWidth                 := 60
+      :SetCheck( { "Sel16", "Nil16" }, {|o, v| ::setTreeItemAccess( v ) } )
+   end
+
+   with object ( ::oBrowse:AddCol() )
+      :cHeader                := "Añadir"
+      :bStrData               := {|| "" }
+      :bEditValue             := {|| ::getTreeItemAppend() }
+      :nWidth                 := 60
+      :SetCheck( { "Sel16", "Nil16" }, {|o, v| ::setTreeItemAppend( v ) } )
+   end
+
+   with object ( ::oBrowse:AddCol() )
+      :cHeader                := "Modificar"
+      :bStrData               := {|| "" }
+      :bEditValue             := {|| ::getTreeItemEdit() }
+      :nWidth                 := 60
+      :SetCheck( { "Sel16", "Nil16" }, {|o, v| ::setTreeItemEdit( v ) } )
+   end
+
+   with object ( ::oBrowse:AddCol() )
+      :cHeader                := "Zoom"
+      :bStrData               := {|| "" }
+      :bEditValue             := {|| ::getTreeItemZoom() }
+      :nWidth                 := 60
+      :SetCheck( { "Sel16", "Nil16" }, {|o, v| ::setTreeItemZoom( v ) } )
+   end
+
+   with object ( ::oBrowse:AddCol() )
+      :cHeader                := "Eliminar"
+      :bStrData               := {|| "" }
+      :bEditValue             := {|| ::getTreeItemDelete() }
+      :nWidth                 := 60
+      :SetCheck( { "Sel16", "Nil16" }, {|o, v| ::setTreeItemDelete( v ) } )
+   end
+
+   with object ( ::oBrowse:AddCol() )
+      :cHeader                := "Imprimir"
+      :bStrData               := {|| "" }
+      :bEditValue             := {|| ::getTreeItemPrint() }
+      :nWidth                 := 60
+      :SetCheck( { "Sel16", "Nil16" }, {|o, v| ::setTreeItemPrint( v ) } )
+   end
+
+   ::oBrowse:CreateFromResource( 120 )
+
+   ::oBrowse:SetTree( ::oTree, { "gc_navigate_minus_16", "gc_navigate_plus_16", "nil16" } )
+
+   if len( ::oBrowse:aCols ) > 1
+      ::oBrowse:aCols[ 1 ]:cHeader  := ""
+      ::oBrowse:aCols[ 1 ]:nWidth   := 200
+   end
+
+
+
+
+
+   TButton():ReDefine( 1, {||( ::saveView() )}, ::oDialog,,, .F., {||        ( ::oController:isNotZoomMode() )},,, .F. )
+
+
+
+
+
+   TButton():ReDefine( 2, {||( ::oDialog:end() )}, ::oDialog,,, .F.,,,, .T. )
+
+   ::oDialog:AddFastKey( 116, {|| ::saveView() } )
+
+   ::oDialog:Activate( , , , .T. )
+
+   ::oBrowse:End()
+
+   ::oTree:End()
+
+   ::oBitmap:end()
+
+RETURN ( ::oDialog:nResult )
+
+
+
+static FUNCTION PermisosView_saveView( ) ; local Self AS CLASS PermisosView := QSelf() AS CLASS PermisosView
+
+   if !( validateDialog( ::oDialog ) )
+      RETURN ( .F. )
+   end
+
+   ::oDialog:end( 1 )
+
+RETURN ( ::oDialog:nResult )
+
+
+
+
+
+
+
+_HB_CLASS PermisosValidator ; function PermisosValidator ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "PermisosValidator", iif( .T., { @SQLBaseValidator() }, { @HBObject() } ), @PermisosValidator() ) ) ;
+
+   _HB_MEMBER getValidators(); oClass:AddMethod( "getValidators", @PermisosValidator_getValidators(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS PermisosValidator ;
+
+
+
+static FUNCTION PermisosValidator_getValidators( ) ; local Self AS CLASS PermisosValidator := QSelf() AS CLASS PermisosValidator
+
+
+   ::hValidators  := {  "nombre" => {  "required"  => "El nombre es un dato requerido", "unique"    => "El nombre ya existe" } }
+
+RETURN ( ::hValidators )
+
+
+
+
+
+
+
+_HB_CLASS SQLPermisosModel ; function SQLPermisosModel ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "SQLPermisosModel", iif( .T., { @SQLBaseModel() }, { @HBObject() } ), @SQLPermisosModel() ) ) ;
+
+   _HB_MEMBER { cTableName } ; oClass:AddMultiData(, "Permisos", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTableName"}, .F. )
+
+   _HB_MEMBER { cConstraints } ; oClass:AddMultiData(, "PRIMARY KEY (id), KEY (uuid)", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cConstraints"}, .F. )
+
+   _HB_MEMBER getColumns(); oClass:AddMethod( "getColumns", @SQLPermisosModel_getColumns(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SeederToADS(); oClass:AddMethod( "SeederToADS", @SQLPermisosModel_SeederToADS(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS SQLPermisosModel ;
+
+
+
+static FUNCTION SQLPermisosModel_getColumns( ) ; local Self AS CLASS SQLPermisosModel := QSelf() AS CLASS SQLPermisosModel
+
+
+   hset( ::hColumns, "id",       {  "create"    => "INTEGER AUTO_INCREMENT"                  , "default"   => {|| 0 } }                                 )
+
+
+   hset( ::hColumns, "uuid",     {  "create"    => "VARCHAR( 40 ) NOT NULL UNIQUE"           , "default"   => {|| win_uuidcreatestring() } }            )
+
+
+   hset( ::hColumns, "nombre",   {  "create"    => "VARCHAR ( 100 ) NOT NULL UNIQUE"         , "default"   => {|| space( 100 ) } }                      )
+
+   ::getTimeStampColumns()
+
+RETURN ( ::hColumns )
+
+
+
+static FUNCTION SQLPermisosModel_SeederToADS( ) ; local Self AS CLASS SQLPermisosModel := QSelf() AS CLASS SQLPermisosModel
+
+   local cSql  := "SELECT * FROM " + ::getTableName()
+
+RETURN ( getSQLDataBase():selectFetchHash( cSql ) )
+
+
+
+
+
+
+
+_HB_CLASS PermisosRepository ; function PermisosRepository ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "PermisosRepository", iif( .T., { @SQLBaseRepository() }, { @HBObject() } ), @PermisosRepository() ) ) ;
+
+   _HB_MEMBER getTableName(); oClass:AddInline( "getTableName", {|Self | ( ( Self ) ), ( SQLPermisosModel():getTableName() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getNombres(); oClass:AddMethod( "getNombres", @PermisosRepository_getNombres(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getNombre(); oClass:AddInline( "getNombre", {|Self, uuid | ( ( Self ) ), ( SQLPermisosModel():getColumnWhereUuid( uuid, "nombre" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getUuid(); oClass:AddMethod( "getUuid", @PermisosRepository_getUuid(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS PermisosRepository ;
+
+
+
+static FUNCTION PermisosRepository_getNombres( ) ; local Self AS CLASS PermisosRepository := QSelf() AS CLASS PermisosRepository
+
+   local cSQL  := "SELECT nombre FROM " + ::getTableName()
+
+RETURN ( ::getDatabase():selectFetchArrayOneColumn( cSQL ) )
+
+
+
+static FUNCTION PermisosRepository_getUuid( cNombre ) ; local Self AS CLASS PermisosRepository := QSelf() AS CLASS PermisosRepository
+
+
+   local cSQL  := "SELECT uuid FROM " + ::getTableName() + " " +  "WHERE nombre = " + quoted( cNombre )
+
+RETURN ( ::getDatabase():getValue( cSQL ) )

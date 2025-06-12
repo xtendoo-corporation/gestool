@@ -1,0 +1,21 @@
+#line 203 "C:\fwh1801\Gestool\bin\include\hbclass.ch"
+DECLARE HBClass  New( cName AS STRING, OPTIONAL SuperParams ) AS CLASS HBClass  Create() AS OBJECT  Instance() AS OBJECT  AddClsMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC, n2 AS NUMERIC, n3 AS NUMERIC )  AddMultiClsData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING )  AddMultiData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING, x AS LOGICAL, lPer AS LOGICAL )  AddMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC )  AddInLine( cName AS STRING, bBlock AS CODEBLOCK, nScope AS NUMERIC )  AddVirtual( cName AS STRING )
+#line 10 "C:\fwh1801\Gestool\bin\Script\MovimientosAlmacen\Lineas\beforeAppend.prg"
+Function beforeAppend( cCodArt )
+
+   local nPalets        := Space(4)
+   local nPiezas        := Space(4)
+   local nTotalMetros   := 0
+   local nMetrosPalets  := ArticulosModel():getField( "M2Palet", "Codigo", cCodArt )
+   local nMetrosPiezas  := ArticulosModel():getField( "M2Pieza", "Codigo", cCodArt )
+
+   MsgGet( "Seleccione número de palets", "Palets: ", @nPalets )
+   MsgGet( "Seleccione número de piezas", "Piezas: ", @nPiezas )
+
+   nTotalMetros := Val( nPalets ) * nMetrosPalets
+
+   if nMetrosPiezas <> 0
+      nTotalMetros += Val( nPiezas ) / nMetrosPiezas
+   end
+
+Return ( nTotalMetros )

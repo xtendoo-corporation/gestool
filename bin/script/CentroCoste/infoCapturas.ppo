@@ -1,0 +1,463 @@
+#line 38 "C:\fw195\Gestool\bin\include\FiveWin.ch"
+      static bError
+#line 203 "C:\fw195\Gestool\bin\include\hbclass.ch"
+DECLARE HBClass  New( cName AS STRING, OPTIONAL SuperParams ) AS CLASS HBClass  Create() AS OBJECT  Instance() AS OBJECT  AddClsMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC, n2 AS NUMERIC, n3 AS NUMERIC )  AddMultiClsData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING )  AddMultiData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING, x AS LOGICAL, lPer AS LOGICAL )  AddMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC )  AddInLine( cName AS STRING, bBlock AS CODEBLOCK, nScope AS NUMERIC )  AddVirtual( cName AS STRING )
+#line 79 "C:\fw195\Gestool\bin\include\FiveWin.ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+#line 9 "C:\fw195\Gestool\bin\Script\CentroCoste\infoCapturas.prg"
+Function InfoCapturas( oCentroCoste )
+
+   TInfCapturas():New( oCentroCoste )
+
+Return nil
+
+
+
+_HB_CLASS TInfCapturas ; function TInfCapturas ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TInfCapturas", iif( .F., { }, { @HBObject() } ), @TInfCapturas() ) ) ;
+
+; _HB_MEMBER { oDialog } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDialog"}, .F. )
+
+; _HB_MEMBER { oCentroCoste } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCentroCoste"}, .F. )
+
+; _HB_MEMBER { oCodigoCentroCoste } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCodigoCentroCoste"}, .F. )
+; _HB_MEMBER { cCodigoCentroCoste } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoCentroCoste"}, .F. )
+
+; _HB_MEMBER { oNombreCentroCoste } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oNombreCentroCoste"}, .F. )
+; _HB_MEMBER { cNombreCentroCoste } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNombreCentroCoste"}, .F. )
+
+; _HB_MEMBER { oFechaInicio } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFechaInicio"}, .F. )
+; _HB_MEMBER { cFechaInicio } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFechaInicio"}, .F. )
+
+; _HB_MEMBER { oFechaFin } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFechaFin"}, .F. )
+; _HB_MEMBER { cFechaFin } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFechaFin"}, .F. )
+
+; _HB_MEMBER { oDias } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDias"}, .F. )
+; _HB_MEMBER { cDias } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDias"}, .F. )
+
+; _HB_MEMBER { oComentarios } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oComentarios"}, .F. )
+; _HB_MEMBER { cComentarios } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cComentarios"}, .F. )
+
+; _HB_MEMBER { oBarco } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBarco"}, .F. )
+; _HB_MEMBER { cBarco } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cBarco"}, .F. )
+; _HB_MEMBER { oMarea } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oMarea"}, .F. )
+; _HB_MEMBER { cMarea } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cMarea"}, .F. )
+
+; _HB_MEMBER { cCapturas } ; oClass:AddMultiData(, "cCapturas", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCapturas"}, .F. )
+; _HB_MEMBER { cCapturasLineas } ; oClass:AddMultiData(, "cCapturasLineas", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCapturasLineas"}, .F. )
+
+; _HB_MEMBER { oBrwCapturas } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwCapturas"}, .F. )
+; _HB_MEMBER { oBrwCapturasLineas } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwCapturasLineas"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @TInfCapturas_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetResources(); oClass:AddInline( "SetResources", {|Self | ( ( Self ) ), ( SetResources( fullcurdir() + "Script\CentroCoste\InfoCapturas.dll" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FreeResources(); oClass:AddInline( "FreeResources", {|Self | ( ( Self ) ), ( FreeResources() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LoadCentroCoste(); oClass:AddMethod( "LoadCentroCoste", @TInfCapturas_LoadCentroCoste(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LoadCapturas(); oClass:AddMethod( "LoadCapturas", @TInfCapturas_LoadCapturas(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ChangeBrowseCapturas(); oClass:AddMethod( "ChangeBrowseCapturas", @TInfCapturas_ChangeBrowseCapturas(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LoadCapturasLineas(); oClass:AddMethod( "LoadCapturasLineas", @TInfCapturas_LoadCapturasLineas(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Resource(); oClass:AddMethod( "Resource", @TInfCapturas_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CloseAreas(); oClass:AddMethod( "CloseAreas", @TInfCapturas_CloseAreas(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TInfCapturas ;
+
+
+
+static FUNCTION TInfCapturas_New( oCentroCoste ) ; local Self AS CLASS TInfCapturas := QSelf() AS CLASS TInfCapturas
+
+   ::oCentroCoste             := oCentroCoste
+
+   ::LoadCentroCoste()
+
+   ::LoadCapturas()
+
+   ::LoadCapturasLineas()
+
+   ::SetResources()
+
+   ::Resource()
+
+   ::FreeResources()
+
+   ::CloseAreas()
+
+Return ( Self )
+
+
+
+static FUNCTION TInfCapturas_CloseAreas( ) ; local Self AS CLASS TInfCapturas := QSelf() AS CLASS TInfCapturas
+
+   ADSBaseModel():CloseArea( ::cCapturas )
+   ADSBaseModel():CloseArea( ::cCapturasLineas )
+
+Return ( Self )
+
+
+
+static FUNCTION TInfCapturas_LoadCentroCoste( ) ; local Self AS CLASS TInfCapturas := QSelf() AS CLASS TInfCapturas
+
+   ::cCodigoCentroCoste       := ::oCentroCoste:oDbf:cCodigo
+   ::cNombreCentroCoste       := ::oCentroCoste:oDbf:cNombre
+   ::cFechaInicio             := ::oCentroCoste:oDbf:dFecIni
+   ::cFechaFin                := ::oCentroCoste:oDbf:dFecFin
+   ::cComentarios             := ::oCentroCoste:oDbf:cComent
+   ::cBarco                   := ::oCentroCoste:oDbf:cValPr1
+   ::cMarea                   := ::oCentroCoste:oDbf:cValPr2
+   ::cDias                    := ::oCentroCoste:oDbf:dFecFin - ::oCentroCoste:oDbf:dFecIni
+
+RETURN ( Self )
+
+
+
+static FUNCTION TInfCapturas_LoadCapturas( ) ; local Self AS CLASS TInfCapturas := QSelf() AS CLASS TInfCapturas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   local cSql  := "SELECT " +  "lineaPed.cSerPed AS Serie, " +  "lineaPed.nNumPed AS Numero, " +  "lineaPed.cSufPed AS Sufijo, " +  "SUM( lineaPed.nBultos ) AS [nTotalBultos], " +  "SUM( lineaPed.nCanPed ) AS [nTotalCajas], " +  "SUM( lineaPed.nUniCaja ) AS [nTotalUnidades], " +  "cabeceraPed.dFecPed AS Fecha, " +  "cabeceraPed.cSituac AS Situacion, " +  "cabeceraPed.cExped AS Expedicion, " +  "cabeceraPed.nTotNet AS Neto, " +  "cabeceraPed.nTotIva AS Iva, " +  "cabeceraPed.nTotReq AS RE, " +  "cabeceraPed.nTotPed AS Total " +  "FROM " + cPatEmp() + "PedProvL lineaPed " +  "INNER JOIN " + cPatEmp() + "PedProvT cabeceraPed " +  "ON lineaPed.cSerPed = cabeceraPed.cSerPed and lineaPed.nNumPed = cabeceraPed.nNumPed and lineaPed.cSufPed = cabeceraPed.cSufPed " +  "WHERE lineaPed.cSerPed = 'A' AND lineaPed.cCtrCoste = " + quoted( ::cCodigoCentroCoste  ) + " " +  "GROUP BY   lineaPed.cSerPed, " +  "lineaPed.nNumPed, " +  "lineaPed.cSufPed, " +  "cabeceraPed.dFecPed, " +  "cabeceraPed.cSituac, " +  "cabeceraPed.cExped, " +  "cabeceraPed.nTotNet, " +  "cabeceraPed.nTotIva, " +  "cabeceraPed.nTotReq, " +  "cabeceraPed.nTotPed"
+
+   ADSBaseModel():ExecuteSqlStatement( cSql, @::cCapturas )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TInfCapturas_Resource( ) ; local Self AS CLASS TInfCapturas := QSelf() AS CLASS TInfCapturas
+
+   ::oDialog = TDialog():New(,,,,, "CentroCoste",, .F.,,,,,, .F.,,,,,, .F.,, "::oDialog" )
+
+
+
+
+
+      ::oCodigoCentroCoste := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, ::cCodigoCentroCoste, ::cCodigoCentroCoste:= u ) }, ::oDialog,,,,,,,,, .F., {||        ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      ::oNombreCentroCoste := TGetHlp():ReDefine( 110, { | u | If( PCount()==0, ::cNombreCentroCoste, ::cNombreCentroCoste:= u ) }, ::oDialog,,,,,,,,, .F., {||        ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      ::oFechaInicio := TGetHlp():ReDefine( 120, { | u | If( PCount()==0, ::cFechaInicio, ::cFechaInicio:= u ) }, ::oDialog,,,,,,,,, .F., {||        ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      ::oFechaFin := TGetHlp():ReDefine( 130, { | u | If( PCount()==0, ::cFechaFin, ::cFechaFin:= u ) }, ::oDialog,,,,,,,,, .F., {||        ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      ::oComentarios := TGetHlp():ReDefine( 140, { | u | If( PCount()==0, ::cComentarios, ::cComentarios:= u ) }, ::oDialog,,,,,,,,, .F., {||        ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      ::oBarco := TGetHlp():ReDefine( 170, { | u | If( PCount()==0, ::cBarco, ::cBarco:= u ) }, ::oDialog,,,,,,,,, .F., {||        ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      ::oMarea := TGetHlp():ReDefine( 180, { | u | If( PCount()==0, ::cMarea, ::cMarea:= u ) }, ::oDialog,,,,,,,,, .F., {||        ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      ::oDias := TGetHlp():ReDefine( 190, { | u | If( PCount()==0, ::cDias, ::cDias:= u ) }, ::oDialog,,,,,,,,, .F., {||        ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      ::oBrwCapturas                 := IXBrowse():New( ::oDialog )
+
+      ::oBrwCapturas:bClrSel         := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      ::oBrwCapturas:bClrSelFocus    := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      ::oBrwCapturas:cAlias          := ::cCapturas
+
+      ::oBrwCapturas:nMarqueeStyle   := 6
+      ::oBrwCapturas:lFooter         := .T.
+      ::oBrwCapturas:cName           := "Cabecera capturas"
+      ::oBrwCapturas:bChange         := {|| ::ChangeBrowseCapturas() }
+
+         with object ( ::oBrwCapturas:AddCol() )
+            :cHeader          := "Número"
+            :bEditValue       := {|| ( ::cCapturas )->Serie + "/" + AllTrim( Str( ( ::cCapturas )->Numero ) ) + "/" + ( ::cCapturas )->Sufijo }
+            :nWidth           := 100
+         end
+
+         with object ( ::oBrwCapturas:AddCol() )
+            :cHeader          := "Fecha"
+            :bEditValue       := {|| ( ::cCapturas )->Fecha }
+            :nWidth           := 100
+         end
+
+         with object ( ::oBrwCapturas:AddCol() )
+            :cHeader          := "Semana"
+            :bEditValue       := {|| ( ::cCapturas )->Expedicion }
+            :nWidth           := 100
+         end
+
+         with object ( ::oBrwCapturas:AddCol() )
+            :cHeader          := "Situación"
+            :bEditValue       := {|| ( ::cCapturas )->Situacion }
+            :nWidth           := 100
+            :lHide            := .T.
+         end
+
+         with object ( ::oBrwCapturas:AddCol() )
+            :cHeader          := "Bultos"
+            :bEditValue       := {|| ( ::cCapturas )->nTotalBultos }
+            :nWidth           := 75
+            :cEditPicture     := MasUnd()
+            :nFooterType      := 1
+         end
+
+         with object ( ::oBrwCapturas:AddCol() )
+            :cHeader          := "Cajas"
+            :bEditValue       := {|| ( ::cCapturas )->nTotalCajas }
+            :nWidth           := 75
+            :cEditPicture     := MasUnd()
+            :nFooterType      := 1
+         end
+
+         with object ( ::oBrwCapturas:AddCol() )
+            :cHeader          := "Unidades"
+            :bEditValue       := {|| ( ::cCapturas )->nTotalUnidades }
+            :nWidth           := 75
+            :cEditPicture     := MasUnd()
+            :nFooterType      := 1
+         end
+
+         with object ( ::oBrwCapturas:AddCol() )
+            :cHeader          := "Neto"
+            :bEditValue       := {|| ( ::cCapturas )->Neto }
+            :nWidth           := 100
+            :cEditPicture     := cPorDiv()
+            :nFooterType      := 1
+         end
+
+         with object ( ::oBrwCapturas:AddCol() )
+            :cHeader          := "Iva"
+            :bEditValue       := {|| ( ::cCapturas )->Iva }
+            :nWidth           := 100
+            :cEditPicture     := cPorDiv()
+            :nFooterType      := 1
+         end
+
+         with object ( ::oBrwCapturas:AddCol() )
+            :cHeader          := "RE"
+            :bEditValue       := {|| ( ::cCapturas )->RE }
+            :nWidth           := 100
+            :cEditPicture     := cPorDiv()
+            :nFooterType      := 1
+         end
+
+         with object ( ::oBrwCapturas:AddCol() )
+            :cHeader          := "Total"
+            :bEditValue       := {|| ( ::cCapturas )->Total }
+            :nWidth           := 100
+            :cEditPicture     := cPorDiv()
+            :nFooterType      := 1
+         end
+
+      ::oBrwCapturas:CreateFromResource( 150 )
+
+
+
+
+
+      ::oBrwCapturasLineas                 := IXBrowse():New( ::oDialog )
+
+      ::oBrwCapturasLineas:bClrSel         := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      ::oBrwCapturasLineas:bClrSelFocus    := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      ::oBrwCapturasLineas:cAlias          := ::cCapturasLineas
+
+      ::oBrwCapturasLineas:nMarqueeStyle   := 6
+      ::oBrwCapturasLineas:lFooter         := .T.
+      ::oBrwCapturasLineas:cName           := "Lineas capturas"
+
+         with object ( ::oBrwCapturasLineas:AddCol() )
+            :cHeader          := "Especie"
+            :bEditValue       := {|| ( ::cCapturasLineas )->CodigoArticulo }
+            :nWidth           := 50
+         end
+
+         with object ( ::oBrwCapturasLineas:AddCol() )
+            :cHeader          := "Nombre"
+            :bEditValue       := {|| ( ::cCapturasLineas )->NombreArticulo }
+            :nWidth           := 200
+         end
+
+         with object ( ::oBrwCapturasLineas:AddCol() )
+            :cHeader          := "T. Bultos"
+            :bEditValue       := {|| ( ::cCapturasLineas )->Bultos }
+            :nWidth           := 75
+            :cEditPicture     := MasUnd()
+            :nFooterType      := 1
+         end
+
+         with object ( ::oBrwCapturasLineas:AddCol() )
+            :cHeader          := "Cajas"
+            :bEditValue       := {|| ( ::cCapturasLineas )->Cajas }
+            :nWidth           := 75
+            :cEditPicture     := MasUnd()
+            :nFooterType      := 1
+            :nDataStrAlign    := 1
+            :nHeadStrAlign    := 1
+         end
+
+         with object ( ::oBrwCapturasLineas:AddCol() )
+            :cHeader          := "T. Kilos"
+            :bEditValue       := {|| ( ::cCapturasLineas )->Unidades }
+            :nWidth           := 75
+            :cEditPicture     := MasUnd()
+            :nFooterType      := 1
+            :nDataStrAlign    := 1
+            :nHeadStrAlign    := 1
+         end
+
+         with object ( ::oBrwCapturasLineas:AddCol() )
+            :cHeader          := "Precio"
+            :bEditValue       := {|| ( ::cCapturasLineas )->PrecioArticulo }
+            :nWidth           := 100
+            :cEditPicture     := cPorDiv()
+            :nFooterType      := 1
+            :nDataStrAlign    := 1
+            :nHeadStrAlign    := 1
+         end
+
+         with object ( ::oBrwCapturasLineas:AddCol() )
+            :cHeader          := "Importe"
+            :bEditValue       := {|| ( ( ::cCapturasLineas )->Unidades * ( ::cCapturasLineas )->PrecioArticulo ) }
+            :nWidth           := 100
+            :cEditPicture     := cPorDiv()
+            :nFooterType      := 1
+            :nDataStrAlign    := 1
+            :nHeadStrAlign    := 1
+         end
+
+         with object ( ::oBrwCapturasLineas:AddCol() )
+            :cHeader          := "C.Bultos"
+            :bEditValue       := {|| ( ::cCapturasLineas )->NumeroCajas }
+            :nWidth           := 75
+            :cEditPicture     := MasUnd()
+            :nDataStrAlign    := 1
+            :nHeadStrAlign    := 1
+         end
+
+         with object ( ::oBrwCapturasLineas:AddCol() )
+            :cHeader          := "P.Cajas"
+            :bEditValue       := {|| ( ::cCapturasLineas )->PesoCaja }
+            :nWidth           := 75
+            :cEditPicture     := MasUnd()
+            :nDataStrAlign    := 1
+            :nHeadStrAlign    := 1
+         end
+
+      ::oBrwCapturasLineas:CreateFromResource( 160 )
+
+
+
+
+      TButton():ReDefine( 1, {||( ::oDialog:End() )}, ::oDialog,,, .F.,,,, .F. )
+
+      ::oDialog:bStart := {|| ::oBrwCapturas:MakeTotals(), ::oBrwCapturasLineas:MakeTotals() }
+
+   ::oDialog:Activate( ::oDialog:bLClicked, ::oDialog:bMoved, ::oDialog:bPainted, .T.,,,, ::oDialog:bRClicked,,, )
+
+Return ( .T. )
+
+
+
+static FUNCTION TInfCapturas_LoadCapturasLineas( ) ; local Self AS CLASS TInfCapturas := QSelf() AS CLASS TInfCapturas
+
+   ( ::cCapturas )->( dbGoTop() )
+
+   ::ChangeBrowseCapturas()
+
+Return ( .T. )
+
+
+
+static FUNCTION TInfCapturas_ChangeBrowseCapturas( ) ; local Self AS CLASS TInfCapturas := QSelf() AS CLASS TInfCapturas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   local cSql  := "SELECT lineaPed.cRef AS CodigoArticulo, " +  " lineaPed.cDetalle AS NombreArticulo, " +  " lineaPed.nBultos AS Bultos, " +  " lineaPed.nCanPed AS Cajas, " +  " lineaPed.nUniCaja AS Unidades, " +  " lineaPed.nPreDiv AS PrecioArticulo, " +  " Articulos.nCajEnt AS NumeroCajas, " +  " Articulos.nPesCaj AS PesoCaja " +  "FROM " + cPatEmp() + "PedProvL lineaPed " +  "INNER JOIN " + cPatEmp() + "Articulo Articulos " +  "ON lineaPed.cRef = Articulos.Codigo " +  "WHERE cSerPed = " + quoted( ( ::cCapturas )->Serie ) + " AND " +  "nNumPed = " + str( ( ::cCapturas )->Numero ) + " AND " +   "cSufPed = " + quoted( ( ::cCapturas )->Sufijo )
+
+
+   ADSBaseModel():ExecuteSqlStatement( cSql, @::cCapturasLineas )
+
+   ( ::cCapturasLineas )->( dbGoTop() )
+
+   if !Empty( ::oBrwCapturasLineas )
+      ::oBrwCapturasLineas:Refresh()
+   end
+
+Return ( .T. )

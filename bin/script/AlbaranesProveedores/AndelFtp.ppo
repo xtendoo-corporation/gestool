@@ -1,0 +1,188 @@
+#line 38 "C:\fwh1801\Gestool\bin\include\FiveWin.Ch"
+      static bError
+#line 203 "C:\fwh1801\Gestool\bin\include\hbclass.ch"
+DECLARE HBClass  New( cName AS STRING, OPTIONAL SuperParams ) AS CLASS HBClass  Create() AS OBJECT  Instance() AS OBJECT  AddClsMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC, n2 AS NUMERIC, n3 AS NUMERIC )  AddMultiClsData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING )  AddMultiData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING, x AS LOGICAL, lPer AS LOGICAL )  AddMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC )  AddInLine( cName AS STRING, bBlock AS CODEBLOCK, nScope AS NUMERIC )  AddVirtual( cName AS STRING )
+#line 79 "C:\fwh1801\Gestool\bin\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+#line 11 "C:\fwh1801\Gestool\bin\Script\AlbaranesProveedores\AndelFtp.prg"
+Function AndelFtpConexion()
+
+   AndelFtp():New()
+
+RETURN nil
+
+
+
+_HB_CLASS AndelFtp ; function AndelFtp ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "AndelFtp", iif( .F., { }, { @HBObject() } ), @AndelFtp() ) ) ;
+
+; _HB_MEMBER { cFtpSite } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFtpSite"}, .F. )
+; _HB_MEMBER { cUserName } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cUserName"}, .F. )
+; _HB_MEMBER { cPassword } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPassword"}, .F. )
+; _HB_MEMBER { lPassive } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lPassive"}, .F. )
+
+; _HB_MEMBER { oFtp } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFtp"}, .F. )
+
+; _HB_MEMBER { oAlbPrvT } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAlbPrvT"}, .F. )
+; _HB_MEMBER { oFacPrvT } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacPrvT"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @AndelFtp_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Run(); oClass:AddMethod( "Run", @AndelFtp_Run(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ftpConexion(); oClass:AddMethod( "ftpConexion", @AndelFtp_ftpConexion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER closeConexion(); oClass:AddMethod( "closeConexion", @AndelFtp_closeConexion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ftpGetFiles(); oClass:AddMethod( "ftpGetFiles", @AndelFtp_ftpGetFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER fileNotProccess( cFile); oClass:AddMethod( "fileNotProccess", @AndelFtp_fileNotProccess(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER fileDownload( cFile); oClass:AddMethod( "fileDownload", @AndelFtp_fileDownload(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER fileAlbaran( cFile); oClass:AddMethod( "fileAlbaran", @AndelFtp_fileAlbaran(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER fileFactura( cFile); oClass:AddMethod( "fileFactura", @AndelFtp_fileFactura(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS AndelFtp ;
+
+
+
+static FUNCTION AndelFtp_New( ) ; local Self AS CLASS AndelFtp := QSelf() AS CLASS AndelFtp
+
+   ::cFtpSite              := "pedidos.andelautomocion.com"
+   ::cUserName             := "andelftp"
+   ::cPassword             := "ftp123"
+   ::lPassive              := .T.
+
+   msgRun( "Conectando con el sito ftp:" + ::cFtpSite, "Espere por favor...", {|| ::Run() } )
+
+RETURN ( Self )
+
+
+
+static FUNCTION AndelFtp_Run( ) ; local Self AS CLASS AndelFtp := QSelf() AS CLASS AndelFtp
+
+   ::oAlbPrvT := DbfServer( "AlbProvT.DBF", ):NewOpen( "AlbProvT.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oAlbPrvT:AddBag( "AlbProvT.Cdx" ) ; ::oAlbPrvT:AddBag( ) ; ::oAlbPrvT:AutoIndex()
+   ::oAlbPrvT:ordsetfocus( "cSuAlb" )
+
+   ::oFacPrvT := DbfServer( "FacPrvT.DBF", ):NewOpen( "FacPrvT.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oFacPrvT:AddBag( "FacPrvT.Cdx" ) ; ::oFacPrvT:AddBag( ) ; ::oFacPrvT:AutoIndex()
+   ::oFacPrvT:ordsetfocus( "cSuPed" )
+
+   if ::ftpConexion()
+      ::ftpGetFiles()
+      ::closeConexion()
+   else
+      msgInfo( "Error al conectar" )
+   end
+
+   ::oAlbPrvT:End()
+   ::oFacPrvT:End()
+
+RETURN ( Self )
+
+
+
+static FUNCTION AndelFtp_ftpConexion( ) ; local Self AS CLASS AndelFtp := QSelf() AS CLASS AndelFtp
+
+   ::oFtp               := TFTPCurl():New( ::cUserName, ::cPassword, ::cFtpSite, 21 )
+   ::oFtp:setPassive( ::lPassive )
+
+   if !::oFtp:CreateConexion()
+      msgStop( "Imposible conectar con el sitio ftp " + ::cFtpSite, "Error" )
+      Return ( .F. )
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION AndelFtp_closeConexion( ) ; local Self AS CLASS AndelFtp := QSelf() AS CLASS AndelFtp
+
+   if !Empty( ::oFtp )
+      ::oFtp:EndConexion()
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION AndelFtp_ftpGetFiles( ) ; local Self AS CLASS AndelFtp := QSelf() AS CLASS AndelFtp
+
+   local cFile
+   local aFiles            := {}
+
+   if ::oFtp:testConexion()
+
+      aFiles                  := ::oFTP:listFiles()
+
+      for each cFile in aFiles
+         if SubStr( cFile, 1, 9 ) == "430000093"
+            if ::fileNotProccess( cFile )
+               ::fileDownload( cFile )
+            end
+         end
+      next
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION AndelFtp_fileNotProccess( cFile ) ; local Self AS CLASS AndelFtp := QSelf() AS CLASS AndelFtp
+
+   local cFileDocument
+
+   if ( "Albaran" $ cFile )
+      RETURN ( !::oAlbPrvT:Seek( ::fileAlbaran( cFile ) ) )
+   end
+
+   if ( "Factura" $ cFile )
+      RETURN ( !::oFacPrvT:Seek( ::fileFactura( cFile ) ) )
+   end
+
+RETURN ( .F. )
+
+
+
+static FUNCTION AndelFtp_fileDownload( cFile ) ; local Self AS CLASS AndelFtp := QSelf() AS CLASS AndelFtp
+
+   msgRun( "Descargando fichero " + cFile, "Espere por favor...", {|| ::oFtp:downLoadFile( cFile, "c:\ImportacionAlbaranes\" + cFile ) } )
+
+RETURN ( Self )
+
+
+
+static FUNCTION AndelFtp_fileAlbaran( cFile ) ; local Self AS CLASS AndelFtp := QSelf() AS CLASS AndelFtp
+
+
+
+
+
+   local cSerie   := SubStr( cFile, 19, 1 )
+   local nNumero  := "0" + SubStr( cFile, 20, 7 )
+   local cSufijo  := SubStr( cFile, 18, 2 )
+
+RETURN ( cSerie + nNumero + cSufijo )
+
+
+
+static FUNCTION AndelFtp_fileFactura( cFile ) ; local Self AS CLASS AndelFtp := QSelf() AS CLASS AndelFtp
+
+
+
+
+
+   local cPrefijo    := substr( cFile, 18, 2 )
+   local cNumero     := substr( cFile, 20, at( ".", cFile ) - 20 )
+
+   cNumero           := rjust( cNumero, "0", 8 )
+
+RETURN ( cPrefijo + cNumero )

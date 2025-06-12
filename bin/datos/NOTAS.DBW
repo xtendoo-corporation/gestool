@@ -1,0 +1,73 @@
+[File Application]
+System=PROMETHEUS v2000
+Program=The DataBase WorkShop for Windows
+Author=Copyright ©1998/2002, Andrade A. Daniel
+[File Setup]
+FileName=C:\FW195\CAMERO\DATOS\NOTAS.DBF
+CurPath=C:\FW195\CAMERO\DATOS\
+Driver=SIXCDX
+Indexes=
+TagActive=
+BagActive=
+RecNo=1
+RowPos=1
+ColPos=4
+FilterActive=
+FilterList=
+[Expresions]
+For=
+While=
+[Columns Positions]
+1=1
+2=2
+3=3
+4=4
+5=5
+6=6
+7=7
+8=8
+[Columns Names]
+1=DFECNOT
+2=CHORNOT
+3=LALRNOT
+4=CTEXNOT
+5=LVISNOT
+6=DVCTNOT
+7=CDESNOT
+8=CESTNOT
+[Columns Sizes]
+1=103.18
+2=75.04
+3=75.04
+4=733
+5=75.04
+6=103.18
+7=100
+8=478.38
+[Columns Pictures]
+1=@D
+2=@X
+3=@L
+4=@X
+5=@L
+6=@D
+7=@X
+8=@X
+[Columns Aligns]
+1=1
+2=0
+3=1
+4=0
+5=1
+6=1
+7=1
+8=0
+[Columns Types]
+1=D
+2=C
+3=L
+4=C
+5=L
+6=D
+7=M
+8=C

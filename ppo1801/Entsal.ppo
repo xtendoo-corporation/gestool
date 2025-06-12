@@ -1,0 +1,3261 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 32 ".\.\Prg\Entsal.prg"
+static oWndBrw
+
+static nView
+
+static dbfEntT
+static dbfDivisa
+
+static cPorDiv
+static oBandera
+static dbfCaj
+static dbfCount
+static bBmp
+static bBmpSnd
+static oBtnEfectivo
+static bEdit            := { |aTmp, aGet, dbfEntT, oBrw, bWhen, bValid, nMode | EdtRec( aTmp, aGet, dbfEntT, oBrw, bWhen, bValid, nMode ) }
+static bEditTct         := { |aTmp, aGet, dbfEntT, oBrw, bWhen, bValid, nMode | EdtRecTct( aTmp, aGet, dbfEntT, oBrw, bWhen, bValid, nMode ) }
+
+static aTextTipo        := { "Entrada", "Salida", "Retirada efectivo", "Retirada tarjeta" }
+static oMoneyEfectivo
+
+
+
+function aItmEntSal()
+
+   local aItmEntSal  := {}
+
+   aAdd( aItmEntSal, { "DFECENT",   "D",  8,  0, "Fecha de la entrada/salida" ,           "",   "", "( cDbf )"} )
+   aAdd( aItmEntSal, { "CTURENT",   "C",  6,  0, "Sesión de la entrada/salida" ,          "",   "", "( cDbf )"} )
+   aAdd( aItmEntSal, { "CSUFENT",   "C",  2,  0, "Sufijo de la entrada/salida" ,          "",   "", "( cDbf )"} )
+   aAdd( aItmEntSal, { "CCODCAJ",   "C",  3,  0, "Código de la caja" ,                    "",   "", "( cDbf )"} )
+   aAdd( aItmEntSal, { "NTIPENT",   "N",  1,  0, "Tipo de entrada/salida(1-Ent 2-Sal)" ,  "",   "", "( cDbf )"} )
+   aAdd( aItmEntSal, { "CDESENT",   "C", 50,  0, "Descripción" ,                          "",   "", "( cDbf )"} )
+   aAdd( aItmEntSal, { "NIMPENT",   "N", 16,  6, "Importe de la entrada/salida" ,         "",   "", "( cDbf )"} )
+   aAdd( aItmEntSal, { "LCLOENT",   "L",  1,  0, "Lógico de turno cerrado" ,              "",   "", "( cDbf )"} )
+   aAdd( aItmEntSal, { "LSNDENT",   "L",  1,  0, "Lógico de envio" ,                      "",   "", "( cDbf )"} )
+   aAdd( aItmEntSal, { "CCODDIV",   "C",  3,  0, "Código divisa" ,                        "",   "", "( cDbf )"} )
+   aAdd( aItmEntSal, { "NVDVDIV",   "N", 10,  4, "Valor divisa" ,                         "",   "", "( cDbf )"} )
+   aAdd( aItmEntSal, { "DFECCRE",   "D",  8,  0, "Fecha de creación de la entrada",       "",   "", "( cDbf )"} )
+   aAdd( aItmEntSal, { "CTIMCRE",   "C",  5,  0, "Hora de creación de la entrada",        "",   "", "( cDbf )"} )
+   aAdd( aItmEntSal, { "CCODUSR",   "C",  3,  0, "Código de usuario",                     "",   "", "( cDbf )"} )
+   aAdd( aItmEntSal, { "CRUTDOC",   "C",250,  0, "Documento adjunto",                     "",   "", "( cDbf )"} )
+   aAdd( aItmEntSal, { "NNUMENT",   "N",  9,  0, "Número de la entrada de caja",          "",   "", "( cDbf )"} )
+   aAdd( aItmEntSal, { "CGUID",     "C", 40,  0, "Guid de la entrada o salida",           "",   "", "( cDbf )", win_uuidcreatestring()} )
+   aAdd( aItmEntSal, { "CMONEDAS",  "C",200,  0, "Monedas y billetes",                    "",   "", "( cDbf )"} )
+
+return ( aItmEntSal )
+
+
+
+FUNCTION EntSal( oMenuItem, oWnd )
+
+   local lEuro          := .F.
+   local nLevel
+   local oSnd
+
+   If( oMenuItem == nil, oMenuItem := "01065", ) ;
+   If( oWnd == nil, oWnd := oWnd(), ) ;
+
+   if oWndBrw == nil
+
+      nLevel            := Auth():Level( oMenuItem )
+      if nAnd( nLevel, 1 ) == 0
+         msgStop( "Acceso no permitido." )
+         return nil
+      end
+
+
+
+
+
+      if oWnd <> nil
+         SysRefresh(); oWnd:CloseAll(); SysRefresh()
+      end
+
+      if !OpenFiles()
+         return nil
+      end
+
+
+
+
+
+      AddMnuNext( "Entradas y salidas de caja", ProcName() )
+
+
+
+
+
+
+
+
+
+
+
+
+
+      oWndBrw := TShell():New( 2, 10, 18, 70, "Entradas y salidas de caja",, oWnd,,, .F.,,, ( dbfEntT ),,,,, {"Fecha"}, {||( WinAppRec( oWndBrw:oBrw, bEdit, dbfEntT ) )}, {||( WinEdtRec( oWndBrw:oBrw, bEdit, dbfEntT ) )}, {||( WinDelRec(  oWndBrw:oBrw, dbfEntT ) )}, {||( WinDupRec( oWndBrw:oBrw, bEdit, dbfEntT ) )}, nil, nLevel, "gc_cash_register_refresh_16", ( 164 + ( 55 * 256 ) + ( 58 * 65536 ) ),,, .T. )
+
+      with object ( oWndBrw:AddXCol() )
+         :cHeader          := "Cerrado"
+         :nHeadBmpNo       := 3
+         :bStrData         := {|| "" }
+         :bEditValue       := {|| ( dbfEntT )->lCloEnt }
+         :nWidth           := 20
+         :SetCheck( { "gc_lock2_12", "Nil16" } )
+         :AddResource( "gc_lock2_16" )
+
+      end
+
+      with object ( oWndBrw:AddXCol() )
+         :cHeader          := "Envio"
+         :nHeadBmpNo       := 3
+         :bStrData         := {|| "" }
+         :bEditValue       := {|| ( dbfEntT )->lSndEnt }
+         :nWidth           := 20
+         :SetCheck( { "gc_mail2_12", "Nil16" } )
+         :AddResource( "gc_mail2_16" )
+      end
+
+      with object ( oWndBrw:AddXCol() )
+         :cHeader          := "Tipo"
+         :bEditValue       := {|| aTextTipo[ Max( ( dbfEntT )->nTipEnt, 1 ) ] }
+         :bBmpData         := {|| if( ( dbfEntT )->nTipEnt <= 1, 1, ( dbfEntT )->nTipEnt ) }
+         :nWidth           := 160
+         :bLClickHeader    := {| nMRow, nMCol, nFlags, oCol | oWndBrw:ClickOnHeader( oCol ) }
+         :AddResource( "Sel16" )
+         :AddResource( "Cnt16" )
+         :AddResource( "gc_money2_16" )
+         :AddResource( "gc_credit_cards_16" )
+      end
+
+      with object ( oWndBrw:AddXCol() )
+         :cHeader          := "Número"
+         :cSortOrder       := "nNumEnt"
+         :bEditValue       := {|| ( dbfEntT )->nNumEnt }
+         :nWidth           := 80
+         :bLClickHeader    := {| nMRow, nMCol, nFlags, oCol | oWndBrw:ClickOnHeader( oCol ) }
+      end
+
+      with object ( oWndBrw:AddXCol() )
+         :cHeader          := "Fecha"
+         :cSortOrder       := "dFecEnt"
+         :bEditValue       := {|| Dtoc( ( dbfEntT )->dFecEnt ) }
+         :nWidth           := 80
+         :bLClickHeader    := {| nMRow, nMCol, nFlags, oCol | oWndBrw:ClickOnHeader( oCol ) }
+      end
+
+      with object ( oWndBrw:AddXCol() )
+         :cHeader          := "Sesión"
+         :bEditValue       := {|| ( dbfEntT )->cTurEnt }
+         :nWidth           := 80
+         :nDataStrAlign    := 1
+         :nHeadStrAlign    := 1
+      end
+
+      with object ( oWndBrw:AddXCol() )
+         :cHeader          := "Delegación"
+         :bEditValue       := {|| ( dbfEntT )->cSufEnt }
+         :nWidth           := 40
+         :nDataStrAlign    := 1
+         :nHeadStrAlign    := 1
+         :lHide            := .T.
+      end
+
+      with object ( oWndBrw:AddXCol() )
+         :cHeader          := "Caja"
+         :bEditValue       := {|| ( dbfEntT )->cCodCaj }
+         :nWidth           := 80
+      end
+
+      with object ( oWndBrw:AddXCol() )
+         :cHeader          := "Descripción"
+         :bEditValue       := {|| ( dbfEntT )->cDesEnt }
+         :nWidth           := 200
+         :bLClickHeader    := {| nMRow, nMCol, nFlags, oCol | oWndBrw:ClickOnHeader( oCol ) }
+      end
+
+      with object ( oWndBrw:AddXCol() )
+         :cHeader          := "Importe"
+         :bEditValue       := {|| nTotES( nil, dbfEntT, dbfDivisa, if( lEuro, cDivChg(), cDivEmp() ), .T. ) }
+         :nWidth           := 80
+         :nDataStrAlign    := 1
+         :nHeadStrAlign    := 1
+      end
+
+      with object ( oWndBrw:AddXCol() )
+         :cHeader          := "Div."
+         :bEditValue       := {|| cSimDiv( if( lEuro, cDivChg(), ( dbfEntT )->cCodDiv ), dbfDivisa ) }
+         :nWidth           := 30
+         :nDataStrAlign    := 1
+         :nHeadStrAlign    := 1
+      end
+
+      oWndBrw:cHtmlHelp    := "Entradas y salidas"
+
+      oWndBrw:CreateXFromCode()
+
+
+
+
+
+      oWndBrw:NewAt( "BUS",,, {||( oWndBrw:SearchSetFocus() )}, "(B)uscar", "B",,,,, .F. )
+
+      oWndBrw:AddSeaBar()
+
+
+
+
+
+
+
+
+      oWndBrw:NewAt( "NEW",,, {||( oWndBrw:RecAdd() )}, "(A)ñadir", "A",,, 2,, .F. )
+
+
+
+
+
+
+
+
+      oWndBrw:NewAt( "gc_money2_",,, {||(  iif(  SuperUsuarioController():New():isDialogViewActivate(), WinAppRec( oWndBrw:oBrw, bEdit, dbfEntT, 3 ), ) )}, "(R)etirada efectivo", "R",,, 2,, .F. )
+
+
+
+
+
+
+
+
+      oWndBrw:NewAt( "gc_credit_cards_",,, {||(  iif(  SuperUsuarioController():New():isDialogViewActivate(), WinAppRec( oWndBrw:oBrw, bEdit, dbfEntT, 4 ), ) )}, "Retirada tar(j)eta", "J",,, 2,, .F. )
+
+
+
+
+
+
+        oWndBrw:NewAt( "DUP",,, {||( oWndBrw:RecDup() )}, "(D)uplicar", "D",,, 2,, .F. )
+
+
+
+
+
+
+        oWndBrw:NewAt( "EDIT",,, {||( oWndBrw:RecEdit() )}, "(M)odificar", "M",,, 4,, .F. )
+
+
+
+
+
+
+        oWndBrw:NewAt( "ZOOM",,, {||( WinZooRec( oWndBrw:oBrw, bEdit, dbfEntT ) )}, "(Z)oom", "Z",,, 8,, .F. )
+
+
+
+
+
+
+        oWndBrw:NewAt( "DEL",,, {||( oWndBrw:RecDel() )}, "(E)liminar", "E",,, 16,, .F. )
+
+
+
+
+
+
+
+      oSnd := oWndBrw:NewAt( "LBL",,, {||lSndEnt( oWndBrw, dbfEntT )}, "En(v)iar", "V",, {|This|This:Toggle()}, 4,, .F. )
+
+
+
+
+
+
+
+         oWndBrw:NewAt( "LBL",,, {||( lSelectAll( oWndBrw, dbfEntT, "lSndEnt", .T., .T., .T. ) )}, "Todos",,,, 4, oSnd, .F. )
+
+
+
+
+
+
+
+         oWndBrw:NewAt( "LBL",,, {||( lSelectAll( oWndBrw, dbfEntT, "lSndEnt", .F., .T., .T. ) )}, "Ninguno",,,, 4, oSnd, .F. )
+
+
+
+
+
+
+
+         oWndBrw:NewAt( "LBL",,, {||( lSelectAll( oWndBrw, dbfEntT, "lSndEnt", .T., .F., .T. ) )}, "Abajo",,,, 4, oSnd, .F. )
+
+
+
+
+
+
+      oWndBrw:NewAt( "gc_currency_euro_",,, {||( lEuro := !lEuro, oWndBrw:Refresh() )}, "E(u)ros", "U",,, 8,, .F. )
+
+
+
+
+
+
+
+
+      oWndBrw:NewAt( "IMP",,, {||( IEntSal():New( "Listado de entradas y salidas de caja" ):Play() )}, "(L)istado", "L",,, 8,, .F. )
+
+
+
+
+
+
+
+      oWndBrw:NewAt( "END",,, {||( oWndBrw:End() )}, "(S)alir", "S",,,,, .F. )
+
+      oWndBrw:oActiveFilter:SetFields(  aItmEntSal() )
+      oWndBrw:oActiveFilter:SetFilterType( "23" )
+
+        oWndBrw:Activate(, oWndBrw:bLClicked, oWndBrw:bRClicked, oWndBrw:bMoved, oWndBrw:bResized, oWndBrw:bPainted, oWndBrw:bKeyDown, oWndBrw:bInit,,,,,,,,, {|| ( CloseFiles() )},, oWndBrw:bLButtonUp, .F. )
+
+    ELSE
+
+        oWndBrw:SetFocus()
+
+   end
+
+RETURN nil
+
+
+
+STATIC FUNCTION OpenFiles()
+
+   local lOpen    := .T.
+   local oBlock   := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   BEGIN SEQUENCE
+
+   IF !lExistTable( cPatEmp() + "ENTSAL.DBF" )
+        mkEntSal()
+    end
+
+   nView          := D():CreateView()
+
+   D():Get( "LogPorta", nView )
+
+   dbUseArea( .T., ( cDriver() ), ( cPatEmp() + "ENTSAL.DBF" ), ( cCheckArea( "ENTSAL", @dbfEntT ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+   if !lAIS() ; ordListAdd( ( cPatEmp() + "ENTSAL.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   dbUseArea( .T., ( cDriver() ), ( cPatDat() + "DIVISAS.DBF" ), ( cCheckArea( "DIVISAS", @dbfDivisa ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+   if !lAIS() ; ordListAdd( ( cPatDat() + "DIVISAS.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   dbUseArea( .T., ( cDriver() ), ( cPatDat() + "CAJAS.DBF" ), ( cCheckArea( "CAJAS", @dbfCaj ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+   if !lAIS() ; ordListAdd( ( cPatDat() + "CAJAS.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   dbUseArea( .T., ( cDriver() ), ( cPatEmp() + "NCOUNT.DBF" ), ( cCheckArea( "NCOUNT", @dbfCount ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+   if !lAIS() ; ordListAdd( ( cPatEmp() + "NCOUNT.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   cPorDiv        := cPorDiv( cDivEmp(), dbfDivisa )
+
+   oBandera       := TBandera():New
+
+   bBmp           := LoadBitmap( GetResources(), "BmpLock" )
+   bBmpSnd        := LoadBitmap( GetResources(), "gc_satellite_dish2_16" )
+
+   oMoneyEfectivo := TVirtualMoney():New()
+
+   RECOVER
+
+      msgStop( "Imposible abrir todas las bases de datos" )
+      CloseFiles()
+      lOpen          := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+STATIC FUNCTION CloseFiles()
+
+   ( dbfEntT   )->( dbCloseArea() )
+   ( dbfDivisa )->( dbCloseArea() )
+   ( dbfCaj    )->( dbCloseArea() )
+   ( dbfCount  )->( dbCloseArea() )
+
+   D():DeleteView( nView )
+
+   dbfEntT     := nil
+   dbfDivisa   := nil
+   dbfCaj      := nil
+   dbfCount    := nil
+
+   oWndBrw     := nil
+
+RETURN .T.
+
+
+
+STATIC FUNCTION EdtRec( aTmp, aGet, dbfEntT, oBrw, nTipoDocumento, bValid, nMode )
+
+    local oDlg
+   local oSay
+   local cSay
+   local oBmpDiv
+   local cPicImp
+   local oSayUsr
+   local cSayUsr
+   local oBmpGeneral
+   local oSayTittle
+   local cBmpGeneral
+   local cWindowTittle
+   local cSayTittle
+
+   if Empty( nTipoDocumento )
+      nTipoDocumento       := 1
+   end
+
+   do case
+   case nMode == 1
+
+      if !lCajaOpen( Application():CodigoCaja() ) .AND. !oUser():lAdministrador()
+         msgStop( "Esta caja " + Application():CodigoCaja() + " esta cerrada." )
+         Return .F.
+      end
+
+      aTmp[ 2 ]  := cCurSesion()
+      aTmp[ 4 ]  := Application():CodigoCaja()
+      aTmp[ 3 ]  := RetSufEmp()
+      aTmp[ 10 ]  := cDivEmp()
+      aTmp[ 11 ]  := 1
+      aTmp[ 9 ]  := .T.
+      aTmp[ 12 ]  := GetSysDate()
+      aTmp[ 13 ]  := SubStr( Time(), 1, 5 )
+      aTmp[ 14 ]  := Auth():Codigo()
+      aTmp[ 5 ]  := nTipoDocumento
+      aTmp[ 17 ]    := win_uuidcreatestring()
+
+      oMoneyEfectivo:SetStream( "" )
+
+   case nMode == 4
+
+      if !lCajaOpen( Application():CodigoCaja() ) .AND. !oUser():lAdministrador()
+         msgStop( "Esta caja " + Application():CodigoCaja() + " esta cerrada." )
+         Return .F.
+      end
+
+      if SuperUsuarioController():New():isNotDialogViewActivate()
+         RETURN .F.
+      end
+
+      aTmp[ 2 ]  := cCurSesion()
+      aTmp[ 4 ]  := Application():CodigoCaja()
+      aTmp[ 12 ]  := GetSysDate()
+      aTmp[ 3 ]  := RetSufEmp()
+      aTmp[ 9 ]  := .T.
+      aTmp[ 17 ]    := win_uuidcreatestring()
+
+      oMoneyEfectivo:SetStream( "" )
+
+   case nMode == 2
+
+      if SuperUsuarioController():New():isNotDialogViewActivate()
+         RETURN .F.
+      end
+
+      oMoneyEfectivo:SetStream( aTmp[ 18 ] )
+
+   end
+
+   do case
+      case aTmp[ 5 ] == 3
+
+         cBmpGeneral       := "gc_money2_48"
+         cWindowTittle     := "retirada efectivo"
+         cSayTittle        := "Retirada efectivo"
+
+      case aTmp[ 5 ] == 4
+
+         cBmpGeneral       := "gc_credit_cards_48"
+         cWindowTittle     := "retirada tarjeta"
+         cSayTittle        := "Retirada tarjeta"
+
+      otherwise
+
+         cBmpGeneral       := "gc_cash_register_refresh_48"
+         cWindowTittle     := "movimientos de entradas y salidas"
+         cSayTittle        := "Entradas y salidas de caja"
+
+   end
+
+   if Empty( aTmp[ 14 ] )
+      aTmp[ 14 ]  := Auth():Codigo()
+   end
+
+   if Empty( aTmp[ 4 ] )
+      aTmp[ 4 ]  := Application():CodigoCaja()
+   end
+
+   if Empty( aTmp[ 10 ] )
+      aTmp[ 10 ]  := cDivEmp()
+   end
+
+   if Empty( aTmp[ 11 ] )
+      aTmp[ 11 ]  := 1
+   end
+
+   cPicImp              := cPorDiv( aTmp[ 10 ], dbfDivisa )
+
+   oDlg = TDialog():New(,,,, LblTitle( nMode ) + cWindowTittle, "EntSal",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+      oBmpGeneral := TBitmap():ReDefine( 500, cBmpGeneral,, oDlg,,, .F., .F.,,, .F.,,, .T. )
+
+
+
+
+      oSayTittle := TSay():ReDefine( 501, {||      cSayTittle}, oDlg,,,, .F.,, .F., .F., )
+
+
+
+
+      aGet[ 16 ] := TGetHlp():ReDefine( 300, { | u | If( PCount()==0, aTmp[ 16 ], aTmp[ 16 ]:= u ) }, oDlg,,,,,,,,, .F., {||     .F.},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      aGet[ 3 ] := TGetHlp():ReDefine( 310, { | u | If( PCount()==0, aTmp[ 3 ], aTmp[ 3 ]:= u ) }, oDlg,,,,,,,,, .F., {||     .F.},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      aGet[ 5 ] := TRadMenu():Redefine( { | u | If( PCount()==0, aTmp[ 5 ], aTmp[ 5 ]:= u ) }, oDlg,, { 90, 91 },,,,, .F., {||      ( nMode <> 3 )}, )
+
+
+
+
+
+
+      aGet[ 1 ] := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, aTmp[ 1 ], aTmp[ 1 ]:= u ) }, oDlg,,,, "N/W*",,,,, .F., {||      ( nMode <> 3 )},, .F., .T.,,,,,, nil,,, )
+
+
+
+
+
+
+
+
+
+
+
+      aGet[ 4 ] := TGetHlp():ReDefine( 150, { | u | If( PCount()==0, aTmp[ 4 ], aTmp[ 4 ]:= u ) }, oDlg,,, {||    cCajas( aGet[ 4 ], dbfCaj, oSay )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwCajas( aGet[ 4 ], oSay ) )}, nil, "LUPA",, )
+
+
+
+
+      oSay := TGetHlp():ReDefine( 151, { | u | If( PCount()==0, cSay, cSay:= u ) }, oDlg,,,,,,,,, .F., {||     .F.},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      TGetHlp():ReDefine( 110, { | u | If( PCount()==0, aTmp[ 6 ], aTmp[ 6 ]:= u ) }, oDlg,, "@!",,,,,,, .F., {||         ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+
+
+      aGet[ 10 ] := TGetHlp():ReDefine( 120, { | u | If( PCount()==0, aTmp[ 10 ], aTmp[ 10 ]:= u ) }, oDlg,, "@!", {||    ( cDivOut( aGet[ 10 ], oBmpDiv, aTmp[ 11 ], , , @cPicImp, , , , nil, dbfDivisa, oBandera ) )},,,,,, .F., {||     ( nMode == 1 )},, .F., .F.,,,,, {|Self|BrwDiv( aGet[ 10 ], oBmpDiv, aTmp[ 11 ], dbfDivisa, oBandera )}, nil, "LUPA",, )
+
+
+
+
+      oBmpDiv := TBitmap():ReDefine( 121, "BAN_EURO",, oDlg,,, .F., .F.,,, .F.,,, .F. )
+
+
+
+
+
+      aGet[ 7 ] := TGetHlp():ReDefine( 140, { | u | If( PCount()==0, aTmp[ 7 ], aTmp[ 7 ]:= u ) }, oDlg,, ( cPicImp ),,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+      oBtnEfectivo               := TBtnBmp():ReDefine( 220, "gc_money2_16",,,,,{|| oMoneyEfectivo:Dialog( aGet[ 7 ] ) }, oDlg, .F., , .F., "Conteo de efectivo" )
+      oBtnEfectivo:lTransparent  := .T.
+      oBtnEfectivo:lBoxSelect    := .F.
+
+
+
+
+
+
+      aGet[ 15 ] := TGetHlp():ReDefine( 160, { | u | If( PCount()==0, aTmp[ 15 ], aTmp[ 15 ]:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( aGet[ 15 ]:cText( cGetFile( "Doc ( *.* ) | " + "*.*", "Seleccione el nombre del fichero" ) ) )}, nil, "FOLDER",, )
+
+      TBtnBmp():ReDefine( 161, "gc_gearwheel_16",,,,,{|| ShellExecute( oDlg:hWnd, "open", Rtrim( aTmp[ 15 ] ) ) }, oDlg, .F., , .F., )
+
+
+
+
+
+      aGet[ 2 ] := TGetHlp():ReDefine( 170, { | u | If( PCount()==0, aTmp[ 2 ], aTmp[ 2 ]:= u ) }, oDlg,,,,,,,,, .F., {||     ( .F. )},, .F., .T.,,,,,, nil,,, )
+
+
+
+
+
+        TButton():ReDefine( 1, {||( SaveRec( aTmp, aGet, dbfEntT, oBrw, oDlg, nMode ) )}, oDlg,,, .F., {||         ( nMode <> 3 )},,, .F. )
+
+
+
+
+        TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .F. )
+
+      if nMode <> 3
+         oDlg:AddFastKey( 116, {|| SaveRec( aTmp, aGet, dbfEntT, oBrw, oDlg, nMode ) } )
+      end
+
+      oDlg:bStart := {|| SetDlgMode( aGet, aTmp, oBtnEfectivo ) }
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   oBmpDiv:End()
+
+   if !Empty( oBmpGeneral )
+      oBmpGeneral:End()
+   end
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+STATIC FUNCTION SetDlgMode( aGet, aTmp, oBtnEfectivo )
+
+   aGet[ 10 ]:lValid()
+   aGet[ 4 ]:lValid()
+   aGet[ 7 ]:SetFocus()
+
+   if aTmp[ 5 ] > 2
+      aGet[ 5 ]:Hide()
+   end
+
+   if aTmp[ 5 ] > 3
+      oBtnEfectivo:Hide()
+   end
+
+Return nil
+
+
+
+STATIC FUNCTION EdtRecTct( aTmp, aGet, dbfEntT, oBrw, bWhen, bValid, nMode )
+
+    local oDlg
+   local oSay
+   local cSay
+   local cPicImp
+   local oSayCaj
+   local cSayCaj
+   local oSayUsr
+   local cSayUsr
+   local oBtnUser
+   local oBtnCaj
+   local oBtnEnt
+   local oBtnSal
+   local nOpcion
+
+   do case
+   case nMode == 1
+
+      if !lCajaOpen( Application():CodigoCaja() ) .AND. !oUser():lAdministrador()
+         msgStop( "Esta caja " + Application():CodigoCaja() + " esta cerrada." )
+         Return .F.
+      end
+
+      aTmp[ 2 ]  := cCurSesion()
+      aTmp[ 4 ]  := Application():CodigoCaja()
+      aTmp[ 3 ]  := RetSufEmp()
+      aTmp[ 10 ]  := cDivEmp()
+      aTmp[ 11 ]  := 1
+      aTmp[ 5 ]  := 1
+      aTmp[ 13 ]  := SubStr( Time(), 1, 5 )
+      aTmp[ 14 ]  := Auth():Codigo()
+
+   case nMode == 4
+
+      if !lCajaOpen( Application():CodigoCaja() ) .AND. !oUser():lAdministrador()
+         msgStop( "Esta caja " + Application():CodigoCaja() + " esta cerrada." )
+         Return .F.
+      end
+
+      aTmp[ 2 ]  := cCurSesion()
+      aTmp[ 4 ]  := Application():CodigoCaja()
+      aTmp[ 3 ]  := RetSufEmp()
+
+   case nMode == 2
+
+      if aTmp[ 8 ] .AND. !oUser():lAdministrador()
+         msgStop( "Solo puede modificar las entradas cerradas los administradores." )
+         return .F.
+      end
+
+   end
+
+   if Empty( aTmp[ 14 ] )
+      aTmp[ 14 ]  := Auth():Codigo()
+   end
+
+   if Empty( aTmp[ 4 ] )
+      aTmp[ 4 ]  := Application():CodigoCaja()
+   end
+
+   if Empty( aTmp[ 10 ] )
+      aTmp[ 10 ]  := cDivEmp()
+   end
+
+   if Empty( aTmp[ 11 ] )
+      aTmp[ 11 ]  := 1
+   end
+
+   cPicImp              := cPorDiv( aTmp[ 10 ], dbfDivisa )
+
+   oDlg = TDialog():New(,,,, LblTitle( nMode ) + "movimientos de entradas y salidas", "ENTSAL_TCT",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+      aGet[ 1 ] := TGetHlp():ReDefine( 110, { | u | If( PCount()==0, aTmp[ 1 ], aTmp[ 1 ]:= u ) }, oDlg,,,,,,,,, .F., {||     ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      aGet[ 13 ] := TGetHlp():ReDefine( 120, { | u | If( PCount()==0, aTmp[ 13 ], aTmp[ 13 ]:= u ) }, oDlg,,,,,,,,, .F., {||     ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      aGet[ 5 ] := TRadMenu():Redefine( { | u | If( PCount()==0, aTmp[ 5 ], aTmp[ 5 ]:= u ) }, oDlg,, { 90, 91 },,,,, .F., {||      ( nMode <> 3 )}, )
+
+
+
+
+
+      oBtnCaj := TButtonBmp():ReDefine( 151, {||( SelCajTactil(), SetBigCaj( oSayCaj ) )}, oDlg,,, .F.,,,, .F., "gc_cash_register_32",,, .F. )
+
+
+
+      oSayCaj := TGetHlp():ReDefine( 150, { | u | If( PCount()==0, cSayCaj, cSayCaj:= u ) }, oDlg,,,,,,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      TButtonBmp():ReDefine( 171, {||( Calculadora( 0, aGet[ 7 ] ) )}, oDlg,,, .F.,,,, .F., "gc_calculator_32",,, .F. )
+
+
+
+
+      aGet[ 7 ] := TGetHlp():ReDefine( 170, { | u | If( PCount()==0, aTmp[ 7 ], aTmp[ 7 ]:= u ) }, oDlg,, ( cPicImp ),,,,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      TButtonBmp():ReDefine( 181, {||( aGet[ 6 ]:cText( VirtualKey( .F. ) ) )}, oDlg,,, .F.,,,, .F., "gc_keyboard_32",,, .F. )
+
+
+
+
+      aGet[ 6 ] := TGetHlp():ReDefine( 180, { | u | If( PCount()==0, aTmp[ 6 ], aTmp[ 6 ]:= u ) }, oDlg,, "@!",,,,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+      TButtonBmp():ReDefine( 500, {||( SaveRec( aTmp, aGet, dbfEntT, oBrw, oDlg, nMode ) )}, oDlg,,, .F., {||         ( nMode <> 3 )},,, .F., "gc_check_32",,, .F. )
+
+
+
+
+
+      TButtonBmp():ReDefine( 550, {||( oDlg:end() )}, oDlg,,, .F.,,,, .F., "Delete_32",,, .F. )
+
+      if nMode <> 3
+         oDlg:AddFastKey( 116, {|| SaveRec( aTmp, aGet, dbfEntT, oBrw, oDlg, nMode ) } )
+      end
+
+      oDlg:bStart := {|| SetBigCaj( oSayCaj ) }
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+static function SetBigCaj( oSayUsr )
+
+   oSayUsr:cText( RetFld( Application():CodigoCaja(), dbfCaj, "cNomCaj" ) )
+
+RETURN ( .T. )
+
+
+
+Static Function SaveRec( aTmp, aGet, dbfEntT, oBrw, oDlg, nMode )
+
+   if Empty( aTmp[ 10 ] )
+      MsgStop( "Código de la divisa no puede estar vacio" )
+      Return .F.
+   end
+
+   if Empty( aTmp[ 4 ] )
+      MsgStop( "Código de caja no puede estar vacio" )
+      Return .F.
+   end
+
+   if aTmp[ 7 ] <= 0
+      MsgStop( "Importe de entrada/salida no válido" )
+      aGet[ 7 ]:SetFocus()
+      Return .F.
+   end
+
+   if nMode == 1 .OR. nMode == 4
+      aTmp[ 16 ]     := nNewDoc( , dbfEntT, "NENTSAL", , dbfCount )
+   end
+
+   aTmp[ 18 ] := oMoneyEfectivo:GetStream()
+
+   WinGather( aTmp, aGet, dbfEntT, oBrw, nMode )
+
+   oUser():OpenCajonDirect( nView )
+
+RETURN ( oDlg:end( 1 ) )
+
+
+
+FUNCTION mkEntSal( cPath, oMeter, cDriver )
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+   If( cDriver == nil, cDriver := cDriver(), ) ;
+
+   if oMeter <> nil
+        oMeter:cText    := "Generando Bases"
+        sysrefresh()
+   end
+
+   if !lExistTable( cPath + "ENTSAL.DBF", cDriver )
+      dbCreate( cPath + "ENTSAL.DBF", aSqlStruct( aItmEntSal() ), cDriver )
+   end
+
+    rxEntSal( cPath, oMeter, cDriver )
+
+RETURN nil
+
+
+
+FUNCTION rxEntSal( cPath, oMeter, cDriver )
+
+    local dbfEntT
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+   If( cDriver == nil, cDriver := cDriver(), ) ;
+
+   if !lExistTable( cPath + "ENTSAL.DBF" )
+      dbCreate( cPath + "ENTSAL.DBF", aSqlStruct( aItmEntSal() ), cDriver )
+    end
+
+   fEraseIndex( cPath + "ENTSAL.CDX" )
+
+   dbUseArea( .T., cDriver, cPath + "ENTSAL.DBF", cCheckArea( "ENTSAL", @dbfEntT ), .F. )
+
+   if !( dbfEntT )->( neterr() )
+      ( dbfEntT )->( __dbPack() )
+
+      ( dbfEntT )->( ordCondSet("!Deleted()", {||!Deleted()}  ) )
+      ( dbfEntT )->( ordCreate( cPath + "ENTSAL.CDX", "CNUMENT", "Str( Field->nNumEnt ) + Field->cSufEnt", {|| Str( Field->nNumEnt ) + Field->cSufEnt } ) )
+
+      ( dbfEntT )->( ordCondSet("!Deleted()", {||!Deleted()}  ) )
+      ( dbfEntT )->( ordCreate( cPath + "ENTSAL.CDX", "DFECENT", "Field->dFecEnt", {|| Field->dFecEnt } ) )
+
+      ( dbfEntT )->( ordCondSet("!Deleted()", {||!Deleted()}  ) )
+      ( dbfEntT )->( ordCreate( cPath + "ENTSAL.CDX", "CTURENT", "Field->cTurEnt + Field->cSufEnt + Field->cCodCaj", {|| Field->cTurEnt + Field->cSufEnt + Field->cCodCaj } ) )
+
+      ( dbfEntT )->( ordCondSet("!Deleted()", {||!Deleted()}  ) )
+      ( dbfEntT )->( ordCreate( cPath + "ENTSAL.CDX", "LSNDENT", "Field->lSndEnt", {|| Field->lSndEnt } ) )
+
+      ( dbfEntT )->( dbCloseArea() )
+   else
+      msgStop( "Imposible abrir en modo exclusivo la tabla de entradas y salidas de cajas" )
+   end
+
+RETURN nil
+
+
+
+function nTotES( aTmp, dbfEntT, dbfDivisa, cDivRet, lPic )
+
+   local nImp
+   local nTot
+   local nVdvRet
+
+   If( lPic == nil, lPic := .T., ) ;
+
+   if aTmp == nil
+      nImp           := ( dbfEntT )->nVdvDiv
+      nTot           := ( dbfEntT )->nImpEnt
+   else
+      nImp           := aTmp[ 11 ]
+      nTot           := aTmp[ 7 ]
+   end
+
+   nTot              := nTot * nImp
+
+   nVdvRet           := nDiv2Div( cDivEmp(), cDivRet, dbfDivisa )
+   nTot              := nCnv( nTot, nVdvRet )
+
+return ( if( lPic, Trans( nTot, cPorDiv( cDivRet, dbfDivisa ) ), nTot ) )
+
+
+
+Static Function lSndEnt( oBrw, dbf )
+
+   if dbDialogLock( dbf )
+      ( dbf )->lSndEnt := !( dbf )->lSndEnt
+      ( dbf )->( dbUnlock() )
+      oBrw:Refresh()
+      oBrw:SetFocus()
+   end
+
+RETURN nil
+
+
+
+Function IsEntSal( cPatEmp )
+
+   If( cPatEmp == nil, cPatEmp := cPatEmp(), ) ;
+
+   if !lExistTable( cPatEmp + "EntSal.Dbf" )
+      mkEntSal( cPatEmp )
+   end
+
+   if !lExistIndex( cPatEmp + "EntSal.Cdx" )
+      rxEntSal( cPatEmp )
+   end
+
+Return ( .T. )
+
+
+
+Function AppEntSal( oMenuItem )
+
+   local nLevel
+
+   If( oMenuItem == nil, oMenuItem := "01065", ) ;
+
+   nLevel               := Auth():Level( oMenuItem )
+
+   if nAnd( nLevel, 1 ) == 0 .OR. nAnd( nLevel, 2 ) == 0
+      msgStop( "Acceso no permitido." )
+      return .T.
+   end
+
+   if OpenFiles( nil, .T. )
+      WinAppRec( nil, bEditTct, dbfEntT )
+      CloseFiles()
+   end
+
+RETURN .T.
+
+
+
+Function EdtEntSal( nRecEntradaSalida )
+
+   local nLevel         := Auth():Level( "01065" )
+
+   if nAnd( nLevel, 1 ) == 0 .OR. nAnd( nLevel, 4 ) == 0
+      msgStop( "Acceso no permitido." )
+      return .T.
+   end
+
+   if OpenFiles( nil, .T. )
+
+      ( dbfEntT )->( dbGoTo( nRecEntradaSalida ) )
+      if ( dbfEntT )->( Recno() ) == nRecEntradaSalida
+         WinEdtRec( nil, bEdit, dbfEntT )
+      end
+
+      CloseFiles()
+
+   end
+
+Return .T.
+
+
+
+
+
+
+
+
+
+_HB_CLASS TEntradasSalidasSenderReciver ; function TEntradasSalidasSenderReciver ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TEntradasSalidasSenderReciver", iif( .T., { @TSenderReciverItem() }, { @HBObject() } ), @TEntradasSalidasSenderReciver() ) ) ;
+
+   _HB_MEMBER { lSuccesfullSendEntSal } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lSuccesfullSendEntSal"}, .F. )
+
+   _HB_MEMBER { nEntSalNumberSend } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nEntSalNumberSend"}, .F. )
+
+   _HB_MEMBER { cFileName } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFileName"}, .F. )
+
+   _HB_MEMBER CreateData(); oClass:AddMethod( "CreateData", @TEntradasSalidasSenderReciver_CreateData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER RestoreData(); oClass:AddMethod( "RestoreData", @TEntradasSalidasSenderReciver_RestoreData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SendData(); oClass:AddMethod( "SendData", @TEntradasSalidasSenderReciver_SendData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ReciveData(); oClass:AddMethod( "ReciveData", @TEntradasSalidasSenderReciver_ReciveData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Process(); oClass:AddMethod( "Process", @TEntradasSalidasSenderReciver_Process(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nGetEntSalNumberToSend(); oClass:AddInline( "nGetEntSalNumberToSend", {|Self | ( ( Self ) ), ( ::nEntSalNumberSend     := GetPvProfInt( "Numero", "Entradas y salidas", ::nEntSalNumberSend, ::cIniFile ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER IncEntSalNumberToSend(); oClass:AddInline( "IncEntSalNumberToSend", {|Self | ( ( Self ) ), ( WritePProString( "Numero", "Entradas y salidas",    cValToChar( ++::nEntSalNumberSend ),  ::cIniFile ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER validateRecepcion( tmpEntSal, dbfEntSal); oClass:AddMethod( "validateRecepcion", @TEntradasSalidasSenderReciver_validateRecepcion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TEntradasSalidasSenderReciver ;
+
+
+
+static FUNCTION TEntradasSalidasSenderReciver_CreateData( ) ; local Self AS CLASS TEntradasSalidasSenderReciver := QSelf() AS CLASS TEntradasSalidasSenderReciver
+
+   local oBlock
+   local oError
+   local nOrd
+   local lSnd        := .F.
+   local dbfEntSal
+   local tmpEntSal
+
+   if ::oSender:lServer
+      ::cFileName      := "EntSal" + win_uuidcreatestring() + ".All"
+   else
+      ::cFileName      := "EntSal" + win_uuidcreatestring() + "." + RetSufEmp()
+   end
+
+   oBlock            := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   dbUseArea( .T., ( cDriver() ), ( cPatEmp() + "ENTSAL.DBF" ), ( cCheckArea( "ENTSAL", @dbfEntSal ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+   if !lAIS() ; ordListAdd( ( cPatEmp() + "ENTSAL.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   mkEntSal( cPatSnd(), , cLocalDriver() )
+
+   dbUseArea( .T., ( cLocalDriver() ), ( cPatSnd() + "EntSal.DBF" ), ( cCheckArea( "EntSal", @tmpEntSal ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+   if ! .T. ; ordListClear() ; end ; ordListAdd( ( cPatSnd() + "EntSal.CDX" ) )
+
+   if !Empty( ::oSender:oMtr )
+      ::oSender:oMtr:nTotal := ( dbfEntSal )->( LastRec() )
+   end
+
+   ::oSender:SetText( "Enviando entradas y salidas de caja" )
+
+   nOrd  := ( dbfEntSal )->( OrdSetFocus( "lSndEnt" ) )
+
+   if ( dbfEntSal )->( dbSeek( .T. ) )
+
+      while ( dbfEntSal )->lSndEnt .AND. !( dbfEntSal )->( eof() )
+
+         lSnd  := .T.
+
+         dbPass( dbfEntSal, tmpEntSal, .T. )
+
+         ::oSender:SetText( AllTrim( Str( ( dbfEntSal )->nNumEnt ) ) + "/" + AllTrim( ( dbfEntSal )->cSufEnt ) + "; " + Dtoc( ( dbfEntSal )->dFecEnt ) + "; " + AllTrim( ( dbfEntSal )->cDesEnt ) )
+
+         ( dbfEntSal )->( dbSkip() )
+
+         if !Empty( ::oSender:oMtr )
+            ::oSender:oMtr:Set( ( dbfEntSal )->( OrdKeyNo() ) )
+         end
+
+      end
+
+   end
+
+   ( dbfEntSal )->( OrdSetFocus( nOrd ) )
+
+   RECOVER USING oError
+
+      msgStop( "Imposible abrir todas las bases de datos " + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+   end
+
+   ErrorBlock( oBlock )
+
+   ( dbfEntSal )->( dbCloseArea() )
+   ( tmpEntSal )->( dbCloseArea() )
+
+   if lSnd
+
+
+
+
+
+      ::oSender:SetText( "Comprimiendo entradas y salidas" )
+
+      if ::oSender:lZipData( ::cFileName )
+         ::oSender:SetText( "Ficheros comprimidos" )
+      else
+         ::oSender:SetText( "ERROR al crear fichero comprimido" )
+      end
+
+   else
+
+      ::oSender:SetText( "No hay entradas y salidas para enviar" )
+
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TEntradasSalidasSenderReciver_RestoreData( ) ; local Self AS CLASS TEntradasSalidasSenderReciver := QSelf() AS CLASS TEntradasSalidasSenderReciver
+
+   local oBlock
+   local oError
+   local dbfEntSal
+
+   if ::lSuccesfullSend
+
+      oBlock            := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+      BEGIN SEQUENCE
+
+      dbUseArea( .T., ( cDriver() ), ( cPatEmp() + "ENTSAL.DBF" ), ( cCheckArea( "ENTSAL", @dbfEntSal ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "ENTSAL.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      ( dbfEntSal )->( OrdSetFocus( "lSndEnt" ) )
+
+      while ( dbfEntSal )->( dbSeek( .T. ) ) .AND. !( dbfEntSal )->( eof() )
+         if ( dbfEntSal )->( dbRLock() )
+            ( dbfEntSal )->lSndEnt := .F.
+            ( dbfEntSal )->( dbRUnlock() )
+         end
+      end
+
+   RECOVER USING oError
+
+      msgStop( "Imposible abrir todas las bases de datos " + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+   end
+
+   ErrorBlock( oBlock )
+
+      ( dbfEntSal )->( dbCloseArea() )
+
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TEntradasSalidasSenderReciver_SendData( ) ; local Self AS CLASS TEntradasSalidasSenderReciver := QSelf() AS CLASS TEntradasSalidasSenderReciver
+
+   local cDirectory           := ""
+
+   if File( cPatOut() + ::cFileName )
+
+      if ::oSender:SendFiles( cPatOut() + ::cFileName, ::cFileName )
+         ::lSuccesfullSend := .T.
+         ::oSender:SetText( "Fichero enviado " + ::cFileName )
+      else
+         ::oSender:SetText( "ERROR al enviar fichero" )
+      end
+
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TEntradasSalidasSenderReciver_ReciveData( ) ; local Self AS CLASS TEntradasSalidasSenderReciver := QSelf() AS CLASS TEntradasSalidasSenderReciver
+
+   local n
+   local aExt
+
+   if ::oSender:lServer
+      aExt  := aRetDlgEmp()
+   else
+      aExt  := { "All" }
+   end
+
+
+
+
+
+   ::oSender:SetText( "Recibiendo entradas y salidas de caja" )
+
+   for n := 1 to len( aExt )
+      ::oSender:GetFiles( "EntSal*." + aExt[ n ], cPatIn() )
+   next
+
+   ::oSender:SetText( "Entradas y salidas de caja recibidas" )
+
+Return Self
+
+
+
+static FUNCTION TEntradasSalidasSenderReciver_Process( ) ; local Self AS CLASS TEntradasSalidasSenderReciver := QSelf() AS CLASS TEntradasSalidasSenderReciver
+
+   local m
+   local cDbfEntSal
+   local tmpEntSal
+   local aFiles         := Directory( cPatIn() + "EntSal*.*" )
+   local lClient        := ::oSender:lServer
+   local oBlock
+   local oError
+   local cNumeroEntrada
+   local cTextoEntrada  := ""
+
+
+
+
+
+   ::oSender:SetText( "Entradas y salidas de proveedores" )
+
+   for m := 1 to len( aFiles )
+
+      ::oSender:SetText( "Procesando fichero : " + aFiles[ m, 1 ] )
+
+      oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+      BEGIN SEQUENCE
+
+
+
+
+
+      if ::oSender:lUnZipData( cPatIn() + aFiles[ m, 1 ] )
+
+
+
+
+
+         if file( cPatSnd() + "EntSal.dbf" )
+
+            dbUseArea( .T., ( cLocalDriver() ), ( cPatSnd() + "EntSal.DBF" ), ( cCheckArea( "EntSal", @tmpEntSal ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+
+            dbUseArea( .T., ( cDriver() ), ( cPatEmp() + "EntSal.DBF" ), ( cCheckArea( "EntSal", @cDbfEntSal ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+            if !lAIS() ; ordListAdd( ( cPatEmp() + "EntSal.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+            while ( tmpEntSal )->( !eof() )
+
+
+
+
+
+               if ::validateRecepcion( tmpEntSal, cDbfEntSal )
+
+                  cNumeroEntrada    := str( ( tmpEntSal )->nNumEnt ) + ( tmpEntSal )->cSufEnt
+                  cTextoEntrada     := AllTrim( str( ( tmpEntSal )->nNumEnt ) ) + "/" + AllTrim( ( tmpEntSal )->cSufEnt ) + "; " + Dtoc( ( tmpEntSal )->dFecEnt )
+
+                  while ( cDbfEntSal )->( dbseek( cNumeroEntrada ) )
+                     dbLockDelete( cDbfEntSal )
+                  end
+
+                  dbPass( tmpEntSal, cDbfEntSal, .T. )
+
+                  if dbLock( cDbfEntSal )
+                     ( cDbfEntSal )->lSndEnt := .F.
+                     ( cDbfEntSal )->( dbUnLock() )
+                  end
+
+                  ::oSender:SetText( "Añadido entrada y salida : " + cTextoEntrada )
+
+               else
+
+                  ::oSender:SetText( "Entrada fecha invalida" + cTextoEntrada )
+
+               end
+
+               ( tmpEntSal )->( dbSkip() )
+
+            end
+
+            ( cDbfEntSal )->( dbCloseArea() )
+            ( tmpEntSal )->( dbCloseArea() )
+
+            ::oSender:AppendFileRecive( aFiles[ m, 1 ] )
+
+         else
+
+            ::oSender:SetText( "Faltan ficheros" )
+
+            if !file( cPatSnd() + "EntSal.Dbf" )
+               ::oSender:SetText( "Falta" + cPatSnd() + "EntSal.Dbf" )
+            end
+
+         end
+
+      else
+
+          ::oSender:SetText( "Error al descomprimir los ficheros" )
+
+      end
+
+      RECOVER USING oError
+
+         ( cDbfEntSal )->( dbCloseArea() )
+         ( tmpEntSal )->( dbCloseArea() )
+
+         ::oSender:SetText( "Error procesando fichero " + aFiles[ m, 1 ] )
+         ::oSender:SetText( ErrorMessage( oError ) )
+
+      end
+
+      ErrorBlock( oBlock )
+
+   next
+
+Return Self
+
+
+
+static FUNCTION TEntradasSalidasSenderReciver_validateRecepcion( tmpEntSal, dbfEntSal ) ; local Self AS CLASS TEntradasSalidasSenderReciver := QSelf() AS CLASS TEntradasSalidasSenderReciver
+
+   ::cErrorRecepcion       := "Pocesando entrada en caja número " + alltrim( Str( ( dbfEntSal )->nNumEnt ) ) + "/" + alltrim( ( dbfEntSal )->cSufEnt ) + " "
+
+   if !( lValidaOperacion( ( tmpEntSal )->dFecEnt, .F. ) )
+      ::cErrorRecepcion    += "la fecha " + dtoc( ( tmpEntSal )->dFecEnt ) + " no es valida en esta empresa"
+      Return .F.
+   end
+
+   if !( ( dbfEntSal )->( dbSeek( Str( ( tmpEntSal )->nNumEnt ) + ( tmpEntSal )->cSufEnt ) ) )
+      Return .T.
+   end
+
+   if dtos( ( dbfEntSal )->dFecCre ) + ( dbfEntSal )->cTimCre >= dtos( ( tmpEntSal )->dFecCre ) + ( tmpEntSal )->cTimCre
+      ::cErrorRecepcion    += "la fecha en la empresa " + dtoc( ( dbfEntSal )->dFecEnt ) + " " + ( dbfEntSal )->cTimCre + " es más reciente que la recepción " + dtoc( ( tmpEntSal )->dFecCre ) + " " + ( tmpEntSal )->cTimCre
+      Return .F.
+   end
+
+Return ( .T. )

@@ -1,0 +1,35 @@
+{
+  "HideExportButton" : false,
+  "RealTimeConexion" : true,
+  "InvertedNameFormat" : false,
+  "Webs" : 
+  {
+    "Costapesca" : 
+    {
+      "Active" : true,
+      "MySqlServer" : "mysql368.srv-hostalia.com",
+      "MySqlPort" : 3306,
+      "MySqlDatabase" : "db4681269_pesca",
+      "MySqlUser" : "u4681269_pesca",
+      "MySqlPassword" : "Q^A_Z30751_1^2*aM+",
+      "MySqlTimeOut" : 60,
+      "CookieKey" : "",
+      "PrefixDatabase" : "ps_",
+      "OrderSerie" : "A",
+      "BudgetSerie" : "P",
+      "DateStart" : "2016-01-01",
+      "FtpService" : "Curl",
+      "FtpServer" : "176.28.103.205",
+      "FtpPort" : 21,
+      "FtpUser" : "f197836.gestool",
+      "FtpPassword" : "pe=reDSBi#5ignCN",
+      "FtpPassive" : false,
+      "ImagesDirectory" : "webspace/httpdocs/2626093-0.web-hosting.es/img",
+      "Store" : "000",
+      "SyncronizeManufacturers" : false,
+      "ProcessWithoutStock" : true,
+      "ProcessWithoutImage" : false,
+      "IdProduct" : ""
+    }
+  }
+}

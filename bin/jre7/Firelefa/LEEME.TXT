@@ -1,0 +1,14 @@
+Para usarlo:
+
+java -jar FirEleFa.jar fichsali2 fichsali1 Explorer
+
+
+Debe ser ejecutado desde la carpeta donde está‚ el archivo .jar y en donde:
+
+FieEleFa.jar es la utilidad que incluye la firma en el fichero salida
+fichsali2    es el archivo firmado, el de salida, el XML
+fichsali1    es el archivo por firmar, normalmente debe tener otra extension de XML y tiene que ser el fichero con el formato de factura electronica.
+
+Un saludo
+
+Carlos

@@ -1,0 +1,4001 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 102 ".\.\Prg\TpvRestaurante.prg"
+_HB_CLASS TTpvRestaurante ; function TTpvRestaurante ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TTpvRestaurante", iif( .T., { @TMasDet() }, { @HBObject() } ), @TTpvRestaurante() ) ) ;
+
+   _HB_MEMBER { oSender } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSender"}, .F. )
+
+   _HB_MEMBER { cMru } ; oClass:AddMultiData(, "gc_cup_16", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cMru"}, .F. )
+   _HB_MEMBER { cBitmap } ; oClass:AddMultiData(, ( 164 + ( 55 * 256 ) + ( 58 * 65536 ) ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cBitmap"}, .F. )
+
+
+
+
+
+
+
+
+
+
+   _HB_MEMBER { AS ARRAY aResource } ; oClass:AddMultiClsData( "ARRAY", {  "GC_BEER_BOTTLE_16"     , "GC_BEER_GLASS_16"      , "GC_WINE_BOTTLE_16"     , "GC_WINE_GLASS_16"      , "GC_COCKTAIL2_16"       , "GC_LEMONADE_GLASS_16"  , "GC_COCKTAIL_16"        , "GC_ICE_CREAM2_16"      , "GC_GOLDFISH_16"        , "GC_PIG_16"             }, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aResource"}, .F. )
+
+
+
+
+
+
+
+
+
+
+   _HB_MEMBER { AS ARRAY aBigResource } ; oClass:AddMultiClsData( "ARRAY", {   "GC_BEER_BOTTLE_32"     , "GC_BEER_GLASS_32"      , "GC_WINE_BOTTLE_32"     , "GC_WINE_GLASS_32"      , "GC_COCKTAIL2_32"       , "GC_LEMONADE_GLASS_32"  , "GC_COCKTAIL_32"        , "GC_ICE_CREAM2_32"      , "GC_GOLDFISH_32"        , "GC_PIG_32"             }, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aBigResource"}, .F. )
+
+
+
+
+
+
+
+
+
+
+   _HB_MEMBER { AS ARRAY aImagen } ; oClass:AddMultiClsData( "ARRAY", {   "Botella cerveza"    , "Cerveza barril"     , "Botella de tinto"   , "Copa de tinto"      , "Copa de blanco"     , "Vaso de limonada"   , "Cocktail"           , "Helado"             , "Pescado"            , "Carne"              }, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aImagen"}, .F. )
+
+
+
+
+
+
+
+   _HB_MEMBER { AS ARRAY aPrecio } ; oClass:AddMultiData( "ARRAY", {   uFieldEmpresa( "cTxtTar1", "Precio 1" ), uFieldEmpresa( "cTxtTar2", "Precio 2" ), uFieldEmpresa( "cTxtTar3", "Precio 3" ), uFieldEmpresa( "cTxtTar4", "Precio 4" ), uFieldEmpresa( "cTxtTar5", "Precio 5" ), uFieldEmpresa( "cTxtTar6", "Precio 6" ), "Precio por defecto" }, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aPrecio"}, .F. )
+
+   _HB_MEMBER { oDlgSalaVenta } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDlgSalaVenta"}, .F. )
+
+   _HB_MEMBER { AS ARRAY aSalas } ; oClass:AddMultiClsData( "ARRAY", {}, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aSalas"}, .F. )
+   _HB_MEMBER { AS ARRAY aTikets } ; oClass:AddMultiClsData( "ARRAY", {}, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aTikets"}, .F. )
+   _HB_MEMBER { oGenerico } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGenerico"}, .F. )
+   _HB_MEMBER { oLlevar } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oLlevar"}, .F. )
+
+   _HB_MEMBER { oSalon } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSalon"}, .F. )
+
+   _HB_MEMBER { AS LOGIC lMinimize } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lMinimize"}, .F. )
+   _HB_MEMBER { lPuntosVenta } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lPuntosVenta"}, .F. )
+   _HB_MEMBER { cInitialSala } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cInitialSala"}, .F. )
+
+   _HB_MEMBER { AS OBJECT oDetSalaVta } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDetSalaVta"}, .F. )
+
+   _HB_MEMBER { AS OBJECT oDetImpComandas } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDetImpComandas"}, .F. )
+
+   _HB_MEMBER { AS NUMERIC nTarifa } ; oClass:AddMultiData( "NUMERIC", 1, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTarifa"}, .F. )
+
+   _HB_MEMBER { cSelectedSala } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSelectedSala"}, .F. )
+
+   _HB_MEMBER { cSelectedPunto } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSelectedPunto"}, .F. )
+   _HB_MEMBER { oSelectedPunto } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSelectedPunto"}, .F. )
+
+   _HB_MEMBER { nSelectedUbicacion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nSelectedUbicacion"}, .F. )
+
+   _HB_MEMBER { AS NUMERIC nSelectedPrecio } ; oClass:AddMultiData( "NUMERIC", 1, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nSelectedPrecio"}, .F. )
+   _HB_MEMBER { AS NUMERIC nSelectedCombinado } ; oClass:AddMultiData( "NUMERIC", 2, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nSelectedCombinado"}, .F. )
+
+   _HB_MEMBER { cSelectedTiket } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSelectedTiket"}, .F. )
+
+   _HB_MEMBER { cSelectedImagen } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSelectedImagen"}, .F. )
+   _HB_MEMBER { cSelectedTexto } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSelectedTexto"}, .F. )
+
+   _HB_MEMBER { AS LOGIC lComensal } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lComensal"}, .F. )
+   _HB_MEMBER { cArticulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cArticulo"}, .F. )
+   _HB_MEMBER { AS LOGIC lMultiplicar } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lMultiplicar"}, .F. )
+
+   _HB_MEMBER { oBrwImpComandas } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwImpComandas"}, .F. )
+
+   _HB_MEMBER New( cPath, oWndParent, oMenuItem); oClass:AddMethod( "New", @TTpvRestaurante_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Create( cPath); oClass:AddMethod( "Create", @TTpvRestaurante_Create(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetSender(); oClass:AddInline( "SetSender", {|Self, oSender | ( ( Self ) ), ( ::oSender := oSender ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER End(); oClass:AddMethod( "End", @TTpvRestaurante_End(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Selector( lPuntosPendientes, lLlevar); oClass:AddMethod( "Selector", @TTpvRestaurante_Selector(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER BuildSalas(); oClass:AddMethod( "BuildSalas", @TTpvRestaurante_BuildSalas(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InitSala(); oClass:AddMethod( "InitSala", @TTpvRestaurante_InitSala(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Sala( lPuntosPendientes); oClass:AddMethod( "Sala", @TTpvRestaurante_Sala(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles( lExclusive); oClass:AddMethod( "OpenFiles", @TTpvRestaurante_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER OpenService( lExclusive); oClass:AddMethod( "OpenService", @TTpvRestaurante_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @TTpvRestaurante_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DefineFiles(); oClass:AddMethod( "DefineFiles", @TTpvRestaurante_DefineFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetPunto( sPunto); oClass:AddMethod( "SetPunto", @TTpvRestaurante_SetPunto(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cSelected(); oClass:AddInline( "cSelected", {|Self | ( ( Self ) ), ( if( !empty( ::cSelectedSala ), ::cSelectedSala + ::cSelectedPunto, Space( 3 ) + ::cSelectedPunto ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cTextoSala(); oClass:AddMethod( "cTextoSala", @TTpvRestaurante_cTextoSala(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetTicket(); oClass:AddMethod( "SetTicket", @TTpvRestaurante_SetTicket(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Resource( nMode); oClass:AddMethod( "Resource", @TTpvRestaurante_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lPreSave( nMode); oClass:AddMethod( "lPreSave", @TTpvRestaurante_lPreSave(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Dialog(); oClass:AddMethod( "Dialog", @TTpvRestaurante_Dialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InitDialog( oImgUsr, oLstUsr); oClass:AddMethod( "InitDialog", @TTpvRestaurante_InitDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SelectDialog( nOpt, oDlg, oLstSala); oClass:AddMethod( "SelectDialog", @TTpvRestaurante_SelectDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Tikets(); oClass:AddMethod( "Tikets", @TTpvRestaurante_Tikets(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InitTikets( oImgUsr, oLstUsr); oClass:AddMethod( "InitTikets", @TTpvRestaurante_InitTikets(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SelectTikets( nOpt, oDlg, oLstSala); oClass:AddMethod( "SelectTikets", @TTpvRestaurante_SelectTikets(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Reset( oBtnTarifa); oClass:AddMethod( "Reset", @TTpvRestaurante_Reset(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ConfigButton( oBtnTarifa); oClass:AddMethod( "ConfigButton", @TTpvRestaurante_ConfigButton(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cTextoPunto( sSala, sPunto); oClass:AddMethod( "cTextoPunto", @TTpvRestaurante_cTextoPunto(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cTextoGenerico( sPunto); oClass:AddMethod( "cTextoGenerico", @TTpvRestaurante_cTextoGenerico(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cTextoTiket( sSala, sPunto); oClass:AddMethod( "cTextoTiket", @TTpvRestaurante_cTextoTiket(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nStatePunto( sPunto); oClass:AddMethod( "nStatePunto", @TTpvRestaurante_nStatePunto(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nImagenPunto( sPunto, n); oClass:AddMethod( "nImagenPunto", @TTpvRestaurante_nImagenPunto(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nImagenTiket( sSala, sPunto, n); oClass:AddMethod( "nImagenTiket", @TTpvRestaurante_nImagenTiket(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lCambiaPunto(); oClass:AddInline( "lCambiaPunto", {|Self, cTiket | ( ( Self ) ), ( !empty( ::cSelectedTiket ) .AND. ( cTiket <> ::cSelectedTiket ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cSelectedTicket(); oClass:AddInline( "cSelectedTicket", {|Self | ( ( Self ) ), ( ::cSelectedTiket ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetSelected( aTmp); oClass:AddMethod( "SetSelected", @TTpvRestaurante_SetSelected(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetSelectedImagen(); oClass:AddMethod( "SetSelectedImagen", @TTpvRestaurante_SetSelectedImagen(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetSelectedTexto(); oClass:AddMethod( "SetSelectedTexto", @TTpvRestaurante_SetSelectedTexto(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetGenerico( sPunto); oClass:AddMethod( "SetGenerico", @TTpvRestaurante_SetGenerico(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetLlevar( sPunto); oClass:AddMethod( "SetLlevar", @TTpvRestaurante_SetLlevar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lLlevar(); oClass:AddInline( "lLlevar", {|Self | ( ( Self ) ), ( empty( ::cSelectedSala ) .AND. AllTrim( ::cSelectedPunto ) == "Llevar" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER lGeneric(); oClass:AddInline( "lGeneric", {|Self | ( ( Self ) ), ( !::lNotGeneric() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER lNotGeneric(); oClass:AddInline( "lNotGeneric", {|Self | ( ( Self ) ), ( !empty( ::cSelectedSala ) .AND. !empty( ::cSelectedPunto ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cImagen(); oClass:AddInline( "cImagen", {|Self | ( ( Self ) ), ( ::aImagen[ Min( Max( ::oDbf:nImagen, 1 ), len( ::aImagen ) ) ] ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cPrecio(); oClass:AddInline( "cPrecio", {|Self | ( ( Self ) ), ( ::aPrecio[ Min( Max( ::oDbf:nPrecio, 1 ), len( ::aPrecio ) ) ] ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cPrecioCombinado(); oClass:AddInline( "cPrecioCombinado", {|Self | ( ( Self ) ), ( ::aPrecio[ Min( Max( ::oDbf:nPreCmb, 1 ), len( ::aPrecio ) ) ] ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cResource(); oClass:AddInline( "cResource", {|Self | ( ( Self ) ), ( ::aResource[ Min( Max( ::oDbf:nImagen, 1 ), len( ::aResource ) ) ] ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cBigResource(); oClass:AddInline( "cBigResource", {|Self | ( ( Self ) ), ( ::aBigResource[ Min( Max( ::oDbf:nImagen, 1 ), len( ::aBigResource ) ) ] ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cTextoPrecio( nPrecio); oClass:AddMethod( "cTextoPrecio", @TTpvRestaurante_cTextoPrecio(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetSelectedTexto(); oClass:AddMethod( "GetSelectedTexto", @TTpvRestaurante_GetSelectedTexto(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetSalaVta( aTmp, dbfTikT); oClass:AddMethod( "SetSalaVta", @TTpvRestaurante_SetSalaVta(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER SelectedPrecio(); oClass:AddInline( "SelectedPrecio", {|Self, nPrecio | ( ( Self ) ), ( if(   !empty( nPrecio ), ::nSelectedPrecio    := if( nPrecio == 7, Max( uFieldEmpresa( "nPreTPro" ), 1 ), nPrecio ), ::nSelectedPrecio ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER SelectedCombinado(); oClass:AddInline( "SelectedCombinado", {|Self, nPrecio | ( ( Self ) ), ( if(   !empty( nPrecio ), ::nSelectedCombinado := if( nPrecio == 7, Max( uFieldEmpresa( "nPreTCmb" ), 1 ), nPrecio ), ::nSelectedCombinado ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TTpvRestaurante ;
+
+
+
+static FUNCTION TTpvRestaurante_New( cPath, cDriver, oWndParent, oMenuItem ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+   If( cDriver == nil, cDriver := cDriver(), ) ;
+
+   If( oWndParent == nil, oWndParent := GetWndFrame(), ) ;
+
+   if oMenuItem <> nil .AND. ::nLevel == nil
+      ::nLevel             := Auth():Level( oMenuItem )
+   else
+      ::nLevel             := 0
+   end
+
+   ::Create( cPath, cDriver )
+   ::oWndParent            := oWndParent
+
+   ::bFirstKey             := {|| ::oDbf:cCodigo }
+
+   ::oSalon                := TTpvSalon():New( Self )
+
+   ::oDetSalaVta           := TDetSalaVenta():New( cPath, cDriver, Self )
+   ::AddDetail( ::oDetSalaVta )
+
+   ::oDetImpComandas       := TDetImpComandas():New( Self )
+   ::oDetImpComandas:OpenFiles()
+
+   ::SelectedPrecio(    Max( uFieldEmpresa( "nPreTPro" ), 1 ) )
+   ::SelectedCombinado( Max( uFieldEmpresa( "nPreTCmb" ), 1 ) )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TTpvRestaurante_Create( cPath, cDriver ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+   If( cDriver == nil, cDriver := cDriver(), ) ;
+
+   ::cPath                 := cPath
+   ::cDriver               := cDriver
+
+RETURN ( Self )
+
+
+
+static FUNCTION TTpvRestaurante_Selector( lPuntosPendientes, lLlevar, nSelectOption ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   local lSelector         := .T.
+
+   if ::oSalon:Selector( lPuntosPendientes, lLlevar, nSelectOption )
+
+      if !empty( ::oSalon:oSelectedPunto )
+
+         if ::oSalon:oSelectedPunto:lGenerico()
+
+            ::SetGenerico( ::oSalon:oSelectedPunto )
+
+         else
+
+
+
+            if !empty( ::oSalon:oSelectedPunto:cTiket() )
+               ::SetTicket()
+            else
+               ::SetPunto( ::oSalon:oSelectedPunto )
+            end
+
+         end
+
+      else
+
+         lSelector         := .F.
+
+      end
+
+   else
+
+      lSelector            := .F.
+
+   end
+
+Return ( lSelector )
+
+
+
+
+
+
+static FUNCTION TTpvRestaurante_SetTicket( ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   local aStatus
+
+   aStatus                             := ::oSender:oTiketCabecera:GetStatus()
+
+   if ::oSender:oTiketCabecera:SeekInOrd( ::oSalon:oSelectedPunto:cTiket(), "cNumTik" )
+
+      ::oSelectedPunto                 := ::oSalon:oSelectedPunto
+
+      ::oSelectedPunto:cSerie          := ::oSender:oTiketCabecera:FieldGetByName( "cSerTik" )
+      ::oSelectedPunto:cNumero         := ::oSender:oTiketCabecera:FieldGetByName( "cNumTik" )
+      ::oSelectedPunto:cSufijo         := ::oSender:oTiketCabecera:FieldGetByName( "cSufTik" )
+      ::oSelectedPunto:cAlias          := ::oSender:oTiketCabecera:FieldGetByName( "cAliasTik" )
+
+      if !empty( ::oSender:oTiketCabecera:FieldGetByName( "nTarifa" ) )
+         ::oSelectedPunto:nPrecio      := ::oSender:oTiketCabecera:FieldGetByName( "nTarifa" )
+      end
+
+      if !empty( ::oSender:oTiketCabecera:FieldGetByName( "cCodSala" ) )
+         ::oSelectedPunto:cCodigoSala  := ::oSender:oTiketCabecera:FieldGetByName( "cCodSala" )
+      end
+
+      if !empty( ::oSender:oTiketCabecera:FieldGetByName( "cPntVenta" ) )
+         ::oSelectedPunto:cPuntoVenta  := ::oSender:oTiketCabecera:FieldGetByName( "cPntVenta" )
+      end
+
+
+
+
+
+      ::cSelectedSala                  := ::oSelectedPunto:cSala
+      ::cSelectedPunto                 := ::oSelectedPunto:cPuntoVenta
+      ::nSelectedUbicacion             := ::oSelectedPunto:nUbicacion
+      ::cSelectedImagen                := ::oSelectedPunto:cImagen
+      ::lComensal                      := ::oSelectedPunto:lComensal
+      ::cArticulo                      := ::oSelectedPunto:cArticulo
+      ::lMultiplicar                   := ::oSelectedPunto:lMultiplicar
+
+      ::SelectedPrecio(    ::oSelectedPunto:nPrecio )
+      ::SelectedCombinado( ::oSelectedPunto:nPreCmb )
+
+      ::cSelectedTiket                 := ::oSelectedPunto:cTiket()
+      ::cSelectedTexto                 := ::oSelectedPunto:cTextoPunto()
+
+      ::SetSelectedImagen()
+      ::SetSelectedTexto()
+
+   end
+
+   ::oSender:oTiketCabecera:SetStatus( aStatus )
+
+Return ( Self )
+
+
+
+static FUNCTION TTpvRestaurante_Sala( lPuntosPendientes, lLlevar, nSelectOption ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   if Len( ::aSalas ) < 1
+      MsgStop( "No existen salas de ventas para seleccionar" )
+      Return .F.
+   end
+
+   do case
+      case IsTrue( ::lPuntosVenta )
+
+         Return ( ::Selector( lPuntosPendientes, lLlevar, nSelectOption ) )
+
+      case IsFalse( ::lPuntosVenta )
+
+         ++::nTarifa
+
+         if ::nTarifa > len( ::aSalas )
+            ::nTarifa         := 1
+         end
+
+         ::cSelectedTiket     := ""
+         ::cSelectedPunto     := ""
+         ::oSelectedPunto     := nil
+
+         ::lComensal          := .F.
+
+         ::cSelectedSala      := ::aSalas[ ::nTarifa ]:cCodigo
+         ::cSelectedImagen    := ::aSalas[ ::nTarifa ]:cImagen
+         ::cSelectedTexto     := ::aSalas[ ::nTarifa ]:cDescripcion
+
+         ::SelectedPrecio(    ::aSalas[ ::nTarifa ]:nPrecio )
+         ::SelectedCombinado( ::aSalas[ ::nTarifa ]:nPreCmb )
+
+   end
+
+Return ( .T. )
+
+
+
+static FUNCTION TTpvRestaurante_BuildSalas( ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   local n                 := 0
+   local sSala
+
+   ::cInitialSala          := nil
+   ::aSalas                := {}
+   ::lPuntosVenta          := .F.
+
+   ::oDbf:GoTop()
+   while !::oDbf:Eof()
+
+      if empty( ::cInitialSala )
+         ::cInitialSala    := ::oDbf:cCodigo
+      end
+
+      sSala                := sTpvSala():New( Self )
+
+      sSala:BuildPuntos()
+
+      aAdd( ::aSalas, sSala )
+
+      ::oDbf:Skip()
+
+   end
+
+
+
+
+
+   ::oGenerico             := sPunto():Generico()
+
+
+
+
+
+   ::oLlevar               := sPunto():Llevar()
+
+
+
+
+
+   ::InitSala()
+
+RETURN ( nil )
+
+
+
+static FUNCTION TTpvRestaurante_InitSala( ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   do case
+      case ( IsTrue( ::lPuntosVenta ) )
+
+         ::SelectedPrecio(    Max( uFieldEmpresa( "nPreTPro" ), 1 ) )
+         ::SelectedCombinado( Max( uFieldEmpresa( "nPreTCmb" ), 1 ) )
+
+         ::cSelectedSala      := ""
+         ::cSelectedTiket     := ""
+         ::cSelectedImagen    := ""
+         ::cSelectedTexto     := ""
+         ::cSelectedPunto     := ""
+         ::lComensal          := .F.
+         ::oSelectedPunto     := nil
+
+      case ( IsFalse( ::lPuntosVenta ) .AND. ( len( ::aSalas ) > 0 ) )
+
+         ::SelectedPrecio(    ::aSalas[ 1 ]:nPrecio )
+         ::SelectedCombinado( ::aSalas[ 1 ]:nPreCmb )
+
+         ::cSelectedSala      := ::aSalas[ 1 ]:cCodigo
+         ::cSelectedImagen    := ::aSalas[ 1 ]:cImagen
+         ::cSelectedTexto     := ::aSalas[ 1 ]:cDescripcion
+         ::cSelectedTiket     := ""
+         ::cSelectedPunto     := ""
+         ::lComensal          := .F.
+         ::oSelectedPunto     := nil
+
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION TTpvRestaurante_OpenFiles( lExclusive ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   local lOpen          := .T.
+   local oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   BEGIN SEQUENCE
+
+      if empty( ::oDbf )
+         ::defineFiles()
+      end
+
+      ::oDbf:Activate( .F., !( lExclusive ) )
+
+      ::OpenDetails()
+
+   RECOVER
+
+      msgStop( "Imposible abrir todas las bases de datos de las salas de ventas." )
+      ::CloseFiles()
+      lOpen             := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TTpvRestaurante_CloseFiles( ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   if !empty( ::oDbf ) .AND. ::oDbf:Used()
+      ::oDbf:End()
+   end
+
+   if Valtype( ::oDbfDet ) == "A"
+      aSend( ::oDbfDet, "End()" )
+   end
+
+   if Valtype( ::oDbfDet ) == "O"
+      ::oDbfDet:End()
+   end
+
+   if !Empty( ::oDetImpComandas )
+      ::oDetImpComandas:CloseFiles()
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TTpvRestaurante_DefineFiles( cPath, cDriver ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   If( cPath == nil, cPath := ::cPath, ) ;
+   If( cDriver == nil, cDriver := ::cDriver, ) ;
+
+   ::oDbf := DbfServer( "SalaVta.Dbf", "SalaVta" ):New( "SalaVta.Dbf", "SalaVta", ( cDriver ), "Sala de ventas", ( cPath ) )
+
+      ::oDbf:AddField( "cCodigo", "C", 3, 0,, Space( 3 ),,, "Código", .F., 100, .F., {} )
+      ::oDbf:AddField( "cDescrip", "C", 35, 0,, Space( 35 ),,, "Nombre", .F., 400, .F., {} )
+      ::oDbf:AddField( "lSala", "L", 1, 0,,,,, "Sala", .F.,, .T., {} )
+      ::oDbf:AddField( "cSala", "C", 3, 0,,,,, "Código sala", .F.,, .T., {} )
+      ::oDbf:AddField( "nPrecio", "N", 1, 0,,,,, "Precios sala", .F.,, .T., {} )
+      ::oDbf:AddField( "nImagen", "N", 2, 0,,,,, "Imagen", .F.,, .T., {} )
+      ::oDbf:AddField( "nPreCmb", "N", 1, 0,,,,, "Precio Combinado", .F.,, .T., {} )
+      ::oDbf:AddField( "lComensal", "L", 1, 0,,,,, "Solicitar comensales", .F.,, .T., {} )
+      ::oDbf:AddField( "cArticulo", "C", 18, 0,,,,, "Artículo", .F.,, .T., {} )
+      ::oDbf:AddField( "lMultipli", "L", 1, 0,,,,, "Multiplicar artículo por comensal", .F.,, .T., {} )
+      ::oDbf:AddField( "Uuid", "C", 40, 0,,,,, "Identificador únido", .F.,, .F., {} )
+
+      ::oDbf:AddIndex( "cCodigo", "SalaVta.Cdx", "cCodigo",,, .F., .F., "Código",,, .T., .F. )
+      ::oDbf:AddIndex( "cDescrip", "SalaVta.Cdx", "cDescrip",,, .F., .F., "Nombre",,, .T., .F. )
+
+
+
+RETURN ( ::oDbf )
+
+
+
+static FUNCTION TTpvRestaurante_End( ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   if !empty( ::oSalon )
+      ::oSalon:End()
+   end
+
+   ::oSalon    := nil
+
+Return ( ::Super:End() )
+
+
+
+static FUNCTION TTpvRestaurante_Resource( nMode ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+    local oDlg
+   local oGet
+   local oArticulo
+   local oCmbImagen
+   local cCmbImagen     := ::cImagen()
+   local oCmbPrecio
+   local cCmbPrecio
+   local oCmbPreCmb
+   local cCmbPreCmb
+   local oBrwDetSalaVta
+   local oBmp
+
+   if nMode == 1
+      cCmbPrecio        := ::aPrecio[ Min( Max( uFieldEmpresa( "nPreTPro" ), 1 ), len( ::aPrecio ) ) ]
+      cCmbPreCmb        := ::aPrecio[ Min( Max( uFieldEmpresa( "nPreTCmb" ), 1 ), len( ::aPrecio ) ) ]
+   else
+      cCmbPrecio        := ::cPrecio()
+      cCmbPreCmb        := ::cPrecioCombinado()
+   end
+
+   ::oDetImpComandas:Begintrans()
+
+   oDlg = TDialog():New(,,,, LblTitle( nMode ) + "sala de ventas", "SalaVentas",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+      oBmp := TBitmap():ReDefine( 990, "gc_cup_48",, oDlg,,, .F., .F.,,, .F.,,, .T. )
+
+
+
+
+
+
+      oGet := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, ::oDbf:cCodigo, ::oDbf:cCodigo:= u ) }, oDlg,, "@!", {||    ( NotValid( oGet, ::oDbf:cAlias, .T., "0" ) )},,,,,, .F., {||     ( nMode == 1 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 110, { | u | If( PCount()==0, ::oDbf:cDescrip, ::oDbf:cDescrip:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+      oCmbImagen := TComboBox():ReDefine( 120, { | u | If( PCount()==0, cCmbImagen, cCmbImagen:= u ) }, ::aImagen, oDlg,,,,,,, .F., {||     ( nMode <> 3 )}, ::aResource,,,,, "oCmbImagen",,,,,,, )
+
+
+
+
+
+      oCmbPrecio := TComboBox():ReDefine( 130, { | u | If( PCount()==0, cCmbPrecio, cCmbPrecio:= u ) }, ::aPrecio, oDlg,,,,,,, .F., {||     ( nMode <> 3 )},,,,,, "oCmbPrecio",,,,,,, )
+
+
+
+
+
+      oCmbPreCmb := TComboBox():ReDefine( 140, { | u | If( PCount()==0, cCmbPreCmb, cCmbPreCmb:= u ) }, ::aPrecio, oDlg,,,,,,, .F., {||     ( nMode <> 3 )},,,,,, "oCmbPreCmb",,,,,,, )
+
+
+
+      TCheckBox():ReDefine( 150, { | u | If( PCount()==0, ::oDbf:lComensal, ::oDbf:lComensal:= u ) }, oDlg,,,,,,, .F.,, .F. )
+
+
+
+
+
+
+
+
+      oArticulo := TGetHlp():ReDefine( 160, { | u | If( PCount()==0, ::oDbf:cArticulo, ::oDbf:cArticulo:= u ) }, oDlg,,, {||    cArticulo( oArticulo, nil, oArticulo:oHelpText )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|brwArticulo( oArticulo, oArticulo:oHelpText )}, nil, "LUPA",, 161 )
+
+
+
+
+      TCheckBox():ReDefine( 170, { | u | If( PCount()==0, ::oDbf:lMultipli, ::oDbf:lMultipli:= u ) }, oDlg,,,,,,, .F., {||     ( nMode <> 3 .AND. ::oDbf:lComensal )}, .F. )
+
+
+
+
+
+
+
+
+
+      TButton():ReDefine( 500, {||( ::oDetImpComandas:App() )}, oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 501, {||( ::oDetImpComandas:Edt() )}, oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 502, {||( ::oDetImpComandas:Del() )}, oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+      ::oBrwImpComandas                    := IXBrowse():New( oDlg )
+
+      ::oBrwImpComandas:bClrSel            := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      ::oBrwImpComandas:bClrSelFocus       := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      ::oBrwImpComandas:cAlias             := ::oDetImpComandas:dbfTmpLin
+      ::oBrwImpComandas:cName              := "Cajas.Detalle"
+
+      ::oBrwImpComandas:nMarqueeStyle      := 5
+      ::oBrwImpComandas:lHScroll           := .F.
+      ::oBrwImpComandas:lRecordSelector    := .F.
+
+      ::oBrwImpComandas:CreateFromResource( 400 )
+
+      if nMode <> 3
+         ::oBrwImpComandas:bLDblClick      := {|| ::oDetImpComandas:Edt() }
+      end
+
+      with object ( ::oBrwImpComandas:AddCol() )
+         :cHeader                := "Tipo"
+         :bEditValue             := {|| ( ::oDetImpComandas:dbfTmpLin )->cTipImp }
+         :nWidth                 := 145
+      end
+
+      with object ( ::oBrwImpComandas:AddCol() )
+         :cHeader                := "Impresora"
+         :bEditValue             := {|| ( ::oDetImpComandas:dbfTmpLin )->cNomPrn }
+         :nWidth                 := 335
+      end
+
+
+
+
+
+      TButton():ReDefine( 503, {||( ::oSalon:Design( Self, oDlg ) )}, oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 1, {||( if( ::lPreSave( nMode, oCmbImagen, oCmbPrecio, oCmbPreCmb ), oDlg:end( 1 ), ) )}, oDlg,,, .F., {||         ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+        TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+      if nMode <> 3
+         oDlg:AddFastKey( 114, {|| ::oSalon:Design( ::oDetSalaVta:oDbfVir, oDlg ) } )
+         oDlg:AddFastKey( 116, {|| if( ::lPreSave( nMode, oCmbImagen, oCmbPrecio, oCmbPreCmb ), oDlg:end( 1 ), ) } )
+      end
+
+      oDlg:bStart := { || oArticulo:lValid(), oGet:SetFocus() }
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   ::oDetImpComandas:Killtrans()
+
+   oBmp:End()
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+static FUNCTION TTpvRestaurante_lPreSave( nMode, oCmbImagen, oCmbPrecio, oCmbPreCmb ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   if nMode == 1 .OR. nMode == 4
+
+      if ::oDbf:seekInOrd( ::oDbf:cCodigo, "cCodigo" )
+         msgStop( "Código ya existe " + Rtrim( ::oDbf:cCodigo ) )
+         Return .F.
+      end
+
+      ::oDbf:Uuid    := win_uuidcreatestring()
+
+   end
+
+   if empty( ::oDbf:cDescrip )
+      msgStop( "La descripción de la sala no puede estar vacía." )
+      Return .F.
+   end
+
+   ::oDbf:nImagen := oCmbImagen:nAt
+   ::oDbf:nPrecio := oCmbPrecio:nAt
+   ::oDbf:nPreCmb := oCmbPreCmb:nAt
+
+   ::oDetImpComandas:Endtrans()
+
+Return .T.
+
+
+
+static FUNCTION TTpvRestaurante_Dialog( oBtnTarifa, lPuntosLibres ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   local oDlg
+   local oImgSala
+   local oLstSala
+
+   If( lPuntosLibres == nil, lPuntosLibres := .F., ) ;
+
+   oDlg = TDialog():New(,,,,, "SelectSalaVta",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+      oImgSala             := TImageList():New( 44, 44 )
+
+      oLstSala             := TListView():Redefine( 100, oDlg )
+      oLstSala:nOption     := 0
+      oLstSala:bAction     := {| nOpt | ::SelectDialog( nOpt, oDlg, oBtnTarifa, lPuntosLibres ) }
+
+
+
+
+
+
+      TButtonBmp():ReDefine( 500, {||( ::InitSala(), oDlg:end() )}, oDlg,,, .F.,,,, .F., "gc_cup_48",,, .F. )
+
+
+
+
+
+      TButtonBmp():ReDefine( 2, {||( ::InitSala(), oDlg:end() )}, oDlg,,, .F.,,,, .F., "gc_delete_48",,, .F. )
+   oDlg:Activate( , , , .T., , , {|| ::InitDialog( oImgSala, oLstSala, lPuntosLibres ) } )
+
+Return ( Self )
+
+
+
+static FUNCTION TTpvRestaurante_InitDialog( oImgSala, oLstSala, lPuntosLibres ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   local n                 := 0
+   local sSala
+   local sPunto
+   local cPunto
+
+   If( lPuntosLibres == nil, lPuntosLibres := .F., ) ;
+
+   oLstSala:SetImageList( oImgSala )
+
+   oLstSala:EnableGroupView()
+
+   for each sSala in ::aSalas
+
+      oImgSala:AddMasked( TBitmap():Define( sSala:cImagen ), ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+
+      oLstSala:InsertGroup( n, sSala:cDescripcion )
+
+      for each sPunto in sSala:aPunto
+
+         if lPuntosLibres
+
+            oLstSala:InsertItemGroup( ::nImagenPunto( sPunto, n ), ::cTextoPunto( sPunto ), n )
+
+         else
+
+            oLstSala:InsertItemGroup( ::nImagenPunto( sPunto, n ), ::cTextoPunto( sPunto ), n )
+
+         end
+
+      next
+
+      n++
+
+   next
+
+Return ( Self )
+
+
+
+static FUNCTION TTpvRestaurante_SelectDialog( nOpt, oDlg, oBtnTarifa, lPuntosLibres ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   local sSala
+   local sPunto
+
+   If( lPuntosLibres == nil, lPuntosLibres := .F., ) ;
+
+   for each sSala in ::aSalas
+
+      for each sPunto in sSala:aPunto
+
+         if sPunto:nNumero == nOpt
+
+            ::oSelectedPunto     := sPunto
+
+
+
+
+
+            if ::oSender:oTiketCabecera:SeekInOrd( sPunto:cPunto(), "cCodSal" )
+
+               if lPuntosLibres
+                  msgStop( "El punto de venta esta actualmente ocupado." )
+                  Return ( Self )
+               end
+
+               ::SetSelected( .T., sPunto )
+
+            else
+
+               ::SetSelected( .F., sPunto )
+
+            end
+
+            oDlg:End()
+
+         end
+
+      next
+
+   next
+
+Return ( Self )
+
+
+
+static FUNCTION TTpvRestaurante_Tikets( oBtnTarifa, oBtnRenombrar ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   local oDlg
+   local oImgSala
+   local oLstSala
+
+   oDlg = TDialog():New(,,,,, "SelectTickets",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+      oImgSala          := TImageList():New( 46, 46 )
+
+      oLstSala          := TListView():Redefine( 100, oDlg )
+      oLstSala:nOption  := 0
+      oLstSala:bAction  := {| nOpt | ::SelectTikets( nOpt, oDlg, oBtnTarifa, oBtnRenombrar ) }
+
+
+
+
+
+
+      TButtonBmp():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .F., "gc_delete_48",,, .F. )
+   oDlg:Activate( , , , .T., , , {|| ::InitTikets( oImgSala, oLstSala ) } )
+
+Return ( oDlg:nResult == 1 )
+
+
+
+static FUNCTION TTpvRestaurante_InitTikets( oImgSala, oLstSala ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   local n           := 0
+   local nOrd
+   local sSala
+   local sPunto
+   local nLastGroup
+
+
+
+
+
+   ::aTikets         := {}
+
+   oLstSala:SetImageList( oImgSala )
+
+   oLstSala:EnableGroupView()
+
+   do case
+      case ( IsNil( ::lPuntosVenta ) )
+
+         oImgSala:AddMasked( TBitmap():Define( "gc_cup_48" ), ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+
+         oLstSala:InsertGroup( 0, "Tickets pendientes" )
+
+         nOrd        := ::oSender:oTiketCabecera:OrdSetFocus( "cCodSal" )
+
+         ::oSender:oTiketCabecera:OrdSetFocus:GoTop()
+         while !( ::oSender:oTiketCabecera:Eof() )
+
+            sPunto   := sTpvPunto():New( n++, sSala, Self )
+
+            oLstSala:InsertItemGroup( 0, sPunto:cTextoTotalTiket(), 0 )
+
+            aAdd( ::aTikets, sPunto )
+
+            ::oSender:oTiketCabecera:Skip()
+
+         end
+
+         ::oSender:oTiketCabecera:OrdSetFocus( nOrd )
+
+      case ( IsFalse( ::lPuntosVenta ) )
+
+
+
+
+
+         ::oSender:oTiketCabecera:OrdSetFocus( "cCodSal" )
+
+
+
+
+
+         for each sSala in ::aSalas
+
+            oImgSala:AddMasked( TBitmap():Define( sSala:cImagen ),      ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+
+            oLstSala:InsertGroup( hb_EnumIndex() - 1, sSala:cDescripcion )
+
+
+
+
+
+            if ::oSender:oTiketCabecera:Seek( sSala:cCodigo )
+
+               while ::oSender:oTiketCabecera:FieldGetByName( "cCodSala" ) == sSala:cCodigo .AND. !::oSender:oTiketCabecera:eof()
+
+                  sPunto   := sTpvPunto():New( n++, sSala, Self )
+
+                  oLstSala:InsertItemGroup( sPunto:nImagenTiket( hb_EnumIndex() - 1 ), sPunto:cTextoTiket(), hb_EnumIndex() - 1 )
+
+                  aAdd( ::aTikets, sPunto )
+
+                  ::oSender:oTiketCabecera:Skip()
+
+               end
+
+            end
+
+         next
+
+         ::oSender:oTiketCabecera:OrdSetFocus( nOrd )
+
+      case ( IsTrue( ::lPuntosVenta ) )
+
+
+
+
+
+         nOrd     := ::oSender:oTiketCabecera:OrdSetFocus( "cCodSal" )
+
+
+
+
+
+         for each sSala in ::aSalas
+
+            oImgSala:AddMasked( TBitmap():Define( sSala:cImagen ), ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+
+            oLstSala:InsertGroup( hb_EnumIndex() - 1, sSala:cDescripcion )
+
+
+
+
+
+            if ::oSender:oTiketCabecera:Seek( sSala:cCodigo )
+
+               while ::oSender:oTiketCabecera:FieldGetByName( "cCodSala" ) == sSala:cCodigo .AND. !::oSender:oTiketCabecera:eof()
+
+                  if !empty( ::oSender:oTiketCabecera:FieldGetByName( "cPntVenta" ) )
+
+                     sPunto   := sTpvPunto():New( n++, sSala, Self )
+
+                     oLstSala:InsertItemGroup( sPunto:nImagenTiket( hb_EnumIndex() - 1 ), sPunto:cTextoTiket(), hb_EnumIndex() - 1 )
+
+                     aAdd( ::aTikets, sPunto )
+
+                  end
+
+                  ::oSender:oTiketCabecera:Skip()
+
+               end
+
+            end
+
+            nLastGroup  := hb_EnumIndex()
+
+         next
+
+
+
+
+
+         oImgSala:AddMasked( TBitmap():Define( "gc_cup_48" ), ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+
+         oLstSala:InsertGroup( nLastGroup, "General" )
+
+         ::oSender:oTiketCabecera:GoTop()
+         while !( ::oSender:oTiketCabecera:eof() )
+
+            if empty( ::oSender:oTiketCabecera:FieldGetByName( "cPntVenta" ) )
+
+               sPunto   := sTpvPunto():New( n++, nil, Self )
+
+               oLstSala:InsertItemGroup( ( nLastGroup * 2 ), sPunto:cTextoGenerico(), nLastGroup )
+
+               aAdd( ::aTikets, sPunto )
+
+            end
+
+            ::oSender:oTiketCabecera:Skip()
+
+         end
+
+         ::oSender:oTiketCabecera:OrdSetFocus( nOrd )
+
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TTpvRestaurante_SelectTikets( nOpt, oDlg, oBtnTarifa, oBtnRenombrar ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   local sPunto            := ::aTikets[ Min( Max( nOpt, 1 ), len( ::aTikets ) ) ]
+
+   ::SelectedPrecio( sPunto:nPrecio() )
+
+   ::cSelectedSala         := sPunto:cSala()
+   ::cSelectedTiket        := sPunto:cTiket()
+   ::cSelectedImagen       := sPunto:cImagen()
+   ::cSelectedTexto        := sPunto:cTextoPunto()
+   ::cSelectedPunto        := sPunto:cPuntoVenta()
+   ::oSelectedPunto        := sPunto
+
+   ::ConfigButton( oBtnTarifa, oBtnRenombrar )
+
+   oDlg:End( 1 )
+
+Return ( Self )
+
+
+
+static FUNCTION TTpvRestaurante_ConfigButton( oBtnTarifa, oBtnRenombrar ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   do case
+      case ( IsNil( ::lPuntosVenta ) )
+
+         oBtnRenombrar:Hide()
+
+      case IsFalse( ::lPuntosVenta )
+
+         if empty( ::cSelectedImagen )
+            oBtnTarifa:cBmp( "gc_cup_32" )
+         else
+            oBtnTarifa:cBmp( ::cSelectedImagen )
+         end
+
+         if empty( ::cSelectedTexto )
+            oBtnTarifa:cCaption( "General" )
+         else
+            oBtnTarifa:cCaption( ::cSelectedTexto )
+         end
+
+         oBtnRenombrar:Hide()
+
+      case IsTrue( ::lPuntosVenta )
+
+         if empty( ::cSelectedImagen )
+            oBtnTarifa:cBmp( "gc_cup_32" )
+         else
+            oBtnTarifa:cBmp( ::cSelectedImagen )
+         end
+
+         if empty( ::cSelectedTexto )
+            oBtnTarifa:cCaption( "General" )
+         else
+            oBtnTarifa:cCaption( ::cSelectedTexto )
+         end
+
+         oBtnRenombrar:Show()
+
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TTpvRestaurante_Reset( oBtnTarifa ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   if !empty( oBtnTarifa )
+      oBtnTarifa:cBmp( "gc_cup_48" )
+      oBtnTarifa:cCaption( "General" )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TTpvRestaurante_nImagenTiket( sSala, sPunto, n ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   local nImagen        := ( ( ( n + 1 ) * 2 ) - 2 )
+
+   ::oSender:oTiketCabecera:GetStatus()
+
+   if !empty( sPunto:cTiket() )
+      if ( ::oSender:oTiketCabecera:SeekInOrd( sPunto:cTiket(), "cNumTik" ) ) .AND. !( ::oSender:oTiketCabecera:FieldGetByName( "lAbierto" ) )
+         ++nImagen
+      end
+   end
+
+   ::oSender:oTiketCabecera:SetStatus()
+
+RETURN ( nImagen )
+
+
+
+static FUNCTION TTpvRestaurante_nStatePunto( sPunto ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   local nImagen        := 1
+
+   ::oSender:oTiketCabecera:GetStatus()
+
+   if !empty( sPunto:cPunto() ) .AND. !empty( sPunto:cPuntoVenta )
+
+      if ( ::oSender:oTiketCabecera:SeekInOrd( sPunto:cPunto(), "cCodSal" ) ) .AND. ( ::oSender:oTiketCabecera:FieldGetByName( "lAbierto" ) )
+         ++nImagen
+      end
+
+   end
+
+   ::oSender:oTiketCabecera:SetStatus()
+
+RETURN ( nImagen )
+
+
+
+static FUNCTION TTpvRestaurante_nImagenPunto( sPunto, n ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   local nImagen        := ( ( ( n + 1 ) * 2 ) - 2 )
+
+   ::oSender:oTiketCabecera:GetStatus()
+
+      if !empty( sPunto:cPunto() )
+         if ( ::oSender:oTiketCabecera:SeekInOrd( sPunto:cPunto(), "cCodSal" ) ) .AND. !( ::oSender:oTiketCabecera:FieldGetByName( "lAbierto" ) )
+            ++nImagen
+         end
+      end
+
+   ::oSender:oTiketCabecera:SetStatus()
+
+RETURN ( nImagen )
+
+
+
+static FUNCTION TTpvRestaurante_cTextoTiket( sPunto ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   local cTextoPunto
+
+   cTextoPunto          := sPunto:cTextoPunto()
+
+   ::oSender:oTiketCabecera:GetStatus()
+
+      if ( ::oSender:oTiketCabecera:SeekInOrd( sPunto:cTiket(), "cNumTik" ) ) .AND. !( ::oSender:oTiketCabecera:FieldGetByName( "lPgdTik" ) )
+         cTextoPunto    += Chr(13)+Chr(10)
+         cTextoPunto    += "[ Total : " + Ltrim( nTotTik( ::oSender:cNumeroTicket(), ::oSender:oTiketCabecera, ::oSender:oTiketLinea, ::oSender:oDivisas, , , .T. ) ) + " ]"
+      end
+
+   ::oSender:oTiketCabecera:SetStatus()
+
+RETURN ( cTextoPunto )
+
+
+
+static FUNCTION TTpvRestaurante_cTextoPunto( sPunto ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   local cTextoPunto
+
+   If( sPunto == nil, sPunto := ::oSelectedPunto, ) ;
+
+   cTextoPunto          := sPunto:cTextoPunto()
+
+   ::oSender:oTiketCabecera:GetStatus()
+
+      if ( ::oSender:oTiketCabecera:SeekInOrd( sPunto:cPunto(), "cCodSal" ) ) .AND. ( ::oSender:oTiketCabecera:FieldGetByName( "lPgdTik" ) )
+
+         if !empty( ::oSender:oTiketCabecera:FieldGetByName( "cAliasTik" ) )
+            cTextoPunto := Upper( Rtrim( ::oSender:oTiketCabecera:FieldGetByName( "cAliasTik" ) ) )
+         end
+
+         cTextoPunto    += Chr(13)+Chr(10)
+         cTextoPunto    += "[ Total : " + Ltrim( nTotTik( ::oSender:cNumeroTicket(), ::oSender:oTiketCabecera, ::oSender:oTiketLinea, ::oSender:oDivisas, , , .T. ) ) + " ]"
+
+      end
+
+   ::oSender:oTiketCabecera:SetStatus()
+
+RETURN ( cTextoPunto )
+
+
+
+static FUNCTION TTpvRestaurante_cTextoGenerico( sPunto ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   local nRecno
+   local cTextoPunto
+
+   If( sPunto == nil, sPunto := ::oSelectedPunto, ) ;
+
+   cTextoPunto          := "General"
+
+   if !empty( ::cTikT ) .AND. !empty( ::cTikL )
+
+      nRecno            := ( ::cTikT )->( Recno() )
+
+      if ( dbSeekInOrd( sPunto:cTiket(), "cNumTik", ::cTikT ) .AND. !( ::cTikT )->lPgdTik )
+
+         if !empty( ( ::cTikT )->cAliasTik )
+            cTextoPunto := Upper( Rtrim( ( ::cTikT )->cAliasTik ) )
+         end
+
+         cTextoPunto    += Chr(13)+Chr(10)
+         cTextoPunto    += "[ Total : " + Ltrim( nTotTik( ( ::cTikT )->cSerTik + ( ::cTikT )->cNumTik + ( ::cTikT )->cSufTik, ::cTikT, ::cTikL, ::cDiv, , , .T. ) ) + " ]"
+
+      end
+
+      ( ::cTikT )->( dbGoTo( nRecno ) )
+
+   end
+
+RETURN ( cTextoPunto )
+
+
+
+static FUNCTION TTpvRestaurante_cTextoPrecio( nPrecio ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   If( nPrecio == nil, nPrecio := ::nSelectedPrecio, ) ;
+
+   if !IsNum( nPrecio )
+      nPrecio        := 1
+   end
+
+Return ( ::aPrecio[ Min( Max( nPrecio, 1 ), len( ::aPrecio ) ) ] )
+
+
+
+static FUNCTION TTpvRestaurante_SetSelectedImagen( ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   local nScan
+
+   if empty( ::aSalas )
+      Return ( Self )
+   end
+
+   do case
+      case IsFalse( ::lPuntosVenta )
+
+         ::cSelectedImagen       := ::aSalas[ Min( Max( ::nSelectedPrecio, 1 ), len( ::aSalas ) ) ]:cImagen
+
+      case IsTrue( ::lPuntosVenta )
+
+         if empty( ::cSelectedImagen )
+            nScan                := aScan( ::aSalas, {|o| o:cCodigo == ::cSelectedSala } )
+            if nScan <> 0
+               ::cSelectedImagen := ::aSalas[ nScan ]:cImagen
+            end
+         end
+
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TTpvRestaurante_SetSelectedTexto( ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   local nScan
+
+   if empty( ::aSalas )
+      Return ( Self )
+   end
+
+   do case
+      case IsFalse( ::lPuntosVenta )
+
+         ::cSelectedTexto     := Rtrim( ::aSalas[ Min( Max( ::nSelectedPrecio, 1 ), len( ::aSalas ) ) ]:cDescripcion )
+
+      case IsTrue( ::lPuntosVenta )
+
+         ::cSelectedTexto     := Rtrim( ::cSelectedPunto )
+
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TTpvRestaurante_SetGenerico( sPunto ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   ::cSelectedSala               := ""
+   ::cSelectedPunto              := "General"
+   ::lComensal                   := .F.
+
+   ::SelectedPrecio(    sPunto:nPrecio )
+   ::SelectedCombinado( sPunto:nPreCmb )
+
+   ::cSelectedImagen             := sPunto:cImagen
+   ::cSelectedTiket              := sPunto:cTiket()
+   ::cSelectedTexto              := sPunto:cTextoPunto()
+
+   ::SetSelectedImagen()
+   ::SetSelectedTexto()
+
+Return ( Self )
+
+
+
+static FUNCTION TTpvRestaurante_SetLlevar( sPunto ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   ::cSelectedSala               := ""
+   ::cSelectedPunto              := "Llevar"
+   ::lComensal                   := .F.
+
+   ::cSelectedImagen             := sPunto:cImagen
+   ::cSelectedTiket              := sPunto:cTiket()
+   ::cSelectedTexto              := sPunto:cTextoPunto()
+
+   ::SelectedPrecio(    sPunto:nPrecio )
+   ::SelectedCombinado( sPunto:nPreCmb )
+
+   ::SetSelectedImagen()
+   ::SetSelectedTexto()
+
+Return ( Self )
+
+
+
+static FUNCTION TTpvRestaurante_SetSelected( uTmp, sPunto ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   if empty( sPunto )
+      if !empty( ::oSelectedPunto )
+         sPunto               := ::oSelectedPunto
+      else
+         sPunto               := sPunto():Generico()
+      end
+   end
+
+   do case
+      case IsChar( uTmp )
+
+         sPunto:cSerie           := ( ::cTikT )->cSerTik
+         sPunto:cNumero          := ( ::cTikT )->cNumTik
+         sPunto:cSufijo          := ( ::cTikT )->cSufTik
+         sPunto:cAlias           := ( ::cTikT )->cAliasTik
+
+         if !empty( ( ::cTikT )->nTarifa )
+            sPunto:nPrecio       := ( ::cTikT )->nTarifa
+         end
+         if !empty( ( ::cTikT )->cCodSala )
+            sPunto:cCodigoSala   := ( ::cTikT )->cCodSala
+         end
+         if !empty( ( ::cTikT )->cPntVenta )
+            sPunto:cPuntoVenta   := ( ::cTikT )->cPntVenta
+         end
+
+      case IsArray( uTmp )
+
+         sPunto:cSerie           := uTmp[ ( ::cTikT )->( FieldPos( "cSerTik"   ) ) ]
+         sPunto:cNumero          := uTmp[ ( ::cTikT )->( FieldPos( "cNumTik"   ) ) ]
+         sPunto:cSufijo          := uTmp[ ( ::cTikT )->( FieldPos( "cSufTik"   ) ) ]
+         sPunto:cAlias           := uTmp[ ( ::cTikT )->( FieldPos( "cAliasTik" ) ) ]
+
+         if !empty( uTmp[ ( ::cTikT )->( FieldPos( "nTarifa" ) ) ] )
+            sPunto:nPrecio       := uTmp[ ( ::cTikT )->( FieldPos( "nTarifa"   ) ) ]
+         end
+         if !empty( uTmp[ ( ::cTikT )->( FieldPos( "cCodSala" ) ) ] )
+            sPunto:cCodigoSala   := uTmp[ ( ::cTikT )->( FieldPos( "cCodSala"  ) ) ]
+         end
+         if !empty( uTmp[ ( ::cTikT )->( FieldPos( "cPntVenta" ) ) ] )
+            sPunto:cPuntoVenta   := uTmp[ ( ::cTikT )->( FieldPos( "cPntVenta" ) ) ]
+         end
+
+   end
+
+
+
+
+
+   ::cSelectedSala               := sPunto:cSala
+   ::cSelectedPunto              := sPunto:cPuntoVenta
+   ::nSelectedUbicacion          := sPunto:nUbicacion
+   ::lComensal                   := sPunto:lComensal
+
+   ::SelectedPrecio(    sPunto:nPrecio )
+   ::SelectedCombinado( sPunto:nPreCmb )
+
+   ::cSelectedImagen             := sPunto:cImagen
+   ::cSelectedTiket              := sPunto:cTiket()
+   ::cSelectedTexto              := sPunto:cTextoPunto()
+   ::oSelectedPunto              := sPunto
+
+   ::SetSelectedImagen()
+   ::SetSelectedTexto()
+
+Return ( Self )
+
+
+
+static FUNCTION TTpvRestaurante_GetSelectedTexto( lExtend ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   local nRecno
+   local cTextoPunto    := Rtrim( ::cSelectedPunto )
+
+   If( lExtend == nil, lExtend := .F., ) ;
+
+Return ( cTextoPunto )
+
+
+
+static FUNCTION TTpvRestaurante_SetSalaVta( aTmp, dbfTikT ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   If( dbfTikT == nil, dbfTikT := ::cTikT, ) ;
+
+   if empty( aTmp[ ( dbfTikT )->( FieldPos( "cCodSala" ) ) ] )
+
+      do case
+         case empty( aTmp[ ( dbfTikT )->( FieldPos( "cPntVenta" ) ) ] )
+             ::SetPunto( sPunto():New( , dbfTikT ) )
+
+         case AllTrim( aTmp[ ( dbfTikT )->( FieldPos( "cPntVenta" ) ) ] ) == "General"
+             ::SetGenerico( sPunto():Generico( dbfTikT ) )
+
+         case AllTrim( aTmp[ ( dbfTikT )->( FieldPos( "cPntVenta" ) ) ] ) == "Llevar"
+             ::SetLlevar( sPunto():Llevar( dbfTikT ) )
+
+         end
+
+   else
+
+      ::SetPunto( sPunto():New( , dbfTikT ) )
+
+   end
+
+return .T.
+
+
+
+static FUNCTION TTpvRestaurante_SetPunto( sPunto ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   if !empty( sPunto )
+
+      ::oSelectedPunto                 := sPunto
+
+
+
+
+
+      ::cSelectedSala                  := ::oSelectedPunto:cSala
+      ::cSelectedPunto                 := ::oSelectedPunto:cPuntoVenta
+      ::nSelectedUbicacion             := ::oSelectedPunto:nUbicacion
+      ::lComensal                      := ::oSelectedPunto:lComensal
+      ::cArticulo                      := ::oSelectedPunto:cArticulo
+      ::lMultiplicar                   := ::oSelectedPunto:lMultiplicar
+
+      ::SelectedPrecio(    ::oSelectedPunto:nPrecio )
+      ::SelectedCombinado( ::oSelectedPunto:nPreCmb )
+
+      ::cSelectedImagen                := ::oSelectedPunto:cImagen
+
+      ::cSelectedTiket                 := ::oSelectedPunto:cTiket()
+      ::cSelectedTexto                 := ::oSelectedPunto:cTextoPunto()
+
+      ::SetSelectedImagen()
+      ::SetSelectedTexto()
+
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TTpvRestaurante_cTextoSala( cSala ) ; local Self AS CLASS TTpvRestaurante := QSelf() AS CLASS TTpvRestaurante
+
+   local nScan
+   local cTextoSala  := ""
+
+   If( cSala == nil, cSala := ::cSelectedSala, ) ;
+
+   nScan             := aScan( ::aSalas, {|o| o:cCodigo == cSala } )
+   if nScan <> 0
+      cTextoSala     := Rtrim( ::aSalas[ nScan ]:cDescripcion )
+   end
+
+Return ( cTextoSala )
+
+
+
+
+
+
+
+
+_HB_CLASS TDetSalaVenta ; function TDetSalaVenta ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TDetSalaVenta", iif( .T., { @TDet() }, { @HBObject() } ), @TDetSalaVenta() ) ) ;
+
+   _HB_MEMBER Create( cPath); oClass:AddMethod( "Create", @TDetSalaVenta_Create(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles( lExclusive); oClass:AddMethod( "OpenFiles", @TDetSalaVenta_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER OpenService( lExclusive); oClass:AddMethod( "OpenService", @TDetSalaVenta_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @TDetSalaVenta_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DefineFiles(); oClass:AddMethod( "DefineFiles", @TDetSalaVenta_DefineFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Resource( nMode, lLiteral); oClass:AddMethod( "Resource", @TDetSalaVenta_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SaveDetails(); oClass:AddMethod( "SaveDetails", @TDetSalaVenta_SaveDetails(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lPresave( oGetCod, nMode); oClass:AddMethod( "lPresave", @TDetSalaVenta_lPresave(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TDetSalaVenta ;
+
+
+
+static FUNCTION TDetSalaVenta_DefineFiles( cPath, cVia, lUniqueName, cFileName ) ; local Self AS CLASS TDetSalaVenta := QSelf() AS CLASS TDetSalaVenta
+
+   local oDbf
+
+   If( cPath == nil, cPath := ::cPath, ) ;
+   If( lUniqueName == nil, lUniqueName := .F., ) ;
+   If( cFileName == nil, cFileName := "SlaPnt", ) ;
+   If( cVia == nil, cVia := cDriver(), ) ;
+
+   if lUniqueName
+      cFileName         := cGetNewFileName( cFileName, , , cPath )
+   end
+
+   oDbf := DbfServer( ( cFileName ), ( cFileName ) ):New( ( cFileName ), ( cFileName ), ( cVia ), "Puntos de venta en sala", ( cPath ) )
+
+      oDbf:AddField( "cCodigo", "C", 3, 0,,,,, "Código", .F.,, .T., {} )
+      oDbf:AddField( "cDescrip", "C", 35, 0,,,,, "Descripción de punto de venta", .F., 200, .F., {} )
+      oDbf:AddField( "nTipo", "N", 2, 0,,,,, "Tipo de objeto", .F.,, .T., {} )
+      oDbf:AddField( "nFila", "N", 6, 0,,,,, "Fila del objeto", .F.,, .T., {} )
+      oDbf:AddField( "nColumna", "N", 6, 0,,,,, "Columna del objeto", .F.,, .T., {} )
+
+      oDbf:AddIndex( "Codigo", ( cFileName ), "cCodigo",,, .F., .F.,,,, .T., .F. )
+      oDbf:AddIndex( "Descrip", ( cFileName ), "cDescrip",,, .F., .F.,,,, .T., .F. )
+      oDbf:AddIndex( "cCodDes", ( cFileName ), "cCodigo + cDescrip",,, .F., .F.,,,, .T., .F. )
+
+
+
+RETURN ( oDbf )
+
+
+
+static FUNCTION TDetSalaVenta_CloseFiles( ) ; local Self AS CLASS TDetSalaVenta := QSelf() AS CLASS TDetSalaVenta
+
+   if ::oDbf <> nil .AND. ::oDbf:Used()
+      ::oDbf:End()
+      ::oDbf      := nil
+   end
+
+RETURN .T.
+
+
+
+static FUNCTION TDetSalaVenta_Create( cPath ) ; local Self AS CLASS TDetSalaVenta := QSelf() AS CLASS TDetSalaVenta
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+
+   ::cPath              := cPath
+
+RETURN ( Self )
+
+
+
+static FUNCTION TDetSalaVenta_OpenFiles( lExclusive ) ; local Self AS CLASS TDetSalaVenta := QSelf() AS CLASS TDetSalaVenta
+
+   local lOpen          := .T.
+   local oBlock
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   oBlock               := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      if empty( ::oDbf )
+         ::oDbf            := ::DefineFiles()
+      end
+
+      ::oDbf:Activate( .F., !lExclusive )
+
+      ::bOnPreSaveDetail   := {|| ::SaveDetails() }
+
+   RECOVER
+
+      msgStop( "Imposible abrir todas las bases de datos de puntos de venta" )
+      ::CloseFiles()
+      lOpen             := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TDetSalaVenta_Resource( nMode ) ; local Self AS CLASS TDetSalaVenta := QSelf() AS CLASS TDetSalaVenta
+
+   local oDlg
+   local oGetDescrip
+
+   if nMode == 1
+      ::oDbfVir:cDescrip   := Alltrim( ::oParent:oDbf:cDescrip ) + Space( 1 ) + Alltrim( Str( ::oDbfVir:Lastrec() + 1 ) )
+   end
+
+
+
+
+
+   oDlg = TDialog():New(,,,, LblTitle( nMode ) + "puntos de venta", "LSalaVentas",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+
+
+
+      oGetDescrip := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, ::oDbfVir:cDescrip, ::oDbfVir:cDescrip:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      TButton():ReDefine( 1, {||( if( ::lPresave( oGetDescrip, nMode ), oDlg:end( 1 ), ) )}, oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+        TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+      if nMode <> 3
+         oDlg:AddFastKey( 116, {|| if( ::lPresave( oGetDescrip, nMode ), oDlg:end( 1 ), ) } )
+      end
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+static FUNCTION TDetSalaVenta_SaveDetails( ) ; local Self AS CLASS TDetSalaVenta := QSelf() AS CLASS TDetSalaVenta
+
+   ::oDbfVir:cCodigo := ::oParent:oDbf:cCodigo
+
+RETURN ( Self )
+
+
+
+static FUNCTION TDetSalaVenta_lPresave( oGetDescrip, nMode ) ; local Self AS CLASS TDetSalaVenta := QSelf() AS CLASS TDetSalaVenta
+
+   local lOk   := .T.
+
+   if nMode == 1
+
+      ::oDbfVir:GetStatus()
+
+      if ::oDbfVir:SeekInOrd( ::oDbfVir:cDescrip, "cDescrip" )
+         msgStop( "Descripción ya existe" )
+         oGetDescrip:SetFocus()
+         lOk   := .F.
+      end
+
+      ::oDbfVir:SetStatus()
+
+   end
+
+Return ( lOk )
+
+
+
+
+
+
+
+_HB_CLASS TDetImpComandas ; function TDetImpComandas ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TDetImpComandas", iif( .F., { }, { @HBObject() } ), @TDetImpComandas() ) ) ;
+
+   _HB_MEMBER { nView } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nView"}, .F. )
+
+   _HB_MEMBER { oSender } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSender"}, .F. )
+
+   _HB_MEMBER { dbfTmpLin } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dbfTmpLin"}, .F. )
+
+   _HB_MEMBER { cTmpLin } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTmpLin"}, .F. )
+
+   _HB_MEMBER { oDlg } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDlg"}, .F. )
+
+   _HB_MEMBER { bEdtDet } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bEdtDet"}, .F. )
+
+   _HB_MEMBER New( oSender); oClass:AddMethod( "New", @TDetImpComandas_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles(); oClass:AddMethod( "OpenFiles", @TDetImpComandas_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @TDetImpComandas_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Resource( nMode); oClass:AddMethod( "Resource", @TDetImpComandas_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER BeginTrans(); oClass:AddMethod( "BeginTrans", @TDetImpComandas_BeginTrans(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EndTrans(); oClass:AddMethod( "EndTrans", @TDetImpComandas_EndTrans(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER KillTrans(); oClass:AddMethod( "KillTrans", @TDetImpComandas_KillTrans(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER App(); oClass:AddInline( "App", {|Self | ( ( Self ) ), ( WinAppRec( ::oSender:oBrwImpComandas, ::bEdtDet ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Edt(); oClass:AddInline( "Edt", {|Self | ( ( Self ) ), ( WinEdtRec( ::oSender:oBrwImpComandas, ::bEdtDet ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Del(); oClass:AddInline( "Del", {|Self | ( ( Self ) ), ( DbDelRec( ::oSender:oBrwImpComandas ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EndResource( aTmp, aGet, nMode); oClass:AddMethod( "EndResource", @TDetImpComandas_EndResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TDetImpComandas ;
+
+
+
+static FUNCTION TDetImpComandas_New( oSender ) ; local Self AS CLASS TDetImpComandas := QSelf() AS CLASS TDetImpComandas
+
+   ::oSender      := oSender
+
+   ::bEdtDet      := { |aTmp, aGet, dbfCajL, oBrw, bWhen, bValid, nMode | ::Resource( aTmp, aGet, ::dbfTmpLin, ::oSender:oBrwImpComandas, bWhen, bValid, nMode ) }
+
+RETURN ( Self )
+
+
+
+static FUNCTION TDetImpComandas_OpenFiles( ) ; local Self AS CLASS TDetImpComandas := QSelf() AS CLASS TDetImpComandas
+
+   local lOpen          := .T.
+   local oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   BEGIN SEQUENCE
+
+      ::nView           := D():CreateView()
+
+      D():CajasL( ::nView )
+
+   RECOVER
+
+      msgStop( "Imposible abrir todas las bases de datos de las salas de ventas." )
+      ::CloseFiles()
+      lOpen             := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TDetImpComandas_CloseFiles( ) ; local Self AS CLASS TDetImpComandas := QSelf() AS CLASS TDetImpComandas
+
+   if !empty( ::nView )
+      D():DeleteView( ::nView )
+   end
+
+   ::nView     := nil
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TDetImpComandas_BeginTrans( ) ; local Self AS CLASS TDetImpComandas := QSelf() AS CLASS TDetImpComandas
+
+   local nOrd
+   local lErrors  := .F.
+   local cDbfLin  := "CCAJL"
+   local oError
+   local oBlock   := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   BEGIN SEQUENCE
+
+   ::cTmpLin      := cGetNewFileName( cPatTmp() + cDbfLin )
+
+   dbCreate( ::cTmpLin, aSqlStruct( aItmCajaL() ), cLocalDriver() )
+   dbUseArea( .T., cLocalDriver(), ::cTmpLin, cCheckArea( cDbfLin, @::dbfTmpLin ), .F. )
+
+   if !NetErr()
+
+      ( ::dbfTmpLin )->( OrdCondSet( "!Deleted()", {||!Deleted() } ) )
+      ( ::dbfTmpLin )->( OrdCreate( ::cTmpLin, "Recno", "Str( Recno() )", {|| Str( Recno() ) } ) )
+
+      ( ::dbfTmpLin )->( OrdCondSet( "!Deleted()", {||!Deleted() } ) )
+      ( ::dbfTmpLin )->( OrdCreate( ::cTmpLin, "cTipImp", "Upper( cTipImp )", {|| Upper( Field->cTipImp ) } ) )
+
+      if ( D():CajasL( ::nView ) )->( dbSeek( ::oSender:oDbf:Uuid ) )
+         while ( D():CajasL( ::nView ) )->cParUuid == ::oSender:oDbf:Uuid .AND. !( D():CajasL( ::nView ) )->( eof() )
+            if Empty( ( D():CajasL( ::nView ) )->cCodCaj )
+               dbPass( D():CajasL( ::nView ), ::dbfTmpLin, .T. )
+            end
+            ( D():CajasL( ::nView ) )->( DbSkip() )
+         end
+      endif
+
+      ( ::dbfTmpLin )->( dbGoTop() )
+
+   else
+
+      lErrors     := .T.
+
+   end
+
+   RECOVER USING oError
+
+      msgStop( "Imposible crear tablas temporales." + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+      ::KillTrans()
+
+      lErrors     := .T.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TDetImpComandas_EndTrans( ) ; local Self AS CLASS TDetImpComandas := QSelf() AS CLASS TDetImpComandas
+
+
+
+
+
+   while ( D():CajasL( ::nView ) )->( dbSeek( ::oSender:oDbf:Uuid ) )
+      if dbLock( D():CajasL( ::nView ) )
+         ( D():CajasL( ::nView ) )->( dbDelete() )
+         ( D():CajasL( ::nView ) )->( dbUnLock() )
+      end
+   end
+
+
+
+
+
+   ( ::dbfTmpLin )->( dbGoTop() )
+
+   while ( ::dbfTmpLin )->( !eof() )
+
+      if Empty( ( ::dbfTmpLin )->cParUuid )
+         ( ::dbfTmpLin )->cParUuid  := ::oSender:oDbf:Uuid
+      end
+
+      dbPass( ::dbfTmpLin, D():CajasL( ::nView ), .T. )
+
+      ( ::dbfTmpLin )->( dbSkip() )
+
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TDetImpComandas_KillTrans( ) ; local Self AS CLASS TDetImpComandas := QSelf() AS CLASS TDetImpComandas
+
+   if !empty( ::dbfTmpLin ) .AND. ( ::dbfTmpLin )->( Used() )
+      ( ::dbfTmpLin )->( dbCloseArea() )
+   end
+
+   ::dbfTmpLin      := nil
+
+   dbfErase( ::cTmpLin )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TDetImpComandas_Resource( aTmp, aGet, dbfTmpLin, oBrwImpComandas, bWhen, bValid, nMode ) ; local Self AS CLASS TDetImpComandas := QSelf() AS CLASS TDetImpComandas
+
+   ::oDlg = TDialog():New(,,,, LblTitle( nMode ) + "impresoras de comandas", "lCajas",, .F.,,,,,, .F.,,,,,, .F.,, "::oDlg", nil, )
+
+
+
+
+
+
+      aGet[ ( dbfTmpLin )->( FieldPos( "cTipImp" ) ) ] := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, aTmp[ ( dbfTmpLin )->( FieldPos( "cTipImp" ) ) ], aTmp[ ( dbfTmpLin )->( FieldPos( "cTipImp" ) ) ]:= u ) }, ::oDlg,,,,,,,,, .F.,,, .F., .F.,,,,, {|Self|( nil )}, nil, "LUPA",, )
+
+
+
+
+      aGet[ ( dbfTmpLin )->( FieldPos( "cNomPrn" ) ) ] := TGetHlp():ReDefine( 110, { | u | If( PCount()==0, aTmp[ ( dbfTmpLin )->( FieldPos( "cNomPrn" ) ) ], aTmp[ ( dbfTmpLin )->( FieldPos( "cNomPrn" ) ) ]:= u ) }, ::oDlg,,,,,,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+      TBtnBmp():ReDefine( 111, "gc_printer2_check_16",,,,,{|| PrinterPreferences( aGet[ ( dbfTmpLin )->( FieldPos( "cNomPrn" ) ) ] ) }, ::oDlg, .F., , .F.,  )
+
+
+
+
+
+
+      aGet[ ( dbfTmpLin )->( FieldPos( "cWavFil" ) ) ] := TGetHlp():ReDefine( 120, { | u | If( PCount()==0, aTmp[ ( dbfTmpLin )->( FieldPos( "cWavFil" ) ) ], aTmp[ ( dbfTmpLin )->( FieldPos( "cWavFil" ) ) ]:= u ) }, ::oDlg,,,,,,,,, .F.,,, .F., .F.,,,,, {|Self|( aGet[ ( dbfTmpLin )->( FieldPos( "cWavFil" ) ) ]:cText( cGetFile( "Doc ( *.* ) | *.*", "Seleccione el nombre del fichero" ) ) )}, nil, "FOLDER",, )
+
+
+
+
+      aGet[ ( dbfTmpLin )->( FieldPos( "cCodCut" ) ) ] := TGetHlp():ReDefine( 130, { | u | If( PCount()==0, aTmp[ ( dbfTmpLin )->( FieldPos( "cCodCut" ) ) ], aTmp[ ( dbfTmpLin )->( FieldPos( "cCodCut" ) ) ]:= u ) }, ::oDlg,,,,,,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+      TBtnBmp():ReDefine( 131, "gc_cut_16",,,,,{|| PrintEscCode( aTmp[ ( dbfTmpLin )->( FieldPos( "cCodCut" ) ) ], aTmp[ ( dbfTmpLin )->( FieldPos( "cNomPrn" ) ) ] ) }, ::oDlg, .F., , .F., "Test de código" )
+
+
+
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfTmpLin )->( FieldPos( "cPrnCom" ) ) ] := TGetHlp():ReDefine( 140, { | u | If( PCount()==0, aTmp[ ( dbfTmpLin )->( FieldPos( "cPrnCom" ) ) ], aTmp[ ( dbfTmpLin )->( FieldPos( "cPrnCom" ) ) ]:= u ) }, ::oDlg,,, {||    ( cDocumento( aGet[ ( dbfTmpLin )->( FieldPos( "cPrnCom" ) ) ], aGet[ ( dbfTmpLin )->( FieldPos( "cPrnCom" ) ) ]:oHelpText, D():Documentos( ::nView ) ) )},,,,,, .F.,,, .F., .F.,,,,, {|Self|( BrwDocumento( aGet[ ( dbfTmpLin )->( FieldPos( "cPrnCom" ) ) ], aGet[ ( dbfTmpLin )->( FieldPos( "cPrnCom" ) ) ]:oHelpText, "TK" ) )}, nil, "LUPA",, 141 )
+
+      TBtnBmp():ReDefine( 142, "gc_document_text_pencil_12",,,,,{|| EdtDocumento( aTmp[ ( dbfTmpLin )->( FieldPos( "cPrnCom" ) ) ] ) }, ::oDlg, .F., , .F.,  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfTmpLin )->( FieldPos( "cPrnAnu" ) ) ] := TGetHlp():ReDefine( 150, { | u | If( PCount()==0, aTmp[ ( dbfTmpLin )->( FieldPos( "cPrnAnu" ) ) ], aTmp[ ( dbfTmpLin )->( FieldPos( "cPrnAnu" ) ) ]:= u ) }, ::oDlg,,, {||    ( cDocumento( aGet[ ( dbfTmpLin )->( FieldPos( "cPrnAnu" ) ) ], aGet[ ( dbfTmpLin )->( FieldPos( "cPrnAnu" ) ) ]:oHelpText, D():Documentos( ::nView ) ) )},,,,,, .F.,,, .F., .F.,,,,, {|Self|( BrwDocumento( aGet[ ( dbfTmpLin )->( FieldPos( "cPrnAnu" ) ) ], aGet[ ( dbfTmpLin )->( FieldPos( "cPrnAnu" ) ) ]:oHelpText, "TK" ) )}, nil, "LUPA",, 151 )
+
+      TBtnBmp():ReDefine( 152, "gc_document_text_pencil_12",,,,,{|| EdtDocumento( aTmp[ ( dbfTmpLin )->( FieldPos( "cPrnAnu" ) ) ] ) }, ::oDlg, .F., , .F.,  )
+
+
+
+
+      TButton():ReDefine( 500, {||( ::EndResource( aTmp, aGet, dbfTmpLin, nMode ) )}, ::oDlg,,, .F.,,,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 550, {||( ::oDlg:end() )}, ::oDlg,,, .F.,,,, .T. )
+
+      ::oDlg:bStart := {|| aGet[ ( dbfTmpLin )->( FieldPos( "cPrnCom" ) ) ]:lValid(), aGet[ ( dbfTmpLin )->( FieldPos( "cPrnAnu" ) ) ]:lValid() }
+
+   ::oDlg:Activate( ::oDlg:bLClicked, ::oDlg:bMoved, ::oDlg:bPainted, .T.,,,, ::oDlg:bRClicked,,, )
+
+RETURN ( ::oDlg:nResult == 1 )
+
+
+
+static FUNCTION TDetImpComandas_EndResource( aTmp, aGet, dbfTmpLin, nMode ) ; local Self AS CLASS TDetImpComandas := QSelf() AS CLASS TDetImpComandas
+
+   local cErrors  := ""
+
+
+
+   if empty( aTmp[ ( dbfTmpLin )->( FieldPos( "cTipImp" ) ) ] )
+      cErrors     += "* El tipo de impresora no puede estar vacío" + Chr(13)+Chr(10)
+   end
+
+   if empty( aTmp[ ( dbfTmpLin )->( FieldPos( "cNomPrn" ) ) ] )
+      cErrors     += "* El nombre de impresora no puede estar vacío" + Chr(13)+Chr(10)
+   end
+
+   if nMode == 1 .AND. dbSeekInOrd( Upper( Padr( aTmp[ ( dbfTmpLin )->( FieldPos( "cTipImp" ) ) ], 50 ) ), "cTipImp", dbfTmpLin )
+      cErrors     += "* El tipo de impresora ya ha sido introducido" + Chr(13)+Chr(10)
+   end
+
+   if !empty( cErrors )
+      msgStop( cErrors, "El formulario contiene errores" )
+      RETURN ( .F. )
+   end
+
+
+
+
+
+   aTmp[ ( dbfTmpLin )->( FieldPos( "cParUuid" ) ) ]   := ::oSender:oDbf:Uuid
+
+
+
+
+
+   WinGather( aTmp, aGet, dbfTmpLin, , nMode )
+
+
+
+
+
+   ::oDlg:end( 1 )
+
+RETURN ( nil )
+
+
+
+
+
+
+
+FUNCTION SynSalaVenta( cPath )
+
+   local oBlock
+   local oError
+   local dbfSalaVta
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+
+   oBlock               := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      dbUseArea( .T., ( cDriver() ), ( cPath + "SalaVta.Dbf" ), ( cCheckArea( "SalaVta", @dbfSalaVta ) ), iif( .F. .OR. .T., ! .T., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPath + "SalaVta.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      ( dbfSalaVta )->( dbGoTop() )
+      while !( dbfSalaVta )->( eof() )
+
+         if empty( ( dbfSalaVta )->Uuid )
+            ( dbfSalaVta )->Uuid := win_uuidcreatestring()
+         end
+
+         ( dbfSalaVta )->( dbSkip() )
+
+         SysRefresh()
+
+      end
+
+   RECOVER USING oError
+
+      msgStop( ErrorMessage( oError ), "Imposible abrir todas las bases de datos de salas de venta." )
+
+   end
+
+   ErrorBlock( oBlock )
+
+   ( dbfSalaVta )->( dbCloseArea() )
+
+RETURN nil
+
+
+
+
+
+
+
+_HB_CLASS SalaVentaModel ; function SalaVentaModel ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "SalaVentaModel", iif( .T., { @ADSBaseModel() }, { @HBObject() } ), @SalaVentaModel() ) ) ;
+
+   _HB_MEMBER getTableName(); oClass:AddInline( "getTableName", {|Self | ( ( Self ) ), ::getEmpresaTableName( "SalaVta" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getUuidFromCodigo(); oClass:AddInline( "getUuidFromCodigo", {|Self, cCodigo | ( ( Self ) ), ( ::getField( "Uuid", "cCodigo", cCodigo ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS SalaVentaModel ;

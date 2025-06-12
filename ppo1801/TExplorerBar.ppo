@@ -1,0 +1,2658 @@
+#line 91 "\fwh1801\include\FiveWin.ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 31 ".\.\Prg\TExplorerBar.prg"
+_HB_CLASS TExplorerBar ; function TExplorerBar ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TExplorerBar", iif( .T., { @TControl() }, { @HBObject() } ), @TExplorerBar() ) ) ;
+
+   _HB_MEMBER { aPanels } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aPanels"}, .F. )
+   _HB_MEMBER { nTopColor } ; oClass:AddMultiData(, ( 122 + ( 161 * 256 ) + ( 230 * 65536 ) ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTopColor"}, .F. )
+   _HB_MEMBER { nBottomColor } ; oClass:AddMultiData(, ( 99 + ( 117 * 256 ) + ( 214 * 65536 ) ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nBottomColor"}, .F. )
+   _HB_MEMBER { oVScroll } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oVScroll"}, .F. )
+   _HB_MEMBER { nVPos } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nVPos"}, .F. )
+   _HB_MEMBER { nVirtualHeight } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nVirtualHeight"}, .F. )
+   _HB_MEMBER { nVirtualTop } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nVirtualTop"}, .F. )
+   _HB_MEMBER { lSBVisible } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lSBVisible"}, .F. )
+
+   _HB_MEMBER { AS LOGICAL lRegistered } ; oClass:AddMultiClsData( "LOGICAL",, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lRegistered"}, .F. )
+
+   _HB_MEMBER New( nTop, nLeft, nWidth, nHeight, oWnd) AS CLASS TExplorerBar; oClass:AddMethod( "New", @TExplorerBar_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Redefine( nId, oDlg); oClass:AddMethod( "Redefine", @TExplorerBar_Redefine(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddPanel( cName, cBmpName); oClass:AddMethod( "AddPanel", @TExplorerBar_AddPanel(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CheckScroll( oPanel); oClass:AddMethod( "CheckScroll", @TExplorerBar_CheckScroll(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EraseBkGnd(); oClass:AddInline( "EraseBkGnd", {|Self, hDC | ( ( Self ) ), 1 }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Paint(); oClass:AddMethod( "Paint", @TExplorerBar_Paint(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Display(); oClass:AddInline( "Display", {|Self | ( ( Self ) ), ::BeginPaint(), ::Paint(), ::EndPaint(), 0 }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Initiate( hDlg); oClass:AddMethod( "Initiate", @TExplorerBar_Initiate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Notify(); oClass:AddInline( "Notify", {|Self, nIdCtrl, nPtrNMHDR | ( ( Self ) ), ::oWnd:Notify( nIdCtrl, nPtrNMHDR ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ReSize( nSizeType, nWidth, nHeight); oClass:AddMethod( "ReSize", @TExplorerBar_ReSize(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER newVerticalScroll(); oClass:AddMethod( "newVerticalScroll", @TExplorerBar_newVerticalScroll(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER VScrollSetPos( nPos); oClass:AddMethod( "VScrollSetPos", @TExplorerBar_VScrollSetPos(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER VScrollSkip( nSkip); oClass:AddMethod( "VScrollSkip", @TExplorerBar_VScrollSkip(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TExplorerBar ;
+
+
+
+static FUNCTION TExplorerBar_New( nTop, nLeft, nWidth, nHeight, oWnd ) ; local Self AS CLASS TExplorerBar := QSelf() AS CLASS TExplorerBar
+
+
+   If( oWnd == nil, oWnd := GetWndDefault(), ) ; If( nTop == nil, nTop := 0, ); If( nLeft == nil, nLeft := 0, ); If( nHeight == nil, nHeight := oWnd:nHeight(), ); If( nWidth == nil, nWidth := oWnd:nWidth(), );
+
+   ::lUnicode  = FW_SetUnicode()
+   ::nTop    = nTop
+   ::nLeft   = nLeft
+   ::nBottom = nHeight - nTop
+   ::nRight  = nWidth - nLeft
+   ::oWnd    = oWnd
+   ::nStyle  = nOr( 1073741824, 268435456, 33554432, 65536 )
+   ::lDrag   = .F.
+   ::nClrPane = GetSysColor( 15 )
+
+   ::nVirtualTop = 0
+   ::nVirtualHeight = 0
+
+   ::Register()
+
+   if ! Empty( ::oWnd:hWnd )
+      ::Create()
+      ::oWnd:AddControl( Self )
+      if ::oWnd:oBrush <> nil
+         ::SetBrush( ::oWnd:oBrush )
+      endif
+   else
+      ::oWnd:DefControl( Self )
+   endif
+
+   ::newVerticalScroll()
+
+
+RETURN Self
+
+
+
+static FUNCTION TExplorerBar_Redefine( nId, oDlg ) ; local Self AS CLASS TExplorerBar := QSelf() AS CLASS TExplorerBar
+
+   If( oDlg == nil, oDlg := GetWndDefault(), ) ;
+
+   ::lUnicode  = FW_SetUnicode()
+   ::nId      = nId
+   ::oWnd     = oDlg
+   ::lDrag    = .F.
+   ::nClrPane = GetSysColor( 15 )
+   ::nVirtualTop = 0
+   ::nVirtualHeight = 0
+
+   ::Register( nOR( 1, 2 ) )
+
+   oDlg:DefControl( Self )
+
+   ::newVerticalScroll()
+
+RETURN Self
+
+
+
+static FUNCTION TExplorerBar_newVerticalScroll( ) ; local Self AS CLASS TExplorerBar := QSelf() AS CLASS TExplorerBar
+
+   ::oVScroll := TScrollBar():WinNew(,,, (!.F.) .OR. .T., Self,,,,,,,,, .F.,, )
+
+   ::oVScroll:bGoUp     = {|| ::VScrollSkip( - 10 ) }
+   ::oVScroll:bGoDown   = {|| ::VScrollSkip( 10 ) }
+
+
+   ::oVScroll:bPageUp   = {|| ::VScrollSkip( - 10 ) }
+   ::oVScroll:bPageDown = {|| ::VScrollSkip( 10 ) }
+   ::oVScroll:bPos      = {|nPos| ::VScrollSetPos( nPos ) }
+   ::oVScroll:bTrack    = {|nPos| ::VScrollSetPos( nPos ) }
+
+RETURN ( ::oVScroll )
+
+
+
+static FUNCTION TExplorerBar_AddPanel( cName, cBmpName, nBodyHeight ) ; local Self AS CLASS TExplorerBar := QSelf() AS CLASS TExplorerBar
+
+   local oPanel
+
+   oPanel := aadd( ::aPanels, TTaskPanel():New( cName, Self, len( ::aPanels ), cBmpName, nBodyHeight ) )
+
+   ::CheckScroll( oPanel )
+
+RETURN oPanel
+
+
+
+static FUNCTION TExplorerBar_CheckScroll( ) ; local Self AS CLASS TExplorerBar := QSelf() AS CLASS TExplorerBar
+
+   local nLastRow
+   local oLastItem
+
+   if empty( ::aPanels )
+      RETURN nil
+   end
+
+   oLastItem   := atail( ::aPanels )
+
+   nLastRow    := ::nVirtualTop + oLastItem:nTop
+
+   if oLastItem:lCollapsed
+      nLastRow += oLastItem:nTitleHeight
+   else
+      nLastRow += oLastItem:nTotalHeight
+   endif
+
+   if nLastRow > ::nHeight - ::nVirtualTop
+      ::nVirtualHeight  := nLastRow
+
+      SetScrollRangeX( ::hWnd, 1, 0, ::nVirtualHeight - 1 )
+
+      ::oVScroll:SetPage( ::nHeight, .F. )
+      ::oVScroll:setPos( ::nVirtualTop )
+
+      ::lSBVisible      := .T.
+   else
+      ::nVirtualTop     := 0
+      ::nVirtualHeight  := ::nHeight
+
+      SetScrollRangeX( ::hWnd, 1, 0, 0 )
+
+      ::lSBVisible      := .F.
+   endif
+
+RETURN nil
+
+
+
+static FUNCTION TExplorerBar_Initiate( hDlg ) ; local Self AS CLASS TExplorerBar := QSelf() AS CLASS TExplorerBar
+
+   local uValue := ::Super:Initiate( hDlg )
+
+   __ChangeStyleWindow( ::hWnd, 33554432, (-16), .T. )
+
+RETURN uValue
+
+
+
+static FUNCTION TExplorerBar_Paint( ) ; local Self AS CLASS TExplorerBar := QSelf() AS CLASS TExplorerBar
+
+   local aInfo := ::DispBegin(), n, hBmpPanel
+
+   Gradient( ::hDC, { 0, 0, ::nHeight(), ::nWidth() }, ::nTopColor, ::nBottomColor, .T. )
+
+   if ! Empty( ::aPanels )
+      for n = 1 to Len( ::aPanels )
+          if ! Empty( hBmpPanel := ::aPanels[ n ]:hBmpPanel )
+             if ::aPanels[ n ]:lHasAlpha
+
+
+
+                ABPaint( ::hDC,  ::aPanels[ n ]:nLeft - ( nBmpWidth( hBmpPanel ) / 3 ), ::aPanels[ n ]:nTop - ( nBmpHeight( hBmpPanel ) / 3 ), hBmpPanel, 255 )
+             else
+
+                DrawTransparent( ::hDC, hBmpPanel, ::aPanels[ n ]:nTop - ( nBmpHeight( hBmpPanel ) / 3 ), ::aPanels[ n ]:nLeft - ( nBmpWidth( hBmpPanel ) / 3 ) )
+            endif
+          endif
+      next
+   endif
+
+   if ValType( ::bPainted ) == "B"
+      Eval( ::bPainted, ::hDC, ::cPS, Self )
+   endif
+
+   ::DispEnd( aInfo )
+
+RETURN 0
+
+
+
+static FUNCTION TExplorerBar_ReSize( nSizeType, nWidth, nHeight ) ; local Self AS CLASS TExplorerBar := QSelf() AS CLASS TExplorerBar
+
+   local oPanel
+
+   ::CoorsUpdate()
+
+   if nHeight > ::nVirtualHeight
+
+      ::nVirtualHeight  := nHeight
+
+      for each oPanel in ::aPanels
+         oPanel:nWidth  := nWidth - oPanel:nLeftMargin - oPanel:nRightMargin
+
+         oPanel:nTop    += ::nVirtualTop
+         oPanel:CoorsUpdate()
+         oPanel:UpdateRegion()
+      next
+
+      ::nVirtualTop     := 0
+
+   else
+      for each oPanel in ::aPanels
+         oPanel:nWidth  := nWidth - oPanel:nLeftMargin - oPanel:nRightMargin
+
+         if nHeight + ::nVirtualTop > ::nVirtualHeight .AND. ::nVirtualTop > 0
+            oPanel:nTop += nHeight + ::nVirtualTop - ::nVirtualHeight
+         endif
+
+         oPanel:CoorsUpdate()
+         oPanel:UpdateRegion()
+      next
+      if nHeight + ::nVirtualTop > ::nVirtualHeight .AND. ::nVirtualTop > 0
+         ::nVirtualTop -= ( nHeight + ::nVirtualTop - ::nVirtualHeight )
+      endif
+   endif
+
+   ::CheckScroll()
+
+RETURN ::Super:ReSize( nSizeType, nWidth, nHeight )
+
+
+
+static FUNCTION TExplorerBar_VScrollSetPos( nPos ) ; local Self AS CLASS TExplorerBar := QSelf() AS CLASS TExplorerBar
+
+   local nTop
+   local oPanel
+   local nHeight     := ( ::nVirtualHeight - ::nHeight )
+   local nAdvance    := ( ::nVirtualTop - nPos )
+
+   ::nVirtualTop     := nPos
+
+   if ::nVirtualTop < 0
+      ::nVirtualTop  := 0
+   elseif ::nVirtualTop > nHeight
+      ::nVirtualTop  := nHeight
+   endif
+
+   ::oVScroll:SetPos( ::nVirtualTop )
+
+   for each oPanel in ::aPanels
+      nTop           := oPanel:nTop + nAdvance
+      oPanel:Move( nTop )
+   next
+
+   logwrite(  "nHeight VScrollSetPos : " + str( nHeight ) )
+   logwrite(  "nAdvance VScrollSetPos" + str( nAdvance ) )
+   logwrite(  "nVirtualTop VScrollSetPos" + str( ::nVirtualTop ) )
+
+   ::Refresh()
+
+RETURN nil
+
+
+
+static FUNCTION TExplorerBar_VScrollSkip( nSkip ) ; local Self AS CLASS TExplorerBar := QSelf() AS CLASS TExplorerBar
+
+   LOCAL oPanel
+   LOCAL nHeight     := ( ::nVirtualHeight - ::nHeight )
+
+   if ( ::nVirtualTop == 0 .AND. nSkip < 0 ) .OR. ( ::nVirtualTop == nHeight .AND. nSkip > 0 )
+      RETURN nil
+   endif
+
+   ::nVirtualTop     += nSkip
+
+   if ::nVirtualTop < 0
+      ::nVirtualTop  := 0
+   elseif ::nVirtualTop > nHeight
+      ::nVirtualTop  := nHeight
+   endif
+
+   ::oVScroll:SetPos( ::nVirtualTop )
+
+   for each oPanel in ::aPanels
+      oPanel:Move( oPanel:nTop - nSkip )
+   next
+
+   logwrite( "VScrollSkip " + str( nSkip ) )
+
+   ::Refresh()
+
+RETURN nil
+
+
+
+_HB_CLASS TTaskPanel ; function TTaskPanel ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TTaskPanel", iif( .T., { @TControl() }, { @HBObject() } ), @TTaskPanel() ) ) ;
+
+   _HB_MEMBER { cTitle, nIndex } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTitle", "nIndex"}, .F. )
+   _HB_MEMBER { nTopMargin, nLeftMargin, nRightMargin } ; oClass:AddMultiData(, 16, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTopMargin", "nLeftMargin", "nRightMargin"}, .F. )
+   _HB_MEMBER { nTitleHeight } ; oClass:AddMultiData(, 25, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTitleHeight"}, .F. )
+   _HB_MEMBER { nBodyHeight } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nBodyHeight"}, .F. )
+   _HB_MEMBER { lCollapsed } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lCollapsed"}, .F. )
+   _HB_MEMBER { lOverTitle } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lOverTitle"}, .F. )
+   _HB_MEMBER { lHasAlpha } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lHasAlpha"}, .F. )
+   _HB_MEMBER { aLinks } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aLinks"}, .F. )
+   _HB_MEMBER { nClrHover } ; oClass:AddMultiData(, ( 0 + ( 0 * 256 ) + ( 0 * 65536 ) ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nClrHover"}, .F. )
+   _HB_MEMBER { nClrText } ; oClass:AddMultiData(, ( 0 + ( 0 * 256 ) + ( 0 * 65536 ) ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nClrText"}, .F. )
+   _HB_MEMBER { hRegion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hRegion"}, .F. )
+   _HB_MEMBER { aBitmaps } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aBitmaps"}, .F. )
+   _HB_MEMBER { hBmpPanel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hBmpPanel"}, .F. )
+   _HB_MEMBER { nClrLink } ; oClass:AddMultiData(, ( 10 + ( 152 * 256 ) + ( 234 * 65536 ) ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nClrLink"}, .F. )
+
+   _HB_MEMBER { AS LOGICAL lRegistered } ; oClass:AddMultiClsData( "LOGICAL",, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lRegistered"}, .F. )
+
+   _HB_MEMBER New( cTitle, oWnd, nIndex, cBmpPanel); oClass:AddMethod( "New", @TTaskPanel_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddLink( cPrompt, bAction, cBitmap); oClass:AddMethod( "AddLink", @TTaskPanel_AddLink(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddGet( cPrompt, bAction, cBitmap); oClass:AddMethod( "AddGet", @TTaskPanel_AddGet(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddComboBox( cPrompt, cItem, aItems); oClass:AddMethod( "AddComboBox", @TTaskPanel_AddComboBox(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddCheckBox( cPrompt, lCheckBox); oClass:AddMethod( "AddCheckBox", @TTaskPanel_AddCheckBox(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Display(); oClass:AddInline( "Display", {|Self | ( ( Self ) ), ::BeginPaint(), ::Paint(), ::EndPaint(), 0 }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Destroy(); oClass:AddMethod( "Destroy", @TTaskPanel_Destroy(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER End(); oClass:AddInline( "End", {|Self | ( ( Self ) ), ::Destroy() }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER EraseBkGnd(); oClass:AddInline( "EraseBkGnd", {|Self, hDC | ( ( Self ) ), 1 }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Paint(); oClass:AddMethod( "Paint", @TTaskPanel_Paint(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER HandleEvent(); oClass:AddMethod( "HandleEvent", @TTaskPanel_HandleEvent(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalHeight(); oClass:AddInline( "nTotalHeight", {|Self | ( ( Self ) ), ::nTitleHeight + ::nBodyHeight }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER KeyDown( nKey, nFlags); oClass:AddMethod( "KeyDown", @TTaskPanel_KeyDown(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER LButtonUp( nRow, nCol, nFlags); oClass:AddMethod( "LButtonUp", @TTaskPanel_LButtonUp(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER LoadBitmaps(); oClass:AddMethod( "LoadBitmaps", @TTaskPanel_LoadBitmaps(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER MouseMove( nRow, nCol, nFlags); oClass:AddMethod( "MouseMove", @TTaskPanel_MouseMove(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER MouseLeave( nRow, nCol, nFlags); oClass:AddMethod( "MouseLeave", @TTaskPanel_MouseLeave(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER UpdateRegion(); oClass:AddMethod( "UpdateRegion", @TTaskPanel_UpdateRegion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER SetPanelBitmap( cnBmp); oClass:AddMethod( "SetPanelBitmap", @TTaskPanel_SetPanelBitmap(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setHeight( nHeight); oClass:AddMethod( "setHeight", @TTaskPanel_setHeight(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getTopControl(); oClass:AddMethod( "getTopControl", @TTaskPanel_getTopControl(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TTaskPanel ;
+
+
+
+static FUNCTION TTaskPanel_New( cTitle, oWnd, nIndex, cBmpPanel, nBodyHeight ) ; local Self AS CLASS TTaskPanel := QSelf() AS CLASS TTaskPanel
+
+   local n
+
+   If( nBodyHeight == nil, nBodyHeight := 50, ) ;
+
+   ::lUnicode           := FW_SetUnicode()
+   ::cTitle             := cTitle
+   ::nTop               := ::nTopMargin
+
+   ::nBodyHeight        := nBodyHeight
+
+   if nIndex > 0
+      ::nTop += oWnd:aPanels[ nIndex ]:nTop
+      ::nTop += oWnd:aPanels[ nIndex ]:nTotalHeight
+      ::nTop += oWnd:aPanels[ nIndex ]:nTopMargin
+   endif
+
+   ::nLeft   = ::nLeftMargin
+   ::nBottom = ::nTop + ::nTotalHeight()
+   ::nRight  = oWnd:nWidth - ::nRightMargin
+   ::oWnd    = oWnd
+   ::nStyle  = nOr( 1073741824, 268435456, 33554432, 65536 )
+   ::lDrag   = .F.
+   ::nClrPane = nRGB( 255, 255, 255 )
+   ::nClrText = nRGB( 0, 0, 0 )
+   ::nIndex  = nIndex + 1
+   ::LoadBitmaps()
+
+   ::SetPanelBitmap( cBmpPanel )
+
+   ::oFont := TFont():New( "Tahoma", 0, -11,,,,,,,,,,,,,, )
+
+   ::Register()
+
+   if ! Empty( ::oWnd:hWnd )
+      ::Create()
+      ::oWnd:AddControl( Self )
+      ::UpdateRegion()
+   else
+      ::oWnd:DefControl( Self )
+   endif
+
+   ::SetColor( ::nClrText, ::nClrPane )
+
+RETURN Self
+
+
+
+static FUNCTION TTaskPanel_getTopControl( ) ; local Self AS CLASS TTaskPanel := QSelf() AS CLASS TTaskPanel
+
+RETURN ( ::nHeight + 5 )
+
+
+
+static FUNCTION TTaskPanel_setHeight( nTop, nHeight ) ; local Self AS CLASS TTaskPanel := QSelf() AS CLASS TTaskPanel
+
+   if nTop + nHeight > ::nHeight
+      ::nHeight      := nTop + nHeight
+      ::nBodyHeight  := ::nHeight - ::nTitleHeight
+   endif
+
+RETURN Self
+
+
+
+static FUNCTION TTaskPanel_AddLink( cPrompt, bAction, cBitmap ) ; local Self AS CLASS TTaskPanel := QSelf() AS CLASS TTaskPanel
+
+   local oUrlLink
+
+   oUrlLink             := TUrlLink():New( ::getTopControl(), 33, Self, .T., .F., ::oFont, "", cPrompt )
+
+   oUrlLink:SetColor( ::nClrLink, ::nClrPane )
+   oUrlLink:nClrInit    := ::nClrLink
+   oUrlLink:nClrOver    := ::nClrLink
+   oUrlLink:nClrVisit   := ::nClrLink
+   oUrlLink:bAction     := bAction
+
+   if !empty( cBitmap )
+      oUrlLink:hBmp     := LoadBitmap( GetResources(), cBitmap )
+   endif
+
+   ::setHeight( oUrlLink:nTop, oUrlLink:nHeight )
+
+RETURN nil
+
+
+
+static FUNCTION TTaskPanel_AddGet( cPrompt, cGet ) ; local Self AS CLASS TTaskPanel := QSelf() AS CLASS TTaskPanel
+
+   local oSay
+   local oGet
+   local nTop        := ::getTopControl()
+
+   oSay := TSay():New( nTop + 3, 10, {|| cPrompt}, Self,,, .F., .F., .F., .T., ( 0 + ( 0 * 256 ) + ( 0 * 65536 ) ), ( 255 + ( 255 * 256 ) + ( 255 * 65536 ) ),,, .F., .F., .F., .F., .F., .F., .F., "oSay",, .F. )
+
+   oGet := TGet():New( nTop, 120, { | u | If( PCount()==0, cGet, cGet:= u ) }, Self, 400, 20,,,,,, .F.,, .T.,, .F.,, .F., .F.,, .F., .F., .F.,, .F.,,,,,,, "oGet", )
+
+   ::setHeight( oGet:nTop, oGet:nHeight )
+
+RETURN ( oGet )
+
+
+
+static FUNCTION TTaskPanel_AddComboBox( cPrompt, cItem, aItems ) ; local Self AS CLASS TTaskPanel := QSelf() AS CLASS TTaskPanel
+
+   local oSay
+   local oCbx
+   local nTop        := ::getTopControl()
+
+   oSay := TSay():New( nTop + 6, 10, {|| cPrompt}, Self,,, .F., .F., .F., .T., ( 0 + ( 0 * 256 ) + ( 0 * 65536 ) ), ( 255 + ( 255 * 256 ) + ( 255 * 65536 ) ),,, .F., .F., .F., .F., .F., .F., .F., "oSay",, .F. )
+
+   oCbx := TComboBox():New( nTop, 120, { | u | If( PCount()==0, cItem, cItem:= u ) }, aItems, 400, 460, Self,,,,,, .T.,,, .F.,, .F.,,,,,, "oCbx", 20,,,,,, )
+
+   ::setHeight( oCbx:nTop, oCbx:nHeight )
+
+RETURN ( oCbx )
+
+
+
+static FUNCTION TTaskPanel_AddCheckBox( cPrompt, lCheckBox ) ; local Self AS CLASS TTaskPanel := QSelf() AS CLASS TTaskPanel
+
+   local nTop        := ::getTopControl()
+   local oCheckBox
+
+   oCheckBox := TCheckBox():New( nTop, 120, cPrompt, { | u | If( PCount()==0, lCheckBox, lCheckBox:= u ) }, Self, 400, 12,,,,,,, .F., .T.,, .F.,, "oCheckBox" )
+
+   ::setHeight( oCheckBox:nTop, oCheckBox:nHeight )
+
+RETURN ( oCheckBox )
+
+
+
+static FUNCTION TTaskPanel_Destroy( ) ; local Self AS CLASS TTaskPanel := QSelf() AS CLASS TTaskPanel
+
+
+
+   aeval( ::aBitmaps, { | aItem | DeleteObject( aItem[ 1 ] ), DeleteObject( aItem[ 2 ] ) } )
+
+   DeleteObject( ::hBmpPanel )
+
+   DeleteObject( ::hRegion )
+
+RETURN ::Super:Destroy()
+
+
+
+static FUNCTION TTaskPanel_HandleEvent( nMsg, nWParam, nLParam ) ; local Self AS CLASS TTaskPanel := QSelf() AS CLASS TTaskPanel
+
+   if nMsg == 675
+      RETURN ::MouseLeave( nHiWord( nLParam ), nLoWord( nLParam ), nWParam )
+   endif
+
+RETURN ::Super:HandleEvent( nMsg, nWParam, nLParam )
+
+
+
+static FUNCTION TTaskPanel_KeyDown( nKey, nFlags ) ; local Self AS CLASS TTaskPanel := QSelf() AS CLASS TTaskPanel
+
+   if nKey <> 9
+      RETURN nil
+   end
+
+   if GetKeyState( 16 )
+      ::oWnd:GoPrevCtrl()
+   else
+      ::oWnd:GoNextCtrl()
+   endif
+
+   sysrefresh()
+
+   ::Refresh()
+
+   if GetParent( GetFocus() ) == ::oWnd:hWnd
+      oWndFromHwnd( GetFocus() ):Refresh()
+   endif
+
+RETURN nil
+
+
+
+static FUNCTION TTaskPanel_LButtonUp( nRow, nCol, nFlags ) ; local Self AS CLASS TTaskPanel := QSelf() AS CLASS TTaskPanel
+
+   local n, hWndFocus
+
+   if nRow < ::nTitleHeight
+      if ( ::lCollapsed := ::nHeight > ::nTitleHeight )
+         ::nHeight = ::nTitleHeight
+         for n = ::nIndex + 1 to Len( ::oWnd:aPanels )
+            ::oWnd:aPanels[ n ]:nTop -= ::nBodyHeight
+         next
+      else
+         ::nHeight = ::nTotalHeight()
+         for n = ::nIndex + 1 to Len( ::oWnd:aPanels )
+            ::oWnd:aPanels[ n ]:nTop += ::nBodyHeight
+         next
+      endif
+      if ( hWndFocus := GetFocus() ) <> ::hWnd
+         SetFocus( ::hWnd )
+      endif
+      ::oWnd:Refresh()
+
+      aeval( ::oWnd:aPanels, { | o | o:Refresh() } )
+
+      ::oWnd:CheckScroll()
+   endif
+
+RETURN nil
+
+
+
+static FUNCTION TTaskPanel_LoadBitmaps( nType, cnBitmap ) ; local Self AS CLASS TTaskPanel := QSelf() AS CLASS TTaskPanel
+
+   local nWidth, nHeight, lHasAlpha
+   local hBitmap
+
+   If( nType == nil, nType := 0, ) ;
+
+   if nType > 2 .OR. nType < 0
+      RETURN nil
+   endif
+
+   if nType == 0
+      ::aBitmaps = {}
+      hBitmap = fwBmpDes()
+      AAdd( ::aBitmaps, { hBitmap, 0, HasAlpha( hBitmap ), nBmpWidth( hBitmap ), nBmpHeight( hBitmap ) } )
+      ::aBitmaps[ 1 ][ 2 ] = BrightImg( ::hDC, hBitmap, 90 )
+      hBitmap = fwBmpAsc()
+      AAdd( ::aBitmaps, { hBitmap, 0, HasAlpha( hBitmap ), nBmpWidth( hBitmap ), nBmpHeight( hBitmap ) } )
+      ::aBitmaps[ 2 ][ 2 ] = BrightImg( ::hDC, hBitmap, 90 )
+   else
+      if File( cnBitmap )
+         hBitmap = ReadBitmap( 0, cnBitmap )
+      else
+         hBitmap = LoadBitmap( GetResources(), cnBitmap )
+      endif
+      nWidth  = nBmpWidth( hBitmap )
+      nHeight = nBmpHeight( hBitmap )
+      lHasAlpha = HasAlpha( hBitmap )
+      DeleteObject( ::aBitmaps[ nType ][ 1 ] )
+      DeleteObject( ::aBitmaps[ nType ][ 2 ] )
+      ::aBitmaps[ nType ] = { hBitmap, , lHasAlpha, nWidth, nHeight }
+      ::aBitmaps[ nType ][ 2 ] = BrightImg( ::hDC, hBitmap, 2 )
+   endif
+
+RETURN nil
+
+
+
+static FUNCTION TTaskPanel_MouseLeave( nRow, nCol, nFlags ) ; local Self AS CLASS TTaskPanel := QSelf() AS CLASS TTaskPanel
+
+   ::lOverTitle = .F.
+   ::Refresh()
+
+RETURN nil
+
+
+
+static FUNCTION TTaskPanel_MouseMove( nRow, nCol, nFlags ) ; local Self AS CLASS TTaskPanel := QSelf() AS CLASS TTaskPanel
+
+   if ( ::lOverTitle := nRow < ::nTitleHeight )
+      CursorHand()
+   else
+      CursorArrow()
+   endif
+
+   ::Refresh()
+
+   ::SetMsg( ::cMsg )
+   ::CheckToolTip()
+
+   if ::bMMoved <> nil
+      RETURN Eval( ::bMMoved, nRow, nCol, nFlags )
+   endif
+
+   TrackMouseEvent( ::hWnd, 2 )
+
+RETURN 0
+
+
+
+static FUNCTION TTaskPanel_Paint( nIndex ) ; local Self AS CLASS TTaskPanel := QSelf() AS CLASS TTaskPanel
+
+   local aInfo := ::DispBegin(), oItem, n
+
+   Gradient( ::hDC, { 0, 0, ::nTitleHeight, ::nWidth }, nRGB( 240, 240, 240 ), nRGB( 240, 240, 240 ), .F. )
+
+   ::Say( 6, 15 + if( !empty( ::hBmpPanel ), nBmpWidth( ::hBmpPanel ) / 2, 0 ), ::cTitle, ::nClrHover, , ::oFont, .T., .T. )
+
+
+
+   fillRect( ::hDC, { ::nTitleHeight, 0, ::nTitleHeight + ::nBodyHeight + 1, ::nWidth }, ::oBrush:hBrush )
+
+   if ::lCollapsed
+      if ::aBitmaps[ 1 ][ 3 ]
+
+
+
+        ABPaint( ::hDC,  ::nWidth - ::aBitmaps[ 1 ][ 4 ] * 1.5, 4, ::aBitmaps[ 1 ][ 1 ], 255 )
+      else
+
+        DrawTransparent( ::hDC, ::aBitmaps[ 1 ][ 1 ], 4, ::nWidth - ::aBitmaps[ 1 ][ 4 ] * 1.5 )
+      endif
+   else
+      if ::aBitmaps[ 2 ][ 3 ]
+
+
+
+        ABPaint( ::hDC,  ::nWidth - ::aBitmaps[ 2 ][ 4 ] * 1.5, 4, ::aBitmaps[ 2 ][ 1 ],  255 )
+      else
+
+        DrawTransparent( ::hDC, ::aBitmaps[ 2 ][ 1 ], 4, ::nWidth - ::aBitmaps[ 2 ][ 4 ] * 1.5 )
+      endif
+   endif
+
+
+
+
+
+   if ! Empty( ::aControls )
+      for n = 1 to Len( ::aControls )
+         oItem = ::aControls[ n ]
+         if oItem:ClassName == "TURLLINK" .AND. ! Empty( oItem:hBmp )
+
+            DrawTransparent( ::hDC, oItem:hBmp, oItem:nTop - 2, oItem:nLeft - nBmpWidth( oItem:hBmp ) - 3 )
+         endif
+      next
+   endif
+
+   if ::hBmpPanel <> 0
+
+      if ::lHasAlpha
+
+
+
+         ABPaint( ::hDC,  - nBmpWidth( ::hBmpPanel ) / 3, - nBmpHeight( ::hBmpPanel ) / 3, ::hBmpPanel, 255 )
+      else
+
+         DrawTransparent( ::hDC, ::hBmpPanel,  - nBmpHeight( ::hBmpPanel ) / 3, - nBmpWidth( ::hBmpPanel ) / 3 )
+      endif
+
+   endif
+   if ! Empty( ::aControls )
+      AEval( ::aControls, { | oControl | oControl:Refresh() } )
+   endif
+
+   ::DispEnd( aInfo )
+
+RETURN 0
+
+
+
+static FUNCTION TTaskPanel_SetPanelBitmap( cnBitmap, hInstance ) ; local Self AS CLASS TTaskPanel := QSelf() AS CLASS TTaskPanel
+
+   ::hBmpPanel = fnAddBitmap( cnBitmap, hInstance )
+
+   ::lHasAlpha = HasAlpha( ::hBmpPanel )
+
+RETURN nil
+
+
+
+static FUNCTION TTaskPanel_UpdateRegion( ) ; local Self AS CLASS TTaskPanel := QSelf() AS CLASS TTaskPanel
+
+
+
+
+
+
+
+
+
+
+RETURN nil

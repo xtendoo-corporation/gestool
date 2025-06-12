@@ -1,0 +1,28 @@
+{
+  "Traslations":
+  {
+    "Temporadas": "Temporadas",
+    "temporadas": "temporadas",
+    "Entregado": "Entregado",
+    "Gastos": "Gastos",
+    "Familia": "Familia",
+    "Ubicación": "Ubicación",
+    "Temporada": "Temporada",
+    "Categorías": "Categorías",
+    "categoría": "categoría",
+    "Categoría": "Categoría",
+    "Temporadas de artículos": "Temporadas de artículos",
+    "Pedidos de clientes": "Pedidos de clientes",
+    "Proyectos": "Proyectos",
+    "Grupo familia": "Grupo familia",
+    "Tipo": "Tipo",
+    "Fabricante": "Fabricante",
+    "Operación": "Operación",
+    "Remesas": "Remesas"
+  },
+  "Empresa":
+  {
+    "PermitirCambioFacturaIVAIncluido": false
+  }
+}
+

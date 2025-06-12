@@ -1,0 +1,2663 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 10 ".\.\Prg\DetCamposExtra.prg"
+_HB_CLASS TDetCamposExtra ; function TDetCamposExtra ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TDetCamposExtra", iif( .T., { @TMant() }, { @HBObject() } ), @TDetCamposExtra() ) ) ;
+
+   _HB_MEMBER { oDbf } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbf"}, .F. )
+   _HB_MEMBER { oDlg } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDlg"}, .F. )
+
+   _HB_MEMBER { cName } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cName"}, .F. )
+
+   _HB_MEMBER { oBrw } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrw"}, .F. )
+   _HB_MEMBER { oCol } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCol"}, .F. )
+
+   _HB_MEMBER { TipoDocumento } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"TipoDocumento"}, .F. )
+
+   _HB_MEMBER { aCamposExtra } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aCamposExtra"}, .F. )
+
+   _HB_MEMBER { aItemSelected } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aItemSelected"}, .F. )
+
+   _HB_MEMBER { lOpenFiles } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lOpenFiles"}, .F. )
+
+   _HB_MEMBER { oCamposExtra } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCamposExtra"}, .F. )
+
+   _HB_MEMBER { hFormatoColumnas } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hFormatoColumnas"}, .F. )
+
+   _HB_MEMBER { bId } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bId"}, .F. )
+
+   _HB_MEMBER Create( cPath, cDriver) AS CLASS TDetCamposExtra; oClass:AddMethod( "Create", @TDetCamposExtra_Create(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER New( cPath, oWndParent) AS CLASS TDetCamposExtra; oClass:AddMethod( "New", @TDetCamposExtra_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DefineFiles(); oClass:AddMethod( "DefineFiles", @TDetCamposExtra_DefineFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles( lExclusive); oClass:AddMethod( "OpenFiles", @TDetCamposExtra_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @TDetCamposExtra_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenService(); oClass:AddInline( "OpenService", {|Self, lExclusive | ( ( Self ) ), ( ::openFiles( lExclusive ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CloseService(); oClass:AddInline( "CloseService", {|Self | ( ( Self ) ), ( ::CloseFiles() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Reindexa( oMeter); oClass:AddMethod( "Reindexa", @TDetCamposExtra_Reindexa(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetTipoDocumento(); oClass:AddInline( "SetTipoDocumento", {|Self, cValor | ( ( Self ) ), ( ::TipoDocumento  := cValor ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER initArrayValue(); oClass:AddInline( "initArrayValue", {|Self | ( ( Self ) ), ( ::aCamposExtra  := {} ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setbId(); oClass:AddInline( "setbId", {|Self, bValue | ( ( Self ) ), ( ::bId := bValue ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER lExisteCamposExtra(); oClass:AddInline( "lExisteCamposExtra", {|Self | ( ( Self ) ), ( len( ::aCamposExtra ) < 1 ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER aExtraFields(); oClass:AddInline( "aExtraFields", {|Self | ( ( Self ) ), ( ::oCamposExtra:aCamposExtra( ::TipoDocumento ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Play(); oClass:AddMethod( "Play", @TDetCamposExtra_Play(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Resource( nMode); oClass:AddMethod( "Resource", @TDetCamposExtra_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER lPreSave(); oClass:AddMethod( "lPreSave", @TDetCamposExtra_lPreSave(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addCamposExtra( oBrw); oClass:AddMethod( "addCamposExtra", @TDetCamposExtra_addCamposExtra(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ChangeBrowse(); oClass:AddMethod( "ChangeBrowse", @TDetCamposExtra_ChangeBrowse(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setColType(); oClass:AddInline( "setColType", {|Self, uValue | ( ( Self ) ), ( ::oCol:nEditType := uValue ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setColPicture(); oClass:AddInline( "setColPicture", {|Self, uValue | ( ( Self ) ), ( ::oCol:cEditPicture := uValue ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setColListTxt(); oClass:AddInline( "setColListTxt", {|Self, aValue | ( ( Self ) ), ( ::oCol:aEditListTxt := aValue ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cFormat2Char( uValor); oClass:AddMethod( "cFormat2Char", @TDetCamposExtra_cFormat2Char(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cChar2Format( uValor, nFormat); oClass:AddMethod( "cChar2Format", @TDetCamposExtra_cChar2Format(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nAlignData(); oClass:AddInline( "nAlignData", {|Self, campoExtra | ( ( Self ) ), ( if( campoExtra[ "tipo" ] == 2, 1, 0 ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cPictData( campoExtra); oClass:AddMethod( "cPictData", @TDetCamposExtra_cPictData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cFormatValue( campoExtra); oClass:AddMethod( "cFormatValue", @TDetCamposExtra_cFormatValue(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER editColCampoExtra( oCol, uNewValue, nKey); oClass:AddMethod( "editColCampoExtra", @TDetCamposExtra_editColCampoExtra(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CargaValores( cClave); oClass:AddMethod( "CargaValores", @TDetCamposExtra_CargaValores(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER RollBackValores( cClave); oClass:AddMethod( "RollBackValores", @TDetCamposExtra_RollBackValores(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER saveExtraField(); oClass:AddMethod( "saveExtraField", @TDetCamposExtra_saveExtraField(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER valueExtraField(); oClass:AddMethod( "valueExtraField", @TDetCamposExtra_valueExtraField(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER selectItem( cClave); oClass:AddMethod( "selectItem", @TDetCamposExtra_selectItem(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setTemporalLines(); oClass:AddInline( "setTemporalLines", {|Self, cClave, nClaveInterna, nMode | ( ( Self ) ), ( ::SetTemporal( cClave, nClaveInterna, nMode, .F. ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setTemporal( cClave, nClaveInterna, nMode, lClear); oClass:AddMethod( "setTemporal", @TDetCamposExtra_setTemporal(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SaveTemporalAppend(); oClass:AddMethod( "SaveTemporalAppend", @TDetCamposExtra_SaveTemporalAppend(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setTemporalAppend( cClave); oClass:AddMethod( "setTemporalAppend", @TDetCamposExtra_setTemporalAppend(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TDetCamposExtra ;
+
+
+
+static FUNCTION TDetCamposExtra_Create( cPath, cDriver ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+   If( cDriver == nil, cDriver := cDriver(), ) ;
+
+   ::cPath                 := cPath
+   ::cDriver               := cDriver
+
+   ::oDbf                  := nil
+
+
+
+
+
+
+
+
+
+
+
+
+   ::hFormatoColumnas      := {  "1" => {||  ::setColType( 1 ) , ::setColPicture( "" ) } , "2" => {||  ::setColType( 1 ) , ::setColPicture( NumPict( hGet( ::aItemSelected[ ::oBrw:nArrayAt ], "longitud" ) + hGet( ::aItemSelected[ ::oBrw:nArrayAt ], "decimales" ) - 1, hGet( ::aItemSelected[ ::oBrw:nArrayAt ], "decimales" ), , .T. ) ) } , "3" => {||  ::setColType( 1 ) , ::setColPicture( "" ) } , "4" => {||  ::setColType( 2 ), ::setColListTxt( { "si", "no" } ), ::setColPicture( "" ) } , "5" => {||  ::setColType( 2 ) , ::setColListTxt( hGet( ::aItemSelected[ ::oBrw:nArrayAt ], "valores" ) ) , ::setColPicture( "" ) } }
+
+RETURN ( Self )
+
+
+
+static FUNCTION TDetCamposExtra_New( cPath, cDriver, oWndParent ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   If( oWndParent == nil, oWndParent := oWnd(), ) ;
+
+   ::Create( cPath, cDriver )
+
+   ::oWndParent            := oWndParent
+
+RETURN ( Self )
+
+
+
+static FUNCTION TDetCamposExtra_DefineFiles( cPath, cDriver ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   If( cPath == nil, cPath := ::cPath, ) ;
+   If( cDriver == nil, cDriver := ::cDriver, ) ;
+
+   ::oDbf := DbfServer( "DETCEXTRA.DBF", "DETCEXTRA" ):New( "DETCEXTRA.DBF", "DETCEXTRA", ( cDriver ), "Detalle campos extra", ( cPath ) )
+
+      ::oDbf:AddField( "cTipDoc", "C", 2, 0,,,,, "Tipo documento", .F.,, .T., {} )
+      ::oDbf:AddField( "cCodTipo", "C", 3, 0,,,,, "Código", .F.,, .T., {} )
+      ::oDbf:AddField( "cClave", "C", 30, 0,,,,, "Clave principal", .F.,, .T., {} )
+      ::oDbf:AddField( "cValor", "C", 250, 0,,,,, "Valor del campo", .F.,, .T., {} )
+      ::oDbf:AddField( "uuid", "C", 40, 0,,,,, "Uuid", .F.,, .T., {} )
+
+      ::oDbf:AddIndex( "cTipDoc", "DETCEXTRA.Cdx", "cTipDoc",,, .F., .F., "cTipDoc",,, .T., .F. )
+      ::oDbf:AddIndex( "cCodTipo", "DETCEXTRA.Cdx", "cCodTipo",,, .F., .F., "cCodTipo",,, .T., .F. )
+      ::oDbf:AddIndex( "cClave", "DETCEXTRA.Cdx", "cClave",,, .F., .F., "cClave",,, .T., .F. )
+      ::oDbf:AddIndex( "cTipoClave", "DETCEXTRA.Cdx", "cCodTipo + cClave",,, .F., .F., "cCodTipo + cClave",,, .T., .F. )
+      ::oDbf:AddIndex( "cTotClave", "DETCEXTRA.Cdx", "cTipDoc + cCodTipo + cClave",,, .F., .F., "cTipDoc + cCodTipo + cClave",,, .T., .F. )
+
+
+
+RETURN ( ::oDbf )
+
+
+
+static FUNCTION TDetCamposExtra_OpenFiles( lExclusive ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   local oError
+   local oBlock
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   oBlock                     := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   if !::lOpenFiles
+
+      if Empty( ::oDbf )
+         ::DefineFiles()
+      end
+
+      ::oDbf:Activate( .F., !( lExclusive ) )
+
+      ::oCamposExtra       := TCamposExtra():New( ::cPath, ::cDriver )
+      ::lOpenFiles         := ::oCamposExtra:OpenFiles()
+
+   end
+
+   RECOVER USING oError
+
+      ::lOpenFiles         := .F.
+
+      msgStop( "Imposible abrir todas las bases de datos" + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+   end
+
+   ErrorBlock( oBlock )
+
+   if !::lOpenFiles
+      ::CloseFiles()
+   end
+
+RETURN ( ::lOpenFiles )
+
+
+
+static FUNCTION TDetCamposExtra_CloseFiles( ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   if ::oDbf <> nil .AND. ::oDbf:Used()
+      ::oDbf:End()
+   end
+
+   if ::oCamposExtra <> nil
+      ::oCamposExtra:CloseFiles()
+      ::oCamposExtra:End()
+   end
+
+   ::oDbf         := nil
+   ::oCamposExtra := nil
+
+   ::lOpenFiles   := .F.
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TDetCamposExtra_Reindexa( ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   if Empty( ::oDbf )
+      ::oDbf      := ::DefineFiles()
+   end
+
+   ::oDbf:IdxFDel()
+
+   ::oDbf:Activate( .F., .T., .F. )
+
+   ::oDbf:Pack()
+
+   ::oDbf:End()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TDetCamposExtra_Play( cClave, lResource ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   If( lResource == nil, lResource := .T., ) ;
+
+   if ::selectItem( cClave )
+
+      if lResource
+         ::Resource()
+      end
+
+   end
+
+Return ( self )
+
+
+
+static FUNCTION TDetCamposExtra_cFormat2Char( uValor, ldtos ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   If( ldtos == nil, ldtos := .F., ) ;
+
+   do case
+      case Valtype( uValor ) == "C"
+         Return ( Padr( uValor, 250 ) )
+
+      case Valtype( uValor  ) == "D"
+         Return ( Padr( if( lDtos, dtos( uValor ), dtoc( uValor ) ), 250 ) )
+
+      case Valtype( uValor ) == "N"
+         Return ( Padr( Str( uValor ), 250 ) )
+
+   end
+
+Return ( self )
+
+
+
+static FUNCTION TDetCamposExtra_cChar2Format( uValor, nFormat ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   do case
+      case nFormat == 2
+         Return ( Val( AllTrim( uValor ) ) )
+
+      case nFormat == 3
+         Return ( ctod( AllTrim( uValor ) ) )
+
+   end
+
+Return ( uValor )
+
+
+
+static FUNCTION TDetCamposExtra_CargaValores( cClave ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   local nRec              := ::oDbf:Recno()
+   local nOrdAnt           := ::oDbf:OrdSetFocus( "cTotClave" )
+   local hCampos
+   local cClavePrincipal
+
+   for each hCampos in ::aCamposExtra
+
+      cClavePrincipal      := hGet( {       "Artículos" => "20", "Clientes" => "21", "Proveedores" => "22", "Familias" => "37", "Agentes" => "38", "Presupuestos a clientes" => "08", "Pedidos a clientes" => "09", "Albaranes a clientes" => "10", "Lineas de albaranes a clientes" => "35", "Facturas a clientes" => "11", "Lineas de facturas a clientes" => "36", "Facturas de anticipos a clientes" => "13", "Facturas rectificativa a clientes" => "14", "Pedidos a proveedores" => "01", "Lineas pedidos a proveedores" => "41", "Albaranes a proveedores" => "02", "Lineas albaranes a proveedores" => "37", "Facturas a proveedores" => "03", "Lineas facturas a proveedores" => "38", "Facturas rectificativa a proveedores" => "04", "S.A.T" => "32", "Envases de artículos" => "33" , "Grupos de clientes" => "34" , "Propiedades" => "39" , "Lineas de propiedades" => "40" }, ::TipoDocumento ) + hGet( hCampos, "código" ) + Padr( cClave, 30 )
+
+      if ::oDbf:Seek( cClavePrincipal )
+
+         hSet( hCampos, "valor", ::cChar2Format( ::oDbf:cValor, hGet( hCampos, "tipo" ) ) )
+
+      end
+
+   next
+
+   ::oDbf:OrdSetFocus( nOrdAnt )
+   ::oDbf:GoTo( nRec )
+
+Return ( Self )
+
+
+
+static FUNCTION TDetCamposExtra_Resource( ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   local oBmp
+   local oBtnAceptar
+
+   ::oDlg = TDialog():New(,,,, "Campos extra", "EXTRADET",, .F.,,,,,, .F.,,,,,, .F.,, "::oDlg", nil, )
+
+
+
+
+
+   oBmp := TBitmap():ReDefine( 600, "gc_form_plus2_48",, ::oDlg,,, .F., .F.,,, .F.,,, .T. )
+
+      ::oBrw                        := IXBrowse():New( ::oDlg )
+
+      ::oBrw:bClrSel                := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      ::oBrw:bClrSelFocus           := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      ::oBrw:SetArray( ::aItemSelected, , , .F. )
+
+      ::oBrw:nMarqueeStyle          := 3
+      ::oBrw:lRecordSelector        := .F.
+      ::oBrw:lHScroll               := .F.
+      ::oBrw:lFastEdit              := .T.
+
+      ::oBrw:bChange                := {|| ::ChangeBrowse() }
+
+      ::oBrw:CreateFromResource( 100 )
+
+      with object ( ::oBrw:AddCol() )
+         :cHeader          := "Campo"
+         :bStrData         := {|| AllTrim( hGet( ::aItemSelected[ ::oBrw:nArrayAt ], "descripción" ) ) + if( hGet( ::aItemSelected[ ::oBrw:nArrayAt ], "lrequerido" ), " *", "" ) }
+         :nWidth           := 250
+      end
+
+      with object ( ::oCol := ::oBrw:AddCol() )
+         :cHeader          := "Valor"
+         :bEditValue       := {|| hGet( ::aItemSelected[ ::oBrw:nArrayAt ], "valor" ) }
+         :bStrData         := {|| hGet( ::aItemSelected[ ::oBrw:nArrayAt ], "valor" ) }
+         :nWidth           := 300
+      end
+
+
+
+
+   oBtnAceptar := TButton():ReDefine( 1, {||( if( ::lPresave(), ::oDlg:End( 1 ), ) )}, ::oDlg,,, .F.,,,, .F. )
+
+
+
+
+
+   TButton():ReDefine( 2, {||( ::oDlg:End( 2 ) )}, ::oDlg,,, .F.,,,, .T. )
+
+      ::oDlg:AddFastKey( 116, {|| oBtnAceptar:Click() } )
+
+      ::oDlg:bStart        := {|| ::ChangeBrowse() }
+
+   ::oDlg:Activate( ::oDlg:bLClicked, ::oDlg:bMoved, ::oDlg:bPainted, .T.,,,, ::oDlg:bRClicked,,, )
+
+   oBmp:End()
+
+Return ( ::oDlg:nResult == 1 )
+
+
+
+static FUNCTION TDetCamposExtra_lPreSave( ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   local cError   := ""
+   local hCampo
+
+   for each hCampo in ::aItemSelected
+
+      if hGet( hCampo, "lrequerido" ) .AND. empty( ::cFormat2Char( hGet( hCampo, "valor" ), .T. ) )
+         cError   += Space( 3 ) + "* " + AllTrim( hGet( hCampo, "descripción" ) ) + Chr(13)+Chr(10)
+      end
+
+   next
+
+   if !Empty( cError )
+      MsgStop( "Campos obligatorios que no están rellenos: " + Chr(13)+Chr(10) + cError )
+      Return .F.
+   end
+
+Return ( .T. )
+
+
+
+static FUNCTION TDetCamposExtra_ChangeBrowse( ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   Eval( hGet( ::hFormatoColumnas, AllTrim( Str( hGet( ::aItemSelected[ ::oBrw:nArrayAt ], "tipo" ) ) ) ) )
+   ::oCol:bOnPostEdit            := {|o,x,n| hSet( ::aItemSelected[ ::oBrw:nArrayAt ], "valor", x ) }
+
+Return ( Self )
+
+
+
+static FUNCTION TDetCamposExtra_RollBackValores( cClave ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   local nRec              := ::oDbf:Recno()
+   local nOrdAnt           := ::oDbf:OrdSetFocus( "cTotClave" )
+   local hCampos
+   local cClavePrincipal
+   local hExtraField
+
+   for each hExtraField in ::aCamposExtra
+
+      if ValType( hExtraField ) == "A"
+
+         for each hCampos in hExtraField
+
+            cClavePrincipal    := hGet( {       "Artículos" => "20", "Clientes" => "21", "Proveedores" => "22", "Familias" => "37", "Agentes" => "38", "Presupuestos a clientes" => "08", "Pedidos a clientes" => "09", "Albaranes a clientes" => "10", "Lineas de albaranes a clientes" => "35", "Facturas a clientes" => "11", "Lineas de facturas a clientes" => "36", "Facturas de anticipos a clientes" => "13", "Facturas rectificativa a clientes" => "14", "Pedidos a proveedores" => "01", "Lineas pedidos a proveedores" => "41", "Albaranes a proveedores" => "02", "Lineas albaranes a proveedores" => "37", "Facturas a proveedores" => "03", "Lineas facturas a proveedores" => "38", "Facturas rectificativa a proveedores" => "04", "S.A.T" => "32", "Envases de artículos" => "33" , "Grupos de clientes" => "34" , "Propiedades" => "39" , "Lineas de propiedades" => "40" }, ::TipoDocumento ) + hGet( hCampos, "código" ) + Padr( cClave, 30 )
+
+            while ::oDbf:Seek( cClavePrincipal )
+               ::oDbf:Delete()
+            end
+
+         next
+
+      end
+
+      if ValType( hExtraField ) == "H"
+
+         cClavePrincipal    := hGet( {       "Artículos" => "20", "Clientes" => "21", "Proveedores" => "22", "Familias" => "37", "Agentes" => "38", "Presupuestos a clientes" => "08", "Pedidos a clientes" => "09", "Albaranes a clientes" => "10", "Lineas de albaranes a clientes" => "35", "Facturas a clientes" => "11", "Lineas de facturas a clientes" => "36", "Facturas de anticipos a clientes" => "13", "Facturas rectificativa a clientes" => "14", "Pedidos a proveedores" => "01", "Lineas pedidos a proveedores" => "41", "Albaranes a proveedores" => "02", "Lineas albaranes a proveedores" => "37", "Facturas a proveedores" => "03", "Lineas facturas a proveedores" => "38", "Facturas rectificativa a proveedores" => "04", "S.A.T" => "32", "Envases de artículos" => "33" , "Grupos de clientes" => "34" , "Propiedades" => "39" , "Lineas de propiedades" => "40" }, ::TipoDocumento ) + hGet( hExtraField, "código" ) + Padr( cClave, 30 )
+
+         while ::oDbf:Seek( cClavePrincipal )
+            ::oDbf:Delete()
+         end
+
+      end
+
+   next
+
+   ::oDbf:OrdSetFocus( nOrdAnt )
+   ::oDbf:GoTo( nRec )
+
+Return ( Self )
+
+
+
+static FUNCTION TDetCamposExtra_saveExtraField( cClave, cClaveInterna ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   local hCampos
+   local hExtraField
+
+   if len( ::aCamposExtra ) < 1
+      return ( self )
+   end
+
+   ::RollBackValores( cClave )
+
+   for each hExtraField in ::aCamposExtra
+
+      if ValType( hExtraField ) == "A"
+
+         for each hCampos in hExtraField
+
+            if hGet( hCampos, "claveinterna" ) == padr( cClaveInterna, 30 )
+
+               ::oDbf:Append()
+
+               ::oDbf:cTipDoc    := hGet( {       "Artículos" => "20", "Clientes" => "21", "Proveedores" => "22", "Familias" => "37", "Agentes" => "38", "Presupuestos a clientes" => "08", "Pedidos a clientes" => "09", "Albaranes a clientes" => "10", "Lineas de albaranes a clientes" => "35", "Facturas a clientes" => "11", "Lineas de facturas a clientes" => "36", "Facturas de anticipos a clientes" => "13", "Facturas rectificativa a clientes" => "14", "Pedidos a proveedores" => "01", "Lineas pedidos a proveedores" => "41", "Albaranes a proveedores" => "02", "Lineas albaranes a proveedores" => "37", "Facturas a proveedores" => "03", "Lineas facturas a proveedores" => "38", "Facturas rectificativa a proveedores" => "04", "S.A.T" => "32", "Envases de artículos" => "33" , "Grupos de clientes" => "34" , "Propiedades" => "39" , "Lineas de propiedades" => "40" }, ::TipoDocumento )
+               ::oDbf:cCodTipo   := hGet( hCampos, "código" )
+               ::oDbf:cClave     := padr( cClave, 30 )
+               ::oDbf:cValor     := ::cFormat2Char( hGet( hCampos, "valor" ) )
+               ::oDbf:Uuid       := win_uuidcreatestring()
+
+               ::oDbf:Save()
+
+            end
+
+         next
+
+      end
+
+      if ValType( hExtraField ) == "H"
+
+         if hGet( hExtraField, "claveinterna" ) == padr( cClaveInterna, 30 )
+
+            ::oDbf:Append()
+
+            ::oDbf:cTipDoc    := hGet( {       "Artículos" => "20", "Clientes" => "21", "Proveedores" => "22", "Familias" => "37", "Agentes" => "38", "Presupuestos a clientes" => "08", "Pedidos a clientes" => "09", "Albaranes a clientes" => "10", "Lineas de albaranes a clientes" => "35", "Facturas a clientes" => "11", "Lineas de facturas a clientes" => "36", "Facturas de anticipos a clientes" => "13", "Facturas rectificativa a clientes" => "14", "Pedidos a proveedores" => "01", "Lineas pedidos a proveedores" => "41", "Albaranes a proveedores" => "02", "Lineas albaranes a proveedores" => "37", "Facturas a proveedores" => "03", "Lineas facturas a proveedores" => "38", "Facturas rectificativa a proveedores" => "04", "S.A.T" => "32", "Envases de artículos" => "33" , "Grupos de clientes" => "34" , "Propiedades" => "39" , "Lineas de propiedades" => "40" }, ::TipoDocumento )
+            ::oDbf:cCodTipo   := hGet( hExtraField, "código" )
+            ::oDbf:cClave     := padr( cClave, 30 )
+            ::oDbf:cValor     := ::cFormat2Char( hGet( hExtraField, "valor" ) )
+            ::oDbf:Uuid       := win_uuidcreatestring()
+
+            ::oDbf:Save()
+
+         end
+
+      end
+
+
+
+   next
+
+return ( self )
+
+
+
+static FUNCTION TDetCamposExtra_addCamposExtra( oBrw ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   local campoExtra
+
+   if empty( oBrw )
+      Return .F.
+   end
+
+   if empty( ::bId )
+      Return .F.
+   end
+
+   if empty( ::TipoDocumento )
+      Return .F.
+   end
+
+   ::aCamposExtra          := ::oCamposExtra:aCamposExtra( ::TipoDocumento )
+
+   if ::lExisteCamposExtra()
+      Return .F.
+   end
+
+   for each campoExtra in ::aCamposExtra
+
+      with object ( oBrw:AddCol() )
+         :cHeader          := Capitalize( AllTrim( campoExtra[ "descripción" ] ) )
+         :bStrData         := {|| ::cFormatValue( campoExtra ) }
+         :nDataStrAlign    := ::nAlignData( campoExtra )
+         :nHeadStrAlign    := ::nAlignData( campoExtra )
+         :nWidth           := 100
+         :lHide            := .T.
+         :nEditType        := 1
+         :bOnPostEdit      := {|oCol, uNewValue, nKey| ::editColCampoExtra( oCol, uNewValue, campoExtra, oBrw ) }
+      end
+
+   next
+
+Return ( .T. )
+
+
+
+static FUNCTION TDetCamposExtra_editColCampoExtra( oCol, uNewValue, campoExtra, oBrw ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   local nRec        := ::oDbf:Recno()
+   local nOrdAnt     := ::oDbf:OrdSetFocus( "cTotClave" )
+
+   if ::oDbf:Seek( hGet( {       "Artículos" => "20", "Clientes" => "21", "Proveedores" => "22", "Familias" => "37", "Agentes" => "38", "Presupuestos a clientes" => "08", "Pedidos a clientes" => "09", "Albaranes a clientes" => "10", "Lineas de albaranes a clientes" => "35", "Facturas a clientes" => "11", "Lineas de facturas a clientes" => "36", "Facturas de anticipos a clientes" => "13", "Facturas rectificativa a clientes" => "14", "Pedidos a proveedores" => "01", "Lineas pedidos a proveedores" => "41", "Albaranes a proveedores" => "02", "Lineas albaranes a proveedores" => "37", "Facturas a proveedores" => "03", "Lineas facturas a proveedores" => "38", "Facturas rectificativa a proveedores" => "04", "S.A.T" => "32", "Envases de artículos" => "33" , "Grupos de clientes" => "34" , "Propiedades" => "39" , "Lineas de propiedades" => "40" }, ::TipoDocumento ) + campoExtra[ "código" ] + eval( ::bId ) )
+
+      ::oDbf:Load()
+      ::oDbf:cValor    := ::cFormat2Char( uNewValue )
+      ::oDbf:Save()
+
+   else
+
+      ::oDbf:Append()
+      ::oDbf:cTipDoc    := hGet( {       "Artículos" => "20", "Clientes" => "21", "Proveedores" => "22", "Familias" => "37", "Agentes" => "38", "Presupuestos a clientes" => "08", "Pedidos a clientes" => "09", "Albaranes a clientes" => "10", "Lineas de albaranes a clientes" => "35", "Facturas a clientes" => "11", "Lineas de facturas a clientes" => "36", "Facturas de anticipos a clientes" => "13", "Facturas rectificativa a clientes" => "14", "Pedidos a proveedores" => "01", "Lineas pedidos a proveedores" => "41", "Albaranes a proveedores" => "02", "Lineas albaranes a proveedores" => "37", "Facturas a proveedores" => "03", "Lineas facturas a proveedores" => "38", "Facturas rectificativa a proveedores" => "04", "S.A.T" => "32", "Envases de artículos" => "33" , "Grupos de clientes" => "34" , "Propiedades" => "39" , "Lineas de propiedades" => "40" }, ::TipoDocumento )
+      ::oDbf:cCodTipo   := campoExtra[ "código" ]
+      ::oDbf:cClave     := eval( ::bId )
+      ::oDbf:cValor     := ::cFormat2Char( uNewValue )
+      ::oDbf:Save()
+
+   end
+
+   ::oDbf:OrdSetFocus( nOrdAnt )
+   ::oDbf:GoTo( nRec )
+
+   if !Empty( oBrw )
+      oBrw:Refresh()
+   end
+
+Return ( .T. )
+
+
+
+static FUNCTION TDetCamposExtra_cFormatValue( campoExtra ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   local uValue
+
+   if campoExtra[ "tipo" ] == 2
+      uValue   := Trans( Val( oRetFld( hGet( {       "Artículos" => "20", "Clientes" => "21", "Proveedores" => "22", "Familias" => "37", "Agentes" => "38", "Presupuestos a clientes" => "08", "Pedidos a clientes" => "09", "Albaranes a clientes" => "10", "Lineas de albaranes a clientes" => "35", "Facturas a clientes" => "11", "Lineas de facturas a clientes" => "36", "Facturas de anticipos a clientes" => "13", "Facturas rectificativa a clientes" => "14", "Pedidos a proveedores" => "01", "Lineas pedidos a proveedores" => "41", "Albaranes a proveedores" => "02", "Lineas albaranes a proveedores" => "37", "Facturas a proveedores" => "03", "Lineas facturas a proveedores" => "38", "Facturas rectificativa a proveedores" => "04", "S.A.T" => "32", "Envases de artículos" => "33" , "Grupos de clientes" => "34" , "Propiedades" => "39" , "Lineas de propiedades" => "40" }, ::TipoDocumento ) + campoExtra[ "código" ] + eval( ::bId ), ::oDbf, "cValor", "cTotClave" ) ), ::cPictData( campoExtra ) )
+   else
+      uValue   := oRetFld( hGet( {       "Artículos" => "20", "Clientes" => "21", "Proveedores" => "22", "Familias" => "37", "Agentes" => "38", "Presupuestos a clientes" => "08", "Pedidos a clientes" => "09", "Albaranes a clientes" => "10", "Lineas de albaranes a clientes" => "35", "Facturas a clientes" => "11", "Lineas de facturas a clientes" => "36", "Facturas de anticipos a clientes" => "13", "Facturas rectificativa a clientes" => "14", "Pedidos a proveedores" => "01", "Lineas pedidos a proveedores" => "41", "Albaranes a proveedores" => "02", "Lineas albaranes a proveedores" => "37", "Facturas a proveedores" => "03", "Lineas facturas a proveedores" => "38", "Facturas rectificativa a proveedores" => "04", "S.A.T" => "32", "Envases de artículos" => "33" , "Grupos de clientes" => "34" , "Propiedades" => "39" , "Lineas de propiedades" => "40" }, ::TipoDocumento ) + campoExtra[ "código" ] + eval( ::bId ), ::oDbf, "cValor", "cTotClave" )
+   end
+
+Return uValue
+
+
+
+static FUNCTION TDetCamposExtra_cPictData( campoExtra ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   local cPict    := ""
+
+   if campoExtra[ "tipo" ] == 2
+      cPict       := NumPict( ( campoExtra[ "longitud" ] + campoExtra[ "decimales" ] ) -1, campoExtra[ "decimales" ] )
+   else
+      cPict       := ""
+   end
+
+Return ( cPict )
+
+
+
+static FUNCTION TDetCamposExtra_valueExtraField( cCampo, cClave, cField ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   local nRec                 := ::oDbf:recno()
+   local nOrdAnt              := ::oDbf:ordsetfocus( "cTotClave" )
+   local cClavePrincipal      := ""
+   local valueExtraField
+
+   cClavePrincipal            := hGet( {       "Artículos" => "20", "Clientes" => "21", "Proveedores" => "22", "Familias" => "37", "Agentes" => "38", "Presupuestos a clientes" => "08", "Pedidos a clientes" => "09", "Albaranes a clientes" => "10", "Lineas de albaranes a clientes" => "35", "Facturas a clientes" => "11", "Lineas de facturas a clientes" => "36", "Facturas de anticipos a clientes" => "13", "Facturas rectificativa a clientes" => "14", "Pedidos a proveedores" => "01", "Lineas pedidos a proveedores" => "41", "Albaranes a proveedores" => "02", "Lineas albaranes a proveedores" => "37", "Facturas a proveedores" => "03", "Lineas facturas a proveedores" => "38", "Facturas rectificativa a proveedores" => "04", "S.A.T" => "32", "Envases de artículos" => "33" , "Grupos de clientes" => "34" , "Propiedades" => "39" , "Lineas de propiedades" => "40" }, ::TipoDocumento ) + cCampo + Padr( cClave, 30 )
+
+   if ::oDbf:Seek( cClavePrincipal )
+      valueExtraField         := ::oDbf:cValor
+   end
+
+   do case
+      case cField[ "tipo" ] == 2
+
+         if isnil( valueExtraField )
+            valueExtraField   := 0
+         else
+            valueExtraField   := val( valueExtraField )
+         end
+
+      case cField[ "tipo" ] == 3
+
+         if isnil( valueExtraField )
+            valueExtraField   := ctod( "" )
+         else
+            valueExtraField   := ctod( valueExtraField )
+         end
+
+      case cField[ "tipo" ] == 4
+
+         if isnil( valueExtraField )
+            valueExtraField   := .F.
+         else
+            valueExtraField   := ( alltrim( valueExtraField ) == "si" )
+         end
+
+   end
+
+   ::oDbf:ordsetfocus( nOrdAnt )
+   ::oDbf:goto( nRec )
+
+Return ( valueExtraField )
+
+
+
+static FUNCTION TDetCamposExtra_setTemporal( cClave, nClaveInterna, nMode, lClear ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   local nRec              := ::oDbf:Recno()
+   local nOrdAnt           := ::oDbf:OrdSetFocus( "cTotClave" )
+   local hCampos
+   local cClavePrincipal
+   local aCampos
+
+   If( lClear == nil, lClear := .T., ) ;
+
+   if lClear
+      ::aCamposExtra       := {}
+   end
+
+   if Empty( ::TipoDocumento )
+      Return .F.
+   end
+
+   if !Empty( ::TipoDocumento )
+      aCampos              := ::aExtraFields()
+   end
+
+   if len( aCampos ) < 1
+      Return .F.
+   end
+
+   for each hCampos in aCampos
+
+      cClavePrincipal      := hGet( {       "Artículos" => "20", "Clientes" => "21", "Proveedores" => "22", "Familias" => "37", "Agentes" => "38", "Presupuestos a clientes" => "08", "Pedidos a clientes" => "09", "Albaranes a clientes" => "10", "Lineas de albaranes a clientes" => "35", "Facturas a clientes" => "11", "Lineas de facturas a clientes" => "36", "Facturas de anticipos a clientes" => "13", "Facturas rectificativa a clientes" => "14", "Pedidos a proveedores" => "01", "Lineas pedidos a proveedores" => "41", "Albaranes a proveedores" => "02", "Lineas albaranes a proveedores" => "37", "Facturas a proveedores" => "03", "Lineas facturas a proveedores" => "38", "Facturas rectificativa a proveedores" => "04", "S.A.T" => "32", "Envases de artículos" => "33" , "Grupos de clientes" => "34" , "Propiedades" => "39" , "Lineas de propiedades" => "40" }, ::TipoDocumento ) + hGet( hCampos, "código" ) + Padr( cClave, 30 )
+
+      hSet( hCampos, "clave", Padr( cClave, 30 ) )
+      hSet( hCampos, "claveinterna", Padr( nClaveInterna, 30 ) )
+
+      if ::oDbf:Seek( cClavePrincipal )
+         hSet( hCampos, "valor", ::cChar2Format( ::oDbf:cValor, hGet( hCampos, "tipo" ) ) )
+      end
+
+   next
+
+   aAdd( ::aCamposExtra, aCampos )
+
+   ::oDbf:OrdSetFocus( nOrdAnt )
+   ::oDbf:GoTo( nRec )
+
+Return ( self )
+
+
+
+static FUNCTION TDetCamposExtra_selectItem( cClave ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   local nPos           := 0
+
+   if Empty( cClave )
+      cClave            := ""
+   end
+
+   if Valtype( cClave ) <> "C"
+      cClave            := Str( cClave )
+   end
+
+   if len( ::aCamposExtra ) == 0
+      Return .F.
+   end
+
+   nPos  :=  ascan( ::aCamposExtra, {|a| AllTrim( hGet( a[1], "claveinterna" ) ) == AllTrim( cClave ) } )
+
+   if nPos <> 0
+      ::aItemSelected   := ::aCamposExtra[ nPos ]
+   else
+      Return .F.
+   end
+
+Return ( .T. )
+
+
+
+static FUNCTION TDetCamposExtra_setTemporalAppend( ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   local aCampos
+
+   if !Empty( ::TipoDocumento )
+      aCampos              := ::aExtraFields()
+   end
+
+   if len( aCampos ) > 0
+      aAdd( ::aCamposExtra, aCampos )
+   end
+
+Return ( self )
+
+
+
+static FUNCTION TDetCamposExtra_SaveTemporalAppend( nClave ) ; local Self AS CLASS TDetCamposExtra := QSelf() AS CLASS TDetCamposExtra
+
+   local hCampo
+
+   for each hCampo in ::aItemSelected
+      hSet( hCampo, "claveinterna", Padr( nClave, 30 ) )
+   next
+
+Return ( self )

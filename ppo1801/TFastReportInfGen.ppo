@@ -1,0 +1,5768 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 10 ".\.\Prg\TFastReportInfGen.prg"
+_HB_CLASS TFastReportInfGen ; function TFastReportInfGen ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TFastReportInfGen", iif( .T., { @TNewInfGen() }, { @HBObject() } ), @TFastReportInfGen() ) ) ;
+
+   _HB_MEMBER { cDriver } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDriver"}, .F. )
+
+   _HB_MEMBER { nView } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nView"}, .F. )
+
+   _HB_MEMBER { aInitGroup } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aInitGroup"}, .F. )
+
+   _HB_MEMBER { oPages } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oPages"}, .F. )
+
+   _HB_MEMBER { oBrwRango } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwRango"}, .F. )
+
+   _HB_MEMBER { oOfficeBar } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oOfficeBar"}, .F. )
+
+   _HB_MEMBER { nDias } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nDias"}, .F. )
+
+   _HB_MEMBER { hReport } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hReport"}, .F. )
+   _HB_MEMBER { hOptions } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hOptions"}, .F. )
+
+   _HB_MEMBER { lInformesPersonalizados } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lInformesPersonalizados"}, .F. )
+
+   _HB_MEMBER { aliasPedidosClientes } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aliasPedidosClientes"}, .F. )
+   _HB_MEMBER { aliasPedidosClientesLineas } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aliasPedidosClientesLineas"}, .F. )
+
+   _HB_MEMBER { nUnidadesTiempo } ; oClass:AddMultiData(, 1, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nUnidadesTiempo"}, .F. )
+   _HB_MEMBER { oUnidadesTiempo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oUnidadesTiempo"}, .F. )
+   _HB_MEMBER { cUnidadesTiempo } ; oClass:AddMultiData(, "Semana(s)", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cUnidadesTiempo"}, .F. )
+   _HB_MEMBER { aUnidadesTiempo } ; oClass:AddMultiData(, { "Dia(s)", "Semana(s)", "Mes(es)", "Año(s)" }, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aUnidadesTiempo"}, .F. )
+
+   _HB_MEMBER { oTreeReporting } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTreeReporting"}, .F. )
+   _HB_MEMBER { oTreeImageList } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTreeImageList"}, .F. )
+
+   _HB_MEMBER { oColDesde } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oColDesde"}, .F. )
+   _HB_MEMBER { oColHasta } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oColHasta"}, .F. )
+
+   _HB_MEMBER { lPersonalizado } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lPersonalizado"}, .F. )
+   _HB_MEMBER { lSummary } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lSummary"}, .F. )
+
+   _HB_MEMBER { oDbfPersonalizado } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfPersonalizado"}, .F. )
+
+   _HB_MEMBER { oReportTree } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oReportTree"}, .F. )
+   _HB_MEMBER { cReportType } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cReportType"}, .F. )
+   _HB_MEMBER { cReportName } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cReportName"}, .F. )
+   _HB_MEMBER { cReportFile } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cReportFile"}, .F. )
+   _HB_MEMBER { cReportJson } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cReportJson"}, .F. )
+   _HB_MEMBER { cReportDirectory } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cReportDirectory"}, .F. )
+   _HB_MEMBER { hReportOptions } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hReportOptions"}, .F. )
+
+   _HB_MEMBER { lUserDefine } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lUserDefine"}, .F. )
+
+   _HB_MEMBER { oBtnPrevisualizar } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnPrevisualizar"}, .F. )
+   _HB_MEMBER { oBtnImprimir } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnImprimir"}, .F. )
+   _HB_MEMBER { oBtnExcel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnExcel"}, .F. )
+   _HB_MEMBER { oBtnPdf } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnPdf"}, .F. )
+   _HB_MEMBER { oBtnHTML } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnHTML"}, .F. )
+
+   _HB_MEMBER { oBtnDiseno } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnDiseno"}, .F. )
+   _HB_MEMBER { oBtnDuplicar } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnDuplicar"}, .F. )
+   _HB_MEMBER { oBtnRenombrar } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnRenombrar"}, .F. )
+   _HB_MEMBER { oBtnEliminar } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnEliminar"}, .F. )
+   _HB_MEMBER { oBtnFiltrar } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnFiltrar"}, .F. )
+
+   _HB_MEMBER { oBtnBasicos } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnBasicos"}, .F. )
+   _HB_MEMBER { oBtnPersonalizados } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnPersonalizados"}, .F. )
+
+   _HB_MEMBER { oBtnTipo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnTipo"}, .F. )
+   _HB_MEMBER { cTipoInforme } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTipoInforme"}, .F. )
+   _HB_MEMBER { cBmpInforme } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cBmpInforme"}, .F. )
+
+   _HB_MEMBER { cInformeFastReport } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cInformeFastReport"}, .F. )
+
+   _HB_MEMBER { oExt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oExt"}, .F. )
+
+   _HB_MEMBER { nTotalRemesasAgentes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalRemesasAgentes"}, .F. )
+
+   _HB_MEMBER { nBaseSatClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nBaseSatClientes"}, .F. )
+   _HB_MEMBER { nIVASatClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nIVASatClientes"}, .F. )
+   _HB_MEMBER { nRecargoSatClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRecargoSatClientes"}, .F. )
+   _HB_MEMBER { nTotalSatClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalSatClientes"}, .F. )
+
+   _HB_MEMBER { nBasePresupuestosClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nBasePresupuestosClientes"}, .F. )
+   _HB_MEMBER { nIVAPresupuestosClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nIVAPresupuestosClientes"}, .F. )
+   _HB_MEMBER { nRecargoPresupuestosClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRecargoPresupuestosClientes"}, .F. )
+   _HB_MEMBER { nTotalPresupuestosClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalPresupuestosClientes"}, .F. )
+
+   _HB_MEMBER { nBasePedidosClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nBasePedidosClientes"}, .F. )
+   _HB_MEMBER { nIVAPedidosClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nIVAPedidosClientes"}, .F. )
+   _HB_MEMBER { nRecargoPedidosClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRecargoPedidosClientes"}, .F. )
+   _HB_MEMBER { nTotalPedidosClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalPedidosClientes"}, .F. )
+
+   _HB_MEMBER { nBaseAlbaranesClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nBaseAlbaranesClientes"}, .F. )
+   _HB_MEMBER { nIVAAlbaranesClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nIVAAlbaranesClientes"}, .F. )
+   _HB_MEMBER { nRecargoAlbaranesClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRecargoAlbaranesClientes"}, .F. )
+   _HB_MEMBER { nTotalAlbaranesClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalAlbaranesClientes"}, .F. )
+
+   _HB_MEMBER { nBaseFacturasClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nBaseFacturasClientes"}, .F. )
+   _HB_MEMBER { nIVAFacturasClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nIVAFacturasClientes"}, .F. )
+   _HB_MEMBER { nRecargoFacturasClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRecargoFacturasClientes"}, .F. )
+   _HB_MEMBER { nTotalFacturasClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalFacturasClientes"}, .F. )
+
+   _HB_MEMBER { nBaseFacturasRectificativasClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nBaseFacturasRectificativasClientes"}, .F. )
+   _HB_MEMBER { nIVAFacturasRectificativasClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nIVAFacturasRectificativasClientes"}, .F. )
+   _HB_MEMBER { nRecargoFacturasRectificativasClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRecargoFacturasRectificativasClientes"}, .F. )
+   _HB_MEMBER { nTotalFacturasRectificativasClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalFacturasRectificativasClientes"}, .F. )
+
+   _HB_MEMBER { nBaseTicketsClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nBaseTicketsClientes"}, .F. )
+   _HB_MEMBER { nIVATicketsClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nIVATicketsClientes"}, .F. )
+   _HB_MEMBER { nRecargoTicketsClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRecargoTicketsClientes"}, .F. )
+   _HB_MEMBER { nTotalTicketsClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalTicketsClientes"}, .F. )
+
+   _HB_MEMBER { nTotalPagosClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalPagosClientes"}, .F. )
+   _HB_MEMBER { nTotalPendientesClientes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalPendientesClientes"}, .F. )
+
+   _HB_MEMBER { nBasePedidosProveedores } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nBasePedidosProveedores"}, .F. )
+   _HB_MEMBER { nIVAPedidosProveedores } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nIVAPedidosProveedores"}, .F. )
+   _HB_MEMBER { nRecargoPedidosProveedores } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRecargoPedidosProveedores"}, .F. )
+   _HB_MEMBER { nTotalPedidosProveedores } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalPedidosProveedores"}, .F. )
+
+   _HB_MEMBER { nBaseAlbaranesProveedores } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nBaseAlbaranesProveedores"}, .F. )
+   _HB_MEMBER { nIVAAlbaranesProveedores } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nIVAAlbaranesProveedores"}, .F. )
+   _HB_MEMBER { nRecargoAlbaranesProveedores } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRecargoAlbaranesProveedores"}, .F. )
+   _HB_MEMBER { nTotalAlbaranesProveedores } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalAlbaranesProveedores"}, .F. )
+
+   _HB_MEMBER { nBaseFacturasProveedores } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nBaseFacturasProveedores"}, .F. )
+   _HB_MEMBER { nIVAFacturasProveedores } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nIVAFacturasProveedores"}, .F. )
+   _HB_MEMBER { nRecargoFacturasProveedores } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRecargoFacturasProveedores"}, .F. )
+   _HB_MEMBER { nTotalFacturasProveedores } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalFacturasProveedores"}, .F. )
+
+   _HB_MEMBER { nBaseFacturasRectificativasProveedores } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nBaseFacturasRectificativasProveedores"}, .F. )
+   _HB_MEMBER { nIVAFacturasRectificativasProveedores } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nIVAFacturasRectificativasProveedores"}, .F. )
+   _HB_MEMBER { nRecargoFacturasRectificativasProveedores } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRecargoFacturasRectificativasProveedores"}, .F. )
+   _HB_MEMBER { nTotalFacturasRectificativasProveedores } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalFacturasRectificativasProveedores"}, .F. )
+
+   _HB_MEMBER { aChildDesdeGrupoCliente } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aChildDesdeGrupoCliente"}, .F. )
+   _HB_MEMBER { aChildHastaGrupoCliente } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aChildHastaGrupoCliente"}, .F. )
+
+   _HB_MEMBER { lTabletVersion } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lTabletVersion"}, .F. )
+
+
+
+   _HB_MEMBER Create(); oClass:AddMethod( "Create", @TFastReportInfGen_Create(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Default() ; oClass:AddVirtual( "Default" )
+
+   _HB_MEMBER NewResource( cFldRes); oClass:AddMethod( "NewResource", @TFastReportInfGen_NewResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lResource( cFld); oClass:AddMethod( "lResource", @TFastReportInfGen_lResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER initVariables(); oClass:AddMethod( "initVariables", @TFastReportInfGen_initVariables(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InitDialog(); oClass:AddMethod( "InitDialog", @TFastReportInfGen_InitDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetDialog(); oClass:AddMethod( "SetDialog", @TFastReportInfGen_SetDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER StartDialog() ; oClass:AddVirtual( "StartDialog" )
+
+   _HB_MEMBER summaryReport() ; oClass:AddVirtual( "summaryReport" )
+
+   _HB_MEMBER LoadPersonalizado(); oClass:AddMethod( "LoadPersonalizado", @TFastReportInfGen_LoadPersonalizado(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Activate(); oClass:AddMethod( "Activate", @TFastReportInfGen_Activate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Play( uParam); oClass:AddMethod( "Play", @TFastReportInfGen_Play(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PlayTablet( uParam); oClass:AddMethod( "PlayTablet", @TFastReportInfGen_PlayTablet(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EditValueTextDesde(); oClass:AddInline( "EditValueTextDesde", {|Self | ( ( Self ) ), ( Eval( ::aInitGroup[ ::oBrwRango:nArrayAt ]:Cargo:HelpDesde ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER EditValueTextHasta(); oClass:AddInline( "EditValueTextHasta", {|Self | ( ( Self ) ), ( Eval( ::aInitGroup[ ::oBrwRango:nArrayAt ]:Cargo:HelpHasta ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER EditTextDesde(); oClass:AddInline( "EditTextDesde", {|Self | ( ( Self ) ), ( Eval( ::aInitGroup[ ::oBrwRango:nArrayAt ]:Cargo:TextDesde ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER EditTextHasta(); oClass:AddInline( "EditTextHasta", {|Self | ( ( Self ) ), ( Eval( ::aInitGroup[ ::oBrwRango:nArrayAt ]:Cargo:TextHasta ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ValidValueTextDesde(); oClass:AddInline( "ValidValueTextDesde", {|Self, oGet | ( ( Self ) ), ( Eval( ::aInitGroup[ ::oBrwRango:nArrayAt ]:Cargo:ValidDesde, oGet ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ValidValueTextHasta(); oClass:AddInline( "ValidValueTextHasta", {|Self, oGet | ( ( Self ) ), ( Eval( ::aInitGroup[ ::oBrwRango:nArrayAt ]:Cargo:ValidHasta, oGet ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cReportKey(); oClass:AddInline( "cReportKey", {|Self | ( ( Self ) ), ( Padr( ::ClassName(), 50 ) + Padr( Upper( ::cReportType ), 50 ) + Padr( Upper( ::cReportName ), 50 ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ExtractOrder(); oClass:AddMethod( "ExtractOrder", @TFastReportInfGen_ExtractOrder(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER End(); oClass:AddMethod( "End", @TFastReportInfGen_End(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenData( cPath, lExclusive); oClass:AddMethod( "OpenData", @TFastReportInfGen_OpenData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CloseData(); oClass:AddMethod( "CloseData", @TFastReportInfGen_CloseData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenService( lExclusive, cPath); oClass:AddMethod( "OpenService", @TFastReportInfGen_OpenService(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CloseService(); oClass:AddMethod( "CloseService", @TFastReportInfGen_CloseService(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER BuildFiles(); oClass:AddInline( "BuildFiles", {|Self, cPath | ( ( Self ) ), ( ::DefineReport( cPath ), ::oDbfInf:Create() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lGenerate(); oClass:AddMethod( "lGenerate", @TFastReportInfGen_lGenerate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetDataReport(); oClass:AddMethod( "SetDataReport", @TFastReportInfGen_SetDataReport(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GenReport( nOption); oClass:AddMethod( "GenReport", @TFastReportInfGen_GenReport(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GenReportTablet( nOption); oClass:AddMethod( "GenReportTablet", @TFastReportInfGen_GenReportTablet(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lValidRegister(); oClass:AddMethod( "lValidRegister", @TFastReportInfGen_lValidRegister(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DataReport(); oClass:AddMethod( "DataReport", @TFastReportInfGen_DataReport(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SyncAllDbf(); oClass:AddMethod( "SyncAllDbf", @TFastReportInfGen_SyncAllDbf(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DefineReport( cPath); oClass:AddMethod( "DefineReport", @TFastReportInfGen_DefineReport(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Reindexa( cPath); oClass:AddMethod( "Reindexa", @TFastReportInfGen_Reindexa(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FastReport( nDevice); oClass:AddMethod( "FastReport", @TFastReportInfGen_FastReport(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DesignReport( cNombre); oClass:AddMethod( "DesignReport", @TFastReportInfGen_DesignReport(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TreePersonalizadosChanged() ; oClass:AddVirtual( "TreePersonalizadosChanged" )
+
+   _HB_MEMBER TreeReportingClick(); oClass:AddInline( "TreeReportingClick", {|Self | ( ( Self ) ), ( ::GenReport( 2 ), 0 ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TreePersonalizadosClick(); oClass:AddInline( "TreePersonalizadosClick", {|Self | ( ( Self ) ), ( ::GenReport( 2 ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lLoadInfo(); oClass:AddMethod( "lLoadInfo", @TFastReportInfGen_lLoadInfo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lLoadReport(); oClass:AddMethod( "lLoadReport", @TFastReportInfGen_lLoadReport(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER MoveReport(); oClass:AddMethod( "MoveReport", @TFastReportInfGen_MoveReport(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenTemporal(); oClass:AddMethod( "OpenTemporal", @TFastReportInfGen_OpenTemporal(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CloseTemporal(); oClass:AddMethod( "CloseTemporal", @TFastReportInfGen_CloseTemporal(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SaveReport(); oClass:AddMethod( "SaveReport", @TFastReportInfGen_SaveReport(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER SaveReportAs(); oClass:AddMethod( "SaveReportAs", @TFastReportInfGen_SaveReportAs(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+         _HB_MEMBER EndSaveReportAs( cNombre, oDlg); oClass:AddMethod( "EndSaveReportAs", @TFastReportInfGen_EndSaveReportAs(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Eliminar(); oClass:AddMethod( "Eliminar", @TFastReportInfGen_Eliminar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Duplicar(); oClass:AddMethod( "Duplicar", @TFastReportInfGen_Duplicar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Renombrar(); oClass:AddMethod( "Renombrar", @TFastReportInfGen_Renombrar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetFieldByDescription( cDescription); oClass:AddMethod( "GetFieldByDescription", @TFastReportInfGen_GetFieldByDescription(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DlgExportDocument(); oClass:AddMethod( "DlgExportDocument", @TFastReportInfGen_DlgExportDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER ExportDocument( cGetFile); oClass:AddMethod( "ExportDocument", @TFastReportInfGen_ExportDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DlgImportDocument(); oClass:AddMethod( "DlgImportDocument", @TFastReportInfGen_DlgImportDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER ImportDocument(); oClass:AddMethod( "ImportDocument", @TFastReportInfGen_ImportDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER BuildNode( aReports, oTree, lLoadFile); oClass:AddMethod( "BuildNode", @TFastReportInfGen_BuildNode(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddNode(); oClass:AddMethod( "AddNode", @TFastReportInfGen_AddNode(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ReBuildTree(); oClass:AddInline( "ReBuildTree", {|Self | ( ( Self ) ), ( ::oTreeReporting:DeleteAll(), ::BuildTree() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nRemesaAgentes(); oClass:AddMethod( "nRemesaAgentes", @TFastReportInfGen_nRemesaAgentes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nFacturaClientes(); oClass:AddMethod( "nFacturaClientes", @TFastReportInfGen_nFacturaClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nPagosClientes(); oClass:AddMethod( "nPagosClientes", @TFastReportInfGen_nPagosClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetReportType(); oClass:AddInline( "GetReportType", {|Self | ( ( Self ) ), ( if( !empty( ::hReport ) .AND. hHasKey( ::hReport, ::cReportType ), hGet( ::hReport, ::cReportType ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FastReportSATCliente(); oClass:AddMethod( "FastReportSATCliente", @TFastReportInfGen_FastReportSATCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER FastReportPresupuestoCliente(); oClass:AddMethod( "FastReportPresupuestoCliente", @TFastReportInfGen_FastReportPresupuestoCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER FastReportPedidoCliente(); oClass:AddMethod( "FastReportPedidoCliente", @TFastReportInfGen_FastReportPedidoCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER FastReportAlbaranCliente(); oClass:AddMethod( "FastReportAlbaranCliente", @TFastReportInfGen_FastReportAlbaranCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER FastReportFacturaCliente(); oClass:AddMethod( "FastReportFacturaCliente", @TFastReportInfGen_FastReportFacturaCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER FastReportFacturaRectificativa(); oClass:AddMethod( "FastReportFacturaRectificativa", @TFastReportInfGen_FastReportFacturaRectificativa(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER FastReportTicket(); oClass:AddMethod( "FastReportTicket", @TFastReportInfGen_FastReportTicket(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER FastReportParteProduccion(); oClass:AddMethod( "FastReportParteProduccion", @TFastReportInfGen_FastReportParteProduccion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER FastReportRecibosCliente(); oClass:AddMethod( "FastReportRecibosCliente", @TFastReportInfGen_FastReportRecibosCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FastReportPedidoProveedor(); oClass:AddMethod( "FastReportPedidoProveedor", @TFastReportInfGen_FastReportPedidoProveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER FastReportAlbaranProveedor(); oClass:AddMethod( "FastReportAlbaranProveedor", @TFastReportInfGen_FastReportAlbaranProveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER FastReportFacturaProveedor(); oClass:AddMethod( "FastReportFacturaProveedor", @TFastReportInfGen_FastReportFacturaProveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER FastReportRectificativaProveedor(); oClass:AddMethod( "FastReportRectificativaProveedor", @TFastReportInfGen_FastReportRectificativaProveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER FastReportRecibosProveedor(); oClass:AddMethod( "FastReportRecibosProveedor", @TFastReportInfGen_FastReportRecibosProveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FastReportStock(); oClass:AddMethod( "FastReportStock", @TFastReportInfGen_FastReportStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddVariableSATCliente(); oClass:AddMethod( "AddVariableSATCliente", @TFastReportInfGen_AddVariableSATCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddVariableLineasSATCliente(); oClass:AddMethod( "AddVariableLineasSATCliente", @TFastReportInfGen_AddVariableLineasSATCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cDetalleSATClientes(); oClass:AddInline( "cDetalleSATClientes", {|Self | ( ( Self ) ), ( cDesSatCli ( D():SATClientesLineas( ::nView )  ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalUnidadesSATClientes(); oClass:AddInline( "nTotalUnidadesSATClientes", {|Self | ( ( Self ) ), ( nTotNSatCli( D():SATClientesLineas( ::nView )  ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nPrecioUnitarioSATClientes(); oClass:AddInline( "nPrecioUnitarioSATClientes", {|Self | ( ( Self ) ), ( nTotUSatCli( D():SATClientesLineas( ::nView )  ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalLineaSATClientes(); oClass:AddInline( "nTotalLineaSATClientes", {|Self | ( ( Self ) ), ( nTotLSatCli( D():SATClientesLineas( ::nView )  ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalPesoLineaSATClientes(); oClass:AddInline( "nTotalPesoLineaSATClientes", {|Self | ( ( Self ) ), ( nPesLSatCli( D():SATClientesLineas( ::nView )  ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalImpuestosIncluidosLineaSATClientes(); oClass:AddInline( "nTotalImpuestosIncluidosLineaSATClientes", {|Self | ( ( Self ) ), ( nTotFSatCli( D():SATClientesLineas( ::nView )  ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalIVALineaSATClientes(); oClass:AddInline( "nTotalIVALineaSATClientes", {|Self | ( ( Self ) ), ( nIvaLSatCli( D():SATClientesLineas( ::nView )  ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nTotalDescuentoPorcentualLineaSATClientes(); oClass:AddInline( "nTotalDescuentoPorcentualLineaSATClientes", {|Self | ( ( Self ) ), ( nDtoLSatCli( D():SATClientesLineas( ::nView )  ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalDescuentoPromocionalLineaSATClientes(); oClass:AddInline( "nTotalDescuentoPromocionalLineaSATClientes", {|Self | ( ( Self ) ), ( nPrmLSatCli( D():SATClientesLineas( ::nView )  ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddVariablePresupuestoCliente(); oClass:AddMethod( "AddVariablePresupuestoCliente", @TFastReportInfGen_AddVariablePresupuestoCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddVariableLineasPresupuestoCliente(); oClass:AddMethod( "AddVariableLineasPresupuestoCliente", @TFastReportInfGen_AddVariableLineasPresupuestoCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cDetallePresupuestoClientes(); oClass:AddInline( "cDetallePresupuestoClientes", {|Self | ( ( Self ) ), ( cDesPreCli ( D():PresupuestosClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalUnidadesPresupuestosClientes(); oClass:AddInline( "nTotalUnidadesPresupuestosClientes", {|Self | ( ( Self ) ), ( nTotNPreCli( D():PresupuestosClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nPrecioUnitarioPresupuestosClientes(); oClass:AddInline( "nPrecioUnitarioPresupuestosClientes", {|Self | ( ( Self ) ), ( nTotUPreCli( D():PresupuestosClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalLineaPresupuestosClientes(); oClass:AddInline( "nTotalLineaPresupuestosClientes", {|Self | ( ( Self ) ), ( nTotLPreCli( D():PresupuestosClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalPesoLineaPresupuestosClientes(); oClass:AddInline( "nTotalPesoLineaPresupuestosClientes", {|Self | ( ( Self ) ), ( nPesLPreCli( D():PresupuestosClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalImpuestosIncluidosLineaPresupuestosClientes(); oClass:AddInline( "nTotalImpuestosIncluidosLineaPresupuestosClientes", {|Self | ( ( Self ) ), ( nTotFPreCli( D():PresupuestosClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalIVALineaPresupuestosClientes(); oClass:AddInline( "nTotalIVALineaPresupuestosClientes", {|Self | ( ( Self ) ), ( nIvaLPreCli( D():PresupuestosClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nTotalDescuentoPorcentualLineaPresupuestosClientes(); oClass:AddInline( "nTotalDescuentoPorcentualLineaPresupuestosClientes", {|Self | ( ( Self ) ), ( nDtoLPreCli( D():PresupuestosClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalDescuentoPromocionalLineaPresupuestosClientes(); oClass:AddInline( "nTotalDescuentoPromocionalLineaPresupuestosClientes", {|Self | ( ( Self ) ), ( nPrmLPreCli( D():PresupuestosClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddVariablePedidoCliente(); oClass:AddMethod( "AddVariablePedidoCliente", @TFastReportInfGen_AddVariablePedidoCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddVariableLineasPedidoCliente(); oClass:AddMethod( "AddVariableLineasPedidoCliente", @TFastReportInfGen_AddVariableLineasPedidoCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cDetallePedidosClientes(); oClass:AddInline( "cDetallePedidosClientes", {|Self | ( ( Self ) ), ( cDesPedCli ( D():PedidosClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalUnidadesPedidosClientes(); oClass:AddInline( "nTotalUnidadesPedidosClientes", {|Self | ( ( Self ) ), ( nTotNPedCli( D():PedidosClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nPrecioUnitarioPedidosClientes(); oClass:AddInline( "nPrecioUnitarioPedidosClientes", {|Self | ( ( Self ) ), ( nTotUPedCli( D():PedidosClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalLineaPedidosClientes(); oClass:AddInline( "nTotalLineaPedidosClientes", {|Self | ( ( Self ) ), ( nTotLPedCli( D():PedidosClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalPesoLineaPedidosClientes(); oClass:AddInline( "nTotalPesoLineaPedidosClientes", {|Self | ( ( Self ) ), ( nPesLPedCli( D():PedidosClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalImpuestosIncluidosLineaPedidosClientes(); oClass:AddInline( "nTotalImpuestosIncluidosLineaPedidosClientes", {|Self | ( ( Self ) ), ( nTotFPedCli( D():PedidosClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalIVALineaPedidosClientes(); oClass:AddInline( "nTotalIVALineaPedidosClientes", {|Self | ( ( Self ) ), ( nIvaLPedCli( D():PedidosClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nTotalDescuentoPorcentualLineaPedidosClientes(); oClass:AddInline( "nTotalDescuentoPorcentualLineaPedidosClientes", {|Self | ( ( Self ) ), ( nDtoLPedCli( D():PedidosClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalDescuentoPromocionalLineaPedidosClientes(); oClass:AddInline( "nTotalDescuentoPromocionalLineaPedidosClientes", {|Self | ( ( Self ) ), ( nPrmLPedCli( D():PedidosClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalComisionAgentes(); oClass:AddInline( "nTotalComisionAgentes", {|Self | ( ( Self ) ), ( nComLPedCli( D():PedidosClientesLineas( ::nView ), D():PedidosClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddVariableAlbaranCliente(); oClass:AddMethod( "AddVariableAlbaranCliente", @TFastReportInfGen_AddVariableAlbaranCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddVariableLineasAlbaranCliente(); oClass:AddMethod( "AddVariableLineasAlbaranCliente", @TFastReportInfGen_AddVariableLineasAlbaranCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cDetalleAlbaranesClientes(); oClass:AddInline( "cDetalleAlbaranesClientes", {|Self | ( ( Self ) ), ( cDesAlbCli ( D():AlbaranesClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalUnidadesAlbaranesClientes(); oClass:AddInline( "nTotalUnidadesAlbaranesClientes", {|Self | ( ( Self ) ), ( nTotNAlbCli( D():AlbaranesClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nPrecioUnitarioAlbaranesClientes(); oClass:AddInline( "nPrecioUnitarioAlbaranesClientes", {|Self | ( ( Self ) ), ( nTotUAlbCli( D():AlbaranesClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalLineaAlbaranesClientes(); oClass:AddInline( "nTotalLineaAlbaranesClientes", {|Self | ( ( Self ) ), ( nTotLAlbCli( D():AlbaranesClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalPesoLineaAlbaranesClientes(); oClass:AddInline( "nTotalPesoLineaAlbaranesClientes", {|Self | ( ( Self ) ), ( nPesLAlbCli( D():AlbaranesClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalImpuestosIncluidosLineaAlbaranesClientes(); oClass:AddInline( "nTotalImpuestosIncluidosLineaAlbaranesClientes", {|Self | ( ( Self ) ), ( nTotFAlbCli( D():AlbaranesClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalIVALineaAlbaranesClientes(); oClass:AddInline( "nTotalIVALineaAlbaranesClientes", {|Self | ( ( Self ) ), ( nIvaLAlbCli( D():AlbaranesClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nTotalDescuentoPorcentualLineaAlbaranesClientes(); oClass:AddInline( "nTotalDescuentoPorcentualLineaAlbaranesClientes", {|Self | ( ( Self ) ), ( nDtoLAlbCli( D():AlbaranesClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalDescuentoPromocionalLineaAlbaranesClientes(); oClass:AddInline( "nTotalDescuentoPromocionalLineaAlbaranesClientes", {|Self | ( ( Self ) ), ( nPrmLAlbCli( D():AlbaranesClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddVariableArticulos(); oClass:AddMethod( "AddVariableArticulos", @TFastReportInfGen_AddVariableArticulos(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddVariableFacturaCliente(); oClass:AddMethod( "AddVariableFacturaCliente", @TFastReportInfGen_AddVariableFacturaCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddVariableLineasFacturaCliente(); oClass:AddMethod( "AddVariableLineasFacturaCliente", @TFastReportInfGen_AddVariableLineasFacturaCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddVariableRecibosCliente(); oClass:AddMethod( "AddVariableRecibosCliente", @TFastReportInfGen_AddVariableRecibosCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddVariableRecibosProveedor(); oClass:AddMethod( "AddVariableRecibosProveedor", @TFastReportInfGen_AddVariableRecibosProveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cDetalleFacturasClientes(); oClass:AddInline( "cDetalleFacturasClientes", {|Self | ( ( Self ) ), ( cDesFacCli  ( D():FacturasClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalUnidadesFacturasClientes(); oClass:AddInline( "nTotalUnidadesFacturasClientes", {|Self | ( ( Self ) ), ( nTotNFacCli ( D():FacturasClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nPrecioUnitarioFacturasClientes(); oClass:AddInline( "nPrecioUnitarioFacturasClientes", {|Self | ( ( Self ) ), ( nNoIncUFacCli( D():FacturasClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalLineaFacturasClientes(); oClass:AddInline( "nTotalLineaFacturasClientes", {|Self | ( ( Self ) ), ( nNoIncLFacCli( D():FacturasClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nTotalPesoLineaFacturasClientes(); oClass:AddInline( "nTotalPesoLineaFacturasClientes", {|Self | ( ( Self ) ), ( nPesLFacCli( D():FacturasClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalImpuestosIncluidosLineaFacturasClientes(); oClass:AddInline( "nTotalImpuestosIncluidosLineaFacturasClientes", {|Self | ( ( Self ) ), ( nTotFFacCli( D():FacturasClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalIVALineaFacturasClientes(); oClass:AddInline( "nTotalIVALineaFacturasClientes", {|Self | ( ( Self ) ), ( nIvaLFacCli( D():FacturasClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nTotalDescuentoPorcentualLineaFacturasClientes(); oClass:AddInline( "nTotalDescuentoPorcentualLineaFacturasClientes", {|Self | ( ( Self ) ), ( nDtoLFacCli( D():FacturasClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalDescuentoPromocionalLineaFacturasClientes(); oClass:AddInline( "nTotalDescuentoPromocionalLineaFacturasClientes", {|Self | ( ( Self ) ), ( nPrmLFacCli( D():FacturasClientesLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddVariableRectificativaCliente(); oClass:AddMethod( "AddVariableRectificativaCliente", @TFastReportInfGen_AddVariableRectificativaCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddVariableLineasRectificativaCliente(); oClass:AddMethod( "AddVariableLineasRectificativaCliente", @TFastReportInfGen_AddVariableLineasRectificativaCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddVariableLineasParteProduccion() ; oClass:AddVirtual( "AddVariableLineasParteProduccion" )
+
+   _HB_MEMBER cDetalleRectificativasClientes(); oClass:AddInline( "cDetalleRectificativasClientes", {|Self | ( ( Self ) ), ( cDesFacRec ( D():FacturasRectificativasLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalUnidadesRectificativasClientes(); oClass:AddInline( "nTotalUnidadesRectificativasClientes", {|Self | ( ( Self ) ), ( nTotNFacRec( D():FacturasRectificativasLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nPrecioUnitarioRectificativasClientes(); oClass:AddInline( "nPrecioUnitarioRectificativasClientes", {|Self | ( ( Self ) ), ( nTotUFacRec( D():FacturasRectificativasLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalLineaRectificativasClientes(); oClass:AddInline( "nTotalLineaRectificativasClientes", {|Self | ( ( Self ) ), ( nTotLFacRec( D():FacturasRectificativasLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalPesoLineaRectificativasClientes(); oClass:AddInline( "nTotalPesoLineaRectificativasClientes", {|Self | ( ( Self ) ), ( nPesLFacRec( D():FacturasRectificativasLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalImpuestosIncluidosLineaRectificativasClientes(); oClass:AddInline( "nTotalImpuestosIncluidosLineaRectificativasClientes", {|Self | ( ( Self ) ), ( nTotFFacRec( D():FacturasRectificativasLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalIVALineaRectificativasClientes(); oClass:AddInline( "nTotalIVALineaRectificativasClientes", {|Self | ( ( Self ) ), ( nIvaLFacRec( D():FacturasRectificativasLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nTotalDescuentoPorcentualLineaRectificativasClientes(); oClass:AddInline( "nTotalDescuentoPorcentualLineaRectificativasClientes", {|Self | ( ( Self ) ), ( nDtoLFacRec( D():FacturasRectificativasLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalDescuentoPromocionalLineaRectificativasClientes(); oClass:AddInline( "nTotalDescuentoPromocionalLineaRectificativasClientes", {|Self | ( ( Self ) ), ( nPrmLFacRec( D():FacturasRectificativasLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddVariableTicketCliente(); oClass:AddMethod( "AddVariableTicketCliente", @TFastReportInfGen_AddVariableTicketCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddVariableLineasTicketCliente(); oClass:AddMethod( "AddVariableLineasTicketCliente", @TFastReportInfGen_AddVariableLineasTicketCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cDetalleTicketsClientes(); oClass:AddInline( "cDetalleTicketsClientes", {|Self | ( ( Self ) ), ( ( D():TiketsLineas( ::nView ) )->cNomTil ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalUnidadesTicketsClientes(); oClass:AddInline( "nTotalUnidadesTicketsClientes", {|Self | ( ( Self ) ), ( nTotNTpv( D():TiketsLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nPrecioUnitarioTicketsClientes(); oClass:AddInline( "nPrecioUnitarioTicketsClientes", {|Self | ( ( Self ) ), ( nBasUTpv( D():TiketsLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalLineaTicketsClientes(); oClass:AddInline( "nTotalLineaTicketsClientes", {|Self | ( ( Self ) ), ( nBasLTpv( D():TiketsLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalPesoLineaTicketsClientes(); oClass:AddInline( "nTotalPesoLineaTicketsClientes", {|Self | ( ( Self ) ), ( 0 ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalImpuestosIncluidosLineaTicketsClientes(); oClass:AddInline( "nTotalImpuestosIncluidosLineaTicketsClientes", {|Self | ( ( Self ) ), ( nTotLTpv( D():TiketsLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalIVALineaTicketsClientes(); oClass:AddInline( "nTotalIVALineaTicketsClientes", {|Self | ( ( Self ) ), ( nIvaLTpv( D():Tikets( ::nView ) ), ( D():TiketsLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nTotalDescuentoPorcentualLineaTicketsClientes(); oClass:AddInline( "nTotalDescuentoPorcentualLineaTicketsClientes", {|Self | ( ( Self ) ), ( nDtoLTpv( D():TiketsLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddVariableLiquidacionAgentes(); oClass:AddMethod( "AddVariableLiquidacionAgentes", @TFastReportInfGen_AddVariableLiquidacionAgentes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddVariablePedidoProveedor(); oClass:AddMethod( "AddVariablePedidoProveedor", @TFastReportInfGen_AddVariablePedidoProveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddVariableLineasPedidoProveedor(); oClass:AddMethod( "AddVariableLineasPedidoProveedor", @TFastReportInfGen_AddVariableLineasPedidoProveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cDetallePedidosProveedores(); oClass:AddInline( "cDetallePedidosProveedores", {|Self | ( ( Self ) ), ( cDesPedPrv ( D():PedidosProveedoresLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalUnidadesPedidosProveedores(); oClass:AddInline( "nTotalUnidadesPedidosProveedores", {|Self | ( ( Self ) ), ( nTotNPedPrv( D():PedidosProveedoresLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nPrecioUnitarioPedidosProveedores(); oClass:AddInline( "nPrecioUnitarioPedidosProveedores", {|Self | ( ( Self ) ), ( nTotUPedPrv( D():PedidosProveedoresLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalLineaPedidosProveedores(); oClass:AddInline( "nTotalLineaPedidosProveedores", {|Self | ( ( Self ) ), ( nTotLPedPrv( D():PedidosProveedoresLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalImpuestosIncluidosLineaPedidosProveedores(); oClass:AddInline( "nTotalImpuestosIncluidosLineaPedidosProveedores", {|Self | ( ( Self ) ), ( nTotFPedPrv( D():PedidosProveedoresLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalIVALineaPedidosProveedores(); oClass:AddInline( "nTotalIVALineaPedidosProveedores", {|Self | ( ( Self ) ), ( nIvaLPedPrv( D():PedidosProveedoresLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalDescuentoPorcentualLineaPedidosProveedores(); oClass:AddInline( "nTotalDescuentoPorcentualLineaPedidosProveedores", {|Self | ( ( Self ) ), ( nDtoLPedPrv( D():PedidosProveedoresLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalDescuentoPromocionalLineaPedidosProveedores(); oClass:AddInline( "nTotalDescuentoPromocionalLineaPedidosProveedores", {|Self | ( ( Self ) ), ( nPrmLPedPrv( D():PedidosProveedoresLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddVariableAlbaranProveedor(); oClass:AddMethod( "AddVariableAlbaranProveedor", @TFastReportInfGen_AddVariableAlbaranProveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddVariableLineasAlbaranProveedor(); oClass:AddMethod( "AddVariableLineasAlbaranProveedor", @TFastReportInfGen_AddVariableLineasAlbaranProveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cDetalleAlbaranesProveedores(); oClass:AddInline( "cDetalleAlbaranesProveedores", {|Self | ( ( Self ) ), ( cDesAlbPrv ( D():AlbaranesProveedoresLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalUnidadesAlbaranesProveedores(); oClass:AddInline( "nTotalUnidadesAlbaranesProveedores", {|Self | ( ( Self ) ), ( nTotNAlbPrv( D():AlbaranesProveedoresLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nPrecioUnitarioAlbaranesProveedores(); oClass:AddInline( "nPrecioUnitarioAlbaranesProveedores", {|Self | ( ( Self ) ), ( nTotUAlbPrv( D():AlbaranesProveedoresLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalLineaAlbaranesProveedores(); oClass:AddInline( "nTotalLineaAlbaranesProveedores", {|Self | ( ( Self ) ), ( nTotLAlbPrv( D():AlbaranesProveedoresLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalImpuestosIncluidosLineaAlbaranesProveedores(); oClass:AddInline( "nTotalImpuestosIncluidosLineaAlbaranesProveedores", {|Self | ( ( Self ) ), ( nTotFAlbPrv( D():AlbaranesProveedoresLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalIVALineaAlbaranesProveedores(); oClass:AddInline( "nTotalIVALineaAlbaranesProveedores", {|Self | ( ( Self ) ), ( nIvaLAlbPrv( D():AlbaranesProveedoresLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalDescuentoPorcentualLineaAlbaranesProveedores(); oClass:AddInline( "nTotalDescuentoPorcentualLineaAlbaranesProveedores", {|Self | ( ( Self ) ), ( nDtoLAlbPrv( D():AlbaranesProveedoresLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalDescuentoPromocionalLineaAlbaranesProveedores(); oClass:AddInline( "nTotalDescuentoPromocionalLineaAlbaranesProveedores", {|Self | ( ( Self ) ), ( nPrmLAlbPrv( D():AlbaranesProveedoresLineas( ::nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddVariableFacturaProveedor(); oClass:AddMethod( "AddVariableFacturaProveedor", @TFastReportInfGen_AddVariableFacturaProveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddVariableLineasFacturaProveedor(); oClass:AddMethod( "AddVariableLineasFacturaProveedor", @TFastReportInfGen_AddVariableLineasFacturaProveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cDetalleFacturasProveedores(); oClass:AddInline( "cDetalleFacturasProveedores", {|Self | ( ( Self ) ), ( cDesFacPrv ( ::oFacPrvT:cAlias, ::oFacPrvL:cAlias ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalUnidadesFacturasProveedores(); oClass:AddInline( "nTotalUnidadesFacturasProveedores", {|Self | ( ( Self ) ), ( nTotNFacPrv( ::oFacPrvL:cAlias ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nPrecioUnitarioFacturasProveedores(); oClass:AddInline( "nPrecioUnitarioFacturasProveedores", {|Self | ( ( Self ) ), ( nTotUFacPrv( ::oFacPrvL:cAlias ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalLineaFacturasProveedores(); oClass:AddInline( "nTotalLineaFacturasProveedores", {|Self | ( ( Self ) ), ( nTotLFacPrv( ::oFacPrvL:cAlias ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalImpuestosIncluidosLineaFacturasProveedores(); oClass:AddInline( "nTotalImpuestosIncluidosLineaFacturasProveedores", {|Self | ( ( Self ) ), ( nTotFFacPrv( ::oFacPrvL:cAlias ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalIVALineaFacturasProveedores(); oClass:AddInline( "nTotalIVALineaFacturasProveedores", {|Self | ( ( Self ) ), ( nIvaLFacPrv( ::oFacPrvL:cAlias ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalDescuentoPorcentualLineaFacturasProveedores(); oClass:AddInline( "nTotalDescuentoPorcentualLineaFacturasProveedores", {|Self | ( ( Self ) ), ( nDtoLFacPrv( ::oFacPrvL:cAlias ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalDescuentoPromocionalLineaFacturasProveedores(); oClass:AddInline( "nTotalDescuentoPromocionalLineaFacturasProveedores", {|Self | ( ( Self ) ), ( nPrmLFacPrv( ::oFacPrvL:cAlias ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddVariableRectificativaProveedor(); oClass:AddMethod( "AddVariableRectificativaProveedor", @TFastReportInfGen_AddVariableRectificativaProveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddVariableLineasRectificativaProveedor(); oClass:AddMethod( "AddVariableLineasRectificativaProveedor", @TFastReportInfGen_AddVariableLineasRectificativaProveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cDetalleRectificativasProveedores(); oClass:AddInline( "cDetalleRectificativasProveedores", {|Self | ( ( Self ) ), ( cDesRctPrv ( ::oRctPrvL:cAlias ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalUnidadesRectificativasProveedores(); oClass:AddInline( "nTotalUnidadesRectificativasProveedores", {|Self | ( ( Self ) ), ( nTotNRctPrv( ::oRctPrvL:cAlias ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nPrecioUnitarioRectificativasProveedores(); oClass:AddInline( "nPrecioUnitarioRectificativasProveedores", {|Self | ( ( Self ) ), ( nTotURctPrv( ::oRctPrvL:cAlias ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalLineaRectificativasProveedores(); oClass:AddInline( "nTotalLineaRectificativasProveedores", {|Self | ( ( Self ) ), ( nTotLRctPrv( ::oRctPrvL:cAlias ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalImpuestosIncluidosLineaRectificativasProveedores(); oClass:AddInline( "nTotalImpuestosIncluidosLineaRectificativasProveedores", {|Self | ( ( Self ) ), ( nTotFRctPrv( ::oRctPrvL:cAlias ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalIVALineaRectificativasProveedores(); oClass:AddInline( "nTotalIVALineaRectificativasProveedores", {|Self | ( ( Self ) ), ( nIvaLRctPrv( ::oRctPrvL:cAlias ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalDescuentoPorcentualLineaRectificativasProveedores(); oClass:AddInline( "nTotalDescuentoPorcentualLineaRectificativasProveedores", {|Self | ( ( Self ) ), ( nDtoLRctPrv( ::oRctPrvL:cAlias ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotalDescuentoPromocionalLineaRectificativasProveedores(); oClass:AddInline( "nTotalDescuentoPromocionalLineaRectificativasProveedores", {|Self | ( ( Self ) ), ( nPrmLRctPrv( ::oRctPrvL:cAlias ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ValorCampoExtra( cTipoDoccumento, cCodCampoExtra); oClass:AddMethod( "ValorCampoExtra", @TFastReportInfGen_ValorCampoExtra(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER TotalCodigoClientes( cCliDesde, cCliHasta, cDescription); oClass:AddMethod( "TotalCodigoClientes", @TFastReportInfGen_TotalCodigoClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TotalFechaClientes( dDesde, dHasta, cDescription); oClass:AddMethod( "TotalFechaClientes", @TFastReportInfGen_TotalFechaClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TotalPreimerTrimestreClientes( cDescription); oClass:AddMethod( "TotalPreimerTrimestreClientes", @TFastReportInfGen_TotalPreimerTrimestreClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TotalSegundoTrimestreClientes( cDescription); oClass:AddMethod( "TotalSegundoTrimestreClientes", @TFastReportInfGen_TotalSegundoTrimestreClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TotalCodigoArticulos( cArtDesde, cArtHasta, cDescription); oClass:AddMethod( "TotalCodigoArticulos", @TFastReportInfGen_TotalCodigoArticulos(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER BrwRangoKeyDown( o, nKey); oClass:AddMethod( "BrwRangoKeyDown", @TFastReportInfGen_BrwRangoKeyDown(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Count( cDescription, lUnique); oClass:AddMethod( "Count", @TFastReportInfGen_Count(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InitSatClientes(); oClass:AddMethod( "InitSatClientes", @TFastReportInfGen_InitSatClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddSATClientes(); oClass:AddMethod( "AddSATClientes", @TFastReportInfGen_AddSATClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InitPresupuestosClientes(); oClass:AddMethod( "InitPresupuestosClientes", @TFastReportInfGen_InitPresupuestosClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddPresupuestosClientes(); oClass:AddMethod( "AddPresupuestosClientes", @TFastReportInfGen_AddPresupuestosClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InitPedidosClientes(); oClass:AddMethod( "InitPedidosClientes", @TFastReportInfGen_InitPedidosClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddPedidosClientes(); oClass:AddMethod( "AddPedidosClientes", @TFastReportInfGen_AddPedidosClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddAlbaranesClientes(); oClass:AddMethod( "AddAlbaranesClientes", @TFastReportInfGen_AddAlbaranesClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InitFacturasRectificativasClientes(); oClass:AddMethod( "InitFacturasRectificativasClientes", @TFastReportInfGen_InitFacturasRectificativasClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddFacturasRectificativasClientes(); oClass:AddMethod( "AddFacturasRectificativasClientes", @TFastReportInfGen_AddFacturasRectificativasClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InitTicketsClientes(); oClass:AddMethod( "InitTicketsClientes", @TFastReportInfGen_InitTicketsClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddTicketsClientes(); oClass:AddMethod( "AddTicketsClientes", @TFastReportInfGen_AddTicketsClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InitPedidosProveedores(); oClass:AddMethod( "InitPedidosProveedores", @TFastReportInfGen_InitPedidosProveedores(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddPedidosProveedores(); oClass:AddMethod( "AddPedidosProveedores", @TFastReportInfGen_AddPedidosProveedores(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InitAlbaranesProveedores(); oClass:AddMethod( "InitAlbaranesProveedores", @TFastReportInfGen_InitAlbaranesProveedores(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddAlbaranesProveedores(); oClass:AddMethod( "AddAlbaranesProveedores", @TFastReportInfGen_AddAlbaranesProveedores(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InitFacturasProveedores(); oClass:AddMethod( "InitFacturasProveedores", @TFastReportInfGen_InitFacturasProveedores(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddFacturasProveedores(); oClass:AddMethod( "AddFacturasProveedores", @TFastReportInfGen_AddFacturasProveedores(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InitFacturasRectificativasProveedores(); oClass:AddMethod( "InitFacturasRectificativasProveedores", @TFastReportInfGen_InitFacturasRectificativasProveedores(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddFacturasRectificativasProveedores(); oClass:AddMethod( "AddFacturasRectificativasProveedores", @TFastReportInfGen_AddFacturasRectificativasProveedores(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddVariable(); oClass:AddMethod( "AddVariable", @TFastReportInfGen_AddVariable(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CreateTreeImageList(); oClass:AddMethod( "CreateTreeImageList", @TFastReportInfGen_CreateTreeImageList(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER TreeReportingChanged(); oClass:AddMethod( "TreeReportingChanged", @TFastReportInfGen_TreeReportingChanged(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DlgFilter(); oClass:AddMethod( "DlgFilter", @TFastReportInfGen_DlgFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetFilterInforme(); oClass:AddInline( "SetFilterInforme", {|Self, cExpresionFilter | ( ( Self ) ), ( ::oDbf:SetFilter( cExpresionFilter ), sysrefresh() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InsertIfValid(); oClass:AddMethod( "InsertIfValid", @TFastReportInfGen_InsertIfValid(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lHideOptions(); oClass:AddInline( "lHideOptions", {|Self | ( ( Self ) ), ( if( !empty(::oBtnOptions), ::oBtnOptions:Hide(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER lShowOptions(); oClass:AddInline( "lShowOptions", {|Self | ( ( Self ) ), ( if( !empty(::oBtnOptions), ::oBtnOptions:Show(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER selectReportTree( cReportName); oClass:AddMethod( "selectReportTree", @TFastReportInfGen_selectReportTree(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setMeterText(); oClass:AddInline( "setMeterText", {|Self, cText | ( ( Self ) ), ( if ( !empty( ::oMtrInf ), ::oMtrInf:cText := cText, ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setMeterTotal(); oClass:AddInline( "setMeterTotal", {|Self, nTotal | ( ( Self ) ), ( if ( !empty( ::oMtrInf ), ::oMtrInf:SetTotal( nTotal ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setMeterAutoIncremental(); oClass:AddInline( "setMeterAutoIncremental", {|Self | ( ( Self ) ), ( if ( !empty( ::oMtrInf ), ::oMtrInf:AutoInc(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FastReportCobrosTickets(); oClass:AddMethod( "FastReportCobrosTickets", @TFastReportInfGen_FastReportCobrosTickets(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddVariableCobrosTickets(); oClass:AddMethod( "AddVariableCobrosTickets", @TFastReportInfGen_AddVariableCobrosTickets(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LoadInformesBasicos(); oClass:AddMethod( "LoadInformesBasicos", @TFastReportInfGen_LoadInformesBasicos(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER LoadInformesPersonalizados(); oClass:AddMethod( "LoadInformesPersonalizados", @TFastReportInfGen_LoadInformesPersonalizados(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getDesdeFecha(); oClass:AddInline( "getDesdeFecha", {|Self | ( ( Self ) ), ( ::dIniInf ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHastaFecha(); oClass:AddInline( "getHastaFecha", {|Self | ( ( Self ) ), ( ::dFinInf ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER isFechaHoraConsolidacion( cCodArt, cCodAlm); oClass:AddMethod( "isFechaHoraConsolidacion", @TFastReportInfGen_isFechaHoraConsolidacion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getDesdeArticulo(); oClass:AddInline( "getDesdeArticulo", {|Self | ( ( Self ) ), ( alltrim( ::oGrupoArticulo:Cargo:getDesde() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHastaArticulo(); oClass:AddInline( "getHastaArticulo", {|Self | ( ( Self ) ), ( alltrim( ::oGrupoArticulo:Cargo:getHasta() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getDesdeAlmacen(); oClass:AddInline( "getDesdeAlmacen", {|Self | ( ( Self ) ), ( alltrim( ::oGrupoAlmacen:Cargo:getDesde() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHastaAlmacen(); oClass:AddInline( "getHastaAlmacen", {|Self | ( ( Self ) ), ( alltrim( ::oGrupoAlmacen:Cargo:getHasta() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TFastReportInfGen ;
+
+
+
+static FUNCTION TFastReportInfGen_NewResource( cFldRes ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local n
+   local o
+
+
+
+   ::lCreaArrayPeriodos()
+
+
+
+   ::Default()
+
+   ::lLoadDivisa()
+
+   ::lDefDivInf                     := .F.
+   ::lDefSerInf                     := .F.
+
+
+
+   ::oDlg = TDialog():New(,,,, ::cSubTitle, "REPORTINGDIALOG",, .F.,,,,,, .F.,,,,,, .F.,, "::oDlg", nil, )
+
+
+
+
+
+   ::oTreeReporting                 := TTreeView():Redefine( 100, ::oDlg )
+   ::oTreeReporting:bChanged        := {|| ::TreeReportingChanged() }
+   ::oTreeReporting:bLDblClick      := {|| ::TreeReportingClick() }
+
+
+
+   if ::lDefFecInf
+      ::oDefIniInf( 1110, ::oDlg, 1111 )
+      ::oDefFinInf( 1120, ::oDlg, 1121 )
+      ::lPeriodoInforme( 220, ::oDlg )
+   end
+
+
+
+
+
+
+   ::oBtnOptions := TButton():ReDefine( 1130, {||( ::oTFastReportOptions:Dialog() )}, ::oDlg,,, .F.,,,, .F. )
+
+
+
+   ::oBrwRango                      := IXBrowse():New( ::oDlg )
+
+   ::oBrwRango:bClrSel              := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+   ::oBrwRango:bClrSelFocus         := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+   ::oBrwRango:SetArray( ::aInitGroup, , , .F. )
+
+   ::oBrwRango:lHScroll             := .F.
+   ::oBrwRango:lVScroll             := .F.
+   ::oBrwRango:lRecordSelector      := .T.
+   ::oBrwRango:lFastEdit            := .T.
+
+   ::oBrwRango:nFreeze              := 1
+   ::oBrwRango:nMarqueeStyle        := 3
+
+   ::oBrwRango:nColSel              := 2
+
+   ::oBrwRango:CreateFromResource( 310 )
+
+   ::oColNombre                     := ::oBrwRango:AddCol()
+   ::oColNombre:cHeader             := ""
+   ::oColNombre:bStrData            := {|| ::aInitGroup[ ::oBrwRango:nArrayAt ]:Cargo:Nombre }
+   ::oColNombre:bBmpData            := {|| ::oBrwRango:nArrayAt }
+   ::oColNombre:nWidth              := 90
+
+   for each o in ::aInitGroup
+      ::oColNombre:AddResource( o:Cargo:cBitmap )
+   next
+
+   with object ( ::oColDesde := ::oBrwRango:AddCol() )
+      :cHeader       := "Desde"
+      :bEditValue    := {|| ::aInitGroup[ ::oBrwRango:nArrayAt ]:Cargo:Desde }
+      :bOnPostEdit   := {|o,x| ::aInitGroup[ ::oBrwRango:nArrayAt ]:Cargo:Desde := x }
+      :bEditValid    := {|oGet| ::ValidValueTextDesde( oGet ) }
+      :bEditBlock    := {|| ::EditValueTextDesde() }
+      :cEditPicture  := "@!"
+      :nEditType     := 5
+      :nWidth        := 120
+      :nBtnBmp       := 1
+      :AddResource( "Lupa" )
+   end
+
+   with object ( ::oBrwRango:AddCol() )
+      :cHeader       := ""
+      :bEditValue    := {|| ::EditTextDesde() }
+      :nEditType     := 0
+      :nWidth        := 160
+   end
+
+   with object ( ::oColHasta := ::oBrwRango:AddCol() )
+      :cHeader       := "Hasta"
+      :bEditValue    := {|| ::aInitGroup[ ::oBrwRango:nArrayAt ]:Cargo:Hasta }
+      :bOnPostEdit   := {|o,x| ::aInitGroup[ ::oBrwRango:nArrayAt ]:Cargo:Hasta := x }
+      :bEditValid    := {|oGet| ::ValidValueTextHasta( oGet ) }
+      :bEditBlock    := {|| ::EditValueTextHasta() }
+      :cEditPicture  := "@!"
+      :nEditType     := 5
+      :nWidth        := 120
+      :nBtnBmp       := 1
+      :AddResource( "Lupa" )
+   end
+
+   with object ( ::oBrwRango:AddCol() )
+      :cHeader       := ""
+      :bEditValue    := {|| ::EditTextHasta() }
+      :nEditType     := 0
+      :nWidth        := 160
+   end
+
+   ::oBrwRango:OnKeyDown            := {| o, nKey | ::BrwRangoKeyDown( o, nKey ) }
+
+
+
+   if ::lDefDivInf
+      ::oDefDivInf( 1130, 1131, ::oDlg )
+   end
+
+
+
+   if ::lDefSerInf
+      ::oDefSerInf( ::oDlg )
+   end
+
+
+
+   if ::lDefMetInf
+      ::oDefMetInf( 1160, ::oDlg )
+   end
+
+RETURN .T.
+
+
+
+static FUNCTION TFastReportInfGen_Activate( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local lActivate      := .F.
+
+   if !empty( ::oDlg )
+
+      ::oDlg:AddFastKey( 116,  {|| ::GenReport( 2 ) } )
+      ::oDlg:AddFastKey( 120,  {|| ::MoveReport() } )
+
+      ::oDlg:bStart     := {|| ::StartDialog(), ::oBtnBasicos:Selected() }
+
+      ::oDlg:Activate( , , , .T., , , {|| ::InitDialog() } )
+
+      lActivate         := ( ::oDlg:nResult == 1 )
+
+   end
+
+RETURN ( lActivate )
+
+
+
+static FUNCTION TFastReportInfGen_lResource( cFld ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::lNewInforme              := .T.
+   ::lDefCondiciones          := .F.
+   ::lInformesPersonalizados  := .F.
+
+   if !::NewResource()
+      return .F.
+   end
+
+
+
+
+
+   if !::lGrupoArticulo( .T. )
+      return .F.
+   end
+
+   if !::lGrupoFamilia( .T. )
+      return .F.
+   end
+
+   if !::lGrupoTipoArticulo( .T. )
+      return .F.
+   end
+
+   if !::lGrupoCategoria( .T. )
+      return .F.
+   end
+
+   if !::lGrupoTemporada( .T. )
+      return .F.
+   end
+
+   if !::lGrupoFabricante( .T. )
+      return .F.
+   end
+
+
+
+
+
+   ::oGrupoCondiciones := TGroup():ReDefine( 131,, ::oDlg,,,, .T. )
+
+
+
+
+
+   TGetHlp():ReDefine( 320, { | u | If( PCount()==0, ::nUnidadesTiempo, ::nUnidadesTiempo:= u ) }, ::oDlg,, "@E 999",,,,,,, .F.,,, .F., .T.,,, {|| 0}, {|| 999},, nil,,, )
+
+
+
+
+
+   ::oUnidadesTiempo := TComboBox():ReDefine( 330, { | u | If( PCount()==0, ::cUnidadesTiempo, ::cUnidadesTiempo:= u ) }, ::aUnidadesTiempo, ::oDlg,,,,,,, .F.,,,,,,, "::oUnidadesTiempo",,,,,,, )
+
+RETURN .T.
+
+
+
+static FUNCTION TFastReportInfGen_InitDialog( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local oGrupo
+   local oCarpeta
+
+   ::oOfficeBar            := TDotNetBar():New( 0, 0, 1100, 115, ::oDlg, 1 )
+   ::oOfficeBar:lPaintAll  := .F.
+   ::oOfficeBar:lDisenio   := .F.
+
+   ::oOfficeBar:SetStyle( 1 )
+
+   oCarpeta                := TCarpeta():New( ::oOfficeBar, "Informe" )
+
+   oGrupo                  := TDotNetGroup():New( oCarpeta, 86, ::cTipoInforme, .F. )
+      ::oBtnTipo           := TDotNetButton():New( 80, oGrupo, ::cBmpInforme, "", 1, , , , .F., .F., .F. )
+
+   oGrupo                  := TDotNetGroup():New( oCarpeta, 126, "Tipo de informe", .F. )
+      ::oBtnBasicos        := TDotNetButton():New( 60, oGrupo, "document_chart_32",          "Básicos",           1, {|| ::LoadInformesBasicos() }, , , .F., .F., .F. )
+      ::oBtnPersonalizados := TDotNetButton():New( 60, oGrupo, "document_chart_pencil_32",   "Personalizados",    2, {|| ::LoadInformesPersonalizados() }, , , .F., .F., .F. )
+
+   oGrupo                  := TDotNetGroup():New( oCarpeta, 306, "Impresión", .F. )
+      ::oBtnPrevisualizar  := TDotNetButton():New( 60, oGrupo, "gc_monitor_32",              "Visualizar [F5]",   1, {|| ::GenReport( 2 ) }, , , .F., .F., .F. )
+      ::oBtnImprimir       := TDotNetButton():New( 60, oGrupo, "gc_printer2_32",             "Imprimir",          2, {|| ::GenReport( 1 ) }, , , .F., .F., .F. )
+      ::oBtnExcel          := TDotNetButton():New( 60, oGrupo, "gc_spreadsheet_cell_32",     "Excel",             3, {|| ::GenReport( 5 ) }, , , .F., .F., .F. )
+      ::oBtnPdf            := TDotNetButton():New( 60, oGrupo, "gc_document_text_lock_32",   "Pdf",               4, {|| ::GenReport( 3 ) }, , , .F., .F., .F. )
+      ::oBtnHTML           := TDotNetButton():New( 60, oGrupo, "gc_earth_32",                "HTML",              5, {|| ::GenReport( 4 ) }, , , .F., .F., .F. )
+
+   oGrupo                  := TDotNetGroup():New( oCarpeta, 246, "Útiles", .F. )
+      ::oBtnDiseno         := TDotNetButton():New( 60, oGrupo, "gc_set_square_pencil_32",    "Diseñar",           1, {|| ::DesignReport() }, , , .F., .F., .F. )
+      ::oBtnDuplicar       := TDotNetButton():New( 60, oGrupo, "gc_copy_32",                 "Duplicar",          2, {|| ::Duplicar() }, , , .F., .F., .F. )
+      ::oBtnRenombrar      := TDotNetButton():New( 60, oGrupo, "text_field_32",              "Renombrar",         3, {|| ::Renombrar() }, , , .F., .F., .F. )
+      ::oBtnEliminar       := TDotNetButton():New( 60, oGrupo, "gc_document_text_delete_32", "Eliminar",          4, {|| ::Eliminar() }, , , .F., .F., .F. )
+
+   oGrupo                  := TDotNetGroup():New( oCarpeta, 66, "Útiles", .F. )
+      ::oBtnFiltrar        := TDotNetButton():New( 60, oGrupo, "gc_funnel_32",               "Filtrar",           1, {|| ::DlgFilter() }, , , .F., .F., .F. )
+
+   oGrupo                  := TDotNetGroup():New( oCarpeta, 66, "Salida", .F. )
+      ::oBtnCancel         := TDotNetButton():New( 60, oGrupo, "gc_door_open2_32",           "Salir",             1, {|| ::lBreak := .T., ::End() }, , , .F., .F., .F. )
+
+      ::oDlg:oTop          := ::oOfficeBar
+
+   ::HideCondiciones()
+
+
+
+
+
+   SysRefresh()
+
+   if ::lDesglosar
+      ::oDefDesglosar()
+   end
+
+   if ::lLinImporteCero
+      ::oDefLinImporteCero()
+   end
+
+   if ::lDocImporteCero
+      ::oDefDocImporteCero()
+   end
+
+
+
+
+
+   ::lRecargaFecha()
+
+
+
+
+
+   ::oTreeReporting:SetFocus()
+
+   ::TreeReportingChanged()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_SetDialog( lEnabled ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   If( lEnabled == nil, lEnabled := .F., ) ;
+
+   ::oBtnPrevisualizar:lEnabled  := lEnabled
+   ::oBtnImprimir:lEnabled       := lEnabled
+   ::oBtnExcel:lEnabled          := lEnabled
+   ::oBtnPdf:lEnabled            := lEnabled
+   ::oBtnHTML:lEnabled           := lEnabled
+   ::oBtnDiseno:lEnabled         := lEnabled
+   ::oBtnFiltrar:lEnabled        := lEnabled
+   ::oBtnEliminar:lEnabled       := lEnabled
+   ::oBtnDuplicar:lEnabled       := lEnabled
+   ::oBtnTipo:lEnabled           := lEnabled
+   ::oBtnBasicos:lEnabled        := lEnabled
+   ::oBtnPersonalizados:lEnabled := lEnabled
+   ::oBtnRenombrar:lEnabled      := lEnabled
+
+   if lEnabled
+      ::oTreeReporting:Enable()
+      ::oBrwRango:Enable()
+   else
+      ::oTreeReporting:Disable()
+      ::oBrwRango:Disable()
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_Create( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::AddField( "cCodArt",     "C", 18, 0, {|| "@!" }, "Codigo artículo", .F., "Código artículo", 14, .F. )
+
+   ::AddTmpIndex( "cCodArt", "cCodArt" )
+
+RETURN ( self )
+
+
+
+static FUNCTION TFastReportInfGen_Play( uParam ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::Create( uParam )
+
+   if ::lOpenFiles
+
+      if ::OpenData()
+
+         if ::OpenTemporal()
+
+            if ::lResource()
+
+               ::Activate()
+
+            end
+
+            ::CloseTemporal()
+
+         end
+
+         ::CloseData()
+
+      end
+
+   end
+
+   ::End()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_PlayTablet( uParam, oDevice ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   If( oDevice == nil, oDevice := 1, ) ;
+
+   ::Create( uParam )
+
+   if ::lOpenFiles
+
+      if ::OpenData()
+
+         if ::OpenTemporal()
+
+            ::lResource()
+
+            ::GenReportTablet( oDevice )
+
+            ::CloseTemporal()
+
+         end
+
+         ::CloseData()
+
+      end
+
+   end
+
+   ::End()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_End( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   CursorWait()
+
+   if ::lSave2Exit .AND. ::lOpenFiles
+      ::Save()
+   end
+
+   if ::oDbfDiv <> nil .AND. ::oDbfDiv:Used()
+      ::oDbfDiv:end()
+   end
+
+   if ::oBmpDiv <> nil
+      ::oBmpDiv:end()
+   end
+
+   if ::oBandera <> nil
+      ::oBandera:end()
+   end
+
+   ::CloseData()
+
+
+
+
+
+   ::CloseFiles()
+
+   if ::oDbfArt <> nil .AND. ::oDbfArt:Used()
+      ::oDbfArt:End()
+   end
+
+   if ::oDbfAlm <> nil .AND. ::oDbfAlm:Used()
+      ::oDbfAlm:End()
+   end
+
+   if ::oDbfAge <> nil .AND. ::oDbfAge:Used()
+      ::oDbfAge:End()
+   end
+
+   if ::oDbfFam <> nil .AND. ::oDbfFam:Used()
+      ::oDbfFam:End()
+   end
+
+   if ::oDbfCat <> nil .AND. ::oDbfCat:Used()
+      ::oDbfCat:End()
+   end
+
+   if ::oDbfEstArt <> nil .AND. ::oDbfEstArt:Used()
+      ::oDbfEstArt:End()
+   end
+
+   if ::oDbfPrv <> nil .AND. ::oDbfPrv:Used()
+      ::oDbfPrv:End()
+   end
+
+   if ::oDbfCli <> nil .AND. ::oDbfCli:Used()
+      ::oDbfCli:End()
+   end
+
+   if ::oDbfTmp <> nil .AND. ::oDbfTmp:Used()
+      ::oDbfTmp:End()
+   end
+
+   if ::oDbfEmp <> nil .AND. ::oDbfEmp:Used()
+      ::oDbfEmp:End()
+   end
+
+   if ::oGruFam <> nil
+      ::oGruFam:End()
+   end
+
+   if ::oDbfFpg <> nil .AND. ::oDbfFpg:Used()
+      ::oDbfFpg:End()
+   end
+
+   if ::oDbfTur <> nil .AND. ::oDbfTur:Used()
+      ::oDbfTur:End()
+   end
+
+   if ::oTipArt <> nil
+      ::oTipArt:End()
+   end
+
+   if ::oDbfFab <> nil
+      ::oDbfFab:End()
+   end
+
+   if ::oGrpPrv <> nil
+      ::oGrpPrv:End()
+   end
+
+   if ::oSeccion <> nil
+      ::oSeccion:End()
+   end
+
+   if ::oOperacion <> nil
+      ::oOperacion:End()
+   end
+
+   if ::oDbfIva <> nil .AND. ::oDbfIva:Used()
+      ::oDbfIva:End()
+   end
+
+   if ::oDbfRut <> nil .AND. ::oDbfRut:Used()
+      ::oDbfRut:End()
+   end
+
+   if !Empty( ::oRemAgeT ) .AND. ( ::oRemAgeT:Used() )
+      ::oRemAgeT:end()
+   end
+
+
+
+
+
+   ::CloseTemporal()
+
+   if !Empty( ::nBmp )
+      DeleteObject( ::nBmp )
+   end
+
+   if !Empty( ::oBmpImagen )
+      ::oBmpImagen:End()
+   end
+
+   if !::lTabletVersion .AND. !Empty( ::oDlg )
+      ::oDlg:End()
+   end
+
+   Self        := nil
+
+   CursorWE()
+
+Return .T.
+
+
+
+static FUNCTION TFastReportInfGen_GenReport( nOption ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local oDlg
+
+
+
+
+
+   if !::lLoadInfo()
+      msgStop( "No se ha podido cargar el nombre del informe." )
+      Return ( Self )
+   end
+
+
+
+
+
+   if !::lLoadReport()
+      MsgStop( "No se ha podido cargar un diseño de informe valido." + Chr(13)+Chr(10) + ::cReportFile )
+      Return ( Self )
+   end
+
+
+
+
+
+   ::SetDialog( .F. )
+
+   ::lBreak             := .F.
+   ::oBtnCancel:bAction := {|| ::lBreak := .T. }
+
+   ::initVariables()
+
+
+
+
+
+   ::ExtractOrder()
+
+
+
+
+
+   if hb_isBlock( ::bPreGenerate )
+      Eval( ::bPreGenerate )
+   end
+
+   if ::lGenerate()
+
+      if !::lBreak
+
+
+
+
+
+         oDlg = TDialog():New( 0, 0, 4, 30, "Generando informe",,, .F., 128,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+         oDlg:bStart    := { || ::FastReport( nOption ), oDlg:End(), SysRefresh() }
+         oDlg:cMsg      := "Por favor espere..."
+
+
+
+         oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted := {|hDC,cPS|oDlg:Say( 11, 0, xPadC( oDlg:cMsg, ( oDlg:nRight - oDlg:nLeft ) ), , , , .T. )}, .T.,,,, oDlg:bRClicked,,, )
+
+      end
+
+   else
+
+      if !::lBreak
+         msgStop( "No hay registros en las condiciones solictadas" )
+      end
+
+   end
+
+   if hb_isBlock( ::bPostGenerate )
+      Eval( ::bPostGenerate )
+   end
+
+   ::oMtrInf:cText         := ""
+   ::oMtrInf:Set( 0 )
+
+   ::oBtnCancel:bAction    := {|| ::lBreak := .T., ::End() }
+
+   ::SetDialog( .T. )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_GenReportTablet( nOption ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local oDlg
+
+
+
+
+
+   if !::lLoadReport()
+      MsgStop( "No se ha podido cargar un diseño de informe valido." + Chr(13)+Chr(10) + ::cReportFile )
+      Return ( Self )
+   end
+
+
+
+
+
+   ::initVariables()
+
+
+
+
+
+   ::ExtractOrder()
+
+
+
+
+
+   if hb_isBlock( ::bPreGenerate )
+      Eval( ::bPreGenerate )
+   end
+
+   if ::lGenerate()
+
+      if !::lBreak
+
+
+
+
+
+         oDlg = TDialog():New( 0, 0, 4, 30, "Generando informe",,, .F., 128,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+         oDlg:bStart    := { || ::FastReport( nOption ), oDlg:End(), SysRefresh() }
+         oDlg:cMsg      := "Por favor espere..."
+
+
+
+         oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted := {|hDC,cPS|oDlg:Say( 11, 0, xPadC( oDlg:cMsg, ( oDlg:nRight - oDlg:nLeft ) ), , , , .T. )}, .T.,,,, oDlg:bRClicked,,, )
+
+      end
+
+   else
+
+      if !::lBreak
+         msgStop( "No hay registros en las condiciones solictadas" )
+      end
+
+   end
+
+   if hb_isBlock( ::bPostGenerate )
+      Eval( ::bPostGenerate )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_lGenerate( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local aGenerate
+
+   ::oDbf:Zap()
+
+
+
+   aGenerate         := ::GetReportType()
+
+   if !Empty( aGenerate )
+      Eval( hGet( aGenerate, "Generate" ) )
+   end
+
+   if ::lSummary
+      ::summaryReport()
+   end
+
+
+
+   if !Empty( ::oFilter )
+      ::SetFilterInforme( ::oFilter:cExpresionFilter )
+   end
+
+RETURN ( ::oDbf:LastRec() > 0 )
+
+
+
+static FUNCTION TFastReportInfGen_SetDataReport( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local aData
+
+   aData       := ::GetReportType()
+
+   if !Empty( aData )
+      Eval( hGet( aData, "Data" ) )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariable( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local aVariable
+
+   ::Super:AddVariable()
+
+   aVariable   := ::GetReportType()
+
+   if !Empty( aVariable )
+      Eval( hGet( aVariable, "Variable" ) )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_lValidRegister( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+
+
+
+
+
+
+   if ( ::oDbfArt:Codigo >= ::oGrupoArticulo:Cargo:Desde    .AND. ::oDbfArt:Codigo <= ::oGrupoArticulo:Cargo:Hasta      ) .AND. ( ::oDbfArt:Familia >= ::oGrupoFamilia:Cargo:Desde    .AND. ::oDbfArt:Familia <= ::oGrupoFamilia:Cargo:Hasta      ) .AND. ( ::oDbfArt:cCodTip >= ::oGrupoTArticulo:Cargo:Desde  .AND. ::oDbfArt:cCodTip <= ::oGrupoTArticulo:Cargo:Hasta    ) .AND. ( ::oDbfArt:cCodCate >= ::oGrupoCategoria:Cargo:Desde .AND. ::oDbfArt:cCodCate <= ::oGrupoCategoria:Cargo:Hasta   ) .AND. ( ::oDbfArt:cCodTemp >= ::oGrupoTemporada:Cargo:Desde .AND. ::oDbfArt:cCodTemp <= ::oGrupoTemporada:Cargo:Hasta   ) .AND. ( ::oDbfArt:cCodFab >= ::oGrupoFabricante:Cargo:Desde .AND. ::oDbfArt:cCodFab <= ::oGrupoFabricante:Cargo:Hasta   ) .AND. ( !Empty( ::oDbfArt:dFecVta ) .AND. Empty( ::oDbfArt:dFinVta ) .AND. ( ::oDbfArt:dFecVta + ::nDias < Date() ) )
+
+      return .T.
+
+   end
+
+RETURN ( .F. )
+
+
+
+static FUNCTION TFastReportInfGen_DataReport( oFr ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+
+
+
+
+   ::oFastReport:SetWorkArea(       "Informe", ::oDbf:nArea )
+   ::oFastReport:SetFieldAliases(   "Informe", cObjectsToReport( ::oDbf ) )
+
+
+
+
+
+   ::oFastReport:SetWorkArea(       "Empresa", ::oDbfEmp:nArea )
+   ::oFastReport:SetFieldAliases(   "Empresa", cItemsToReport( aItmEmp() ) )
+
+   ::oFastReport:SetWorkArea(       "Artículos", ::oDbfArt:nArea )
+   ::oFastReport:SetFieldAliases(   "Artículos", cItemsToReport( aItmArt() ) )
+
+   ::oFastReport:SetWorkArea(       "Familias", ::oDbfFam:nArea )
+   ::oFastReport:SetFieldAliases(   "Familias", cItemsToReport( aItmFam() ) )
+
+   ::oFastReport:SetWorkArea(       "Tipo artículos", ::oTipArt:Select() )
+   ::oFastReport:SetFieldAliases(   "Tipo artículos", cObjectsToReport( ::oTipArt:oDbf ) )
+
+   ::oFastReport:SetWorkArea(       "Temporadas", ::oDbfTmp:nArea )
+   ::oFastReport:SetFieldAliases(   "Temporadas", cItemsToReport( aItmTemporada() ) )
+
+   ::oFastReport:SetWorkArea(       "Fabricantes", ::oDbfFab:Select() )
+   ::oFastReport:SetFieldAliases(   "Fabricantes", cObjectsToReport( ::oDbfFab:oDbf ) )
+
+   ::oFastReport:SetMasterDetail(   "Informe", "Artículos",       {|| ::oDbf:cCodArt } )
+   ::oFastReport:SetMasterDetail(   "Informe", "Empresa",         {|| cCodEmp() } )
+   ::oFastReport:SetMasterDetail(   "Informe", "Familias",        {|| ::oDbfArt:Familia } )
+   ::oFastReport:SetMasterDetail(   "Informe", "Tipo artículos",  {|| ::oDbfArt:cCodTip } )
+   ::oFastReport:SetMasterDetail(   "Informe", "Categorias",      {|| ::oDbfArt:cCodCat } )
+   ::oFastReport:SetMasterDetail(   "Informe", "Temporadas",      {|| ::oDbfArt:cCodTemp } )
+   ::oFastReport:SetMasterDetail(   "Informe", "Fabricantes",     {|| ::oDbfArt:cCodFab } )
+
+   ::oFastReport:SetResyncPair(     "Informe", "Artículos" )
+   ::oFastReport:SetResyncPair(     "Informe", "Empresa" )
+   ::oFastReport:SetResyncPair(     "Informe", "Familias" )
+   ::oFastReport:SetResyncPair(     "Informe", "Tipo artículos" )
+   ::oFastReport:SetResyncPair(     "Informe", "Categorias" )
+   ::oFastReport:SetResyncPair(     "Informe", "Temporadas" )
+   ::oFastReport:SetResyncPair(     "Informe", "Fabricantes" )
+
+Return ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_OpenData( cPath, lExclusive ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local lOpen          := .T.
+   local oError
+   local oBlock
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   oBlock               := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      ::oDbfEmp := DbfServer( "Empresa.Dbf", ):NewOpen( "Empresa.Dbf",, ( cDriver() ),, ( cPatDat() ), .F., .T., .F., .F. ) ; ::oDbfEmp:AddBag( "Empresa.Cdx" ) ; ::oDbfEmp:AddBag( ) ; ::oDbfEmp:AutoIndex()
+
+      ::oDbfDiv := DbfServer( "Divisas.Dbf", ):NewOpen( "Divisas.Dbf",, ( cDriver() ),, ( cPatDat() ), .F., .T., .F., .F. ) ; ::oDbfDiv:AddBag( "Divisas.Cdx" ) ; ::oDbfDiv:AddBag( ) ; ::oDbfDiv:AutoIndex()
+
+
+
+
+
+      if Empty( ::oDbfInf )
+         ::oDbfInf      := ::DefineReport( cPath )
+      end
+
+      ::oDbfInf:Activate( .F., !( lExclusive ) )
+
+   RECOVER USING oError
+
+      msgStop( ErrorMessage( oError ), "Imposible abrir todas las bases de datos" )
+
+      ::CloseFiles()
+
+      lOpen             := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TFastReportInfGen_CloseTemporal( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+
+
+
+
+   if ::oDbf <> nil .AND. ::oDbf:Used()
+      ::oDbf:End()
+   end
+
+   ::oDbf      := nil
+
+   dbDrop( ::cFileName, ::cFileIndx, cLocalDriver() )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_CloseData( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   if ::oDbfEmp <> nil .AND. ::oDbfEmp:Used()
+      ::oDbfEmp:end()
+   end
+
+   if ::oDbfDiv <> nil .AND. ::oDbfDiv:Used()
+      ::oDbfDiv:end()
+   end
+
+   if ::oDbfInf <> nil .AND. ::oDbfInf:Used()
+      ::oDbfInf:end()
+   end
+
+   if ::oDbfPersonalizado <> nil .AND. ::oDbfPersonalizado:Used()
+      ::oDbfPersonalizado:end()
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_OpenService( lExclusive, cPath ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local lOpen          := .T.
+   local oError
+   local oBlock
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   oBlock               := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+
+
+
+
+      if Empty( ::oDbfInf )
+         ::oDbfInf      := ::DefineReport( cPath )
+      end
+
+      ::oDbfInf:Activate( .F., !( lExclusive ) )
+
+   RECOVER USING oError
+
+      msgStop( ErrorMessage( oError ), "Imposible abrir todas las bases de datos" )
+
+      ::CloseFiles()
+
+      lOpen             := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TFastReportInfGen_CloseService( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   if ::oDbfInf <> nil .AND. ::oDbfInf:Used()
+      ::oDbfInf:end()
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_DefineReport( cPath ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+
+   ::oDbfInf := DbfServer( "FstInf.Dbf", "FstInf" ):New( "FstInf.Dbf",, ( cDriver() ), "Informes de la apliacación", ( cPath ) )
+
+      ::oDbfInf:AddField( "cCodUse", "C", 3, 0,,,,, "Código usuario", .F.,, .F., {} )
+      ::oDbfInf:AddField( "cClsInf", "C", 50, 0,,,,, "Clase del informe", .F.,, .F., {} )
+      ::oDbfInf:AddField( "cTypInf", "C", 50, 0,,,,, "Tipo del informe", .F.,, .F., {} )
+      ::oDbfInf:AddField( "cNomInf", "C", 50, 0,,,,, "Nombre del informe", .F.,, .F., {} )
+      ::oDbfInf:AddField( "mOrgInf", "M", 10, 0,,,,, "Configuración original", .F.,, .F., {} )
+      ::oDbfInf:AddField( "mModInf", "M", 10, 0,,,,, "Configuración modificada", .F.,, .F., {} )
+
+      ::oDbfInf:AddIndex( "cClsInf", "FstInf.Cdx", "Upper( cClsInf ) + Upper( cTypInf ) + Upper( cNomInf )",,, .F., .F., "Código",,, .T., .F. )
+      ::oDbfInf:AddIndex( "cCodUse", "FstInf.Cdx", "cCodUse + Upper( cNomInf )",,, .F., .F., "Usuario",,, .T., .F. )
+
+
+
+Return ( ::oDbfInf )
+
+
+
+static FUNCTION TFastReportInfGen_Reindexa( cPath ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   if file( cPath + "FstInf.Cdx" )
+      ferase( cPath + "FstInf.Cdx" )
+   end
+
+   ::DefineReport( cPath )
+
+   ::oDbfInf:Activate( .F., .F. )
+   ::oDbfInf:Pack()
+   ::oDbfInf:End()
+
+Return ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_FastReport( nDevice ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   CursorWait()
+
+   ::oFastReport                    := frReportManager():new()
+
+   if !Empty( ::oFastReport )
+
+      ::oFastReport:LoadLangRes(       "Spanish.Xml" )
+      ::oFastReport:SetIcon( 1 )
+
+      ::oFastReport:SetEventHandler(   "Designer", "OnSaveReport", {|lSaveAs| ::SaveReport( lSaveAs ) } )
+
+      ::oFastReport:ClearDataSets()
+
+      ::DataReport()
+
+      ::oFastReport:LoadFromString( ::cInformeFastReport )
+
+      ::AddVariable()
+
+      ::oFastReport:SetTitle(                "Visualizando : " + ::cReportType )
+      ::oFastReport:ReportOptions:SetName(   "Visualizando : " + ::cReportType )
+
+
+
+
+
+      do case
+         case nDevice == 2
+            ::oFastReport:ShowReport()
+
+         case nDevice == 1
+            ::oFastReport:PrepareReport()
+            ::oFastReport:PrintOptions:SetCopies( 1 )
+            ::oFastReport:PrintOptions:SetShowDialog( .F. )
+            ::oFastReport:Print()
+
+         case nDevice == 3
+            ::oFastReport:PrepareReport()
+            ::oFastReport:SetProperty( "PDFExport", "ShowDialog",       .T. )
+            ::oFastReport:SetProperty( "PDFExport", "DefaultPath",      cPatTmp() )
+            ::oFastReport:SetProperty( "PDFExport", "FileName",         "Informe" + Auth():Codigo() + ".pdf" )
+            ::oFastReport:SetProperty( "PDFExport", "EmbeddedFonts",    .T. )
+            ::oFastReport:SetProperty( "PDFExport", "PrintOptimized",   .T. )
+            ::oFastReport:SetProperty( "PDFExport", "Outline",          .T. )
+            ::oFastReport:SetProperty( "PDFExport", "OpenAfterExport",  .T. )
+            ::oFastReport:DoExport(    "PDFExport" )
+
+         case nDevice == 4
+            ::oFastReport:PrepareReport()
+            ::oFastReport:SetProperty( "HTMLExport", "ShowDialog",      .T. )
+            ::oFastReport:SetProperty( "HTMLExport", "DefaultPath",     cPatTmp() )
+            ::oFastReport:SetProperty( "HTMLExport", "FileName",        "Informe" + Auth():Codigo() + ".html" )
+            ::oFastReport:DoExport(    "HTMLExport" )
+
+         case nDevice == 5
+            ::oFastReport:PrepareReport()
+            ::oFastReport:SetProperty( "XLSExport", "ShowDialog",       .T. )
+            ::oFastReport:SetProperty( "XLSExport", "DefaultPath",      cPatTmp() )
+            ::oFastReport:SetProperty( "XLSExport", "FileName",         "Informe" + Auth():Codigo() + ".xls" )
+            ::oFastReport:DoExport(    "XLSExport" )
+
+      end
+
+      ::oFastReport:DestroyFR()
+
+   end
+
+   CursorWE()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_DesignReport( cNombre ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   if !::lInformesPersonalizados
+      MsgStop( "No se puede diseñar un informe básico" )
+      Return ( self )
+   end
+
+
+
+
+
+   if !::lLoadInfo()
+      msgStop( "No se ha podido cargar el informe." )
+      Return ( Self )
+   end
+
+
+
+
+
+   if !::lLoadReport()
+      MsgStop( "No se ha podido cargar un diseño de informe valido." + Chr(13)+Chr(10) + ::cReportFile )
+      Return ( Self )
+   end
+
+   if !Empty( cNombre )
+      ::lPersonalizado  := .T.
+      ::cReportName     := cNombre
+   end
+
+
+
+
+
+   ::oFastReport                    := frReportManager():new()
+
+   ::oFastReport:LoadLangRes(       "Spanish.Xml" )
+   ::oFastReport:SetIcon( 1 )
+
+   ::oFastReport:SetEventHandler(   "Designer", "OnSaveReport", {|lSaveAs| ::SaveReport( lSaveAs ) } )
+
+   ::oFastReport:ClearDataSets()
+
+   ::DataReport()
+
+   if !Empty( ::cInformeFastReport )
+
+      ::oFastReport:LoadFromString( ::cInformeFastReport )
+
+   else
+
+      ::oFastReport:AddPage(        "MainPage" )
+
+      ::oFastReport:AddBand(        "CabeceraDocumento", "MainPage", 2 )
+      ::oFastReport:SetProperty(    "CabeceraDocumento", "Top", 0 )
+      ::oFastReport:SetProperty(    "CabeceraDocumento", "Height", 200 )
+
+      ::oFastReport:AddBand(        "MasterData",  "MainPage", 6 )
+      ::oFastReport:SetProperty(    "MasterData",  "Top", 200 )
+      ::oFastReport:SetProperty(    "MasterData",  "Height", 100 )
+      ::oFastReport:SetProperty(    "MasterData",  "StartNewPage", .T. )
+      ::oFastReport:SetObjProperty( "MasterData",  "DataSet", "Informe" )
+
+      ::oFastReport:AddBand(        "DetalleColumnas",   "MainPage", 7  )
+      ::oFastReport:SetProperty(    "DetalleColumnas",   "Top", 230 )
+      ::oFastReport:SetProperty(    "DetalleColumnas",   "Height", 28 )
+      ::oFastReport:SetObjProperty( "DetalleColumnas",   "DataSet", "Informe" )
+
+   end
+
+   ::AddVariable()
+
+   ::oFastReport:SetTitle(                "Diseñando : " + ::cReportType )
+   ::oFastReport:ReportOptions:SetName(   "Diseñando : " + ::cReportType )
+
+   ::oFastReport:PreviewOptions:SetMaximized( .T. )
+
+   ::oFastReport:SetTabTreeExpanded( 16, .F. )
+
+   ::oFastReport:DesignReport()
+
+   if !Empty( ::oFastReport )
+      ::oFastReport:DestroyFR()
+   end
+
+   if !Empty( cNombre )
+      ::LoadPersonalizado()
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_SaveReport( lSaveAs ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local cFile
+
+   if lSaveAs
+
+
+
+      if !::SaveReportAs()
+         Return ( .F. )
+      end
+
+      cFile       := ::cReportDirectory
+      cFile       += "\" + alltrim( ::cReportName ) + ".fr3"
+
+   else
+
+      cFile       := ::cReportFile
+
+   end
+
+
+
+   recursiveMakeDir( cOnlyPath( cFile ) )
+
+
+
+   ::oFastReport:SaveToFile( cFile )
+
+
+
+   if lSaveAs
+      ::ReBuildTree()
+      ::selectReportTree( ::cReportName )
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TFastReportInfGen_MoveReport( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   if ::oDbfInf:Seek( Padr( ::ClassName(), 50 ) + Upper( ::cReportName ) )
+
+      if ApoloMsgNoYes( ::oDbfInf:mModInf, "¿Desea mover este diseño al original?" )
+
+         ::oDbfInf:FieldPutByName( "mOrgInf", ::oDbfInf:mModInf )
+
+         msgInfo( "El informe ha sido movido al original." )
+
+      end
+
+   else
+
+      msgStop( Auth():Codigo() + Upper( ::cReportName ), "No encontrado" )
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_OpenTemporal( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local o
+   local lOpen
+   local oError
+   local oBlock
+
+   lOpen                := .T.
+
+   oBlock               := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+
+
+
+
+      ::oDbf:Create()
+
+      ::oDbf:Activate( .F., .F. )
+
+      for each o in ::aIndex
+         ::oDbf:AddTmpIndex( o[ 1 ], ::cFileIndx, o[ 2 ], o[ 3 ], o[ 4 ], o[ 5 ], o[ 6 ], , , , , .T. )
+      next
+
+   RECOVER USING oError
+
+      msgStop( ErrorMessage( oError ), "Imposible abrir todas las bases de datos" )
+
+      ::CloseFiles()
+
+      lOpen             := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TFastReportInfGen_ExtractOrder( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local n
+   local a
+   local c
+   local cExpresion
+   local cText
+   local cField         := ""
+   local cIndex         := ""
+   local lDescendente   := .F.
+
+   if !Empty( ::cInformeFastReport )
+
+      cText             := ::cInformeFastReport
+      cText             := aTextString( "<TfrxGroupHeader", ">", ::cInformeFastReport )
+
+      if !Empty( cText )
+
+         cText          := CutString( 'Condition="', '"', cText )
+
+         a              := HB_ATokens( cText, ";" )
+
+         if isArray( a )
+
+            for each cText in a
+
+               if !Empty( cText )
+
+                  cField      := StrTran( cText, "&#34", "" )
+
+                  if !Empty( cField )
+
+                     n        := aScan( ::aFields, {|a| a[ 6 ] == cField } )
+                     if n <> 0
+
+                        do case
+                           case ::aFields[ n, 2 ] == "C"
+                              cExpresion     := ::aFields[ n, 1 ]
+
+                           case ::aFields[ n, 2 ] == "N"
+                              cExpresion     := "Str( " +  ::aFields[ n, 1 ] + " )"
+                              lDescendente   := .T.
+
+                           case ::aFields[ n, 2 ] == "D"
+                              cExpresion     := "Dtos( " +  ::aFields[ n, 1 ] + " )"
+
+                        end
+
+                        if Empty( cIndex )
+                           cIndex   := cExpresion
+                        else
+                           cIndex   += " + " + cExpresion
+                        end
+
+                     end
+
+                  end
+
+               end
+
+            next
+
+         end
+
+      end
+
+      if !empty( cIndex )
+         ::oDbf:AddTmpIndex( "Grupos", ( ::cFileIndx ), ( cIndex ), , , , ( lDescendente ), , , , , .T. )
+      end
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_SaveReportAs( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local oDlg
+   local oNombre
+   local cNombre        := Padr( QuitBrackets( ::cReportName ), 200 )
+   local oBmpGeneral
+
+   oDlg = TDialog():New(,,,, "Nuevo " + Alltrim( Lower( ::cReportType ) ), "ADD_FAVORITOS",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+      oBmpGeneral := TBitmap():ReDefine( 500, "gc_form_plus2_48",, oDlg,,, .F., .F.,,, .F.,,, .T. )
+
+
+
+
+      oNombre := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, cNombre, cNombre:= u ) }, oDlg,,,,,,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TButton():ReDefine( 1, {||( ::EndSaveReportAs( cNombre, oDlg ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+      TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .F. )
+
+      oDlg:AddFastKey( 116, {|| ::EndSaveReportAs( cNombre, oDlg ) } )
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   oBmpGeneral:End()
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+static FUNCTION TFastReportInfGen_EndSaveReportAs( cNombre, oDlg ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   if Empty( cNombre )
+
+      MsgStop( "Nombre del informe no puede estar vacio" )
+
+   else
+
+      ::cReportName  := cNombre
+
+      oDlg:End( 1 )
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_LoadPersonalizado( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_Eliminar( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   if !::lInformesPersonalizados
+      MsgStop( "No se puede eliminar un informe básico" )
+      Return ( .T. )
+   end
+
+   if !::lLoadInfo()
+      msgStop( "No se ha podido cargar el nombre del informe." )
+      Return ( .F. )
+   end
+
+   if ApoloMsgNoYes( "¿Desea eliminar el informe " + ::cReportName + "?", "Confirme supresión" )
+
+
+
+      fErase( ::cReportFile )
+
+
+
+      ::oReportTree:End()
+
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TFastReportInfGen_lLoadInfo( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local oTreeInforme      := ::oTreeReporting:GetSelected()
+
+   if empty( oTreeInforme )
+      Return ( .F. )
+   end
+
+
+
+
+
+   if !hb_isHash( oTreeInforme:bAction )
+      Return ( .F. )
+   end
+
+
+   if hHasKey( oTreeInforme:bAction, "Title" ) .AND. hHasKey( oTreeInforme:bAction, "Type" ) .AND. hHasKey( oTreeInforme:bAction, "File" )
+
+      ::oReportTree        := oTreeInforme
+
+      ::cReportType        := oTreeInforme:bAction[ "Type" ]
+      ::cReportDirectory   := oTreeInforme:bAction[ "Directory" ]
+      ::cReportName        := oTreeInforme:bAction[ "Title" ]
+      ::cReportFile        := oTreeInforme:bAction[ "Directory" ] + "\" + oTreeInforme:bAction[ "File" ]
+
+      if hhaskey( oTreeInforme:bAction, "Options" )
+         ::hReportOptions  := oTreeInforme:bAction[ "Options" ]
+      else
+         ::hReportOptions  := nil
+      end
+
+      ::lUserDefine        := ( left( oTreeInforme:bAction[ "File" ], 1 ) == "[" )
+      ::lSummary           := ( upper( "\Estadisticas" ) $ upper( oTreeInforme:bAction[ "Directory" ] ) )
+
+   else
+
+      Return ( .F. )
+
+   end
+
+Return ( .T. )
+
+
+
+static FUNCTION TFastReportInfGen_lLoadReport( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::cInformeFastReport          := ""
+
+
+
+   if File( ::cReportFile )
+      ::cInformeFastReport       := memoread( ::cReportFile )
+   end
+
+RETURN ( !Empty( ::cInformeFastReport ) )
+
+
+
+static FUNCTION TFastReportInfGen_GetFieldByDescription( cDescription ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local nPos
+   local cField
+
+   nPos                 := aScan( ::oDbf:aTField, { | oFld | oFld:cComment == cDescription } )
+   if ( nPos <> 0 )
+      cField            := ::oDbf:aTField[ nPos ]:cName
+   end
+
+RETURN ( cField )
+
+
+
+static FUNCTION TFastReportInfGen_DlgExportDocument( oWndBrw ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local oDlg
+   local oGetFile
+   local cGetFile
+   local oTreeInforme
+
+
+
+
+
+   oTreeInforme         := ::oTreePersonalizados:GetSelected()
+
+   if IsArray( oTreeInforme:aItems ) .AND. !Empty( oTreeInforme:aItems )
+      msgStop( "Seleccione el nodo inferior." )
+      Return ( Self )
+   end
+
+   if IsChar( oTreeInforme:cPrompt ) .AND. !Empty( oTreeInforme:cPrompt )
+      ::cReportName     := Rtrim( oTreeInforme:cPrompt )
+   else
+      msgStop( "No se ha podido cargar el nombre del informe." )
+      Return ( Self )
+   end
+
+   if IsChar( oTreeInforme:bAction ) .AND. !Empty( oTreeInforme:bAction )
+      ::cReportType       := Rtrim( oTreeInforme:bAction )
+   else
+      Return ( Self )
+   end
+
+   if ::oDbfPersonalizado:Seek( ::cReportKey() )
+      if Empty( ::oDbfPersonalizado:mModInf )
+         msgStop( "El informe esta vacio." )
+         Return ( Self )
+      end
+   else
+      msgStop( "No se ha encontrado el informe." )
+      Return ( Self )
+   end
+
+
+
+
+
+   cGetFile             := Padr( FullCurDir() + "Informe.Dat", 100 )
+
+   oDlg = TDialog():New(,,,, "Exportar documento", "ExpDocs",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+      TSay():ReDefine( 100, {|| ::cReportType}, oDlg,,,, .F.,, .F., .F., )
+
+
+
+
+
+      oGetFile := TGetHlp():ReDefine( 110, { | u | If( PCount()==0, cGetFile, cGetFile:= u ) }, oDlg,,,,,,,,, .F.,,, .F., .F.,,,,, {|Self|( oGetFile:cText( Padr( cGetFile( "*.Dat", "Seleccion de fichero" ), 100 ) ) )}, nil, "Folder",, )
+
+
+
+
+      TButton():ReDefine( 1, {||( oDlg:Disable(), ::ExportDocument( cGetFile ), oDlg:Enable() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+        TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .F. )
+
+   oDlg:AddFastKey( 116, {|| oDlg:Disable(), if( ::ExportDocument( cGetFile ), oDlg:Enable():End(), oDlg:Enable() ) } )
+
+    oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+Return ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_ExportDocument( cGetFile ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local nHandle
+   local lErrors  := .F.
+
+   ( ::oDbfPersonalizado:nArea )->( __dbCopy( cPatTmp() + "Exp.Dbf", , {|| Upper( ( ::oDbfPersonalizado:nArea )->cClsInf ) + Upper( Rtrim( ( ::oDbfPersonalizado:nArea )->cNomInf ) ) == Padr( ::ClassName(), 50 ) + Upper( Rtrim( ::cReportName ) ) }, , , , , cLocalDriver() ) )
+
+   nHandle        := fCreate( cGetFile )
+   if nHandle <> -1
+
+      if fClose( nHandle ) .AND. ( fErase( cGetFile ) == 0 )
+
+         hb_ZipFile( cGetFile, cPatTmp() + "Exp.Dbf", 9 )
+         hb_ZipFile( cGetFile, cPatTmp() + "Exp.Fpt", 9 )
+
+      else
+
+         lErrors  := .T.
+
+      end
+
+   end
+
+   fErase( cPatTmp() + "Exp.Dbf" )
+   fErase( cPatTmp() + "Exp.Fpt" )
+
+   if !lErrors
+      msgInfo( "Documento " + Rtrim( cGetFile ) + " exportado satisfactoriamente." )
+   else
+      msgStop( "Error en la creación de fichero." )
+   end
+
+Return ( !lErrors )
+
+
+
+static FUNCTION TFastReportInfGen_DlgImportDocument( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local oDlg
+   local oGetFile
+   local cGetFile := Padr( FullCurDir() + "Exp.Dat", 100 )
+   local oSayProc
+   local cSayProc := ""
+
+   oDlg = TDialog():New(,,,,, "ImpDocs",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+      oGetFile := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, cGetFile, cGetFile:= u ) }, oDlg,,,,,,,,, .F.,,, .F., .F.,,,,, {|Self|( oGetFile:cText( Padr( cGetFile( "*.Dat", "Selección de fichero" ), 100 ) ) )}, nil, "Folder",, )
+
+
+
+      oSayProc := TSay():ReDefine( 110, {|| cSayProc}, oDlg,,,, .F.,, .F., .F., )
+
+
+
+
+      TButton():ReDefine( 1, {||( oDlg:Disable(), ::ImportDocument( cGetFile, oSayProc ), oDlg:Enable() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+        TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .F. )
+
+   oDlg:AddFastKey( 116, {|| oDlg:Disable(), ::ImportDocument( cGetFile, oSayProc ), oDlg:Enable() } )
+
+    oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+Return ( nil  )
+
+
+
+static FUNCTION TFastReportInfGen_ImportDocument( cGetFile, oSayProc ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local aFiles
+   local oBlock
+   local oError
+
+   cGetFile       := Rtrim( cGetFile )
+
+   if !File( cGetFile )
+      MsgStop( "El fichero " + cGetFile + " no existe." )
+      Return .F.
+   end
+
+   aFiles         := Hb_GetFilesInZip( cGetFile )
+
+   if !hb_UnZipFile( cGetFile, , , , cPatTmp(), aFiles )
+      MsgStop( "No se ha descomprimido el fichero " + cGetFile + ".", "Error" )
+      Return .F.
+   end
+   hb_gcAll()
+
+   if !File( cPatTmp() + "Exp.Dbf" ) .OR. !File( cPatTmp() + "Exp.Fpt"   )
+      MsgStop( "Faltan ficheros para importar el documento." )
+      Return .F.
+   end
+
+   oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      oSayProc:SetText( "Importando documento" )
+
+      ::oExt := DbfServer( "Exp.Dbf", ):NewOpen( "Exp.Dbf",, ( cLocalDriver() ),, ( cPatTmp() ), .F., .F., .F., .F. ) ; ::oExt:AddBag( ) ; ::oExt:AddBag( ) ; ::oExt:AutoIndex()
+
+      while !( ::oExt:Eof() )
+
+         if Rtrim( ::oExt:cClsInf ) == Rtrim( ::ClassName() )
+
+            if ::oDbfPersonalizado:Seek( Upper( ::oExt:cClsInf ) + Upper( ::oExt:cNomInf ) )
+               ::oDbfPersonalizado:Delete()
+            end
+
+            ::oDbfPersonalizado:AppendFromObject( ::oExt )
+
+         else
+
+            MsgStop( "El documento a importar no es del mismo tipo." )
+
+         end
+
+         ::oExt:Skip()
+
+      end
+
+      oSayProc:SetText( "Documento importado satisfactoriamente." )
+
+   RECOVER USING oError
+
+      msgStop( "Error importando documento." + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+   end
+
+   ErrorBlock( oBlock )
+
+   if !Empty( ::oExt )
+      ::oExt:End()
+   end
+
+   fErase( cPatTmp() + "Exp.Dbf" )
+   fErase( cPatTmp() + "Exp.Fpt" )
+
+Return ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_BuildNode( aReports, oTree, lLoadFile ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local hHash
+   local oNode
+   local aFile
+   local cType
+   local aDirectory
+
+   for each hHash in aReports
+
+      if !Empty( hHash )
+
+         oNode          := oTree:Add( hHash[ "Title" ], hHash[ "Image" ], hHash )
+
+         if lLoadFile .AND. hHasKey( hHash, "Directory" )
+
+            if !::lInformesPersonalizados
+
+               ::AddNode( cPatReporting() + hHash[ "Directory" ], hHash, oNode )
+            else
+
+               ::AddNode( cPatUserReporting() + hHash[ "Directory" ], hHash, oNode, .T. )
+            end
+
+         end
+
+         if hHasKey( hHash, "Subnode" )
+            ::BuildNode( hHash[ "Subnode" ], oNode, lLoadFile )
+            oNode:Expand()
+         end
+
+      end
+
+   next
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_nRemesaAgentes( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local cExpHead
+
+   if Empty( ::oRemAgeT )
+      ::oRemAgeT := DbfServer( "RemAgeT.DBF", "RemAgeT" ):NewOpen( "RemAgeT.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oRemAgeT:AddBag( "RemAgeT.CDX" ) ; ::oRemAgeT:AddBag( ) ; ::oRemAgeT:AutoIndex()
+   end
+
+   ::oRemAgeT:OrdSetFocus( "dFecCob" )
+
+   cExpHead          := 'dFecCob >= Ctod( "' + Dtoc( ::dIniInf ) + '" ) .and. dFecCob <= Ctod( "' + Dtoc( ::dFinInf ) + '" )'
+
+   ::oRemAgeT:AddTmpIndex( Auth():Codigo(), GetFileNoExt( ::oRemAgeT:cFile ), ::oRemAgeT:OrdKey(), ( cExpHead ), , , , , , , , .T. )
+
+   ::oMtrInf:cText   := "Procesando liquidaciones de agentes"
+   ::oMtrInf:SetTotal( ::oRemAgeT:OrdKeyCount() )
+
+   ::oRemAgeT:GoTop()
+
+   while !::lBreak .AND. !::oRemAgeT:Eof()
+
+      if ( ::oRemAgeT:cCodAge >= ::oGrupoAgente:Cargo:Desde .AND. ::oRemAgeT:cCodAge <= ::oGrupoAgente:Cargo:Hasta )
+         ::nTotalRemesasAgentes  += ::oRemAgeT:nTotCob
+      end
+
+      ::oRemAgeT:Skip()
+
+      ::oMtrInf:AutoInc()
+
+   end
+
+   ::oRemAgeT:IdxDelete( Auth():Codigo(), GetFileNoExt( ::oRemAgeT:cFile ) )
+
+RETURN ( ::nTotalRemesasAgentes )
+
+
+
+static FUNCTION TFastReportInfGen_nFacturaClientes( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( 0 )
+
+
+
+static FUNCTION TFastReportInfGen_nPagosClientes( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( 0 )
+
+
+
+static FUNCTION TFastReportInfGen_SyncAllDbf( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   if Empty( ::oDbfInf )
+      ::DefineReport()
+   end
+
+   lCheckDbf( ::oDbfInf )
+
+RETURN ( Self )
+
+
+
+
+
+static FUNCTION TFastReportInfGen_FastReportSATCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ( D():SATClientes( ::nView ) )->( ordsetfocus( "iNumSat" ) )
+
+   ::oFastReport:SetWorkArea(       "SAT de clientes", ( D():SATClientes( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "SAT de clientes", cItemsToReport( aItmSatCli() ) )
+
+   ( D():SATClientesLineas( ::nView ) )->( ordsetfocus( "iNumSat" ) )
+
+   ::oFastReport:SetWorkArea(       "Lineas SAT de clientes", ( D():SATClientesLineas( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Lineas SAT de clientes", cItemsToReport( aColSatCli() ) )
+
+   ::oFastReport:SetMasterDetail(   "Informe", "SAT de clientes",          {|| ::idDocumento() } )
+   ::oFastReport:SetMasterDetail(   "Informe", "Lineas SAT de clientes",   {|| ::IdDocumentoLinea() } )
+
+   ::oFastReport:SetResyncPair(     "Informe", "SAT de clientes" )
+
+   ::oFastReport:SetResyncPair(     "Informe", "Lineas SAT de clientes" )
+
+RETURN ( Self )
+
+
+
+
+
+static FUNCTION TFastReportInfGen_FastReportPresupuestoCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ( D():PresupuestosClientes( ::nView ) )->( ordsetfocus( "iNumPre" ) )
+
+   ::oFastReport:SetWorkArea(       "Presupuestos de clientes", ( D():PresupuestosClientes( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Presupuestos de clientes", cItemsToReport( aItmPreCli() ) )
+
+   ( D():PresupuestosClientesLineas( ::nView ) )->( ordsetfocus( "iNumPre" ) )
+   ::oFastReport:SetWorkArea(       "Lineas presupuestos de clientes", ( D():PresupuestosClientesLineas( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Lineas presupuestos de clientes", cItemsToReport( aColPreCli() ) )
+
+   ::oFastReport:SetMasterDetail(   "Informe", "Presupuestos de clientes",          {|| ::idDocumento() } )
+   ::oFastReport:SetMasterDetail(   "Informe", "Lineas presupuestos de clientes",   {|| ::IdDocumentoLinea() } )
+
+   ::oFastReport:SetResyncPair(     "Informe", "Presupuestos de clientes" )
+   ::oFastReport:SetResyncPair(     "Informe", "Lineas presupuestos de clientes" )
+
+RETURN ( Self )
+
+
+
+
+
+static FUNCTION TFastReportInfGen_FastReportPedidoCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ( D():PedidosClientes( ::nView ) )->( ordsetfocus( "iNumPed" ) )
+
+   ::oFastReport:SetWorkArea(       "Pedidos de clientes", ( D():PedidosClientes( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Pedidos de clientes", cItemsToReport( aItmPedCli() ) )
+
+   ( D():PedidosClientesLineas( ::nView ) )->( ordsetfocus( "iNumPed" ) )
+
+   ::oFastReport:SetWorkArea(       "Lineas pedidos de clientes", ( D():PedidosClientesLineas( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Lineas pedidos de clientes", cItemsToReport( aColPedCli() ) )
+
+   ::oFastReport:SetMasterDetail(   "Informe", "Pedidos de clientes",         {|| ::idDocumento() } )
+   ::oFastReport:SetMasterDetail(   "Informe", "Lineas pedidos de clientes",  {|| ::IdDocumentoLinea() } )
+
+   ::oFastReport:SetResyncPair(     "Informe", "Pedidos de clientes" )
+   ::oFastReport:SetResyncPair(     "Informe", "Lineas pedidos de clientes" )
+
+RETURN ( Self )
+
+
+
+
+
+static FUNCTION TFastReportInfGen_FastReportAlbaranCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ( D():AlbaranesClientes( ::nView ) )->( ordsetfocus( "iNumAlb" ) )
+
+   ::oFastReport:SetWorkArea(       "Albaranes de clientes", ( D():AlbaranesClientes( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Albaranes de clientes", cItemsToReport( aItmAlbCli() ) )
+
+   ( D():AlbaranesClientesLineas( ::nView ) )->( ordSetFocus( "iNumAlb" ) )
+
+   ::oFastReport:SetWorkArea(       "Lineas albaranes de clientes", ( D():AlbaranesClientesLineas( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Lineas albaranes de clientes", cItemsToReport( aColAlbCli() ) )
+
+   ::oFastReport:SetMasterDetail(   "Informe", "Albaranes de clientes",          {|| ::idDocumento() } )
+   ::oFastReport:SetMasterDetail(   "Informe", "Lineas albaranes de clientes",   {|| ::IdDocumentoLinea() } )
+
+   ::oFastReport:SetResyncPair(     "Informe", "Albaranes de clientes" )
+   ::oFastReport:SetResyncPair(     "Informe", "Lineas albaranes de clientes" )
+
+RETURN ( Self )
+
+
+
+
+
+static FUNCTION TFastReportInfGen_FastReportFacturaCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ( D():FacturasClientes( ::nView ) )->( ordsetfocus( "iNumFac" ) )
+
+   ::oFastReport:SetWorkArea(       "Facturas de clientes", ( D():FacturasClientes( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Facturas de clientes", cItemsToReport( aItmFacCli() ) )
+
+   ( D():FacturasClientesLineas( ::nView ) )->( ordsetfocus( "iNumFac" ) )
+
+   ::oFastReport:SetWorkArea(       "Lineas facturas de clientes", ( D():FacturasClientesLineas( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Lineas facturas de clientes", cItemsToReport( aColFacCli() ) )
+
+   ::oFastReport:SetMasterDetail(   "Informe", "Facturas de clientes",        {|| ::idDocumento() } )
+   ::oFastReport:SetMasterDetail(   "Informe", "Lineas facturas de clientes", {|| ::IdDocumentoLinea() } )
+
+   ::oFastReport:SetResyncPair(     "Informe", "Facturas de clientes" )
+   ::oFastReport:SetResyncPair(     "Informe", "Lineas facturas de clientes" )
+
+RETURN ( Self )
+
+
+
+
+
+static FUNCTION TFastReportInfGen_FastReportFacturaRectificativa( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ( D():FacturasRectificativas( ::nView ) )->( ordsetfocus( "iNumFac" ) )
+
+   ::oFastReport:SetWorkArea(       "Facturas rectificativas de clientes", ( D():FacturasRectificativas( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Facturas rectificativas de clientes", cItemsToReport( aItmFacRec() ) )
+
+   ( D():FacturasRectificativasLineas( ::nView ) )->( ordsetfocus( "iNumFac" ) )
+
+   ::oFastReport:SetWorkArea(       "Lineas facturas rectificativas de clientes", ( D():FacturasRectificativasLineas( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Lineas facturas rectificativas de clientes", cItemsToReport( aColFacRec() ) )
+
+   ::oFastReport:SetMasterDetail(   "Informe", "Facturas rectificativas de clientes",        {|| ::idDocumento() } )
+   ::oFastReport:SetMasterDetail(   "Informe", "Lineas facturas rectificativas de clientes", {|| ::IdDocumentoLinea() } )
+
+   ::oFastReport:SetResyncPair(     "Informe", "Facturas rectificativas de clientes" )
+   ::oFastReport:SetResyncPair(     "Informe", "Lineas facturas rectificativas de clientes" )
+
+RETURN ( Self )
+
+
+
+
+
+static FUNCTION TFastReportInfGen_FastReportTicket( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ( D():Tikets( ::nView ) )->( ordsetfocus( "iNumTik" ) )
+
+   ::oFastReport:SetWorkArea(       "Tickets de clientes", ( D():Tikets( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Tickets de clientes", cItemsToReport( aItmTik() ) )
+
+   ( D():TiketsLineas( ::nView ) )->( ordsetfocus( "iNumTik" ) )
+
+   ::oFastReport:SetWorkArea(       "Lineas tickets de clientes", ( D():TiketsLineas( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Lineas tickets de clientes", cItemsToReport( aColTik() ) )
+
+   ::oFastReport:SetMasterDetail(   "Informe", "Tickets de clientes",         {|| ::idDocumento() } )
+   ::oFastReport:SetMasterDetail(   "Informe", "Lineas tickets de clientes",  {|| ::IdDocumentoLinea() } )
+
+   ::oFastReport:SetResyncPair(     "Informe", "Tickets de clientes" )
+   ::oFastReport:SetResyncPair(     "Informe", "Lineas tickets de clientes" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_FastReportRecibosCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ( D():FacturasClientesCobros( ::nView ) )->( ordsetfocus( "iNumFac" ) )
+
+   ::oFastReport:SetWorkArea(       "Recibos de clientes", ( D():FacturasClientesCobros( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Recibos de clientes", cItemsToReport( aItmRecCli() ) )
+
+   ::oFastReport:SetMasterDetail(   "Informe", "Recibos de clientes",   {|| ::idDocumento() + ::oDbf:cNumRec } )
+   ::oFastReport:SetResyncPair(     "Informe", "Recibos de clientes" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_FastReportCobrosTickets( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ( D():TiketsCobros( ::nView ) )->( ordsetfocus( "iNumFac" ) )
+
+   ::oFastReport:SetWorkArea(       "Cobros de tickets", ( D():TiketsCobros( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Cobros de tickets", cItemsToReport( aPgoTik() ) )
+
+   ::oFastReport:SetMasterDetail(   "Informe", "Cobros de tickets",   {|| ::idDocumento() + ::oDbf:cNumRec } )
+   ::oFastReport:SetResyncPair(     "Informe", "Cobros de tickets" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_FastReportRecibosProveedor( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ( D():FacturasProveedoresPagos( ::nView ) )->( ordsetfocus( "iNumFac" ) )
+
+   ::oFastReport:SetWorkArea(       "Recibos de proveedor", ( D():FacturasProveedoresPagos( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Recibos de proveedor", cItemsToReport( aItmRecPrv() ) )
+
+   ::oFastReport:SetWorkArea(       "Facturas de proveedor", ( D():FacturasProveedores( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Facturas de proveedor", cItemsToReport( aItmFacPrv() ) )
+
+   ::oFastReport:SetMasterDetail(   "Informe", "Recibos de proveedor",   {|| ::idDocumento() + ::oDbf:cNumRec } )
+   ::oFastReport:SetMasterDetail(   "Informe", "Facturas de proveedor",  {|| ::oDbf:cSerDoc + ::oDbf:cNumDoc + ::oDbf:cSufDoc } )
+
+   ::oFastReport:SetResyncPair(     "Informe", "Recibos de proveedor" )
+   ::oFastReport:SetResyncPair(     "Informe", "Facturas de proveedor" )
+
+RETURN ( Self )
+
+
+
+
+
+
+
+static FUNCTION TFastReportInfGen_FastReportParteProduccion( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ( D():PartesProduccion( ::nView ) )->( OrdSetFocus( "iNumOrd" ) )
+
+   ::oFastReport:SetWorkArea(       "Partes de producción", ( D():PartesProduccion( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Partes de producción", cObjectsToReport( TProduccion():DefineFiles() ) )
+
+   ( D():PartesProduccionMaterial( ::nView ) )->( OrdSetFocus( "iNumOrd" ) )
+
+   ::oFastReport:SetWorkArea(       "Lineas partes de producción", ( D():PartesProduccionMaterial( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Lineas partes de producción", cObjectsToReport( TDetProduccion():DefineFiles() ) )
+
+   ( D():PartesProduccionMateriaPrima( ::nView ) )->( OrdSetFocus( "iNumOrd" ) )
+
+   ::oFastReport:SetWorkArea(       "Materia prima", ( D():PartesProduccionMateriaPrima( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Materia prima", cObjectsToReport( TDetMaterial():DefineFiles() ) )
+
+   ::oFastReport:SetMasterDetail(   "Informe", "Partes de producción",              {|| ::idDocumento() } )
+   ::oFastReport:SetMasterDetail(   "Informe", "Lineas partes de producción",       {|| ::IdDocumentoLinea() } )
+   ::oFastReport:SetMasterDetail(   "Informe", "Materia prima",                     {|| ::IdDocumentoLinea() } )
+
+   ::oFastReport:SetResyncPair(     "Informe", "Partes de producción" )
+   ::oFastReport:SetResyncPair(     "Informe", "Lineas partes de producción" )
+   ::oFastReport:SetResyncPair(     "Informe", "Materia prima" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_FastReportPedidoProveedor( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ( D():PedidosProveedores( ::nView ) )->( ordsetfocus( "iNumPed" ) )
+
+   ::oFastReport:SetWorkArea(       "Pedidos de proveedor", ( D():PedidosProveedores( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Pedidos de proveedor", cItemsToReport( aItmPedPrv() ) )
+
+   ( D():PedidosProveedoresLineas( ::nView ) )->( ordsetfocus( "iNumPed" ) )
+
+   ::oFastReport:SetWorkArea(       "Lineas pedidos de proveedor", ( D():PedidosProveedoresLineas( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Lineas pedidos de proveedor", cItemsToReport( aColPedPrv() ) )
+
+   ::oFastReport:SetMasterDetail(   "Informe", "Pedidos de proveedor",               {|| ::idDocumento() } )
+   ::oFastReport:SetMasterDetail(   "Informe", "Lineas pedidos de proveedor",        {|| ::IdDocumentoLinea() } )
+
+   ::oFastReport:SetResyncPair(     "Informe", "Pedidos de proveedor" )
+   ::oFastReport:SetResyncPair(     "Informe", "Lineas pedidos de proveedor" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_FastReportAlbaranProveedor( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ( D():AlbaranesProveedores( ::nView ) )->( ordsetfocus( "iNumAlb" ) )
+
+   ::oFastReport:SetWorkArea(       "Albaranes de proveedor", ( D():AlbaranesProveedores( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Albaranes de proveedor", cItemsToReport( aItmAlbPrv() ) )
+
+   ( D():AlbaranesProveedoresLineas( ::nView ) )->( ordsetfocus( "iNumAlb" ) )
+
+   ::oFastReport:SetWorkArea(       "Lineas albaranes de proveedor", ( D():AlbaranesProveedoresLineas( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Lineas albaranes de proveedor", cItemsToReport( aColAlbPrv() ) )
+
+   ::oFastReport:SetMasterDetail(   "Informe", "Albaranes de proveedor",               {|| ::idDocumento() } )
+   ::oFastReport:SetMasterDetail(   "Informe", "Lineas albaranes de proveedor",        {|| ::IdDocumentoLinea() } )
+
+   ::oFastReport:SetResyncPair(     "Informe", "Albaranes de proveedor" )
+   ::oFastReport:SetResyncPair(     "Informe", "Lineas albaranes de proveedor" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_FastReportFacturaProveedor( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ( D():FacturasProveedores( ::nView ) )->( OrdSetFocus( "iNumFac" ) )
+
+   ::oFastReport:SetWorkArea(       "Facturas de proveedor", ( D():FacturasProveedores( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Facturas de proveedor", cItemsToReport( aItmFacPrv() ) )
+
+   ( D():FacturasProveedoresLineas( ::nView ) )->( OrdSetFocus( "iNumFac" ) )
+
+   ::oFastReport:SetWorkArea(       "Lineas facturas de proveedor", ( D():FacturasProveedoresLineas( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Lineas facturas de proveedor", cItemsToReport( aColFacPrv() ) )
+
+   ::oFastReport:SetMasterDetail(   "Informe", "Facturas de proveedor",               {|| ::idDocumento() } )
+   ::oFastReport:SetMasterDetail(   "Informe", "Lineas facturas de proveedor",        {|| ::IdDocumentoLinea() } )
+
+   ::oFastReport:SetResyncPair(     "Informe", "Facturas de proveedor" )
+   ::oFastReport:SetResyncPair(     "Informe", "Lineas facturas de proveedor" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_FastReportRectificativaProveedor( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ( D():FacturasRectificativasProveedores( ::nView ) )->( OrdSetFocus( "iNumRct" ) )
+
+   ::oFastReport:SetWorkArea(       "Rectificativas de proveedor", ( D():FacturasRectificativasProveedores( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Rectificativas de proveedor", cItemsToReport( aItmRctPrv() ) )
+
+   ( D():FacturasRectificativasProveedoresLineas( ::nView ) )->( OrdSetFocus( "iNumRct" ) )
+
+   ::oFastReport:SetWorkArea(       "Lineas rectificativas de proveedor", ( D():FacturasRectificativasProveedoresLineas( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Lineas rectificativas de proveedor", cItemsToReport( aColRctPrv() ) )
+
+   ::oFastReport:SetMasterDetail(   "Informe", "Rectificativas de proveedor",               {|| ::idDocumento() } )
+   ::oFastReport:SetMasterDetail(   "Informe", "Lineas rectificativas de proveedor",        {|| ::IdDocumentoLinea() } )
+
+   ::oFastReport:SetResyncPair(     "Informe", "Rectificativas de proveedor" )
+   ::oFastReport:SetResyncPair(     "Informe", "Lineas rectificativas de proveedor" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_FastReportStock( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:SetWorkArea(       "Artículos almacenes", ( D():ArticuloStockAlmacenes( ::nView ) )->( select() ) )
+   ::oFastReport:SetFieldAliases(   "Artículos almacenes", cItemsToReport( aItmStockaAlmacenes() ) )
+
+   ::oFastReport:SetMasterDetail(   "Informe", "Artículos almacenes",   {|| ::idArticuloAlmacen() } )
+
+   ::oFastReport:SetResyncPair(     "Informe", "Artículos almacenes" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableArticulos( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(    "Campos extra",     "Primer campo extra",           "CallHbFunc( 'oTinfGen', ['ValorCampoExtra', 'Artículos', '001'])" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableSATCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(    "SAT clientes",     "Total base SAT clientes",            "CallHbFunc( 'oTinfGen', ['nBaseSATClientes'])"    )
+   ::oFastReport:AddVariable(    "SAT clientes",     "Total " + cImp() + " SAT clientes",  "CallHbFunc( 'oTinfGen', ['nIVASATClientes'])"     )
+   ::oFastReport:AddVariable(    "SAT clientes",     "Total recargo SAT clientes",         "CallHbFunc( 'oTinfGen', ['nRecargoSATClientes'])" )
+   ::oFastReport:AddVariable(    "SAT clientes",     "Total SAT clientes",                 "CallHbFunc( 'oTinfGen', ['nTotalSATClientes'])"   )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableLineasSATCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(    "Lineas de SAT",    "Detalle del artículo",                        "CallHbFunc( 'oTinfGen', ['cDetalleSATClientes'])"                       )
+   ::oFastReport:AddVariable(    "Lineas de SAT",    "Total unidades artículo",                     "CallHbFunc( 'oTinfGen', ['nTotalUnidadesSATClientes'])"                 )
+   ::oFastReport:AddVariable(    "Lineas de SAT",    "Precio unitario del artículo",                "CallHbFunc( 'oTinfGen', ['nPrecioUnitarioSATClientes'])"                )
+   ::oFastReport:AddVariable(    "Lineas de SAT",    "Total línea de SAT",                          "CallHbFunc( 'oTinfGen', ['nTotalLineaSATClientes'])"                    )
+   ::oFastReport:AddVariable(    "Lineas de SAT",    "Total peso por línea",                        "CallHbFunc( 'oTinfGen', ['nTotalPesoLineaSATClientes'])"                )
+   ::oFastReport:AddVariable(    "Lineas de SAT",    "Total impuestos incluidos línea del SAT",     "CallHbFunc( 'oTinfGen', ['nTotalImpuestosIncluidosLineaSATClientes'])"  )
+   ::oFastReport:AddVariable(    "Lineas de SAT",    "Total  IVA línea del SAT",                    "CallHbFunc( 'oTinfGen', ['nTotalIVALineaSATClientes'])"                 )
+
+   ::oFastReport:AddVariable(    "Lineas de SAT",    "Total descuento porcentual artículo",         "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPorcentualLineaSATClientes'])" )
+   ::oFastReport:AddVariable(    "Lineas de SAT",    "Total descuento promocional artículo",        "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPromocionalLineaSATClientes'])")
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariablePresupuestoCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(    "Presupuestos clientes",   "Total base presupuestos clientes",             "CallHbFunc( 'oTinfGen', ['nBasePresupuestosClientes'])"    )
+   ::oFastReport:AddVariable(    "Presupuestos clientes",   "Total " + cImp() + " presupuestos clientes",   "CallHbFunc( 'oTinfGen', ['nIVAPresupuestosClientes'])"     )
+   ::oFastReport:AddVariable(    "Presupuestos clientes",   "Total recargo presupuestos clientes",          "CallHbFunc( 'oTinfGen', ['nRecargoPresupuestosClientes'])" )
+   ::oFastReport:AddVariable(    "Presupuestos clientes",   "Total presupuestos clientes",                  "CallHbFunc( 'oTinfGen', ['nTotalPresupuestosClientes'])"   )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableLineasPresupuestoCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(     "Lineas de presupuestos",   "Detalle del artículo",                              "CallHbFunc( 'oTInfGen', ['cDetallePresupuestoClientes'])"                       )
+   ::oFastReport:AddVariable(     "Lineas de presupuestos",   "Total unidades artículo",                           "CallHbFunc( 'oTInfGen', ['nTotalUnidadesPresupuestosClientes'])"                )
+   ::oFastReport:AddVariable(     "Lineas de presupuestos",   "Precio unitario del artículo",                      "CallHbFunc( 'oTInfGen', ['nPrecioUnitarioPresupuestosClientes'])"               )
+   ::oFastReport:AddVariable(     "Lineas de presupuestos",   "Total línea de presupuesto",                        "CallHbFunc( 'oTInfGen', ['nTotalLineaPresupuestosClientes'])"                   )
+   ::oFastReport:AddVariable(     "Lineas de presupuestos",   "Total peso por línea",                              "CallHbFunc( 'oTInfGen', ['nTotalPesoLineaPresupuestosClientes'])"               )
+   ::oFastReport:AddVariable(     "Lineas de presupuestos",   "Total impuestos incluidos línea del presupuesto",   "CallHbFunc( 'oTInfGen', ['nTotalImpuestosIncluidosLineaPresupuestosClientes'])" )
+   ::oFastReport:AddVariable(     "Lineas de presupuestos",   "Total IVA línea del presupuesto",                   "CallHbFunc( 'oTInfGen', ['nTotalIVALineaPresupuestosClientes'])"                )
+
+   ::oFastReport:AddVariable(     "Lineas de presupuestos",   "Total descuento porcentual artículo",               "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPorcentualLineaPresupuestosClientes'])" )
+   ::oFastReport:AddVariable(     "Lineas de presupuestos",   "Total descuento promocional artículo",              "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPromocionalLineaPresupuestosClientes'])")
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariablePedidoCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(    "Pedidos clientes",        "Total base pedidos clientes",            "CallHbFunc( 'oTinfGen', ['nBasePedidosClientes'])"    )
+   ::oFastReport:AddVariable(    "Pedidos clientes",        "Total " + cImp() + " pedidos clientes",  "CallHbFunc( 'oTinfGen', ['nIVAPedidosClientes'])"     )
+   ::oFastReport:AddVariable(    "Pedidos clientes",        "Total recargo pedidos clientes",         "CallHbFunc( 'oTinfGen', ['nRecargoPedidosClientes'])" )
+   ::oFastReport:AddVariable(    "Pedidos clientes",        "Total pedidos clientes",                 "CallHbFunc( 'oTinfGen', ['nTotalPedidosClientes'])"   )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableLineasPedidoCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+   ::oFastReport:AddVariable(     "Lineas de pedidos",   "Detalle del artículo",                         "CallHbFunc( 'oTInfGen', ['cDetallePedidosClientes'])"                      )
+   ::oFastReport:AddVariable(     "Lineas de pedidos",   "Total unidades artículo",                      "CallHbFunc( 'oTInfGen', ['nTotalUnidadesPedidosClientes'])"                )
+   ::oFastReport:AddVariable(     "Lineas de pedidos",   "Precio unitario del artículo",                 "CallHbFunc( 'oTInfGen', ['nPrecioUnitarioPedidosClientes'])"               )
+   ::oFastReport:AddVariable(     "Lineas de pedidos",   "Total línea de pedido",                        "CallHbFunc( 'oTInfGen', ['nTotalLineaPedidosClientes'])"                   )
+   ::oFastReport:AddVariable(     "Lineas de pedidos",   "Total peso por línea",                         "CallHbFunc( 'oTInfGen', ['nTotalPesoLineaPedidosClientes'])"               )
+   ::oFastReport:AddVariable(     "Lineas de pedidos",   "Total impuestos incluidos línea del pedido",   "CallHbFunc( 'oTInfGen', ['nTotalImpuestosIncluidosLineaPedidosClientes'])" )
+   ::oFastReport:AddVariable(     "Lineas de pedidos",   "Total IVA línea del pedido",                   "CallHbFunc( 'oTInfGen', ['nTotalIVALineaPedidosClientes'])"                )
+
+   ::oFastReport:AddVariable(     "Lineas de pedidos",   "Total descuento porcentual artículo",          "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPorcentualLineaPedidosClientes'])" )
+   ::oFastReport:AddVariable(     "Lineas de pedidos",   "Total descuento promocional artículo",         "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPromocionalLineaPedidosClientes'])")
+   ::oFastReport:AddVariable(     "Lineas de pedidos",   "Total comision agente",                        "CallHbFunc( 'oTinfGen', ['nTotalComisionAgentes'])")
+
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableAlbaranCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(    "Albaranes clientes",      "Total base albaranes clientes",          "CallHbFunc( 'oTinfGen', ['nBaseAlbaranesClientes'])"    )
+   ::oFastReport:AddVariable(    "Albaranes clientes",      "Total " + cImp() + " albaranes clientes","CallHbFunc( 'oTinfGen', ['nIVAAlbaranesClientes'])"     )
+   ::oFastReport:AddVariable(    "Albaranes clientes",      "Total recargo albaranes clientes",       "CallHbFunc( 'oTinfGen', ['nRecargoAlbaranesClientes'])" )
+   ::oFastReport:AddVariable(    "Albaranes clientes",      "Total albaranes clientes",               "CallHbFunc( 'oTinfGen', ['nTotalAlbaranesClientes'])"   )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableLineasAlbaranCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(     "Lineas de albaranes",   "Detalle del artículo",                         "CallHbFunc( 'oTInfGen', ['cDetalleAlbaranesClientes'])"                      )
+   ::oFastReport:AddVariable(     "Lineas de albaranes",   "Total unidades artículo",                      "CallHbFunc( 'oTInfGen', ['nTotalUnidadesAlbaranesClientes'])"                )
+   ::oFastReport:AddVariable(     "Lineas de albaranes",   "Precio unitario del artículo",                 "CallHbFunc( 'oTInfGen', ['nPrecioUnitarioAlbaranesClientes'])"               )
+   ::oFastReport:AddVariable(     "Lineas de albaranes",   "Total línea de albaran",                       "CallHbFunc( 'oTInfGen', ['nTotalLineaAlbaranesClientes'])"                   )
+   ::oFastReport:AddVariable(     "Lineas de albaranes",   "Total peso por línea",                         "CallHbFunc( 'oTInfGen', ['nTotalPesoLineaAlbaranesClientes'])"               )
+   ::oFastReport:AddVariable(     "Lineas de albaranes",   "Total impuestos incluidos línea del albaran",  "CallHbFunc( 'oTInfGen', ['nTotalImpuestosIncluidosLineaAlbaranesClientes'])" )
+   ::oFastReport:AddVariable(     "Lineas de albaranes",   "Total IVA línea del albaran",                  "CallHbFunc( 'oTInfGen', ['nTotalIVALineaAlbaranesClientes'])"                )
+
+   ::oFastReport:AddVariable(     "Lineas de albaranes",   "Total descuento porcentual artículo",          "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPorcentualLineaAlbaranesClientes'])" )
+   ::oFastReport:AddVariable(     "Lineas de albaranes",   "Total descuento promocional artículo",         "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPromocionalLineaAlbaranesClientes'])")
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableFacturaCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(    "Facturas clientes",       "Total base facturas clientes",           "CallHbFunc( 'oTinfGen', ['nBaseFacturasClientes'])"     )
+   ::oFastReport:AddVariable(    "Facturas clientes",       "Total " + cImp() + " facturas clientes", "CallHbFunc( 'oTinfGen', ['nIVAFacturasClientes'])"      )
+   ::oFastReport:AddVariable(    "Facturas clientes",       "Total recargo facturas clientes",        "CallHbFunc( 'oTinfGen', ['nRecargoFacturasClientes'])"  )
+   ::oFastReport:AddVariable(    "Facturas clientes",       "Total facturas clientes",                "CallHbFunc( 'oTinfGen', ['nTotalFacturasClientes'])"    )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableRecibosCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableRecibosProveedor( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableCobrosTickets( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableLineasFacturaCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(     "Lineas de facturas",   "Detalle del artículo línea de factura",                      "CallHbFunc( 'oTInfGen', ['cDetalleFacturasClientes'])"                       )
+   ::oFastReport:AddVariable(     "Lineas de facturas",   "Total unidades artículo línea de factura",                   "CallHbFunc( 'oTInfGen', ['nTotalUnidadesFacturasClientes'])"                 )
+   ::oFastReport:AddVariable(     "Lineas de facturas",   "Precio unitario del artículo línea de factura",              "CallHbFunc( 'oTInfGen', ['nPrecioUnitarioFacturasClientes'])"                )
+   ::oFastReport:AddVariable(     "Lineas de facturas",   "Total línea de factura",                                     "CallHbFunc( 'oTInfGen', ['nTotalLineaFacturasClientes'])"                    )
+   ::oFastReport:AddVariable(     "Lineas de facturas",   "Total peso por línea de factura",                            "CallHbFunc( 'oTInfGen', ['nTotalPesoLineaFacturasClientes'])"                )
+   ::oFastReport:AddVariable(     "Lineas de facturas",   "Total impuestos incluidos línea de factura",                 "CallHbFunc( 'oTInfGen', ['nTotalImpuestosIncluidosLineaFacturasClientes'])"  )
+   ::oFastReport:AddVariable(     "Lineas de facturas",   "Total IVA línea de factura",                                 "CallHbFunc( 'oTInfGen', ['nTotalIVALineaFacturasClientes'])"                 )
+
+   ::oFastReport:AddVariable(     "Lineas de facturas",   "Total descuento porcentual artículo línea de factura",      "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPorcentualLineaFacturasClientes'])" )
+   ::oFastReport:AddVariable(     "Lineas de facturas",   "Total descuento promocional artículo línea de factura",     "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPromocionalLineaFacturasClientes'])")
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableRectificativaCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(    "Rectificativas clientes",       "Total base rectificativas clientes",           "CallHbFunc( 'oTinfGen', ['nBaseFacturasRectificativasClientes'])"     )
+   ::oFastReport:AddVariable(    "Rectificativas clientes",       "Total " + cImp() + " rectificativas clientes", "CallHbFunc( 'oTinfGen', ['nIVAFacturasRectificativasClientes'])"      )
+   ::oFastReport:AddVariable(    "Rectificativas clientes",       "Total recargo rectificativas clientes",        "CallHbFunc( 'oTinfGen', ['nRecargoFacturasRectificativasClientes'])"  )
+   ::oFastReport:AddVariable(    "Rectificativas clientes",       "Total rectificativas clientes",                "CallHbFunc( 'oTinfGen', ['nTotalFacturasRectificativasClientes'])"    )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableLineasRectificativaCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(     "Lineas de rectificativas",   "Detalle del artículo línea de rectificativa",                   "CallHbFunc( 'oTInfGen', ['cDetalleRectificativasClientes'])"                       )
+   ::oFastReport:AddVariable(     "Lineas de rectificativas",   "Total unidades artículo línea de rectificativa",                "CallHbFunc( 'oTInfGen', ['nTotalUnidadesRectificativasClientes'])"                 )
+   ::oFastReport:AddVariable(     "Lineas de rectificativas",   "Precio unitario del artículo línea de rectificativa",           "CallHbFunc( 'oTInfGen', ['nPrecioUnitarioRectificativasClientes'])"                )
+   ::oFastReport:AddVariable(     "Lineas de rectificativas",   "Total línea de rectificativa",                                  "CallHbFunc( 'oTInfGen', ['nTotalLineaRectificativasClientes'])"                    )
+   ::oFastReport:AddVariable(     "Lineas de rectificativas",   "Total peso por línea de rectificativa",                         "CallHbFunc( 'oTInfGen', ['nTotalPesoLineaRectificativasClientes'])"                )
+   ::oFastReport:AddVariable(     "Lineas de rectificativas",   "Total impuestos incluidos línea de rectificativa",              "CallHbFunc( 'oTInfGen', ['nTotalImpuestosIncluidosLineaRectificativasClientes'])"  )
+   ::oFastReport:AddVariable(     "Lineas de rectificativas",   "Total IVA línea de rectificativa",                              "CallHbFunc( 'oTInfGen', ['nTotalIVALineaRectificativasClientes'])"                 )
+
+   ::oFastReport:AddVariable(     "Lineas de rectificativas",   "Total descuento porcentual artículo línea de rectificativa",    "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPorcentualLineaRectificativasClientes'])" )
+   ::oFastReport:AddVariable(     "Lineas de rectificativas",   "Total descuento promocional artículo línea de rectificativa",   "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPromocionalLineaRectificativasClientes'])")
+
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableTicketCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(    "Tickets clientes",       "Total base tickets clientes",           "CallHbFunc( 'oTinfGen', ['nBaseTicketsClientes'])"     )
+   ::oFastReport:AddVariable(    "Tickets clientes",       "Total " + cImp() + " tickets clientes", "CallHbFunc( 'oTinfGen', ['nIVATicketsClientes'])"      )
+   ::oFastReport:AddVariable(    "Tickets clientes",       "Total recargo tickets clientes",        "CallHbFunc( 'oTinfGen', ['nRecargoTicketsClientes'])"  )
+   ::oFastReport:AddVariable(    "Tickets clientes",       "Total tickets clientes",                "CallHbFunc( 'oTinfGen', ['nTotalTicketsClientes'])"    )
+
+RETURN ( Self )
+
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableLineasTicketCliente( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(     "Lineas de tickets",   "Detalle del artículo línea de ticket",                    "CallHbFunc( 'oTInfGen', ['cDetalleTicketsClientes'])"                         )
+   ::oFastReport:AddVariable(     "Lineas de tickets",   "Total unidades artículo línea de ticket",                 "CallHbFunc( 'oTInfGen', ['nTotalUnidadesTicketsClientes'])"                   )
+   ::oFastReport:AddVariable(     "Lineas de tickets",   "Precio unitario del artículo línea de ticket",            "CallHbFunc( 'oTInfGen', ['nPrecioUnitarioTicketsClientes'])"                  )
+   ::oFastReport:AddVariable(     "Lineas de tickets",   "Total línea de ticket",                                   "CallHbFunc( 'oTInfGen', ['nTotalLineaTicketsClientes'])"                      )
+   ::oFastReport:AddVariable(     "Lineas de tickets",   "Total peso por línea de ticket",                          "CallHbFunc( 'oTInfGen', ['nTotalPesoLineaTicketsClientes'])"                  )
+   ::oFastReport:AddVariable(     "Lineas de tickets",   "Total impuestos incluidos línea de ticket",               "CallHbFunc( 'oTInfGen', ['nTotalImpuestosIncluidosLineaTicketsClientes'])"    )
+   ::oFastReport:AddVariable(     "Lineas de tickets",   "Total IVA línea de ticket",                               "CallHbFunc( 'oTInfGen', ['nTotalIVALineaTicketsClientes'])"                   )
+
+   ::oFastReport:AddVariable(     "Lineas de tickets",   "Total descuento porcentual artículo línea de ticket",     "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPorcentualLineaTicketsClientes'])"   )
+
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableLiquidacionAgentes( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+      ::oFastReport:AddVariable(    "Liquidación de agentes",  "Total liquidación de agentes",           "GetHbVar('nTotalRemesasAgentes')"                       )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariablePedidoProveedor( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(    "Pedidos proveedores",        "Total base pedidos proveedores",            "CallHbFunc( 'oTinfGen', ['nBasePedidosProveedores'])"    )
+   ::oFastReport:AddVariable(    "Pedidos proveedores",        "Total " + cImp() + " pedidos proveedores",  "CallHbFunc( 'oTinfGen', ['nIVAPedidosProveedores'])"     )
+   ::oFastReport:AddVariable(    "Pedidos proveedores",        "Total recargo pedidos proveedores",         "CallHbFunc( 'oTinfGen', ['nRecargoPedidosProveedores'])" )
+   ::oFastReport:AddVariable(    "Pedidos proveedores",        "Total pedidos proveedores",                 "CallHbFunc( 'oTinfGen', ['nTotalPedidosProveedores'])"   )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableLineasPedidoProveedor( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(     "Lineas de pedidos proveedores",   "Detalle del artículo línea del pedido de proveedor",                   "CallHbFunc( 'oTInfGen', ['cDetallePedidosProveedores'])"                         )
+   ::oFastReport:AddVariable(     "Lineas de pedidos proveedores",   "Total unidades artículo línea del pedido de proveedor",                "CallHbFunc( 'oTInfGen', ['nTotalUnidadesPedidosProveedores'])"                   )
+   ::oFastReport:AddVariable(     "Lineas de pedidos proveedores",   "Precio unitario del artículo línea del pedido de proveedor",           "CallHbFunc( 'oTInfGen', ['nPrecioUnitarioPedidosProveedores'])"                  )
+   ::oFastReport:AddVariable(     "Lineas de pedidos proveedores",   "Total línea de pedido de proveedor",                                   "CallHbFunc( 'oTInfGen', ['nTotalLineaPedidosProveedores'])"                      )
+   ::oFastReport:AddVariable(     "Lineas de pedidos proveedores",   "Total impuestos incluidos línea del pedido de proveedor",              "CallHbFunc( 'oTInfGen', ['nTotalImpuestosIncluidosLineaPedidosProveedores'])"    )
+   ::oFastReport:AddVariable(     "Lineas de pedidos proveedores",   "Total IVA línea del pedido de proveedor",                              "CallHbFunc( 'oTInfGen', ['nTotalIVALineaPedidosProveedores'])"                   )
+   ::oFastReport:AddVariable(     "Lineas de pedidos proveedores",   "Total descuento porcentual artículo línea del pedido de proveedor",    "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPorcentualLineaPedidosProveedores'])"   )
+   ::oFastReport:AddVariable(     "Lineas de pedidos proveedores",   "Total descuento promocional artículo línea del pedido de proveedor",   "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPromocionalLineaPedidosProveedores'])"  )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableAlbaranProveedor( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(    "Albaranes proveedores",        "Total base albaranes proveedores",            "CallHbFunc( 'oTinfGen', ['nBaseAlbaranesProveedores'])"    )
+   ::oFastReport:AddVariable(    "Albaranes proveedores",        "Total " + cImp() + " albaranes proveedores",  "CallHbFunc( 'oTinfGen', ['nIVAAlbaranesProveedores'])"     )
+   ::oFastReport:AddVariable(    "Albaranes proveedores",        "Total recargo albaranes proveedores",         "CallHbFunc( 'oTinfGen', ['nRecargoAlbaranesProveedores'])" )
+   ::oFastReport:AddVariable(    "Albaranes proveedores",        "Total albaranes proveedores",                 "CallHbFunc( 'oTinfGen', ['nTotalAlbaranesProveedores'])"   )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableLineasAlbaranProveedor( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(     "Lineas de albaranes de proveedores",   "Detalle del artículo línea del albaran de proveedor",                   "CallHbFunc( 'oTInfGen', ['cDetalleAlbaranesProveedores'])"                         )
+   ::oFastReport:AddVariable(     "Lineas de albaranes de proveedores",   "Total unidades artículo línea del albaran de proveedor",                "CallHbFunc( 'oTInfGen', ['nTotalUnidadesAlbaranesProveedores'])"                   )
+   ::oFastReport:AddVariable(     "Lineas de albaranes de proveedores",   "Precio unitario del artículo línea del albaran de proveedor",           "CallHbFunc( 'oTInfGen', ['nPrecioUnitarioAlbaranesProveedores'])"                  )
+   ::oFastReport:AddVariable(     "Lineas de albaranes de proveedores",   "Total línea de albaran de proveedor",                                   "CallHbFunc( 'oTInfGen', ['nTotalLineaAlbaranesProveedores'])"                      )
+   ::oFastReport:AddVariable(     "Lineas de albaranes de proveedores",   "Total impuestos incluidos línea del albaran de proveedor",              "CallHbFunc( 'oTInfGen', ['nTotalImpuestosIncluidosLineaAlbaranesProveedores'])"    )
+   ::oFastReport:AddVariable(     "Lineas de albaranes de proveedores",   "Total IVA línea del albaran de proveedor",                              "CallHbFunc( 'oTInfGen', ['nTotalIVALineaAlbaranesProveedores'])"                   )
+   ::oFastReport:AddVariable(     "Lineas de albaranes de proveedores",   "Total descuento porcentual artículo línea del albaran de proveedor",    "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPorcentualLineaAlbaranesProveedores'])"   )
+   ::oFastReport:AddVariable(     "Lineas de albaranes de proveedores",   "Total descuento promocional artículo línea del albaran de proveedor",   "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPromocionalLineaAlbaranesProveedores'])"  )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableFacturaProveedor( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(    "Facturas proveedores",        "Total base facturas proveedores",            "CallHbFunc( 'oTinfGen', ['nBaseFacturasProveedores'])"    )
+   ::oFastReport:AddVariable(    "Facturas proveedores",        "Total " + cImp() + " facturas proveedores",  "CallHbFunc( 'oTinfGen', ['nIVAFacturasProveedores'])"     )
+   ::oFastReport:AddVariable(    "Facturas proveedores",        "Total recargo facturas proveedores",         "CallHbFunc( 'oTinfGen', ['nRecargoFacturasProveedores'])" )
+   ::oFastReport:AddVariable(    "Facturas proveedores",        "Total facturas proveedores",                 "CallHbFunc( 'oTinfGen', ['nTotalFacturasProveedores'])"   )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableLineasFacturaProveedor( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(     "Lineas de facturas de proveedores",   "Detalle del artículo línea del factura de proveedor",                   "CallHbFunc( 'oTInfGen', ['cDetalleFacturasProveedores'])"                         )
+   ::oFastReport:AddVariable(     "Lineas de facturas de proveedores",   "Total unidades artículo línea del factura de proveedor",                "CallHbFunc( 'oTInfGen', ['nTotalUnidadesFacturasProveedores'])"                   )
+   ::oFastReport:AddVariable(     "Lineas de facturas de proveedores",   "Precio unitario del artículo línea del factura de proveedor",           "CallHbFunc( 'oTInfGen', ['nPrecioUnitarioFacturasProveedores'])"                  )
+   ::oFastReport:AddVariable(     "Lineas de facturas de proveedores",   "Total línea de factura de proveedor",                                   "CallHbFunc( 'oTInfGen', ['nTotalLineaFacturasProveedores'])"                      )
+   ::oFastReport:AddVariable(     "Lineas de facturas de proveedores",   "Total impuestos incluidos línea del factura de proveedor",              "CallHbFunc( 'oTInfGen', ['nTotalImpuestosIncluidosLineaFacturasProveedores'])"    )
+   ::oFastReport:AddVariable(     "Lineas de facturas de proveedores",   "Total IVA línea del factura de proveedor",                              "CallHbFunc( 'oTInfGen', ['nTotalIVALineaFacturasProveedores'])"                   )
+   ::oFastReport:AddVariable(     "Lineas de facturas de proveedores",   "Total descuento porcentual artículo línea del factura de proveedor",    "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPorcentualLineaFacturasProveedores'])"   )
+   ::oFastReport:AddVariable(     "Lineas de facturas de proveedores",   "Total descuento promocional artículo línea del factura de proveedor",   "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPromocionalLineaFacturasProveedores'])"  )
+
+RETURN ( Self )
+
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableRectificativaProveedor( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(    "Rectificativas proveedores",       "Total base rectificativas proveedores",           "CallHbFunc( 'oTinfGen', ['nBaseFacturasRectificativasproveedores'])"     )
+   ::oFastReport:AddVariable(    "Rectificativas proveedores",       "Total " + cImp() + " rectificativas proveedores", "CallHbFunc( 'oTinfGen', ['nIVAFacturasRectificativasproveedores'])"      )
+   ::oFastReport:AddVariable(    "Rectificativas proveedores",       "Total recargo rectificativas proveedores",        "CallHbFunc( 'oTinfGen', ['nRecargoFacturasRectificativasproveedores'])"  )
+   ::oFastReport:AddVariable(    "Rectificativas proveedores",       "Total rectificativas proveedores",                "CallHbFunc( 'oTinfGen', ['nTotalFacturasRectificativasproveedores'])"    )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddVariableLineasRectificativaProveedor( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oFastReport:AddVariable(     "Lineas de rectificativas de proveedores",   "Detalle del artículo línea de rectificativa de proveedor",                  "CallHbFunc( 'oTInfGen', ['cDetalleRectificativasProveedores'])"                         )
+   ::oFastReport:AddVariable(     "Lineas de rectificativas de proveedores",   "Total unidades artículo línea de rectificativa de proveedor",               "CallHbFunc( 'oTInfGen', ['nTotalUnidadesRectificativasProveedores'])"                   )
+   ::oFastReport:AddVariable(     "Lineas de rectificativas de proveedores",   "Precio unitario del artículo línea de rectificativa de proveedor",          "CallHbFunc( 'oTInfGen', ['nPrecioUnitarioRectificativasProveedores'])"                  )
+   ::oFastReport:AddVariable(     "Lineas de rectificativas de proveedores",   "Total línea de rectificativa de proveedor",                                 "CallHbFunc( 'oTInfGen', ['nTotalLineaRectificativasProveedores'])"                      )
+   ::oFastReport:AddVariable(     "Lineas de rectificativas de proveedores",   "Total impuestos incluidos línea de rectificativa de proveedor",             "CallHbFunc( 'oTInfGen', ['nTotalImpuestosIncluidosLineaRectificativasProveedores'])"    )
+   ::oFastReport:AddVariable(     "Lineas de rectificativas de proveedores",   "Total IVA línea de rectificativa de proveedor",                             "CallHbFunc( 'oTInfGen', ['nTotalIVALineaRectificativasProveedores'])"                   )
+   ::oFastReport:AddVariable(     "Lineas de rectificativas de proveedores",   "Total descuento porcentual artículo línea de rectificativa de proveedor",   "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPorcentualLineaRectificativasProveedores'])"   )
+   ::oFastReport:AddVariable(     "Lineas de rectificativas de proveedores",   "Total descuento promocional artículo línea de rectificativa de proveedor",  "CallHbFunc( 'oTinfGen', ['nTotalDescuentoPromocionalLineaRectificativasProveedores'])"  )
+
+RETURN ( Self )
+
+
+
+Static Function CutString( cStart, cEnd, cText, lExclude )
+
+   local nStart
+   local nEnd
+   local cString        := ""
+
+   If( lExclude == nil, lExclude := .F., ) ;
+
+   nStart               := At( cStart, cText )
+   if nStart <> 0
+
+      cText             := SubStr( cText, nStart )
+
+      nEnd              := Rat( cEnd, cText )
+      if nEnd <> 0
+
+         cString        := SubStr( cText, 1, nEnd )
+
+         if lExclude
+            cString     := StrTran( cString, cStart, "" )
+            cString     := StrTran( cString, cEnd, "" )
+         end
+
+      end
+
+   end
+
+RETURN ( cString )
+
+
+
+Static Function aTextString( cStart, cEnd, cText )
+
+   local n
+   local nEnd
+   local nStart
+   local cString        := ""
+   local nStartPos      := 1
+   local aExp           := {}
+   local nTop
+   local nTopOld        := 0
+   local nPosicion      := 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   while ( ( nStart := At( cStart, cText ) ) <> 0 )
+
+      cText             := SubStr( cText, nStart )
+
+      nEnd              := At( cEnd, cText )
+
+      if nEnd <> 0
+         cString        := SubStr( cText, 1, nEnd )
+      end
+
+      aAdd( aExp, cString )
+
+      cText             := SubStr( cText, nEnd + 1 )
+
+   enddo
+
+
+
+
+
+   do case
+      case len( aExp ) == 0
+         cString           := ""
+
+      case len( aExp ) == 1
+         cString           := aExp[1]
+
+      otherwise
+
+         for n := 1 to Len( aExp )
+
+            nTop           := Val( CutString( 'Top="', '"', aExp[n], .T. ) )
+
+            if nTop > nTopOld
+
+               nTopOld     := nTop
+               nPosicion   := n
+
+            end
+
+         next
+
+         cString           := aExp[ nPosicion ]
+
+   end
+
+RETURN ( cString )
+
+
+
+static FUNCTION TFastReportInfGen_AddNode( cDirectory, hHash, oNode, lBrackets ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local aFile
+   local cFile
+   local oNewNode
+   local aDirectory
+   local hProperties
+
+   If( lBrackets == nil, lBrackets := .F., ) ;
+
+   aDirectory              := Directory( cDirectory + "\*.*", "D" )
+   if !Empty( aDirectory )
+
+      for each aFile in aDirectory
+
+         if !( aFile[ 1 ] == "." .OR. aFile[ 1 ] == ".." )
+
+
+
+            cFile          := getFileNoExt( aFile[ 1 ] )
+
+
+
+
+
+
+            hProperties       := {=>}
+            hset( hProperties, "Title", cFile )
+            hset( hProperties, "Directory", cDirectory )
+            hset( hProperties, "File", aFile[ 1 ] )
+            hset( hProperties, "Type", hHash[ "Type" ] )
+            hset( hProperties, "Fechas", if( hHasKey( hHash, "Fechas" ), hHash[ "Fechas" ], .T. ) )
+
+            if hhaskey( hHash, "Options" )
+               hset( hProperties, "Options", hHash[ "Options" ] )
+            end
+
+
+
+            if ( aFile[ 5 ] == "D" )
+               oNewNode    := oNode:Add( cFile, 22, hProperties )
+               ::AddNode( cDirectory + "\" + aFile[ 1 ], hHash, oNewNode )
+            else
+               if ( ".fr3" $ aFile[ 1 ] )
+                  oNode:Add( cFile, hHash[ "Image" ], hProperties )
+               end
+            end
+
+         end
+
+      next
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_TotalCodigoClientes( cCliDesde, cCliHasta, cDescription ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local uValue
+   local cField
+   local nTotalClients        := 0
+
+   If( cDescription == nil, cDescription := "Total", ) ;
+
+   cField                     := ::GetFieldByDescription( cDescription )
+
+   if !Empty( cField ) .AND. IsChar( cCliDesde ) .AND. IsChar( cCliHasta )
+
+      ::oDbf:GetStatus()
+
+      ::oDbf:GoTop()
+      while !( ::oDbf:Eof() )
+
+         if ( Rtrim( ::oDbf:cCodCli ) >= Rtrim( cCliDesde ) .AND. Rtrim( ::oDbf:cCodCli ) <= Rtrim( cCliHasta ) )
+
+            uValue            := ::oDbf:FieldGetByName( cField )
+
+            if IsNum( uValue )
+               nTotalClients  += uValue
+            end
+
+         end
+
+         ::oDbf:Skip()
+
+      end
+
+      ::oDbf:SetStatus()
+
+   end
+
+RETURN ( nTotalClients )
+
+
+
+static FUNCTION TFastReportInfGen_TotalFechaClientes( dDesde, dHasta, cDescription ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local uValue
+   local cField
+   local nTotalClients        := 0
+
+   If( cDescription == nil, cDescription := "Total", ) ;
+
+   cField                     := ::GetFieldByDescription( cDescription )
+
+   if !Empty( cField ) .AND. IsDate( dDesde ) .AND. IsDate( dHasta )
+
+      ::oDbf:GetStatus()
+
+      ::oDbf:GoTop()
+      while !( ::oDbf:Eof() )
+
+         if ( ::oDbf:dFecDoc >= dDesde ) .AND. ( ::oDbf:dFecDoc <= dHasta )
+
+            uValue            := ::oDbf:FieldGetByName( cField )
+
+            if IsNum( uValue )
+               nTotalClients  += uValue
+            end
+
+         end
+
+         ::oDbf:Skip()
+
+      end
+
+      ::oDbf:SetStatus()
+
+   end
+
+RETURN ( nTotalClients )
+
+
+
+static FUNCTION TFastReportInfGen_TotalPreimerTrimestreClientes( cDescription ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local dFechaInicio   := Ctod( "01/01/" + Str( Year( ::dIniInf ) ) )
+   local dFechaFin      := Ctod( "01/04/" + Str( Year( ::dIniInf ) ) ) - 1
+
+RETURN ( ::TotalFechaClientes( dFechaInicio, dFechaFin, cDescription ) )
+
+
+
+static FUNCTION TFastReportInfGen_TotalSegundoTrimestreClientes( cDescription ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local dFechaInicio   := Ctod( "01/04/" + Str( Year( ::dIniInf ) ) )
+   local dFechaFin      := Ctod( "01/08/" + Str( Year( ::dIniInf ) ) ) - 1
+
+RETURN ( ::TotalFechaClientes( dFechaInicio, dFechaFin, cDescription ) )
+
+
+
+static FUNCTION TFastReportInfGen_TotalCodigoArticulos( cArtDesde, cArtHasta, cDescription ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local uValue
+   local cField
+   local nTotalArticulos         := 0
+
+   If( cDescription == nil, cDescription := "Total", ) ;
+
+   cField                        := ::GetFieldByDescription( cDescription )
+
+   if !Empty( cField ) .AND. IsChar( cArtDesde ) .AND. IsChar( cArtHasta )
+
+      ::oDbf:GetStatus()
+
+      ::oDbf:GoTop()
+      while !( ::oDbf:Eof() )
+
+         if ( Rtrim( ::oDbf:cCodArt ) >= Rtrim( cArtDesde ) .AND. Rtrim( ::oDbf:cCodArt ) <= Rtrim( cArtHasta ) )
+
+            uValue               := ::oDbf:FieldGetByName( cField )
+
+            if IsNum( uValue )
+               nTotalArticulos   += uValue
+            end
+
+         end
+
+         ::oDbf:Skip()
+
+      end
+
+      ::oDbf:SetStatus()
+
+   end
+
+RETURN ( nTotalArticulos )
+
+
+
+static FUNCTION TFastReportInfGen_BrwRangoKeyDown( o, nKey ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local oColumn  := o:SelectedCol()
+
+   if ( nKey == 107 .OR. nKey == 187 )
+
+      if !Empty( oColumn ) .AND. !Empty( oColumn:bEditBlock )
+
+         oColumn:RunBtnAction()
+
+      end
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_Count( cDescription, lUnique ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local cField
+   local uValue
+   local aValue               := {}
+   local nTotal               := 0
+
+   If( cDescription == nil, cDescription := "Código cliente", ) ;
+   If( lUnique == nil, lUnique := ".f.", ) ;
+
+   cField                     := ::GetFieldByDescription( cDescription )
+   lUnique                    := Lower( lUnique ) == ".t."
+
+   if !Empty( cField )
+
+      ::oDbf:GetStatus()
+
+      ::oDbf:GoTop()
+      while !( ::oDbf:Eof() )
+
+         uValue               := ::oDbf:FieldGetByName( cField )
+
+         if !Empty( uValue )
+
+            if lUnique
+
+               if aScan( aValue, uValue ) == 0
+                  aAdd( aValue, uValue )
+                  nTotal++
+               end
+
+            else
+
+               nTotal++
+
+            end
+
+         end
+
+         ::oDbf:Skip()
+
+      end
+
+      ::oDbf:SetStatus()
+
+   end
+
+RETURN ( nTotal )
+
+
+
+static FUNCTION TFastReportInfGen_InitSatClientes( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddSATClientes( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_InitPresupuestosClientes( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddPresupuestosClientes( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_InitPedidosClientes( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddPedidosClientes( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddAlbaranesClientes( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_InitFacturasRectificativasClientes( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddFacturasRectificativasClientes( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_InitTicketsClientes( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddTicketsClientes( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_InitPedidosProveedores( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddPedidosProveedores( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_InitAlbaranesProveedores( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddAlbaranesProveedores( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_InitFacturasProveedores( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddFacturasProveedores( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_InitFacturasRectificativasProveedores( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_AddFacturasRectificativasProveedores( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_CreateTreeImageList( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::oTreeImageList        := TImageList():New( 16, 16 )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_document_text_16" ),              ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_document_text_16" ),              ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_clipboard_empty_businessman_16" ),( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_document_empty_businessman_16" ), ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_document_text_businessman_16" ),  ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_notebook_user_16" ),              ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_clipboard_empty_user_16" ),       ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_document_empty_16" ),             ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_document_text_user_16" ),         ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_document_text_delete_16" ),       ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_cash_register_user_16" ),         ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_money2_16" ),                     ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_small_truck_16" ),                ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_package_16" ),                    ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_document_text_worker_16" ),       ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_document_text_delete2_16" ),      ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_package_16" ),                    ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_office_building2_16" ),           ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_document_text_delete2_16" ),      ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_user_16" ),                       ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_power_drill_sat_user_16" ),       ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_briefcase2_user_16" ),            ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_folder_document_16" ),            ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_moneybag_16" ),                   ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_object_cube_16"),                 ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_pencil_package_16"),              ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_briefcase2_businessman_16"),      ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oTreeImageList:AddMasked( TBitmap():Define( "gc_folder_open_money_16"),           ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+
+   if !Empty( ::oTreeReporting )
+      ::oTreeReporting:SetImageList( ::oTreeImageList )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_TreeReportingChanged( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local cTitle   := ::oTreeReporting:getSelText()
+
+   if !empty( ::oTreeReporting:getSelected() )
+
+      if !empty( ::oTreeReporting:getSelected():bAction ) .AND. hhaskey( ::oTreeReporting:getSelected():bAction, "Options" )
+
+         ::oTFastReportOptions:setOptions( hget( ::oTreeReporting:getSelected():bAction, "Options" ) )
+
+         ::lShowOptions()
+
+      else
+
+         ::lHideOptions()
+
+      end
+
+   end
+
+   if ( "Listado" $ cTitle )
+      ::lHideFecha()
+   else
+      ::lShowFecha()
+   end
+
+   if !Empty( ::oTreeReporting:getSelected() )
+      if !Empty( ::oTreeReporting:getSelected():bAction )
+         if hHasKey( ::oTreeReporting:getSelected():bAction, "Fechas" ) .AND. !::oTreeReporting:getSelected():bAction["Fechas"] .AND. !( "Listado" $ cTitle )
+            ::lHideFecha()
+         end
+      end
+   end
+
+
+
+   ::oDlg:cTitle( ::cSubTitle + " : " + cTitle )
+
+Return ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_DlgFilter( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   if !Empty( ::oFilter )
+
+      ::oFilter:Dialog()
+
+      if !Empty( ::oBtnFiltrar )
+
+         if !Empty( ::oFilter:bExpresionFilter )
+            ::oBtnFiltrar:cCaption( "Filtro activo" )
+         else
+            ::oBtnFiltrar:cCaption( "Filtrar" )
+         end
+
+      end
+
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TFastReportInfGen_InsertIfValid( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local lValidRegister    := ::lValidRegister()
+
+   if lValidRegister
+      ::oDbf:Insert()
+   else
+      ::oDbf:Cancel()
+   end
+
+Return ( lValidRegister )
+
+
+
+static FUNCTION TFastReportInfGen_ValorCampoExtra( cTipoDoccumento, cCodCampoExtra ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local cValorCampoExtra  := cTipoDoccumento + cCodCampoExtra
+
+Return ( cValorCampoExtra )
+
+
+
+static FUNCTION TFastReportInfGen_initVariables( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::aChildDesdeGrupoCliente              := {}
+   ::aChildHastaGrupoCliente              := {}
+
+   if !empty( ::oGrpCli ) .AND. !empty(::oGrupoGCliente)
+      ::aChildDesdeGrupoCliente            := ::oGrpCli:aChild( ::oGrupoGCliente:Cargo:getDesde() )
+      aadd( ::aChildDesdeGrupoCliente, ::oGrupoGCliente:Cargo:getDesde() )
+   end
+
+   if !empty( ::oGrpCli ) .AND. !empty(::oGrupoGCliente)
+      ::aChildHastaGrupoCliente            := ::oGrpCli:aChild( ::oGrupoGCliente:Cargo:getHasta() )
+      aadd( ::aChildHastaGrupoCliente, ::oGrupoGCliente:Cargo:getHasta() )
+   end
+
+Return ( self )
+
+
+
+static FUNCTION TFastReportInfGen_selectReportTree( cReportName ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local oItem
+
+   if empty( cReportName )
+      Return ( self )
+   end
+
+   oItem       := ScanItemsBlock( ::oTreeReporting:aItems, {|o| alltrim( o:cPrompt ) == alltrim( cReportName ) } )
+
+   if !empty( oItem )
+      ::oTreeReporting:select( oItem )
+   end
+
+Return ( self )
+
+
+
+static FUNCTION TFastReportInfGen_Duplicar( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local cNewDirectory  := ""
+   local cPathOldFile   := ""
+   local cPathNewFile   := ""
+
+
+
+
+
+   if !::lLoadInfo()
+      msgStop( "No se ha podido cargar el nombre del informe." )
+      Return ( Self )
+   end
+
+   if !::lLoadReport()
+      MsgStop( "No se ha podido cargar un diseño de informe válido para renombrar." + Chr(13)+Chr(10) + ::cReportFile )
+      Return ( Self )
+   end
+
+   cNewDirectory  := StrTran( ::cReportDirectory, cPatReporting(), cPatUserReporting() )
+
+   cPathOldFile   := ::cReportDirectory + "/" + ::cReportName + ".fr3"
+   cPathNewFile   := cNewDirectory + "/" + ::cReportName + ".fr3"
+
+   if !File( cPathNewFile )
+
+      recursiveMakeDir( cNewDirectory )
+
+      __CopyFile( cPathOldFile, cPathNewFile )
+
+   end
+
+   ::LoadInformesPersonalizados()
+   ::selectReportTree( ::cReportName )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TFastReportInfGen_Renombrar( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local cName    := ""
+   local cNewFile := ""
+
+   if !::lInformesPersonalizados
+      MsgStop( "No se puede renombrar un informe básico" )
+      Return ( .T. )
+   end
+
+
+
+
+
+   if !::lLoadInfo()
+      msgStop( "No se ha podido cargar el nombre del informe." )
+      Return ( Self )
+   end
+
+   if !::lLoadReport()
+      MsgStop( "No se ha podido cargar un diseño de informe válido para renombrar." + Chr(13)+Chr(10) + ::cReportFile )
+      Return ( Self )
+   end
+
+   cName    := Padr( ::cReportName, 250 )
+
+   if MsgGet( "Renombramos informe", "Informe: ", @cName )
+
+      cNewFile    := ::cReportDirectory + "\" + AllTrim( cName ) + ".fr3"
+
+      if !File( cNewFile )
+         frename( ::cReportFile, cNewFile )
+      else
+         if cNewFile <> ::cReportFile
+            MsgStop( "Ya exise un informe con ese nombre." )
+         end
+      end
+
+      ::ReBuildTree()
+      ::oTreeReporting:Refresh()
+      ::selectReportTree( cName )
+
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TFastReportInfGen_LoadInformesBasicos( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::lInformesPersonalizados  := .F.
+
+   ::oTreeReporting:DeleteAll()
+   ::BuildTree()
+
+   ::oBtnBasicos:Selected()
+   ::oBtnPersonalizados:UnSelected()
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TFastReportInfGen_LoadInformesPersonalizados( ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   ::lInformesPersonalizados  := .T.
+
+   ::oTreeReporting:DeleteAll()
+   ::BuildTree()
+
+   ::oBtnBasicos:UnSelected()
+   ::oBtnPersonalizados:Selected()
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TFastReportInfGen_isFechaHoraConsolidacion( cCodArt, cCodAlm ) ; local Self AS CLASS TFastReportInfGen := QSelf() AS CLASS TFastReportInfGen
+
+   local cTimestamp
+   local fechaConsolidacion
+
+   cTimestamp           := MovimientosAlmacenLineasRepository():getFechaHoraConsolidacion( ::oDbf:cCodArt, ::oDbf:cCodAlm )
+
+   if Empty( cTimestamp )
+      Return .T.
+   end
+
+   fechaConsolidacion   := substr( hb_ttos( cTimestamp ), 1, 14 )
+
+RETURN ( dtos( ::oDbf:dFecDoc ) + strtran( ::oDbf:cTimDoc, ":", "" ) >= fechaConsolidacion )
+
+
+
+static function ScanItemsBlock( aItems, bAction )
+
+   local oItem, n := 1, oItemFound
+
+   while n <= Len( aItems ) .AND. oItemFound == nil
+      oItem = aItems[ n ]
+      if Eval( bAction, oItem )
+         return oItem
+      else
+         if Len( oItem:aItems ) > 0
+            oItemFound = ScanItemsBlock( oItem:aItems, bAction )
+         endif
+      endif
+      n++
+   end
+
+return oItemFound

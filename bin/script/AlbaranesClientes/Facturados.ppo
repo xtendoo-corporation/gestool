@@ -1,0 +1,136 @@
+#line 38 "C:\fwh1801\Gestool\bin\include\FiveWin.Ch"
+      static bError
+#line 203 "C:\fwh1801\Gestool\bin\include\hbclass.ch"
+DECLARE HBClass  New( cName AS STRING, OPTIONAL SuperParams ) AS CLASS HBClass  Create() AS OBJECT  Instance() AS OBJECT  AddClsMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC, n2 AS NUMERIC, n3 AS NUMERIC )  AddMultiClsData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING )  AddMultiData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING, x AS LOGICAL, lPer AS LOGICAL )  AddMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC )  AddInLine( cName AS STRING, bBlock AS CODEBLOCK, nScope AS NUMERIC )  AddVirtual( cName AS STRING )
+#line 79 "C:\fwh1801\Gestool\bin\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+#line 9 "C:\fwh1801\Gestool\bin\Script\AlbaranesClientes\Facturados.prg"
+Function Inicio( nView )
+
+   local oAlbarenesFacturados
+
+   oAlbarenesFacturados    := AlbarenesFacturados():New( nView )
+
+   oAlbarenesFacturados:Run()
+
+Return ( nil )
+
+
+
+_HB_CLASS AlbarenesFacturados ; function AlbarenesFacturados ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "AlbarenesFacturados", iif( .F., { }, { @HBObject() } ), @AlbarenesFacturados() ) ) ;
+
+; _HB_MEMBER { nView } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nView"}, .F. )
+
+; _HB_MEMBER { oDialog } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDialog"}, .F. )
+
+; _HB_MEMBER { oBrowse } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrowse"}, .F. )
+
+; _HB_MEMBER { aAlbaranes } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aAlbaranes"}, .F. )
+; _HB_MEMBER { aHuerfanos } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aHuerfanos"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @AlbarenesFacturados_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Run(); oClass:AddMethod( "Run", @AlbarenesFacturados_Run(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SearchHuerfanos(); oClass:AddMethod( "SearchHuerfanos", @AlbarenesFacturados_SearchHuerfanos(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Resource(); oClass:AddMethod( "Resource", @AlbarenesFacturados_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetResources(); oClass:AddInline( "SetResources", {|Self | ( ( Self ) ), ( SetResources( fullcurdir() + "Script\AlbaranesClientes\Facturados.dll" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FreeResources(); oClass:AddInline( "FreeResources", {|Self | ( ( Self ) ), ( FreeResources() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS AlbarenesFacturados ;
+
+
+
+static FUNCTION AlbarenesFacturados_New( nView ) ; local Self AS CLASS AlbarenesFacturados := QSelf() AS CLASS AlbarenesFacturados
+
+   ::nView                       := nView
+   ::aAlbaranes                  := AlbaranesClientesModel():ListFacturados()
+   ::aHuerfanos                  := {}
+
+Return ( Self )
+
+
+
+static FUNCTION AlbarenesFacturados_Run( ) ; local Self AS CLASS AlbarenesFacturados := QSelf() AS CLASS AlbarenesFacturados
+
+   local hAlbaran
+   local nOrdAnt
+
+   ::SetResources()
+
+   nOrdAnt                 := ( D():FacturasClientesLineas( ::nView ) )->( OrdSetFocus( "CCODALB" ) )
+
+   if hb_isArray( ::aAlbaranes ) .AND. Len( ::aAlbaranes ) > 0
+      aEval( ::aAlbaranes, {|h| ::SearchHuerfanos( hGet( h, "CSERALB" ) + Padr( Str( hGet( h, "NNUMALB" ) ), 9 ) + hGet( h, "CSUFALB" ) ) } )
+   end
+
+   ( D():FacturasClientesLineas( ::nView ) )->( OrdSetFocus( nOrdAnt ) )
+
+   if Len( ::aHuerfanos ) == 0
+      MsgInfo( "No se ha encontrado ningun albarán" )
+   else
+      ::Resource()
+   end
+
+   ::FreeResources()
+
+Return ( Self )
+
+
+
+static FUNCTION AlbarenesFacturados_SearchHuerfanos( cNumAlb ) ; local Self AS CLASS AlbarenesFacturados := QSelf() AS CLASS AlbarenesFacturados
+
+   if !( D():FacturasClientesLineas( ::nView ) )->( dbSeek( cNumAlb ) )
+      aAdd( ::aHuerfanos, cNumAlb )
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION AlbarenesFacturados_Resource( ) ; local Self AS CLASS AlbarenesFacturados := QSelf() AS CLASS AlbarenesFacturados
+
+   ::oDialog = TDialog():New(,,,,, "INFORME",, .F.,,,,,, .F.,,,,,, .F.,, "::oDialog" )
+
+      ::oBrowse                        := IXBrowse():New( ::oDialog )
+
+      ::oBrowse:bClrSel                := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      ::oBrowse:bClrSelFocus           := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      ::oBrowse:SetArray( ::aHuerfanos, , , .F. )
+
+      ::oBrowse:nMarqueeStyle          := 5
+      ::oBrowse:lRecordSelector        := .F.
+      ::oBrowse:lHScroll               := .F.
+
+      ::oBrowse:CreateFromResource( 100 )
+
+      with object ( ::oBrowse:AddCol() )
+         :cHeader          := "Albarán"
+         :bStrData         := {|| if( len( ::aHuerfanos ) > 0, ::aHuerfanos[ ::oBrowse:nArrayAt ], "" ) }
+         :nWidth           := 120
+      end
+
+
+
+
+   TButton():ReDefine( 2, {||( ::oDialog:End( 2 ) )}, ::oDialog,,, .F.,,,, .F. )
+
+   ::oDialog:Activate( ::oDialog:bLClicked, ::oDialog:bMoved, ::oDialog:bPainted, .T.,,,, ::oDialog:bRClicked,,, )
+
+Return ( Self )

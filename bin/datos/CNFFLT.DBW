@@ -1,0 +1,49 @@
+[File Application]
+System=PROMETHEUS v2000
+Program=The DataBase WorkShop for Windows
+Author=Copyright ©1998/2002, Andrade A. Daniel
+[File Setup]
+FileName=C:\FW195\CAMERO\DATOS\CNFFLT.DBF
+CurPath=C:\FW195\CAMERO\DATOS\
+Driver=SIXCDX
+Indexes=C:\FW195\CAMERO\DATOS\CNFFLT.CDX
+TagActive=CTIPDOC
+BagActive=C:\FW195\CAMERO\DATOS\CNFFLT.CDX
+RecNo=3
+RowPos=1
+ColPos=4
+FilterActive=
+FilterList=
+[Expresions]
+For=
+While=
+[Columns Positions]
+1=1
+2=2
+3=3
+4=4
+[Columns Names]
+1=CTIPDOC
+2=CCODUSR
+3=CTEXFLT
+4=CFLDFLT
+[Columns Sizes]
+1=75.0400
+2=75.0400
+3=947.3800
+4=100
+[Columns Pictures]
+1=@X
+2=@X
+3=@X
+4=@X
+[Columns Aligns]
+1=0
+2=0
+3=0
+4=1
+[Columns Types]
+1=C
+2=C
+3=C
+4=M

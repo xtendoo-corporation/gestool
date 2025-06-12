@@ -1,0 +1,2982 @@
+#line 91 "\fwh1801\include\FiveWin.ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 6 ".\Prg\Models\StocksModel.prg"
+_HB_CLASS StocksModel ; function StocksModel ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "StocksModel", iif( .T., { @ADSBaseModel() }, { @HBObject() } ), @StocksModel() ) ) ;
+
+   _HB_MEMBER { cGroupByStatement } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cGroupByStatement"}, .F. )
+
+   _HB_MEMBER getFechaCaducidad(); oClass:AddMethod( "getFechaCaducidad", @StocksModel_getFechaCaducidad(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+
+   _HB_MEMBER nStockArticulo( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote); oClass:AddMethod( "nStockArticulo", @StocksModel_nStockArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nGlobalStockArticulo( cCodArt, cCodAlm); oClass:AddMethod( "nGlobalStockArticulo", @StocksModel_nGlobalStockArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getLineasAgrupadas(); oClass:AddMethod( "getLineasAgrupadas", @StocksModel_getLineasAgrupadas(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER closeAreaLineasAgrupadas(); oClass:AddInline( "closeAreaLineasAgrupadas", {|Self | ( ( Self ) ), ( ::closeArea( "ADSLineasAgrupadas" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getSqlBrwStock( cCodigoArticulo, cCodigoAlmacen); oClass:AddMethod( "getSqlBrwStock", @StocksModel_getSqlBrwStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getSqlBrwArtStock( cCodigoArticulo, cCodigoAlmacen, dFechaHasta); oClass:AddMethod( "getSqlBrwArtStock", @StocksModel_getSqlBrwArtStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER aStockArticulo(); oClass:AddInline( "aStockArticulo", {|Self, cCodigoArticulo, cCodigoAlmacen | ( ( Self ) ), ( DBHScatter( ::getSqlBrwStock( cCodigoArticulo, cCodigoAlmacen ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getInfoSqlStockDocument( cCodigoArticulo, cCodigoAlmacen); oClass:AddMethod( "getInfoSqlStockDocument", @StocksModel_getInfoSqlStockDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER oTreeStocks( cCodigoArticulo, cCodigoAlmacen); oClass:AddMethod( "oTreeStocks", @StocksModel_oTreeStocks(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER infoDocumento( cStm); oClass:AddMethod( "infoDocumento", @StocksModel_infoDocumento(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER cTextDocument( cStm); oClass:AddMethod( "cTextDocument", @StocksModel_cTextDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getInfoStockPendiente( cCodigoArticulo, cCodigoAlmacen); oClass:AddMethod( "getInfoStockPendiente", @StocksModel_getInfoStockPendiente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER oTreePendiente( cCodigoArticulo, cCodigoAlmacen); oClass:AddMethod( "oTreePendiente", @StocksModel_oTreePendiente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotStockPendiente( cCodigoArticulo, cCodigoAlmacen); oClass:AddMethod( "nTotStockPendiente", @StocksModel_nTotStockPendiente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lPutStockActual( cCodigoArticulo, cCodigoAlmacen, cCodigoPrimeraPropiedad, cCodigoSegundaPropiedad, cValorPrimeraPropiedad, cValorSegundaPropiedad, cLote, oGet); oClass:AddMethod( "lPutStockActual", @StocksModel_lPutStockActual(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER StockInit( cPath, cPathOld, oMsg, cCodEmpOld, cCodEmpNew); oClass:AddMethod( "StockInit", @StocksModel_StockInit(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS StocksModel ;
+
+
+
+static FUNCTION StocksModel_getFechaCaducidad( cCodigoArticulo, cCodigoPrimeraPropiedad, cCodigoSegundaPropiedad, cValorPrimeraPropiedad, cValorSegundaPropiedad, cLote ) ; local Self AS CLASS StocksModel := QSelf() AS CLASS StocksModel
+
+   local cStm
+   local cSql  := "SELECT TOP 1 dFecDoc, dFecCad "
+   cSql        += "FROM ( "
+   cSql        += AlbaranesProveedoresLineasModel():getSQLSentenceFechaCaducidad( cCodigoArticulo, cCodigoPrimeraPropiedad, cCodigoSegundaPropiedad, cValorPrimeraPropiedad, cValorSegundaPropiedad, cLote )
+   cSql        += "UNION ALL "
+   cSql        += FacturasProveedoresLineasModel():getSQLSentenceFechaCaducidad( cCodigoArticulo, cCodigoPrimeraPropiedad, cCodigoSegundaPropiedad, cValorPrimeraPropiedad, cValorSegundaPropiedad, cLote )
+   cSql        += "UNION ALL "
+   cSql        += RectificativasProveedoresLineasModel():getSQLSentenceFechaCaducidad( cCodigoArticulo, cCodigoPrimeraPropiedad, cCodigoSegundaPropiedad, cValorPrimeraPropiedad, cValorSegundaPropiedad, cLote )
+   cSql        += "UNION ALL "
+   cSql        += MaterialesProducidosLineasModel():getSQLSentenceFechaCaducidad( cCodigoArticulo, cCodigoPrimeraPropiedad, cCodigoSegundaPropiedad, cValorPrimeraPropiedad, cValorSegundaPropiedad, cLote )
+   cSql        += "UNION ALL "
+   cSql        += MovimientosAlmacenLineasModel():getSQLSentenceFechaCaducidad( cCodigoArticulo, cCodigoPrimeraPropiedad, cCodigoSegundaPropiedad, cValorPrimeraPropiedad, cValorSegundaPropiedad, cLote )
+   cSql        += ") FecCad "
+   cSql        += "ORDER BY dFecDoc DESC"
+
+   if ::ExecuteSqlStatement( cSql, @cStm )
+      RETURN ( ( cStm )->dFecCad )
+   end
+
+RETURN ( ctod( "" ) )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static FUNCTION StocksModel_nStockArticulo( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote ) ; local Self AS CLASS StocksModel := QSelf() AS CLASS StocksModel
+
+   local nStockArticulo         := 0
+   local cStm  := "getTotalUnidadesStockSalidas"
+   local cSql  := ""
+
+   if empty( cCodigoArticulo ) .AND. !Empty( cCodigoAlmacen )
+      RETURN ( nStockArticulo )
+   end
+
+   cCodigoArticulo                       := padr( cCodigoArticulo, 18 )
+
+   cSql        += "SELECT SUM( totalUnidadesStock ) as [total] "
+   cSql        += "FROM ( "
+   cSql        += MovimientosAlmacenLineasModel():getSntSalidaStock( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote )
+   cSql        += "UNION ALL "
+   cSql        += AlbaranesClientesLineasModel():getSntSalidaStock( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote )
+   cSql        += "UNION ALL "
+   cSql        += FacturasClientesLineasModel():getSntSalidaStock( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote )
+   cSql        += "UNION ALL "
+   cSql        += RectificativasClientesLineasModel():getSntSalidaStock( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote )
+   cSql        += "UNION ALL "
+   cSql        += TicketsClientesLineasModel():getSntSalidaStock( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote )
+   cSql        += "UNION ALL "
+   cSql        += TicketsClientesLineasModel():getSntTotalUnidadesComb( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote )
+   cSql        += "UNION ALL "
+   cSql        += MaterialesConsumidosLineasModel():getSntSalidaStock( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote )
+   cSql        += "UNION ALL "
+   cSql        += AlbaranesProveedoresLineasModel():getSntSalidaComprasStock( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote )
+   cSql        += "UNION ALL "
+   cSql        += FacturasProveedoresLineasModel():getSntSalidaComprasStock( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote )
+   cSql        += "UNION ALL "
+   cSql        += RectificativasProveedoresLineasModel():getSntSalidaComprasStock( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote )
+   cSql        += "UNION ALL "
+   cSql        += MovimientosAlmacenLineasModel():getSntEntradaStock( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote )
+   cSql        += "UNION ALL "
+   cSql        += MaterialesProducidosLineasModel():getSntEntradaStock( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote )
+   cSql        += "UNION ALL "
+   cSql        += AlbaranesProveedoresLineasModel():getSntEntradaStock( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote )
+   cSql        += "UNION ALL "
+   cSql        += FacturasProveedoresLineasModel():getSntEntradaStock( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote )
+   cSql        += "UNION ALL "
+   cSql        += RectificativasProveedoresLineasModel():getSntEntradaStock( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote )
+   cSql        += " ) StockSalidas"
+
+   if ::ExecuteSqlStatement( cSql, @cStm )
+      RETURN ( ( cStm )->total )
+   end
+
+RETURN ( nStockArticulo )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static FUNCTION StocksModel_nGlobalStockArticulo( cCodigoArticulo, cCodigoAlmacen, dFechaHasta ) ; local Self AS CLASS StocksModel := QSelf() AS CLASS StocksModel
+
+   local cStm                 := "nGlobalStockArticulo"
+   local cSql
+
+   if !Empty( cCodigoAlmacen )
+   cSql        := "SELECT TOP 1 articulo, almacen, SUM( unidades ) AS unidades "
+   else
+   cSql        := "SELECT TOP 1 articulo, SUM( unidades ) AS unidades "
+   end
+
+   cSql        += "FROM ( "
+   cSql        += AlbaranesProveedoresLineasModel():getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += AlbaranesProveedoresLineasModel():getInfoSalidasComprasStock( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += FacturasProveedoresLineasModel():getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += FacturasProveedoresLineasModel():getInfoSalidasComprasStock( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += RectificativasProveedoresLineasModel():getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += RectificativasProveedoresLineasModel():getInfoSalidasComprasStock( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += AlbaranesClientesLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += FacturasClientesLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += RectificativasClientesLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += TicketsClientesLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += TicketsClientesLineasModel():getInfoSqlStockCombinado( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += MaterialesProducidosLineasModel():getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += MaterialesConsumidosLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += MovimientosAlmacenLineasModel():getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += MovimientosAlmacenLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+
+   if !Empty( cCodigoAlmacen )
+   cSql        += " ) StockDocumentos GROUP BY articulo, almacen"
+   else
+   cSql        += " ) StockDocumentos GROUP BY articulo"
+   end
+
+   if ::ExecuteSqlStatement( cSql, @cStm )
+      RETURN ( cStm )->unidades
+   end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RETURN ( 0 )
+
+
+
+static FUNCTION StocksModel_getLineasAgrupadas( cCodigoArticulo, cCodigoAlmacen ) ; local Self AS CLASS StocksModel := QSelf() AS CLASS StocksModel
+
+   local cStm              := "ADSLineasAgrupadas"
+   local cSql              := ""
+   cSql                    += MovimientosAlmacenLineasModel():getSQLSentenceLineasEntradasAgrupadas( cCodigoArticulo, cCodigoAlmacen )
+   cSql                    += "UNION ALL "
+   cSql                    += MovimientosAlmacenLineasModel():getSQLSentenceLineasSalidasAgrupadas( cCodigoArticulo, cCodigoAlmacen )
+   cSql                    += "UNION ALL "
+   cSql                    += AlbaranesClientesLineasModel():getSQLSentenceLineasAgrupadas( cCodigoArticulo, cCodigoAlmacen )
+   cSql                    += "UNION ALL "
+   cSql                    += FacturasClientesLineasModel():getSQLSentenceLineasAgrupadas( cCodigoArticulo, cCodigoAlmacen )
+   cSql                    += "UNION ALL "
+   cSql                    += TicketsClientesLineasModel():getSQLSentenceLineasAgrupadas( cCodigoArticulo, cCodigoAlmacen )
+   cSql                    += "UNION ALL "
+   cSql                    += TicketsClientesLineasModel():getSQLSentenceCombAgrupadas( cCodigoArticulo, cCodigoAlmacen )
+   cSql                    += "UNION ALL "
+   cSql                    += MaterialesConsumidosLineasModel():getSQLSentenceLineasAgrupadas( cCodigoArticulo, cCodigoAlmacen )
+   cSql                    += "UNION ALL "
+   cSql                    += MaterialesProducidosLineasModel():getSQLSentenceLineasAgrupadas( cCodigoArticulo, cCodigoAlmacen )
+   cSql                    += "UNION ALL "
+   cSql                    += AlbaranesProveedoresLineasModel():getSQLSentenceLineasAgrupadas( cCodigoArticulo, cCodigoAlmacen )
+   cSql                    += "UNION ALL "
+   cSql                    += AlbaranesProveedoresLineasModel():getSentenceLinAgrSalidasCompras( cCodigoArticulo, cCodigoAlmacen )
+   cSql                    += "UNION ALL "
+   cSql                    += FacturasProveedoresLineasModel():getSQLSentenceLineasAgrupadas( cCodigoArticulo, cCodigoAlmacen )
+   cSql                    += "UNION ALL "
+   cSql                    += FacturasProveedoresLineasModel():getSentenceLinAgrSalidasCompras( cCodigoArticulo, cCodigoAlmacen )
+   cSql                    += "UNION ALL "
+   cSql                    += RectificativasProveedoresLineasModel():getSQLSentenceLineasAgrupadas( cCodigoArticulo, cCodigoAlmacen )
+   cSql                    += "UNION ALL "
+   cSql                    += RectificativasProveedoresLineasModel():getSentenceLinAgrSalidasCompras( cCodigoArticulo, cCodigoAlmacen )
+
+   if ::ExecuteSqlStatement( cSql, @cStm )
+      RETURN ( cStm )
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION StocksModel_getSqlBrwStock( cCodigoArticulo, cCodigoAlmacen, dFechaHasta ) ; local Self AS CLASS StocksModel := QSelf() AS CLASS StocksModel
+
+   local n
+   local aAlmacenes     := AlmacenesModel():aAlmacenes()
+   local cStm           := "getSqlBrwStock"
+   local cSql
+
+   if Len( aAlmacenes ) == 0
+      Return ( nil )
+   end
+
+   cSql        := "SELECT articulo, almacen, lote, propiedad1, propiedad2, valor1, valor2, SUM( bultos ) AS bultos, SUM( cajas ) AS cajas, SUM( unidades ) AS unidades "
+   cSql        += "FROM ( "
+   cSql        += AlbaranesProveedoresLineasModel():getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += AlbaranesProveedoresLineasModel():getInfoSalidasComprasStock( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += FacturasProveedoresLineasModel():getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += FacturasProveedoresLineasModel():getInfoSalidasComprasStock( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += RectificativasProveedoresLineasModel():getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += RectificativasProveedoresLineasModel():getInfoSalidasComprasStock( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += AlbaranesClientesLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += FacturasClientesLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += RectificativasClientesLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += TicketsClientesLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += TicketsClientesLineasModel():getInfoSqlStockCombinado( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += MaterialesProducidosLineasModel():getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += MaterialesConsumidosLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += MovimientosAlmacenLineasModel():getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += MovimientosAlmacenLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " ) StockDocumentos WHERE ("
+
+   for n := 1 to len( aAlmacenes )
+      cSql     += " almacen = " + quoted( hGet( aAlmacenes[n], "cCodAlm" ) )
+      if n <> len( aAlmacenes )
+         cSql  += " OR "
+      end
+   next
+
+   cSql        += " ) GROUP BY articulo, almacen, lote, propiedad1, propiedad2, valor1, valor2"
+
+   if ::ExecuteSqlStatement( cSql, @cStm )
+      ( cStm )->( dbSetFilter( {|| Field->unidades <> 0 }, "unidades != 0" ) )
+      ( cStm )->( dbGoTop() )
+      RETURN ( cStm )
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION StocksModel_getSqlBrwArtStock( cCodigoArticulo, cCodigoAlmacen, dFechaHasta ) ; local Self AS CLASS StocksModel := QSelf() AS CLASS StocksModel
+
+   local n
+   local aAlmacenes  := AlmacenesModel():aAlmacenes()
+   local cStm        := "getSqlBrwArtStock"
+   local cSql
+
+   if Len( aAlmacenes ) == 0
+      Return ( nil )
+   end
+
+   cSql        := "SELECT articulo, almacen, lote, propiedad1, propiedad2, valor1, valor2, SUM( bultos ) AS bultos, SUM( cajas ) AS cajas, SUM( unidades ) AS unidades "
+   cSql        += "FROM ( "
+   cSql        += AlbaranesProveedoresLineasModel():getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += AlbaranesProveedoresLineasModel():getInfoSalidasComprasStock( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += FacturasProveedoresLineasModel():getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += FacturasProveedoresLineasModel():getInfoSalidasComprasStock( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += RectificativasProveedoresLineasModel():getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += RectificativasProveedoresLineasModel():getInfoSalidasComprasStock( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += AlbaranesClientesLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += FacturasClientesLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += RectificativasClientesLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += TicketsClientesLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += TicketsClientesLineasModel():getInfoSqlStockCombinado( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += MaterialesProducidosLineasModel():getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += MaterialesConsumidosLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += MovimientosAlmacenLineasModel():getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " UNION ALL "
+   cSql        += MovimientosAlmacenLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen, dFechaHasta )
+   cSql        += " ) StockDocumentos WHERE ("
+
+   for n := 1 to len( aAlmacenes )
+      cSql     += " almacen = " + quoted( hGet( aAlmacenes[n], "cCodAlm" ) )
+      if n <> len( aAlmacenes )
+         cSql  += " OR "
+      end
+   next
+
+   cSql        += " ) GROUP BY articulo, almacen, lote, propiedad1, propiedad2, valor1, valor2"
+
+   if ::ExecuteSqlStatement( cSql, @cStm )
+      ( cStm )->( dbSetFilter( {|| Field->unidades <> 0 }, "unidades != 0" ) )
+      ( cStm )->( dbGoTop() )
+      RETURN ( cStm )
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION StocksModel_getInfoSqlStockDocument( cCodigoArticulo, cCodigoAlmacen ) ; local Self AS CLASS StocksModel := QSelf() AS CLASS StocksModel
+
+   local n
+   local aAlmacenes  := AlmacenesModel():aAlmacenes()
+   local cStm        := "getInfoSqlStockDocument"
+   local cSql
+
+   cSql              := "SELECT articulo, almacen, lote, propiedad1, propiedad2, valor1, valor2, fecha, hora, document, serie, numero, sufijo, nnumlin, bultos, cajas, unidades "
+   cSql              += "FROM ( "
+   cSql              += AlbaranesProveedoresLineasModel():getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen )
+   cSql              += " UNION ALL "
+   cSql              += AlbaranesProveedoresLineasModel():getInfoSalidasComprasStock( cCodigoArticulo, cCodigoAlmacen )
+   cSql              += " UNION ALL "
+   cSql              += FacturasProveedoresLineasModel():getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen )
+   cSql              += " UNION ALL "
+   cSql              += FacturasProveedoresLineasModel():getInfoSalidasComprasStock( cCodigoArticulo, cCodigoAlmacen )
+   cSql              += " UNION ALL "
+   cSql              += RectificativasProveedoresLineasModel():getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen )
+   cSql              += " UNION ALL "
+   cSql              += RectificativasProveedoresLineasModel():getInfoSalidasComprasStock( cCodigoArticulo, cCodigoAlmacen )
+   cSql              += " UNION ALL "
+   cSql              += AlbaranesClientesLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen )
+   cSql              += " UNION ALL "
+   cSql              += FacturasClientesLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen )
+   cSql              += " UNION ALL "
+   cSql              += RectificativasClientesLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen )
+   cSql              += " UNION ALL "
+   cSql              += TicketsClientesLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen )
+   cSql              += " UNION ALL "
+   cSql              += TicketsClientesLineasModel():getInfoSqlStockCombinado( cCodigoArticulo, cCodigoAlmacen )
+   cSql              += " UNION ALL "
+   cSql              += MaterialesProducidosLineasModel():getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen )
+   cSql              += " UNION ALL "
+   cSql              += MaterialesConsumidosLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen )
+   cSql              += " UNION ALL "
+   cSql              += MovimientosAlmacenLineasModel():getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen )
+   cSql              += " UNION ALL "
+   cSql              += MovimientosAlmacenLineasModel():getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen )
+   cSql              += " ) StockDocumentos WHERE ( "
+
+   for n := 1 to len( aAlmacenes )
+      cSql           += " almacen = " + quoted( hGet( aAlmacenes[n], "cCodAlm" ) )
+      if n <> len( aAlmacenes )
+         cSql        += " OR "
+      end
+   next
+
+   cSql              += " ) ORDER BY articulo, almacen, lote, propiedad1, propiedad2, valor1, valor2, fecha, hora ASC"
+
+   if ::ExecuteSqlStatement( cSql, @cStm )
+      RETURN ( cStm )
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION StocksModel_getInfoStockPendiente( cCodigoArticulo, cCodigoAlmacen ) ; local Self AS CLASS StocksModel := QSelf() AS CLASS StocksModel
+
+   local n
+   local aAlmacenes  := AlmacenesModel():aAlmacenes()
+   local cStm        := "getInfoStockPendiente"
+   local cSql
+
+   cSql              := "SELECT articulo, almacen, fecha, hora, document, serie, numero, sufijo, nnumlin, pdtrecibir, pdtentrega "
+   cSql              += "FROM ( "
+   cSql              += PedidosProveedoresLineasModel():getInfoPdtRecibir( cCodigoArticulo, cCodigoAlmacen )
+   cSql              += " UNION ALL "
+   cSql              += AlbaranesProveedoresLineasModel():getInfoPdtRecibir( cCodigoArticulo, cCodigoAlmacen )
+   cSql              += " UNION ALL "
+   cSql              += PedidosClientesLineasModel():getInfoPdtEntregar( cCodigoArticulo, cCodigoAlmacen )
+   cSql              += " UNION ALL "
+   cSql              += AlbaranesClientesLineasModel():getInfoPdtEntregar( cCodigoArticulo, cCodigoAlmacen )
+   cSql              += " UNION ALL "
+   cSql              += FacturasClientesLineasModel():getInfoPdtEntregar( cCodigoArticulo, cCodigoAlmacen )
+   cSql              += " ) StockDocumentos WHERE ( "
+
+   for n := 1 to len( aAlmacenes )
+      cSql           += " almacen = " + quoted( hGet( aAlmacenes[n], "cCodAlm" ) )
+      if n <> len( aAlmacenes )
+
+         cSql        += " OR "
+      end
+   next
+
+   cSql              += " ) ORDER BY articulo, almacen, fecha, hora ASC"
+
+   if ::ExecuteSqlStatement( cSql, @cStm )
+      RETURN ( cStm )
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION StocksModel_nTotStockPendiente( cCodigoArticulo, cCodigoAlmacen ) ; local Self AS CLASS StocksModel := QSelf() AS CLASS StocksModel
+
+   local nTotPdtRecibir       := 0
+   local nTotPdtentregar      := 0
+   local cStm                 := ::getInfoStockPendiente( cCodigoArticulo, cCodigoAlmacen )
+
+   if ( cStm )->( OrdKeyCount() ) > 0
+
+      while !( cStm )->( Eof() )
+
+         nTotPdtRecibir       += ( cStm )->pdtrecibir
+         nTotPdtentregar      += ( cStm )->pdtentrega
+
+         ( cStm )->( dbSkip() )
+
+      end
+
+   end
+
+RETURN ( { "nTotPdtRec" => nTotPdtRecibir, "nTotPdtEnt" => nTotPdtentregar} )
+
+
+
+static FUNCTION StocksModel_oTreeStocks( cCodigoArticulo, cCodigoAlmacen, oMeter ) ; local Self AS CLASS StocksModel := QSelf() AS CLASS StocksModel
+
+   local oTree
+   local cValue
+   local cStm
+
+   SysRefresh()
+
+   cStm                    := ::getInfoSqlStockDocument( cCodigoArticulo, cCodigoAlmacen )
+
+   if ( cStm )->( OrdKeyCount() ) == 0
+      Return oTree
+   end
+
+   oTree          := TreeBegin()
+
+   if !Empty( oMeter )
+      oMeter:SetTotal( ( cStm )->( OrdKeyCount() ) )
+   end
+
+   ( cStm )->( dbGoTop() )
+
+   while !( cStm )->( eof() )
+
+      if cValue <> ( cStm )->articulo + ( cStm )->almacen + ( cStm )->lote
+
+         if cValue <> nil
+            TreeEnd()
+         end
+
+         TreeAddItem( alltrim( ( cStm )->almacen ) + Space(1) + retAlmacen( ( cStm )->almacen ) )
+
+         TreeBegin()
+
+      end
+
+      TreeAddItem( ::infoDocumento( cStm ) ):Cargo := dbHash( cStm )
+
+      cValue      := ( cStm )->Articulo + ( cStm )->Almacen + ( cStm )->Lote
+
+      if !Empty( oMeter )
+         oMeter:AutoInc()
+      end
+
+      ( cStm )->( dbSkip() )
+
+   end
+
+   if cValue <> nil
+      TreeEnd()
+   end
+
+   TreeEnd()
+
+   if !Empty( oMeter )
+      oMeter:Set( ( cStm )->( LastRec() ) )
+   end
+
+   SysRefresh()
+
+RETURN ( oTree )
+
+
+
+static FUNCTION StocksModel_oTreePendiente( cCodigoArticulo, cCodigoAlmacen, oMeter ) ; local Self AS CLASS StocksModel := QSelf() AS CLASS StocksModel
+
+   local oTree
+   local cValue
+   local cStm
+
+   SysRefresh()
+
+   cStm           := ::getInfoStockPendiente( cCodigoArticulo, cCodigoAlmacen )
+
+   if ( cStm )->( OrdKeyCount() ) == 0
+      Return oTree
+   end
+
+   oTree          := TreeBegin()
+
+   if !Empty( oMeter )
+      oMeter:SetTotal( ( cStm )->( OrdKeyCount() ) )
+   end
+
+   ( cStm )->( dbGoTop() )
+
+   while !( cStm )->( eof() )
+
+      if cValue <> ( cStm )->articulo + ( cStm )->almacen
+
+         if cValue <> nil
+            TreeEnd()
+         end
+
+         TreeAddItem( alltrim( ( cStm )->almacen ) + Space(1) + retAlmacen( ( cStm )->almacen ) )
+
+         TreeBegin()
+
+      end
+
+      TreeAddItem( ::infoDocumento( cStm ) ):Cargo := dbHash( cStm )
+
+      cValue      := ( cStm )->Articulo + ( cStm )->Almacen
+
+      if !Empty( oMeter )
+         oMeter:AutoInc()
+      end
+
+      ( cStm )->( dbSkip() )
+
+   end
+
+   if cValue <> nil
+      TreeEnd()
+   end
+
+   TreeEnd()
+
+   if !Empty( oMeter )
+      oMeter:Set( ( cStm )->( LastRec() ) )
+   end
+
+   SysRefresh()
+
+RETURN ( oTree )
+
+
+
+static FUNCTION StocksModel_infoDocumento( cStm ) ; local Self AS CLASS StocksModel := QSelf() AS CLASS StocksModel
+
+   local cDocumento     := ""
+
+   cDocumento           += ::cTextDocument( cStm ) + space( 1 )
+
+   if !Empty( ( cStm )->Serie )
+      cDocumento        += ( cStm )->serie + "/" + AllTrim( Str( ( cStm )->numero ) ) + "/" + ( cStm )->sufijo + space( 1 )
+   else
+      cDocumento        += AllTrim( Str( ( cStm )->numero ) ) + "/" + ( cStm )->sufijo + space( 1 )
+   end
+
+   cDocumento           += "de fecha " + dtoc( ( cStm )->fecha )
+   cDocumento           += if( empty( ( cStm )->hora ), "", " a las " + trans( ( cStm )->hora, "@R 99:99:99" ) )
+
+RETURN ( cDocumento )
+
+
+
+static FUNCTION StocksModel_cTextDocument( cStm ) ; local Self AS CLASS StocksModel := QSelf() AS CLASS StocksModel
+
+   local cTextDocument  := ""
+
+   if !isChar( ( cStm )->document )
+      Return ( cTextDocument )
+   end
+
+   do case
+      case ( cStm )->document == "01"
+         cTextDocument  := "Pedido proveedor"
+
+      case ( cStm )->document == "02"
+         cTextDocument  := "Albarán proveedor"
+
+      case ( cStm )->document == "03"
+         cTextDocument  := "Factura proveedor"
+
+      case ( cStm )->document == "04"
+         cTextDocument  := "Rectificativa proveedor"
+
+      case ( cStm )->document == "09"
+         cTextDocument  := "Pedido cliente"
+
+      case ( cStm )->document == "10"
+         cTextDocument  := "Albarán cliente"
+
+      case ( cStm )->document == "11"
+         cTextDocument  := "Factura cliente"
+
+      case ( cStm )->document == "14"
+         cTextDocument  := "Rectificativa cliente"
+
+      case ( cStm )->document == "12"
+         cTextDocument  := "Simplificada cliente"
+
+      case SubStr( ( cStm )->document, 1, 2 ) == "05"
+
+         do case
+            case val( SubStr( ( cStm )->document, 3 ) ) == 1
+               cTextDocument  := "Mov. entre almacenes"
+
+            case val( SubStr( ( cStm )->document, 3 ) ) == 2
+               cTextDocument  := "Mov. regularización"
+
+            case val( SubStr( ( cStm )->document, 3 ) ) == 3
+               cTextDocument  := "Mov. objetivo"
+
+            case val( SubStr( ( cStm )->document, 3 ) ) == 4
+               cTextDocument  := "Mov. consolidación"
+
+         end
+
+      case ( cStm )->document == "06"
+         cTextDocument  := "Material producido"
+
+      case ( cStm )->document == "07"
+         cTextDocument  := "Materia prima"
+
+   end
+
+Return ( cTextDocument )
+
+
+
+static FUNCTION StocksModel_lPutStockActual( cCodigoArticulo, cCodigoAlmacen, cCodigoPrimeraPropiedad, cCodigoSegundaPropiedad, cValorPrimeraPropiedad, cValorSegundaPropiedad, cLote, oGet ) ; local Self AS CLASS StocksModel := QSelf() AS CLASS StocksModel
+
+   local nStock   := 0
+   local cClass   := ""
+
+   if !uFieldEmpresa( "lNStkAct" )
+      nStock      := ::nStockArticulo( cCodigoArticulo, cCodigoAlmacen, cCodigoPrimeraPropiedad, cCodigoSegundaPropiedad, cValorPrimeraPropiedad, cValorSegundaPropiedad, cLote )
+   end
+
+   if !empty( oGet )
+
+      cClass      := oGet:ClassName()
+
+      do case
+         case cClass == "TGET" .OR. cClass == "TGETHLP" .OR. cClass == "TGRIDGET"
+            oGet:cText( nStock )
+         case cClass == "TSAY"
+            oGet:SetText( nStock )
+      end
+
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION StocksModel_StockInit( cCodEmpOld, cCodEmpNew ) ; local Self AS CLASS StocksModel := QSelf() AS CLASS StocksModel
+
+   local hAlmacen
+   local aAlmacenes  := {}
+   local listArt     := "listart"
+   local alisStk     := {}
+   local aTotalStock := {}
+   local nCount      := 202400001
+   local cSql        := ""
+   local cStm
+   local cSqlLin     := ""
+   local cStmLin
+   local hLin
+   local nCountLin   := 1
+
+   ArticulosModel():getListArticulos( listArt )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   aAlmacenes := AlmacenesModel():aAlmacenes()
+
+   for each hAlmacen in aAlmacenes
+
+
+
+
+
+      cSql         := "INSERT INTO " + MovimientosAlmacenModel():getEmpresaTableName( "RemMovT" )
+      cSql         += " ( lSelDoc, nNumRem, cSufRem, nTipMov, cCodUsr, cCodDlg, dFecRem, cTimRem, cAlmOrg, cAlmDes, cCodDiv, nVdvDiv, cComMov, cGuid ) VALUES "
+      cSql         += " ( .t., " + allTrim( Str( nCount ) )
+      cSql         += ", " + quoted( "00" )
+      cSql         += ", " + "4"
+      cSql         += ", " + quoted( Auth():Codigo() )
+      cSql         += ", " + quoted( "00" )
+      cSql         += ", " + quoted( "01/01/2024" )
+      cSql         += ", " + quoted( "030000" )
+      cSql         += ", " + quoted( "" )
+      cSql         += ", " + quoted( hGet( hAlmacen, "cCodAlm" ) )
+      cSql         += ", " + quoted( "EUR" )
+      cSql         += ", " + "1"
+      cSql         += ", " + quoted( "Apertura de empresa" )
+      cSql         += ", " + quoted( Str( nCount ) ) + " )"
+
+      MovimientosAlmacenModel():ExecuteSqlStatement( cSql, @cStm )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ( listArt )->( dbGoTop() )
+
+      while !( listArt )->( eof() )
+
+         Msgwait( ( listArt )->Codigo, "Artículo", 0.0001 )
+
+         alisStk  := DBHScatter( ::getSqlBrwArtStock( ( listArt )->Codigo, AllTrim( hGet( hAlmacen, "cCodAlm" ) ) ) )
+
+         if len( alisStk ) > 0
+
+            cSqlLin      := "INSERT INTO " + MovimientosAlmacenLineasModel():getEmpresaTableName( "HisMov" )
+            cSqlLin      += " ( dFecMov, cTimMov, nTipMov, cAliMov, cAloMov, cRefMov, cNomMov, cCodPr1, cCodPr2, cValPr1, cValPr2,"
+            cSqlLin      += " cCodUsr, cCodDlg, lLote, cLote, nCajMov, nUndMov, nPreDiv, lSndDoc, nNumRem,"
+            cSqlLin      += " cSufRem, lSelDoc, nNumLin, nBultos, cGuid, cGuidPar ) VALUES "
+            cSqlLin      += "( " + quoted( "01/01/2024" )
+            cSqlLin      += ", " + quoted( "030000" )
+            cSqlLin      += ", " + "4"
+            cSqlLin      += ", " + quoted( hGet( hAlmacen, "cCodAlm" ) )
+            cSqlLin      += ", " + quoted( "" )
+            cSqlLin      += ", " + quoted( hGet( alisStk[1], "articulo" ) )
+            cSqlLin      += ", " + quoted( Left( StrTran( ArticulosModel():getNombre( hGet( alisStk[1], "articulo" ) ), "'", "" ), 50 ) )
+            cSqlLin      += ", " + quoted( hGet( alisStk[1], "propiedad1" ) )
+            cSqlLin      += ", " + quoted( hGet( alisStk[1], "propiedad2" ) )
+            cSqlLin      += ", " + quoted( hGet( alisStk[1], "valor1" ) )
+            cSqlLin      += ", " + quoted( hGet( alisStk[1], "valor2" ) )
+            cSqlLin      += ", " + quoted( Auth():Codigo() )
+            cSqlLin      += ", " + quoted( "00" )
+            cSqlLin      += ", " + if( !Empty( quoted( hGet( alisStk[1], "lote" ) ) ), ".t. ", ".f. " )
+            cSqlLin      += ", " + quoted( Left( strTran( hGet( alisStk[1], "lote" ),"'", "" ), 14 ) )
+            cSqlLin      += ", 1"
+            cSqlLin      += ", " + AllTrim( Str( hGet( alisStk[1], "unidades" ) ) )
+            cSqlLin      += ", " + "0"
+            cSqlLin      += ", .t. "
+            cSqlLin      += ", " + allTrim( Str( nCount ) )
+            cSqlLin      += ", " + quoted( "00" )
+            cSqlLin      += ", .t. "
+            cSqlLin      += ", " + allTrim( Str( nCountLin ) )
+            cSqlLin      += ", " + "0"
+            cSqlLin      += ", " + quoted( win_uuidcreatestring() )
+            cSqlLin      += ", " + quoted( Str( nCount ) ) + " )"
+
+            MovimientosAlmacenLineasModel():ExecuteSqlStatement( cSqlLin, @cStmLin )
+
+            nCountLin++
+
+         end
+
+         ( listArt )->( dbSkip() )
+
+      end
+
+      nCountLin := 1
+
+      nCount++
+
+   next
+
+   Msginfo( "Proceso terminado" )
+
+RETURN ( .T. )
+
+
+
+
+
+
+
+Function loteForCaducidad( cCodArt, cCodAlm )
+
+   local cLote    := ""
+   local aStocks  := {}
+   local aPuente  := {}
+   local hStock
+
+
+
+   aStocks        := StocksModel():aStockArticulo( cCodArt, cCodAlm )
+
+   if !hb_isarray( aStocks ) .OR. len( aStocks ) == 0
+      Return ( { "lote" => Space(64), "caducidad" => cTod( "" ) } )
+   end
+
+
+
+   for each hStock in aStocks
+
+
+
+
+
+
+      hSet( hStock, "caducidad", StocksModel():getFechaCaducidad( cCodArt, hGet( hStock, "propiedad1" ), hGet( hStock, "propiedad2" ), hGet( hStock, "valor1" ), hGet( hStock, "valor2" ), hGet( hStock, "lote" ) ) )
+
+   next
+
+
+
+   for each hStock in aStocks
+
+      if Round( hGet( hStock, "unidades" ), 6 ) > 0.000000
+         aAdd( aPuente, hStock )
+      end
+
+   next
+
+   aStocks  := aPuente
+
+
+
+   aSort( aStocks, , , {|x,y| hGet( x, "caducidad" ) < hGet( y, "caducidad" ) } )
+
+   if len( aStocks ) >= 1
+      RETURN ( { "lote" => hGet( aStocks[1], "lote" ), "caducidad" => hGet( aStocks[1], "caducidad" ) } )
+   end
+
+RETURN ( { "lote" => Space(64), "caducidad" => cTod( "" ) } )

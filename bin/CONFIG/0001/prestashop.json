@@ -1,0 +1,38 @@
+{
+  "HideExportButton": false,
+  "RealTimeConexion": true,
+  "InvertedNameFormat": false,
+  "Webs":
+  {
+    "BRANDY":
+    {
+      "Active": true,
+      "MySqlServer": "POAPMYSQL149.dns-servicio.com",
+      "MySqlPort": 3306,
+      "MySqlDatabase": "db3769059_tienda17",
+      "MySqlUser": "u3769059_17",
+      "MySqlPassword": "7Ywh7?7f",
+      "MySqlTimeOut": 60,
+      "CookieKey": "",
+      "PrefixDatabase": "ps_",
+      "OrderSerie": "A",
+      "BudgetSerie": "A",
+      "DateStart": "2019-01-01",
+      "FtpService": "Curl",
+      "FtpServer": "",
+      "FtpUser": "",
+      "FtpPassword": "",
+      "FtpPort": 21,
+      "FtpPassive": false,
+      "ImagesDirectory": "",
+      "Store": "000",
+      "SyncronizeManufacturers": true,
+      "ProcessWithoutStock": true,
+      "ProcessWithoutImage": true,
+      "CoverValueNull": true,
+      "IdProduct": "",
+      "IdStock": ""
+    }
+  }
+}
+

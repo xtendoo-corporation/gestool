@@ -1,0 +1,4191 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 11 ".\.\Prg\Internet.prg"
+_HB_CLASS TSndRecInf ; function TSndRecInf ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TSndRecInf", iif( .F., { }, { @HBObject() } ), @TSndRecInf() ) ) ;
+
+   _HB_MEMBER { lFtpValido } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lFtpValido"}, .F. )
+
+   _HB_MEMBER { lConnect } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lConnect"}, .F. )
+   _HB_MEMBER { lServer } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lServer"}, .F. )
+   _HB_MEMBER { lFranquiciado } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lFranquiciado"}, .F. )
+   _HB_MEMBER { aSend } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aSend"}, .F. )
+   _HB_MEMBER { aReciver } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aReciver"}, .F. )
+   _HB_MEMBER { acSay } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"acSay"}, .F. )
+   _HB_MEMBER { oMtr } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oMtr"}, .F. )
+   _HB_MEMBER { nMtr } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nMtr"}, .F. )
+   _HB_MEMBER { oPro } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oPro"}, .F. )
+   _HB_MEMBER { cPro } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPro"}, .F. )
+   _HB_MEMBER { oSay } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSay"}, .F. )
+   _HB_MEMBER { cSay } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSay"}, .F. )
+   _HB_MEMBER { oFtp } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFtp"}, .F. )
+   _HB_MEMBER { oInt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oInt"}, .F. )
+
+   _HB_MEMBER { oTimer } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTimer"}, .F. )
+   _HB_MEMBER { oSubItem } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSubItem"}, .F. )
+   _HB_MEMBER { oSubItem2 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSubItem2"}, .F. )
+
+   _HB_MEMBER { cIniFile } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cIniFile"}, .F. )
+
+   _HB_MEMBER { lPlanificarEnvio } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lPlanificarEnvio"}, .F. )
+   _HB_MEMBER { cHoraEnvio } ; oClass:AddMultiData(, "0000", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cHoraEnvio"}, .F. )
+   _HB_MEMBER { lPlanificarRecepcion } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lPlanificarRecepcion"}, .F. )
+   _HB_MEMBER { cHoraRecepcion } ; oClass:AddMultiData(, "0000", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cHoraRecepcion"}, .F. )
+   _HB_MEMBER { lEnviado } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lEnviado"}, .F. )
+   _HB_MEMBER { lRecibido } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lRecibido"}, .F. )
+   _HB_MEMBER { lInProcess } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lInProcess"}, .F. )
+   _HB_MEMBER { lGetProcesados } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lGetProcesados"}, .F. )
+   _HB_MEMBER { lGetFueraSecuencia } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lGetFueraSecuencia"}, .F. )
+   _HB_MEMBER { lGetEliminarFicheros } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lGetEliminarFicheros"}, .F. )
+   _HB_MEMBER { lImprimirEnvio } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lImprimirEnvio"}, .F. )
+   _HB_MEMBER { lExportarPda } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lExportarPda"}, .F. )
+
+   _HB_MEMBER { nTipoEnvio } ; oClass:AddMultiData(, 1, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTipoEnvio"}, .F. )
+
+   _HB_MEMBER { nLevel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nLevel"}, .F. )
+
+   _HB_MEMBER { oDbfSenderReciver } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfSenderReciver"}, .F. )
+   _HB_MEMBER { oDbfFilesReciver } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfFilesReciver"}, .F. )
+
+   _HB_MEMBER { aFilesProcessed } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aFilesProcessed"}, .F. )
+
+   _HB_MEMBER { oBrwHistorial } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwHistorial"}, .F. )
+   _HB_MEMBER { oBrwFiles } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwFiles"}, .F. )
+
+   _HB_MEMBER { oBmpSel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBmpSel"}, .F. )
+   _HB_MEMBER { oDlg } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDlg"}, .F. )
+   _HB_MEMBER { oFld } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFld"}, .F. )
+
+   _HB_MEMBER { oBotonAnterior } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBotonAnterior"}, .F. )
+   _HB_MEMBER { oBotonSiguiente } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBotonSiguiente"}, .F. )
+   _HB_MEMBER { oBotonTerminar } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBotonTerminar"}, .F. )
+
+   _HB_MEMBER { cFilTxt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFilTxt"}, .F. )
+   _HB_MEMBER { oFilTxt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFilTxt"}, .F. )
+   _HB_MEMBER { hFilTxt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hFilTxt"}, .F. )
+
+   _HB_MEMBER { oBtnOk } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnOk"}, .F. )
+   _HB_MEMBER { oBtnCancel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnCancel"}, .F. )
+
+   _HB_MEMBER { oTree } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTree"}, .F. )
+   _HB_MEMBER { oImageList } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oImageList"}, .F. )
+
+   _HB_MEMBER { cPath } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPath"}, .F. )
+   _HB_MEMBER { cPathComunication } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPathComunication"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @TSndRecInf_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Init(); oClass:AddMethod( "Init", @TSndRecInf_Init(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Create(); oClass:AddInline( "Create", {|Self | ( ( Self ) ), ( Self ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LoadFromIni(); oClass:AddMethod( "LoadFromIni", @TSndRecInf_LoadFromIni(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SaveToIni(); oClass:AddMethod( "SaveToIni", @TSndRecInf_SaveToIni(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SaveMessageToFile(); oClass:AddMethod( "SaveMessageToFile", @TSndRecInf_SaveMessageToFile(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Activate( lAuto); oClass:AddMethod( "Activate", @TSndRecInf_Activate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ActivateTablet(); oClass:AddMethod( "ActivateTablet", @TSndRecInf_ActivateTablet(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AutoExecute(); oClass:AddInline( "AutoExecute", {|Self | ( ( Self ) ), ( ::Activate( .T. ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DefineFiles(); oClass:AddMethod( "DefineFiles", @TSndRecInf_DefineFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER OpenFiles(); oClass:AddMethod( "OpenFiles", @TSndRecInf_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @TSndRecInf_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER BuildFiles(); oClass:AddInline( "BuildFiles", {|Self, cPath | ( ( Self ) ), ( ::DefineFiles( cPath ), ::oDbfSenderReciver:Create(), ::oDbfFilesReciver:Create() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER BotonSiguiente(); oClass:AddMethod( "BotonSiguiente", @TSndRecInf_BotonSiguiente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER BotonAnterior(); oClass:AddMethod( "BotonAnterior", @TSndRecInf_BotonAnterior(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Execute(); oClass:AddMethod( "Execute", @TSndRecInf_Execute(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Reindexa( cPath); oClass:AddMethod( "Reindexa", @TSndRecInf_Reindexa(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetText( cText); oClass:AddMethod( "SetText", @TSndRecInf_SetText(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER StartTimer(); oClass:AddMethod( "StartTimer", @TSndRecInf_StartTimer(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER StopTimer(); oClass:AddMethod( "StopTimer", @TSndRecInf_StopTimer(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lPriorFileRecive( cFile); oClass:AddMethod( "lPriorFileRecive", @TSndRecInf_lPriorFileRecive(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AppendFileRecive( cFile); oClass:AddMethod( "AppendFileRecive", @TSndRecInf_AppendFileRecive(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ZoomHistorial(); oClass:AddMethod( "ZoomHistorial", @TSndRecInf_ZoomHistorial(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER testFtpConexion(); oClass:AddMethod( "testFtpConexion", @TSndRecInf_testFtpConexion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ftpConexion(); oClass:AddMethod( "ftpConexion", @TSndRecInf_ftpConexion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER closeConexion(); oClass:AddMethod( "closeConexion", @TSndRecInf_closeConexion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PrintLog( cTextFile); oClass:AddMethod( "PrintLog", @TSndRecInf_PrintLog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SayMemo( cTextfile); oClass:AddMethod( "SayMemo", @TSndRecInf_SayMemo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lZipData( cFileName); oClass:AddMethod( "lZipData", @TSndRecInf_lZipData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER lUnZipData( cFileName); oClass:AddMethod( "lUnZipData", @TSndRecInf_lUnZipData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lFileRecive( cFile); oClass:AddMethod( "lFileRecive", @TSndRecInf_lFileRecive(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER lFileProcesed( cFile); oClass:AddMethod( "lFileProcesed", @TSndRecInf_lFileProcesed(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SendFiles(); oClass:AddMethod( "SendFiles", @TSndRecInf_SendFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetFiles(); oClass:AddMethod( "GetFiles", @TSndRecInf_GetFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SyncAllDbf(); oClass:AddMethod( "SyncAllDbf", @TSndRecInf_SyncAllDbf(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setPathComunication(); oClass:AddInline( "setPathComunication", {|Self, cPathComunication | ( ( Self ) ), ( ::cPathComunication := cPathComunication ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getPathComunication(); oClass:AddInline( "getPathComunication", {|Self | ( ( Self ) ), ( ::cPathComunication ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lLocalGetFiles( aSource, cTarget); oClass:AddMethod( "lLocalGetFiles", @TSndRecInf_lLocalGetFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER lFtpGetFiles( aSource, cTarget); oClass:AddMethod( "lFtpGetFiles", @TSndRecInf_lFtpGetFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lLocalSendFiles( aSource, cTarget); oClass:AddMethod( "lLocalSendFiles", @TSndRecInf_lLocalSendFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER lFtpSendFiles( aSource, cTarget); oClass:AddMethod( "lFtpSendFiles", @TSndRecInf_lFtpSendFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER aExtensions(); oClass:AddMethod( "aExtensions", @TSndRecInf_aExtensions(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TSndRecInf ;
+
+
+
+static FUNCTION TSndRecInf_New( oMenuItem, oWnd ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   If( oWnd == nil, oWnd := oWnd(), ) ;
+
+
+
+   if oWnd <> nil
+      SysRefresh(); oWnd:CloseAll(); SysRefresh()
+   end
+
+   ::Init( oMenuItem )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TSndRecInf_Init( oMenuItem ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   If( oMenuItem == nil, oMenuItem := "envio_y_recepcion", ) ;
+
+   ::nLevel             := Auth():Level( oMenuItem )
+
+   ::cPro               := ""
+   ::cSay               := ""
+   ::nMtr               := 0
+   ::aSend              := {}
+   ::aFilesProcessed    := {}
+   ::lFtpValido         := .F.
+   ::cIniFile           := cIniEmpresa()
+
+
+
+   ::setPathComunication( cRutConInt() )
+
+   aAdd( ::aSend, TArticuloSenderReciver():New(                "Artículos",                  Self ) )
+   aAdd( ::aSend, TFamiliaSenderReciver():New(                 "Familias",                   Self ) )
+   aAdd( ::aSend, TTipArt():Initiate(                          "Tipos de artículos",         Self ) )
+   aAdd( ::aSend, TPropiedadesSenderReciver():New(             "Propiedades",                Self ) )
+   aAdd( ::aSend, TClienteSenderReciver():New(                 "Clientes",                   Self ) )
+   aAdd( ::aSend, TProveedorSenderReciver():New(               "Proveedor",                  Self ) )
+   aAdd( ::aSend, TPedidosProveedorSenderReciver():New(        "Pedidos de proveedor",       Self ) )
+   aAdd( ::aSend, TAlbaranesProveedorSenderReciver():New(      "Albaranes de proveedor",     Self ) )
+   aAdd( ::aSend, TFacturasProveedorSenderReciver():New(       "Facturas de proveedor",      Self ) )
+   aAdd( ::aSend, TRectificativasProveedorSenderReciver():New( "Rectificativas proveedor",   Self ) )
+   aAdd( ::aSend, TSATClientesSenderReciver():New(             "SAT de clientes",            Self ) )
+   aAdd( ::aSend, TPresupuestosClientesSenderReciver():New(    "Presupuestos clientes",      Self ) )
+   aAdd( ::aSend, TPedidosClientesSenderReciver():New(         "Pedidos clientes",           Self ) )
+   aAdd( ::aSend, TAlbaranesClientesSenderReciver():New(       "Albaranes clientes",         Self ) )
+   aAdd( ::aSend, TFacturasClientesSenderReciver():New(        "Facturas clientes",          Self ) )
+   aAdd( ::aSend, TFacturasRectificativasSenderReciver():New(  "Rectificativas clientes",    Self ) )
+   aAdd( ::aSend, TTiketsClientesSenderReciver():New(          "Tickets clientes",           Self ) )
+   aAdd( ::aSend, TEntradasSalidasSenderReciver():New(         "Entradas y salidas",         Self ) )
+   aAdd( ::aSend, TRemMovAlm():Initiate(                       "Movimientos de almacen",     Self ) )
+   aAdd( ::aSend, TTurno():Initiate(                           "Sesiones",                   Self ) )
+
+   ::DefineFiles()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TSndRecInf_LoadFromIni( ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   if !Empty( ::aSend )
+      aSend( ::aSend, "Load" )
+   end
+
+   ::lServer               := ( "Servidor" $ cCodEnvUsr() )
+
+   ::lFranquiciado         := uFieldEmpresa( "lEmpFrnq" )
+
+   ::lPlanificarEnvio      := GetPvProfString( "Envioyrecepcion", "lPlanificarEnvio", cValToChar( ::lPlanificarEnvio ), ::cIniFile )
+   ::lPlanificarEnvio      := Upper( ::lPlanificarEnvio ) == ".T."
+
+   ::cHoraEnvio            := GetPvProfString( "Envioyrecepcion", "cHoraEnvio", cValToChar( ::cHoraEnvio ), ::cIniFile )
+
+   ::lPlanificarRecepcion  := GetPvProfString( "Envioyrecepcion", "lPlanificarRecepcion", cValToChar( ::lPlanificarRecepcion ), ::cIniFile )
+   ::lPlanificarRecepcion  := Upper( ::lPlanificarRecepcion ) == ".T."
+
+   ::cHoraRecepcion        := GetPvProfString( "Envioyrecepcion", "cHoraRecepcion", cValToChar( ::cHoraRecepcion ), ::cIniFile )
+
+   ::lGetProcesados        := GetPvProfString( "Envioyrecepcion", "lAceptarProcesados", cValToChar( ::lGetProcesados ), ::cIniFile )
+   ::lGetProcesados        := Upper( ::lGetProcesados ) == ".T."
+
+   ::lGetFueraSecuencia    := GetPvProfString( "Envioyrecepcion", "lAceptarFueraSecuencia", cValToChar( ::lGetFueraSecuencia ), ::cIniFile )
+   ::lGetFueraSecuencia    := Upper( ::lGetFueraSecuencia ) == ".T."
+
+   ::lGetEliminarFicheros  := GetPvProfString( "Envioyrecepcion", "lEliminarFicheros", cValToChar( ::lGetEliminarFicheros ), ::cIniFile )
+   ::lGetEliminarFicheros  := Upper( ::lGetEliminarFicheros ) == ".T."
+
+   ::lImprimirEnvio        := GetPvProfString( "Envioyrecepcion", "lImprimirEnvio", cValToChar( ::lImprimirEnvio ), ::cIniFile )
+   ::lImprimirEnvio        := Upper( ::lImprimirEnvio ) == ".T."
+
+   ::lExportarPda          := GetPvProfString( "Envioyrecepcion", "lExportarPda", cValToChar( ::lExportarPda ), ::cIniFile )
+   ::lExportarPda          := Upper( ::lExportarPda ) == ".T."
+
+RETURN ( Self )
+
+
+
+static FUNCTION TSndRecInf_SaveToIni( lMessage ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   If( lMessage == nil, lMessage := .F., ) ;
+
+   if !Empty( ::aSend )
+      aSend( ::aSend, "Save" )
+   end
+
+   WritePProString( "Envioyrecepcion", "lPlanificarEnvio",        cValToChar( ::lPlanificarEnvio ),      ::cIniFile )
+   WritePProString( "Envioyrecepcion", "cHoraEnvio",              cValToChar( ::cHoraEnvio ),            ::cIniFile )
+   WritePProString( "Envioyrecepcion", "lPlanificarRecepcion",    cValToChar( ::lPlanificarRecepcion ),  ::cIniFile )
+   WritePProString( "Envioyrecepcion", "cHoraRecepcion",          cValToChar( ::cHoraRecepcion ),        ::cIniFile )
+   WritePProString( "Envioyrecepcion", "lAceptarFueraSecuencia",  cValToChar( ::lGetFueraSecuencia ),    ::cIniFile )
+   WritePProString( "Envioyrecepcion", "lAceptarProcesados",      cValToChar( ::lGetProcesados ),        ::cIniFile )
+   WritePProString( "Envioyrecepcion", "lEliminarFicheros",       cValToChar( ::lGetEliminarFicheros ),  ::cIniFile )
+   WritePProString( "Envioyrecepcion", "lImprimirEnvio",          cValToChar( ::lImprimirEnvio ),        ::cIniFile )
+   WritePProString( "Envioyrecepcion", "lExportarPda",            cValToChar( ::lExportarPda ),          ::cIniFile )
+
+   if lMessage
+      MsgInfo( "Configuración de envio guardada" )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TSndRecInf_StartTimer( ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   if ::lPlanificarEnvio .OR. ::lPlanificarRecepcion
+      ::oTimer             := TTimer():New( 60000, {|| ::AutoExecute() }, oWnd() )
+      ::oTimer:Activate()
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TSndRecInf_StopTimer( ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   if ::oTimer <> nil .AND. ::oTimer:lActive
+      ::oTimer:DeActivate()
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TSndRecInf_SaveMessageToFile( ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   if !Empty( ::hFilTxt )
+      fClose( ::hFilTxt )
+   end
+
+   ::cFilTxt      := ""
+
+RETURN ( Self )
+
+
+
+static FUNCTION TSndRecInf_DefineFiles( cPath, cDriver ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+   If( cDriver == nil, cDriver := cDriver(), ) ;
+
+   ::cPath              := cPath
+
+   ::oDbfSenderReciver  := nil
+   ::oDbfFilesReciver   := nil
+
+   ::oDbfSenderReciver := DbfServer( "SndLog.Dbf", "SndLog" ):New( "SndLog.Dbf", "SndLog", ( cDriver ), "Registro de los envios", ( ::cPath ) )
+
+      ::oDbfSenderReciver:AddField( "lSelect", "L", 1, 0,,,,, "Seleccionado para envío", .F.,, .F., {} )
+      ::oDbfSenderReciver:AddField( "lTipo", "L", 1, 0,,,,, "Tipo envío o recepción", .F.,, .F., {} )
+      ::oDbfSenderReciver:AddField( "nEnvio", "N", 9, 0,,,,, "Número del envío", .F.,, .F., {} )
+      ::oDbfSenderReciver:AddField( "dFecha", "D", 8, 0,,,,, "Fecha del envío", .F.,, .F., {} )
+      ::oDbfSenderReciver:AddField( "cArchivo", "C", 80, 0,,,,, "Nombre fichero de datos", .F.,, .F., {} )
+      ::oDbfSenderReciver:AddField( "cLog", "C", 80, 0,,,,, "Nombre fichero del log", .F.,, .F., {} )
+
+      ::oDbfSenderReciver:AddIndex( "nEnvio", "SndLog.Cdx", "Str( nEnvio )",,, .F., .F.,,,, .T., .F. )
+
+
+
+   ::oDbfFilesReciver := DbfServer( "SndFil.Dbf", "SndFil" ):New( "SndFil.Dbf", "SndFil", ( cDriver ), "Registro de ficheros recibidos", ( ::cPath ) )
+
+      ::oDbfFilesReciver:AddField( "cArchivo", "C", 80, 0,,,,, "Nombre del fichero", .F.,, .F., {} )
+      ::oDbfFilesReciver:AddField( "dFecha", "D", 8, 0,,,,, "Fecha del envío", .F.,, .F., {} )
+      ::oDbfFilesReciver:AddField( "lProced", "L", 1, 0,,,,, "Procesado", .F.,, .F., {} )
+
+      ::oDbfFilesReciver:AddIndex( "cArchivo", "SndFil.Cdx", "cArchivo",,, .F., .F.,,,, .T., .F. )
+
+
+
+RETURN ( Self )
+
+
+
+static FUNCTION TSndRecInf_OpenFiles( lExclusive, cPath ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local lOpen          := .T.
+   local oError
+   local oBlock
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   oBlock               := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      if Empty( ::oDbfSenderReciver ) .OR. Empty( ::oDbfFilesReciver )
+         ::DefineFiles()
+      end
+
+      ::oDbfSenderReciver:Activate( .F., !( lExclusive ) )
+
+      ::oDbfFilesReciver:Activate(  .F., !( lExclusive ) )
+
+   RECOVER USING oError
+
+      msgStop( ErrorMessage( oError ), "Imposible abrir las bases de datos de envios y recepciones" )
+
+      lOpen             := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+Return ( lOpen )
+
+
+
+static FUNCTION TSndRecInf_CloseFiles( ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local lOpen    := .T.
+   local oBlock   := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   BEGIN SEQUENCE
+
+      if !Empty( ::oDbfSenderReciver ) .OR. Empty( ::oDbfFilesReciver )
+         ::oDbfSenderReciver:End()
+      end
+
+      if !Empty( ::oDbfFilesReciver )
+         ::oDbfFilesReciver:End()
+      end
+
+   RECOVER
+
+      lOpen       := .F.
+
+      msgStop( "Imposible cerrar todas las bases de datos.", "Atención" )
+
+   end
+
+   ErrorBlock( oBlock )
+
+   ::oDbfSenderReciver  := nil
+   ::oDbfFilesReciver   := nil
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TSndRecInf_Activate( lAuto ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local oBmp
+   local oBrwSnd
+   local oBrwRec
+   local cTipEnv     := if( nTipConInt() == 2, "Por internet", "Por medio fisico" )
+
+   If( lAuto == nil, lAuto := .F., ) ;
+
+
+
+
+
+
+   if nAnd( ::nLevel, 1 ) == 0
+      msgStop( "Acceso no permitido." )
+      return ( Self )
+   end
+
+   if !::OpenFiles()
+      return ( Self )
+   end
+
+   ::lInProcess      := .T.
+
+   ::LoadFromIni()
+
+
+
+
+
+   ::oDlg = TDialog():New(,,,,, "Internet_0",, .F.,,,,, oWnd(), .F.,,,,,, .F.,, "::oDlg", nil, )
+
+
+
+
+
+
+
+
+
+      ::oFld := TPages():Redefine( 10, ::oDlg, {"Internet_1", "Internet_2", "Internet_3", "Internet_4", "Internet_5", "Internet_6"},,,, )
+
+
+
+
+
+
+
+
+
+      oBmp := TBitmap():ReDefine( 500, "gc_satellite_dish2_48",, ::oFld:aDialogs[ 1 ],,, .F., .F.,,, .F.,,, .T. )
+
+
+
+      TSay():ReDefine( 100, {|| cCodEnvUsr()}, ::oFld:aDialogs[ 1 ],,,, .F.,, .F., .F., )
+
+
+
+      TSay():ReDefine( 110, {|| cTipEnv}, ::oFld:aDialogs[ 1 ],,,, .F.,, .F., .F., )
+
+
+
+      TSay():ReDefine( 120, {|| cNomConInt()}, ::oFld:aDialogs[ 1 ],,,, .F.,, .F., .F., )
+
+
+
+      TSay():ReDefine( 130, {|| cUsrConInt()}, ::oFld:aDialogs[ 1 ],,,, .F.,, .F., .F., )
+
+
+
+      TSay():ReDefine( 140, {|| cSitFtp()}, ::oFld:aDialogs[ 1 ],,,, .F.,, .F., .F., )
+
+
+
+      TSay():ReDefine( 150, {|| cUsrFtp()}, ::oFld:aDialogs[ 1 ],,,, .F.,, .F., .F., )
+
+
+
+      TRadMenu():Redefine( { | u | If( PCount()==0, ::nTipoEnvio, ::nTipoEnvio:= u ) }, ::oFld:aDialogs[ 1 ],, { 160, 161, 162 },,,,, .F.,, )
+
+
+
+      TCheckBox():ReDefine( 170, { | u | If( PCount()==0, ::lGetProcesados, ::lGetProcesados:= u ) }, ::oFld:aDialogs[1],,,,,,, .F.,, .F. )
+
+
+
+      TCheckBox():ReDefine( 180, { | u | If( PCount()==0, ::lGetFueraSecuencia, ::lGetFueraSecuencia:= u ) }, ::oFld:aDialogs[1],,,,,,, .F.,, .F. )
+
+
+
+      TCheckBox():ReDefine( 190, { | u | If( PCount()==0, ::lGetEliminarFicheros, ::lGetEliminarFicheros:= u ) }, ::oFld:aDialogs[1],,,,,,, .F.,, .F. )
+
+
+
+      TCheckBox():ReDefine( 200, { | u | If( PCount()==0, ::lImprimirEnvio, ::lImprimirEnvio:= u ) }, ::oFld:aDialogs[1],,,,,,, .F.,, .F. )
+
+
+
+      TCheckBox():ReDefine( 210, { | u | If( PCount()==0, ::lExportarPda, ::lExportarPda:= u ) }, ::oFld:aDialogs[1],,,,,,, .F.,, .F. )
+
+
+
+
+
+      oBrwSnd                        := IXBrowse():New( ::oFld:aDialogs[ 2 ] )
+
+      oBrwSnd:bClrSel                := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      oBrwSnd:bClrSelFocus           := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      oBrwSnd:SetArray( ::aSend, , , .F. )
+
+      oBrwSnd:lHScroll               := .F.
+      oBrwSnd:nMarqueeStyle          := 5
+
+      oBrwSnd:CreateFromResource( 100 )
+
+      with object ( oBrwSnd:addCol() )
+         :cHeader       := "Se. Seleccionada"
+         :bEditValue    := {|| ::aSend[ oBrwSnd:nArrayAt ]:getSelectSend() }
+         :nWidth        := 20
+         :SetCheck( { "Sel16", "Nil16" } )
+      end
+
+      with object ( oBrwSnd:addCol() )
+         :cHeader       := "Documento"
+         :bEditValue    := {|| ::aSend[ oBrwSnd:nArrayAt ]:getTitle() + " envio" }
+         :nWidth        := 300
+      end
+
+      oBrwSnd:bLDblClick   := {|| ::aSend[ oBrwSnd:nArrayAt ]:setSelectSend( !::aSend[ oBrwSnd:nArrayAt ]:getSelectSend() ), oBrwSnd:Refresh() }
+
+
+
+
+      TButton():ReDefine( 501, {||( ::aSend[ oBrwSnd:nArrayAt ]:setSelectSend( !::aSend[ oBrwSnd:nArrayAt ]:getSelectSend() ), oBrwSnd:Refresh() )}, ::oFld:aDialogs[ 2 ],,, .F.,,,, .F. )
+
+
+
+
+      TButton():ReDefine( 502, {||( aEval( ::aSend, {|o| o:setSelectSend( .T. ) }, oBrwSnd:Refresh() ) )}, ::oFld:aDialogs[ 2 ],,, .F.,,,, .F. )
+
+
+
+
+      TButton():ReDefine( 503, {||( aEval( ::aSend, {|o| o:setSelectSend( .F. ) }, oBrwSnd:Refresh() ) )}, ::oFld:aDialogs[ 2 ],,, .F.,,,, .F. )
+
+
+
+
+
+      oBrwRec                        := IXBrowse():New( ::oFld:aDialogs[ 3 ] )
+
+      oBrwRec:bClrSel                := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      oBrwRec:bClrSelFocus           := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      oBrwRec:SetArray( ::aSend, , , .F. )
+
+      oBrwRec:lHScroll               := .F.
+      oBrwRec:nMarqueeStyle          := 5
+
+      oBrwRec:CreateFromResource( 100 )
+
+      with object ( oBrwRec:addCol() )
+         :cHeader       := "Se. Seleccionada"
+         :bEditValue    := {|| ::aSend[ oBrwRec:nArrayAt ]:getSelectRecive() }
+         :nWidth        := 20
+         :SetCheck( { "Sel16", "Nil16" } )
+      end
+
+      with object ( oBrwRec:addCol() )
+         :cHeader       := "Documento"
+         :bEditValue    := {|| ::aSend[ oBrwRec:nArrayAt ]:getTitle() + " recepción" }
+         :nWidth        := 300
+      end
+
+      oBrwRec:bLDblClick   := {|| ::aSend[ oBrwRec:nArrayAt ]:setSelectRecive( !::aSend[ oBrwRec:nArrayAt ]:getSelectRecive() ), oBrwRec:Refresh() }
+
+
+
+
+      TButton():ReDefine( 501, {||( ::aSend[ oBrwRec:nArrayAt ]:setSelectRecive( !::aSend[ oBrwRec:nArrayAt ]:getSelectRecive() ), oBrwRec:Refresh() )}, ::oFld:aDialogs[ 3 ],,, .F.,,,, .F. )
+
+
+
+
+      TButton():ReDefine( 502, {||( aEval( ::aSend, {|o| o:setSelectRecive( .T. ) }, oBrwRec:Refresh() ) )}, ::oFld:aDialogs[ 3 ],,, .F.,,,, .F. )
+
+
+
+
+      TButton():ReDefine( 503, {||( aEval( ::aSend, {|o| o:setSelectRecive( .F. ) }, oBrwRec:Refresh() ) )}, ::oFld:aDialogs[ 3 ],,, .F.,,,, .F. )
+
+
+
+
+
+      ::oTree     := TTreeView():Redefine( 100, ::oFld:aDialogs[ 4 ] )
+
+
+
+
+      ::oPro := TSay():ReDefine( 110, {||   ::cPro}, ::oFld:aDialogs[ 4 ],,,, .F.,, .F., .F., )
+
+
+
+
+      ::oMtr := TApoloMeter():ReDefine( 120, { | u | If( PCount()==0, ::nMtr, ::nMtr:= u ) },, ::oFld:aDialogs[ 4 ], .F.,,, .F.,,,, )
+
+
+
+
+
+
+
+
+      TButton():ReDefine( 501, {||( ::oDbfSenderReciver:FieldPutByName( "lSelect", ! ::oDbfSenderReciver:lSelect ), ::oBrwHistorial:Refresh() )}, ::oFld:aDialogs[ 5 ],,, .F.,,,, .F. )
+
+
+
+
+      TButton():ReDefine( 502, {||( ::ZoomHistorial() )}, ::oFld:aDialogs[ 5 ],,, .F.,,,, .F. )
+
+      ::oBrwHistorial                 := IXBrowse():New( ::oFld:aDialogs[ 5 ] )
+
+      ::oDbfSenderReciver:SetBrowse( ::oBrwHistorial, .F. )
+
+      ::oBrwHistorial:bClrSel         := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      ::oBrwHistorial:bClrSelFocus    := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      ::oBrwHistorial:nMarqueeStyle   := 5
+
+      ::oBrwHistorial:CreateFromResource( 100 )
+
+      with object ( ::oBrwHistorial:addCol() )
+         :cHeader       := "Se. Seleccionada"
+         :bStrData      := {|| "" }
+         :bEditValue    := {|| ::oDbfSenderReciver:lSelect }
+         :nWidth        := 20
+         :SetCheck( { "Sel16", "Nil16" } )
+      end
+
+      with object ( ::oBrwHistorial:addCol() )
+         :cHeader       := "Envio"
+         :bEditValue    := {|| ::oDbfSenderReciver:nEnvio }
+         :nWidth        := 70
+         :cEditPicture  := "999999999"
+         :nDataStrAlign := 1
+         :nHeadStrAlign := 1
+      end
+
+      with object ( ::oBrwHistorial:addCol() )
+         :cHeader       := "Fecha"
+         :bEditValue    := {|| Dtoc( ::oDbfSenderReciver:dFecha ) }
+         :nWidth        := 70
+      end
+
+      with object ( ::oBrwHistorial:addCol() )
+         :cHeader       := "Fichero"
+         :bEditValue    := {|| ::oDbfSenderReciver:cLog }
+         :nWidth        := 300
+      end
+
+      ::oBrwHistorial:bLDblClick := {|| ::ZoomHistorial() }
+
+
+
+
+
+
+
+
+      TButton():ReDefine( 500, {||(  ::oDbfFilesReciver:FieldPutByName( "lProced", !::oDbfFilesReciver:lProced ), ::oBrwFiles:Refresh() )}, ::oFld:aDialogs[ 6 ],,, .F.,,,, .F. )
+
+
+
+
+      TButton():ReDefine( 510, {||(  ::oDbfFilesReciver:Delete(), ::oBrwFiles:Refresh() )}, ::oFld:aDialogs[ 6 ],,, .F.,,,, .F. )
+
+      ::oBrwFiles                 := IXBrowse():New( ::oFld:aDialogs[ 6 ] )
+
+      ::oDbfFilesReciver:SetBrowse( ::oBrwFiles, .F. )
+
+      ::oBrwFiles:bClrSel         := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      ::oBrwFiles:bClrSelFocus    := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      ::oBrwFiles:nMarqueeStyle   := 5
+
+      ::oBrwFiles:CreateFromResource( 100 )
+
+      with object ( ::oBrwFiles:addCol() )
+         :cHeader       := "Se. Seleccionada"
+         :bStrData      := {|| "" }
+         :bEditValue    := {|| ::oDbfFilesReciver:lProced }
+         :nWidth        := 20
+         :SetCheck( { "Sel16", "Nil16" } )
+      end
+
+      with object ( ::oBrwFiles:addCol() )
+         :cHeader       := "Fecha"
+         :bEditValue    := {|| Dtoc( ::oDbfFilesReciver:dFecha ) }
+         :nWidth        := 70
+      end
+
+      with object ( ::oBrwFiles:addCol() )
+         :cHeader       := "Fichero"
+         :bEditValue    := {|| ::oDbfFilesReciver:cArchivo }
+         :nWidth        := 300
+      end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      TButton():ReDefine( 40, {||( ::SaveToIni( .T. ) )}, ::oDlg,,, .F.,,,, .F. )
+
+
+
+
+      ::oBotonAnterior := TButton():ReDefine( 20, {||( ::BotonAnterior() )}, ::oDlg,,, .F.,,,, .F. )
+
+
+
+
+      ::oBotonSiguiente := TButton():ReDefine( 30, {||( ::BotonSiguiente() )}, ::oDlg,,, .F.,,,, .F. )
+
+
+
+
+      ::oBtnOk := TButton():ReDefine( 1, {||( ::Execute( .T., .T., ::lImprimirEnvio) )}, ::oDlg,,, .F.,,,, .F. )
+
+
+
+
+      ::oBtnCancel := TButton():ReDefine( 2, {||( ::oDlg:end() )}, ::oDlg,,, .F.,,,, .F. )
+
+   if lAuto
+      ::oDlg:bStart  := {|| ::Execute( .T., .T., .F. ), ::oDlg:End() }
+   end
+
+   ::oDlg:Activate( ::oDlg:bLClicked, ::oDlg:bMoved, ::oDlg:bPainted, .T.,,,, ::oDlg:bRClicked,,, )
+
+
+
+
+
+   ::SaveMessageToFile()
+
+
+
+
+
+   oBmp:End()
+
+   ::CloseFiles()
+
+   ::lInProcess   := .F.
+
+Return nil
+
+
+
+static FUNCTION TSndRecInf_BotonSiguiente( ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   do case
+      case ::oFld:nOption == 1 .AND. ::nTipoEnvio == 1
+         ::oFld:GoNext()
+         ::oBotonAnterior:Show()
+
+      case ::oFld:nOption == 2 .AND. ::nTipoEnvio == 1
+         ::oFld:GoNext()
+         ::oBotonSiguiente:Hide()
+         ::oBtnOk:Show()
+
+      case ::oFld:nOption == 1 .AND. ::nTipoEnvio == 2
+         ::oFld:SetOption( 5 )
+         ::oBotonAnterior:Show()
+         ::oBotonSiguiente:Hide()
+         ::oBtnOk:Hide()
+
+      case ::oFld:nOption == 1 .AND. ::nTipoEnvio == 3
+         ::oFld:SetOption( 6 )
+         ::oBotonAnterior:Show()
+         ::oBotonSiguiente:Hide()
+         ::oBtnOk:Hide()
+
+   end
+
+return ( Self )
+
+
+
+
+
+
+static FUNCTION TSndRecInf_BotonAnterior( ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   do case
+      case ::oFld:nOption == 2
+         ::oBotonAnterior:Hide()
+         ::oFld:GoPrev()
+         ::oBtnOk:Show()
+
+      case ::oFld:nOption == 5 .OR. ::oFld:nOption == 6
+         ::oFld:SetOption( 1 )
+         ::oBotonAnterior:Hide()
+         ::oBotonSiguiente:Show()
+         ::oBtnOk:Show()
+
+      otherwise
+         ::oBotonSiguiente:Show()
+         ::oFld:GoPrev()
+         ::oBtnOk:Show()
+
+   end
+
+return ( Self )
+
+
+
+static FUNCTION TSndRecInf_Execute( lSend, lRecive, lImprimirEnvio ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local n
+   local nZip
+   local aFiles
+   local cFileCatalog
+   local nUltimoEnvio      := nUltimoEnvioInformacion()
+   local aSend
+
+   If( lSend == nil, lSend := .T., ) ;
+   If( lRecive == nil, lRecive := .T., ) ;
+   If( lImprimirEnvio == nil, lImprimirEnvio := .F., ) ;
+
+   if ::oDlg <> nil
+      ::oDlg:Disable()
+   end
+
+   if !Empty( ::oBotonAnterior )
+      ::oBotonAnterior:Hide()
+   end
+
+   if !Empty( ::oBotonSiguiente )
+      ::oBotonSiguiente:Hide()
+   end
+
+   if !Empty( ::oBtnOk )
+      ::oBtnOk:Hide()
+   end
+
+   ::SaveToIni()
+
+
+
+   if !Empty( ::oFld )
+      ::oFld:SetOption( 4 )
+   end
+
+
+
+   if ::oTree <> nil
+      ::oTree:DeleteAll()
+   end
+
+
+
+   eraseFilesInDirectory( cPatIn(),  "*.*" )
+   eraseFilesInDirectory( cPatOut(), "*.*" )
+   eraseFilesInDirectory( cPatSnd(), "*.*" )
+
+
+
+
+
+   if ::nTipoEnvio == 1
+
+
+
+
+
+      ::SetText( "Seleccionando datos", 1 )
+
+      if lSend
+         aEval( ::aSend, {|o| if( o:getSelectSend(), ( ::SetText( o:getTitle(), 2 ), o:CreateData(), EraseFilesInDirectory(cPatSnd(), "*.*" ), Self ), ) } )
+      end
+
+
+
+
+
+      ::ftpConexion()
+
+      if ::lFtpValido
+
+
+
+
+
+         ::SetText( "Enviando datos", 1 )
+
+         if lSend
+            aEval( ::aSend, {|o| if( o:getSelectSend(), ( ::SetText( o:getTitle(), 2 ), o:SendData( self ), Self ), ) } )
+         end
+
+
+
+
+
+         ::SetText( "Recibiendo datos", 1 )
+
+         if lRecive
+            aEval( ::aSend, {|o| if ( o:getSelectRecive(), ( ::SetText( o:getTitle(), 2 ), o:ReciveData(), Self ), ) } )
+         end
+
+
+
+
+
+         ::SetText( "Procesando datos", 1 )
+
+         if lRecive
+            aEval( ::aSend, {|o| if ( o:getSelectRecive(), ( ::SetText( o:getTitle(), 2 ), o:Process(), Self ), ) } )
+         end
+
+
+
+
+
+         ::SetText( "Borrando de recepciones", 1 )
+
+         if lRecive .AND. ::lServer .AND. !::lGetEliminarFicheros
+            aEval( ::aFilesProcessed, {| cFile | ::SetText( "Borrando fichero " + cFile, 2 ), ftpEraseFile( cFile, Self ) } )
+         end
+
+
+
+
+
+         ::CloseConexion()
+
+
+
+
+
+         ::SetText( "Restaurando datos", 1 )
+
+         if lSend
+            aEval( ::aSend, {|o| if( o:getSelectSend(), ( ::SetText( o:getTitle(), 2 ), o:RestoreData(), Self ), ) } )
+         end
+
+
+
+
+
+         if lSend .OR. lRecive
+
+            ::oDbfSenderReciver:Append()
+
+            cFileCatalog                        := cPatLog() + "Snd" + StrZero( nUltimoEnvio, 6 ) + ".Zip"
+            ::oDbfSenderReciver:nEnvio          := nUltimoEnvio
+            ::oDbfSenderReciver:lTipo           := .T.
+            ::oDbfSenderReciver:dFecha          := GetSysDate()
+            ::oDbfSenderReciver:cLog            := ::cFilTxt
+
+            ::SetText( "Comprimiendo información para el catalogo", 1 )
+
+            hb_SetDiskZip( {|| nil } )
+            aEval( Directory( cPatOut() + "*.*" ), { | cName, nIndex | hb_ZipFile( cFileCatalog, cPatOut() + "\" + cName[ 1 ], 9 ) } )
+            hb_gcAll()
+
+            ::oDbfSenderReciver:Save()
+
+            nUltimoEnvioInformacion( ++nUltimoEnvio )
+
+         end
+
+      else
+
+         ::SetText( "Conexion invalida", 1 )
+
+      end
+
+   else
+
+      ::oDbfSenderReciver:GoTop()
+      while !::oDbfSenderReciver:Eof()
+
+         if ::oDbfSenderReciver:lSelect
+
+            if file( Rtrim( ::oDbfSenderReciver:cArchivo ) )
+
+               aFiles      := Hb_GetFilesInZip( Rtrim( ::oDbfSenderReciver:cArchivo ) )
+               if !Hb_UnZipFile( Rtrim( ::oDbfSenderReciver:cArchivo ), , , , cPatOut(), aFiles )
+                  MsgStop( "No se ha descomprimido el fichero " + Rtrim( ::oDbfSenderReciver:cArchivo ), "Error" )
+               end
+               hb_gcAll()
+
+               ::oDbfSenderReciver:FieldPutByName( "lSelect", .F. )
+
+
+
+
+
+               ::FtpConexion()
+
+               if ::lFtpValido
+
+                  ::SetText( "Reenviando envio número " + Trans( ::oDbfSenderReciver:nEnvio, "999999999" ), 1 )
+
+                  aFiles   := Directory( cPatOut() + "*.*" )
+
+                  for n := 1 to len( aFiles )
+
+                     if ftpSndFile( cPatOut() + aFiles[ n, 1 ], aFiles[ n, 1 ], Self )
+                        ::SetText( "Fichero reenviados " + cValToChar( aFiles[ n, 1 ] ), 2 )
+                     else
+                        ::SetText( "ERROR reenviando fichero " + cValToChar( aFiles[ n, 1 ] ), 2 )
+                     end
+
+                  next
+
+               end
+
+            else
+
+               ::SetText( "ERROR el fichero comprimido " + Rtrim( ::oDbfSenderReciver:cArchivo ) + " no existe", 2 )
+
+            end
+
+         end
+
+         ::oDbfSenderReciver:Skip()
+
+      end
+
+   end
+
+
+
+
+
+   EraseFilesInDirectory(cPatIn(),  "*.*" )
+   EraseFilesInDirectory(cPatOut(), "*.*" )
+   EraseFilesInDirectory(cPatSnd(), "*.*" )
+
+
+
+
+
+   if ::lExportarPda
+      PdaEnvioRecepcionController():getInstance():exportJson()
+   end
+
+
+
+
+
+   ::SetText( "Proceso finalizado", 1 )
+
+   if !Empty( ::oBtnCancel )
+      ::oBtnCancel:bAction  := {|| ::oDlg:end() }
+      SetWindowText( ::oBtnCancel:hWnd, "&Cerrar" )
+   end
+
+   if lImprimirEnvio
+      ::PrintLog()
+   end
+
+   if ::oDlg <> nil
+      ::oDlg:Enable()
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TSndRecInf_ftpConexion( ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local cUrl
+   local nRetry            := 0
+   local ftpSit            := Rtrim( cSitFtp() )
+   local ftpDir            := cNoPathLeft( Rtrim( cSitFtp() ) )
+   local nbrUsr            := Rtrim( cUsrFtp() )
+   local accUsr            := Rtrim( cPswFtp() )
+   local pasInt            := uFieldEmpresa( "lPasEnvio" )
+   local nPuerto           := 21
+
+   ::lFtpValido            := .F.
+
+   if nTipConInt() == 2
+
+      ::oFtp               := TFtpCurl():New( nbrUsr, accUsr, ftpSit, nPuerto )
+      ::oFtp:setPassive( pasInt )
+
+      if ::oFtp:CreateConexion()
+
+         ::lFtpValido      := .T.
+
+      else
+
+         msgStop( "Imposible conectar al sitio ftp " + ::oFtp:cServer )
+
+      end
+
+   else
+
+      ::lFtpValido         := .T.
+
+   end
+
+Return ( ::lFtpValido )
+
+
+
+static FUNCTION TSndRecInf_closeConexion( ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   if !Empty( ::oFtp )
+      ::oFtp:EndConexion()
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TSndRecInf_testFtpConexion( ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local lConnect
+
+   if ::ftpConexion() .AND. !empty( ::oFtp )
+      lConnect      := ::oFtp:testConexion()
+   end
+
+   ::closeConexion()
+
+   if ( lConnect )
+      msgStop( "Conexión con servidor FTP establecida" )
+   else
+      msgStop( "Error al conectar con servidor FTP" )
+   end
+
+RETURN ( lConnect )
+
+
+
+static FUNCTION TSndRecInf_SetText( cText, nLevel ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   If( nLevel == nil, nLevel := 3, ) ;
+
+   if nLevel < 3 .AND. ::oPro <> nil
+      ::oPro:SetText( cText )
+   end
+
+   if Empty( ::cFilTxt )
+      ::cFilTxt      := cGetNewFileName( cPatLog() + "Snd" + dtos( date() ) + strtran( time(), ":", "" ) ) + ".Txt"
+      ::hFilTxt      := fCreate( ::cFilTxt )
+   end
+
+   if Empty( ::hFilTxt )
+      ::hFilTxt      := fOpen( ::cFilTxt, 1 )
+   endif
+
+
+
+
+
+   do case
+      case nLevel == 1
+         fWrite( ::hFilTxt, cValToChar( cText ) + Chr(13)+Chr(10) )
+      case nLevel == 2
+         fWrite( ::hFilTxt, Space( 3 ) + cValToChar( cText ) + Chr(13)+Chr(10) )
+      case nLevel == 3
+         fWrite( ::hFilTxt, Space( 6 ) + cValToChar( cText ) + Chr(13)+Chr(10) )
+   end
+
+   if ::oTree <> nil
+      do case
+         case nLevel == 1
+            ::oSubItem  := ::oTree:Add( cText )
+            ::oTree:Select( ::oSubItem )
+         case nLevel == 2
+            ::oSubItem2 := ::oSubItem:Add( cText )
+            ::oTree:Select( ::oSubItem2 )
+            ::oSubItem:Expand()
+         case nLevel == 3
+            ::oTree:Select( ::oSubItem2:Add( cText ) )
+            ::oSubItem2:Expand()
+      end
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TSndRecInf_AppendFileRecive( cFile ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local oBlock
+   local oError
+
+   oBlock            := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   aAdd( ::aFilesProcessed, cFile )
+
+   if !::oDbfFilesReciver:Seek( cFile )
+      ::oDbfFilesReciver:Append()
+   else
+      ::oDbfFilesReciver:Load()
+   end
+
+   ::oDbfFilesReciver:cArchivo   := cFile
+   ::oDbfFilesReciver:dFecha     := GetSysDate()
+   ::oDbfFilesReciver:lProced    := .T.
+
+   ::oDbfFilesReciver:Save()
+
+   RECOVER USING oError
+
+      msgStop( "Error al añadir registro " + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+   end
+
+   ErrorBlock( oBlock )
+
+Return ( Self )
+
+
+
+static FUNCTION TSndRecInf_lPriorFileRecive( cFile ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local lResult     := .F.
+   local cFileExt    := GetFileExt( cFile )
+   local cFileNoExt  := GetFileNoExt( cFile )
+   local cTypeFile   := Left( cFileNoExt, At( "0", cFileNoExt ) - 1 )
+   local nNumberFile := Val( Right( cFileNoExt, 6 ) ) - 1
+   local cNumberFile := StrZero( nNumberFile, 6 )
+
+   if nNumberFile < 0
+      lResult        := .T.
+   else
+      lResult        := ::oDbfFilesReciver:Seek( cTypeFile + cNumberFile + "." + cFileExt )
+   end
+
+Return ( lResult )
+
+
+
+static FUNCTION TSndRecInf_ZoomHistorial( ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local oMemo
+   local cMemo
+   local oDlg
+
+   cMemo          := Memoread( ::oDbfSenderReciver:cLog )
+
+   oDlg = TDialog():New(,,,,, "InfoEnvio",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+   TGetHlp():ReDefine( 100, { | u | If( PCount()==0, ::oDbfSenderReciver:nEnvio, ::oDbfSenderReciver:nEnvio:= u ) }, oDlg,, "999999999",,,,,,, .F., {||     ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+   TGetHlp():ReDefine( 110, { | u | If( PCount()==0, ::oDbfSenderReciver:dFecha, ::oDbfSenderReciver:dFecha:= u ) }, oDlg,,,,,,,,, .F., {||     ( .F. )},, .F., .T.,,,,,, nil,,, )
+
+
+
+
+
+   oMemo := TMultiGet():ReDefine( 120, { | u | If( PCount()==0, cMemo, cMemo:= u ) }, oDlg,,,,,,, .F.,, .T.,, )
+
+
+
+
+   TButton():ReDefine( 1, {||( oDlg:End() )}, oDlg,,, .F.,,,, .F. )
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+Return ( Self )
+
+
+
+static FUNCTION TSndRecInf_GetFiles( aSource, cTarget, lDisco ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local lSuccess       := .F.
+
+   If( lDisco == nil, lDisco := ( nTipConInt() == 1 ), ) ;
+
+   if ValType( aSource ) <> "A"
+      aSource           := { aSource }
+   end
+
+   if lDisco
+      lSuccess          := ::lLocalGetFiles( aSource, cTarget )
+   else
+      lSuccess          := ::lFtpGetFiles( aSource, cTarget )
+   end
+
+return ( lSuccess )
+
+
+
+static FUNCTION TSndRecInf_lLocalGetFiles( aSource, cTarget ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local n
+   local i
+   local aFiles      := {}
+   local lResult     := .T.
+
+   for n := 1 to Len( aSource )
+
+      aFiles         := Directory( ::getPathComunication() + aSource[ n ] )
+
+      for i := 1 to Len( aFiles )
+
+         if ::lFileProcesed( aFiles[ i, 1 ] )
+            ::SetText( "INFORMACIÓN fichero " + cValToChar( aFiles[ i, 1 ] ) + " ya procesado." )
+            if !::lGetProcesados
+               loop
+            end
+         end
+
+
+
+
+
+
+
+
+         if isFalse( __CopyFile( ::getPathComunication() + aFiles[ i, 1 ], cTarget + aFiles[ i, 1 ] ) )
+            lResult  := .F.
+         end
+
+      next
+
+   next
+
+return ( lResult )
+
+
+
+static FUNCTION TSndRecInf_lFtpGetFiles( aSource, cTarget ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local n
+   local i
+   local aFiles            := {}
+   local lResult           := .T.
+   local lValido           := .T.
+   local cFile
+
+   for n := 1 to Len( aSource )
+
+      aFiles                  := aFileSource( ::oFTP:listFiles(), aSource[ n ] )
+
+      for each cFile in aFiles
+
+         if ::lFileProcesed( cFile )
+            ::SetText( "INFORMACIÓN fichero " + cValToChar( cFile ) + " ya procesado." )
+            lValido     := .F.
+            if !::lGetProcesados
+               loop
+            end
+         end
+
+
+
+
+
+
+
+
+
+         if lValido
+            ::SetText( "INFORMACIÓN fichero " + cValToChar( cFile ) + " para procesar." )
+         end
+
+         if ::oFtp:downloadFile( cFile, cTarget + cFile ) <> 0
+            lResult        := .F.
+         end
+
+      next
+
+   next
+
+return ( lResult )
+
+
+
+static FUNCTION TSndRecInf_SendFiles( aSource, aTarget, cDirectory ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local n
+   local oFile
+   local hSource
+   local hTarget
+   local cBuffer
+   local nBuffer        := 2000
+   local nBytes         := 0
+   local nFile          := 0
+   local nTotSize       := 0
+   local lRet           := .F.
+   local lDisco         := ( nTipConInt() == 1 )
+
+   If( aTarget == nil, aTarget := aSource, ) ;
+
+   if ValType( aSource ) <> "A"
+      aSource           := { aSource }
+   end
+
+   if ValType( aTarget ) <> "A"
+      aTarget           := { aTarget }
+   end
+
+   if ( nTipConInt() == 1 )
+      lRet              := ::lLocalSendFiles( aSource, aTarget, cDirectory )
+   else
+      lRet              := ::lFtpSendFiles( aSource, aTarget, cDirectory )
+   end
+
+return ( lRet )
+
+
+
+static FUNCTION TSndRecInf_lLocalSendFiles( aSource, aTarget, cDirectory ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local n
+   local lRet  := .T.
+
+   if !empty( cDirectory ) .AND. !lIsDir( ::getPathComunication() + cDirectory )
+      makeDir( cNamePath( ::getPathComunication() + cDirectory ) )
+   end
+
+   for n := 1 to Len( aSource )
+
+      if isFalse( __CopyFile( aSource[ n ], ::getPathComunication() + aTarget[ n ] ) )
+         lRet  := .F.
+      end
+
+   next
+
+Return ( lRet )
+
+
+
+static FUNCTION TSndRecInf_lFtpSendFiles( aSource, aTarget, cDirectory ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local n
+   local lRet  := .T.
+
+   for n := 1 to Len( aSource )
+
+      if file( aSource[ n ] )
+
+         ::SetText( "El fichero " + aSource[ n ] + " exite." )
+
+         if isFalse( ::oFtp:createFile( aSource[ n ] ) )
+            lRet  := .F.
+         end
+
+      else
+
+         ::SetText( "El fichero " + aSource[ n ] + " no exite." )
+
+      end
+
+   next
+
+Return ( lRet )
+
+
+
+static FUNCTION TSndRecInf_PrintLog( ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local oFont
+   local oReport
+   local oColumn
+
+   oFont       := TFont():New("Courier New", 9, -12 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+   oReport     := TReport():New( {  { || AllTrim( cCodEmp() + " - " + cNbrEmp() ) }, { || "Informe de envío y recepción" } }, {  { || "Fecha: " + Dtoc( Date() ) + " - " + Time() } }, {  { || "Página: " + Str( oReport:nPage, 3 ) } }, { oFont }, {}, .F., , , .F., .T., , , "Imprimiendo Log" )
+
+   if !Empty( oReport ) .AND. oReport:lCreated
+
+      oColumn  := TRColumn():New( {}, 1, { {|| "" } }, 76, {}, , .F., , , .F., .F., , oReport )
+
+      oReport:AddColumn( oColumn )
+
+      oReport:nTitleUpLine := 0
+      oReport:nTitleDnLine := 0
+
+      oReport:Margin( .25, 1, 1)
+      oReport:Margin( .25, 4, 1)
+      oReport:Margin( .25, 5, 1)
+
+   else
+
+      msgStop( "No se ha podido crear informe, revise la configuración de sus impresoras." )
+
+   end
+
+   if !Empty( oReport )
+      oReport:Activate( , , {|| ::SayMemo( oReport ) } )
+   end
+
+   oFont:End()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TSndRecInf_SayMemo( oReport ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local cText
+   local cLine
+   local nFor
+   local nLines
+   local nPageln
+
+   cText    := MemoRead( ::cFilTxt )
+
+   nLines   := MlCount( cText, 76 )
+   nPageln  := 0
+
+   for nFor := 1 to nLines
+
+      cLine := MemoLine( cText, 76, nFor)
+
+      oReport:StartLine()
+      oReport:Say( 1, cLine )
+      oReport:EndLine()
+
+      nPageln     := nPageln + 1
+
+      if nPageln == 60
+
+         nFor     := GetTop( cText, nFor, nLines)
+         nPageln  := 0
+
+      endif
+
+   next
+
+return ( Self )
+
+
+
+static FUNCTION TSndRecInf_lZipData( cFileName ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local lZip     := .T.
+   local aDir     := Directory( cLastPath( cPatSnd() ) + "\*.*" )
+   local aName
+
+   hb_SetDiskZip( {|| nil } )
+
+   for each aName in aDir
+
+      SysRefresh()
+
+      lZip        := hb_ZipFile( cPatOut() + cFileName, cLastPath( cPatSnd() ) + aName[ 1 ], 9 )
+      if lZip
+         ::SetText( "Comprimiendo " + lower( cLastPath( cPatSnd() ) + aName[ 1 ] ) + " en " + lower( cPatOut() + cFileName ) )
+      else
+         ::SetText( "Error comprimiendo " + lower( cLastPath( cPatSnd() ) + aName[ 1 ] ) + " en " + lower( cPatOut() + cFileName ) )
+         exit
+      end
+
+   next
+
+   hb_gcAll()
+
+Return ( lZip )
+
+
+
+static FUNCTION TSndRecInf_lUnZipData( cFileName, lInfo ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local aDir
+   local lUnZip   := .T.
+
+   aDir           := hb_getfilesinzip( cFileName )
+   lUnZip         := hb_unzipfile( cFileName, {|cName| if( istrue( lInfo), ::SetText( "Descomprimiendo " + lower( cName ) ), ) }, , , cPatSnd(), aDir )
+   hb_gcAll()
+
+Return ( lUnZip )
+
+
+
+static FUNCTION TSndRecInf_Reindexa( cPath ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   ::DefineFiles( cPath )
+
+   if !Empty( ::oDbfSenderReciver )
+      ::oDbfSenderReciver:IdxFDel()
+      ::oDbfSenderReciver:Activate( .F., .T., .F. )
+      ::oDbfSenderReciver:Pack()
+      ::oDbfSenderReciver:End()
+   end
+
+   if !Empty( ::oDbfFilesReciver )
+      ::oDbfFilesReciver:IdxFDel()
+      ::oDbfFilesReciver:Activate( .F., .T., .F. )
+      ::oDbfFilesReciver:Pack()
+      ::oDbfFilesReciver:End()
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TSndRecInf_lFileRecive( cFile ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local lFileRecive := .F.
+
+   if !Empty( cFile ) .AND. IsChar( cFile )
+      lFileRecive    := ::oDbfFilesReciver:Seek( Rtrim( cFile ) )
+   end
+
+Return ( lFileRecive )
+
+
+
+static FUNCTION TSndRecInf_lFileProcesed( cFile ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local lFileProcesed  := .F.
+
+   if !Empty( cFile ) .AND. IsChar( cFile )
+      lFileProcesed     := ::oDbfFilesReciver:Seek( Rtrim( cFile ) ) .AND. ::oDbfFilesReciver:lProced
+   end
+
+Return ( lFileProcesed )
+
+
+
+static FUNCTION TSndRecInf_SyncAllDbf( ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   if Empty( ::oDbfSenderReciver ) .OR. Empty( ::oDbfFilesReciver )
+      ::DefineFiles()
+   end
+
+   lCheckDbf( ::oDbfSenderReciver )
+
+   lCheckDbf( ::oDbfFilesReciver )
+
+Return ( Self )
+
+
+
+static FUNCTION TSndRecInf_ActivateTablet( ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local oDlg
+   local oSayGeneral
+   local oBtnAceptar
+   local oBtnSalir
+
+   if !::OpenFiles()
+      return ( Self )
+   end
+
+   ::lInProcess   := .T.
+
+   ::LoadFromIni()
+
+
+
+
+
+   oDlg              := TDialog():New( 1, 5, 40, 100, "gestool TABLET",,, .F., nOR( 128, 2147483648, 12582912, 524288, 131072, 65536 ),, ( 255 + ( 255 * 256 ) + ( 255 * 65536 ) ),,, .F.,, oGridFont(),,,, .F.,, "oDlg" )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   oSayGeneral       := TGridSay():Build(    {     "nRow"      => 0, "nCol"      => {|| GridWidth( 0.5, oDlg ) }, "bText"     => {|| "Envío y recepción de información" }, "oWnd"      => oDlg, "oFont"     => oGridFontBold(), "lPixels"   => .T., "nClrText"  => ( 0 + ( 0 * 256 ) + ( 0 * 65536 ) ), "nClrBack"  => ( 255 + ( 255 * 256 ) + ( 255 * 65536 ) ), "nWidth"    => {|| GridWidth( 8, oDlg ) }, "nHeight"   => 32, "lDesign"   => .F. } )
+
+
+
+
+
+
+
+   oBtnAceptar       := TGridImage():Build(  {     "nTop"      => 5, "nLeft"     => {|| GridWidth( 9.0, oDlg ) }, "nWidth"    => 64, "nHeight"   => 64, "cResName"  => "gc_ok_64", "bLClicked" => {|| oBtnAceptar:Hide(), oBtnSalir:Disable(), ::Execute(), oBtnSalir:Enable() }, "oWnd"      => oDlg } )
+
+
+
+
+
+
+
+   oBtnSalir         := TGridImage():Build(  {     "nTop"      => 5, "nLeft"     => {|| GridWidth( 10.5, oDlg ) }, "nWidth"    => 64, "nHeight"   => 64, "cResName"  => "gc_error_64", "bLClicked" => {|| oDlg:End() }, "oWnd"      => oDlg } )
+
+
+
+
+
+
+
+
+
+
+   ::oTree           := TGridTreeView():Build(  {  "nTop"      => 50 , "nLeft"     => GridWidth( 0.5, oDlg ), "oWnd"      => oDlg, "lPixel"    => .T., "nWidth"    => GridWidth( 9, oDlg ), "nHeight"   => GridWidth( 6.75, oDlg ) } )
+
+
+
+
+
+   oDlg:bResized     := {|| GridResize( oDlg ) }
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,, {|Self|( GridMaximize( oDlg ) )}, oDlg:bRClicked,,, )
+
+
+
+
+
+   ::SaveMessageToFile()
+
+
+
+
+
+   ::CloseFiles()
+
+   dbcloseall()
+
+   ::lInProcess   := .F.
+
+Return ( Self )
+
+
+
+static FUNCTION TSndRecInf_aExtensions( ) ; local Self AS CLASS TSndRecInf := QSelf() AS CLASS TSndRecInf
+
+   local aExt  := {}
+
+   if ::lServer
+      aExt  := aRetDlgEmp()
+   else
+      aExt  := aRetDlgEmp()
+      aAdd( aExt, "All" )
+   end
+
+Return ( aExt )
+
+
+
+
+
+
+
+
+
+
+
+
+
+Function CopyFtpFile( cOrigen, cDestino, oFTP )
+
+   local oFile
+   local nBytes
+   local cBytes
+   local hTarget
+
+   hTarget        := fCreate( cDestino )
+
+   if fError() <> 0
+
+      oFile       := TFtpFile():New( cOrigen, oFTP )
+      oFile:OpenRead()
+
+      while ( nBytes := Len( cBytes := oFile:Read( 2000 ) ) ) > 0
+         fWrite( hTarget, cBytes, nBytes )
+      end
+
+      fClose( hTarget )
+
+      oFile:end()
+
+      Return .T.
+
+   end
+
+Return .F.
+
+
+
+FUNCTION FtpSndFile( aSource, aTarget, oSender, cDirectory )
+
+   local n
+   local oFile
+   local hSource
+   local hTarget
+   local cBuffer
+   local nBuffer        := 2000
+   local nBytes         := 0
+   local nFile          := 0
+   local nTotSize       := 0
+   local lRet           := .F.
+   local lDisco         := ( nTipConInt() == 1 )
+
+   If( aTarget == nil, aTarget := aSource, ) ;
+
+   IF ValType( aSource ) <> "A"
+      aSource           := { aSource }
+   end
+
+   IF ValType( aTarget ) <> "A"
+      aTarget           := { aTarget }
+   end
+
+   cBuffer              := Space( nBuffer )
+
+   for n := 1 to Len( aSource )
+
+      if File( aSource[ n ] )
+         hSource        := fOpen( aSource[ n ] )
+         nTotSize       += fSeek( hSource, 0, 2 )
+         fClose( hSource )
+      end
+
+      SysRefresh()
+
+   next
+
+
+
+
+
+   if nTotSize == 0
+      Return .F.
+   end
+
+   if !Empty( oSender )
+
+      if !Empty( oSender:oMtr )
+         oSender:oMtr:nTotal     := nTotSize
+      end
+
+      oSender:SetText( "Tamaño fichero " + Alltrim( Str( nTotSize ) ) )
+
+   end
+
+
+
+
+
+   if lDisco
+
+      if !empty( cDirectory ) .AND. !lIsDir( cDirectory )
+         makeDir( cNamePath( cDirectory ) )
+      end
+
+      for n := 1 to Len( aSource )
+
+         hSource        := fOpen( aSource[ n ] )
+         hTarget        := fCreate( oSender:getPathComunication() + aTarget[ n ] )
+
+         if !Empty( oSender ) .AND. !Empty( oSender:oMtr )
+            oSender:oMtr:Set( 0 )
+            oSender:oMtr:nTotal := nTotSize
+         end
+
+
+
+
+
+         fSeek( hSource, 0, 0 )
+
+         SysRefresh()
+
+         while ( nBytes := fRead( hSource, @cBuffer, nBuffer ) ) > 0
+
+            fWrite( hTarget, cBuffer, nBytes )
+
+            if !Empty( oSender:oMtr )
+               oSender:oMtr:Set( nFile += nBytes )
+            end
+
+            SysRefresh()
+
+         end
+
+         fClose( hSource )
+         fClose( hTarget )
+
+      next
+
+      lRet  := nTotSize == nFile
+
+   else
+
+      for n := 1 to Len( aSource )
+
+         if !Empty( oSender )
+
+            if Empty( oSender:oFtp )
+
+               msgInfo( "No hay conexiones de internet disponibles." )
+
+            else
+
+               oFile             := TFtpFile():New( aSource[ n ], oSender:oFtp )
+               lRet              := oFile:CopyFtpFile( aSource[ n ], aTarget[ n ], oSender:oFtp )
+               lRet              := CopyFtpFile( aSource[ n ], aTarget[ n ], oSender:oFtp )
+
+
+
+
+            end
+
+            oSender:SetText( "Procesando fichero " + aTarget[ n ] )
+
+         end
+
+         if !lRet
+
+            if !Empty( oSender )
+
+               oSender:SetText( "Error procesando fichero " + aTarget[ n ] )
+               oSender:SetText( GetErrMsg() )
+
+            end
+
+         end
+
+         oFile:End()
+
+      next
+
+   end
+
+   if !Empty( oSender:oMtr )
+      oSender:oMtr:Set( 0 )
+   end
+
+   SysRefresh()
+
+return ( lRet )
+
+
+
+function ftpGetFiles( aSource, cTarget, oSender, lDisco )
+
+   local n
+   local i
+   local hTarget
+   local cBuffer
+   local nBuffer        := 2000
+   local nBytes
+   local oFile
+   local aFiles
+   local nFile          := 0
+   local nTotSize       := 0
+   local oFtp           := oSender:oFtp
+   local oMeter         := oSender:oMtr
+   local lSuccess       := .F.
+
+   If( lDisco == nil, lDisco := ( nTipConInt() == 1 ), ) ;
+
+   if ValType( aSource ) <> "A"
+      aSource           := { aSource }
+   end
+
+   cBuffer              := Space( nBuffer )
+
+
+
+
+
+   for n := 1 to Len( aSource )
+
+      if lDisco
+         aFiles         := Directory( oSender:getPathComunication() + aSource[ n ] )
+      else
+         aFiles         := TrimFileName( oFTP:listFiles( aSource[ n ] ) )
+      end
+
+      Msginfo( ValToPrg( aFiles ) )
+      TraceLog( ValToPrg( aFiles ) )
+
+      for i := 1 to Len( aFiles )
+
+         oSender:SetText( "Ficheros en el servidor : " + cValToChar( aFiles[ i, 1 ] ) )
+
+         if ( Len( aFiles ) > 0 ) .AND. isNum( aFiles[ i, 2 ] ) .AND. ( aFiles[ i, 2 ] <> 0 )
+            nTotSize    += aFiles[ i , 2 ]
+         endif
+
+      next
+
+      if oMeter <> nil
+         oMeter:nTotal  := nTotSize
+      end
+
+      for i := 1 to Len( aFiles )
+
+         if oSender:lFileProcesed( aFiles[ i, 1 ] )
+            oSender:SetText( "INFORMACIÓN fichero " + cValToChar( aFiles[ i, 1 ] ) + " ya procesado." )
+            if !oSender:lGetProcesados
+               loop
+            end
+         end
+
+         if !oSender:lFileRecive( aFiles[ i, 1 ] ) .AND. !oSender:lPriorFileRecive( aFiles[ i, 1 ] )
+            oSender:SetText( "INFORMACIÓN fichero " + cValToChar( aFiles[ i, 1 ] ) + " fuera de secuencia." )
+            if !oSender:lGetFueraSecuencia
+               loop
+            end
+         end
+
+
+         if lDisco
+
+
+
+
+
+         else
+
+            WQout( { cTarget + aFiles[ i, 1 ] } )
+
+            oFtp:DownLoadFile( cTarget + aFiles[ i, 1 ] )
+
+
+
+
+         end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      next
+
+      lSuccess          := ( nFile >= nTotSize )
+
+   next
+
+   if oMeter <> nil
+      oMeter:Set( 0 )
+   end
+
+return ( lSuccess )
+
+
+
+Function TrimFileName( aFiles )
+
+   local cFile
+
+   for each cFile in aFiles
+
+      cFile[1]    :=  SubStr( cFile[1], 40 )
+
+   next
+
+Return ( aFiles )
+
+
+
+Function ftpDeleteMask( cMask, oSender, lDisco )
+
+   local oFtp              := oSender:oFtp
+
+   If( lDisco == nil, lDisco := ( nTipConInt() == 1 ), ) ;
+
+   if lDisco
+      EraseFilesInDirectory( oSender:getPathComunication(), cMask )
+   else
+      if oFtp <> nil
+         oFtp:DeleteMask( cMask )
+      end
+   end
+
+Return nil
+
+
+
+Function ftpEraseFile( cFile, oSender, lDisco )
+
+   local oFtp              := oSender:oFtp
+
+   If( lDisco == nil, lDisco := ( nTipConInt() == 1 ), ) ;
+
+   if lDisco
+      fErase( oSender:getPathComunication() + cFile )
+   else
+      if oFtp <> nil
+         oFtp:DeleteFile( cFile )
+      end
+   end
+
+Return nil
+
+
+
+Function nAreas()
+
+   local n
+   local nAreas   := 0
+
+   for n := 1 to 255
+      if !Empty( Alias( n ) )
+         ++nAreas
+      end
+   next
+
+return ( nAreas )
+
+
+
+Static Function GetTop( cText, nFor, nLines )
+
+   local cLine
+   local lTest := .T.
+
+   while lTest = .T. .AND. nFor <= nLines
+
+      nFor  := nFor + 1
+
+      cLine := MemoLine( cText, 76, nFor )
+
+      lTest := Empty( cLine )
+
+   end
+
+   nFor -= 1
+
+   SysRefresh()
+
+Return nFor
+
+
+
+Static Function aFileSource( aFiles, cSource )
+
+   local cFile
+   local aFileSource    := {}
+
+   for each cFile in aFiles
+
+      if lValidSourdeFile( cFile, cSource )
+
+         aAdd( aFileSource, cFile )
+
+      end
+
+   next
+
+Return aFileSource
+
+
+
+Static function lValidSourdeFile( cFile, cSource )
+
+   local lReturn  := .F.
+
+   if Empty( cFile )
+      Return .F.
+   end
+
+
+   if SubStr( cFile, 1, 3 ) == SubStr( cSource, 1, 3 ) .AND. Right( cFile, 3 ) == Right( cSource, 3 )
+
+      lReturn     := .T.
+
+   end
+
+Return lReturn

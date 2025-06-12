@@ -1,0 +1,601 @@
+#line 38 "C:\fwh1801\Gestool\bin\include\FiveWin.Ch"
+      static bError
+#line 203 "C:\fwh1801\Gestool\bin\include\hbclass.ch"
+DECLARE HBClass  New( cName AS STRING, OPTIONAL SuperParams ) AS CLASS HBClass  Create() AS OBJECT  Instance() AS OBJECT  AddClsMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC, n2 AS NUMERIC, n3 AS NUMERIC )  AddMultiClsData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING )  AddMultiData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING, x AS LOGICAL, lPer AS LOGICAL )  AddMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC )  AddInLine( cName AS STRING, bBlock AS CODEBLOCK, nScope AS NUMERIC )  AddVirtual( cName AS STRING )
+#line 79 "C:\fwh1801\Gestool\bin\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+#line 10 "C:\fwh1801\Gestool\bin\Script\Articulos\Importararticuloscanario.prg"
+Function ImportarExcelArguelles( nView )
+
+   local oImportarExcel    := TImportarExcelClientes():New( nView )
+
+   oImportarExcel:Run()
+
+Return nil
+
+
+
+_HB_CLASS TImportarExcelClientes ; function TImportarExcelClientes ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TImportarExcelClientes", iif( .T., { @TImportarExcel() }, { @HBObject() } ), @TImportarExcelClientes() ) ) ;
+
+; _HB_MEMBER { cCodigoFamilia } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoFamilia"}, .F. )
+; _HB_MEMBER { cCodigoFabricante } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoFabricante"}, .F. )
+; _HB_MEMBER { cCodigoProveedor } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoProveedor"}, .F. )
+
+; _HB_MEMBER { nRecFamilias } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRecFamilias"}, .F. )
+; _HB_MEMBER { nOrdAntFamilias } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nOrdAntFamilias"}, .F. )
+; _HB_MEMBER { nRecFabricantes } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRecFabricantes"}, .F. )
+; _HB_MEMBER { nOrdAntFabricantes } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nOrdAntFabricantes"}, .F. )
+; _HB_MEMBER { nRecProveedores } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRecProveedores"}, .F. )
+; _HB_MEMBER { nOrdAntProveedores } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nOrdAntProveedores"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @TImportarExcelClientes_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Run(); oClass:AddMethod( "Run", @TImportarExcelClientes_Run(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getCampoClave(); oClass:AddInline( "getCampoClave", {|Self | ( ( Self ) ), ( ::getExcelNumeric( ::cColumnaCampoClave ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getCodigoArticulo(); oClass:AddInline( "getCodigoArticulo", {|Self | ( ( Self ) ), ( if( !Empty( ::getExcelString( "B" ) ), Padr( ::getExcelString( "B" ), 18 ), Padr( ::getExcelString( "A" ), 18 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER procesaFicheroExcel(); oClass:AddMethod( "procesaFicheroExcel", @TImportarExcelClientes_procesaFicheroExcel(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER filaValida(); oClass:AddMethod( "filaValida", @TImportarExcelClientes_filaValida(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER siguienteLinea(); oClass:AddInline( "siguienteLinea", {|Self | ( ( Self ) ), ( ++::nFilaInicioImportacion ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER existeRegistro(); oClass:AddInline( "existeRegistro", {|Self | ( ( Self ) ), ( D():gotoArticulos( ::getCodigoArticulo(), ::nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER importarArticulo(); oClass:AddMethod( "importarArticulo", @TImportarExcelClientes_importarArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getExcelNumeric( columna, fila); oClass:AddMethod( "getExcelNumeric", @TImportarExcelClientes_getExcelNumeric(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getFamilia(); oClass:AddMethod( "getFamilia", @TImportarExcelClientes_getFamilia(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER addFamilia(); oClass:AddMethod( "addFamilia", @TImportarExcelClientes_addFamilia(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getFabricante(); oClass:AddMethod( "getFabricante", @TImportarExcelClientes_getFabricante(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER addFabricante(); oClass:AddMethod( "addFabricante", @TImportarExcelClientes_addFabricante(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getProveedor(); oClass:AddMethod( "getProveedor", @TImportarExcelClientes_getProveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER addProveedor( cNomPrv); oClass:AddMethod( "addProveedor", @TImportarExcelClientes_addProveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TImportarExcelClientes ;
+
+
+
+static FUNCTION TImportarExcelClientes_New( nView ) ; local Self AS CLASS TImportarExcelClientes := QSelf() AS CLASS TImportarExcelClientes
+
+   ::nView                    := nView
+
+
+
+
+
+
+
+
+
+
+
+
+   ::cFicheroExcel            := "c:\ficheros\articulos.xls"
+
+
+
+
+
+   ::nFilaInicioImportacion   := 2
+
+
+
+
+
+   ::cColumnaCampoClave       := "A"
+
+Return ( Self )
+
+
+
+static FUNCTION TImportarExcelClientes_Run( ) ; local Self AS CLASS TImportarExcelClientes := QSelf() AS CLASS TImportarExcelClientes
+
+   if !file( ::cFicheroExcel )
+      msgStop( "El fichero " + ::cFicheroExcel + " no existe." )
+      Return ( .F. )
+   end
+
+   msgrun( "Procesando fichero " + ::cFicheroExcel, "Espere por favor...",  {|| ::procesaFicheroExcel() } )
+
+   msginfo( "Proceso finalizado" )
+
+Return ( .T. )
+
+
+
+static FUNCTION TImportarExcelClientes_procesaFicheroExcel( ) ; local Self AS CLASS TImportarExcelClientes := QSelf() AS CLASS TImportarExcelClientes
+
+   local nOrdAnt := ( D():ArticulosCodigosBarras( ::nView ) )->( OrdSetFocus( "cCodBar" ) )
+
+   ::openExcel()
+
+   while ( ::filaValida() )
+
+      if !Empty( ::getCodigoArticulo() )
+
+         MsgWait( "Artículo: " + AllTrim( ::getCodigoArticulo() ) + " - " + ::getExcelString( "C" ), "Procesando" , 0.2 )
+
+
+         if !( D():ArticulosCodigosBarras( ::nView ) )->( dbSeek( ::getCodigoArticulo() ) ) .AND. !ArticulosModel():exist( ::getCodigoArticulo() )
+
+            ::importarArticulo()
+
+         end
+
+      end
+
+      ::siguienteLinea()
+
+   end
+
+   ::closeExcel()
+
+   ( D():ArticulosCodigosBarras( ::nView ) )->( OrdSetFocus( nOrdAnt ) )
+
+Return nil
+
+
+
+static FUNCTION TImportarExcelClientes_importarArticulo( ) ; local Self AS CLASS TImportarExcelClientes := QSelf() AS CLASS TImportarExcelClientes
+
+   ( D():Articulos( ::nView ) )->( dbappend() )
+
+   ( D():Articulos( ::nView ) )->Codigo                  := ::getCodigoArticulo()
+
+   if !empty( ::getExcelString( "C" ) )
+      ( D():Articulos( ::nView ) )->Nombre               := AllTrim( ::getExcelString( "C" ) )
+   end
+
+   if !empty( ::getExcelNumeric( "V" ) )
+      ( D():Articulos( ::nView ) )->pCosto               := ::getExcelNumeric( "V" )
+   end
+
+   if !empty( ::getExcelNumeric( "AE" ) )
+      ( D():Articulos( ::nView ) )->pVenta1              := ( ::getExcelNumeric( "AE" ) / ( 1 + ( 7 / 100 ) ) )
+      ( D():Articulos( ::nView ) )->pVtaIva1             := ::getExcelNumeric( "AE" )
+   end
+
+   ( D():Articulos( ::nView ) )->TIPOIVA           := "G"
+   ( D():Articulos( ::nView ) )->CCODCATE          := "000"
+
+   ( D():Articulos( ::nView ) )->( dbcommit() )
+
+   ( D():Articulos( ::nView ) )->( dbunlock() )
+
+Return nil
+
+
+
+static FUNCTION TImportarExcelClientes_getFamilia( ) ; local Self AS CLASS TImportarExcelClientes := QSelf() AS CLASS TImportarExcelClientes
+
+   ::cCodigoFamilia     := ""
+
+   if Empty( ::getExcelString( "H" ) )
+      Return nil
+   end
+
+   if ( D():Familias( ::nView ) )->( dbSeek( Padr( ::getExcelString( "H" ), 40 ) ) )
+      ::cCodigoFamilia  := ( D():Familias( ::nView ) )->cCodFam
+   else
+      ::addFamilia( Padr( ::getExcelString( "H" ), 40 ) )
+   end
+
+Return nil
+
+
+
+static FUNCTION TImportarExcelClientes_addFamilia( cNomFam ) ; local Self AS CLASS TImportarExcelClientes := QSelf() AS CLASS TImportarExcelClientes
+
+   local cNewCodigo
+
+   ( D():Familias( ::nView ) )->( dbappend() )
+
+   cNewCodigo                             := NextKey( dbLast( D():Familias( ::nView ), 1 ), D():Familias( ::nView ) )
+
+   ( D():Familias( ::nView ) )->cCodFam   := cNewCodigo
+   ( D():Familias( ::nView ) )->cNomFam   := cNomFam
+
+   ( D():Familias( ::nView ) )->( dbcommit() )
+
+   ( D():Familias( ::nView ) )->( dbunlock() )
+
+   ::cCodigoFamilia                       := cNewCodigo
+
+Return nil
+
+
+
+static FUNCTION TImportarExcelClientes_getFabricante( ) ; local Self AS CLASS TImportarExcelClientes := QSelf() AS CLASS TImportarExcelClientes
+
+   ::cCodigoFabricante  := ""
+
+   if Empty( ::getExcelString( "G" ) )
+      Return nil
+   end
+
+   if ( D():Fabricantes( ::nView ) )->( dbSeek( Padr( ::getExcelString( "G" ), 35 ) ) )
+      ::cCodigoFabricante  := ( D():Fabricantes( ::nView ) )->cCodFab
+   else
+      ::addFabricante( Padr( ::getExcelString( "G" ), 35 ) )
+   end
+
+Return nil
+
+
+
+static FUNCTION TImportarExcelClientes_addFabricante( cNomFab ) ; local Self AS CLASS TImportarExcelClientes := QSelf() AS CLASS TImportarExcelClientes
+
+   local cNewCodigo
+
+   ( D():Fabricantes( ::nView ) )->( dbappend() )
+
+   cNewCodigo                                := NextKey( dbLast( D():Fabricantes( ::nView ), 1 ), D():Fabricantes( ::nView ) )
+
+   ( D():Fabricantes( ::nView ) )->cCodFab   := cNewCodigo
+   ( D():Fabricantes( ::nView ) )->cNomFab   := cNomFab
+
+   ( D():Fabricantes( ::nView ) )->( dbcommit() )
+
+   ( D():Fabricantes( ::nView ) )->( dbunlock() )
+
+   ::cCodigoFabricante                       := cNewCodigo
+
+Return nil
+
+
+
+static FUNCTION TImportarExcelClientes_getProveedor( ) ; local Self AS CLASS TImportarExcelClientes := QSelf() AS CLASS TImportarExcelClientes
+
+   ::cCodigoProveedor      := ""
+
+   if Empty( ::getExcelString( "G" ) )
+      Return nil
+   end
+
+   if ( D():Proveedores( ::nView ) )->( dbSeek( Upper( Padr( ::getExcelString( "G" ), 80 ) ) ) )
+      ::cCodigoProveedor   := ( D():Proveedores( ::nView ) )->Cod
+   else
+      ::addProveedor( Padr( ::getExcelString( "G" ), 80 ) )
+   end
+
+Return nil
+
+
+
+static FUNCTION TImportarExcelClientes_addProveedor( cNomPrv ) ; local Self AS CLASS TImportarExcelClientes := QSelf() AS CLASS TImportarExcelClientes
+
+   local cNewCodigo
+
+   ( D():Proveedores( ::nView ) )->( dbappend() )
+
+   cNewCodigo                                := NextKey( dbLast( D():Proveedores( ::nView ), 1 ), D():Proveedores( ::nView ), "0", RetNumCodPrvEmp() )
+
+   ( D():Proveedores( ::nView ) )->Cod       := cNewCodigo
+   ( D():Proveedores( ::nView ) )->Titulo    := cNomPrv
+
+   ( D():Proveedores( ::nView ) )->( dbcommit() )
+
+   ( D():Proveedores( ::nView ) )->( dbunlock() )
+
+   ::cCodigoProveedor                        := cNewCodigo
+
+Return nil
+
+
+
+static FUNCTION TImportarExcelClientes_filaValida( ) ; local Self AS CLASS TImportarExcelClientes := QSelf() AS CLASS TImportarExcelClientes
+
+Return ( !empty( ::getExcelValue( ::cColumnaCampoClave ) ) )
+
+
+
+static FUNCTION TImportarExcelClientes_getExcelNumeric( columna, fila ) ; local Self AS CLASS TImportarExcelClientes := QSelf() AS CLASS TImportarExcelClientes
+
+   local excelValue
+   local valorPorDefecto      := 0
+
+   If( fila == nil, fila := ::nFilaInicioImportacion, ) ;
+
+   excelValue                 := ::getExcelValue( columna, fila, valorPorDefecto )
+
+   if valtype( excelValue ) <> "N"
+      excelValue              := val( excelValue )
+   end
+
+   if empty( excelValue )
+      Return ( valorPorDefecto )
+   end
+
+Return ( excelValue )
+#line 11 "C:\fwh1801\Gestool\bin\Script\Articulos\ImportarExcel.prg"
+Function ImportarExcel( nView )
+
+   TImportarExcel():New( nView ):Run()
+
+Return nil
+
+
+
+_HB_CLASS TImportarExcel ; function TImportarExcel ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TImportarExcel", iif( .F., { }, { @HBObject() } ), @TImportarExcel() ) ) ;
+
+; _HB_MEMBER { nView } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nView"}, .F. )
+
+; _HB_MEMBER { oExcel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oExcel"}, .F. )
+
+; _HB_MEMBER { cFicheroExcel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFicheroExcel"}, .F. )
+
+; _HB_MEMBER { nFilaInicioImportacion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nFilaInicioImportacion"}, .F. )
+
+; _HB_MEMBER { cColumnaCampoClave } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cColumnaCampoClave"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @TImportarExcel_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Run(); oClass:AddMethod( "Run", @TImportarExcel_Run(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER procesaFicheroExcel(); oClass:AddMethod( "procesaFicheroExcel", @TImportarExcel_procesaFicheroExcel(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER filaValida(); oClass:AddMethod( "filaValida", @TImportarExcel_filaValida(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER siguienteLinea(); oClass:AddInline( "siguienteLinea", {|Self | ( ( Self ) ), ( ++::nFilaInicioImportacion ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getExcelValue(); oClass:AddMethod( "getExcelValue", @TImportarExcel_getExcelValue(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getExcelString(); oClass:AddMethod( "getExcelString", @TImportarExcel_getExcelString(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getExcelNumeric( columna, fila); oClass:AddMethod( "getExcelNumeric", @TImportarExcel_getExcelNumeric(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getExcelLogic( columna, fila); oClass:AddMethod( "getExcelLogic", @TImportarExcel_getExcelLogic(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER openExcel(); oClass:AddMethod( "openExcel", @TImportarExcel_openExcel(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER closeExcel(); oClass:AddMethod( "closeExcel", @TImportarExcel_closeExcel(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER existeRegistro(); oClass:AddInline( "existeRegistro", {|Self | ( ( Self ) ), ( D():gotoArticulos( ::getExcelValue( ::cColumnaCampoClave ), ::nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER appendRegistro(); oClass:AddInline( "appendRegistro", {|Self | ( ( Self ) ), ( ( D():Articulos( ::nView ) )->( dbappend() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER bloqueaRegistro(); oClass:AddInline( "bloqueaRegistro", {|Self | ( ( Self ) ), ( ( D():Articulos( ::nView ) )->( dbrlock() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER desbloqueaRegistro(); oClass:AddInline( "desbloqueaRegistro", {|Self | ( ( Self ) ), ( ( D():Articulos( ::nView ) )->( dbcommit() ), ( D():Articulos( ::nView ) )->( dbunlock() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER importarCampos(); oClass:AddMethod( "importarCampos", @TImportarExcel_importarCampos(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TImportarExcel ;
+
+
+
+static FUNCTION TImportarExcel_New( nView ) ; local Self AS CLASS TImportarExcel := QSelf() AS CLASS TImportarExcel
+
+   ::nView                    := nView
+
+
+
+
+
+   ::cFicheroExcel            := "C:\Users\Manuel\Desktop\Importar.xlsx"
+
+
+
+
+
+   ::nFilaInicioImportacion   := 3
+
+
+
+
+
+   ::cColumnaCampoClave       := "A"
+
+Return ( Self )
+
+
+
+static FUNCTION TImportarExcel_Run( ) ; local Self AS CLASS TImportarExcel := QSelf() AS CLASS TImportarExcel
+
+   if !file( ::cFicheroExcel )
+      msgStop( "El fichero " + ::cFicheroExcel + " no existe." )
+      Return ( .F. )
+   end
+
+
+
+   msgrun(  "Procesando fichero " + ::cFicheroExcel, "Espere por favor...", {|| ::procesaFicheroExcel() } )
+
+   msginfo( "Proceso finalizado" )
+
+Return ( .T. )
+
+
+
+static FUNCTION TImportarExcel_openExcel( ) ; local Self AS CLASS TImportarExcel := QSelf() AS CLASS TImportarExcel
+
+   ::oExcel                        := TOleExcel():New( "Importando hoja de excel", "Conectando...", .F. )
+
+   ::oExcel:oExcel:Visible         := .F.
+   ::oExcel:oExcel:DisplayAlerts   := .F.
+   ::oExcel:oExcel:WorkBooks:Open( ::cFicheroExcel )
+   ::oExcel:oExcel:WorkSheets( 1 ):Activate()
+
+Return ( Self )
+
+
+
+static FUNCTION TImportarExcel_closeExcel( ) ; local Self AS CLASS TImportarExcel := QSelf() AS CLASS TImportarExcel
+
+   ::oExcel:oExcel:Quit()
+   ::oExcel:oExcel:DisplayAlerts := .F.
+   ::oExcel:End()
+
+Return ( Self )
+
+
+
+static FUNCTION TImportarExcel_procesaFicheroExcel( ) ; local Self AS CLASS TImportarExcel := QSelf() AS CLASS TImportarExcel
+
+   ::oExcel                        := TOleExcel():New( "Importando hoja de excel", "Conectando...", .F. )
+
+   ::oExcel:oExcel:Visible         := .F.
+   ::oExcel:oExcel:DisplayAlerts   := .F.
+   ::oExcel:oExcel:WorkBooks:Open( ::cFicheroExcel )
+   ::oExcel:oExcel:WorkSheets( 1 ):Activate()
+
+   while ( ::filaValida() )
+
+      if ::existeRegistro()
+         ::bloqueaRegistro()
+      else
+         ::appendRegistro()
+      end
+
+      if !( neterr() )
+
+         ::importarCampos()
+
+         ::desbloqueaRegistro()
+
+      endif
+
+      ::siguienteLinea()
+
+   end
+
+   ::oExcel:oExcel:Quit()
+   ::oExcel:oExcel:DisplayAlerts := .F.
+   ::oExcel:End()
+
+Return nil
+
+
+
+
+
+
+static FUNCTION TImportarExcel_importarCampos( ) ; local Self AS CLASS TImportarExcel := QSelf() AS CLASS TImportarExcel
+
+   ( D():Articulos( ::nView ) )->Codigo   := ::getExcelValue( "A" )
+   ( D():Articulos( ::nView ) )->Nombre   := ::getExcelValue( "B" )
+
+Return nil
+
+
+
+static FUNCTION TImportarExcel_filaValida( ) ; local Self AS CLASS TImportarExcel := QSelf() AS CLASS TImportarExcel
+
+Return ( !empty( ::getExcelValue( ::cColumnaCampoClave ) ) )
+
+
+
+static FUNCTION TImportarExcel_getExcelValue( columna, fila, valorPorDefecto ) ; local Self AS CLASS TImportarExcel := QSelf() AS CLASS TImportarExcel
+
+   local oBlock
+   local oError
+   local excelValue
+
+   If( fila == nil, fila := ::nFilaInicioImportacion, ) ;
+
+   oBlock               := ErrorBlock( { | oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   excelValue           := ::oExcel:oExcel:ActiveSheet:Range( columna + ltrim( str( fila ) ) ):Value
+
+   RECOVER USING oError
+
+   end
+
+   ErrorBlock( oBlock )
+
+   if empty( excelValue )
+      Return ( valorPorDefecto )
+   end
+
+Return ( excelValue )
+
+
+
+static FUNCTION TImportarExcel_getExcelString( columna, fila ) ; local Self AS CLASS TImportarExcel := QSelf() AS CLASS TImportarExcel
+
+   local excelValue
+   local valorPorDefecto      := ""
+
+   If( fila == nil, fila := ::nFilaInicioImportacion, ) ;
+
+   excelValue                 := ::getExcelValue( columna, fila, valorPorDefecto )
+
+   if valtype( excelValue ) == "N"
+      excelValue              := int( excelValue )
+   end
+
+   if valtype( excelValue ) <> "C"
+      excelValue              := cvaltochar( excelValue )
+   end
+
+   if empty( excelValue )
+      Return ( valorPorDefecto )
+   end
+
+Return ( excelValue )
+
+
+
+static FUNCTION TImportarExcel_getExcelNumeric( columna, fila ) ; local Self AS CLASS TImportarExcel := QSelf() AS CLASS TImportarExcel
+
+   local excelValue
+   local valorPorDefecto      := 0
+
+   If( fila == nil, fila := ::nFilaInicioImportacion, ) ;
+
+   excelValue                 := ::getExcelValue( columna, fila, valorPorDefecto )
+
+   if valtype( excelValue ) <> "N"
+      excelValue              := val( excelValue )
+   end
+
+   if empty( excelValue )
+      Return ( valorPorDefecto )
+   end
+
+Return ( excelValue )
+
+
+
+static FUNCTION TImportarExcel_getExcelLogic( columna, fila ) ; local Self AS CLASS TImportarExcel := QSelf() AS CLASS TImportarExcel
+
+   local excelValue
+   local valorPorDefecto      := .F.
+
+   If( fila == nil, fila := ::nFilaInicioImportacion, ) ;
+
+   excelValue                 := ::getExcelValue( columna, fila, valorPorDefecto )
+
+   if valtype( excelValue ) == "C"
+      excelValue              := ( upper( excelValue ) == "SI" )
+   end
+
+   if valtype( excelValue ) == "N"
+      excelValue              := ( excelValue == 1 )
+   end
+
+   if empty( excelValue )
+      Return ( valorPorDefecto )
+   end
+
+Return ( excelValue )

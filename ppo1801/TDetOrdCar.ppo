@@ -1,0 +1,2650 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 16 ".\.\Prg\TDetOrdCar.prg"
+_HB_CLASS TDetOrdCar ; function TDetOrdCar ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TDetOrdCar", iif( .T., { @TDet() }, { @HBObject() } ), @TDetOrdCar() ) ) ;
+
+   _HB_MEMBER { cPath } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPath"}, .F. )
+   _HB_MEMBER { oParent } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oParent"}, .F. )
+
+   _HB_MEMBER { oMenu } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oMenu"}, .F. )
+
+   _HB_MEMBER { cOldCodArt } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cOldCodArt"}, .F. )
+
+   _HB_MEMBER { oGetTotalUnidades } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetTotalUnidades"}, .F. )
+   _HB_MEMBER { nGetTotalUnidades } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nGetTotalUnidades"}, .F. )
+   _HB_MEMBER { oGetTotPes } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetTotPes"}, .F. )
+   _HB_MEMBER { nGetTotPes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nGetTotPes"}, .F. )
+
+   _HB_MEMBER { oGetArt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetArt"}, .F. )
+   _HB_MEMBER { oNomArt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oNomArt"}, .F. )
+   _HB_MEMBER { oGetCaj } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetCaj"}, .F. )
+   _HB_MEMBER { oGetUni } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetUni"}, .F. )
+   _HB_MEMBER { oGetPeso } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetPeso"}, .F. )
+   _HB_MEMBER { oUndPeso } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oUndPeso"}, .F. )
+   _HB_MEMBER { oLote } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oLote"}, .F. )
+   _HB_MEMBER { oSayPr1 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayPr1"}, .F. )
+   _HB_MEMBER { oValPr1 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oValPr1"}, .F. )
+   _HB_MEMBER { oSayVp1 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayVp1"}, .F. )
+   _HB_MEMBER { oSayPr2 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayPr2"}, .F. )
+   _HB_MEMBER { oValPr2 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oValPr2"}, .F. )
+   _HB_MEMBER { oSayVp2 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayVp2"}, .F. )
+   _HB_MEMBER { oSayLote } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayLote"}, .F. )
+   _HB_MEMBER { oDbfDetalle } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfDetalle"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @TDetOrdCar_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DefineFiles(); oClass:AddMethod( "DefineFiles", @TDetOrdCar_DefineFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles( lExclusive); oClass:AddMethod( "OpenFiles", @TDetOrdCar_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Resource( nMode, lLiteral); oClass:AddMethod( "Resource", @TDetOrdCar_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SaveDetails(); oClass:AddMethod( "SaveDetails", @TDetOrdCar_SaveDetails(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lPreSave( oDlg); oClass:AddMethod( "lPreSave", @TDetOrdCar_lPreSave(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LoaArticulo(); oClass:AddMethod( "LoaArticulo", @TDetOrdCar_LoaArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER EdtRotor( oDlg); oClass:AddMethod( "EdtRotor", @TDetOrdCar_EdtRotor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lTotUnidades(); oClass:AddMethod( "lTotUnidades", @TDetOrdCar_lTotUnidades(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lTotPeso(); oClass:AddMethod( "lTotPeso", @TDetOrdCar_lTotPeso(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nTotPeso( oDbf); oClass:AddMethod( "nTotPeso", @TDetOrdCar_nTotPeso(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER nTotUnidades( oDbf); oClass:AddMethod( "nTotUnidades", @TDetOrdCar_nTotUnidades(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetDialogMode( nMode); oClass:AddMethod( "SetDialogMode", @TDetOrdCar_SetDialogMode(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TDetOrdCar ;
+
+
+
+static FUNCTION TDetOrdCar_New( cPath, oParent ) ; local Self AS CLASS TDetOrdCar := QSelf() AS CLASS TDetOrdCar
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+   If( oParent == nil, oParent := oWnd(), ) ;
+
+   ::cPath              := cPath
+   ::oParent            := oParent
+
+RETURN ( Self )
+
+
+
+static FUNCTION TDetOrdCar_DefineFiles( cPath, cVia, lUniqueName, cFileName ) ; local Self AS CLASS TDetOrdCar := QSelf() AS CLASS TDetOrdCar
+
+   local oDbf
+
+   If( cPath == nil, cPath := ::cPath, ) ;
+   If( cVia == nil, cVia := cDriver(), ) ;
+   If( lUniqueName == nil, lUniqueName := .F., ) ;
+   If( cFileName == nil, cFileName := "OrdCarL", ) ;
+
+   if lUniqueName
+      cFileName         := cGetNewFileName( cFileName, , , cPath )
+   end
+
+   oDbf := DbfServer( ( cFileName ), ( cFileName ) ):New( ( cFileName ), ( cFileName ), ( cVia ), "Materiales producidos", ( cPath ) )
+
+      oDbf:AddField( "NNUMORD", "N", 9, 0,,,,, "Número del orden de carga", .F.,, .F., {} )
+      oDbf:AddField( "CSUFORD", "C", 2, 0,,,,, "Sufijo del orden de carga", .F.,, .F., {} )
+      oDbf:AddField( "CREF", "C", 18, 0,,,,, "Referencia de artículo", .F.,, .F., {} )
+      oDbf:AddField( "CDETALLE", "C", 240, 0,,,,, "Detalle de artículo", .F.,, .F., {} )
+      oDbf:AddField( "CCODPR1", "C", 20, 0,,,,, "Código de primera propiedad", .F.,, .F., {} )
+      oDbf:AddField( "CCODPR2", "C", 20, 0,,,,, "Código de segunda propiedad", .F.,, .F., {} )
+      oDbf:AddField( "CVALPR1", "C", 20, 0,,,,, "Valor de primera propiedad", .F.,, .F., {} )
+      oDbf:AddField( "CVALPR2", "C", 20, 0,,,,, "Valor de segunda propiedad", .F.,, .F., {} )
+      oDbf:AddField( "LLOTE", "L", 1, 0,,,,, "Lógico de lote", .F.,, .F., {} )
+      oDbf:AddField( "cLote", "C", 64, 0,,,,, "Número de lote", .F.,, .F., {} )
+      oDbf:AddField( "NCAJORD", "N", 16, 6,,,,, cNombreCajas(), .F.,, .F., {} )
+      oDbf:AddField( "NUNIORD", "N", 16, 6,,,,, cNombreUnidades(), .F.,, .F., {} )
+      oDbf:AddField( "NPESO", "N", 16, 6,,,,, "Peso del artículo", .F.,, .F., {} )
+      oDbf:AddField( "CUNDPES", "C", 2, 0,,,,, "Unidad del peso", .F.,, .F., {} )
+      oDbf:AddField( "CNUMALB", "C", 12, 0,,,,, "Número de albarán", .F.,, .F., {} )
+
+      oDbf:AddIndex( "NNUMORD", ( cFileName ), "Str( NNUMORD ) + CSUFORD",,, .F., .F.,,,, .T., .F. )
+      oDbf:AddIndex( "CREF", ( cFileName ), "CREF",,, .F., .F.,,,, .T., .F. )
+      oDbf:AddIndex( "CLOTE", ( cFileName ), "CLOTE",,, .F., .F.,,,, .T., .F. )
+
+
+
+   ::oDbfDetalle  := oDbf
+
+RETURN ( oDbf )
+
+
+
+static FUNCTION TDetOrdCar_OpenFiles( lExclusive ) ; local Self AS CLASS TDetOrdCar := QSelf() AS CLASS TDetOrdCar
+
+   local lOpen             := .T.
+   local oError
+   local oBlock            := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   BEGIN SEQUENCE
+
+      if Empty( ::oDbf )
+         ::oDbf            := ::DefineFiles()
+      end
+
+      ::oDbf:Activate( .F., !lExclusive )
+
+      ::bOnPreSaveDetail   := {|| ::SaveDetails() }
+
+
+
+      ::bOnPostAppend      := {|| ::oParent:nPesOrdVir() }
+      ::bOnPostEdit        := {|| ::oParent:nPesOrdVir() }
+      ::bOnPostDelete      := {|| ::oParent:nPesOrdVir() }
+
+
+
+   RECOVER USING oError
+
+      msgStop( ErrorMessage( oError ), "Imposible abrir todas las bases de datos" )
+
+      lOpen                := .F.
+
+      ::CloseFiles()
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+
+
+static FUNCTION TDetOrdCar_Resource( nMode ) ; local Self AS CLASS TDetOrdCar := QSelf() AS CLASS TDetOrdCar
+
+   local oDlg
+   local cSayPr1        := ""
+   local cSayVp1        := ""
+   local cSayPr2        := ""
+   local cSayVp2        := ""
+
+   ::cOldCodArt         := ::oDbfVir:cRef
+
+   if nMode == 1
+      ::oDbfVir:nCajOrd := 1
+      ::oDbfVir:nUniOrd := 1
+   else
+
+      cSayVp1           :=  oRetFld( ::oDbfVir:cCodPr1 + ::oDbfVir:cValPr1, ::oParent:oTblPro, "cDesTbl" )
+      cSayVp2           :=  oRetFld( ::oDbfVir:cCodPr2 + ::oDbfVir:cValPr2, ::oParent:oTblPro, "cDesTbl" )
+
+   end
+
+   ::nGetTotalUnidades  := ::nTotUnidades( ::oDbfVir )
+   ::nGetTotPes         := ::nTotPeso( ::oDbfVir )
+
+   oDlg = TDialog():New(,,,, LblTitle( nMode ) + "linea de orden de carga", "LORDENCARGA",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+
+
+
+
+      ::oGetArt := TGetHlp():ReDefine( 110, { | u | If( PCount()==0, ::oDbfVir:cRef, ::oDbfVir:cRef:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode == 1 )},, .F., .F.,,,,,, nil, "LUPA",, )
+
+      ::oGetArt:bValid := {|| ::LoaArticulo() }
+      ::oGetArt:bHelp  := {|| BrwArticulo( ::oGetArt, ::oNomArt ), ::LoaArticulo() }
+
+
+
+
+      ::oNomArt := TGetHlp():ReDefine( 111, { | u | If( PCount()==0, ::oDbfVir:cDetalle, ::oDbfVir:cDetalle:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+
+
+
+      ::oLote := TGetHlp():ReDefine( 210, { | u | If( PCount()==0, ::oDbfVir:cLote, ::oDbfVir:cLote:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,, 211, )
+
+
+
+
+
+
+
+      ::oSayPr1 := TSay():ReDefine( 221, {|| cSayPr1}, oDlg,,,, .F.,, .F., .F., )
+
+
+
+
+
+
+      ::oValPr1 := TGetHlp():ReDefine( 220, { | u | If( PCount()==0, ::oDbfVir:cValPr1, ::oDbfVir:cValPr1:= u ) }, oDlg,,,, "N/W*",,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil, "LUPA",, )
+
+         ::oValPr1:bValid := {|| lPrpAct( ::oDbfVir:cValPr1, ::oSayVp1, ::oDbfVir:cCodPr1, ::oParent:oTblPro:cAlias ) }
+         ::oValPr1:bHelp  := {|| brwPropiedadActual( ::oValPr1, ::oSayVp1, ::oDbfVir:cCodPr1 ) }
+
+
+
+
+
+      ::oSayVp1 := TGetHlp():ReDefine( 222, { | u | If( PCount()==0, cSayVp1, cSayVp1:= u ) }, oDlg,,,, "N/W*",,,,, .F., {||     .F.},, .F., .F.,,,,,, nil,,, )
+
+
+
+      ::oSayPr2 := TSay():ReDefine( 231, {|| cSayPr2}, oDlg,,,, .F.,, .F., .F., )
+
+
+
+
+
+
+      ::oValPr2 := TGetHlp():ReDefine( 230, { | u | If( PCount()==0, ::oDbfVir:cValPr2, ::oDbfVir:cValPr2:= u ) }, oDlg,,,, "N/W*",,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil, "LUPA",, )
+
+         ::oValPr2:bValid := {|| lPrpAct( ::oDbfVir:cValPr2, ::oSayVp2, ::oDbfVir:cCodPr2, ::oParent:oTblPro:cAlias ) }
+         ::oValPr2:bHelp  := {|| brwPropiedadActual( ::oValPr2, ::oSayVp2, ::oDbfVir:cCodPr2 ) }
+
+
+
+
+
+      ::oSayVp2 := TGetHlp():ReDefine( 232, { | u | If( PCount()==0, cSayVp2, cSayVp2:= u ) }, oDlg,,,, "N/W*",,,,, .F., {||     .F.},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+
+
+
+
+
+      ::oGetCaj := TGetHlp():ReDefine( 120, { | u | If( PCount()==0, ::oDbfVir:nCajOrd, ::oDbfVir:nCajOrd:= u ) }, oDlg,, ::oParent:cPicUnd,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,,,,, nil,, 121, )
+
+      ::oGetCaj:bChange   := {|| ::lTotUnidades( ::oDbfVir ), ::lTotPeso( ::oDbfVir ) }
+      ::oGetCaj:bValid    := {|| ::lTotUnidades( ::oDbfVir ), ::lTotPeso( ::oDbfVir ) }
+
+
+
+
+
+
+      ::oGetUni := TGetHlp():ReDefine( 130, { | u | If( PCount()==0, ::oDbfVir:nUniOrd, ::oDbfVir:nUniOrd:= u ) }, oDlg,, ::oParent:cPicUnd,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,,,,, nil,,, )
+
+      ::oGetUni:bChange   := {|| ::lTotUnidades( ::oDbfVir ), ::lTotPeso( ::oDbfVir ) }
+      ::oGetUni:bValid    := {|| ::lTotUnidades( ::oDbfVir ), ::lTotPeso( ::oDbfVir ) }
+
+
+
+
+
+      ::oGetTotalUnidades := TGetHlp():ReDefine( 140, { | u | If( PCount()==0, ::nGetTotalUnidades, ::nGetTotalUnidades:= u ) }, oDlg,, ::oParent:cPicUnd,,,,,,, .F., {||     ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+
+
+
+
+      ::oGetPeso := TGetHlp():ReDefine( 170, { | u | If( PCount()==0, ::oDbfVir:nPeso, ::oDbfVir:nPeso:= u ) }, oDlg,, ::oParent:cPicUnd,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,,,,, nil,,, )
+
+      ::oGetPeso:bChange   := {|| ::lTotPeso( ::oDbfVir ) }
+      ::oGetPeso:bValid    := {|| ::lTotPeso( ::oDbfVir ) }
+
+
+
+
+      ::oUndPeso := TGetHlp():ReDefine( 171, { | u | If( PCount()==0, ::oDbfVir:cUndPes, ::oDbfVir:cUndPes:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      ::oGetTotPes := TGetHlp():ReDefine( 172, { | u | If( PCount()==0, ::nGetTotPes, ::nGetTotPes:= u ) }, oDlg,, ::oParent:cPicUnd,,,,,,, .F., {||     ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+
+
+
+      TButton():ReDefine( 500, {||( ::lPreSave( nMode, oDlg ) )}, oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+      TButton():ReDefine( 550, {||( oDlg:End() )}, oDlg,,, .F.,,,, .F. )
+
+      if nMode <> 3
+         oDlg:AddFastKey( 116, {|| ::lPreSave( nMode, oDlg ) } )
+      end
+
+   oDlg:bStart    := {|| ::EdtRotor( oDlg ), ::SetDialogMode( nMode ) }
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   ::oMenu:End()
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static FUNCTION TDetOrdCar_SaveDetails( ) ; local Self AS CLASS TDetOrdCar := QSelf() AS CLASS TDetOrdCar
+
+   ::oDbfVir:nNumOrd  := ::oParent:oDbf:nNumOrd
+   ::oDbfVir:cSufOrd  := ::oParent:oDbf:cSufOrd
+
+RETURN ( Self )
+
+
+
+static FUNCTION TDetOrdCar_lPreSave( nMode, oDlg ) ; local Self AS CLASS TDetOrdCar := QSelf() AS CLASS TDetOrdCar
+
+   if nMode == 1
+
+      if Empty( ::oDbfVir:cRef )
+         MsgStop( "El código de artículo no puede estar vacío." )
+         ::oGetArt:SetFocus()
+         Return .F.
+      end
+
+   end
+
+   if Empty( ::oDbfVir:cDetalle )
+      MsgStop( "La descripción de artículo no puede estar vacío." )
+      ::oNomArt:SetFocus()
+      Return .F.
+   end
+
+RETURN oDlg:end( 1 )
+
+
+
+static FUNCTION TDetOrdCar_SetDialogMode( nMode ) ; local Self AS CLASS TDetOrdCar := QSelf() AS CLASS TDetOrdCar
+
+
+
+   if !lUseCaj()
+      ::oGetCaj:Hide()
+   end
+
+
+
+   if nMode == 1
+
+      ::oLote:Hide()
+
+
+
+
+
+      ::oSayPr1:Hide()
+      ::oValPr1:Hide()
+      ::oSayVp1:Hide()
+
+      ::oSayPr2:Hide()
+      ::oValPr2:Hide()
+      ::oSayVp2:Hide()
+
+   else
+
+      if ::oDbfVir:lLote
+
+         ::oLote:Show()
+
+
+
+
+
+      else
+
+         ::oLote:Hide()
+
+
+
+
+
+      end
+
+      if !Empty( ::oDbfVir:cCodPr1 )
+         ::oSayPr1:Show()
+         ::oSayPr1:SetText( retProp( ::oDbfVir:cCodPr1, ::oParent:oDbfPro:cAlias ) )
+         ::oValPr1:Show()
+         ::oSayVp1:Show()
+      else
+         ::oSayPr1:Hide()
+         ::oValPr1:Hide()
+         ::oSayVp1:Hide()
+      end
+
+      if !Empty( ::oDbfVir:cCodPr2 )
+         ::oSayPr2:Show()
+         ::oSayPr2:SetText( retProp( ::oDbfVir:cCodPr2, ::oParent:oDbfPro:cAlias ) )
+         ::oValPr2:Show()
+         ::oSayVp2:Show()
+      else
+         ::oSayPr2:Hide()
+         ::oValPr2:Hide()
+         ::oSayVp2:Hide()
+      end
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TDetOrdCar_LoaArticulo( ) ; local Self AS CLASS TDetOrdCar := QSelf() AS CLASS TDetOrdCar
+
+   local cCodArt     := ::oGetArt:VarGet()
+   local lChgCodArt  := ( Empty( ::cOldCodArt ) .OR. Rtrim( ::cOldCodArt ) <> Rtrim( cCodArt ) )
+   local nOrdAnt
+
+   nOrdAnt                    := ::oParent:oDbfArt:ordSetFocus( "Codigo" )
+
+   if ::oParent:oDbfArt:Seek( cCodArt ) .OR. ::oParent:oDbfArt:Seek( Upper( cCodArt ) )
+
+      cCodArt                 := ::oParent:oDbfArt:Codigo
+
+      if lChgCodArt
+
+         ::oNomArt:cText( ::oParent:oDbfArt:Nombre )
+
+         if ::oParent:oDbfArt:nCajEnt <> 0
+            ::oGetCaj:cText( ::oParent:oDbfArt:nCajEnt )
+         end
+
+         if ::oParent:oDbfArt:nUniCaja <> 0
+            ::oGetUni:cText( ::oParent:oDbfArt:nUniCaja )
+         end
+
+         ::oGetPeso:cText( ::oParent:oDbfArt:nPesoKg )
+         ::oUndPeso:cText( ::oParent:oDbfArt:cUndDim )
+
+         if ::oParent:oDbfArt:lLote
+            ::oLote:Show()
+            ::oLote:cText( ::oParent:oDbfArt:cLote )
+            ::oDbfVir:lLote   := ::oParent:oDbfArt:lLote
+         else
+            ::oLote:Hide()
+         end
+
+      end
+
+      ::lTotUnidades( ::oDbfVir )
+      ::lTotPeso( ::oDbfVir )
+
+      if ::oParent:oDbfFam:Seek( ::oParent:oDbfArt:Familia )
+         ::oDbfVir:cCodPr1 := ::oParent:oDbfFam:cCodPrp1
+         ::oDbfVir:cCodPr2 := ::oParent:oDbfFam:cCodPrp2
+      else
+         ::oDbfVir:cCodPr1 := Space( 20 )
+         ::oDbfVir:cCodPr2 := Space( 20 )
+      end
+
+
+
+      if !Empty( ::oDbfVir:cCodPr1 )
+         ::oSayPr1:Show()
+         ::oSayPr1:SetText( retProp( ::oDbfVir:cCodPr1, ::oParent:oDbfPro:cAlias ) )
+         ::oValPr1:Show()
+         ::oSayVp1:Show()
+      else
+         ::oSayPr1:Hide()
+         ::oValPr1:Hide()
+         ::oSayVp1:Hide()
+      end
+
+      if !Empty( ::oDbfVir:cCodPr2 )
+         ::oSayPr2:Show()
+         ::oSayPr2:SetText( retProp( ::oDbfVir:cCodPr2, ::oParent:oDbfPro:cAlias ) )
+         ::oValPr2:Show()
+         ::oSayVp2:Show()
+      else
+         ::oSayPr2:Hide()
+         ::oValPr2:Hide()
+         ::oSayVp2:Hide()
+      end
+
+
+
+   end
+
+   ::cOldCodArt   := cCodArt
+
+   ::oParent:oDbfArt:ordSetFocus( nOrdAnt )
+
+RETURN .T.
+
+
+
+
+
+static FUNCTION TDetOrdCar_EdtRotor( oDlg ) ; local Self AS CLASS TDetOrdCar := QSelf() AS CLASS TDetOrdCar
+
+   local cCodArt  := ::oGetArt:VarGet()
+
+   ::oMenu := MenuBegin( .F.,,, .F., .F.,,,,,,,,,, .F.,, .F., .F., .F., .F.,, ,,,,,, .F.,, .F., .F.,,,,,,,,,, .F.,,,,,, )
+
+      MenuAddItem( "&1. Rotor",, .F.,,,,,,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+
+         MenuBegin( .F.,,, .F., .F.,,,,,,,,,, .F.,, .F., .F., .F., .F.,, ,,,,,, .F.,, .F., .F.,,,,,,,,,, .F.,,,,,, )
+
+
+
+
+
+            MenuAddItem( "&1. Modificar de artículo", "Modificar la ficha del artículo", .F.,, {|oMenuItem|( if( !Empty( cCodArt ), EdtArticulo( cCodArt ), MsgStop( "Debe de seleccionar un artículo" ) ) )},, "gc_object_cube_16",,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+
+
+
+
+            MenuAddItem( "&2. Informe de artículo", "Abrir el informe del artículo", .F.,, {|oMenuItem|( if( !Empty( cCodArt ), InfArticulo( cCodArt ), MsgStop( "Debe de seleccionar un artículo" ) ) )},, "Info16",,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+         MenuEnd()
+
+   MenuEnd()
+
+   oDlg:SetMenu( ::oMenu )
+
+RETURN ( ::oMenu )
+
+
+
+static FUNCTION TDetOrdCar_lTotUnidades( oDbf ) ; local Self AS CLASS TDetOrdCar := QSelf() AS CLASS TDetOrdCar
+
+   If( oDbf == nil, oDbf := ::oDbf, ) ;
+
+RETURN ( ::oGetTotalUnidades:cText( ::nTotUnidades( oDbf ) ), .T. )
+
+
+
+static FUNCTION TDetOrdCar_nTotPeso( oDbf ) ; local Self AS CLASS TDetOrdCar := QSelf() AS CLASS TDetOrdCar
+
+   If( oDbf == nil, oDbf := ::oDbf, ) ;
+
+RETURN ( ::nTotUnidades( oDbf ) * oDbf:nPeso )
+
+
+
+static FUNCTION TDetOrdCar_lTotPeso( oDbf ) ; local Self AS CLASS TDetOrdCar := QSelf() AS CLASS TDetOrdCar
+
+   If( oDbf == nil, oDbf := ::oDbf, ) ;
+
+RETURN ( ::oGetTotPes:cText( ::nTotPeso( oDbf ) ), .T. )
+
+
+
+
+
+static FUNCTION TDetOrdCar_nTotUnidades( oDbf ) ; local Self AS CLASS TDetOrdCar := QSelf() AS CLASS TDetOrdCar
+
+   If( oDbf == nil, oDbf := ::oDbf, ) ;
+
+RETURN ( NotCaja( oDbf:nCajOrd ) * oDbf:nUniOrd )
+
+
+
+Function nTotOrdCar( dbf )
+
+RETURN ( NotCaja( ( dbf )->nCajOrd ) * ( dbf )->nUniOrd )

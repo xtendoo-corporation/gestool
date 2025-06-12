@@ -1,0 +1,32 @@
+[
+  {
+    "Codigo" : "G",
+    "Descripcion" : "General 21%",
+    "Porcentaje" : 21,
+    "Recargo" : 5.20
+  },
+  {
+    "Codigo" : "N",
+    "Descripcion" : "Normal 10%",
+    "Porcentaje" : 10,
+    "Recargo" : 1.4
+  },
+  {
+    "Codigo" : "R",
+    "Descripcion" : "Reducido 4%",
+    "Porcentaje" : 4,
+    "Recargo" : 0.5
+  },
+  {
+    "Codigo" : "E",
+    "Descripcion" : "Reducido 0%",
+    "Porcentaje" : 0,
+    "Recargo" : 0
+  },
+  {
+    "Codigo" : "S",
+    "Descripcion" : "Especial 5%",
+    "Porcentaje" : 5,
+    "Recargo" : 0
+  }
+]

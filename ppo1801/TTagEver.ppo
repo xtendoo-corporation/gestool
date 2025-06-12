@@ -1,0 +1,2319 @@
+#line 91 "\fwh1801\include\FiveWin.ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 10 ".\.\Prg\TTagEver.prg"
+_HB_CLASS TTagEver ; function TTagEver ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TTagEver", iif( .T., { @TControl() }, { @HBObject() } ), @TTagEver() ) ) ;
+
+   _HB_MEMBER { AS LOGICAL lRegistered } ; oClass:AddMultiClsData( "LOGICAL",, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lRegistered"}, .F. )
+
+   _HB_MEMBER { hBmp } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hBmp"}, .F. )
+   _HB_MEMBER { nWidthBmp } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nWidthBmp"}, .F. )
+   _HB_MEMBER { nHeightBmp } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nHeightBmp"}, .F. )
+
+   _HB_MEMBER { AS ARRAY aItems } ; oClass:AddMultiData( "ARRAY", {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aItems"}, .F. )
+
+   _HB_MEMBER { AS ARRAY aCoors } ; oClass:AddMultiData( "ARRAY", {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aCoors"}, .F. )
+   _HB_MEMBER { AS ARRAY aOvers } ; oClass:AddMultiData( "ARRAY", {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aOvers"}, .F. )
+
+   _HB_MEMBER { AS NUMERIC nHeightLine } ; oClass:AddMultiData( "NUMERIC", 22, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nHeightLine"}, .F. )
+
+   _HB_MEMBER { AS NUMERIC nOver } ; oClass:AddMultiData( "NUMERIC", 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nOver"}, .F. )
+
+   _HB_MEMBER { AS NUMERIC nClrPane } ; oClass:AddMultiData( "NUMERIC", 16777215, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nClrPane"}, .F. )
+   _HB_MEMBER { AS NUMERIC nClrBorder } ; oClass:AddMultiData( "NUMERIC", ( 204 + ( 214 * 256 ) + ( 197 * 65536 ) ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nClrBorder"}, .F. )
+
+   _HB_MEMBER { AS LOGIC lOverClose } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lOverClose"}, .F. )
+
+   _HB_MEMBER { AS ARRAY aRect } ; oClass:AddMultiData( "ARRAY", {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aRect"}, .F. )
+
+   _HB_MEMBER { bOnClick } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bOnClick"}, .F. )
+   _HB_MEMBER { bOnDelete } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bOnDelete"}, .F. )
+
+   _HB_MEMBER New( nTop, nLeft, nWidth, nHeight, oWnd, oFont, nClrBorder, aItems, nClrPane) AS CLASS TTagEver; oClass:AddMethod( "New", @TTagEver_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Redefine( nId, oWnd, oFont, aItems) AS CLASS TTagEver; oClass:AddMethod( "Redefine", @TTagEver_Redefine(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER End(); oClass:AddMethod( "End", @TTagEver_End(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Default(); oClass:AddMethod( "Default", @TTagEver_Default(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setItems( aItems); oClass:AddMethod( "setItems", @TTagEver_setItems(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getItems(); oClass:AddInline( "getItems", {|Self | ( ( Self ) ), ( ::aItems ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER addItem( cText); oClass:AddMethod( "addItem", @TTagEver_addItem(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Paint(); oClass:AddMethod( "Paint", @TTagEver_Paint(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Display(); oClass:AddInline( "Display", {|Self | ( ( Self ) ), ( ::BeginPaint(), ::Paint(), ::EndPaint(), 0 ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DrawItem(); oClass:AddInline( "DrawItem", {|Self, cItem | ( ( Self ) ), ( ::DrawText( cItem ), ::DrawBitmap(), sysRefresh() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DrawText( cItem); oClass:AddMethod( "DrawText", @TTagEver_DrawText(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DrawBitmap(); oClass:AddMethod( "DrawBitmap", @TTagEver_DrawBitmap(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LButtonDown( nRow, nCol, nFlags); oClass:AddMethod( "LButtonDown", @TTagEver_LButtonDown(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER MouseMove( nRow, nCol, nFlags); oClass:AddMethod( "MouseMove", @TTagEver_MouseMove(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER LButtonUp( nRow, nCol, nFlags); oClass:AddMethod( "LButtonUp", @TTagEver_LButtonUp(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EraseBkGnd(); oClass:AddInline( "EraseBkGnd", {|Self, hDC | ( ( Self ) ), ( 1 ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER loadBitmap(); oClass:AddMethod( "loadBitmap", @TTagEver_loadBitmap(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER deleteBitmap(); oClass:AddInline( "deleteBitmap", {|Self | ( ( Self ) ), ( iif( ::hBmp <> 0, deleteObject( ::hBmp ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setOverClose(); oClass:AddMethod( "setOverClose", @TTagEver_setOverClose(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getOverClose(); oClass:AddInline( "getOverClose", {|Self | ( ( Self ) ), ( ::lOverClose ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TTagEver ;
+
+
+
+static FUNCTION TTagEver_New( nTop, nLeft, nWidth, nHeight, oWnd, oFont, aItems, nClrBorder, nClrPane ) ; local Self AS CLASS TTagEver := QSelf() AS CLASS TTagEver
+
+   local nClrText       := ( 0 + ( 102 * 256 ) + ( 227 * 65536 ) )
+
+   If( nTop == nil, nTop := 0, ) ;
+   If( nLeft == nil, nLeft := 0, ) ;
+   If( nWidth == nil, nWidth := 0, ) ;
+   If( nHeight == nil, nHeight := 0, ) ;
+   If( nClrPane == nil, nClrPane := 16777215, ) ;
+   If( nClrBorder == nil, nClrBorder := ( 204 + ( 214 * 256 ) + ( 197 * 65536 ) ), ) ;
+
+   ::nStyle             := nOR( 1073741824, 268435456 )
+
+   ::SetItems( aItems )
+
+   ::oWnd               := oWnd
+   ::nTop               := nTop
+   ::nLeft              := nLeft
+   ::nBottom            := nTop + nHeight
+   ::nRight             := nLeft + nWidth
+   ::nId                := ::GetNewId()
+   ::lCaptured          := .F.
+   ::nClrPane           := nClrPane
+   ::nClrText           := nClrText
+   ::oFont              := oFont
+   ::nClrBorder         := nClrBorder
+
+   ::Default()
+
+   ::Register( nOR( 1, 2 ) )
+
+   ::Create()
+
+RETURN Self
+
+
+
+static FUNCTION TTagEver_Redefine( nId, oWnd, oFont, aItems, nClrBorder, nClrPane ) ; local Self AS CLASS TTagEver := QSelf() AS CLASS TTagEver
+
+   local nClrText       := 0
+
+   If( nClrPane == nil, nClrPane := 16777215, ) ;
+   If( nClrBorder == nil, nClrBorder := ( 204 + ( 214 * 256 ) + ( 197 * 65536 ) ), ) ;
+
+   ::SetItems( aItems )
+
+   ::oWnd               := oWnd
+   ::nId                := nId
+   ::lCaptured          := .F.
+   ::nClrPane           := nClrPane
+   ::nClrText           := nClrText
+   ::nClrBorder         := nClrBorder
+   ::oFont              := oFont
+
+   ::Default()
+
+   ::Register()
+
+   oWnd:DefControl( Self )
+
+RETURN Self
+
+
+
+static FUNCTION TTagEver_End( ) ; local Self AS CLASS TTagEver := QSelf() AS CLASS TTagEver
+
+   ::deleteBitmap()
+
+RETURN Self
+
+
+
+static FUNCTION TTagEver_Default( ) ; local Self AS CLASS TTagEver := QSelf() AS CLASS TTagEver
+
+   ::setColor( ::nClrText, ::nClrPane )
+
+   ::loadBitmap()
+
+   ::lVisible    := .T.
+
+RETURN Self
+
+
+
+static FUNCTION TTagEver_loadBitmap( ) ; local Self AS CLASS TTagEver := QSelf() AS CLASS TTagEver
+
+   if !empty( ::hBmp )
+      RETURN ( self )
+   end
+
+   ::hBmp         := loadBitmap( getResources(), "gc_tag_close_12" )
+
+   if ::hBmp == 0
+      RETURN ( self )
+   endif
+
+   ::nWidthBmp    := nBmpWidth( ::hBmp )
+   ::nHeightBmp   := nBmpHeight( ::hBmp )
+
+RETURN ( self )
+
+
+
+static FUNCTION TTagEver_setItems( aItems ) ; local Self AS CLASS TTagEver := QSelf() AS CLASS TTagEver
+
+   ::aItems    := {}
+
+   if empty( aItems )
+      RETURN ( self )
+   end
+
+   aeval( aItems, {|cItem| ::addItem( cItem ) } )
+
+RETURN ( self )
+
+
+
+static FUNCTION TTagEver_addItem( cText, uCargo ) ; local Self AS CLASS TTagEver := QSelf() AS CLASS TTagEver
+
+RETURN ( aadd( ::aItems, TTagItem():New( cText, uCargo ) ) )
+
+
+
+static FUNCTION TTagEver_Paint( ) ; local Self AS CLASS TTagEver := QSelf() AS CLASS TTagEver
+
+   local hPen
+   local oItem
+   local nLeft       := 2
+   local aInfo
+   local hOldPen
+   local hOldFont
+   local nOldMode
+   local nTopItem    := 2
+   local nOldColor
+   local nLeftItem   := 0
+   local nWidthItem  := 0
+
+   aInfo             := ::DispBegin()
+
+   nOldMode          := SetBkMode( ::hDC, 1 )
+   nOldColor         := SetTextColor( ::hDC, ::nClrText )
+
+   hPen              := CreatePen( 0, 1, ::nClrBorder )
+   hOldPen           := SelectObject( ::hDC, hPen )
+
+   hOldFont          := SelectObject( ::hDC, ::oFont:hFont )
+
+   fillSolidRect( ::hDC, GetClientRect( ::hWnd ), ::nClrPane )
+
+   if !empty( ::aItems )
+
+      ::aCoors          := {}
+      ::aOvers          := {}
+
+      sysrefresh()
+
+      nLeftItem         := 2
+
+      for each oItem in ::aItems
+
+         nLeftItem      := nLeftItem + nWidthItem + 8
+
+         nWidthItem     := 5 + GetTextWidth( ::hDC, oItem:cText, ::oFont:hFont )
+
+         if nLeftItem + nWidthItem + 5 + ::nWidthBmp + 5 > ::nWidth
+            nTopItem    += ( ::nHeightLine  ) + 2
+            nLeftItem   := 2 + 8
+         endif
+
+         if ::nWidthBmp <> 0
+            nWidthItem  += 5 + ::nWidthBmp + 5
+         endif
+
+         ::aRect           := { nTopItem, nLeftItem, nTopItem + ::nHeightLine, nLeftItem + nWidthItem }
+
+         ::DrawItem( oItem:cText )
+
+      next
+
+   end
+
+   SetBkMode( ::hDC, nOldMode )
+   SetTextColor( ::hDC, nOldColor )
+
+   SelectObject( ::hDC, hOldPen )
+   SelectObject( ::hDC, hOldFont )
+
+   DeleteObject( hPen )
+
+   ::DispEnd( aInfo )
+
+RETURN 0
+
+
+
+static FUNCTION TTagEver_DrawText( cItem ) ; local Self AS CLASS TTagEver := QSelf() AS CLASS TTagEver
+
+   RoundRect( ::hDC, ::aRect[2] - 4, ::aRect[1], ::aRect[4], ::aRect[3] - 1, 6, 6 )
+
+   DrawText( ::hDC, cItem, { ::aRect[1], ::aRect[2], ::aRect[3] - 2, ::aRect[4] }, 32 + 4 )
+
+   aadd( ::aCoors, { ::aRect[1], ::aRect[2], ::aRect[3], ::aRect[4] } )
+
+RETURN 0
+
+
+
+static FUNCTION TTagEver_DrawBitmap( ) ; local Self AS CLASS TTagEver := QSelf() AS CLASS TTagEver
+
+   local nTopBitmap
+   local nLeftBitmap
+
+   if ::hBmp == 0
+      aadd( ::aOvers, { 0, 0, 0, 0 } )
+      RETURN ( self )
+   end
+
+   nTopBitmap        := ::aRect[1] + ( ( ::aRect[3] - ::aRect[1] ) / 2 ) - ( ::nHeightBmp / 2 )
+   nLeftBitmap       := ::aRect[4] - 5 - ::nWidthBmp
+
+   drawMasked( ::hDC, ::hBmp, nTopBitmap, nLeftBitmap )
+
+   aadd( ::aOvers, { nTopBitmap, nLeftBitmap, nTopBitmap + ::nHeightBmp, nLeftBitmap + ::nWidthBmp } )
+
+RETURN ( self )
+
+
+
+static FUNCTION TTagEver_LButtonDown( nRow, nCol, nFlags ) ; local Self AS CLASS TTagEver := QSelf() AS CLASS TTagEver
+
+RETURN 0
+
+
+
+static FUNCTION TTagEver_MouseMove( nRow, nCol, nFlags ) ; local Self AS CLASS TTagEver := QSelf() AS CLASS TTagEver
+
+   local n
+   local nOver    := ::nOver
+   local lFind    := .F.
+   local nLen     := len( ::aCoors )
+
+   for n := 1 to nLen
+      if PtInRect( nRow, nCol, ::aCoors[ n ] )
+         lFind    := .T.
+         ::nOver  := n
+         exit
+      endif
+   next
+
+   ::setOverClose( nRow, nCol )
+
+   if lFind
+
+      if ::getOverClose()
+         CursorHand()
+      else
+         CursorArrow()
+      endif
+
+   else
+
+      ::nOver     := 0
+
+      CursorArrow()
+
+   endif
+
+   if nOver <> ::nOver
+      ::Refresh( .F. )
+   endif
+
+RETURN 0
+
+
+
+static FUNCTION TTagEver_LButtonUp( nRow, nCol, nFlags ) ; local Self AS CLASS TTagEver := QSelf() AS CLASS TTagEver
+
+   if ::nOver == 0
+      RETURN 0
+   end
+
+   if ::getOverClose()
+
+      if hb_isblock( ::bOnDelete )
+         eval( ::bOnDelete, Self, ::aItems[ ::nOver ] )
+      endif
+
+      hb_ADel( ::aItems, ::nOver, .T. )
+
+      ::MouseMove( nRow, nCol, nFlags )
+
+   endif
+
+   if hb_isblock( ::bOnClick )
+      eval( ::bOnClick, Self )
+   endif
+
+   ::Refresh()
+
+RETURN 0
+
+
+
+static FUNCTION TTagEver_setOverClose( nRow, nCol ) ; local Self AS CLASS TTagEver := QSelf() AS CLASS TTagEver
+
+   ::lOverClose      := .F.
+
+   if ::nOver > 0 .AND. ::nOver <= len( ::aOvers )
+      ::lOverClose   := ptInRect( nRow, nCol, ::aOvers[ ::nOver ] )
+   end
+
+RETURN ( ::lOverClose )
+
+
+
+_HB_CLASS TTagItem ; function TTagItem ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TTagItem", iif( .F., { }, { @HBObject() } ), @TTagItem() ) ) ;
+
+   _HB_MEMBER { cText } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cText"}, .F. )
+   _HB_MEMBER { aCoors } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aCoors"}, .F. )
+   _HB_MEMBER { aOvers } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aOvers"}, .F. )
+   _HB_MEMBER { uCargo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"uCargo"}, .F. )
+
+   _HB_MEMBER New( cText, uCargo); oClass:AddMethod( "New", @TTagItem_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setCoors(); oClass:AddInline( "setCoors", {|Self, aCoors | ( ( Self ) ), ( ::aCoors := aCoors ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getCoors(); oClass:AddInline( "getCoors", {|Self | ( ( Self ) ), ( ::aCoors ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setOvers(); oClass:AddInline( "setOvers", {|Self, aOvers | ( ( Self ) ), ( ::aOvers := aOvers ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getOvers(); oClass:AddInline( "getOvers", {|Self | ( ( Self ) ), ( ::aOvers ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TTagItem ;
+
+
+
+static FUNCTION TTagItem_New( cText, uCargo ) ; local Self AS CLASS TTagItem := QSelf() AS CLASS TTagItem
+
+   ::cText  := cText
+
+   ::uCargo := uCargo
+
+RETURN ( self )

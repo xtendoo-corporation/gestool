@@ -1,0 +1,6593 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 7 ".\.\Prg\Stock.prg"
+_HB_CLASS TStock ; function TStock ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TStock", iif( .F., { }, { @HBObject() } ), @TStock() ) ) ;
+
+   _HB_MEMBER { aStocks } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aStocks"}, .F. )
+   _HB_MEMBER { cCodigoAlmacen } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoAlmacen"}, .F. )
+   _HB_MEMBER { cCodigoArticulo } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoArticulo"}, .F. )
+   _HB_MEMBER { cCodigoEmpresa } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoEmpresa"}, .F. )
+
+   _HB_MEMBER { cLote } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cLote"}, .F. )
+   _HB_MEMBER { cCodigoPropiedad1 } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoPropiedad1"}, .F. )
+   _HB_MEMBER { cValorPropiedad1 } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cValorPropiedad1"}, .F. )
+   _HB_MEMBER { cCodigoPropiedad2 } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoPropiedad2"}, .F. )
+   _HB_MEMBER { cValorPropiedad2 } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cValorPropiedad2"}, .F. )
+
+   _HB_MEMBER { dConsolidacion } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dConsolidacion"}, .F. )
+
+   _HB_MEMBER { aCacheStockActual } ; oClass:AddMultiClsData(, {}, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aCacheStockActual"}, .F. )
+   _HB_MEMBER { aConsolidacion } ; oClass:AddMultiClsData(, {}, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aConsolidacion"}, .F. )
+
+   _HB_MEMBER { cPath } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPath"}, .F. )
+   _HB_MEMBER { cDriver } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDriver"}, .F. )
+
+   _HB_MEMBER { cName } ; oClass:AddMultiData(, "Stocks", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cName"}, .F. )
+
+   _HB_MEMBER { lStockInit } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lStockInit"}, .F. )
+
+   _HB_MEMBER { uCodigoAlmacen } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"uCodigoAlmacen"}, .F. )
+
+   _HB_MEMBER { cAlm } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAlm"}, .F. )
+   _HB_MEMBER { cArticulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cArticulo"}, .F. )
+
+   _HB_MEMBER { cSatCliT } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSatCliT"}, .F. )
+   _HB_MEMBER { cSatCliL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSatCliL"}, .F. )
+
+   _HB_MEMBER { cPedCliT } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPedCliT"}, .F. )
+   _HB_MEMBER { cPedCliL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPedCliL"}, .F. )
+   _HB_MEMBER { cPedCliR } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPedCliR"}, .F. )
+   _HB_MEMBER { cPedCliS } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPedCliS"}, .F. )
+
+   _HB_MEMBER { cAlbCliT } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAlbCliT"}, .F. )
+   _HB_MEMBER { cAlbCliL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAlbCliL"}, .F. )
+   _HB_MEMBER { cAlbCliS } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAlbCliS"}, .F. )
+
+   _HB_MEMBER { cAlqCliT } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAlqCliT"}, .F. )
+   _HB_MEMBER { cAlqCliL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAlqCliL"}, .F. )
+
+   _HB_MEMBER { cFacCliT } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFacCliT"}, .F. )
+   _HB_MEMBER { cFacCliL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFacCliL"}, .F. )
+   _HB_MEMBER { cFacCliP } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFacCliP"}, .F. )
+   _HB_MEMBER { cFacCliS } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFacCliS"}, .F. )
+
+   _HB_MEMBER { cFacRecT } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFacRecT"}, .F. )
+   _HB_MEMBER { cFacRecL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFacRecL"}, .F. )
+   _HB_MEMBER { cFacRecS } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFacRecS"}, .F. )
+
+   _HB_MEMBER { cAntCliT } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAntCliT"}, .F. )
+
+   _HB_MEMBER { cPedPrvT } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPedPrvT"}, .F. )
+   _HB_MEMBER { cPedPrvL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPedPrvL"}, .F. )
+
+   _HB_MEMBER { cAlbPrvT } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAlbPrvT"}, .F. )
+   _HB_MEMBER { cAlbPrvL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAlbPrvL"}, .F. )
+   _HB_MEMBER { cAlbPrvS } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAlbPrvS"}, .F. )
+
+   _HB_MEMBER { cFacPrvT } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFacPrvT"}, .F. )
+   _HB_MEMBER { cFacPrvL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFacPrvL"}, .F. )
+   _HB_MEMBER { cFacPrvS } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFacPrvS"}, .F. )
+
+   _HB_MEMBER { cRctPrvT } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cRctPrvT"}, .F. )
+   _HB_MEMBER { cRctPrvL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cRctPrvL"}, .F. )
+   _HB_MEMBER { cRctPrvS } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cRctPrvS"}, .F. )
+
+   _HB_MEMBER { cProducT } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cProducT"}, .F. )
+   _HB_MEMBER { cProducL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cProducL"}, .F. )
+   _HB_MEMBER { cProducM } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cProducM"}, .F. )
+   _HB_MEMBER { cProducS } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cProducS"}, .F. )
+   _HB_MEMBER { cProducP } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cProducP"}, .F. )
+
+   _HB_MEMBER { cDbfIva } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDbfIva"}, .F. )
+   _HB_MEMBER { cDbfDiv } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDbfDiv"}, .F. )
+   _HB_MEMBER { cDbfFPago } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDbfFPago"}, .F. )
+
+   _HB_MEMBER { nDouDiv } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nDouDiv"}, .F. )
+   _HB_MEMBER { nDorDiv } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nDorDiv"}, .F. )
+   _HB_MEMBER { nDinDiv } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nDinDiv"}, .F. )
+   _HB_MEMBER { nDirDiv } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nDirDiv"}, .F. )
+   _HB_MEMBER { cPicUnd } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPicUnd"}, .F. )
+   _HB_MEMBER { nVdvDiv } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nVdvDiv"}, .F. )
+   _HB_MEMBER { nDecIn } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nDecIn"}, .F. )
+   _HB_MEMBER { nDerIn } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nDerIn"}, .F. )
+
+   _HB_MEMBER { cKit } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cKit"}, .F. )
+
+   _HB_MEMBER { cTikT } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTikT"}, .F. )
+   _HB_MEMBER { cTikL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTikL"}, .F. )
+   _HB_MEMBER { cTikP } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTikP"}, .F. )
+   _HB_MEMBER { cTikS } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTikS"}, .F. )
+
+   _HB_MEMBER { tmpAlbCliL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"tmpAlbCliL"}, .F. )
+   _HB_MEMBER { tmpAlbCliS } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"tmpAlbCliS"}, .F. )
+   _HB_MEMBER { tmpFacCliL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"tmpFacCliL"}, .F. )
+   _HB_MEMBER { tmpFacCliS } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"tmpFacCliS"}, .F. )
+   _HB_MEMBER { tmpFacRecL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"tmpFacRecL"}, .F. )
+   _HB_MEMBER { tmpFacRecS } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"tmpFacRecS"}, .F. )
+
+   _HB_MEMBER { AS ARRAY aSeries } ; oClass:AddMultiData( "ARRAY", {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aSeries"}, .F. )
+
+   _HB_MEMBER { oTree } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTree"}, .F. )
+
+   _HB_MEMBER { dFechaInicio } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dFechaInicio"}, .F. )
+   _HB_MEMBER { tHoraInicio } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"tHoraInicio"}, .F. )
+   _HB_MEMBER { dFechaFin } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dFechaFin"}, .F. )
+   _HB_MEMBER { tHoraFin } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"tHoraFin"}, .F. )
+
+   _HB_MEMBER { AS ARRAY aMovAlm } ; oClass:AddMultiData( "ARRAY", {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aMovAlm"}, .F. )
+
+   _HB_MEMBER { AS LOGIC lAlbPrv } ; oClass:AddMultiData( "LOGIC", .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lAlbPrv"}, .F. )
+   _HB_MEMBER { AS LOGIC lAlbCli } ; oClass:AddMultiData( "LOGIC", .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lAlbCli"}, .F. )
+
+   _HB_MEMBER { AS LOGIC lIntegra } ; oClass:AddMultiData( "LOGIC", .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lIntegra"}, .F. )
+
+   _HB_MEMBER { AS LOGIC lLote } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lLote"}, .F. )
+   _HB_MEMBER { AS LOGIC lNumeroSerie } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lNumeroSerie"}, .F. )
+
+   _HB_MEMBER { oDbfStock } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfStock"}, .F. )
+   _HB_MEMBER { cDbfStock } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDbfStock"}, .F. )
+   _HB_MEMBER { cCdxStock } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCdxStock"}, .F. )
+
+   _HB_MEMBER { AS ARRAY aAlmacenes } ; oClass:AddMultiData( "ARRAY", {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aAlmacenes"}, .F. )
+
+   _HB_MEMBER New( cPath, cDriver); oClass:AddMethod( "New", @TStock_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Create( cPath, cDriver); oClass:AddMethod( "Create", @TStock_Create(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER End(); oClass:AddInline( "End", {|Self | ( ( Self ) ), ( if( !empty( ::oTree ), ::oTree:End(), ), ::CloseFiles() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Reset(); oClass:AddInline( "Reset", {|Self | ( ( Self ) ), ( ::aStocks := {}, ::aConsolidacion := {} ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lOpenFiles(); oClass:AddMethod( "lOpenFiles", @TStock_lOpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @TStock_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenService(); oClass:AddInline( "OpenService", {|Self | ( ( Self ) ), ( ::lOpenFiles() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CloseService(); oClass:AddInline( "CloseService", {|Self | ( ( Self ) ), ( ::CloseFiles() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CreateTemporalFiles( cPath); oClass:AddMethod( "CreateTemporalFiles", @TStock_CreateTemporalFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DeleteTemporalFiles( cPath); oClass:AddMethod( "DeleteTemporalFiles", @TStock_DeleteTemporalFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Zap(); oClass:AddMethod( "Zap", @TStock_Zap(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PedPrv( cNumPed, cCodAlm, lDelete, lIncremento); oClass:AddMethod( "PedPrv", @TStock_PedPrv(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AlbPrv( cNumAlb, cCodAlm, cNumPed, lDelete, lIncremento, lIgnEstado); oClass:AddMethod( "AlbPrv", @TStock_AlbPrv(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FacPrv( cNumFac, cCodAlm, lDelete, lIncremento); oClass:AddMethod( "FacPrv", @TStock_FacPrv(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ChkFacPrv( cNumFac); oClass:AddMethod( "ChkFacPrv", @TStock_ChkFacPrv(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER RctPrv( cNumFac, cCodAlm, lDelete, lIncremento); oClass:AddMethod( "RctPrv", @TStock_RctPrv(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ChkRctPrv( cNumFac); oClass:AddMethod( "ChkRctPrv", @TStock_ChkRctPrv(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PedCli( cNumPed, cCodAlm, lDelete, lIncremento); oClass:AddMethod( "PedCli", @TStock_PedCli(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AlbCli( cNumAlb, cCodAlm, lDelete, lIncremento, lIgnEstado, lChequea); oClass:AddMethod( "AlbCli", @TStock_AlbCli(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ChkAlbCli( cNumAlb); oClass:AddMethod( "ChkAlbCli", @TStock_ChkAlbCli(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AlqCli( cNumAlq, cCodAlm, lDelete, lIncremento, lIgnEstado, lChequea); oClass:AddMethod( "AlqCli", @TStock_AlqCli(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FacCli( cNumFac, cCodAlm, lDelete, lIncremento); oClass:AddMethod( "FacCli", @TStock_FacCli(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ChkFacCli( cNumFac); oClass:AddMethod( "ChkFacCli", @TStock_ChkFacCli(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FacRec( cNumFac, cCodAlm, lDelete, lIncremento); oClass:AddMethod( "FacRec", @TStock_FacRec(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TpvCli( cNumFac, cCodAlm, lIncremento); oClass:AddMethod( "TpvCli", @TStock_TpvCli(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ChkTikCli( cNumTik); oClass:AddMethod( "ChkTikCli", @TStock_ChkTikCli(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nTotStockAct(); oClass:AddMethod( "nTotStockAct", @TStock_nTotStockAct(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER nCacheStockActual(); oClass:AddMethod( "nCacheStockActual", @TStock_nCacheStockActual(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER addCacheStockActual(); oClass:AddMethod( "addCacheStockActual", @TStock_addCacheStockActual(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER scanCacheStockActual(); oClass:AddMethod( "scanCacheStockActual", @TStock_scanCacheStockActual(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getCacheStockActual(); oClass:AddMethod( "getCacheStockActual", @TStock_getCacheStockActual(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER deleteCacheStockActual(); oClass:AddMethod( "deleteCacheStockActual", @TStock_deleteCacheStockActual(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER recalculateCacheStockActual(); oClass:AddMethod( "recalculateCacheStockActual", @TStock_recalculateCacheStockActual(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nPutStockActual( cCodArt, cCodAlm, cValPr1, cValPr2, cLote, lKitAct, nKitStk, oSay); oClass:AddMethod( "nPutStockActual", @TStock_nPutStockActual(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lPutStockActual( cCodArt, cCodAlm, cValPr1, cValPr2, cLote, lKitAct, nKitStk, oSay); oClass:AddMethod( "lPutStockActual", @TStock_lPutStockActual(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Recalcula( oMeter, cPath); oClass:AddMethod( "Recalcula", @TStock_Recalcula(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER StockInit( cPath, cPathOld, oMsg, lGrupo); oClass:AddMethod( "StockInit", @TStock_StockInit(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nStockReservado( cCodArt, cValPr1, cValPr2); oClass:AddMethod( "nStockReservado", @TStock_nStockReservado(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetEstadoPedCli( cNumPed); oClass:AddMethod( "SetEstadoPedCli", @TStock_SetEstadoPedCli(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetEstadoSatCli( cNumPed); oClass:AddMethod( "SetEstadoSatCli", @TStock_SetEstadoSatCli(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetRecibidoPedCli( cNumPed); oClass:AddMethod( "SetRecibidoPedCli", @TStock_SetRecibidoPedCli(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetGeneradoPedCli( cNumPed); oClass:AddMethod( "SetGeneradoPedCli", @TStock_SetGeneradoPedCli(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetPedPrv( cNumPed); oClass:AddMethod( "SetPedPrv", @TStock_SetPedPrv(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nStockAlmacen( cCodArt, cCodAlm, cValPr1, cValPr2, cLote); oClass:AddMethod( "nStockAlmacen", @TStock_nStockAlmacen(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nTotalSaldo( cCodArt, cCodCli); oClass:AddMethod( "nTotalSaldo", @TStock_nTotalSaldo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nSaldoDocumento( cCodArt, cNumDoc); oClass:AddMethod( "nSaldoDocumento", @TStock_nSaldoDocumento(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nSaldoAnterior( cCodArt, cCodCli, cNumDoc); oClass:AddMethod( "nSaldoAnterior", @TStock_nSaldoAnterior(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nSaldoAntAlb( cCodArt, cNumDoc); oClass:AddMethod( "nSaldoAntAlb", @TStock_nSaldoAntAlb(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nSaldoDocAlb( cCodArt, cNumDoc); oClass:AddMethod( "nSaldoDocAlb", @TStock_nSaldoDocAlb(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Almacenes(); oClass:AddMethod( "Almacenes", @TStock_Almacenes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER aStockArticulo( cCodArt); oClass:AddMethod( "aStockArticulo", @TStock_aStockArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER nStockArticulo( cCodArt); oClass:AddMethod( "nStockArticulo", @TStock_nStockArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER aStockMovimientosAlmacen(); oClass:AddMethod( "aStockMovimientosAlmacen", @TStock_aStockMovimientosAlmacen(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER aStockAlbaranProveedor(); oClass:AddMethod( "aStockAlbaranProveedor", @TStock_aStockAlbaranProveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER aStockFacturaProveedor(); oClass:AddMethod( "aStockFacturaProveedor", @TStock_aStockFacturaProveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER aStockRectificativaProveedor(); oClass:AddMethod( "aStockRectificativaProveedor", @TStock_aStockRectificativaProveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER aStockPedidoCliente(); oClass:AddMethod( "aStockPedidoCliente", @TStock_aStockPedidoCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER aStockAlbaranCliente(); oClass:AddMethod( "aStockAlbaranCliente", @TStock_aStockAlbaranCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER aStockFacturaCliente(); oClass:AddMethod( "aStockFacturaCliente", @TStock_aStockFacturaCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER aStockRectificativaCliente(); oClass:AddMethod( "aStockRectificativaCliente", @TStock_aStockRectificativaCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER aStockTicketsCliente(); oClass:AddMethod( "aStockTicketsCliente", @TStock_aStockTicketsCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER aStockProduccion(); oClass:AddMethod( "aStockProduccion", @TStock_aStockProduccion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER aStockMateriaPrima(); oClass:AddMethod( "aStockMateriaPrima", @TStock_aStockMateriaPrima(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER aStockPendiente(); oClass:AddMethod( "aStockPendiente", @TStock_aStockPendiente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER Integra( sStock); oClass:AddMethod( "Integra", @TStock_Integra(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nOperacionesCliente( idCliente, lRiesgo); oClass:AddMethod( "nOperacionesCliente", @TStock_nOperacionesCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nPedidoCliente( idCliente); oClass:AddMethod( "nPedidoCliente", @TStock_nPedidoCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nConsumoArticulo( cCodArt, cCodAlm, cLote, dFecIni, dFecFin); oClass:AddMethod( "nConsumoArticulo", @TStock_nConsumoArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lValidNumeroSerie(); oClass:AddInline( "lValidNumeroSerie", {|Self, cCodArt, cCodAlm, nNumSer, lMessage | ( ( Self ) ), ( .T. ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetTmpAlbCliL(); oClass:AddInline( "SetTmpAlbCliL", {|Self, tmpAlbCliL | ( ( Self ) ), ( ::tmpAlbCliL := tmpAlbCliL ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetTmpAlbCliS(); oClass:AddInline( "SetTmpAlbCliS", {|Self, tmpAlbCliS | ( ( Self ) ), ( ::tmpAlbCliS := tmpAlbCliS ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetTmpFacCliL(); oClass:AddInline( "SetTmpFacCliL", {|Self, tmpFacCliL | ( ( Self ) ), ( ::tmpFacCliL := tmpFacCliL ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetTmpFacCliS(); oClass:AddInline( "SetTmpFacCliS", {|Self, tmpFacCliS | ( ( Self ) ), ( ::tmpFacCliS := tmpFacCliS ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetTmpFacRecL(); oClass:AddInline( "SetTmpFacRecL", {|Self, tmpFacRecL | ( ( Self ) ), ( ::tmpFacRecL := tmpFacRecL ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetTmpFacRecS(); oClass:AddInline( "SetTmpFacRecS", {|Self, tmpFacRecS | ( ( Self ) ), ( ::tmpFacRecS := tmpFacRecS ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nRiesgo( idCliente); oClass:AddMethod( "nRiesgo", @TStock_nRiesgo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nFacturado(); oClass:AddInline( "nFacturado", {|Self, idCliente | ( ( Self ) ), ( ::nOperacionesCliente( idCliente, .F. ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetRiesgo( idCliente, oGetRiesgo, nRiesgoCliente); oClass:AddMethod( "SetRiesgo", @TStock_SetRiesgo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nCostoMedio( cCodArt, cCodAlm, cCodPr1, cCodPr2, cValPr1, cValPr2, cLote); oClass:AddMethod( "nCostoMedio", @TStock_nCostoMedio(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lCheckConsolidacion(); oClass:AddMethod( "lCheckConsolidacion", @TStock_lCheckConsolidacion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lValoracionCostoMedio( nTipMov); oClass:AddMethod( "lValoracionCostoMedio", @TStock_lValoracionCostoMedio(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lAvisarSerieSinStock(); oClass:AddInline( "lAvisarSerieSinStock", {|Self, cCodigo | ( ( Self ) ), ( RetFld( cCodigo, ::cArticulo, "lMsgSer" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER oTreeStocks(); oClass:AddMethod( "oTreeStocks", @TStock_oTreeStocks(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER InsertStockMovimientosAlmacenRowset( oRowSet, lDestino); oClass:AddMethod( "InsertStockMovimientosAlmacenRowset", @TStock_InsertStockMovimientosAlmacenRowset(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InsertStockAlbaranProveedores(); oClass:AddMethod( "InsertStockAlbaranProveedores", @TStock_InsertStockAlbaranProveedores(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DeleteStockAlbaranProveedores(); oClass:AddMethod( "DeleteStockAlbaranProveedores", @TStock_DeleteStockAlbaranProveedores(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InsertStockFacturaProveedores(); oClass:AddMethod( "InsertStockFacturaProveedores", @TStock_InsertStockFacturaProveedores(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DeleteStockFacturaProveedores(); oClass:AddMethod( "DeleteStockFacturaProveedores", @TStock_DeleteStockFacturaProveedores(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InsertStockRectificativaProveedores(); oClass:AddMethod( "InsertStockRectificativaProveedores", @TStock_InsertStockRectificativaProveedores(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DeleteStockRectificativaProveedores(); oClass:AddMethod( "DeleteStockRectificativaProveedores", @TStock_DeleteStockRectificativaProveedores(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InsertStockPedidoClientes(); oClass:AddMethod( "InsertStockPedidoClientes", @TStock_InsertStockPedidoClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InsertStockAlbaranClientes(); oClass:AddMethod( "InsertStockAlbaranClientes", @TStock_InsertStockAlbaranClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InsertStockFacturaClientes(); oClass:AddMethod( "InsertStockFacturaClientes", @TStock_InsertStockFacturaClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InsertStockRectificativaClientes(); oClass:AddMethod( "InsertStockRectificativaClientes", @TStock_InsertStockRectificativaClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InsertStockTiketsClientes( lCombinado); oClass:AddMethod( "InsertStockTiketsClientes", @TStock_InsertStockTiketsClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InsertStockMaterialesProducidos(); oClass:AddMethod( "InsertStockMaterialesProducidos", @TStock_InsertStockMaterialesProducidos(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InsertStockMateriasPrimas(); oClass:AddMethod( "InsertStockMateriasPrimas", @TStock_InsertStockMateriasPrimas(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InsertStockPendiente(); oClass:AddMethod( "InsertStockPendiente", @TStock_InsertStockPendiente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nUnidadesInStock(); oClass:AddMethod( "nUnidadesInStock", @TStock_nUnidadesInStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nPendientesRecibirInStock(); oClass:AddMethod( "nPendientesRecibirInStock", @TStock_nPendientesRecibirInStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nPendientesEntregarInStock(); oClass:AddMethod( "nPendientesEntregarInStock", @TStock_nPendientesEntregarInStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setCodigoAlmacen( cCodigoAlmacen); oClass:AddMethod( "setCodigoAlmacen", @TStock_setCodigoAlmacen(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER lCodigoAlmacen( cCodigoAlmacen); oClass:AddMethod( "lCodigoAlmacen", @TStock_lCodigoAlmacen(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getFechaHoraConsolidacion(); oClass:AddMethod( "getFechaHoraConsolidacion", @TStock_getFechaHoraConsolidacion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER validateDateTime( dFecMov, tTimMov); oClass:AddMethod( "validateDateTime", @TStock_validateDateTime(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nFacturacionPendiente( idCliente); oClass:AddMethod( "nFacturacionPendiente", @TStock_nFacturacionPendiente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nPagadoCliente( idCliente); oClass:AddMethod( "nPagadoCliente", @TStock_nPagadoCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nFacturacionCliente( idCliente); oClass:AddMethod( "nFacturacionCliente", @TStock_nFacturacionCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER aStockArticuloEmpresa(); oClass:AddInline( "aStockArticuloEmpresa", {|Self, cCodArt, cCodEmp | ( ( Self ) ), ( ::aStockArticulo( cCodArt,,,,,,,,,,, cCodEmp ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TStock ;
+
+
+
+static FUNCTION TStock_Create( cPath, cDriver ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+   If( cDriver == nil, cDriver := cDriver(), ) ;
+
+   ::cPath              := cPath
+   ::cDriver            := cDriver
+
+   ::Reset()
+
+RETURN Self
+
+
+
+static FUNCTION TStock_New( cPath, cDriver ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   ::Create( cPath, cDriver )
+
+   ::lOpenFiles()
+
+RETURN Self
+
+
+
+static FUNCTION TStock_lOpenFiles( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local lOpen          := .T.
+   local oError
+   local oBlock
+
+   oBlock               := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+
+
+
+
+      ::cSatCliT        := cCheckArea( "SatCliT" )
+      ::cSatCliL        := cCheckArea( "SatCliL" )
+
+      ::cPedCliT        := cCheckArea( "PedCliT" )
+      ::cPedCliL        := cCheckArea( "PedCliL" )
+      ::cPedCliR        := cCheckArea( "PedCliR" )
+
+      ::cAlbCliT        := cCheckArea( "AlbCliT" )
+      ::cAlbCliL        := cCheckArea( "AlbCliL" )
+      ::cAlbCliS        := cCheckArea( "AlbCliS" )
+
+      ::cFacCliT        := cCheckArea( "FacCliT" )
+      ::cFacCliL        := cCheckArea( "FacCliL" )
+      ::cFacCliS        := cCheckArea( "FacCliS" )
+
+      ::cFacCliP        := cCheckArea( "FacCliP" )
+
+      ::cFacRecT        := cCheckArea( "FacRecT" )
+      ::cFacRecL        := cCheckArea( "FacRecL" )
+      ::cFacRecS        := cCheckArea( "FacRecS" )
+
+      ::cAntCliT        := cCheckArea( "AntCliT" )
+
+      ::cTikT           := cCheckArea( "TikT"    )
+      ::cTikL           := cCheckArea( "TikL"    )
+      ::cTikS           := cCheckArea( "TikS"    )
+
+      ::cPedPrvT        := cCheckArea( "PedPrvT" )
+      ::cPedPrvL        := cCheckArea( "PedPrvL" )
+
+      ::cAlbPrvL        := cCheckArea( "AlbPrvL" )
+      ::cAlbPrvS        := cCheckArea( "AlbPrvS" )
+
+      ::cFacPrvL        := cCheckArea( "FacPrvL" )
+      ::cFacPrvS        := cCheckArea( "FacPrvS" )
+
+      ::cRctPrvL        := cCheckArea( "RctPrvL" )
+      ::cRctPrvS        := cCheckArea( "RctPrvS" )
+
+      ::cProducL        := cCheckArea( "ProducL" )
+      ::cProducM        := cCheckArea( "ProducM" )
+      ::cProducS        := cCheckArea( "ProducS" )
+      ::cProducP        := cCheckArea( "ProducP" )
+
+      ::cArticulo       := cCheckArea( "Articulo")
+      ::cKit            := cCheckArea( "Kit"     )
+
+      ::cAlm            := cCheckArea( "Almacen" )
+
+      ::cDbfIva         := cCheckArea( "TIva" )
+      ::cDbfDiv         := cCheckArea( "Divisas" )
+      ::cDbfFPago       := cCheckArea( "FPAGO" )
+
+      ::nDouDiv         := nDouDiv()
+      ::nDorDiv         := nRouDiv()
+      ::nDinDiv         := nDinDiv()
+      ::nDirDiv         := nRinDiv()
+      ::nVdvDiv         := nChgDiv()
+      ::nDecIn          := nDinDiv()
+      ::nDerIn          := nRinDiv()
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "SatCliT.DBF" ), ( ::cSatCliT ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "SatCliT.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "SatCliL.DBF" ), ( ::cSatCliL ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "SatCliL.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "PedCliT.Dbf" ), ( ::cPedCliT ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "PedCliT.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "PedCliL.Dbf" ), ( ::cPedCliL ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "PedCliL.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "PedCliR.Dbf" ), ( ::cPedCliR ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "PedCliR.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "AlbCliT.Dbf" ), ( ::cAlbCliT ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "AlbCliT.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "AlbCliL.Dbf" ), ( ::cAlbCliL ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "AlbCliL.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "AlbCliS.Dbf" ), ( ::cAlbCliS ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "AlbCliS.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "FacCliT.Dbf" ), ( ::cFacCliT ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "FacCliT.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "FacCliL.Dbf" ), ( ::cFacCliL ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "FacCliL.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "FacCliS.Dbf" ), ( ::cFacCliS ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "FacCliS.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "FacCliP.Dbf" ), ( ::cFacCliP ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "FacCliP.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "AntCliT.DBF" ), ( ::cAntCliT ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "AntCliT.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "FacRecT.Dbf" ), ( ::cFacRecT ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "FacRecT.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "FacRecL.Dbf" ), ( ::cFacRecL ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "FacRecL.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "FacRecS.Dbf" ), ( ::cFacRecS ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "FacRecS.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "TikeT.DBF" ), ( ::cTikT ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "TikeT.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "TikeL.DBF" ), ( ::cTikL ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "TikeL.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "TikeS.DBF" ), ( ::cTikS ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "TikeS.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "PedProvT.DBF" ), ( ::cPedPrvT ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "PedProvT.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "PedProvL.DBF" ), ( ::cPedPrvL ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "PedProvL.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "AlbProvL.DBF" ), ( ::cAlbPrvL ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "AlbProvL.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "AlbPrvS.DBF" ), ( ::cAlbPrvS ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "AlbPrvS.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "FacPrvL.DBF" ), ( ::cFacPrvL ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "FacPrvL.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "FacPrvS.DBF" ), ( ::cFacPrvS ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "FacPrvS.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "RctPrvL.DBF" ), ( ::cRctPrvL ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "RctPrvL.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "RctPrvS.DBF" ), ( ::cRctPrvS ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "RctPrvS.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "ProLin.Dbf" ), ( ::cProducL ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "ProLin.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "ProMat.Dbf" ), ( ::cProducM ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "ProMat.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "ProSer.Dbf" ), ( ::cProducS ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "ProSer.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "MatSer.Dbf" ), ( ::cProducP ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "MatSer.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "Articulo.Dbf" ), ( ::cArticulo ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "Articulo.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "ArtKit.Dbf" ), ( ::cKit ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "ArtKit.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "ALMACEN.DBF" ), ( ::cAlm ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "ALMACEN.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatDat() + "DIVISAS.DBF" ), ( ::cDbfDiv ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatDat() + "DIVISAS.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatDat() + "TIVA.DBF" ), ( ::cDbfIva ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatDat() + "TIVA.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "FPAGO.DBF" ), ( ::cDbfFPago ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "FPAGO.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+
+
+      ::Almacenes()
+
+   RECOVER USING oError
+
+      lOpen             := .F.
+
+      MsgStop( ErrorMessage( oError ), "Imposible abrir las bases de datos de stocks" )
+
+   end
+
+   ErrorBlock( oBlock )
+
+   if !lOpen
+      ::CloseFiles()
+   end
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TStock_CloseFiles( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   if ( !empty( ::cSatCliT ), ( ::cSatCliT )->( dbCloseArea() ), )
+   if ( !empty( ::cSatCliL ), ( ::cSatCliL )->( dbCloseArea() ), )
+
+   if ( !empty( ::cPedCliT ), ( ::cPedCliT )->( dbCloseArea() ), )
+   if ( !empty( ::cPedCliL ), ( ::cPedCliL )->( dbCloseArea() ), )
+   if ( !empty( ::cPedCliR ), ( ::cPedCliR )->( dbCloseArea() ), )
+
+   if ( !empty( ::cAlbCliT ), ( ::cAlbCliT )->( dbCloseArea() ), )
+   if ( !empty( ::cAlbCliL ), ( ::cAlbCliL )->( dbCloseArea() ), )
+   if ( !empty( ::cAlbCliS ), ( ::cAlbCliS )->( dbCloseArea() ), )
+
+   if ( !empty( ::cFacCliT ), ( ::cFacCliT )->( dbCloseArea() ), )
+   if ( !empty( ::cFacCliL ), ( ::cFacCliL )->( dbCloseArea() ), )
+   if ( !empty( ::cFacCliS ), ( ::cFacCliS )->( dbCloseArea() ), )
+   if ( !empty( ::cFacCliP ), ( ::cFacCliP )->( dbCloseArea() ), )
+
+   if ( !empty( ::cFacRecT ), ( ::cFacRecT )->( dbCloseArea() ), )
+   if ( !empty( ::cFacRecL ), ( ::cFacRecL )->( dbCloseArea() ), )
+   if ( !empty( ::cFacRecS ), ( ::cFacRecS )->( dbCloseArea() ), )
+
+   if ( !empty( ::cTikT ),    ( ::cTikT )->( dbCloseArea() ), )
+   if ( !empty( ::cTikL ),    ( ::cTikL )->( dbCloseArea() ), )
+   if ( !empty( ::cTikS ),    ( ::cTikS )->( dbCloseArea() ), )
+
+   if ( !empty( ::cAntCliT ), ( ::cAntCliT )->( dbCloseArea() ), )
+
+   if ( !empty( ::cArticulo), ( ::cArticulo )->( dbCloseArea() ), )
+   if ( !empty( ::cKit ),     ( ::cKit )->( dbCloseArea() ), )
+
+   if ( !empty( ::cPedPrvT ), ( ::cPedPrvT )->( dbCloseArea() ), )
+   if ( !empty( ::cPedPrvL ), ( ::cPedPrvL )->( dbCloseArea() ), )
+
+   if ( !empty( ::cAlbPrvL ), ( ::cAlbPrvL )->( dbCloseArea() ), )
+   if ( !empty( ::cAlbPrvS ), ( ::cAlbPrvS )->( dbCloseArea() ), )
+
+   if ( !empty( ::cFacPrvL ), ( ::cFacPrvL )->( dbCloseArea() ), )
+   if ( !empty( ::cFacPrvS ), ( ::cFacPrvS )->( dbCloseArea() ), )
+
+   if ( !empty( ::cRctPrvL ), ( ::cRctPrvL )->( dbCloseArea() ), )
+   if ( !empty( ::cRctPrvS ), ( ::cRctPrvS )->( dbCloseArea() ), )
+
+   if ( !empty( ::cProducL ), ( ::cProducL )->( dbCloseArea() ), )
+   if ( !empty( ::cProducM ), ( ::cProducM )->( dbCloseArea() ), )
+   if ( !empty( ::cProducS ), ( ::cProducS )->( dbCloseArea() ), )
+   if ( !empty( ::cProducP ), ( ::cProducP )->( dbCloseArea() ), )
+
+   if ( !empty( ::cAlm ),     ( ::cAlm )->( dbCloseArea() ), )
+
+   if ( !empty( ::cDbfDiv ),  ( ::cDbfDiv )->( dbCloseArea() ), )
+   if ( !empty( ::cDbfIva ),  ( ::cDbfIva )->( dbCloseArea() ), )
+   if ( !empty( ::cDbfFPago ),( ::cDbfFPago )->( dbCloseArea() ), )
+
+RETURN ( Self )
+
+
+
+
+
+
+static FUNCTION TStock_PedPrv( cNumPed, cCodAlm, lDelete, lIncremento ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nUnits
+
+   If( cCodAlm == nil, cCodAlm := Application():codigoAlmacen(), ) ;
+   If( lDelete == nil, lDelete := .T., ) ;
+   If( lIncremento == nil, lIncremento := .T., ) ;
+
+
+
+
+
+   if ::cPedPrvL == nil .OR. cNumPed == nil
+      msgStop( "Imposible realizar la actualización de stocks.", "Atención" )
+      RETURN self
+   end
+
+   if ( ::cPedPrvL )->( dbSeek( cNumPed ) )
+
+
+
+      while ( ::cPedPrvL )->cSerPed + Str( ( ::cPedPrvL )->nNumPed ) + ( ::cPedPrvL )->cSufPed == cNumPed .AND.  !( ::cPedPrvL )->( eof() )
+         if !empty( Rtrim( ( ::cPedPrvL )->cRef ) )
+
+            nUnits      := nTotNPedPrv( ::cPedPrvL ) - ( ::cPedPrvL )->nUniEnt
+
+
+
+
+
+            if ( ::cPedPrvL )->nFacCnv <> 0
+               nUnits   := nUnits * ( ::cPedPrvL )->nFacCnv
+            end
+
+         end
+
+
+
+
+
+         if lDelete .AND. dbLock( ::cPedPrvL )
+            ( ::cPedPrvL )->( dbDelete() )
+            ( ::cPedPrvL )->( dbUnLock() )
+         end
+
+         ( ::cPedPrvL )->( dbSkip() )
+
+      end
+
+   end
+
+RETURN self
+
+
+
+static FUNCTION TStock_AlbPrv( cNumAlb, cCodAlm, cNumPed, lDelete, lIncremento, lIgnEstado, lActPendientes ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+RETURN Self
+
+
+
+static FUNCTION TStock_SetPedPrv( cNumPed ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nEstPed
+   local nRegAnt
+   local nOrdAnt
+   local nTotPedPrv     := 0
+   local nRecPedPrv     := 0
+   local nTotLineaAct   := 0
+
+   if empty( ::cPedPrvT ) .OR. empty( ::cPedPrvL )
+      RETURN .F.
+   end
+
+   nRegAnt              := ( ::cPedPrvT )->( RecNo() )
+   nOrdAnt              := ( ::cPedPrvT )->( ordsetfocus( "nNumPed" ) )
+
+
+
+
+
+   if !empty( cNumPed )                            .AND. ( ::cPedPrvT )->( dbSeek( cNumPed ) )        .AND. ( ::cPedPrvL )->( dbSeek( cNumPed ) )
+
+      while ( ::cPedPrvL )->cSerPed + Str( ( ::cPedPrvL )->nNumPed ) + ( ::cPedPrvL )->cSufPed == cNumPed .AND. !( ::cPedPrvL )->( eof() )
+
+         if !( ::cPedPrvL )->lAnulado
+
+
+
+
+            nTotLineaAct:= nTotNPedPrv( ::cPedPrvL )
+            nTotPedPrv  += nTotLineaAct
+            nRecPedPrv  += Min( AlbaranesProveedoresLineasModel():nUnidadesRecibidas( cNumPed, ( ::cPedPrvL )->cRef, ( ::cPedPrvL )->cCodPr1, ( ::cPedPrvL )->cCodPr2, ( ::cPedPrvL )->cValPr1, ( ::cPedPrvL )->cValPr2, ( ::cPedPrvL )->cLote ), nTotLineaAct )
+
+         else
+
+            nTotLineaAct:= nTotNPedPrv( ::cPedPrvL )
+            nTotPedPrv  += nTotLineaAct
+            nRecPedPrv  += nTotLineaAct
+
+         end
+
+         ( ::cPedPrvL )->( dbSkip() )
+
+      end
+
+      do case
+         case nRecPedPrv == 0
+            nEstPed  := 1
+
+         case nTotPedPrv > nRecPedPrv
+            nEstPed  := 2
+
+         case nRecPedPrv >= nTotPedPrv
+            nEstPed  := 3
+
+      end
+
+      if dbLock( ::cPedPrvT )
+         ( ::cPedPrvT )->nEstado := nEstPed
+         ( ::cPedPrvT )->( dbUnLock() )
+      end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   end
+
+   ( ::cPedPrvT )->( ordsetfocus( nOrdAnt ) )
+   ( ::cPedPrvT )->( DbGoTo( nRegAnt ) )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TStock_FacPrv( cNumFac, cCodAlm, lDelete, lIncremento ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nUnits
+
+   If( cCodAlm == nil, cCodAlm := Application():codigoAlmacen(), ) ;
+   If( lDelete == nil, lDelete := .T., ) ;
+   If( lIncremento == nil, lIncremento := .T., ) ;
+
+
+
+
+
+   if ::cFacPrvL == nil .OR. cNumFac == nil
+      msgStop( "Imposible realizar la actualización de stocks.", "Atención" )
+      RETURN self
+   end
+
+   if ( ::cFacPrvL )->( dbSeek( cNumFac ) )
+
+
+
+      while ( ::cFacPrvL )->cSerFac + Str( ( ::cFacPrvL )->nNumFac ) + ( ::cFacPrvL )->cSufFac == cNumFac .AND.  !( ::cFacPrvL )->( eof() )
+         if !empty( rtrim( ( ::cFacPrvL )->cRef ) )
+
+            nUnits      := nTotNFacPrv( ::cFacPrvL )
+
+
+
+
+
+            if ( ::cFacPrvL )->nFacCnv <> 0
+               nUnits   := nUnits * ( ::cFacPrvL )->nFacCnv
+            end
+
+
+
+            if empty( ( ::cFacPrvL )->cAlmLin ) .AND. dbLock( ::cFacPrvL )
+               ( ::cFacPrvL )->cAlmLin    := ( ::cFacPrvT )->cCodAlm
+               ( ::cFacPrvL )->( dbUnLock() )
+            end
+
+         end
+
+
+
+         if lDelete .AND. dbLock( ::cFacPrvL )
+            ( ::cFacPrvL )->( dbDelete() )
+            ( ::cFacPrvL )->( dbUnLock() )
+         end
+
+         ( ::cFacPrvL )->( dbSkip() )
+
+      end
+
+   end
+
+
+
+RETURN ( Self )
+
+
+
+static FUNCTION TStock_ChkFacPrv( cNumFac ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+RETURN self
+
+
+
+static FUNCTION TStock_RctPrv( cNumFac, cCodAlm, lDelete, lIncremento ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nUnits
+
+   If( cCodAlm == nil, cCodAlm := Application():codigoAlmacen(), ) ;
+   If( lDelete == nil, lDelete := .T., ) ;
+   If( lIncremento == nil, lIncremento := .T., ) ;
+
+
+
+
+
+   if ::cRctPrvL == nil .OR. cNumFac == nil
+      msgStop( "Imposible realizar la actualización de stocks.", "Atención" )
+      RETURN self
+   end
+
+   if ( ::cRctPrvL )->( dbSeek( cNumFac ) )
+
+
+
+      while ( ::cRctPrvL )->cSerFac + Str( ( ::cRctPrvL )->nNumFac ) + ( ::cRctPrvL )->cSufFac == cNumFac .AND.  !( ::cRctPrvL )->( eof() )
+         if !empty( rtrim( ( ::cRctPrvL )->cRef ) )
+
+            nUnits      := nTotNRctPrv( ::cRctPrvL )
+
+
+
+
+
+            if ( ::cRctPrvL )->nFacCnv <> 0
+               nUnits   := nUnits * ( ::cRctPrvL )->nFacCnv
+            end
+
+
+
+            if empty( ( ::cRctPrvL )->cAlmLin ) .AND. dbLock( ::cRctPrvL )
+               ( ::cRctPrvL )->cAlmLin    := ( ::cRctPrvT )->cCodAlm
+               ( ::cRctPrvL )->( dbUnLock() )
+            end
+
+         end
+
+
+
+         if lDelete .AND. dbLock( ::cRctPrvL )
+            ( ::cRctPrvL )->( dbDelete() )
+            ( ::cRctPrvL )->( dbUnLock() )
+         end
+
+         ( ::cRctPrvL )->( dbSkip() )
+
+      end
+
+   end
+
+
+
+RETURN ( Self )
+
+
+
+static FUNCTION TStock_ChkRctPrv( cNumFac ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+RETURN self
+
+
+
+static FUNCTION TStock_PedCli( cNumPed, cCodAlm, lDelete, lIncremento ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nUndPed
+   local nUndRes
+
+   If( cCodAlm == nil, cCodAlm := Application():codigoAlmacen(), ) ;
+   If( lDelete == nil, lDelete := .T., ) ;
+   If( lIncremento == nil, lIncremento := .T., ) ;
+
+
+
+
+
+   if empty( cNumPed ) .OR. empty( ::cPedCliL ) .OR. empty( ::cAlbCliT ) .OR. empty( ::cAlbCliL ) .OR. empty( ::cAlbPrvL )
+      msgStop( "Imposible realizar la actualización de stocks.", "Atención" )
+      RETURN self
+   end
+
+   if ( ::cPedCliL )->( dbSeek( cNumPed ) )
+
+
+      while ( ::cPedCliL )->cSerPed + Str( ( ::cPedCliL )->nNumPed ) + ( ::cPedCliL )->cSufPed == cNumPed .AND.  !( ::cPedCliL )->( eof() )
+
+         if !empty( Rtrim( ( ::cPedCliL )->cRef ) )
+
+            nUndPed     := nTotNPedCli( ::cPedCliL )
+            nUndRes     := nUnidadesReservadasEnPedidosCliente( ( ::cPedCliL )->cSerPed + Str( ( ::cPedCliL )->nNumPed ) + ( ::cPedCliL )->cSufPed, ( ::cPedCliL )->cRef, ( ::cPedCliL )->cValPr1, ( ::cPedCliL )->cValPr2, ::cPedCliR )
+
+
+
+
+
+            if empty( ( ::cPedCliL )->cAlmLin )
+               if dbLock( ::cPedCliL )
+                  ( ::cPedCliL )->cAlmLin    := ( ::cPedCliT )->cCodAlm
+                  ( ::cPedCliL )->( dbUnLock() )
+               end
+            end
+
+         end
+
+
+
+
+
+         if lDelete .AND. dbLock( ::cPedCliL )
+            ( ::cPedCliL )->( dbDelete() )
+            ( ::cPedCliL )->( dbUnLock() )
+         end
+
+         ( ::cPedCliL )->( dbSkip() )
+
+      end
+
+   end
+
+
+
+
+
+   if ::cPedCliR <> nil .AND. lDelete .AND. ( ::cPedCliR )->( dbSeek( cNumPed ) )
+
+
+      while ( ::cPedCliR )->cSerPed + Str( ( ::cPedCliR )->nNumPed ) + ( ::cPedCliR )->cSufPed == cNumPed .AND.  !( ::cPedCliR )->( eof() )
+
+         if dbLock( ::cPedCliR )
+            ( ::cPedCliR )->( dbDelete() )
+            ( ::cPedCliR )->( dbUnLock() )
+         end
+
+         ( ::cPedCliR )->( dbSkip() )
+
+      end
+
+   end
+
+RETURN self
+
+
+
+static FUNCTION TStock_SetEstadoPedCli( cNumPed ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nEstadoPedido              := 1
+   local nTotalUnidadesPedidas      := 0
+   local nLineasUnidadesRecibidas   := 0
+   local nLineasUnidadesPedidas     := 0
+   local nTotalUnidadesRecibidas    := 0
+
+   if empty( ::cPedCliT ) .OR. empty( ::cPedCliL )
+      RETURN .F.
+   end
+
+
+
+
+
+   if !( ::cPedCliL )->( dbSeek( cNumPed ) )
+      RETURN .F.
+   end
+
+   while ( ::cPedCliL )->cSerPed + Str( ( ::cPedCliL )->nNumPed ) + ( ::cPedCliL )->cSufPed == cNumPed .AND. !( ::cPedCliL )->( eof() )
+
+      if !( ::cPedCliL )->lAnulado .AND. !( ::cPedCliL )->lKitChl
+
+
+
+
+         nLineasUnidadesPedidas     := nTotNPedCli( ::cPedCliL )
+
+         nTotalUnidadesPedidas      += nLineasUnidadesPedidas
+
+         nLineasUnidadesRecibidas   := AlbaranesClientesLineasModel():nUnidadesEntregadas( ( ::cPedCliL )->cSerPed + Str( ( ::cPedCliL )->nNumPed ) + ( ::cPedCliL )->cSufPed, ( ::cPedCliL )->cRef, ( ::cPedCliL )->cCodPr1, ( ::cPedCliL )->cCodPr2, ( ::cPedCliL )->cValPr1, ( ::cPedCliL )->cValPr2, ( ::cPedCliL )->cLote )
+         nLineasUnidadesRecibidas   += FacturasClientesLineasModel():nUnidadesEntregadas( ( ::cPedCliL )->cSerPed + Str( ( ::cPedCliL )->nNumPed ) + ( ::cPedCliL )->cSufPed, ( ::cPedCliL )->cRef, ( ::cPedCliL )->cCodPr1, ( ::cPedCliL )->cCodPr2, ( ::cPedCliL )->cValPr1, ( ::cPedCliL )->cValPr2, ( ::cPedCliL )->cLote )
+         nLineasUnidadesRecibidas   := Min( nLineasUnidadesRecibidas, nLineasUnidadesPedidas )
+
+         nTotalUnidadesRecibidas    += nLineasUnidadesRecibidas
+
+      end
+
+      ( ::cPedCliL )->( dbSkip() )
+
+   end
+
+
+
+
+
+   do case
+      case nTotalUnidadesRecibidas == 0
+         nEstadoPedido        := 1
+      case nTotalUnidadesPedidas > nTotalUnidadesRecibidas
+         nEstadoPedido        := 2
+      case nTotalUnidadesRecibidas >= nTotalUnidadesPedidas
+         nEstadoPedido        := 3
+   end
+
+   if !( ::cPedCliT )->( dbSeek( cNumPed ) )
+      RETURN .F.
+   end
+
+   if ( ::cPedCliT )->nEstado == nEstadoPedido
+      RETURN .F.
+   end
+
+   if dblock( ::cPedCliT )
+      ( ::cPedCliT )->nEstado    := nEstadoPedido
+      ( ::cPedCliT )->lSndDoc    := .T.
+      ( ::cPedCliT )->dFecCre    := Date()
+      ( ::cPedCliT )->cTimCre    := Time()
+      ( ::cPedCliT )->( dbUnlock() )
+   end
+
+RETURN .T.
+
+
+
+static FUNCTION TStock_SetEstadoSatCli( cNumSat ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   if empty( ::cSatCliT )
+      RETURN .F.
+   end
+
+
+
+
+
+   if ( ::cSatCliT )->( dbSeek( cNumSat ) )
+
+      while ( ::cSatCliT )->cSerSat + Str( ( ::cSatCliT )->nNumSat ) + ( ::cSatCliT )->cSufSat == cNumSat .AND. !( ::cSatCliT )->( eof() )
+
+         if dbLock( ::cSatCliT )
+            ( ::cSatCliT )->lEstado := .F.
+            ( ::cSatCliT )->( dbUnlock() )
+         end
+
+         ( ::cSatCliT )->( dbSkip() )
+
+      end
+
+   end
+
+RETURN .T.
+
+
+
+static FUNCTION TStock_SetRecibidoPedCli( cNumPed ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nUndPed
+   local nEstPed        := 0
+   local nTotRec        := 0
+   local nTotPed        := 0
+
+
+
+
+
+   if empty( cNumPed ) .OR. empty( ::cPedCliT ) .OR. empty( ::cPedCliL ) .OR. empty( ::cAlbPrvL )
+      RETURN self
+   end
+
+   if ( ::cPedCliT )->( dbSeek( cNumPed ) ) .AND. ( ::cPedCliL )->( dbSeek( cNumPed ) )
+
+      while ( ::cPedCliL )->cSerPed + Str( ( ::cPedCliL )->nNumPed ) + ( ::cPedCliL )->cSufPed == cNumPed .AND. !( ::cPedCliL )->( eof() )
+
+         if !empty( ( ::cPedCliL )->cRef )
+
+            nUndPed     := nTotNPedCli( ::cPedCliL )
+            nTotPed     += nUndPed
+            nTotRec     += Min( nUnidadesRecibidasPedCli( ( ::cPedCliL )->cSerPed + Str( ( ::cPedCliL )->nNumPed ) + ( ::cPedCliL )->cSufPed, ( ::cPedCliL )->cRef, ( ::cPedCliL )->cValPr1, ( ::cPedCliL )->cValPr2,  ( ::cPedCliL )->cRefPrv, ( ::cPedCliL )->cDetalle, ::cAlbPrvL ), nUndPed )
+
+         end
+
+         ( ::cPedCliL )->( dbSkip() )
+
+      end
+
+
+
+
+
+      do case
+         case nTotRec == 0
+            nEstPed  := 1
+         case nTotRec < nTotPed
+            nEstPed  := 2
+         case nTotRec >= nTotPed
+            nEstPed  := 3
+      end
+
+      if dbLock( ::cPedCliT )
+         ( ::cPedCliT )->nRecibido  := Max( nEstPed, 1 )
+         ( ::cPedCliT )->( dbUnLock() )
+      end
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TStock_SetGeneradoPedCli( cNumPed ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nEstado  := 0
+   local nRecCliT := ( ::cPedCliT )->( Recno() )
+   local nRecCliL := ( ::cPedCliL )->( Recno() )
+   local nOrdCliT := ( ::cPedCliT )->( ordsetfocus( "nNumPed" ) )
+   local nOrdCliL := ( ::cPedCliL )->( ordsetfocus( "nNumPed" ) )
+
+
+
+
+
+   if empty( cNumPed ) .OR. empty( ::cPedCliT ) .OR. empty( ::cPedCliL ) .OR. empty( ::cPedPrvL )
+      msgStop( "Imposible actualizar el estado del pedido.", "Atención" )
+      RETURN self
+   end
+
+
+   if ( ::cPedCliT )->( dbSeek( cNumPed ) )  .AND.  ( ::cPedCliL )->( dbSeek( cNumPed ) )
+
+
+      while ( ::cPedCliL )->cSerPed + Str( ( ::cPedCliL )->nNumPed ) + ( ::cPedCliL )->cSufPed == cNumPed .AND.  !( ::cPedCliL )->( eof() )
+
+         if nTotNPedCli( ::cPedCliL ) <> 0
+
+            if dbSeekInOrd( cNumPed + ( ::cPedCliL )->cRef + ( ::cPedCliL )->cValPr1 + ( ::cPedCliL )->cValPr2, "cPedCliRef", ::cPedPrvL )
+
+               do case
+                  case nEstado == 0 .OR. nEstado == 3
+                     nEstado := 3
+                  case nEstado == 1
+                     nEstado := 2
+               end
+
+            else
+
+               do case
+                  case nEstado == 0
+                     nEstado := 1
+                  case nEstado == 3
+                     nEstado := 2
+               end
+
+            end
+
+         end
+
+         ( ::cPedCliL )->( dbSkip() )
+
+      end
+
+      if dbLock( ::cPedCliT )
+         ( ::cPedCliT )->nGenerado  := Max( nEstado, 1 )
+         ( ::cPedCliT )->( dbUnLock() )
+      end
+
+   end
+
+   ( ::cPedCliT )->( ordsetfocus( nOrdCliT ) )
+   ( ::cPedCliL )->( ordsetfocus( nOrdCliL ) )
+   ( ::cPedCliT )->( dbGoTo( nRecCliT ) )
+   ( ::cPedCliL )->( dbGoTo( nRecCliL ) )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TStock_nStockReservado( cCodArt, cValPr1, cValPr2 ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nTotal         := 0
+   local nOrdPedCliR    := ( ::cPedCliR )->( ordsetfocus( "cRef" ) )
+
+   if ( ::cPedCliR )->( dbSeek( cCodArt ) )
+
+      while ( ::cPedCliR )->cRef == cCodArt .AND. !( ::cPedCliR )->( Eof() )
+
+         nTotal         += nUnidadesReservadasEnPedidosCliente( ( ::cPedCliR )->cSerPed + Str( ( ::cPedCliR )->nNumPed ) + ( ::cPedCliR )->cSufPed, ( ::cPedCliR )->cRef, ( ::cPedCliR )->cValPr1, ( ::cPedCliR )->cValPr2, ::cPedCliR )
+
+         ( ::cPedCliR )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cPedCliR )->( ordsetfocus( nOrdPedCliR ) )
+
+RETURN ( nTotal )
+
+
+
+static FUNCTION TStock_AlbCli( cNumAlb, cCodAlm, lDelete, lIncremento, lIgnEstado, lChequea, lActPendientes ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+RETURN self
+
+
+
+static FUNCTION TStock_ChkAlbCli( cNumAlb ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+RETURN self
+
+
+
+static FUNCTION TStock_AlqCli( cNumAlq, cCodAlm, lDelete, lIncremento, lIgnEstado, lChequea ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+RETURN ( Self )
+
+
+
+static FUNCTION TStock_FacCli( cNumFac, cCodAlm, lDelete, lIncremento, lActPendientes ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+RETURN self
+
+
+
+static FUNCTION TStock_ChkFacCli( cNumFac ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+RETURN self
+
+
+
+static FUNCTION TStock_FacRec( cNumFac, cCodAlm, lDelete, lIncremento, lActPendientes ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nUnits
+   local nPendEnt          := 0
+
+   If( cCodAlm == nil, cCodAlm := Application():codigoAlmacen(), ) ;
+   If( lDelete == nil, lDelete := .T., ) ;
+   If( lIncremento == nil, lIncremento := .T., ) ;
+   If( lActPendientes == nil, lActPendientes := .F., ) ;
+
+
+
+
+
+   if ::cFacRecL == nil .OR. cNumFac == nil
+      msgStop( "Imposible realizar la actualización de stocks.", "Atención" )
+      RETURN self
+   end
+
+   if ( ::cFacRecL )->( dbSeek( cNumFac ) )
+
+
+      while ( ::cFacRecL )->cSerie + Str( ( ::cFacRecL )->nNumFac ) + ( ::cFacRecL )->cSufFac == cNumFac .AND. !( ::cFacRecL )->( eof() )
+
+         if !empty( rtrim( ( ::cFacRecL )->cRef ) )
+
+            nUnits      := nTotNFacRec( ::cFacRecL )
+
+
+
+
+
+            if ( ::cFacRecL )->nFacCnv <> 0
+               nUnits   := nUnits * ( ::cFacRecL )->nFacCnv
+            end
+
+
+
+
+
+            if empty( ( ::cFacRecL )->cAlmLin )
+               if dbLock( ::cFacRecL )
+                  ( ::cFacRecL )->cAlmLin    := ( ::cFacRecT )->cCodAlm
+                  ( ::cFacRecL )->( dbUnLock() )
+               end
+            end
+
+         end
+
+
+
+
+
+         if lDelete .AND. dbLock( ::cFacRecL )
+            ( ::cFacRecL )->( dbDelete() )
+            ( ::cFacRecL )->( dbUnLock() )
+         end
+
+         ( ::cFacRecL )->( dbSkip() )
+
+      end
+
+   end
+
+
+RETURN self
+
+
+
+static FUNCTION TStock_TpvCli( cNumTik, cCodAlm, lIncremento, lDevolucion, lChequea ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nRec
+   local nUnits
+
+   If( cCodAlm == nil, cCodAlm := Application():codigoAlmacen(), ) ;
+   If( lIncremento == nil, lIncremento := .T., ) ;
+   If( lDevolucion == nil, lDevolucion := ( ( ::cTikT )->cTipTik == "4" .OR. ( ::cTikT )->cTipTik == "6" ), ) ;
+   If( lChequea == nil, lChequea := .T., ) ;
+
+
+
+
+
+   if ::cTikL == nil .OR. cNumTik == nil
+      RETURN self
+   end
+
+   if lDevolucion
+      lIncremento       := !lIncremento
+   end
+
+   nRec                 := ( ::cTikL )->( Recno() )
+
+
+
+
+
+   if ( ::cTikL )->( dbSeek( cNumTik ) )
+
+
+
+      while ( ::cTikL )->cSerTil + ( ::cTikL )->cNumTil + ( ::cTikL )->cSufTil == cNumTik .AND.  !( ::cTikL )->( eof() )
+         if !empty( Rtrim( ( ::cTikL )->cCbaTil ) )
+
+            nUnits      := ( ::cTikL )->nUntTil
+
+
+
+
+
+            if ( ::cTikL )->nFacCnv <> 0
+               nUnits   := ( ::cTikL )->nUntTil * ( ::cTikL )->nFacCnv
+            end
+
+
+
+
+
+            if empty( ( ::cTikL )->cAlmLin ) .AND. dbLock( ::cTikL )
+               ( ::cTikL )->cAlmLin    := cCodAlm
+               ( ::cTikL )->( dbUnLock() )
+            end
+
+
+
+
+
+            if lDevolucion
+               nUnits   := Abs( nUnits )
+            end
+
+         end
+
+         ( ::cTikL )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cTikL )->( dbGoTo( nRec ) )
+
+
+
+
+
+RETURN self
+
+
+
+static FUNCTION TStock_ChkTikCli( cNumTik ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+RETURN self
+
+
+
+static FUNCTION TStock_nCacheStockActual( cCodArt, cCodAlm, cValPrp1, cValPrp2, cLote, lKitArt, nKitStk, nCtlStk ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nCacheStockActual    := ::getCacheStockActual( cCodArt, cCodAlm, cValPrp1, cValPrp2, cLote, lKitArt, nKitStk, nCtlStk )
+
+   if isNum( nCacheStockActual )
+      RETURN ( nCacheStockActual )
+   end
+
+   nCacheStockActual          := ::nTotStockAct( cCodArt, cCodAlm, cValPrp1, cValPrp2, cLote, lKitArt, nKitStk, nCtlStk )
+
+   ::addCacheStockActual( cCodArt, cCodAlm, cValPrp1, cValPrp2, cLote, lKitArt, nKitStk, nCtlStk, nCacheStockActual )
+
+RETURN ( nCacheStockActual )
+
+
+
+static FUNCTION TStock_getCacheStockActual( cCodArt, cCodAlm, cValPrp1, cValPrp2, cLote, lKitArt, nKitStk, nCtlStk ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nPos  := ::scanCacheStockActual( cCodArt, cCodAlm, cValPrp1, cValPrp2, cLote, lKitArt, nKitStk, nCtlStk )
+
+   if nPos <> 0
+      RETURN ( hget( ::aCacheStockActual[nPos], "stock" ) )
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION TStock_scanCacheStockActual( cCodArt, cCodAlm, cValPrp1, cValPrp2, cLote, lKitArt, nKitStk, nCtlStk ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+
+
+
+
+
+
+
+
+   local nPos  := ascan(   ::aCacheStockActual                       , {|h|  h["codigo"] == cCodArt        .AND.  h["almacen"] == cCodAlm       .AND.  h["propiedad1"] == cValPrp1   .AND.  h["propiedad2"] == cValPrp2   .AND.  h["lote"] == cLote            .AND.  h["articuloKit"] == lKitArt   .AND.  h["stockKit"] == nKitStk      .AND.  h["controlStock"] == nCtlStk } )
+
+RETURN ( nPos )
+
+
+
+static FUNCTION TStock_addCacheStockActual( cCodArt, cCodAlm, cValPrp1, cValPrp2, cLote, lKitArt, nKitStk, nCtlStk, nStock ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+
+
+
+
+
+
+
+
+   aadd( ::aCacheStockActual, {  "codigo" => cCodArt        , "almacen" => cCodAlm       , "propiedad1" => cValPrp1   , "propiedad2" => cValPrp2   , "lote" => cLote            , "articuloKit" => lKitArt   , "stockKit" => nKitStk      , "controlStock" => nCtlStk  , "stock" => nStock } )
+
+RETURN ( nStock )
+
+
+
+static FUNCTION TStock_deleteCacheStockActual( cCodArt, cCodAlm, cValPrp1, cValPrp2, cLote, lKitArt, nKitStk, nCtlStk ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nPos  := ::scanCacheStockActual( cCodArt, cCodAlm, cValPrp1, cValPrp2, cLote, lKitArt, nKitStk, nCtlStk )
+
+   if nPos <> 0
+      hb_ADel( ::aCacheStockActual, nPos, .T. )
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION TStock_recalculateCacheStockActual( cCodArt, cCodAlm, cValPrp1, cValPrp2, cLote, lKitArt, nKitStk, nCtlStk ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   ::deleteCacheStockActual( cCodArt, cCodAlm, cValPrp1, cValPrp2, cLote, lKitArt, nKitStk, nCtlStk )
+
+   ::nCacheStockActual( cCodArt, cCodAlm, cValPrp1, cValPrp2, cLote, lKitArt, nKitStk, nCtlStk )
+
+RETURN ( nil )
+
+
+
+
+
+
+static FUNCTION TStock_nTotStockAct( cCodArt, cCodAlm, cValPr1, cValPr2, cLote, lKitArt, nKitStk, nCtlStk, cCodPr1, cCodPr2 ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nUnits         := 0
+
+   If( lKitArt == nil, lKitArt := .T., ) ;
+   If( nKitStk == nil, nKitStk := 0, ) ;
+   If( nCtlStk == nil, nCtlStk := 1, ) ;
+
+   if empty( cCodArt )
+      RETURN ( nUnits )
+   end
+
+   if nCtlStk <= 1
+
+      if lKitArt .AND. nKitStk == 3
+
+         if ( ::cKit )->( dbSeek( cCodArt ) )
+
+            while ( ::cKit )->cCodKit == cCodArt .AND. !( ::cKit )->( eof() )
+
+               if nUnits == nil
+                  nUnits   := Int( ::nStockAlmacen( ( ::cKit )->cRefKit, cCodAlm, cCodPr1, cValPr1, cCodPr2, cValPr2, cLote ) / ( ::cKit )->nUndKit )
+               else
+                  nUnits   := Min( nUnits, Int( ::nStockAlmacen( ( ::cKit )->cRefKit, cCodAlm, cLote, cValPr1, cValPr2 ) / ( ::cKit )->nUndKit ) )
+               end
+
+               ( ::cKit )->( dbSkip() )
+
+            end
+
+         end
+
+      else
+
+         nUnits            := ::nStockAlmacen( cCodArt, cCodAlm, cLote, cCodPr1, cValPr1, cCodPr2, cValPr2 )
+
+      end
+
+   end
+
+RETURN ( nUnits )
+
+
+
+static FUNCTION TStock_nPutStockActual( cCodArt, cCodAlm, cValPr1, cValPr2, cLote, lKitArt, nCtlStk, oSay ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local cClass
+   local nStock   := 0
+
+   if !uFieldEmpresa( "lNStkAct" )
+      nStock      := ::nTotStockAct( cCodArt, cCodAlm, cValPr1, cValPr2, cLote, lKitArt, nil, nCtlStk )
+   end
+
+   if !empty( oSay )
+
+      cClass      := oSay:ClassName()
+
+      do case
+         case cClass == "TGET" .OR. cClass == "TGETHLP" .OR. cClass == "TGRIDGET"
+            oSay:cText( nStock )
+         case cClass == "TSAY"
+            oSay:SetText( nStock )
+      end
+
+   end
+
+RETURN ( nStock )
+
+
+
+static FUNCTION TStock_lPutStockActual( cCodArt, cCodAlm, cValPr1, cValPr2, cLote, lKitArt, nKitStk, oSay ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   ::nPutStockActual( cCodArt, cCodAlm, cValPr1, cValPr2, cLote, lKitArt, nKitStk, oSay )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TStock_Recalcula( oMeter, cNewEmp, cPatEmp ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+RETURN ( Self )
+
+
+
+static FUNCTION TStock_InsertStockMovimientosAlmacenRowset( oRowSet, lDestino ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   with object ( SStock():New() )
+
+      :cTipoDocumento      := "05"
+
+      :cNumeroDocumento    := oRowSet:fieldget( "numero" )
+      :cDelegacion         := oRowSet:fieldget( "delegacion" )
+      :dFechaDocumento     := oRowSet:fieldget( "fecha" )
+      :tFechaDocumento     := strtran( oRowSet:fieldget( "hora" ), ":", "" )
+      :cCodigo             := padr( oRowSet:fieldget( "codigo_articulo" ), 18 )
+      :cCodigoPropiedad1   := padr( oRowSet:fieldget( "codigo_primera_propiedad" ), 20 )
+      :cCodigoPropiedad2   := padr( oRowSet:fieldget( "codigo_segunda_propiedad" ), 20 )
+      :cValorPropiedad1    := padr( oRowSet:fieldget( "valor_primera_propiedad" ), 20 )
+      :cValorPropiedad2    := padr( oRowSet:fieldget( "valor_segunda_propiedad" ), 20 )
+      :cLote               := padr( oRowSet:fieldget( "lote" ), 14 )
+      :dConsolidacion      := if( !empty( ::dConsolidacion ), ::dConsolidacion, ctod( "" ) )
+
+      if isTrue( lDestino )
+
+         :cCodigoAlmacen   := padr( oRowSet:fieldget( "almacen_destino" ), 16 )
+         :nUnidades        := oRowSet:fieldget( "total_unidades" )
+         :nBultos          := oRowSet:fieldget( "bultos_articulo" )
+         :nCajas           := oRowSet:fieldget( "cajas_articulo" )
+
+      else
+
+         :cCodigoAlmacen   := padr( oRowSet:fieldget( "almacen_origen" ), 16 )
+         :nUnidades        := -oRowSet:fieldget( "total_unidades" )
+         :nBultos          := -oRowSet:fieldget( "bultos_articulo" )
+         :nCajas           := -oRowSet:fieldget( "cajas_articulo" )
+
+      end
+
+      ::Integra( hb_QWith() )
+
+   end
+
+RETURN nil
+
+
+
+static FUNCTION TStock_DeleteStockAlbaranProveedores( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nUnidades         := nTotNAlbPrv( ::cAlbPrvL )
+
+   with object ( SStock():New() )
+
+      :cTipoDocumento      := "02"
+      :cAlias              := ( ::cAlbPrvL )
+      :cNumeroDocumento    := ( ::cAlbPrvL )->cSerAlb + "/" + alltrim( Str( ( ::cAlbPrvL )->nNumAlb ) )
+      :cDelegacion         := ( ::cAlbPrvL )->cSufAlb
+      :dFechaDocumento     := ( ::cAlbPrvL )->dFecAlb
+      :tFechaDocumento     := ( ::cAlbPrvL )->tFecAlb
+      :cCodigo             := ( ::cAlbPrvL )->cRef
+      :cCodigoAlmacen      := ( ::cAlbPrvL )->cAlmOrigen
+      :cCodigoPropiedad1   := ( ::cAlbPrvL )->cCodPr1
+      :cCodigoPropiedad2   := ( ::cAlbPrvL )->cCodPr2
+      :cValorPropiedad1    := ( ::cAlbPrvL )->cValPr1
+      :cValorPropiedad2    := ( ::cAlbPrvL )->cValPr2
+      :cLote               := ( ::cAlbPrvL )->cLote
+      :dFechaCaducidad     := ( ::cAlbPrvL )->dFecCad
+      :nBultos             := -( ::cAlbPrvL )->nBultos
+      :nCajas              := -( ::cAlbPrvL )->nCanEnt
+      :cCodigoTercero      := AlbaranesProveedoresModel():getField( ( ::cAlbPrvL )->cSerAlb, ( ::cAlbPrvL )->nNumAlb, ( ::cAlbPrvL )->cSufAlb, "cCodPrv" )
+      :cNombreTercero      := AlbaranesProveedoresModel():getField( ( ::cAlbPrvL )->cSerAlb, ( ::cAlbPrvL )->nNumAlb, ( ::cAlbPrvL )->cSufAlb, "cNomPrv" )
+
+
+
+
+
+         :nUnidades        := -nUnidades
+
+
+      ::Integra( hb_QWith() )
+
+   end
+
+RETURN nil
+
+
+
+static FUNCTION TStock_InsertStockAlbaranProveedores( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nUnidades         := nTotNAlbPrv( ::cAlbPrvL )
+
+   with object ( SStock():New() )
+
+      :cTipoDocumento      := "02"
+      :cAlias              := ( ::cAlbPrvL )
+      :cNumeroDocumento    := ( ::cAlbPrvL )->cSerAlb + "/" + alltrim( Str( ( ::cAlbPrvL )->nNumAlb ) )
+      :cDelegacion         := ( ::cAlbPrvL )->cSufAlb
+      :dFechaDocumento     := ( ::cAlbPrvL )->dFecAlb
+      :tFechaDocumento     := ( ::cAlbPrvL )->tFecAlb
+      :cCodigo             := ( ::cAlbPrvL )->cRef
+      :cCodigoAlmacen      := ( ::cAlbPrvL )->cAlmLin
+      :cCodigoPropiedad1   := ( ::cAlbPrvL )->cCodPr1
+      :cCodigoPropiedad2   := ( ::cAlbPrvL )->cCodPr2
+      :cValorPropiedad1    := ( ::cAlbPrvL )->cValPr1
+      :cValorPropiedad2    := ( ::cAlbPrvL )->cValPr2
+      :cLote               := ( ::cAlbPrvL )->cLote
+      :dFechaCaducidad     := ( ::cAlbPrvL )->dFecCad
+      :nBultos             := ( ::cAlbPrvL )->nBultos
+      :nCajas              := ( ::cAlbPrvL )->nCanEnt
+      :cCodigoTercero      := AlbaranesProveedoresModel():getField( ( ::cAlbPrvL )->cSerAlb, ( ::cAlbPrvL )->nNumAlb, ( ::cAlbPrvL )->cSufAlb, "cCodPrv" )
+      :cNombreTercero      := AlbaranesProveedoresModel():getField( ( ::cAlbPrvL )->cSerAlb, ( ::cAlbPrvL )->nNumAlb, ( ::cAlbPrvL )->cSufAlb, "cNomPrv" )
+
+
+
+
+
+         :nUnidades        :=  nUnidades
+
+
+      ::Integra( hb_QWith() )
+
+   end
+
+RETURN nil
+
+
+
+   static FUNCTION TStock_DeleteStockFacturaProveedores( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nUnidades         := nTotNFacPrv( ::cFacPrvL )
+
+   with object ( SStock():New() )
+
+      :cTipoDocumento      := "03"
+      :cAlias              := ( ::cFacPrvL )
+      :cNumeroDocumento    := ( ::cFacPrvL )->cSerFac + "/" + alltrim( Str( ( ::cFacPrvL )->nNumFac ) )
+      :cDelegacion         := ( ::cFacPrvL )->cSufFac
+      :dFechaDocumento     := ( ::cFacPrvL )->dFecFac
+      :tFechaDocumento     := ( ::cFacPrvL )->tFecFac
+      :cCodigo             := ( ::cFacPrvL )->cRef
+      :cCodigoAlmacen      := ( ::cFacPrvL )->cAlmOrigen
+      :cCodigoPropiedad1   := ( ::cFacPrvL )->cCodPr1
+      :cCodigoPropiedad2   := ( ::cFacPrvL )->cCodPr2
+      :cValorPropiedad1    := ( ::cFacPrvL )->cValPr1
+      :cValorPropiedad2    := ( ::cFacPrvL )->cValPr2
+      :cLote               := ( ::cFacPrvL )->cLote
+      :dFechaCaducidad     := ( ::cFacPrvL )->dFecCad
+      :nBultos             := -( ::cFacPrvL )->nBultos
+      :nCajas              := -( ::cFacPrvL )->nCanEnt
+      :cCodigoTercero      := FacturasProveedoresModel():getField( ( ::cFacPrvL )->cSerFac, ( ::cFacPrvL )->nNumFac, ( ::cFacPrvL )->cSufFac, "cCodPrv" )
+      :cNombreTercero      := FacturasProveedoresModel():getField( ( ::cFacPrvL )->cSerFac, ( ::cFacPrvL )->nNumFac, ( ::cFacPrvL )->cSufFac, "cNomPrv" )
+
+
+
+
+
+         :nUnidades        := -nUnidades
+
+
+      ::Integra( hb_QWith() )
+
+   end
+
+RETURN nil
+
+
+
+static FUNCTION TStock_InsertStockFacturaProveedores( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nUnidades         := nTotNFacPrv( ::cFacPrvL )
+
+   with object ( SStock():New() )
+
+      :cTipoDocumento      := "03"
+      :cAlias              := ( ::cFacPrvL )
+      :cNumeroDocumento    := ( ::cFacPrvL )->cSerFac + "/" + alltrim( Str( ( ::cFacPrvL )->nNumFac ) )
+      :cDelegacion         := ( ::cFacPrvL )->cSufFac
+      :dFechaDocumento     := ( ::cFacPrvL )->dFecFac
+      :tFechaDocumento     := ( ::cFacPrvL )->tFecFac
+      :cCodigo             := ( ::cFacPrvL )->cRef
+      :cCodigoAlmacen      := ( ::cFacPrvL )->cAlmLin
+      :cCodigoPropiedad1   := ( ::cFacPrvL )->cCodPr1
+      :cCodigoPropiedad2   := ( ::cFacPrvL )->cCodPr2
+      :cValorPropiedad1    := ( ::cFacPrvL )->cValPr1
+      :cValorPropiedad2    := ( ::cFacPrvL )->cValPr2
+      :cLote               := ( ::cFacPrvL )->cLote
+      :dFechaCaducidad     := ( ::cFacPrvL )->dFecCad
+      :nBultos             := ( ::cFacPrvL )->nBultos
+      :nCajas              := ( ::cFacPrvL )->nCanEnt
+      :nUnidades           := nUnidades
+      :cCodigoTercero      := FacturasProveedoresModel():getField( ( ::cFacPrvL )->cSerFac, ( ::cFacPrvL )->nNumFac, ( ::cFacPrvL )->cSufFac, "cCodPrv" )
+      :cNombreTercero      := FacturasProveedoresModel():getField( ( ::cFacPrvL )->cSerFac, ( ::cFacPrvL )->nNumFac, ( ::cFacPrvL )->cSufFac, "cNomPrv" )
+
+      ::Integra( hb_qwith() )
+
+   end
+
+RETURN nil
+
+
+
+static FUNCTION TStock_InsertStockRectificativaProveedores( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nUnidades         := nTotNRctPrv( ::cRctPrvL )
+
+   with object ( SStock():New() )
+
+      :cTipoDocumento      := "04"
+      :cAlias              := ( ::cRctPrvL )
+      :cNumeroDocumento    := ( ::cRctPrvL )->cSerFac + "/" + alltrim( Str( ( ::cRctPrvL )->nNumFac ) )
+      :cDelegacion         := ( ::cRctPrvL )->cSufFac
+      :dFechaDocumento     := ( ::cRctPrvL )->dFecFac
+      :tFechaDocumento     := ( ::cRctPrvL )->tFecFac
+      :cCodigo             := ( ::cRctPrvL )->cRef
+      :cCodigoAlmacen      := ( ::cRctPrvL )->cAlmLin
+      :cCodigoPropiedad1   := ( ::cRctPrvL )->cCodPr1
+      :cCodigoPropiedad2   := ( ::cRctPrvL )->cCodPr2
+      :cValorPropiedad1    := ( ::cRctPrvL )->cValPr1
+      :cValorPropiedad2    := ( ::cRctPrvL )->cValPr2
+      :cLote               := ( ::cRctPrvL )->cLote
+      :dFechaCaducidad     := ( ::cRctPrvL )->dFecCad
+      :nBultos             := ( ::cRctPrvL )->nBultos
+      :nCajas              := ( ::cRctPrvL )->nCanEnt
+      :cCodigoTercero      := RectificativasProveedoresModel():getField( ( ::cRctPrvL )->cSerFac, ( ::cRctPrvL )->nNumFac, ( ::cRctPrvL )->cSufFac, "cCodPrv" )
+      :cNombreTercero      := RectificativasProveedoresModel():getField( ( ::cRctPrvL )->cSerFac, ( ::cRctPrvL )->nNumFac, ( ::cRctPrvL )->cSufFac, "cNomPrv" )
+
+
+
+
+
+         :nUnidades        := nUnidades
+
+
+      ::Integra( hb_QWith() )
+
+   end
+
+RETURN nil
+
+
+
+static FUNCTION TStock_DeleteStockRectificativaProveedores( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nUnidades         := nTotNRctPrv( ::cRctPrvL )
+
+   with object ( SStock():New() )
+
+      :cTipoDocumento      := "04"
+      :cAlias              := ( ::cRctPrvL )
+      :cNumeroDocumento    := ( ::cRctPrvL )->cSerFac + "/" + alltrim( Str( ( ::cRctPrvL )->nNumFac ) )
+      :cDelegacion         := ( ::cRctPrvL )->cSufFac
+      :dFechaDocumento     := ( ::cRctPrvL )->dFecFac
+      :tFechaDocumento     := ( ::cRctPrvL )->tFecFac
+      :cCodigo             := ( ::cRctPrvL )->cRef
+      :cCodigoAlmacen      := ( ::cRctPrvL )->cAlmOrigen
+      :cCodigoPropiedad1   := ( ::cRctPrvL )->cCodPr1
+      :cCodigoPropiedad2   := ( ::cRctPrvL )->cCodPr2
+      :cValorPropiedad1    := ( ::cRctPrvL )->cValPr1
+      :cValorPropiedad2    := ( ::cRctPrvL )->cValPr2
+      :cLote               := ( ::cRctPrvL )->cLote
+      :dFechaCaducidad     := ( ::cRctPrvL )->dFecCad
+      :nBultos             := ( ::cRctPrvL )->nBultos
+      :nCajas              := ( ::cRctPrvL )->nCanEnt
+      :cCodigoTercero      := RectificativasProveedoresModel():getField( ( ::cRctPrvL )->cSerFac, ( ::cRctPrvL )->nNumFac, ( ::cRctPrvL )->cSufFac, "cCodPrv" )
+      :cNombreTercero      := RectificativasProveedoresModel():getField( ( ::cRctPrvL )->cSerFac, ( ::cRctPrvL )->nNumFac, ( ::cRctPrvL )->cSufFac, "cNomPrv" )
+
+
+
+
+
+         :nUnidades        := -nUnidades
+
+
+      ::Integra( hb_QWith() )
+
+   end
+
+RETURN nil
+
+
+
+static FUNCTION TStock_InsertStockPedidoClientes( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nPendientesEntregar  := nTotNPedCli( ::cPedCliL )
+   local nUnidadesEntregadas  := AlbaranesClientesLineasModel():nUnidadesEntregadas( ( ::cPedCliL )->cSerPed + str( ( ::cPedCliL )->nNumPed ) + ( ::cPedCliL )->cSufPed, ( ::cPedCliL )->cRef, ( ::cPedCliL )->cCodPr1, ( ::cPedCliL )->cCodPr2, ( ::cPedCliL )->cValPr1, ( ::cPedCliL )->cValPr2, ( ::cPedCliL )->cLote )
+   nUnidadesEntregadas        += FacturasClientesLineasModel():nUnidadesEntregadas( ( ::cPedCliL )->cSerPed + str( ( ::cPedCliL )->nNumPed ) + ( ::cPedCliL )->cSufPed, ( ::cPedCliL )->cRef, ( ::cPedCliL )->cCodPr1, ( ::cPedCliL )->cCodPr2, ( ::cPedCliL )->cValPr1, ( ::cPedCliL )->cValPr2, ( ::cPedCliL )->cLote )
+
+   nPendientesEntregar        -= nUnidadesEntregadas
+
+   with object ( SStock():New() )
+
+      :cTipoDocumento         := "09"
+      :dFechaDocumento        := ( ::cPedCliT )->dFecPed
+      :tFechaDocumento        := "000000"
+      :cAlias                 := ( ::cPedCliL )
+      :cNumeroDocumento       := ( ::cPedCliL )->cSerPed + "/" + alltrim( Str( ( ::cPedCliL )->nNumPed ) )
+      :cDelegacion            := ( ::cPedCliL )->cSufPed
+      :cCodigo                := ( ::cPedCliL )->cRef
+      :cCodigoAlmacen         := ( ::cPedCliL )->cAlmLin
+      :cCodigoPropiedad1      := ( ::cPedCliL )->cCodPr1
+      :cCodigoPropiedad2      := ( ::cPedCliL )->cCodPr2
+      :cValorPropiedad1       := ( ::cPedCliL )->cValPr1
+      :cValorPropiedad2       := ( ::cPedCliL )->cValPr2
+      :cLote                  := ( ::cPedCliL )->cLote
+      :dFechaCaducidad        := ( ::cPedCliL )->dFecCad
+      :nPendientesEntregar    := nPendientesEntregar
+      :nUnidadesEntregadas    := nUnidadesEntregadas
+      :cCodigoTercero         := PedidosClientesModel():getField( ( ::cPedCliL )->cSerPed, ( ::cPedCliL )->nNumPed, ( ::cPedCliL )->cSufPed, "cCodCli" )
+      :cNombreTercero         := PedidosClientesModel():getField( ( ::cPedCliL )->cSerPed, ( ::cPedCliL )->nNumPed, ( ::cPedCliL )->cSufPed, "cNomCli" )
+
+      ::Integra( hb_QWith() )
+
+   end
+
+RETURN ( nPendientesEntregar )
+
+
+
+static FUNCTION TStock_InsertStockAlbaranClientes( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nUnidades         := nTotNAlbCli( ::cAlbCliL )
+
+   with object ( SStock():New() )
+
+      :cTipoDocumento      := "10"
+      :cAlias              := ( ::cAlbCliL )
+      :cNumeroDocumento    := ( ::cAlbCliL )->cSerAlb + "/" + alltrim( Str( ( ::cAlbCliL )->nNumAlb ) )
+      :cDelegacion         := ( ::cAlbCliL )->cSufAlb
+      :dFechaDocumento     := ( ::cAlbCliL )->dFecAlb
+      :tFechaDocumento     := ( ::cAlbCliL )->tFecAlb
+      :cCodigo             := ( ::cAlbCliL )->cRef
+      :cCodigoAlmacen      := ( ::cAlbCliL )->cAlmLin
+      :cCodigoPropiedad1   := ( ::cAlbCliL )->cCodPr1
+      :cCodigoPropiedad2   := ( ::cAlbCliL )->cCodPr2
+      :cValorPropiedad1    := ( ::cAlbCliL )->cValPr1
+      :cValorPropiedad2    := ( ::cAlbCliL )->cValPr2
+      :cLote               := ( ::cAlbCliL )->cLote
+      :dFechaCaducidad     := ( ::cAlbCliL )->dFecCad
+      :nBultos             := -( ::cAlbCliL )->nBultos
+      :nCajas              := -( ::cAlbCliL )->nCanEnt
+      :cCodigoTercero      := AlbaranesClientesModel():getField( ( ::cAlbCliL )->cSerAlb, ( ::cAlbCliL )->nNumAlb, ( ::cAlbCliL )->cSufAlb, "cCodCli" )
+      :cNombreTercero      := AlbaranesClientesModel():getField( ( ::cAlbCliL )->cSerAlb, ( ::cAlbCliL )->nNumAlb, ( ::cAlbCliL )->cSufAlb, "cNomCli" )
+
+
+
+
+
+         :nUnidades        := -nUnidades
+
+
+      ::Integra( hb_QWith() )
+
+   end
+
+RETURN ( nUnidades )
+
+
+
+static FUNCTION TStock_InsertStockFacturaClientes( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nUnidades         := nTotNFacCli( ::cFacCliL )
+
+   with object ( SStock():New() )
+
+      :cTipoDocumento      := "11"
+      :cAlias              := ( ::cFacCliL )
+      :cNumeroDocumento    := ( ::cFacCliL )->cSerie + "/" + alltrim( Str( ( ::cFacCliL )->nNumFac ) )
+      :cDelegacion         := ( ::cFacCliL )->cSufFac
+      :dFechaDocumento     := ( ::cFacCliL )->dFecFac
+      :tFechaDocumento     := ( ::cFacCliL )->tFecFac
+      :cCodigo             := ( ::cFacCliL )->cRef
+      :cCodigoAlmacen      := ( ::cFacCliL )->cAlmLin
+      :cCodigoPropiedad1   := ( ::cFacCliL )->cCodPr1
+      :cCodigoPropiedad2   := ( ::cFacCliL )->cCodPr2
+      :cValorPropiedad1    := ( ::cFacCliL )->cValPr1
+      :cValorPropiedad2    := ( ::cFacCliL )->cValPr2
+      :cLote               := ( ::cFacCliL )->cLote
+      :dFechaCaducidad     := ( ::cFacCliL )->dFecCad
+      :nBultos             := -( ::cFacCliL )->nBultos
+      :nCajas              := -( ::cFacCliL )->nCanEnt
+      :cCodigoTercero      := FacturasClientesModel():getField( ( ::cFacCliL )->cSerie, ( ::cFacCliL )->nNumFac, ( ::cFacCliL )->cSufFac, "cCodCli" )
+      :cNombreTercero      := FacturasClientesModel():getField( ( ::cFacCliL )->cSerie, ( ::cFacCliL )->nNumFac, ( ::cFacCliL )->cSufFac, "cNomCli" )
+
+
+
+
+
+         :nUnidades        := -nUnidades
+
+
+      ::Integra( hb_QWith() )
+
+   end
+
+   RETURN nil
+
+
+
+
+static FUNCTION TStock_InsertStockRectificativaClientes( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nUnidades         := nTotNFacRec( ::cFacRecL )
+
+   with object ( SStock():New() )
+
+      :cTipoDocumento      := "14"
+      :cAlias              := ( ::cFacRecL )
+      :cNumeroDocumento    := ( ::cFacRecL )->cSerie + "/" + alltrim( Str( ( ::cFacRecL )->nNumFac ) )
+      :cDelegacion         := ( ::cFacRecL )->cSufFac
+      :dFechaDocumento     := ( ::cFacRecL )->dFecFac
+      :tFechaDocumento     := ( ::cFacRecL )->tFecFac
+      :cCodigo             := ( ::cFacRecL )->cRef
+      :cCodigoAlmacen      := ( ::cFacRecL )->cAlmLin
+      :cCodigoPropiedad1   := ( ::cFacRecL )->cCodPr1
+      :cCodigoPropiedad2   := ( ::cFacRecL )->cCodPr2
+      :cValorPropiedad1    := ( ::cFacRecL )->cValPr1
+      :cValorPropiedad2    := ( ::cFacRecL )->cValPr2
+      :cLote               := ( ::cFacRecL )->cLote
+      :dFechaCaducidad     := ( ::cFacRecL )->dFecCad
+      :nBultos             := -( ::cFacRecL )->nBultos
+      :nCajas              := -( ::cFacRecL )->nCanEnt
+      :cCodigoTercero      := RectificativasClientesModel():getField( ( ::cFacRecL )->cSerie, ( ::cFacRecL )->nNumFac, ( ::cFacRecL )->cSufFac, "cCodCli" )
+      :cNombreTercero      := RectificativasClientesModel():getField( ( ::cFacRecL )->cSerie, ( ::cFacRecL )->nNumFac, ( ::cFacRecL )->cSufFac, "cNomCli" )
+
+
+
+
+
+         :nUnidades        := - nUnidades
+
+
+      ::Integra( hb_QWith() )
+
+   end
+
+   RETURN nil
+
+
+
+
+static FUNCTION TStock_InsertStockTiketsClientes( lCombinado ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nUnidades            := nTotVTikTpv( ::cTikL )
+
+   with object ( SStock():New() )
+
+      do case
+      case ( ::cTikL )->cTipTil == "1"
+         :cTipoDocumento      := "12"
+
+      case ( ::cTikL )->cTipTil == "4"
+         :cTipoDocumento      := "15"
+
+      case ( ::cTikL )->cTipTil == "6"
+         :cTipoDocumento      := "16"
+
+      case ( ::cTikL )->cTipTil == "5"
+         :cTipoDocumento      := "17"
+
+      end
+
+      :cAlias                 := ( ::cTikL )
+      :cNumeroDocumento       := ( ::cTikL )->cSerTil + "/" + alltrim( ( ::cTikL )->cNumTil )
+      :cDelegacion            := ( ::cTikL )->cSufTil
+      :dFechaDocumento        := ( ::cTikL )->dFecTik
+      :tFechaDocumento        := ( ::cTikL )->tFecTik
+
+      if IsTrue( lCombinado)
+         :cCodigo             := ( ::cTikL )->cComTil
+      else
+         :cCodigo             := ( ::cTikL )->cCbaTil
+      end
+
+      :cCodigoAlmacen         := ( ::cTikL )->cAlmLin
+      :cCodigoPropiedad1      := ( ::cTikL )->cCodPr1
+      :cCodigoPropiedad2      := ( ::cTikL )->cCodPr2
+      :cValorPropiedad1       := ( ::cTikL )->cValPr1
+      :cValorPropiedad2       := ( ::cTikL )->cValPr2
+      :cLote                  := ( ::cTikL )->cLote
+
+
+
+
+
+
+
+
+
+
+
+
+
+         :nUnidades           := - nTotNTickets( ::cTikL )
+
+
+
+      :cCodigoTercero      := TicketsClientesModel():getField( ( ::cTikL )->cSerTil, ( ::cTikL )->cNumTil, ( ::cTikL )->cSufTil, "cCliTik" )
+      :cNombreTercero      := TicketsClientesModel():getField( ( ::cTikL )->cSerTil, ( ::cTikL )->cNumTil, ( ::cTikL )->cSufTil, "cNomTik" )
+
+      ::Integra( hb_QWith() )
+
+   end
+
+RETURN nil
+
+
+
+static FUNCTION TStock_InsertStockMaterialesProducidos( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nUnidades         := nTotNProduccion( ::cProducL )
+
+   with object ( SStock():New() )
+
+      :cTipoDocumento      := "06"
+      :cAlias              := ( ::cProducL )
+      :cNumeroDocumento    := ( ::cProducL )->cSerOrd + "/" + alltrim( Str( ( ::cProducL )->nNumOrd ) )
+      :cDelegacion         := ( ::cProducL )->cSufOrd
+      :dFechaDocumento     := ( ::cProducL )->dFecOrd
+      :tFechaDocumento     := ( ::cProducL )->cHorIni
+      :cCodigo             := ( ::cProducL )->cCodArt
+      :cCodigoAlmacen      := ( ::cProducL )->cAlmOrd
+      :cCodigoPropiedad1   := ( ::cProducL )->cCodPr1
+      :cCodigoPropiedad2   := ( ::cProducL )->cCodPr2
+      :cValorPropiedad1    := ( ::cProducL )->cValPr1
+      :cValorPropiedad2    := ( ::cProducL )->cValPr2
+      :cLote               := ( ::cProducL )->cLote
+      :dFechaCaducidad     := ( ::cProducL )->dFecCad
+      :nCajas              := ( ::cProducL )->nCajOrd
+      :nBultos             := ( ::cProducL )->nBultos
+
+
+
+
+
+         :nUnidades        := nUnidades
+
+
+      ::Integra( hb_QWith() )
+
+   end
+
+   RETURN nil
+
+
+
+static FUNCTION TStock_InsertStockMateriasPrimas( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+
+   local nUnidades         := nTotNMaterial( ::cProducM )
+
+   with object ( SStock():New() )
+
+      :cTipoDocumento      := "07"
+      :cAlias              := ( ::cProducM )
+      :cNumeroDocumento    := ( ::cProducM )->cSerOrd + "/" + alltrim( Str( ( ::cProducM )->nNumOrd ) )
+      :cDelegacion         := ( ::cProducM )->cSufOrd
+      :dFechaDocumento     := ( ::cProducM )->dFecOrd
+      :tFechaDocumento     := ( ::cProducM )->cHorIni
+      :cCodigo             := ( ::cProducM )->cCodArt
+      :cCodigoAlmacen      := ( ::cProducM )->cAlmOrd
+      :cCodigoPropiedad1   := ( ::cProducM )->cCodPr1
+      :cCodigoPropiedad2   := ( ::cProducM )->cCodPr2
+      :cValorPropiedad1    := ( ::cProducM )->cValPr1
+      :cValorPropiedad2    := ( ::cProducM )->cValPr2
+      :cLote               := ( ::cProducM )->cLote
+      :nCajas              := -( ::cProducM )->nCajOrd
+      :nBultos             := -( ::cProducM )->nBultos
+
+
+
+
+
+         :nUnidades        := - nUnidades
+
+
+         ::Integra( hb_QWith() )
+
+   end
+
+   RETURN nil
+
+
+
+static FUNCTION TStock_nUnidadesInStock( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local o
+   local nStockArticulo := 0
+
+   for each o in ::aStocks
+      nStockArticulo    += o:nUnidades
+   next
+
+RETURN ( nStockArticulo )
+
+
+
+static FUNCTION TStock_nPendientesRecibirInStock( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local o
+   local nStockArticulo := 0
+
+   for each o in ::aStocks
+      nStockArticulo    += o:nPendientesRecibir
+   next
+
+RETURN ( nStockArticulo )
+
+
+
+static FUNCTION TStock_nPendientesEntregarInStock( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local o
+   local nStockArticulo := 0
+
+   for each o in ::aStocks
+      nStockArticulo    += o:nPendientesEntregar
+   next
+
+RETURN ( nStockArticulo )
+
+
+
+static FUNCTION TStock_StockInit( cPath, cPathOld, oMsg, nCalcCosto, cCodEmpOld, cCodEmpNew ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local aAlm
+   local sStk
+   local aStk
+   local dbfAlm
+   local dbfCnt
+   local oldArt
+   local oldTikL
+   local nNumDoc
+   local oldProLin
+   local oldProMat
+   local oldPedPrvL
+   local oldAlbPrvL
+   local oldFacPrvL
+   local oldRctPrvL
+   local oldPedCliL
+   local oldAlbCliL
+   local oldFacCliL
+   local oldFacRecL
+   local hCampos
+   local hLines
+   local parentId
+
+   if empty( cPathOld )
+      RETURN nil
+   end
+
+   aAlm              := {}
+   aStk              := {}
+
+   if ::lOpenFiles( cPath, .T. )
+
+      ::lStockInit   := .T.
+
+      ::lAlbPrv      := .T.
+      ::lAlbCli      := .T.
+
+      dbUseArea( .T., ( ::cDriver ), ( cPath + "NCount.Dbf" ), ( cCheckArea( "NCount", @dbfCnt ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPath + "NCount.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPatEmp() + "Almacen.Dbf" ), ( cCheckArea( "ALMACEN", @dbfAlm ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "Almacen.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPathOld + "Articulo.Dbf" ), ( cCheckArea( "ARTICULO", @oldArt ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPathOld + "ARTICULO.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPathOld + "PEDPROVL.DBF" ), ( cCheckArea( "PedPrvL", @oldPedPrvL ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPathOld + "PEDPROVL.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPathOld + "ALBPROVL.Dbf" ), ( cCheckArea( "ALBPRVL", @oldAlbPrvL ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPathOld + "ALBPROVL.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPathOld + "FACPRVL.Dbf" ), ( cCheckArea( "FACPRVL", @oldFacPrvL ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPathOld + "FACPRVL.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPathOld + "RctPrvL.Dbf" ), ( cCheckArea( "RctPrvL", @oldRctPrvL ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPathOld + "RctPrvL.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPathOld + "PEDCLIL.DBF" ), ( cCheckArea( "PedCliL", @oldPedCliL ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPathOld + "PEDCLIL.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPathOld + "ALBCLIL.Dbf" ), ( cCheckArea( "ALBCLIL", @oldAlbCliL ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPathOld + "ALBCLIL.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPathOld + "FACCLIL.Dbf" ), ( cCheckArea( "FACCliL", @oldFacCliL ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPathOld + "FACCliL.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPathOld + "FACRECL.Dbf" ), ( cCheckArea( "FACRECL", @oldFacRecL ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPathOld + "FACRECL.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPathOld + "TIKEL.Dbf" ), ( cCheckArea( "TIKEL", @oldTikL ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPathOld + "TIKEL.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPathOld + "PROLIN.DBF" ), ( cCheckArea( "PROLIN", @oldProLin ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPathOld + "PROLIN.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( ::cDriver ), ( cPathOld + "PROMAT.DBF" ), ( cCheckArea( "PROMAT", @oldProMat ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPathOld + "PROMAT.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      ::cPedPrvL                             := oldPedPrvL
+      ::cAlbPrvL                             := oldAlbPrvL
+      ::cFacPrvL                             := oldFacPrvL
+      ::cRctPrvL                             := oldRctPrvL
+      ::cPedCliL                             := oldPedCliL
+      ::cAlbCliL                             := oldAlbCliL
+      ::cFacCliL                             := oldFacCliL
+      ::cFacRecL                             := oldFacRecL
+      ::cTikL                                := oldTikL
+      ::cProducL                             := oldProLin
+      ::cProducM                             := oldProMat
+
+
+
+
+
+      ( oldArt )->( dbGoTop() )
+      while !( oldArt )->( eof() )
+         aEval( ::aStockArticuloEmpresa( ( oldArt )->Codigo, cCodEmpOld ), {|s| aAdd( aStk, s ) } )
+         sysrefresh()
+         ( oldArt )->( dbSkip() )
+      end
+
+
+
+
+
+      ( dbfAlm )->( dbGoTop() )
+      while !( dbfAlm )->( eof() )
+
+         if aScan( aAlm, ( dbfAlm )->cCodAlm ) == 0
+
+            aAdd( aAlm, ( dbfAlm )->cCodAlm )
+
+
+
+
+
+            hCampos        := SQLMovimientosAlmacenModel():loadBlankBuffer()
+
+            hset( hCampos, "almacen_destino", ( dbfAlm )->cCodAlm )
+            hset( hCampos, "tipo_movimiento", 4 )
+            hset( hCampos, "empresa", cCodEmpNew )
+            hset( hCampos, "empresa_codigo", cCodEmpNew )
+
+            parentId       := hGet( hCampos, "uuid" )
+
+            SQLMovimientosAlmacenModel():Insertbuffer( hCampos )
+
+
+
+
+
+            for each sStk in aStk
+
+
+
+               if !empty( sStk:cCodigo )                          .AND.  !empty( sStk:nUnidades )                        .AND.  ( sStk:cCodigoAlmacen == ( dbfAlm )->cCodAlm )
+
+                  hLines   := SQLMovimientosAlmacenLineasModel():loadBlankBuffer()
+
+                  hset( hLines, "parent_uuid", parentId )
+                  hset( hLines, "codigo_articulo", sStk:cCodigo )
+                  hset( hLines, "nombre_articulo", RetFld( sStk:cCodigo, oldArt, "Nombre", "Codigo" ) )
+                  hset( hLines, "codigo_primera_propiedad", sStk:cCodigoPropiedad1 )
+                  hset( hLines, "valor_primera_propiedad", sStk:cValorPropiedad1 )
+                  hset( hLines, "codigo_segunda_propiedad", sStk:cCodigoPropiedad2 )
+                  hset( hLines, "valor_segunda_propiedad", sStk:cValorPropiedad2 )
+                  hset( hLines, "fecha_caducidad", sStk:dFechaCaducidad )
+                  hset( hLines, "lote", sStk:cLote )
+                  hset( hLines, "bultos_articulo", sStk:nBultos )
+                  hset( hLines, "cajas_articulo", sStk:nCajas )
+                  hset( hLines, "unidades_articulo", sStk:nUnidades )
+                  hset( hLines, "precio_articulo", RetFld( sStk:cCodigo, oldArt, "pCosto", "Codigo" ) )
+
+                  SQLMovimientosAlmacenLineasModel():Insertbuffer( hLines )
+
+               end
+
+               sysrefresh()
+
+            next
+
+         end
+
+         ( dbfAlm )->( dbSkip() )
+
+      end
+
+      ( dbfAlm     )->( dbCloseArea() )
+      ( dbfCnt     )->( dbCloseArea() )
+
+      ( oldArt     )->( dbCloseArea() )
+      ( oldPedCliL )->( dbCloseArea() )
+      ( oldAlbCliL )->( dbCloseArea() )
+      ( oldFacCliL )->( dbCloseArea() )
+      ( oldFacRecL )->( dbCloseArea() )
+      ( oldTikL    )->( dbCloseArea() )
+      ( oldPedPrvL )->( dbCloseArea() )
+      ( oldAlbPrvL )->( dbCloseArea() )
+      ( oldFacPrvL )->( dbCloseArea() )
+      ( oldRctPrvL )->( dbCloseArea() )
+      ( oldProLin  )->( dbCloseArea() )
+      ( oldProMat  )->( dbCloseArea() )
+
+      ::CloseFiles()
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TStock_nTotalSaldo( cCodArt, cCodCli, dFecha ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nTotal   := 0
+   local nOrdLin
+   local nRecCab
+   local nRecLin
+
+
+
+
+
+   nRecCab        := ( ::cAlbCliT )->( RecNo() )
+   nRecLin        := ( ::cAlbCliL )->( Recno() )
+   nOrdLin        := ( ::cAlbCliL )->( ordsetfocus( "cRef" ) )
+
+   if ( ::cAlbCliL )->( dbSeek( cCodArt ) )
+
+      while ( ::cAlbCliL )->cRef == cCodArt .AND. !( ::cAlbCliL )->( Eof() )
+
+
+
+
+         if dbSeekInOrd( ( ::cAlbCliL )->cSerAlb + Str( ( ::cAlbCliL )->nNumAlb ) + ( ::cAlbCliL )->cSufAlb, "nNumAlb", ::cAlbCliT )  .AND. ( ::cAlbCliT )->cCodCli == cCodCli .AND. ( ::cAlbCliT )->dFecAlb <= dFecha .AND. !lFacturado( ::cAlbCliT )
+
+            nTotal   += nTotNAlbCli( ::cAlbCliL )
+
+         end
+
+         ( ::cAlbCliL )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cAlbCliL )->( ordsetfocus( nOrdLin ) )
+   ( ::cAlbCliL )->( dbGoTo( nRecLin ) )
+   ( ::cAlbCliT )->( dbGoTo( nRecCab ) )
+
+
+
+
+
+   nRecCab        := ( ::cFacCliT )->( RecNo() )
+   nRecLin        := ( ::cFacCliL )->( Recno() )
+   nOrdLin        := ( ::cFacCliL )->( ordsetfocus( "cRef" ) )
+
+   if ( ::cFacCliL )->( dbSeek( cCodArt ) )
+
+      while ( ::cFacCliL )->cRef == cCodArt .AND. !( ::cFacCliL )->( Eof() )
+
+
+
+         if dbSeekInOrd( ( ::cFacCliL )->cSerie + Str( ( ::cFacCliL )->nNumFac ) + ( ::cFacCliL )->cSufFac, "NNUMFAC", ::cFacCliT ) .AND. ( ::cFacCliT )->cCodCli == cCodCli .AND. ( ::cFacCliT )->dFecFac <= dFecha
+
+            nTotal   += nTotNFacCli( ::cFacCliL )
+
+         end
+
+         ( ::cFacCliL )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cFacCliL )->( ordsetfocus( nOrdLin ) )
+   ( ::cFacCliL )->( dbGoTo( nRecLin ) )
+   ( ::cFacCliT )->( dbGoTo( nRecCab ) )
+
+
+
+
+
+   nRecCab        := ( ::cFacRecT )->( RecNo() )
+   nRecLin        := ( ::cFacRecL )->( Recno() )
+   nOrdLin        := ( ::cFacRecL )->( ordsetfocus( "cRef" ) )
+
+   if ( ::cFacRecL )->( dbSeek( cCodArt ) )
+
+      while ( ::cFacRecL )->cRef == cCodArt .AND. !( ::cFacRecL )->( Eof() )
+
+
+
+         if dbSeekInOrd( ( ::cFacRecL )->cSerie + Str( ( ::cFacRecL )->nNumFac ) + ( ::cFacRecL )->cSufFac, "NNUMFAC", ::cFacRecT ) .AND. ( ::cFacRecT )->cCodCli == cCodCli .AND. ( ::cFacRecT )->dFecFac <= dFecha
+
+            nTotal   += nTotNFacRec( ::cFacRecL )
+
+         end
+
+         ( ::cFacRecL )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cFacRecL )->( ordsetfocus( nOrdLin ) )
+   ( ::cFacRecL )->( dbGoTo( nRecLin ) )
+   ( ::cFacRecT )->( dbGoTo( nRecCab ) )
+
+
+
+
+
+   nRecCab        := ( ::cTikT )->( RecNo() )
+   nRecLin        := ( ::cTikL )->( Recno() )
+   nOrdLin        := ( ::cTikL )->( ordsetfocus( "CCBATIL" ) )
+
+   if ( ::cTikL )->( dbSeek( cCodArt ) )
+
+      while ( ::cTikL )->cCbaTil == cCodArt .AND. !( ::cTikL )->( Eof() )
+
+
+
+         if dbSeekInOrd( ( ::cTikL )->cSerTil + ( ::cTikL )->cNumTil + ( ::cTikL )->cSufTil, "CNUMTIK", ::cTikT ) .AND. ( ::cTikT )->cCliTik == cCodCli .AND. ( ::cTikT )->dFecTik <= dFecha
+
+            nTotal   += ( ::cTikL )->nUntTil
+
+         end
+
+         ( ::cTikL )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cTikL )->( ordsetfocus( nOrdLin ) )
+   ( ::cTikL )->( dbGoTo( nRecLin ) )
+   ( ::cTikT )->( dbGoTo( nRecCab ) )
+
+
+
+
+
+   nRecCab        := ( ::cTikT )->( RecNo() )
+   nRecLin        := ( ::cTikL )->( Recno() )
+   nOrdLin        := ( ::cTikL )->( ordsetfocus( "CCOMTIL" ) )
+
+   if ( ::cTikL )->( dbSeek( cCodArt ) )
+
+      while ( ::cTikL )->cComTil == cCodArt .AND. !( ::cTikL )->( Eof() )
+
+
+
+         if dbSeekInOrd( ( ::cTikL )->cSerTil + ( ::cTikL )->cNumTil + ( ::cTikL )->cSufTil, "CNUMTIK", ::cTikT ) .AND. ( ::cTikT )->cCliTik == cCodCli .AND. ( ::cTikT )->dFecTik <= dFecha
+
+            nTotal   += ( ::cTikL )->nUntTil
+
+         end
+
+         ( ::cTikL )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cTikL )->( ordsetfocus( nOrdLin ) )
+   ( ::cTikL )->( dbGoTo( nRecLin ) )
+   ( ::cTikT )->( dbGoTo( nRecCab ) )
+
+RETURN ( nTotal)
+
+
+
+static FUNCTION TStock_nSaldoDocumento( cCodArt, cNumDoc ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nTotal   := 0
+   local nRecLin  := ( ::cFacCliL )->( Recno() )
+   local nOrdAnt  := ( ::cFacCliL )->( ordsetfocus( "nNumFac" ) )
+
+   if ( ::cFacCliL )->( dbSeek( cNumDoc ) )
+
+      while ( ::cFacCliL )->cSerie + Str( ( ::cFacCliL )->nNumFac ) + ( ::cFacCliL )->cSufFac == cNumDoc .AND. !( ::cFacCliL )->( Eof())
+
+         if ( ::cFacCliL )->cRef == cCodArt
+
+            nTotal   += nTotNFacCli( ::cFacCliL )
+
+         end
+
+         ( ::cFacCliL )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cFacCliL )->( ordsetfocus( nOrdAnt ) )
+   ( ::cFacCliL )->( dbGoTo( nRecLin ) )
+
+RETURN ( nTotal )
+
+
+
+static FUNCTION TStock_nSaldoAnterior( cCodArt, cNumDoc ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local cCodCli
+   local dFecha
+   local nRec     := ( ::cFacCliT )->( Recno() )
+   local nOrdAnt  := ( ::cFacCliT )->( ordsetfocus( "NNUMFAC" ) )
+
+   if ( ::cFacCliT )->( dbSeek( cNumDoc ) )
+      cCodCli     := ( ::cFacCliT )->cCodCli
+      dFecha      := ( ::cFacCliT )->dFecFac
+   end
+
+   ( ::cFacCliT )->( ordsetfocus( nOrdAnt ) )
+   ( ::cFacCliT )->( dbGoTo( nRec ) )
+
+RETURN ( ::nTotalSaldo( cCodArt, cCodCli, dFecha ) - ::nSaldoDocumento( cCodArt, cNumDoc ) )
+
+
+
+static FUNCTION TStock_nSaldoDocAlb( cCodArt, cNumDoc ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nTotal   := 0
+   local nRecLin  := ( ::cAlbCliL )->( Recno() )
+   local nOrdAnt  := ( ::cAlbCliL )->( ordsetfocus( "nNumAlb" ) )
+
+   if ( ::cAlbCliL )->( dbSeek( cNumDoc ) )
+
+      while ( ::cAlbCliL )->cSerAlb + Str( ( ::cAlbCliL )->nNumAlb ) + ( ::cAlbCliL )->cSufAlb == cNumDoc .AND. !( ::cAlbCliL )->( Eof())
+
+         if ( ::cAlbCliL )->cRef == cCodArt
+
+            nTotal   += nTotNAlbCli( ::cAlbCliL )
+
+         end
+
+         ( ::cAlbCliL )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cAlbCliL )->( ordsetfocus( nOrdAnt ) )
+   ( ::cAlbCliL )->( dbGoTo( nRecLin ) )
+
+RETURN ( nTotal )
+
+
+
+static FUNCTION TStock_nSaldoAntAlb( cCodArt, cNumDoc ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local cCodCli
+   local dFecha
+   local nRec     := ( ::cAlbCliT )->( Recno() )
+   local nOrdAnt  := ( ::cAlbCliT )->( ordsetfocus( "NNUMALB" ) )
+
+   if ( ::cAlbCliT )->( dbSeek( cNumDoc ) )
+      cCodCli     := ( ::cAlbCliT )->cCodCli
+      dFecha      := ( ::cAlbCliT )->dFecAlb
+   end
+
+   ( ::cAlbCliT )->( ordsetfocus( nOrdAnt ) )
+   ( ::cAlbCliT )->( dbGoTo( nRec ) )
+
+RETURN ( ::nTotalSaldo( cCodArt, cCodCli, dFecha ) - ::nSaldoDocAlb( cCodArt, cNumDoc ) )
+
+
+
+static FUNCTION TStock_nCostoMedio( cCodArt, cCodAlm, cCodPr1, cCodPr2, cValPr1, cValPr2, cLote ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local oRowSet
+   local nUnidades      := 0
+   local nImporte       := 0
+   local nCostoMedio    := 0
+   local nOrdAlbPrvL    := ( ::cAlbPrvL )->( ordsetfocus( "cStkRef" ) )
+   local nOrdFacPrvL    := ( ::cFacPrvL )->( ordsetfocus( "cRefLote" ) )
+   local nOrdRctPrvL    := ( ::cRctPrvL )->( ordsetfocus( "cRef" ) )
+   local nOrdProducL    := ( ::cProducL )->( ordsetfocus( "cArtLot" ) )
+
+   If( cCodPr1 == nil, cCodPr1 := Space( 20 ), ) ;
+   If( cCodPr2 == nil, cCodPr2 := Space( 20 ), ) ;
+   If( cValPr1 == nil, cValPr1 := Space( 40 ), ) ;
+   If( cValPr2 == nil, cValPr2 := Space( 40 ), ) ;
+   If( cLote == nil, cLote := Space( 12 ), ) ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   if ( ::cAlbPrvL )->( dbSeek( cCodArt + cValPr1 + cValPr2 + cLote ) )
+
+
+
+
+
+      while ( ::cAlbPrvL )->cRef == cCodArt                             .AND. ( empty( cValPr1 ) .OR. ( ::cAlbPrvL )->cValPr1 == cValPr1 )   .AND. ( empty( cValPr2 ) .OR. ( ::cAlbPrvL )->cValPr2 == cValPr2 )   .AND. ( empty( cLote )   .OR. ( ::cAlbPrvL )->cLote == cLote )       .AND. !( ::cAlbPrvL )->( eof() )
+
+         nUnidades   += nTotNAlbPrv( ::cAlbPrvL )
+         nImporte    += nTotLAlbPrv( ::cAlbPrvL, ::nDecIn, ::nDerIn )
+
+         ( ::cAlbPrvL )->( dbSkip() )
+
+      end
+
+   end
+
+
+
+
+
+   if ( ::cFacPrvL )->( dbSeek( cCodArt + cValPr1 + cValPr2 + cLote ) )
+
+
+
+
+
+      while ( ::cFacPrvL )->cRef == cCodArt                         .AND. ( empty( cValPr1 ) .OR. ( ::cFacPrvL )->cValPr1 == cValPr1 )  .AND. ( empty( cValPr2 ) .OR. ( ::cFacPrvL )->cValPr2 == cValPr2 )  .AND. ( empty( cLote )   .OR. ( ::cFacPrvL )->cLote == cLote )      .AND. !( ::cFacPrvL )->( eof() )
+
+         nUnidades   += nTotNFacPrv( ::cFacPrvL )
+         nImporte    += nTotLFacPrv( ::cFacPrvL, ::nDecIn, ::nDerIn )
+
+         ( ::cFacPrvL )->( dbSkip() )
+
+      end
+
+   else
+
+   end
+
+
+
+
+
+   if ( ::cRctPrvL )->( dbSeek( cCodArt + cValPr1 + cValPr2 + cLote ) )
+
+
+
+
+
+      while ( ::cRctPrvL )->cRef == cCodArt                          .AND. ( empty ( cValPr1 ) .OR. ( ::cRctPrvL )->cValPr1 == cValPr1 )  .AND. ( empty ( cValPr2 ) .OR. ( ::cRctPrvL )->cValPr2 == cValPr2 )  .AND. ( empty( cLote )    .OR. ( ::cRctPrvL )->cLote == cLote )      .AND. !( ::cRctPrvL )->( eof() )
+
+         nUnidades   += nTotNRctPrv( ::cRctPrvL )
+         nImporte    += nTotLRctPrv( ::cRctPrvL, ::nDecIn, ::nDerIn )
+
+         ( ::cRctPrvL )->( dbSkip() )
+
+      end
+
+   end
+
+
+
+
+
+   if ( ::cProducL )->( dbSeek( cCodArt + cValPr1 + cValPr2 + cLote ) )
+
+
+
+
+
+      while ( ::cProducL )->cCodArt == cCodArt                          .AND. ( empty( cValPr1 ) .OR. ( ::cProducL )->cValPr1 == cValPr1 )   .AND. ( empty( cValPr2 ) .OR. ( ::cProducL )->cValPr2 == cValPr2 )   .AND. ( empty( cLote )    .OR. ( ::cProducL )->cLote == cLote )      .AND. !( ::cProducL )->( eof() )
+
+         nUnidades   += ( NotCaja( ( ::cProducL )->nCajOrd ) * ( ::cProducL )->nUndOrd )
+         nImporte    += ( NotCaja( ( ::cProducL )->nCajOrd ) * ( ::cProducL )->nUndOrd ) * ( ( ::cProducL )->nImpOrd )
+
+         ( ::cProducL )->( dbSkip() )
+
+      end
+
+   end
+
+
+
+
+
+   if nImporte <> 0 .AND. nUnidades <> 0
+      nCostoMedio       := ( nImporte / nUnidades )
+   end
+
+
+
+
+
+   if nCostoMedio == 0 .AND. !empty( ::cArticulo ) .AND. !empty( ::cKit )
+      nCostoMedio       := nCosto( cCodArt, ::cArticulo, ::cKit )
+   end
+
+
+
+
+
+   ( ::cAlbPrvL )->( ordsetfocus( nOrdAlbPrvL ) )
+   ( ::cFacPrvL )->( ordsetfocus( nOrdFacPrvL ) )
+   ( ::cRctPrvL )->( ordsetfocus( nOrdRctPrvL ) )
+   ( ::cProducL )->( ordsetfocus( nOrdProducL ) )
+
+RETURN ( nCostoMedio )
+
+
+
+static FUNCTION TStock_lValoracionCostoMedio( nTipMov ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+RETURN ( !uFieldEmpresa( "lMovCos" ) .AND. ( nTipMov == 2 .OR. nTipMov == 4 .OR. ntipMov == 1 )  )
+
+
+
+static FUNCTION TStock_Almacenes( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   ::aAlmacenes   := {}
+
+   ( ::cAlm )->( dbGoTop() )
+   while !( ::cAlm )->( eof() )
+
+      if ascan( ::aAlmacenes, ( ::cAlm )->cCodAlm ) == 0
+         aadd( ::aAlmacenes, ( ::cAlm )->cCodAlm )
+      end
+
+      ( ::cAlm )->( dbSkip() )
+   end
+
+RETURN ( ::aAlmacenes )
+
+
+
+static FUNCTION TStock_aStockArticulo( cCodArt, cCodAlm, cLote, cCodPr1, cValPr1, cCodPr2, cValPr2, dFecIni, dFecFin, tHorIni, tHorFin, cCodEmp ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nRec
+   local oBlock
+   local oError
+   local dFecha
+   local cSerie
+   local nTotal
+   local dFecDoc
+   local nOrdAnt
+   local oStocks
+   local aAlmacenes
+
+   cursorWait()
+
+   If( cCodEmp == nil, cCodEmp := cCodEmp(), ) ;
+
+   dFecha               := Ctod( "" )
+   cCodArt              := padr( cCodArt, 18 )
+   cCodAlm              := padr( cCodAlm, 16 )
+   cLote                := padr( cLote, 14 )
+   cCodPr1              := padr( cCodPr1, 20 )
+   cValPr1              := padr( cValPr1, 20 )
+   cCodPr2              := padr( cCodPr2, 20 )
+   cValPr2              := padr( cValPr2, 20 )
+
+   ::Reset()
+
+   if empty( cCodArt )
+      RETURN ( ::aStocks )
+   else
+      cCodArt           := left( cCodArt, 18 )
+   end
+
+   ::cCodigoArticulo    := cCodArt
+   ::cCodigoEmpresa     := cCodEmp
+   ::cLote              := cLote
+   ::cCodigoPropiedad1  := cCodPr1
+   ::cValorPropiedad1   := cValPr1
+   ::cCodigoPropiedad2  := cCodPr2
+   ::cValorPropiedad2   := cValPr2
+   ::lNumeroSerie       := !uFieldEmpresa( "lCalSer" )
+   ::dFechaInicio       := dFecIni
+   ::dFechaFin          := dFecFin
+   ::tHoraInicio        := tHorIni
+   ::tHoraFin           := tHorFin
+
+
+
+   if empty( cCodAlm )
+      aAlmacenes        := ::aAlmacenes
+   else
+      aAlmacenes        := { padr( cCodAlm, 16 ) }
+   end
+
+
+
+   oBlock               := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   for each cCodAlm in aAlmacenes
+
+      ::cCodigoAlmacen  := cCodAlm
+
+
+
+      ::aStockMovimientosAlmacen()
+      SysRefresh()
+
+
+
+      ::aStockAlbaranProveedor()
+      SysRefresh()
+
+
+
+      ::aStockFacturaProveedor()
+      SysRefresh()
+
+
+
+      ::aStockRectificativaProveedor()
+      SysRefresh()
+
+
+
+      ::aStockPedidoCliente()
+      SysRefresh()
+
+
+
+      ::aStockAlbaranCliente()
+      SysRefresh()
+
+
+
+      ::aStockFacturaCliente()
+      SysRefresh()
+
+
+
+      ::aStockRectificativaCliente()
+      SysRefresh()
+
+
+
+      ::aStockTicketsCliente()
+      SysRefresh()
+
+
+
+      ::aStockProduccion()
+      SysRefresh()
+
+
+
+      ::aStockMateriaPrima()
+      SysRefresh()
+
+
+
+      ::aStockPendiente()
+      SysRefresh()
+
+   next
+
+
+
+   for each cSerie in ::aSeries
+      aScan( ::aStocks, {|o| if( o:cNumeroSerie == cSerie, o:nUnidades -= 1, ) } )
+   next
+
+
+
+   RECOVER USING oError
+      msgStop( ErrorMessage( oError ), "Calculo de stock" )
+   end
+   ErrorBlock( oBlock )
+
+   cursorWE()
+
+RETURN ( ::aStocks )
+
+
+
+static FUNCTION TStock_nStockArticulo( cCodArt, cCodAlm, cLote, cCodPr1, cValPr1, cCodPr2, cValPr2, dFecIni, dFecFin, tHorIni, tHorFin ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nStockArticulo := 0
+
+   ::aStockArticulo( cCodArt, cCodAlm, cLote, cCodPr1, cValPr1, cCodPr2, cValPr2, dFecIni, dFecFin, tHorIni, tHorFin )
+
+   aEval( ::aStocks, {|o| nStockArticulo += o:nUnidades } )
+
+RETURN ( nStockArticulo )
+
+
+
+static FUNCTION TStock_nStockAlmacen( cCodArt, cCodAlm, cLote, cCodPr1, cValPr1, cCodPr2, cValPr2, dFecIni, dFecFin, tHorIni, tHorFin ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nStockArticulo := 0
+
+   ::aStockArticulo( cCodArt, padr( cCodAlm, 16 ), cLote, cCodPr1, cValPr1, cCodPr2, cValPr2, dFecIni, dFecFin, tHorIni, tHorFin )
+
+
+
+
+
+   aEval( ::aStocks, {|o| if( ( empty( cCodAlm ) .OR. alltrim( cCodAlm ) == alltrim( o:cCodigoAlmacen ) )   .AND. ( empty( cValPr1 ) .OR. alltrim( cValPr1 ) == alltrim( o:cValorPropiedad1 ) ) .AND. ( empty( cValPr2 ) .OR. alltrim( cValPr2 ) == alltrim( o:cValorPropiedad2 ) ) .AND. ( empty( cLote   ) .OR. alltrim( cLote   ) == alltrim( o:cLote )   ), nStockArticulo += o:nUnidades, ) } )
+
+RETURN ( nStockArticulo )
+
+
+
+
+
+
+
+
+
+static FUNCTION TStock_Integra( sStocks ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nPos
+
+   if ::lIntegra
+
+
+
+
+
+      nPos              := aScan( ::aStocks, {|o|  alltrim( o:cCodigo ) == alltrim( sStocks:cCodigo )                    .AND. alltrim( o:cCodigoAlmacen ) == alltrim( sStocks:cCodigoAlmacen )      .AND. alltrim( o:cValorPropiedad1 ) == alltrim( sStocks:cValorPropiedad1 )  .AND. alltrim( o:cValorPropiedad2 ) == alltrim( sStocks:cValorPropiedad2 )  .AND. alltrim( o:cLote ) == alltrim( sStocks:cLote ) } )
+
+
+      if nPos <> 0
+         ::aStocks[ nPos ]:nUnidades               += sStocks:nUnidades
+         ::aStocks[ nPos ]:nBultos                 += sStocks:nBultos
+         ::aStocks[ nPos ]:nCajas                  += sStocks:nCajas
+         ::aStocks[ nPos ]:nPendientesRecibir      += sStocks:nPendientesRecibir
+         ::aStocks[ nPos ]:nPendientesEntregar     += sStocks:nPendientesEntregar
+         ::aStocks[ nPos ]:nUnidadesEntregadas     += sStocks:nUnidadesEntregadas
+         ::aStocks[ nPos ]:nUnidadesRecibidas      += sStocks:nUnidadesRecibidas
+      else
+         aAdd( ::aStocks, oClone( sStocks ) )
+      end
+
+   else
+
+      aAdd( ::aStocks, oClone( sStocks ) )
+
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION TStock_oTreeStocks( cCodArt, cCodAlm ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local x
+   local cValue
+
+   ::aStockArticulo( cCodArt, cCodAlm )
+
+   if empty( ::aStocks )
+      ::aStocks   := { sStock():New() }
+   end
+
+   aSort( ::aStocks, , , {|x,y| x:cCodigo + x:cCodigoAlmacen + x:cValorPropiedad1 + x:cValorPropiedad2 + x:cLote + dtos( x:dFechaDocumento ) + x:tFechaDocumento < y:cCodigo + y:cCodigoAlmacen + y:cValorPropiedad1 + y:cValorPropiedad2 + y:cLote + dtos( y:dFechaDocumento ) + y:tFechaDocumento } )
+
+   ::oTree        := TreeBegin()
+
+   for each x in ::aStocks
+
+      if cValue <> x:cCodigo + x:cCodigoAlmacen + x:cValorPropiedad1 + x:cValorPropiedad2 + x:cLote
+
+         if cValue <> nil
+            TreeEnd()
+         end
+
+         TreeAddItem( alltrim( x:cCodigoAlmacen ) + Space(1) + retAlmacen( x:cCodigoAlmacen, ::cAlm ) )
+
+         TreeBegin()
+
+      end
+
+      TreeAddItem( x:Documento() ):Cargo := oClone( x )
+
+      cValue      := x:cCodigo + x:cCodigoAlmacen + x:cValorPropiedad1 + x:cValorPropiedad2 + x:cLote
+
+   next
+
+   if cValue <> nil
+      TreeEnd()
+   end
+
+   TreeEnd()
+
+RETURN ( ::oTree )
+
+
+
+static FUNCTION TStock_nPedidoCliente( cCodCli ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nTotal      := 0
+   local nRec        := ( ::cPedCliT )->( Recno() )
+   local nOrdAnt     := ( ::cPedCliT )->( ordsetfocus( "cCodCli" ) )
+
+   if empty( cCodCli )
+      RETURN nTotal
+   end
+
+   if ( ::cPedCliT )->( dbSeek( cCodCli ) )
+
+      while ( ::cPedCliT )->cCodCli == cCodCli .AND. !( ::cPedCliT )->( Eof() )
+
+         nTotal   += nTotPedCli( ( ::cPedCliT )->cSerPed + Str( ( ::cPedCliT )->nNumPed ) + ( ::cPedCliT )->cSufPed, ::cPedCliT, ::cPedCliL, ::cDbfIva, ::cDbfDiv, ::cDbfFPago, nil, cDivEmp(), .F. )
+
+         ( ::cPedCliT )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cPedCliT )->( ordsetfocus( nOrdAnt ) )
+   ( ::cPedCliT )->( dbGoTo( nRec ) )
+
+RETURN ( nTotal )
+
+
+
+static FUNCTION TStock_nOperacionesCliente( idCliente, lRiesgo ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+RETURN ( 0 )
+
+
+
+static FUNCTION TStock_nFacturacionPendiente( idCliente ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+RETURN ( 0 )
+
+
+
+static FUNCTION TStock_nPagadoCliente( idCliente ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+RETURN ( 0 )
+
+
+
+static FUNCTION TStock_nFacturacionCliente( idCliente ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+RETURN ( 0 )
+
+
+
+static FUNCTION TStock_nConsumoArticulo( cCodArt, cCodAlm, cValPr1, cValPr2, cLote, dFecIni, dFecFin ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local dFecDoc
+   local nUnidades         := 0
+   local nOrdAlbCliL       := ( ::cAlbCliL )->( ordsetfocus( "cStkFast" ) )
+   local nOrdFacCliL       := ( ::cFacCliL )->( ordsetfocus( "cRef"     ) )
+   local nOrdFacRecL       := ( ::cFacRecL )->( ordsetfocus( "cRef"     ) )
+   local nOrdTikCliL       := ( ::cTikL    )->( ordsetfocus( "cStkFast" ) )
+
+
+
+
+
+   SysRefresh()
+
+   if IsTrue( ::lAlbCli ) .AND. ( ::cAlbCliL )->( dbSeek( cCodArt ) )
+
+      while ( ::cAlbCliL )->cRef == cCodArt .AND. !( ::cAlbCliL )->( Eof() )
+
+
+
+
+
+         if ( empty( dFecIni ) .OR. ( ::cAlbCliL )->dFecAlb >= dFecIni )   .AND.  ( empty( dFecFin ) .OR. ( ::cAlbCliL )->dFecAlb <= dFecFin )   .AND.  ( empty( cValPr1 ) .OR. ( ::cAlbCliL )->cValPr1 == cValPr1 )   .AND.  ( empty( cValPr2 ) .OR. ( ::cAlbCliL )->cValPr2 == cValPr2 )   .AND.  ( empty( cCodAlm ) .OR. ( ::cAlbCliL )->cAlmLin == cCodAlm )
+
+            nUnidades      += nTotNAlbCli( ::cAlbCliL )
+
+         end
+
+         ( ::cAlbCliL )->( dbSkip() )
+
+      end
+
+   end
+
+
+
+
+
+   SysRefresh()
+
+   if ( ::cFacCliL )->( dbSeek( cCodArt ) )
+
+      while ( ::cFacCliL )->cRef == cCodArt .AND. !( ::cFacCliL )->( Eof() )
+
+         if !empty( ( ::cFacCliL )->dFecAlb )
+            dFecDoc        := ( ::cFacCliL )->dFecAlb
+         else
+            dFecDoc        := ( ::cFacCliL )->dFecFac
+         end
+
+
+
+
+
+         if ( empty( dFecIni ) .OR. dFecDoc >= dFecIni )    .AND.  ( empty( dFecFin ) .OR. dFecDoc <= dFecFin )    .AND.  ( empty( cValPr1 ) .OR. ( ::cFacCliL )->cValPr1 == cValPr1 )   .AND.  ( empty( cValPr2 ) .OR. ( ::cFacCliL )->cValPr2 == cValPr2 )   .AND.  ( empty( cCodAlm ) .OR. ( ::cFacCliL )->cAlmLin == cCodAlm )
+
+            nUnidades      += nTotNFacCli( ::cFacCliL )
+
+         end
+
+         ( ::cFacCliL )->( dbSkip() )
+
+      end
+
+   end
+
+
+
+
+
+   SysRefresh()
+
+   if ( ::cFacRecL )->( dbSeek( cCodArt ) )
+
+      while ( ::cFacRecL )->cRef == cCodArt .AND. !( ::cFacRecL )->( Eof() )
+
+
+
+
+
+         if ( empty( dFecIni ) .OR. ( ::cFacRecL )->dFecFac >= dFecIni )   .AND.  ( empty( dFecFin ) .OR. ( ::cFacRecL )->dFecFac <= dFecFin )   .AND.  ( empty( cValPr1 ) .OR. ( ::cFacRecL )->cValPr1 == cValPr1 )   .AND.  ( empty( cValPr2 ) .OR. ( ::cFacRecL )->cValPr2 == cValPr2 )   .AND.  ( empty( cCodAlm ) .OR. ( ::cFacRecL )->cAlmLin == cCodAlm )
+
+            nUnidades      += nTotNFacRec( ::cFacRecL )
+
+         end
+
+         ( ::cFacRecL )->( dbSkip() )
+
+      end
+
+   end
+
+
+
+
+
+   SysRefresh()
+
+   if ( ::cTikL )->( dbSeek( cCodArt ) )
+
+      while ( ::cTikL )->cCbaTil == cCodArt .AND. !( ::cTikL )->( Eof() )
+
+
+
+
+
+         if ( empty( dFecIni ) .OR. ( ::cTikL )->dFecTik >= dFecIni )   .AND.  ( empty( dFecFin ) .OR. ( ::cTikL )->dFecTik <= dFecFin )   .AND.  ( empty( cValPr1 ) .OR. ( ::cTikL )->cValPr1 == cValPr1 )   .AND.  ( empty( cValPr2 ) .OR. ( ::cTikL )->cValPr2 == cValPr2 )   .AND.  ( empty( cCodAlm ) .OR. ( ::cTikL )->cAlmLin == cCodAlm )
+
+            nUnidades   += nTotNTickets( ::cTikL )
+
+         end
+
+         ( ::cTikL )->( dbSkip() )
+
+      end
+
+   end
+
+
+
+
+
+   SysRefresh()
+
+   ( ::cTikL )->( ordsetfocus( "cStkComb" ) )
+
+   if ( ::cTikL )->( dbSeek( cCodArt ) )
+
+      if !empty( ( ::cTikL )->cComTil )
+
+         while ( ::cTikL )->cComTil == cCodArt .AND. !( ::cTikL )->( Eof() )
+
+
+
+
+
+            if ( empty( dFecIni ) .OR. ( ::cTikL )->dFecTik >= dFecIni )   .AND.  ( empty( dFecFin ) .OR. ( ::cTikL )->dFecTik <= dFecFin )   .AND.  ( empty( cValPr1 ) .OR. ( ::cTikL )->cValPr1 == cValPr1 )   .AND.  ( empty( cValPr2 ) .OR. ( ::cTikL )->cValPr2 == cValPr2 )   .AND.  ( empty( cCodAlm ) .OR. ( ::cTikL )->cAlmLin == cCodAlm )
+
+               nUnidades   += nTotNTickets( ::cTikL )
+
+            end
+
+            ( ::cTikL )->( dbSkip() )
+
+         end
+
+      end
+
+   end
+
+   ( ::cAlbCliL )->( ordsetfocus( nOrdAlbCliL ) )
+   ( ::cFacCliL )->( ordsetfocus( nOrdFacCliL ) )
+   ( ::cFacRecL )->( ordsetfocus( nOrdFacRecL ) )
+   ( ::cTikL    )->( ordsetfocus( nOrdTikCliL ) )
+
+RETURN ( nUnidades )
+
+
+
+static FUNCTION TStock_SetRiesgo( idCliente, oGetRiesgo, nRiesgoCliente, lAviso ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nRiesgo  := ::nRiesgo( idCliente )
+
+   If( lAviso == nil, lAviso := uFieldEmpresa( "lSalPdt" , .F. ), ) ;
+
+   if isObject( oGetRiesgo )
+
+      oGetRiesgo:cText( nRiesgo )
+
+      if isNum( nRiesgoCliente )
+
+         if ( nRiesgo > nRiesgoCliente )
+            oGetRiesgo:setColor( ( 255 + ( 255 * 256 ) + ( 255 * 65536 ) ), ( 255 + ( 0 * 256 ) + ( 0 * 65536 ) ) )
+         else
+            oGetRiesgo:setColor( ( 0 + ( 0 * 256 ) + ( 0 * 65536 ) ), ( 255 + ( 255 * 256 ) + ( 255 * 65536 ) ) )
+         end
+
+         oGetRiesgo:Refresh()
+
+         if lAviso
+
+            msgStop( "El riesgo alacanzado es de " + alltrim( Trans( nRiesgo, cPorDiv() ) ) + "; sobre el establecido en su ficha " + alltrim( Trans( nRiesgoCliente, cPorDiv() ) ) + ".", "El riesgo del cliente supera el límite establecido" )
+         end
+
+      end
+
+   end
+
+RETURN ( nRiesgo )
+
+
+
+static FUNCTION TStock_lCheckConsolidacion( cCodigoArticulo, cCodigoAlmacen, cCodigoPrimeraPropiedad, cCodigoSegundaPropiedad, cValorPrimeraPropiedad, cValorSegundaPropiedad, cLote, dFecha, tHora ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local dConsolidacion := MovimientosAlmacenLineasRepository():getFechaHoraConsolidacion( cCodigoArticulo, cCodigoAlmacen, cCodigoPrimeraPropiedad, cCodigoSegundaPropiedad, cValorPrimeraPropiedad, cValorSegundaPropiedad, cLote, ::dFechaFin )
+
+RETURN ( empty( dConsolidacion ) .OR. dateTimeToTimeStamp( dFecha, tHora ) >= dConsolidacion )
+
+
+
+static FUNCTION TStock_setCodigoAlmacen( cCodigoAlmacen ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   if empty( cCodigoAlmacen )
+      aAllAlmacen( cCodigoAlmacen, ::uCodigoAlmacen, ::cAlm )
+   else
+      ::uCodigoAlmacen  := { cCodigoAlmacen }
+      aChildAlmacen( cCodigoAlmacen, ::uCodigoAlmacen, ::cAlm )
+   end
+
+RETURN ( ::uCodigoAlmacen )
+
+
+
+static FUNCTION TStock_lCodigoAlmacen( cCodigoAlmacen ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   if empty( cCodigoAlmacen )
+      RETURN .T.
+   end
+
+   if empty( ::uCodigoAlmacen )
+      RETURN .T.
+   end
+
+RETURN ( aScan( ::uCodigoAlmacen, cCodigoAlmacen ) <> 0 )
+
+
+
+
+
+
+static FUNCTION TStock_aStockMovimientosAlmacen( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local oRowSet
+
+
+
+
+
+
+
+
+
+   oRowSet     := MovimientosAlmacenLineasRepository() :getRowSetMovimientosForArticulo( { "codigo_articulo" => ::cCodigoArticulo, "almacen" => ::cCodigoAlmacen, "empresa" => ::cCodigoEmpresa, "lote" => ::cLote, "codigo_primera_propiedad" => ::cCodigoPropiedad1, "valor_primera_propiedad" => ::cValorPropiedad1, "codigo_segunda_propiedad" => ::cCodigoPropiedad2, "valor_segunda_propiedad" => ::cValorPropiedad2 } )
+
+   SysRefresh()
+
+   if empty( oRowSet ) .OR. empty( oRowSet:get() )
+      RETURN ( nil )
+   end
+
+   oRowSet:goTop()
+
+   while !( oRowSet:Eof() )
+
+      if alltrim( oRowSet:fieldget( "almacen_destino" ) ) == alltrim( ::cCodigoAlmacen )
+
+         if ::validateDateTime( oRowSet:fieldget( "fecha" ), oRowSet:fieldget( "hora" ) )
+
+
+
+
+
+
+
+
+
+            if ::lCheckConsolidacion( oRowSet:fieldget( "codigo_articulo" ), oRowSet:fieldget( "almacen_destino" ), oRowSet:fieldget( "codigo_primera_propiedad" ), oRowSet:fieldget( "codigo_segunda_propiedad" ), oRowSet:fieldget( "valor_primera_propiedad" ), oRowSet:fieldget( "valor_segunda_propiedad" ), oRowSet:fieldget( "lote" ), oRowSet:fieldget( "fecha" ), oRowSet:fieldget( "hora" ) )
+
+               ::InsertStockMovimientosAlmacenRowset( oRowSet , .T. )
+
+            end
+
+         end
+
+      end
+
+      if AllTrim( oRowSet:fieldget( "almacen_origen" ) ) == AllTrim( ::cCodigoAlmacen )
+
+         if ::validateDateTime( oRowSet:fieldget( "fecha" ), oRowSet:fieldget( "hora" ) )
+
+
+
+
+
+
+
+
+
+            if ::lCheckConsolidacion( oRowSet:fieldget( "codigo_articulo" ), oRowSet:fieldget( "almacen_origen" ), oRowSet:fieldget( "codigo_primera_propiedad" ), oRowSet:fieldget( "codigo_segunda_propiedad" ), oRowSet:fieldget( "valor_primera_propiedad" ), oRowSet:fieldget( "valor_segunda_propiedad" ), oRowSet:fieldget( "lote" ), oRowSet:fieldget( "fecha" ), oRowSet:fieldget( "hora" ) )
+
+               ::InsertStockMovimientosAlmacenRowset( oRowSet , .F. )
+
+            end
+
+         end
+
+      end
+
+      oRowSet:skip()
+
+   end
+
+   oRowSet:End()
+
+RETURN ( nil )
+
+
+
+
+
+
+static FUNCTION TStock_aStockAlbaranProveedor( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local cCodigoArticulo      := ""
+   local nOrdAlbPrvL          := ( ::cAlbPrvL )->( ordsetfocus( "cStkFastIn" ) )
+   local nOrdAlbPrvS          := ( ::cAlbPrvS )->( ordsetfocus( "nNumAlb"  ) )
+
+   if ( ::cAlbPrvL )->( dbSeek( ::cCodigoArticulo + ::cCodigoAlmacen ) )
+
+      while ( ::cAlbPrvL )->cRef == ::cCodigoArticulo .AND. ( ::cAlbPrvL )->cAlmLin == ::cCodigoAlmacen .AND. !( ::cAlbPrvL )->( eof() )
+
+
+
+
+
+         if ( ( empty( ::cCodigoPropiedad1 ) .OR. alltrim( ::cCodigoPropiedad1 ) == alltrim( ( ::cAlbPrvL )->cCodPr1 ) ) .AND. ( empty( ::cValorPropiedad1 ) .OR. alltrim( ::cValorPropiedad1 ) == alltrim( ( ::cAlbPrvL )->cValPr1 ) ) .AND. ( empty( ::cCodigoPropiedad2 ) .OR. alltrim( ::cCodigoPropiedad2 ) == alltrim( ( ::cAlbPrvL )->cCodPr2 ) ) .AND. ( empty( ::cValorPropiedad2 ) .OR. alltrim( ::cValorPropiedad2 ) == alltrim( ( ::cAlbPrvL )->cValPr2 ) ) .AND. ( empty( ::cLote   ) .OR. alltrim( ::cLote   ) == alltrim( ( ::cAlbPrvL )->cLote ) ) )
+
+            if cCodigoArticulo <> ( ::cAlbPrvL )->cRef + ( ::cAlbPrvL )->cAlmLin + ( ::cAlbPrvL )->cCodPr1 + ( ::cAlbPrvL )->cCodPr2 + ( ::cAlbPrvL )->cValPr1 + ( ::cAlbPrvL )->cValPr2 + ( ::cAlbPrvL )->cLote
+
+               if ( ::lCheckConsolidacion( ( ::cAlbPrvL )->cRef, ( ::cAlbPrvL )->cAlmLin, ( ::cAlbPrvL )->cCodPr1, ( ::cAlbPrvL )->cCodPr2, ( ::cAlbPrvL )->cValPr1, ( ::cAlbPrvL )->cValPr2, ( ::cAlbPrvL )->cLote, ( ::cAlbPrvL )->dFecAlb, ( ::cAlbPrvL )->tFecAlb ) )
+
+                  if ::validateDateTime( ( ::cAlbPrvL )->dFecAlb, ( ::cAlbPrvL )->tFecAlb )
+
+
+
+                     if ::lNumeroSerie .AND. ( ::cAlbPrvS )->( dbSeek( ( ::cAlbPrvL )->cSerAlb + Str( ( ::cAlbPrvL )->nNumAlb ) + ( ::cAlbPrvL )->cSufAlb + Str( ( ::cAlbPrvL )->nNumLin ) ) )
+
+                        while ( ::cAlbPrvS )->cSerAlb + Str( ( ::cAlbPrvS )->nNumAlb ) + ( ::cAlbPrvS )->cSufAlb + Str( ( ::cAlbPrvS )->nNumLin ) == ( ::cAlbPrvL )->cSerAlb + Str( ( ::cAlbPrvL )->nNumAlb ) + ( ::cAlbPrvL )->cSufAlb + Str( ( ::cAlbPrvL )->nNumLin ) .AND. !( ::cAlbPrvS )->( eof() )
+
+                           ::InsertStockAlbaranProveedores( .T. )
+
+                           ( ::cAlbPrvS )->( dbSkip() )
+
+                        end
+
+                     else
+
+                        ::InsertStockAlbaranProveedores()
+
+                     end
+
+                  end
+
+               else
+
+                  cCodigoArticulo   := ( ::cAlbPrvL )->cRef + ( ::cAlbPrvL )->cAlmLin + ( ::cAlbPrvL )->cCodPr1 + ( ::cAlbPrvL )->cCodPr2 + ( ::cAlbPrvL )->cValPr1 + ( ::cAlbPrvL )->cValPr2 + ( ::cAlbPrvL )->cLote
+
+               end
+
+            end
+
+         end
+
+         ( ::cAlbPrvL )->( dbSkip() )
+
+      end
+
+   end
+
+
+
+   cCodigoArticulo            := ""
+
+   ( ::cAlbPrvL )->( ordsetfocus( "cStkFastOu" ) )
+
+   if ( ::cAlbPrvL )->( dbSeek( ::cCodigoArticulo + ::cCodigoAlmacen ) )
+
+      while ( ::cAlbPrvL )->cRef == ::cCodigoArticulo .AND. ( ::cAlbPrvL )->cAlmOrigen == ::cCodigoAlmacen .AND. !( ::cAlbPrvL )->( eof() )
+
+
+
+
+
+         if ( ( empty( ::cCodigoPropiedad1 ) .OR. alltrim( ::cCodigoPropiedad1 ) == alltrim( ( ::cAlbPrvL )->cCodPr1 ) ) .AND. ( empty( ::cValorPropiedad1 ) .OR. alltrim( ::cValorPropiedad1 ) == alltrim( ( ::cAlbPrvL )->cValPr1 ) ) .AND. ( empty( ::cCodigoPropiedad2 ) .OR. alltrim( ::cCodigoPropiedad2 ) == alltrim( ( ::cAlbPrvL )->cCodPr2 ) ) .AND. ( empty( ::cValorPropiedad2 ) .OR. alltrim( ::cValorPropiedad2 ) == alltrim( ( ::cAlbPrvL )->cValPr2 ) ) .AND. ( empty( ::cLote   ) .OR. alltrim( ::cLote   ) == alltrim( ( ::cAlbPrvL )->cLote ) ) )
+
+            if cCodigoArticulo <> ( ::cAlbPrvL )->cRef + ( ::cAlbPrvL )->cAlmOrigen + ( ::cAlbPrvL )->cCodPr1 + ( ::cAlbPrvL )->cCodPr2 + ( ::cAlbPrvL )->cValPr1 + ( ::cAlbPrvL )->cValPr2 + ( ::cAlbPrvL )->cLote
+
+               if ( ::lCheckConsolidacion( ( ::cAlbPrvL )->cRef, ( ::cAlbPrvL )->cAlmOrigen, ( ::cAlbPrvL )->cCodPr1, ( ::cAlbPrvL )->cCodPr2, ( ::cAlbPrvL )->cValPr1, ( ::cAlbPrvL )->cValPr2, ( ::cAlbPrvL )->cLote, ( ::cAlbPrvL )->dFecAlb, ( ::cAlbPrvL )->tFecAlb ) )
+
+                  if ::validateDateTime( ( ::cAlbPrvL )->dFecAlb, ( ::cAlbPrvL )->tFecAlb )
+
+
+
+                     if ::lNumeroSerie .AND. ( ::cAlbPrvS )->( dbSeek( ( ::cAlbPrvL )->cSerAlb + Str( ( ::cAlbPrvL )->nNumAlb ) + ( ::cAlbPrvL )->cSufAlb + Str( ( ::cAlbPrvL )->nNumLin ) ) )
+
+                        while ( ::cAlbPrvS )->cSerAlb + Str( ( ::cAlbPrvS )->nNumAlb ) + ( ::cAlbPrvS )->cSufAlb + Str( ( ::cAlbPrvS )->nNumLin ) == ( ::cAlbPrvL )->cSerAlb + Str( ( ::cAlbPrvL )->nNumAlb ) + ( ::cAlbPrvL )->cSufAlb + Str( ( ::cAlbPrvL )->nNumLin ) .AND. !( ::cAlbPrvS )->( eof() )
+
+                           ::DeleteStockAlbaranProveedores( .T. )
+
+                           ( ::cAlbPrvS )->( dbSkip() )
+
+                        end
+
+                     else
+
+                        ::DeleteStockAlbaranProveedores()
+
+                     end
+
+                  end
+
+               else
+
+                  cCodigoArticulo := ( ::cAlbPrvL )->cRef + ( ::cAlbPrvL )->cAlmOrigen + ( ::cAlbPrvL )->cCodPr1 + ( ::cAlbPrvL )->cCodPr2 + ( ::cAlbPrvL )->cValPr1 + ( ::cAlbPrvL )->cValPr2 + ( ::cAlbPrvL )->cLote
+
+               end
+
+            end
+
+         end
+
+         ( ::cAlbPrvL )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cAlbPrvL )->( ordsetfocus( nOrdAlbPrvL ) )
+   ( ::cAlbPrvS )->( ordsetfocus( nOrdAlbPrvS ) )
+
+RETURN ( nil )
+
+
+
+static FUNCTION TStock_aStockFacturaProveedor( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local cCodigoArticulo      := ""
+   local nOrdFacPrvL          := ( ::cFacPrvL )->( ordsetfocus( "cStkFast" ) )
+   local nOrdFacPrvS          := ( ::cFacPrvS )->( ordsetfocus( "nNumFac"  ) )
+
+   if ( ::cFacPrvL )->( dbSeek( ::cCodigoArticulo + ::cCodigoAlmacen ) )
+
+      while ( ::cFacPrvL )->cRef == ::cCodigoArticulo .AND. ( ::cFacPrvL )->cAlmLin == ::cCodigoAlmacen .AND. !( ::cFacPrvL )->( Eof() )
+
+
+
+
+
+         if ( ( empty( ::cCodigoPropiedad1 ) .OR. alltrim( ::cCodigoPropiedad1 ) == alltrim( ( ::cFacPrvL )->cCodPr1 ) ) .AND. ( empty( ::cValorPropiedad1 ) .OR. alltrim( ::cValorPropiedad1 ) == alltrim( ( ::cFacPrvL )->cValPr1 ) ) .AND. ( empty( ::cCodigoPropiedad2 ) .OR. alltrim( ::cCodigoPropiedad2 ) == alltrim( ( ::cFacPrvL )->cCodPr2 ) ) .AND. ( empty( ::cValorPropiedad2 ) .OR. alltrim( ::cValorPropiedad2 ) == alltrim( ( ::cFacPrvL )->cValPr2 ) ) .AND. ( empty( ::cLote   ) .OR. alltrim( ::cLote   ) == alltrim( ( ::cFacPrvL )->cLote ) ) )
+
+
+
+            if ( ::lCheckConsolidacion( ( ::cFacPrvL )->cRef, ( ::cFacPrvL )->cAlmLin, ( ::cFacPrvL )->cCodPr1, ( ::cFacPrvL )->cCodPr2, ( ::cFacPrvL )->cValPr1, ( ::cFacPrvL )->cValPr2, ( ::cFacPrvL )->cLote, ( ::cFacPrvL )->dFecFac, ( ::cFacPrvL )->tFecFac ) )
+
+               if ::validateDateTime( ( ::cFacPrvL )->dFecFac, ( ::cFacPrvL )->tFecFac )
+
+                  ::InsertStockFacturaProveedores()
+
+               end
+
+
+
+
+
+            end
+
+
+
+         end
+
+         ( ::cFacPrvL )->( dbSkip() )
+
+      end
+
+   end
+
+
+
+   cCodigoArticulo            := ""
+
+   ( ::cFacPrvL )->( ordsetfocus( "cStkFastOu" ) )
+
+   if ( ::cFacPrvL )->( dbSeek( ::cCodigoArticulo + ::cCodigoAlmacen ) )
+
+      while ( ::cFacPrvL )->cRef == ::cCodigoArticulo .AND. ( ::cFacPrvL )->cAlmOrigen == ::cCodigoAlmacen .AND. !( ::cFacPrvL )->( Eof() )
+
+
+
+
+
+         if ( ( empty( ::cCodigoPropiedad1 ) .OR. alltrim( ::cCodigoPropiedad1 ) == alltrim( ( ::cFacPrvL )->cCodPr1 ) ) .AND. ( empty( ::cValorPropiedad1 ) .OR. alltrim( ::cValorPropiedad1 ) == alltrim( ( ::cFacPrvL )->cValPr1 ) ) .AND. ( empty( ::cCodigoPropiedad2 ) .OR. alltrim( ::cCodigoPropiedad2 ) == alltrim( ( ::cFacPrvL )->cCodPr2 ) ) .AND. ( empty( ::cValorPropiedad2 ) .OR. alltrim( ::cValorPropiedad2 ) == alltrim( ( ::cFacPrvL )->cValPr2 ) ) .AND. ( empty( ::cLote   ) .OR. alltrim( ::cLote   ) == alltrim( ( ::cFacPrvL )->cLote ) ) )
+
+            if cCodigoArticulo <> ( ::cFacPrvL )->cRef + ( ::cFacPrvL )->cAlmOrigen + ( ::cFacPrvL )->cCodPr1 + ( ::cFacPrvL )->cCodPr2 + ( ::cFacPrvL )->cValPr1 + ( ::cFacPrvL )->cValPr2 + ( ::cFacPrvL )->cLote
+
+               if ( ::lCheckConsolidacion( ( ::cFacPrvL )->cRef, ( ::cFacPrvL )->cAlmOrigen, ( ::cFacPrvL )->cCodPr1, ( ::cFacPrvL )->cCodPr2, ( ::cFacPrvL )->cValPr1, ( ::cFacPrvL )->cValPr2, ( ::cFacPrvL )->cLote, ( ::cFacPrvL )->dFecFac, ( ::cFacPrvL )->tFecFac ) )
+
+                  if ::validateDateTime( ( ::cFacPrvL )->dFecFac, ( ::cFacPrvL )->tFecFac )
+
+                     ::DeleteStockFacturaProveedores()
+
+                  end
+
+               else
+
+                  cCodigoArticulo := ( ::cFacPrvL )->cRef + ( ::cFacPrvL )->cAlmOrigen + ( ::cFacPrvL )->cCodPr1 + ( ::cFacPrvL )->cCodPr2 + ( ::cFacPrvL )->cValPr1 + ( ::cFacPrvL )->cValPr2 + ( ::cFacPrvL )->cLote
+
+               end
+
+            end
+
+         end
+
+         ( ::cFacPrvL )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cFacPrvL )->( ordsetfocus( nOrdFacPrvL ) )
+   ( ::cFacPrvS )->( ordsetfocus( nOrdFacPrvS ) )
+
+RETURN ( nil )
+
+
+
+static FUNCTION TStock_aStockRectificativaProveedor( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local cCodigoArticulo      := ""
+   local nOrdRctPrvL          := ( ::cRctPrvL )->( ordsetfocus( "cStkFast" ) )
+   local nOrdRctPrvS          := ( ::cRctPrvS )->( ordsetfocus( "nNumFac"  ) )
+
+   if ( ::cRctPrvL )->( dbSeek( ::cCodigoArticulo + ::cCodigoAlmacen ) )
+
+      while ( ::cRctPrvL )->cRef == ::cCodigoArticulo  .AND. ( ::cRctPrvL )->cAlmLin == ::cCodigoAlmacen .AND. !( ::cRctPrvL )->( Eof() )
+
+
+
+
+
+         if ( ( empty( ::cCodigoPropiedad1 ) .OR. alltrim( ::cCodigoPropiedad1 ) == alltrim( ( ::cRctPrvL )->cCodPr1 ) ) .AND. ( empty( ::cValorPropiedad1 ) .OR. alltrim( ::cValorPropiedad1 ) == alltrim( ( ::cRctPrvL )->cValPr1 ) ) .AND. ( empty( ::cCodigoPropiedad2 ) .OR. alltrim( ::cCodigoPropiedad2 ) == alltrim( ( ::cRctPrvL )->cCodPr2 ) ) .AND. ( empty( ::cValorPropiedad2 ) .OR. alltrim( ::cValorPropiedad2 ) == alltrim( ( ::cRctPrvL )->cValPr2 ) ) .AND. ( empty( ::cLote   ) .OR. alltrim( ::cLote   ) == alltrim( ( ::cRctPrvL )->cLote ) ) )
+
+            if cCodigoArticulo <> ( ::cRctPrvL )->cRef + ( ::cRctPrvL )->cAlmLin + ( ::cRctPrvL )->cCodPr1 + ( ::cRctPrvL )->cCodPr2 + ( ::cRctPrvL )->cValPr1 + ( ::cRctPrvL )->cValPr2 + ( ::cRctPrvL )->cLote
+
+               if ::lCheckConsolidacion( ( ::cRctPrvL )->cRef, ( ::cRctPrvL )->cAlmLin, ( ::cRctPrvL )->cCodPr1, ( ::cRctPrvL )->cCodPr2, ( ::cRctPrvL )->cValPr1, ( ::cRctPrvL )->cValPr2, ( ::cRctPrvL )->cLote, ( ::cRctPrvL )->dFecFac, ( ::cRctPrvL )->tFecFac )
+
+                  if ::validateDateTime( ( ::cRctPrvL )->dFecFac, ( ::cRctPrvL )->tFecFac )
+
+
+
+                     if ::lNumeroSerie .AND. ( ::cRctPrvS )->( dbSeek( ( ::cRctPrvL )->cSerFac + Str( ( ::cRctPrvL )->nNumFac ) + ( ::cRctPrvL )->cSufFac + Str( ( ::cRctPrvL )->nNumLin ) ) )
+
+                       while ( ::cRctPrvS )->cSerFac + Str( ( ::cRctPrvS )->nNumFac ) + ( ::cRctPrvS )->cSufFac + Str( ( ::cRctPrvS )->nNumLin ) == ( ::cRctPrvL )->cSerFac + Str( ( ::cRctPrvL )->nNumFac ) + ( ::cRctPrvL )->cSufFac + Str( ( ::cRctPrvL )->nNumLin ) .AND. !( ::cRctPrvS )->( eof() )
+
+                           ::InsertStockRectificativaProveedores( .T. )
+
+                           ( ::cRctPrvS )->( dbSkip() )
+
+                        end
+
+                     else
+
+                        ::InsertStockRectificativaProveedores()
+
+                     end
+
+                  end
+
+               else
+
+                  cCodigoArticulo   := ( ::cRctPrvL )->cRef + ( ::cRctPrvL )->cAlmLin + ( ::cRctPrvL )->cCodPr1 + ( ::cRctPrvL )->cCodPr2 + ( ::cRctPrvL )->cValPr1 + ( ::cRctPrvL )->cValPr2 + ( ::cRctPrvL )->cLote
+
+               end
+
+            end
+
+         end
+
+         ( ::cRctPrvL )->( dbSkip() )
+
+      end
+
+   end
+
+
+
+   cCodigoArticulo         := ""
+
+   ( ::cRctPrvL )->( ordsetfocus( "cStkFastOu" ) )
+
+   if ( ::cRctPrvL )->( dbSeek( ::cCodigoArticulo + ::cCodigoAlmacen ) )
+
+      while ( ::cRctPrvL )->cRef == ::cCodigoArticulo  .AND. ( ::cRctPrvL )->cAlmOrigen == ::cCodigoAlmacen .AND. !( ::cRctPrvL )->( Eof() )
+
+
+
+
+
+         if ( ( empty( ::cCodigoPropiedad1 ) .OR. alltrim( ::cCodigoPropiedad1 ) == alltrim( ( ::cRctPrvL )->cCodPr1 ) ) .AND. ( empty( ::cValorPropiedad1 ) .OR. alltrim( ::cValorPropiedad1 ) == alltrim( ( ::cRctPrvL )->cValPr1 ) ) .AND. ( empty( ::cCodigoPropiedad2 ) .OR. alltrim( ::cCodigoPropiedad2 ) == alltrim( ( ::cRctPrvL )->cCodPr2 ) ) .AND. ( empty( ::cValorPropiedad2 ) .OR. alltrim( ::cValorPropiedad2 ) == alltrim( ( ::cRctPrvL )->cValPr2 ) ) .AND. ( empty( ::cLote   ) .OR. alltrim( ::cLote   ) == alltrim( ( ::cRctPrvL )->cLote ) ) )
+
+            if cCodigoArticulo <> ( ::cRctPrvL )->cRef + ( ::cRctPrvL )->cAlmOrigen + ( ::cRctPrvL )->cCodPr1 + ( ::cRctPrvL )->cCodPr2 + ( ::cRctPrvL )->cValPr1 + ( ::cRctPrvL )->cValPr2 + ( ::cRctPrvL )->cLote
+
+               if ::lCheckConsolidacion( ( ::cRctPrvL )->cRef, ( ::cRctPrvL )->cAlmOrigen, ( ::cRctPrvL )->cCodPr1, ( ::cRctPrvL )->cCodPr2, ( ::cRctPrvL )->cValPr1, ( ::cRctPrvL )->cValPr2, ( ::cRctPrvL )->cLote, ( ::cRctPrvL )->dFecFac, ( ::cRctPrvL )->tFecFac )
+
+                  if ::validateDateTime( ( ::cRctPrvL )->dFecFac, ( ::cRctPrvL )->tFecFac )
+
+
+
+                     if ::lNumeroSerie .AND. ( ::cRctPrvS )->( dbSeek( ( ::cRctPrvL )->cSerFac + Str( ( ::cRctPrvL )->nNumFac ) + ( ::cRctPrvL )->cSufFac + Str( ( ::cRctPrvL )->nNumLin ) ) )
+
+                       while ( ::cRctPrvS )->cSerFac + Str( ( ::cRctPrvS )->nNumFac ) + ( ::cRctPrvS )->cSufFac + Str( ( ::cRctPrvS )->nNumLin ) == ( ::cRctPrvL )->cSerFac + Str( ( ::cRctPrvL )->nNumFac ) + ( ::cRctPrvL )->cSufFac + Str( ( ::cRctPrvL )->nNumLin ) .AND. !( ::cRctPrvS )->( eof() )
+
+                           ::DeleteStockRectificativaProveedores( .T. )
+
+                           ( ::cRctPrvS )->( dbSkip() )
+
+                        end
+
+                     else
+
+                        ::DeleteStockRectificativaProveedores()
+
+                     end
+
+                  end
+
+               else
+
+                  cCodigoArticulo   := ( ::cRctPrvL )->cRef + ( ::cRctPrvL )->cAlmOrigen + ( ::cRctPrvL )->cCodPr1 + ( ::cRctPrvL )->cCodPr2 + ( ::cRctPrvL )->cValPr1 + ( ::cRctPrvL )->cValPr2 + ( ::cRctPrvL )->cLote
+
+               end
+
+            end
+
+         end
+
+         ( ::cRctPrvL )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cRctPrvL )->( ordsetfocus( nOrdRctPrvL ) )
+   ( ::cRctPrvS )->( ordsetfocus( nOrdRctPrvS ) )
+
+RETURN ( nil )
+
+
+
+static FUNCTION TStock_aStockPedidoCliente( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nOrdPedCliT          := ( ::cPedCliT )->( ordsetfocus( "nNumPed"  ) )
+   local nOrdPedCliL          := ( ::cPedCliL )->( ordsetfocus( "cStkFast" ) )
+
+   if ( ::cPedCliL )->( dbSeek( ::cCodigoArticulo + ::cCodigoAlmacen ) )
+
+      while ( ::cPedCliL )->cRef == ::cCodigoArticulo .AND. ( ::cPedCliL )->cAlmLin == ::cCodigoAlmacen .AND.  !( ::cPedCliL )->( eof() )
+
+
+
+
+
+         if ( ( empty( ::cCodigoPropiedad1 ) .OR. alltrim( ::cCodigoPropiedad1 ) == alltrim( ( ::cPedCliL )->cCodPr1 ) ) .AND. ( empty( ::cValorPropiedad1 ) .OR. alltrim( ::cValorPropiedad1 ) == alltrim( ( ::cPedCliL )->cValPr1 ) ) .AND. ( empty( ::cCodigoPropiedad2 ) .OR. alltrim( ::cCodigoPropiedad2 ) == alltrim( ( ::cPedCliL )->cCodPr2 ) ) .AND. ( empty( ::cValorPropiedad2 ) .OR. alltrim( ::cValorPropiedad2 ) == alltrim( ( ::cPedCliL )->cValPr2 ) ) .AND. ( empty( ::cLote   ) .OR. alltrim( ::cLote   ) == alltrim( ( ::cPedCliL )->cLote ) ) )
+
+            if ( ::cPedCliT )->( dbseek( ( ::cPedCliL )->cSerPed + str( ( ::cPedCliL )->nNumPed ) + ( ::cPedCliL )->cSufPed ) )
+
+               if ( ( ::cPedCliT )->nEstado <> 3 .AND. !( ::cPedCliT )->lCancel )
+
+
+                  ::InsertStockPedidoClientes()
+
+               end
+
+            end
+
+         end
+
+         ( ::cPedCliL )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cPedCliL )->( ordsetfocus( nOrdPedCliL ) )
+   ( ::cPedCliT )->( ordsetfocus( nOrdPedCliT ) )
+
+RETURN ( nil )
+
+
+
+static FUNCTION TStock_aStockAlbaranCliente( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local cCodigoArticulo      := ""
+   local nOrdAlbCliL          := ( ::cAlbCliL )->( ordsetfocus( "cStkFast" ) )
+
+   if ( ::cAlbCliL )->( dbSeek( ::cCodigoArticulo + ::cCodigoAlmacen ) )
+
+      while ( ::cAlbCliL )->cRef == ::cCodigoArticulo .AND. ( ::cAlbCliL )->cAlmLin == ::cCodigoAlmacen .AND. !( ::cAlbCliL )->( eof() )
+
+
+
+
+
+         if ( ( empty( ::cCodigoPropiedad1 ) .OR. alltrim( ::cCodigoPropiedad1 ) == alltrim( ( ::cAlbCliL )->cCodPr1 ) ) .AND. ( empty( ::cValorPropiedad1 ) .OR. alltrim( ::cValorPropiedad1 ) == alltrim( ( ::cAlbCliL )->cValPr1 ) ) .AND. ( empty( ::cCodigoPropiedad2 ) .OR. alltrim( ::cCodigoPropiedad2 ) == alltrim( ( ::cAlbCliL )->cCodPr2 ) ) .AND. ( empty( ::cValorPropiedad2 ) .OR. alltrim( ::cValorPropiedad2 ) == alltrim( ( ::cAlbCliL )->cValPr2 ) ) .AND. ( empty( ::cLote   ) .OR. alltrim( ::cLote   ) == alltrim( ( ::cAlbCliL )->cLote ) ) )
+
+            if cCodigoArticulo <> ( ::cAlbCliL )->cRef + ( ::cAlbCliL )->cAlmLin + ( ::cAlbCliL )->cCodPr1 + ( ::cAlbCliL )->cCodPr2 + ( ::cAlbCliL )->cValPr1 + ( ::cAlbCliL )->cValPr2 + ( ::cAlbCliL )->cLote
+
+               if ::lCheckConsolidacion( ( ::cAlbCliL )->cRef, ( ::cAlbCliL )->cAlmLin, ( ::cAlbCliL )->cCodPr1, ( ::cAlbCliL )->cCodPr2, ( ::cAlbCliL )->cValPr1, ( ::cAlbCliL )->cValPr2, ( ::cAlbCliL )->cLote, ( ::cAlbCliL )->dFecAlb, ( ::cAlbCliL )->tFecAlb )
+
+                  if ::validateDateTime( ( ::cAlbCliL )->dFecAlb, ( ::cAlbCliL )->tFecAlb )
+
+                     ::InsertStockAlbaranClientes()
+
+                  end
+
+               else
+
+                  cCodigoArticulo   := ( ::cAlbCliL )->cRef + ( ::cAlbCliL )->cAlmLin + ( ::cAlbCliL )->cCodPr1 + ( ::cAlbCliL )->cCodPr2 + ( ::cAlbCliL )->cValPr1 + ( ::cAlbCliL )->cValPr2 + ( ::cAlbCliL )->cLote
+
+               end
+
+            end
+
+         end
+
+         ( ::cAlbCliL )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cAlbCliL )->( ordsetfocus( nOrdAlbCliL ) )
+
+RETURN ( nil )
+
+
+
+static FUNCTION TStock_aStockFacturaCliente( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local cCodigoArticulo      := ""
+   local nOrdFacCliL          := ( ::cFacCliL )->( ordsetfocus( "cStkFast" ) )
+   local nOrdFacCliS          := ( ::cFacCliS )->( ordsetfocus( "nNumFac"  ) )
+
+   if ( ::cFacCliL )->( dbSeek( ::cCodigoArticulo + ::cCodigoAlmacen ) )
+
+      while ( ::cFacCliL )->cRef == ::cCodigoArticulo .AND. ( ::cFacCliL )->cAlmLin == ::cCodigoAlmacen .AND. !( ::cFacCliL )->( Eof() )
+
+
+
+
+
+         if ( ( empty( ::cCodigoPropiedad1 ) .OR. alltrim( ::cCodigoPropiedad1 ) == alltrim( ( ::cFacCliL )->cCodPr1 ) ) .AND. ( empty( ::cValorPropiedad1 ) .OR. alltrim( ::cValorPropiedad1 ) == alltrim( ( ::cFacCliL )->cValPr1 ) ) .AND. ( empty( ::cCodigoPropiedad2 ) .OR. alltrim( ::cCodigoPropiedad2 ) == alltrim( ( ::cFacCliL )->cCodPr2 ) ) .AND. ( empty( ::cValorPropiedad2 ) .OR. alltrim( ::cValorPropiedad2 ) == alltrim( ( ::cFacCliL )->cValPr2 ) ) .AND. ( empty( ::cLote   ) .OR. alltrim( ::cLote   ) == alltrim( ( ::cFacCliL )->cLote ) ) )
+
+            if ::lCheckConsolidacion( ( ::cFacCliL )->cRef, ( ::cFacCliL )->cAlmLin, ( ::cFacCliL )->cCodPr1, ( ::cFacCliL )->cCodPr2, ( ::cFacCliL )->cValPr1, ( ::cFacCliL )->cValPr2, ( ::cFacCliL )->cLote, ( ::cFacCliL )->dFecFac, ( ::cFacCliL )->tFecFac )
+
+               if ::validateDateTime( ( ::cFacCliL )->dFecFac, ( ::cFacCliL )->tFecFac )
+
+                  ::InsertStockFacturaClientes()
+
+               end
+
+            end
+
+         end
+
+         ( ::cFacCliL )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cFacCliL )->( ordsetfocus( nOrdFacCliL ) )
+   ( ::cFacCliS )->( ordsetfocus( nOrdFacCliS ) )
+
+RETURN ( nil )
+
+
+
+static FUNCTION TStock_aStockRectificativaCliente( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local cCodigoArticulo      := ""
+   local nOrdFacRecL          := ( ::cFacRecL )->( ordsetfocus( "cStkFast" ) )
+   local nOrdFacRecS          := ( ::cFacRecS )->( ordsetfocus( "nNumFac"  ) )
+
+   if ( ::cFacRecL )->( dbSeek( ::cCodigoArticulo + ::cCodigoAlmacen ) )
+
+      while ( ::cFacRecL )->cRef == ::cCodigoArticulo .AND. ( ::cFacRecL )->cAlmLin == ::cCodigoAlmacen .AND. !( ::cFacRecL )->( Eof() )
+
+
+
+
+
+         if ( ( empty( ::cCodigoPropiedad1 ) .OR. alltrim( ::cCodigoPropiedad1 ) == alltrim( ( ::cFacRecL )->cCodPr1 ) ) .AND. ( empty( ::cValorPropiedad1 ) .OR. alltrim( ::cValorPropiedad1 ) == alltrim( ( ::cFacRecL )->cValPr1 ) ) .AND. ( empty( ::cCodigoPropiedad2 ) .OR. alltrim( ::cCodigoPropiedad2 ) == alltrim( ( ::cFacRecL )->cCodPr2 ) ) .AND. ( empty( ::cValorPropiedad2 ) .OR. alltrim( ::cValorPropiedad2 ) == alltrim( ( ::cFacRecL )->cValPr2 ) ) .AND. ( empty( ::cLote   ) .OR. alltrim( ::cLote   ) == alltrim( ( ::cFacRecL )->cLote ) ) )
+
+            if cCodigoArticulo <> ( ::cFacRecL )->cRef + ( ::cFacRecL )->cAlmLin + ( ::cFacRecL )->cCodPr1 + ( ::cFacRecL )->cCodPr2 + ( ::cFacRecL )->cValPr1 + ( ::cFacRecL )->cValPr2 + ( ::cFacRecL )->cLote
+
+               if ::lCheckConsolidacion( ( ::cFacRecL )->cRef, ( ::cFacRecL )->cAlmLin, ( ::cFacRecL )->cCodPr1, ( ::cFacRecL )->cCodPr2, ( ::cFacRecL )->cValPr1, ( ::cFacRecL )->cValPr2, ( ::cFacRecL )->cLote, ( ::cFacRecL )->dFecFac, ( ::cFacRecL )->tFecFac )
+
+                  if ::validateDateTime( ( ::cFacRecL )->dFecFac, ( ::cFacRecL )->tFecFac )
+
+                     if ::lNumeroSerie .AND. ( ::cFacRecS )->( dbSeek( ( ::cFacRecL )->cSerie + Str( ( ::cFacRecL )->nNumFac ) + ( ::cFacRecL )->cSufFac + Str( ( ::cFacRecL )->nNumLin ) ) )
+
+                        while ( ::cFacRecS )->cSerFac + Str( ( ::cFacRecS )->nNumFac ) + ( ::cFacRecS )->cSufFac + Str( ( ::cFacRecS )->nNumLin ) == ( ::cFacRecL )->cSerie + Str( ( ::cFacRecL )->nNumFac ) + ( ::cFacRecL )->cSufFac + Str( ( ::cFacRecL )->nNumLin ) .AND. !( ::cFacRecS )->( eof() )
+
+                           ::InsertStockRectificativaClientes( .T. )
+
+                           ( ::cFacRecS )->( dbSkip() )
+
+                        end
+
+                     else
+
+                        ::InsertStockRectificativaClientes()
+
+                     end
+
+                  end
+
+               else
+
+                  cCodigoArticulo   := ( ::cFacRecL )->cRef + ( ::cFacRecL )->cAlmLin + ( ::cFacRecL )->cCodPr1 + ( ::cFacRecL )->cCodPr2 + ( ::cFacRecL )->cValPr1 + ( ::cFacRecL )->cValPr2 + ( ::cFacRecL )->cLote
+
+               end
+
+            end
+
+         end
+
+         ( ::cFacRecL )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cFacRecL )->( ordsetfocus( nOrdFacRecL ) )
+   ( ::cFacRecS )->( ordsetfocus( nOrdFacRecS ) )
+
+RETURN ( nil )
+
+
+
+static FUNCTION TStock_aStockTicketsCliente( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local cCodigoArticulo   := ""
+   local nOrdTikL          := ( ::cTikL )->( ordsetfocus( "cStkFast" ) )
+   local nOrdTikS          := ( ::cTikS )->( ordsetfocus( "nNumTik" ) )
+
+   if ( ::cTikL )->( dbSeek( ::cCodigoArticulo + ::cCodigoAlmacen ) )
+
+      while ( ::cTikL )->cCbaTil == ::cCodigoArticulo .AND. ( ::cTikL )->cAlmLin == ::cCodigoAlmacen .AND. !( ::cTikL )->( Eof() )
+
+
+
+
+
+         if ( ( empty( ::cCodigoPropiedad1 ) .OR. alltrim( ::cCodigoPropiedad1 ) == alltrim( ( ::cTikL )->cCodPr1 ) ) .AND. ( empty( ::cValorPropiedad1 ) .OR. alltrim( ::cValorPropiedad1 ) == alltrim( ( ::cTikL )->cValPr1 ) ) .AND. ( empty( ::cCodigoPropiedad2 ) .OR. alltrim( ::cCodigoPropiedad2 ) == alltrim( ( ::cTikL )->cCodPr2 ) ) .AND. ( empty( ::cValorPropiedad2 ) .OR. alltrim( ::cValorPropiedad2 ) == alltrim( ( ::cTikL )->cValPr2 ) ) .AND. ( empty( ::cLote   ) .OR. alltrim( ::cLote   ) == alltrim( ( ::cTikL )->cLote ) ) )
+
+            if cCodigoArticulo <> ( ::cTikL )->cCbaTil + ( ::cTikL )->cAlmLin + ( ::cTikL )->cCodPr1 + ( ::cTikL )->cCodPr2 + ( ::cTikL )->cValPr1 + ( ::cTikL )->cValPr2 + ( ::cTikL )->cLote
+
+               if !( ::cTikL )->lDelTil
+
+                  if ::lCheckConsolidacion( ( ::cTikL )->cCbaTil, ( ::cTikL )->cAlmLin, ( ::cTikL )->cCodPr1, ( ::cTikL )->cCodPr2, ( ::cTikL )->cValPr1, ( ::cTikL )->cValPr2, ( ::cTikL )->cLote, ( ::cTikL )->dFecTik, ( ::cTikL )->tFecTik )
+
+                     if ::validateDateTime( ( ::cTikL )->dFecTik, ( ::cTikL )->tFecTik )
+
+                        if ::lNumeroSerie .AND. ( ::cTikS )->( dbSeek( ( ::cTikL )->cSerTil + ( ::cTikL )->cNumTil + ( ::cTikL )->cSufTil + Str( ( ::cTikl )->nNumLin ) ) )
+
+                           while ( ::cTikS )->cSerTiK + ( ::cTiks )->cNumTik + ( ::cTikS )->CSUFTIK + Str( ( ::cTikS )->nNumLin ) == ( ::cTikl )->cSerTil + ( ::cTikL )->cNumTil + ( ::cTikL )->cSufTil + Str( ( ::cTikL )->nNumLin ) .AND. !( ::cTikS )->( eof() )
+
+                              ::InsertStockTiketsClientes( .T. )
+
+                              ( ::cTikS )->( dbSkip() )
+
+                           end
+
+                        else
+
+                           ::InsertStockTiketsClientes()
+
+                        end
+
+                     end
+
+                  else
+
+                     cCodigoArticulo := ( ::cTikL )->cCbaTil + ( ::cTikL )->cAlmLin + ( ::cTikL )->cCodPr1 + ( ::cTikL )->cCodPr2 + ( ::cTikL )->cValPr1 + ( ::cTikL )->cValPr2 + ( ::cTikL )->cLote
+
+                  end
+
+               end
+
+            end
+
+         end
+
+         ( ::cTikL )->( dbSkip() )
+
+      end
+
+   end
+
+
+
+   cCodigoArticulo   := ""
+
+   ( ::cTikL )->( ordsetfocus( "cStkComb" ) )
+
+   if ( ::cTikL )->( dbSeek( ::cCodigoArticulo + ::cCodigoAlmacen ) )
+
+      while ( ::cTikL )->cComTil == ::cCodigoArticulo .AND. ( ::cTikL )->cAlmLin == ::cCodigoAlmacen .AND. !( ::cTikL )->( eof() )
+
+
+
+
+
+         if ( ( empty( ::cCodigoPropiedad1 ) .OR. alltrim( ::cCodigoPropiedad1 ) == alltrim( ( ::cTikL )->cCodPr1 ) ) .AND. ( empty( ::cValorPropiedad1 ) .OR. alltrim( ::cValorPropiedad1 ) == alltrim( ( ::cTikL )->cValPr1 ) ) .AND. ( empty( ::cCodigoPropiedad2 ) .OR. alltrim( ::cCodigoPropiedad2 ) == alltrim( ( ::cTikL )->cCodPr2 ) ) .AND. ( empty( ::cValorPropiedad2 ) .OR. alltrim( ::cValorPropiedad2 ) == alltrim( ( ::cTikL )->cValPr2 ) ) .AND. ( empty( ::cLote   ) .OR. alltrim( ::cLote   ) == alltrim( ( ::cTikL )->cLote ) ) )
+
+            if cCodigoArticulo <> ( ::cTikL )->cCbaTil + ( ::cTikL )->cAlmLin + ( ::cTikL )->cCodPr1 + ( ::cTikL )->cCodPr2 + ( ::cTikL )->cValPr1 + ( ::cTikL )->cValPr2 + ( ::cTikL )->cLote
+
+               if !( ::cTikL )->lDelTil
+
+                  if ::lCheckConsolidacion( ( ::cTikL )->cComTil, ( ::cTikL )->cAlmLin, ( ::cTikL )->cCodPr1, ( ::cTikL )->cCodPr2, ( ::cTikL )->cValPr1, ( ::cTikL )->cValPr2, ( ::cTikL )->cLote, ( ::cTikL )->dFecTik, ( ::cTikL )->tFecTik )
+
+                     if ::validateDateTime( ( ::cTikL )->dFecTik, ( ::cTikL )->tFecTik )
+
+                        ::InsertStockTiketsClientes( .F. , .T. )
+
+                     end
+
+                  else
+
+                     cCodigoArticulo := ( ::cTikL )->cCbaTil + ( ::cTikL )->cAlmLin + ( ::cTikL )->cCodPr1 + ( ::cTikL )->cCodPr2 + ( ::cTikL )->cValPr1 + ( ::cTikL )->cValPr2 + ( ::cTikL )->cLote
+
+                  end
+
+               end
+
+            end
+
+         end
+
+         ( ::cTikL )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cTikL )->( ordsetfocus( nOrdTikL ) )
+   ( ::cTikS )->( ordsetfocus( nOrdTikS ) )
+
+RETURN ( nil )
+
+
+
+static FUNCTION TStock_aStockProduccion( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local cCodigoArticulo   := ""
+   local nOrdProL          := ( ::cProducL )->( ordsetfocus( "cStkFast" ) )
+   local nOrdProS          := ( ::cProducS )->( ordsetfocus( "cNumOrd" ) )
+
+   if ( ::cProducL )->( dbSeek( ::cCodigoArticulo + ::cCodigoAlmacen ) )
+
+      while ( ::cProducL )->cCodArt == ::cCodigoArticulo .AND. ( ::cProducL )->cAlmOrd == ::cCodigoAlmacen .AND. !( ::cProducL )->( Eof() )
+
+
+
+
+
+         if ( ( empty( ::cCodigoPropiedad1 ) .OR. alltrim( ::cCodigoPropiedad1 ) == alltrim( ( ::cProducL )->cCodPr1 ) ) .AND. ( empty( ::cValorPropiedad1 ) .OR. alltrim( ::cValorPropiedad1 ) == alltrim( ( ::cProducL )->cValPr1 ) ) .AND. ( empty( ::cCodigoPropiedad2 ) .OR. alltrim( ::cCodigoPropiedad2 ) == alltrim( ( ::cProducL )->cCodPr2 ) ) .AND. ( empty( ::cValorPropiedad2 ) .OR. alltrim( ::cValorPropiedad2 ) == alltrim( ( ::cProducL )->cValPr2 ) ) .AND. ( empty( ::cLote   ) .OR. alltrim( ::cLote   ) == alltrim( ( ::cProducL )->cLote ) ) )
+
+            if cCodigoArticulo <> ( ::cProducL )->cCodArt + ( ::cProducL )->cAlmOrd + ( ::cProducL )->cCodPr1 + ( ::cProducL )->cCodPr2 + ( ::cProducL )->cValPr1 + ( ::cProducL )->cValPr2 + ( ::cProducL )->cLote
+
+               if ::lCheckConsolidacion( ( ::cProducL )->cCodArt, ( ::cProducL )->cAlmOrd, ( ::cProducL )->cCodPr1, ( ::cProducL )->cCodPr2, ( ::cProducL )->cValPr1, ( ::cProducL )->cValPr2, ( ::cProducL )->cLote, ( ::cProducL )->dFecOrd, ( ::cProducL )->cHorIni )
+
+                  if ::validateDateTime( ( ::cProducL )->dFecOrd, ( ::cProducL )->cHorIni )
+
+                     if ::lNumeroSerie .AND. ( ::cProducS )->( dbSeek( ( ::cProducL )->cSerOrd + Str( ( ::cProducL )->nNumOrd ) + ( ::cProducL )->cSufOrd + Str( ( ::cProducL )->nNumLin ) ) )
+
+                        while ( ::cProducS )->cSerOrd + Str( ( ::cProducS )->nNumOrd ) + ( ::cProducS )->cSufOrd + Str( ( ::cProducS )->nNumLin ) == ( ::cProducL )->cSerOrd + Str( ( ::cProducL )->nNumOrd ) + ( ::cProducL )->cSufOrd + Str( ( ::cProducL )->nNumLin ) .AND. !( ::cProducS )->( eof() )
+
+                           ::InsertStockMaterialesProducidos( .T. )
+
+                           ( ::cProducS )->( dbSkip() )
+
+                        end
+
+                     else
+
+                        ::InsertStockMaterialesProducidos()
+
+                     end
+
+                  end
+
+               else
+
+                  cCodigoArticulo   := ( ::cProducL )->cCodArt + ( ::cProducL )->cAlmOrd + ( ::cProducL )->cCodPr1 + ( ::cProducL )->cCodPr2 + ( ::cProducL )->cValPr1 + ( ::cProducL )->cValPr2 + ( ::cProducL )->cLote
+
+               end
+
+            end
+
+         end
+
+         ( ::cProducL )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cProducL )->( ordsetfocus( nOrdProL ) )
+   ( ::cProducS )->( ordsetfocus( nOrdProS ) )
+
+RETURN ( nil )
+
+
+
+static FUNCTION TStock_aStockMateriaPrima( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local cCodigoArticulo   := ""
+   local nOrdProM          := ( ::cProducM )->( ordsetfocus( "cStkFast" ) )
+   local nOrdProP          := ( ::cProducP )->( ordsetfocus( "cNumOrd" ) )
+
+   if ( ::cProducM )->( dbSeek( ::cCodigoArticulo + ::cCodigoAlmacen ) )
+
+      while ( ::cProducM )->cCodArt == ::cCodigoArticulo .AND. ( ::cProducM )->cAlmOrd == ::cCodigoAlmacen .AND. !( ::cProducM )->( eof() )
+
+
+
+
+
+         if ( ( empty( ::cCodigoPropiedad1 ) .OR. alltrim( ::cCodigoPropiedad1 ) == alltrim( ( ::cProducM )->cCodPr1 ) ) .AND. ( empty( ::cValorPropiedad1 ) .OR. alltrim( ::cValorPropiedad1 ) == alltrim( ( ::cProducM )->cValPr1 ) ) .AND. ( empty( ::cCodigoPropiedad2 ) .OR. alltrim( ::cCodigoPropiedad2 ) == alltrim( ( ::cProducM )->cCodPr2 ) ) .AND. ( empty( ::cValorPropiedad2 ) .OR. alltrim( ::cValorPropiedad2 ) == alltrim( ( ::cProducM )->cValPr2 ) ) .AND. ( empty( ::cLote   ) .OR. alltrim( ::cLote   ) == alltrim( ( ::cProducM )->cLote ) ) )
+
+            if cCodigoArticulo <> ( ::cProducM )->cCodArt + ( ::cProducM )->cAlmOrd + ( ::cProducM )->cCodPr1 + ( ::cProducM )->cCodPr2 + ( ::cProducM )->cValPr1 + ( ::cProducM )->cValPr2 + ( ::cProducM )->cLote
+
+               if ::lCheckConsolidacion( ( ::cProducM )->cCodArt, ( ::cProducM )->cAlmOrd, ( ::cProducM )->cCodPr1, ( ::cProducM )->cCodPr2, ( ::cProducM )->cValPr1, ( ::cProducM )->cValPr2, ( ::cProducM )->cLote, ( ::cProducM )->dFecOrd, ( ::cProducM )->cHorIni )
+
+                  if ::validateDateTime( ( ::cProducM )->dFecOrd, ( ::cProducM )->cHorIni )
+
+                     if ::lNumeroSerie .AND. ( ::cProducP )->( dbSeek( ( ::cProducM )->cSerOrd + Str( ( ::cProducM )->nNumOrd ) + ( ::cProducM )->cSufOrd + Str( ( ::cProducM )->nNumLin ) ) )
+
+                        while ( ::cProducP )->cSerOrd + Str( ( ::cProducP )->nNumOrd ) + ( ::cProducP )->cSufOrd + Str( ( ::cProducP )->nNumLin ) == ( ::cProducM )->cSerOrd + Str( ( ::cProducM )->nNumOrd ) + ( ::cProducM )->cSufOrd + Str( ( ::cProducM )->nNumLin ) .AND. !( ::cProducP )->( eof() )
+
+                           ::InsertStockMateriasPrimas( .T. )
+
+                           ( ::cProducP )->( dbSkip() )
+
+                        end
+
+                     else
+
+                        ::InsertStockMateriasPrimas()
+
+                     end
+
+                  end
+
+               else
+
+                  cCodigoArticulo   := ( ::cProducM )->cCodArt + ( ::cProducM )->cAlmOrd + ( ::cProducM )->cCodPr1 + ( ::cProducM )->cCodPr2 + ( ::cProducM )->cValPr1 + ( ::cProducM )->cValPr2 + ( ::cProducM )->cLote
+
+               end
+
+            end
+
+         end
+
+         ( ::cProducM )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cProducM )->( ordsetfocus( nOrdProM ) )
+   ( ::cProducP )->( ordsetfocus( nOrdProP ) )
+
+RETURN ( nil )
+
+
+
+
+
+
+static FUNCTION TStock_aStockPendiente( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local nTotal            := 0
+   local nTotalRecibido    := 0
+   local nOrdPedPrvL       := ( ::cPedPrvL )->( ordsetfocus( "cStkFast" ) )
+   local nOrdAlbPrvL       := ( ::cAlbPrvL )->( ordsetfocus( "cPedRef" ) )
+
+   if ( ::cPedPrvL )->( dbSeek( ::cCodigoArticulo + ::cCodigoAlmacen ) )
+
+      while ( ::cPedPrvL )->cRef == ::cCodigoArticulo .AND. ( ::cPedPrvL )->cAlmLin == ::cCodigoAlmacen .AND. !( ::cPedPrvL )->( eof() )
+
+         nTotal            := nTotNPedPrv( ::cPedPrvL )
+         nTotalRecibido    := 0
+
+
+
+         if ( ::cAlbPrvL )->( dbSeek( ( ::cPedPrvL )->cSerPed + Str( ( ::cPedPrvL )->nNumPed ) + ( ::cPedPrvL )->cSufPed + ::cCodigoArticulo ) )
+
+            while ( ::cPedPrvL )->cSerPed + Str( ( ::cPedPrvL )->nNumPed ) + ( ::cPedPrvL )->cSufPed + ::cCodigoArticulo == ( ::cAlbPrvL )->cCodPed + ( ::cAlbPrvL )->cRef .AND. !( ::cAlbPrvL )->( eof() )
+
+
+
+
+
+
+               if ( ::cAlbPrvL )->cAlmLin == ::cCodigoAlmacen .AND. ( ::cAlbPrvL )->cCodPr1 == ( ::cPedPrvL )->cCodPr1 .AND. ( ::cAlbPrvL )->cCodPr2 == ( ::cPedPrvL )->cCodPr2 .AND. ( ::cAlbPrvL )->cValPr1 == ( ::cPedPrvL )->cValPr1 .AND. ( ::cAlbPrvL )->cValPr2 == ( ::cPedPrvL )->cValPr2 .AND. ( ::cAlbPrvL )->cLote == ( ::cPedPrvL )->cLote
+
+                  nTotal            -= nTotNAlbPrv( ::cAlbPrvL )
+                  nTotalRecibido    += nTotNAlbPrv( ::cAlbPrvL )
+
+               end
+
+               ( ::cAlbPrvL )->( dbSkip() )
+
+            end
+
+         end
+
+
+
+         ::InsertStockPendiente( nTotal, nTotalRecibido )
+
+         ( ::cPedPrvL )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::cPedPrvL )->( ordsetfocus( nOrdPedPrvL ) )
+   ( ::cAlbPrvL )->( ordsetfocus( nOrdAlbPrvL ) )
+
+RETURN ( nil )
+
+
+
+static FUNCTION TStock_InsertStockPendiente( nTotal, nTotalRecibido ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   with object ( SStock():New() )
+
+      :cTipoDocumento            := "01"
+      :cCodigo                   := ( ::cPedPrvL )->cRef
+      :cNumeroDocumento          := ( ::cPedPrvL )->cSerPed + "/" + alltrim( Str( ( ::cPedPrvL )->nNumPed ) )
+      :cDelegacion               := ( ::cPedPrvL )->cSufPed
+      :dFechaDocumento           := dFecPedPrv( ( ::cPedPrvL )->cSerPed + Str( ( ::cPedPrvL )->nNumPed ) + ( ::cPedPrvL )->cSufPed, ::cPedPrvT )
+      :tFechaDocumento           := ""
+      :cCodigoAlmacen            := ( ::cPedPrvL )->cAlmLin
+      :cCodigoPropiedad1         := ( ::cPedPrvL )->cCodPr1
+      :cCodigoPropiedad2         := ( ::cPedPrvL )->cCodPr2
+      :cValorPropiedad1          := ( ::cPedPrvL )->cValPr1
+      :cValorPropiedad2          := ( ::cPedPrvL )->cValPr2
+      :cLote                     := ( ::cPedPrvL )->cLote
+      :nPendientesRecibir        := if( nTotal > 0, nTotal, 0 )
+      :nUnidadesRecibidas        := nTotalRecibido
+      :cCodigoTercero            := PedidosProveedoresModel():getField( ( ::cPedPrvL )->cSerPed, ( ::cPedPrvL )->nNumPed, ( ::cPedPrvL )->cSufPed, "cCodPrv" )
+      :cNombreTercero            := PedidosProveedoresModel():getField( ( ::cPedPrvL )->cSerPed, ( ::cPedPrvL )->nNumPed, ( ::cPedPrvL )->cSufPed, "cNomPrv" )
+
+      ::Integra( hb_QWith() )
+
+   end
+
+RETURN ( nil )
+
+
+
+Static Function SeekOnStock( cSeek, oBrw )
+
+   local nAt
+
+   nAt               := aScan( oBrw:aArrayData, {|o| alltrim( Upper( cValToChar( o:cNumeroSerie ) ) ) == alltrim( Upper( cSeek ) ) } )
+   if nAt > 0
+      oBrw:nArrayAt  := nAt
+   endif
+
+   oBrw:Refresh()
+
+RETURN ( .T. )
+
+
+
+Static Function InsertOnStock( oCol, oBrw, oDlg, oBrwSer )
+
+   if ( oBrwSer:nArrayAt == Len( oBrwSer:aArrayData ) )
+
+      oDlg:End( 1 )
+
+   else
+
+
+      Eval( oCol:bOnPostEdit, oCol, oBrw:aArrayData[ oBrw:nArrayAt ]:cNumeroSerie )
+
+      oBrwSer:GoDown()
+
+      oBrw:aArrayData[ oBrw:nArrayAt ]:nUnidades--
+
+      if ( oBrw:aArrayData[ oBrw:nArrayAt ]:nUnidades == 0 )
+
+         hb_ADel( oBrw:aArrayData, oBrw:nArrayAt, .T. )
+
+         oBrw:Refresh()
+
+      end
+
+   end
+
+RETURN ( .T. )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_HB_CLASS STemporal ; function STemporal ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "STemporal", iif( .F., { }, { @HBObject() } ), @STemporal() ) ) ;
+
+   _HB_MEMBER { dFecMov } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dFecMov"}, .F. )
+   _HB_MEMBER { cTimMov } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTimMov"}, .F. )
+   _HB_MEMBER { nTotEnt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotEnt"}, .F. )
+   _HB_MEMBER { nTotSal } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotSal"}, .F. )
+   _HB_MEMBER { nImpEnt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nImpEnt"}, .F. )
+   _HB_MEMBER { cTipo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTipo"}, .F. )
+   _HB_MEMBER { cNumero } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNumero"}, .F. )
+
+   _HB_MEMBER New( dFecMov, cTimMov, nTotEnt, nTotSal, nImpEnt, cTipo, cNumero); oClass:AddMethod( "New", @STemporal_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS STemporal ;
+
+
+
+static FUNCTION STemporal_New( dFecMov, cTimMov, nTotEnt, nTotSal, nImpEnt, cTipo, cNumero ) ; local Self AS CLASS STemporal := QSelf() AS CLASS STemporal
+
+   If( cTipo == nil, cTipo := "", ) ;
+   If( cNumero == nil, cNumero := "", ) ;
+
+   ::dFecMov         := dFecMov
+   ::cTimMov         := cTimMov
+   ::nTotEnt         := Abs( nTotEnt )
+   ::nTotSal         := Abs( nTotSal )
+   ::nImpEnt         := Abs( nImpEnt )
+   ::cTipo           := cTipo
+   ::cNumero         := cNumero
+
+RETURN ( Self )
+
+
+
+
+
+
+_HB_CLASS SStock ; function SStock ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "SStock", iif( .F., { }, { @HBObject() } ), @SStock() ) ) ;
+
+   _HB_MEMBER { cAlias } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAlias"}, .F. )
+   _HB_MEMBER { cCodigo } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigo"}, .F. )
+   _HB_MEMBER { cDelegacion } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDelegacion"}, .F. )
+   _HB_MEMBER { dFechaDocumento } ; oClass:AddMultiData(, Ctod( "" ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dFechaDocumento"}, .F. )
+   _HB_MEMBER { tFechaDocumento } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"tFechaDocumento"}, .F. )
+   _HB_MEMBER { dConsolidacion } ; oClass:AddMultiData(, Ctod( "" ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dConsolidacion"}, .F. )
+   _HB_MEMBER { cCodigoAlmacen } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoAlmacen"}, .F. )
+   _HB_MEMBER { cCodigoPropiedad1 } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoPropiedad1"}, .F. )
+   _HB_MEMBER { cCodigoPropiedad2 } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoPropiedad2"}, .F. )
+   _HB_MEMBER { cValorPropiedad1 } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cValorPropiedad1"}, .F. )
+   _HB_MEMBER { cValorPropiedad2 } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cValorPropiedad2"}, .F. )
+   _HB_MEMBER { cLote } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cLote"}, .F. )
+   _HB_MEMBER { dFechaCaducidad } ; oClass:AddMultiData(, Ctod( "" ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dFechaCaducidad"}, .F. )
+   _HB_MEMBER { cNumeroSerie } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNumeroSerie"}, .F. )
+   _HB_MEMBER { nUnidades } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nUnidades"}, .F. )
+   _HB_MEMBER { nPendientesRecibir } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nPendientesRecibir"}, .F. )
+   _HB_MEMBER { nPendientesEntregar } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nPendientesEntregar"}, .F. )
+   _HB_MEMBER { cNumeroDocumento } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNumeroDocumento"}, .F. )
+   _HB_MEMBER { cTipoDocumento } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTipoDocumento"}, .F. )
+   _HB_MEMBER { nBultos } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nBultos"}, .F. )
+   _HB_MEMBER { nCajas } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nCajas"}, .F. )
+   _HB_MEMBER { nUnidadesEntregadas } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nUnidadesEntregadas"}, .F. )
+   _HB_MEMBER { nUnidadesRecibidas } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nUnidadesRecibidas"}, .F. )
+   _HB_MEMBER { cCodigoTercero } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoTercero"}, .F. )
+   _HB_MEMBER { cNombreTercero } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNombreTercero"}, .F. )
+
+
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @SStock_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Documento(); oClass:AddMethod( "Documento", @SStock_Documento(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Say(); oClass:AddMethod( "Say", @SStock_Say(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Save( oDbfStock); oClass:AddMethod( "Save", @SStock_Save(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS SStock ;
+
+
+
+static FUNCTION SStock_New( ) ; local Self AS CLASS SStock := QSelf() AS CLASS SStock
+
+   ::cCodigo               := ""
+   ::cDelegacion           := ""
+   ::dFechaDocumento       := Ctod("")
+   ::cCodigoAlmacen        := ""
+   ::cCodigoPropiedad1     := ""
+   ::cCodigoPropiedad2     := ""
+   ::cValorPropiedad1      := ""
+   ::cValorPropiedad2      := ""
+   ::cLote                 := ""
+   ::cNumeroSerie          := ""
+   ::dFechaCaducidad       := Ctod( "" )
+   ::nUnidades             := 0
+   ::nPendientesRecibir    := 0
+   ::nPendientesEntregar   := 0
+   ::cNumeroDocumento      := ""
+   ::cTipoDocumento        := ""
+   ::nBultos               := 0
+   ::nCajas                := 0
+   ::nUnidadesEntregadas   := 0
+   ::nUnidadesRecibidas    := 0
+   ::cCodigoTercero        := ""
+   ::cNombreTercero        := ""
+
+RETURN ( Self )
+
+
+
+static FUNCTION SStock_Documento( ) ; local Self AS CLASS SStock := QSelf() AS CLASS SStock
+
+   local cDocumento     := ""
+
+   cDocumento           += cTextDocument( ::cTipoDocumento ) + space(1)
+
+   if !Empty( ::cNumeroDocumento )
+      cDocumento           += alltrim( ::cNumeroDocumento ) + space(1)
+   end
+
+   if !Empty( ::cNombreTercero )
+      cDocumento           += "(" + alltrim( ::cNombreTercero ) + ")" + space(1)
+   end
+
+   cDocumento           += "de fecha " + dtoc( ::dFechaDocumento )
+   cDocumento           += if( empty(::tFechaDocumento), "", " a las " + trans( ::tFechaDocumento, "@R 99:99:99" ) )
+
+RETURN ( cDocumento )
+
+
+
+static FUNCTION SStock_Say( ) ; local Self AS CLASS SStock := QSelf() AS CLASS SStock
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   RETURN ( "Alias"                    + " : " +  ::cAlias                                + "," + Chr(13)+Chr(10) +  "Codigo"                   + " : " +  ::cCodigo                               + "," + Chr(13)+Chr(10) +  "CodigoAlmacen"            + " : " +  ::cCodigoAlmacen                        + "," + Chr(13)+Chr(10) +  "CodigoPropiedad1"         + " : " +  ::cCodigoPropiedad1                     + "," + Chr(13)+Chr(10) +  "CodigoPropiedad2"         + " : " +  ::cCodigoPropiedad2                     + "," + Chr(13)+Chr(10) +  "ValorPropiedad1"          + " : " +  ::cValorPropiedad1                      + "," + Chr(13)+Chr(10) +  "ValorPropiedad2"          + " : " +  ::cValorPropiedad2                      + "," + Chr(13)+Chr(10) +  "Lote"                     + " : " +  ::cLote                                 + "," + Chr(13)+Chr(10) +  "NumeroSerie"              + " : " +  ::cNumeroSerie                          + "," + Chr(13)+Chr(10) +  "Unidades"                 + " : " +  Str( ::nUnidades )                      + "," + Chr(13)+Chr(10) +  "PendientesRecibir"        + " : " +  Str( ::nPendientesRecibir )             + "," + Chr(13)+Chr(10) +  "PendientesEntregar"       + " : " +  Str( ::nPendientesEntregar )            + "," + Chr(13)+Chr(10) +  "Unidades != 0"            + " : " +  cValToChar( ::nUnidades <> 0 )          + "," + Chr(13)+Chr(10) +  "PendientesRecibir != 0"   + " : " +  cValToChar( ::nPendientesRecibir <> 0 ) + "," + Chr(13)+Chr(10) +  "PendientesEntregar != 0"  + " : " +  cValToChar( ::nPendientesEntregar <> 0 ) )
+
+
+
+static FUNCTION SStock_Save( oDbfStock ) ; local Self AS CLASS SStock := QSelf() AS CLASS SStock
+
+   oDbfStock:Append()
+
+   oDbfStock:cCodigo    := ::cCodigo
+   oDbfStock:cDelega    := ::cDelegacion
+   oDbfStock:dFecDoc    := ::dFechaDocumento
+   oDbfStock:cAlmacen   := ::cCodigoAlmacen
+   oDbfStock:cCodPrp1   := ::cCodigoPropiedad1
+   oDbfStock:cCodPrp2   := ::cCodigoPropiedad2
+   oDbfStock:cValPrp1   := ::cValorPropiedad1
+   oDbfStock:cValPrp2   := ::cValorPropiedad2
+   oDbfStock:cLote      := ::cLote
+   oDbfStock:cNumSer    := ::cNumeroSerie
+   oDbfStock:dFecCad    := ::dFechaCaducidad
+   oDbfStock:nUnd       := ::nUnidades
+   oDbfStock:nPdtRec    := ::nPendientesRecibir
+   oDbfStock:nPdtEnt    := ::nPendientesEntregar
+   oDbfStock:nEntreg    := ::nUnidadesEntregadas
+   oDbfStock:nRecibi    := ::nUnidadesRecibidas
+   oDbfStock:cNumDoc    := ::cNumeroDocumento
+   oDbfStock:cTipDoc    := ::cTipoDocumento
+
+   oDbfStock:Save()
+
+RETURN (  Self )
+
+
+
+
+
+
+static FUNCTION TStock_CreateTemporalFiles( cPath ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   local cFile
+   local aStock
+
+   If( cPath == nil, cPath := cPatTmp(), ) ;
+
+   cFile                := "Stock" + strtran( alltrim( str( seconds() ) ), ".", "" )
+
+   ::cDbfStock          := cFile + ".dbf"
+   ::cCdxStock          := cFile + ".cdx"
+
+   ::DeleteTemporalFiles( cPath )
+
+   ::oDbfStock := DbfServer( ( ::cDbfStock ), "StockDbf" ):New( ( ::cDbfStock ), "StockDbf", ( cLocalDriver() ),, ( cPath ) )
+
+   ::oDbfStock:AddField( "cCodigo", "C", 18, 0,,,,, "Código de artículo", .F.,, .F., {} )
+   ::oDbfStock:AddField( "cDelega", "C", 3, 0,,,,, "Delegación", .F.,, .F., {} )
+   ::oDbfStock:AddField( "dFecDoc", "D", 8, 0,,,,, "Fecha del documento", .F.,, .F., {} )
+   ::oDbfStock:AddField( "cAlmacen", "C", 16, 0,,,,, "Código del almacen", .F.,, .F., {} )
+   ::oDbfStock:AddField( "cCodPrp1", "C", 20, 0,,,,, "Código de la primera propiedad", .F.,, .F., {} )
+   ::oDbfStock:AddField( "cCodPrp2", "C", 20, 0,,,,, "Código de la segunda propiedad", .F.,, .F., {} )
+   ::oDbfStock:AddField( "cValPrp1", "C", 20, 0,,,,, "Valor de la primera propiedad", .F.,, .F., {} )
+   ::oDbfStock:AddField( "cValPrp2", "C", 20, 0,,,,, "Valor de la segunda propiedad", .F.,, .F., {} )
+   ::oDbfStock:AddField( "cLote", "C", 64, 0,,,,, "Número de lote", .F.,, .F., {} )
+   ::oDbfStock:AddField( "cNumSer", "C", 30, 0,,,,, "Número de serie", .F.,, .F., {} )
+   ::oDbfStock:AddField( "dFecCad", "D", 8, 0,,,,, "Fecha de caducidad", .F.,, .F., {} )
+   ::oDbfStock:AddField( "nUnd", "N", 16, 6,,,,, "Total unidades", .F.,, .F., {} )
+   ::oDbfStock:AddField( "nPdtRec", "N", 16, 6,,,,, "Total unidades pendientes de recibir", .F.,, .F., {} )
+   ::oDbfStock:AddField( "nPdtEnt", "N", 16, 6,,,,, "Total unidades pendientes de entregar", .F.,, .F., {} )
+   ::oDbfStock:AddField( "nEntreg", "N", 16, 6,,,,, "Total unidades entregadas", .F.,, .F., {} )
+   ::oDbfStock:AddField( "nRecibi", "N", 16, 6,,,,, "Total unidades recibidas", .F.,, .F., {} )
+   ::oDbfStock:AddField( "cNumDoc", "C", 13, 0,,,,, "Número del documento lote", .F.,, .F., {} )
+   ::oDbfStock:AddField( "cTipDoc", "C", 12, 0,,,,, "Tipo del documento", .F.,, .F., {} )
+
+   ::oDbfStock:AddIndex( "cCodArt", ( ::cCdxStock ), "cCodigo + cAlmacen + cValPrp1 + cValPrp2 + cLote", "!Deleted()",, .F., .F., "Código",,, .F., .F. )
+   ::oDbfStock:AddIndex( "cCodAlm", ( ::cCdxStock ), "cAlmacen + cCodigo + cValPrp1 + cValPrp2 + cLote", "!Deleted()",, .F., .F., "Almacen",,, .F., .F. )
+   ::oDbfStock:AddIndex( "dFecCad", ( ::cCdxStock ), "Dtos( dFecCad ) + cLote", "!Deleted()",, .F., .F., "Fecha caducidad",,, .F., .F. )
+
+
+
+   ::oDbfStock:Activate( .F., .F. )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TStock_DeleteTemporalFiles( cPath ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   If( cPath == nil, cPath := cPatTmp(), ) ;
+
+   if !Empty( ::oDbfStock ) .AND. ::oDbfStock:Used()
+      ::oDbfStock:Close()
+   end
+
+   dbfErase( ::cDbfStock )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TStock_Zap( ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   if ( ::oDbf )->( Used() )
+
+      if !( ::oDbf )->( isShared() )
+         ( ::oDbf )->( __dbZap() )
+      else
+
+         ( ::oDbf )->( dbGoTop() )
+         while !( ::oDbf )->( eof() )
+
+            if dbLock( ::oDbf )
+               ( ::oDbf )->( dbDelete() )
+               ( ::oDbf )->( dbUnLock() )
+            end
+
+            ( ::oDbf )->( dbSkip( 0 ) )
+
+         end
+
+      end
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TStock_validateDateTime( dFecMov, tTimMov ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   if !empty( ::dFechaInicio ) .AND. dFecMov < ::dFechaInicio
+      RETURN .F.
+   end
+
+   if !empty( ::dFechaInicio ) .AND. !empty( ::tHoraInicio ) .AND. dtos( dFecMov ) + tTimMov < dtos( ::dFechaInicio ) + ::tHoraInicio
+      RETURN .F.
+   end
+
+   if !empty( ::dFechaFin ) .AND. dFecMov > ::dFechaFin
+      RETURN .F.
+   end
+
+   if !empty( ::dFechaFin ) .AND. !empty( ::tHoraFin ) .AND. dtos( dFecMov ) + tTimMov > dtos( ::dFechaFin ) + ::tHoraFin
+      RETURN .F.
+   end
+
+RETURN .T.
+
+
+
+static FUNCTION TStock_getFechaHoraConsolidacion( dFechaMovimiento, cHoraMovimiento ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+   if !empty( ::dFechaFin ) .AND. dFechaMovimiento > ::dFechaFin
+      RETURN ( nil )
+   end
+
+   if !empty( ::dFechaFin ) .AND. !empty( ::tHoraFin ) .AND. dtos( dFechaMovimiento ) + cHoraMovimiento > dtos( ::dFechaFin ) + ::tHoraFin
+      RETURN ( nil )
+   end
+
+RETURN ( dtos( dFechaMovimiento ) + cHoraMovimiento )
+
+
+
+static FUNCTION TStock_nRiesgo( idCliente ) ; local Self AS CLASS TStock := QSelf() AS CLASS TStock
+
+RETURN ( ClientesModel():Riesgo( idCliente ) )

@@ -1,0 +1,2750 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 8 ".\.\Prg\TRenVta.prg"
+_HB_CLASS TRenVta ; function TRenVta ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TRenVta", iif( .T., { @TInfPArt() }, { @HBObject() } ), @TRenVta() ) ) ;
+
+   _HB_MEMBER { AS LOGIC lExcMov } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lExcMov"}, .F. )
+   _HB_MEMBER { AS LOGIC lCosAct } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lCosAct"}, .F. )
+   _HB_MEMBER { AS OBJECT oAlbCliT } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAlbCliT"}, .F. )
+   _HB_MEMBER { AS OBJECT oAlbCliL } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAlbCliL"}, .F. )
+   _HB_MEMBER { AS OBJECT oFacCliT } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacCliT"}, .F. )
+   _HB_MEMBER { AS OBJECT oFacCliL } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacCliL"}, .F. )
+   _HB_MEMBER { AS OBJECT oFacCliP } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacCliP"}, .F. )
+   _HB_MEMBER { AS OBJECT oFacRecT } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacRecT"}, .F. )
+   _HB_MEMBER { AS OBJECT oFacRecL } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacRecL"}, .F. )
+   _HB_MEMBER { AS OBJECT oTikCliT } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTikCliT"}, .F. )
+   _HB_MEMBER { AS OBJECT oTikCliL } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTikCliL"}, .F. )
+   _HB_MEMBER { AS OBJECT oTikCliP } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTikCliP"}, .F. )
+   _HB_MEMBER { AS OBJECT oDbfArt } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfArt"}, .F. )
+   _HB_MEMBER { AS OBJECT oAlbPrvL } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAlbPrvL"}, .F. )
+   _HB_MEMBER { AS OBJECT oFacPrvL } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacPrvL"}, .F. )
+   _HB_MEMBER { AS OBJECT oRctPrvL } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oRctPrvL"}, .F. )
+   _HB_MEMBER { AS OBJECT oIva } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oIva"}, .F. )
+   _HB_MEMBER { AS OBJECT oDivisas } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDivisas"}, .F. )
+
+   _HB_MEMBER { AS NUMERIC nTotVentas } ; oClass:AddMultiData( "NUMERIC", 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotVentas"}, .F. )
+   _HB_MEMBER { AS NUMERIC nTotUnidades } ; oClass:AddMultiData( "NUMERIC", 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotUnidades"}, .F. )
+   _HB_MEMBER { AS NUMERIC nTotCosto } ; oClass:AddMultiData( "NUMERIC", 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotCosto"}, .F. )
+
+   _HB_MEMBER { oEstado } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oEstado"}, .F. )
+   _HB_MEMBER { cEstado } ; oClass:AddMultiData(, "Todos", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cEstado"}, .F. )
+   _HB_MEMBER { AS ARRAY aEstado } ; oClass:AddMultiData( "ARRAY", { "Cobrados", "Parcialmente", "Pendientes", "Todos" }, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aEstado"}, .F. )
+
+   _HB_MEMBER Create(); oClass:AddMethod( "Create", @TRenVta_Create(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles(); oClass:AddMethod( "OpenFiles", @TRenVta_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @TRenVta_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lResource( cFld); oClass:AddMethod( "lResource", @TRenVta_lResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lGenerate(); oClass:AddMethod( "lGenerate", @TRenVta_lGenerate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ValidAlbaranCliente(); oClass:AddMethod( "ValidAlbaranCliente", @TRenVta_ValidAlbaranCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ValidFacturaCliente(); oClass:AddMethod( "ValidFacturaCliente", @TRenVta_ValidFacturaCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ValidRectifiactivaCliente(); oClass:AddMethod( "ValidRectifiactivaCliente", @TRenVta_ValidRectifiactivaCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ValidTicketCliente(); oClass:AddMethod( "ValidTicketCliente", @TRenVta_ValidTicketCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TRenVta ;
+
+
+
+static FUNCTION TRenVta_Create( ) ; local Self AS CLASS TRenVta := QSelf() AS CLASS TRenVta
+
+   ::AddField( "cNumDoc", "C", 14, 0, {|| "@R #/##########/##" },    "Documento",         .T., "Documento",                12, .F. )
+   ::AddField( "cTipDoc", "C", 12, 0, {|| "@!" },                    "Tip. Doc.",         .T., "Tipo de Documento",         8, .F. )
+   ::AddField( "dFecDoc", "D",  8, 0, {|| "@!" },                    "Fecha",             .T., "Fecha",                    10, .F. )
+   ::AddField( "cCodCli", "C", 12, 0, {|| "@!" },                    "Cód. cli.",         .T., "Cod. Cliente",              8, .F. )
+   ::AddField( "cNomCli", "C", 50, 0, {|| "@!" },                    "Cliente",           .T., "Nom. Cliente",             30, .F. )
+   ::AddField( "nTotCaj", "N", 16, 6, {|| MasUnd() },                cNombreCajas(),      .F., cNombreCajas(),             12, .T. )
+   ::AddField( "nTotUni", "N", 16, 6, {|| MasUnd() },                cNombreUnidades(),   .T., cNombreUnidades(),          12, .T. )
+   ::AddField( "nTotImp", "N", 16, 6, {|| ::cPicImp },               "Tot. importe",      .T., "Tot. importe",             12, .T. )
+   ::AddField( "nTotPes", "N", 16, 6, {|| MasUnd() },                "Tot. peso",         .F., "Total peso",               12, .T. )
+   ::AddField( "nPreKgr", "N", 16, 6, {|| ::cPicImp },               "Pre. kg.",          .F., "Precio kilo",              12, .F. )
+   ::AddField( "nTotVol", "N", 16, 6, {|| MasUnd() },                "Tot. volumen",      .F., "Total volumen",            12, .T. )
+   ::AddField( "nPreVol", "N", 16, 6, {|| ::cPicImp },               "Pre. vol.",         .F., "Precio volumen",           12, .F. )
+   ::AddField( "nTotCos", "N", 16, 6, {|| ::cPicImp },               "Tot. costo",        .T., "Total costo",              12, .T. )
+   ::AddField( "nMargen", "N", 16, 6, {|| ::cPicOut },               "Margen",            .T., "Margen",                   12, .T. )
+   ::AddField( "nDtoAtp", "N", 16, 6, {|| ::cPicOut },               "Dto. Atipico",      .F., "Importe dto. atipico",     12, .T. )
+   ::AddField( "nRenTab", "N", 16, 6, {|| ::cPicOut },               "%Rent.",            .T., "Rentabilidad",             12, .F. )
+   ::AddField( "nRentVta","N", 16, 6, {|| ::cPicOut },               "%Rent. vta.",       .T., "Rentabilidad sobre venta", 12, .F. )
+   ::AddField( "nPreMed", "N", 16, 6, {|| ::cPicImp },               "Precio medio",      .F., "Precio medio",             12, .F. )
+   ::AddField( "nCosMed", "N", 16, 6, {|| ::cPicImp },               "Costo medio",       .T., "Costo medio",              12, .F. )
+   ::AddField( "nTotCob", "N", 16, 6, {|| ::cPicImp },               "Tot. cobrado",      .T., "Total cobrado",            12, .T. )
+
+   ::AddTmpIndex( "cNumDoc", "cNumDoc" )
+
+   ::dIniInf := GetSysDate()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TRenVta_OpenFiles( ) ; local Self AS CLASS TRenVta := QSelf() AS CLASS TRenVta
+
+   local lOpen    := .T.
+   local oBlock   := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   BEGIN SEQUENCE
+
+   ::oDbfArt := DbfServer( "ARTICULO.DBF", ):NewOpen( "ARTICULO.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oDbfArt:AddBag( "ARTICULO.CDX" ) ; ::oDbfArt:AddBag( ) ; ::oDbfArt:AutoIndex()
+
+
+
+   ::oAlbCliT := TDataCenter():oAlbCliT()
+
+   ::oAlbCliL := DbfServer( "ALBCLIL.DBF", ):NewOpen( "ALBCLIL.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oAlbCliL:AddBag( "ALBCLIL.CDX" ) ; ::oAlbCliL:AddBag( ) ; ::oAlbCliL:AutoIndex()
+
+   ::oFacCliT     := TDataCenter():oFacCliT()
+
+   ::oFacCliL := DbfServer( "FACCLIL.DBF", ):NewOpen( "FACCLIL.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oFacCliL:AddBag( "FACCLIL.CDX" ) ; ::oFacCliL:AddBag( ) ; ::oFacCliL:AutoIndex()
+
+   ::oFacCliP := TDataCenter():oFacCliP()
+
+   ::oFacRecT := DbfServer( "FACRECT.DBF", ):NewOpen( "FACRECT.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oFacRecT:AddBag( "FACRECT.CDX" ) ; ::oFacRecT:AddBag( ) ; ::oFacRecT:AutoIndex()
+
+   ::oFacRecL := DbfServer( "FACRECL.DBF", ):NewOpen( "FACRECL.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oFacRecL:AddBag( "FACRECL.CDX" ) ; ::oFacRecL:AddBag( ) ; ::oFacRecL:AutoIndex()
+
+   ::oTikCliT := DbfServer( "TIKET.DBF", ):NewOpen( "TIKET.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oTikCliT:AddBag( "TIKET.CDX" ) ; ::oTikCliT:AddBag( ) ; ::oTikCliT:AutoIndex()
+
+   ::oTikCliL := DbfServer( "TIKEL.DBF", ):NewOpen( "TIKEL.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oTikCliL:AddBag( "TIKEL.CDX" ) ; ::oTikCliL:AddBag( ) ; ::oTikCliL:AutoIndex()
+
+   ::oTikCliP := DbfServer( "TIKEP.DBF", ):NewOpen( "TIKEP.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oTikCliP:AddBag( "TIKEP.CDX" ) ; ::oTikCliP:AddBag( ) ; ::oTikCliP:AutoIndex()
+
+   ::oAlbPrvL := DbfServer( "ALBPROVL.DBF", ):NewOpen( "ALBPROVL.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oAlbPrvL:AddBag( "ALBPROVL.CDX" ) ; ::oAlbPrvL:AddBag( ) ; ::oAlbPrvL:AutoIndex()
+
+   ::oFacPrvL := DbfServer( "FACPRVL.DBF", ):NewOpen( "FACPRVL.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oFacPrvL:AddBag( "FACPRVL.CDX" ) ; ::oFacPrvL:AddBag( ) ; ::oFacPrvL:AutoIndex()
+
+   ::oRctPrvL := DbfServer( "RctPrvL.DBF", ):NewOpen( "RctPrvL.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oRctPrvL:AddBag( "RctPrvL.CDX" ) ; ::oRctPrvL:AddBag( ) ; ::oRctPrvL:AutoIndex()
+
+   ::oIva := DbfServer( "TIVA.DBF", ):NewOpen( "TIVA.DBF",, ( cDriver() ),, ( cPatDat() ), .F., .T., .F., .F. ) ; ::oIva:AddBag( "TIVA.CDX" ) ; ::oIva:AddBag( ) ; ::oIva:AutoIndex()
+
+   ::oDivisas := DbfServer( "DIVISAS.DBF", ):NewOpen( "DIVISAS.DBF",, ( cDriver() ),, ( cPatDat() ), .F., .T., .F., .F. ) ; ::oDivisas:AddBag( "DIVISAS.CDX" ) ; ::oDivisas:AddBag( ) ; ::oDivisas:AutoIndex()
+
+   RECOVER
+
+      msgStop( "Imposible abrir todas las bases de datos" )
+      ::CloseFiles()
+      lOpen          := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TRenVta_CloseFiles( ) ; local Self AS CLASS TRenVta := QSelf() AS CLASS TRenVta
+
+   if !Empty( ::oDbfArt ) .AND. ::oDbfArt:Used()
+      ::oDbfArt:End()
+   end
+
+   if !Empty( ::oAlbCliT ) .AND. ::oAlbCliT:Used()
+      ::oAlbCliT:End()
+   end
+   if !Empty( ::oAlbCliL ) .AND. ::oAlbCliL:Used()
+      ::oAlbCliL:End()
+   end
+   if !Empty( ::oFacCliT ) .AND. ::oFacCliT:Used()
+      ::oFacCliT:End()
+   end
+   if !Empty( ::oFacCliL ) .AND. ::oFacCliL:Used()
+      ::oFacCliL:End()
+   end
+   if !Empty( ::oFacCliP ) .AND. ::oFacCliP:Used()
+      ::oFacCliP:End()
+   end
+   if !Empty( ::oFacRecT ) .AND. ::oFacRecT:Used()
+      ::oFacRecT:End()
+   end
+   if !Empty( ::oFacRecL ) .AND. ::oFacRecL:Used()
+      ::oFacRecL:End()
+   end
+   if !Empty( ::oTikCliT ) .AND. ::oTikCliT:Used()
+      ::oTikCliT:End()
+   end
+   if !Empty( ::oTikCliL ) .AND. ::oTikCliL:Used()
+      ::oTikCliL:End()
+   end
+
+   if !Empty( ::oTikCliP ) .AND. ::oTikCliP:Used()
+      ::oTikCliP:End()
+   end
+
+   if !Empty( ::oAlbPrvL ) .AND. ::oAlbPrvL:Used()
+      ::oAlbPrvL:End()
+   end
+
+   if !Empty( ::oFacPrvL ) .AND. ::oFacPrvL:Used()
+      ::oFacPrvL:End()
+   end
+
+   if !Empty( ::oRctPrvL ) .AND. ::oRctPrvL:Used()
+      ::oRctPrvL:End()
+   end
+
+   if !Empty( ::oIva ) .AND. ::oIva:Used()
+      ::oIva:End()
+   end
+
+   if !Empty( ::oDivisas ) .AND. ::oDivisas:Used()
+      ::oDivisas:End()
+   end
+
+   ::oDbfArt   := nil
+   ::oAlbCliT  := nil
+   ::oAlbCliL  := nil
+   ::oFacCliT  := nil
+   ::oFacCliL  := nil
+   ::oFacRecT  := nil
+   ::oFacRecL  := nil
+   ::oTikCliT  := nil
+   ::oTikCliL  := nil
+   ::oAlbPrvL  := nil
+   ::oFacPrvL  := nil
+   ::oRctPrvL  := nil
+   ::oIva      := nil
+   ::oDivisas  := nil
+
+RETURN ( Self )
+
+
+
+static FUNCTION TRenVta_lResource( cFld ) ; local Self AS CLASS TRenVta := QSelf() AS CLASS TRenVta
+
+   if !::StdResource( "InfRenArtC" )
+      return .F.
+   end
+
+   ::CreateFilter( , ::oDbf, .T. )
+
+
+
+
+
+   if !::oDefCliInf( 70, 80, 90, 100, , 600 )
+      return .F.
+   end
+
+   ::oDefExcInf( 204 )
+
+
+
+   TCheckBox():ReDefine( ( 203 ), { | u | If( PCount()==0, ::lExcMov, ::lExcMov:= u ) }, ::oFld:aDialogs[1],,,,,,, .F.,, .F. )
+
+
+
+   TCheckBox():ReDefine( ( 205 ), { | u | If( PCount()==0, ::lCosAct, ::lCosAct:= u ) }, ::oFld:aDialogs[1],,,,,,, .F.,, .F. )
+
+
+
+
+
+   ::oEstado := TComboBox():ReDefine( 218, { | u | If( PCount()==0, ::cEstado, ::cEstado:= u ) }, ::aEstado, ::oFld:aDialogs[1],,,,,,, .F.,,,,,,, "::oEstado",,,,,,, )
+
+RETURN .T.
+
+
+
+
+
+
+static FUNCTION TRenVta_lGenerate( ) ; local Self AS CLASS TRenVta := QSelf() AS CLASS TRenVta
+
+   local nTotUni     := 0
+   local nTotImpUni  := 0
+   local nTotCosUni  := 0
+   local nTotPes     := 0
+   local nTotVol     := 0
+   local nTotCaj     := 0
+   local cExpHead    := ""
+   local nImpDtoAtp  := 0
+
+   ::nTotVentas      := 0
+   ::nTotUnidades    := 0
+   ::nTotCosto       := 0
+
+
+
+
+   ::aHeader         := {  {|| "Fecha   : " + Dtoc( Date() ) }, {|| "Periodo : " + Dtoc( ::dIniInf ) + " > " + Dtoc( ::dFinInf ) } , {|| "Cliente : " + if( ::lAllCli, "Todos", AllTrim ( ::cCliOrg ) + " > " + AllTrim ( ::cCliDes ) ) }, {|| "Rnt.med.: " + Alltrim( Trans( ( ( ( ::nTotVentas / ::nTotCosto ) - 1 )* 100 ), ::cPicOut ) ) + "%" } }
+
+   ::oDlg:Disable()
+
+   ::oBtnCancel:Enable()
+
+   ::oDbf:Zap()
+
+   ::oMtrInf:cText   := "Procesando albaranes"
+
+   ::oAlbCliT:OrdSetFocus( "dFecAlb" )
+
+   cExpHead          := 'nFacturado < 3 .and. dFecAlb >= Ctod( "' + Dtoc( ::dIniInf ) + '" ) .and. dFecAlb <= Ctod( "' + Dtoc( ::dFinInf ) + '" )'
+
+   if !::lAllCli
+      cExpHead       += ' .and. cCodCli >= "' + Rtrim( ::cCliOrg ) + '" .and. cCodCli <= "' + Rtrim( ::cCliDes ) + '"'
+   end
+
+   if !Empty( ::oFilter:cExpresionFilter )
+      cExpHead       += " .and. " + ::oFilter:cExpresionFilter
+   end
+
+   ::oAlbCliT:AddTmpIndex( Auth():Codigo(), GetFileNoExt( ::oAlbCliT:cFile ), ::oAlbCliT:OrdKey(), ( cExpHead ), , , , , , , , .T. )
+
+   ::oMtrInf:SetTotal( ::oAlbCliT:OrdKeyCount() )
+
+   ::oAlbCliT:GoTop()
+
+   while !::lBreak .AND. !::oAlbCliT:Eof()
+
+      if lChkSer( ::oAlbCliT:cSerAlb, ::aSer ) .AND. ::ValidAlbaranCliente()
+
+         nTotUni     := 0
+         nTotImpUni  := 0
+         nTotCosUni  := 0
+         nTotPes     := 0
+         nTotVol     := 0
+         nTotCaj     := 0
+         nImpDtoAtp  := 0
+
+         if ::oAlbCliL:Seek( ::oAlbCliT:cSerAlb + Str( ::oAlbCliT:nNumAlb ) + ::oAlbCliT:cSufAlb )
+
+            while ::oAlbCliL:cSerAlb + Str( ::oAlbCliL:nNumAlb ) + ::oAlbCliL:cSufAlb == ::oAlbCliT:cSerAlb + Str( ::oAlbCliT:nNumAlb ) + ::oAlbCliT:cSufAlb
+
+
+
+
+               if !( ::oAlbCliL:lKitChl )                                                              .AND. !( ::oAlbCliL:lTotLin )                                                              .AND. !( ::oAlbCliL:lControl )                                                             .AND. !( ::lExcMov .AND. ( nTotNAlbCli( ::oAlbCliL:cAlias ) == 0 ) )
+
+                  nTotUni        += nTotNAlbCli( ::oAlbCliL:cAlias )
+                  nTotImpUni     += nImpLAlbCli( ::oAlbCliT:cAlias, ::oAlbCliL:cAlias, ::nDecOut, ::nDerOut )
+                  nTotPes        += nTotNAlbCli( ::oAlbCliL:cAlias ) * oRetFld( ::oAlbCliL:cRef, ::oDbfArt, "nPesoKg" )
+                  nTotVol        += nTotNAlbCli( ::oAlbCliL:cAlias ) * oRetFld( ::oAlbCliL:cRef, ::oDbfArt, "nVolumen" )
+                  nTotCaj        += ::oAlbCliL:nCanEnt
+                  nImpDtoAtp     += nDtoAtpAlbCli( ::oAlbCliT:cAlias, ::oAlbCliL:cAlias, ::nDecOut, ::nDerOut )
+                  nTotCosUni     += nCosLAlbCli( ::oAlbCliL:cAlias, ::nDecOut, ::nDerOut )
+
+               end
+
+               ::oAlbCliL:Skip()
+
+            end
+
+            ::oDbf:Append()
+
+            ::oDbf:cNumDoc       := ::oAlbCliT:cSerAlb + Str( ::oAlbCliT:nNumAlb ) + ::oAlbCliT:cSufAlb
+            ::oDbf:cTipDoc       := "Albarán"
+            ::oDbf:dFecDoc       := ::oAlbCliT:dFecAlb
+            ::oDbf:cCodCli       := ::oAlbCliT:cCodCli
+            ::oDbf:cNomCli       := ::oAlbCliT:cNomCli
+            ::oDbf:nTotCaj       := nTotCaj
+            ::oDbf:nTotUni       := nTotUni
+            ::oDbf:nTotPes       := nTotPes
+            ::oDbf:nTotImp       := nTotImpUni
+            ::oDbf:nPreKgr       := if( ::oDbf:nTotPes <> 0, ::oDbf:nTotImp / ::oDbf:nTotPes, 0 )
+            ::oDbf:nTotVol       := nTotVol
+            ::oDbf:nPreVol       := if( ::oDbf:nTotVol <> 0, ::oDbf:nTotImp / ::oDbf:nTotVol, 0 )
+            ::oDbf:nTotCos       := nTotCosUni
+            ::oDbf:nMargen       := ( nTotImpUni ) - ( nTotCosUni )
+            ::oDbf:nDtoAtp       := nImpDtoAtp
+            ::oDbf:nTotCob       := ::oAlbCliT:nTotPag
+
+            if nTotUni <> 0 .AND. ::oDbf:nTotCos <> 0
+               ::oDbf:nRentab    := nRentabilidad( nTotImpUni, nImpDtoAtp, nTotCosUni )
+               ::oDbf:nPreMed    := nTotImpUni / nTotUni
+               ::oDbf:nCosMed    := nTotCosUni / nTotUni
+            else
+               ::oDbf:nRentab    := 0
+               ::oDbf:nPreMed    := 0
+               ::oDbf:nCosMed    := 0
+            end
+
+            if nTotUni <> 0 .AND. ::oDbf:nTotImp <> 0
+               ::oDbf:nRentVta   := nRentabilidadVentas( nTotImpUni, nImpDtoAtp, nTotCosUni )
+            else
+               ::oDbf:nRentVta   := 0
+            end
+
+            ::nTotVentas         += ::oDbf:nTotImp
+            ::nTotUnidades       += ::oDbf:nTotUni
+            ::nTotCosto          += ::oDbf:nTotCos
+
+            ::oDbf:Save()
+
+         end
+
+      end
+
+      ::oMtrInf:AutoInc()
+
+      ::oAlbCliT:Skip()
+
+   end
+
+   ::oAlbCliT:IdxDelete( Auth():Codigo(), GetFileNoExt( ::oAlbCliT:cFile ) )
+
+   ::oMtrInf:cText   := "Procesando facturas"
+
+   ::oFacCliT:OrdSetFocus( "dFecFac" )
+
+   cExpHead          := 'dFecFac >= Ctod( "' + Dtoc( ::dIniInf ) + '" ) .and. dFecFac <= Ctod( "' + Dtoc( ::dFinInf ) + '" )'
+
+   if !::lAllCli
+      cExpHead       += ' .and. cCodCli >= "' + Rtrim( ::cCliOrg ) + '" .and. cCodCli <= "' + Rtrim( ::cCliDes ) + '"'
+   end
+
+   if !Empty( ::oFilter:cExpresionFilter )
+      cExpHead       += " .and. " + ::oFilter:cExpresionFilter
+   end
+
+   ::oFacCliT:AddTmpIndex( Auth():Codigo(), GetFileNoExt( ::oFacCliT:cFile ), ::oFacCliT:OrdKey(), ( cExpHead ), , , , , , , , .T. )
+
+   ::oMtrInf:SetTotal( ::oFacCliT:OrdKeyCount() )
+
+   ::oFacCliT:GoTop()
+
+   while !::lBreak .AND. !::oFacCliT:Eof()
+
+      if lChkSer( ::oFacCliT:cSerie, ::aSer ) .AND. ::ValidFacturaCliente()
+
+         nTotUni     := 0
+         nTotImpUni  := 0
+         nTotCosUni  := 0
+         nTotPes     := 0
+         nTotVol     := 0
+         nTotCaj     := 0
+         nImpDtoAtp  := 0
+
+         if ::oFacCliL:Seek( ::oFacCliT:cSerie + Str( ::oFacCliT:nNumFac ) + ::oFacCliT:cSufFac )
+
+            while ::oFacCliL:cSerie + Str( ::oFacCliL:nNumFac ) + ::oFacCliL:cSufFac == ::oFacCliT:cSerie + Str( ::oFacCliT:nNumFac ) + ::oFacCliT:cSufFac
+
+
+
+
+               if !( ::oFacCliL:lKitChl )                                                              .AND. !( ::oFacCliL:lTotLin )                                                              .AND. !( ::oFacCliL:lControl )                                                             .AND. !( ::lExcMov .AND. ( nTotNFacCli( ::oFacCliL:cAlias ) == 0 ) )
+
+                  nTotUni        += nTotNFacCli( ::oFacCliL:cAlias )
+                  nTotImpUni     += nImpLFacCli( ::oFacCliT:cAlias, ::oFacCliL:cAlias, ::nDecOut, ::nDerOut )
+                  nTotPes        += nTotNFacCli( ::oFacCliL:cAlias ) * oRetFld( ::oFacCliL:cRef, ::oDbfArt, "nPesoKg" )
+                  nTotVol        += nTotNFacCli( ::oFacCliL:cAlias ) * oRetFld( ::oFacCliL:cRef, ::oDbfArt, "nVolumen" )
+                  nTotCaj        += ::oFacCliL:nCanEnt
+                  nImpDtoAtp     += nDtoAtpFacCli( ::oFacCliT:cAlias, ::oFacCliL:cAlias, ::nDecOut, ::nDerOut )
+                  nTotCosUni     += nCosLFacCli( ::oFacCliL:cAlias, ::nDecOut, ::nDerOut )
+
+               end
+
+               ::oFacCliL:Skip()
+
+            end
+
+            ::oDbf:Append()
+
+            ::oDbf:cNumDoc       := ::oFacCliT:cSerie + Str( ::oFacCliT:nNumFac ) + ::oFacCliT:cSufFac
+            ::oDbf:cTipDoc       := "Factura"
+            ::oDbf:dFecDoc       := ::oFacCliT:dFecFac
+            ::oDbf:cCodCli       := ::oFacCliT:cCodCli
+            ::oDbf:cNomCli       := ::oFacCliT:cNomCli
+            ::oDbf:nTotCaj       := nTotCaj
+            ::oDbf:nTotUni       := nTotUni
+            ::oDbf:nTotPes       := nTotPes
+            ::oDbf:nTotImp       := nTotImpUni
+            ::oDbf:nPreKgr       := if( ::oDbf:nTotPes <> 0, ::oDbf:nTotImp / ::oDbf:nTotPes, 0 )
+            ::oDbf:nTotVol       := nTotVol
+            ::oDbf:nPreVol       := if( ::oDbf:nTotVol <> 0, ::oDbf:nTotImp / ::oDbf:nTotVol, 0 )
+            ::oDbf:nTotCos       := nTotCosUni
+            ::oDbf:nMargen       := ( nTotImpUni ) - ( nTotCosUni )
+            ::oDbf:nDtoAtp       := nImpDtoAtp
+            ::oDbf:nTotCob       := nPagFacCli( ::oFacCliT:cSerie + Str( ::oFacCliT:nNumFac ) + ::oFacCliT:cSufFac, ::oFacCliT:cAlias, ::oFacCliP:cAlias, ::oIva:cAlias, ::oDivisas:cAlias )
+
+            if ( nTotUni <> 0 .AND. ::oDbf:nTotCos <> 0 )
+               ::oDbf:nRentab    := nRentabilidad( nTotImpUni, nImpDtoAtp, nTotCosUni )
+               ::oDbf:nPreMed    := nTotImpUni / nTotUni
+               ::oDbf:nCosMed    := nTotCosUni / nTotUni
+            else
+               ::oDbf:nRentab    := 0
+               ::oDbf:nPreMed    := 0
+               ::oDbf:nCosMed    := 0
+            end
+
+            if nTotUni <> 0 .AND. ::oDbf:nTotImp <> 0
+               ::oDbf:nRentVta   := nRentabilidadVentas( nTotImpUni, nImpDtoAtp, nTotCosUni )
+            else
+               ::oDbf:nRentVta   := 0
+            end
+
+            ::nTotVentas         += ::oDbf:nTotImp
+            ::nTotUnidades       += ::oDbf:nTotUni
+            ::nTotCosto          += ::oDbf:nTotCos
+
+            ::oDbf:Save()
+
+         end
+
+      end
+
+      ::oMtrInf:AutoInc()
+
+      ::oFacCliT:Skip()
+
+   end
+
+   ::oFacCliT:IdxDelete( Auth():Codigo(), GetFileNoExt( ::oFacCliT:cFile ) )
+
+   ::oMtrInf:cText   := "Procesando facturas rectificativas"
+
+   ::oFacRecT:OrdSetFocus( "dFecFac" )
+
+   cExpHead          := 'dFecFac >= Ctod( "' + Dtoc( ::dIniInf ) + '" ) .and. dFecFac <= Ctod( "' + Dtoc( ::dFinInf ) + '" )'
+
+   if !::lAllCli
+      cExpHead       += ' .and. cCodCli >= "' + Rtrim( ::cCliOrg ) + '" .and. cCodCli <= "' + Rtrim( ::cCliDes ) + '"'
+   end
+
+   if !Empty( ::oFilter:cExpresionFilter )
+      cExpHead       += " .and. " + ::oFilter:cExpresionFilter
+   end
+
+   ::oFacRecT:AddTmpIndex( Auth():Codigo(), GetFileNoExt( ::oFacRecT:cFile ), ::oFacRecT:OrdKey(), ( cExpHead ), , , , , , , , .T. )
+
+   ::oMtrInf:SetTotal( ::oFacRecT:OrdKeyCount() )
+
+   ::oFacRecT:GoTop()
+
+   while !::lBreak .AND. !::oFacRecT:Eof()
+
+      if lChkSer( ::oFacRecT:cSerie, ::aSer ) .AND. ::ValidRectifiactivaCliente()
+
+         nTotUni     := 0
+         nTotImpUni  := 0
+         nTotCosUni  := 0
+         nTotPes     := 0
+         nTotVol     := 0
+         nTotCaj     := 0
+         nImpDtoAtp  := 0
+
+         if ::oFacRecL:Seek( ::oFacRecT:cSerie + Str( ::oFacRecT:nNumFac ) + ::oFacRecT:cSufFac )
+
+            while ::oFacRecL:cSerie + Str( ::oFacRecL:nNumFac ) + ::oFacRecL:cSufFac == ::oFacRecT:cSerie + Str( ::oFacRecT:nNumFac ) + ::oFacRecT:cSufFac
+
+
+
+
+               if !( ::oFacRecL:lKitChl )                                                              .AND. !( ::oFacRecL:lTotLin )                                                              .AND. !( ::oFacRecL:lControl )                                                             .AND. !( ::lExcMov .AND. ( nTotNFacRec( ::oFacRecL:cAlias ) == 0 ) )
+
+                  nTotUni        += nTotNFacRec( ::oFacRecL:cAlias )
+                  nTotImpUni     += nImpLFacRec( ::oFacRecT:cAlias, ::oFacRecL:cAlias, ::nDecOut, ::nDerOut )
+                  nTotPes        += nTotNFacRec( ::oFacRecL:cAlias ) * oRetFld( ::oFacRecL:cRef, ::oDbfArt, "nPesoKg" )
+                  nTotVol        += nTotNFacRec( ::oFacRecL:cAlias ) * oRetFld( ::oFacRecL:cRef, ::oDbfArt, "nVolumen" )
+                  nTotCaj        += ::oFacRecL:nCanEnt
+                  nTotCosUni     += nCosLFacRec( ::oFacRecL:cAlias, ::nDecOut, ::nDerOut )
+
+               end
+
+               ::oFacRecL:Skip()
+
+            end
+
+            ::oDbf:Append()
+
+            ::oDbf:cNumDoc       := ::oFacRecT:cSerie + Str( ::oFacRecT:nNumFac ) + ::oFacRecT:cSufFac
+            ::oDbf:cTipDoc       := "Fac. rec."
+            ::oDbf:dFecDoc       := ::oFacRecT:dFecFac
+            ::oDbf:cCodCli       := ::oFacRecT:cCodCli
+            ::oDbf:cNomCli       := ::oFacRecT:cNomCli
+            ::oDbf:nTotCaj       := nTotCaj
+            ::oDbf:nTotUni       := nTotUni
+            ::oDbf:nTotPes       := nTotPes
+            ::oDbf:nTotImp       := nTotImpUni
+            ::oDbf:nPreKgr       := if( ::oDbf:nTotPes <> 0, ::oDbf:nTotImp / ::oDbf:nTotPes, 0 )
+            ::oDbf:nTotVol       := nTotVol
+            ::oDbf:nPreVol       := if( ::oDbf:nTotVol <> 0, ::oDbf:nTotImp / ::oDbf:nTotVol, 0 )
+            ::oDbf:nTotCos       := nTotCosUni
+            ::oDbf:nMargen       := ( nTotImpUni ) - ( ::oDbf:nTotCos )
+            ::oDbf:nDtoAtp       := nImpDtoAtp
+            ::oDbf:nTotCob       := nPagFacRec( ::oFacRecT:cSerie + Str( ::oFacRecT:nNumFac ) + ::oFacRecT:cSufFac, ::oFacRecT:cAlias, ::oFacCliP:cAlias, ::oIva:cAlias, ::oDivisas:cAlias )
+
+            if nTotUni <> 0 .AND. ::oDbf:nTotCos <> 0
+               ::oDbf:nRentab    := nRentabilidad( nTotImpUni, nImpDtoAtp, nTotCosUni )
+               ::oDbf:nPreMed    := nTotImpUni / nTotUni
+               ::oDbf:nCosMed    := nTotCosUni / nTotUni
+            else
+               ::oDbf:nRentab    := 0
+               ::oDbf:nPreMed    := 0
+               ::oDbf:nCosMed    := 0
+            end
+
+            if nTotUni <> 0 .AND. ::oDbf:nTotImp <> 0
+               ::oDbf:nRentVta   := nRentabilidadVentas( nTotImpUni, nImpDtoAtp, nTotCosUni )
+            else
+               ::oDbf:nRentVta   := 0
+            end
+
+            ::nTotVentas         += ::oDbf:nTotImp
+            ::nTotUnidades       += ::oDbf:nTotUni
+            ::nTotCosto          += ::oDbf:nTotCos
+
+            ::oDbf:Save()
+
+         end
+
+      end
+
+      ::oMtrInf:AutoInc()
+
+      ::oFacRecT:Skip()
+
+   end
+
+   ::oFacRecT:IdxDelete( Auth():Codigo(), GetFileNoExt( ::oFacRecT:cFile ) )
+
+   ::oMtrInf:cText   := "Procesando tikets"
+
+   ::oTikCliT:OrdSetFocus( "dFecTik" )
+
+   cExpHead          := 'dFecTik >= Ctod( "' + Dtoc( ::dIniInf ) + '" ) .and. dFecTik <= Ctod( "' + Dtoc( ::dFinInf ) + '" )'
+
+   if !::lAllCli
+      cExpHead       += ' .and. cCliTik >= "' + Rtrim( ::cCliOrg ) + '" .and. cCliTik <= "' + Rtrim( ::cCliDes ) + '"'
+   end
+
+   if !Empty( ::oFilter:cExpresionFilter )
+      cExpHead       += " .and. " + ::oFilter:cExpresionFilter
+   end
+
+   ::oTikCliT:AddTmpIndex( Auth():Codigo(), GetFileNoExt( ::oTikCliT:cFile ), ::oTikCliT:OrdKey(), ( cExpHead ), , , , , , , , .T. )
+
+   ::oMtrInf:SetTotal( ::oTikCliT:OrdKeyCount() )
+
+   ::oTikCliT:GoTop()
+
+   while !::lBreak .AND. !::oTikCliT:Eof()
+
+      if lChkSer( ::oTikCliT:cSerTik, ::aSer ) .AND. ::ValidTicketCliente()
+
+         nTotUni     := 0
+         nTotImpUni  := 0
+         nTotCosUni  := 0
+         nTotPes     := 0
+         nTotVol     := 0
+         nTotCaj     := 0
+         nImpDtoAtp  := 0
+
+         if ::oTikCliL:Seek( ::oTikCliT:cSerTik + ::oTikCliT:cNumTik + ::oTikCliT:cSufTik )
+
+            while ::oTikCliL:cSerTil + ::oTikCliL:cNumTil + ::oTikCliL:cSufTil == ::oTikCliT:cSerTik + ::oTikCliT:cNumTik + ::oTikCliT:cSufTik
+
+
+
+
+               if !Empty( ::oTikCliL:cCbaTil )                                                         .AND. !( ::oTikCliL:lKitChl )                                                              .AND. !( ::oTikCliL:lControl )                                                             .AND. !( ::lExcMov .AND. ::oTikCliL:nUntTil == 0 )
+
+                  nTotUni        += ::oTikCliL:nUntTil
+                  nTotImpUni     += nImpLTpv( ::oTikCliT, ::oTikCliL, ::nDecOut, ::nDerOut, ::nValDiv, nil, 1 )
+                  nTotPes        += ::oTikCliL:nUntTil * oRetFld( ::oTikCliL:cCbaTil, ::oDbfArt, "nPesoKg" )
+                  nTotVol        += ::oTikCliL:nUntTil / oRetFld( ::oTikCliL:cCbaTil, ::oDbfArt, "nVolumen" )
+                  nTotCosUni     += nCosLTpv( ::oTikCliL, ::nDecOut, ::nDerOut, ::nValDiv, 1 )
+
+               end
+
+
+
+
+               if !Empty( ::oTikCliL:cComTil )                                                         .AND. !( ::oTikCliL:lKitChl )                                                              .AND. !( ::oTikCliL:lControl )                                                             .AND. !( ::lExcMov .AND. ::oTikCliL:nUntTil == 0 )
+
+                  nTotUni        += ::oTikCliL:nUntTil
+                  nTotImpUni     += nImpLTpv( ::oTikCliT, ::oTikCliL, ::nDecOut, ::nDerOut, ::nValDiv, nil, 2 )
+                  nTotPes        += ::oTikCliL:nUntTil * oRetFld( ::oTikCliL:cComTil, ::oDbfArt, "nPesoKg" )
+                  nTotVol        += ::oTikCliL:nUntTil / oRetFld( ::oTikCliL:cComTil, ::oDbfArt, "nVolumen" )
+                  nTotCosUni     += nCosLTpv( ::oTikCliL, ::nDecOut, ::nDerOut, ::nValDiv, 2 )
+
+               end
+
+               ::oTikCliL:Skip()
+
+            end
+
+            ::oDbf:Append()
+
+            ::oDbf:cNumDoc       := ::oTikCliT:cSerTik + ::oTikCliT:cNumTik + ::oTikCliT:cSufTik
+            ::oDbf:cTipDoc       := "Tiket"
+            ::oDbf:dFecDoc       := ::oTikCliT:dFecTik
+            ::oDbf:cCodCli       := ::oTikCliT:cCliTik
+            ::oDbf:cNomCli       := ::oTikCliT:cNomTik
+            ::oDbf:nTotCaj       := 1
+            ::oDbf:nTotUni       := nTotUni
+            ::oDbf:nTotPes       := nTotPes
+            ::oDbf:nTotImp       := nTotImpUni
+            ::oDbf:nPreKgr       := if( ::oDbf:nTotPes <> 0, ::oDbf:nTotImp / ::oDbf:nTotPes, 0 )
+            ::oDbf:nTotVol       := nTotVol
+            ::oDbf:nPreVol       := if( ::oDbf:nTotVol <> 0, ::oDbf:nTotImp / ::oDbf:nTotVol, 0 )
+            ::oDbf:nTotCos       := nTotCosUni
+            ::oDbf:nMargen       := nTotImpUni - nTotCosUni
+            ::oDbf:nDtoAtp       := nImpDtoAtp
+            ::oDbf:nTotCob       := nTotCobTik( ::oTikCliT:cSerTik + ::oTikCliT:cNumTik + ::oTikCliT:cSufTik, ::oTikCliP:cAlias, ::oDivisas:cAlias )
+
+            if nTotUni <> 0 .AND. ::oDbf:nTotCos <> 0
+               ::oDbf:nRentab    := nRentabilidad( nTotImpUni, nImpDtoAtp, nTotCosUni )
+               ::oDbf:nPreMed    := nTotImpUni / nTotUni
+               ::oDbf:nCosMed    := nTotCosUni / nTotUni
+            else
+               ::oDbf:nRentab    := 0
+               ::oDbf:nPreMed    := 0
+               ::oDbf:nCosMed    := 0
+            end
+
+            if nTotUni <> 0 .AND. ::oDbf:nTotImp <> 0
+               ::oDbf:nRentVta   := nRentabilidadVentas( nTotImpUni, nImpDtoAtp, nTotCosUni )
+            else
+               ::oDbf:nRentVta   := 0
+            end
+
+            ::nTotVentas         += ::oDbf:nTotImp
+            ::nTotUnidades       += ::oDbf:nTotUni
+            ::nTotCosto          += ::oDbf:nTotCos
+
+            ::oDbf:Save()
+
+         end
+
+      end
+
+      ::oMtrInf:AutoInc()
+
+      ::oTikCliT:Skip()
+
+   end
+
+   ::oTikCliT:IdxDelete( Auth():Codigo(), GetFileNoExt( ::oTikCliT:cFile ) )
+
+   ::oMtrInf:AutoInc( ::oTikCliT:Lastrec() )
+
+   ::oDlg:Enable()
+
+RETURN ( ::oDbf:LastRec() > 0 )
+
+
+
+   static FUNCTION TRenVta_ValidAlbaranCliente( ) ; local Self AS CLASS TRenVta := QSelf() AS CLASS TRenVta
+
+      do case
+         case ::cEstado == "Todos"
+
+            Return ( .T. )
+
+         case ::cEstado == "Cobrados"
+
+            Return ( ::oAlbCliT:nTotPag >= ::oAlbCliT:nTotAlb )
+
+         case ::cEstado == "Parcialmente"
+
+            Return ( ::oAlbCliT:nTotPag > 0 .AND. ::oAlbCliT:nTotPag < ::oAlbCliT:nTotAlb )
+
+         case ::cEstado == "Pendientes"
+
+            Return ( ::oAlbCliT:nTotPag == 0 )
+
+      end
+
+   RETURN ( Self )
+
+
+
+   static FUNCTION TRenVta_ValidFacturaCliente( ) ; local Self AS CLASS TRenVta := QSelf() AS CLASS TRenVta
+
+      local nTotPag  := nPagFacCli( ::oFacCliT:cSerie + Str( ::oFacCliT:nNumFac ) + ::oFacCliT:cSufFac, ::oFacCliT:cAlias, ::oFacCliP:cAlias, ::oIva:cAlias, ::oDivisas:cAlias )
+
+      do case
+         case ::cEstado == "Todos"
+
+            Return ( .T. )
+
+         case ::cEstado == "Cobrados"
+
+            Return ( ::oFacCliT:lLiquidada )
+
+         case ::cEstado == "Parcialmente"
+
+            Return ( nTotPag > 0 .AND. nTotPag < ::oFacCliT:nTotFac )
+
+         case ::cEstado == "Pendientes"
+
+            Return ( nTotPag == 0 )
+
+      end
+
+   RETURN ( Self )
+
+
+
+   static FUNCTION TRenVta_ValidRectifiactivaCliente( ) ; local Self AS CLASS TRenVta := QSelf() AS CLASS TRenVta
+
+      local nTotPag  := nPagFacRec( ::oFacRecT:cSerie + Str( ::oFacRecT:nNumFac ) + ::oFacRecT:cSufFac, ::oFacRecT:cAlias, ::oFacCliP:cAlias, ::oIva:cAlias, ::oDivisas:cAlias )
+
+      do case
+         case ::cEstado == "Todos"
+
+            Return ( .T. )
+
+         case ::cEstado == "Cobrados"
+
+            Return ( ::oFacRecT:lLiquidada )
+
+         case ::cEstado == "Parcialmente"
+
+            Return ( nTotPag > 0 .AND. nTotPag < ::oFacRecT:nTotFac )
+
+         case ::cEstado == "Pendientes"
+
+            Return ( nTotPag == 0 )
+
+      end
+
+   RETURN ( Self )
+
+
+
+   static FUNCTION TRenVta_ValidTicketCliente( ) ; local Self AS CLASS TRenVta := QSelf() AS CLASS TRenVta
+
+      local nTotPag  := nTotCobTik( ::oTikCliT:cSerTik + ::oTikCliT:cNumTik + ::oTikCliT:cSufTik, ::oTikCliP:cAlias, ::oDivisas:cAlias )
+
+      do case
+         case ::cEstado == "Todos"
+
+            Return ( .T. )
+
+         case ::cEstado == "Cobrados"
+
+            Return ( nTotPag >= ::oTikCliT:nTotTik )
+
+         case ::cEstado == "Parcialmente"
+
+            Return ( nTotPag > 0 .AND. nTotPag < ::oTikCliT:nTotTik )
+
+         case ::cEstado == "Pendientes"
+
+            Return ( nTotPag == 0 )
+
+      end
+
+   RETURN ( Self )

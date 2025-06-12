@@ -1,0 +1,315 @@
+#line 38 "C:\BodegasRubio\include\FiveWin.Ch"
+      static bError
+#line 203 "C:\BodegasRubio\include\hbclass.ch"
+DECLARE HBClass  New( cName AS STRING, OPTIONAL SuperParams ) AS CLASS HBClass  Create() AS OBJECT  Instance() AS OBJECT  AddClsMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC, n2 AS NUMERIC, n3 AS NUMERIC )  AddMultiClsData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING )  AddMultiData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING, x AS LOGICAL, lPer AS LOGICAL )  AddMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC )  AddInLine( cName AS STRING, bBlock AS CODEBLOCK, nScope AS NUMERIC )  AddVirtual( cName AS STRING )
+#line 79 "C:\BodegasRubio\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+#line 8 "C:\BodegasRubio\Script\AlbaranesClientes\informe.prg"
+Function InformeArticulos( nView )
+
+   local oInformeArticulos    := TInformeArticulos():New( nView )
+
+   oInformeArticulos:Run()
+
+Return nil
+
+
+
+_HB_CLASS TInformeArticulos ; function TInformeArticulos ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TInformeArticulos", iif( .F., { }, { @HBObject() } ), @TInformeArticulos() ) ) ;
+
+; _HB_MEMBER { oDialog } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDialog"}, .F. )
+; _HB_MEMBER { nView } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nView"}, .F. )
+
+; _HB_MEMBER { oFecIni } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFecIni"}, .F. )
+; _HB_MEMBER { dFecIni } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dFecIni"}, .F. )
+; _HB_MEMBER { oFecFin } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFecFin"}, .F. )
+; _HB_MEMBER { dFecFin } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dFecFin"}, .F. )
+
+; _HB_MEMBER { separador } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"separador"}, .F. )
+; _HB_MEMBER { finLinea } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"finLinea"}, .F. )
+
+; _HB_MEMBER { cFichero } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFichero"}, .F. )
+
+; _HB_MEMBER { cNameFile } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNameFile"}, .F. )
+
+; _HB_MEMBER { selectLineasAlbaran } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"selectLineasAlbaran"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @TInformeArticulos_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Run(); oClass:AddMethod( "Run", @TInformeArticulos_Run(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetResources(); oClass:AddInline( "SetResources", {|Self | ( ( Self ) ), ( SetResources( fullcurdir() + "Script\AlbaranesClientes\Informe.dll" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FreeResources(); oClass:AddInline( "FreeResources", {|Self | ( ( Self ) ), ( FreeResources() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Resource(); oClass:AddMethod( "Resource", @TInformeArticulos_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Process(); oClass:AddMethod( "Process", @TInformeArticulos_Process(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addCabecera(); oClass:AddMethod( "addCabecera", @TInformeArticulos_addCabecera(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getLineasAlbaranes(); oClass:AddMethod( "getLineasAlbaranes", @TInformeArticulos_getLineasAlbaranes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addLineasAlbaranes(); oClass:AddMethod( "addLineasAlbaranes", @TInformeArticulos_addLineasAlbaranes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TInformeArticulos ;
+
+
+
+static FUNCTION TInformeArticulos_New( nView ) ; local Self AS CLASS TInformeArticulos := QSelf() AS CLASS TInformeArticulos
+
+   ::nView                 := nView
+
+   ::dFecIni               := cTod( "01/01/" + AllTrim( Str( Year( Date() ) ) ) )
+   ::dFecFin               := GetSysDate()
+
+   ::separador             := ";"
+   ::finLinea              := Chr(13)+Chr(10)
+   ::cFichero              := ""
+
+   ::cNameFile             := ""
+
+   ::selectLineasAlbaran   := "selectLineas"
+
+Return ( Self )
+
+
+
+static FUNCTION TInformeArticulos_Run( ) ; local Self AS CLASS TInformeArticulos := QSelf() AS CLASS TInformeArticulos
+
+   ::SetResources()
+
+   ::Resource()
+
+   ::FreeResources()
+
+Return ( .T. )
+
+
+
+static FUNCTION TInformeArticulos_Resource( ) ; local Self AS CLASS TInformeArticulos := QSelf() AS CLASS TInformeArticulos
+
+   ::oDialog = TDialog():New(,,,,, "INFORME",, .F.,,,,,, .F.,,,,,, .F.,, "::oDialog" )
+
+
+
+
+   ::oFecIni := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, ::dFecIni, ::dFecIni:= u ) }, ::oDialog,,,,,,,,, .F.,,, .F., .T.,,,,,, nil,,, )
+
+
+
+
+   ::oFecFin := TGetHlp():ReDefine( 110, { | u | If( PCount()==0, ::dFecFin, ::dFecFin:= u ) }, ::oDialog,,,,,,,,, .F.,,, .F., .T.,,,,,, nil,,, )
+
+
+
+
+   TButton():ReDefine( 1, {||( ::Process() )}, ::oDialog,,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 2, {||( ::oDialog:End( 2 ) )}, ::oDialog,,, .F.,,,, .F. )
+
+   ::oDialog:AddFastKey( 116, {|| ::Process() } )
+
+   ::oDialog:Activate( ::oDialog:bLClicked, ::oDialog:bMoved, ::oDialog:bPainted, .T.,,,, ::oDialog:bRClicked,,, )
+
+Return ( .T. )
+
+
+
+static FUNCTION TInformeArticulos_Process( ) ; local Self AS CLASS TInformeArticulos := QSelf() AS CLASS TInformeArticulos
+
+   local nHand
+   local cNameFile
+   local nOrdAnt     := ( D():AlbaranesClientes( ::nView ) )->( OrdSetFocus( "NNUMALB" ) )
+
+   ::addCabecera()
+
+   ::getLineasAlbaranes()
+
+   ::addLineasAlbaranes()
+
+   ::cNameFile             := "c:\ficheros\Silicie"
+   ::cNameFile             += if( day( ::dFecIni ) < 10, "0" + AllTrim( Str( day( ::dFecIni ) ) ), AllTrim( Str( day( ::dFecIni ) ) ) )
+   ::cNameFile             += if( month( ::dFecIni ) < 10, "0" + AllTrim( Str( month( ::dFecIni ) ) ), AllTrim( Str( month( ::dFecIni ) ) ) )
+   ::cNameFile             += AllTrim( Str( year( ::dFecIni ) ) )
+   ::cNameFile             += if( day( ::dFecFin ) < 10, "0" + AllTrim( Str( day( ::dFecFin ) ) ), AllTrim( Str( day( ::dFecFin ) ) ) )
+   ::cNameFile             += if( month( ::dFecFin ) < 10, "0" + AllTrim( Str( month( ::dFecFin ) ) ), AllTrim( Str( month( ::dFecFin ) ) ) )
+   ::cNameFile             += AllTrim( Str( year( ::dFecFin ) ) )
+   ::cNameFile             += ".csv"
+
+   if !Empty( ::cFichero )
+
+      fErase( ::cNameFile )
+      nHand                := fCreate( ::cNameFile )
+      fWrite( nHand, ::cFichero )
+      fClose( nHand )
+
+   end
+
+   ( D():AlbaranesClientes( ::nView ) )->( OrdSetFocus( nOrdAnt ) )
+
+   MsgInfo( "Proceso finalizado con éxito" )
+
+   ::oDialog:End( 1 )
+
+Return ( .T. )
+
+
+
+static FUNCTION TInformeArticulos_addCabecera( ) ; local Self AS CLASS TInformeArticulos := QSelf() AS CLASS TInformeArticulos
+
+   ::cFichero  += "Número Referencia Interno" + ::separador
+   ::cFichero  += "Número Asiento Previo" + ::separador
+   ::cFichero  += "Fecha Movimiento" + ::separador
+   ::cFichero  += "Fecha Registro Contable" + ::separador
+   ::cFichero  += "Tipo Movimiento" + ::separador
+   ::cFichero  += "Información adicional Diferencia en Menos" + ::separador
+   ::cFichero  += "Régimen Fiscal" + ::separador
+   ::cFichero  += "Tipo de Operación" + ::separador
+   ::cFichero  += "Número Operación" + ::separador
+   ::cFichero  += "Descripción Unidad de Fabricación" + ::separador
+   ::cFichero  += "Código Unidad de Fabricación" + ::separador
+   ::cFichero  += "Tipo Justificante" + ::separador
+   ::cFichero  += "Número Justificante" + ::separador
+   ::cFichero  += "Tipo Documento Identificativo" + ::separador
+   ::cFichero  += "Número Documento Identificativo" + ::separador
+   ::cFichero  += "Razón Social" + ::separador
+   ::cFichero  += "CAE/Número Seed" + ::separador
+   ::cFichero  += "Repercusión Tipo Documento Identificativo" + ::separador
+   ::cFichero  += "Repercusión Número Documento Identificativo" + ::separador
+   ::cFichero  += "Repercusión Razón Social" + ::separador
+   ::cFichero  += "Epígrafe" + ::separador
+   ::cFichero  += "Código Epígrafe" + ::separador
+   ::cFichero  += "Código NC" + ::separador
+   ::cFichero  += "Clave" + ::separador
+   ::cFichero  += "Cantidad" + ::separador
+   ::cFichero  += "Unidad de Medida" + ::separador
+   ::cFichero  += "Descripción de Producto" + ::separador
+   ::cFichero  += "Referencia Producto" + ::separador
+   ::cFichero  += "Densidad" + ::separador
+   ::cFichero  += "Grado Alcohólico" + ::separador
+   ::cFichero  += "Cantidad de Alcohol Puro" + ::separador
+   ::cFichero  += "Porcentaje de Extracto" + ::separador
+   ::cFichero  += "Kg. - Extracto" + ::separador
+   ::cFichero  += "Grado Plato Medio" + ::separador
+   ::cFichero  += "Grado Acético" + ::separador
+   ::cFichero  += "Tipo de Envase" + ::separador
+   ::cFichero  += "Capacidad de Envase" + ::separador
+   ::cFichero  += "Número de Envases" + ::separador
+   ::cFichero  += "Observaciones" + ::finLinea
+
+Return ( .T. )
+
+
+
+static FUNCTION TInformeArticulos_getLineasAlbaranes( ) ; local Self AS CLASS TInformeArticulos := QSelf() AS CLASS TInformeArticulos
+
+   local cArticulos
+
+   local cSql        := "SELECT * FROM " + cPatEmp() + "AlbCliL" +  " WHERE dFecAlb >= " + quoted( dToc( ::dFecIni ) ) + " AND dFecAlb <= " + quoted( dToc( ::dFecFin ) )
+
+   ADSBaseModel():ExecuteSqlStatement( cSql, @::selectLineasAlbaran )
+
+   ( ::selectLineasAlbaran )->( dbGoTop() )
+
+   while !( ::selectLineasAlbaran )->( Eof() )
+
+
+      if ( ( ::selectLineasAlbaran )->cSerAlb == "A" .OR. ( ::selectLineasAlbaran )->cSerAlb == "E" ) .AND. !Empty( ( ::selectLineasAlbaran )->cRef )
+
+         ( D():AlbaranesClientes( ::nView ) )->( dbSeek( ( ::selectLineasAlbaran )->cSerAlb + Str( ( ::selectLineasAlbaran )->nNumAlb ) + ( ::selectLineasAlbaran )->cSufAlb ) )
+         ( D():Articulos( ::nView ) )->( dbSeek( ( ::selectLineasAlbaran )->cRef ) )
+
+
+
+
+         if AllTrim( ( D():Articulos( ::nView ) )->cCodCate ) == "001" .OR. AllTrim( ( D():Articulos( ::nView ) )->cCodCate ) == "002" .OR. AllTrim( ( D():Articulos( ::nView ) )->cCodCate ) == "003" .OR. AllTrim( ( D():Articulos( ::nView ) )->cCodCate ) == "004"
+
+            ::addLineasAlbaranes()
+
+         end
+
+      end
+
+      ( ::selectLineasAlbaran )->( dbSkip() )
+
+   end
+
+Return ( .T. )
+
+
+
+static FUNCTION TInformeArticulos_addLineasAlbaranes( ) ; local Self AS CLASS TInformeArticulos := QSelf() AS CLASS TInformeArticulos
+
+   MsgWait( "Duplicando:" + AllTrim( ( ::selectLineasAlbaran )->cSerAlb ) + "/" + AllTrim( Str( ( ::selectLineasAlbaran )->nNumAlb ) ) + "---" + AllTrim( ( ::selectLineasAlbaran )->cRef ) + " - " + AllTrim( ( ::selectLineasAlbaran )->cDetalle ), "", 0.05 )
+
+   ::cFichero  += AllTrim( ( ::selectLineasAlbaran )->cSerAlb ) + AllTrim( Str( ( ::selectLineasAlbaran )->nNumAlb ) ) + "-" + AllTrim( Str( ( ::selectLineasAlbaran )->nNumLin ) ) + ::separador
+   ::cFichero  += ::separador
+   ::cFichero  += AllTrim( dToc( ( ::selectLineasAlbaran )->dFecAlb ) )  + ::separador
+   ::cFichero  += AllTrim( dToc( ( ::selectLineasAlbaran )->dFecAlb ) )  + ::separador
+   ::cFichero  += AllTrim( getCustomExtraField( "001", "Clientes", ( ::selectLineasAlbaran )->cCodCli ) ) + ::separador
+   ::cFichero  += ::separador
+   ::cFichero  += AllTrim( getCustomExtraField( "002", "Clientes", ( ::selectLineasAlbaran )->cCodCli ) ) + ::separador
+   ::cFichero  += ::separador
+   ::cFichero  += ::separador
+   ::cFichero  += ::separador
+   ::cFichero  += ::separador
+   if !Empty( AllTrim( ( D():AlbaranesClientes( ::nView ) )->cCodSuAlb ) )
+      ::cFichero  += "J01"  + ::separador
+      ::cFichero  += AllTrim( ( D():AlbaranesClientes( ::nView ) )->cCodSuAlb ) + ::separador
+   else
+      ::cFichero  += "J03"  + ::separador
+      ::cFichero  += AllTrim( ( ::selectLineasAlbaran )->cSerAlb ) + AllTrim( Str( ( ::selectLineasAlbaran )->nNumAlb ) ) + ::separador
+   end
+   ::cFichero  += AllTrim( getCustomExtraField( "003", "Clientes", ( ::selectLineasAlbaran )->cCodCli ) ) + ::separador
+   if !Empty( AllTrim( getCustomExtraField( "004", "Albaranes a clientes", ( ::selectLineasAlbaran )->cSerAlb + Str( ( ::selectLineasAlbaran )->nNumAlb ) + ( ::selectLineasAlbaran )->cSufAlb ) ) )
+      ::cFichero  += AllTrim( getCustomExtraField( "004", "Albaranes a clientes", ( ::selectLineasAlbaran )->cSerAlb + Str( ( ::selectLineasAlbaran )->nNumAlb ) + ( ::selectLineasAlbaran )->cSufAlb ) ) + ::separador
+   else
+      ::cFichero  += AllTrim( ( D():AlbaranesClientes( ::nView ) )->cDniCli ) + ::separador
+   end
+   ::cFichero  += AllTrim( ( D():AlbaranesClientes( ::nView ) )->cNomCli ) + ::separador
+   ::cFichero  += AllTrim( getCustomExtraField( "005", "Clientes", ( ::selectLineasAlbaran )->cCodCli ) ) + ::separador
+   ::cFichero  += ::separador
+   ::cFichero  += ::separador
+   ::cFichero  += ::separador
+   ::cFichero  += ::separador
+   ::cFichero  += "A0" + ::separador
+   ::cFichero   += AllTrim( getCustomExtraField( "006", "Artículos", ( ::selectLineasAlbaran )->cRef ) ) + ::separador
+   ::cFichero  += AllTrim( getCustomExtraField( "007", "Artículos", ( ::selectLineasAlbaran )->cRef ) ) + ::separador
+   ::cFichero  += AllTrim( Trans( ( nTotNAlbCli( ::selectLineasAlbaran ) * ( ::selectLineasAlbaran )->nVolumen ), "@E 999999.99" ) ) + ::separador
+   ::cFichero  += "LTR" + ::separador
+   ::cFichero  += AllTrim( retFld( ( D():Articulos( ::nView ) )->cCodCate, D():Categorias( ::nView ), "cNombre" ) ) + ::separador
+   ::cFichero  += AllTrim( retFld( ( D():Articulos( ::nView ) )->cCodCate, D():Categorias( ::nView ), "cNombre" ) )  + ::separador
+   ::cFichero  += ::separador
+   if ValType( getCustomExtraField( "008", "Artículos", ( ::selectLineasAlbaran )->cRef ) ) == "N"
+      ::cFichero  += AllTrim( Trans( getCustomExtraField( "008", "Artículos", ( ::selectLineasAlbaran )->cRef ), "@E 999999.99" ) ) + ::separador
+      ::cFichero  += AllTrim( Trans( ( ( ( nTotNAlbCli( ::selectLineasAlbaran ) * ( ::selectLineasAlbaran )->nVolumen ) * getCustomExtraField( "008", "Artículos", ( ::selectLineasAlbaran )->cRef ) ) / 100 ), "@E 999999.999" ) ) + ::separador
+   else
+      ::cFichero  += "0,00" + ::separador
+      ::cFichero  += "0,000" + ::separador
+   end
+   ::cFichero  += ::separador
+   ::cFichero  += ::separador
+   ::cFichero  += ::separador
+   ::cFichero  += ::separador
+   ::cFichero  += "AD01" + ::separador
+   ::cFichero  += AllTrim( Trans( ( ::selectLineasAlbaran )->nVolumen, "@E 999999.99" ) )  + ::separador
+   ::cFichero  += AllTrim( Trans( nTotNAlbCli( ::selectLineasAlbaran ), "@E 999999.99" ) ) + ::separador
+   ::cFichero  += AllTrim( ( ::selectLineasAlbaran )->mObsLin ) + ::finLinea
+
+Return ( .T. )

@@ -1,0 +1,3378 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 9 ".\.\Prg\ConversionDocumentos.prg"
+_HB_CLASS TConversionDocumentos ; function TConversionDocumentos ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TConversionDocumentos", iif( .F., { }, { @HBObject() } ), @TConversionDocumentos() ) ) ;
+
+   _HB_MEMBER { oDocumentHeaders } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDocumentHeaders"}, .F. )
+   _HB_MEMBER { oDocumentLines } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDocumentLines"}, .F. )
+
+   _HB_MEMBER { aliasDocumentLine } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aliasDocumentLine"}, .F. )
+
+   _HB_MEMBER { oDlg } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDlg"}, .F. )
+   _HB_MEMBER { oFld } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFld"}, .F. )
+
+   _HB_MEMBER { oTitle } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTitle"}, .F. )
+   _HB_MEMBER { cTitle } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTitle"}, .F. )
+
+   _HB_MEMBER { buttonPrior } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"buttonPrior"}, .F. )
+   _HB_MEMBER { buttonNext } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"buttonNext"}, .F. )
+
+   _HB_MEMBER { nView } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nView"}, .F. )
+   _HB_MEMBER { lOpenFiles } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lOpenFiles"}, .F. )
+
+   _HB_MEMBER { oHeaderTable } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oHeaderTable"}, .F. )
+   _HB_MEMBER { oLineTable } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oLineTable"}, .F. )
+
+   _HB_MEMBER { oDocument } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDocument"}, .F. )
+   _HB_MEMBER { cDocument } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDocument"}, .F. )
+   _HB_MEMBER { aDocuments } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aDocuments"}, .F. )
+
+   _HB_MEMBER { cTargetDocument } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTargetDocument"}, .F. )
+   _HB_MEMBER { aTargetEmpresa } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aTargetEmpresa"}, .F. )
+   _HB_MEMBER { cTargetEmpresa } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTargetEmpresa"}, .F. )
+
+   _HB_MEMBER { oSearch } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSearch"}, .F. )
+   _HB_MEMBER { cSearch } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSearch"}, .F. )
+   _HB_MEMBER { oSortDocument } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSortDocument"}, .F. )
+   _HB_MEMBER { cSortDocument } ; oClass:AddMultiData(, "Número", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSortDocument"}, .F. )
+   _HB_MEMBER { aSortDocument } ; oClass:AddMultiData(, { "Número", "Fecha", "Nombre" }, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aSortDocument"}, .F. )
+
+   _HB_MEMBER { oSearchLines } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSearchLines"}, .F. )
+   _HB_MEMBER { cSearchLines } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSearchLines"}, .F. )
+   _HB_MEMBER { oSortLines } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSortLines"}, .F. )
+   _HB_MEMBER { cSortLines } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSortLines"}, .F. )
+   _HB_MEMBER { aSortLines } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aSortLines"}, .F. )
+
+   _HB_MEMBER { oBrwDocuments } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwDocuments"}, .F. )
+   _HB_MEMBER { oBrwLines } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwLines"}, .F. )
+   _HB_MEMBER { oColumnNumeroDocumento } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oColumnNumeroDocumento"}, .F. )
+
+   _HB_MEMBER { cPictureRound } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPictureRound"}, .F. )
+   _HB_MEMBER { nDecimalPrice } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nDecimalPrice"}, .F. )
+   _HB_MEMBER { nRoundDecimalPrice } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRoundDecimalPrice"}, .F. )
+
+   _HB_MEMBER { oPeriodo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oPeriodo"}, .F. )
+   _HB_MEMBER { oCliente } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCliente"}, .F. )
+   _HB_MEMBER { oProveedor } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oProveedor"}, .F. )
+   _HB_MEMBER { oArticulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oArticulo"}, .F. )
+   _HB_MEMBER { oEmpresa } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oEmpresa"}, .F. )
+   _HB_MEMBER { oSerie } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSerie"}, .F. )
+   _HB_MEMBER { oFecha } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFecha"}, .F. )
+
+   _HB_MEMBER { aPropertiesTable } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aPropertiesTable"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @TConversionDocumentos_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Dialog(); oClass:AddMethod( "Dialog", @TConversionDocumentos_Dialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER DialogSelectionCriteria(); oClass:AddMethod( "DialogSelectionCriteria", @TConversionDocumentos_DialogSelectionCriteria(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER DialogSelectionDocument(); oClass:AddMethod( "DialogSelectionDocument", @TConversionDocumentos_DialogSelectionDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER DialogSelectionLines(); oClass:AddMethod( "DialogSelectionLines", @TConversionDocumentos_DialogSelectionLines(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+         _HB_MEMBER changeUnits( oColumn, uValue, nKey); oClass:AddMethod( "changeUnits", @TConversionDocumentos_changeUnits(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+         _HB_MEMBER buildBrowseLines(); oClass:AddMethod( "buildBrowseLines", @TConversionDocumentos_buildBrowseLines(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+         _HB_MEMBER columnsBrowseLines(); oClass:AddMethod( "columnsBrowseLines", @TConversionDocumentos_columnsBrowseLines(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+         _HB_MEMBER setOrderFromColumns(); oClass:AddMethod( "setOrderFromColumns", @TConversionDocumentos_setOrderFromColumns(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER DialogSummary(); oClass:AddMethod( "DialogSummary", @TConversionDocumentos_DialogSummary(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER startDialog(); oClass:AddMethod( "startDialog", @TConversionDocumentos_startDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER changeSortDocument(); oClass:AddMethod( "changeSortDocument", @TConversionDocumentos_changeSortDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER changeSearch(); oClass:AddInline( "changeSearch", {|Self | ( ( Self ) ), ( ::oBrwDocuments:Seek( alltrim( ::cSearch ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setOrderInColumn( oColumn); oClass:AddMethod( "setOrderInColumn", @TConversionDocumentos_setOrderInColumn(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getDocument(); oClass:AddInline( "getDocument", {|Self | ( ( Self ) ), ( alltrim( ::cDocument ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getDocumentName(); oClass:AddInline( "getDocumentName", {|Self | ( ( Self ) ), ( if( !empty( ::getHeaderAlias() ), ::getDocument() + space( 1 ) + ::getHeaderTextId(), "" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER setTitle(); oClass:AddInline( "setTitle", {|Self, cTitle | ( ( Self ) ), ( if( !empty( ::oTitle ), ::oTitle:setText( cTitle ), ::cTitle := cTitle ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER isValidDialogRequisite(); oClass:AddMethod( "isValidDialogRequisite", @TConversionDocumentos_isValidDialogRequisite(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER isValidTargetDocument(); oClass:AddMethod( "isValidTargetDocument", @TConversionDocumentos_isValidTargetDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER getActionDocument(); oClass:AddInline( "getActionDocument", {|Self | ( ( Self ) ), ( hget( ::aDocuments, ::cDocument ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getActionTargetDocument(); oClass:AddInline( "getActionTargetDocument", {|Self | ( ( Self ) ), ( hget( ::aDocuments, ::cTargetDocument ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles(); oClass:AddMethod( "OpenFiles", @TConversionDocumentos_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @TConversionDocumentos_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getView(); oClass:AddInline( "getView", {|Self | ( ( Self ) ), ( ::nView ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER BotonSiguiente(); oClass:AddMethod( "BotonSiguiente", @TConversionDocumentos_BotonSiguiente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER BotonAnterior(); oClass:AddInline( "BotonAnterior", {|Self | ( ( Self ) ), ( ::oFld:goPrev() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER selectLine(); oClass:AddMethod( "selectLine", @TConversionDocumentos_selectLine(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER unSelectLine(); oClass:AddMethod( "unSelectLine", @TConversionDocumentos_unSelectLine(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER toogleSelectLine(); oClass:AddMethod( "toogleSelectLine", @TConversionDocumentos_toogleSelectLine(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER selectAllLine(); oClass:AddInline( "selectAllLine", {|Self | ( ( Self ) ), ( ::oDocumentLines:selectAll(),       ::oBrwLines:Refresh() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER unselectAllLine(); oClass:AddInline( "unselectAllLine", {|Self | ( ( Self ) ), ( ::oDocumentLines:unSelectAll(),     ::oBrwLines:Refresh() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER propertiesLine(); oClass:AddMethod( "propertiesLine", @TConversionDocumentos_propertiesLine(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER opcionInvalida(); oClass:AddInline( "opcionInvalida", {|Self | ( ( Self ) ), ( msgStop( "Opción invalida, por favor elija una opción valida." ), .F. ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER setSalesPictures(); oClass:AddInline( "setSalesPictures", {|Self | ( ( Self ) ), ( ::cPictureRound      := cPorDiv(), ::nDecimalPrice      := nDinDiv(), ::nRoundDecimalPrice := nRinDiv() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER setShoppingPictures(); oClass:AddInline( "setShoppingPictures", {|Self | ( ( Self ) ), ( ::cPictureRound      := cPirDiv(), ::nDecimalPrice      := nDouDiv(), ::nRoundDecimalPrice := nRouDiv() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER setSalesControls(); oClass:AddInline( "setSalesControls", {|Self | ( ( Self ) ), ( if( !empty(::oProveedor), ::oProveedor:Hide(), ), if( !empty(::oCliente), ::oCliente:Show(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER setShoppingControls(); oClass:AddInline( "setShoppingControls", {|Self | ( ( Self ) ), ( if( !empty(::oProveedor), ::oProveedor:Show(), ), if( !empty(::oCliente), ::oCliente:Hide(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER setDocumentType( cDataTable); oClass:AddMethod( "setDocumentType", @TConversionDocumentos_setDocumentType(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+   _HB_MEMBER setSalesDocumentType(); oClass:AddInline( "setSalesDocumentType", {|Self, cHeaderTable, cLineTable | ( ( Self ) ), ( ::setSalesPictures(), ::setSalesControls(), ::setDocumentType( cHeaderTable, cLineTable ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+   _HB_MEMBER setShoppingDocumentType(); oClass:AddInline( "setShoppingDocumentType", {|Self, cHeaderTable, cLineTable | ( ( Self ) ), ( ::setShoppingPictures(), ::setShoppingControls(), ::setDocumentType( cHeaderTable, cLineTable ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setDocumentPedidosProveedores(); oClass:AddInline( "setDocumentPedidosProveedores", {|Self | ( ( Self ) ), ( ::setShoppingDocumentType( D():PedidosProveedoresTableName(), D():PedidosProveedoresLineasTableName() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setDocumentPedidosClientes(); oClass:AddInline( "setDocumentPedidosClientes", {|Self | ( ( Self ) ), ( ::setSalesDocumentType( D():PedidosClientesTableName(), D():PedidosClientesLineasTableName() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setDocumentSATClientes(); oClass:AddInline( "setDocumentSATClientes", {|Self | ( ( Self ) ), ( ::setSalesDocumentType( D():SATClientesTableName(), D():SATClientesLineasTableName() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setHeaderTable(); oClass:AddInline( "setHeaderTable", {|Self, cTableName | ( ( Self ) ), ( ::oHeaderTable := TDataCenter():scanDataTableInView( cTableName, ::nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHeaderAlias(); oClass:AddInline( "getHeaderAlias", {|Self | ( ( Self ) ), ( ::oHeaderTable:getAlias() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHeaderEof(); oClass:AddInline( "getHeaderEof", {|Self | ( ( Self ) ), ( ( ::oHeaderTable:getAlias() )->( eof() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHeaderLastrec(); oClass:AddInline( "getHeaderLastrec", {|Self | ( ( Self ) ), ( ( ::oHeaderTable:getAlias() )->( lastrec() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHeaderOrdKeyCount(); oClass:AddInline( "getHeaderOrdKeyCount", {|Self | ( ( Self ) ), ( ( ::oHeaderTable:getAlias() )->( ordkeycount() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHeaderOrdKeyNo(); oClass:AddInline( "getHeaderOrdKeyNo", {|Self | ( ( Self ) ), ( ( ::oHeaderTable:getAlias() )->( ordkeyno() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHeaderDictionary(); oClass:AddInline( "getHeaderDictionary", {|Self | ( ( Self ) ), ( ::oHeaderTable:getDictionary() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHeaderIndex(); oClass:AddInline( "getHeaderIndex", {|Self | ( ( Self ) ), ( ::oHeaderTable:getIndex() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER getHeaderId(); oClass:AddInline( "getHeaderId", {|Self | ( ( Self ) ), ( D():getFieldFromAliasDictionary( "Serie", ::getHeaderAlias(), ::getHeaderDictionary() ) +  str( D():getFieldFromAliasDictionary( "Numero", ::getHeaderAlias(), ::getHeaderDictionary() ) ) +  D():getFieldFromAliasDictionary( "Sufijo", ::getHeaderAlias(), ::getHeaderDictionary() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHeaderDate(); oClass:AddInline( "getHeaderDate", {|Self | ( ( Self ) ), ( D():getFieldFromAliasDictionary( "Fecha", ::getHeaderAlias(), ::getHeaderDictionary() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setLineTable(); oClass:AddInline( "setLineTable", {|Self, cTableName | ( ( Self ) ), ( ::oLineTable := TDataCenter():scanDataTableInView( cTableName, ::nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getLineAlias(); oClass:AddInline( "getLineAlias", {|Self | ( ( Self ) ), ( ::oLineTable:getAlias() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getLineDictionary(); oClass:AddInline( "getLineDictionary", {|Self | ( ( Self ) ), ( ::oLineTable:getDictionary() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getLineIndex(); oClass:AddInline( "getLineIndex", {|Self | ( ( Self ) ), ( ::oLineTable:getIndex() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER getLineId(); oClass:AddInline( "getLineId", {|Self | ( ( Self ) ), ( D():getFieldFromAliasDictionary( "Serie", ::getLineAlias(), ::getLineDictionary() ) +  str( D():getFieldFromAliasDictionary( "Numero", ::getLineAlias(), ::getLineDictionary() ) ) +  D():getFieldFromAliasDictionary( "Sufijo", ::getLineAlias(), ::getLineDictionary() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER seekLineId(); oClass:AddInline( "seekLineId", {|Self | ( ( Self ) ), ( ( ::getLineAlias() )->( dbSeek( ::getHeaderId() ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER injectValuesBrowseProperties(); oClass:AddMethod( "injectValuesBrowseProperties", @TConversionDocumentos_injectValuesBrowseProperties(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER saveValuesBrowseProperties(); oClass:AddMethod( "saveValuesBrowseProperties", @TConversionDocumentos_saveValuesBrowseProperties(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setValuesBrowseProperties(); oClass:AddMethod( "setValuesBrowseProperties", @TConversionDocumentos_setValuesBrowseProperties(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getLinesDocument(); oClass:AddInline( "getLinesDocument", {|Self | ( ( Self ) ), ( ::oDocumentLines:getLines() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getLineDocument(); oClass:AddInline( "getLineDocument", {|Self, nPosition | ( ( Self ) ), ( ::oDocumentLines:getLine( if( !empty( nPosition ), nPosition, ::oBrwLines:nArrayAt ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHeaderDocument(); oClass:AddInline( "getHeaderDocument", {|Self, nPosition | ( ( Self ) ), ( ::oDocumentHeaders:getLine( if( !empty( nPosition ), nPosition, ::oBrwDocuments:nArrayAt ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER loadHeaderDocument(); oClass:AddMethod( "loadHeaderDocument", @TConversionDocumentos_loadHeaderDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER isValidHeaderDocument(); oClass:AddMethod( "isValidHeaderDocument", @TConversionDocumentos_isValidHeaderDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setBrowseHeaderDocument(); oClass:AddMethod( "setBrowseHeaderDocument", @TConversionDocumentos_setBrowseHeaderDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER loadLinesDocument(); oClass:AddMethod( "loadLinesDocument", @TConversionDocumentos_loadLinesDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setBrowseLinesDocument(); oClass:AddMethod( "setBrowseLinesDocument", @TConversionDocumentos_setBrowseLinesDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER showDocuments(); oClass:AddMethod( "showDocuments", @TConversionDocumentos_showDocuments(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER showDocumentsLines(); oClass:AddMethod( "showDocumentsLines", @TConversionDocumentos_showDocumentsLines(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER changeSearchLines(); oClass:AddInline( "changeSearchLines", {|Self | ( ( Self ) ), ( ::oBrwLines:Seek( alltrim( ::cSearchLines ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER changeSortLines(); oClass:AddMethod( "changeSortLines", @TConversionDocumentos_changeSortLines(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER clickOnLineHeader( oColumn); oClass:AddMethod( "clickOnLineHeader", @TConversionDocumentos_clickOnLineHeader(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER seekLine( c); oClass:AddMethod( "seekLine", @TConversionDocumentos_seekLine(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER clickOnDocumentHeader( oColumn); oClass:AddMethod( "clickOnDocumentHeader", @TConversionDocumentos_clickOnDocumentHeader(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER seekHeader(); oClass:AddMethod( "seekHeader", @TConversionDocumentos_seekHeader(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TConversionDocumentos ;
+
+
+
+static FUNCTION TConversionDocumentos_New( nView ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   ::nView              := nView
+
+   ::cDocument          := space( 3 ) + "Pedido proveedores"
+   ::cTargetDocument    := space( 3 ) + "S.A.T. clientes"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ::aDocuments         := {  "Compras" =>                                                   nil, space( 3 ) + "Pedido proveedores" =>                           {|| ::setDocumentPedidosProveedores() }, space( 3 ) + "Albarán proveedores" =>                          {|| msgStop( "Albarán proveedores" ) }, space( 3 ) + "Factura proveedores" =>                          {|| msgStop( "Factura proveedores" ) }, space( 3 ) + "Factura rectificativas proveedores" =>           {|| msgStop( "Factura rectificativas proveedores" ) }, space( 3 ) + "Recibos de proveedores" =>                       {|| msgStop( "Recibos de proveedores" ) }, "Ventas" =>                                                    nil, space( 3 ) + "S.A.T. clientes" =>                              {|| ::setDocumentSATClientes() }, space( 3 ) + "Presupuesto clientes" =>                         {|| msgStop( "" ), .T. }, space( 3 ) + "Pedido clientes" =>                              {|| msgStop( "" ), .T. }, space( 3 ) + "Albarán clientes" =>                             {|| msgStop( "" ), .T. }, space( 3 ) + "Factura clientes" =>                             {|| msgStop( "" ), .T. }, space( 3 ) + "Factura de anticipos" =>                         {|| msgStop( "" ), .T. }, space( 3 ) + "Factura rectificativa" =>                        {|| msgStop( "" ), .T. }, space( 3 ) + "Recibos facturas clientes" =>                    {|| msgStop( "" ), .T. }, space( 3 ) + "Tickets clientes" =>                             {|| msgStop( "" ), .T. }, space( 3 ) + "Parte de producción" =>                          {|| msgStop( "" ), .T. }, space( 3 ) + "Recibos de clientes" =>                          {|| msgStop( "" ), .T. } }
+
+   ::aTargetEmpresa     := aSerializedEmpresas()
+
+   ::aliasDocumentLine  := aliasDocumentLine():New( Self )
+
+   ::oDocumentHeaders   := DocumentLines():New( Self )
+
+   ::oDocumentLines     := DocumentLines():New( Self )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TConversionDocumentos_OpenFiles( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   local oError
+   local oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   BEGIN SEQUENCE
+
+      ::lOpenFiles      := .T.
+
+      ::nView           := D():CreateView()
+
+      D():Empresa( ::nView )
+
+      D():Proveedores( ::nView )
+
+      D():Clientes( ::nView )
+
+      D():GruposProveedores( ::nView )
+
+      D():PedidosProveedores( ::nView )
+
+      D():PedidosProveedoresLineas( ::nView )
+
+      D():PedidosProveedoresIncidencias( ::nView )
+
+      D():PedidosProveedoresDocumentos( ::nView )
+
+      D():PedidosClientes( ::nView )
+
+      D():PedidosClientesLineas( ::nView )
+
+      D():PedidosClientesIncidencias( ::nView )
+
+      D():AlbaranesClientes( ::nView )
+
+      D():AlbaranesClientesLineas( ::nView )
+
+      D():AlbaranesClientesIncidencias( ::nView )
+
+      D():FacturasClientes( ::nView )
+
+      D():FacturasClientesLineas( ::nView )
+
+      D():FacturasClientesIncidencias( ::nView )
+
+      D():SATClientes( ::nView )
+
+      D():SATClientesLineas( ::nView )
+
+      D():PropiedadesLineas( ::nView )
+
+   RECOVER USING oError
+
+      ::lOpenFiles         := .F.
+
+      msgStop( "Imposible abrir todas las bases de datos" + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+   end
+
+   ErrorBlock( oBlock )
+
+   if !::lOpenFiles
+      ::CloseFiles()
+   end
+
+RETURN ( ::lOpenFiles )
+
+
+
+static FUNCTION TConversionDocumentos_CloseFiles( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   D():DeleteView( ::nView )
+
+   ::lOpenFiles         := .F.
+
+Return ( Self )
+
+
+
+static FUNCTION TConversionDocumentos_Dialog( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   local oBmp
+
+   ::oDlg = TDialog():New(,,,,, "ASS_CONVERSION_DOCUMENTO",, .F.,,,,,, .F.,,,,,, .F.,, "::oDlg", nil, )
+
+
+
+
+
+   oBmp := TBitmap():ReDefine( 500, "gc_hand_touch_48",, ::oDlg,,, .F., .F.,,, .F.,,, .T. )
+
+
+
+
+
+
+
+   ::oFld := TPages():Redefine( 100, ::oDlg, {"ASS_CONVERSION_DOCUMENTO_1", "ASS_CONVERSION_DOCUMENTO_2", "ASS_CONVERSION_DOCUMENTO_3", "ASS_CONVERSION_DOCUMENTO_4"},,,, )
+
+   ::DialogSelectionCriteria( ::oFld:aDialogs[1] )
+
+
+
+   ::DialogSelectionDocument( ::oFld:aDialogs[2] )
+
+
+
+   ::DialogSelectionLines( ::oFld:aDialogs[3] )
+
+
+
+   ::DialogSummary( ::oFld:aDialogs[4] )
+
+
+
+
+
+
+   ::buttonPrior := TButton():ReDefine( 3, {||( ::BotonAnterior() )}, ::oDlg,,, .F.,,,, .F. )
+
+
+
+
+   ::buttonNext := TButton():ReDefine( 1, {||( ::BotonSiguiente() )}, ::oDlg,,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 2, {||( ::oDlg:End() )}, ::oDlg,,, .F.,,,, .F. )
+
+   ::oDlg:bStart  := {|| ::startDialog() }
+
+   ::oDlg:Activate( ::oDlg:bLClicked, ::oDlg:bMoved, ::oDlg:bPainted, .T.,,,, ::oDlg:bRClicked,,, )
+
+
+
+   oBmp:End()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TConversionDocumentos_DialogSelectionCriteria( oDlg ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+
+
+
+
+   ::oDocument := TComboBox():ReDefine( 100, { | u | If( PCount()==0, ::cDocument, ::cDocument:= u ) }, hgetkeys( ::aDocuments ), oDlg,,,,,,, .F.,,,,,,, "::oDocument",,,,,,, )
+
+   ::oDocument:bChange  := {|| ::showDocuments() }
+
+   ::oPeriodo     := GetPeriodo()
+      ::oPeriodo:New( 110, 120, 130 )
+      ::oPeriodo:Resource( oDlg )
+
+   ::oCliente     := GetCliente()
+      ::oCliente:New( 140, 141, 142 )
+      ::oCliente:Resource( oDlg )
+      ::oCliente:setView( ::nView )
+
+   ::oProveedor   := GetProveedor()
+      ::oProveedor:New( 150, 151, 152 )
+      ::oProveedor:Resource( oDlg )
+      ::oProveedor:setView( ::nView )
+
+   ::oArticulo    := GetArticulo()
+      ::oArticulo:New( 200, 201, 202 )
+      ::oArticulo:Resource( oDlg )
+      ::oArticulo:setView( ::nView )
+
+
+
+
+   TComboBox():ReDefine( 160, { | u | If( PCount()==0, ::cTargetDocument, ::cTargetDocument:= u ) }, hgetkeys( ::aDocuments ), oDlg,,,,,,, .F.,,,,,,,,,,,,,, )
+
+   ::oSerie       := GetSerie():New( 170 )
+      ::oSerie:Resource( oDlg )
+
+   ::oFecha       := GetFecha():New( 180 )
+      ::oFecha:Resource( oDlg )
+
+   ::oEmpresa     := GetEmpresa():New( 190, 191, 192 )
+      ::oEmpresa:Resource( oDlg )
+      ::oEmpresa:setView( ::nView )
+      ::oEmpresa:Current()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TConversionDocumentos_DialogSelectionDocument( oDlg ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+
+
+
+
+
+   ::oSearch := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, ::cSearch, ::cSearch:= u ) }, oDlg,, "@!",,,,,,, .F.,,, .F., .F.,,,,,, nil, "Find",, )
+
+   ::oSearch:bChange                := {|| ::changeSearch() }
+   ::oSearch:bValid                 := {|| ::oSearch:varPut( space( 100 ) ), .T. }
+
+
+
+
+
+
+   ::oSortDocument := TComboBox():ReDefine( 110, { | u | If( PCount()==0, ::cSortDocument, ::cSortDocument:= u ) }, ::aSortDocument, oDlg,,, {|Self|( ::changeSortDocument() )},,,, .F.,,,,,,, "::oSortDocument",,,,,,, )
+
+   ::oSortDocument:bChange          := {|| ::changeSortDocument() }
+
+
+
+   ::oBrwDocuments                  := IXBrowse():New( oDlg )
+
+   ::oBrwDocuments:lAutoSort        := .F.
+   ::oBrwDocuments:bClrSel          := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+   ::oBrwDocuments:bClrSelFocus     := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+   ::oBrwDocuments:nMarqueeStyle    := 5
+   ::oBrwDocuments:cName            := "Browse.Conversion documentos"
+
+   ::setBrowseHeaderDocument()
+
+   with object ( ::oBrwDocuments:AddCol() )
+      :cHeader                      := "Número"
+      :Cargo                        := "getNumeroDocumento"
+      :bEditValue                   := {|| ::getHeaderDocument():getNumeroDocumento() }
+      :nWidth                       := 80
+      :bLClickHeader                := {| nMRow, nMCol, nFlags, oColumn | ::clickOnDocumentHeader( oColumn ) }
+   end
+
+   with object ( ::oBrwDocuments:AddCol() )
+      :cHeader                      := "Fecha"
+      :Cargo                        := "getDate"
+      :bEditValue                   := {|| ::getHeaderDocument():getDate() }
+      :nWidth                       := 80
+      :bLClickHeader                := {| nMRow, nMCol, nFlags, oColumn | ::clickOnDocumentHeader( oColumn ) }
+   end
+
+   with object ( ::oBrwDocuments:AddCol() )
+      :cHeader                      := "Cliente"
+      :Cargo                        := "getClient"
+      :bEditValue                   := {|| ::getHeaderDocument():getClient() }
+      :nWidth                       := 80
+      :bLClickHeader                := {| nMRow, nMCol, nFlags, oColumn | ::clickOnDocumentHeader( oColumn ) }
+   end
+
+   with object ( ::oBrwDocuments:AddCol() )
+      :cHeader                      := "Nombre cliente"
+      :Cargo                        := "getClientName"
+      :bEditValue                   := {|| ::getHeaderDocument():getClientName() }
+      :nWidth                       := 200
+      :bLClickHeader                := {| nMRow, nMCol, nFlags, oColumn | ::clickOnDocumentHeader( oColumn ) }
+   end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ::oBrwDocuments:CreateFromResource( 120 )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TConversionDocumentos_DialogSelectionLines( oDlg ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+
+
+
+
+
+   ::oSearchLines := TGetHlp():ReDefine( 200, { | u | If( PCount()==0, ::cSearchLines, ::cSearchLines:= u ) }, oDlg,, "@!",,,,,,, .F.,,, .F., .F.,,,,,, nil, "Find",, )
+
+   ::oSearchLines:bChange           := {|| ::changeSearchLines() }
+   ::oSearchLines:bValid            := {|| ::oSearchLines:varPut( space( 100 ) ), .T. }
+
+
+
+
+
+   ::oSortLines := TComboBox():ReDefine( 210, { | u | If( PCount()==0, ::cSortLines, ::cSortLines:= u ) }, ::aSortLines, oDlg,,,,,,, .F.,,,,,,, "::oSortLines",,,,,,, )
+
+   ::oSortLines:bChange             := {|| ::changeSortLines() }
+
+
+
+
+   TButton():ReDefine( 500, {||( ::selectLine() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 510, {||( ::unselectLine() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 520, {||( ::selectAllLine() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 530, {||( ::unselectAllLine() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 540, {||( ::propertiesLine() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+   ::buildBrowseLines( oDlg )
+
+   ::columnsBrowseLines()
+
+   ::setOrderFromColumns()
+
+   ::clickOnLineHeader( ::oColumnNumeroDocumento )
+
+RETURN ( Self )
+
+
+
+
+
+
+static FUNCTION TConversionDocumentos_buildBrowseLines( oDlg ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   ::oBrwLines                      := IXBrowse():New( oDlg )
+
+   ::oBrwLines:lAutoSort            := .F.
+   ::oBrwLines:bClrSel              := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+   ::oBrwLines:bClrSelFocus         := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+   ::oBrwLines:nMarqueeStyle        := 6
+   ::oBrwLines:cName                := "Browse.Lineas." + ::ClassName()
+
+   ::oBrwLines:lFooter              := .T.
+
+   ::setBrowseLinesDocument()
+
+   ::oBrwLines:CreateFromResource( 100 )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TConversionDocumentos_columnsBrowseLines( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Seleccionando"
+      :bEditValue                   := {|| ::getLineDocument():isSelectLine() }
+      :nWidth                       := 20
+      :SetCheck( { "Sel16", "Nil16" } )
+   end
+
+   ::oColumnNumeroDocumento               := ::oBrwLines:AddCol()
+   ::oColumnNumeroDocumento:cHeader       := "Número"
+   ::oColumnNumeroDocumento:Cargo         := "getNumeroDocumento"
+   ::oColumnNumeroDocumento:bEditValue    := {|| ::getLineDocument():getNumeroDocumento() }
+   ::oColumnNumeroDocumento:nWidth        := 80
+   ::oColumnNumeroDocumento:bLClickHeader := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+   ::oColumnNumeroDocumento:bLDClickData  := {|| ::toogleSelectLine() }
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Fecha"
+      :Cargo                        := "getHeaderDate"
+      :bEditValue                   := {|| ::getLineDocument():getHeaderDate() }
+      :nWidth                       := 80
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+      :lHide                        := .T.
+      :nDataStrAlign                := 3
+      :nHeadStrAlign                := 3
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Cliente"
+      :Cargo                        := "getHeaderClient"
+      :bEditValue                   := {|| ::getLineDocument():getHeaderClient() }
+      :nWidth                       := 80
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+      :lHide                        := .T.
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Nombre cliente"
+      :Cargo                        := "getHeaderClientName"
+      :bEditValue                   := {|| ::getLineDocument():getHeaderClientName() }
+      :nWidth                       := 280
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+      :lHide                        := .T.
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Código"
+      :Cargo                        := "getCode"
+      :bEditValue                   := {|| ::getLineDocument():getCode() }
+      :nWidth                       := 80
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Descripción"
+      :Cargo                        := "getDescription"
+      :bEditValue                   := {|| ::getLineDocument():getDescription() }
+      :nWidth                       := 340
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Prop. 1"
+      :Cargo                        := "getCodeFirstProperty"
+      :bEditValue                   := {|| ::getLineDocument():getCodeFirstProperty() }
+      :nWidth                       := 60
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Prop. 2"
+      :Cargo                        := "getCodeSecondProperty"
+      :bEditValue                   := {|| ::getLineDocument():getCodeSecondProperty() }
+      :nWidth                       := 60
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Valor propiedad 1"
+      :Cargo                        := "getValueFirstProperty"
+      :bEditValue                   := {|| ::getLineDocument():getValueFirstProperty() }
+      :nWidth                       := 60
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Valor propiedad 2"
+      :Cargo                        := "getValueSecondProperty"
+      :bEditValue                   := {|| ::getLineDocument():getValueSecondProperty() }
+      :nWidth                       := 60
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Nombre propiedad 1"
+      :Cargo                        := "getNameFirstProperty"
+      :bEditValue                   := {|| ::getLineDocument():getNameFirstProperty() }
+      :nWidth                       := 60
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Nombre propiedad 2"
+      :Cargo                        := "getNameSecondProperty"
+      :bEditValue                   := {|| ::getLineDocument():getNameSecondProperty() }
+      :nWidth                       := 60
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Lote"
+      :Cargo                        := "getLote"
+      :bEditValue                   := {|| ::getLineDocument():getLote() }
+      :nWidth                       := 80
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := cNombreCajas()
+      :Cargo                        := "getBoxes"
+      :bEditValue                   := {|| ::getLineDocument():getBoxes() }
+      :cEditPicture                 := masUnd()
+      :nWidth                       := 50
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := cNombreUnidades()
+      :Cargo                        := "getUnits"
+      :bEditValue                   := {|| ::getLineDocument():getUnits() }
+      :cEditPicture                 := masUnd()
+      :nWidth                       := 60
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+      :nEditType                    := 1
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bOnPostEdit                  := {|oColumn, uValue, nKey| ::changeUnits( oColumn, uValue, nKey ) }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Total " + cNombreUnidades()
+      :Cargo                        := "getTotalUnits"
+      :bEditValue                   := {|| ::getLineDocument():getTotalUnits() }
+      :cDataType                    := "N"
+      :cEditPicture                 := masUnd()
+      :cFooterPicture               := masUnd()
+      :nWidth                       := 60
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+      :nFootStrAlign                := 1
+      :lHide                        := .F.
+      :nFooterType                  := 1
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "UM. Unidad de medición"
+      :Cargo                        := "getMeasurementUnit"
+      :bEditValue                   := {|| ::getLineDocument():getMeasurementUnit() }
+      :nWidth                       := 25
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Almacen"
+      :Cargo                        := "getStore"
+      :bEditValue                   := {|| ::getLineDocument():getStore() }
+      :nWidth                       := 60
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Importe"
+      :Cargo                        := "getNetPrice"
+      :bEditValue                   := {|| ::getLineDocument():getNetPrice() }
+      :cDataType                    := "N"
+      :cEditPicture                 := ::cPictureRound
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "% Dto."
+      :Cargo                        := "getPercentageDiscount"
+      :bEditValue                   := {|| ::getLineDocument():getPercentageDiscount() }
+      :cEditPicture                 := "@E 999.99"
+      :nWidth                       := 50
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "% Dto. promoción"
+      :Cargo                        := "getPercentagePromotion"
+      :bEditValue                   := {|| ::getLineDocument():getPercentagePromotion() }
+      :cEditPicture                 := "@E 999.99"
+      :nWidth                       := 50
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "% " + cImp()
+      :Cargo                        := "getPercentageTax"
+      :bEditValue                   := {|| ::getLineDocument():getPercentageTax() }
+      :cEditPicture                 := "@E 999.99"
+      :nWidth                       := 50
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Total"
+      :Cargo                        := "getBruto"
+      :bEditValue                   := {|| ::getLineDocument():getBruto() }
+      :cEditPicture                 := ::cPictureRound
+      :nWidth                       := 80
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnLineHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TConversionDocumentos_setOrderFromColumns( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+RETURN ( aeval( ::oBrwLines:aCols, {|oColumn| aadd( ::aSortLines, oColumn:cHeader ) } ) )
+
+
+
+static FUNCTION TConversionDocumentos_changeUnits( oColumn, uValue, nKey ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   if isNum( nKey ) .AND. ( nKey == 27 )
+      Return ( Self )
+   end
+
+   if !isNil( uValue )
+      ::getLineDocument():setUnits( uValue  )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TConversionDocumentos_propertiesLine( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   local oDialogBrowseProperties
+
+   ::aPropertiesTable            := D():getArticuloTablaPropiedades( ::getLineDocument():getCode(), ::getView() )
+   if empty( ::aPropertiesTable )
+      msgStop( "Este artículo no tiene propiedades." )
+      Return ( Self )
+   end
+
+   ::injectValuesBrowseProperties()
+
+   oDialogBrowseProperties       := DialogBrowseProperties():new( Self )
+   if oDialogBrowseProperties:Dialog()
+
+      ::saveValuesBrowseProperties()
+
+      ::oBrwLines:Refresh()
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TConversionDocumentos_DialogSummary( oDlg ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+
+
+
+   TSay():ReDefine( 100, {||         ::getDocument()}, oDlg,,,, .F.,, .F., .F., )
+
+
+
+
+   TSay():ReDefine( 110, {||         "::getHeaderTextId()"}, oDlg,,,, .F.,, .F., .F., )
+
+
+
+
+   TComboBox():ReDefine( 130, { | u | If( PCount()==0, ::cTargetEmpresa, ::cTargetEmpresa:= u ) }, ::aTargetEmpresa, oDlg,,,,,,, .F.,,,,,,,,,,,,,, )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TConversionDocumentos_startDialog( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   ::oBrwDocuments:Load()
+
+   ::oBrwLines:Load()
+
+   ::setDocumentPedidosProveedores()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TConversionDocumentos_isValidDialogRequisite( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   if !::isValidTargetDocument()
+      RETURN ( .F. )
+   end
+
+   if !::oSerie:Valid()
+      RETURN ( .F. )
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TConversionDocumentos_isValidTargetDocument( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   if empty(::cTargetDocument)
+      msgStop( "El documento destino no es valido.")
+      RETURN ( .F. )
+   end
+
+   if ( ::cTargetDocument == ::cDocument )
+      msgStop( "El documento origen y destino son del mismo tipo.")
+      RETURN ( .F. )
+   end
+
+   if empty( ::getActionTargetDocument() )
+      msgStop( "El documento destino seleccionado no es valido." )
+      RETURN ( .F. )
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TConversionDocumentos_BotonSiguiente( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   do case
+      case ::oFld:nOption == 1
+
+         if ::isValidDialogRequisite() .AND. ::showDocuments()
+            ::oFld:goNext()
+         end
+
+      case ::oFld:nOption == 2
+
+         if ::showDocumentsLines()
+            ::oFld:goNext()
+         end
+
+      case ::oFld:nOption == 3
+
+         ::oFld:goNext()
+
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TConversionDocumentos_showDocuments( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   local bAction
+   local lAction  := .F.
+
+   if empty( ::cDocument )
+      Return ( .F. )
+   end
+
+   bAction        := ::getActionDocument()
+
+   if isBlock( bAction )
+
+      lAction     := eval( bAction )
+
+      ::setOrderInColumn()
+
+      ::loadHeaderDocument()
+
+      ::setBrowseHeaderDocument()
+
+   else
+
+      ::opcionInvalida()
+
+   end
+
+Return ( lAction )
+
+
+
+static FUNCTION TConversionDocumentos_showDocumentsLines( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   local id       := ::getHeaderId()
+
+   if empty( id )
+      Return ( .F. )
+   end
+
+   if ::loadLinesDocument( id )
+      ::setBrowseLinesDocument()
+   end
+
+   ::selectAllLine()
+
+Return ( .T. )
+
+
+
+static FUNCTION TConversionDocumentos_setDocumentType( cTableHeadName, cTableLineName ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   ::setHeaderTable( cTableHeadName )
+
+   ::setLineTable( cTableLineName )
+
+Return ( .T. )
+
+
+
+static FUNCTION TConversionDocumentos_clickOnDocumentHeader( oColumn, setSort ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   If( setSort == nil, setSort := .T., ) ;
+
+   aeval( ::oBrwDocuments:aCols, {|o| if( o:cHeader == oColumn:cHeader, o:cOrder := "A", o:cOrder := "" ) } )
+
+   ::oDocumentHeaders:sortingPleaseWait( oColumn:Cargo )
+
+   ::oBrwDocuments:Refresh()
+
+   if setSort
+      ::oSortDocument:set( oColumn:cHeader )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TConversionDocumentos_changeSortDocument( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   local nScan
+   local cSort    := ::oSortDocument:varGet()
+
+   nScan          := ascan( ::oBrwDocuments:aCols, {| oColumn | oColumn:cHeader == cSort } )
+   if nScan <> 0
+      ::clickOnDocumentHeader( ::oBrwDocuments:aCols[ nScan ] )
+   end
+
+Return ( .T. )
+
+
+
+static FUNCTION TConversionDocumentos_setOrderInColumn( oColumn ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   if empty(::oBrwDocuments)
+      Return ( Self )
+   end
+
+   aeval( ::oBrwDocuments:aCols, {|o| o:cOrder := "" } )
+
+   if empty( oColumn )
+      ::oBrwDocuments:aCols[ 1 ]:cOrder := "A"
+   else
+      oColumn:cOrder := "A"
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TConversionDocumentos_selectLine( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   local nPosition
+   local oLineDocument
+
+   for each nPosition in ::oBrwLines:aSelected
+
+      oLineDocument     := ::getLineDocument( nPosition )
+
+      if !empty( oLineDocument )
+         oLineDocument:selectLine()
+      end
+
+   next
+
+   ::oBrwLines:Refresh()
+
+Return ( Self )
+
+
+
+static FUNCTION TConversionDocumentos_unSelectLine( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   local position
+
+   for each position in ::oBrwLines:aSelected
+      ::getLineDocument( position ):unSelectLine()
+   next
+
+   ::oBrwLines:Refresh()
+
+Return ( Self )
+
+
+
+static FUNCTION TConversionDocumentos_toogleSelectLine( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   local position
+
+   for each position in ::oBrwLines:aSelected
+      ::getLineDocument( position ):toogleSelectLine()
+   next
+
+   ::oBrwLines:Refresh()
+
+Return ( Self )
+
+
+
+static FUNCTION TConversionDocumentos_loadHeaderDocument( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   local aStatus
+   local hDictionary
+   local lLoadHeaders
+   local oDocumentHeader
+
+   lLoadHeaders            := .F.
+
+   ::oDocumentHeaders:reset()
+
+   aStatus                 := aGetStatus( ::getHeaderAlias(), .T. )
+
+   ( ::getHeaderAlias() )->( dbGoTop() )
+
+   while !( ::getHeaderAlias() )->( eof() )
+
+      if ::isValidHeaderDocument()
+
+         hDictionary       := D():getHashFromAlias( ::getHeaderAlias(), ::getHeaderDictionary() )
+
+         oDocumentHeader   := DocumentHeader():newFromDictionary( self, hDictionary )
+
+         ::oDocumentHeaders:addLines( oDocumentHeader )
+
+         lLoadHeaders      := .T.
+
+      end
+
+      ( ::getHeaderAlias() )->( dbSkip() )
+
+   end
+
+   setStatus( ::getHeaderAlias(), aStatus )
+
+RETURN ( lLoadHeaders )
+
+
+
+static FUNCTION TConversionDocumentos_setBrowseHeaderDocument( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   ::oBrwDocuments:setArray( ::oDocumentHeaders:getLines(), .T., , .F. )
+
+   ::oBrwDocuments:bSeek := {|c| ::seekHeader( c ) }
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TConversionDocumentos_seekHeader( cSeek ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   local nRow
+   local uVal
+   local nColumnToSearch
+
+   nColumnToSearch         := ascan( ::oBrwDocuments:aCols, { |o| !Empty( o:cOrder ) } )
+
+   if nColumnToSearch == 0
+      Return .F.
+   end
+
+   nRow                    := ::oBrwDocuments:nArrayAt
+
+   for ::oBrwDocuments:nArrayAt := 1 to ::oBrwDocuments:nLen
+
+      uVal                 := eval( ::oBrwDocuments:aCols[ nColumnToSearch ]:bEditValue )
+
+      if hb_WildMatch( "*" + cSeek, uVal )
+         ::oBrwDocuments:SelectCurrent()
+         Return .T.
+      endif
+
+   next
+
+   ::oBrwDocuments:nArrayAt    := nRow
+
+Return .T.
+
+
+
+static FUNCTION TConversionDocumentos_isValidHeaderDocument( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   if empty( ::oProveedor )
+      Return .T.
+   end
+
+   if empty( ::oPeriodo )
+      Return .T.
+   end
+
+Return ( ( empty( ::oProveedor:value() ) .OR. ::oProveedor:value() == ::getEntityId() ) .AND. ::oPeriodo:inRange( ::getHeaderDate() ) )
+
+
+
+
+
+
+static FUNCTION TConversionDocumentos_loadLinesDocument( id ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   local aStatus
+   local lLoadLines
+   local hDictionary
+   local oDocumentLine
+
+   lLoadLines           := .F.
+
+   ::oDocumentLines:reset()
+
+   aStatus              := aGetStatus( ::getLineAlias(), .T. )
+
+   if ( ::getLineAlias() )->( dbSeek( id ) )
+
+      while ( id == ::aliasDocumentLine():getDocumentId() ) .AND. !( ::getLineAlias() )->( eof() )
+
+         hDictionary    := D():getHashFromAlias( ::getLineAlias(), ::getLineDictionary() )
+
+         oDocumentLine  := DocumentLine():newFromDictionary( self, hDictionary )
+
+         ::oDocumentLines:addLines( oDocumentLine )
+
+         ( ::getLineAlias() )->( dbSkip() )
+
+      end
+
+      lLoadLines     := .T.
+
+   end
+
+   setStatus( ::getLineAlias(), aStatus )
+
+   ::oBrwLines:goTop()
+
+RETURN ( lLoadLines )
+
+
+
+static FUNCTION TConversionDocumentos_setBrowseLinesDocument( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   ::oBrwLines:setArray( ::oDocumentLines:getLines(), .T., , .F. )
+
+   ::oBrwLines:bSeek := {|c| ::seekLine( c ) }
+
+   ::oBrwLines:makeTotals()
+
+   ::oBrwLines:goTop()
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TConversionDocumentos_clickOnLineHeader( oColumn, setSortLines ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   If( setSortLines == nil, setSortLines := .T., ) ;
+
+   aeval( ::oBrwLines:aCols, {|o| if( o:cHeader == oColumn:cHeader, o:cOrder := "A", o:cOrder := "" ) } )
+
+   ::oDocumentLines:sortingPleaseWait( oColumn:Cargo )
+
+   ::oBrwLines:Refresh()
+
+   if setSortLines
+      ::oSortLines:set( oColumn:cHeader )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TConversionDocumentos_seekLine( cSeek ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   local nRow
+   local uVal
+   local nColumnToSearch
+
+   nColumnToSearch         := ascan( ::oBrwLines:aCols, { |o| !Empty( o:cOrder ) } )
+
+   if nColumnToSearch == 0
+      Return .F.
+   end
+
+   nRow                    := ::oBrwLines:nArrayAt
+
+   for ::oBrwLines:nArrayAt := 1 to ::oBrwLines:nLen
+
+      uVal                 := eval( ::oBrwLines:aCols[ nColumnToSearch ]:bEditValue )
+
+      if hb_WildMatch( "*" + cSeek, uVal )
+         ::oBrwLines:SelectCurrent()
+         Return .T.
+      endif
+
+   next
+
+   ::oBrwLines:nArrayAt    := nRow
+
+Return .T.
+
+
+
+static FUNCTION TConversionDocumentos_changeSortLines( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   local nScan
+
+   nScan          := ascan( ::oBrwLines:aCols, {| oColumn | oColumn:cHeader == ::cSortLines } )
+
+   if nScan <> 0
+      ::clickOnLineHeader( ::oBrwLines:aCols[ nScan ], .F. )
+   end
+
+Return ( .T. )
+
+
+
+static FUNCTION TConversionDocumentos_injectValuesBrowseProperties( ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   local oLine
+   local aLines   := ::oDocumentLines:getLines()
+
+   for each oLine in aLines
+      if ::getLineDocument():getCode() == oLine:getProductId()
+         D():setArticuloTablaPropiedades( oLine:getProductId(), oLine:getCodeFirstProperty(), oLine:getCodeSecondProperty(), oLine:getValueFirstProperty(), oLine:getValueSecondProperty(), oLine:getTotalUnits(), ::aPropertiesTable )
+      end
+   next
+
+Return ( .T. )
+
+
+
+static FUNCTION TConversionDocumentos_saveValuesBrowseProperties( idProduct ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   local oLineSave
+   local aLinesSaved
+
+   for each aLinesSaved in ::aPropertiesTable
+      for each oLineSave in aLinesSaved
+         ::setValuesBrowseProperties( oLineSave )
+      next
+   next
+
+Return ( .T. )
+
+
+
+static FUNCTION TConversionDocumentos_setValuesBrowseProperties( oLineSave ) ; local Self AS CLASS TConversionDocumentos := QSelf() AS CLASS TConversionDocumentos
+
+   local oLineDocument
+   local aLinesDocument    := ::getLinesDocument()
+
+   for each oLineDocument in aLinesDocument
+
+
+
+
+
+      if rtrim( oLineSave:cCodigo )            == rtrim( oLineDocument:getProductId() )            .AND.  rtrim( oLineSave:cCodigoPropiedad1 )  == rtrim( oLineDocument:getCodeFirstProperty() )    .AND.  rtrim( oLineSave:cCodigoPropiedad2 )  == rtrim( oLineDocument:getCodeSecondProperty() )   .AND.  rtrim( oLineSave:cValorPropiedad1 )   == rtrim( oLineDocument:getValueFirstProperty() )   .AND.  rtrim( oLineSave:cValorPropiedad2 )   == rtrim( oLineDocument:getValueSecondProperty() )
+
+         oLineDocument:setUnidades( oLineSave:Value )
+
+         oLineDocument:selectLine()
+
+      end
+
+   next
+
+Return ( .T. )

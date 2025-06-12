@@ -1,0 +1,17 @@
+//---------------------------------------------------------------------------//
+
+Function SqlOpen()
+
+   local cStatement     := ""
+
+   if !Auth():isSuperAdmin()
+      cStatement        := "SELECT * FROM " + cPatEmp() + "TikeT WHERE cCcjTik='" + Auth():Codigo() + "'"
+   end
+
+   if Empty( cStatement )
+      cStatement        := "SELECT * FROM " + cPatEmp() + "TikeT"
+   end
+
+Return ( cStatement )
+
+//---------------------------------------------------------------------------//

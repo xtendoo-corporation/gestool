@@ -1,0 +1,2371 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 8 ".\.\Prg\TDiaCaducidad.prg"
+_HB_CLASS TDiaCaducidad ; function TDiaCaducidad ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TDiaCaducidad", iif( .T., { @TNewInfGen() }, { @HBObject() } ), @TDiaCaducidad() ) ) ;
+
+   _HB_MEMBER { AS OBJECT oAlbPrvL } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAlbPrvL"}, .F. )
+   _HB_MEMBER { AS OBJECT oFacPrvL } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacPrvL"}, .F. )
+   _HB_MEMBER { AS OBJECT oAlbCliL } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAlbCliL"}, .F. )
+   _HB_MEMBER { AS OBJECT oFacCliL } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacCliL"}, .F. )
+   _HB_MEMBER { AS OBJECT oFacRecL } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacRecL"}, .F. )
+   _HB_MEMBER { AS OBJECT oTikCliL } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTikCliL"}, .F. )
+   _HB_MEMBER { AS ARRAY aArticulos } ; oClass:AddMultiData( "ARRAY", {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aArticulos"}, .F. )
+   _HB_MEMBER { AS NUMERIC nPos } ; oClass:AddMultiData( "NUMERIC", 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nPos"}, .F. )
+
+   _HB_MEMBER Create(); oClass:AddMethod( "Create", @TDiaCaducidad_Create(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles(); oClass:AddMethod( "OpenFiles", @TDiaCaducidad_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @TDiaCaducidad_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lResource( cFld); oClass:AddMethod( "lResource", @TDiaCaducidad_lResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lGenerate(); oClass:AddMethod( "lGenerate", @TDiaCaducidad_lGenerate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddAlbaranesproveedor( cCodArt); oClass:AddMethod( "AddAlbaranesproveedor", @TDiaCaducidad_AddAlbaranesproveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddFacturasproveedor( cCodArt); oClass:AddMethod( "AddFacturasproveedor", @TDiaCaducidad_AddFacturasproveedor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddAlbaranesClientes( cCodArt); oClass:AddMethod( "AddAlbaranesClientes", @TDiaCaducidad_AddAlbaranesClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddFacturasClientes( cCodArt); oClass:AddMethod( "AddFacturasClientes", @TDiaCaducidad_AddFacturasClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddTicketsClientes( cCodArt); oClass:AddMethod( "AddTicketsClientes", @TDiaCaducidad_AddTicketsClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddFacturasRectificativas( cCodArt); oClass:AddMethod( "AddFacturasRectificativas", @TDiaCaducidad_AddFacturasRectificativas(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TDiaCaducidad ;
+
+
+
+static FUNCTION TDiaCaducidad_Create( ) ; local Self AS CLASS TDiaCaducidad := QSelf() AS CLASS TDiaCaducidad
+
+   ::AddField( "cCodArt",     "C", 18, 0,  {|| "@!" },        "Código artículo",   .F., "Código artículo",        14, .F. )
+   ::AddField( "cNomArt",     "C",100, 0,  {|| "@!" },        "Nom. art.",   .F., "Nombre artículo",        14, .F. )
+   ::AddField( "cCodTip",     "C",  4, 0,  {|| "@!" },        "Cod. tip.",   .F., "Código tipo artículo",   14, .F. )
+   ::AddField( "cNomTip",     "C", 35, 0,  {|| "@!" },        "Nom. tip.",   .F., "Nombre tipo artículo",   14, .F. )
+   ::AddField( "cCodFam",     "C", 16, 0,  {|| "@!" },        "Cod. fam.",   .F., "Código familia",         14, .F. )
+   ::AddField( "cNomFam",     "C", 40, 0,  {|| "@!" },        "Nom. fam.",   .F., "Nombre familia",         14, .F. )
+   ::AddField( "cCodCat",     "C",  3, 0,  {|| "@!" },        "Cod. cat.",   .F., "Código categoria",       14, .F. )
+   ::AddField( "cNomCat",     "C", 50, 0,  {|| "@!" },        "Nom. cat.",   .F., "Nombre categoria",       14, .F. )
+   ::AddField( "dFecCad",     "D",  8, 0,  {|| "@!" },        "Caducidad",   .T., "Fecha de caducidad",     14, .F. )
+   ::AddField( "cLote",       "C", 64, 0,  {|| "@!" },        "Lote",        .T., "Lote del producto",      20, .F. )
+   ::AddField( "nUnidades",   "N", 16, 6,  {|| MasUnd() },    "Unidades",    .T., "Unidades actuales",      20, .F. )
+   ::AddField( "nCompras",    "N", 16, 6,  {|| MasUnd() },    "Compras",     .F., "Unidades compradas",     20, .F. )
+   ::AddField( "nVentas",     "N", 16, 6,  {|| MasUnd() },    "Ventas",      .F., "Unidades vendidas",      20, .F. )
+
+RETURN ( self )
+
+
+
+static FUNCTION TDiaCaducidad_OpenFiles( ) ; local Self AS CLASS TDiaCaducidad := QSelf() AS CLASS TDiaCaducidad
+
+   local lOpen    := .T.
+   local oBlock   := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   BEGIN SEQUENCE
+
+   ::oAlbPrvL := DbfServer( "ALBPROVL.DBF", ):NewOpen( "ALBPROVL.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oAlbPrvL:AddBag( "ALBPROVL.CDX" ) ; ::oAlbPrvL:AddBag( ) ; ::oAlbPrvL:AutoIndex()
+   ::oAlbPrvL:OrdSetFocus( "cStkFast" )
+
+   ::oFacPrvL := DbfServer( "FACPRVL.DBF", ):NewOpen( "FACPRVL.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oFacPrvL:AddBag( "FACPRVL.CDX" ) ; ::oFacPrvL:AddBag( ) ; ::oFacPrvL:AutoIndex()
+   ::oAlbPrvL:OrdSetFocus( "cRef" )
+
+   ::oAlbCliL := DbfServer( "ALBCLIL.DBF", ):NewOpen( "ALBCLIL.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oAlbCliL:AddBag( "ALBCLIL.CDX" ) ; ::oAlbCliL:AddBag( ) ; ::oAlbCliL:AutoIndex()
+   ::oAlbPrvL:OrdSetFocus( "cStkFast" )
+
+   ::oFacCliL := DbfServer( "FACCLIL.DBF", ):NewOpen( "FACCLIL.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oFacCliL:AddBag( "FACCLIL.CDX" ) ; ::oFacCliL:AddBag( ) ; ::oFacCliL:AutoIndex()
+   ::oAlbPrvL:OrdSetFocus( "cRef" )
+
+   ::oFacRecL := DbfServer( "FACRECL.DBF", ):NewOpen( "FACRECL.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oFacRecL:AddBag( "FACRECL.CDX" ) ; ::oFacRecL:AddBag( ) ; ::oFacRecL:AutoIndex()
+   ::oAlbPrvL:OrdSetFocus( "cRef" )
+
+   ::oTikCliL := DbfServer( "TIKEL.DBF", ):NewOpen( "TIKEL.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oTikCliL:AddBag( "TIKEL.CDX" ) ; ::oTikCliL:AddBag( ) ; ::oTikCliL:AutoIndex()
+   ::oAlbPrvL:OrdSetFocus( "CCBATIL" )
+
+   RECOVER
+
+      msgStop( "Imposible abrir todas las bases de datos" )
+      ::CloseFiles()
+      lOpen          := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TDiaCaducidad_CloseFiles( ) ; local Self AS CLASS TDiaCaducidad := QSelf() AS CLASS TDiaCaducidad
+
+   if !Empty( ::oAlbPrvL ) .AND. ::oAlbPrvL:Used()
+      ::oAlbPrvL:End()
+   end
+      if !Empty( ::oFacPrvL ) .AND. ::oFacPrvL:Used()
+      ::oFacPrvL:End()
+   end
+   if !Empty( ::oAlbCliL ) .AND. ::oAlbCliL:Used()
+      ::oAlbCliL:End()
+   end
+   if !Empty( ::oFacCliL ) .AND. ::oFacCliL:Used()
+      ::oFacCliL:End()
+   end
+   if !Empty( ::oFacRecL ) .AND. ::oFacRecL:Used()
+      ::oFacRecL:End()
+   end
+   if !Empty( ::oTikCliL ) .AND. ::oTikCliL:Used()
+      ::oTikCliL:End()
+   end
+
+   ::oAlbPrvL := nil
+   ::oFacPrvL := nil
+   ::oAlbCliL := nil
+   ::oFacCliL := nil
+   ::oFacRecL := nil
+   ::oTikCliL := nil
+
+RETURN ( Self )
+
+
+
+static FUNCTION TDiaCaducidad_lResource( cFld ) ; local Self AS CLASS TDiaCaducidad := QSelf() AS CLASS TDiaCaducidad
+
+   ::lNewInforme  := .T.
+
+
+
+
+
+   ::cEmptyIndex  := "cCodArt"
+
+   if !::NewResource()
+      return .F.
+   end
+
+   if !::lGrupoFamilia( .F. )
+      return .F.
+   end
+
+   if !::lGrupoTipoArticulo( .F. )
+      return .F.
+   end
+
+   if !::lGrupoCategoria( .F. )
+      return .F.
+   end
+
+   if !::lGrupoArticulo( .T. )
+      return .F.
+   end
+
+   ::lDefCondiciones := .F.
+
+   ::oMtrInf:SetTotal( ::oDbfArt:Lastrec() )
+
+   ::CreateFilter( aItmArt(), ::oDbfArt:cAlias )
+
+RETURN .T.
+
+
+
+static FUNCTION TDiaCaducidad_lGenerate( ) ; local Self AS CLASS TDiaCaducidad := QSelf() AS CLASS TDiaCaducidad
+
+   local cExpArt     := ""
+   local aArticulo
+
+   ::aArticulos      := {}
+
+   ::oDlg:Disable()
+   ::oBtnCancel:Enable()
+   ::oDbf:Zap()
+
+
+
+
+
+
+   ::aHeader      := {  {|| Padr( "Fecha", 13 ) + ": " + Dtoc( Date() ) }, {|| Padr( "Periodo", 13 ) + ": " + Dtoc( ::dIniInf ) + " > " + Dtoc( ::dFinInf ) } }
+
+   if !::oGrupoFamilia:Cargo:Todos
+      aAdd( ::aHeader, {|| Padr( "Familia", 13 ) + ": " + AllTrim( ::oGrupoFamilia:Cargo:Desde ) + " > " + AllTrim( ::oGrupoFamilia:Cargo:Hasta ) } )
+   end
+
+   if !::oGrupoTArticulo:Cargo:Todos
+      aAdd( ::aHeader, {|| Padr( "Tipo artículo", 13 ) + ": " + AllTrim( ::oGrupoTArticulo:Cargo:Desde ) + " > " + AllTrim( ::oGrupoTArticulo:Cargo:Hasta ) } )
+   end
+
+   if !::oGrupoCategoria:Cargo:Todos
+      aAdd( ::aHeader, {|| Padr( "Categorias", 13 ) + ": " + AllTrim( ::oGrupoCategoria:Cargo:Desde ) + " > " + AllTrim( ::oGrupoCategoria:Cargo:Hasta ) } )
+   end
+
+   if !::oGrupoArticulo:Cargo:Todos
+      aAdd( ::aHeader, {|| Padr( "Artículo", 13 ) + ": " + AllTrim( ::oGrupoArticulo:Cargo:Desde ) + " > " + AllTrim( ::oGrupoArticulo:Cargo:Hasta ) } )
+   end
+
+
+
+
+
+   ::oDbfArt:OrdSetFocus( "Codigo" )
+
+   if !::oGrupoArticulo:Cargo:Todos
+      cExpArt     := 'Codigo >= "' + ::oGrupoArticulo:Cargo:Desde + '" .and. Codigo <= "' + ::oGrupoArticulo:Cargo:Hasta + '"'
+   else
+      cExpArt     := ".t."
+   end
+
+   if !::oGrupoFamilia:Cargo:Todos
+      cExpArt     += ' .and. Familia >= "' + ::oGrupoFamilia:Cargo:Desde + '" .and. Familia <= "' + ::oGrupoFamilia:Cargo:Hasta + '"'
+   end
+
+   if !::oGrupoTArticulo:Cargo:Todos
+      cExpArt     += ' .and. cCodTip >= "' + ::oGrupoTArticulo:Cargo:Desde + '" .and. cCodTip <= "' + ::oGrupoTArticulo:Cargo:Hasta + '"'
+   end
+
+   if !::oGrupoCategoria:Cargo:Todos
+      cExpArt     += ' .and. cCodCate >= "' + ::oGrupoCategoria:Cargo:Desde + '" .and. cCodCate <= "' + ::oGrupoCategoria:Cargo:Hasta + '"'
+   end
+
+   if !Empty( ::oFilter:cExpresionFilter )
+      cExpArt     += " .and. " + ::oFilter:cExpresionFilter
+   end
+
+   ::oDbfArt:AddTmpIndex( Auth():Codigo(), GetFileNoExt( ::oDbfArt:cFile ), ::oDbfArt:OrdKey(), ( cExpArt ), , , , , , , , .T. )
+
+
+
+
+
+   ::AddAlbaranesproveedor()
+   ::AddFacturasproveedor()
+   ::AddAlbaranesClientes()
+   ::AddTicketsClientes()
+   ::AddFacturasRectificativas()
+
+
+
+
+
+   ::oMtrInf:SetTotal( ::oDbfArt:OrdKeyCount() )
+
+   ::oDbfArt:GoTop()
+
+   while !::lBreak .AND. !::oDbfArt:Eof()
+
+      for each aArticulo in ::aArticulos
+
+         if aArticulo[1] == ::oDbfArt:Codigo .AND. aArticulo[ 4 ] > 0
+
+            ::oDbf:Append()
+
+            ::oDbf:cCodArt   := ::oDbfArt:Codigo
+            ::oDbf:cNomArt   := ::oDbfArt:Nombre
+            ::oDbf:cCodTip   := ::oDbfArt:cCodTip
+            ::oDbf:cNomTip   := oRetFld( ::oDbfArt:cCodTip, ::oTipArt:oDbf )
+            ::oDbf:cCodFam   := ::oDbfArt:Familia
+            ::oDbf:cNomFam   := oRetFld( ::oDbfArt:Familia, ::oDbfFam )
+            ::oDbf:cCodCat   := ::oDbfArt:cCodCate
+            ::oDbf:cNomCat   := oRetFld( ::oDbfArt:cCodCate, ::oDbfCat )
+            ::oDbf:cLote     := aArticulo[ 2 ]
+            ::oDbf:dFecCad   := aArticulo[ 3 ]
+            ::oDbf:nUnidades := aArticulo[ 4 ]
+            ::oDbf:nCompras  := aArticulo[ 5 ]
+            ::oDbf:nVentas   := aArticulo[ 6 ]
+
+            ::oDbf:Save()
+
+         end
+
+      next
+
+      ::oDbfArt:Skip()
+
+      ::oMtrInf:AutoInc( ::oDbfArt:OrdKeyNo() )
+
+   end
+
+   ::oDbfArt:IdxDelete( Auth():Codigo(), GetFileNoExt( ::oDbfArt:cFile ) )
+
+   ::oMtrInf:AutoInc( ::oDbfArt:Lastrec() )
+
+   ::oDlg:Enable()
+
+RETURN ( ::oDbf:LastRec() > 0 )
+
+
+
+static FUNCTION TDiaCaducidad_AddAlbaranesproveedor( ) ; local Self AS CLASS TDiaCaducidad := QSelf() AS CLASS TDiaCaducidad
+
+   ::oMtrInf:SetTotal( ::oAlbPrvL:OrdKeyCount() )
+
+   ::oAlbPrvL:GoTop()
+
+   while !::oAlbPrvL:Eof()
+
+      if ::oAlbPrvL:dFecCad >= ::dIniInf .AND. ::oAlbPrvL:dFecCad <= ::dFinInf
+
+         if ( ::nPos := aScan( ::aArticulos, {|a| a[1] == ::oAlbPrvL:cRef .AND. a[2] == ::oAlbPrvL:cLote } ) ) <> 0
+            ::aArticulos[ ::nPos, 4 ] += nTotNAlbPrv( ::oAlbPrvL )
+            ::aArticulos[ ::nPos, 5 ] += nTotNAlbPrv( ::oAlbPrvL )
+         else
+            aAdd( ::aArticulos, { ::oAlbPrvL:cRef, ::oAlbPrvL:cLote, ::oAlbPrvL:dFecCad, nTotNAlbPrv( ::oAlbPrvL ), nTotNAlbPrv( ::oAlbPrvL ), 0 } )
+         end
+
+      end
+
+      ::oAlbPrvL:Skip()
+
+      ::oMtrInf:AutoInc( ::oAlbPrvL:OrdKeyNo() )
+
+   end
+
+   ::oMtrInf:AutoInc( ::oAlbPrvL:Lastrec() )
+
+RETURN ( nil )
+
+
+
+static FUNCTION TDiaCaducidad_AddFacturasproveedor( ) ; local Self AS CLASS TDiaCaducidad := QSelf() AS CLASS TDiaCaducidad
+
+   ::oMtrInf:SetTotal( ::oFacPrvL:OrdKeyCount() )
+
+   ::oFacPrvL:GoTop()
+
+   while !::oFacPrvL:Eof()
+
+      if ::oFacPrvL:dFecCad >= ::dIniInf .AND. ::oFacPrvL:dFecCad <= ::dFinInf
+
+         if ( ::nPos := aScan( ::aArticulos, {|a| a[1] == ::oFacPrvL:cRef .AND. a[2] == ::oFacPrvL:cLote } ) ) <> 0
+            ::aArticulos[ ::nPos, 4 ] += nTotNFacPrv( ::oFacPrvL )
+            ::aArticulos[ ::nPos, 5 ] += nTotNFacPrv( ::oFacPrvL )
+         else
+            aAdd( ::aArticulos, { ::oFacPrvL:cRef, ::oFacPrvL:cLote, ::oFacPrvL:dFecCad, nTotNFacPrv( ::oFacPrvL ), nTotNFacPrv( ::oFacPrvL ), 0 } )
+         end
+
+      end
+
+      ::oFacPrvL:Skip()
+
+      ::oMtrInf:AutoInc( ::oFacPrvL:OrdKeyNo() )
+
+   end
+
+   ::oMtrInf:AutoInc( ::oFacPrvL:Lastrec() )
+
+RETURN ( nil )
+
+
+
+static FUNCTION TDiaCaducidad_AddAlbaranesClientes( ) ; local Self AS CLASS TDiaCaducidad := QSelf() AS CLASS TDiaCaducidad
+
+   ::oMtrInf:SetTotal( ::oAlbCliL:OrdKeyCount() )
+
+   ::oAlbCliL:GoTop()
+
+   while !::oAlbCliL:Eof()
+
+      if ( ::nPos := aScan( ::aArticulos, {|a| a[1] == ::oAlbCliL:cRef .AND. a[2] == ::oAlbCliL:cLote } ) ) <> 0
+         ::aArticulos[ ::nPos, 4 ] -= nTotNAlbCli( ::oAlbCliL )
+         ::aArticulos[ ::nPos, 6 ] += nTotNAlbCli( ::oAlbCliL )
+      end
+
+      ::oAlbCliL:Skip()
+
+      ::oMtrInf:AutoInc( ::oAlbCliL:OrdKeyNo() )
+
+   end
+
+   ::oMtrInf:AutoInc( ::oAlbCliL:Lastrec() )
+
+RETURN ( nil )
+
+
+
+static FUNCTION TDiaCaducidad_AddFacturasClientes( ) ; local Self AS CLASS TDiaCaducidad := QSelf() AS CLASS TDiaCaducidad
+
+   ::oMtrInf:SetTotal( ::oFacCliL:OrdKeyCount() )
+
+   ::oFacCliL:GoTop()
+
+   while !::oFacCliL:Eof()
+
+      if ( ::nPos := aScan( ::aArticulos, {|a| a[1] == ::oFacCliL:cRef .AND. a[2] == ::oFacCliL:cLote } ) ) <> 0
+         ::aArticulos[ ::nPos, 4 ] -= nTotNFacCli( ::oFacCliL )
+         ::aArticulos[ ::nPos, 6 ] += nTotNFacCli( ::oFacCliL )
+      end
+
+      ::oFacCliL:Skip()
+
+      ::oMtrInf:AutoInc( ::oFacCliL:OrdKeyNo() )
+
+   end
+
+   ::oMtrInf:AutoInc( ::oFacCliL:Lastrec() )
+
+RETURN ( nil )
+
+
+
+static FUNCTION TDiaCaducidad_AddTicketsClientes( ) ; local Self AS CLASS TDiaCaducidad := QSelf() AS CLASS TDiaCaducidad
+
+   ::oMtrInf:SetTotal( ::oTikCliL:OrdKeyCount() )
+
+   ::oTikCliL:GoTop()
+
+   while !::oTikCliL:Eof()
+
+      if ( ::nPos := aScan( ::aArticulos, {|a| a[1] == ::oTikCliL:cCbaTil .AND. a[2] == ::oTikCliL:cLote } ) ) <> 0
+         ::aArticulos[ ::nPos, 4 ] -= ::oTikCliL:nUntTil
+         ::aArticulos[ ::nPos, 6 ] += ::oTikCliL:nUntTil
+      end
+
+      ::oTikCliL:Skip()
+
+      ::oMtrInf:AutoInc( ::oTikCliL:OrdKeyNo() )
+
+   end
+
+   ::oMtrInf:AutoInc( ::oTikCliL:Lastrec() )
+
+RETURN ( nil )
+
+
+
+static FUNCTION TDiaCaducidad_AddFacturasRectificativas( ) ; local Self AS CLASS TDiaCaducidad := QSelf() AS CLASS TDiaCaducidad
+
+   ::oMtrInf:SetTotal( ::oFacRecL:OrdKeyCount() )
+
+   ::oFacRecL:GoTop()
+
+   while !::oFacRecL:Eof()
+
+      if ( ::nPos := aScan( ::aArticulos, {|a| a[1] == ::oFacRecL:cRef .AND. a[2] == ::oFacRecL:cLote } ) ) <> 0
+         ::aArticulos[ ::nPos, 4 ] -= nTotNFacRec( ::oFacRecL )
+         ::aArticulos[ ::nPos, 6 ] += nTotNFacRec( ::oFacRecL )
+      end
+
+      ::oFacRecL:Skip()
+
+      ::oMtrInf:AutoInc( ::oFacRecL:OrdKeyNo() )
+
+   end
+
+   ::oMtrInf:AutoInc( ::oFacRecL:Lastrec() )
+
+RETURN ( nil )

@@ -1,0 +1,29 @@
+{
+ "Traslations" : 
+ {
+   "Pedidos de clientes" : "Pedidos de clientes",
+   "Categorías" : "Categorías",
+   "categorías" : "categorías",
+   "Temporadas" : "Temporadas",
+   "temporadas" : "temporadas",
+   "Entregado" : "Entregado",
+   "Gastos" : "Gastos",
+   "Proyectos" : "Proyectos",
+   "Situaciones" : "Situaciones",
+   "Familia" : "Familia",
+   "Categoría" : "Categoría",
+   "Temporada" : "Temporada",
+   "Ubicación" : "Ubicación"
+ },
+ "000" : 
+ {
+   "Esquema" : "CORE",
+   "Sequencia" : "RCUR",
+   "AgruparRecibos" : false,
+   "UsarVencimiento" : false
+ },
+ "Empresa" : 
+ {
+   "PermitirCambioFacturaIVAIncluido" : true
+ }
+}

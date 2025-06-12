@@ -1,0 +1,87 @@
+[
+  {
+    "id": "001",
+    "nombre": "Pantalon",
+    "uuid": "7e67da63-7397-409a-862b-51aa6e709cd7",
+    "precio_venta": 10.00000000,
+    "porcentaje_iva": 21.00,
+    "precio_impuestos_incluidos": 12.10000000,
+    "codigos_barras":
+    [
+      "001"
+    ]
+  },
+  {
+    "id": "002",
+    "nombre": "Chaqueta",
+    "uuid": "a567df78-3530-4854-af0c-262ef733f41d",
+    "precio_venta": 20.00000000,
+    "porcentaje_iva": 10.00,
+    "precio_impuestos_incluidos": 22.00000000,
+    "codigos_barras":
+    [
+      "002"
+    ]
+  },
+  {
+    "id": "1",
+    "nombre": "21%",
+    "uuid": "4424b25c-283c-4a18-b45a-4084c63506a0",
+    "precio_venta": 10.00000000,
+    "porcentaje_iva": 21.00,
+    "precio_impuestos_incluidos": 12.10000000,
+    "codigos_barras":
+    [
+      "1"
+    ]
+  },
+  {
+    "id": "2",
+    "nombre": "4%",
+    "uuid": "4424b25c-283c-4a18-b45a-4084c63506a0",
+    "precio_venta": 10.00000000,
+    "porcentaje_iva": 4.00,
+    "precio_impuestos_incluidos": 10.40000000,
+    "codigos_barras":
+    [
+      "2"
+    ]
+  },
+  {
+    "id": "3",
+    "nombre": "10%",
+    "uuid": "4424b25c-283c-4a18-b45a-4084c63506a0",
+    "precio_venta": 10.00000000,
+    "porcentaje_iva": 10.00,
+    "precio_impuestos_incluidos": 11.00000000,
+    "codigos_barras":
+    [
+      "3"
+    ]
+  },
+  {
+    "id": "4",
+    "nombre": "5%",
+    "uuid": "4424b25c-283c-4a18-b45a-4084c63506a0",
+    "precio_venta": 10.00000000,
+    "porcentaje_iva": 5.00,
+    "precio_impuestos_incluidos": 10.50000000,
+    "codigos_barras":
+    [
+      "4"
+    ]
+  },
+  {
+    "id": "5",
+    "nombre": "0%",
+    "uuid": "4424b25c-283c-4a18-b45a-4084c63506a0",
+    "precio_venta": 10.00000000,
+    "porcentaje_iva": 0.00,
+    "precio_impuestos_incluidos": 10.00000000,
+    "codigos_barras":
+    [
+      "5"
+    ]
+  }
+]
+

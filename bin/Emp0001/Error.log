@@ -1,0 +1,373 @@
+Aplicación:
+===========
+   Ruta y nombre: C:\ourXdbu\OURXDBU.EXE (32 bits)
+   Tamaño: 3694592 bytes
+   Tiempo en ejecución: 0 hours 4 mins 10 secs 
+   Error ocurrido el día 18-10-2019, a las 09:39:07 horas
+   Estación: SERVERBROOKLYN
+   Descripción del error: Error DBFCDX/1025  Escritura no autorizada
+
+Pila de llamadas
+================
+   Llamado desde FIELDPUT (0)
+   Llamado desde TRDD:FIELDPUT (508 en source\trdd.prg)
+   Llamado desde (b)TDBUTABLA:TDBUTABLA (111 en source\tdbutabla.prg)
+   Llamado desde TDBUTABLA:FIELDPUT (0)
+   Llamado desde REEMPLAZAR (2699 en source\tdbutabla.prg)
+   Llamado desde (b)TDBUTABLA:REPLACE (2648 en source\tdbutabla.prg)
+   Llamado desde TBUTTON:CLICK (189 en source\Button.prg)
+   Llamado desde TBUTTON:HANDLEEVENT (1895 en source\control.prg)
+   Llamado desde _FWH (4579 en source\window.prg)
+   Llamado desde SENDMESSAGE (0)
+   Llamado desde TDIALOG:COMMAND (505 en source\Dialog.prg)
+   Llamado desde TDIALOG:ORIGINALHANDLEEVENT (0)
+   Llamado desde TWINDOW:HANDLEEVENT (3825 en source\window.prg)
+   Llamado desde TDIALOG:HANDLEEVENT (1269 en source\Dialog.prg)
+   Llamado desde DIALOGBOX (0)
+   Llamado desde TDIALOG:ACTIVATE (351 en source\Dialog.prg)
+   Llamado desde TDBUTABLA:REPLACE (2654 en source\tdbutabla.prg)
+   Llamado desde (b)TDBUTABLA:FORMATTABLA (864 en source\tdbutabla.prg)
+   Llamado desde (b)TWINDOW:TWINDOW (609 en source\window.prg)
+   Llamado desde TWBROWSE:REPLACE (0)
+   Llamado desde (b)TMDICHILD:TMDICHILD (113 en source\mdichild.prg)
+   Llamado desde TMDICHILD:REPLACE (0)
+   Llamado desde (b)TMDIFRAME:TMDIFRAME (92 en source\mdiframe.prg)
+   Llamado desde TMDIFRAME:REPLACE (0)
+   Llamado desde (b)ADDEDIT (595 en source\ourxdbu.prg)
+   Llamado desde TMENU:COMMAND (536 en source\menu.prg)
+   Llamado desde TWINDOW:COMMAND (1167 en source\window.prg)
+   Llamado desde TMDIFRAME:COMMAND (259 en source\mdiframe.prg)
+   Llamado desde TMDIFRAME:ORIGINALHANDLEEVENT (0)
+   Llamado desde TMDIFRAME:HANDLEEVENT (3825 en source\window.prg)
+   Llamado desde _FWH (4579 en source\window.prg)
+   Llamado desde WINRUN (0)
+   Llamado desde TMDIFRAME:ACTIVATE (1110 en source\window.prg)
+   Llamado desde MAIN (324 en source\ourxdbu.prg)
+
+Variables públicas y privadas
+=============================
+GETLIST := { ... } // PUBLIC
+OAPP := {=>} // PUBLIC
+
+Sistema
+=======
+   Windows Versión: Windows Vista
+           Número : 6.2.9200
+
+   CPU ID       : GenuineIntel Intel64 Family 6 Model 60 Stepping 3
+       Tipo     : Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz o superior
+       Velocidad: 3290 MHz
+
+   BIOS HPQOEM - 20150713L01 v02.65American Megatrends - 4028E del 
+
+   Compilado con : Borland C++ 5.8.2 (32 bit)
+   Versión de xHarbour : xHarbour build 1.2.1 Intl. (SimpLex) (Rev. 6769)
+   Multi Threading : No
+   VM Optimization : 2
+   Fecha de Construcción : Feb  9 2015 16:26:33
+
+Análisis de Memoria
+===================
+   Memoria en uso : 26%
+
+   Memoria física : 2,00 GB
+           Libre  : 2,00 GB
+
+   Tamaño del archivo de paginación : 4,00 GB
+                         Libre      : 4,00 GB
+
+   Memoria Virtual : 2,00 GB
+           Libre   : 1,85 GB
+
+      362 Variables estáticas
+
+   Memoria usada               : 0 Bytes en 0 Bloques
+   Máximo memoria usada        : 0 Bytes
+   Total de variables ocupadas : 6264
+   Total de objetos GDI        : 0
+   Total de objetos User       : 0
+
+   Total de aplicaciones Windows ejecutándose: 25
+      1 
+      2 Default IME
+      3 Medidor de la batería
+      4 Network Flyout
+      5 MSCTFIME UI
+      6 Reemplazar [REPLACE]
+      7 ourXdbu 1.8.0.16 - [C:\Gestool\EMP2014\Articulo.Dbf [Articulo001]]
+      8 Task Host Window
+      9 EMP2014
+     10 Advantage Configuration Utility
+     11 Big Dogs
+     12 CWNPTransportImpl
+     13 Administrador de tareas
+     14 xTouchMon
+     15 LogMeIn Hamachi
+     16 tsp100ecoOndemandWindow
+     17 BluetoothNotificationAreaIconWindowClass
+     18 MS_WebcheckMonitor
+     19 DDE Server Window
+     20 HotKey Listener
+     21 Windows Push Notifications Platform
+     22 The Event Manager - Status
+     23 DWM Notification Window
+     24 igfxtrayWindow
+     25 Program Manager
+
+Variables en uso
+================
+   Procedimiento Tipo   Valor
+   ==========================
+   (b)ERRORSYS
+     Param   1:    O    Class: ERROR
+   FIELDPUT
+     Param   1:    N    87
+     Param   2:    C    "ELABORADOS\REPOSTERIA\TARTACASERA.BMP"
+   TRDD:FIELDPUT
+     Param   1:    N    87
+     Param   2:    C    "ELABORADOS\REPOSTERIA\TARTACASERA.BMP"
+   (b)TDBUTABLA:TDBUTABLA
+     Param   1:    O    Class: TDBUTABLA
+     Param   2:    N    87
+     Param   3:    C    "ELABORADOS\REPOSTERIA\TARTACASERA.BMP"
+   TDBUTABLA:FIELDPUT
+     Param   1:    N    87
+     Param   2:    C    "ELABORADOS\REPOSTERIA\TARTACASERA.BMP"
+   REEMPLAZAR
+     Param   1:    O    Class: TDBUTABLA
+     Param   2:    O    Class: TPROGRESS
+     Param   3:    N    87
+     Param   4:    C    "SubStr(AllTrim( cImagen ), 19 )                                                                                                                                                                                                                                "
+     Param   5:    C    "Substr( AllTrim( cImagen ), 1, 18 ) == "C:\WDGES32\IMAGEN\"                                                                                                                                                                                                    "
+     Param   6:    C    "                                                                                                                                                                                                                                                               "
+     Param   7:    N    0
+     Param   8:    N    2
+   (b)TDBUTABLA:REPLACE
+     Param   1:    O    Class: TBUTTON
+   TBUTTON:CLICK
+   TBUTTON:HANDLEEVENT
+     Param   1:    N    2048
+     Param   2:    N    0
+     Param   3:    N    0
+   _FWH
+     Param   1:    N    0
+     Param   2:    N    2048
+     Param   3:    N    0
+     Param   4:    N    0
+     Param   5:    N    75
+   SENDMESSAGE
+     Param   1:    N    132194
+     Param   2:    N    2048
+     Param   3:    N    0
+     Param   4:    N    0
+   TDIALOG:COMMAND
+     Param   1:    N    112
+     Param   2:    N    132194
+   TDIALOG:ORIGINALHANDLEEVENT
+     Param   1:    N    273
+     Param   2:    N    112
+     Param   3:    N    132194
+   TWINDOW:HANDLEEVENT
+     Param   1:    N    273
+     Param   2:    N    112
+     Param   3:    N    132194
+   TDIALOG:HANDLEEVENT
+     Param   1:    N    273
+     Param   2:    N    112
+     Param   3:    N    132194
+   DIALOGBOX
+     Param   1:    N    4194304
+     Param   2:    C    "REPLACE"
+     Param   3:    N    132416
+     Param   4:    O    Class: TDIALOG
+   TDIALOG:ACTIVATE
+     Param   1:    U    
+     Param   2:    U    
+     Param   3:    U    
+     Param   4:    L    .F.
+     Param   5:    U    
+     Param   6:    L    .T.
+     Param   7:    B    {|| ... }
+     Param   8:    U    
+     Param   9:    U    
+     Param  10:    L    .F.
+   TDBUTABLA:REPLACE
+   (b)TDBUTABLA:FORMATTABLA
+     Param   1:    O    Class: TWBROWSE
+   (b)TWINDOW:TWINDOW
+     Param   1:    O    Class: TWBROWSE
+   TWBROWSE:REPLACE
+   (b)TMDICHILD:TMDICHILD
+     Param   1:    O    Class: TMDICHILD
+   TMDICHILD:REPLACE
+   (b)TMDIFRAME:TMDIFRAME
+     Param   1:    O    Class: TMDIFRAME
+   TMDIFRAME:REPLACE
+   (b)ADDEDIT
+     Param   1:    O    Class: TMENUITEM
+   TMENU:COMMAND
+     Param   1:    N    20022
+   TWINDOW:COMMAND
+     Param   1:    N    20022
+     Param   2:    N    0
+   TMDIFRAME:COMMAND
+     Param   1:    N    20022
+     Param   2:    N    0
+   TMDIFRAME:ORIGINALHANDLEEVENT
+     Param   1:    N    273
+     Param   2:    N    20022
+     Param   3:    N    0
+   TMDIFRAME:HANDLEEVENT
+     Param   1:    N    273
+     Param   2:    N    20022
+     Param   3:    N    0
+   _FWH
+     Param   1:    N    0
+     Param   2:    N    273
+     Param   3:    N    20022
+     Param   4:    N    0
+     Param   5:    N    1
+   WINRUN
+     Param   1:    N    66794
+   TMDIFRAME:ACTIVATE
+     Param   1:    C    "MAXIMIZED"
+     Param   2:    U    
+     Param   3:    U    
+     Param   4:    U    
+     Param   5:    U    
+     Param   6:    U    
+     Param   7:    U    
+     Param   8:    B    {|| ... }
+     Param   9:    U    
+     Param  10:    U    
+     Param  11:    U    
+     Param  12:    U    
+     Param  13:    U    
+     Param  14:    U    
+     Param  15:    U    
+     Param  16:    U    
+     Param  17:    U    
+     Param  18:    B    {|| ... }
+     Param  19:    U    
+   MAIN
+     Param   1:    O    Class: TMDIFRAME
+
+RDDs enlazados
+==============
+   ADS
+   ADT
+   ADSVFP
+   ADSCDX
+   ADSNTX
+   DBF
+   DBFFPT
+   SIXCDX
+   DBFMDX
+   DBFBLOB
+   DBFCDX
+   DBFNSX
+   SQLRDD
+   DBFNTX
+   ADORDD
+   VFPCDX
+   FCOMMA
+
+Tablas en uso
+=============
+   Area Alias       EXC BOF EOF RecNo         LockList
+                    TagName     KeyNo         Index
+   ====================================================================================
+ =>   1 ARTICULO001 .F. .F. .F. 1/3054        1
+                    CODIGO      0/2990        ON Codigo
+                    NOMBRE      2716/2990     ON UPPER( NOMBRE )
+                    CFAMCOD     1644/2990     ON FAMILIA + CODIGO
+                    CPRVHAB     1/2990        ON cPrvHab
+                    CODOBS      0/2990        ON Codigo
+                                              FOR !Deleted() .and. !lObs
+                    NOMOBS      2716/2990     ON Upper( Nombre )
+                                              FOR !Deleted() .and. !lObs
+                    CCODTIP     1/2990        ON CCODTIP
+                    CCODCATE    1/2990        ON CCODCATE
+                    CCODTEMP    1/2990        ON CCODTEMP
+                    CCODFAB     1/2990        ON CCODFAB
+                    CCODEST     1/2990        ON Field->cCodEst
+                    CFAMNOM     1676/2990     ON FAMILIA + NOMBRE
+                    NPOSTPV     473/641       ON Field->Familia + Str( Field->nPosTpv )
+                                              FOR !Deleted() .and. lIncTcl
+                    NNOMTPV     476/641       ON Field->Familia + Field->NOMBRE
+                                              FOR !Deleted() .and. lIncTcl
+                    FAMILIA     1644/2990     ON FAMILIA
+                    NPOSTCL     211/641       ON NPOSTCL
+                                              FOR !Deleted() .and. lIncTcl .and. nPosTpv != 0
+                    NCTLSTOCK   1/2990        ON NCTLSTOCK
+                    CODEBAR     1/2990        ON Field->CodeBar
+                    LPUBINT     0/0           ON Codigo
+                                              FOR !Deleted() .and. lPubInt
+                    LWEBSHOP    0/0           ON Field->cWebShop + Field->Codigo
+                                              FOR !Deleted() .and. lPubInt
+                    CWEBSHOP    0/2990        ON Field->cWebShop + Field->Codigo
+                    CCODEDI     1/2990        ON cCodEdi
+                    CREFAUX     1/2990        ON cRefAux
+                    CREFAUX2    1/2990        ON cRefAux2
+                    MATRIZ      1/2990        ON Matriz
+                    CDESUBI     1/2990        ON cDesUbi
+
+      2 DATLISTA001 .F. .T. .T. 7/6           
+                 => CODIGO      0/0           ON UPPER(dbf+descripcio)+usuario
+                                              FOR .NOT.DELETED()
+
+
+Clases en uso:
+==============
+     1 ERROR
+     2 HASHENTRY
+     3 HBCLASS
+     4 HBOBJECT
+     5 TSYSTEMINFO
+     6 TINI
+     7 TFONT
+     8 TMENU
+     9 TWINDOW
+    10 TMDIFRAME
+    11 TCONTROL
+    12 TICON
+    13 TBRUSH
+    14 TMDICLIENT
+    15 TDIALOG
+    16 TMENUITEM
+    17 TACCTABLE
+    18 TMRU
+    19 TBAR
+    20 TCURSOR
+    21 TRECT
+    22 TBTNBMP
+    23 TDBUTABLA
+    24 TMSGBAR
+    25 TMSGITEM
+    26 TGET
+    27 GET
+    28 TCLIPGET
+    29 TTIMER
+    30 TFOLDER
+    31 TBMPGET
+    32 TBITMAP
+    33 TTREEVIEW
+    34 TTREELINK
+    35 TVITEM
+    36 TBARBROWSE
+    37 TWBROWSE
+    38 TSCROLLBAR
+    39 TRDD
+    40 TMDICHILD
+    41 TFILTER
+    42 TUSERVRD
+    43 TCLIPBOARD
+    44 TCOMBOBOX
+    45 TDBCOMBO
+    46 TRADMENU
+    47 TRADIO
+    48 TPROGRESS
+    49 TBUTTON
+    50 TREG32
+    51 TSTRUCT
+

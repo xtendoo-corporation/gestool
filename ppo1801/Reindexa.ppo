@@ -1,0 +1,2485 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 8 ".\.\Prg\Reindexa.prg"
+FUNCTION Reindexa()
+
+   if lAIS()
+      TDataCenter():Resource( "regenerar_indices" )
+   else
+      TReindex():New( oWnd(), "regenerar_indices" ):Resource()
+   end
+
+RETURN .T.
+
+
+
+_HB_CLASS TReindex ; function TReindex ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TReindex", iif( .F., { }, { @HBObject() } ), @TReindex() ) ) ;
+
+   _HB_MEMBER { cFile } ; oClass:AddMultiClsData(, FullCurDir() + "GstApolo.usr", nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFile"}, .F. )
+
+   _HB_MEMBER { nHandle } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nHandle"}, .F. )
+
+   _HB_MEMBER { aLgcIndices } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aLgcIndices"}, .F. )
+   _HB_MEMBER { aMtrIndices } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aMtrIndices"}, .F. )
+   _HB_MEMBER { aChkIndices } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aChkIndices"}, .F. )
+   _HB_MEMBER { aNumIndices } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aNumIndices"}, .F. )
+   _HB_MEMBER { aMensajes } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aMensajes"}, .F. )
+   _HB_MEMBER { aProgress } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aProgress"}, .F. )
+   _HB_MEMBER { nProgress } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nProgress"}, .F. )
+   _HB_MEMBER { nActualProgress } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nActualProgress"}, .F. )
+
+   _HB_MEMBER { cPathDat } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPathDat"}, .F. )
+   _HB_MEMBER { cPathEmp } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPathEmp"}, .F. )
+   _HB_MEMBER { cPatCli } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPatCli"}, .F. )
+   _HB_MEMBER { cPatArt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPatArt"}, .F. )
+   _HB_MEMBER { cPatPrv } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPatPrv"}, .F. )
+   _HB_MEMBER { cPatAlm } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPatAlm"}, .F. )
+
+   _HB_MEMBER { cCodEmp } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodEmp"}, .F. )
+
+   _HB_MEMBER { oDlg } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDlg"}, .F. )
+
+   _HB_MEMBER { oMsg } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oMsg"}, .F. )
+   _HB_MEMBER { cMsg } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cMsg"}, .F. )
+
+   _HB_MEMBER { lDatos } ; oClass:AddMultiData(, .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lDatos"}, .F. )
+   _HB_MEMBER { lNotGrupo } ; oClass:AddMultiData(, .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lNotGrupo"}, .F. )
+   _HB_MEMBER { lEmpresa } ; oClass:AddMultiData(, .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lEmpresa"}, .F. )
+   _HB_MEMBER { lSincroniza } ; oClass:AddMultiData(, .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lSincroniza"}, .F. )
+   _HB_MEMBER { lMessageEnd } ; oClass:AddMultiData(, .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lMessageEnd"}, .F. )
+   _HB_MEMBER { lCloseAll } ; oClass:AddMultiData(, .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lCloseAll"}, .F. )
+
+   _HB_MEMBER New( oWnd) AS CLASS TReindex; oClass:AddMethod( "New", @TReindex_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GenIndices(); oClass:AddMethod( "GenIndices", @TReindex_GenIndices(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SelectChk( lSet); oClass:AddMethod( "SelectChk", @TReindex_SelectChk(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetMeter( nId); oClass:AddMethod( "SetMeter", @TReindex_SetMeter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetMeter( nId); oClass:AddMethod( "GetMeter", @TReindex_GetMeter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetText( cText); oClass:AddMethod( "SetText", @TReindex_SetText(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Sincroniza(); oClass:AddMethod( "Sincroniza", @TReindex_Sincroniza(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Resource(); oClass:AddMethod( "Resource", @TReindex_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lCreateHandle(); oClass:AddMethod( "lCreateHandle", @TReindex_lCreateHandle(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER lCloseHandle(); oClass:AddMethod( "lCloseHandle", @TReindex_lCloseHandle(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER lFreeHandle(); oClass:AddMethod( "lFreeHandle", @TReindex_lFreeHandle(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TReindex ;
+
+
+
+static FUNCTION TReindex_New( oWnd, oMenuItem, cPatEmp, cPatDat ) ; local Self AS CLASS TReindex := QSelf() AS CLASS TReindex
+
+   If( cPatEmp == nil, cPatEmp := cPatEmp(), ) ;
+   If( cPatDat == nil, cPatDat := cPatDat(), ) ;
+
+   ::cPathEmp        := cPatEmp
+   ::cPathDat        := cPatDat
+
+   ::cCodEmp         := cCodEmp()
+
+   ::cPatCli         := cPatEmp()
+   ::cPatArt         := cPatEmp()
+   ::cPatPrv         := cPatEmp()
+   ::cPatAlm         := cPatEmp()
+
+   ::aLgcIndices     := Afill( Array( 6 ), .T. )
+   ::aChkIndices     := Array( 6 )
+   ::aProgress       := Array( 6 )
+   ::nProgress       := Afill( Array( 6 ), 0 )
+
+   ::aMtrIndices     := Array( 80 )
+   ::aNumIndices     := Array( 80 )
+   ::aNumIndices     := Afill( ::aNumIndices, 1 )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TReindex_GenIndices( oMsg ) ; local Self AS CLASS TReindex := QSelf() AS CLASS TReindex
+
+   local oError
+   local oBlock
+   local oObject
+   local nSeconds    := Seconds()
+
+
+
+
+
+   StopAutoImp()
+
+   StopServices()
+
+   if ::lCloseAll
+      dbCloseAll()
+   end
+
+
+
+
+   if !Empty( oMsg )
+      ::oMsg         := oMsg
+   end
+
+   if ::oDlg <> nil
+      ::oDlg:Disable()
+      ::oDlg:bValid  := {|| .F. }
+   end
+
+
+
+
+
+   if ::aLgcIndices[ 1 ]
+
+
+
+      if ::lEmpresa
+         ::SetText( "Generando índices : Empresas", ::aProgress[ 1 ] )        ; rxEmpresa( ::cPathDat )
+
+         ::SetText( "Generando índices : Divisas", ::aProgress[ 1 ]  )        ; rxDiv( ::cPathDat )
+         ::SetText( "Generando índices : Configuración", ::aProgress[ 1 ] )   ; TShell():ReindexData()
+         ::SetText( "Generando índices : Contadores", ::aProgress[ 1 ] )      ; rxCount( ::cPathDat ); synCount( ::cPathEmp )
+
+      end
+
+      if ::lDatos
+         ::SetText( "Generando índices : Tipo de " + cImp(), ::aProgress[ 1 ] )  ; rxTIva( ::cPathDat )
+         ::SetText( "Generando índices : Filtros", ::aProgress[ 1 ] )            ; TFilterDatabase():Create( ::cPathDat ):Reindexa()
+         ::SetText( "Generando índices : Notas", ::aProgress[ 1 ] )              ; TNotas():Create( ::cPathDat ):Reindexa()
+         ::SetText( "Generando índices : Agenda", ::aProgress[ 1 ] )             ; TAgenda():Create( ::cPathDat ):Reindexa()
+         ::SetText( "Generando índices : Codigos postales", ::aProgress[ 1 ] )   ; CodigosPostales():Create( ::cPathDat ):Reindexa()
+         ::SetText( "Generando índices : Provincia", ::aProgress[ 1 ] )          ; Provincias():Create( ::cPathDat ):Reindexa()
+         ::SetText( "Generando índices : Centro de coste", ::aProgress[ 1 ] )    ; TCentroCoste():Create( ::cPathDat ):Reindexa()
+      end
+
+      ::SetText( "Generando índices : Auditoría", ::aProgress[ 1 ] )             ; TAuditoria():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Familias", ::aProgress[ 1 ] )              ; rxFamilia( ::cPatArt )
+      ::SetText( "Generando índices : Estados del SAT", ::aProgress[ 1 ] )       ; rxEstadoSat()
+      ::SetText( "Generando índices : Tempordas", ::aProgress[ 1 ] )             ; rxTemporada( ::cPatArt )
+      ::SetText( "Generando índices : Grupos de familias", ::aProgress[ 1 ] )    ; TGrpFam():Create( ::cPatArt ):Reindexa()
+      ::SetText( "Generando índices : Fabricantes", ::aProgress[ 1 ] )           ; TFabricantes():Create( ::cPatArt ):Reindexa()
+      ::SetText( "Generando índices : Grupos de clientes", ::aProgress[ 1 ] )    ; TGrpCli():Create( ::cPatCli ):Reindexa()
+      ::SetText( "Generando índices : Grupos de proveedores", ::aProgress[ 1 ] ) ; TGrpPrv():Create( ::cPatPrv ):Reindexa()
+      ::SetText( "Generando índices : Tipos de artículos", ::aProgress[ 1 ] )    ; TTipArt():Create( ::cPatArt ):Reindexa()
+      ::SetText( "Generando índices : Proyectos", ::aProgress[ 1 ] )             ; TProyecto():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Catálogos", ::aProgress[ 1 ] )             ; TCatalogo():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Unidades de medición", ::aProgress[ 1 ] )  ; UniMedicion():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Transportistas", ::aProgress[ 1 ] )        ; TTrans():Create( ::cPatCli ):Reindexa()
+      ::SetText( "Generando índices : Tipos de comandas", ::aProgress[ 1 ] )     ; TComandas():Create( ::cPatArt ):Reindexa()
+      ::SetText( "Generando índices : Cuentas de remesas", ::aProgress[ 1 ] )          ; TCtaRem():Create( ::cPatCli ):Reindexa()
+      ::SetText( "Generando índices : Tipo de envasado", ::aProgress[ 1 ] )            ; TFrasesPublicitarias():Create( cPatEmp() ):Reindexa()
+      ::SetText( "Generando índices : Sala de venta", ::aProgress[ 1 ] )               ; TTpvRestaurante():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Puntos de venta", ::aProgress[ 1 ] )             ; TDetSalaVta():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Configuración de informes", ::aProgress[ 1 ] )   ; TInfGen():Reindexa( ::cPathEmp )
+      ::SetText( "Generando índices : Configuración de favoritos", ::aProgress[ 1 ] )  ; rxReport( ::cPathEmp )
+      ::SetText( "Generando índices : Impuesto IVMH", ::aProgress[ 1 ] )               ; TNewImp():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Reporting", ::aProgress[ 1 ] )                   ; TFastReportInfGen():Reindexa( ::cPathEmp )
+
+   end
+
+
+
+   if ::aLgcIndices[ 2 ]
+
+      ::SetText( "Generando índices : Formas de pago", ::aProgress[ 2 ] )           ; rxFpago(    ::cPathEmp )
+      ::SetText( "Generando índices : Bancos", ::aProgress[ 2 ] )                   ; TBancos():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Cuentas bancarias", ::aProgress[ 2 ] )        ; TCuentasBancarias():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Artículos", ::aProgress[ 2 ] )                ; rxArticulo( ::cPatArt )
+      ::SetText( "Generando índices : Clientes", ::aProgress[ 2 ] )                 ; rxClient(   ::cPatCli )
+      ::SetText( "Generando índices : Proveedores", ::aProgress[ 2 ] )              ; rxProvee(   ::cPatPrv )
+      ::SetText( "Generando índices : Tarifas clientes y grupos", ::aProgress[ 2 ] ); TAtipicas():Create( ::cPatCli ):Reindexa()
+      ::SetText( "Generando índices : Ofertas", ::aProgress[ 2 ] )                  ; rxOferta(   ::cPatArt )
+      ::SetText( "Generando índices : Propiedades", ::aProgress[ 2 ] )              ; rxPro(      ::cPatArt )
+      ::SetText( "Generando índices : Agentes", ::aProgress[ 2 ] )                  ; rxAgentes(  ::cPatCli )
+      ::SetText( "Generando índices : Rutas", ::aProgress[ 2 ] )                    ; rxRuta(     ::cPatCli )
+      ::SetText( "Generando índices : Almacén", ::aProgress[ 2 ] )                  ; rxAlmacen(  ::cPatAlm )
+      ::SetText( "Generando índices : Documentos", ::aProgress[ 2 ] )            ; rxDocs(     ::cPathEmp )
+      ::SetText( "Generando índices : Tarifas de precios", ::aProgress[ 2 ] )    ; rxTarifa(   ::cPatArt )
+      ::SetText( "Generando índices : Promociones", ::aProgress[ 2 ] )           ; rxPromo(    ::cPatArt )
+      ::SetText( "Generando índices : Ubicaciones", ::aProgress[ 2 ] )           ; rxUbi(      ::cPatAlm )
+
+   end
+
+
+
+
+
+   if ::aLgcIndices[ 3 ]
+
+      ::SetText( "Generando índices : Pedidos a proveedor", ::aProgress[ 3 ] );                    rxPedPrv( ::cPathEmp )
+      ::SetText( "Generando índices : Albaranes de proveedor", ::aProgress[ 3 ] );                 rxAlbPrv( ::cPathEmp )
+      ::SetText( "Generando índices : Facturas de proveedor", ::aProgress[ 3 ] );                  rxFacPrv( ::cPathEmp )
+      ::SetText( "Generando índices : Facturas rectificativas de proveedor", ::aProgress[ 3 ] );   rxRctPrv( ::cPathEmp )
+      ::SetText( "Generando índices : Recibos de proveedor", ::aProgress[ 3 ] );                   rxRecPrv( ::cPathEmp )
+      ::SetText( "Generando índices : Presupuestos de clientes", ::aProgress[ 3 ] );               rxPreCli( ::cPathEmp )
+      ::SetText( "Generando índices : S.A.T. de clientes", ::aProgress[ 3 ] );                     rxSatCli( ::cPathEmp )
+      ::SetText( "Generando índices : Pedidos de clientes", ::aProgress[ 3 ] );                    rxPedCli( ::cPathEmp )
+      ::SetText( "Generando índices : Albaranes de clientes", ::aProgress[ 3 ] );                  rxAlbCli( ::cPathEmp )
+      ::SetText( "Generando índices : Facturas de clientes", ::aProgress[ 3 ] );                   rxFacCli( ::cPathEmp )
+      ::SetText( "Generando índices : Facturas rectificativas", ::aProgress[ 3 ] );                rxFacRec( ::cPathEmp )
+      ::SetText( "Generando índices : Facturas de anticipos", ::aProgress[ 3 ] );                  rxAntCli( ::cPathEmp )
+      ::SetText( "Generando índices : Recibos de clientes", ::aProgress[ 3 ] );                    rxRecCli( ::cPathEmp )
+
+      ::SetText( "Generando índices : Facturas plantillas de ventas automáticas", ::aProgress[ 3 ] );      TFacAutomatica():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Líneas de plantillas de ventas automáticas", ::aProgress[ 3 ] );     TDetFacAutomatica():New( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Histórico de plantillas de ventas automáticas", ::aProgress[ 3 ] );  THisFacAutomatica():New( ::cPathEmp ):Reindexa()
+
+      ::SetText( "Generando índices : Remesas bancarias", ::aProgress[ 3 ] );          TRemesas():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Envios y recepciones", ::aProgress[ 3 ] );       TSndRecInf():Reindexa( ::cPathEmp )
+
+      ::SetText( "Generando índices : Campos extra", ::aProgress[ 3 ] );               TCamposExtra():New( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Detalles de campos extra", ::aProgress[ 3 ] );   TDetCamposExtra():New( ::cPathEmp ):Reindexa()
+
+      ::SetText( "Generando índices : Secciones", ::aProgress[ 3 ] );                        TSeccion():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Tipos de horas", ::aProgress[ 3 ] );                   THoras():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Operarios", ::aProgress[ 3 ] );                        TOperarios():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Horas de operarios", ::aProgress[ 3 ] );               TDetHoras():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Operaciones", ::aProgress[ 3 ] );                      TOperacion():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Tipos de operaciones", ::aProgress[ 3 ] );             TTipOpera():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Costes maquinaria", ::aProgress[ 3 ] );                TCosMaq():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Máquinas", ::aProgress[ 3 ] );                         TMaquina():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Detalle máquinas", ::aProgress[ 3 ] );                 TDetCostes():New( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Partes de producción", ::aProgress[ 3 ] );             TProduccion():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Líneas de partes de producción", ::aProgress[ 3 ] );   TDetProduccion():New( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Series de pares de producción", ::aProgress[ 3 ] );    TDetSeriesProduccion():New( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Líneas de personal", ::aProgress[ 3 ] );               TDetPersonal():New( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Líneas de horas de personal", ::aProgress[ 3 ] );      TDetHorasPersonal():New( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Líneas de materias primas", ::aProgress[ 3 ] );        TDetMaterial():New( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Series de materias primas", ::aProgress[ 3 ] );        TDetSeriesMaterial():New( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Líneas de maquinaria", ::aProgress[ 3 ] );             TDetMaquina():New( ::cPathEmp ):Reindexa()
+
+      ::SetText( "Generando índices : Expediente", ::aProgress[ 3 ] );                       TExpediente():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Tipos de expedientes", ::aProgress[ 3 ] );             TTipoExpediente():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Subtipos de expediente", ::aProgress[ 3 ] );           TDetTipoExpediente():New( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Entidades", ::aProgress[ 3 ] );                        TEntidades():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Colaboradores", ::aProgress[ 3 ] );                    TColaboradores():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Actuaciones", ::aProgress[ 3 ] );                      TActuaciones():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Expedientes", ::aProgress[ 3 ] );                      TExpediente():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Actuaciones de expedientes", ::aProgress[ 3 ] );       TDetActuacion():Create( ::cPathEmp ):Reindexa()
+
+      ::SetText( "Generando índices : Programas de fidelización", ::aProgress[ 3 ] );           TFideliza():Create( ::cPatArt ):Reindexa()
+      ::SetText( "Generando índices : Líneas de programas de fidelización", ::aProgress[ 3 ] ); TDetFideliza():New( ::cPatArt ):Reindexa()
+
+      ::SetText( "Generando índices : Scripts", ::aProgress[ 3 ] );                             TScripts():Create( ::cPathEmp ):Reindexa()
+
+      ::SetText( "Generando índices TRemMovAlm: ", ::aProgress[ 3 ] );                          TRemMovAlm():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices TDetMovimientos: ", ::aProgress[ 3 ] );                     TDetMovimientos():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices TDetSeriesMovimientos: ", ::aProgress[ 3 ] );               TDetSeriesMovimientos():Create( ::cPathEmp ):Reindexa()
+
+   end
+
+
+
+
+
+   if ::aLgcIndices[ 4 ]
+
+      if ::lDatos
+         ::SetText( "Generando índices : Cajas", ::aProgress[ 4 ] );                      rxCajas( ::cPathDat )
+         ::SetText( "Generando índices : Impresoras de tickets", ::aProgress[ 4 ] );      rxImpTik( ::cPathDat )
+         ::SetText( "Generando índices : Visor", ::aProgress[ 4 ] );                      rxVisor( ::cPathDat )
+         ::SetText( "Generando índices : Cajón Portamonedas", ::aProgress[ 4 ] );         rxCajPorta( ::cPathDat )
+         ::SetText( "Generando índices : Capturas", ::aProgress[ 4 ] );                   TCaptura():Create( ::cPathDat ):Reindexa()
+         ::SetText( "Generando índices : Detalle de capturas", ::aProgress[ 4 ] );        TDetCaptura():New( ::cPathDat ):Reindexa()
+      end
+
+      ::SetText( "Generando índices : invitaciones", ::aProgress[ 4 ] ) ;                 TInvitacion():Create( ::cPathEmp ):Reindexa()
+
+      ::SetText( "Generando índices : Tickets de clientes", ::aProgress[ 4 ] );           rxTpv( ::cPathEmp )
+      ::SetText( "Generando índices : Entradas y salidas", ::aProgress[ 4 ] );            rxEntSal( ::cPathEmp )
+      ::SetText( "Generando índices : Turnos", ::aProgress[ 4 ] );                        TTurno():New( ::cPathEmp ):Reindexa():End()
+      ::SetText( "Generando índices : Comentarios", ::aProgress[ 4 ] );                   TComentarios():Create( ::cPatArt ):Reindexa()
+      ::SetText( "Generando índices : Lineas de comentarios", ::aProgress[ 4 ] );         TDetComentarios():Create( ::cPatArt ):Reindexa()
+
+      ::SetText( "Generando índices : Ordenenes de comanda", ::aProgress[ 4 ] );          TOrdenComanda():Create( ::cPatArt ):Reindexa()
+
+      ::SetText( "Generando índices : Tvp Menu", ::aProgress[ 4 ] );                      TpvMenu():Create( ::cPatArt ):Reindexa()
+      ::SetText( "Generando índices : Ordenenes de menu", ::aProgress[ 4 ] );             TpvMenuOrdenes():Create( ::cPatArt ):Reindexa()
+      ::SetText( "Generando índices : Artículos de menu", ::aProgress[ 4 ] );             TpvMenuArticulo():Create( ::cPatArt ):Reindexa()
+
+
+      ::SetText( "Generando índices : Log cajón Portamonedas", ::aProgress[ 4 ] );        rxLogPorta( ::cPathEmp )
+      ::SetText( "Generando índices : Plantillas XML", ::aProgress[ 4 ] );                TPlantillaXml():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Detalle de plantillas XML", ::aProgress[ 4 ] );     TDetCabeceraPlantillaXML():New( ::cPathEmp ):Reindexa()
+
+      ::SetText( "Generando índices : Liquidación de agentes", ::aProgress[ 4 ] );           TCobAge():Create( ::cPathEmp ):Reindexa()
+      ::SetText( "Generando índices : Lineas de liquidación de agentes", ::aProgress[ 4 ] ); TDetCobAge():Create( ::cPathEmp ):Reindexa()
+
+   end
+
+
+
+
+
+   if ::aLgcIndices[ 6 ] .AND. ::lSincroniza
+      ::Sincroniza()
+   end
+
+   if ::lMessageEnd
+      MsgInfo( "Proceso finalizado con éxito, tiempo empleado : " + AllTrim( Str( Seconds() - nSeconds ) ) + " seg.", "Información" )
+   end
+
+
+
+
+
+
+   if ::oDlg <> nil
+      ::oDlg:bValid  := {|| .T. }
+      ::oDlg:Enable()
+      ::oDlg:End()
+   end
+
+   if ::lCloseAll
+      dbCloseAll()
+   end
+
+   StartAutoImp()
+
+RETURN ( nil )
+
+
+
+static FUNCTION TReindex_Sincroniza( ) ; local Self AS CLASS TReindex := QSelf() AS CLASS TReindex
+
+   ::SetText( "Sincroniza bancos de clientes", ::aProgress[ 6 ] )                      ; SynClient( ::cPathEmp )
+   ::SetText( "Sincroniza bancos de proveedores", ::aProgress[ 6 ] )                   ; SynProvee( ::cPathEmp )
+   ::SetText( "Sincroniza artículos", ::aProgress[ 6 ] )                               ; SynArt(    ::cPathEmp )
+   ::SetText( "Sincroniza líneas de SAT de clientes", ::aProgress[ 6 ]  )              ; SynSatCli( ::cPathEmp )
+   ::SetText( "Sincroniza líneas de presupuestos", ::aProgress[ 6 ]  )                 ; SynPreCli( ::cPathEmp )
+   ::SetText( "Sincroniza líneas de pedidos de clientes", ::aProgress[ 6 ]  )          ; SynPedCli( ::cPathEmp )
+   ::SetText( "Sincroniza líneas de albaranes de clientes", ::aProgress[ 6 ]  )        ; SynAlbCli( ::cPathEmp )
+   ::SetText( "Sincroniza líneas de facturas de clientes", ::aProgress[ 6 ]  )         ; SynFacCli( ::cPathEmp )
+   ::SetText( "Sincroniza líneas de facturas de rectificativas", ::aProgress[ 6 ]  )   ; SynFacRec( ::cPathEmp )
+   ::SetText( "Sincroniza recibos de clientes", ::aProgress[ 6 ] )                     ; SynRecCli( ::cPathEmp )
+   ::SetText( "Sincroniza líneas de tikets de clientes", ::aProgress[ 6 ]  )           ; SynTikCli( ::cPathEmp )
+   ::SetText( "Sincroniza líneas de pedidos a proveedor", ::aProgress[ 6 ]  )          ; SynPedPrv( ::cPathEmp )
+   ::SetText( "Sincroniza líneas de albaranes a proveedor", ::aProgress[ 6 ]  )        ; SynAlbPrv( ::cPathEmp )
+   ::SetText( "Sincroniza líneas de facturas a proveedor", ::aProgress[ 6 ]  )         ; SynFacPrv( ::cPathEmp )
+   ::SetText( "Sincroniza líneas de rectificativas a proveedor", ::aProgress[ 6 ]  )   ; SynRctPrv( ::cPathEmp )
+   ::SetText( "Sincroniza recibos de proveedores", ::aProgress[ 6 ]  )                 ; SynRecPrv( ::cPathEmp )
+   ::SetText( "Sincroniza unidades de medición", ::aProgress[ 6 ]  )                   ; UniMedicion():Create():Syncronize()
+   ::SetText( "Sincroniza fabricantes", ::aProgress[ 6 ]  )                            ; TFabricantes():Create():Syncronize()
+   ::SetText( "Sincroniza centros de coste", ::aProgress[ 6 ]  )                       ; SynCentroCoste()
+   ::SetText( "Sincroniza transportistas", ::aProgress[ 6 ]  )                         ; SynTransportista( ::cPathEmp )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TReindex_SelectChk( lSet ) ; local Self AS CLASS TReindex := QSelf() AS CLASS TReindex
+
+   local n
+
+   for n := 1 to len( ::aLgcIndices )
+      ::aLgcIndices[n] := lSet
+      ::aChkIndices[n]:Refresh()
+   next
+
+RETURN ( Self )
+
+
+
+static FUNCTION TReindex_SetMeter( nId ) ; local Self AS CLASS TReindex := QSelf() AS CLASS TReindex
+
+   local n
+
+   n  := aScan( ::aMtrIndices, {|o| if( o <> nil, o:nId == nId, .F. ) } )
+
+   if n <> 0 .AND. ::aMtrIndices[ n ] <> nil
+      ::aMtrIndices[ n ]:Set( 100 )
+   end
+
+   SysRefresh()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TReindex_GetMeter( nId ) ; local Self AS CLASS TReindex := QSelf() AS CLASS TReindex
+
+   local n  := aScan( ::aMtrIndices, {|o| o:nId == nId } )
+
+   if n <> 0 .AND. ::aMtrIndices[ n ] <> nil
+      RETURN ( ::aMtrIndices[ n ] )
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION TReindex_Resource( lAutoInit ) ; local Self AS CLASS TReindex := QSelf() AS CLASS TReindex
+
+   local n
+   local oBmp
+   local nLevel
+
+   If( lAutoInit == nil, lAutoInit := .F., ) ;
+
+   nLevel                  := Auth():Level( "01067" )
+
+   if nAnd( nLevel, 1 ) == 0
+      msgStop( "Acceso no permitido." )
+      RETURN nil
+   end
+
+   if oWnd() <> nil
+      oWnd():CloseAll()
+   end
+
+   if !::lCreateHandle()
+      msgStop( "Esta opción ya ha sido inicada por otro usuario", "Atención" )
+      RETURN nil
+   end
+
+   if lAIS()
+      TDataCenter():Reindex()
+      RETURN nil
+   end
+
+
+
+
+
+   ::oDlg = TDialog():New(,,,,, "REINDEX",, .F.,,,,, oWnd(), .F.,,,,,, .F.,, "::oDlg", nil, )
+
+
+      oBmp := TBitmap():ReDefine( 600, "gc_recycle_48",, ::oDlg,,, .F., .F.,,, .F.,,, .T. )
+
+      ::aChkIndices[ 1 ] := TCheckBox():ReDefine( 100, { | u | If( PCount()==0, ::aLgcIndices[ 1 ], ::aLgcIndices[ 1 ]:= u ) }, ::oDlg,,,,,,, .F.,, .F. )
+      ::aChkIndices[ 2 ] := TCheckBox():ReDefine( 101, { | u | If( PCount()==0, ::aLgcIndices[ 2 ], ::aLgcIndices[ 2 ]:= u ) }, ::oDlg,,,,,,, .F.,, .F. )
+      ::aChkIndices[ 3 ] := TCheckBox():ReDefine( 102, { | u | If( PCount()==0, ::aLgcIndices[ 3 ], ::aLgcIndices[ 3 ]:= u ) }, ::oDlg,,,,,,, .F.,, .F. )
+      ::aChkIndices[ 4 ] := TCheckBox():ReDefine( 103, { | u | If( PCount()==0, ::aLgcIndices[ 4 ], ::aLgcIndices[ 4 ]:= u ) }, ::oDlg,,,,,,, .F.,, .F. )
+      ::aChkIndices[ 5 ] := TCheckBox():ReDefine( 104, { | u | If( PCount()==0, ::aLgcIndices[ 5 ], ::aLgcIndices[ 5 ]:= u ) }, ::oDlg,,,,,,, .F.,, .F. )
+      ::aChkIndices[ 6 ] := TCheckBox():ReDefine( 105, { | u | If( PCount()==0, ::aLgcIndices[ 6 ], ::aLgcIndices[ 6 ]:= u ) }, ::oDlg,,,,,,, .F.,, .F. )
+
+      ::aProgress[ 1 ]  := TApoloMeter():ReDefine( 200, { | u | if( pCount() == 0, ::nProgress[ 1 ], ::nProgress[ 1 ] := u ) }, 10, ::oDlg, .F., , , .T., ( 255 + ( 255 * 256 ) + ( 255 * 65536 ) ), , ( 128 + ( 255 * 256 ) + ( 0 * 65536 ) ) )
+      ::aProgress[ 2 ]  := TApoloMeter():ReDefine( 210, { | u | if( pCount() == 0, ::nProgress[ 2 ], ::nProgress[ 2 ] := u ) }, 10, ::oDlg, .F., , , .T., ( 255 + ( 255 * 256 ) + ( 255 * 65536 ) ), , ( 128 + ( 255 * 256 ) + ( 0 * 65536 ) ) )
+      ::aProgress[ 3 ]  := TApoloMeter():ReDefine( 220, { | u | if( pCount() == 0, ::nProgress[ 3 ], ::nProgress[ 3 ] := u ) }, 10, ::oDlg, .F., , , .T., ( 255 + ( 255 * 256 ) + ( 255 * 65536 ) ), , ( 128 + ( 255 * 256 ) + ( 0 * 65536 ) ) )
+      ::aProgress[ 4 ]  := TApoloMeter():ReDefine( 230, { | u | if( pCount() == 0, ::nProgress[ 4 ], ::nProgress[ 4 ] := u ) }, 10, ::oDlg, .F., , , .T., ( 255 + ( 255 * 256 ) + ( 255 * 65536 ) ), , ( 128 + ( 255 * 256 ) + ( 0 * 65536 ) ) )
+      ::aProgress[ 5 ]  := TApoloMeter():ReDefine( 240, { | u | if( pCount() == 0, ::nProgress[ 5 ], ::nProgress[ 5 ] := u ) }, 10, ::oDlg, .F., , , .T., ( 255 + ( 255 * 256 ) + ( 255 * 65536 ) ), , ( 128 + ( 255 * 256 ) + ( 0 * 65536 ) ) )
+      ::aProgress[ 6 ]  := TApoloMeter():ReDefine( 250, { | u | if( pCount() == 0, ::nProgress[ 6 ], ::nProgress[ 6 ] := u ) }, 10, ::oDlg, .F., , , .T., ( 255 + ( 255 * 256 ) + ( 255 * 65536 ) ), , ( 128 + ( 255 * 256 ) + ( 0 * 65536 ) ) )
+
+      ::oMsg := TSay():ReDefine( 110, {|| ::cMsg}, ::oDlg,,,, .F.,, .F., .F., )
+
+
+
+
+
+      TButton():ReDefine( 500, {||( ::SelectChk( .T. ) )}, ::oDlg,,, .F.,,,, .F. )
+      TButton():ReDefine( 501, {||( ::SelectChk( .F. ) )}, ::oDlg,,, .F.,,,, .F. )
+
+      TButton():ReDefine( 1, {||( ::GenIndices() )}, ::oDlg,,, .F.,,,, .F. )
+      TButton():ReDefine( 2, {||( ::oDlg:end() )}, ::oDlg,,, .F.,,,, .F. )
+      TButton():ReDefine( 998, {||( ChmHelp( "RegenerarIndices" ) )}, ::oDlg,,, .F.,,,, .F. )
+
+      ::oDlg:AddFastKey( 112, {|| ChmHelp( "RegenerarIndices" ) } )
+      ::oDlg:AddFastKey( 116, {|| ::GenIndices() } )
+
+      if lAutoInit
+         ::oDlg:bStart  := {|| ::GenIndices(), ::oDlg:End() }
+      end
+
+   ::oDlg:Activate( ::oDlg:bLClicked, ::oDlg:bMoved, ::oDlg:bPainted, .T.,,,, ::oDlg:bRClicked,,, )
+
+   ::lCloseHandle()
+
+
+
+   if ::lCloseAll
+      dbCloseAll()
+   end
+
+
+
+
+
+
+
+   oBmp:End()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TReindex_SetText( cText, oProgress ) ; local Self AS CLASS TReindex := QSelf() AS CLASS TReindex
+
+   If( cText == nil, cText := "", ) ;
+
+   if !Empty( ::oMsg )
+      ::oMsg:SetText( cText )
+   end
+
+   if !Empty( oProgress )
+      oProgress:Set( ++::nActualProgress )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TReindex_lCreateHandle( ) ; local Self AS CLASS TReindex := QSelf() AS CLASS TReindex
+
+   local nHandle
+
+   if !file( ::cFile )
+      if ( nHandle   := fCreate( ::cFile, 0 ) ) <> -1
+         fClose( nHandle )
+      else
+         msgStop( "Error " + Str( fError() ) + " al crear el fichero " + ::cFile )
+      end
+   end
+
+   ::nHandle         := fOpen( ::cFile, 16 )
+
+RETURN ( ::nHandle <> -1 )
+
+
+
+static FUNCTION TReindex_lCloseHandle( ) ; local Self AS CLASS TReindex := QSelf() AS CLASS TReindex
+
+   if !fClose( ::nHandle )
+      MsgStop( "No puedo cerrar el fichero" )
+      RETURN ( .F. )
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TReindex_lFreeHandle( ) ; local Self AS CLASS TReindex := QSelf() AS CLASS TReindex
+
+   local nHandle
+
+   if !file( ::cFile )
+      RETURN .T.
+   end
+
+   if ( nHandle := fOpen( ::cFile, 16 ) ) <> -1
+      fClose( nHandle )
+      RETURN .T.
+   end
+
+RETURN ( .F. )

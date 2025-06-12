@@ -1,0 +1,2827 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 5 ".\.\Prg\TGridSay.prg"
+static oFont
+static oFontBold
+
+
+
+_HB_CLASS TGridable ; function TGridable ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TGridable", iif( .F., { }, { @HBObject() } ), @TGridable() ) ) ;
+
+   _HB_MEMBER { bRow } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bRow"}, .F. )
+   _HB_MEMBER { bCol } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bCol"}, .F. )
+   _HB_MEMBER { bTop } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bTop"}, .F. )
+   _HB_MEMBER { bLeft } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bLeft"}, .F. )
+   _HB_MEMBER { bWidth } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bWidth"}, .F. )
+   _HB_MEMBER { bHeight } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bHeight"}, .F. )
+
+
+   _HB_MEMBER EvalRow(); oClass:AddInline( "EvalRow", {|Self, nRow | ( ( Self ) ), ( if( isBlock( nRow ), ::bRow := nRow, ), if( !Empty( ::bRow ), nRow := Eval( ::bRow ), ), nRow ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EvalCol(); oClass:AddInline( "EvalCol", {|Self, nCol | ( ( Self ) ), ( if( isBlock( nCol ), ::bCol := nCol, ), if( !Empty( ::bCol ), nCol := Eval( ::bCol ), ), nCol ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EvalTop(); oClass:AddInline( "EvalTop", {|Self, nTop | ( ( Self ) ), ( if( isBlock( nTop ), ::bTop := nTop, ), if( !Empty( ::bTop ), nTop := Eval( ::bTop ), ), nTop ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EvalLeft(); oClass:AddInline( "EvalLeft", {|Self, nLeft | ( ( Self ) ), ( if( isBlock( nLeft ), ::bLeft := nLeft, ), if( !Empty( ::bLeft ), nLeft := Eval( ::bLeft ), ), nLeft ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EvalWidth(); oClass:AddInline( "EvalWidth", {|Self, nWidth | ( ( Self ) ), ( if( isBlock( nWidth ), ::bWidth := nWidth, ), if( !Empty( ::bWidth ), nWidth := Eval( ::bWidth ), ), nWidth ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EvalHeight(); oClass:AddInline( "EvalHeight", {|Self, nHeight | ( ( Self ) ), ( if( isBlock( nHeight ), ::bHeight := nHeight, ), if( !Empty( ::bHeight ), nHeight := Eval( ::bHeight ), ), nHeight ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ReAdjust(); oClass:AddMethod( "ReAdjust", @TGridable_ReAdjust(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TGridable ;
+
+
+
+static FUNCTION TGridable_ReAdjust( ) ; local Self AS CLASS TGridable := QSelf() AS CLASS TGridable
+
+   local nRow     := if( !empty(::bRow), eval(::bRow), ::nTop )
+   local nLeft    := if( !empty(::bCol), eval(::bCol), ::nLeft )
+   local nWidth   := if( !empty(::bWidth), eval(::bWidth), ::nWidth )
+   local nHeight  := if( !empty(::bHeight), eval(::bHeight), ::nHeight )
+
+   ::Move( nRow, nLeft, nWidth, nHeight )
+
+return Self
+
+
+
+_HB_CLASS TGridSay ; function TGridSay ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TGridSay", iif( .T., { @TSay() , @TGridable() }, { @HBObject() } ), @TGridSay() ) ) ;
+
+   _HB_MEMBER Build(); oClass:AddMethod( "Build", @TGridSay_Build(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER New() AS CLASS TGridSay; oClass:AddMethod( "New", @TGridSay_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TGridSay ;
+
+
+
+static FUNCTION TGridSay_Build( hBuilder ) ; local Self AS CLASS TGridSay := QSelf() AS CLASS TGridSay
+
+   local nRow           := if( hhaskey( hBuilder, "nRow" ),          hBuilder[ "nRow"     ], nil )
+   local nCol           := if( hhaskey( hBuilder, "nCol"),           hBuilder[ "nCol"     ], nil )
+   local bText          := if( hhaskey( hBuilder, "bText"),          hBuilder[ "bText"    ], nil )
+   local oWnd           := if( hhaskey( hBuilder, "oWnd"),           hBuilder[ "oWnd"     ], nil )
+   local cPicture       := if( hhaskey( hBuilder, "cPicture"),       hBuilder[ "cPicture" ], nil )
+   local oFont          := if( hhaskey( hBuilder, "oFont"),          hBuilder[ "oFont"    ], nil )
+   local lCentered      := if( hhaskey( hBuilder, "lCentered"),      hBuilder[ "lCentered"], nil )
+   local lRight         := if( hhaskey( hBuilder, "lRight"),         hBuilder[ "lRight"   ], nil )
+   local lBorder        := if( hhaskey( hBuilder, "lBorder"),        hBuilder[ "lBorder"  ], nil )
+   local lPixels        := if( hhaskey( hBuilder, "lPixels"),        hBuilder[ "lPixels"  ], .T. )
+   local nClrText       := if( hhaskey( hBuilder, "nClrText"),       hBuilder[ "nClrText" ], nil )
+   local nClrBack       := if( hhaskey( hBuilder, "nClrBack"),       hBuilder[ "nClrBack" ], nil )
+   local nWidth         := if( hhaskey( hBuilder, "nWidth"),         hBuilder[ "nWidth"   ], nil )
+   local nHeight        := if( hhaskey( hBuilder, "nHeight"),        hBuilder[ "nHeight"  ], nil )
+   local lDesign        := if( hhaskey( hBuilder, "lDesign"),        hBuilder[ "lDesign"  ], nil )
+   local lUpdate        := if( hhaskey( hBuilder, "lUpdate"),        hBuilder[ "lUpdate"  ], nil )
+   local lShaded        := if( hhaskey( hBuilder, "lShaded"),        hBuilder[ "lShaded"  ], nil )
+   local lBox           := if( hhaskey( hBuilder, "lBox"),           hBuilder[ "lBox"     ], nil )
+   local lRaised        := if( hhaskey( hBuilder, "lRaised"),        hBuilder[ "lRaised"  ], nil )
+   local lAdjust        := if( hhaskey( hBuilder, "lAdjust"),        hBuilder[ "lAdjust"  ], nil )
+   local lTransparent   := if( hhaskey( hBuilder, "lTransparent"),   hBuilder[ "lTransparent"], nil )
+   local cVarName       := if( hhaskey( hBuilder, "cVarName"),       hBuilder[ "cVarName" ], nil )
+   local bAction        := if( hhaskey( hBuilder, "bAction"),        hBuilder[ "bAction"  ], nil )
+
+
+
+
+Return ( ::New( nRow, nCol, bText, oWnd, cPicture, oFont, lCentered, lRight, lBorder, lPixels, nClrText, nClrBack, nWidth, nHeight, lDesign, lUpdate, lShaded, lBox, lRaised, lAdjust, lTransparent, cVarName, bAction ) )
+
+
+
+
+
+
+static FUNCTION TGridSay_New( nRow, nCol, bText, oWnd, cPicture, oFont, lCentered, lRight, lBorder, lPixels, nClrText, nClrBack, nWidth, nHeight, lDesign, lUpdate, lShaded, lBox, lRaised, lAdjust, lTransparent, cVarName, bAction ) ; local Self AS CLASS TGridSay := QSelf() AS CLASS TGridSay
+
+   nRow           := ::EvalRow( nRow )
+   nCol           := ::EvalCol( nCol )
+   nWidth         := ::EvalWidth( nWidth )
+   nHeight        := ::EvalHeight( nHeight )
+
+
+
+
+   ::Super:New( nRow, nCol, bText, oWnd, cPicture, oFont, lCentered, lRight, lBorder, lPixels, nClrText, nClrBack, nWidth, nHeight, lDesign, lUpdate, lShaded, lBox, lRaised, lAdjust, lTransparent, cVarName )
+
+Return Self
+
+
+
+_HB_CLASS TGridURLLink ; function TGridURLLink ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TGridURLLink", iif( .T., { @TURLLink() , @TGridable() }, { @HBObject() } ), @TGridURLLink() ) ) ;
+
+   _HB_MEMBER Build(); oClass:AddMethod( "Build", @TGridURLLink_Build(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER New() AS CLASS TGridURLLink; oClass:AddMethod( "New", @TGridURLLink_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ReAdjust(); oClass:AddMethod( "ReAdjust", @TGridURLLink_ReAdjust(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TGridURLLink ;
+
+
+
+static FUNCTION TGridURLLink_Build( hBuilder ) ; local Self AS CLASS TGridURLLink := QSelf() AS CLASS TGridURLLink
+
+   local nTop           := if( hhaskey( hBuilder, "nTop" ),          hBuilder[ "nTop"     ], nil )
+   local nLeft          := if( hhaskey( hBuilder, "nLeft" ),         hBuilder[ "nLeft"    ], nil )
+   local oWnd           := if( hhaskey( hBuilder, "oWnd"),           hBuilder[ "oWnd"     ], nil )
+   local lPixel         := if( hhaskey( hBuilder, "lPixel" ),        hBuilder[ "lPixel"   ], .T. )
+   local lDesign        := if( hhaskey( hBuilder, "lDesign"),        hBuilder[ "lDesign"  ], nil )
+   local oFont          := if( hhaskey( hBuilder, "oFont" ),         hBuilder[ "oFont"    ], nil )
+   local cMsg           := if( hhaskey( hBuilder, "cMsg" ),          hBuilder[ "cMsg"     ], nil )
+   local cURL           := if( hhaskey( hBuilder, "cURL" ),          hBuilder[ "cURL"     ], nil )
+   local cTooltip       := if( hhaskey( hBuilder, "cTooltip" ),      hBuilder[ "lcTooltip"], nil )
+   local nClrInit       := if( hhaskey( hBuilder, "nClrInit" ),      hBuilder[ "nClrInit" ], nil )
+   local nClrOver       := if( hhaskey( hBuilder, "nClrOver" ),      hBuilder[ "nClrOver" ], nil )
+   local nClrVisit      := if( hhaskey( hBuilder, "nClrVisit" ),     hBuilder[ "nClrVisit"], nil )
+   local bAction        := if( hhaskey( hBuilder, "bAction" ),       hBuilder[ "bAction"  ], nil )
+
+
+Return ( ::New( nTop, nLeft, oWnd, lPixel, lDesign, oFont, cMsg, cURL,  cToolTip, nClrInit, nClrOver, nClrVisit, bAction ) )
+
+
+
+
+static FUNCTION TGridURLLink_New( nTop, nLeft, oWnd, lPixel, lDesign, oFont, cMsg, cURL,  cToolTip, nClrInit, nClrOver, nClrVisit, bAction ) ; local Self AS CLASS TGridURLLink := QSelf() AS CLASS TGridURLLink
+
+   nTop           := ::EvalRow( nTop )
+   nLeft          := ::EvalCol( nLeft )
+
+
+   ::Super:New( nTop, nLeft, oWnd, lPixel, lDesign, oFont, cMsg, cURL,  cToolTip, nClrInit, nClrOver, nClrVisit )
+
+   ::bAction      := bAction
+
+Return Self
+
+
+
+static FUNCTION TGridURLLink_ReAdjust( ) ; local Self AS CLASS TGridURLLink := QSelf() AS CLASS TGridURLLink
+
+   local nRow     := if( !empty(::bRow), eval(::bRow), ::nTop )
+   local nLeft    := if( !empty(::bCol), eval(::bCol), ::nLeft )
+   local nWidth   := if( !empty(::bWidth), eval(::bWidth), ::nWidth )
+   local nHeight  := if( !empty(::bHeight), eval(::bHeight), ::nHeight )
+
+   ::Move( nRow, nLeft, nWidth, nHeight )
+
+return Self
+
+
+
+_HB_CLASS TGridGet ; function TGridGet ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TGridGet", iif( .T., { @TGet() , @TGridable() }, { @HBObject() } ), @TGridGet() ) ) ;
+
+   _HB_MEMBER { bOldWhen } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bOldWhen"}, .F. )
+
+   _HB_MEMBER Build( hBuilder); oClass:AddMethod( "Build", @TGridGet_Build(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+
+
+   _HB_MEMBER New( nRow, nCol, bSetGet, oWnd, nWidth, nHeight, cPict, bValid, nClrFore, nClrBack, oFont, lDesign, oCursor, lPixel, cMsg, lUpdate, bWhen, lCenter, lRight, bChanged, lReadOnly, lPassword, lNoBorder, nHelpId, lSpinner, bUp, bDown, bMin, bMax, bAction, cBmpName, cVarName, cCueText) AS CLASS TGridGet; oClass:AddMethod( "New", @TGridGet_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER GotFocus(); oClass:AddInline( "GotFocus", {|Self, hCtlLost | ( ( Self ) ), ( ShowKeyboard(), ::Super:gotFocus( hCtlLost ), ::Super:SetPos( 1 ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER HardEnable(); oClass:AddMethod( "HardEnable", @TGridGet_HardEnable(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER HardDisable(); oClass:AddMethod( "HardDisable", @TGridGet_HardDisable(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TGridGet ;
+
+
+
+static FUNCTION TGridGet_Build( hBuilder ) ; local Self AS CLASS TGridGet := QSelf() AS CLASS TGridGet
+
+   local nRow        := if( hhaskey( hBuilder, "nRow" ),       hBuilder[ "nRow"     ], nil )
+   local nCol        := if( hhaskey( hBuilder, "nCol" ),       hBuilder[ "nCol"     ], nil )
+   local bSetGet     := if( hhaskey( hBuilder, "bSetGet" ),    hBuilder[ "bSetGet"  ], nil )
+   local oWnd        := if( hhaskey( hBuilder, "oWnd" ),       hBuilder[ "oWnd"     ], nil )
+   local nWidth      := if( hhaskey( hBuilder, "nWidth" ),     hBuilder[ "nWidth"   ], nil )
+   local nHeight     := if( hhaskey( hBuilder, "nHeight" ),    hBuilder[ "nHeight"  ], nil )
+   local cPict       := if( hhaskey( hBuilder, "cPict" ),      hBuilder[ "cPict"    ], nil )
+   local bValid      := if( hhaskey( hBuilder, "bValid" ),     hBuilder[ "bValid"   ], nil )
+   local nClrFore    := if( hhaskey( hBuilder, "nClrFore" ),   hBuilder[ "nClrFore" ], nil )
+   local nClrBack    := if( hhaskey( hBuilder, "nClrBack" ),   hBuilder[ "nClrBack" ], nil )
+   local oFont       := if( hhaskey( hBuilder, "oFont" ),      hBuilder[ "oFont"    ], nil )
+   local lDesign     := if( hhaskey( hBuilder, "lDesign" ),    hBuilder[ "lDesign"  ], nil )
+   local oCursor     := if( hhaskey( hBuilder, "oCursor" ),    hBuilder[ "oCursor"  ], nil )
+   local lPixel      := if( hhaskey( hBuilder, "lPixel" ),     hBuilder[ "lPixel"   ], .T. )
+   local cMsg        := if( hhaskey( hBuilder, "cMsg" ),       hBuilder[ "cMsg"     ], nil )
+   local lUpdate     := if( hhaskey( hBuilder, "lUpdate" ),    hBuilder[ "lUpdate"  ], nil )
+   local bWhen       := if( hhaskey( hBuilder, "bWhen" ),      hBuilder[ "bWhen"    ], nil )
+   local lCenter     := if( hhaskey( hBuilder, "lCenter" ),    hBuilder[ "lCenter"  ], nil )
+   local lRight      := if( hhaskey( hBuilder, "lRight" ),     hBuilder[ "lRight"   ], nil )
+   local bChanged    := if( hhaskey( hBuilder, "bChanged" ),   hBuilder[ "bChanged" ], nil )
+   local lReadOnly   := if( hhaskey( hBuilder, "lReadOnly" ),  hBuilder[ "lReadOnly"], nil )
+   local lPassword   := if( hhaskey( hBuilder, "lPassword" ),  hBuilder[ "lPassword"], nil )
+   local lNoBorder   := if( hhaskey( hBuilder, "lNoBorder" ),  hBuilder[ "lNoBorder"], nil )
+   local nHelpId     := if( hhaskey( hBuilder, "nHelpId" ),    hBuilder[ "nHelpId"  ], nil )
+   local lSpinner    := if( hhaskey( hBuilder, "lSpinner" ),   hBuilder[ "lSpinner" ], nil )
+   local bUp         := if( hhaskey( hBuilder, "bUp" ),        hBuilder[ "bUp"      ], nil )
+   local bDown       := if( hhaskey( hBuilder, "bDown" ),      hBuilder[ "bDown"    ], nil )
+   local bMin        := if( hhaskey( hBuilder, "bMin" ),       hBuilder[ "bMin"     ], nil )
+   local bMax        := if( hhaskey( hBuilder, "bMax" ),       hBuilder[ "bMax"     ], nil )
+   local bAction     := if( hhaskey( hBuilder, "bAction" ),    hBuilder[ "bAction"  ], nil )
+   local cBmpName    := if( hhaskey( hBuilder, "cBmpName" ),   hBuilder[ "cBmpName" ], nil )
+   local cVarName    := if( hhaskey( hBuilder, "cVarName" ),   hBuilder[ "cVarName" ], nil )
+   local cCueText    := if( hhaskey( hBuilder, "cCueText" ),   hBuilder[ "cCueText" ], nil )
+
+
+
+
+
+
+Return ( ::New( nRow, nCol, bSetGet, oWnd, nWidth, nHeight, cPict, bValid, nClrFore, nClrBack, oFont, lDesign, oCursor, lPixel, cMsg, lUpdate, bWhen, lCenter, lRight, bChanged, lReadOnly, lPassword, lNoBorder, nHelpId, lSpinner, bUp, bDown, bMin, bMax, bAction, cBmpName, cVarName, cCueText ) )
+
+
+
+
+
+
+
+
+static FUNCTION TGridGet_New( nRow, nCol, bSetGet, oWnd, nWidth, nHeight, cPict, bValid, nClrFore, nClrBack, oFont, lDesign, oCursor, lPixel, cMsg, lUpdate, bWhen, lCenter, lRight, bChanged, lReadOnly, lPassword, lNoBorder, nHelpId, lSpinner, bUp, bDown, bMin, bMax, bAction, cBmpName, cVarName, cCueText ) ; local Self AS CLASS TGridGet := QSelf() AS CLASS TGridGet
+
+   nRow     := ::EvalRow( nRow )
+   nCol     := ::EvalCol( nCol )
+   nWidth   := ::EvalWidth( nWidth )
+   nHeight  := ::EvalHeight( nHeight )
+
+
+
+
+
+
+   ::Super:New( nRow, nCol, bSetGet, oWnd, nWidth, nHeight, cPict, bValid, nClrFore, nClrBack, oFont, lDesign, oCursor, .T., cMsg, lUpdate, bWhen, lCenter, lRight, bChanged, lReadOnly, lPassword, lNoBorder, nHelpId, lSpinner, bUp, bDown, bMin, bMax, bAction, cBmpName, cVarName, cCueText )
+
+Return Self
+
+
+
+static FUNCTION TGridGet_HardEnable( ) ; local Self AS CLASS TGridGet := QSelf() AS CLASS TGridGet
+
+   ::bWhen     := ::bOldWhen
+
+Return ( ::Enable() )
+
+
+
+static FUNCTION TGridGet_HardDisable( ) ; local Self AS CLASS TGridGet := QSelf() AS CLASS TGridGet
+
+   ::bOldWhen  := ::bWhen
+   ::bWhen     := {|| .F. }
+
+return ( ::Disable() )
+
+
+
+_HB_CLASS TGridMultiGet ; function TGridMultiGet ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TGridMultiGet", iif( .T., { @TMultiGet() , @TGridable() }, { @HBObject() } ), @TGridMultiGet() ) ) ;
+
+   _HB_MEMBER Build( hBuilder); oClass:AddMethod( "Build", @TGridMultiGet_Build(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+   _HB_MEMBER New( nRow, nCol, bSetGet, oWnd, nWidth, nHeight, oFont, lHScroll, nClrFore, nClrBack, oCursor, lPixel, cMsg, lUpdate, bWhen, lCenter, lRight, lReadOnly, bValid, bChanged, lDesign, lNoBorder, lNoVScroll); oClass:AddMethod( "New", @TGridMultiGet_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GotFocus(); oClass:AddInline( "GotFocus", {|Self, hCtlLost | ( ( Self ) ), ( ShowKeyboard(), ::Super:GotFocus( hCtlLost ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TGridMultiGet ;
+
+
+
+static FUNCTION TGridMultiGet_Build( hBuilder ) ; local Self AS CLASS TGridMultiGet := QSelf() AS CLASS TGridMultiGet
+
+   local nRow        := if( hhaskey( hBuilder, "nRow" ),       hBuilder[ "nRow"     ], nil )
+   local nCol        := if( hhaskey( hBuilder, "nCol" ),       hBuilder[ "nCol"     ], nil )
+   local bSetGet     := if( hhaskey( hBuilder, "bSetGet" ),    hBuilder[ "bSetGet"  ], nil )
+   local oWnd        := if( hhaskey( hBuilder, "oWnd" ),       hBuilder[ "oWnd"     ], nil )
+   local nWidth      := if( hhaskey( hBuilder, "nWidth" ),     hBuilder[ "nWidth"   ], nil )
+   local nHeight     := if( hhaskey( hBuilder, "nHeight" ),    hBuilder[ "nHeight"  ], nil )
+   local oFont       := if( hhaskey( hBuilder, "oFont" ),      hBuilder[ "oFont"    ], nil )
+   local lHScroll    := if( hhaskey( hBuilder, "lHScroll" ),   hBuilder[ "lHScroll" ], nil )
+   local nClrFore    := if( hhaskey( hBuilder, "nClrFore" ),   hBuilder[ "nClrFore" ], nil )
+   local nClrBack    := if( hhaskey( hBuilder, "nClrBack" ),   hBuilder[ "nClrBack" ], nil )
+   local oCursor     := if( hhaskey( hBuilder, "oCursor" ),    hBuilder[ "oCursor"  ], nil )
+   local lPixel      := if( hhaskey( hBuilder, "lPixel" ),     hBuilder[ "lPixel"   ], .T. )
+   local cMsg        := if( hhaskey( hBuilder, "cMsg" ),       hBuilder[ "cMsg"     ], nil )
+   local lUpdate     := if( hhaskey( hBuilder, "lUpdate" ),    hBuilder[ "lUpdate"  ], nil )
+   local bWhen       := if( hhaskey( hBuilder, "bWhen" ),      hBuilder[ "bWhen"    ], nil )
+   local lCenter     := if( hhaskey( hBuilder, "lCenter" ),    hBuilder[ "lCenter"  ], nil )
+   local lRight      := if( hhaskey( hBuilder, "lRight" ),     hBuilder[ "lRight"   ], nil )
+   local lReadOnly   := if( hhaskey( hBuilder, "lReadOnly" ),  hBuilder[ "lReadOnly"], nil )
+   local bValid      := if( hhaskey( hBuilder, "bValid" ),     hBuilder[ "bValid"   ], nil )
+   local bChanged    := if( hhaskey( hBuilder, "bChanged" ),   hBuilder[ "bChanged" ], nil )
+   local lDesign     := if( hhaskey( hBuilder, "lDesign" ),    hBuilder[ "lDesign"  ], nil )
+   local lNoBorder   := if( hhaskey( hBuilder, "lNoBorder" ),  hBuilder[ "lNoBorder"], nil )
+   local lNoVScroll  := if( hhaskey( hBuilder, "lNoVScroll" ), hBuilder[ "lNoVScroll"], nil )
+
+
+
+
+Return ( ::New( nRow, nCol, bSetGet, oWnd, nWidth, nHeight, oFont, lHScroll, nClrFore, nClrBack, oCursor, lPixel, cMsg, lUpdate, bWhen, lCenter, lRight, lReadOnly, bValid, bChanged, lDesign, lNoBorder, lNoVScroll ) )
+
+
+
+
+
+
+static FUNCTION TGridMultiGet_New( nRow, nCol, bSetGet, oWnd, nWidth, nHeight, oFont, lHScroll, nClrFore, nClrBack, oCursor, lPixel, cMsg, lUpdate, bWhen, lCenter, lRight, lReadOnly, bValid, bChanged, lDesign, lNoBorder, lNoVScroll ) ; local Self AS CLASS TGridMultiGet := QSelf() AS CLASS TGridMultiGet
+
+   nRow     := ::EvalRow( nRow )
+   nCol     := ::EvalCol( nCol )
+   nWidth   := ::EvalWidth( nWidth )
+   nHeight  := ::EvalHeight( nHeight )
+
+
+
+
+   ::Super:New( nRow, nCol, bSetGet, oWnd, nWidth, nHeight, oFont, lHScroll, nClrFore, nClrBack, oCursor, lPixel, cMsg, lUpdate, bWhen, lCenter, lRight, lReadOnly, bValid, bChanged, lDesign, lNoBorder, lNoVScroll )
+
+Return Self
+
+
+
+_HB_CLASS TGridButton ; function TGridButton ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TGridButton", iif( .T., { @TButton() }, { @HBObject() } ), @TGridButton() ) ) ;
+
+   _HB_MEMBER { bRow } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bRow"}, .F. )
+   _HB_MEMBER { bCol } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bCol"}, .F. )
+   _HB_MEMBER { bWidth } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bWidth"}, .F. )
+   _HB_MEMBER { bHeight } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bHeight"}, .F. )
+
+
+
+   _HB_MEMBER New( nRow, nCol, cCaption, oWnd, bAction, nWidth, nHeight,  nHelpId, oFont, lDefault, lPixel, lDesign, cMsg, lUpdate, bWhen, bValid, lCancel, cVarName, lMultiline); oClass:AddMethod( "New", @TGridButton_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ReAdjust(); oClass:AddMethod( "ReAdjust", @TGridButton_ReAdjust(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TGridButton ;
+
+
+
+
+
+static FUNCTION TGridButton_New( nRow, nCol, cCaption, oWnd, bAction, nWidth, nHeight,  nHelpId, oFont, lDefault, lPixel, lDesign, cMsg, lUpdate, bWhen, bValid, lCancel, cVarName, lMultiline ) ; local Self AS CLASS TGridButton := QSelf() AS CLASS TGridButton
+
+   if isBlock( nRow )
+      ::bRow         := nRow
+      nRow           := Eval( nRow )
+   end
+
+   if isBlock( nCol )
+      ::bCol         := nCol
+      nCol           := Eval( nCol )
+   end
+
+   if isBlock( nWidth )
+      ::bWidth       := nWidth
+      nWidth         := Eval( nWidth )
+   end
+
+   if isBlock( nHeight )
+      ::bHeight      := nHeight
+      nHeight        := Eval( nHeight )
+   end
+
+
+
+   ::Super:New( nRow, nCol, cCaption, oWnd, bAction, nWidth, nHeight,  nHelpId, oFont, lDefault, .T., lDesign, cMsg, lUpdate, bWhen, bValid, lCancel, cVarName, lMultiline )
+
+return Self
+
+
+
+static FUNCTION TGridButton_ReAdjust( ) ; local Self AS CLASS TGridButton := QSelf() AS CLASS TGridButton
+
+   local nRow     := if( !empty(::bRow), eval(::bRow), ::nTop )
+   local nLeft    := if( !empty(::bCol), eval(::bCol), ::nLeft )
+   local nWidth   := if( !empty(::bWidth), eval(::bWidth), ::nWidth )
+   local nHeight  := if( !empty(::bHeight), eval(::bHeight), ::nHeight )
+
+   ::Move( nRow, nLeft, nWidth, nHeight )
+
+return Self
+
+
+
+_HB_CLASS TGridImage ; function TGridImage ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TGridImage", iif( .T., { @TImage() , @TGridable() }, { @HBObject() } ), @TGridImage() ) ) ;
+
+   _HB_MEMBER Build(); oClass:AddMethod( "Build", @TGridImage_Build(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @TGridImage_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ReAdjust(); oClass:AddMethod( "ReAdjust", @TGridImage_ReAdjust(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TGridImage ;
+
+
+
+static FUNCTION TGridImage_Build( hBuilder ) ; local Self AS CLASS TGridImage := QSelf() AS CLASS TGridImage
+
+   local nTop           := if( hhaskey( hBuilder, "nTop"          ), hBuilder[ "nTop"        ], nil )
+   local nLeft          := if( hhaskey( hBuilder, "nLeft"         ), hBuilder[ "nLeft"       ], nil )
+   local nWidth         := if( hhaskey( hBuilder, "nWidth"        ), hBuilder[ "nWidth"      ], nil )
+   local nHeight        := if( hhaskey( hBuilder, "nHeight"       ), hBuilder[ "nHeight"     ], nil )
+   local cResName       := if( hhaskey( hBuilder, "cResName"      ), hBuilder[ "cResName"    ], nil )
+   local cBmpFile       := if( hhaskey( hBuilder, "cBmpFile"      ), hBuilder[ "cBmpFile"    ], nil )
+   local lNoBorder      := if( hhaskey( hBuilder, "lNoBorder"     ), hBuilder[ "lNoBorder"   ], .T. )
+   local oWnd           := if( hhaskey( hBuilder, "oWnd"          ), hBuilder[ "oWnd"        ], nil )
+   local bLClicked      := if( hhaskey( hBuilder, "bLClicked"     ), hBuilder[ "bLClicked"   ], nil )
+   local bRClicked      := if( hhaskey( hBuilder, "bRClicked"     ), hBuilder[ "bRClicked"   ], nil )
+   local lScroll        := if( hhaskey( hBuilder, "lScroll"       ), hBuilder[ "lScroll"     ], nil )
+   local lStretch       := if( hhaskey( hBuilder, "lStretch"      ), hBuilder[ "lStretch"    ], nil )
+   local oCursor        := if( hhaskey( hBuilder, "oCursor"       ), hBuilder[ "oCursor"     ], nil )
+   local cMsg           := if( hhaskey( hBuilder, "cMsg"          ), hBuilder[ "cMsg"        ], nil )
+   local lUpdate        := if( hhaskey( hBuilder, "lUpdate"       ), hBuilder[ "lUpdate"     ], .T. )
+   local bWhen          := if( hhaskey( hBuilder, "bWhen"         ), hBuilder[ "bWhen"       ], nil )
+   local lPixel         := if( hhaskey( hBuilder, "lPixel"        ), hBuilder[ "lPixel"      ], .T. )
+   local bValid         := if( hhaskey( hBuilder, "bValid"        ), hBuilder[ "bValid"      ], nil )
+   local lDesign        := if( hhaskey( hBuilder, "lDesign"       ), hBuilder[ "lDesign"     ], nil )
+   local cVarName       := if( hhaskey( hBuilder, "cVarName"      ), hBuilder[ "cVarName"    ], nil )
+
+
+
+Return   (  ::New( nTop, nLeft, nWidth, nHeight, cResName, cBmpFile, lNoBorder, oWnd, bLClicked, bRClicked, lScroll, lStretch, oCursor, cMsg, lUpdate, bWhen, lPixel, bValid, lDesign, cVarName ) )
+
+
+
+
+
+static FUNCTION TGridImage_New( nTop, nLeft, nWidth, nHeight, cResName, cBmpFile, lNoBorder, oWnd, bLClicked, bRClicked, lScroll, lStretch, oCursor, cMsg, lUpdate, bWhen, lPixel, bValid, lDesign, cVarName ) ; local Self AS CLASS TGridImage := QSelf() AS CLASS TGridImage
+
+   nTop     := ::EvalTop( nTop )
+   nLeft    := ::EvalLeft( nLeft )
+   nWidth   := ::EvalWidth( nWidth )
+   nHeight  := ::EvalHeight( nHeight )
+
+
+
+   ::Super:New( nTop, nLeft, nWidth, nHeight, cResName, cBmpFile, lNoBorder, oWnd, bLClicked, bRClicked, lScroll, lStretch, oCursor, cMsg, lUpdate, bWhen, .T., bValid, lDesign, cVarName )
+
+return Self
+
+
+
+static FUNCTION TGridImage_ReAdjust( ) ; local Self AS CLASS TGridImage := QSelf() AS CLASS TGridImage
+
+   local nTop     := if( !empty(::bTop), eval(::bTop), ::nTop )
+   local nLeft    := if( !empty(::bLeft), eval(::bLeft), ::nLeft )
+   local nWidth   := if( !empty(::bWidth), eval(::bWidth), ::nWidth )
+   local nHeight  := if( !empty(::bHeight), eval(::bHeight), ::nHeight )
+
+   ::Move( nTop, nLeft, nWidth, nHeight )
+
+return Self
+
+
+
+_HB_CLASS TGridBtnBmp ; function TGridBtnBmp ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TGridBtnBmp", iif( .T., { @TBtnBmp() }, { @HBObject() } ), @TGridBtnBmp() ) ) ;
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @TGridBtnBmp_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Build(); oClass:AddMethod( "Build", @TGridBtnBmp_Build(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ReAdjust(); oClass:AddMethod( "ReAdjust", @TGridBtnBmp_ReAdjust(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TGridBtnBmp ;
+
+
+
+static FUNCTION TGridBtnBmp_Build( hBuilder ) ; local Self AS CLASS TGridBtnBmp := QSelf() AS CLASS TGridBtnBmp
+
+   local nTop           := if( hhaskey( hBuilder, "nTop"          ), hBuilder[ "nTop"        ], nil )
+   local nLeft          := if( hhaskey( hBuilder, "nLeft"         ), hBuilder[ "nLeft"       ], nil )
+   local nWidth         := if( hhaskey( hBuilder, "nWidth"        ), hBuilder[ "nWidth"      ], nil )
+   local nHeight        := if( hhaskey( hBuilder, "nHeight"       ), hBuilder[ "nHeight"     ], nil )
+   local cResName1      := if( hhaskey( hBuilder, "cResName1"     ), hBuilder[ "cResName1"   ], nil )
+   local cResName2      := if( hhaskey( hBuilder, "cResName2"     ), hBuilder[ "cResName2"   ], nil )
+   local cBmpFile1      := if( hhaskey( hBuilder, "cBmpFile1"     ), hBuilder[ "cBmpFile1"   ], nil )
+   local cBmpFile2      := if( hhaskey( hBuilder, "cBmpFile2"     ), hBuilder[ "cBmpFile2"   ], nil )
+   local bAction        := if( hhaskey( hBuilder, "bAction"       ), hBuilder[ "bAction"     ], nil )
+   local oWnd           := if( hhaskey( hBuilder, "oWnd"          ), hBuilder[ "oWnd"        ], nil )
+   local cMsg           := if( hhaskey( hBuilder, "cMsg"          ), hBuilder[ "cMsg"        ], ""  )
+   local bWhen          := if( hhaskey( hBuilder, "bWhen"         ), hBuilder[ "bWhen"       ], nil )
+   local lAdjust        := if( hhaskey( hBuilder, "lAdjust"       ), hBuilder[ "lAdjust"     ], .F. )
+   local lUpdate        := if( hhaskey( hBuilder, "lUpdate"       ), hBuilder[ "lUpdate"     ], .T. )
+   local cPrompt        := if( hhaskey( hBuilder, "cPrompt"       ), hBuilder[ "cPrompt"     ], ""  )
+   local oFont          := if( hhaskey( hBuilder, "oFont"         ), hBuilder[ "oFont"       ], nil )
+   local cResName3      := if( hhaskey( hBuilder, "cResName3"     ), hBuilder[ "cResName3"   ], nil )
+   local cBmpFile3      := if( hhaskey( hBuilder, "cBmpFile3"     ), hBuilder[ "cBmpFile3"   ], nil )
+   local lBorder        := if( hhaskey( hBuilder, "lBorder"       ), hBuilder[ "lBorder"     ], .F. )
+   local cLayout        := if( hhaskey( hBuilder, "cLayout"       ), hBuilder[ "cLayout"     ], nil )
+   local l2007          := if( hhaskey( hBuilder, "l2007"         ), hBuilder[ "l2007"       ], .F. )
+   local cResName4      := if( hhaskey( hBuilder, "cResName4"     ), hBuilder[ "cResName4"   ], nil )
+   local cBmpFile4      := if( hhaskey( hBuilder, "cBmpFile4"     ), hBuilder[ "cBmpFile4"   ], nil )
+   local lTransparent   := if( hhaskey( hBuilder, "lTransparent"  ), hBuilder[ "lTransparent"], .F. )
+   local cToolTip       := if( hhaskey( hBuilder, "cToolTip"      ), hBuilder[ "cToolTip"    ], nil )
+   local lRound         := if( hhaskey( hBuilder, "lRound"        ), hBuilder[ "lRound"      ], nil )
+   local bGradColors    := if( hhaskey( hBuilder, "bGradColors"   ), hBuilder[ "bGradColors" ], nil )
+   local lPixel         := if( hhaskey( hBuilder, "lPixel"        ), hBuilder[ "lPixel"      ], nil )
+   local lDesign        := if( hhaskey( hBuilder, "lDesign"       ), hBuilder[ "lDesign"     ], nil )
+
+
+
+
+
+
+Return   (  ::New( nTop, nLeft, nWidth, nHeight, cResName1, cResName2, cBmpFile1, cBmpFile2, bAction, oWnd, cMsg, bWhen, lAdjust, lUpdate, cPrompt, oFont, cResName3, cBmpFile3, lBorder, cLayout,  l2007, cResName4, cBmpFile4, lTransparent, cToolTip, lRound, bGradColors, lPixel, lDesign ) )
+
+
+
+
+
+
+
+
+static FUNCTION TGridBtnBmp_New( nTop, nLeft, nWidth, nHeight, cResName1, cResName2, cBmpFile1, cBmpFile2, bAction, oWnd, cMsg, bWhen, lAdjust, lUpdate, cPrompt, oFont, cResName3, cBmpFile3, lBorder, cLayout,  l2007, cResName4, cBmpFile4, lTransparent, cToolTip, lRound, bGradColors, lPixel, lDesign ) ; local Self AS CLASS TGridBtnBmp := QSelf() AS CLASS TGridBtnBmp
+
+
+
+
+
+
+
+
+
+
+
+Return ( ::Super:New( nTop, nLeft, nWidth, nHeight, cResName1, cResName2, cBmpFile1, cBmpFile2, bAction, oWnd, cMsg, bWhen, lAdjust, lUpdate, cPrompt, oFont, cResName3, cBmpFile3, lBorder, cLayout,  l2007, cResName4, cBmpFile4, lTransparent, cToolTip, lRound, bGradColors, lPixel, lDesign ) )
+
+
+
+static FUNCTION TGridBtnBmp_ReAdjust( ) ; local Self AS CLASS TGridBtnBmp := QSelf() AS CLASS TGridBtnBmp
+
+   local nTop     := if( !empty(::bTop), eval(::bTop), ::nTop )
+   local nLeft    := if( !empty(::bLeft), eval(::bLeft), ::nLeft )
+   local nWidth   := if( !empty(::bWidth), eval(::bWidth), ::nWidth )
+   local nHeight  := if( !empty(::bHeight), eval(::bHeight), ::nHeight )
+
+   ::Move( nTop, nLeft, nWidth, nHeight )
+
+return Self
+
+
+
+_HB_CLASS TGridComboBox ; function TGridComboBox ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TGridComboBox", iif( .T., { @TComboBox() , @TGridable() }, { @HBObject() } ), @TGridComboBox() ) ) ;
+
+   _HB_MEMBER Build( hBuilder); oClass:AddMethod( "Build", @TGridComboBox_Build(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @TGridComboBox_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TGridComboBox ;
+
+
+
+static FUNCTION TGridComboBox_Build( hBuilder ) ; local Self AS CLASS TGridComboBox := QSelf() AS CLASS TGridComboBox
+
+   local nRow        := if( hhaskey( hBuilder, "nRow" ),       hBuilder[ "nRow"     ], nil )
+   local nCol        := if( hhaskey( hBuilder, "nCol" ),       hBuilder[ "nCol"     ], nil )
+   local bSetGet     := if( hhaskey( hBuilder, "bSetGet" ),    hBuilder[ "bSetGet"  ], nil )
+   local aItems      := if( hhaskey( hBuilder, "aItems" ),     hBuilder[ "aItems"   ], nil )
+   local nWidth      := if( hhaskey( hBuilder, "nWidth" ),     hBuilder[ "nWidth"   ], nil )
+   local nHeight     := if( hhaskey( hBuilder, "nHeight" ),    hBuilder[ "nHeight"  ], nil )
+   local oWnd        := if( hhaskey( hBuilder, "oWnd" ),       hBuilder[ "oWnd"     ], nil )
+   local nHelpId     := if( hhaskey( hBuilder, "nHelpId" ),    hBuilder[ "nHelpId"  ], nil )
+   local bChange     := if( hhaskey( hBuilder, "bChange" ),    hBuilder[ "bChange"  ], nil )
+   local bValid      := if( hhaskey( hBuilder, "bValid" ),     hBuilder[ "bValid"   ], nil )
+   local nClrFore    := if( hhaskey( hBuilder, "nClrFore" ),   hBuilder[ "nClrFore" ], nil )
+   local nClrBack    := if( hhaskey( hBuilder, "nClrBack" ),   hBuilder[ "nClrBack" ], nil )
+   local lPixel      := if( hhaskey( hBuilder, "lPixel" ),     hBuilder[ "lPixel"   ], .T. )
+   local oFont       := if( hhaskey( hBuilder, "oFont" ),      hBuilder[ "oFont"    ], nil )
+   local cMsg        := if( hhaskey( hBuilder, "cMsg" ),       hBuilder[ "cMsg"     ], nil )
+   local lUpdate     := if( hhaskey( hBuilder, "lUpdate" ),    hBuilder[ "lUpdate"  ], nil )
+   local bWhen       := if( hhaskey( hBuilder, "bWhen" ),      hBuilder[ "bWhen"    ], nil )
+   local lDesign     := if( hhaskey( hBuilder, "lDesign" ),    hBuilder[ "lDesign"  ], nil )
+   local acBitmaps   := if( hhaskey( hBuilder, "acBitmaps" ),  hBuilder[ "acBitmaps"], nil )
+   local bDrawItem   := if( hhaskey( hBuilder, "bDrawItem" ),  hBuilder[ "bDrawItem"], nil )
+   local nStyle      := if( hhaskey( hBuilder, "nStyle" ),     hBuilder[ "nStyle"   ], nil )
+   local cPict       := if( hhaskey( hBuilder, "cPict" ),      hBuilder[ "cPict"    ], nil )
+   local bEChange    := if( hhaskey( hBuilder, "bEChange" ),   hBuilder[ "bEChange" ], nil )
+   local cVarName    := if( hhaskey( hBuilder, "cVarName" ),   hBuilder[ "cVarName" ], nil )
+
+
+
+
+Return ( ::New( nRow, nCol, bSetGet, aItems, nWidth, nHeight, oWnd, nHelpId, bChange, bValid, nClrFore, nClrBack, lPixel, oFont, cMsg, lUpdate, bWhen, lDesign, acBitmaps, bDrawItem, nStyle, cPict, bEChange, cVarName ) )
+
+
+
+
+
+
+static FUNCTION TGridComboBox_New( nRow, nCol, bSetGet, aItems, nWidth, nHeight, oWnd, nHelpId, bChange, bValid, nClrFore, nClrBack, lPixel, oFont, cMsg, lUpdate, bWhen, lDesign, acBitmaps, bDrawItem, nStyle, cPict, bEChange, cVarName ) ; local Self AS CLASS TGridComboBox := QSelf() AS CLASS TGridComboBox
+
+   nRow     := ::EvalRow( nRow )
+   nCol     := ::EvalCol( nCol )
+   nWidth   := ::EvalWidth( nWidth )
+   nHeight  := ::EvalHeight( nHeight )
+
+
+
+
+   ::Super:New( nRow, nCol, bSetGet, aItems, nWidth, nHeight, oWnd, nHelpId, bChange, bValid, nClrFore, nClrBack, lPixel, oFont, cMsg, lUpdate, bWhen, lDesign, acBitmaps, bDrawItem, nStyle, cPict, bEChange, cVarName )
+
+Return Self
+
+
+
+_HB_CLASS TGridIXBrowse ; function TGridIXBrowse ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TGridIXBrowse", iif( .T., { @IXBrowse() , @TGridable() }, { @HBObject() } ), @TGridIXBrowse() ) ) ;
+
+   _HB_MEMBER ReAdjust(); oClass:AddMethod( "ReAdjust", @TGridIXBrowse_ReAdjust(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TGridIXBrowse ;
+
+
+
+static FUNCTION TGridIXBrowse_ReAdjust( ) ; local Self AS CLASS TGridIXBrowse := QSelf() AS CLASS TGridIXBrowse
+
+   local nRow
+   local nLeft
+   local nWidth
+   local nHeight
+
+   nRow             := if( !empty(::bRow), eval(::bRow), ::nTop )
+   nLeft            := if( !empty(::bCol), eval(::bCol), ::nLeft )
+   nWidth           := if( !empty(::bWidth), eval(::bWidth), ::nWidth )
+   nHeight          := if( !empty(::bHeight), eval(::bHeight), ::nHeight )
+
+   ::Move( nRow, nLeft, nWidth, nHeight )
+
+return Self
+
+
+
+_HB_CLASS TGridTreeView ; function TGridTreeView ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TGridTreeView", iif( .T., { @TTreeView() , @TGridable() }, { @HBObject() } ), @TGridTreeView() ) ) ;
+
+   _HB_MEMBER Build(); oClass:AddMethod( "Build", @TGridTreeView_Build(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @TGridTreeView_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TGridTreeView ;
+
+
+
+static FUNCTION TGridTreeView_Build( hBuilder ) ; local Self AS CLASS TGridTreeView := QSelf() AS CLASS TGridTreeView
+
+   local nTop        := if( hhaskey( hBuilder, "nTop" ),          hBuilder[ "nTop"        ], nil )
+   local nLeft       := if( hhaskey( hBuilder, "nLeft" ),         hBuilder[ "nLeft"       ], nil )
+   local oWnd        := if( hhaskey( hBuilder, "oWnd" ),          hBuilder[ "oWnd"        ], nil )
+   local nClrFore    := if( hhaskey( hBuilder, "nClrFore" ),      hBuilder[ "nClrFore"    ], nil )
+   local nClrBack    := if( hhaskey( hBuilder, "nClrBack" ),      hBuilder[ "nClrBack"    ], nil )
+   local lPixel      := if( hhaskey( hBuilder, "lPixel" ),        hBuilder[ "lPixel"      ], .T. )
+   local lDesign     := if( hhaskey( hBuilder, "lDesign" ),       hBuilder[ "lDesign"     ], nil )
+   local nWidth      := if( hhaskey( hBuilder, "nWidth" ),        hBuilder[ "nWidth"      ], nil )
+   local nHeight     := if( hhaskey( hBuilder, "nHeight" ),       hBuilder[ "nHeight"     ], nil )
+   local cMsg        := if( hhaskey( hBuilder, "cMsg" ),          hBuilder[ "cMsg"        ], nil )
+   local lCheckBoxes := if( hhaskey( hBuilder, "lCheckBoxes" ),   hBuilder[ "lCheckBoxes" ], .F. )
+   local bChange     := if( hhaskey( hBuilder, "bChange" ),       hBuilder[ "bChange"     ], nil )
+
+Return ( ::New( nTop, nLeft, oWnd, nClrFore, nClrBack, lPixel, lDesign, nWidth, nHeight, cMsg, lCheckBoxes, bChange ) )
+
+
+
+static FUNCTION TGridTreeView_New( nTop, nLeft, oWnd, nClrFore, nClrBack, lPixel, lDesign, nWidth, nHeight, cMsg, lCheckBoxes, bChange ) ; local Self AS CLASS TGridTreeView := QSelf() AS CLASS TGridTreeView
+
+   nTop     := ::EvalTop( nTop )
+   nLeft    := ::EvalLeft( nLeft )
+   nWidth   := ::EvalWidth( nWidth )
+   nHeight  := ::EvalHeight( nHeight )
+
+   ::Super:New( nTop, nLeft, oWnd, nClrFore, nClrBack, lPixel, lDesign, nWidth, nHeight, cMsg, lCheckBoxes, bChange )
+
+Return Self
+
+
+
+
+
+
+
+
+
+_HB_CLASS TGridCheckBox ; function TGridCheckBox ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TGridCheckBox", iif( .T., { @TCheckBox() , @TGridable() }, { @HBObject() } ), @TGridCheckBox() ) ) ;
+
+   _HB_MEMBER Build( hBuilder); oClass:AddMethod( "Build", @TGridCheckBox_Build(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @TGridCheckBox_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TGridCheckBox ;
+
+
+
+static FUNCTION TGridCheckBox_Build( hBuilder ) ; local Self AS CLASS TGridCheckBox := QSelf() AS CLASS TGridCheckBox
+
+   local nRow        := if( hhaskey( hBuilder, "nRow" ),       hBuilder[ "nRow"       ], nil )
+   local nCol        := if( hhaskey( hBuilder, "nCol" ),       hBuilder[ "nCol"       ], nil )
+   local cCaption    := if( hhaskey( hBuilder, "cCaption" ),   hBuilder[ "cCaption"   ], nil )
+   local bSetGet     := if( hhaskey( hBuilder, "bSetGet" ),    hBuilder[ "bSetGet"    ], nil )
+   local oWnd        := if( hhaskey( hBuilder, "oWnd" ),       hBuilder[ "oWnd"       ], nil )
+   local nWidth      := if( hhaskey( hBuilder, "nWidth" ),     hBuilder[ "nWidth"     ], nil )
+   local nHeight     := if( hhaskey( hBuilder, "nHeight" ),    hBuilder[ "nHeight"    ], nil )
+   local nHelpTopic  := if( hhaskey( hBuilder, "nHelpTopic" ), hBuilder[ "nHelpTopic" ], nil )
+   local bChange     := if( hhaskey( hBuilder, "bChange" ),    hBuilder[ "bChange"    ], nil )
+   local bValid      := if( hhaskey( hBuilder, "bValid" ),     hBuilder[ "bValid"     ], nil )
+   local nClrFore    := if( hhaskey( hBuilder, "nClrFore" ),   hBuilder[ "nClrFore"   ], nil )
+   local nClrBack    := if( hhaskey( hBuilder, "nClrBack" ),   hBuilder[ "nClrBack"   ], nil )
+   local lPixel      := if( hhaskey( hBuilder, "lPixel" ),     hBuilder[ "lPixel"     ], .T. )
+   local oFont       := if( hhaskey( hBuilder, "oFont" ),      hBuilder[ "oFont"      ], nil )
+   local cMsg        := if( hhaskey( hBuilder, "cMsg" ),       hBuilder[ "cMsg"       ], nil )
+   local lUpdate     := if( hhaskey( hBuilder, "lUpdate" ),    hBuilder[ "lUpdate"    ], nil )
+   local bWhen       := if( hhaskey( hBuilder, "bWhen" ),      hBuilder[ "bWhen"      ], nil )
+   local lDesign     := if( hhaskey( hBuilder, "lDesign" ),    hBuilder[ "lDesign"    ], nil )
+
+
+
+Return ( ::New( nRow, nCol, cCaption, bSetGet, oWnd, nWidth, nHeight, nHelpTopic, bChange, oFont, bValid, nClrFore, nClrBack, lDesign, lPixel, cMsg, lUpdate, bWhen ) )
+
+
+
+
+
+static FUNCTION TGridCheckBox_New( nRow, nCol, cCaption, bSetGet, oWnd, nWidth, nHeight, nHelpTopic, bChange, oFont, bValid, nClrFore, nClrBack, lDesign, lPixel, cMsg, lUpdate, bWhen ) ; local Self AS CLASS TGridCheckBox := QSelf() AS CLASS TGridCheckBox
+
+   nRow     := ::EvalRow( nRow )
+   nCol     := ::EvalCol( nCol )
+   nWidth   := ::EvalWidth( nWidth )
+   nHeight  := ::EvalHeight( nHeight )
+
+
+
+   ::Super:New( nRow, nCol, cCaption, bSetGet, oWnd, nWidth, nHeight, nHelpTopic, bChange, oFont, bValid, nClrFore, nClrBack, lDesign, lPixel, cMsg, lUpdate, bWhen )
+
+Return Self
+
+
+
+_HB_CLASS TGridMeter ; function TGridMeter ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TGridMeter", iif( .T., { @TApoloMeter() , @TGridable() }, { @HBObject() } ), @TGridMeter() ) ) ;
+
+   _HB_MEMBER Build(); oClass:AddMethod( "Build", @TGridMeter_Build(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @TGridMeter_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ReAdjust(); oClass:AddMethod( "ReAdjust", @TGridMeter_ReAdjust(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TGridMeter ;
+
+
+
+static FUNCTION TGridMeter_Build( hBuilder ) ; local Self AS CLASS TGridMeter := QSelf() AS CLASS TGridMeter
+
+   local nRow           := if( hhaskey( hBuilder, "nRow"          ), hBuilder[ "nRow"           ], nil )
+   local nCol           := if( hhaskey( hBuilder, "nCol"          ), hBuilder[ "nCol"           ], nil )
+   local bSetGet        := if( hhaskey( hBuilder, "bSetGet"       ), hBuilder[ "bSetGet"        ], nil )
+   local nTotal         := if( hhaskey( hBuilder, "nTotal"        ), hBuilder[ "nTotal"         ], 0 )
+   local oWnd           := if( hhaskey( hBuilder, "oWnd"          ), hBuilder[ "oWnd"           ], nil )
+   local nWidth         := if( hhaskey( hBuilder, "nWidth"        ), hBuilder[ "nWidth"         ], nil )
+   local nHeight        := if( hhaskey( hBuilder, "nHeight"       ), hBuilder[ "nHeight"        ], nil )
+   local lUpdate        := if( hhaskey( hBuilder, "lUpdate"       ), hBuilder[ "lUpdate"        ], nil )
+   local lPixel         := if( hhaskey( hBuilder, "lPixel"        ), hBuilder[ "lPixel"         ], nil )
+   local oFont          := if( hhaskey( hBuilder, "oFont"         ), hBuilder[ "oFont"          ], nil )
+   local cText          := if( hhaskey( hBuilder, "cText"         ), hBuilder[ "cText"          ], nil )
+   local lNoPercentage  := if( hhaskey( hBuilder, "lNoPercentage" ), hBuilder[ "lNoPercentage"  ], nil )
+   local nClrPane       := if( hhaskey( hBuilder, "nClrPane"      ), hBuilder[ "nClrPane"       ], nil )
+   local nClrText       := if( hhaskey( hBuilder, "nClrText"      ), hBuilder[ "nClrText"       ], nil )
+   local nClrBar        := if( hhaskey( hBuilder, "nClrBar"       ), hBuilder[ "nClrBar"        ], nil )
+   local nClrBText      := if( hhaskey( hBuilder, "nClrBText"     ), hBuilder[ "nClrBText"      ], nil )
+   local lDesign        := if( hhaskey( hBuilder, "lDesign"       ), hBuilder[ "lDesign"        ], nil )
+
+
+
+Return   (  ::New( nRow, nCol, bSetGet, nTotal, oWnd, nWidth, nHeight, lUpdate, lPixel, oFont, cText, lNoPercentage, nClrPane, nClrText,  nClrBar, nClrBText, lDesign ) )
+
+
+
+
+
+static FUNCTION TGridMeter_New( nRow, nCol, bSetGet, nTotal, oWnd, nWidth, nHeight, lUpdate, lPixel, oFont, cText, lNoPercentage, nClrPane, nClrText,  nClrBar, nClrBText, lDesign ) ; local Self AS CLASS TGridMeter := QSelf() AS CLASS TGridMeter
+
+   nRow     := ::EvalTop( nRow )
+   nCol     := ::EvalLeft( nCol )
+   nWidth   := ::EvalWidth( nWidth )
+   nHeight  := ::EvalHeight( nHeight )
+
+
+
+   ::Super:New( nRow, nCol, bSetGet, nTotal, oWnd, nWidth, nHeight, lUpdate, lPixel, oFont, cText, lNoPercentage, nClrPane, nClrText,  nClrBar, nClrBText, lDesign )
+
+return Self
+
+
+
+static FUNCTION TGridMeter_ReAdjust( ) ; local Self AS CLASS TGridMeter := QSelf() AS CLASS TGridMeter
+
+   local nRow     := if( !empty(::bRow), eval(::bRow), ::nTop )
+   local nCol    := if( !empty(::bCol), eval(::bCol), ::nLeft )
+   local nWidth   := if( !empty(::bWidth), eval(::bWidth), ::nWidth )
+   local nHeight  := if( !empty(::bHeight), eval(::bHeight), ::nHeight )
+
+   ::Move( nRow, nCol, nWidth, nHeight )
+
+return Self
+
+
+
+
+
+
+
+
+Function oGridFont()
+
+   if empty( oFont )
+      oFont       := TFont():New( "Segoe UI Light", 0, 42, .F., .F. )
+   end
+
+Return ( oFont )
+
+
+
+Function oGridFontBold()
+
+   if empty( oFontBold )
+      oFontBold   := TFont():New( "Segoe UI", 0, 42, .F., .T. )
+   end
+
+Return ( oFontBold )
+
+
+
+Function nGridColor()
+
+Return ( ( 78 + ( 166 * 256 ) + ( 234 * 65536 ) ) )
+
+
+
+Function GridMaximize( oDlg )
+
+Return ( oDlg:Maximize() )
+
+
+
+Function GridResize( oDlg )
+
+   local o
+
+   for each o in oDlg:aControls
+      if ( "TGRID" $ o:ClassName()  )
+         o:ReAdjust()
+      end
+   next
+
+Return nil
+
+
+
+Function GridRow( nLines )
+
+   If( nLines == nil, nLines := 1, ) ;
+
+Return ( nLines * 35 )
+
+
+
+Function GridWidth( nCols, oDlg )
+
+Return ( oDlg:nWidth() / 12 * nCols )
+
+
+
+Function GridHeigth( oDlg )
+
+Return ( oDlg:nHeight() )
+
+
+
+Function ShowKeyboard( lNumeric )
+
+     ShellExecute( 0, "open", "tabtip.exe" )
+
+Return .T.
+
+
+
+Static Function HideKeyboard()
+
+   SendMessage( FindWindow( 0, "Teclado en pantalla" ), 16 )
+
+Return .T.

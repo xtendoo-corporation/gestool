@@ -1,0 +1,5476 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 6 ".\.\Prg\Cajas.prg"
+static lOpen         := .F.
+
+static oWndBrw
+static dbfCajT
+static dbfCajL
+static dbfImpTik
+static dbfVisor
+static dbfCajPorta
+static dbfDoc
+static dbfTmpLin
+static cTmpLin
+static oCaptura
+static nNumTur
+static bEdit         := { |aTmp, aGet, dbfCajT, oBrw, bWhen, bValid, nMode | EdtRec( aTmp, aGet, dbfCajT, oBrw, bWhen, bValid, nMode ) }
+static bEdtDet       := { |aTmp, aGet, dbfCajL, oBrw, bWhen, bValid, nMode, aTmpCaj | EdtDet( aTmp, aGet, dbfCajL, oBrw, bWhen, bValid, nMode, aTmpCaj ) }
+
+
+
+STATIC FUNCTION lOpenFiles()
+
+   local oError
+   local oBlock
+
+   if lOpen
+      MsgStop( "Imposible abrir ficheros de cajas" )
+      RETURN ( .F. )
+   end
+
+   oBlock               := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+
+
+
+
+
+
+
+
+
+
+      dbUseArea( .T., ( cDriver() ), ( cPatDat() + "Cajas.Dbf" ), ( cCheckArea( "CAJAS", @dbfCajT ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatDat() + "Cajas.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( cDriver() ), ( cPatDat() + "CajL.Dbf" ), ( cCheckArea( "CAJL", @dbfCajL ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatDat() + "CajL.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( cDriver() ), ( cPatDat() + "ImpTik.Dbf" ), ( cCheckArea( "ImpTik", @dbfImpTik ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatDat() + "ImpTik.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( cDriver() ), ( cPatDat() + "Visor.Dbf" ), ( cCheckArea( "Visor", @dbfVisor ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatDat() + "Visor.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( cDriver() ), ( cPatDat() + "CajPorta.Dbf" ), ( cCheckArea( "CajPorta", @dbfCajPorta ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatDat() + "CajPorta.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( cDriver() ), ( cPatEmp() + "RDocumen.Dbf" ), ( cCheckArea( "RDocumen", @dbfDoc ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatEmp() + "RDocumen.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      oCaptura          := TCaptura():New( cPatDat() )
+      oCaptura:OpenFiles()
+
+      lOpen             := .T.
+
+   RECOVER USING oError
+
+      msgStop( ErrorMessage( oError ), "Imposible abrir todas las bases de datos de cajas" )
+
+      CloseFiles()
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+STATIC FUNCTION CloseFiles()
+
+   ( dbfCajT     )->( dbCloseArea() )
+   ( dbfCajL     )->( dbCloseArea() )
+   ( dbfDoc      )->( dbCloseArea() )
+   ( dbfImpTik   )->( dbCloseArea() )
+   ( dbfVisor    )->( dbCloseArea() )
+   ( dbfCajPorta )->( dbCloseArea() )
+
+   dbfCajT     := nil
+   dbfCajL     := nil
+   dbfDoc      := nil
+   dbfImpTik   := nil
+   dbfVisor    := nil
+   dbfCajPorta := nil
+
+   if !empty( oCaptura )
+      oCaptura:End()
+   end
+
+   oCaptura    := nil
+
+   oWndBrw     := nil
+
+   lOpen       := .F.
+
+RETURN .T.
+
+
+
+FUNCTION Cajas( oMenuItem, oWnd )
+
+   local nLevel
+
+   If( oMenuItem == nil, oMenuItem := "cajon_portamonedas", ) ;
+   If( oWnd == nil, oWnd := oWnd(), ) ;
+
+   if oWndBrw == nil
+
+
+
+
+
+      nLevel            := Auth():Level( oMenuItem )
+
+      if nAnd( nLevel, 1 ) == 0
+         msgStop( "Acceso no permitido." )
+         RETURN nil
+      end
+
+
+
+
+
+      if oWnd <> nil
+         SysRefresh(); oWnd:CloseAll(); SysRefresh()
+      end
+
+
+
+
+
+      if !lOpenFiles()
+         RETURN .F.
+      end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      oWndBrw := TShell():New( 2, 10, 18, 70, "Cajas",, oWnd,,, .F.,,, ( dbfCajT ),,,,, {"Código",    "Nombre"}, {||WinAppRec( oWndBrw:oBrw, bEdit, dbfCajT )}, {||WinEdtRec( oWndBrw:oBrw, bEdit, dbfCajT )}, {||WinDelRec( oWndBrw:oBrw, dbfCajT )}, {||WinDupRec( oWndBrw:oBrw, bEdit, dbfCajT )}, nil, nLevel, "gc_cash_register_16", ( 104 + ( 0 * 256 ) + ( 63 * 65536 ) ),,, .T. )
+
+      with object ( oWndBrw:AddXCol() )
+         :cHeader          := "Seleccionada"
+         :nHeadBmpNo       := 3
+         :bStrData         := {|| "" }
+         :bEditValue       := {|| ( dbfCajT )->cCodCaj == Application():CodigoCaja() }
+         :nWidth           := 20
+         :SetCheck( { "Sel16", "Nil16" } )
+         :AddResource( "gc_cash_register_16" )
+      end
+
+      with object ( oWndBrw:AddXCol() )
+         :cHeader          := "Código"
+         :cSortOrder       := "cCodCaj"
+         :bEditValue       := {|| ( dbfCajT )->cCodCaj }
+         :nWidth           := 80
+         :bLClickHeader    := {| nMRow, nMCol, nFlags, oCol | oWndBrw:ClickOnHeader( oCol ) }
+      end
+
+      with object ( oWndBrw:AddXCol() )
+         :cHeader          := "Nombre"
+         :cSortOrder       := "cNomCaj"
+         :bEditValue       := {|| ( dbfCajT )->cNomCaj }
+         :nWidth           := 200
+         :bLClickHeader    := {| nMRow, nMCol, nFlags, oCol | oWndBrw:ClickOnHeader( oCol ) }
+      end
+
+      oWndBrw:cHtmlHelp    := "Cajas"
+
+      oWndBrw:CreateXFromCode()
+
+
+
+
+
+
+      oWndBrw:NewAt( "BUS",,, {||( oWndBrw:SearchSetFocus() )}, "(B)uscar", "B",,,,, .F. )
+
+      oWndBrw:AddSeaBar()
+
+
+
+
+
+      oWndBrw:NewAt( "SEL",,, {||( lChgCaja( ( dbfCajT )->cCodCaj, ( dbfCajT )->Uuid ), chkTurno( , oWndBrw ), oWndBrw:End( .T. ) )}, "Sele(c)cionar", "C",,,,, .F. )
+
+
+
+
+
+
+
+
+      oWndBrw:NewAt( "NEW",,, {||( oWndBrw:RecAdd() )}, "(A)ñadir", "A",,, 2,, .F. )
+
+
+
+
+
+
+
+        oWndBrw:NewAt( "DUP",,, {||( oWndBrw:RecDup() )}, "(D)uplicar", "D",,, 2,, .F. )
+
+
+
+
+
+
+
+        oWndBrw:NewAt( "EDIT",,, {||( oWndBrw:RecEdit() )}, "(M)odificar", "M",,, 4,, .F. )
+
+
+
+
+
+
+
+        oWndBrw:NewAt( "ZOOM",,, {||( WinZooRec( oWndBrw:oBrw, bEdit, dbfCajT ) )}, "(Z)oom", "Z",,, 8,, .F. )
+
+
+
+
+
+
+
+        oWndBrw:NewAt( "DEL",,, {||( oWndBrw:RecDel() )}, "(E)liminar", "E",,, 16,, .F. )
+
+
+
+
+
+      oWndBrw:NewAt( "END",,, {||( oWndBrw:End() )}, "(S)alir", "S",,,,, .F. )
+
+      oWndBrw:Activate(, oWndBrw:bLClicked, oWndBrw:bRClicked, oWndBrw:bMoved, oWndBrw:bResized, oWndBrw:bPainted, oWndBrw:bKeyDown, oWndBrw:bInit,,,,,,,,, {|| ( CloseFiles() )},, oWndBrw:bLButtonUp, .F. )
+
+    ELSE
+
+        oWndBrw:SetFocus()
+
+    end
+
+RETURN NIL
+
+
+
+STATIC FUNCTION EdtRec( aTmp, aGet, dbfCajT, oBrw, bWhen, bValid, nMode )
+
+   local oDlg
+   local oFld
+   local oBrwLin
+   local oBmpGeneral
+   local oBmpFormatos
+
+   if nMode == 1
+
+      aTmp[ ( dbfCajT )->( FieldPos( "Uuid" ) ) ]        := win_uuidcreatestring()
+
+      aTmp[ ( dbfCajT )->( FieldPos( "cPrnWin" ) ) ]     := ImpresoraDefectoUsuario()
+      aTmp[ ( dbfCajT )->( FieldPos( "cWinTik" ) ) ]     := ImpresoraDefectoUsuario()
+      aTmp[ ( dbfCajT )->( FieldPos( "cPrnNota" ) ) ]    := ImpresoraDefectoUsuario()
+
+      aTmp[ ( dbfCajT )->( FieldPos( "nCopTik" ) ) ]     := 1
+      aTmp[ ( dbfCajT )->( FieldPos( "nCopCom" ) ) ]     := 1
+      aTmp[ ( dbfCajT )->( FieldPos( "nCopVal" ) ) ]     := 1
+      aTmp[ ( dbfCajT )->( FieldPos( "nCopDev" ) ) ]     := 1
+      aTmp[ ( dbfCajT )->( FieldPos( "nCopEnt" ) ) ]     := 1
+      aTmp[ ( dbfCajT )->( FieldPos( "nCopAlb" ) ) ]     := 1
+      aTmp[ ( dbfCajT )->( FieldPos( "nCopArq" ) ) ]     := 1
+      aTmp[ ( dbfCajT )->( FieldPos( "nCopPar" ) ) ]     := 1
+      aTmp[ ( dbfCajT )->( FieldPos( "nCopReg" ) ) ]     := 1
+      aTmp[ ( dbfCajT )->( FieldPos( "nCopApt" ) ) ]     := 1
+      aTmp[ ( dbfCajT )->( FieldPos( "nCopEna" ) ) ]     := 1
+      aTmp[ ( dbfCajT )->( FieldPos( "nCopCie" ) ) ]     := 1
+      aTmp[ ( dbfCajT )->( FieldPos( "cNumTur" ) ) ]     := str( 1, 6 )
+
+   end
+
+   if BeginTrans( aTmp )
+      RETURN .F.
+   end
+
+
+
+   oDlg = TDialog():New(,,,, LblTitle( nMode ) + "cajas", "CAJAS_00",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+
+
+   oFld := TFolder():ReDefine( 100, {"&General", "&Formatos"}, { "CAJAS_01","CAJAS_02" }, oDlg,,,,, .F., )
+
+
+
+
+
+
+
+
+
+      oBmpGeneral := TBitmap():ReDefine( 800, "gc_cash_register_48",, oFld:aDialogs[1],,, .F., .F.,,, .F.,,, .T. )
+
+
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cCodCaj" ) ) ] := TGetHlp():ReDefine( 110, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cCodCaj" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cCodCaj" ) ) ]:= u ) }, oFld:aDialogs[1],, "@!", {||       ( NotValid( aGet[ ( dbfCajT )->( FieldPos( "cCodCaj" ) ) ], dbfCajT, .T., "0" ) )},,,,,, .F., {||        ( nMode == 1 .OR. nMode == 4 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cNomCaj" ) ) ] := TGetHlp():ReDefine( 120, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cNomCaj" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cNomCaj" ) ) ]:= u ) }, oFld:aDialogs[1],,,,,,,,, .F., {||        ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cCajPrt" ) ) ] := TGetHlp():ReDefine( 200, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cCajPrt" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cCajPrt" ) ) ]:= u ) }, oFld:aDialogs[ 1 ],, "@!", {||       ( ValidCajaPadre( aGet, aTmp ) )},,,,,, .F., {||        ( nMode <> 3 )},, .F., .F.,,,,,, nil, "Lupa",, 201 )
+
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cCodAlm" ) ) ] := TGetHlp():ReDefine( 310, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cCodAlm" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cCodAlm" ) ) ]:= u ) }, oFld:aDialogs[ 1 ],,, {||       ( cAlmacen( aGet[ ( dbfCajT )->( FieldPos( "cCodAlm" ) ) ], , aGet[ ( dbfCajT )->( FieldPos( "cCodAlm" ) ) ]:oHelpText ) )},,,,,, .F., {||        ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwAlmacen( aGet[ ( dbfCajT )->( FieldPos( "cCodAlm" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cCodAlm" ) ) ]:oHelpText ) )}, nil, "Lupa",, 311 )
+
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cNumTur" ) ) ] := TGetHlp():ReDefine( 190, { | u | If( PCount()==0, nNumTur, nNumTur:= u ) }, oFld:aDialogs[1],, "999999",,,,,,, .F., {||        ( nMode <> 3 )},, .F., .T.,,, {||         0}, {||         999999},, nil,,, )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "CCAPCAJ" ) ) ] := TGetHlp():ReDefine( 130, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "CCAPCAJ" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "CCAPCAJ" ) ) ]:= u ) }, oFld:aDialogs[1],, "@!", {||    ( oCaptura:Existe( aGet[ ( dbfCajT )->( FieldPos( "CCAPCAJ" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "CCAPCAJ" ) ) ]:oHelpText, "cNombre" ) )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( oCaptura:Buscar( aGet[ ( dbfCajT )->( FieldPos( "CCAPCAJ" ) ) ] ) )}, nil, "LUPA",, 131 )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cPrnWin" ) ) ] := TGetHlp():ReDefine( 140, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cPrnWin" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cPrnWin" ) ) ]:= u ) }, oFld:aDialogs[1],,,,,,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+      TBtnBmp():ReDefine( 141, "gc_printer2_check_16",,,,,{|| PrinterPreferences( aGet[ ( dbfCajT )->( FieldPos( "cPrnWin" ) ) ] ) }, oFld:aDialogs[1], .F., , .F.,  )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cWinTik" ) ) ] := TGetHlp():ReDefine( 150, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cWinTik" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cWinTik" ) ) ]:= u ) }, oFld:aDialogs[1],,,,,,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+      TBtnBmp():ReDefine( 151, "gc_printer2_check_16",,,,,{|| PrinterPreferences( aGet[ ( dbfCajT )->( FieldPos( "cWinTik" ) ) ] ) }, oFld:aDialogs[1], .F., , .F.,  )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cPrnNota" ) ) ] := TGetHlp():ReDefine( 180, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cPrnNota" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cPrnNota" ) ) ]:= u ) }, oFld:aDialogs[1],,,,,,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+      TBtnBmp():ReDefine( 181, "gc_printer2_check_16",,,,,{|| PrinterPreferences( aGet[ ( dbfCajT )->( FieldPos( "cPrnNota" ) ) ] ) }, oFld:aDialogs[1], .F., , .F.,  )
+
+
+
+
+
+      TButton():ReDefine( 500, {||( WinAppRec( oBrwLin, bEdtDet, dbfTmpLin, , , aTmp ) )}, oFld:aDialogs[1],,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 501, {||( WinEdtRec( oBrwLin, bEdtDet, dbfTmpLin, , , aTmp ) )}, oFld:aDialogs[1],,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 502, {||( DbDelRec( oBrwLin, dbfTmpLin ) )}, oFld:aDialogs[1],,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+      oBrwLin                    := IXBrowse():New( oFld:aDialogs[1] )
+
+      oBrwLin:bClrSel            := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      oBrwLin:bClrSelFocus       := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      oBrwLin:cAlias             := dbfTmpLin
+      oBrwLin:cName              := "Cajas.Detalle"
+
+      oBrwLin:nMarqueeStyle      := 5
+      oBrwLin:lHScroll           := .F.
+      oBrwLin:lRecordSelector    := .F.
+
+      oBrwLin:CreateFromResource( 160 )
+
+      if nMode <> 3
+         oBrwLin:bLDblClick      := {|| WinEdtRec( oBrwLin, bEdtDet, dbfTmpLin, , , aTmp ) }
+      end
+
+      with object ( oBrwLin:AddCol() )
+         :cHeader                := "Tipo"
+         :bEditValue             := {|| ( dbfTmpLin )->cTipImp }
+         :nWidth                 := 145
+      end
+
+      with object ( oBrwLin:AddCol() )
+         :cHeader                := "Impresora"
+         :bEditValue             := {|| ( dbfTmpLin )->cNomPrn }
+         :nWidth                 := 335
+      end
+
+
+
+
+
+
+
+
+
+      oBmpFormatos := TBitmap():ReDefine( 800, "gc_document_text_pencil_48",, oFld:aDialogs[2],,, .F., .F.,,, .F.,,, .T. )
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "lPrnTik" ) ) ] := TCheckBox():ReDefine( 163, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "lPrnTik" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "lPrnTik" ) ) ]:= u ) }, oFld:aDialogs[2],,,,,,, .F., {||           ( nMode <> 3 )}, .F. )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cPrnTik" ) ) ] := TGetHlp():ReDefine( 160, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cPrnTik" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cPrnTik" ) ) ]:= u ) }, oFld:aDialogs[2],,, {||          ( cDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnTik" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnTik" ) ) ]:oHelpText, dbfDoc ) )},,,,,, .F., {||           ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnTik" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnTik" ) ) ]:oHelpText, "TK" ) )}, nil, "LUPA",, 161 )
+
+      TBtnBmp():ReDefine( 162, "gc_document_text_pencil_12",,,,,{|| EdtDocumento( aTmp[ ( dbfCajT )->( FieldPos( "cPrnTik" ) ) ] ) }, oFld:aDialogs[2], .F., , .F.,  )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "nCopTik" ) ) ] := TGetHlp():ReDefine( 164, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "nCopTik" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "nCopTik" ) ) ]:= u ) }, oFld:aDialogs[2],, "99",,,,,,, .F., {||           ( nMode <> 3 )},, .F., .T.,,, {||            0}, {||            99},, nil,,, )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cPrnCom" ) ) ] := TGetHlp():ReDefine( 240, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cPrnCom" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cPrnCom" ) ) ]:= u ) }, oFld:aDialogs[2],,, {||          ( cDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnCom" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnCom" ) ) ]:oHelpText, dbfDoc ) )},,,,,, .F., {||           ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnCom" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnCom" ) ) ]:oHelpText, "TK" ) )}, nil, "LUPA",, 241 )
+
+      TBtnBmp():ReDefine( 242, "gc_document_text_pencil_12",,,,,{|| EdtDocumento( aTmp[ ( dbfCajT )->( FieldPos( "cPrnCom" ) ) ] ) }, oFld:aDialogs[2], .F., , .F.,  )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "nCopCom" ) ) ] := TGetHlp():ReDefine( 244, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "nCopCom" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "nCopCom" ) ) ]:= u ) }, oFld:aDialogs[2],, "99",,,,,,, .F., {||           ( nMode <> 3 )},, .F., .T.,,, {||            0}, {||            99},, nil,,, )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cPrnAnu" ) ) ] := TGetHlp():ReDefine( 290, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cPrnAnu" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cPrnAnu" ) ) ]:= u ) }, oFld:aDialogs[2],,, {||          ( cDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnAnu" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnAnu" ) ) ]:oHelpText, dbfDoc ) )},,,,,, .F., {||           ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnAnu" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnAnu" ) ) ]:oHelpText, "TK" ) )}, nil, "LUPA",, 291 )
+
+      TBtnBmp():ReDefine( 292, "gc_document_text_pencil_12",,,,,{|| EdtDocumento( aTmp[ ( dbfCajT )->( FieldPos( "cPrnAnu" ) ) ] ) }, oFld:aDialogs[2], .F., , .F.,  )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "nCopAnu" ) ) ] := TGetHlp():ReDefine( 294, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "nCopAnu" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "nCopAnu" ) ) ]:= u ) }, oFld:aDialogs[2],, "99",,,,,,, .F., {||           ( nMode <> 3 )},, .F., .T.,,, {||            0}, {||            99},, nil,,, )
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "lPrnVal" ) ) ] := TCheckBox():ReDefine( 173, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "lPrnVal" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "lPrnVal" ) ) ]:= u ) }, oFld:aDialogs[2],,,,,,, .F., {||     (  nMode <> 3 )}, .F. )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cPrnVal" ) ) ] := TGetHlp():ReDefine( 170, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cPrnVal" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cPrnVal" ) ) ]:= u ) }, oFld:aDialogs[2],,, {||    ( cDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnVal" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnVal" ) ) ]:oHelpText, dbfDoc ) )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnVal" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnVal" ) ) ]:oHelpText, "TK" ) )}, nil, "LUPA",, 171 )
+
+      TBtnBmp():ReDefine( 172, "gc_document_text_pencil_12",,,,,{|| EdtDocumento( aTmp[ ( dbfCajT )->( FieldPos( "cPrnVal" ) ) ] ) }, oFld:aDialogs[2], .F., , .F.,  )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "nCopVal" ) ) ] := TGetHlp():ReDefine( 174, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "nCopVal" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "nCopVal" ) ) ]:= u ) }, oFld:aDialogs[2],, "99",,,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,, {||      0}, {||      99},, nil,,, )
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "lPrnDev" ) ) ] := TCheckBox():ReDefine( 183, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "lPrnDev" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "lPrnDev" ) ) ]:= u ) }, oFld:aDialogs[2],,,,,,, .F., {||     (  nMode <> 3 )}, .F. )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cPrnDev" ) ) ] := TGetHlp():ReDefine( 180, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cPrnDev" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cPrnDev" ) ) ]:= u ) }, oFld:aDialogs[2],,, {||    ( cDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnDev" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnDev" ) ) ]:oHelpText, dbfDoc ) )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnDev" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnDev" ) ) ]:oHelpText, "TK" ) )}, nil, "LUPA",, 181 )
+
+      TBtnBmp():ReDefine( 182, "gc_document_text_pencil_12",,,,,{|| EdtDocumento( aTmp[ ( dbfCajT )->( FieldPos( "cPrnDev" ) ) ] ) }, oFld:aDialogs[2], .F., , .F.,  )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "nCopDev" ) ) ] := TGetHlp():ReDefine( 184, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "nCopDev" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "nCopDev" ) ) ]:= u ) }, oFld:aDialogs[2],, "99",,,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,, {||      0}, {||      99},, nil,,, )
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "lPrnApt" ) ) ] := TCheckBox():ReDefine( 273, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "lPrnApt" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "lPrnApt" ) ) ]:= u ) }, oFld:aDialogs[2],,,,,,, .F., {||     (  nMode <> 3 )}, .F. )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cPrnApt" ) ) ] := TGetHlp():ReDefine( 270, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cPrnApt" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cPrnApt" ) ) ]:= u ) }, oFld:aDialogs[2],,, {||    ( cDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnApt" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnApt" ) ) ]:oHelpText, dbfDoc ) )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnApt" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnApt" ) ) ]:oHelpText, "TK" ) )}, nil, "LUPA",, 271 )
+
+      TBtnBmp():ReDefine( 272, "gc_document_text_pencil_12",,,,,{|| EdtDocumento( aTmp[ ( dbfCajT )->( FieldPos( "cPrnApt" ) ) ] ) }, oFld:aDialogs[2], .F., , .F.,  )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "nCopApt" ) ) ] := TGetHlp():ReDefine( 274, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "nCopApt" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "nCopApt" ) ) ]:= u ) }, oFld:aDialogs[2],, "99",,,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,, {||      0}, {||      99},, nil,,, )
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "lPrnEnt" ) ) ] := TCheckBox():ReDefine( 193, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "lPrnEnt" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "lPrnEnt" ) ) ]:= u ) }, oFld:aDialogs[2],,,,,,, .F., {||     (  nMode <> 3 )}, .F. )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cPrnEnt" ) ) ] := TGetHlp():ReDefine( 190, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cPrnEnt" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cPrnEnt" ) ) ]:= u ) }, oFld:aDialogs[2],,, {||    ( cDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnEnt" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnEnt" ) ) ]:oHelpText, dbfDoc ) )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnEnt" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnEnt" ) ) ]:oHelpText, "TK" ) )}, nil, "LUPA",, 191 )
+
+      TBtnBmp():ReDefine( 192, "gc_document_text_pencil_12",,,,,{|| EdtDocumento( aTmp[ ( dbfCajT )->( FieldPos( "cPrnEnt" ) ) ] ) }, oFld:aDialogs[2], .F., , .F.,  )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "nCopEnt" ) ) ] := TGetHlp():ReDefine( 194, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "nCopEnt" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "nCopEnt" ) ) ]:= u ) }, oFld:aDialogs[2],, "99",,,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,, {||      0}, {||      99},, nil,,, )
+
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "lPrnAlb" ) ) ] := TCheckBox():ReDefine( 203, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "lPrnAlb" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "lPrnAlb" ) ) ]:= u ) }, oFld:aDialogs[2],, {||( aGet[ ( dbfCajT )->( FieldPos( "nCopAlb" ) ) ]:Refresh() )},,,,, .F., {||     (  nMode <> 3 )}, .F. )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cPrnAlb" ) ) ] := TGetHlp():ReDefine( 200, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cPrnAlb" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cPrnAlb" ) ) ]:= u ) }, oFld:aDialogs[2],,, {||    ( cDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnAlb" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnAlb" ) ) ]:oHelpText, dbfDoc ) )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnAlb" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnAlb" ) ) ]:oHelpText, "AC" ) )}, nil, "LUPA",, 201 )
+
+      TBtnBmp():ReDefine( 202, "gc_document_text_pencil_12",,,,,{|| EdtDocumento( aTmp[ ( dbfCajT )->( FieldPos( "cPrnAlb" ) ) ] ) }, oFld:aDialogs[2], .F., , .F.,  )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "nCopAlb" ) ) ] := TGetHlp():ReDefine( 204, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "nCopAlb" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "nCopAlb" ) ) ]:= u ) }, oFld:aDialogs[2],, "99",,,,,,, .F., {||     ( nMode <> 3 .AND. !aTmp[ ( dbfCajT )->( FieldPos( "lPrnAlb" ) ) ] )},, .F., .T.,,, {||      0}, {||      99},, nil,,, )
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "lPrnArq" ) ) ] := TCheckBox():ReDefine( 233, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "lPrnArq" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "lPrnArq" ) ) ]:= u ) }, oFld:aDialogs[2],,,,,,, .F., {||     (  nMode <> 3 )}, .F. )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cPrnArq" ) ) ] := TGetHlp():ReDefine( 230, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cPrnArq" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cPrnArq" ) ) ]:= u ) }, oFld:aDialogs[2],,, {||    ( cDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnArq" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnArq" ) ) ]:oHelpText, dbfDoc ) )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnArq" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnArq" ) ) ]:oHelpText, "AQ" ) )}, nil, "LUPA",, 231 )
+
+      TBtnBmp():ReDefine( 232, "gc_document_text_pencil_12",,,,,{|| EdtDocumento( aTmp[ ( dbfCajT )->( FieldPos( "cPrnArq" ) ) ] ) }, oFld:aDialogs[2], .F., , .F.,  )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "nCopArq" ) ) ] := TGetHlp():ReDefine( 234, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "nCopArq" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "nCopArq" ) ) ]:= u ) }, oFld:aDialogs[2],, "99",,,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,, {||      0}, {||      99},, nil,,, )
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "lPrnPar" ) ) ] := TCheckBox():ReDefine( 253, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "lPrnPar" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "lPrnPar" ) ) ]:= u ) }, oFld:aDialogs[2],,,,,,, .F., {||     (  nMode <> 3 )}, .F. )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cPrnPar" ) ) ] := TGetHlp():ReDefine( 250, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cPrnPar" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cPrnPar" ) ) ]:= u ) }, oFld:aDialogs[2],,, {||    ( cDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnPar" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnPar" ) ) ]:oHelpText, dbfDoc ) )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnPar" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnPar" ) ) ]:oHelpText, "AQ" ) )}, nil, "LUPA",, 251 )
+
+      TBtnBmp():ReDefine( 252, "gc_document_text_pencil_12",,,,,{|| EdtDocumento( aTmp[ ( dbfCajT )->( FieldPos( "cPrnPar" ) ) ] ) }, oFld:aDialogs[2], .F., , .F.,  )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "nCopPar" ) ) ] := TGetHlp():ReDefine( 254, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "nCopPar" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "nCopPar" ) ) ]:= u ) }, oFld:aDialogs[2],, "99",,,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,, {||      0}, {||      99},, nil,,, )
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "lPrnCie" ) ) ] := TCheckBox():ReDefine( 343, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "lPrnCie" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "lPrnCie" ) ) ]:= u ) }, oFld:aDialogs[2],,,,,,, .F., {||     (  nMode <> 3 )}, .F. )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cPrnCie" ) ) ] := TGetHlp():ReDefine( 340, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cPrnCie" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cPrnCie" ) ) ]:= u ) }, oFld:aDialogs[2],,, {||    ( cDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnCie" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnCie" ) ) ]:oHelpText, dbfDoc ) )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnCie" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnCie" ) ) ]:oHelpText, "AQ" ) )}, nil, "LUPA",, 341 )
+
+      TBtnBmp():ReDefine( 342, "gc_document_text_pencil_12",,,,,{|| EdtDocumento( aTmp[ ( dbfCajT )->( FieldPos( "cPrnCie" ) ) ] ) }, oFld:aDialogs[2], .F., , .F.,  )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "nCopCie" ) ) ] := TGetHlp():ReDefine( 344, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "nCopCie" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "nCopCie" ) ) ]:= u ) }, oFld:aDialogs[2],, "99",,,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,, {||      0}, {||      99},, nil,,, )
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "lPrnReg" ) ) ] := TCheckBox():ReDefine( 263, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "lPrnReg" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "lPrnReg" ) ) ]:= u ) }, oFld:aDialogs[2],,,,,,, .F., {||     (  nMode <> 3 )}, .F. )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cPrnReg" ) ) ] := TGetHlp():ReDefine( 260, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cPrnReg" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cPrnReg" ) ) ]:= u ) }, oFld:aDialogs[2],,, {||    ( cDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnReg" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnReg" ) ) ]:oHelpText, dbfDoc ) )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnReg" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnReg" ) ) ]:oHelpText, "TK" ) )}, nil, "LUPA",, 261 )
+
+      TBtnBmp():ReDefine( 262, "gc_document_text_pencil_12",,,,,{|| EdtDocumento( aTmp[ ( dbfCajT )->( FieldPos( "cPrnReg" ) ) ] ) }, oFld:aDialogs[2], .F., , .F.,  )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "nCopReg" ) ) ] := TGetHlp():ReDefine( 264, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "nCopReg" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "nCopReg" ) ) ]:= u ) }, oFld:aDialogs[2],, "99",,,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,, {||      0}, {||      99},, nil,,, )
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "lPrnChk" ) ) ] := TCheckBox():ReDefine( 283, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "lPrnChk" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "lPrnChk" ) ) ]:= u ) }, oFld:aDialogs[ 2 ],,,,,,, .F., {||     (  nMode <> 3 )}, .F. )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cPrnChk" ) ) ] := TGetHlp():ReDefine( 280, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cPrnChk" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cPrnChk" ) ) ]:= u ) }, oFld:aDialogs[2],,, {||    ( cDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnChk" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnChk" ) ) ]:oHelpText, dbfDoc ) )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnChk" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnChk" ) ) ]:oHelpText, "TK" ) )}, nil, "LUPA",, 281 )
+
+      TBtnBmp():ReDefine( 282, "gc_document_text_pencil_12",,,,,{|| EdtDocumento( aTmp[ ( dbfCajT )->( FieldPos( "cPrnChk" ) ) ] ) }, oFld:aDialogs[ 2 ], .F., , .F.,  )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "nCopChk" ) ) ] := TGetHlp():ReDefine( 284, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "nCopChk" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "nCopChk" ) ) ]:= u ) }, oFld:aDialogs[2],, "99",,,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,, {||      0}, {||      99},, nil,,, )
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "lPrnEna" ) ) ] := TCheckBox():ReDefine( 353, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "lPrnEna" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "lPrnEna" ) ) ]:= u ) }, oFld:aDialogs[ 2 ],,,,,,, .F., {||     (  nMode <> 3 )}, .F. )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cPrnEna" ) ) ] := TGetHlp():ReDefine( 350, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cPrnEna" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cPrnEna" ) ) ]:= u ) }, oFld:aDialogs[2],,, {||    ( cDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnEna" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnEna" ) ) ]:oHelpText, dbfDoc ) )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnEna" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnEna" ) ) ]:oHelpText, "EA" ) )}, nil, "LUPA",, 351 )
+
+      TBtnBmp():ReDefine( 352, "gc_document_text_pencil_12",,,,,{|| EdtDocumento( aTmp[ ( dbfCajT )->( FieldPos( "cPrnEna" ) ) ] ) }, oFld:aDialogs[ 2 ], .F., , .F.,  )
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "nCopEna" ) ) ] := TGetHlp():ReDefine( 354, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "nCopEna" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "nCopEna" ) ) ]:= u ) }, oFld:aDialogs[2],, "99",,,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,, {||      0}, {||      99},, nil,,, )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "CCODVIS" ) ) ] := TGetHlp():ReDefine( 300, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "CCODVIS" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "CCODVIS" ) ) ]:= u ) }, oFld:aDialogs[2],, "@!", {||    ( cVisor( aGet[ ( dbfCajT )->( FieldPos( "CCODVIS" ) ) ], dbfVisor, aGet[ ( dbfCajT )->( FieldPos( "CCODVIS" ) ) ]:oHelpText ) )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwSelVisor( aGet[ ( dbfCajT )->( FieldPos( "CCODVIS" ) ) ], dbfVisor, aGet[ ( dbfCajT )->( FieldPos( "CCODVIS" ) ) ]:oHelpText ) )}, nil, "LUPA",, 301 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "CCAJON" ) ) ] := TGetHlp():ReDefine( 310, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "CCAJON" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "CCAJON" ) ) ]:= u ) }, oFld:aDialogs[2],, "@!", {||    ( cCajPorta( aGet[ ( dbfCajT )->( FieldPos( "CCAJON" ) ) ], dbfCajPorta, aGet[ ( dbfCajT )->( FieldPos( "CCAJON" ) ) ]:oHelpText ) )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwSelCajPorta( aGet[ ( dbfCajT )->( FieldPos( "CCAJON" ) ) ], dbfCajPorta, aGet[ ( dbfCajT )->( FieldPos( "CCAJON" ) ) ]:oHelpText ) )}, nil, "LUPA",, 311 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cCodBal" ) ) ] := TGetHlp():ReDefine( 320, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cCodBal" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cCodBal" ) ) ]:= u ) }, oFld:aDialogs[2],, "@!", {||    ( cBalanza( aGet[ ( dbfCajT )->( FieldPos( "cCodBal" ) ) ], dbfImpTik, aGet[ ( dbfCajT )->( FieldPos( "cCodBal" ) ) ]:oHelpText ) )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwBalanza( aGet[ ( dbfCajT )->( FieldPos( "cCodBal" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cCodBal" ) ) ]:oHelpText ) )}, nil, "LUPA",, 321 )
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cCodCut" ) ) ] := TGetHlp():ReDefine( 330, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cCodCut" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cCodCut" ) ) ]:= u ) }, oFld:aDialogs[2],,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+      TBtnBmp():ReDefine( 331, "gc_cut_16",,,,,{|| PrintEscCode( aTmp[ ( dbfCajT )->( FieldPos( "cCodCut" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cWinTik" ) ) ] ) }, oFld:aDialogs[2], .F., , .F., "Test de código" )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfCajT )->( FieldPos( "cPrnCut" ) ) ] := TGetHlp():ReDefine( 360, { | u | If( PCount()==0, aTmp[ ( dbfCajT )->( FieldPos( "cPrnCut" ) ) ], aTmp[ ( dbfCajT )->( FieldPos( "cPrnCut" ) ) ]:= u ) }, oFld:aDialogs[2],,, {||    ( cDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnCut" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnCut" ) ) ]:oHelpText, dbfDoc ) )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwDocumento( aGet[ ( dbfCajT )->( FieldPos( "cPrnCut" ) ) ], aGet[ ( dbfCajT )->( FieldPos( "cPrnCut" ) ) ]:oHelpText, "TK" ) )}, nil, "LUPA",, 361 )
+
+      TBtnBmp():ReDefine( 362, "gc_document_text_pencil_12",,,,,{|| EdtDocumento( aTmp[ ( dbfCajT )->( FieldPos( "cPrnCut" ) ) ] ) }, oFld:aDialogs[2], .F., , .F.,  )
+
+
+
+
+
+
+
+
+
+
+      TButton():ReDefine( 500, {||( SavRec( aTmp, aGet, oBrw, oDlg, nMode ) )}, oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+        TButton():ReDefine( 550, {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+   if nMode <> 3
+      oDlg:AddFastKey( 116, {|| SavRec( aTmp, aGet, oBrw, oDlg, nMode ) } )
+   end
+
+   oDlg:bStart    := {|| StartRec( aGet, aTmp ) }
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   KillTrans()
+
+   oBmpGeneral:End()
+   oBmpFormatos:End()
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+Static FUNCTION StartRec( aGet, aTmp )
+
+   aGet[ ( dbfCajT )->( FieldPos( "cCodCaj" ) ) ]:SetFocus()
+
+   aGet[ ( dbfCajT )->( FieldPos( "cCapCaj" ) ) ]:oHelpText:cText( oRetFld(aTmp[ ( dbfCajT )->( FieldPos( "cCapCaj" ) ) ], oCaptura:oDbf ) )
+   aGet[ ( dbfCajT )->( FieldPos( "cCodVis" ) ) ]:oHelpText:cText( RetFld( aTmp[ ( dbfCajT )->( FieldPos( "cCodVis" ) ) ], dbfVisor ) )
+   aGet[ ( dbfCajT )->( FieldPos( "cCajon"  ) ) ]:oHelpText:cText( RetFld( aTmp[ ( dbfCajT )->( FieldPos( "cCajon"  ) ) ], dbfCajPorta, "cNomCaj", "cCodCaj" ) )
+   aGet[ ( dbfCajT )->( FieldPos( "cCodBal" ) ) ]:oHelpText:cText( RetFld( aTmp[ ( dbfCajT )->( FieldPos( "cCodBal" ) ) ], dbfImpTik ) )
+   aGet[ ( dbfCajT )->( FieldPos( "cPrnTik" ) ) ]:oHelpText:cText( RetFld( aTmp[ ( dbfCajT )->( FieldPos( "cPrnTik" ) ) ], dbfDoc, "cDescrip" ) )
+   aGet[ ( dbfCajT )->( FieldPos( "cPrnCom" ) ) ]:oHelpText:cText( RetFld( aTmp[ ( dbfCajT )->( FieldPos( "cPrnCom" ) ) ], dbfDoc, "cDescrip" ) )
+   aGet[ ( dbfCajT )->( FieldPos( "cPrnVal" ) ) ]:oHelpText:cText( RetFld( aTmp[ ( dbfCajT )->( FieldPos( "cPrnVal" ) ) ], dbfDoc, "cDescrip" ) )
+   aGet[ ( dbfCajT )->( FieldPos( "cPrnDev" ) ) ]:oHelpText:cText( RetFld( aTmp[ ( dbfCajT )->( FieldPos( "cPrnDev" ) ) ], dbfDoc, "cDescrip" ) )
+   aGet[ ( dbfCajT )->( FieldPos( "cPrnEnt" ) ) ]:oHelpText:cText( RetFld( aTmp[ ( dbfCajT )->( FieldPos( "cPrnEnt" ) ) ], dbfDoc, "cDescrip" ) )
+   aGet[ ( dbfCajT )->( FieldPos( "cPrnAlb" ) ) ]:oHelpText:cText( RetFld( aTmp[ ( dbfCajT )->( FieldPos( "cPrnAlb" ) ) ], dbfDoc, "cDescrip" ) )
+   aGet[ ( dbfCajT )->( FieldPos( "cPrnArq" ) ) ]:oHelpText:cText( RetFld( aTmp[ ( dbfCajT )->( FieldPos( "cPrnArq" ) ) ], dbfDoc, "cDescrip" ) )
+   aGet[ ( dbfCajT )->( FieldPos( "cPrnPar" ) ) ]:oHelpText:cText( RetFld( aTmp[ ( dbfCajT )->( FieldPos( "cPrnPar" ) ) ], dbfDoc, "cDescrip" ) )
+   aGet[ ( dbfCajT )->( FieldPos( "cPrnReg" ) ) ]:oHelpText:cText( RetFld( aTmp[ ( dbfCajT )->( FieldPos( "cPrnReg" ) ) ], dbfDoc, "cDescrip" ) )
+   aGet[ ( dbfCajT )->( FieldPos( "cPrnApt" ) ) ]:oHelpText:cText( RetFld( aTmp[ ( dbfCajT )->( FieldPos( "cPrnApt" ) ) ], dbfDoc, "cDescrip" ) )
+   aGet[ ( dbfCajT )->( FieldPos( "cPrnEna" ) ) ]:oHelpText:cText( RetFld( aTmp[ ( dbfCajT )->( FieldPos( "cPrnEna" ) ) ], dbfDoc, "cDescrip" ) )
+   aGet[ ( dbfCajT )->( FieldPos( "cPrnCut" ) ) ]:oHelpText:cText( RetFld( aTmp[ ( dbfCajT )->( FieldPos( "cPrnCut" ) ) ], dbfDoc, "cDescrip" ) )
+   aGet[ ( dbfCajT )->( FieldPos( "cCajPrt" ) ) ]:oHelpText:cText( RetFld( aTmp[ ( dbfCajT )->( FieldPos( "cCajPrt" ) ) ], dbfCajT ) )
+   aGet[ ( dbfCajT )->( FieldPos( "cCodAlm" ) ) ]:lValid()
+
+RETURN .T.
+
+
+
+Static FUNCTION SavRec( aTmp, aGet, oBrw, oDlg, nMode )
+
+   if nMode == 1 .OR. nMode == 4
+
+      if dbSeekInOrd( aTmp[ ( dbfCajT )->( FieldPos( "cCodCaj" ) ) ], "CCODCAJ", dbfCajT )
+         MsgStop( "Código ya existe " + Rtrim( aTmp[ ( dbfCajT )->( FieldPos( "cCodCaj" ) ) ] ) )
+         RETURN ( .F. )
+      end
+
+      if Empty( aTmp[ ( dbfCajT )->( FieldPos( "Uuid" ) ) ] )
+         aTmp[ ( dbfCajT )->( FieldPos( "Uuid" ) ) ]  := win_uuidcreatestring()
+      end
+
+   end
+
+   if nMode == 4
+
+      if !( aGet[ ( dbfCajT )->( FieldPos( "cCodCaj" ) ) ]:lValid() )
+         RETURN ( .F. )
+      endif
+
+   end
+
+   if empty( aTmp[ ( dbfCajT )->( FieldPos( "cNomCaj" ) ) ] )
+      msgStop( "Nombre de caja no puede estar vacío" )
+      aGet[ ( dbfCajT )->( FieldPos( "cNomCaj" ) ) ]:SetFocus()
+      RETURN ( .F. )
+   end
+
+
+
+   while ( dbfCajL )->( dbSeek( aTmp[ ( dbfCajT )->( FieldPos( "uuid" ) ) ] ) )
+      if dbLock( dbfCajL )
+         ( dbfCajL )->( dbDelete() )
+         ( dbfCajL )->( dbUnLock() )
+      end
+   end
+
+
+
+   if nMode == 4
+
+      ( dbfTmpLin )->( dbGoTop() )
+      while ( dbfTmpLin )->( !eof() )
+         ( dbfTmpLin )->cCodCaj   := aTmp[ ( dbfCajT )->( FieldPos( "cCodCaj" ) ) ]
+         ( dbfTmpLin )->cParUuid  := aTmp[ ( dbfCajT )->( FieldPos( "uuid" ) ) ]
+         ( dbfTmpLin )->( dbSkip() )
+      end
+
+   end
+
+
+
+   ( dbfTmpLin )->( ordSetFocus( 0 ) )
+   ( dbfTmpLin )->( dbGoTop() )
+
+   while ( dbfTmpLin )->( !eof() )
+
+      if empty( ( dbfTmpLin )->cParUuid )
+         ( dbfTmpLin )->cParUuid  := aTmp[ ( dbfCajT )->( FieldPos( "Uuid" ) ) ]
+      end
+
+      dbPass( dbfTmpLin, dbfCajL, .T. )
+
+      ( dbfTmpLin )->( dbSkip() )
+
+   end
+
+
+
+   aTmp[ ( dbfCajT )->( FieldPos( "cNumTur" ) ) ]     := Str( nNumTur, 6 )
+
+
+
+   WinGather( aTmp, aGet, dbfCajT, oBrw, nMode )
+
+RETURN ( oDlg:end( 1 ) )
+
+
+
+STATIC FUNCTION EdtDet( aTmp, aGet, dbfTmpLin, oBrw, bWhen, bValid, nMode, aTmpCaj )
+
+    local oDlg
+
+   oDlg = TDialog():New(,,,, LblTitle( nMode ) + "impresoras de comandas", "lCajas",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+
+      aGet[ ( dbfTmpLin )->( FieldPos( "cTipImp" ) ) ] := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, aTmp[ ( dbfTmpLin )->( FieldPos( "cTipImp" ) ) ], aTmp[ ( dbfTmpLin )->( FieldPos( "cTipImp" ) ) ]:= u ) }, oDlg,,,,,,,,, .F.,,, .F., .F.,,,,, {|Self|( BrwTipoImpresora( aGet[ ( dbfTmpLin )->( FieldPos( "cTipImp" ) ) ] ) )}, nil, "LUPA",, )
+
+
+
+
+      aGet[ ( dbfTmpLin )->( FieldPos( "cNomPrn" ) ) ] := TGetHlp():ReDefine( 110, { | u | If( PCount()==0, aTmp[ ( dbfTmpLin )->( FieldPos( "cNomPrn" ) ) ], aTmp[ ( dbfTmpLin )->( FieldPos( "cNomPrn" ) ) ]:= u ) }, oDlg,,,,,,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+      TBtnBmp():ReDefine( 111, "gc_printer2_check_16",,,,,{|| PrinterPreferences( aGet[ ( dbfTmpLin )->( FieldPos( "cNomPrn" ) ) ] ) }, oDlg, .F., , .F.,  )
+
+
+
+
+
+
+      aGet[ ( dbfTmpLin )->( FieldPos( "cWavFil" ) ) ] := TGetHlp():ReDefine( 120, { | u | If( PCount()==0, aTmp[ ( dbfTmpLin )->( FieldPos( "cWavFil" ) ) ], aTmp[ ( dbfTmpLin )->( FieldPos( "cWavFil" ) ) ]:= u ) }, oDlg,,,,,,,,, .F.,,, .F., .F.,,,,, {|Self|( aGet[ ( dbfTmpLin )->( FieldPos( "cWavFil" ) ) ]:cText( cGetFile( "Doc ( *.* ) | *.*", "Seleccione el nombre del fichero" ) ) )}, nil, "FOLDER",, )
+
+
+
+
+      aGet[ ( dbfTmpLin )->( FieldPos( "cCodCut" ) ) ] := TGetHlp():ReDefine( 130, { | u | If( PCount()==0, aTmp[ ( dbfTmpLin )->( FieldPos( "cCodCut" ) ) ], aTmp[ ( dbfTmpLin )->( FieldPos( "cCodCut" ) ) ]:= u ) }, oDlg,,,,,,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+      TBtnBmp():ReDefine( 131, "gc_cut_16",,,,,{|| PrintEscCode( aTmp[ ( dbfTmpLin )->( FieldPos( "cCodCut" ) ) ], aTmp[ ( dbfTmpLin )->( FieldPos( "cNomPrn" ) ) ] ) }, oDlg, .F., , .F., "Test de código" )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfTmpLin )->( FieldPos( "cPrnCom" ) ) ] := TGetHlp():ReDefine( 140, { | u | If( PCount()==0, aTmp[ ( dbfTmpLin )->( FieldPos( "cPrnCom" ) ) ], aTmp[ ( dbfTmpLin )->( FieldPos( "cPrnCom" ) ) ]:= u ) }, oDlg,,, {||    ( cDocumento( aGet[ ( dbfTmpLin )->( FieldPos( "cPrnCom" ) ) ], aGet[ ( dbfTmpLin )->( FieldPos( "cPrnCom" ) ) ]:oHelpText, dbfDoc ) )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwDocumento( aGet[ ( dbfTmpLin )->( FieldPos( "cPrnCom" ) ) ], aGet[ ( dbfTmpLin )->( FieldPos( "cPrnCom" ) ) ]:oHelpText, "TK" ) )}, nil, "LUPA",, 141 )
+
+      TBtnBmp():ReDefine( 142, "gc_document_text_pencil_12",,,,,{|| EdtDocumento( aTmp[ ( dbfTmpLin )->( FieldPos( "cPrnCom" ) ) ] ) }, oDlg, .F., , .F.,  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      aGet[ ( dbfTmpLin )->( FieldPos( "cPrnAnu" ) ) ] := TGetHlp():ReDefine( 150, { | u | If( PCount()==0, aTmp[ ( dbfTmpLin )->( FieldPos( "cPrnAnu" ) ) ], aTmp[ ( dbfTmpLin )->( FieldPos( "cPrnAnu" ) ) ]:= u ) }, oDlg,,, {||    ( cDocumento( aGet[ ( dbfTmpLin )->( FieldPos( "cPrnAnu" ) ) ], aGet[ ( dbfTmpLin )->( FieldPos( "cPrnAnu" ) ) ]:oHelpText, dbfDoc ) )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,, {|Self|( BrwDocumento( aGet[ ( dbfTmpLin )->( FieldPos( "cPrnAnu" ) ) ], aGet[ ( dbfTmpLin )->( FieldPos( "cPrnAnu" ) ) ]:oHelpText, "TK" ) )}, nil, "LUPA",, 151 )
+
+      TBtnBmp():ReDefine( 152, "gc_document_text_pencil_12",,,,,{|| EdtDocumento( aTmp[ ( dbfTmpLin )->( FieldPos( "cPrnAnu" ) ) ] ) }, oDlg, .F., , .F.,  )
+
+
+
+
+
+      TButton():ReDefine( 500, {||( EndDetalle( aTmp, aGet, dbfTmpLin, oBrw, oDlg, nMode, aTmpCaj ) )}, oDlg,,, .F., {||         ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+        TButton():ReDefine( 550, {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+      oDlg:bStart := {|| aGet[ ( dbfTmpLin )->( FieldPos( "cPrnCom" ) ) ]:lValid(), aGet[ ( dbfTmpLin )->( FieldPos( "cPrnAnu" ) ) ]:lValid() }
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+STATIC FUNCTION EndDetalle( aTmp, aGet, dbfTmpLin, oBrw, oDlg, nMode, aTmpCaj )
+
+   local cErrors  := ""
+
+
+
+   if empty( aTmp[ ( dbfTmpLin )->( FieldPos( "cTipImp" ) ) ] )
+      cErrors     += "* El tipo de impresora no puede estar vacío" + Chr(13)+Chr(10)
+   end
+
+   if empty( aTmp[ ( dbfTmpLin )->( FieldPos( "cNomPrn" ) ) ] )
+      cErrors     += "* El nombre de impresora no puede estar vacío" + Chr(13)+Chr(10)
+   end
+
+   if nMode == 1 .AND. dbSeekInOrd( Upper( Padr( aTmp[ ( dbfTmpLin )->( FieldPos( "cTipImp" ) ) ], 50 ) ), "cTipImp", dbfTmpLin )
+      cErrors     += "* El tipo de impresora ya ha sido introducido" + Chr(13)+Chr(10)
+   end
+
+
+   if !empty( cErrors )
+      msgStop( cErrors, "El formulario contiene errores" )
+      RETURN ( .F. )
+   end
+
+
+
+
+
+   aTmp[ ( dbfTmpLin )->( FieldPos( "cCodCaj" ) ) ]   := aTmpCaj[ ( dbfCajT )->( FieldPos( "cCodCaj" ) ) ]
+
+
+
+
+
+   WinGather( aTmp, aGet, dbfTmpLin, oBrw, nMode )
+
+
+
+
+
+   oDlg:end( 1 )
+
+RETURN ( .T. )
+
+
+
+FUNCTION cCajas( oGet, dbfCajT, oGet2 )
+
+   local oBlock
+   local oError
+   local lClose   := .F.
+   local lValid   := .F.
+    local xValor     := oGet:varGet()
+
+   if empty( xValor )
+      if !empty( oGet2 )
+            oGet2:cText( "" )
+      end
+      RETURN .T.
+   else
+      xValor      := RJustObj( oGet, "0" )
+   end
+
+   oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   if empty( dbfCajT )
+      dbUseArea( .T., ( cDriver() ), ( cPatDat() + "CAJAS.DBF" ), ( cCheckArea( "CAJAS", @dbfCajT ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatDat() + "CAJAS.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+      lClose      := .T.
+   end
+
+   if ( dbfCajT )->( dbSeek( xValor ) )
+
+      oGet:cText( ( dbfCajT )->cCodCaj )
+
+      if !empty( oGet2 )
+         oGet2:cText( ( dbfCajT )->cNomCaj )
+      end
+
+      lValid      := .T.
+
+   else
+
+      msgStop( "Código de caja no encontrada" )
+
+   end
+
+   RECOVER USING oError
+
+      msgStop( "Imposible abrir todas las bases de datos " + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+   end
+
+   ErrorBlock( oBlock )
+
+    IF lClose
+        ( dbfCajT )->( dbCloseArea() )
+    end
+
+RETURN lValid
+
+
+
+FUNCTION BrwCajas( oGet, oGet2, lBigStyle )
+
+    local oDlg
+    local oGet1
+    local cGet1
+    local oBrw
+   local nOrd        := GetBrwOpt( "BrwCajas" )
+    local oCbxOrd
+   local aCbxOrd     := { "Código", "Nombre" }
+   local cCbxOrd
+   local nLevel      := Auth():Level( "01040" )
+
+   If( lBigStyle == nil, lBigStyle := .F., ) ;
+
+   if !lOpenFiles()
+      RETURN .F.
+   end
+
+   if lBigStyle
+      nOrd           := ( dbfCajT )->( OrdSetFocus( "cNomCaj" ) )
+      ( dbfCajT )->( dbGoTop() )
+   else
+      nOrd           := Min( Max( nOrd, 1 ), len( aCbxOrd ) )
+      cCbxOrd        := aCbxOrd[ nOrd ]
+   end
+
+   if lBigStyle
+      oDlg = TDialog():New(,,,, "Seleccionar cajas ordenado por: nombre", "HELPENTRYTACTIL",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+   else
+      oDlg = TDialog():New(,,,, "Seleccionar cajas", "HELPENTRY",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+   end
+
+   if lBigStyle
+
+
+
+
+
+      TButtonBmp():ReDefine( 100, {||( BuscarBrwTactil( dbfCajT, oBrw ) )}, oDlg,,, .F.,,,, .F., "LUPA_32",,, .F. )
+
+
+
+
+      TButton():ReDefine( 110, {||( ( dbfCajT )->( OrdSetFocus( "cCodCaj" ) ), oBrw:Refresh(), oDlg:cTitle( "Seleccionar cajas ordenado por: código" ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+      TButton():ReDefine( 120, {||( ( dbfCajT )->( OrdSetFocus( "cNomCaj" ) ), oBrw:Refresh(), oDlg:cTitle( "Seleccionar cajas ordenado por: nombre" ) )}, oDlg,,, .F.,,,, .F. )
+
+   else
+
+
+
+
+
+
+        oGet1 := TGetHlp():ReDefine( 104, { | u | If( PCount()==0, cGet1, cGet1:= u ) }, oDlg,,, {||    ( OrdClearScope( oBrw, dbfCajT ) )},,,,,, .F.,, {|nKey,nFlags,Self| ( AutoSeek( nKey, nFlags, Self, oBrw, dbfCajT ) ) }, .F., .F.,,,,,, nil, "FIND",, )
+
+
+
+
+
+
+        oCbxOrd := TComboBox():ReDefine( 102, { | u | If( PCount()==0, cCbxOrd, cCbxOrd:= u ) }, aCbxOrd, oDlg,,, {|Self|( ( dbfCajT )->( OrdSetFocus( oCbxOrd:nAt ) ), oBrw:refresh(), oGet1:SetFocus() )},,,, .F.,,,,,,, "oCbxOrd",,,,,,, )
+
+   end
+
+      oBrw                 := IXBrowse():New( oDlg )
+
+      oBrw:bClrSel         := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      oBrw:bClrSelFocus    := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      oBrw:cAlias          := dbfCajT
+
+      oBrw:nMarqueeStyle   := 5
+      oBrw:cName           := "Browse.Cajas"
+
+      if lBigStyle
+         oBrw:nRowHeight   := 36
+      end
+
+      with object ( oBrw:AddCol() )
+         :cHeader          := "Código"
+         :cSortOrder       := "cCodCaj"
+         :bEditValue       := {|| ( dbfCajT )->cCodCaj }
+         :nWidth           := 80
+         if !lBigStyle
+            :bLClickHeader := {| nMRow, nMCol, nFlags, oCol | oCbxOrd:Set( oCol:cHeader ) }
+         end
+      end
+
+      with object ( oBrw:AddCol() )
+         :cHeader          := "Nombre"
+         :cSortOrder       := "cNomCaj"
+         :bEditValue       := {|| ( dbfCajT )->cNomCaj }
+         :nWidth           := 200
+         if !lBigStyle
+            :bLClickHeader := {| nMRow, nMCol, nFlags, oCol | oCbxOrd:Set( oCol:cHeader ) }
+         end
+      end
+
+      oBrw:bLDblClick      := {|| oDlg:end( 1 ) }
+      oBrw:bRClicked       := {| nRow, nCol, nFlags | oBrw:RButtonDown( nRow, nCol, nFlags ) }
+
+      oBrw:CreateFromResource( 105 )
+
+      if lBigStyle
+
+      oBrw:nHeaderHeight   := 30
+      oBrw:nRowHeight      := 40
+
+
+
+
+
+      TButtonBmp():ReDefine( 140, {||( oBrw:GoUp() )}, oDlg,,, .F.,,,, .F., "UP32",,, .F. )
+
+
+
+
+
+      TButtonBmp():ReDefine( 150, {||( oBrw:GoDown() )}, oDlg,,, .F.,,,, .F., "DOWN32",,, .F. )
+
+      end
+
+
+
+
+        TButton():ReDefine( 1, {||( oDlg:end( 1 ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+
+        TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+      if !lBigStyle
+
+
+
+
+
+
+      TButton():ReDefine( 500, {||( WinAppRec( oBrw, bEdit, dbfCajT ) )}, oDlg,,, .F., {||     ( nAnd( nLevel, 2 ) <> 0 .AND. !IsReport() )},,, .F. )
+
+
+
+
+        TButton():ReDefine( 501, {||( WinEdtRec( oBrw, bEdit, dbfCajT ) )}, oDlg,,, .F., {||     ( nAnd( nLevel, 4 ) <> 0 .AND. !IsReport() )},,, .F. )
+
+      if nAnd( nLevel, 2 ) <> 0 .AND. !IsReport()
+         oDlg:AddFastKey( 113,    {|| WinAppRec( oBrw, bEdit, dbfCajT ) } )
+      end
+
+      if nAnd( nLevel, 4 ) <> 0 .AND. !IsReport()
+         oDlg:AddFastKey( 114,    {|| WinEdtRec( oBrw, bEdit, dbfCajT ) } )
+      end
+
+      end
+
+      oDlg:AddFastKey( 13,   {|| oDlg:end( 1 ) } )
+      oDlg:AddFastKey( 116,       {|| oDlg:end( 1 ) } )
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   if oDlg:nResult == 1
+
+      oGet:cText( ( dbfCajT )->cCodCaj )
+        oGet:lValid()
+
+      if ValType( oGet2 ) == "O"
+         oGet2:cText( ( dbfCajT )->cNomCaj )
+      end
+
+   end
+
+    oGet:setFocus()
+
+   DestroyFastFilter( dbfCajT )
+
+   SetBrwOpt( "BrwCajas", ( dbfCajT )->( OrdNumber() ) )
+
+   CloseFiles()
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+FUNCTION BrwCajaTactil( oGet, dbfCaja, oGet2, lRETURNCaja, lParaLlevar )
+
+   local oDlg
+   local oBrw
+   local nRec
+   local nOrdAnt
+   local cCajas            := ""
+   local lClose            := .F.
+   local oGetUnidades
+   local cGetUnidades      := Space( 100 )
+   local oBmpGeneral
+   local oSayGeneral
+   local oBotonOculto
+   local oBotonAnadir
+   local oBotonEditar
+   local cResource         := "HelpEntryTactilCli"
+
+   If( lRETURNCaja == nil, lRETURNCaja := .F., ) ;
+   If( lParaLlevar == nil, lParaLlevar := .F., ) ;
+
+   if empty( dbfCaja )
+
+      if !lOpenFiles( .T. )
+         RETURN nil
+      end
+
+      dbfCaja              := dbfCajT
+      lClose               := .T.
+
+   end
+
+   nRec                    := ( dbfCaja )->( Recno() )
+   nOrdAnt                 := ( dbfCaja )->( OrdSetFocus( "cCodCaj" ) )
+
+   ( dbfCaja )->( dbGoTop() )
+
+   if GetSysMetrics( 1 ) == 560
+
+      oDlg = TDialog():New(,,,, "Seleccionar cliente ordenado por: Teléfono", "HelpEntryTactilCli_1024x576",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+   else
+
+      oDlg = TDialog():New(,,,, "Seleccionar cliente ordenado por: Teléfono", cResource,, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+   end
+
+
+
+
+
+      TButtonBmp():ReDefine( 100, {||( VirtualKey( .F., oGetUnidades ), if( lBigSeek( nil, cGetUnidades, dbfCaja ), oBrw:Refresh(), ) )}, oDlg,,, .F.,,,, .F., "gc_keyboard_32",,, .F. )
+
+
+
+
+      oBotonOculto := TButton():ReDefine( 110,, oDlg,,, .F.,,,, .F. )
+
+
+
+      TButton():ReDefine( 120, {||( ( dbfCaja )->( OrdSetFocus( "cCodCaj" ) ), oBrw:Refresh(), oDlg:cTitle( "Seleccionar caja ordenada por: código" ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+      TButton():ReDefine( 130, {||( ( dbfCaja )->( OrdSetFocus( "cNomCaj" ) ), oBrw:Refresh(), oDlg:cTitle( "Seleccionar caja ordenada por: nombre" ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+      oSayGeneral := TSay():ReDefine( 200, {||   if ( lParaLlevar, "Selecione un cliente para llevar", "Selecione una caja" )}, oDlg,,,, .F.,, .F., .F., )
+
+
+
+
+
+      oBmpGeneral := TBitmap():ReDefine( 500, if ( lParaLlevar, "gc_motor_scooter_48", "gc_cash_register_48" ),, oDlg,,, .F., .F.,,, .F.,,, .T. )
+
+
+
+
+      oGetUnidades := TGetHlp():ReDefine( 600, { | u | If( PCount()==0, cGetUnidades, cGetUnidades:= u ) }, oDlg,,,,,,,,, .F.,, {|nKey,nFlags,Self| ( AutoSeek( nKey, nFlags, Self, oBrw, dbfCaja ) ) }, .F., .F.,,,,,, nil,,, )
+
+      oBrw                 := IXBrowse():New( oDlg )
+
+      oBrw:bClrSel         := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      oBrw:bClrSelFocus    := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      oBrw:cAlias          := dbfCaja
+      oBrw:nMarqueeStyle   := 5
+      oBrw:cName           := "Browse caja tactil"
+      oBrw:nRowHeight      := 60
+      oBrw:nDataLines      := 2
+      oBrw:lHScroll        := .F.
+
+      oBrw:bLDblClick      := {|| oDlg:end( 1 ) }
+
+      oBrw:CreateFromResource( 105 )
+
+      with object ( oBrw:AddCol() )
+         :cHeader          := "Código"
+         :bEditValue       := {|| AllTrim( ( dbfCaja )->cCodCaj ) }
+         :nWidth           := 200
+      end
+
+      with object ( oBrw:AddCol() )
+         :cHeader          := "Nombre"
+         :bEditValue       := {|| AllTrim( ( dbfCaja )->cNomCaj ) }
+         :nWidth           := 500
+      end
+
+
+
+
+
+      oBotonAnadir := TButtonBmp():ReDefine( 160,, oDlg,,, .F.,,,, .F., "gc_user2_add_32",,, .F. )
+
+
+
+
+      oBotonEditar := TButtonBmp():ReDefine( 170,, oDlg,,, .F.,,,, .F., "gc_user2_edit_32",,, .F. )
+
+
+
+
+      TButtonBmp():ReDefine( 140, {||( oBrw:GoUp() )}, oDlg,,, .F.,,,, .F., "UP32",,, .F. )
+
+
+
+
+
+      TButtonBmp():ReDefine( 150, {||( oBrw:GoDown() )}, oDlg,,, .F.,,,, .F., "DOWN32",,, .F. )
+
+
+
+
+      TButton():ReDefine( 1, {||( oDlg:End( 1 ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+      TButton():ReDefine( 2, {||( oDlg:End() )}, oDlg,,, .F.,,,, .F. )
+
+      oDlg:AddFastKey( 116, {|| oDlg:end( 1 ) } )
+
+      oDlg:bStart := {|| oBrw:Load(), oBotonOculto:Hide(), oBotonAnadir:Hide(), oBotonEditar:Hide() }
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   if oDlg:nResult == 1
+
+      cCajas      := ( dbfCaja )->cCodCaj
+
+      if !empty( oGet )
+         oGet:cText( cCajas )
+      end
+
+      if !empty( oGet2 )
+         oGet2:cText( Rtrim( ( dbfCaja )->cNomCaj ) )
+      end
+
+   end
+
+   if lClose
+
+      CloseFiles()
+
+   else
+
+      ( dbfCaja )->( OrdSetFocus( nOrdAnt ) )
+      ( dbfCaja )->( dbGoTo( nRec ) )
+
+   end
+
+RETURN if( !lRETURNCaja, oDlg:nResult == 1, cCajas )
+
+
+
+FUNCTION BrwCaj( oGet, dbfCajT, oGet2 )
+
+    local oDlg
+    local oGet1
+    local cGet1
+    local oBrw
+   local nOrd        := GetBrwOpt( "BrwCajas" )
+    local oCbxOrd
+   local aCbxOrd     := { "Código", "Nombre" }
+   local cCbxOrd
+   local nRec
+
+   nOrd              := Min( Max( nOrd, 1 ), len( aCbxOrd ) )
+   cCbxOrd           := aCbxOrd[ nOrd ]
+
+   nRec              := ( dbfCajT )->( RecNo() )
+
+   ( dbfCajT )->( dbGoTop() )
+
+   oDlg = TDialog():New(,,,, "Seleccionar cajas", "HELPENTRY",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+
+        oGet1 := TGetHlp():ReDefine( 104, { | u | If( PCount()==0, cGet1, cGet1:= u ) }, oDlg,,, {||       ( OrdClearScope( oBrw, dbfCajT ) )},,,,,, .F.,, {|nKey,nFlags,Self| ( AutoSeek( nKey, nFlags, Self, oBrw, dbfCajT ) ) }, .F., .F.,,,,,, nil, "FIND",, )
+
+
+
+
+
+
+        oCbxOrd := TComboBox():ReDefine( 102, { | u | If( PCount()==0, cCbxOrd, cCbxOrd:= u ) }, aCbxOrd, oDlg,,, {|Self|( ( dbfCajT )->( OrdSetFocus( oCbxOrd:nAt ) ), oBrw:refresh(), oGet1:SetFocus() )},,,, .F.,,,,,,, "oCbxOrd",,,,,,, )
+
+      oBrw                 := IXBrowse():New( oDlg )
+
+      oBrw:bClrSel         := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      oBrw:bClrSelFocus    := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      oBrw:cAlias          := dbfCajT
+
+      oBrw:nMarqueeStyle   := 5
+      oBrw:cName           := "Browse.Cajas reducido"
+
+      with object ( oBrw:AddCol() )
+         :cHeader          := "Código"
+         :cSortOrder       := "cCodCaj"
+         :bEditValue       := {|| ( dbfCajT )->cCodCaj }
+         :nWidth           := 80
+         :bLClickHeader    := {| nMRow, nMCol, nFlags, oCol | oCbxOrd:Set( oCol:cHeader ) }
+      end
+
+      with object ( oBrw:AddCol() )
+         :cHeader          := "Nombre"
+         :cSortOrder       := "cNomCaj"
+         :bEditValue       := {|| ( dbfCajT )->cNomCaj }
+         :nWidth           := 200
+         :bLClickHeader    := {| nMRow, nMCol, nFlags, oCol | oCbxOrd:Set( oCol:cHeader ) }
+      end
+
+      oBrw:bLDblClick      := {|| oDlg:end( 1 ) }
+      oBrw:bRClicked       := {| nRow, nCol, nFlags | oBrw:RButtonDown( nRow, nCol, nFlags ) }
+
+      oBrw:CreateFromResource( 105 )
+
+
+
+
+        TButton():ReDefine( 1, {||( oDlg:end( 1 ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+
+        TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+
+
+
+
+
+        TButton():ReDefine( 500, {||( nil )}, oDlg,,, .F., {||     ( .F. )},,, .F. )
+
+
+
+
+        TButton():ReDefine( 501, {||( nil )}, oDlg,,, .F., {||     ( .F. )},,, .F. )
+
+   oDlg:AddFastKey( 116,       {|| oDlg:end( 1 ) } )
+   oDlg:AddFastKey( 13,   {|| oDlg:end( 1 ) } )
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   IF oDlg:nResult == 1
+
+        oGet:cText( (dbfCajT)->CCODCAJ )
+        oGet:lValid()
+
+        IF ValType( oGet2 ) == "O"
+            oGet2:cText( (dbfCajT)->CNOMCAJ )
+        end
+
+    end
+
+    oGet:setFocus()
+
+   DestroyFastFilter( dbfCajT )
+
+   SetBrwOpt( "BrwCajas", ( dbfCajT )->( OrdNumber() ) )
+
+   ( dbfCajT )->( dbGoTo( nRec ) )
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+STATIC FUNCTION BeginTrans( aTmp )
+
+   local nOrd
+   local lErrors  := .F.
+   local cDbfLin  := "CCAJL"
+   local UuidCaja
+   local oError
+   local oBlock   := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   BEGIN SEQUENCE
+
+   UuidCaja       := aTmp[ ( dbfCajT )->( FieldPos( "uuid" ) ) ]
+   nNumTur        := Max( Val( aTmp[ ( dbfCajT )->( FieldPos( "cNumTur" ) ) ] ), 1 )
+
+
+
+
+
+   cTmpLin        := cGetNewFileName( cPatTmp() + cDbfLin )
+
+
+
+
+
+   dbCreate( cTmpLin, aSqlStruct( aItmCajaL() ), cLocalDriver() )
+   dbUseArea( .T., cLocalDriver(), cTmpLin, cCheckArea( cDbfLin, @dbfTmpLin ), .F. )
+
+   if !NetErr()
+
+      ( dbfTmpLin )->( OrdCondSet( "!Deleted()", {||!Deleted() } ) )
+      ( dbfTmpLin )->( OrdCreate( cTmpLin, "Recno", "Str( Recno() )", {|| Str( Recno() ) } ) )
+
+      ( dbfTmpLin )->( OrdCondSet( "!Deleted()", {||!Deleted() } ) )
+      ( dbfTmpLin )->( OrdCreate( cTmpLin, "cTipImp", "Upper( cTipImp )", {|| Upper( Field->cTipImp ) } ) )
+
+      if ( dbfCajL )->( dbSeek( UuidCaja ) )
+         while ( dbfCajL )->cParUuid == UuidCaja .AND. !( dbfCajL )->( eof() )
+            dbPass( dbfCajL, dbfTmpLin, .T. )
+            ( dbfCajL )->( DbSkip() )
+         end
+      endif
+
+      ( dbfTmpLin )->( dbGoTop() )
+
+   else
+
+      lErrors     := .T.
+
+   end
+
+
+   RECOVER USING oError
+
+      msgStop( "Imposible crear tablas temporales." + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+      KillTrans()
+
+      lErrors     := .T.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lErrors )
+
+
+
+Static FUNCTION KillTrans()
+
+
+
+
+
+   if !empty( dbfTmpLin ) .AND. ( dbfTmpLin )->( Used() )
+      ( dbfTmpLin )->( dbCloseArea() )
+   end
+
+   dbfTmpLin      := nil
+
+   dbfErase( cTmpLin )
+
+RETURN NIL
+
+
+
+Static FUNCTION ValidCajaPadre( aGet, aTmp )
+
+   local hStatus
+   local lValid   := .T.
+
+   if empty( aTmp[ ( dbfCajT )->( FieldPos( "cCajPrt" ) ) ] )
+      RETURN ( lValid )
+   end
+
+   hStatus        := hGetStatus( dbfCajT )
+
+   if ( dbfCajT )->( dbSeekInOrd( aTmp[ ( dbfCajT )->( FieldPos( "cCajPrt" ) ) ], "cCodCaj", dbfCajT ) )
+
+      aGet[ ( dbfCajT )->( FieldPos( "cCajPrt" ) ) ]:oHelpText:cText( ( dbfCajT )->cNomCaj )
+
+      if aTmp[ ( dbfCajT )->( FieldPos( "cCajPrt" ) ) ] == aTmp[ ( dbfCajT )->( FieldPos( "cCodCaj" ) ) ]
+
+         msgStop( "Código de caja padre no puede ser la misma." )
+
+         lValid   := .F.
+
+      end
+
+   else
+
+      msgStop( "Código de caja no existe." )
+
+      lValid      := .F.
+
+   end
+
+   hSetStatus( hStatus )
+
+RETURN ( lValid )
+
+
+
+FUNCTION mkCajas( cPath, oMeter )
+
+   If( cPath == nil, cPath := cPatDat(), ) ;
+
+   if !lExistTable( cPath + "Cajas.Dbf" )
+      dbCreate( cPath + "Cajas.Dbf", aSqlStruct( aItmCaja() ), cDriver() )
+   end
+
+   if !lExistTable( cPath + "CajL.Dbf" )
+      dbCreate( cPath + "CajL.Dbf", aSqlStruct( aItmCajaL() ), cDriver() )
+   end
+
+   rxCajas( cPath, oMeter )
+
+RETURN .T.
+
+
+
+FUNCTION rxCajas( cPath, oMeter )
+
+    local dbfCajas
+
+   If( cPath == nil, cPath := cPatDat(), ) ;
+
+   if !lExistTable( cPath + "CAJAS.DBF" )
+      dbCreate( cPath + "CAJAS.DBF", aSqlStruct( aItmCaja() ), cDriver() )
+   end
+
+   if !lExistTable( cPath + "CAJL.DBF" )
+      dbCreate( cPath + "CAJL.DBF", aSqlStruct( aItmCajaL() ), cDriver() )
+   end
+
+   dbUseArea( .T., cDriver(), cPath + "CAJAS.DBF", cCheckArea( "CAJAS", @dbfCajas ), .F. )
+
+   if !( dbfCajas )->( neterr() )
+
+      ( dbfCajas )->( __dbPack() )
+
+      ( dbfCajas )->( ordCondSet("!Deleted()", {||!Deleted()}  ) )
+      ( dbfCajas )->( ordCreate( cPath + "CAJAS.CDX", "cCodCaj", "Upper( cCodCaj )", {|| Upper( Field->cCodCaj ) }, ) )
+
+      ( dbfCajas )->( ordCondSet("!Deleted()", {||!Deleted()}  ) )
+      ( dbfCajas )->( ordCreate( cPath + "CAJAS.CDX", "cNomCaj", "Upper( cNomCaj )", {|| Upper( Field->cNomCaj ) } ) )
+
+      ( dbfCajas )->( ordCondSet("!Deleted()", {||!Deleted()}  ) )
+      ( dbfCajas )->( ordCreate( cPath + "CAJAS.CDX", "cCajPrt", "Upper( cCajPrt )", {|| Upper( Field->cCajPrt ) }, ) )
+
+      ( dbfCajas )->( dbCloseArea() )
+
+   else
+
+      msgStop( "Imposible abrir en modo exclusivo la tabla de cajas" )
+
+   end
+
+   dbUseArea( .T., cDriver(), cPath + "CAJL.DBF", cCheckArea( "CAJL", @dbfCajas ), .F. )
+
+   if !( dbfCajas )->( neterr() )
+
+      ( dbfCajas )->( __dbPack() )
+
+      ( dbfCajas )->( ordCondSet("!Deleted()", {||!Deleted()}  ) )
+      ( dbfCajas )->( ordCreate( cPath + "CAJL.CDX", "CPARUUID", "CPARUUID", {|| Field->CPARUUID }, ) )
+
+      ( dbfCajas )->( ordCondSet("!Deleted()", {||!Deleted()}  ) )
+      ( dbfCajas )->( ordCreate( cPath + "CAJL.CDX", "CCODCAJ", "Upper( CCODCAJ ) + Upper( cTipImp )", {|| Upper( Field->CCODCAJ ) + Upper( Field->cTipImp ) }, ) )
+
+      ( dbfCajas )->( dbCloseArea() )
+
+   else
+
+      msgStop( "Imposible abrir en modo exclusivo la tabla de cajas" )
+
+   end
+
+RETURN NIL
+
+
+
+FUNCTION IsCaja()
+
+   local oBlock
+   local oError
+   local dbfCaja
+
+
+
+   if !lExistTable( cPatDat() + "Cajas.Dbf" )      .OR.  !lExistTable( cPatDat() + "CajL.Dbf" )     .OR.  mkCajas()
+   end
+
+
+
+   if !lExistIndex( cPatDat() + "Cajas.Cdx" )      .OR.  !lExistIndex( cPatDat() + "CajL.Cdx" )       .OR.  rxCajas()
+   end
+
+   oBlock            := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   dbUseArea( .T., ( cDriver() ), ( cPatDat() + "Cajas.Dbf" ), ( cCheckArea( "CAJAS", @dbfCaja ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+
+
+   ( dbfCaja )->( __dbLocate( { || ( dbfCaja )->cCodCaj == "000" } ) )
+   if!( dbfCaja )->( Found() )
+      ( dbfCaja )->( dbAppend() )
+      ( dbfCaja )->cCodCaj := "000"
+      ( dbfCaja )->cNomCaj := "Caja principal"
+      ( dbfCaja )->cCapCaj := "000"
+      ( dbfCaja )->cPrnTik := "TKA"
+      ( dbfCaja )->cPrnAlb := "ACA"
+      ( dbfCaja )->cPrnVal := "TKD"
+      ( dbfCaja )->cPrnDev := "TKE"
+      ( dbfCaja )->cPrnArq := "ARA"
+      ( dbfCaja )->nCopTik := 1
+      ( dbfCaja )->nCopVal := 1
+      ( dbfCaja )->nCopDev := 1
+      ( dbfCaja )->nCopEnt := 1
+      ( dbfCaja )->nCopAlb := 1
+      ( dbfCaja )->nCopArq := 1
+      ( dbfCaja )->nCopReg := 1
+      ( dbfCaja )->nCopPar := 1
+      ( dbfCaja )->nCopCom := 1
+      ( dbfCaja )->cNumTur := str( 1, 6 )
+      ( dbfCaja )->( dbUnLock() )
+   end
+
+   RECOVER USING oError
+
+      msgStop( "Imposible abrir todas las bases de datos " + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+   end
+
+   ErrorBlock( oBlock )
+
+   ( dbfCaja )->( dbCloseArea() )
+
+RETURN ( .T. )
+
+
+
+
+
+
+FUNCTION lFreeCaja( cCajUsr, cCodUsr )
+
+   local lFree       := .F.
+   local nHandle
+
+   If( cCajUsr == nil, cCajUsr := Application():CodigoCaja(), ) ;
+   If( cCodUsr == nil, cCodUsr := Auth():Codigo(), ) ;
+
+   if !file( cPatUsr() + cCajUsr + cCodUsr + ".caj" )
+      if ( nHandle := fCreate( cPatUsr() + cCajUsr + cCodUsr + ".caj", 0 ) ) <> -1
+         fClose( nHandle )
+      end
+   end
+
+   if ( nHandle      := fOpen( cPatUsr() + cCajUsr + cCodUsr + ".caj", 16 ) ) <> -1
+      fClose( nHandle )
+      lFree          := .T.
+   end
+
+RETURN ( lFree )
+
+
+
+
+
+
+FUNCTION nUserCaja( cCajUsr )
+
+   local n
+   local nHandle
+   local aDirCaj
+   local nUsrCaj     := 0
+
+   If( cCajUsr == nil, cCajUsr := Application():CodigoCaja(), ) ;
+
+   aDirCaj           := Directory( cPatUsr() + cCajUsr + "*.caj" )
+
+   for n := 1 to len( aDirCaj )
+
+      nHandle        := fOpen( cPatUsr() + aDirCaj[ n, 1 ], 16 )
+
+      if nHandle <> -1
+         fClose( nHandle )
+      else
+         nUsrCaj++
+      end
+
+   next
+
+RETURN ( nUsrCaj )
+
+
+
+
+
+
+FUNCTION lSetCaja( codigoCaja, uuidCaja, codigoUsuario )
+
+   local nHndCaj
+   local cFilCaj
+
+   If( codigoCaja == nil, codigoCaja := Application():CodigoCaja(), ) ;
+   If( uuidCaja == nil, uuidCaja := Application():UuidCaja(), ) ;
+   If( codigoUsuario == nil, codigoUsuario := Auth():Codigo(), ) ;
+
+   cFilCaj                 := codigoCaja + codigoUsuario
+
+
+
+   if !file( cPatUsr() + cFilCaj + ".caj" )
+      if ( nHndCaj         := fCreate( cPatUsr() + cFilCaj + ".caj", 0 ) ) <> -1
+         fClose( nHndCaj )
+      end
+   end
+
+   nHndCaj                 := fOpen( cPatUsr() + cFilCaj + ".caj", 16 )
+
+   if nHndCaj <> -1
+      nHndCaj( nHndCaj )
+   end
+
+   Application():setCaja( uuidCaja, codigoCaja )
+   Application():setCajon()
+
+RETURN ( .T. )
+
+
+
+
+
+
+FUNCTION lQuitCaja()
+
+   local lQuit := .T.
+
+   if nHndCaj() <> nil
+      lQuit    := fClose( nHndCaj() )
+   end
+
+RETURN ( lQuit )
+
+
+
+
+
+
+FUNCTION lChgCaja( codigoCaja, uuidCaja, codigoUsuario )
+
+   if lQuitCaja()
+      lSetCaja( codigoCaja, uuidCaja, codigoUsuario )
+   end
+
+   cCajUsr( codigoCaja )
+
+RETURN nil
+
+
+
+FUNCTION aItmCaja()
+
+   local aBase := {}
+
+   aAdd( aBase, { "cCodCaj",   "C",  3,   0, "Código de la caja" } )
+   aAdd( aBase, { "cNomCaj",   "C", 30,   0, "Nombre de la caja" } )
+   aAdd( aBase, { "cAlmCaj",   "C",  3,   0, "Almacén de la caja" } )
+   aAdd( aBase, { "cLocCaj",   "C", 50,   0, "" } )
+   aAdd( aBase, { "nUsrCaj",   "N",  3,   0, "" } )
+   aAdd( aBase, { "lPrnTik",   "L",  1,   0, "Lógico impresora normal tickets" } )
+   aAdd( aBase, { "cPrnTik",   "C",  3,   0, "Formato tickets" } )
+   aAdd( aBase, { "lPrnAlb",   "L",  1,   0, "Lógico impresora normal albaranes" } )
+   aAdd( aBase, { "cPrnAlb",   "C",  3,   0, "Formato albaranes" } )
+   aAdd( aBase, { "lPrnFac",   "L",  1,   0, "Lógico impresora normal facturas" } )
+   aAdd( aBase, { "cPrnFac",   "C",  3,   0, "Formatos facturas" } )
+   aAdd( aBase, { "cCapCaj",   "C",  3,   0, "Código captura" } )
+   aAdd( aBase, { "lPrnVal",   "L",  1,   0, "Lógico impresora normal vales" } )
+   aAdd( aBase, { "cPrnVal",   "C",  3,   0, "Formato vales" } )
+   aAdd( aBase, { "lPrnDev",   "L",  1,   0, "Lógico impresora normal devoluciones" } )
+   aAdd( aBase, { "cPrnDev",   "C",  3,   0, "Formato devoluciones" } )
+   aAdd( aBase, { "nPrnTik",   "N",  1,   0, "Tipo impresora" } )
+   aAdd( aBase, { "cPrnWin",   "C",  250, 0, "Impresora de windows" } )
+   aAdd( aBase, { "cCodPrn",   "C",  3,   0, "Código impresora de tickets" } )
+   aAdd( aBase, { "cCodVis",   "C",  3,   0, "Código visor" } )
+   aAdd( aBase, { "cCajon",    "C",  3,   0, "Código cajón portamonedas" } )
+   aAdd( aBase, { "lPrnArq",   "L",  1,   0, "Lógico impresora normal arqueos" } )
+   aAdd( aBase, { "nPrnArq",   "N",  1,   0, "Tipo impresora arqueos" } )
+   aAdd( aBase, { "cWinArq",   "C",  250, 0, "Impresora de arqueos" } )
+   aAdd( aBase, { "cPrnArq",   "C",  3,   0, "Formato arqueos" } )
+   aAdd( aBase, { "cPrnPgo",   "C",  3,   0, "Formato metapagos" } )
+   aAdd( aBase, { "lPrnEnt",   "L",  1,   0, "Lógico impresora normal entrega" } )
+   aAdd( aBase, { "cPrnEnt",   "C",  3,   0, "Formato de entrega" } )
+   aAdd( aBase, { "cWinTik",   "C",  250, 0, "Impresora de tickets" } )
+   aAdd( aBase, { "lPrnPgo",   "L",  1,   0, "Lógico impresora normal metapagos" } )
+   aAdd( aBase, { "nCopTik",   "N",  2,   0, "Copias tickets" } )
+   aAdd( aBase, { "nCopVal",   "N",  2,   0, "Copias vales" } )
+   aAdd( aBase, { "nCopDev",   "N",  2,   0, "Copias devoluciones" } )
+   aAdd( aBase, { "nCopEnt",   "N",  2,   0, "Copias entregas" } )
+   aAdd( aBase, { "nCopAlb",   "N",  2,   0, "Copias albaranes" } )
+   aAdd( aBase, { "nCopFac",   "N",  2,   0, "Copias facturas" } )
+   aAdd( aBase, { "nCopPgo",   "N",  2,   0, "Copias metapagos" } )
+   aAdd( aBase, { "nCopArq",   "N",  2,   0, "Copias arqueos" } )
+   aAdd( aBase, { "cCodBal",   "C",  3,   0, "Código de la balanza" } )
+   aAdd( aBase, { "cCodCut",   "C",  120, 0, "Código de corte de papel" } )
+   aAdd( aBase, { "cPrnCom",   "C",  3,   0, "Formato comandas" } )
+   aAdd( aBase, { "nCopCom",   "N",  2,   0, "Copias comandas" } )
+   aAdd( aBase, { "cWinCom1",  "C",  250, 0, "Primera impresora de comandas" } )
+   aAdd( aBase, { "cWinCom2",  "C",  250, 0, "Segunda impresora de comandas" } )
+   aAdd( aBase, { "cWinCom3",  "C",  250, 0, "Tercera impresora de comandas" } )
+   aAdd( aBase, { "lPrnPar",   "L",  1,   0, "Lógico impresora normal arqueo parcial" } )
+   aAdd( aBase, { "cPrnPar",   "C",  3,   0, "Formato arqueo parcial" } )
+   aAdd( aBase, { "nCopPar",   "N",  2,   0, "Copias arqueo parcial" } )
+   aAdd( aBase, { "lPrnReg",   "L",  1,   0, "Lógico impresora normal ticket regalo" } )
+   aAdd( aBase, { "cPrnReg",   "C",  3,   0, "Formato ticket regalo" } )
+   aAdd( aBase, { "nCopReg",   "N",  2,   0, "Copias ticket regalo" } )
+   aAdd( aBase, { "lPrnApt",   "L",  1,   0, "Lógico impresora normal apartados" } )
+   aAdd( aBase, { "cPrnApt",   "C",  3,   0, "Formato apartados" } )
+   aAdd( aBase, { "nCopApt",   "N",  2,   0, "Copias apartados" } )
+   aAdd( aBase, { "lPrnChk",   "L",  1,   0, "Lógico impresora normal cheques regalo" } )
+   aAdd( aBase, { "cPrnChk",   "C",  3,   0, "Formato cheques regalo" } )
+   aAdd( aBase, { "nCopChk",   "N",  2,   0, "Copias cheques regalo" } )
+   aAdd( aBase, { "cPrnAnu",   "C",  3,   0, "Formato anulaciones" } )
+   aAdd( aBase, { "nCopAnu",   "N",  2,   0, "Copias anulaciones" } )
+   aAdd( aBase, { "lPrnEna",   "L",  1,   0, "Lógico impresora normal entregas a cuenta de albaranes" } )
+   aAdd( aBase, { "cPrnEna",   "C",  3,   0, "Formato entregas a cuenta de albaranes" } )
+   aAdd( aBase, { "nCopEna",   "N",  2,   0, "Copias entregas a cuenta de albaranes" } )
+   aAdd( aBase, { "lNoArq",    "L",  1,   0, "Lógico para no incluir en arqueo" } )
+   aAdd( aBase, { "lPrnCie",   "L",  1,   0, "Lógico impresora normal arqueos ciegos" } )
+   aAdd( aBase, { "cPrnCie",   "C",  3,   0, "Formato para arqueos ciegos" } )
+   aAdd( aBase, { "nCopCie",   "N",  2,   0, "Copias para arqueos ciegos" } )
+   aAdd( aBase, { "cPrnNota",  "C",  250, 0, "Impresora de entregas de notas" } )
+   aAdd( aBase, { "cNumTur",   "C",  6,   0, "Número del turno" } )
+   aAdd( aBase, { "cCajPrt",   "C",  3,   0, "Caja padre" } )
+   aAdd( aBase, { "cPrnCut",   "C",  3,   0, "Formato corte" } )
+   aAdd( aBase, { "Uuid",      "C", 40,   0, "Uuid" } )
+   aAdd( aBase, { "cajon_uuid","C", 40,   0, "Cajón portamonedas uuid" } )
+   aAdd( aBase, { "cCodAlm",   "C", 16,   0, "Almacén relacionado" } )
+
+RETURN ( aBase )
+
+
+
+FUNCTION aItmCajaL()
+
+   local aBase := {}
+
+   aAdd( aBase, { "cCodCaj",   "C",     3,   0, "Código de la caja" } )
+   aAdd( aBase, { "cTipImp",   "C",    50,   0, "Tipo de impresora" } )
+   aAdd( aBase, { "cNomPrn",   "C",   250,   0, "Nombre de la impresora" } )
+   aAdd( aBase, { "cWavFil",   "C",   250,   0, "Fichero a reproducir" } )
+   aAdd( aBase, { "cCodCut",   "C",   120,   0, "Código de corte de papel" } )
+   aAdd( aBase, { "cPrnCom",   "C",     3,   0, "Formato comandas" } )
+   aAdd( aBase, { "cPrnAnu",   "C",     3,   0, "Formato anulaciones" } )
+   aAdd( aBase, { "cParUuid",  "C",    40,   0, "Uuid de la clave principal" } )
+
+RETURN ( aBase )
+
+
+
+FUNCTION RecursiveSeekEnCaja( cCodCaj, dbfCajT, cField, uValue )
+
+   If( cField == nil, cField := "cPrnTik", ) ;
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+
+      uValue         := ( dbfCajT )->( fieldGet( fieldPos( cField ) ) )
+
+      if empty( uValue ) .AND. !empty( ( dbfCajT )->cCajPrt )
+
+         if dbSeekInOrd( ( dbfCajT )->cCajPrt, "cCodCaj", dbfCajT )
+
+            uValue   := ( dbfCajT )->( fieldGet( fieldPos( cField ) ) )
+
+         end
+
+      end
+
+   end
+
+RETURN ( uValue )
+
+
+
+FUNCTION cFormatoTicketEnCaja( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cPrnTik", Space( 3 ) ) )
+
+
+
+FUNCTION cFormatoPagoEnCaja( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cPrnPgo", Space( 3 ) ) )
+
+
+
+FUNCTION cFormatoEntregaEnCaja( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cPrnEnt", Space( 3 ) ) )
+
+
+
+FUNCTION cFormatoAlbaranEnCaja( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cPrnAlb", Space( 3 ) ) )
+
+
+
+FUNCTION cFormatoValeEnCaja( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cPrnVal", Space( 3 ) ) )
+
+
+
+FUNCTION cFormatoDevolucionEnCaja( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cPrnDev", Space( 3 ) ) )
+
+
+
+FUNCTION cFormatoArqueoEnCaja( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cPrnArq", Space( 3 ) ) )
+
+
+
+FUNCTION cFormatoArqueoParcialEnCaja( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cPrnPar", Space( 3 ) ) )
+
+
+
+FUNCTION cFormatoArqueoCiegoEnCaja( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cPrnCie", Space( 3 ) ) )
+
+
+
+FUNCTION cFormatoTicketRegaloEnCaja( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cPrnReg", Space( 3 ) ) )
+
+
+
+FUNCTION cFormatoChequeRegaloEnCaja( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cPrnChk", Space( 3 ) ) )
+
+
+
+FUNCTION cFormatoEntregasCuentaEnCaja( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cPrnEna", Space( 3 ) ) )
+
+
+
+FUNCTION cFormatoCorteEnCaja( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cPrnCut", Space( 3 ) ) )
+
+
+
+FUNCTION cFormatoComandaEnCaja( cCodCaj, cTipImp, dbfCajT, dbfCajL )
+
+   local cFmt     := Space( 3 )
+
+   cTipImp        := Padr( Upper( cTipImp ), 50 )
+
+   if dbSeekInOrd( cCodCaj + cTipImp, "cCodCaj", dbfCajL )
+      cFmt        := ( dbfCajL )->cPrnCom
+   end
+
+   if empty( cFmt )
+      RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cPrnCom", Space( 3 ) ) )
+   end
+
+RETURN ( cFmt )
+
+
+
+FUNCTION cFormatoAnulacionEnCaja( cCodCaj, cTipImp, dbfCajT, dbfCajL )
+
+   local cFmt     := Space( 3 )
+
+   cTipImp        := Padr( Upper( cTipImp ), 50 )
+
+   if dbSeekInOrd( cCodCaj + cTipImp, "cCodCaj", dbfCajL )
+      cFmt        := ( dbfCajL )->cPrnAnu
+   end
+
+   if empty( cFmt )
+      RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cPrnAnu", Space( 3 ) ) )
+   end
+
+RETURN ( cFmt )
+
+
+
+FUNCTION cFormatoApartadosEnCaja( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cPrnApt", Space( 3 ) ) )
+
+
+
+FUNCTION lImpTicketsEnImpresora( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "lPrnTik", .F. ) )
+
+
+
+FUNCTION lImpValesEnImpresora( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "lPrnVal", .F. ) )
+
+
+
+FUNCTION lImpDevolucionesEnImpresora( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "lPrnDev", .F. ) )
+
+
+
+FUNCTION lImpEntregasEnImpresora( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "lPrnEnt", .F. ) )
+
+
+
+FUNCTION lImpAlbaranesEnImpresora( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "lPrnAlb", .F. ) )
+
+
+
+FUNCTION cCapturaCaja( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cCapCaj", "000" ) )
+
+
+
+FUNCTION cBalanzaEnCaja( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cCodBal", "000" ) )
+
+
+
+FUNCTION cVisorEnCaja( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cCodVis", Space( 3 ) ) )
+
+
+
+FUNCTION cCodigoCorteEnCaja( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cCodCut", "" ) )
+
+
+
+FUNCTION lWindowsPrinterEnCaja( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "nPrnTik", 0 ) == 2  )
+
+
+
+FUNCTION cWindowsPrinterEnCaja( cCodCaj, dbfCajT )
+
+RETURN ( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cPrnWin", "" ) )
+
+
+
+FUNCTION cPrinterTiket( cCodCaj, dbfCajT )
+
+RETURN ( if( RecursiveSeekEnCaja( cCodCaj, dbfCajT, "lPrnTik", .F. ), Rtrim( ( dbfCajT )->cPrnWin ), Rtrim( ( dbfCajT )->cWinTik ) ) )
+
+
+
+
+
+
+FUNCTION cPrinterComanda( cCodCaj, dbfCajT, nNumImp )
+
+   local cPrn        := ""
+
+   do case
+      case nNumImp == 1
+         cPrn     := RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cWinCom1", "" )
+
+      case nNumImp == 2
+         cPrn     := RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cWinCom2", "" )
+
+      case nNumImp == 3
+         cPrn     := RecursiveSeekEnCaja( cCodCaj, dbfCajT, "cWinCom3", "" )
+
+   end
+
+RETURN ( rtrim( cPrn ) )
+
+
+
+FUNCTION cPrinterVale( cCodCaj, dbfCajT )
+
+   local cPrn  := ""
+
+   if RecursiveSeekEnCaja( cCodCaj, dbfCajT, "lPrnVal", .F. )
+      cPrn     := Rtrim( ( dbfCajT )->cPrnWin )
+   else
+      cPrn     := Rtrim( ( dbfCajT )->cWinTik )
+   end
+
+RETURN ( cPrn )
+
+
+
+FUNCTION cPrinterDevolucion( cCodCaj, dbfCajT )
+
+   local cPrn  := ""
+
+   if RecursiveSeekEnCaja( cCodCaj, dbfCajT, "lPrnDev", .F. )
+      cPrn     := Rtrim( ( dbfCajT )->cPrnWin )
+   else
+      cPrn     := Rtrim( ( dbfCajT )->cWinTik )
+   end
+
+RETURN ( cPrn )
+
+
+
+FUNCTION cPrinterEntrega( cCodCaj, dbfCajT )
+
+   local cPrn  := ""
+
+   if RecursiveSeekEnCaja( cCodCaj, dbfCajT, "lPrnEnt", .F. )
+
+      cPrn     := Rtrim( ( dbfCajT )->cPrnWin )
+
+   else
+
+      if !empty( ( dbfCajT )->cPrnNota )
+         cPrn  := Rtrim( ( dbfCajT )->cPrnNota )
+      else
+         cPrn  := Rtrim( ( dbfCajT )->cWinTik )
+      end
+
+   end
+
+RETURN ( cPrn )
+
+
+
+FUNCTION cPrinterApartados( cCodCaj, dbfCajT )
+
+   local cPrn     := ""
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+
+      if ( dbfCajT )->lPrnApt
+         cPrn     := Rtrim( ( dbfCajT )->cPrnWin )
+      else
+         cPrn     := Rtrim( ( dbfCajT )->cWinTik )
+      endif
+
+   end
+
+RETURN ( cPrn )
+
+
+
+FUNCTION cPrinterRegalo( cCodCaj, dbfCajT )
+
+   local cPrn  := ""
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+
+      if ( dbfCajT )->lPrnReg
+         cPrn  := Rtrim( ( dbfCajT )->cPrnWin )
+      else
+         cPrn  := Rtrim( ( dbfCajT )->cWinTik )
+      endif
+
+   end
+
+RETURN ( cPrn )
+
+
+
+FUNCTION cPrinterChequeRegalo( cCodCaj, dbfCajT )
+
+   local cPrn  := ""
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+
+      if ( dbfCajT )->lPrnChk
+         cPrn  := Rtrim( ( dbfCajT )->cPrnWin )
+      else
+         cPrn  := Rtrim( ( dbfCajT )->cWinTik )
+      endif
+
+   end
+
+RETURN ( cPrn )
+
+
+
+FUNCTION cPrinterAlbaran( cCodCaj, dbfCajT )
+
+   local cPrn  := ""
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+
+      if ( dbfCajT )->lPrnAlb
+         cPrn     := Rtrim( ( dbfCajT )->cPrnWin )
+      else
+         cPrn     := Rtrim( ( dbfCajT )->cWinTik )
+      endif
+
+   end
+
+RETURN ( alltrim( cPrn ) )
+
+
+
+FUNCTION cPrinterFactura( cCodCaj, dbfCajT )
+
+   local cPrn  := ""
+
+RETURN ( cPrn )
+
+
+
+FUNCTION cPrinterMetaPago( cCodCaj, dbfCajT )
+
+   local cPrn  := ""
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+
+      if ( dbfCajT )->lPrnPgo
+         cPrn     := Rtrim( ( dbfCajT )->cPrnWin )
+      else
+         cPrn     := Rtrim( ( dbfCajT )->cWinTik )
+      endif
+
+   end
+
+RETURN ( cPrn )
+
+
+
+FUNCTION cPrinterEntregasCuenta( cCodCaj, dbfCajT )
+
+   local cPrn  := ""
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+
+      if ( dbfCajT )->lPrnEna
+         cPrn     := Rtrim( ( dbfCajT )->cPrnWin )
+      else
+         cPrn     := Rtrim( ( dbfCajT )->cWinTik )
+      endif
+
+   end
+
+RETURN ( cPrn )
+
+
+
+FUNCTION cPrinterArqueo( cCodCaj, dbfCajT )
+
+   local cPrn  := ""
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+
+      if ( dbfCajT )->lPrnArq
+         cPrn     := Rtrim( ( dbfCajT )->cPrnWin )
+      else
+         cPrn     := Rtrim( ( dbfCajT )->cWinTik )
+      endif
+
+   end
+
+RETURN ( cPrn )
+
+
+
+FUNCTION cPrinterArqueoParcial( cCodCaj, dbfCajT )
+
+   local cPrn  := ""
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+
+      if ( dbfCajT )->lPrnPar
+         cPrn     := Rtrim( ( dbfCajT )->cPrnWin )
+      else
+         cPrn     := Rtrim( ( dbfCajT )->cWinTik )
+      endif
+
+   end
+
+RETURN ( cPrn )
+
+
+
+FUNCTION cPrinterArqueoCiego( cCodCaj, dbfCajT )
+
+   local cPrn  := ""
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+
+      if ( dbfCajT )->lPrnCie
+         cPrn     := Rtrim( ( dbfCajT )->cPrnWin )
+      else
+         cPrn     := Rtrim( ( dbfCajT )->cWinTik )
+      endif
+
+   end
+
+RETURN ( cPrn )
+
+
+
+FUNCTION lImpArqueoEnImpresora( cCodCaj, dbfCajT )
+
+   local lImp  := .F.
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+      lImp     := ( dbfCajT )->lPrnArq
+   end
+
+RETURN ( lImp )
+
+
+
+FUNCTION cCajonEnCaja( cCodCaj, dbfCajT )
+
+   local nRec
+   local cCaj     := "000"
+
+   nRec           := ( dbfCajT )->( recno() )
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+      cCaj        := ( dbfCajT )->cCajon
+   end
+
+   ( dbfCajT )->( dbgoto( nRec ) )
+
+RETURN ( cCaj )
+
+
+
+FUNCTION lWindowsPrinterEnArqueo( cCodCaj, dbfCajT )
+
+   local lWin  := .F.
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+      lWin     := ( ( dbfCajT )->nPrnArq == 2 )
+   end
+
+RETURN ( lWin )
+
+
+
+FUNCTION cWindowsPrinterEnArqueo( cCodCaj, dbfCajT )
+
+   local cPrn  := ""
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+      cPrn     := Rtrim( ( dbfCajT )->cWinArq )
+   end
+
+RETURN ( cPrn )
+
+
+
+FUNCTION cImpresoraTicketEnArqueo( cCodCaj, dbfCajT )
+
+   local cFmt  := Space( 3 )
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+      cFmt     := ( dbfCajT )->cPrnArq
+   end
+
+RETURN ( cFmt )
+
+
+
+FUNCTION nCopiasTicketsEnCaja( cCodCaj, dbfCajT )
+
+   local nCop  := 1
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+      nCop        := ( dbfCajT )->nCopTik
+   end
+
+RETURN ( nCop )
+
+
+
+FUNCTION nCopiasValesEnCaja( cCodCaj, dbfCajT )
+
+   local nCop  := 1
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+      nCop        := ( dbfCajT )->nCopVal
+   end
+
+RETURN ( NotCero( nCop ) )
+
+
+
+FUNCTION nCopiasDevolucionesEnCaja( cCodCaj, dbfCajT )
+
+   local nCop  := 1
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+      nCop        := ( dbfCajT )->nCopDev
+   end
+
+RETURN ( NotCero( nCop ) )
+
+
+
+FUNCTION nCopiasEntregasEnCaja( cCodCaj, dbfCajT )
+
+   local nCop  := 1
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+      nCop        := ( dbfCajT )->nCopEnt
+   end
+
+RETURN ( NotCero( nCop ) )
+
+
+
+FUNCTION nCopiasTicketsRegaloEnCaja( cCodCaj, dbfCajT )
+
+   local nCop  := 1
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+      nCop        := ( dbfCajT )->nCopReg
+   end
+
+RETURN ( NotCero( nCop ) )
+
+
+
+FUNCTION nCopiasAlbaranesEnCaja( cCodCaj, dbfCajT )
+
+   local nCop  := 1
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+      nCop        := ( dbfCajT )->nCopAlb
+   end
+
+RETURN ( NotCero( nCop ) )
+
+
+
+FUNCTION nCopiasFacturasEnCaja( cCodCaj, dbfCajT )
+
+   local nCop  := 1
+
+RETURN ( NotCero( nCop ) )
+
+
+
+FUNCTION nCopiasMetaPagosEnCaja( cCodCaj, dbfCajT )
+
+   local nCop  := 1
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+      nCop        := ( dbfCajT )->nCopPgo
+   end
+
+RETURN ( NotCero( nCop ) )
+
+
+
+FUNCTION nCopiasArqueosEnCaja( cCodCaj, dbfCajT )
+
+   local nCop  := 1
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+      nCop        := ( dbfCajT )->nCopArq
+   end
+
+RETURN ( NotCero( nCop ) )
+
+
+
+FUNCTION nCopiasComandasEnCaja( cCodCaj, dbfCajT )
+
+   local nCop  := 1
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+      nCop        := ( dbfCajT )->nCopCom
+   end
+
+RETURN ( NotCero( nCop ) )
+
+
+
+FUNCTION nCopiasAnulacionEnCaja( cCodCaj, dbfCajT )
+
+   local nCop  := 1
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+      nCop        := ( dbfCajT )->nCopAnu
+   end
+
+RETURN ( NotCero( nCop ) )
+
+
+
+FUNCTION nCopiasEntregasCuentaEnCaja( cCodCaj, dbfCajT )
+
+   local nCop  := 1
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+      nCop        := ( dbfCajT )->nCopEna
+   end
+
+RETURN ( NotCero( nCop ) )
+
+
+
+
+
+
+FUNCTION cImpresoraTicketEnCaja( cCodCaj, dbfCajT )
+
+   local oBlock
+   local oError
+   local lClo  := .F.
+   local cFmt  := Space( 3 )
+
+   if !lExistTable( cPatDat() + "Cajas.Dbf" ) .OR. !lExistIndex( cPatDat() + "Cajas.Cdx" )
+      msgInfo( "No existen ficheros de cajas." )
+      RETURN ( cFmt )
+   end
+
+   oBlock      := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   if empty( dbfCajT )
+      dbUseArea( .T., ( cDriver() ), ( cPatDat() + "Cajas.Dbf" ), ( cCheckArea( "CAJAS", @dbfCajT ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatDat() + "Cajas.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+      lClo     := .T.
+   end
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )
+      cFmt     := ( dbfCajT )->cCodPrn
+   end
+
+   RECOVER USING oError
+
+      msgStop( "Imposible abrir todas las bases de datos " + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+   end
+
+   ErrorBlock( oBlock )
+
+   if lClo
+      ( dbfCajT )->( dbCloseArea() )
+   end
+
+RETURN ( cFmt )
+
+
+
+FUNCTION cCortePapelEnCaja( cCodCaj, dbfCajT, dbfCajL, lComanda, cTipImpCom, lAnulacion )
+
+   If( lComanda == nil, lComanda := .F., ) ;
+   If( lAnulacion == nil, lAnulacion := .F., ) ;
+   If( cTipImpCom == nil, cTipImpCom := "", ) ;
+
+   if !lComanda .AND. !lAnulacion
+
+
+
+      if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCajT )               .AND. !empty( ( dbfCajT )->cCodCut )                           .AND. !empty( ( dbfCajT )->cWinTik )
+
+         PrintEscCode( ( dbfCajT )->cCodCut, ( dbfCajT )->cWinTik )
+
+      end
+
+   else
+
+
+
+      if dbSeekInOrd( cCodCaj + cTipImpCom, "cCodCaj", dbfCajL )  .AND. !empty( ( dbfCajL )->cCodCut )                           .AND. !empty( ( dbfCajL )->cNomPrn )
+
+         PrintEscCode( ( dbfCajL )->cCodCut, ( dbfCajL )->cNomPrn )
+
+      end
+
+   end
+
+RETURN ( nil )
+
+
+
+FUNCTION SelCajTactil( oWnd, lInicio )
+
+   local oBlock
+   local oError
+   local oDlg
+   local dbfCaj
+   local oImgCaj
+   local oLstCaj
+   local cPath          := cPatDat()
+
+   If( lInicio == nil, lInicio := .F., ) ;
+
+
+
+
+
+   if lInicio .AND. !empty( Application():CodigoCaja() )
+      RETURN ( nil )
+   end
+
+   oBlock               := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      dbUseArea( .T., ( cDriver() ), ( cPath + "CAJAS.DBF" ), ( cCheckArea( "CAJAS", @dbfCaj ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPath + "CAJAS.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   RECOVER USING oError
+
+      msgStop( "Imposible abrir todas las bases de datos" + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+      RETURN nil
+
+   end
+
+   ErrorBlock( oBlock )
+
+   if ( dbfCaj )->( LastRec() ) <= 0
+      ( dbfCaj )->( dbCloseArea() )
+      RETURN nil
+   end
+
+
+
+   oDlg = TDialog():New(,,,, "Seleccione caja", "SelUsuarios",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+      oImgCaj           := TImageList():New( 48, 48 )
+
+
+
+      oLstCaj           := TListView():Redefine( 100, oDlg )
+      oLstCaj:nOption   := 0
+      oLstCaj:bClick    := {| nOpt | SelBrwBigCaj( nOpt, oLstCaj, oDlg, dbfCaj ), chkTurno() }
+
+
+
+
+
+      TButtonBmp():ReDefine( 2, {||( oDlg:end(), if( lInicio .AND. !empty( oWnd ), oWnd:End(), ) )}, oDlg,,, .F.,,,, .F., "Delete_32",,, .F. )
+
+      oDlg:bStart    := {|| StartTree( oDlg, oImgCaj, oLstCaj, dbfCaj ) }
+
+
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,, {|Self|( InitBrwBigCaj( oDlg, oImgCaj, oLstCaj, dbfCaj ) )}, oDlg:bRClicked,,, )
+
+   ( dbfCaj )->( dbCloseArea() )
+
+RETURN ( nil )
+
+
+
+Static Function StartTree( oDlg, oImgCaj, oLstCaj, dbfCaj )
+
+   ( dbfCaj )->( dbGoTop() )
+   while !( dbfCaj )->( eof() )
+
+      with object ( TListViewItem():New() )
+         :Cargo   := ( dbfCaj )->cNomCaj
+         :cText   := Capitalize( ( dbfCaj )->cNomCaj )
+         :nImage  := 0
+         :nGroup  := 1
+         :Create( oLstCaj )
+      end
+
+      ( dbfCaj )->( dbSkip() )
+
+   end
+
+RETURN ( nil )
+
+
+
+
+
+
+Static FUNCTION InitBrwBigCaj( oDlg, oImgCaj, oLstCaj, dbfCaj )
+
+   oImgCaj   := TImageList():New( 50, 50 )
+
+   oImgCaj:AddMasked( TBitmap():Define( "gc_cash_register_50" ),   ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+
+   oLstCaj:SetImageList( oImgCaj )
+   oLstCaj:EnableGroupView()
+   oLstCaj:SetIconSpacing( 120, 140 )
+
+   with object ( TListViewGroup():New() )
+      :cHeader := "Cajas"
+      :Create( oLstCaj )
+   end
+
+RETURN ( nil )
+
+
+
+
+Static FUNCTION SelBrwBigCaj( nOpt, oLstCaj, oDlg, dbfCaj )
+
+
+
+   if nOpt == 0
+      MsgStop( "Seleccione caja" )
+      RETURN nil
+   end
+
+
+
+   if ( dbfCaj )->( OrdKeyGoTo( nOpt ) )
+      lChgCaja( ( dbfCaj )->cCodCaj, ( dbfCaj )->Uuid, Auth():Codigo()  )
+      oDlg:end( 1 )
+   else
+      MsgStop( "La caja no existe" )
+   end
+
+RETURN ( nil )
+
+
+
+FUNCTION SelectCajas()
+
+   local oDlg
+   local oBrw
+   local oBmp
+   local oGetBuscar
+   local cGetBuscar     := Space( 100 )
+   local oCbxOrden
+   local cCbxOrden      := "Código"
+
+   if !lOpenFiles()
+      RETURN .F.
+   end
+
+
+
+   oDlg = TDialog():New(,,,, "Seleccionar caja", "SelectItem",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+      oBmp := TBitmap():ReDefine( 300, "gc_cash_register_48",, oDlg,,, .F., .F.,,, .F.,,, .T. )
+
+
+
+
+
+
+      oGetBuscar := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, cGetBuscar, cGetBuscar:= u ) }, oDlg,,,,,,,,, .F.,, {|nKey,nFlags,Self| ( AutoSeek( nKey, nFlags, Self, oBrw, dbfCajT, nil, nil, .F. ) ) }, .F., .F.,,,,,, nil, "Find",, )
+
+
+
+
+
+
+      oCbxOrden := TComboBox():ReDefine( 110, { | u | If( PCount()==0, cCbxOrden, cCbxOrden:= u ) }, { "Código", "Nombre" }, oDlg,,, {|Self|( ( dbfCajT )->( OrdSetFocus( oCbxOrden:nAt ) ), oBrw:Refresh(), oGetBuscar:SetFocus() )},,,, .F.,,,,,,, "oCbxOrden",,,,,,, )
+
+      oBrw                 := IXBrowse():New( oDlg )
+
+      oBrw:bClrSel         := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      oBrw:bClrSelFocus    := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      oBrw:cAlias          := dbfCajT
+
+      oBrw:nMarqueeStyle   := 5
+
+      oBrw:CreateFromResource( 200 )
+
+      with object ( oBrw:AddCol() )
+         :cHeader          := "Código"
+         :cSortOrder       := "cCodCaj"
+         :bEditValue       := {|| ( dbfCajT )->cCodCaj }
+         :nWidth           := 40
+      end
+
+      with object ( oBrw:AddCol() )
+         :cHeader          := "Nombre"
+         :cSortOrder       := "cNomCaj"
+         :bEditValue       := {|| ( dbfCajT )->cNomCaj }
+         :nWidth           := 200
+      end
+
+      oBrw:bLDblClick      := {|| oDlg:end( 1 ) }
+      oBrw:bRClicked       := {| nRow, nCol, nFlags | oBrw:RButtonDown( nRow, nCol, nFlags ) }
+
+
+
+
+      TButton():ReDefine( 1, {||( oDlg:end( 1 ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+   oDlg:AddFastKey( 116,       {|| oDlg:end( 1 ) } )
+   oDlg:AddFastKey( 13,   {|| oDlg:end( 1 ) } )
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   if oDlg:nResult == 1
+
+      lChgCaja( ( dbfCajT )->cCodCaj, ( dbfCajT )->Uuid )
+
+      if !empty( cCajonEnCaja( ( dbfCajT )->cCodCaj, dbfCajT ) )
+         oUser():oCajon    := TCajon():Create( cCajonEnCaja( ( dbfCajT )->cCodCaj, dbfCajT ) )
+      end
+
+      setKey( 123, {|| Application():openDirectCajon() } )
+
+
+      if !Empty( ( dbfCajT )->cCodAlm ) .AND. AlmacenesModel():exist( ( dbfCajT )->cCodAlm )
+         Application():setAlmacen( AlmacenesModel():getField( "Uuid", "cCodAlm", ( dbfCajT )->cCodAlm ), ( dbfCajT )->cCodAlm )
+      end
+
+   else
+
+
+      msgInfo( "No selecciono ninguna caja, se establecerá la caja por defecto." + Chr(13)+Chr(10) +  "Caja actual, " + Application():CodigoCaja() )
+   end
+
+   CloseFiles()
+
+   if !empty( oBmp )
+      oBmp:End()
+   end
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+FUNCTION SelectCajon()
+
+   if !lOpenFiles()
+      RETURN .F.
+   end
+
+   if !empty( cCajonEnCaja( Application():CodigoCaja(), dbfCajT ) )
+      oUser():oCajon      := TCajon():Create( cCajonEnCaja( Application():CodigoCaja(), dbfCajT ) )
+   end
+
+   SetKey( 123, {|| Application():openDirectCajon() } )
+
+   CloseFiles()
+
+RETURN ( .T. )
+
+
+
+FUNCTION cNombreImpresoraComanda( cCodCaj, cTipImp, dbfCajL )
+
+   local cNombre  := ""
+
+   cTipImp        := Padr( Upper( cTipImp ), 50 )
+
+   if dbSeekInOrd( cCodCaj + cTipImp, "cCodCaj", dbfCajL )
+      cNombre     := ( dbfCajL )->cNomPrn
+   end
+
+RETURN ( cNombre )
+
+
+
+FUNCTION cWavImpresoraComanda( cCodCaj, cTipImp, dbfCajL )
+
+   local cWav     := ""
+
+   cTipImp        := Padr( Upper( cTipImp ), 50 )
+
+   if dbSeekInOrd( cCodCaj + cTipImp, "CCODCAJ", dbfCajL )
+      cWav        := ( dbfCajL )->cWavFil
+   end
+
+RETURN ( cWav )
+
+
+
+FUNCTION TstCajas( cPatDat )
+
+   local n
+   local dbfDiv
+
+   local oError
+   local oBlock
+
+   if !lExistTable( cPatDat() + "Cajas.Dbf" )
+      dbCreate( cPatDat() + "Cajas.Dbf", aSqlStruct( aItmDiv() ), cDriver() )
+   end
+
+   if !lExistIndex( cPatDat() + "Cajas.Cdx" )
+      rxDiv( cPatDat() )
+   end
+
+   oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+
+
+
+
+   dbUseArea( .T., cDriver(), cPatDat() + "Cajas.Dbf", cCheckArea( "Cajas", @dbfDiv ), .F. )
+
+   if !( dbfDiv )->( netErr() )
+
+      n           := ( dbfDiv )->( fCount() )
+
+      ( dbfDiv )->( dbCloseArea() )
+
+      if n <> len( aItmCaja() )
+
+         dbCreate( cPatEmpTmp() + "Cajas.Dbf", aSqlStruct( aItmCaja() ), cDriver() )
+         appDbf( cPatDat(), cPatEmpTmp(), "Cajas", aItmCaja() )
+
+         fEraseTable( cPatDat() + "Cajas.Dbf" )
+         fRenameTable( cPatEmpTmp() + "Cajas.Dbf", cPatDat() + "Cajas.Dbf" )
+
+         rxCajas( cPatDat() )
+
+      end
+
+   end
+
+   RECOVER USING oError
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( .T. )
+
+
+
+FUNCTION EdtCajas( cCodigoCaja, lOpenBrowse )
+
+   local nLevel         := Auth():Level( "01040" )
+
+   If( cCodigoCaja == nil, cCodigoCaja := Application():CodigoCaja(), ) ;
+   If( lOpenBrowse == nil, lOpenBrowse := .F., ) ;
+
+   if nAnd( nLevel, 1 ) == 0 .OR. nAnd( nLevel, 4 ) == 0
+      msgStop( "Acceso no permitido." )
+      RETURN .T.
+   end
+
+   if lOpenBrowse
+
+      if Cajas()
+         if dbSeekInOrd( cCodigoCaja, "cCodCaj", dbfCajT )
+            oWndBrw:RecEdit()
+         else
+            MsgStop( "No se encuentra caja" )
+         end
+      end
+
+   else
+
+      if lOpenFiles( nil, .T. )
+
+         if dbSeekInOrd( cCodigoCaja, "cCodCaj", dbfCajT )
+            WinEdtRec( nil, bEdit, dbfCajT )
+         end
+
+         CloseFiles()
+
+      end
+
+   end
+
+RETURN .T.
+
+
+
+FUNCTION cNumeroSesionCaja( cCodCaj, dbfCaja, dbfTurno )
+
+   local cNumeroSesion  := space( 6 )
+
+   if dbSeekInOrd( cCodCaj, "cCodCaj", dbfCaja )
+
+      while .T.
+
+         cNumeroSesion  := ( dbfCaja )->cNumTur
+
+         if dbSeekInOrd( cNumeroSesion + RetSufEmp() + cCodCaj, "cNumTur", dbfTurno )
+
+            if dbLock( dbfCaja )
+               ( dbfCaja )->cNumTur := str( val( ( dbfCaja )->cNumTur ) + 1, 6 )
+               ( dbfCaja )->( dbUnLock() )
+            end
+
+         else
+
+            RETURN ( cNumeroSesion )
+
+         end
+
+      end
+
+   else
+
+      msgStop( "Código de caja " + cCodCaj + " no encontrada." )
+
+   end
+
+RETURN ( cNumeroSesion )
+
+
+
+FUNCTION SetNumeroSesionCaja( cNumeroSesion, cCodigoCaja, dbfCaja )
+
+   if dbSeekInOrd( cCodigoCaja, "cCodCaj", dbfCaja )
+
+      if dbLock( dbfCaja )
+         ( dbfCaja )->cNumTur := cNumeroSesion
+         ( dbfCaja )->( dbUnLock() )
+      end
+
+   end
+
+RETURN ( cNumeroSesion )
+
+
+
+
+
+FUNCTION SynCajas( cPath )
+
+   local oBlock
+   local oError
+   local dbfCajas
+   local dbfCajL
+
+   If( cPath == nil, cPath := cPatDat(), ) ;
+
+   oBlock               := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      dbUseArea( .T., ( cDriver() ), ( cPath + "Cajas.Dbf" ), ( cCheckArea( "Cajas", @dbfCajas ) ), iif( .F. .OR. .T., ! .T., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPath + "Cajas.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      dbUseArea( .T., ( cDriver() ), ( cPath + "CajL.Dbf" ), ( cCheckArea( "CajL", @dbfCajL ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPath + "CajL.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+      ( dbfCajas )->( dbGoTop() )
+      while !( dbfCajas )->( eof() )
+
+         if empty( ( dbfCajas )->Uuid )
+            ( dbfCajas )->Uuid := win_uuidcreatestring()
+         end
+
+         ( dbfCajas )->( dbSkip() )
+
+         SysRefresh()
+
+      end
+
+
+
+
+
+      ( dbfCajL )->( dbGoTop() )
+      while !( dbfCajL )->( eof() )
+
+         if empty( ( dbfCajL )->cParUuid ) .AND. !empty( ( dbfCajL )->cCodCaj )
+            ( dbfCajL )->cParUuid := retFld( ( dbfCajL )->cCodCaj, dbfCajas, "uuid", "cCodCaj" )
+         end
+
+         ( dbfCajL )->( dbSkip() )
+
+         SysRefresh()
+
+      end
+
+   RECOVER USING oError
+
+      msgStop( ErrorMessage( oError ), "Imposible abrir todas las bases de datos de cajas." )
+
+   end
+
+   ErrorBlock( oBlock )
+
+   ( dbfCajas )->( dbCloseArea() )
+   ( dbfCajL )->( dbCloseArea() )
+
+RETURN nil

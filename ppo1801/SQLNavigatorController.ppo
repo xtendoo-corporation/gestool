@@ -1,0 +1,2508 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 6 ".\Prg\Controllers\SQLNavigatorController.prg"
+_HB_CLASS SQLNavigatorController ; function SQLNavigatorController ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "SQLNavigatorController", iif( .T., { @SQLBaseController() }, { @HBObject() } ), @SQLNavigatorController() ) ) ;
+
+   _HB_MEMBER { oSelectorView } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSelectorView"}, .F. )
+
+   _HB_MEMBER { oNavigatorView } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oNavigatorView"}, .F. )
+
+   _HB_MEMBER { oDialogModalView } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDialogModalView"}, .F. )
+
+   _HB_MEMBER { oFilterController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFilterController"}, .F. )
+
+   _HB_MEMBER { oVistaModel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oVistaModel"}, .F. )
+
+   _HB_MEMBER { lDocuments } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lDocuments"}, .F. )
+
+   _HB_MEMBER { lOthers } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lOthers"}, .F. )
+
+   _HB_MEMBER { lLabels } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lLabels"}, .F. )
+
+   _HB_MEMBER { lConfig } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lConfig"}, .F. )
+
+   _HB_MEMBER { lEnableWindowsBar } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lEnableWindowsBar"}, .F. )
+
+   _HB_MEMBER { hFastKey } ; oClass:AddMultiData(, {=>}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hFastKey"}, .F. )
+
+   _HB_MEMBER { oWindowsBar } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oWindowsBar"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @SQLNavigatorController_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER End(); oClass:AddMethod( "End", @SQLNavigatorController_End(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setName(); oClass:AddInline( "setName", {|Self, cName | ( ( Self ) ), ( ::Super:setName( cName ), if( !empty( ::oFilterController ), ::oFilterController:setTableToFilter( cName ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Delete(); oClass:AddInline( "Delete", {|Self, aSelected | ( ( Self ) ), ( ::Super:Delete( aSelected ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER buildRowSetSentence(); oClass:AddMethod( "buildRowSetSentence", @SQLNavigatorController_buildRowSetSentence(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER activateNavigatorView(); oClass:AddMethod( "activateNavigatorView", @SQLNavigatorController_activateNavigatorView(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER activateUserNavigatorView(); oClass:AddMethod( "activateUserNavigatorView", @SQLNavigatorController_activateUserNavigatorView(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER activateDialogView(); oClass:AddMethod( "activateDialogView", @SQLNavigatorController_activateDialogView(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER activateSelectorView(); oClass:AddMethod( "activateSelectorView", @SQLNavigatorController_activateSelectorView(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER activateSelectorViewNoCenter(); oClass:AddInline( "activateSelectorViewNoCenter", {|Self | ( ( Self ) ), ( ::ActivateSelectorView( .F. ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER closeAllWindows(); oClass:AddInline( "closeAllWindows", {|Self | ( ( Self ) ), ( if( !empty( oWnd() ), ( SysRefresh(), oWnd():CloseAll(), SysRefresh() ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setFastReport( oFastReport, cTitle, cSentence, cColumns); oClass:AddMethod( "setFastReport", @SQLNavigatorController_setFastReport(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addFastKey( uKey, bAction); oClass:AddMethod( "addFastKey", @SQLNavigatorController_addFastKey(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER onKeyChar( nKey); oClass:AddMethod( "onKeyChar", @SQLNavigatorController_onKeyChar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER reBuildRowSet(); oClass:AddMethod( "reBuildRowSet", @SQLNavigatorController_reBuildRowSet(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getComboBoxOrder(); oClass:AddMethod( "getComboBoxOrder", @SQLNavigatorController_getComboBoxOrder(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER onChangeCombo( oColumn); oClass:AddMethod( "onChangeCombo", @SQLNavigatorController_onChangeCombo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getNavigatorView(); oClass:AddInline( "getNavigatorView", {|Self | ( ( Self ) ), ( ::oNavigatorView ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER EnableWindowsBar(); oClass:AddMethod( "EnableWindowsBar", @SQLNavigatorController_EnableWindowsBar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DisableWindowsBar(); oClass:AddMethod( "DisableWindowsBar", @SQLNavigatorController_DisableWindowsBar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER onChangeSearch(); oClass:AddInline( "onChangeSearch", {|Self | ( ( Self ) ), ( if( !empty( ::oNavigatorView ), ::oNavigatorView:onChangeSearch(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER hideEditAndDeleteButtonFilter(); oClass:AddMethod( "hideEditAndDeleteButtonFilter", @SQLNavigatorController_hideEditAndDeleteButtonFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER showEditAndDeleteButtonFilter(); oClass:AddMethod( "showEditAndDeleteButtonFilter", @SQLNavigatorController_showEditAndDeleteButtonFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getIds(); oClass:AddInline( "getIds", {|Self | ( ( Self ) ), ( ::oBrowseView:getRowSet():idFromRecno( ::oBrowseView:oBrowse:aSelected ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER appendFilter(); oClass:AddMethod( "appendFilter", @SQLNavigatorController_appendFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER editFilter(); oClass:AddMethod( "editFilter", @SQLNavigatorController_editFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER deleteFilter(); oClass:AddMethod( "deleteFilter", @SQLNavigatorController_deleteFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getFilters(); oClass:AddInline( "getFilters", {|Self | ( ( Self ) ), ( iif( !empty( ::oFilterController ), ::oFilterController:getFilters(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setFilter(); oClass:AddMethod( "setFilter", @SQLNavigatorController_setFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER clearFilter(); oClass:AddMethod( "clearFilter", @SQLNavigatorController_clearFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER buildFilter( cExpresion); oClass:AddMethod( "buildFilter", @SQLNavigatorController_buildFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER buildInFilter(); oClass:AddInline( "buildInFilter", {|Self, cField, cValue | ( ( Self ) ), ( ::buildFilter( iif( !empty( cField ) .AND. !empty( cValue ), cField + " IN (" + toSqlString( cValue ) + ")", "" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER buildNotInFilter(); oClass:AddInline( "buildNotInFilter", {|Self, cField, cValue | ( ( Self ) ), ( ::buildFilter( iif( !empty( cField ) .AND. !empty( cValue ), cField + " NOT IN (" + toSqlString( cValue ) + ")", "" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER buildBiggerFilter(); oClass:AddInline( "buildBiggerFilter", {|Self, cField, cValue | ( ( Self ) ), ( ::buildFilter( iif( !empty( cField ) .AND. !empty( cValue ), cField + " > " + toSqlString( cValue ), "" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER buildSmallerFilter(); oClass:AddInline( "buildSmallerFilter", {|Self, cField, cValue | ( ( Self ) ), ( ::buildFilter( iif( !empty( cField ) .AND. !empty( cValue ), cField + " < " + toSqlString( cValue ), "" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER buildStartLikeFilter(); oClass:AddInline( "buildStartLikeFilter", {|Self, cField, cValue | ( ( Self ) ), ( ::buildFilter( iif( !empty( cField ) .AND. !empty( cValue ), cField + " LIKE " + toSqlString( alltrim( cstr( cValue ) ) + "%" ), "" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER buildEndLikeFilter(); oClass:AddInline( "buildEndLikeFilter", {|Self, cField, cValue | ( ( Self ) ), ( ::buildFilter( iif( !empty( cField ) .AND. !empty( cValue ), cField + " LIKE " + toSqlString( "%" + alltrim( cstr( cValue ) ) ), "" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER buildLikeFilter(); oClass:AddInline( "buildLikeFilter", {|Self, cField, cValue | ( ( Self ) ), ( ::buildFilter( iif( !empty( cField ) .AND. !empty( cValue ), cField + " LIKE " + toSqlString( "%" + alltrim( cstr( cValue ) ) + "%" ), "" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER buildCustomFilter( cField, cValue, cOperator); oClass:AddMethod( "buildCustomFilter", @SQLNavigatorController_buildCustomFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER buildCustomInFilter(); oClass:AddInline( "buildCustomInFilter", {|Self, cField, cValue | ( ( Self ) ), ( iif(  ::buildCustomFilter( cField, @cValue, "IN (...)" ), ::buildInFilter( cField, cValue ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER buildCustomNotInFilter(); oClass:AddInline( "buildCustomNotInFilter", {|Self, cField, cValue | ( ( Self ) ), ( iif(  ::buildCustomFilter( cField, @cValue, "NOT IN (...)" ), ::buildNotInFilter( cField, cValue ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER buildCustomBiggerFilter(); oClass:AddInline( "buildCustomBiggerFilter", {|Self, cField, cValue | ( ( Self ) ), ( iif(  ::buildCustomFilter( cField, @cValue, "> (...)" ), ::buildBiggerFilter( cField, cValue ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER buildCustomSmallerFilter(); oClass:AddInline( "buildCustomSmallerFilter", {|Self, cField, cValue | ( ( Self ) ), ( iif(  ::buildCustomFilter( cField, @cValue, "< (...)" ), ::buildSmallerFilter( cField, cValue ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER buildCustomLikeFilter(); oClass:AddInline( "buildCustomLikeFilter", {|Self, cField, cValue | ( ( Self ) ), ( iif(  ::buildCustomFilter( cField, @cValue, "LIKE (...)" ), ::buildLikeFilter( cField, cValue ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS SQLNavigatorController ;
+
+
+
+static FUNCTION SQLNavigatorController_New( oSenderController ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   ::Super:New( oSenderController )
+
+   ::oNavigatorView                                   := SQLNavigatorView():New( self )
+
+   ::oSelectorView                                    := SQLSelectorView():New( self )
+
+   ::oDialogModalView                                 := SQLDialogView():New( self )
+
+   ::oFilterController                                := SQLFiltrosController():New( self )
+
+   ::oVistaModel                                      := SQLConfiguracionVistasModel():New( self )
+
+   ::oWindowsBar                                      := oWndBar()
+
+RETURN ( self )
+
+
+
+static FUNCTION SQLNavigatorController_End( ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   cursorWait()
+
+   if ::lEnableWindowsBar
+      ::DisableWindowsBar()
+   end
+
+   if !empty( ::oSelectorView )
+      ::oSelectorView:End()
+      ::oSelectorView         := nil
+   end
+
+   if !empty( ::oFilterController )
+      ::oFilterController:End()
+      ::oFilterController     := nil
+   end
+
+   if !empty( ::oVistaModel )
+      ::oVistaModel:End()
+      ::oVistaModel           := nil
+   end
+
+   ::Super():End()
+
+   Self                       := nil
+
+   cursorWE()
+
+RETURN ( nil )
+
+
+
+static FUNCTION SQLNavigatorController_buildRowSetSentence( ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   local cColumnOrder
+   local cColumnOrientation
+
+   cColumnOrder               := ::oVistaModel:getColumnOrderNavigator( ::getName() )
+
+   cColumnOrientation         := ::oVistaModel:getColumnOrientationNavigator( ::getName() )
+
+   ::oRowSet:build( ::getModel():getSelectSentence( cColumnOrder, cColumnOrientation ) )
+
+RETURN ( self )
+
+
+
+static FUNCTION SQLNavigatorController_activateUserNavigatorView( ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   if empty( ::oNavigatorView )
+      RETURN ( Self )
+   end
+
+   if !Auth():isSuperAdmin()
+      msgStop( "Sólo el super administrador tiene acceso." )
+      RETURN ( Self )
+   end
+
+   cursorWait()
+
+   ::closeAllWindows()
+
+   ::buildRowSetSentence()
+
+   if !empty( ::oRowSet:get() )
+
+      ::oNavigatorView:Activate()
+
+      ::EnableWindowsBar()
+
+   endif
+
+   cursorWE()
+
+RETURN ( self )
+
+
+
+static FUNCTION SQLNavigatorController_activateNavigatorView( ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   if empty( ::oNavigatorView )
+      RETURN ( Self )
+   end
+
+   if ::notUserAccess()
+      msgStop( "Acceso no permitido." )
+      RETURN ( Self )
+   end
+
+   cursorWait()
+
+   ::closeAllWindows()
+
+   ::buildRowSetSentence()
+
+   if !empty( ::oRowSet:get() )
+
+      ::oNavigatorView:Activate()
+
+      ::EnableWindowsBar()
+
+   endif
+
+   cursorWE()
+
+RETURN ( Self )
+
+
+
+static FUNCTION SQLNavigatorController_activateSelectorView( lCenter ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   If( lCenter == nil, lCenter := .T., ) ;
+
+   if empty( ::oSelectorView )
+      RETURN ( nil )
+   end
+
+   if ::notUserAccess()
+      msgStop( "Acceso no permitido." )
+      RETURN ( nil )
+   end
+
+   ::buildRowSetSentence()
+
+   if empty( ::oRowSet:get() )
+      RETURN ( nil )
+   end
+
+RETURN ( ::oSelectorView:Activate( lCenter ) )
+
+
+
+static FUNCTION SQLNavigatorController_activateDialogView( ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   if empty( ::oDialogModalView )
+      RETURN ( nil )
+   end
+
+   if ::notUserAccess()
+      msgStop( "Acceso no permitido." )
+      RETURN ( nil )
+   end
+
+   ::buildRowSetSentence()
+
+   if empty( ::oRowSet:get() )
+      RETURN ( nil )
+   end
+
+RETURN ( ::oDialogModalView:Activate() )
+
+
+
+static FUNCTION SQLNavigatorController_addFastKey( uKey, bAction ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   if hb_ischar( uKey )
+      hset( ::hFastKey, asc( upper( uKey ) ), bAction )
+      hset( ::hFastKey, asc( lower( uKey ) ), bAction )
+   end
+
+   if hb_isnumeric( uKey )
+      hset( ::hFastKey, uKey, bAction )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION SQLNavigatorController_onKeyChar( nKey ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+RETURN ( heval( ::hFastKey, {|k,v| if( k == nKey, eval( v ), ) } ) )
+
+
+
+static FUNCTION SQLNavigatorController_setFastReport( oFastReport, cTitle, cSentence, cColumns ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   local oRowSet
+
+   if empty( oFastReport )
+      RETURN ( Self )
+   end
+
+   If( cColumns == nil, cColumns := ::getModel():getSerializeColumns(), ) ;
+
+   oRowSet           := ::getModel():newRowSet( cSentence )
+
+   if empty( oRowSet )
+      RETURN ( Self )
+   end
+
+
+
+
+
+
+
+   oFastReport:setUserDataSet(   cTitle, cColumns, {|| oRowSet:gotop()  }, {|| oRowSet:skip(1)  }, {|| oRowSet:skip(-1) }, {|| oRowSet:eof()    }, {|nField| msgalert( nField ), oRowSet:fieldGet( nField ) } )
+
+RETURN ( Self )
+
+
+
+static FUNCTION SQLNavigatorController_appendFilter( ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   if empty( ::oFilterController )
+      RETURN ( Self )
+   end
+
+RETURN ( ::oFilterController:Append() )
+
+
+
+static FUNCTION SQLNavigatorController_editFilter( ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   local cFilter  := ::oWindowsBar:GetComboFilter()
+
+   if empty( cFilter )
+      RETURN ( Self )
+   end
+
+   if empty( ::oFilterController )
+      RETURN ( Self )
+   end
+
+RETURN ( ::oFilterController:EditByText( cFilter ) )
+
+
+
+static FUNCTION SQLNavigatorController_deleteFilter( ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   local nId
+   local cFilter  := ::oWindowsBar:GetComboFilter()
+
+   if empty( cFilter )
+      RETURN ( Self )
+   end
+
+   if empty( ::oFilterController )
+      RETURN ( Self )
+   end
+
+   nId            := ::oFilterController:oModel:getId( cFilter )
+
+   if empty( nId )
+      RETURN ( Self )
+   end
+
+   if RolesModel():getRolNoConfirmacionEliminacion( Auth():rolUuid() ) .OR. msgNoYes( "¿Desea eliminar el registro en curso?", "Confirme eliminación" )
+      ::oWindowsBar:setComboFilterItem( "" )
+      ::oWindowsBar:evalComboFilterChange()
+      ::oFilterController:oModel:deleteById( { nId } )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION SQLNavigatorController_setFilter( cFilterName ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   local cFilterSentence
+
+   If( cFilterName == nil, cFilterName := ::oWindowsBar:getComboFilter(), ) ;
+
+   if empty( cFilterName )
+
+      ::getModel():clearFilterWhere()
+
+      ::hideEditAndDeleteButtonFilter()
+
+   else
+
+      cFilterSentence      := ::oFilterController:getFilterSentence( cFilterName )
+
+      ::getModel():setFilterWhere( cFilterSentence )
+
+      ::showEditAndDeleteButtonFilter()
+
+   end
+
+   ::reBuildRowSet()
+
+RETURN ( self )
+
+
+
+static FUNCTION SQLNavigatorController_buildFilter( cFilter ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   ::getModel():insertFilterWhere( cFilter )
+
+   ::oFilterController:setComboFilterItem( ::getModel():getFilterWhere() )
+
+   ::reBuildRowSet()
+
+RETURN ( self )
+
+
+
+static FUNCTION SQLNavigatorController_clearFilter( ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   ::getModel():clearFilterWhere()
+
+   ::oFilterController:setComboFilterItem( ::getModel():getFilterWhere() )
+
+   ::reBuildRowSet()
+
+RETURN ( self )
+
+
+
+static FUNCTION SQLNavigatorController_buildCustomFilter( cField, cValue, cOperator ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   ::oFilterController:oCustomView:setText( "'" + cField + "' " + cOperator )
+   ::oFilterController:oCustomView:setValue( cValue )
+
+   if !( ::oFilterController:oCustomView:Activate() )
+      RETURN ( .F. )
+   end
+
+   cValue            := alltrim( ::oFilterController:oCustomView:getValue() )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION SQLNavigatorController_reBuildRowSet( ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   local nId
+
+   nId               := ::oRowSet:fieldGet( ::getModelColumnKey() )
+
+   ::oRowSet:build( ::getModel():getSelectSentence() )
+
+   ::oRowSet:findString( nId )
+
+   ::getBrowse():Refresh()
+
+RETURN ( self )
+
+
+
+static FUNCTION SQLNavigatorController_EnableWindowsBar( ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   if empty( ::oWindowsBar )
+      RETURN ( Self )
+   end
+
+   ::oWindowsBar:enableGet()
+
+   ::oWindowsBar:enableComboBox( ::oBrowseView:getColumnsHeaders() )
+
+   ::oWindowsBar:setComboBoxChange( {|| ::onChangeCombo() } )
+
+   ::oWindowsBar:setComboBoxItem( ::oBrowseView:getColumnHeaderByOrder( ::getModel():getOrderBy() ) )
+
+   ::oWindowsBar:enableComboFilter( ::getFilters() )
+
+   ::oWindowsBar:showAddButtonFilter()
+
+   ::oWindowsBar:setComboFilterChange( {|| ::setFilter() } )
+
+   ::oWindowsBar:setActionAddButtonFilter( {|| ::appendFilter() } )
+
+   ::oWindowsBar:setActionEditButtonFilter( {|| ::editFilter() } )
+
+   ::oWindowsBar:setActionDeleteButtonFilter( {|| ::deleteFilter() } )
+
+   ::oWindowsBar:setGetChange( {|| ::onChangeSearch() } )
+
+   ::oNavigatorView:Refresh()
+
+   ::lEnableWindowsBar  := .T.
+
+RETURN ( Self )
+
+
+
+static FUNCTION SQLNavigatorController_DisableWindowsBar( ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   if empty( ::oWindowsBar )
+      RETURN ( Self )
+   end
+
+   ::oWindowsBar:disableGet()
+
+   ::oWindowsBar:disableComboBox()
+
+   ::oWindowsBar:disableComboFilter()
+
+   ::oWindowsBar:hideAddButtonFilter()
+
+RETURN ( Self )
+
+
+
+static FUNCTION SQLNavigatorController_hideEditAndDeleteButtonFilter( ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   ::oWindowsBar:HideCleanButtonFilter()
+
+   ::oWindowsBar:HideEditButtonFilter()
+
+   ::oWindowsBar:HideDeleteButtonFilter()
+
+RETURN ( Self )
+
+
+
+static FUNCTION SQLNavigatorController_showEditAndDeleteButtonFilter( ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   ::oWindowsBar:ShowCleanButtonFilter()
+
+   ::oWindowsBar:ShowEditButtonFilter()
+
+   ::oWindowsBar:ShowDeleteButtonFilter()
+
+RETURN ( Self )
+
+
+
+static FUNCTION SQLNavigatorController_onChangeCombo( oColumn ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   local oComboBox   := ::getComboBoxOrder()
+
+   if empty( oComboBox )
+      RETURN ( Self )
+   end
+
+   if empty( ::getBrowse() )
+      RETURN ( Self )
+   end
+
+   if empty( oColumn )
+      oColumn        := ::getBrowse():getColumnByHeader( oComboBox:VarGet() )
+   end
+
+   if empty( oColumn )
+      RETURN ( Self )
+   end
+
+   oComboBox:Set( oColumn:cHeader )
+
+   ::getBrowse():changeColumnOrder( oColumn )
+
+   ::changeModelOrderAndOrientation( oColumn:cSortOrder, oColumn:cOrder )
+
+   ::getBrowse():refreshCurrent()
+
+RETURN ( Self )
+
+
+
+static FUNCTION SQLNavigatorController_getComboBoxOrder( ) ; local Self AS CLASS SQLNavigatorController := QSelf() AS CLASS SQLNavigatorController
+
+   if !empty( ::oSelectorView ) .AND. ::oSelectorView:isActive()
+      RETURN ( ::oSelectorView:getComboBoxOrder() )
+   end
+
+   if !empty( ::oDialogModalView ) .AND. ::oDialogModalView:isActive()
+      RETURN ( ::oDialogModalView:getComboBoxOrder() )
+   end
+
+RETURN ( ::oWindowsBar:oComboBox() )

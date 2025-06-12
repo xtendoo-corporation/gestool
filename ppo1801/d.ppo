@@ -1,0 +1,3530 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 287 "\fwh1801\include\Xbrowse.ch"
+   EXTERNAL ADSKEYCOUNT, ADSGETRELKEYPOS, ADSSETRELKEYPOS, ADSKEYNO
+#line 10 ".\.\Prg\d.prg"
+_HB_CLASS D ; function D ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "D", iif( .F., { }, { @HBObject() } ), @D() ) ) ;
+
+   _HB_MEMBER { aStatus } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aStatus"}, .F. )
+
+   _HB_MEMBER { hViews } ; oClass:AddMultiClsData(, {=>}, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hViews"}, .F. )
+   _HB_MEMBER { hDictionary } ; oClass:AddMultiClsData(, {=>}, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hDictionary"}, .F. )
+   _HB_MEMBER { nView } ; oClass:AddMultiClsData(, 0, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nView"}, .F. )
+
+   _HB_MEMBER { cTag } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTag"}, .F. )
+
+   _HB_MEMBER CreateView(); oClass:AddMethod( "CreateView", @D_CreateView(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DeleteView( nView); oClass:AddMethod( "DeleteView", @D_DeleteView(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InfoView(); oClass:AddInline( "InfoView", {|Self | ( ( Self ) ), ( msgStop( valtoprg( hGet( ::hViews, ::nView ) ), "Vista : " + alltrim( str( ::nView ) ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AssertView(); oClass:AddMethod( "AssertView", @D_AssertView(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Get( cDatabase, nView); oClass:AddMethod( "Get", @D_Get(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AddView( cDatabase, cHandle); oClass:AddMethod( "AddView", @D_AddView(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER GetView( cDatabase); oClass:AddMethod( "GetView", @D_GetView(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER GetDriver( nView); oClass:AddMethod( "GetDriver", @D_GetDriver(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER OpenDataBase( cDataTable, nView); oClass:AddMethod( "OpenDataBase", @D_OpenDataBase(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getDictionary( cDataTable, nView); oClass:AddMethod( "getDictionary", @D_getDictionary(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getDictionaryView( cDataTable, nView); oClass:AddMethod( "getDictionaryView", @D_getDictionaryView(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER addDictionary(); oClass:AddInline( "addDictionary", {|Self, cDataTable, hDictionary | ( ( Self ) ), ( if( !empty( hDictionary ), hSet( ::hDictionary, Upper( cDataTable ), hDictionary ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER BuildTmp( cDatabase, cAlias, nView); oClass:AddMethod( "BuildTmp", @D_BuildTmp(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AddViewTmp( cAlias, cHandle, nView); oClass:AddMethod( "AddViewTmp", @D_AddViewTmp(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER GetTmp( cAlias, nView); oClass:AddMethod( "GetTmp", @D_GetTmp(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER Tmp( cAlias, nView); oClass:AddMethod( "Tmp", @D_Tmp(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER GetFileTmp( cAlias, nView); oClass:AddMethod( "GetFileTmp", @D_GetFileTmp(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CloseTmp( cAlias, nView); oClass:AddMethod( "CloseTmp", @D_CloseTmp(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetObject( cObject, nView); oClass:AddMethod( "GetObject", @D_GetObject(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getHashRecord( cDatabase, nView); oClass:AddMethod( "getHashRecord", @D_getHashRecord(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHashFromAlias( cAlias, aDictionary); oClass:AddMethod( "getHashFromAlias", @D_getHashFromAlias(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHashFromWorkArea( cAlias); oClass:AddMethod( "getHashFromWorkArea", @D_getHashFromWorkArea(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHashFromBlank( cAlias, aDictionary); oClass:AddMethod( "getHashFromBlank", @D_getHashFromBlank(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getFieldDictionary( cField, cDataTable, nView); oClass:AddMethod( "getFieldDictionary", @D_getFieldDictionary(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getFieldFromAliasDictionary( cField, cAlias, aDictionary); oClass:AddMethod( "getFieldFromAliasDictionary", @D_getFieldFromAliasDictionary(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getIndexFromAliasDictionary(); oClass:AddInline( "getIndexFromAliasDictionary", {|Self, cIndex, aIndex | ( ( Self ) ), ( hGet( aIndex, cIndex ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getHashArray( aRecord, cDatabase, nView); oClass:AddMethod( "getHashArray", @D_getHashArray(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHashTable( cAlias, cDatabase, nView); oClass:AddMethod( "getHashTable", @D_getHashTable(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHashRecordById( id, cDatabase, nView); oClass:AddMethod( "getHashRecordById", @D_getHashRecordById(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHashRecordBlank( cDatabase, nView); oClass:AddMethod( "getHashRecordBlank", @D_getHashRecordBlank(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHashRecordDefaultValues(); oClass:AddInline( "getHashRecordDefaultValues", {|Self, cDatabase, nView | ( ( Self ) ), ( ::setDefaultValue( ::getHashRecordBlank( cDatabase, nView ), cDatabase, nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER deleteRecord( cDataTable, nView); oClass:AddMethod( "deleteRecord", @D_deleteRecord(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getArrayRecordById( id, cDatabase, nView); oClass:AddMethod( "getArrayRecordById", @D_getArrayRecordById(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setDefaultValue( hash, cDataTable, nView); oClass:AddMethod( "setDefaultValue", @D_setDefaultValue(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER appendHashRecord( hTable, cDataTable, nView); oClass:AddMethod( "appendHashRecord", @D_appendHashRecord(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER appendHashRecordInWorkarea( hTable, cDataTable, workArea); oClass:AddMethod( "appendHashRecordInWorkarea", @D_appendHashRecordInWorkarea(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER editHashRecord( hTable, cDataTable, nView); oClass:AddMethod( "editHashRecord", @D_editHashRecord(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setHashRecord( cDatabase, nView); oClass:AddMethod( "setHashRecord", @D_setHashRecord(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER saveFieldsToRecord(); oClass:AddMethod( "saveFieldsToRecord", @D_saveFieldsToRecord(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getFieldFromDictionary(); oClass:AddMethod( "getFieldFromDictionary", @D_getFieldFromDictionary(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getId(); oClass:AddInline( "getId", {|Self, cDatabase, nView | ( ( Self ) ), ( ( ::Get( cDatabase, nView ) )->( eval( TDataCenter():getIdBlock( cDatabase ) ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getDictionaryFromArea(); oClass:AddInline( "getDictionaryFromArea", {|Self, cArea | ( ( Self ) ), ( TDataCenter():getDictionaryFromArea( cArea ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getIndexFromArea(); oClass:AddInline( "getIndexFromArea", {|Self, cArea | ( ( Self ) ), ( TDataCenter():getIndexFromArea( cArea ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER PresupuestosClientes(); oClass:AddInline( "PresupuestosClientes", {|Self, nView | ( ( Self ) ), ( ::Get( "PreCliT", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PresupuestosClientesFecha(); oClass:AddInline( "PresupuestosClientesFecha", {|Self, nView | ( ( Self ) ), ( ( ::Get( "PreCliT", nView ) )->dFecPre ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PresupuestosClientesId(); oClass:AddInline( "PresupuestosClientesId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "PreCliT", nView ) )->cSerPre + str( ( ::Get( "PreCliT", nView ) )->nNumPre, 9 ) + ( ::Get( "PreCliT", nView ) )->cSufPre ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER PresupuestosClientesIdTextShort(); oClass:AddInline( "PresupuestosClientesIdTextShort", {|Self, nView | ( ( Self ) ), ( ( ::Get( "PreCliT", nView ) )->cSerPre + "/" + alltrim( str( ( ::Get( "PreCliT", nView ) )->nNumPre, 9 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER PresupuestosClientesIdText(); oClass:AddInline( "PresupuestosClientesIdText", {|Self, nView | ( ( Self ) ), ( ::PresupuestosClientesIdTextShort( nView ) + "/" + ( ::Get( "PreCliT", nView ) )->cSufPre ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PresupuestosClientesLineas(); oClass:AddInline( "PresupuestosClientesLineas", {|Self, nView | ( ( Self ) ), ( ::Get( "PreCliL", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PresupuestosClientesLineasId(); oClass:AddInline( "PresupuestosClientesLineasId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "PreCliL", nView ) )->cSerPre + str( ( ::Get( "PreCliL", nView ) )->nNumPre, 9 ) + ( ::Get( "PreCliL", nView ) )->cSufPre ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PresupuestosClientesDocumentos(); oClass:AddInline( "PresupuestosClientesDocumentos", {|Self, nView | ( ( Self ) ), ( ::Get( "PreCliD", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PresupuestosClientesDocumentosId(); oClass:AddInline( "PresupuestosClientesDocumentosId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "PreCliD", nView ) )->cSerPre + str( ( ::Get( "PreCliD", nView ) )->nNumPre, 9 ) + ( ::Get( "PreCliD", nView ) )->cSufPre ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PresupuestosClientesIncidencias(); oClass:AddInline( "PresupuestosClientesIncidencias", {|Self, nView | ( ( Self ) ), ( ::Get( "PreCliI", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PresupuestosClientesIncidenciasId(); oClass:AddInline( "PresupuestosClientesIncidenciasId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "PreCliI", nView ) )->cSerPre + str( ( ::Get( "PreCliI", nView ) )->nNumPre, 9 ) + ( ::Get( "PreCliI", nView ) )->cSufPre ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PresupuestosClientesSituaciones(); oClass:AddInline( "PresupuestosClientesSituaciones", {|Self, nView | ( ( Self ) ), ( ::Get( "PreCliE", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PresupuestosClientesSituacionesId(); oClass:AddInline( "PresupuestosClientesSituacionesId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "PreCliE", nView ) )->cSerPre + str( ( ::Get( "PreCliE", nView ) )->nNumPre, 9 ) + ( ::Get( "PreCliE", nView ) )->cSufPre ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PresupuestosClientesSituacionesIdText(); oClass:AddInline( "PresupuestosClientesSituacionesIdText", {|Self, nView | ( ( Self ) ), ( ::Get( "PreCliE", nView ) )->cSerPre + "/" + Alltrim( Str( ( ::Get( "PreCliE", nView ) )->nNumPre ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER SatClientesTableName(); oClass:AddInline( "SatClientesTableName", {|Self | ( ( Self ) ), ( "SatCliT" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SatClientes(); oClass:AddInline( "SatClientes", {|Self, nView | ( ( Self ) ), ( ::Get( "SatCliT", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER SatClientesId(); oClass:AddInline( "SatClientesId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "SatCliT", nView ) )->cSerSat + str( ( ::Get( "SatCliT", nView ) )->nNumSat, 9 ) + ( ::Get( "SatCliT", nView ) )->cSufSat ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER SatClientesFecha(); oClass:AddInline( "SatClientesFecha", {|Self, nView | ( ( Self ) ), ( ( ::Get( "SatCliT", nView ) )->dFecSat ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER SatClientesIdTextShort(); oClass:AddInline( "SatClientesIdTextShort", {|Self, nView | ( ( Self ) ), ( ( ::Get( "SatCliT", nView ) )->cSerSat + "/" + alltrim( str( ( ::Get( "SatCliT", nView ) )->nNumSat, 9 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER SatClientesIdText(); oClass:AddInline( "SatClientesIdText", {|Self, nView | ( ( Self ) ), ( ::SatClientesIdTextShort( nView ) + "/" + ( ::Get( "SatCliT", nView ) )->cSufSat ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER GetSatClientesHash(); oClass:AddInline( "GetSatClientesHash", {|Self, aArray, nView | ( ( Self ) ), ( ::getHashArray( aArray, "SatCliL", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SATClientesLineasTableName(); oClass:AddInline( "SATClientesLineasTableName", {|Self | ( ( Self ) ), ( "SatCliL" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SatClientesLineas(); oClass:AddInline( "SatClientesLineas", {|Self, nView | ( ( Self ) ), ( ::Get( "SatCliL", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER SatClientesLineasId(); oClass:AddInline( "SatClientesLineasId", {|Self, nView | ( ( Self ) ), ( ( ::SatClientesLineas( nView ) )->cSerSat + str( ( ::SatClientesLineas( nView ) )->nNumSat, 9 ) + ( ::SatClientesLineas( nView ) )->cSufSat ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER SatClientesLineasEof(); oClass:AddInline( "SatClientesLineasEof", {|Self, nView | ( ( Self ) ), ( ( ::SatClientesLineas( nView ) )->( eof() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER SatClientesLineasNotEof(); oClass:AddInline( "SatClientesLineasNotEof", {|Self, nView | ( ( Self ) ), ( !::SatClientesLineasEof( nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER GetSatClientesLineasHash(); oClass:AddInline( "GetSatClientesLineasHash", {|Self, aArray, nView | ( ( Self ) ), ( ::getHashArray( aArray, "SatCliT", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SatClientesIncidencias(); oClass:AddInline( "SatClientesIncidencias", {|Self, nView | ( ( Self ) ), ( ::Get( "SatCliI", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER SatClientesIncidenciasId(); oClass:AddInline( "SatClientesIncidenciasId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "SatCliI", nView ) )->cSerSat + str( ( ::Get( "SatCliI", nView ) )->nNumSat, 9 ) + ( ::Get( "SatCliI", nView ) )->cSufSat ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SatClientesDocumentos(); oClass:AddInline( "SatClientesDocumentos", {|Self, nView | ( ( Self ) ), ( ::Get( "SatCliD", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER SatClientesDocumentosId(); oClass:AddInline( "SatClientesDocumentosId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "SatCliD", nView ) )->cSerSat + str( ( ::Get( "SatCliD", nView ) )->nNumSat, 9 ) + ( ::Get( "SatCliD", nView ) )->cSufSat ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER AlbaranesClientesTableName(); oClass:AddInline( "AlbaranesClientesTableName", {|Self | ( ( Self ) ), ( "AlbCliT" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AlbaranesClientes(); oClass:AddInline( "AlbaranesClientes", {|Self, nView, cSelect | ( ( Self ) ), ( if( Empty( cSelect ), ::Get( "AlbCliT", nView ), ::AlbaranesClientesSQL( nView, cSelect ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AlbaranesClientesSQL(); oClass:AddInline( "AlbaranesClientesSQL", {|Self, nView, cSelect | ( ( Self ) ), ( ::getSQL( ::AlbaranesClientesTableName(), cSelect, nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getSqlSentenceAlbaranesClientes(); oClass:AddInline( "getSqlSentenceAlbaranesClientes", {|Self | ( ( Self ) ), ( "SELECT * FROM " + cPatEmp() + ::AlbaranesClientesTableName() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getHashBlankAlbaranesClientes(); oClass:AddInline( "getHashBlankAlbaranesClientes", {|Self, nView | ( ( Self ) ), ( ::getHashFromBlank( ::AlbaranesClientes( nView ), ::getDictionary( ::AlbaranesClientesTableName(), nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHashRecordAlbaranesClientes(); oClass:AddInline( "getHashRecordAlbaranesClientes", {|Self, nView | ( ( Self ) ), ( ::getHashFromAlias( ::AlbaranesClientes( nView ), ::getDictionary( ::AlbaranesClientesTableName(), nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER AlbaranesClientesFecha(); oClass:AddInline( "AlbaranesClientesFecha", {|Self, nView | ( ( Self ) ), ( ( ::Get( ::AlbaranesClientesTableName(), nView ) )->dFecAlb ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AlbaranesClientesId(); oClass:AddInline( "AlbaranesClientesId", {|Self, nView | ( ( Self ) ), ( ( ::Get( ::AlbaranesClientesTableName(), nView ) )->cSerAlb + str( ( ::Get( ::AlbaranesClientesTableName(), nView ) )->nNumAlb, 9 ) + ( ::Get( ::AlbaranesClientesTableName(), nView ) )->cSufAlb ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AlbaranesClientesIdTextShort(); oClass:AddInline( "AlbaranesClientesIdTextShort", {|Self, nView | ( ( Self ) ), ( ::Get( ::AlbaranesClientesTableName(), nView ) )->cSerAlb + "/" + Alltrim( Str( ( ::Get( ::AlbaranesClientesTableName(), nView ) )->nNumAlb ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AlbaranesClientesIdText(); oClass:AddInline( "AlbaranesClientesIdText", {|Self, nView | ( ( Self ) ), ( ::AlbaranesClientesIdTextShort( nView ) + "/" + ( ::Get( ::AlbaranesClientesTableName(), nView ) )->cSufAlb ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getHashAlbaranCliente(); oClass:AddInline( "getHashAlbaranCliente", {|Self, nView | ( ( Self ) ), ( ::getHashRecordById( ::AlbaranesClientesId( nView ), ::AlbaranesClientes( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getDefaultHashAlbaranCliente(); oClass:AddInline( "getDefaultHashAlbaranCliente", {|Self, nView | ( ( Self ) ), ( ::getHashRecordDefaultValues( ::AlbaranesClientes( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER gotoIdAlbaranesClientes(); oClass:AddInline( "gotoIdAlbaranesClientes", {|Self, id, nView | ( ( Self ) ), ( ::seekInOrd( ::AlbaranesClientes( nView ), id, "nNumAlb" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER gotoClienteIdAlbaranesClientes(); oClass:AddInline( "gotoClienteIdAlbaranesClientes", {|Self, id, nView | ( ( Self ) ), ( ::seekInOrd( ::AlbaranesClientes( nView ), id, "cCodCli" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER gotoPedidoIdAlbaranesClientes(); oClass:AddInline( "gotoPedidoIdAlbaranesClientes", {|Self, id, nView | ( ( Self ) ), ( ::seekInOrd( ::AlbaranesClientes( nView ), id, "cNumPed" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getStatusAlbaranesClientes(); oClass:AddInline( "getStatusAlbaranesClientes", {|Self, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::AlbaranesClientes( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setStatusAlbaranesClientes(); oClass:AddInline( "setStatusAlbaranesClientes", {|Self, nView | ( ( Self ) ), ( SetStatus( ::AlbaranesClientes( nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setFocusAlbaranesClientes(); oClass:AddInline( "setFocusAlbaranesClientes", {|Self, cTag, nView | ( ( Self ) ), ( ::cTag   := ( ::AlbaranesClientes( nView )  )->( ordSetFocus( cTag ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AlbaranesClientesLineasTableName(); oClass:AddInline( "AlbaranesClientesLineasTableName", {|Self | ( ( Self ) ), ( "AlbCliL" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AlbaranesClientesLineas(); oClass:AddInline( "AlbaranesClientesLineas", {|Self, nView | ( ( Self ) ), ( ::Get( ::AlbaranesClientesLineasTableName(), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AlbaranesClientesLineasFieldPos(); oClass:AddInline( "AlbaranesClientesLineasFieldPos", {|Self, fieldName, nView | ( ( Self ) ), ( ( ::Get( ::AlbaranesClientesLineasTableName(), nView ) )->( fieldpos( fieldName ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AlbaranesClientesLineasEscandalloId(); oClass:AddInline( "AlbaranesClientesLineasEscandalloId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "AlbCliL", nView ) )->cSerAlb + str( ( ::Get( "AlbCliL", nView ) )->nNumAlb, 9 ) + ( ::Get( "AlbCliL", nView ) )->cSufAlb + Str( ( ::Get( "AlbCliL", nView ) )->nNumLin )+ Str( ( ::Get( "AlbCliL", nView ) )->nNumKit ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER getHashBlankAlbaranesClientesLineas(); oClass:AddInline( "getHashBlankAlbaranesClientesLineas", {|Self, nView | ( ( Self ) ), ( ::getHashFromBlank( ::AlbaranesClientesLineas( nView ), ::getDictionary( ::AlbaranesClientesLineasTableName(), nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getHashRecordAlbaranesClientesLineas(); oClass:AddInline( "getHashRecordAlbaranesClientesLineas", {|Self, nView | ( ( Self ) ), ( ::getHashFromAlias( ::AlbaranesClientesLineas( nView ), ::getDictionary( ::AlbaranesClientesLineasTableName(), nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER AlbaranesClientesLineasId(); oClass:AddInline( "AlbaranesClientesLineasId", {|Self, nView | ( ( Self ) ), ( ( ::AlbaranesClientesLineas( nView ) )->cSerAlb + str( ( ::Get( "AlbCliL", nView ) )->nNumAlb, 9 ) + ( ::Get( "AlbCliL", nView ) )->cSufAlb ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AlbaranesClientesLineasEof(); oClass:AddInline( "AlbaranesClientesLineasEof", {|Self, nView | ( ( Self ) ), ( ( ::AlbaranesClientesLineas( nView ) )->( eof() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AlbaranesClientesLineasNotEof(); oClass:AddInline( "AlbaranesClientesLineasNotEof", {|Self, nView | ( ( Self ) ), (!( ::AlbaranesClientesLineasEof( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER getAlbaranClienteLineasHash(); oClass:AddInline( "getAlbaranClienteLineasHash", {|Self, nView | ( ( Self ) ), ( ::getHashRecord( ::AlbaranesClientesLineas( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getAlbaranClienteLineas(); oClass:AddInline( "getAlbaranClienteLineas", {|Self, nView | ( ( Self ) ), ( ::getArrayRecordById( ::AlbaranesClientesId( nView ), ::AlbaranesClientesLineas( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getAlbaranClienteLineaBlank(); oClass:AddInline( "getAlbaranClienteLineaBlank", {|Self, nView | ( ( Self ) ), ( ::getHashRecordBlank( ::AlbaranesClientesLineas( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getAlbaranClienteLineaDefaultValues(); oClass:AddInline( "getAlbaranClienteLineaDefaultValues", {|Self, nView | ( ( Self ) ), ( ::getHashRecordDefaultValues( ::AlbaranesClientesLineas( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getStatusAlbaranesClientesLineas(); oClass:AddInline( "getStatusAlbaranesClientesLineas", {|Self, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::AlbaranesClientesLineas( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setStatusAlbaranesClientesLineas(); oClass:AddInline( "setStatusAlbaranesClientesLineas", {|Self, nView | ( ( Self ) ), ( SetStatus( ::AlbaranesClientesLineas( nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setFocusAlbaranesClientesLineas(); oClass:AddInline( "setFocusAlbaranesClientesLineas", {|Self, cTag, nView | ( ( Self ) ), ( ::cTag   := ( ::AlbaranesClientesLineas( nView ) )->( ordSetFocus( cTag ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AlbaranesClientesSeries(); oClass:AddInline( "AlbaranesClientesSeries", {|Self, nView | ( ( Self ) ), ( ::Get( "AlbCliS", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AlbaranesClientesSeriesId(); oClass:AddInline( "AlbaranesClientesSeriesId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "AlbCliS", nView ) )->cSerAlb + str( ( ::Get( "AlbCliS", nView ) )->nNumAlb, 9 ) + ( ::Get( "AlbCliS", nView ) )->cSufAlb ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AlbaranesClientesCobros(); oClass:AddInline( "AlbaranesClientesCobros", {|Self, nView | ( ( Self ) ), ( ::Get( "AlbCliP", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AlbaranesClientesCobrosId(); oClass:AddInline( "AlbaranesClientesCobrosId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "AlbCliP", nView ) )->cSerAlb + str( ( ::Get( "AlbCliP", nView ) )->nNumAlb, 9 ) + ( ::Get( "AlbCliP", nView ) )->cSufAlb ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AlbaranesClientesIncidencias(); oClass:AddInline( "AlbaranesClientesIncidencias", {|Self, nView | ( ( Self ) ), ( ::Get( "AlbCliI", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AlbaranesClientesIncidenciasId(); oClass:AddInline( "AlbaranesClientesIncidenciasId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "AlbCliI", nView ) )->cSerAlb + str( ( ::Get( "AlbCliI", nView ) )->nNumAlb, 9 ) + ( ::Get( "AlbCliI", nView ) )->cSufAlb ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AlbaranesClientesDocumentos(); oClass:AddInline( "AlbaranesClientesDocumentos", {|Self, nView | ( ( Self ) ), ( ::Get( "AlbCliD", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AlbaranesClientesDocumentosId(); oClass:AddInline( "AlbaranesClientesDocumentosId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "AlbCliD", nView ) )->cSerAlb + str( ( ::Get( "AlbCliD", nView ) )->nNumAlb, 9 ) + ( ::Get( "AlbCliD", nView ) )->cSufAlb ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AlbaranesClientesSituaciones(); oClass:AddInline( "AlbaranesClientesSituaciones", {|Self, nView | ( ( Self ) ), ( ::Get( "AlbCliE", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AlbaranesClientesSituacionesId(); oClass:AddInline( "AlbaranesClientesSituacionesId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "AlbCliE", nView ) )->cSerAlb + str( ( ::Get( "AlbCliE", nView ) )->nNumAlb, 9 ) + ( ::Get( "AlbCliE", nView ) )->cSufAlb ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AlbaranesClientesSituacionesIdText(); oClass:AddInline( "AlbaranesClientesSituacionesIdText", {|Self, nView | ( ( Self ) ), ( ::Get( "AlbCliE", nView ) )->cSerAlb + "/" + Alltrim( Str( ( ::Get( "AlbCliE", nView ) )->nNumAlb ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER FacturasClientes(); oClass:AddInline( "FacturasClientes", {|Self, nView | ( ( Self ) ), ( ::Get( "FacCliT", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasClientesFecha(); oClass:AddInline( "FacturasClientesFecha", {|Self, nView | ( ( Self ) ), ( ( ::FacturasClientes( nView ) )->dFecFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasClientesId(); oClass:AddInline( "FacturasClientesId", {|Self, nView | ( ( Self ) ), ( if( ( ::Get( "FacCliT", nView ) )->nNumFac == 0, "", ( ::Get( "FacCliT", nView ) )->cSerie + Str( ( ::Get( "FacCliT", nView ) )->nNumFac ) + ( ::Get( "FacCliT", nView ) )->cSufFac ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasClientesIdShort(); oClass:AddInline( "FacturasClientesIdShort", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacCliT", nView ) )->cSerie + alltrim( Str( ( ::Get( "FacCliT", nView ) )->nNumFac ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasClientesIdTextShort(); oClass:AddInline( "FacturasClientesIdTextShort", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacCliT", nView ) )->cSerie + "/" + Alltrim( Str( ( ::Get( "FacCliT", nView ) )->nNumFac ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasClientesIdText(); oClass:AddInline( "FacturasClientesIdText", {|Self, nView | ( ( Self ) ), ( ::FacturasClientesIdTextShort( nView ) + "/" + ( ::Get( "FacCliT", nView ) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getFacturaCliente(); oClass:AddInline( "getFacturaCliente", {|Self, nView | ( ( Self ) ), ( ::getHashRecordById( ::FacturasClientesId( nView ), ::FacturasClientes( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getDefaultHashFacturaCliente(); oClass:AddInline( "getDefaultHashFacturaCliente", {|Self, nView | ( ( Self ) ), ( ::getHashRecordDefaultValues( ::FacturasClientes( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER gotoIdFacturasClientes(); oClass:AddInline( "gotoIdFacturasClientes", {|Self, id, nView | ( ( Self ) ), ( ::seekInOrd( ::FacturasClientes( nView ), id, "nNumFac" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER getStatusFacturasClientes(); oClass:AddInline( "getStatusFacturasClientes", {|Self, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::FacturasClientes( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setStatusFacturasClientes(); oClass:AddInline( "setStatusFacturasClientes", {|Self, nView | ( ( Self ) ), ( SetStatus( ::FacturasClientes( nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER setFocusFacturasClientes(); oClass:AddInline( "setFocusFacturasClientes", {|Self, cTag, nView | ( ( Self ) ), ( ::cTag   := ( ::FacturasClientes( nView ) )->( ordSetFocus( cTag ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER lockFacturasClientes(); oClass:AddInline( "lockFacturasClientes", {|Self, nView | ( ( Self ) ), ( dbLock( ::Get( "FacCliT", nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER unlockFacturasClientes(); oClass:AddInline( "unlockFacturasClientes", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacCliT", nView ) )->( dbUnLock() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FacturasClientesLineas(); oClass:AddInline( "FacturasClientesLineas", {|Self, nView | ( ( Self ) ), ( ::Get( "FacCliL", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasClientesLineasId(); oClass:AddInline( "FacturasClientesLineasId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacCliL", nView ) )->cSerie + Str( ( ::Get( "FacCliL", nView ) )->nNumFac ) + ( ::Get( "FacCliL", nView ) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasClientesLineasEscandalloId(); oClass:AddInline( "FacturasClientesLineasEscandalloId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacCliL", nView ) )->cSerie + str( ( ::Get( "FacCliL", nView ) )->nNumFac, 9 ) + ( ::Get( "FacCliL", nView ) )->cSufFac + Str( ( ::Get( "FacCliL", nView ) )->nNumLin )+ Str( ( ::Get( "FacCliL", nView ) )->nNumKit ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasClientesLineasEof(); oClass:AddInline( "FacturasClientesLineasEof", {|Self, nView | ( ( Self ) ), ( ( ::FacturasClientesLineas( nView ) )->( eof() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasClientesLineasNotEof(); oClass:AddInline( "FacturasClientesLineasNotEof", {|Self, nView | ( ( Self ) ), (!( ::FacturasClientesLineasEof( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER gotoIdFacturasClientesLineas(); oClass:AddInline( "gotoIdFacturasClientesLineas", {|Self, id, nView | ( ( Self ) ), ( ::seekInOrd( ::FacturasClientesLineas( nView ), id, "nNumFac" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER setFocusFacturasClientesLineas(); oClass:AddInline( "setFocusFacturasClientesLineas", {|Self, cTag, nView | ( ( Self ) ), ( ::cTag   := ( ::FacturasClientesLineas( nView ) )->( ordSetFocus( cTag ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER getFacturaClienteLineasHash(); oClass:AddInline( "getFacturaClienteLineasHash", {|Self, nView | ( ( Self ) ), ( ::getHashRecord( ::FacturasClientesLineas( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getFacturaClienteLineas(); oClass:AddInline( "getFacturaClienteLineas", {|Self, nView | ( ( Self ) ), ( ::getArrayRecordById( ::FacturasClientesId( nView ), ::FacturasClientesLineas( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getFacturaClienteLineaBlank(); oClass:AddInline( "getFacturaClienteLineaBlank", {|Self, nView | ( ( Self ) ), ( ::getHashRecordBlank( ::FacturasClientesLineas( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getFacturaClienteLineaDefaultValues(); oClass:AddInline( "getFacturaClienteLineaDefaultValues", {|Self, nView | ( ( Self ) ), ( ::getHashRecordDefaultValues( ::FacturasClientesLineas( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getStatusFacturasClientesLineas(); oClass:AddInline( "getStatusFacturasClientesLineas", {|Self, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::FacturasClientesLineas( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setStatusFacturasClientesLineas(); oClass:AddInline( "setStatusFacturasClientesLineas", {|Self, nView | ( ( Self ) ), ( SetStatus( ::FacturasClientesLineas( nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FacturasClientesIncidencias(); oClass:AddInline( "FacturasClientesIncidencias", {|Self, nView | ( ( Self ) ), ( ::Get( "FacCliI", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasClientesIncidenciasId(); oClass:AddInline( "FacturasClientesIncidenciasId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacCliI", nView ) )->cSerie + Str( ( ::Get( "FacCliI", nView ) )->nNumFac ) +  ( ::Get( "FacCliI", nView ) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FacturasClientesDocumentos(); oClass:AddInline( "FacturasClientesDocumentos", {|Self, nView | ( ( Self ) ), ( ::Get( "FacCliD", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasClientesDocumentosId(); oClass:AddInline( "FacturasClientesDocumentosId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacCliD", nView ) )->cSerie + Str( ( ::Get( "FacCliD", nView ) )->nNumFac ) +  ( ::Get( "FacCliD", nView ) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FacturasClientesCobros(); oClass:AddInline( "FacturasClientesCobros", {|Self, nView | ( ( Self ) ), ( ::Get( "FacCliP", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasClientesCobrosIdShort(); oClass:AddInline( "FacturasClientesCobrosIdShort", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacCliP", nView ) )->cSerie + Str( ( ::Get( "FacCliP", nView ) )->nNumFac ) +  ( ::Get( "FacCliP", nView ) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasClientesCobrosId(); oClass:AddInline( "FacturasClientesCobrosId", {|Self, nView | ( ( Self ) ), ( ::FacturasClientesCobrosIdShort( nView ) + Str( ( ::Get( "FacCliP", nView ) )->nNumRec ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getFacturaClienteCobros(); oClass:AddInline( "getFacturaClienteCobros", {|Self, nView | ( ( Self ) ), ( ::getHashRecordById( ::FacturasClientesCobrosId( nView ), ::FacturasClientesCobros( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FacturasClientesEntidades(); oClass:AddInline( "FacturasClientesEntidades", {|Self, nView | ( ( Self ) ), ( ::Get( "FacCliE", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasClientesEntidadesId(); oClass:AddInline( "FacturasClientesEntidadesId", {|Self, nView | ( ( Self ) ), ( ( ::FacturasClientesEntidades(nView) ) )->cSerFac + Str( ( ::FacturasClientesEntidades(nView) )->nNumFac ) + ( ( ::FacturasClientesEntidades(nView) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER gotoIdFacturasClientesEntidades(); oClass:AddInline( "gotoIdFacturasClientesEntidades", {|Self, id, nView | ( ( Self ) ), ( ::seek( ::FacturasClientesEntidades( nView ), id ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+      _HB_MEMBER deleteFacturasClientesEntidades(); oClass:AddInline( "deleteFacturasClientesEntidades", {|Self, nView | ( ( Self ) ), ( iif(  dbLock( ( ::FacturasClientesEntidades( nView ) ) ), ( ( ::FacturasClientesEntidades( nView ) )->( dbDelete() ), ( ::FacturasClientesEntidades( nView ) )->( dbUnLock() ) ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER eofFacturasClientesEntidades(); oClass:AddInline( "eofFacturasClientesEntidades", {|Self, nView | ( ( Self ) ), ( ( ::FacturasClientesEntidades( nView ) )->( eof() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FacturasClientesSituaciones(); oClass:AddInline( "FacturasClientesSituaciones", {|Self, nView | ( ( Self ) ), ( ::Get( "FacCliC", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasClientesSituacionesId(); oClass:AddInline( "FacturasClientesSituacionesId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacCliC", nView ) )->cSerFac + str( ( ::Get( "FacCliC", nView ) )->nNumFac, 9 ) + ( ::Get( "FacCliC", nView ) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasClientesSituacionesIdText(); oClass:AddInline( "FacturasClientesSituacionesIdText", {|Self, nView | ( ( Self ) ), ( ::Get( "FacCliC", nView ) )->cSerFac + "/" + Alltrim( Str( ( ::Get( "FacCliC", nView ) )->nNumFac ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FacturasClientesSeries(); oClass:AddInline( "FacturasClientesSeries", {|Self, nView | ( ( Self ) ), ( ::Get( "FacCliS", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AnticiposClientes(); oClass:AddInline( "AnticiposClientes", {|Self, nView | ( ( Self ) ), ( ::Get( "AntCliT", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AnticiposClientesId(); oClass:AddInline( "AnticiposClientesId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "AntCliT", nView ) )->cSerAnt ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER gotoIdFacturasRectificativas(); oClass:AddInline( "gotoIdFacturasRectificativas", {|Self, id, nView | ( ( Self ) ), ( ::seekInOrd( ::FacturasRectificativas( nView ), id, "nNumFac")) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER FacturasRectificativas(); oClass:AddInline( "FacturasRectificativas", {|Self, nView | ( ( Self ) ), ( ::Get( "FacRecT", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasRectificativasId(); oClass:AddInline( "FacturasRectificativasId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacRecT", nView ) )->cSerie + str( ( ::Get( "FacRecT", nView ) )->nNumFac, 9 ) + ( ::Get( "FacRecT", nView ) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getStatusFacturasRectificativas(); oClass:AddInline( "getStatusFacturasRectificativas", {|Self, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::FacturasRectificativas( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setStatusFacturasRectificativas(); oClass:AddInline( "setStatusFacturasRectificativas", {|Self, nView | ( ( Self ) ), ( SetStatus( ::FacturasRectificativas( nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FacturasRectificativasLineas(); oClass:AddInline( "FacturasRectificativasLineas", {|Self, nView | ( ( Self ) ), ( ::Get( "FacRecL", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasRectificativasLineasId(); oClass:AddInline( "FacturasRectificativasLineasId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacRecL", nView ) )->cSerie + str( ( ::Get( "FacRecL", nView ) )->nNumFac, 9 ) + ( ::Get( "FacRecL", nView ) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FacturasRectificativasIncidencias(); oClass:AddInline( "FacturasRectificativasIncidencias", {|Self, nView | ( ( Self ) ), ( ::Get( "FacRecI", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasRectificativasIncidenciasId(); oClass:AddInline( "FacturasRectificativasIncidenciasId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacRecI", nView ) )->cSerie + str( ( ::Get( "FacRecI", nView ) )->nNumFac, 9 ) + ( ::Get( "FacRecI", nView ) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FacturasRectificativasDocumentos(); oClass:AddInline( "FacturasRectificativasDocumentos", {|Self, nView | ( ( Self ) ), ( ::Get( "FacRecD", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasRectificativasDocumentosId(); oClass:AddInline( "FacturasRectificativasDocumentosId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacRecD", nView ) )->cSerie + str( ( ::Get( "FacRecD", nView ) )->nNumFac, 9 ) + ( ::Get( "FacRecD", nView ) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FacturasRectificativasSituaciones(); oClass:AddInline( "FacturasRectificativasSituaciones", {|Self, nView | ( ( Self ) ), ( ::Get( "FacRecE", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasRectificativasSituacionesId(); oClass:AddInline( "FacturasRectificativasSituacionesId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacRecE", nView ) )->cSerFac + str( ( ::Get( "FacRecE", nView ) )->nNumFac, 9 ) + ( ::Get( "FacRecE", nView ) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasRectificativasSituacionesIdText(); oClass:AddInline( "FacturasRectificativasSituacionesIdText", {|Self, nView | ( ( Self ) ), ( ::Get( "FacRecE", nView ) )->cSerFac + "/" + Alltrim( Str( ( ::Get( "FacRecE", nView ) )->nNumFac ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER TiketsClientes(); oClass:AddInline( "TiketsClientes", {|Self, nView | ( ( Self ) ), ( ::Get( "TikeT", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Tikets(); oClass:AddInline( "Tikets", {|Self, nView, cSelect | ( ( Self ) ), ( if( lAIS() .AND. !empty( cSelect ), ::TiketsSQL( cSelect, nView ), ::Get( "TikeT", nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TiketsSQL(); oClass:AddInline( "TiketsSQL", {|Self, cSelect, nView | ( ( Self ) ), ( ::getSQL( "TikeT", cSelect, nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER TiketsId(); oClass:AddInline( "TiketsId", {|Self, nView | ( ( Self ) ), ( ( ::Tikets( nView ) )->cSerTik + ( ::Tikets( nView ) )->cNumTik + ( ::Tikets( nView ) )->cSufTik ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER gotoIdTikets(); oClass:AddInline( "gotoIdTikets", {|Self, id, nView | ( ( Self ) ), ( ::seekInOrd( ::Tikets( nView ), id, "cNumTik" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TiketsLineas(); oClass:AddInline( "TiketsLineas", {|Self, nView | ( ( Self ) ), ( ::Get( "TikeL", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER TiketsLineasId(); oClass:AddInline( "TiketsLineasId", {|Self, nView | ( ( Self ) ), ( ( ::TiketsLineas( nView ) )->cSerTil + ( ::TiketsLineas( nView ) )->cNumTil + ( ::TiketsLineas( nView ) )->cSufTil ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER gotoIdTiketsLineas(); oClass:AddInline( "gotoIdTiketsLineas", {|Self, id, nView | ( ( Self ) ), ( ::seekInOrd( ::TiketsLineas( nView ), id, "cNumTil" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER setFocusTiketsLineas(); oClass:AddInline( "setFocusTiketsLineas", {|Self, cTag, nView | ( ( Self ) ), ( ::cTag   := ( ::TiketsLineas( nView ) )->( ordSetFocus( cTag ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER TiketsLineasEof(); oClass:AddInline( "TiketsLineasEof", {|Self, nView | ( ( Self ) ), ( ( ::TiketsLineas( nView ) )->( eof() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER TiketsLineasNotEof(); oClass:AddInline( "TiketsLineasNotEof", {|Self, nView | ( ( Self ) ), ( ! ( ::TiketsLineasEof( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TiketsCobros(); oClass:AddInline( "TiketsCobros", {|Self, nView | ( ( Self ) ), ( ::Get( "TikeP", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getStatusTiketsLineas(); oClass:AddInline( "getStatusTiketsLineas", {|Self, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::TiketsLineas( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setStatusTiketsLineas(); oClass:AddInline( "setStatusTiketsLineas", {|Self, nView | ( ( Self ) ), ( SetStatus( ::TiketsLineas( nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER PedidosClientesTableName(); oClass:AddInline( "PedidosClientesTableName", {|Self | ( ( Self ) ), ( "PedCliT" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PedidosClientes(); oClass:AddInline( "PedidosClientes", {|Self, nView | ( ( Self ) ), ( ::Get( "PedCliT", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PedidosClientesId(); oClass:AddInline( "PedidosClientesId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "PedCliT", nView ) )->cSerPed + str( ( ::Get( "PedCliT", nView ) )->nNumPed, 9 ) + ( ::Get( "PedCliT", nView ) )->cSufPed ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PedidosClientesIdText(); oClass:AddInline( "PedidosClientesIdText", {|Self, nView | ( ( Self ) ), ( ::Get( "PedCliT", nView ) )->cSerPed + "/" + Alltrim( Str( ( ::Get( "PedCliT", nView ) )->nNumPed ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER GetPedidoCliente(); oClass:AddInline( "GetPedidoCliente", {|Self, nView | ( ( Self ) ), ( ::getHashRecordById( ::PedidosClientesId( nView ), ::PedidosClientes( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER GetPedidoClienteById(); oClass:AddInline( "GetPedidoClienteById", {|Self, id, nView | ( ( Self ) ), ( ::getHashRecordById( id, ::PedidosClientes( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER GetPedidoClienteBlank(); oClass:AddInline( "GetPedidoClienteBlank", {|Self, nView | ( ( Self ) ), ( ::getHashRecordBlank( ::PedidosClientes( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getDefaultHashPedidoCliente(); oClass:AddInline( "getDefaultHashPedidoCliente", {|Self, nView | ( ( Self ) ), ( ::getHashRecordDefaultValues( ::PedidosClientes( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER gotoIdPedidosClientes(); oClass:AddInline( "gotoIdPedidosClientes", {|Self, id, nView | ( ( Self ) ), ( ::seekInOrd( ::PedidosClientes( nView ), id, "nNumPed" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER getStatusPedidosClientes(); oClass:AddInline( "getStatusPedidosClientes", {|Self, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::PedidosClientes( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setStatusPedidosClientes(); oClass:AddInline( "setStatusPedidosClientes", {|Self, nView | ( ( Self ) ), ( SetStatus( ::PedidosClientes( nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setFocusPedidosClientes(); oClass:AddInline( "setFocusPedidosClientes", {|Self, cTag, nView | ( ( Self ) ), ( ::cTag   := ( ::PedidosClientes( nView )  )->( ordSetFocus( cTag ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PedidosClientesReservas(); oClass:AddInline( "PedidosClientesReservas", {|Self, nView | ( ( Self ) ), ( ::Get( "PedCliR", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PedidosClientesReservasId(); oClass:AddInline( "PedidosClientesReservasId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "PedCliR", nView ) )->cSerPed + str( ( ::Get( "PedCliR", nView ) )->nNumPed, 9 ) + ( ::Get( "PedCliR", nView ) )->cSufPed ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PedidosClientesLineasTableName(); oClass:AddInline( "PedidosClientesLineasTableName", {|Self | ( ( Self ) ), ( "PedCliL" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PedidosClientesLineas(); oClass:AddInline( "PedidosClientesLineas", {|Self, nView | ( ( Self ) ), ( ::Get( "PedCliL", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER gotoIdPedidosClientesLineas(); oClass:AddInline( "gotoIdPedidosClientesLineas", {|Self, id, nView | ( ( Self ) ), ( ::seekInOrd( ::PedidosClientesLineas( nView ), id, "nNumPed" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PedidosClientesLineasNotEof(); oClass:AddInline( "PedidosClientesLineasNotEof", {|Self, nView | ( ( Self ) ), ( ! ( ::PedidosClientesLineas( nView ) )->( eof() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER PedidosClientesLineasId(); oClass:AddInline( "PedidosClientesLineasId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "PedCliL", nView ) )->cSerPed + str( ( ::Get( "PedCliL", nView ) )->nNumPed, 9 ) + ( ::Get( "PedCliL", nView ) )->cSufPed ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER GetPedidoClienteLineasHash(); oClass:AddInline( "GetPedidoClienteLineasHash", {|Self, nView | ( ( Self ) ), ( ::getHashRecord( ::PedidosClientesLineas( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER GetPedidoClienteLineas(); oClass:AddInline( "GetPedidoClienteLineas", {|Self, nView | ( ( Self ) ), ( ::getArrayRecordById( ::PedidosClientesId( nView ), ::PedidosClientesLineas( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER GetPedidoClienteLineaBlank(); oClass:AddInline( "GetPedidoClienteLineaBlank", {|Self, nView | ( ( Self ) ), ( ::getHashRecordBlank( ::PedidosClientesLineas( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER GetPedidoClienteLineasDefaultValue(); oClass:AddInline( "GetPedidoClienteLineasDefaultValue", {|Self, nView | ( ( Self ) ), ( ::getHashRecordDefaultValues( ::PedidosClientesLineas( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER getStatusPedidosClientesLineas(); oClass:AddInline( "getStatusPedidosClientesLineas", {|Self, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::PedidosClientesLineas( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setStatusPedidosClientesLineas(); oClass:AddInline( "setStatusPedidosClientesLineas", {|Self, nView | ( ( Self ) ), ( SetStatus( ::PedidosClientesLineas( nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PedidosClientesSituaciones(); oClass:AddInline( "PedidosClientesSituaciones", {|Self, nView | ( ( Self ) ), ( ::Get( "PedCliE", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PedidosClientesSituacionesId(); oClass:AddInline( "PedidosClientesSituacionesId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "PedCliE", nView ) )->cSerPed + str( ( ::Get( "PedCliE", nView ) )->nNumPed, 9 ) + ( ::Get( "PedCliE", nView ) )->cSufPed ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PedidosClientesSituacionesIdText(); oClass:AddInline( "PedidosClientesSituacionesIdText", {|Self, nView | ( ( Self ) ), ( ::Get( "PedCliE", nView ) )->cSerPed + "/" + Alltrim( Str( ( ::Get( "PedCliE", nView ) )->nNumPed ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PedidosClientesIncidencias(); oClass:AddInline( "PedidosClientesIncidencias", {|Self, nView | ( ( Self ) ), ( ::Get( "PedCliI", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PedidosClientesIncidenciasId(); oClass:AddInline( "PedidosClientesIncidenciasId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "PedCliI", nView ) )->cSerPed + str( ( ::Get( "PedCliI", nView ) )->nNumPed, 9 ) + ( ::Get( "PedCliI", nView ) )->cSufPed ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PedidosClientesDocumentos(); oClass:AddInline( "PedidosClientesDocumentos", {|Self, nView | ( ( Self ) ), ( ::Get( "PedCliD", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PedidosClientesDocumentosId(); oClass:AddInline( "PedidosClientesDocumentosId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "PedCliD", nView ) )->cSerPed + str( ( ::Get( "PedCliD", nView ) )->nNumPed, 9 ) + ( ::Get( "PedCliD", nView ) )->cSufPed ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PedidosClientesPagos(); oClass:AddInline( "PedidosClientesPagos", {|Self, nView | ( ( Self ) ), ( ::Get( "PedCliP", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PedidosClientesPagosId(); oClass:AddInline( "PedidosClientesPagosId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "PedCliP", nView ) )->cSerPed + str( ( ::Get( "PedCliP", nView ) )->nNumPed, 9 ) + ( ::Get( "PedCliP", nView ) )->cSufPed ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER Situaciones(); oClass:AddInline( "Situaciones", {|Self, nView | ( ( Self ) ), ( ::Get( "Situa", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER SituacionesId(); oClass:AddInline( "SituacionesId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "Situa", nView ) )->cSitua ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER Clientes(); oClass:AddInline( "Clientes", {|Self, nView | ( ( Self ) ), ( ::Get( "Client", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER ClientesId(); oClass:AddInline( "ClientesId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "Client", nView ) )->Cod ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER ClientesNombre(); oClass:AddInline( "ClientesNombre", {|Self, nView | ( ( Self ) ), ( ( ::Get( "Client", nView ) )->Titulo ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getClientesField(); oClass:AddInline( "getClientesField", {|Self, nView, cField | ( ( Self ) ), ( ( ::Get( "Client", nView ) )->( fieldget( fieldpos( cField ) ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER gotoCliente(); oClass:AddInline( "gotoCliente", {|Self, id, nView | ( ( Self ) ), ( ::SeekInOrd( ::Clientes( nView ), id, "Cod" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER gotoIdClientes(); oClass:AddInline( "gotoIdClientes", {|Self, id, nView | ( ( Self ) ), ( ::SeekInOrd( ::Clientes( nView ), id, "Cod" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getStatusClientes(); oClass:AddInline( "getStatusClientes", {|Self, nView | ( ( Self ) ), ( ::aStatus := hGetStatus( ::Clientes( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setStatusClientes(); oClass:AddInline( "setStatusClientes", {|Self, nView | ( ( Self ) ), ( hSetStatus( ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getCurrentHashClientes(); oClass:AddInline( "getCurrentHashClientes", {|Self, nView | ( ( Self ) ), ( ::getHashRecordById( ::ClientesId( nView ), ::Clientes( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getDefaultHashClientes(); oClass:AddInline( "getDefaultHashClientes", {|Self, nView | ( ( Self ) ), ( ::getHashRecordDefaultValues( ::Clientes( nView ), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+      _HB_MEMBER setScopeClientes(); oClass:AddInline( "setScopeClientes", {|Self, id, nView | ( ( Self ) ), ( iif( empty( id ), id := ::ClientesId( nView ), ), ::getStatusClientes( nView ), ( ::Clientes( nView ) )->( ordScope( 0, id ) ), ( ::Clientes( nView ) )->( ordScope( 1, id ) ), ( ::Clientes( nView ) )->( dbgotop() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+      _HB_MEMBER quitScopeClientes(); oClass:AddInline( "quitScopeClientes", {|Self, nView | ( ( Self ) ), ( ( ::Clientes( nView ) )->( ordScope( 0, nil ) ), ( ::Clientes( nView ) )->( ordScope( 1, nil ) ), ::setStatusClientes( nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getLastKeyClientes(); oClass:AddInline( "getLastKeyClientes", {|Self, nView | ( ( Self ) ), ( nextkey( space(12), ::Clientes( nView ), "0", retNumCodCliEmp() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setFocusClientes(); oClass:AddInline( "setFocusClientes", {|Self, cTag, nView | ( ( Self ) ), ( ::cTag   := ( ::Clientes( nView )  )->( ordSetFocus( cTag ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ClientesDirecciones(); oClass:AddInline( "ClientesDirecciones", {|Self, nView | ( ( Self ) ), ( ::Get( "ObrasT", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER ClientesDireccionesId(); oClass:AddInline( "ClientesDireccionesId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "ObrasT", nView ) )->cCodCli ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getStatusClientesDirecciones(); oClass:AddInline( "getStatusClientesDirecciones", {|Self, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::ClientesDirecciones( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setStatusClientesDirecciones(); oClass:AddInline( "setStatusClientesDirecciones", {|Self, nView | ( ( Self ) ), ( SetStatus( ::Get( "ObrasT", nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setFocusClientesDirecciones(); oClass:AddInline( "setFocusClientesDirecciones", {|Self, cTag, nView | ( ( Self ) ), ( ::cTag   := ( ::ClientesDirecciones( nView )  )->( ordSetFocus( cTag ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER gotoIdClientesDirecciones(); oClass:AddInline( "gotoIdClientesDirecciones", {|Self, id, nView | ( ( Self ) ), ( ::seek( ::ClientesDirecciones( nView ), id ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ClientesIncidencias(); oClass:AddInline( "ClientesIncidencias", {|Self, nView | ( ( Self ) ), ( ::Get( "CliInc", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER ClientesIncidenciasId(); oClass:AddInline( "ClientesIncidenciasId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "CliInc", nView ) )->cCodCli ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER ClientesIncidenciasNombre(); oClass:AddInline( "ClientesIncidenciasNombre", {|Self, nView | ( ( Self ) ), ( ( ::Get( "CliInc", nView ) )->mDesInc ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER gotoIdClientesIncidencias(); oClass:AddInline( "gotoIdClientesIncidencias", {|Self, id, nView | ( ( Self ) ), ( ::SeekInOrd( ::ClientesIncidencias( nView ), id, "cCodCli" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER eofClientesIncidecias(); oClass:AddInline( "eofClientesIncidecias", {|Self, nView | ( ( Self ) ), ( ( ::ClientesIncidencias( nView ) )->( eof() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getStatusClientesIncidencias(); oClass:AddInline( "getStatusClientesIncidencias", {|Self, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::ClientesIncidencias( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setStatusClientesIncidencias(); oClass:AddInline( "setStatusClientesIncidencias", {|Self, nView | ( ( Self ) ), ( SetStatus( ::ClientesIncidencias( nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+      _HB_MEMBER setScopeClientesIncidencias(); oClass:AddInline( "setScopeClientesIncidencias", {|Self, id, nView | ( ( Self ) ), ( if( empty( id ), id := ::ClientesId( nView ), ), ::getStatusClientesIncidencias( nView ), ( ::ClientesIncidencias( nView ) )->( ordScope( 0, id ) ), ( ::ClientesIncidencias( nView ) )->( ordScope( 1, id ) ), ( ::ClientesIncidencias( nView ) )->( dbgotop() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+      _HB_MEMBER quitScopeClientesIncidencias(); oClass:AddInline( "quitScopeClientesIncidencias", {|Self, nView | ( ( Self ) ), ( ( ::ClientesIncidencias( nView ) )->( ordScope( 0, nil ) ), ( ::ClientesIncidencias( nView ) )->( ordScope( 1, nil ) ), ::setStatusClientesIncidencias( nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ClientesDocumentos(); oClass:AddInline( "ClientesDocumentos", {|Self, nView | ( ( Self ) ), ( ::Get( "ClientD", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ClientesBancos(); oClass:AddInline( "ClientesBancos", {|Self, nView | ( ( Self ) ), ( ::Get( "CliBnc", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getStatusClientesBancos(); oClass:AddInline( "getStatusClientesBancos", {|Self, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::ClientesBancos( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setStatusClientesBancos(); oClass:AddInline( "setStatusClientesBancos", {|Self, nView | ( ( Self ) ), ( SetStatus( ::Get( "CliBnc", nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setFocusClientesBancos(); oClass:AddInline( "setFocusClientesBancos", {|Self, cTag, nView | ( ( Self ) ), ( ::cTag   := ( ::ClientesBancos( nView )  )->( ordSetFocus( cTag ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ClientesEntidad(); oClass:AddInline( "ClientesEntidad", {|Self, nView | ( ( Self ) ), ( ::Get( "CliDad", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER ClientesEntidadId(); oClass:AddInline( "ClientesEntidadId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "CliDad", nView ) )->cCodCli ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER eofClientesEntidad(); oClass:AddInline( "eofClientesEntidad", {|Self, nView | ( ( Self ) ), ( ( ::Get( "CliDad", nView ) )->( eof() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER gotoIdClientesEntidad(); oClass:AddInline( "gotoIdClientesEntidad", {|Self, id, nView | ( ( Self ) ), ( ::seek( ::ClientesEntidad( nView ), id ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GrupoClientes(); oClass:AddInline( "GrupoClientes", {|Self, nView | ( ( Self ) ), ( ::Get( "GrpCli", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER PedidosProveedoresTableName(); oClass:AddInline( "PedidosProveedoresTableName", {|Self | ( ( Self ) ), ( "PedProvT" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PedidosProveedores(); oClass:AddInline( "PedidosProveedores", {|Self, nView | ( ( Self ) ), ( ::Get( "PedProvT", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PedidosProveedoresId(); oClass:AddInline( "PedidosProveedoresId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "PedProvT", nView ) )->cSerPed + str( ( ::Get( "PedProvT", nView ) )->nNumPed, 9 ) + ( ::Get( "PedProvT", nView ) )->cSufPed ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER gotoIdPedidosProveedores(); oClass:AddInline( "gotoIdPedidosProveedores", {|Self, id, nView | ( ( Self ) ), ( ::seekInOrd( ::PedidosProveedores( nView ), id, "nNumPed" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PedidosProveedoresLineasTableName(); oClass:AddInline( "PedidosProveedoresLineasTableName", {|Self | ( ( Self ) ), ( "PedProvL" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER adsPedidosProveedoresLineasTableName(); oClass:AddInline( "adsPedidosProveedoresLineasTableName", {|Self | ( ( Self ) ), ( cPatEmp() + ::PedidosProveedoresLineasTableName() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PedidosProveedoresLineas(); oClass:AddInline( "PedidosProveedoresLineas", {|Self, nView | ( ( Self ) ), ( ::Get( "PedProvL", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PedidosProveedoresLineasId(); oClass:AddInline( "PedidosProveedoresLineasId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "PedProvL", nView ) )->cSerPed + str( ( ::Get( "PedProvL", nView ) )->nNumPed, 9 ) + ( ::Get( "PedProvL", nView ) )->cSufPed ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getStatusPedidosProveedoresLineas(); oClass:AddInline( "getStatusPedidosProveedoresLineas", {|Self, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::PedidosProveedoresLineas( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setStatusPedidosProveedoresLineas(); oClass:AddInline( "setStatusPedidosProveedoresLineas", {|Self, nView | ( ( Self ) ), ( SetStatus( ::PedidosProveedoresLineas( nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setFocusPedidosProveedoresLineas(); oClass:AddInline( "setFocusPedidosProveedoresLineas", {|Self, cTag, nView | ( ( Self ) ), ( ::cTag   := ( ::PedidosProveedoresLineas( nView )  )->( ordSetFocus( cTag ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PedidosProveedoresIncidenciasTableName(); oClass:AddInline( "PedidosProveedoresIncidenciasTableName", {|Self | ( ( Self ) ), ( "PedPrvI" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER adsPedidosProveedoresIncidenciasTableName(); oClass:AddInline( "adsPedidosProveedoresIncidenciasTableName", {|Self | ( ( Self ) ), ( cPatEmp() + ::PedidosProveedoresIncidenciasTableName() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PedidosProveedoresIncidencias(); oClass:AddInline( "PedidosProveedoresIncidencias", {|Self, nView | ( ( Self ) ), ( ::Get( ::PedidosProveedoresIncidenciasTableName(), nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PedidosProveedoresDocumentosTableName(); oClass:AddInline( "PedidosProveedoresDocumentosTableName", {|Self | ( ( Self ) ), ( "PedPrvD" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER adsPedidosProveedoresDocumentosTableName(); oClass:AddInline( "adsPedidosProveedoresDocumentosTableName", {|Self | ( ( Self ) ), ( cPatEmp() + ::PedidosProveedoresDocumentosTableName() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PedidosProveedoresDocumentos(); oClass:AddInline( "PedidosProveedoresDocumentos", {|Self, nView | ( ( Self ) ), ( ::Get( "PedPrvD", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+
+   _HB_MEMBER AlbaranesProveedores(); oClass:AddInline( "AlbaranesProveedores", {|Self, nView | ( ( Self ) ), ( ::Get( "AlbProvT", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AlbaranesProveedoresId(); oClass:AddInline( "AlbaranesProveedoresId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "AlbProvT", nView ) )->cSerAlb + str( ( ::Get( "AlbProvT", nView ) )->nNumAlb, 9 ) + ( ::Get( "AlbProvT", nView ) )->cSufAlb ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AlbaranesProveedoresFecha(); oClass:AddInline( "AlbaranesProveedoresFecha", {|Self, nView | ( ( Self ) ), ( ( ::Get( "AlbProvT", nView ) )->dFecAlb ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AlbaranesProveedoresFacturado(); oClass:AddInline( "AlbaranesProveedoresFacturado", {|Self, nView | ( ( Self ) ), ( ( ::Get( "AlbProvT", nView ) )->nFacturado == 3 ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AlbaranesProveedoresNoFacturado(); oClass:AddInline( "AlbaranesProveedoresNoFacturado", {|Self, nView | ( ( Self ) ), ( !::AlbaranesProveedoresFacturado( nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER getStatusAlbaranesProveedores(); oClass:AddInline( "getStatusAlbaranesProveedores", {|Self, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::Get( "AlbProvT", nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setStatusAlbaranesProveedores(); oClass:AddInline( "setStatusAlbaranesProveedores", {|Self, nView | ( ( Self ) ), ( SetStatus( ::Get( "AlbProvT", nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+      _HB_MEMBER setFocusAlbaranesProveedores(); oClass:AddInline( "setFocusAlbaranesProveedores", {|Self, cTag, nView | ( ( Self ) ), ( ::cTag   := ( ::Get( "AlbProvT", nView ) )->( ordSetFocus( cTag ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER restoreFocusAlbaranesProveedores(); oClass:AddInline( "restoreFocusAlbaranesProveedores", {|Self, nView | ( ( Self ) ), ( ( ::Get( "AlbProvT", nView ) )->( ordSetFocus( ::cTag ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER AlbaranesProveedoresLineas(); oClass:AddInline( "AlbaranesProveedoresLineas", {|Self, nView | ( ( Self ) ), ( ::Get( "AlbProvL", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+         _HB_MEMBER AlbaranesProveedoresLineasId(); oClass:AddInline( "AlbaranesProveedoresLineasId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "AlbProvL", nView ) )->cSerAlb + str( ( ::Get( "AlbProvL", nView ) )->nNumAlb, 9 ) + ( ::Get( "AlbProvL", nView ) )->cSufAlb ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+         _HB_MEMBER AlbaranesProveedoresLineasNumero(); oClass:AddInline( "AlbaranesProveedoresLineasNumero", {|Self, nView | ( ( Self ) ), ( ( ::Get( "AlbProvL", nView ) )->cSerAlb + str( ( ::Get( "AlbProvL", nView ) )->nNumAlb, 9 ) + ( ::Get( "AlbProvL", nView ) )->cSufAlb + str( ( ::Get( "AlbProvL", nView ) )->nNumLin, 4 ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER AlbaranesProveedoresLineasFacturada(); oClass:AddInline( "AlbaranesProveedoresLineasFacturada", {|Self, nView | ( ( Self ) ), ( ( ::AlbaranesProveedoresLineas( nView ) )->lFacturado ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER AlbaranesProveedoresLineasNoFacturada(); oClass:AddInline( "AlbaranesProveedoresLineasNoFacturada", {|Self, nView | ( ( Self ) ), ( !::AlbaranesProveedoresLineasFacturada( nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+      _HB_MEMBER getStatusAlbaranesProveedoresLineas(); oClass:AddInline( "getStatusAlbaranesProveedoresLineas", {|Self, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::Get( "AlbProvL", nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER setStatusAlbaranesProveedoresLineas(); oClass:AddInline( "setStatusAlbaranesProveedoresLineas", {|Self, nView | ( ( Self ) ), ( SetStatus( ::Get( "AlbProvL", nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+      _HB_MEMBER setFocusAlbaranesProveedoresLineas(); oClass:AddInline( "setFocusAlbaranesProveedoresLineas", {|Self, cTag, nView | ( ( Self ) ), ( ::cTag   := ( ::Get( "AlbProvL", nView ) )->( ordSetFocus( cTag ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER restoreFocusAlbaranesProveedoresLineas(); oClass:AddInline( "restoreFocusAlbaranesProveedoresLineas", {|Self, nView | ( ( Self ) ), ( ( ::Get( "AlbProvL", nView ) )->( ordSetFocus( ::cTag ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER AlbaranesProveedoresSeries(); oClass:AddInline( "AlbaranesProveedoresSeries", {|Self, nView | ( ( Self ) ), ( ::Get( "AlbPrvS", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+         _HB_MEMBER AlbaranesProveedoresSeriesId(); oClass:AddInline( "AlbaranesProveedoresSeriesId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "AlbPrvS", nView ) )->cSerAlb + str( ( ::Get( "AlbPrvS", nView ) )->nNumAlb, 9 ) + ( ::Get( "AlbPrvS", nView ) )->cSufAlb ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+      _HB_MEMBER getStatusAlbaranesProveedoresSeries(); oClass:AddInline( "getStatusAlbaranesProveedoresSeries", {|Self, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::Get( "AlbPrvS", nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER setStatusAlbaranesProveedoresSeries(); oClass:AddInline( "setStatusAlbaranesProveedoresSeries", {|Self, nView | ( ( Self ) ), ( SetStatus( ::Get( "AlbPrvS", nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+      _HB_MEMBER setFocusAlbaranesProveedoresSeries(); oClass:AddInline( "setFocusAlbaranesProveedoresSeries", {|Self, cTag, nView | ( ( Self ) ), ( ::cTag   := ( ::Get( "AlbPrvS", nView ) )->( ordSetFocus( cTag ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER restoreFocusAlbaranesProveedoresSeries(); oClass:AddInline( "restoreFocusAlbaranesProveedoresSeries", {|Self, nView | ( ( Self ) ), ( ( ::Get( "AlbPrvS", nView ) )->( ordSetFocus( ::cTag ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER AlbaranesProveedoresIncidencias(); oClass:AddInline( "AlbaranesProveedoresIncidencias", {|Self, nView | ( ( Self ) ), ( ::Get( "AlbPrvI", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AlbaranesProveedoresDocumentos(); oClass:AddInline( "AlbaranesProveedoresDocumentos", {|Self, nView | ( ( Self ) ), ( ::Get( "AlbPrvD", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+   _HB_MEMBER FacturasProveedores(); oClass:AddInline( "FacturasProveedores", {|Self, nView | ( ( Self ) ), ( ::Get( "FacPrvT", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasProveedoresId(); oClass:AddInline( "FacturasProveedoresId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacPrvT", nView ) )->cSerFac + str( ( ::Get( "FacPrvT", nView ) )->nNumFac, 9 ) + ( ::Get( "FacPrvT", nView ) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasProveedoresIdText(); oClass:AddInline( "FacturasProveedoresIdText", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacPrvT", nView ) )->cSerFac + "/" + alltrim( str( ( ::Get( "FacPrvT", nView ) )->nNumFac, 9 ) ) + "/" + ( ::Get( "FacPrvT", nView ) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FacturasProveedoresLineas(); oClass:AddInline( "FacturasProveedoresLineas", {|Self, nView | ( ( Self ) ), ( ::Get( "FacPrvL", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasProveedoresLineasId(); oClass:AddInline( "FacturasProveedoresLineasId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacPrvL", nView ) )->cSerFac + str( ( ::Get( "FacPrvL", nView ) )->nNumFac, 9 ) + ( ::Get( "FacPrvL", nView ) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasProveedoresLineasNumeroId(); oClass:AddInline( "FacturasProveedoresLineasNumeroId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacPrvL", nView ) )->cSerFac + str( ( ::Get( "FacPrvL", nView ) )->nNumFac, 9 ) + ( ::Get( "FacPrvL", nView ) )->cSufFac + Str( ( ::Get( "FacPrvL", nView ) )->nNumLin ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FacturasProveedoresIncidencias(); oClass:AddInline( "FacturasProveedoresIncidencias", {|Self, nView | ( ( Self ) ), ( ::Get( "FacPrvI", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasProveedoresIncidenciasId(); oClass:AddInline( "FacturasProveedoresIncidenciasId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacPrvI", nView ) )->cSerFac + str( ( ::Get( "FacPrvI", nView ) )->nNumFac, 9 ) + ( ::Get( "FacPrvI", nView ) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FacturasProveedoresDocumentos(); oClass:AddInline( "FacturasProveedoresDocumentos", {|Self, nView | ( ( Self ) ), ( ::Get( "FacPrvD", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasProveedoresDocumentosId(); oClass:AddInline( "FacturasProveedoresDocumentosId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacPrvD", nView ) )->cSerFac + str( ( ::Get( "FacPrvD", nView ) )->nNumFac, 9 ) + ( ::Get( "FacPrvD", nView ) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FacturasProveedoresSeries(); oClass:AddInline( "FacturasProveedoresSeries", {|Self, nView | ( ( Self ) ), ( ::Get( "FacPrvS", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasProveedoresSeriesId(); oClass:AddInline( "FacturasProveedoresSeriesId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacPrvS", nView ) )->cSerFac + str( ( ::Get( "FacPrvS", nView ) )->nNumFac, 9 ) + ( ::Get( "FacPrvS", nView ) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FacturasProveedoresPagos(); oClass:AddInline( "FacturasProveedoresPagos", {|Self, nView | ( ( Self ) ), ( ::Get( "FacPrvP", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasProveedoresPagosId(); oClass:AddInline( "FacturasProveedoresPagosId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "FacPrvP", nView ) )->cSerFac + str( ( ::Get( "FacPrvP", nView ) )->nNumFac, 9 ) + ( ::Get( "FacPrvP", nView ) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER FacturasRectificativasProveedores(); oClass:AddInline( "FacturasRectificativasProveedores", {|Self, nView | ( ( Self ) ), ( ::Get( "RctPrvT", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasRectificativasProveedoresId(); oClass:AddInline( "FacturasRectificativasProveedoresId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "RctPrvT", nView ) )->cSerFac + str( ( ::Get( "RctPrvT", nView ) )->nNumFac, 9 ) + ( ::Get( "RctPrvT", nView ) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER FacturasRectificativasProveedoresLineas(); oClass:AddInline( "FacturasRectificativasProveedoresLineas", {|Self, nView | ( ( Self ) ), ( ::Get( "RctPrvL", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FacturasRectificativasProveedoresLineasId(); oClass:AddInline( "FacturasRectificativasProveedoresLineasId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "RctPrvL", nView ) )->cSerFac + str( ( ::Get( "RctPrvL", nView ) )->nNumFac, 9 ) + ( ::Get( "RctPrvL", nView ) )->cSufFac ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER FacturasRectificativasProveedoresIncidencias(); oClass:AddInline( "FacturasRectificativasProveedoresIncidencias", {|Self, nView | ( ( Self ) ), ( ::Get( "RctPrvI", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER FacturasRectificativasProveedoresDocumentos(); oClass:AddInline( "FacturasRectificativasProveedoresDocumentos", {|Self, nView | ( ( Self ) ), ( ::Get( "RctPrvD", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER FacturasRectificativasProveedoresSeries(); oClass:AddInline( "FacturasRectificativasProveedoresSeries", {|Self, nView | ( ( Self ) ), ( ::Get( "RctPrvS", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER Proveedores(); oClass:AddInline( "Proveedores", {|Self, nView | ( ( Self ) ), ( ::Get( "Provee", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER gotoProveedores(); oClass:AddInline( "gotoProveedores", {|Self, id, nView | ( ( Self ) ), ( ::SeekInOrd( ::Proveedores( nView ), id, "Cod" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER ProveedoresId(); oClass:AddInline( "ProveedoresId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "Provee", nView ) )->Cod ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER BancosProveedores(); oClass:AddInline( "BancosProveedores", {|Self, nView | ( ( Self ) ), ( ::Get( "PrvBnc", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER PartesProduccion(); oClass:AddInline( "PartesProduccion", {|Self, nView | ( ( Self ) ), ( ::Get( "ProCab", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER PartesProduccionMaterialProducido(); oClass:AddInline( "PartesProduccionMaterialProducido", {|Self, nView | ( ( Self ) ), ( ::Get( "ProLin", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PartesProduccionMaterial(); oClass:AddInline( "PartesProduccionMaterial", {|Self, nView | ( ( Self ) ), ( ::Get( "ProLin", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER PartesProduccionMaterialProduccionSeries(); oClass:AddInline( "PartesProduccionMaterialProduccionSeries", {|Self, nView | ( ( Self ) ), ( ::Get( "ProSer", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PartesProduccionMaterialSeries(); oClass:AddInline( "PartesProduccionMaterialSeries", {|Self, nView | ( ( Self ) ), ( ::Get( "ProSer", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER PartesProduccionMateriaPrima(); oClass:AddInline( "PartesProduccionMateriaPrima", {|Self, nView | ( ( Self ) ), ( ::Get( "ProMat", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PartesProduccionMaquinaria(); oClass:AddInline( "PartesProduccionMaquinaria", {|Self, nView | ( ( Self ) ), ( ::Get( "ProMaq", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PartesProduccionOperarios(); oClass:AddInline( "PartesProduccionOperarios", {|Self, nView | ( ( Self ) ), ( ::Get( "ProPer", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TiposIva(); oClass:AddInline( "TiposIva", {|Self, nView | ( ( Self ) ), ( ::Get( "TIva", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER gotoTiposIva(); oClass:AddInline( "gotoTiposIva", {|Self, id, nView | ( ( Self ) ), ( ::SeekInOrd( ::TiposIva( nView ), id, "Tipo" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ProveedorArticulo(); oClass:AddInline( "ProveedorArticulo", {|Self, nView | ( ( Self ) ), ( ::Get( "ProvArt", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Articulos(); oClass:AddInline( "Articulos", {|Self, nView | ( ( Self ) ), ( ::Get( "Articulo", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ArticulosId(); oClass:AddInline( "ArticulosId", {|Self, nView | ( ( Self ) ), ( ( ::Articulos( nView ) )->Codigo ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ArticulosIdText(); oClass:AddInline( "ArticulosIdText", {|Self, nView | ( ( Self ) ), ( alltrim( ( ::Articulos( nView ) )->Codigo ) + Space(1) + alltrim( ( ::Articulos( nView ) )->Nombre ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER gotoArticulos(); oClass:AddInline( "gotoArticulos", {|Self, id, nView | ( ( Self ) ), ( ::seekInOrd( ::Articulos( nView ), id, "Codigo" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER setScopeArticulos(); oClass:AddInline( "setScopeArticulos", {|Self, id, nView | ( ( Self ) ), ( iif( empty( id ), id := ::ArticulosId( nView ), ), ( ::Articulos( nView ) )->( ordScope( 0, id ) ), ( ::Articulos( nView ) )->( ordScope( 1, id ) ), ( ::Articulos( nView ) )->( dbgotop() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getArticuloTablaPropiedades( id, nView); oClass:AddMethod( "getArticuloTablaPropiedades", @D_getArticuloTablaPropiedades(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setArticuloTablaPropiedades( id, idCodigoPrimeraPropiedad, idCodigoSegundaPropiedad, idValorPrimeraPropiedad, idValorSegundaPropiedad, nUnidades, aPropertiesTable); oClass:AddMethod( "setArticuloTablaPropiedades", @D_setArticuloTablaPropiedades(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER getStatusArticulos(); oClass:AddInline( "getStatusArticulos", {|Self, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::Articulos( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setStatusArticulos(); oClass:AddInline( "setStatusArticulos", {|Self, nView | ( ( Self ) ), ( SetStatus( ::Articulos( nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setFocusArticulos(); oClass:AddInline( "setFocusArticulos", {|Self, cTag, nView | ( ( Self ) ), ( ::cTag   := ( ::Articulos( nView )  )->( ordSetFocus( cTag ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER ArticuloLenguaje(); oClass:AddInline( "ArticuloLenguaje", {|Self, nView | ( ( Self ) ), ( ::Get( "ArtLeng", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER ArticulosCodigosBarras(); oClass:AddInline( "ArticulosCodigosBarras", {|Self, nView | ( ( Self ) ), ( ::Get( "ArtCodebar", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER ArticuloPrecioPropiedades(); oClass:AddInline( "ArticuloPrecioPropiedades", {|Self, nView | ( ( Self ) ), ( ::Get( "ArtDiv", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER ArticuloTipos(); oClass:AddInline( "ArticuloTipos", {|Self, nView | ( ( Self ) ), ( ::Get( "TipArt", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER ArticuloImagenes(); oClass:AddInline( "ArticuloImagenes", {|Self, nView | ( ( Self ) ), ( ::Get( "ArtImg", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER ArticuloDocumentos(); oClass:AddInline( "ArticuloDocumentos", {|Self, nView | ( ( Self ) ), ( ::Get( "ArtDoc", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER ArticuloStockAlmacenes(); oClass:AddInline( "ArticuloStockAlmacenes", {|Self, nView | ( ( Self ) ), ( ::Get( "ArtAlm", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER ArticuloStockAlmacenesId(); oClass:AddInline( "ArticuloStockAlmacenesId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "ArtAlm", nView ) )->cCodArt ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Ofertas(); oClass:AddInline( "Ofertas", {|Self, nView | ( ( Self ) ), ( ::Get( "Oferta", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getStatusOfertas(); oClass:AddInline( "getStatusOfertas", {|Self, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::Ofertas( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setStatusOfertas(); oClass:AddInline( "setStatusOfertas", {|Self, nView | ( ( Self ) ), ( SetStatus( ::Ofertas( nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TipoArticulos(); oClass:AddInline( "TipoArticulos", {|Self, nView | ( ( Self ) ), ( ::Get( "TipArt", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TarifaPrecios(); oClass:AddInline( "TarifaPrecios", {|Self, nView | ( ( Self ) ), ( ::Get( "TarPreT", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TarifaPreciosLineas(); oClass:AddInline( "TarifaPreciosLineas", {|Self, nView | ( ( Self ) ), ( ::Get( "TarPreL", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Familias(); oClass:AddInline( "Familias", {|Self, nView | ( ( Self ) ), ( ::Get( "Familias", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER FamiliasId(); oClass:AddInline( "FamiliasId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "Familias", nView ) )->cCodFam ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getStatusFamilias(); oClass:AddInline( "getStatusFamilias", {|Self, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::Familias( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setStatusFamilias(); oClass:AddInline( "setStatusFamilias", {|Self, nView | ( ( Self ) ), ( SetStatus( ::Familias( nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER gotoFamilias(); oClass:AddInline( "gotoFamilias", {|Self, id, nView | ( ( Self ) ), ( ::seekInOrd( ::Familias( nView ), id, "cCodFam" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FamiliasLenguajes(); oClass:AddInline( "FamiliasLenguajes", {|Self, nView | ( ( Self ) ), ( ::Get( "FamLeng", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Temporadas(); oClass:AddInline( "Temporadas", {|Self, nView | ( ( Self ) ), ( ::Get( "Temporadas", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Categorias(); oClass:AddInline( "Categorias", {|Self, nView | ( ( Self ) ), ( ::Get( "Categorias", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Kit(); oClass:AddInline( "Kit", {|Self, nView | ( ( Self ) ), ( ::Get( "ArtKit", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getStatusKit(); oClass:AddInline( "getStatusKit", {|Self, nView | ( ( Self ) ), ( aGetStatus( ::Kit( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setStatusKit(); oClass:AddInline( "setStatusKit", {|Self, aStatus, nView | ( ( Self ) ), ( SetStatus( ::Kit( nView ), aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Asociado(); oClass:AddInline( "Asociado", {|Self, nView | ( ( Self ) ), ( ::Get( "ArtAsc", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ParKit(); oClass:AddInline( "ParKit", {|Self, nView | ( ( Self ) ), ( ::Get( "ParKit", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FormasPago(); oClass:AddInline( "FormasPago", {|Self, nView | ( ( Self ) ), ( ::Get( "FPago", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER gotoFormasPago(); oClass:AddInline( "gotoFormasPago", {|Self, id, nView | ( ( Self ) ), ( ::seekInOrd( ::FormasPago( nView ), id, "cCodPago" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER gotoFormasPagoWeb(); oClass:AddInline( "gotoFormasPagoWeb", {|Self, id, nView | ( ( Self ) ), ( ::seekInOrd( ::FormasPago( nView ), id, "cCodWeb" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getStatusFormasPago(); oClass:AddInline( "getStatusFormasPago", {|Self, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::FormasPago( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setStatusFormasPago(); oClass:AddInline( "setStatusFormasPago", {|Self, nView | ( ( Self ) ), ( SetStatus( ::FormasPago( nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Divisas(); oClass:AddInline( "Divisas", {|Self, nView | ( ( Self ) ), ( ::Get( "Divisas", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Cajas(); oClass:AddInline( "Cajas", {|Self, nView | ( ( Self ) ), ( ::Get( "Cajas", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CajasL(); oClass:AddInline( "CajasL", {|Self, nView | ( ( Self ) ), ( ::Get( "CajL", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Propiedades(); oClass:AddInline( "Propiedades", {|Self, nView | ( ( Self ) ), ( ::Get( "Pro", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PropiedadesId(); oClass:AddInline( "PropiedadesId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "RctPrvT", nView ) )->cCodPro ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PropiedadesLineas(); oClass:AddInline( "PropiedadesLineas", {|Self, nView | ( ( Self ) ), ( ::Get( "TblPro", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER gotoIdPropiedadesLineas(); oClass:AddInline( "gotoIdPropiedadesLineas", {|Self, id, nView | ( ( Self ) ), ( ::seekInOrd( ::PropiedadesLineas( nView ), id, "cCodPro" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PropiedadesLineasId(); oClass:AddInline( "PropiedadesLineasId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "TblPro", nView ) )->cCodPro + ( ::Get( "TblPro", nView ) )->cCodTbl ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER PropiedadesLineasDos(); oClass:AddInline( "PropiedadesLineasDos", {|Self, nView | ( ( Self ) ), ( ::Get( "TblPro[]", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Almacen(); oClass:AddInline( "Almacen", {|Self, nView | ( ( Self ) ), ( ::Get( "Almacen", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getStatusAlmacen(); oClass:AddInline( "getStatusAlmacen", {|Self, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::Almacen( nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setStatusAlmacen(); oClass:AddInline( "setStatusAlmacen", {|Self, nView | ( ( Self ) ), ( SetStatus( ::Almacen( nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER setFocusAlmacen(); oClass:AddInline( "setFocusAlmacen", {|Self, cTag, nView | ( ( Self ) ), ( ::cTag   := ( ::Almacen( nView )  )->( ordSetFocus( cTag ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Documentos(); oClass:AddInline( "Documentos", {|Self, nView | ( ( Self ) ), ( ::Get( "RDocumen", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Usuarios(); oClass:AddInline( "Usuarios", {|Self, nView | ( ( Self ) ), ( ::Get( "Users", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Asistencias(); oClass:AddInline( "Asistencias", {|Self, nView | ( ( Self ) ), ( ::Get( "Asistencia", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER UbicacionLineas(); oClass:AddInline( "UbicacionLineas", {|Self, nView | ( ( Self ) ), ( ::Get( "UbiCal", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Delegaciones(); oClass:AddInline( "Delegaciones", {|Self, nView | ( ( Self ) ), ( ::Get( "Delega", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Contadores(); oClass:AddInline( "Contadores", {|Self, nView | ( ( Self ) ), ( ::Get( "NCount", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER gotoContadores(); oClass:AddInline( "gotoContadores", {|Self, id, nView | ( ( Self ) ), ( ::seekInOrd( ::Contadores( nView ), id, "Doc" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Empresa(); oClass:AddInline( "Empresa", {|Self, nView | ( ( Self ) ), ( ::Get( "Empresa", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER EmpresaBancos(); oClass:AddInline( "EmpresaBancos", {|Self, nView | ( ( Self ) ), ( ::Get( "EmpBnc", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CodigosPostales(); oClass:AddInline( "CodigosPostales", {|Self, nView | ( ( Self ) ), ( ::Get( "CodPostal", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Provincias(); oClass:AddInline( "Provincias", {|Self, nView | ( ( Self ) ), ( ::Get( "Provincia", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER gotoProvincias(); oClass:AddInline( "gotoProvincias", {|Self, id, nView | ( ( Self ) ), ( ::seekInOrd( ::Provincias( nView ), id, "cCodPrv" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Atipicas(); oClass:AddInline( "Atipicas", {|Self, nView | ( ( Self ) ), ( ::Get( "CliAtp", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER gotoIdAtipicasAgentes(); oClass:AddInline( "gotoIdAtipicasAgentes", {|Self, idAgente, idArticulo, nView | ( ( Self ) ), ( ::seekInOrd( ::Atipicas( nView ), idAgente + idArticulo, "cAgeArt" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ClientesContactos(); oClass:AddInline( "ClientesContactos", {|Self, nView | ( ( Self ) ), ( ::Get( "CliCto", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Agentes(); oClass:AddInline( "Agentes", {|Self, nView | ( ( Self ) ), ( ::Get( "Agentes", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AgentesId(); oClass:AddInline( "AgentesId", {|Self, nView | ( ( Self ) ), ( ( ::Get( "Agentes", nView ) )->cCodAge ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AgentesComisiones(); oClass:AddInline( "AgentesComisiones", {|Self, nView | ( ( Self ) ), ( ::Get( "AgeCom", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AgentesRelaciones(); oClass:AddInline( "AgentesRelaciones", {|Self, nView | ( ( Self ) ), ( ::Get( "AgeRel", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Lenguajes(); oClass:AddInline( "Lenguajes", {|Self, nView | ( ( Self ) ), ( ::Get( "Lenguaje", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Fabricantes(); oClass:AddInline( "Fabricantes", {|Self, nView | ( ( Self ) ), ( ::Get( "Fabric", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER gotoIdFabricantes(); oClass:AddInline( "gotoIdFabricantes", {|Self, id, nView | ( ( Self ) ), ( ::seekInOrd( ::Fabricantes( nView ), id, "cCodFab" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Ruta(); oClass:AddInline( "Ruta", {|Self, nView | ( ( Self ) ), ( ::Get( "Ruta", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Operarios(); oClass:AddInline( "Operarios", {|Self, nView | ( ( Self ) ), ( ::Get( "OpeT", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EstadoArticulo(); oClass:AddInline( "EstadoArticulo", {|Self, nView | ( ( Self ) ), ( ::Get( "EstadoSat", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CamposExtras(); oClass:AddInline( "CamposExtras", {|Self, nView | ( ( Self ) ), ( ::Get( "CampoExtra", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DetCamposExtras(); oClass:AddInline( "DetCamposExtras", {|Self, nView | ( ( Self ) ), ( ::Get( "DetCExtra", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Pais(); oClass:AddInline( "Pais", {|Self, nView | ( ( Self ) ), ( ::Get( "Pais", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Turnos(); oClass:AddInline( "Turnos", {|Self, nView | ( ( Self ) ), ( ::Get( "Turno", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TiposEnvases(); oClass:AddInline( "TiposEnvases", {|Self, nView | ( ( Self ) ), ( ::Get( "FraPub", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER ImpuestosEspeciales(); oClass:AddInline( "ImpuestosEspeciales", {|Self, nView | ( ( Self ) ), ( ::GetObject( "ImpuestosEspeciales", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CamposExtraHeader(); oClass:AddInline( "CamposExtraHeader", {|Self, nView | ( ( Self ) ), ( ::GetObject( "CamposExtraHeader", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CamposExtraLine(); oClass:AddInline( "CamposExtraLine", {|Self, nView | ( ( Self ) ), ( ::GetObject( "CamposExtraLine", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER UnidadMedicion(); oClass:AddInline( "UnidadMedicion", {|Self, nView | ( ( Self ) ), ( ::GetObject( "UnidadMedicion", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CentroCoste(); oClass:AddInline( "CentroCoste", {|Self, nView | ( ( Self ) ), ( ::GetObject( "CentroCoste", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Stocks(); oClass:AddInline( "Stocks", {|Self, nView | ( ( Self ) ), ( ::GetObject( "Stocks", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Banderas(); oClass:AddInline( "Banderas", {|Self, nView | ( ( Self ) ), ( ::GetObject( "Banderas", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getPrestaShopId(); oClass:AddInline( "getPrestaShopId", {|Self, nView | ( ( Self ) ), ( ::GetObject( "PrestaShopId", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER gruposProveedores(); oClass:AddInline( "gruposProveedores", {|Self, nView | ( ( Self ) ), ( ::GetObject( "GruposProveedores", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER objectGruposClientes(); oClass:AddInline( "objectGruposClientes", {|Self, nView | ( ( Self ) ), ( ::GetObject( "GruposClientes", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER objectCodigosPostales(); oClass:AddInline( "objectCodigosPostales", {|Self, nView | ( ( Self ) ), ( ::GetObject( "CodigosPostales", nView ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER Lock(); oClass:AddInline( "Lock", {|Self, cDatabase, nView | ( ( Self ) ), ( dbLock( ::Get( cDatabase, nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER UnLock(); oClass:AddInline( "UnLock", {|Self, cDatabase, nView | ( ( Self ) ), ( ( ::Get( cDatabase, nView ) )->( dbUnLock() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetStatus(); oClass:AddInline( "GetStatus", {|Self, cDatabase, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::Get( cDatabase, nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetStatus(); oClass:AddInline( "SetStatus", {|Self, cDatabase, nView | ( ( Self ) ), ( SetStatus( ::Get( cDatabase, nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetInitStatus(); oClass:AddInline( "GetInitStatus", {|Self, cDatabase, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::Get( cDatabase, nView ), .T. ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetStatusTmp(); oClass:AddInline( "GetStatusTmp", {|Self, cDatabase, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::Tmp( cDatabase, nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetStatusTmp(); oClass:AddInline( "SetStatusTmp", {|Self, cDatabase, nView | ( ( Self ) ), ( SetStatus( ::Tmp( cDatabase, nView ), ::aStatus ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetInitStatusTmp(); oClass:AddInline( "GetInitStatusTmp", {|Self, cDatabase, nView | ( ( Self ) ), ( ::aStatus := aGetStatus( ::Tmp( cDatabase, nView ), .T. ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Seek(); oClass:AddInline( "Seek", {|Self, cWorkArea, uValue | ( ( Self ) ), ( ( cWorkArea )->( dbSeek( uValue ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER SeekInOrd(); oClass:AddInline( "SeekInOrd", {|Self, cWorkArea, uValue, cOrder | ( ( Self ) ), ( dbSeekInOrd( uValue, cOrder, cWorkArea ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Eof(); oClass:AddInline( "Eof", {|Self, cWorkArea, nView | ( ( Self ) ), ( ( cWorkArea )->( eof() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Top(); oClass:AddInline( "Top", {|Self, cDatabase, nView | ( ( Self ) ), ( dbFirst( ::Get( cDatabase, nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Bottom(); oClass:AddInline( "Bottom", {|Self, cDatabase, nView | ( ( Self ) ), ( dbLast( ::Get( cDatabase, nView ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenObject( oDataTable); oClass:AddMethod( "OpenObject", @D_OpenObject(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getSQL( cDataTable, cSelect, nView); oClass:AddMethod( "getSQL", @D_getSQL(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER openSQL( cDataTable, cSelect, nView); oClass:AddMethod( "openSQL", @D_openSQL(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS D ;
+
+
+
+static FUNCTION D_CreateView( cDriver ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local hView
+
+   If( cDriver == nil, cDriver := cDriver(), ) ;
+
+   hView             := { "Driver" => cDriver }
+
+   hset( ::hViews, ++::nView, hView )
+
+RETURN ( ::nView )
+
+
+
+static FUNCTION D_AssertView( nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   If( nView == nil, nView := ::nView, ) ;
+
+   if empty( nView )
+      RETURN ( .F. )
+   end
+
+   if !hhaskey( ::hViews, nView )
+      RETURN ( .F. )
+   end
+
+RETURN ( .T. )
+
+
+
+   static FUNCTION D_DeleteView( nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+      local u
+      local value
+      local hView
+
+      if ::AssertView( nView )
+
+         hView          := hGet( ::hViews, nView )
+         if hb_ishash( hView )
+
+            for each u in hView
+
+               value    := u
+               do case
+                  case isChar( value )
+                     if( ( value )->( used() ), ( value )->( dbCloseArea() ), )
+                  case isObject( value )
+                     value:CloseService()
+               end
+
+            next
+
+         end
+
+         HDel( ::hViews, nView )
+
+      end
+
+   RETURN ( Self )
+
+
+
+   static FUNCTION D_Get( cDataTable, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+      local cHandle  := ::GetView( cDataTable, nView )
+
+      if empty( cHandle )
+         cHandle     := ::OpenDatabase( cDataTable, nView )
+      end
+
+   RETURN ( cHandle )
+
+
+
+   static FUNCTION D_GetObject( cName, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+      local cHandle  := ::GetView( cName, nView )
+
+      if empty( cHandle )
+         cHandle     := ::OpenObject( cName, nView )
+      end
+
+   RETURN ( cHandle )
+
+
+
+   static FUNCTION D_GetView( cDatabase, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+      local hView
+      local cHandle
+
+      if ::AssertView( nView )
+
+         hView          := hGet( ::hViews, nView )
+         if hb_ishash( hView )
+            if hhaskey( hView, Upper( cDatabase ) )
+               cHandle  := hGet( hView, Upper( cDatabase ) )
+            end
+         end
+      end
+
+   RETURN ( cHandle )
+
+
+
+   static FUNCTION D_getDictionary( cDataTable ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+      local hDictionary    := ::getDictionaryView( cDataTable )
+
+      if empty( hDictionary )
+
+         hDictionary       := TDataCenter():getDictionary( cDataTable )
+
+         ::addDictionary( cDataTable, hDictionary )
+
+      end
+
+   RETURN ( hDictionary )
+
+
+
+   static FUNCTION D_getDictionaryView( cDataTable ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+      local hDictionary
+
+      if hhaskey( ::hDictionary, Upper( cDataTable ) )
+         hDictionary    := hGet( ::hDictionary, Upper( cDataTable ) )
+      end
+
+   RETURN ( hDictionary )
+
+
+
+   static FUNCTION D_GetDriver( nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+      local hView
+      local cDriver     := cDriver()
+
+      if ::AssertView( nView )
+         hView          := hGet( ::hViews, nView )
+         if hb_ishash( hView )
+            if hhaskey( hView, "Driver" )
+               cDriver  := hGet( hView, "Driver" )
+            end
+         end
+      end
+
+   RETURN ( cDriver )
+
+
+
+   static FUNCTION D_GetTmp( cAlias, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+      local hGet
+      local hView
+
+      if ::AssertView( nView )
+         hView             := hGet( ::hViews, nView )
+         if hb_ishash( hView )
+            if hHasKey( hView, Upper( cAlias ) )
+               hGet        := hGet( hView, Upper( cAlias ) )
+            end
+         end
+      end
+
+   RETURN ( hGet )
+
+
+
+   static FUNCTION D_Tmp( cAlias, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+      local hGet
+      local cHandle
+
+      hGet           :=  ::GetTmp( Upper( cAlias ), nView )
+      if hb_ishash( hGet )
+         if hHasKey( hGet, "Area" )
+            cHandle  := hGet( hGet, "Area" )
+         end
+      end
+
+   RETURN ( cHandle )
+
+
+
+   static FUNCTION D_GetFileTmp( cAlias, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+      local hView
+      local hGet
+      local cFile
+
+      hGet        := ::GetTmp( Upper( cAlias ), nView )
+      if hb_ishash( hGet )
+         if hHasKey( hGet, "File" )
+            cFile    := hGet( hGet, "File" )
+         end
+      end
+
+   RETURN ( cFile )
+
+
+
+   static FUNCTION D_AddView( cDatabase, cHandle, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+      local hView
+
+      if ::AssertView( nView )
+
+         hView    := hGet( ::hViews, nView )
+
+         if hb_ishash( hView )
+            hSet( hView, Upper( cDatabase ), cHandle )
+         end
+
+      end
+
+   RETURN ( Self )
+
+
+
+   static FUNCTION D_AddViewTmp( cAlias, cFile, cHandle, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+      local hView
+
+      if ::AssertView( nView )
+
+         hView    := hGet( ::hViews, nView )
+         if hb_ishash( hView )
+            hSet( hView, Upper( cAlias ), { "File" => cFile, "Area" => cHandle } )
+         end
+
+      end
+
+   RETURN ( Self )
+
+
+
+   static FUNCTION D_OpenDataBase( cDataTable, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+      local dbf
+      local lOpen
+      local oError
+      local oBlock
+      local cDriver
+      local uHandle        := .F.
+      local oDataTable
+
+
+
+
+         cDriver           := ::GetDriver( nView )
+
+         oDataTable        := TDataCenter():ScanDataTable( cDataTable )
+
+         if !empty( oDataTable )
+
+            dbUseArea( .T., ( cDriver ), ( oDataTable:getDataBase( cDriver ) ), ( cCheckArea( oDataTable:cArea, @dbf ) ), .T., .F. )
+
+            if isADSDriver( cDriver )
+               ordSetFocus( 1 )
+            else
+               ordListAdd( oDataTable:cFullCdxIndexFile )
+            end
+
+            if !neterr()
+
+               ::addView( cDataTable, dbf, nView )
+
+               uHandle     := ::GetView( cDataTable, nView )
+
+            end
+
+         else
+
+            msgStop( "No puedo encontrar la tabla " + cDataTable / 2 )
+
+         end
+
+
+
+
+
+
+
+   RETURN ( uHandle )
+
+
+
+   static FUNCTION D_BuildTmp( cDataTable, cAlias, aIndex, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+      local cArea
+      local cFile
+      local hIndex
+      local lOpen       := .F.
+      local oDataTable
+
+      cFile             := cGetNewFileName( cPatTmp() + cAlias )
+      oDataTable        := TDataCenter():ScanDataTable( cDataTable )
+
+      if empty( oDataTable )
+         msgStop( "No puedo encontrar la tabla " + cDataTable, "Creado temporales" )
+         RETURN ( .F. )
+      end
+
+      if empty( oDataTable:aStruct )
+         msgStop( "La tabla " + cDataTable + " no contiene estructura.", "Creado temporales" )
+         RETURN ( .F. )
+      end
+
+      dbCreate( cFile, aSqlStruct( oDataTable:aStruct ), cLocalDriver() )
+      dbUseArea( .T., cLocalDriver(), cFile, cCheckArea( cAlias, @cArea ), .F. )
+
+      lOpen       := !neterr()
+      if lOpen
+
+         if !empty(aIndex)
+
+            for each hIndex in aIndex
+               ( cAlias )->( OrdCondSet( "!Deleted()", {|| !Deleted() } ) )
+               ( cAlias )->( OrdCreate( cFile, hGet( hIndex, "tagName" ), hGet( hIndex, "tagExpresion" ), hGet( hIndex, "tagBlock" ) ) )
+            next
+
+         end
+
+         ::AddViewTmp( cAlias, cFile, cArea, nView )
+
+      end
+
+   RETURN ( lOpen )
+
+
+
+   static FUNCTION D_CloseTmp( cAlias, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+      local cFile
+      local cArea
+      local hView
+
+      cArea             := ::Tmp( cAlias, nView )
+      if !empty( cArea )
+         ( cArea )->( dbCloseArea() )
+      end
+
+      cFile             := ::GetFileTmp( cAlias, nView )
+      if !empty( cFile )
+         dbfErase( cFile )
+      end
+
+
+
+      if ::AssertView( nView )
+         hView          := hGet( ::hViews, nView )
+         if hb_ishash( hView )
+            hDel( hView, Upper( cAlias ) )
+         end
+      end
+
+   RETURN ( .T. )
+
+
+
+   static FUNCTION D_OpenObject( cObject, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+      local oObject     := TDataCenter():ScanObject( cObject )
+
+      if empty( oObject )
+
+         msgStop( "No puedo encontrar el objeto " + cObject, cObject )
+
+         RETURN ( nil )
+
+      end
+
+      if ( oObject:OpenService() )
+
+         ::addView( cObject, oObject, nView )
+
+      else
+
+         msgStop( "No puedo abrir la base de datos del objeto " + cObject )
+
+         RETURN ( nil )
+
+      end
+
+   RETURN ( oObject )
+
+
+
+static FUNCTION D_getHashRecordById( id, cDatabase, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local hash
+
+   ( ::Get( cDatabase, nView ) )->( ordsetfocus( 1 ) )
+
+   if ( ::Get( cDatabase, nView ) )->( dbseek( id ) )
+      hash  := ::getHashRecord( cDatabase, nView )
+   end
+
+RETURN ( hash )
+
+
+
+static FUNCTION D_getHashRecordBlank( cDatabase, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local hash
+
+   ::GetStatus( cDatabase, nView )
+
+   ( ::Get( cDatabase, nView ) )->( dbgobottom() )
+   ( ::Get( cDatabase, nView ) )->( dbskip() )
+
+   hash  := ::getHashRecord( cDatabase, nView )
+
+   ::SetStatus( cDatabase, nView )
+
+RETURN ( hash )
+
+
+
+static FUNCTION D_getArrayRecordById( id, cDatabase, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local array    := {}
+
+   ::GetStatus( cDatabase, nView )
+
+   ( ::Get( cDatabase, nView ) )->( ordSetFocus( 1 ) )
+
+   if ( ::Get( cDatabase, nView ) )->( dbSeek( id ) )
+      while ( ::getId( cDatabase, nView ) == id ) .AND. !( ::Get( cDatabase, nView ) )->( eof() )
+         aAdd( array, ::getHashRecord( cDatabase, nView ) )
+         ( ::Get( cDatabase, nView ) )->( dbSkip() )
+      end
+   end
+
+   ::SetStatus( cDatabase, nView )
+
+RETURN ( array )
+
+
+
+static FUNCTION D_getHashRecord( cDataTable, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local hash        := {=>}
+   local cAlias      := ::Get( cDataTable, nView )
+   local aDictionary := ::getDictionary( cDataTable, nView )
+
+RETURN ( ::getHashFromAlias( cAlias, aDictionary ) )
+
+
+
+static FUNCTION D_getHashFromAlias( cAlias, aDictionary ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local hash        := {=>}
+
+   if empty( cAlias )
+      RETURN ( hash )
+   end
+
+   if isHash( aDictionary )
+      hEval( aDictionary, {|key,value| hSet( hash, key, ( cAlias )->( fieldget( ( cAlias )->( fieldPos( value ) ) ) ) ) } )
+      hSet( hash, "lineSelected", .F. )
+   end
+
+RETURN ( hash )
+
+
+
+static FUNCTION D_getHashFromWorkArea( cAlias ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+RETURN ( getHashFromWorkArea( cAlias ) )
+
+
+
+static FUNCTION D_getSQL( cDataTable, cSelect, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local cHandle     := ::GetView( cDataTable, nView )
+
+   if empty(cHandle)
+      cHandle        := ::openSQL( cDataTable, cSelect, nView )
+   end
+
+RETURN ( cHandle )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static FUNCTION D_openSQL( cDataTable, cSelect, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local cSql     := cDataTable
+   local uHandle
+
+   if TDataCenter():ExecuteSqlStatement( cSelect, @cSql )
+      ( cSql )->( dbgotop() )
+   end
+
+   ::addView( cDataTable, cSql, nView )
+
+   uHandle        := ::GetView( cDataTable, nView )
+
+RETURN ( uHandle )
+
+
+
+static FUNCTION D_getHashFromBlank( cAlias, aDictionary ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local hash
+   local recno
+
+   recno       := ( cAlias )->( recno() )
+
+   ( cAlias )->( dbgobottom() )
+   ( cAlias )->( dbskip() )
+
+   hash        := ::getHashFromAlias( cAlias, aDictionary )
+
+   ( cAlias )->( dbgoto( recno ) )
+
+RETURN ( hash )
+
+
+
+static FUNCTION D_getFieldDictionary( cField, cDataTable, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local dbf         := ::Get( cDataTable, nView )
+   local aDictionary := ::getDictionary( cDataTable, nView )
+   local value       := hGet( aDictionary, cField )
+
+   if !empty( value )
+      RETURN ( ( dbf )->( fieldget( ( dbf )->( fieldPos( value ) ) ) ) )
+   endif
+
+RETURN ( nil )
+
+
+
+static FUNCTION D_getFieldFromAliasDictionary( cField, cAlias, hDictionary, uDefault ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local value
+
+   if hhaskey( hDictionary, cField )
+      value          := hGet( hDictionary, cField )
+      if !empty( value )
+         RETURN ( ( cAlias )->( fieldget( ( cAlias )->( fieldPos( value ) ) ) ) )
+      endif
+   end
+
+RETURN ( uDefault )
+
+
+
+static FUNCTION D_getHashArray( aRecord, cDataTable, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local hash        := {=>}
+   local dbf         := ::Get( cDataTable, nView )
+   local aDictionary := ::getDictionary( cDataTable, nView )
+
+   if isHash( aDictionary ) .AND. !empty( dbf )
+      hEval( aDictionary, {|key,value| hSet( hash, key, aRecord[ ( dbf )->( fieldPos( value ) ) ] ) } )
+   end
+
+RETURN ( hash )
+
+
+
+static FUNCTION D_getHashTable( dbf, cDataTable, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local hash        := {=>}
+   local aDictionary := ::getDictionary( cDataTable, nView )
+
+   if isHash( aDictionary ) .AND. !empty( dbf )
+      hEval( aDictionary, {|key,value| hSet( hash, key, ( dbf )->( fieldgetbyname( value ) ) ) } )
+   end
+
+RETURN ( hash )
+
+
+
+static FUNCTION D_appendHashRecord( hTable, cDataTable, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local workArea    := ::Get( cDataTable, nView )
+
+   if empty( workArea )
+      RETURN ( .F. )
+   end
+
+RETURN ( ::appendHashRecordInWorkarea( hTable, cDataTable, workArea ) )
+
+
+
+static FUNCTION D_appendHashRecordInWorkarea( hTable, cDataTable, workArea ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local lAppend     := .F.
+   local hDictionary := ::getDictionary( cDataTable )
+
+   if empty( hDictionary )
+      RETURN ( lAppend )
+   end
+
+   ( workArea )->( dbappend() )
+
+   if !( workArea )->( neterr() )
+
+      ::setHashRecord( hTable, workArea, hDictionary )
+
+      lAppend        := .T.
+
+
+      ( workArea )->( dbunlock() )
+
+   end
+
+RETURN ( lAppend )
+
+
+
+static FUNCTION D_editHashRecord( hTable, cDataTable, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local lEdit       := .F.
+   local nSeconds
+   local workArea
+   local hDictionary
+
+   workArea          := ::Get( cDataTable, nView )
+
+   hDictionary       := ::getDictionary( cDataTable, nView )
+
+   if empty( workArea )
+      RETURN ( lEdit )
+   end
+
+   if empty( hDictionary )
+      RETURN ( lEdit )
+   end
+
+   if ( workArea )->( dbrlock() )
+
+      ::setHashRecord( hTable, workArea, hDictionary )
+
+      lEdit          := .T.
+
+      ( workArea )->( dbcommit() )
+      ( workArea )->( dbUnLock() )
+
+   end
+
+RETURN ( lEdit )
+
+
+
+static FUNCTION D_setHashRecord( hTable, workArea, hDictionary ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   if isHash( hDictionary ) .AND. !empty( workArea )
+      hEval( hTable, {|cKeyDictionary, uValueDictionary| ::saveFieldsToRecord( cKeyDictionary, uValueDictionary, workArea, hDictionary ) } )
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION D_saveFieldsToRecord( cKeyDictionary, uValueDictionary, workArea, hDictionary ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local cField
+
+   cField   := ::getFieldFromDictionary( cKeyDictionary, hDictionary )
+
+   if !empty( cField )
+      ( workArea )->( fieldput( ( workArea )->( fieldPos( cField ) ), uValueDictionary ) )
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION D_getFieldFromDictionary( cKeyDictionary, hDictionary ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local nScan
+   local cField
+
+   nScan       := hScan( hDictionary, {|k,v,i| k == cKeyDictionary } )
+   if nScan <> 0
+      cField   := hgetValueAt( hDictionary, nScan )
+   end
+
+RETURN ( cField )
+
+
+
+static FUNCTION D_setDefaultValue( hash, cDataTable, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local workArea
+   local aDefaultValue
+
+   if !isHash( hash )
+      RETURN .F.
+   end
+
+   workArea          := ::Get( cDataTable, nView )
+   aDefaultValue     := TDataCenter():getDefaultValue( cDataTable )
+
+   hEval( aDefaultValue, {|key, value, nView| hSet( hash, key, Eval( Value, nView ) ) } )
+
+RETURN ( hash )
+
+
+
+static FUNCTION D_deleteRecord( cDataTable, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local nNext
+   local nRecord
+   local lDelete     := .F.
+   local workArea    := ::Get( cDataTable, nView )
+
+   if empty( workArea )
+      RETURN ( lDelete )
+   end
+
+   nRecord           := ( workArea )->( ordKeyNo() )
+   ( workArea )->( dbSkip() )
+   nNext             := ( workArea )->( ordKeyNo() )
+   ( workArea )->( ordKeyGoTo( nRecord ) )
+
+   if ( workArea )->( dbrlock() )
+      ( workArea )->( dbDelete() )
+      ( workArea )->( dbUnLock() )
+      lDelete        := .T.
+   end
+
+   if lDelete
+      ( workArea )->( ordKeyGoTo( nRecord ) )
+      if ( ( workArea )->( eof() ) .OR. nNext == nRecord )
+         ( workArea )->( dbGoBottom() )
+      end
+   end
+
+RETURN ( lDelete )
+
+
+
+static FUNCTION D_getArticuloTablaPropiedades( id, nView ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local n
+   local nRow                    := 1
+   local nCol                    := 1
+   local nTotalRow               := 0
+   local nTotalCol               := 0
+   local aPropertiesTable        := {}
+   local hValorPropiedad
+   local idPrimeraPropiedad
+   local idSegundaPropiedad
+
+   local aPropiedadesArticulo1
+   local aPropiedadesArticulo2
+
+   if !::gotoArticulos( id, nView )
+      RETURN ( aPropertiesTable )
+   end
+
+   idPrimeraPropiedad            := ( ::Articulos( nView ) )->cCodPrp1
+   idSegundaPropiedad            := ( ::Articulos( nView ) )->cCodPrp2
+
+   aPropiedadesArticulo1         := aPropiedadesArticulo1( id, nView )
+   nTotalRow                     := len( aPropiedadesArticulo1 )
+   if nTotalRow <> 0
+      aPropiedadesArticulo2      := aPropiedadesArticulo2( id, nView )
+   else
+      aPropiedadesArticulo1      := aPropiedadesGeneral( idPrimeraPropiedad, nView )
+      nTotalRow                  := len( aPropiedadesArticulo1 )
+      if nTotalRow <> 0
+         aPropiedadesArticulo2   := aPropiedadesGeneral( idSegundaPropiedad, nView )
+      else
+         RETURN nil
+      end
+   end
+
+
+
+   if len( aPropiedadesArticulo2 ) == 0
+      nTotalCol                  := 2
+   else
+      nTotalCol                  := len( aPropiedadesArticulo2 ) + 1
+   end
+
+   aPropertiesTable              := array( nTotalRow, nTotalCol )
+
+   for each hValorPropiedad in aPropiedadesArticulo1
+
+      aPropertiesTable[ nRow, nCol ]                        := TPropertiesItems():New()
+      aPropertiesTable[ nRow, nCol ]:cCodigo                := id
+      aPropertiesTable[ nRow, nCol ]:cHead                  := hValorPropiedad[ "TipoPropiedad" ]
+      aPropertiesTable[ nRow, nCol ]:cText                  := hValorPropiedad[ "CabeceraPropiedad" ]
+      aPropertiesTable[ nRow, nCol ]:cCodigoPropiedad1      := hValorPropiedad[ "CodigoPropiedad" ]
+      aPropertiesTable[ nRow, nCol ]:cValorPropiedad1       := hValorPropiedad[ "ValorPropiedad" ]
+      aPropertiesTable[ nRow, nCol ]:lColor                 := hValorPropiedad[ "ColorPropiedad" ]
+      aPropertiesTable[ nRow, nCol ]:nRgb                   := hValorPropiedad[ "RgbPropiedad" ]
+
+      nRow++
+
+   next
+
+   if !empty( idSegundaPropiedad ) .AND. !empty( aPropiedadesArticulo2 )
+
+      for each hValorPropiedad in aPropiedadesArticulo2
+
+         nCol++
+
+         for n := 1 to nTotalRow
+            aPropertiesTable[ n, nCol ]                     := TPropertiesItems():New()
+            aPropertiesTable[ n, nCol ]:Value               := 0
+            aPropertiesTable[ n, nCol ]:cCodigo             := id
+            aPropertiesTable[ n, nCol ]:cHead               := hValorPropiedad[ "CabeceraPropiedad" ]
+            aPropertiesTable[ n, nCol ]:cCodigoPropiedad1   := aPropertiesTable[ n, 1 ]:cCodigoPropiedad1
+            aPropertiesTable[ n, nCol ]:cValorPropiedad1    := aPropertiesTable[ n, 1 ]:cValorPropiedad1
+            aPropertiesTable[ n, nCol ]:cCodigoPropiedad2   := hValorPropiedad[ "CodigoPropiedad" ]
+            aPropertiesTable[ n, nCol ]:cValorPropiedad2    := hValorPropiedad[ "ValorPropiedad" ]
+            aPropertiesTable[ n, nCol ]:lColor              := aPropertiesTable[ n, 1 ]:lColor
+            aPropertiesTable[ n, nCol ]:nRgb                := aPropertiesTable[ n, 1 ]:nRgb
+         next
+
+      next
+
+   else
+
+      nCol++
+
+      for n := 1 to nTotalRow
+         aPropertiesTable[ n, nCol ]                        := TPropertiesItems():New()
+         aPropertiesTable[ n, nCol ]:Value                  := 0
+         aPropertiesTable[ n, nCol ]:cHead                  := "Unidades"
+         aPropertiesTable[ n, nCol ]:cCodigo                := id
+         aPropertiesTable[ n, nCol ]:cCodigoPropiedad1      := aPropertiesTable[ n, 1 ]:cCodigoPropiedad1
+         aPropertiesTable[ n, nCol ]:cValorPropiedad1       := aPropertiesTable[ n, 1 ]:cValorPropiedad1
+         aPropertiesTable[ n, nCol ]:cCodigoPropiedad2      := Space( 20 )
+         aPropertiesTable[ n, nCol ]:cValorPropiedad2       := Space( 40 )
+         aPropertiesTable[ n, nCol ]:lColor                 := aPropertiesTable[ n, 1 ]:lColor
+         aPropertiesTable[ n, nCol ]:nRgb                   := aPropertiesTable[ n, 1 ]:nRgb
+      next
+
+   end
+
+RETURN ( aPropertiesTable )
+
+
+
+static FUNCTION D_setArticuloTablaPropiedades( id, idCodigoPrimeraPropiedad, idCodigoSegundaPropiedad, idValorPrimeraPropiedad, idValorSegundaPropiedad, nUnidades, aPropertiesTable ) ; local Self AS CLASS D := QSelf() AS CLASS D
+
+   local oProperty
+   local aProperty
+
+   for each aProperty in aPropertiesTable
+
+      for each oProperty in aProperty
+
+
+
+
+
+         if rtrim( oProperty:cCodigo )            == rtrim( id )                       .AND.  rtrim( oProperty:cCodigoPropiedad1 )  == rtrim( idCodigoPrimeraPropiedad ) .AND.  rtrim( oProperty:cCodigoPropiedad2 )  == rtrim( idCodigoSegundaPropiedad ) .AND.  rtrim( oProperty:cValorPropiedad1 )   == rtrim( idValorPrimeraPropiedad )  .AND.  rtrim( oProperty:cValorPropiedad2 )   == rtrim( idValorSegundaPropiedad )
+
+            oProperty:Value  := nUnidades
+
+         end
+
+      next
+
+   next
+
+RETURN ( .T. )

@@ -1,0 +1,532 @@
+#line 8 "C:\fwh1801\Gestool\bin\Script\Articulos\ExportNTV.prg"
+static nView
+static cSeparator
+static cCarpeta
+static cNameFileArticulos
+static cNameFileFamilias
+static cNameFileAgentes
+static cNameFileFormaPago
+static cNameFileClientes
+static cNameFileCodigosBarras
+static cNameFileImagenes
+static lOpenFiles
+static oMeter
+
+
+
+function InicioHRB()
+
+   lOpenFiles                 := .F.
+
+   cNameFileArticulos         := "C:\ficheros\articulos.csv"
+   cNameFileFamilias          := "C:\ficheros\familias.csv"
+   cNameFileAgentes           := "C:\ficheros\agentes.csv"
+   cNameFileFormaPago         := "C:\ficheros\formapago.csv"
+   cNameFileClientes          := "C:\ficheros\clientes.csv"
+   cNameFileCodigosBarras     := "C:\ficheros\codigosbarras.csv"
+   cNameFileImagenes          := "C:\ficheros\imagenes.csv"
+
+   cSeparator                 := ";"
+
+
+
+
+
+   if !OpenFiles( .F. )
+      return .F.
+   end
+
+
+
+
+
+   CursorWait()
+
+
+
+
+
+   ExportacionArticulos()
+   ExportacionFamilias()
+   ExportacionAgentes()
+   ExportacionFormasPago()
+   ExportacionClientes()
+   ExportacionCodigosBarras()
+   ExportacionImagenes()
+
+   CursorWe()
+
+
+
+
+
+   CloseFiles()
+
+   MsgInfo( "Proceso finalizado." )
+
+return .T.
+
+
+
+static function OpenFiles()
+
+   local oError
+   local oBlock
+
+   if lOpenFiles
+      MsgStop( "Imposible abrir ficheros" )
+      Return ( .F. )
+   end
+
+   CursorWait()
+
+   oBlock         := ErrorBlock( { | oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      lOpenFiles  := .T.
+
+      nView    := D():CreateView()
+
+   RECOVER USING oError
+
+      lOpenFiles           := .F.
+
+      msgStop( ErrorMessage( oError ), "Imposible abrir las bases de datos" )
+
+   end
+
+   ErrorBlock( oBlock )
+
+   if !lOpenFiles
+      CloseFiles()
+   end
+
+   CursorWE()
+
+return ( lOpenFiles )
+
+
+
+static function CloseFiles()
+
+   D():DeleteView( nView )
+
+   lOpenFiles     := .F.
+
+RETURN ( .T. )
+
+
+
+static function ExportacionArticulos()
+
+   local nHand
+   local cTextoArticulo := ""
+
+   CursorWait()
+
+   oMeter               := TWaitMeter():New( , , ( D():Articulos( nView ) )->( LastRec() ) )
+
+
+
+
+
+   ( D():Articulos( nView ) )->( dbGoTop() )
+
+   while !( D():Articulos( nView ) )->( Eof() )
+
+      cTextoArticulo  += AllTrim( ( D():Articulos( nView ) )->cCodCate )
+      cTextoArticulo  += cSeparator
+      cTextoArticulo  += AllTrim( ( D():Articulos( nView ) )->Codigo )
+      cTextoArticulo  += cSeparator
+      cTextoArticulo  += AllTrim( ( D():Articulos( nView ) )->Nombre )
+      cTextoArticulo  += cSeparator
+      cTextoArticulo  += AllTrim( Trans( ( D():Articulos( nView ) )->pVtaIva1, "@ 999,999.99" ) )
+      cTextoArticulo  += cSeparator
+      cTextoArticulo  += AllTrim( Trans( ( D():Articulos( nView ) )->pVtaIva2, "@ 999,999.99" ) )
+      cTextoArticulo  += cSeparator
+      cTextoArticulo  += AllTrim( Trans( ( D():Articulos( nView ) )->pVtaIva3, "@ 999,999.99" ) )
+      cTextoArticulo  += cSeparator
+      cTextoArticulo  += AllTrim( Trans( ( D():Articulos( nView ) )->pVtaIva4, "@ 999,999.99" ) )
+      cTextoArticulo  += cSeparator
+      cTextoArticulo  += AllTrim( Trans( ( D():Articulos( nView ) )->pVtaIva5, "@ 999,999.99" ) )
+      cTextoArticulo  += cSeparator
+      cTextoArticulo  += AllTrim( Trans( ( D():Articulos( nView ) )->pVtaIva6, "@ 999,999.99" ) )
+      cTextoArticulo  += cSeparator
+      cTextoArticulo  += AllTrim( Trans( ( D():Articulos( nView ) )->nCajEnt, "@ 999,999.99" ) )
+      cTextoArticulo  += cSeparator
+      cTextoArticulo  += AllTrim( ( D():Articulos( nView ) )->TipoIva )
+      cTextoArticulo  += cSeparator
+      cTextoArticulo  += AllTrim( ( D():Articulos( nView ) )->Familia )
+      cTextoArticulo  += cSeparator
+      cTextoArticulo  += AllTrim( ( D():Articulos( nView ) )->cSubFam )
+      cTextoArticulo  += cSeparator
+      cTextoArticulo  += AllTrim( ( D():Articulos( nView ) )->Descrip )
+      cTextoArticulo  += cSeparator
+      cTextoArticulo  += AllTrim( Trans( ( D():Articulos( nView ) )->nunicaja, "@ 999,999.99" ) )
+
+      cTextoArticulo  += chr( 13 ) + chr( 10 )
+
+      ( D():Articulos( nView ) )->( dbSkip() )
+
+      oMeter:oProgress:AutoInc()
+
+   end
+
+   StrTran( cTextoArticulo, ",", "." )
+
+   if !Empty( cTextoArticulo )
+
+      fErase( cNameFileArticulos )
+      nHand       := fCreate( cNameFileArticulos )
+      fWrite( nHand, cTextoArticulo )
+      fClose( nHand )
+
+      MsgWait( "Fichero exportado correctamente en " + cNameFileArticulos, "Terminado", 1 )
+
+   end
+
+   CursorWE()
+
+Return .T.
+
+
+
+static function ExportacionFamilias()
+
+   local nHand
+   local cTextoFamilia := ""
+
+   CursorWait()
+
+   oMeter               := TWaitMeter():New( , , ( D():Familias( nView ) )->( LastRec() ) )
+
+
+
+
+
+   ( D():Familias( nView ) )->( dbGoTop() )
+
+   while !( D():Familias( nView ) )->( Eof() )
+
+      cTextoFamilia  += AllTrim( ( D():Familias( nView ) )->cNomFam )
+      cTextoFamilia  += cSeparator
+      cTextoFamilia  += AllTrim( ( D():Familias( nView ) )->cCodFam )
+
+      cTextoFamilia  += chr( 13 ) + chr( 10 )
+
+      ( D():Familias( nView ) )->( dbSkip() )
+
+      oMeter:oProgress:AutoInc()
+
+   end
+
+   if !Empty( cTextoFamilia )
+
+      fErase( cNameFileFamilias )
+      nHand       := fCreate( cNameFileFamilias )
+      fWrite( nHand, cTextoFamilia )
+      fClose( nHand )
+
+      MsgWait( "Fichero exportado correctamente en " + cNameFileFamilias, "Terminado", 1 )
+
+   end
+
+   CursorWE()
+
+Return .T.
+
+
+
+static function ExportacionAgentes()
+
+   local nHand
+   local cTextoAgentes := ""
+
+   CursorWait()
+
+   oMeter               := TWaitMeter():New( , , ( D():Agentes( nView ) )->( LastRec() ) )
+
+
+
+
+
+   ( D():Agentes( nView ) )->( dbGoTop() )
+
+   while !( D():Agentes( nView ) )->( Eof() )
+
+      cTextoAgentes  += AllTrim( ( D():Agentes( nView ) )->ccodage )
+      cTextoAgentes  += cSeparator
+      cTextoAgentes  += AllTrim( ( D():Agentes( nView ) )->cdninif )
+      cTextoAgentes  += cSeparator
+      cTextoAgentes  += AllTrim( ( D():Agentes( nView ) )->cdirage )
+      cTextoAgentes  += cSeparator
+      cTextoAgentes  += AllTrim( ( D():Agentes( nView ) )->cpobage )
+      cTextoAgentes  += cSeparator
+      cTextoAgentes  += AllTrim( ( D():Agentes( nView ) )->cprov )
+      cTextoAgentes  += cSeparator
+      cTextoAgentes  += AllTrim( ( D():Agentes( nView ) )->cptlage )
+      cTextoAgentes  += cSeparator
+      cTextoAgentes  += AllTrim( ( D():Agentes( nView ) )->ctfoage )
+      cTextoAgentes  += cSeparator
+      cTextoAgentes  += AllTrim( ( D():Agentes( nView ) )->cfaxage )
+      cTextoAgentes  += cSeparator
+      cTextoAgentes  += AllTrim( ( D():Agentes( nView ) )->cmovage )
+      cTextoAgentes  += cSeparator
+      cTextoAgentes  += AllTrim( ( D():Agentes( nView ) )->mcoment )
+      cTextoAgentes  += cSeparator
+      cTextoAgentes  += AllTrim( Trans( ( D():Agentes( nView ) )->ncom1, "@ 999,999.99" ) )
+      cTextoAgentes  += cSeparator
+      cTextoAgentes  += AllTrim( ( D():Agentes( nView ) )->capeage )
+      cTextoAgentes  += cSeparator
+      cTextoAgentes  += AllTrim( ( D():Agentes( nView ) )->cnbrage )
+
+      cTextoAgentes  += chr( 13 ) + chr( 10 )
+
+      ( D():Agentes( nView ) )->( dbSkip() )
+
+      oMeter:oProgress:AutoInc()
+
+   end
+
+   StrTran( cTextoAgentes, ",", "." )
+
+   if !Empty( cTextoAgentes )
+
+      fErase( cNameFileAgentes )
+      nHand       := fCreate( cNameFileAgentes )
+      fWrite( nHand, cTextoAgentes )
+      fClose( nHand )
+
+      MsgWait( "Fichero exportado correctamente en " + cNameFileAgentes, "Terminado", 1 )
+
+   end
+
+   CursorWE()
+
+Return .T.
+
+
+
+static function ExportacionFormasPago()
+
+   local nHand
+   local cTextoFormaPago := ""
+
+   CursorWait()
+
+   oMeter               := TWaitMeter():New( , , ( D():FormasPago( nView ) )->( LastRec() ) )
+
+
+
+
+
+   ( D():FormasPago( nView ) )->( dbGoTop() )
+
+   while !( D():FormasPago( nView ) )->( Eof() )
+
+      cTextoFormaPago  += AllTrim( ( D():FormasPago( nView ) )->cCodPago )
+      cTextoFormaPago  += cSeparator
+      cTextoFormaPago  += AllTrim( ( D():FormasPago( nView ) )->cDesPago )
+      cTextoFormaPago  += cSeparator
+      cTextoFormaPago  += AllTrim( Str( ( D():FormasPago( nView ) )->nTipPgo ) )
+      cTextoFormaPago  += cSeparator
+      cTextoFormaPago  += AllTrim( Str( ( D():FormasPago( nView ) )->nPlazos ) )
+
+      cTextoFormaPago  += chr( 13 ) + chr( 10 )
+
+      ( D():FormasPago( nView ) )->( dbSkip() )
+
+      oMeter:oProgress:AutoInc()
+
+   end
+
+   StrTran( cTextoFormaPago, ",", "." )
+
+   if !Empty( cTextoFormaPago )
+
+      fErase( cNameFileFormaPago )
+      nHand       := fCreate( cNameFileFormaPago )
+      fWrite( nHand, cTextoFormaPago )
+      fClose( nHand )
+
+      MsgWait( "Fichero exportado correctamente en " + cNameFileFormaPago, "Terminado", 1 )
+
+   end
+
+   CursorWE()
+
+Return .T.
+
+
+
+static function ExportacionClientes()
+
+   local nHand
+   local cTextoClientes := ""
+
+   CursorWait()
+
+   oMeter               := TWaitMeter():New( , , ( D():Clientes( nView ) )->( LastRec() ) )
+
+
+
+
+
+   ( D():Clientes( nView ) )->( dbGoTop() )
+
+   while !( D():Clientes( nView ) )->( Eof() )
+
+      cTextoClientes  += AllTrim( ( D():Clientes( nView ) )->Cod )
+      cTextoClientes  += cSeparator
+      cTextoClientes  += AllTrim( ( D():Clientes( nView ) )->Titulo )
+      cTextoClientes  += cSeparator
+      cTextoClientes  += AllTrim( ( D():Clientes( nView ) )->Nif )
+      cTextoClientes  += cSeparator
+      cTextoClientes  += AllTrim( ( D():Clientes( nView ) )->Domicilio )
+      cTextoClientes  += cSeparator
+      cTextoClientes  += AllTrim( ( D():Clientes( nView ) )->Poblacion )
+      cTextoClientes  += cSeparator
+      cTextoClientes  += AllTrim( ( D():Clientes( nView ) )->Provincia )
+      cTextoClientes  += cSeparator
+      cTextoClientes  += AllTrim( ( D():Clientes( nView ) )->CodPostal )
+      cTextoClientes  += cSeparator
+      cTextoClientes  += AllTrim( ( D():Clientes( nView ) )->Telefono )
+      cTextoClientes  += cSeparator
+      cTextoClientes  += AllTrim( ( D():Clientes( nView ) )->Fax )
+      cTextoClientes  += cSeparator
+      cTextoClientes  += AllTrim( ( D():Clientes( nView ) )->Movil )
+      cTextoClientes  += cSeparator
+      cTextoClientes  += AllTrim( ( D():Clientes( nView ) )->NbrEst )
+      cTextoClientes  += cSeparator
+      cTextoClientes  += AllTrim( ( D():Clientes( nView ) )->CodPago )
+      cTextoClientes  += cSeparator
+      cTextoClientes  += AllTrim( Str( ( D():Clientes( nView ) )->nDtoEsp ) )
+      cTextoClientes  += cSeparator
+      cTextoClientes  += AllTrim( Str( ( D():Clientes( nView ) )->nRegIva ) )
+      cTextoClientes  += cSeparator
+      cTextoClientes  += AllTrim( ( D():Clientes( nView ) )->cAgente )
+      cTextoClientes  += cSeparator
+      cTextoClientes  += AllTrim( ( D():Clientes( nView ) )->mComent )
+      cTextoClientes  += cSeparator
+      cTextoClientes  += AllTrim( ( D():Clientes( nView ) )->CodPostal )
+      cTextoClientes  += cSeparator
+      cTextoClientes  += AllTrim( ( D():Clientes( nView ) )->cMeiInt )
+      cTextoClientes  += cSeparator
+      cTextoClientes  += AllTrim( ( D():Clientes( nView ) )->cPercto )
+
+      cTextoClientes  += chr( 13 ) + chr( 10 )
+
+      ( D():Clientes( nView ) )->( dbSkip() )
+
+      oMeter:oProgress:AutoInc()
+
+   end
+
+   StrTran( cTextoClientes, ",", "." )
+
+   if !Empty( cTextoClientes )
+
+      fErase( cNameFileClientes )
+      nHand       := fCreate( cNameFileClientes )
+      fWrite( nHand, cTextoClientes )
+      fClose( nHand )
+
+      MsgWait( "Fichero exportado correctamente en " + cNameFileClientes, "Terminado", 1 )
+
+   end
+
+   CursorWE()
+
+Return .T.
+
+
+
+static function ExportacionCodigosBarras()
+
+   local nHand
+   local cTextoCodigoBarras := ""
+
+   CursorWait()
+
+   oMeter               := TWaitMeter():New( , , ( D():ArticulosCodigosBarras( nView ) )->( LastRec() ) )
+
+
+
+
+
+   ( D():ArticulosCodigosBarras( nView ) )->( dbGoTop() )
+
+   while !( D():ArticulosCodigosBarras( nView ) )->( Eof() )
+
+      cTextoCodigoBarras  += AllTrim( ( D():ArticulosCodigosBarras( nView ) )->cCodArt )
+      cTextoCodigoBarras  += cSeparator
+      cTextoCodigoBarras  += AllTrim( ( D():ArticulosCodigosBarras( nView ) )->cCodBar )
+
+      cTextoCodigoBarras  += chr( 13 ) + chr( 10 )
+
+      ( D():ArticulosCodigosBarras( nView ) )->( dbSkip() )
+
+      oMeter:oProgress:AutoInc()
+
+   end
+
+   if !Empty( cTextoCodigoBarras )
+
+      fErase( cNameFileCodigosBarras )
+      nHand       := fCreate( cNameFileCodigosBarras )
+      fWrite( nHand, cTextoCodigoBarras )
+      fClose( nHand )
+
+      MsgWait( "Fichero exportado correctamente en " + cNameFileCodigosBarras, "Terminado", 1 )
+
+   end
+
+   CursorWE()
+
+Return .T.
+
+
+
+static function ExportacionImagenes()
+
+   local nHand
+   local cTextoImagenes := ""
+
+   CursorWait()
+
+   oMeter               := TWaitMeter():New( , , ( D():ArticuloImagenes( nView ) )->( LastRec() ) )
+
+
+
+
+
+   ( D():ArticuloImagenes( nView ) )->( dbGoTop() )
+
+   while !( D():ArticuloImagenes( nView ) )->( Eof() )
+
+      cTextoImagenes  += AllTrim( ( D():ArticuloImagenes( nView ) )->cCodArt )
+      cTextoImagenes  += cSeparator
+      cTextoImagenes  += AllTrim( ( D():ArticuloImagenes( nView ) )->cImgArt )
+
+      cTextoImagenes  += chr( 13 ) + chr( 10 )
+
+      ( D():ArticuloImagenes( nView ) )->( dbSkip() )
+
+      oMeter:oProgress:AutoInc()
+
+   end
+
+   if !Empty( cTextoImagenes )
+
+      fErase( cNameFileImagenes )
+      nHand       := fCreate( cNameFileImagenes )
+      fWrite( nHand, cTextoImagenes )
+      fClose( nHand )
+
+      MsgWait( "Fichero exportado correctamente en " + cNameFileImagenes, "Terminado", 1 )
+
+   end
+
+   CursorWE()
+
+Return .T.

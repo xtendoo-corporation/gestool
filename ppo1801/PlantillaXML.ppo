@@ -1,0 +1,5619 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 18 ".\.\Prg\PlantillaXML.prg"
+memvar oThis
+
+
+
+
+
+
+_HB_CLASS TPlantillaXML ; function TPlantillaXML ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TPlantillaXML", iif( .T., { @TMasDet() }, { @HBObject() } ), @TPlantillaXML() ) ) ;
+
+   _HB_MEMBER { cMru } ; oClass:AddMultiData(, "Cli", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cMru"}, .F. )
+   _HB_MEMBER { cBitmap } ; oClass:AddMultiData(, "WebTopBlack", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cBitmap"}, .F. )
+
+   _HB_MEMBER { aDetails } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aDetails"}, .F. )
+
+   _HB_MEMBER { aCamposCabecera } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aCamposCabecera"}, .F. )
+   _HB_MEMBER { aCamposDetalle } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aCamposDetalle"}, .F. )
+   _HB_MEMBER { aRegistros } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aRegistros"}, .F. )
+
+   _HB_MEMBER { oCbxCabecera } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCbxCabecera"}, .F. )
+   _HB_MEMBER { oCbxDetalle } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCbxDetalle"}, .F. )
+
+   _HB_MEMBER { lOneImportacion } ; oClass:AddMultiData(, .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lOneImportacion"}, .F. )
+   _HB_MEMBER { lEndImportacion } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lEndImportacion"}, .F. )
+
+   _HB_MEMBER { nSearchOcurrency } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nSearchOcurrency"}, .F. )
+
+   _HB_MEMBER { oBtnAceptar } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnAceptar"}, .F. )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   _HB_MEMBER { aTipo } ; oClass:AddMultiClsData(, {  "Artículo", "Artículo. Precios de compra" , "Artículo. Precios de venta por propiedades", "Artículo. Escandallos", "Artículo. Referencias de proveedores", "Artículo. Codigos de barras", "Pedido proveedores", "Albarán proveedores", "Factura proveedores", "Factura proveedores.Líneas", "Recibos facturas proveedor", "Presupuesto clientes", "Pedido clientes", "Albarán clientes", "Factura clientes", "Factura de anticipos", "Factura rectificativa", "Recibos facturas clientes", "Tickets clientes", "Pagos de clientes" }, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aTipo"}, .F. )
+
+   _HB_MEMBER { oBrwCabecera } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwCabecera"}, .F. )
+   _HB_MEMBER { oBrwDetalle } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwDetalle"}, .F. )
+
+   _HB_MEMBER { oBrwPlantilla } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwPlantilla"}, .F. )
+   _HB_MEMBER { aPlantilla } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aPlantilla"}, .F. )
+
+   _HB_MEMBER { oBrwFichero } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwFichero"}, .F. )
+   _HB_MEMBER { aFichero } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aFichero"}, .F. )
+
+   _HB_MEMBER { oTreeImportacion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTreeImportacion"}, .F. )
+   _HB_MEMBER { oSubTreeImportacion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSubTreeImportacion"}, .F. )
+   _HB_MEMBER { oRecTreeImportacion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oRecTreeImportacion"}, .F. )
+
+   _HB_MEMBER { oImageImportacion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oImageImportacion"}, .F. )
+   _HB_MEMBER { lMultipleImportacion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lMultipleImportacion"}, .F. )
+
+   _HB_MEMBER { oDetCabeceraPlantillaXML } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDetCabeceraPlantillaXML"}, .F. )
+
+   _HB_MEMBER { oXmlDocument } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlDocument"}, .F. )
+
+   _HB_MEMBER { bPreAssign } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bPreAssign"}, .F. )
+
+   _HB_MEMBER { oSav } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSav"}, .F. )
+
+   _HB_MEMBER { oDbfArt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfArt"}, .F. )
+   _HB_MEMBER { oDbfArtCod } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfArtCod"}, .F. )
+   _HB_MEMBER { oFacPrvT } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacPrvT"}, .F. )
+   _HB_MEMBER { oFacPrvL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacPrvL"}, .F. )
+   _HB_MEMBER { oAlbPrvT } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAlbPrvT"}, .F. )
+   _HB_MEMBER { oAlbPrvL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAlbPrvL"}, .F. )
+   _HB_MEMBER { oDbfDiv } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfDiv"}, .F. )
+   _HB_MEMBER { oDbfCount } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfCount"}, .F. )
+   _HB_MEMBER { oDbfPrv } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfPrv"}, .F. )
+   _HB_MEMBER { oDbfIva } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfIva"}, .F. )
+   _HB_MEMBER { oDbfFam } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfFam"}, .F. )
+   _HB_MEMBER { oFacPrvP } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacPrvP"}, .F. )
+   _HB_MEMBER { oAlbPrvP } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAlbPrvP"}, .F. )
+   _HB_MEMBER { oDbfFPago } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfFPago"}, .F. )
+   _HB_MEMBER { oArtPrv } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oArtPrv"}, .F. )
+
+   _HB_MEMBER { cNameConfig } ; oClass:AddMultiData(, Space( 100 ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNameConfig"}, .F. )
+   _HB_MEMBER { lAllUser } ; oClass:AddMultiData(, .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lAllUser"}, .F. )
+
+   _HB_MEMBER { oBtnImportacion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnImportacion"}, .F. )
+
+   _HB_MEMBER { oOleExcel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oOleExcel"}, .F. )
+   _HB_MEMBER { oACtiveSheet } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oACtiveSheet"}, .F. )
+
+   _HB_MEMBER { nActiveSheetRows } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nActiveSheetRows"}, .F. )
+   _HB_MEMBER { nActiveSheetColumns } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nActiveSheetColumns"}, .F. )
+
+   _HB_MEMBER { nRowSelected } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRowSelected"}, .F. )
+
+   _HB_MEMBER { aMessage } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aMessage"}, .F. )
+
+   _HB_MEMBER New( cPath, oWndParent, oMenuItem); oClass:AddMethod( "New", @TPlantillaXML_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CreateInit( cPath); oClass:AddMethod( "CreateInit", @TPlantillaXML_CreateInit(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Create( cPath); oClass:AddMethod( "Create", @TPlantillaXML_Create(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles( lExclusive); oClass:AddMethod( "OpenFiles", @TPlantillaXML_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER OpenService( lExclusive); oClass:AddMethod( "OpenService", @TPlantillaXML_OpenService(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @TPlantillaXML_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DefineFiles(); oClass:AddMethod( "DefineFiles", @TPlantillaXML_DefineFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Activate(); oClass:AddMethod( "Activate", @TPlantillaXML_Activate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Resource( nMode); oClass:AddMethod( "Resource", @TPlantillaXML_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lPreSave( oGet, nMode); oClass:AddMethod( "lPreSave", @TPlantillaXML_lPreSave(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InitResource(); oClass:AddMethod( "InitResource", @TPlantillaXML_InitResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ChangeCabecera(); oClass:AddMethod( "ChangeCabecera", @TPlantillaXML_ChangeCabecera(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Importacion(); oClass:AddMethod( "Importacion", @TPlantillaXML_Importacion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TreeImportacionChanged(); oClass:AddMethod( "TreeImportacionChanged", @TPlantillaXML_TreeImportacionChanged(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddPlantilla(); oClass:AddMethod( "AddPlantilla", @TPlantillaXML_AddPlantilla(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DelPlantilla(); oClass:AddMethod( "DelPlantilla", @TPlantillaXML_DelPlantilla(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddFichero(); oClass:AddMethod( "AddFichero", @TPlantillaXML_AddFichero(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DelFichero(); oClass:AddMethod( "DelFichero", @TPlantillaXML_DelFichero(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AllExecuteImportacion(); oClass:AddMethod( "AllExecuteImportacion", @TPlantillaXML_AllExecuteImportacion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ExecuteImportacion( cFileXML); oClass:AddMethod( "ExecuteImportacion", @TPlantillaXML_ExecuteImportacion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AdoImportacion( cFichero); oClass:AddMethod( "AdoImportacion", @TPlantillaXML_AdoImportacion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER XlsCreateObject(); oClass:AddMethod( "XlsCreateObject", @TPlantillaXML_XlsCreateObject(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AdoCreateObject(); oClass:AddMethod( "AdoCreateObject", @TPlantillaXML_AdoCreateObject(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TxTCreateObject(); oClass:AddMethod( "TxTCreateObject", @TPlantillaXML_TxTCreateObject(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TxtFindData(); oClass:AddMethod( "TxtFindData", @TPlantillaXML_TxtFindData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TxtCreateRegister(); oClass:AddMethod( "TxtCreateRegister", @TPlantillaXML_TxtCreateRegister(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FindData(); oClass:AddMethod( "FindData", @TPlantillaXML_FindData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AdoFindData(); oClass:AddMethod( "AdoFindData", @TPlantillaXML_AdoFindData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FindIterator(); oClass:AddMethod( "FindIterator", @TPlantillaXML_FindIterator(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AdoFindIterator(); oClass:AddMethod( "AdoFindIterator", @TPlantillaXML_AdoFindIterator(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AdoGetPlantilla( cPlantilla); oClass:AddMethod( "AdoGetPlantilla", @TPlantillaXML_AdoGetPlantilla(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EvalCondition( cCond, nRow); oClass:AddMethod( "EvalCondition", @TPlantillaXML_EvalCondition(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DataToColumn( cData); oClass:AddMethod( "DataToColumn", @TPlantillaXML_DataToColumn(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DataToValue( cData); oClass:AddMethod( "DataToValue", @TPlantillaXML_DataToValue(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DataToField( cData, cField); oClass:AddMethod( "DataToField", @TPlantillaXML_DataToField(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PostEvalData( cData); oClass:AddMethod( "PostEvalData", @TPlantillaXML_PostEvalData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DataToType( cData, cField); oClass:AddMethod( "DataToType", @TPlantillaXML_DataToType(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CreateRegister(); oClass:AddMethod( "CreateRegister", @TPlantillaXML_CreateRegister(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lOnlyOne(); oClass:AddMethod( "lOnlyOne", @TPlantillaXML_lOnlyOne(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lGetConfigName(); oClass:AddMethod( "lGetConfigName", @TPlantillaXML_lGetConfigName(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lValidConfigName(); oClass:AddMethod( "lValidConfigName", @TPlantillaXML_lValidConfigName(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SaveConfig(); oClass:AddMethod( "SaveConfig", @TPlantillaXML_SaveConfig(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DeleteConfig(); oClass:AddMethod( "DeleteConfig", @TPlantillaXML_DeleteConfig(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LoadConfig(); oClass:AddMethod( "LoadConfig", @TPlantillaXML_LoadConfig(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lLoadButtons(); oClass:AddMethod( "lLoadButtons", @TPlantillaXML_lLoadButtons(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER bAction( cText); oClass:AddMethod( "bAction", @TPlantillaXML_bAction(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lFindCampoClave( aCampos); oClass:AddMethod( "lFindCampoClave", @TPlantillaXML_lFindCampoClave(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER aCampoClave(); oClass:AddMethod( "aCampoClave", @TPlantillaXML_aCampoClave(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EditPlantillaImportacion(); oClass:AddMethod( "EditPlantillaImportacion", @TPlantillaXML_EditPlantillaImportacion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TPlantillaXML ;
+
+
+
+static FUNCTION TPlantillaXML_New( cPath, oWndParent, oMenuItem ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+   If( oWndParent == nil, oWndParent := GetWndFrame(), ) ;
+
+   if oMenuItem <> nil .AND. ::nLevel == nil
+      ::nLevel                := Auth():Level( oMenuItem )
+   else
+      ::nLevel                := 1
+   end
+
+   if nAnd( ::nLevel, 1 ) == 0
+      msgStop( "Acceso no permitido." )
+      return nil
+   end
+
+   ::cPath                    := cPath
+   ::oWndParent               := oWndParent
+
+   ::bFirstKey                := {|| ::oDbf:cCodigo }
+
+   ::oDetCabeceraPlantillaXML := TDetCabeceraPlantillaXML():New( cPath, Self )
+
+   ::AddDetail( ::oDetCabeceraPlantillaXML )
+
+   private oThis              := Self
+
+RETURN ( Self )
+
+
+
+static FUNCTION TPlantillaXML_CreateInit( cPath ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+
+   ::cPath                    := cPath
+
+   ::bFirstKey                := {|| ::oDbf:cCodigo }
+
+   ::oDetCabeceraPlantillaXML := TDetCabeceraPlantillaXML():New( cPath, Self )
+
+   ::AddDetail( ::oDetCabeceraPlantillaXML )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TPlantillaXML_Create( cPath ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+
+   ::cPath              := cPath
+   ::oDbf               := nil
+
+RETURN ( Self )
+
+
+
+static FUNCTION TPlantillaXML_Activate( ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   if nAnd( ::nLevel, 1 ) == 0
+
+
+
+
+
+      if ::oWndParent <> nil
+         ::oWndParent:CloseAll()
+      end
+
+      if Empty( ::oDbf )
+         if !::OpenFiles()
+            return nil
+         end
+      end
+
+
+
+
+
+      if !::lCreateShell
+         ::CreateShell( ::nLevel )
+      end
+
+      ::oWndBrw:GralButtons( Self )
+
+
+
+
+
+
+
+
+      ::oBtnImportacion := ::oWndBrw:NewAt( "gc_flash_",,, {||( ::Importacion() )}, "E(j)ecutar", "J",,, 8,, .F. )
+
+      ::lLoadButtons()
+
+      ::oWndBrw:EndButtons( Self )
+
+      if ::cHtmlHelp <> nil
+         ::oWndBrw:cHtmlHelp  := ::cHtmlHelp
+      end
+
+      ::oWndBrw:Activate( nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, {|| ::CloseFiles() } )
+
+   else
+
+      msgStop( "Acceso no permitido." )
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TPlantillaXML_OpenFiles( lExclusive ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local lOpen          := .T.
+   local oError
+   local oBlock
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   oBlock               := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      if Empty( ::oDbf ) .OR. Empty( ::oSav )
+         ::DefineFiles()
+      end
+
+      ::oDbf:Activate( .F., !( lExclusive ) )
+
+      ::oSav:Activate( .F., !( lExclusive ) )
+
+      ::oDbfCount := DbfServer( "NCOUNT.DBF", ):NewOpen( "NCOUNT.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oDbfCount:AddBag( "NCOUNT.CDX" ) ; ::oDbfCount:AddBag( ) ; ::oDbfCount:AutoIndex()
+
+      ::oDbfDiv := DbfServer( "DIVISAS.DBF", ):NewOpen( "DIVISAS.DBF",, ( cDriver() ),, ( cPatDat() ), .F., .T., .F., .F. ) ; ::oDbfDiv:AddBag( "DIVISAS.CDX" ) ; ::oDbfDiv:AddBag( ) ; ::oDbfDiv:AutoIndex()
+
+      ::oDbfPrv := DbfServer( "PROVEE.DBF", ):NewOpen( "PROVEE.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oDbfPrv:AddBag( "PROVEE.CDX" ) ; ::oDbfPrv:AddBag( ) ; ::oDbfPrv:AutoIndex()
+
+      ::oDbfArt := DbfServer( "ARTICULO.DBF", ):NewOpen( "ARTICULO.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oDbfArt:AddBag( "ARTICULO.CDX" ) ; ::oDbfArt:AddBag( ) ; ::oDbfArt:AutoIndex()
+
+      ::oDbfArtCod := DbfServer( "ArtCodebar.Dbf", ):NewOpen( "ArtCodebar.Dbf",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oDbfArtCod:AddBag( "ArtCodebar.Cdx" ) ; ::oDbfArtCod:AddBag( ) ; ::oDbfArtCod:AutoIndex()
+
+      ::oFacPrvT := DbfServer( "FACPRVT.DBF", ):NewOpen( "FACPRVT.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oFacPrvT:AddBag( "FACPRVT.CDX" ) ; ::oFacPrvT:AddBag( ) ; ::oFacPrvT:AutoIndex()
+
+      ::oFacPrvL := DbfServer( "FACPRVL.DBF", ):NewOpen( "FACPRVL.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oFacPrvL:AddBag( "FACPRVL.CDX" ) ; ::oFacPrvL:AddBag( ) ; ::oFacPrvL:AutoIndex()
+
+      ::oFacPrvP := DbfServer( "FACPRVP.DBF", ):NewOpen( "FACPRVP.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oFacPrvP:AddBag( "FACPRVP.CDX" ) ; ::oFacPrvP:AddBag( ) ; ::oFacPrvP:AutoIndex()
+
+      ::oAlbPrvT := DbfServer( "AlbProvT.DBF", ):NewOpen( "AlbProvT.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oAlbPrvT:AddBag( "AlbProvT.CDX" ) ; ::oAlbPrvT:AddBag( ) ; ::oAlbPrvT:AutoIndex()
+
+      ::oAlbPrvL := DbfServer( "AlbProvL.DBF", ):NewOpen( "AlbProvL.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oAlbPrvL:AddBag( "AlbProvL.CDX" ) ; ::oAlbPrvL:AddBag( ) ; ::oAlbPrvL:AutoIndex()
+
+      ::oDbfFam := DbfServer( "FAMILIAS.DBF", ):NewOpen( "FAMILIAS.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oDbfFam:AddBag( "FAMILIAS.CDX" ) ; ::oDbfFam:AddBag( ) ; ::oDbfFam:AutoIndex()
+
+      ::oDbfIva := DbfServer( "TIVA.DBF", ):NewOpen( "TIVA.DBF",, ( cDriver() ),, ( cPatDat() ), .F., .T., .F., .F. ) ; ::oDbfIva:AddBag( "TIVA.CDX" ) ; ::oDbfIva:AddBag( ) ; ::oDbfIva:AutoIndex()
+
+      ::oDbfFPago := DbfServer( "FPAGO.DBF", ):NewOpen( "FPAGO.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oDbfFPago:AddBag( "FPAGO.CDX" ) ; ::oDbfFPago:AddBag( ) ; ::oDbfFPago:AutoIndex()
+
+      ::oArtPrv := DbfServer( "PROVART.DBF", ):NewOpen( "PROVART.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oArtPrv:AddBag( "PROVART.CDX" ) ; ::oArtPrv:AddBag( ) ; ::oArtPrv:AutoIndex()
+
+      ::OpenDetails()
+
+   RECOVER USING oError
+
+      msgStop( "Imposible abrir todas las bases de datos " + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+      ::CloseFiles()
+
+      lOpen             := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TPlantillaXML_OpenService( lExclusive ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local lOpen          := .T.
+   local oError
+   local oBlock
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   oBlock               := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      if Empty( ::oDbf ) .OR. Empty( ::oSav )
+         ::DefineFiles()
+      end
+
+      ::oDbf:Activate( .F., !( lExclusive ) )
+
+      ::oSav:Activate( .F., !( lExclusive ) )
+
+   RECOVER USING oError
+
+      msgStop( "Imposible abrir todas las bases de datos " + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+      ::CloseFiles()
+
+      lOpen             := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TPlantillaXML_CloseFiles( ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   if ::oDbf <> nil .AND. ::oDbf:Used()
+      ::oDbf:End()
+      ::oDbf         := nil
+   end
+
+   if ::oSav <> nil .AND. ::oSav:Used()
+      ::oSav:End()
+      ::oSav         := nil
+   end
+
+   if ::oDbfDiv <> nil .AND. ::oDbfDiv:Used()
+      ::oDbfDiv:End()
+      ::oDbfDiv      := nil
+   end
+
+   if ::oDbfCount <> nil .AND. ::oDbfCount:Used()
+      ::oDbfCount:End()
+      ::oDbfCount    := nil
+   end
+
+   if ::oDbfPrv <> nil .AND. ::oDbfPrv:Used()
+      ::oDbfPrv:End()
+      ::oDbfPrv      := nil
+   end
+
+   if ::oDbfArt <> nil .AND. ::oDbfArt:Used()
+      ::oDbfArt:End()
+      ::oDbfArt      := nil
+   end
+
+   if ::oDbfArtCod <> nil .AND. ::oDbfArtCod:Used()
+      ::oDbfArtCod:End()
+      ::oDbfArtCod   := nil
+   end
+
+   if ::oFacPrvT <> nil .AND. ::oFacPrvT:Used()
+      ::oFacPrvT:End()
+      ::oFacPrvT     := nil
+   end
+
+   if ::oFacPrvL <> nil .AND. ::oFacPrvL:Used()
+      ::oFacPrvL:End()
+      ::oFacPrvL     := nil
+   end
+
+   if ::oFacPrvP <> nil .AND. ::oFacPrvP:Used()
+      ::oFacPrvP:End()
+      ::oFacPrvP     := nil
+   end
+
+   if ::oAlbPrvT <> nil .AND. ::oAlbPrvT:Used()
+      ::oAlbPrvT:End()
+      ::oAlbPrvT     := nil
+   end
+
+   if ::oAlbPrvL <> nil .AND. ::oAlbPrvL:Used()
+      ::oAlbPrvL:End()
+      ::oAlbPrvL     := nil
+   end
+
+   if ::oDbfFam <> nil .AND. ::oDbfFam:Used()
+      ::oDbfFam:End()
+      ::oDbfFam      := nil
+   end
+
+   if ::oDbfIva <> nil .AND. ::oDbfIva:Used()
+      ::oDbfIva:End()
+      ::oDbfIva      := nil
+   end
+
+   if ::oDbfFPago <> nil .AND. ::oDbfFPago:Used()
+      ::oDbfFPago:End()
+      ::oDbfFPago    := nil
+   end
+
+   if ::oArtPrv <> nil .AND. ::oArtPrv:Used()
+      ::oArtPrv:End()
+      ::oArtPrv    := nil
+   end
+
+   ::CloseDetails()
+
+RETURN .T.
+
+
+
+static FUNCTION TPlantillaXML_DefineFiles( cPath, cDriver ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   If( cPath == nil, cPath := ::cPath, ) ;
+   If( cDriver == nil, cDriver := cDriver(), ) ;
+
+   ::oDbf := DbfServer( "PlantillaXML.Dbf", "PlantillaXML" ):New( "PlantillaXML.Dbf", "PlantXML", ( cDriver ), "PlantillaXML", ( cPath ) )
+
+      ::oDbf:AddField( "cCodigo", "C", 003, 0,,,,, "Código", .F., 60, .F., {} )
+      ::oDbf:AddField( "cDescrip", "C", 035, 0,,,,, "Nombre", .F., 300, .F., {} )
+      ::oDbf:AddField( "cTipo", "C", 200, 0,,,,, "Tipo de documento", .F., 300, .F., {} )
+      ::oDbf:AddField( "lMult", "L", 001, 0,,,,, "Multiple registos", .F.,, .T., {} )
+
+      ::oDbf:AddIndex( "cCodigo", "PlantillaXML.Cdx", "cCodigo",,, .F., .F., "Código",,, .T., .F. )
+      ::oDbf:AddIndex( "cDescrip", "PlantillaXML.Cdx", "cDescrip",,, .F., .F., "Nombre",,, .T., .F. )
+      ::oDbf:AddIndex( "cTipo", "PlantillaXML.Cdx", "cTipo",,, .F., .F., "Tipo",,, .T., .F. )
+
+
+
+   ::oSav := DbfServer( "PlantillaSav.Dbf", "PlantillaSav" ):New( "PlantillaSav.Dbf", "PlantSav", ( cDriver ), "PlantillaSav", ( cPath ) )
+
+      ::oSav:AddField( "cUser", "C", 003, 0,,,,, "Usuario", .F., 60, .F., {} )
+      ::oSav:AddField( "cText", "C", 100, 0,,,,, "Nombre", .F., 300, .F., {} )
+      ::oSav:AddField( "cData", "M", 010, 0,,,,, "Contanido", .F., 300, .F., {} )
+
+      ::oSav:AddIndex( "cText", "PlantillaSav.Cdx", "Upper( cText )",,, .F., .F.,,,, .T., .F. )
+
+
+
+RETURN ( ::oDbf )
+
+
+
+static FUNCTION TPlantillaXML_Resource( nMode ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+    local oDlg
+   local oGet
+
+   oDlg = TDialog():New(,,,, LblTitle( nMode ) + "plantilla de importación XML", "PlantillaXML",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+
+
+      oGet := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, ::oDbf:cCodigo, ::oDbf:cCodigo:= u ) }, oDlg,, "@!", {||    NotValid( oGet, ::oDbf:cAlias, .T., "0" )},,,,,, .F., {||     ( nMode == 1 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 110, { | u | If( PCount()==0, ::oDbf:cDescrip, ::oDbf:cDescrip:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TCheckBox():ReDefine( 130, { | u | If( PCount()==0, ::oDbf:lMult, ::oDbf:lMult:= u ) }, oDlg,,,,,,, .F., {||     ( nMode <> 3 )}, .F. )
+
+
+
+
+
+
+      ::oCbxCabecera := TComboBox():ReDefine( 120, { | u | If( PCount()==0, ::oDbf:cTipo, ::oDbf:cTipo:= u ) }, ( ::aTipo ), oDlg,,,,,,, .F., {||     ( nMode == 1 )},,,,,, "::oCbxCabecera",,,,,,, )
+
+      ::oCbxCabecera:bChange        := {|| ::ChangeCabecera() }
+
+
+
+
+
+      ::oBrwCabecera                := IXBrowse():New( oDlg )
+
+      ::oBrwCabecera:bClrSel        := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      ::oBrwCabecera:bClrSelFocus   := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      ::oDetCabeceraPlantillaXML:oDbfVir:SetBrowse( ::oBrwCabecera )
+
+      ::oBrwCabecera:nMarqueeStyle  := 6
+      ::oBrwCabecera:cName          := "Cabeceras de plantillas XML"
+
+      if ( nMode <> 3 )
+         ::oBrwCabecera:bLDblClick  := {|| ::oDetCabeceraPlantillaXML:Edit( ::oBrwCabecera ) }
+      end
+
+      with object ( ::oBrwCabecera:AddCol() )
+         :cHeader          := "Campo"
+         :bStrData         := {|| ::oDetCabeceraPlantillaXML:oDbfVir:cCampo }
+         :nWidth           := 200
+      end
+
+      with object ( ::oBrwCabecera:AddCol() )
+         :cHeader          := "Nodo o constante"
+         :bStrData         := {|| if( ::oDetCabeceraPlantillaXML:oDbfVir:nTipo <> 2, ::oDetCabeceraPlantillaXML:oDbfVir:mNode, ::oDetCabeceraPlantillaXML:oDbfVir:uConst ) }
+         :nWidth           := 280
+      end
+
+      ::oBrwCabecera:CreateFromResource( 200 )
+
+
+
+
+
+        TButton():ReDefine( 210, {||( ::oDetCabeceraPlantillaXML:Append( ::oBrwCabecera ) )}, oDlg,,, .F., {||         ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 220, {||( ::oDetCabeceraPlantillaXML:Edit( ::oBrwCabecera ) )}, oDlg,,, .F., {||         ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 230, {||( ::oDetCabeceraPlantillaXML:Del( ::oBrwCabecera ) )}, oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+      TButton():ReDefine( 240, {||( ::oDetCabeceraPlantillaXML:Zoom() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+      TButton():ReDefine( 250, {||( dbSwapUp( ::oDetCabeceraPlantillaXML:oDbfVir:cAlias, ::oBrwCabecera ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+      TButton():ReDefine( 260, {||( dbSwapDown( ::oDetCabeceraPlantillaXML:oDbfVir:cAlias, ::oBrwCabecera ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 1, {||( if( ::lPreSave( oGet, nMode ), oDlg:end( 1 ), ) )}, oDlg,,, .F., {||         ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+
+
+
+
+        TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+
+
+
+
+      TButton():ReDefine( 559, {||( MsgInfo( "Ayuda no definida" ) )}, oDlg,,, .F.,,,, .T. )
+
+      if nMode <> 3
+         oDlg:AddFastKey( 113, {|| ::oDetCabeceraPlantillaXML:Append( ::oBrwCabecera ) } )
+         oDlg:AddFastKey( 114, {|| ::oDetCabeceraPlantillaXML:Edit( ::oBrwCabecera ) } )
+         oDlg:AddFastKey( 115, {|| ::oDetCabeceraPlantillaXML:Del( ::oBrwCabecera ) } )
+         oDlg:AddFastKey( 116, {|| if( ::lPreSave( oGet, nMode ), oDlg:end( 1 ), ) } )
+      end
+
+      oDlg:bStart := {|| ::InitResource() }
+
+    oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+static FUNCTION TPlantillaXML_lPreSave( oGet, nMode ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   if nMode == 1 .OR. nMode == 4
+
+      if Empty( ::oDbf:cCodigo )
+         MsgStop( "Código de la plantilla no puede estar vacío." )
+         return .F.
+      end
+
+      if ::oDbf:SeekInOrd( ::oDbf:cCodigo, "cCodigo" )
+         msgStop( "Código de la plantilla ya existe." )
+         return .F.
+      end
+
+   end
+
+   if Empty( ::oDbf:cDescrip )
+      MsgStop( "La descripción de la plantilla no puede estar vacia." )
+      return .F.
+   end
+
+   if Empty( ::oDbf:cTipo )
+      MsgStop( "El tipo de la plantilla no puede estar vacio." )
+      return .F.
+   end
+
+RETURN .T.
+
+
+
+static FUNCTION TPlantillaXML_InitResource( ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   ::ChangeCabecera()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TPlantillaXML_ChangeCabecera( ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local cTipo                := Rtrim( ::oDbf:cTipo )
+
+   ::aCamposCabecera          := {}
+
+   do case
+      case cTipo == "Artículo"
+
+         ::aCamposCabecera    := aItmArt()
+
+      case cTipo == "Artículo. Precios de compra"
+
+         ::aCamposCabecera    := aItmCom()
+
+      case cTipo == "Artículo. Precios de venta por propiedades"
+
+         ::aCamposCabecera    := aItmVta()
+
+      case cTipo == "Artículo. Escandallos"
+
+         ::aCamposCabecera    := aItmKit()
+
+      case cTipo == "Artículo. Referencias de proveedores"
+
+         ::aCamposCabecera    := aItmPrv()
+
+      case cTipo == "Artículo. Codigos de barras"
+
+         ::aCamposCabecera    := aItmBar()
+
+      case cTipo == "Pedido proveedores"
+
+         ::aCamposCabecera    := aItmPedPrv()
+
+      case cTipo == "Albarán proveedores"
+
+         ::aCamposCabecera    := aItmAlbPrv()
+
+      case cTipo == "Factura proveedores"
+
+         ::aCamposCabecera    := aItmFacPrv()
+
+      case cTipo == "Factura proveedores.Líneas"
+
+         ::aCamposCabecera    := aColFacPrv()
+
+      case cTipo == "Recibos facturas proveedor"
+
+      case cTipo == "Presupuesto clientes"
+
+      case cTipo == "Pedido clientes"
+
+         ::aCamposCabecera    := aItmPedCli()
+
+      case cTipo == "Albarán clientes"
+      case cTipo == "Factura clientes"
+      case cTipo == "Factura de anticipos"
+      case cTipo == "Factura rectificativa"
+      case cTipo == "Recibos facturas clientes"
+      case cTipo == "Tickets clientes"
+      case cTipo == "Pagos de clientes"
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TPlantillaXML_Importacion( cText ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local oDlg
+
+   ::aPlantilla                              := {}
+   ::aFichero                                := {}
+
+   if !Empty( cText )
+      ::LoadConfig( cText )
+   end
+
+   ::oImageImportacion                       := TImageList():New( 16, 16 )
+   ::oImageImportacion:AddMasked( TBitmap():Define( "gc_check_12" ),  ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+   ::oImageImportacion:AddMasked( TBitmap():Define( "gc_flash_16" ),                ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+
+   oDlg = TDialog():New(,,,,, "ImportarPlantillaXML",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+      ::oBrwPlantilla                        := IXBrowse():New( oDlg )
+
+      ::oBrwPlantilla:bClrSel                := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      ::oBrwPlantilla:bClrSelFocus           := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      ::oBrwPlantilla:nMarqueeStyle          := 5
+      ::oBrwPlantilla:lHScroll               := .F.
+
+      ::oBrwPlantilla:SetArray( ::aPlantilla, , , .F. )
+
+      ::oBrwPlantilla:bLDblClick             := {|| ::EditPlantillaImportacion()  }
+
+      ::oBrwPlantilla:CreateFromResource( 120 )
+
+      with object ( ::oBrwPlantilla:AddCol() )
+         :cHeader          := "Código"
+         :bEditValue       := {|| ::aPlantilla[ ::oBrwPlantilla:nArrayAt, 1 ] }
+         :nWidth           := 60
+      end
+
+      with object ( ::oBrwPlantilla:AddCol() )
+         :cHeader          := "Nombre"
+         :bEditValue       := {|| ::aPlantilla[ ::oBrwPlantilla:nArrayAt, 2 ] }
+         :nWidth           := 140
+      end
+
+      with object ( ::oBrwPlantilla:AddCol() )
+         :cHeader          := "Tipo"
+         :bEditValue       := {|| ::aPlantilla[ ::oBrwPlantilla:nArrayAt, 3 ] }
+         :nWidth           := 140
+      end
+
+
+
+
+      TButton():ReDefine( 100, {||( ::AddPlantilla() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+      TButton():ReDefine( 110, {||( ::DelPlantilla() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+      TButton():ReDefine( 130, {||( msginfo( "Arriba" ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+      TButton():ReDefine( 140, {||( msginfo( "Abajo" ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+
+      ::oBrwFichero                        := IXBrowse():New( oDlg )
+
+      ::oBrwFichero:bClrSel                := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      ::oBrwFichero:bClrSelFocus           := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      ::oBrwFichero:SetArray( ::aFichero, , , .F. )
+
+      ::oBrwFichero:nMarqueeStyle          := 5
+
+      ::oBrwFichero:lHScroll               := .F.
+
+      ::oBrwFichero:CreateFromResource( 220 )
+
+      ::oBrwFichero:bLDblClick             := {|| ShellExecute( oDlg:hWnd, "open", Rtrim( ::aFichero[ ::oBrwFichero:nArrayAt ] ) ) }
+
+      with object ( ::oBrwFichero:AddCol() )
+         :cHeader          := "Fichero"
+         :bEditValue       := {|| ::aFichero[ ::oBrwFichero:nArrayAt ] }
+         :nWidth           := 460
+      end
+
+
+
+
+      TButton():ReDefine( 200, {||( ::AddFichero() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+      TButton():ReDefine( 210, {||( ::DelFichero() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+
+      ::oTreeImportacion            := TTreeView():Redefine( 300, oDlg )
+      ::oTreeImportacion:bLDblClick := {|| ::TreeImportacionChanged() }
+
+
+
+
+      TButton():ReDefine( 400, {||( ::SaveConfig() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+      TButton():ReDefine( 410, {||( ::DeleteConfig() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+      ::oBtnAceptar := TButton():ReDefine( 1, {||( ::AllExecuteImportacion( oDlg ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+
+
+
+
+      TButton():ReDefine( 559, {||( MsgInfo( "Ayuda no definida" ) )}, oDlg,,, .F.,,,, .T. )
+
+      oDlg:bStart := {|| ::oTreeImportacion:SetImageList( ::oImageImportacion ) }
+
+      oDlg:AddFastKey( 116, {|| ::AllExecuteImportacion( oDlg ) } )
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   ::oImageImportacion:End()
+
+   ::oTreeImportacion:Destroy()
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+static FUNCTION TPlantillaXML_EditPlantillaImportacion( ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local nRec  := ::oDbf:Recno()
+
+   if ::oDbf:SeekInOrd( ::aPlantilla[ ::oBrwPlantilla:nArrayAt, 1 ], "cCodigo" )
+      ::oWndBrw:RecEdit()
+   end
+
+   ::oDbf:GoTo( nRec )
+
+Return ( Self )
+
+
+
+static FUNCTION TPlantillaXML_TreeImportacionChanged( ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local oItemTree   := ::oTreeImportacion:GetItem()
+
+   if !Empty( oItemTree ) .AND. !Empty( oItemTree:bAction )
+      Eval( oItemTree:bAction )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TPlantillaXML_AddPlantilla( ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local cPlantilla           := ::Buscar()
+
+   if !Empty( cPlantilla )
+
+      if aScan( ::aPlantilla, {|a| a[ 1 ] == ::oDbf:cCodigo } ) <> 0
+
+         MsgStop( "La plantilla ya está incorporada." )
+
+      else
+
+         if aScan( ::aPlantilla, {|a| Rtrim( a[ 3 ] ) == Rtrim( ::oDbf:cTipo ) } ) <> 0
+
+            MsgStop( "La plantilla es del mismo tipo que una anterior." )
+
+         else
+
+            aAdd( ::aPlantilla, { ::oDbf:cCodigo, ::oDbf:cDescrip, ::oDbf:cTipo } )
+
+         end
+
+      end
+
+   end
+
+   ::oBrwPlantilla:Refresh()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TPlantillaXML_DelPlantilla( ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   hb_ADel( ::aPlantilla, ::oBrwPlantilla:nArrayAt, .T. )
+
+   ::oBrwPlantilla:Refresh()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TPlantillaXML_AddFichero( ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local i
+   local cFile
+   local aFile
+   local nFlag    := nOr( 0x00000800, 0x00000008, 0x00000200, 0x00080000, 0x00200000 )
+
+   cFile          := cGetFile( "All | *.*", "Seleccione los ficheros a importar", "*.*" , , .F., .T., nFlag )
+   cFile          := Left( cFile, At( Chr( 0 ) + Chr( 0 ), cFile ) - 1 )
+
+   if !Empty( cFile )
+
+      cFile       := StrTran( cFile, Chr( 0 ), "," )
+      aFile       := hb_aTokens( cFile, "," )
+
+      if Len( aFile ) > 1
+
+         for i := 2 to Len( aFile )
+            aFile[ i ] := aFile[ 1 ] + "\" + aFile[ i ]
+         next
+
+         hb_ADel( aFile, 1, .T. )
+
+      endif
+
+      if IsArray( aFile )
+
+         for i := 1 to Len( aFile )
+            aAdd( ::aFichero, aFile[ i ] )
+         next
+
+      else
+
+         aAdd( ::aFichero, aFile )
+
+      endif
+
+   end
+
+   ::oBrwFichero:Refresh()
+
+RETURN ( ::aFichero )
+
+
+
+static FUNCTION TPlantillaXML_DelFichero( ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   hb_ADel( ::aFichero, ::oBrwFichero:nArrayAt, .T. )
+
+   ::oBrwFichero:Refresh()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TPlantillaXML_lOnlyOne( cPlantilla ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   ::lOneImportacion          := .T.
+
+   ::oDetCabeceraPlantillaXML:oDbf:Seek( cPlantilla )
+   while ::oDetCabeceraPlantillaXML:oDbf:cCodigo == cPlantilla .AND. !::oDetCabeceraPlantillaXML:oDbf:Eof()
+
+      if ::oDetCabeceraPlantillaXML:oDbf:lOcurr
+         ::lOneImportacion    := .F.
+      end
+
+      ::oDetCabeceraPlantillaXML:oDbf:Skip()
+
+   end
+
+RETURN ( ::lOneImportacion )
+
+
+
+static FUNCTION TPlantillaXML_AllExecuteImportacion( oDlg ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local cFichero
+   local cPlantilla
+
+   oDlg:Disable()
+
+   ::oTreeImportacion:DeleteAll()
+
+   if len( ::aFichero ) <> 0
+
+      for each cFichero in ::aFichero
+
+         ::oSubTreeImportacion   := ::oTreeImportacion:Add( "Procesando fichero " + cFichero )
+
+         ::oTreeImportacion:Select( ::oSubTreeImportacion )
+
+         for each cPlantilla in ::aPlantilla
+
+            ::AdoImportacion( cPlantilla[ 1 ], cFichero )
+
+         next
+
+      next
+
+      ::oTreeImportacion:Select( ::oTreeImportacion:Add( "Proceso finalizado" ) )
+
+   else
+      ::oTreeImportacion:Select( ::oTreeImportacion:Add( "Tiene que seleccionar, al menos un fichero para exportar." ) )
+   end
+
+   oDlg:Enable()
+
+   SetWindowText( ::oBtnAceptar:hWnd, "Procesado" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TPlantillaXML_AdoImportacion( cPlantilla, cFichero ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local oError
+   local oBlock
+
+   local cExtension
+
+
+
+
+   if ::oDbf:SeekInOrd( cPlantilla, "cCodigo" )
+
+      ::lMultipleImportacion                    := ::oDbf:lMult
+
+      if ::oDetCabeceraPlantillaXML:oDbf:SeekInOrd( cPlantilla, "cCodigo" )
+
+         if File( cFichero )
+
+            cExtension  := GetFileExt( cFichero )
+
+            do case
+               case AllTrim( cExtension ) == "xls"
+                  ::XlsCreateObject( cPlantilla, cFichero )
+
+               case AllTrim( cExtension ) == "xml"
+                  ::AdoCreateObject( cPlantilla, cFichero )
+
+               otherwise
+
+                  ::TxtCreateObject( cPlantilla, cFichero )
+
+            end
+
+         end
+
+      else
+
+         msgStop( "Líneas de plantilla " + cPlantilla + " no encontrada." )
+
+      end
+
+   else
+
+      msgStop( "Plantilla " + cPlantilla + " no encontrada." )
+
+   end
+
+
+
+
+
+
+
+
+
+RETURN ( Self )
+
+
+
+static FUNCTION TPlantillaXML_AdoCreateObject( cPlantilla, cFichero ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local oError
+   local oBlock
+   local lError                           := .F.
+
+   oBlock                                 := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      ::oOleExcel                         := TOleExcel():New( "Importando hoja de excel", "Conectando...", .F. )
+
+      ::oOleExcel:oExcel:Visible          := .F.
+      ::oOleExcel:oExcel:DisplayAlerts    := .F.
+
+      ::oOleExcel:oExcel:Workbooks:Add()
+      ::oOleExcel:oExcel:Workbooks:OpenXml( cFichero, 1, 2 )
+
+      ::oActiveSheet                      := ::oOleExcel:oExcel:ActiveSheet
+
+      ::nActiveSheetRows                  := ::oActiveSheet:UsedRange:Rows:Count()
+      ::nActiveSheetColumns               := ::oActiveSheet:UsedRange:Columns:Count()
+
+      if ::AdoFindData( cPlantilla )
+         ::CreateRegister()
+      end
+
+      ::oOleExcel:oExcel:Quit()
+      ::oOleExcel:oExcel:DisplayAlerts    := .T.
+
+      ::oOleExcel:End()
+
+   RECOVER USING oError
+
+      msgStop( "Error al crear el objeto Excel." + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+      lError                              := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+Return( !lError )
+
+
+
+static FUNCTION TPlantillaXML_XlsCreateObject( cPlantilla, cFichero ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   ::oOleExcel                         := TOleExcel():New( "Importando hoja de excel", "Conectando...", .F. )
+
+   ::oOleExcel:oExcel:Visible          := .F.
+   ::oOleExcel:oExcel:DisplayAlerts    := .F.
+
+   ::oOleExcel:oExcel:Workbooks:Add()
+   ::oOleExcel:oExcel:Workbooks:Open( cFichero )
+
+   ::oActiveSheet                      := ::oOleExcel:oExcel:ActiveSheet
+
+   ::nActiveSheetRows                  := ::oActiveSheet:UsedRange:Rows:Count()
+   ::nActiveSheetColumns               := ::oActiveSheet:UsedRange:Columns:Count()
+
+   if ::AdoFindData( cPlantilla )
+      ::CreateRegister()
+   end
+
+   ::oOleExcel:oExcel:Quit()
+   ::oOleExcel:oExcel:DisplayAlerts    := .T.
+
+   ::oOleExcel:End()
+
+Return( .T. )
+
+
+
+static FUNCTION TPlantillaXML_TxTCreateObject( cPlantilla, cFichero ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local oFile
+
+   if !Empty( cFichero ) .AND. File( cFichero )
+
+      oFile           := TTxtFile():New( cFichero )
+
+
+
+      if !Empty( cPlantilla )       .AND. !Empty( oFile )            .AND. ::TxtFindData( cPlantilla )
+
+         ::TxtCreateRegister( oFile )
+
+      end
+
+      oFile:End()
+      oFile           := nil
+
+   end
+
+Return( .T. )
+
+
+
+static FUNCTION TPlantillaXML_TxtFindData( cPlantilla ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local oStruct
+   local aLineas              := {}
+   local nPos
+   local lReturn              := .T.
+
+   ::ChangeCabecera()
+
+   ::aCamposDetalle           := {}
+
+
+
+
+
+   if ::oDetCabeceraPlantillaXML:oDbf:Seek( cPlantilla )
+
+      while ::oDetCabeceraPlantillaXML:oDbf:cCodigo == cPlantilla .AND. !::oDetCabeceraPlantillaXML:oDbf:Eof()
+
+         oStruct              := sCamposLineas():New()
+         oStruct:cCampo       := ::oDetCabeceraPlantillaXML:oDbf:cCampo
+         oStruct:nTipo        := ::oDetCabeceraPlantillaXML:oDbf:nTipo
+         oStruct:uConst       := ::oDetCabeceraPlantillaXML:oDbf:uConst
+
+         if ::oDetCabeceraPlantillaXML:oDbf:nTipo < 2
+
+            nPos              := At( "-", ::oDetCabeceraPlantillaXML:oDbf:mNode )
+
+            oStruct:nInicio   := Val( Left( ::oDetCabeceraPlantillaXML:oDbf:mNode, nPos - 1 ) )
+            oStruct:nAncho    := Val( SubStr( ::oDetCabeceraPlantillaXML:oDbf:mNode, nPos + 1 ) )
+
+         else
+
+            oStruct:nInicio   := 0
+            oStruct:nAncho    := 0
+
+         end
+
+         oStruct:lClave       := ::oDetCabeceraPlantillaXML:oDbf:lClave
+
+         aAdd( ::aCamposDetalle, oStruct )
+
+      ::oDetCabeceraPlantillaXML:oDbf:Skip()
+
+      end
+
+   else
+
+      lReturn                 := .F.
+
+   end
+
+return ( lReturn )
+
+
+
+static FUNCTION TPlantillaXML_ExecuteImportacion( cPlantilla, cFileXML ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local cXml
+   local oSubNode
+   local oSubIter
+
+   ::nSearchOcurrency         := 0
+
+   if ::oDbf:SeekInOrd( cPlantilla, "cCodigo" )
+
+      ::ChangeCabecera()
+
+      ::lOnlyOne( cPlantilla )
+
+      if ::oDetCabeceraPlantillaXML:oDbf:SeekInOrd( cPlantilla, "cCodigo" )
+
+         ::oXmlDocument       := TXmlDocument():New( cFileXML )
+
+         if ::oXmlDocument:nStatus <> 1
+            ::oTreeImportacion:Select( ::oTreeImportacion:Add( "Error procesando fichero " + cFileXML + " en la línea " + AllTrim( Str( ::oXmlDocument:nLine ) ) + ".", 0 ) )
+            ::oTreeImportacion:Select( ::oTreeImportacion:Add( "Error " + ::oXmlDocument:ErrorMsg, 1 ) )
+            return .F.
+         end
+
+         if ::lOneImportacion
+
+            if ::FindData( cPlantilla )
+               ::CreateRegister()
+            end
+
+         else
+
+            while ::FindData( cPlantilla )
+               ::CreateRegister()
+            end
+
+         end
+
+      else
+
+         msgStop( "Líneas de plantilla " + cPlantilla + " no encontrada." )
+
+      end
+
+   else
+
+      msgStop( "Plantilla " + cPlantilla + " no encontrada." )
+
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TPlantillaXML_FindData( cPlantilla ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local a
+   local oIter
+   local oNode
+   local cNode
+   local cData
+   local oTreeNode
+   local lFindData               := .T.
+
+   ::aMessage                    := {}
+
+
+
+
+
+   if ::oDetCabeceraPlantillaXML:oDbf:Seek( cPlantilla )
+
+      while ::oDetCabeceraPlantillaXML:oDbf:cCodigo == cPlantilla .AND. !::oDetCabeceraPlantillaXML:oDbf:Eof()
+
+         ::oDetCabeceraPlantillaXML:LoadValues( ::oDetCabeceraPlantillaXML:oDbf:mValue )
+
+         if ::oDetCabeceraPlantillaXML:oDbf:nTipo == 2
+
+            aAdd( ::aMessage, "Reemplazado el campo " + Rtrim( ::oDetCabeceraPlantillaXML:oDbf:cCampo ) + " con el valor " + Rtrim( ::oDetCabeceraPlantillaXML:oDbf:uConst ) )
+
+            ::DataToType( Rtrim( ::oDetCabeceraPlantillaXML:oDbf:uConst ), Rtrim( ::oDetCabeceraPlantillaXML:oDbf:cCampo ) )
+
+         else
+
+            oNode                := ::FindIterator()
+
+            if !Empty( oNode )
+
+               cData             := cValToChar( oNode:cData )
+               if !Empty( cData )
+
+
+
+
+
+                  cData          := ::DataToValue( cData )
+
+
+
+
+
+                  ::DataToField( cData, Rtrim( ::oDetCabeceraPlantillaXML:oDbf:cCampo ) )
+
+                  aAdd( ::aMessage, "Encontrado en el path " + Rtrim( ::oDetCabeceraPlantillaXML:oDbf:mNode ) + " con el valor " + cData )
+
+               else
+
+                  lFindData      := .F.
+
+                  aAdd( ::aMessage, "El path " + Rtrim( ::oDetCabeceraPlantillaXML:oDbf:mNode ) + " no contiene datos." )
+
+               end
+
+            else
+
+               aAdd( ::aMessage, "No encontrado en el path " + Rtrim( ::oDetCabeceraPlantillaXML:oDbf:mNode ) + "." )
+
+            end
+
+         end
+
+         sysrefresh()
+
+         ::oDetCabeceraPlantillaXML:oDbf:Skip()
+
+      end
+
+   end
+
+
+
+
+
+   if lFindData
+
+      oTreeNode                  := ::oSubTreeImportacion:Add( "Busqueda de valores :" + ::oDbf:cDescrip )
+
+      for each a in ::aMessage
+         oTreeNode:Add( a )
+      next
+
+      oTreeNode                  := oTreeNode:Add( "Valores almacenados" )
+
+      for each a in ::aCamposCabecera
+         if !Empty( a[ 5 ] )
+            oTreeNode:Add( Rtrim( a[ 5 ] ) + " con el valor " + Rtrim( cValToChar( a[ 9 ] ) ) + " de tipo " + a[ 2 ] )
+         end
+      next
+
+   else
+
+      ::oSubTreeImportacion:Add( "Busqueda sin resultados :" + ::oDbf:cDescrip )
+
+   end
+
+RETURN ( lFindData )
+
+
+
+static FUNCTION TPlantillaXML_AdoFindData( cPlantilla ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local a
+   local oTreeNode
+   local lFindData            := .T.
+
+   ::aMessage                 := {}
+   ::aRegistros               := {}
+
+
+
+
+
+   if ::lMultipleImportacion
+
+      for ::nRowSelected := 2 to ::nActiveSheetRows
+         ::AdoGetPlantilla( cPlantilla )
+      next
+
+   else
+
+      ::AdoGetPlantilla( cPlantilla )
+
+   end
+
+
+
+
+
+   oTreeNode               := ::oSubTreeImportacion:Add( "Busqueda de valores :" + ::oDbf:cDescrip )
+
+
+
+   for each a in ::aMessage
+      oTreeNode:Add( a )
+   next
+
+   oTreeNode               := oTreeNode:Add( "Valores almacenados" )
+
+   for each a in ::aCamposCabecera
+      if !Empty( a[ 5 ] )
+         oTreeNode:Add( Rtrim( a[ 5 ] ) + " con el valor " + Rtrim( cValToChar( a[ 9 ] ) ) + " de tipo " + a[ 2 ] )
+      end
+   next
+
+RETURN ( lFindData )
+
+
+
+static FUNCTION TPlantillaXML_AdoGetPlantilla( cPlantilla ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local cData
+   local lFindData            := .F.
+
+   ::ChangeCabecera()
+
+
+
+
+
+   if ::oDetCabeceraPlantillaXML:oDbf:Seek( cPlantilla )
+
+      while ::oDetCabeceraPlantillaXML:oDbf:cCodigo == cPlantilla .AND. !::oDetCabeceraPlantillaXML:oDbf:Eof()
+
+         ::oDetCabeceraPlantillaXML:LoadValues( ::oDetCabeceraPlantillaXML:oDbf:mValue )
+
+         if ::oDetCabeceraPlantillaXML:oDbf:nTipo == 2
+
+            aAdd( ::aMessage, "Reemplazado el campo " + Rtrim( ::oDetCabeceraPlantillaXML:oDbf:cCampo ) + " con el valor " + Rtrim( ::oDetCabeceraPlantillaXML:oDbf:uConst ) )
+
+            ::DataToType( Rtrim( ::oDetCabeceraPlantillaXML:oDbf:uConst ), Rtrim( ::oDetCabeceraPlantillaXML:oDbf:cCampo ) )
+
+         else
+
+            cData             := ::AdoFindIterator()
+
+            if !Empty( cData )
+
+               lFindData      := .T.
+
+
+
+
+
+               cData          := ::DataToValue( cData )
+
+
+
+
+
+               ::DataToField( cData, Rtrim( ::oDetCabeceraPlantillaXML:oDbf:cCampo ) )
+
+               aAdd( ::aMessage, "Encontrado en el path " + Rtrim( ::oDetCabeceraPlantillaXML:oDbf:mNode ) + " con el valor " + cValToChar( cData ) )
+
+            else
+
+
+
+               aAdd( ::aMessage, "El path " + Rtrim( ::oDetCabeceraPlantillaXML:oDbf:mNode ) + " no contiene datos." )
+
+
+
+            end
+
+         end
+
+         sysrefresh()
+
+         ::oDetCabeceraPlantillaXML:oDbf:Skip()
+
+     end
+
+   end
+
+   if lFindData
+
+      aAdd( ::aRegistros, ::aCamposCabecera )
+
+      if !Empty( ::oRecTreeImportacion )
+         ::oRecTreeImportacion:Add( "Registro " + Alltrim( Trans( Len( ::aRegistros ), "999999999" ) ) + " completado." )
+      else
+         ::oTreeImportacion:Select( ::oTreeImportacion:Add( "Registro " + Alltrim( Trans( Len( ::aRegistros ), "999999999" ) ) + " completado." ) )
+      end
+
+   end
+
+RETURN ( lFindData )
+
+
+
+static FUNCTION TPlantillaXML_TxtCreateRegister( oFile ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local i
+   local nPos
+   local cTipo          := Rtrim( ::oDbf:cTipo )
+   local aCampos
+   local aPlantilla
+   local cCodArt
+   local nNumLin        := 1
+   local aFacturas      := {}
+
+   ::aRegistros         := {}
+
+   do case
+   case cTipo == "Artículo"
+
+      ::oRecTreeImportacion         := ::oTreeImportacion:Add( "Procesando artículos", 0, nil )
+      ::oTreeImportacion:Select( ::oRecTreeImportacion )
+
+
+
+
+
+      while !oFile:lEoF()
+
+         aPlantilla                 := Array( Len( ::aCamposCabecera ) )
+
+         for each aCampos in ::aCamposDetalle
+
+            nPos                    := aScan( ::aCamposCabecera, {| a | Upper( a[ 5 ] ) == Upper( AllTrim( aCampos:cCampo ) ) } )
+
+            if aCampos:nTipo <> 2
+               aPlantilla[ nPos ]   := ::DataToType( SubStr( oFile:cLine, aCampos:nInicio, aCampos:nAncho ), aCampos:cCampo, .T. )
+            else
+               aPlantilla[ nPos ]   := ::DataToType( aCampos:uConst, aCampos:cCampo, .T. )
+            end
+
+         next
+
+         aAdd( ::aRegistros, aPlantilla )
+
+         oFile:Skip()
+
+      end
+
+
+
+
+
+      for each aCampos in ::aRegistros
+
+         cCodArt                       := aCampos[ ::oDbfArt:FieldPos( "Codigo" ) ]
+
+         if !Empty( cCodArt )
+
+            if !::oDbfArt:SeekInOrd( cCodArt, "Codigo" )
+
+               ::oDbfArt:Append()
+
+               for i := 1 to len( aCampos )
+                  ::oDbfArt:FieldPut( i, aCampos[ i ] )
+               next
+
+               ::oRecTreeImportacion   := ::oTreeImportacion:Add( "Código de artículo " + Rtrim( cCodArt ) + " añadido a la base de datos.", 1, bGenEdtArticulo( cCodArt ) )
+
+            else
+
+               for i := 1 to len( aCampos )
+                  if !Empty( aCampos[ i ] )
+                     ::oDbfArt:FieldPut( i, aCampos[ i ] )
+                  end
+               next
+
+               ::oRecTreeImportacion   := ::oTreeImportacion:Add( "Código de artículo " + Rtrim( cCodArt ) + " ya existe en la base de datos.", 1, bGenEdtArticulo( cCodArt ) )
+
+            end
+
+            ::oTreeImportacion:Select( ::oRecTreeImportacion )
+            ::oTreeImportacion:Refresh()
+
+         end
+
+         SysRefresh()
+
+      next
+
+   case cTipo == "Artículo. Precios de compra"
+   case cTipo == "Artículo. Precios de venta por propiedades"
+   case cTipo == "Artículo. Escandallos"
+   case cTipo == "Artículo. Referencias de proveedores"
+   case cTipo == "Artículo. Codigos de barras"
+   case cTipo == "Pedido proveedores"
+
+   case cTipo == "Albarán proveedores"
+
+      ::oRecTreeImportacion                        := ::oTreeImportacion:Add( "Procesando albaran de proveedor", 0, nil )
+      ::oTreeImportacion:Select( ::oRecTreeImportacion )
+
+
+
+
+
+      while !oFile:lEoF()
+
+         if !::lFindCampoClave( oFile )
+
+            aPlantilla                             := Array( Len( ::aCamposCabecera ) )
+
+
+
+
+
+            for each aCampos in ::aCamposDetalle
+
+               nPos                                := aScan( ::aCamposCabecera, {| a | Upper( a[ 5 ] ) == Upper( AllTrim( aCampos:cCampo ) ) } )
+
+               if aCampos:nTipo <> 2
+                  aPlantilla[ nPos ]               := ::DataToType( SubStr( oFile:cLine, aCampos:nInicio, aCampos:nAncho ), aCampos:cCampo, .T. )
+               else
+                  aPlantilla[ nPos ]               := ::DataToType( aCampos:uConst, aCampos:cCampo, .T. )
+               end
+
+            next
+
+            aAdd( ::aRegistros, aPlantilla )
+
+         end
+
+         oFile:Skip()
+
+      end
+
+
+
+
+
+      for each aCampos in ::aRegistros
+
+
+         if !Empty( aCampos[ ::oAlbPrvT:FieldPos( "cSuPed" ) ] )                          .AND. !::oAlbPrvT:SeekInOrd( aCampos[ ::oAlbPrvT:FieldPos( "cSuPed" ) ], "cSuPed" )
+
+
+
+
+
+            aCampos[ ::oAlbPrvT:FieldPos( "cSerAlb" ) ]     := cNewSer( "nAlbPrv", ::oDbfCount:cAlias )
+            aCampos[ ::oAlbPrvT:FieldPos( "nNumAlb" ) ]     := nNewDoc( aPlantilla[ ::oAlbPrvT:FieldPos( "cSerAlb" ) ], ::oAlbPrvT:cAlias, "nAlbPrv", , ::oDbfCount:cAlias )
+            aCampos[ ::oAlbPrvT:FieldPos( "cSufAlb" ) ]     := RetSufEmp()
+            aCampos[ ::oAlbPrvT:FieldPos( "cTurAlb" ) ]     := cCurSesion()
+            aCampos[ ::oAlbPrvT:FieldPos( "cDivAlb" ) ]     := cDivEmp()
+            aCampos[ ::oAlbPrvT:FieldPos( "cCodAlm" ) ]     := Application():codigoAlmacen()
+            aCampos[ ::oAlbPrvT:FieldPos( "cCodCaj" ) ]     := Application():CodigoCaja()
+            aCampos[ ::oAlbPrvT:FieldPos( "nVdvAlb" ) ]     := nChgDiv( aPlantilla[ ::oAlbPrvT:FieldPos( "cDivAlb" ) ], ::oDbfDiv:cAlias )
+            aCampos[ ::oAlbPrvT:FieldPos( "lSndDoc" ) ]     := .T.
+            aCampos[ ::oAlbPrvT:FieldPos( "cCodPro" ) ]     := cProCnt()
+            aCampos[ ::oAlbPrvT:FieldPos( "cCodUsr" ) ]     := Auth():Codigo()
+            aCampos[ ::oAlbPrvT:FieldPos( "cCodDlg" ) ]     := Application():CodigoDelegacion()
+            aCampos[ ::oAlbPrvT:FieldPos( "dFecAlb" ) ]     := GetSysDate()
+
+
+            if !Empty( aCampos[ ::oAlbPrvT:FieldPos( "cCodPrv" ) ] )    .AND. ::oDbfPrv:Seek( AllTrim( aCampos[ ::oAlbPrvT:FieldPos( "cCodPrv" ) ] ), "Cod" )
+
+               aCampos[ ::oAlbPrvT:FieldPos( "cNomPrv"  ) ] := ::oDbfPrv:Titulo
+               aCampos[ ::oAlbPrvT:FieldPos( "cDirPrv"  ) ] := ::oDbfPrv:Domicilio
+               aCampos[ ::oAlbPrvT:FieldPos( "cPobPrv"  ) ] := ::oDbfPrv:Poblacion
+               aCampos[ ::oAlbPrvT:FieldPos( "cProvProv") ] := ::oDbfPrv:Provincia
+               aCampos[ ::oAlbPrvT:FieldPos( "cPosPrv"  ) ] := ::oDbfPrv:CodPostal
+               aCampos[ ::oAlbPrvT:FieldPos( "cDniPrv"  ) ] := ::oDbfPrv:Nif
+               aCampos[ ::oAlbPrvT:FieldPos( "cCodPago" ) ] := ::oDbfPrv:FPago
+
+            end
+
+            ::oAlbPrvT:Append()
+
+            for i:= 1 to len( aCampos )
+               ::oAlbPrvT:FieldPut( i, aCampos[ i ] )
+            next
+
+            ::oRecTreeImportacion   := ::oTreeImportacion:Add( "Albtura de proveedor " + Alltrim( aCampos[ 1 ] ) + AllTrim( Str( aCampos[ 2 ] ) ) + AllTrim( aCampos[ 3 ] ) + " añadida a la base de datos.", 1, {|| EdtAlbPrv( aCampos[ 1 ] + Str( aCampos[ 2 ] ) + aCampos[ 3 ] ) } )
+            ::oTreeImportacion:Select( ::oRecTreeImportacion )
+
+         end
+
+      next
+
+   case cTipo == "Albaranes proveedores.Líneas"
+
+      ::oRecTreeImportacion                        := ::oTreeImportacion:Add( "Procesando lineas de albaranes de proveedor", 0, nil )
+      ::oTreeImportacion:Select( ::oRecTreeImportacion )
+
+
+
+
+
+      while !oFile:lEoF()
+
+         aPlantilla                 := Array( Len( ::aCamposCabecera ) )
+
+         for each aCampos in ::aCamposDetalle
+
+            nPos                    := aScan( ::aCamposCabecera, {| a | Upper( a[ 5 ] ) == Upper( AllTrim( aCampos:cCampo ) ) } )
+
+            if aCampos:nTipo <> 2
+               aPlantilla[ nPos ]   := ::DataToType( SubStr( oFile:cLine, aCampos:nInicio, aCampos:nAncho ), aCampos:cCampo, .T. )
+            else
+               aPlantilla[ nPos ]   := ::DataToType( aCampos:uConst, aCampos:cCampo, .T. )
+            end
+
+         next
+
+         aAdd( ::aRegistros, aPlantilla )
+
+         oFile:Skip()
+
+      end
+
+
+
+
+
+      for each aCampos in ::aRegistros
+
+         cCodArt                                         := aCampos[ ::oAlbPrvL:FieldPos( "cRef" ) ]
+
+         nNumLin                                         := 1
+
+
+
+         if !Empty( cCodArt )                            .AND. ::oDbfArt:SeekInOrd( cCodArt, "Codigo" )     .AND. ::oAlbPrvT:SeekInOrd( Upper( AllTrim( aCampos[ ::oAlbPrvL:FieldPos( "cSuPed" ) ] ) ), "cSuPed" )
+
+            ::oDbfArt:Load()
+            ::oAlbPrvT:Load()
+
+            aCampos[ ::oAlbPrvL:FieldPos( "cSerAlb" ) ]  := ::oAlbPrvT:cSerAlb
+            aCampos[ ::oAlbPrvL:FieldPos( "nNumAlb" ) ]  := ::oAlbPrvT:nNumAlb
+            aCampos[ ::oAlbPrvL:FieldPos( "cSufAlb" ) ]  := ::oAlbPrvT:cSufAlb
+            aCampos[ ::oAlbPrvL:FieldPos( "cAlmLin" ) ]  := ::oAlbPrvT:cCodAlm
+
+
+
+
+
+            if aScan( aFacturas, {|a| a == ::oAlbPrvT:cSerAlb + Str( ::oAlbPrvT:nNumAlb ) + ::oAlbPrvT:cSufAlb } ) == 0
+               aAdd( aFacturas, ::oAlbPrvT:cSerAlb + Str( ::oAlbPrvT:nNumAlb ) + ::oAlbPrvT:cSufAlb )
+            end
+
+            aCampos[ ::oAlbPrvL:FieldPos( "nIva"    ) ]  := nIva( AllTrim( ::oDbfIva:cAlias ), ::oDbfArt:TipoIva )
+            aCampos[ ::oAlbPrvL:FieldPos( "nPreCom" ) ]  := ::oDbfArt:pCosto
+            aCampos[ ::oAlbPrvL:FieldPos( "nCtlStk" ) ]  := ::oDbfArt:nCtlStock
+            aCampos[ ::oAlbPrvL:FieldPos( "cCodFam" ) ]  := ::oDbfArt:Familia
+            aCampos[ ::oAlbPrvL:FieldPos( "cGrpFam" ) ]  := cGruFam( ::oDbfArt:Familia, ::oDbfFam:cAlias )
+            aCampos[ ::oAlbPrvL:FieldPos( "nNumLin" ) ]  := nNumLin
+
+            ::oAlbPrvL:Append()
+
+            for i:= 1 to len( aCampos )
+               ::oAlbPrvL:FieldPut( i, aCampos[ i ] )
+            next
+
+            ::oRecTreeImportacion                        := ::oTreeImportacion:Add( "Artículo " + AllTrim( cCodArt ) + " añadido a la Albtura de proveedor " + Alltrim( aCampos[ 1 ] ) + "/" + AllTrim( Str( aCampos[ 2 ] ) ) + "/" + AllTrim( aCampos[ 3 ] ) + " añadida a la base de datos.", 1, {|| EdtAlbPrv( aCampos[ 1 ] + Str( aCampos[ 2 ] ) + aCampos[ 3 ] ) } )
+            ::oTreeImportacion:Select( ::oRecTreeImportacion )
+
+            nNumLin++
+
+         end
+
+      next
+
+
+
+
+
+      for each aCampos in aFacturas
+         if ::oAlbPrvT:SeekInOrd( aCampos, "nNumAlb" )
+
+            ::oRecTreeImportacion   := ::oTreeImportacion:Add( "Creando recibos de la albaran " + aCampos, 0, nil )
+            ::oTreeImportacion:Select( ::oRecTreeImportacion )
+
+
+
+         end
+      next
+
+   case cTipo == "Factura proveedores"
+
+      ::oRecTreeImportacion                        := ::oTreeImportacion:Add( "Procesando facturas de proveedor", 0, nil )
+      ::oTreeImportacion:Select( ::oRecTreeImportacion )
+
+
+
+
+
+      while !oFile:lEoF()
+
+         if !::lFindCampoClave( oFile )
+
+            aPlantilla                             := Array( Len( ::aCamposCabecera ) )
+
+
+
+
+
+            for each aCampos in ::aCamposDetalle
+
+               nPos                                := aScan( ::aCamposCabecera, {| a | Upper( a[ 5 ] ) == Upper( AllTrim( aCampos:cCampo ) ) } )
+
+               if aCampos:nTipo <> 2
+                  aPlantilla[ nPos ]               := ::DataToType( SubStr( oFile:cLine, aCampos:nInicio, aCampos:nAncho ), aCampos:cCampo, .T. )
+               else
+                  aPlantilla[ nPos ]               := ::DataToType( aCampos:uConst, aCampos:cCampo, .T. )
+               end
+
+            next
+
+            aAdd( ::aRegistros, aPlantilla )
+
+         end
+
+         oFile:Skip()
+
+      end
+
+
+
+
+
+      for each aCampos in ::aRegistros
+
+
+
+
+
+         if Empty( aCampos[ ::oFacPrvT:FieldPos( "cSerFac" ) ] )
+            aCampos[ ::oFacPrvT:FieldPos( "cSerFac" ) ]     := cNewSer( "nFacPrv", ::oDbfCount:cAlias )
+         end
+
+         if Empty( aCampos[ ::oFacPrvT:FieldPos( "nNumFac" ) ] )
+            aCampos[ ::oFacPrvT:FieldPos( "nNumFac" ) ]     := nNewDoc( aPlantilla[ ::oFacPrvT:FieldPos( "cSerFac" ) ], ::oFacPrvT:cAlias, "nFacPrv", , ::oDbfCount:cAlias )
+         end
+
+         if Empty( aCampos[ ::oFacPrvT:FieldPos( "cSufFac" ) ] )
+            aCampos[ ::oFacPrvT:FieldPos( "cSufFac" ) ]     := RetSufEmp()
+         end
+
+         if Empty( aCampos[ ::oFacPrvT:FieldPos( "cTurFac" ) ] )
+            aCampos[ ::oFacPrvT:FieldPos( "cTurFac" ) ]     := cCurSesion()
+         end
+
+         if Empty( aCampos[ ::oFacPrvT:FieldPos( "cDivFac" ) ] )
+            aCampos[ ::oFacPrvT:FieldPos( "cDivFac" ) ]     := cDivEmp()
+         end
+
+         if Empty( aCampos[ ::oFacPrvT:FieldPos( "cCodAlm" ) ] )
+            aCampos[ ::oFacPrvT:FieldPos( "cCodAlm" ) ]     := Application():codigoAlmacen()
+         end
+
+         if Empty( aCampos[ ::oFacPrvT:FieldPos( "cCodCaj" ) ] )
+            aCampos[ ::oFacPrvT:FieldPos( "cCodCaj" ) ]     := Application():CodigoCaja()
+         end
+
+         if Empty( aCampos[ ::oFacPrvT:FieldPos( "nVdvFac" ) ] )
+            aCampos[ ::oFacPrvT:FieldPos( "nVdvFac" ) ]     := nChgDiv( aPlantilla[ ::oFacPrvT:FieldPos( "cDivFac" ) ], ::oDbfDiv:cAlias )
+         end
+
+         if Empty( aCampos[ ::oFacPrvT:FieldPos( "lSndDoc" ) ] )
+            aCampos[ ::oFacPrvT:FieldPos( "lSndDoc" ) ]     := .T.
+         end
+
+         if Empty( aCampos[ ::oFacPrvT:FieldPos( "cCodPro" ) ] )
+            aCampos[ ::oFacPrvT:FieldPos( "cCodPro" ) ]     := cProCnt()
+         end
+
+         if Empty( aCampos[ ::oFacPrvT:FieldPos( "cSufFac" ) ] )
+            aCampos[ ::oFacPrvT:FieldPos( "cCodUsr" ) ]     := Auth():Codigo()
+         end
+
+         if Empty( aCampos[ ::oFacPrvT:FieldPos( "cCodDlg" ) ] )
+            aCampos[ ::oFacPrvT:FieldPos( "cCodDlg" ) ]     := Application():CodigoDelegacion()
+         end
+
+         if Empty( aCampos[ ::oFacPrvT:FieldPos( "dFecFac" ) ] )
+            aCampos[ ::oFacPrvT:FieldPos( "dFecFac" ) ]     := GetSysDate()
+         end
+
+
+
+
+
+         if !Empty( aCampos[ ::oFacPrvT:FieldPos( "cCodPrv" ) ] ) .AND. ::oDbfPrv:Seek( AllTrim( aCampos[ ::oFacPrvT:FieldPos( "cCodPrv" ) ] ), "Cod" )
+
+            if Empty( aCampos[ ::oFacPrvT:FieldPos( "cNomPrv" ) ] )
+               aCampos[ ::oFacPrvT:FieldPos( "cNomPrv"  ) ] := ::oDbfPrv:Titulo
+            end
+
+            if Empty( aCampos[ ::oFacPrvT:FieldPos( "cDirPrv" ) ] )
+               aCampos[ ::oFacPrvT:FieldPos( "cDirPrv"  ) ] := ::oDbfPrv:Domicilio
+            end
+
+            if Empty( aCampos[ ::oFacPrvT:FieldPos( "cPobPrv" ) ] )
+               aCampos[ ::oFacPrvT:FieldPos( "cPobPrv"  ) ] := ::oDbfPrv:Poblacion
+            end
+
+            if Empty( aCampos[ ::oFacPrvT:FieldPos( "cProvProv" ) ] )
+               aCampos[ ::oFacPrvT:FieldPos( "cProvProv") ] := ::oDbfPrv:Provincia
+            end
+
+            if Empty( aCampos[ ::oFacPrvT:FieldPos( "cPosPrv" ) ] )
+               aCampos[ ::oFacPrvT:FieldPos( "cPosPrv"  ) ] := ::oDbfPrv:CodPostal
+            end
+
+            if Empty( aCampos[ ::oFacPrvT:FieldPos( "cDniPrv" ) ] )
+               aCampos[ ::oFacPrvT:FieldPos( "cDniPrv"  ) ] := ::oDbfPrv:Nif
+            end
+
+            if Empty( aCampos[ ::oFacPrvT:FieldPos( "cCodPago" ) ] )
+               aCampos[ ::oFacPrvT:FieldPos( "cCodPago" ) ] := ::oDbfPrv:FPago
+            end
+
+         end
+
+         ::oFacPrvT:Append()
+
+         for i:= 1 to len( aCampos )
+            ::oFacPrvT:FieldPut( i, aCampos[ i ] )
+         next
+
+         ::oRecTreeImportacion   := ::oTreeImportacion:Add( "Factura de proveedor " + Alltrim( aCampos[ 1 ] ) + AllTrim( Str( aCampos[ 2 ] ) ) + AllTrim( aCampos[ 3 ] ) + " añadida a la base de datos.", 1, {|| EdtFacPrv( aCampos[ 1 ] + Str( aCampos[ 2 ] ) + aCampos[ 3 ] ) } )
+
+         ::oTreeImportacion:Select( ::oRecTreeImportacion )
+
+      next
+
+   case cTipo == "Factura proveedores.Líneas"
+
+      ::oRecTreeImportacion                        := ::oTreeImportacion:Add( "Procesando lineas de facturas de proveedor", 0, nil )
+
+      ::oTreeImportacion:Select( ::oRecTreeImportacion )
+
+
+
+
+
+      while !oFile:lEoF()
+
+         aPlantilla                 := Array( Len( ::aCamposCabecera ) )
+
+         for each aCampos in ::aCamposDetalle
+
+            nPos                    := aScan( ::aCamposCabecera, {| a | Upper( a[ 5 ] ) == Upper( AllTrim( aCampos:cCampo ) ) } )
+
+            if aCampos:nTipo <> 2
+               aPlantilla[ nPos ]   := ::DataToType( SubStr( oFile:cLine, aCampos:nInicio, aCampos:nAncho ), aCampos:cCampo, .T. )
+            else
+               aPlantilla[ nPos ]   := ::DataToType( aCampos:uConst, aCampos:cCampo, .T. )
+            end
+
+         next
+
+         aAdd( ::aRegistros, aPlantilla )
+
+         oFile:Skip()
+
+      end
+
+
+
+
+
+      for each aCampos in ::aRegistros
+
+         cCodArt                                         := Alltrim( aCampos[ ::oFacPrvL:FieldPos( "cRef" ) ] )
+
+         nNumLin                                         := 1
+
+         if !Empty( cCodArt ) .AND. ::oDbfArt:SeekInOrd( cCodArt, "Codigo" )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            if Empty( aCampos[ ::oFacPrvL:FieldPos( "cAlmLin" ) ] )
+               aCampos[ ::oFacPrvL:FieldPos( "cAlmLin" ) ]  := Application():codigoAlmacen()
+            end
+
+            if Empty( aCampos[ ::oFacPrvL:FieldPos( "nIva" ) ] )
+               aCampos[ ::oFacPrvL:FieldPos( "nIva"    ) ]  := nIva( AllTrim( ::oDbfIva:cAlias ), ::oDbfArt:TipoIva )
+            end
+
+            if Empty( aCampos[ ::oFacPrvL:FieldPos( "nPreUnit" ) ] )
+               aCampos[ ::oFacPrvL:FieldPos( "nPreUnit" ) ] := ::oDbfArt:pCosto
+            end
+
+            if Empty( aCampos[ ::oFacPrvL:FieldPos( "nCtlStk" ) ] )
+               aCampos[ ::oFacPrvL:FieldPos( "nCtlStk" ) ]  := ::oDbfArt:nCtlStock
+            end
+
+            if Empty( aCampos[ ::oFacPrvL:FieldPos( "cCodFam" ) ] )
+               aCampos[ ::oFacPrvL:FieldPos( "cCodFam" ) ]  := ::oDbfArt:Familia
+            end
+
+            if Empty( aCampos[ ::oFacPrvL:FieldPos( "cGrpFam" ) ] )
+               aCampos[ ::oFacPrvL:FieldPos( "cGrpFam" ) ]  := cGruFam( ::oDbfArt:Familia, ::oDbfFam:cAlias )
+            end
+
+            if Empty( aCampos[ ::oFacPrvL:FieldPos( "nNumLin" ) ] )
+               aCampos[ ::oFacPrvL:FieldPos( "nNumLin" ) ]  := nNumLin
+            end
+
+            if Empty( aCampos[ ::oFacPrvL:FieldPos( "nPreCom" ) ] )
+               aCampos[ ::oFacPrvL:FieldPos( "nPreCom" ) ]  := ::oDbfArt:pCosto
+            end
+
+            ::oRecTreeImportacion                           := ::oTreeImportacion:Add( "Artículo " + AllTrim( cCodArt ) + " añadido a la factura de proveedor " + Alltrim( aCampos[ 1 ] ) + "/" + AllTrim( Str( aCampos[ 2 ] ) ) + "/" + AllTrim( aCampos[ 3 ] ) + " añadida a la base de datos.", 1, {|| EdtFacPrv( aCampos[ 1 ] + Str( aCampos[ 2 ] ) + aCampos[ 3 ] ) } )
+            ::oTreeImportacion:Select( ::oRecTreeImportacion )
+
+            nNumLin++
+
+         else
+
+            ::oTreeImportacion:Select( ::oTreeImportacion:Add( "Código de artículo " + cCodArt + " no encontrado." ) )
+
+         end
+
+
+
+
+
+
+
+
+
+      next
+
+
+
+
+
+
+   case cTipo == "Recibos facturas proveedor"
+   case cTipo == "Presupuesto clientes"
+   case cTipo == "Pedido clientes"
+   case cTipo == "Albarán clientes"
+   case cTipo == "Factura clientes"
+   case cTipo == "Factura de anticipos"
+   case cTipo == "Factura rectificativa"
+   case cTipo == "Recibos facturas clientes"
+   case cTipo == "Tickets clientes"
+   case cTipo == "Pagos de clientes"
+
+   end
+
+Return ( .T. )
+
+
+
+static FUNCTION TPlantillaXML_aCampoClave( ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local aCampos
+   local aCampoClave
+
+   for each aCampos in ::aCamposDetalle
+
+      if aCampos:lClave
+         aCampoClave                         := aCampos
+      end
+
+   next
+
+Return aCampoClave
+
+
+
+static FUNCTION TPlantillaXML_lFindCampoClave( oFile ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local nPos
+   local lFind          := .F.
+   local aCampos
+   local uNuevo
+   local aCampoClave    := ::aCampoClave()
+
+   nPos                 := aScan( ::aCamposCabecera, {| a | Upper( a[ 5 ] ) == Upper( AllTrim( aCampoClave:cCampo ) ) } )
+   uNuevo               := SubStr( oFile:cLine, aCampoClave:nInicio, aCampoClave:nAncho )
+
+   if !Empty( AllTrim( uNuevo ) )
+
+      for each aCampos in ::aRegistros
+
+         if Upper( AllTrim( uNuevo ) ) == Upper( AllTrim( aCampos[ nPos ] ) )
+             lFind    := .T.
+         end
+
+      next
+
+   end
+
+Return lFind
+
+
+
+static FUNCTION TPlantillaXML_CreateRegister( ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local a
+   local oBlock
+   local oError
+   local aCampos
+   local cCodArt     := ""
+   local nNumLin     := 1
+   local cTipo       := Rtrim( ::oDbf:cTipo )
+   local aFacturas   := {}
+   local cFactura    := ""
+   local aTotFac     := {}
+
+   oBlock            := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   do case
+      case cTipo == "Artículo"
+
+         for each aCampos in ::aRegistros
+
+            cCodArt  := ""
+
+
+
+
+
+            if Empty( aCampos[ ::oDbfArt:FieldPos( "Codigo" ), 9 ] )
+
+
+               if !Empty( aCampos[ ::oDbfArt:FieldPos( "cPrvHab" ), 9 ] )  .AND. !Empty( aCampos[ ::oDbfArt:FieldPos( "cRefPrv" ), 9 ] )
+
+                  if ::oArtPrv:SeekInOrd( aCampos[ ::oDbfArt:FieldPos( "cPrvHab" ), 9 ] + aCampos[ ::oDbfArt:FieldPos( "cRefPrv" ), 9 ], "cRefPrv" )
+                     cCodArt  := ::oArtPrv:cCodArt
+                  end
+
+               end
+
+            else
+
+               cCodArt        := aCampos[ ::oDbfArt:FieldPos( "Codigo" ), 9 ]
+
+            end
+
+
+
+
+
+            if !Empty( cCodArt ) .AND. ValType( cCodArt ) <> "C"
+
+               ::oTreeImportacion:Add( "El valor obtenido de la clave principal no es valido." )
+
+            else
+
+
+               if !Empty( cCodArt )                       .AND. ::oDbfArt:SeekInOrd( cCodArt, "Codigo" )
+
+                  for each a in aCampos
+                     ::oDbfArt:FieldPut( hb_EnumIndex(), a[ 9 ] )
+                  next
+
+                  ::oRecTreeImportacion   := ::oTreeImportacion:Add( "Código de artículo " + Rtrim( cCodArt ) + " reemplazado en la base de datos.", 1, bGenEdtArticulo( cCodArt ) )
+
+                  ::oTreeImportacion:Select( ::oRecTreeImportacion )
+
+               else
+
+                  if Empty( cCodArt )
+                     cCodArt              := NextKey( dbLast( ::oDbfArt:cAlias ), ::oDbfArt:cAlias )
+                     aCampos[ 1,9 ]       := cCodArt
+                  end
+
+                  ::oDbfArt:Append()
+
+                  for each a in aCampos
+                     ::oDbfArt:FieldPut( hb_EnumIndex(), a[ 9 ] )
+                  next
+
+                  ::oRecTreeImportacion   := ::oTreeImportacion:Add( "Código de artículo " + Rtrim( cCodArt ) + " añadido a la base de datos.", 1, bGenEdtArticulo( cCodArt ) )
+
+                  ::oTreeImportacion:Select( ::oRecTreeImportacion )
+
+               end
+
+            end
+
+
+
+
+
+
+
+            if !Empty( aCampos[ ::oDbfArt:FieldPos( "cPrvHab" ), 9 ] )  .AND. !Empty( aCampos[ ::oDbfArt:FieldPos( "cRefPrv" ), 9 ] )  .AND. !::oArtPrv:SeekInOrd( aCampos[ ::oDbfArt:FieldPos( "cPrvHab" ), 9 ] + aCampos[ ::oDbfArt:FieldPos( "cRefPrv" ), 9 ], "cRefPrv" )
+
+               ::oArtPrv:Append()
+
+               ::oArtPrv:cCodArt  := cCodArt
+               ::oArtPrv:cCodPrv  := aCampos[ ::oDbfArt:FieldPos( "cPrvHab" ), 9 ]
+               ::oArtPrv:cRefPrv  := aCampos[ ::oDbfArt:FieldPos( "cRefPrv" ), 9 ]
+               ::oArtPrv:lDefPrv  := .T.
+
+               ::oArtPrv:Save()
+
+            end
+
+         next
+
+      case cTipo == "Artículo. Codigos de barras"
+
+         for each aCampos in ::aRegistros
+
+
+
+
+
+            if Empty( aCampos[ ::oDbfArtCod:FieldPos( "cCodArt" ), 9 ] )
+
+
+               if !Empty( aCampos[ ::oDbfArtCod:FieldPos( "cPrvHab" ), 9 ] )  .AND. !Empty( aCampos[ ::oDbfArtCod:FieldPos( "cRefPrv" ), 9 ] )
+
+                  if ::oArtPrv:SeekInOrd( aCampos[ ::oDbfArtCod:FieldPos( "cPrvHab" ), 9 ] + aCampos[ ::oDbfArtCod:FieldPos( "cRefPrv" ), 9 ], "cRefPrv" )
+                     aCampos[ ::oDbfArtCod:FieldPos( "cCodArt" ), 9 ]  := ::oArtPrv:cCodArt
+                  end
+
+               end
+
+            end
+
+
+            if ValType( aCampos[ ::oDbfArtCod:FieldPos( "cCodArt" ), 9 ] ) <> "C" .OR.  ValType( aCampos[ ::oDbfArtCod:FieldPos( "cCodBar" ), 9 ] ) <> "C"
+
+               if !Empty( ::oRecTreeImportacion )
+                  ::oRecTreeImportacion:Add( "El valor obtenido de la clave principal no es valido." )
+               else
+                  ::oTreeImportacion:Select( ::oTreeImportacion:Add( "El valor obtenido de la clave principal no es valido." ) )
+               end
+
+            else
+
+               if ::oDbfArtCod:SeekInOrd( Padr( aCampos[ ::oDbfArtCod:FieldPos( "cCodArt" ), 9 ], 18 ) + Padr( aCampos[ ::oDbfArtCod:FieldPos( "cCodBar" ), 9 ], 20 ), "cArtBar" )
+
+                  if !Empty( ::oRecTreeImportacion )
+                     ::oRecTreeImportacion:Add( "El valor obtenido de la clave principal no es valido." )
+                  else
+                     ::oTreeImportacion:Add( "Código de barras " + Rtrim( aCampos[ ::oDbfArtCod:FieldPos( "cCodBar" ), 9 ] ) + " del artículo " + Rtrim( aCampos[ ::oDbfArtCod:FieldPos( "cCodArt" ), 9 ] ) + " ya existe.", 1, bGenEdtArticulo( aCampos[ ::oDbfArtCod:FieldPos( "cCodArt" ), 9 ] ) )
+                  end
+
+                  for each a in aCampos
+
+                     if !Empty( a[ 9 ] ) .AND. ::oDbfArtCod:FieldGet( hb_EnumIndex() ) <> a[ 9 ]
+                        ::oDbfArtCod:FieldPut( hb_EnumIndex(), a[ 9 ] )
+                     end
+
+                  next
+
+               else
+
+                  ::oDbfArtCod:Append()
+
+                  for each a in aCampos
+                     ::oDbfArtCod:FieldPut( hb_EnumIndex(), a[ 9 ] )
+                  next
+
+                  if !Empty( ::oRecTreeImportacion )
+                     ::oRecTreeImportacion:Add( "Código de barras " + Rtrim( aCampos[ ::oDbfArtCod:FieldPos( "cCodBar" ), 9 ] ) + " del artículo " + Rtrim( aCampos[ ::oDbfArtCod:FieldPos( "cCodArt" ), 9 ] ) + " añadido a la base de datos.", 1, bGenEdtArticulo( aCampos[ ::oDbfArtCod:FieldPos( "cCodArt" ), 9 ] ) )
+                  else
+                     ::oTreeImportacion:Add( "Código de barras " + Rtrim( aCampos[ ::oDbfArtCod:FieldPos( "cCodBar" ), 9 ] ) + " del artículo " + Rtrim( aCampos[ ::oDbfArtCod:FieldPos( "cCodArt" ), 9 ] ) + " añadido a la base de datos.", 1, bGenEdtArticulo( aCampos[ ::oDbfArtCod:FieldPos( "cCodArt" ), 9 ] ) )
+                  end
+
+               end
+
+            end
+
+         next
+
+      case cTipo == "Pedido proveedores"
+      case cTipo == "Albarán proveedores"
+
+      case cTipo == "Factura proveedores"
+
+         for each aCampos in ::aRegistros
+
+
+            if ValType( aCampos[ ::oFacPrvT:FieldPos( "cSerFac" ), 9 ] ) <> "C"  .OR.  ValType( aCampos[ ::oFacPrvT:FieldPos( "nNumFac" ), 9 ] ) <> "N"
+
+               ::oTreeImportacion:Add( "El valor obtenido de la clave principal no es valido." )
+
+            else
+
+
+
+
+
+               if Empty( aCampos[ ::oFacPrvT:FieldPos( "cSerFac" ), 9 ] )
+                  aCampos[ ::oFacPrvT:FieldPos( "cSerFac" ), 9 ]     := cNewSer( "nFacPrv", ::oDbfCount:cAlias )
+               end
+
+               if aCampos[ ::oFacPrvT:FieldPos( "nNumFac" ), 9 ] == 0
+                  aCampos[ ::oFacPrvT:FieldPos( "nNumFac" ), 9 ]     := nNewDoc( aCampos[ ::oFacPrvT:FieldPos( "cSerFac" ) ], ::oFacPrvT:cAlias, "nFacPrv", , ::oDbfCount:cAlias )
+               end
+
+               if Empty( aCampos[ ::oFacPrvT:FieldPos( "cSufFac" ), 9 ] )
+                  aCampos[ ::oFacPrvT:FieldPos( "cSufFac" ), 9 ]     := RetSufEmp()
+               end
+
+               if Empty( aCampos[ ::oFacPrvT:FieldPos( "cTurFac" ), 9 ] )
+                  aCampos[ ::oFacPrvT:FieldPos( "cTurFac" ), 9 ]     := cCurSesion()
+               end
+
+               if Empty( aCampos[ ::oFacPrvT:FieldPos( "cDivFac" ), 9 ] )
+                  aCampos[ ::oFacPrvT:FieldPos( "cDivFac" ), 9 ]     := cDivEmp()
+               end
+
+               if Empty( aCampos[ ::oFacPrvT:FieldPos( "cCodAlm" ), 9 ] )
+                  aCampos[ ::oFacPrvT:FieldPos( "cCodAlm" ), 9 ]     := Application():codigoAlmacen()
+               end
+
+               if Empty( aCampos[ ::oFacPrvT:FieldPos( "cCodCaj" ), 9 ] )
+                  aCampos[ ::oFacPrvT:FieldPos( "cCodCaj" ), 9 ]     := Application():CodigoCaja()
+               end
+
+               if Empty( aCampos[ ::oFacPrvT:FieldPos( "lSndDoc" ), 9 ] )
+                  aCampos[ ::oFacPrvT:FieldPos( "lSndDoc" ), 9 ]     := .T.
+               end
+
+               if Empty( aCampos[ ::oFacPrvT:FieldPos( "cCodPro" ), 9 ] )
+                  aCampos[ ::oFacPrvT:FieldPos( "cCodPro" ), 9 ]     := cProCnt()
+               end
+
+               if Empty( aCampos[ ::oFacPrvT:FieldPos( "cSufFac" ), 9 ] )
+                  aCampos[ ::oFacPrvT:FieldPos( "cCodUsr" ), 9 ]     := Auth():Codigo()
+               end
+
+               if Empty( aCampos[ ::oFacPrvT:FieldPos( "cCodDlg" ), 9 ] )
+                  aCampos[ ::oFacPrvT:FieldPos( "cCodDlg" ), 9 ]     := Application():CodigoDelegacion()
+               end
+
+               if Empty( aCampos[ ::oFacPrvT:FieldPos( "dFecFac" ), 9 ] )
+                  aCampos[ ::oFacPrvT:FieldPos( "dFecFac" ), 9 ]     := GetSysDate()
+               end
+
+
+
+
+
+               if !Empty( aCampos[ ::oFacPrvT:FieldPos( "cCodPrv" ), 9 ] ) .AND. ::oDbfPrv:Seek( AllTrim( aCampos[ ::oFacPrvT:FieldPos( "cCodPrv" ), 9 ] ), "Cod" )
+
+                  if Empty( aCampos[ ::oFacPrvT:FieldPos( "cNomPrv" ), 9 ] )
+                     aCampos[ ::oFacPrvT:FieldPos( "cNomPrv"  ), 9 ] := ::oDbfPrv:Titulo
+                  end
+
+                  if Empty( aCampos[ ::oFacPrvT:FieldPos( "cDirPrv" ), 9 ] )
+                     aCampos[ ::oFacPrvT:FieldPos( "cDirPrv"  ), 9 ] := ::oDbfPrv:Domicilio
+                  end
+
+                  if Empty( aCampos[ ::oFacPrvT:FieldPos( "cPobPrv" ), 9 ] )
+                     aCampos[ ::oFacPrvT:FieldPos( "cPobPrv"  ), 9 ] := ::oDbfPrv:Poblacion
+                  end
+
+                  if Empty( aCampos[ ::oFacPrvT:FieldPos( "cProvProv" ), 9 ] )
+                     aCampos[ ::oFacPrvT:FieldPos( "cProvProv" ), 9 ] := ::oDbfPrv:Provincia
+                  end
+
+                  if Empty( aCampos[ ::oFacPrvT:FieldPos( "cPosPrv" ), 9 ] )
+                     aCampos[ ::oFacPrvT:FieldPos( "cPosPrv"  ), 9 ] := ::oDbfPrv:CodPostal
+                  end
+
+                  if Empty( aCampos[ ::oFacPrvT:FieldPos( "cDniPrv" ), 9 ] )
+                     aCampos[ ::oFacPrvT:FieldPos( "cDniPrv"  ), 9 ] := ::oDbfPrv:Nif
+                  end
+
+                  if Empty( aCampos[ ::oFacPrvT:FieldPos( "cCodPago" ), 9 ] )
+                     aCampos[ ::oFacPrvT:FieldPos( "cCodPago" ), 9 ] := ::oDbfPrv:FPago
+                  end
+
+               end
+
+
+
+
+
+               if ::oFacPrvT:SeekInOrd( aCampos[ ::oFacPrvT:FieldPos( "cSerFac" ), 9 ] + Str( aCampos[ ::oFacPrvT:FieldPos( "nNumFac" ), 9 ], 9 ) + aCampos[ ::oFacPrvT:FieldPos( "cSufFac" ), 9 ], "nNumFac" )
+
+                  for each a in aCampos
+                     ::oFacPrvT:FieldPut( hb_EnumIndex(), a[ 9 ] )
+                  next
+
+                  ::oRecTreeImportacion   := ::oTreeImportacion:Add( "Factura de proveedores " + Alltrim( aCampos[ ::oFacPrvT:FieldPos( "cSerFac" ), 9 ] + "/" + Str( aCampos[ ::oFacPrvT:FieldPos( "nNumFac" ), 9 ] ) + "/" + aCampos[ ::oFacPrvT:FieldPos( "cSufFac" ), 9 ] ) + " reemplazado en la base de datos.", 1, bGenEdtFacPrv( aCampos[ ::oFacPrvT:FieldPos( "cSerFac" ), 9 ] + Str( aCampos[ ::oFacPrvT:FieldPos( "nNumFac" ), 9 ], 9 ) + aCampos[ ::oFacPrvT:FieldPos( "cSufFac" ), 9 ] ) )
+
+                  ::oTreeImportacion:Select( ::oRecTreeImportacion )
+
+               else
+
+                  ::oFacPrvT:Append()
+
+                  for each a in aCampos
+                     ::oFacPrvT:FieldPut( hb_EnumIndex(), a[ 9 ] )
+                  next
+
+                  ::oRecTreeImportacion   := ::oTreeImportacion:Add( "Factura de proveedores " + Rtrim( aCampos[ ::oFacPrvT:FieldPos( "cSerFac" ), 9 ] + "/" + Str( aCampos[ ::oFacPrvT:FieldPos( "nNumFac" ), 9 ] ) + "/" + aCampos[ ::oFacPrvT:FieldPos( "cSufFac" ), 9 ] ) + " añadido a la base de datos.", 1, bGenEdtFacPrv( aCampos[ ::oFacPrvT:FieldPos( "cSerFac" ), 9 ] + Str( aCampos[ ::oFacPrvT:FieldPos( "nNumFac" ), 9 ], 9 ) + aCampos[ ::oFacPrvT:FieldPos( "cSufFac" ), 9 ] ) )
+
+                  ::oTreeImportacion:Select( ::oRecTreeImportacion )
+
+               end
+
+
+
+
+
+               while ::oFacPrvL:SeekInOrd( aCampos[ ::oFacPrvT:FieldPos( "cSerFac" ), 9 ] + Str( aCampos[ ::oFacPrvT:FieldPos( "nNumFac" ), 9 ], 9 ) + aCampos[ ::oFacPrvT:FieldPos( "cSufFac" ), 9 ], "nNumFac" ) .AND. !::oFacPrvL:eof()
+                  ::oFacPrvL:Delete(.F.)
+               end
+
+            end
+
+         next
+
+      case cTipo == "Factura proveedores.Líneas"
+
+         for each aCampos in ::aRegistros
+
+
+
+
+
+            if Empty( aCampos[ ::oFacPrvL:FieldPos( "cRef" ), 9 ] )
+
+               if !Empty( aCampos[ ::oFacPrvL:FieldPos( "cCodPrv" ), 9 ] ) .AND. !Empty( aCampos[ ::oFacPrvL:FieldPos( "cRefPrv" ), 9 ] )
+
+                  if ::oArtPrv:SeekInOrd( aCampos[ ::oFacPrvL:FieldPos( "cCodPrv" ), 9 ] + aCampos[ ::oFacPrvL:FieldPos( "cRefPrv" ), 9 ], "cRefPrv" )
+                     aCampos[ ::oFacPrvL:FieldPos( "cRef" ), 9 ]  := ::oArtPrv:cCodArt
+                  end
+
+               end
+
+            end
+
+
+
+            if ValType( aCampos[ ::oFacPrvL:FieldPos( "cSerFac" ), 9 ] ) <> "C"  .OR. ValType( aCampos[ ::oFacPrvL:FieldPos( "nNumFac" ), 9 ] ) <> "N"  .OR. ValType( aCampos[ ::oFacPrvL:FieldPos( "cRef"    ), 9 ] ) <> "C"
+
+               if !Empty( ::oRecTreeImportacion )
+                  ::oRecTreeImportacion:Add( "El valor obtenido de la clave principal no es valido." )
+               else
+                  ::oTreeImportacion:Select( ::oTreeImportacion:Add( "El valor obtenido de la clave principal no es valido." ) )
+               end
+
+            else
+
+
+
+
+
+               if aScan( aFacturas, aCampos[ ::oFacPrvL:FieldPos( "cSerFac" ), 9 ] + Str( aCampos[ ::oFacPrvL:FieldPos( "nNumFac" ), 9 ], 9 ) + Space(2) ) == 0
+                  aAdd( aFacturas, aCampos[ ::oFacPrvL:FieldPos( "cSerFac" ), 9 ] + Str( aCampos[ ::oFacPrvL:FieldPos( "nNumFac" ), 9 ], 9 ) + Space(2) )
+               end
+
+
+
+
+
+
+
+
+
+
+
+               if ( IsChar( aCampos[ ::oFacPrvL:FieldPos( "cRefPrv" ), 9 ] ) )                     .AND. ( ::oFacPrvL:SeekInOrd( aCampos[ ::oFacPrvL:FieldPos( "cSerFac" ), 9 ]              +  Str( aCampos[ ::oFacPrvL:FieldPos( "nNumFac" ), 9 ], 9 )    +  Space( 2 )                                                  +  aCampos[ ::oFacPrvL:FieldPos( "cRef" ), 9 ]                 +  aCampos[ ::oFacPrvL:FieldPos( "cRefPrv" ), 9 ] , "cRefPrv" ) )
+
+                  if !Empty( ::oTreeImportacion )
+                     ::oTreeImportacion:Add( "Lineas de facturas " + Rtrim( aCampos[ ::oFacPrvL:FieldPos( "cRef" ), 9 ] ) + " de factura de proveedores ya existe.", 1 )
+                  end
+
+                  for each a in aCampos
+                     if !Empty( a[ 9 ] ) .AND. ::oFacPrvL:FieldGet( hb_EnumIndex() ) <> a[ 9 ]
+                        ::oFacPrvL:FieldPut( hb_EnumIndex(), a[ 9 ] )
+                     end
+                  next
+
+               else
+
+
+
+
+
+                  if !Empty( aCampos[ ::oFacPrvL:FieldPos( "cRef" ), 9 ] ) .AND. ::oDbfArt:SeekInOrd( aCampos[ ::oFacPrvL:FieldPos( "cRef" ), 9 ], "Codigo" )
+
+                     if Empty( aCampos[ ::oFacPrvL:FieldPos( "cAlmLin" ), 9 ] )
+                        aCampos[ ::oFacPrvL:FieldPos( "cAlmLin" ), 9 ]  := Application():codigoAlmacen()
+                     end
+
+                     if Empty( aCampos[ ::oFacPrvL:FieldPos( "nIva" ), 9 ] )
+                        aCampos[ ::oFacPrvL:FieldPos( "nIva"    ), 9 ]  := nIva( AllTrim( ::oDbfIva:cAlias ), ::oDbfArt:TipoIva )
+                     end
+
+                     if Empty( aCampos[ ::oFacPrvL:FieldPos( "nPreUnit" ), 9 ] )
+                        aCampos[ ::oFacPrvL:FieldPos( "nPreUnit" ), 9 ] := ::oDbfArt:pCosto
+                     end
+
+                     if Empty( aCampos[ ::oFacPrvL:FieldPos( "nCtlStk" ), 9 ] )
+                        aCampos[ ::oFacPrvL:FieldPos( "nCtlStk" ), 9 ]  := ::oDbfArt:nCtlStock
+                     end
+
+                     if Empty( aCampos[ ::oFacPrvL:FieldPos( "cCodFam" ), 9 ] )
+                        aCampos[ ::oFacPrvL:FieldPos( "cCodFam" ), 9 ]  := ::oDbfArt:Familia
+                     end
+
+                     if Empty( aCampos[ ::oFacPrvL:FieldPos( "cGrpFam" ), 9 ] )
+                        aCampos[ ::oFacPrvL:FieldPos( "cGrpFam" ), 9 ]  := cGruFam( ::oDbfArt:Familia, ::oDbfFam:cAlias )
+                     end
+
+                     if Empty( aCampos[ ::oFacPrvL:FieldPos( "nNumLin" ), 9 ] )
+                        aCampos[ ::oFacPrvL:FieldPos( "nNumLin" ), 9 ]  := nNumLin
+                     end
+
+                     if Empty( aCampos[ ::oFacPrvL:FieldPos( "nPreCom" ), 9 ] )
+                        aCampos[ ::oFacPrvL:FieldPos( "nPreCom" ), 9 ]  := ::oDbfArt:pCosto
+                     end
+
+                     nNumLin++
+
+                  else
+
+                     if !Empty( ::oTreeImportacion )
+                        ::oTreeImportacion:Select( ::oTreeImportacion:Add( "Código de artículo " + Alltrim( aCampos[ ::oFacPrvL:FieldPos( "cRef" ), 9 ] ) + " no encontrado." ) )
+                     end
+
+                  end
+
+
+
+
+
+                  ::oFacPrvL:Append()
+
+                  for each a in aCampos
+                     ::oFacPrvL:FieldPut( hb_EnumIndex(), a[ 9 ] )
+                  next
+
+                  if !Empty( ::oTreeImportacion )
+                     ::oTreeImportacion:Add( "Lineas de facturas " + Rtrim( aCampos[ ::oFacPrvL:FieldPos( "cRef" ), 9 ] ) + " de factura de proveedores añadida.", 1 )
+                  end
+
+               end
+
+            end
+
+         next
+
+
+
+
+
+         if Len( aFacturas ) <> 0
+
+            for each cFactura in aFacturas
+
+               if ::oFacPrvT:SeekInOrd( cFactura, "nNumFac" )
+
+                  aTotFac                 := aTotFacPrv( cFactura, ::oFacPrvT:cAlias, ::oFacPrvL:cAlias, ::oDbfIva:cAlias, ::oDbfDiv:cAlias, ::oFacPrvP:cAlias )
+
+                  ::oFacPrvT:Load()
+
+                  ::oFacPrvT:nTotNet := aTotFac[1]
+                  ::oFacPrvT:nTotIva := aTotFac[2]
+                  ::oFacPrvT:nTotReq := aTotFac[3]
+                  ::oFacPrvT:nTotFac := aTotFac[4]
+
+                  ::oFacPrvT:Save()
+
+               end
+
+            next
+
+         end
+
+      case cTipo == "Recibos facturas proveedor"
+      case cTipo == "Presupuesto clientes"
+      case cTipo == "Pedido clientes"
+
+         ::aCamposCabecera   := aItmPedCli()
+
+      case cTipo == "Albarán clientes"
+      case cTipo == "Factura clientes"
+      case cTipo == "Factura de anticipos"
+      case cTipo == "Factura rectificativa"
+      case cTipo == "Recibos facturas clientes"
+      case cTipo == "Tickets clientes"
+      case cTipo == "Pagos de clientes"
+   end
+
+   RECOVER USING oError
+
+      msgStop( "Error al crear registro." + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TPlantillaXML_FindIterator( ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local oNode
+   local cPath
+   local cData          := ""
+   local nIter          := 0
+   local oIterator
+   local cNode
+   local nOcurrency
+   local lOcurrency
+
+   cNode                := Rtrim( ::oDetCabeceraPlantillaXML:oDbf:mNode )
+   nOcurrency           := ::oDetCabeceraPlantillaXML:oDbf:nOcurr
+   lOcurrency           := ::oDetCabeceraPlantillaXML:oDbf:lOcurr
+
+   if ( nOcurrency == 0 )
+      nOcurrency        := 1
+   end
+
+   if lOcurrency
+      nOcurrency        := ++::nSearchOcurrency
+   end
+
+   oNode                := ::oXmlDocument:oRoot
+
+   oIterator            := TXmlIterator():New( oNode )
+
+   while oNode <> nil
+
+      cPath             := Rtrim( cValTochar( oNode:Path() ) )
+
+
+
+      if ( cNode $ cPath )
+
+
+
+
+
+
+
+
+         nIter++
+
+         if ( nOcurrency == nIter )
+
+            Return ( oNode )
+
+
+
+
+
+         end
+
+      end
+
+      oNode             := oIterator:Next()
+
+
+
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION TPlantillaXML_AdoFindIterator( ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local c
+   local nCol
+   local nRow
+   local cCond
+   local aNode
+   local cNode
+   local nRows
+   local nCols
+   local nOcurrency
+   local lOcurrency
+   local cData          := ""
+   local nColSelect     := 0
+   local cIterator      := ""
+   local lCompile       := .F.
+
+   cNode                := Rtrim( ::oDetCabeceraPlantillaXML:oDbf:mNode )
+   cCond                := Rtrim( ::oDetCabeceraPlantillaXML:oDbf:mCond )
+   nOcurrency           := ::oDetCabeceraPlantillaXML:oDbf:nOcurr
+   lOcurrency           := ::oDetCabeceraPlantillaXML:oDbf:lOcurr
+
+   aNode                := hb_aTokens( cNode, ";" )
+
+   lCompile             := len( aNode ) > 1
+
+   for each c in aNode
+
+      nColSelect                 := ::DataToColumn( c )
+
+      if nColSelect <> 0
+
+
+
+         if ::lMultipleImportacion
+
+            cNode                := ::oActiveSheet:Cells( ::nRowSelected, nColSelect ):Value
+
+            if !Empty( cNode ) .AND. ( Empty( cCond ) .OR. ::EvalCondition( cCond, ::nRowSelected ) )
+
+               if lCompile
+                  cIterator      += cValToChar( cNode )
+               else
+                  cIterator      := cNode
+               end
+
+            end
+
+         else
+
+            for nRow := 2 to ::nActiveSheetRows
+
+               cNode             := ::oActiveSheet:Cells( nRow, nColSelect ):Value
+
+               if !Empty( cNode ) .AND. ( Empty( cCond ) .OR. ::EvalCondition( cCond, nRow ) )
+
+                  if lCompile
+                     cIterator   += cValToChar( cNode )
+                  else
+                     cIterator   := cNode
+                  end
+
+                  exit
+
+               end
+
+            next
+
+         end
+
+      else
+
+         if lCompile
+            cIterator            += c
+         end
+
+      end
+
+   next
+
+   if lCompile
+      cIterator                  := Eval( Compile( cIterator ) )
+   end
+
+Return ( cIterator )
+
+
+
+static FUNCTION TPlantillaXML_EvalCondition( cCond, nRow ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local cData
+   local cValue
+   local cColumn
+   local lCondition     := .F.
+   local nColSelect     := 0
+   local nStart         := At( "<", cCond )
+   local nEnd           := At( ">", cCond )
+
+   if nStart <> 0 .AND. nEnd <> 0
+
+      cData             := SubStr( cCond, nStart - 1, ( nEnd - nStart ) + 1 )
+
+      cColumn           := SubStr( cCond, nStart + 1, ( nEnd - nStart ) - 1 )
+
+      nColSelect        := ::DataToColumn( cColumn )
+
+      if nColSelect <> 0
+
+         cValue         := ::oActiveSheet:Cells( nRow, nColSelect ):Value
+         cValue         := '"' + cValue + '"'
+         cValue         := StrTran( cCond, cData, cValue )
+
+         if Empty( cValue ) .OR. At( Type( cValue ), "UEUI" ) <> 0
+            msgStop( "Expresión " + Rtrim( cValue ) + " no valida" )
+            lCondition  := .F.
+         else
+            cValue      := Compile( cValue )
+         end
+
+         if !Empty( cValue )
+            lCondition  := Eval( cValue )
+         end
+
+      end
+
+   end
+
+
+
+Return ( lCondition )
+
+
+
+static FUNCTION TPlantillaXML_DataToColumn( cData ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local nCol
+   local nColSelect     := 0
+
+   for nCol := 1 to ::nActiveSheetColumns
+
+      if Alltrim( cData ) == Alltrim( ::oActiveSheet:Cells( 1, nCol ):Value )
+         nColSelect     := nCol
+      end
+   next
+
+RETURN ( nColSelect )
+
+
+
+static FUNCTION TPlantillaXML_DataToValue( cData ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local nValue
+
+   nValue                  := aScan( ::oDetCabeceraPlantillaXML:aValues, {|a| Upper( Alltrim( cValToChar( a[ 1 ] ) ) ) == Upper( Alltrim( cValToChar( cData ) ) ) } )
+   if nValue <> 0
+      cData                := ::oDetCabeceraPlantillaXML:aValues[ nValue, 2 ]
+   end
+
+RETURN ( cData )
+
+
+
+static FUNCTION TPlantillaXML_DataToField( cData, cField ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local nScan
+   local nValue
+
+   nScan                      := aScan( ::aCamposCabecera, {| a | Upper( a[ 5 ] ) == Upper( cField ) } )
+   if nScan <> 0
+
+      cData                   := ::DataToValue( cData )
+
+      if !Empty( ::bPreAssign )
+         cData                := Eval( ::bPreAssign, cData )
+      end
+
+      ::DataToType( cData, cField )
+
+   end
+
+RETURN ( Self )
+
+
+
+
+
+
+static FUNCTION TPlantillaXML_PostEvalData( cData ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local cCondition  := ::oDetCabeceraPlantillaXML:oDbf:mPost
+
+   if !Empty( cCondition )
+
+      cCondition     := CompileParam( cCondition )
+
+      if !Empty( cCondition )
+         cData       := Eval( cCondition, cData )
+      end
+
+   end
+
+return ( cData )
+
+
+
+
+
+
+static FUNCTION TPlantillaXML_DataToType( cData, cField, lReturn ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local nLen
+   local cType
+   local nScan
+   local nPos
+
+   If( lReturn == nil, lReturn := .F., ) ;
+
+   cData                      := ::PostEvalData( cData )
+
+   nScan                      := aScan( ::aCamposCabecera, {| a | Upper( a[ 5 ] ) == AllTrim( Upper( cField ) ) } )
+   if nScan <> 0
+
+      cType                   := ::aCamposCabecera[ nScan, 2 ]
+      nLen                    := ::aCamposCabecera[ nScan, 3 ]
+
+      do case
+         case cType == "C"
+
+            if !IsChar( cData )
+               cData          := Alltrim( Str( Round( cData, 0 ) ) )
+            end
+
+            cData             := Padr( AllTrim( cData ), nLen, " " )
+
+         case cType == "D"
+
+            if !IsDate( cData )
+               cData          := Ctod( cData )
+            end
+
+         case cType == "L"
+
+            cData             := ( cData == "S" )
+
+         case cType == "N"
+
+            if !IsNum( cData )
+
+               nPos           := At( ",", cData )
+
+               if nPos <> 0
+                  cData       := Left( cData, nPos - 1 ) + "." + SubStr( cData, nPos + 1 )
+               end
+
+               cData          := Val( cData )
+
+            end
+
+      end
+
+      if !lReturn
+
+         if !Empty( ::bPreAssign )
+            cData                := Eval( ::bPreAssign, cData )
+         end
+
+
+
+         ::aCamposCabecera[ nScan, 9 ]   := cData
+
+      end
+
+   end
+
+RETURN ( if( !lReturn, Self, cData ) )
+
+
+
+static FUNCTION TPlantillaXML_SaveConfig( ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local cData
+   local cPlantilla
+   local cFichero
+
+   cData                := ""
+
+   if ::lGetConfigName()
+
+      for each cPlantilla in ::aPlantilla
+         cData          += cPlantilla[ 1 ] + ","
+      next
+
+      if ::oSav:Seek( Rtrim( Upper( ::cNameConfig ) ) )
+         ::oSav:Load()
+         ::oSav:cText   := ::cNameConfig
+         ::oSav:cData   := cData
+         ::oSav:Save()
+      else
+         ::oSav:Append()
+         ::oSav:cText   := ::cNameConfig
+         ::oSav:cData   := cData
+         ::oSav:Save()
+      end
+
+      ::lLoadButtons()
+
+   end
+
+Return ( .T. )
+
+
+
+static FUNCTION TPlantillaXML_DeleteConfig( ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   if ::oSav:Seek( Upper( ::cNameConfig ) )
+
+      if RolesModel():getRolNoConfirmacionEliminacion( Auth():rolUuid() ) .OR. ApoloMsgNoYes("¿ Desea eliminar la configuración " + Chr(13)+Chr(10) + Rtrim( ::cNameConfig ) + " ?", "Confirme supresión" )
+
+         ::oSav:Delete()
+
+         ::lLoadButtons()
+
+      end
+
+   else
+
+      msgStop( "La configuración " + Rtrim( ::cNameConfig ) + " no se encuentra." )
+
+   end
+
+Return ( .T. )
+
+
+
+static FUNCTION TPlantillaXML_lGetConfigName( ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local oDlg
+
+   ::lAllUser     := .T.
+
+   oDlg = TDialog():New(,,,, "Guardar conficuración de importación", "Nombre_Filtro",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+   TGetHlp():ReDefine( 110, { | u | If( PCount()==0, ::cNameConfig, ::cNameConfig:= u ) }, oDlg,,,,,,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+
+
+   TCheckBox():ReDefine( 120, { | u | If( PCount()==0, ::lAllUser, ::lAllUser:= u ) }, oDlg,,,,,,, .F.,, .F. )
+
+
+
+
+   TButton():ReDefine( 1, {||( if( ::lValidConfigName(), oDlg:end( 1 ), ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .F. )
+
+   oDlg:AddFastKey( 116, {|| oDlg:end( 1 ) } )
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+Return ( oDlg:nResult == 1 )
+
+
+
+static FUNCTION TPlantillaXML_lValidConfigName( ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   if Empty( ::cNameConfig )
+      MsgStop( "El nombre de la configuración no puede estar vacia." )
+      Return ( .F. )
+   end
+
+Return ( .T. )
+
+
+
+static FUNCTION TPlantillaXML_LoadConfig( cText ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local nPos
+   local cData
+   local cField
+
+   if ::oSav:Seek( Upper( cText ) )
+
+      cData          := Rtrim( ::oSav:cData )
+
+      while ( nPos := At( ",", cData ) ) > 0
+
+         if nPos <> 0
+
+            cField   := SubStr( cData, 1, nPos - 1 )
+            cField   := Rtrim( cField )
+
+            if ::oDbf:SeekInOrd( cField, "cCodigo" )
+               aAdd( ::aPlantilla, { ::oDbf:cCodigo, ::oDbf:cDescrip, ::oDbf:cTipo } )
+            end
+
+            ++nPos
+
+            cData    := SubStr( cData, nPos )
+
+         end
+
+      end
+
+      ::cNameConfig  := Padr( cText, 100 )
+
+   else
+
+      MsgStop( "Configuración " + cText + " no encontrada." )
+
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TPlantillaXML_lLoadButtons( ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local cText
+   local bAction
+
+   ::oBtnImportacion:DeleteBranches()
+
+   ::oSav:GoTop()
+   while !::oSav:eof()
+
+      cText       := by( Rtrim( ::oSav:cText ) )
+      bAction     := ::bAction( cText )
+
+      ::oWndBrw:NewAt( "gc_flash_", , , bAction, cText, , , , , ::oBtnImportacion )
+
+      ::oSav:Skip()
+
+   end
+
+   ::oWndBrw:Refresh()
+
+return nil
+
+
+
+static FUNCTION TPlantillaXML_bAction( cText ) ; local Self AS CLASS TPlantillaXML := QSelf() AS CLASS TPlantillaXML
+
+   local bGen     := {|| ::Importacion( cText ) }
+
+Return ( bGen )
+
+
+
+
+
+
+
+
+
+_HB_CLASS TDetCabeceraPlantillaXML ; function TDetCabeceraPlantillaXML ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TDetCabeceraPlantillaXML", iif( .T., { @TDet() }, { @HBObject() } ), @TDetCabeceraPlantillaXML() ) ) ;
+
+   _HB_MEMBER { cMru } ; oClass:AddMultiData(, "gc_industrial_robot_money_16", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cMru"}, .F. )
+   _HB_MEMBER { cBitmap } ; oClass:AddMultiData(, ( 197 + ( 227 * 256 ) + ( 9 * 65536 ) ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cBitmap"}, .F. )
+
+   _HB_MEMBER { oCombo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCombo"}, .F. )
+
+   _HB_MEMBER { oBrwValues } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwValues"}, .F. )
+
+   _HB_MEMBER { aCamposCabecera } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aCamposCabecera"}, .F. )
+
+   _HB_MEMBER { aValues } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aValues"}, .F. )
+
+   _HB_MEMBER OpenFiles( lExclusive); oClass:AddMethod( "OpenFiles", @TDetCabeceraPlantillaXML_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenService( lExclusive); oClass:AddMethod( "OpenService", @TDetCabeceraPlantillaXML_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @TDetCabeceraPlantillaXML_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DefineFiles(); oClass:AddMethod( "DefineFiles", @TDetCabeceraPlantillaXML_DefineFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Resource( nMode); oClass:AddMethod( "Resource", @TDetCabeceraPlantillaXML_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lPreSave( oGet, nMode); oClass:AddMethod( "lPreSave", @TDetCabeceraPlantillaXML_lPreSave(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SaveDetails(); oClass:AddInline( "SaveDetails", {|Self | ( ( Self ) ), ( ::oDbfVir:cCodigo := ::oParent:oDbf:cCodigo ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InitResource(); oClass:AddMethod( "InitResource", @TDetCabeceraPlantillaXML_InitResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LoadValues(); oClass:AddMethod( "LoadValues", @TDetCabeceraPlantillaXML_LoadValues(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SaveValues(); oClass:AddMethod( "SaveValues", @TDetCabeceraPlantillaXML_SaveValues(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EditValues( lAppend); oClass:AddMethod( "EditValues", @TDetCabeceraPlantillaXML_EditValues(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DeleteValues(); oClass:AddMethod( "DeleteValues", @TDetCabeceraPlantillaXML_DeleteValues(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TDetCabeceraPlantillaXML ;
+
+
+
+static FUNCTION TDetCabeceraPlantillaXML_OpenFiles( lExclusive ) ; local Self AS CLASS TDetCabeceraPlantillaXML := QSelf() AS CLASS TDetCabeceraPlantillaXML
+
+   local lOpen             := .T.
+   local oError
+   local oBlock
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   oBlock                  := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      if Empty( ::oDbf )
+         ::oDbf            := ::DefineFiles()
+      end
+
+      ::oDbf:Activate( .F., !( lExclusive ) )
+
+      ::bOnPreSave         := {|| ::SaveDetails() }
+      ::bOnPreSaveDetail   := {|| ::SaveDetails() }
+
+      ::bOnPreAppend       := {|| ::LoadValues() }
+      ::bOnPreEdit         := {|| ::LoadValues() }
+      ::bOnPostSave        := {|| ::SaveValues() }
+
+   RECOVER USING oError
+
+      msgStop( "Imposible abrir las bases de datos detalle de fidelización." + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+      ::CloseFiles()
+
+      lOpen                := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TDetCabeceraPlantillaXML_CloseFiles( ) ; local Self AS CLASS TDetCabeceraPlantillaXML := QSelf() AS CLASS TDetCabeceraPlantillaXML
+
+   if !Empty( ::oDbf )
+      ::oDbf:end()
+   end
+
+   ::oDbf               := nil
+
+RETURN .T.
+
+
+
+static FUNCTION TDetCabeceraPlantillaXML_DefineFiles( cPath, cVia, lUniqueName, cFileName ) ; local Self AS CLASS TDetCabeceraPlantillaXML := QSelf() AS CLASS TDetCabeceraPlantillaXML
+
+   local oDbf
+
+   If( cPath == nil, cPath := ::cPath, ) ;
+   If( lUniqueName == nil, lUniqueName := .F., ) ;
+   If( cFileName == nil, cFileName := "PlantillaXMLCabecera", ) ;
+   If( cVia == nil, cVia := cDriver(), ) ;
+
+   if lUniqueName
+      cFileName         := cGetNewFileName( cFileName, , , cPath )
+   end
+
+   oDbf := DbfServer( ( cFileName ), ( cFileName ) ):New( ( cFileName ), "PltXMLCab", ( cVia ), "Cabecera de importación XML", ( cPath ) )
+
+      oDbf:AddField( "cCodigo", "C", 03, 0,,,,, "Código", .F.,, .T., {} )
+      oDbf:AddField( "nLinea", "N", 02, 0,,,,, "Línea", .F.,, .T., {} )
+      oDbf:AddField( "cCampo", "C", 250, 0,,,,, "Campo", .F.,, .F., {} )
+      oDbf:AddField( "nTipo", "N", 01, 0,,,,, "Tipo", .F.,, .T., {} )
+      oDbf:AddField( "cItem", "C", 250, 0,,,,, "Item", .F.,, .T., {} )
+      oDbf:AddField( "mNode", "M", 10, 0,,,,, "Nodo", .F.,, .F., {} )
+      oDbf:AddField( "mCond", "M", 10, 0,,,,, "Condición", .F.,, .F., {} )
+      oDbf:AddField( "mValue", "M", 10, 0,,,,, "Valores de reemplazo", .F.,, .T., {} )
+      oDbf:AddField( "lOcurr", "L", 01, 0,,,,, "Registro nuevo por ocurrecia", .F.,, .T., {} )
+      oDbf:AddField( "nOcurr", "N", 06, 0,,,,, "Ocurrecia", .F.,, .T., {} )
+      oDbf:AddField( "uConst", "C", 250, 0,,,,, "Constante", .F.,, .T., {} )
+      oDbf:AddField( "lClave", "L", 01, 0,,,,, "Campo clave", .F.,, .T., {} )
+      oDbf:AddField( "mPost", "M", 10, 0,,,,, "Post-Evaluación", .F.,, .T., {} )
+
+      oDbf:AddIndex( "cCodigo", ( cFileName ), "cCodigo",,, .F., .F.,,,, .T., .F. )
+      oDbf:AddIndex( "nLinea", ( cFileName ), "cCodigo + Str( nLinea )",,, .F., .F.,,,, .T., .F. )
+
+
+
+RETURN ( oDbf )
+
+
+
+static FUNCTION TDetCabeceraPlantillaXML_Resource( nMode ) ; local Self AS CLASS TDetCabeceraPlantillaXML := QSelf() AS CLASS TDetCabeceraPlantillaXML
+
+    local oDlg
+
+   ::InitResource()
+
+   oDlg = TDialog():New(,,,, LblTitle( nMode ) + "detalle de importación XML", "DetPlantillaXML",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+
+      ::oCombo := TComboBox():ReDefine( 100, { | u | If( PCount()==0, ::oDbfVir:cCampo, ::oDbfVir:cCampo:= u ) }, ( ::aCamposCabecera ), oDlg,,,,,,, .F., {||     ( nMode <> 3 )},,,,,, "::oCombo",,,,,,, )
+
+
+
+
+      TCheckBox():ReDefine( 310, { | u | If( PCount()==0, ::oDbfVir:lClave, ::oDbfVir:lClave:= u ) }, oDlg,,,,,,, .F., {||     ( nMode <> 3 )}, .F. )
+
+
+
+
+      TRadMenu():Redefine( { | u | If( PCount()==0, ::oDbfVir:nTipo, ::oDbfVir:nTipo:= u ) }, oDlg,, { 300, 301 },,,,, .F., {||     ( nMode <> 3 )}, )
+
+
+
+
+      TMultiGet():ReDefine( 110, { | u | If( PCount()==0, ::oDbfVir:mNode, ::oDbfVir:mNode:= u ) }, oDlg,,,,,,, .F., {||     ( ::oDbfVir:nTipo == 1 .AND. nMode <> 3 )}, .F.,, )
+
+
+
+
+      TMultiGet():ReDefine( 140, { | u | If( PCount()==0, ::oDbfVir:mCond, ::oDbfVir:mCond:= u ) }, oDlg,,,,,,, .F., {||     ( ::oDbfVir:nTipo == 1 .AND. nMode <> 3 )}, .F.,, )
+
+
+
+
+      TMultiGet():ReDefine( 150, { | u | If( PCount()==0, ::oDbfVir:mPost, ::oDbfVir:mPost:= u ) }, oDlg,,,,,,, .F., {||     ( ::oDbfVir:nTipo == 1 .AND. nMode <> 3 )}, .F.,, )
+
+
+
+
+
+
+
+      TGetHlp():ReDefine( 120, { | u | If( PCount()==0, ::oDbfVir:nOcurr, ::oDbfVir:nOcurr:= u ) }, oDlg,, "99",,,,,,, .F., {||     ( ::oDbfVir:nTipo == 1 .AND. nMode <> 3 )},, .F., .T.,,, {||      0},,, nil,,, )
+
+
+
+
+      TCheckBox():ReDefine( 130, { | u | If( PCount()==0, ::oDbfVir:lOcurr, ::oDbfVir:lOcurr:= u ) }, oDlg,,,,,,, .F., {||     ( ::oDbfVir:nTipo == 1 .AND. nMode <> 3 )}, .F. )
+
+
+
+
+
+      ::oBrwValues                  := IXBrowse():New( oDlg )
+
+      ::oBrwValues:bClrSel          := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      ::oBrwValues:bClrSelFocus     := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      ::oBrwValues:lHScroll         := .F.
+      ::oBrwValues:lRecordSelector  := .T.
+
+      ::oBrwValues:nMarqueeStyle    := 6
+
+      ::oBrwValues:SetArray( ::aValues, , , .F. )
+
+      if ( ::oDbfVir:nTipo == 1 .AND. nMode <> 3 )
+         ::oBrwValues:bLDblClick    := {|| ::EditValues( .F. ) }
+      end
+
+      with object ( ::oBrwValues:addCol() )
+         :cHeader       := "Contiene"
+         :bEditValue    := {|| ::aValues[ ::oBrwValues:nArrayAt, 1 ] }
+         :nWidth        := 180
+      end
+
+      with object ( ::oBrwValues:addCol() )
+         :cHeader       := "Cambiar por"
+         :bEditValue    := {|| ::aValues[ ::oBrwValues:nArrayAt, 2 ] }
+         :nWidth        := 180
+      end
+
+      ::oBrwValues:CreateFromResource( 200 )
+
+
+
+
+
+        TButton():ReDefine( 210, {||( ::EditValues( .T. ) )}, oDlg,,, .F., {||     ( ::oDbfVir:nTipo == 1 .AND. nMode <> 3 )},,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 220, {||( ::EditValues( .F. ) )}, oDlg,,, .F., {||     ( ::oDbfVir:nTipo == 1 .AND. nMode <> 3 )},,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 230, {||( ::DeleteValues() )}, oDlg,,, .F., {||     ( ::oDbfVir:nTipo == 1 .AND. nMode <> 3 )},,, .F. )
+
+
+
+
+      TGetHlp():ReDefine( 400, { | u | If( PCount()==0, ::oDbfVir:uConst, ::oDbfVir:uConst:= u ) }, oDlg,,,,,,,,, .F., {||     ( ::oDbfVir:nTipo == 2 .AND. nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+
+
+
+      TButton():ReDefine( 1, {||( if( ::lPreSave( nMode ), oDlg:end( 1 ), ) )}, oDlg,,, .F., {||         ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+        TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+      if nMode <> 3
+         oDlg:AddFastKey( 116, {|| if( ::lPreSave( nMode ), oDlg:end( 1 ), ) } )
+      end
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+static FUNCTION TDetCabeceraPlantillaXML_lPreSave( nMode ) ; local Self AS CLASS TDetCabeceraPlantillaXML := QSelf() AS CLASS TDetCabeceraPlantillaXML
+
+   if Empty( ::oDbfVir:cCampo )
+      MsgStop( "El campo a cumplimentar no puede estar vacio." )
+      return .F.
+   end
+
+   if ::oDbfVir:nTipo == 1 .AND. Empty( ::oDbfVir:mNode )
+      MsgStop( "El valor del nodo no puede estar vacio." )
+      return .F.
+   end
+
+   if ::oDbfVir:nTipo == 2 .AND. Empty( ::oDbfVir:uConst )
+      MsgStop( "El valor de la constante no puede estar vacio." )
+      return .F.
+   end
+
+Return .T.
+
+
+
+static FUNCTION TDetCabeceraPlantillaXML_InitResource( ) ; local Self AS CLASS TDetCabeceraPlantillaXML := QSelf() AS CLASS TDetCabeceraPlantillaXML
+
+   local cCampo
+   local cTipo          := Rtrim( ::oParent:oDbf:cTipo )
+
+   ::aCamposCabecera    := {}
+
+   for each cCampo in ::oParent:aCamposCabecera
+      if !Empty( cCampo[ 5 ] )
+         aAdd( ::aCamposCabecera, cCampo[ 5 ] )
+      end
+   next
+
+   do case
+      case cTipo == "Artículo"
+
+      case cTipo == "Pedido proveedores"
+      case cTipo == "Albarán proveedores"
+      case cTipo == "Factura proveedores"
+      case cTipo == "Factura proveedores.Líneas"
+      case cTipo == "Recibos facturas proveedor"
+      case cTipo == "Presupuesto clientes"
+
+      case cTipo == "Pedido clientes"
+
+      case cTipo == "Albarán clientes"
+      case cTipo == "Factura clientes"
+      case cTipo == "Factura de anticipos"
+      case cTipo == "Factura rectificativa"
+      case cTipo == "Recibos facturas clientes"
+      case cTipo == "Tickets clientes"
+      case cTipo == "Pagos de clientes"
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TDetCabeceraPlantillaXML_LoadValues( mValue ) ; local Self AS CLASS TDetCabeceraPlantillaXML := QSelf() AS CLASS TDetCabeceraPlantillaXML
+
+   local a
+   local aTokens
+
+   If( mValue == nil, mValue := ::oDbfVir:mValue, ) ;
+
+   ::aValues         := {}
+
+   aTokens           := hb_aTokens( mValue, ";", .F., .F. )
+
+   for each a in aTokens
+      aAdd( ::aValues, hb_aTokens( a, ",", .F., .F. ) )
+   next
+
+Return ( ::aValues )
+
+
+
+static FUNCTION TDetCabeceraPlantillaXML_SaveValues( ) ; local Self AS CLASS TDetCabeceraPlantillaXML := QSelf() AS CLASS TDetCabeceraPlantillaXML
+
+   local a
+   local cValues     := ""
+
+   for each a in ::aValues
+      cValues        += a[ 1 ] + "," + a[ 2 ] + ";"
+   next
+
+   ::oDbfVir:mValue  := cValues
+
+Return ( Self )
+
+
+
+static FUNCTION TDetCabeceraPlantillaXML_EditValues( lAppend ) ; local Self AS CLASS TDetCabeceraPlantillaXML := QSelf() AS CLASS TDetCabeceraPlantillaXML
+
+   local oDlg
+   local cContiene
+   local cReemplaza
+
+   If( lAppend == nil, lAppend := .F., ) ;
+
+   if lAppend
+      cContiene      := Space( 250 )
+      cReemplaza     := Space( 250 )
+   else
+      cContiene      := Padr( ::aValues[ ::oBrwValues:nArrayAt, 1 ], 250 )
+      cReemplaza     := Padr( ::aValues[ ::oBrwValues:nArrayAt, 2 ], 250 )
+   end
+
+   oDlg = TDialog():New(,,,,, "ValuesPlantillaXML",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+      TMultiGet():ReDefine( 110, { | u | If( PCount()==0, cContiene, cContiene:= u ) }, oDlg,,,,,,, .F.,, .F.,, )
+
+
+
+      TMultiGet():ReDefine( 120, { | u | If( PCount()==0, cReemplaza, cReemplaza:= u ) }, oDlg,,,,,,, .F.,, .F.,, )
+
+
+
+
+
+
+
+
+      TButton():ReDefine( 1, {||( oDlg:end( 1 ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+
+        TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+
+
+
+      TButton():ReDefine( 559, {||( MsgInfo( "Ayuda no definida" ) )}, oDlg,,, .F.,,,, .F. )
+
+      oDlg:AddFastKey( 116, {|| oDlg:end( 1 ) } )
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   if oDlg:nResult == 1
+      if lAppend
+         aAdd( ::aValues, { cContiene, cReemplaza } )
+      else
+         ::aValues[ ::oBrwValues:nArrayAt, 1 ]  := cContiene
+         ::aValues[ ::oBrwValues:nArrayAt, 2 ]  := cReemplaza
+      end
+   end
+
+   ::oBrwValues:Refresh()
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+static FUNCTION TDetCabeceraPlantillaXML_DeleteValues( ) ; local Self AS CLASS TDetCabeceraPlantillaXML := QSelf() AS CLASS TDetCabeceraPlantillaXML
+
+   hb_ADel( ::aValues, ::oBrwValues:nArrayAt, .T. )
+
+   ::oBrwValues:Refresh()
+
+Return ( Self )
+
+
+
+
+
+
+_HB_CLASS sCamposLineas ; function sCamposLineas ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "sCamposLineas", iif( .F., { }, { @HBObject() } ), @sCamposLineas() ) ) ;
+
+   _HB_MEMBER { cCampo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCampo"}, .F. )
+   _HB_MEMBER { nTipo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTipo"}, .F. )
+   _HB_MEMBER { nInicio } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nInicio"}, .F. )
+   _HB_MEMBER { nAncho } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nAncho"}, .F. )
+   _HB_MEMBER { uConst } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"uConst"}, .F. )
+   _HB_MEMBER { lClave } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lClave"}, .F. )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS sCamposLineas ;

@@ -1,0 +1,2951 @@
+#line 91 "\fwh1801\include\FiveWin.ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 44 ".\.\Prg\Dialog.prg"
+extern Set
+
+static aGradColors
+
+
+
+_HB_CLASS TDialog ; function TDialog ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TDialog", iif( .T., { @TWindow() }, { @HBObject() } ), @TDialog() ) ) ;
+
+   _HB_MEMBER { AS LOGICAL lRegistered } ; oClass:AddMultiClsData( "LOGICAL",, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lRegistered"}, .F. )
+
+   _HB_MEMBER { AS LOGICAL lClsTruePixel } ; oClass:AddMultiClsData( "LOGICAL", .F., nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lClsTruePixel"}, .F. )
+
+   _HB_MEMBER { AS LOGICAL lTruePixel } ; oClass:AddMultiData( "LOGICAL", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lTruePixel"}, .F. )
+   _HB_MEMBER { cResName, cResData } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cResName", "cResData"}, .F. )
+   _HB_MEMBER { hResources } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hResources"}, .F. )
+   _HB_MEMBER { lCentered, lCenterInWnd, lModal, lModify } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lCentered", "lCenterInWnd", "lModal", "lModify"}, .F. )
+   _HB_MEMBER { bStart } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bStart"}, .F. )
+   _HB_MEMBER { lHelpIcon } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lHelpIcon"}, .F. )
+   _HB_MEMBER { lResize16 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lResize16"}, .F. )
+   _HB_MEMBER { lTransparent } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lTransparent"}, .F. )
+   _HB_MEMBER { bNcActivate } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bNcActivate"}, .F. )
+   _HB_MEMBER { aPanInfo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aPanInfo"}, .F. )
+
+
+
+
+   _HB_MEMBER New( nTop, nLeft, nBottom, nRight, cCaption, cResName, hResources, lVbx, nStyle, nClrText, nClrBack, oBrush, oWnd, lPixels, oIco, oFont, nHelpId, nWidth, nHeight, lTransparent, aNewGradColors, cVarName, lUnicode, lTruePixel) AS CLASS TDialog; oClass:AddMethod( "New", @TDialog_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER Define( nTop, nLeft, nBottom, nRight, cCaption, nStyle, nClrText, nClrPane, oBrush) AS CLASS TDialog; oClass:AddMethod( "Define", @TDialog_Define(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER Activate( bClicked, bMoved, bPainted, lCentered, bValid, lModal, bInit, bRClicked, bWhen, lResize16, lCenterInWnd); oClass:AddMethod( "Activate", @TDialog_Activate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AdjTop(); oClass:AddInline( "AdjTop", {|Self | ( ( Self ) ), WndAdjTop( ::hWnd ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ChangeFocus(); oClass:AddInline( "ChangeFocus", {|Self | ( ( Self ) ), ::PostMsg( 1024+1040 ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Close( nResult); oClass:AddMethod( "Close", @TDialog_Close(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Command( nWParam, nLParam); oClass:AddMethod( "Command", @TDialog_Command(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CtlColor( hWndChild, hDCChild); oClass:AddMethod( "CtlColor", @TDialog_CtlColor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cGenPrg(); oClass:AddMethod( "cGenPrg", @TDialog_cGenPrg(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cToChar( hActiveWnd); oClass:AddMethod( "cToChar", @TDialog_cToChar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DefControl( oControl); oClass:AddMethod( "DefControl", @TDialog_DefControl(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Destroy(); oClass:AddInline( "Destroy", {|Self | ( ( Self ) ), ::Super:Destroy(), If( ! ::lModal, .T., nil ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER Display(); oClass:AddInline( "Display", {|Self | ( ( Self ) ), ::BeginPaint(), ::Paint(), ::EndPaint(), If( ::bStart <> nil, Eval( ::bStart, ::bStart := nil ),), .F. }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ReSize(); oClass:AddInline( "ReSize", {|Self, nSizeType, nWidth, nHeight | ( ( Self ) ), ( ::Super:Resize( nSizeType, nWidth, nHeight ), ::Refresh() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER End( nResult); oClass:AddMethod( "End", @TDialog_End(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EraseBkGnd( hDC); oClass:AddMethod( "EraseBkGnd", @TDialog_EraseBkGnd(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetHotPos( nChar, hCtrlAt); oClass:AddMethod( "GetHotPos", @TDialog_GetHotPos(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetItem(); oClass:AddInline( "GetItem", {|Self, nId | ( ( Self ) ), GetDlgItem( ::hWnd, nId ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER GotFocus(); oClass:AddInline( "GotFocus", {|Self, hFromWnd | ( ( Self ) ), ::lFocused := .T., If( ::bGotFocus <> nil, Eval( ::bGotFocus, Self, hFromWnd ), nil ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER HandleEvent( nMsg, nWParam, nLParam); oClass:AddMethod( "HandleEvent", @TDialog_HandleEvent(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER Help( nWParam, nLParam); oClass:AddMethod( "Help", @TDialog_Help(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Initiate( hWndFocus, hWnd); oClass:AddMethod( "Initiate", @TDialog_Initiate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER KeyChar( nKey, nFlags); oClass:AddMethod( "KeyChar", @TDialog_KeyChar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER KeyDown( nKey, nFlags); oClass:AddMethod( "KeyDown", @TDialog_KeyDown(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER LostFocus(); oClass:AddInline( "LostFocus", {|Self, hGetFocus | ( ( Self ) ), ::lFocused := .F., If( ::bLostFocus <> nil, Eval( ::bLostFocus, Self, hGetFocus ), nil ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER MouseMove( nRow, nCol, nKeyFlags); oClass:AddMethod( "MouseMove", @TDialog_MouseMove(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER NCActivate(); oClass:AddInline( "NCActivate", {|Self, lOnOff | ( ( Self ) ), If( ! Empty( ::bNcActivate ), Eval( ::bNcActivate, lOnOff, Self ),) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Paint(); oClass:AddMethod( "Paint", @TDialog_Paint(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PrintClient(); oClass:AddInline( "PrintClient", {|Self, hDC | ( ( Self ) ), 1 }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER QueryEndSession(); oClass:AddInline( "QueryEndSession", {|Self | ( ( Self ) ), ! ::End() }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER SetControl(); oClass:AddInline( "SetControl", {|Self, oCtrl | ( ( Self ) ), ::oClient := oCtrl, ::ReSize() }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetFont( oFont); oClass:AddMethod( "SetFont", @TDialog_SetFont(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER SetSize(); oClass:AddInline( "SetSize", {|Self, nWidth, nHeight, lRepaint | ( ( Self ) ), ::Super:SetSize( nWidth, nHeight, lRepaint ), If( aGradColors <> nil, ::Gradient( aGradColors ),) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SysCommand( nWParam, nLParam); oClass:AddMethod( "SysCommand", @TDialog_SysCommand(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Help95(); oClass:AddMethod( "Help95", @TDialog_Help95(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER { aFastKeys } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aFastKeys"}, .F. )
+
+   _HB_MEMBER { aControlKeys } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aControlKeys"}, .F. )
+
+   _HB_MEMBER addFastKey(); oClass:AddInline( "addFastKey", {|Self, nKey, bAction | ( ( Self ) ), ( aadd( ::aFastKeys, { nKey, bAction } ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addControlKeys(); oClass:AddInline( "addControlKeys", {|Self, nKey, bAction | ( ( Self ) ), ( aadd( ::aControlKeys, { nKey, bAction } ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER initKeys(); oClass:AddInline( "initKeys", {|Self | ( ( Self ) ), ( ::aFastKeys := {}, ::aControlKeys := {} ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER keysControl(); oClass:AddMethod( "keysControl", @TDialog_keysControl(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setControlFastKey(); oClass:AddMethod( "setControlFastKey", @TDialog_setControlFastKey(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TDialog ;
+
+
+
+
+
+
+static FUNCTION TDialog_New( nTop, nLeft, nBottom, nRight, cCaption, cResName, hResources, lVbx, nStyle, nClrText, nClrBack, oBrush, oWnd, lPixels, oIco, oFont, nHelpId, nWidth, nHeight, lTransparent, aNewGradColors, cVarName, lUnicode, lTruePixel ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+
+
+
+
+
+
+
+   If( hResources == nil, hResources := GetResources(), ) ; If( lVbx == nil, lVbx := .F., ); If( nClrText == nil, nClrText := GetSysColor( 18 ), ); If( nClrBack == nil, nClrBack := GetSysColor( 15 ), ); If( lPixels == nil, lPixels := .F., ); If( nTop == nil, nTop := 0, ); If( nLeft == nil, nLeft := 0, ); If( nBottom == nil, nBottom := 10, ); If( nRight == nil, nRight := 40, ); If( nWidth == nil, nWidth := 0, ); If( nHeight == nil, nHeight := 0, ); If( lTransparent == nil, lTransparent := .F., ); If( nStyle == nil, nStyle := nOR( 128, 2147483648, 12582912, 524288 ), ); If( cVarName == nil, cVarName := "oDlg", ); If( lUnicode == nil, lUnicode := FW_SetUnicode(), ); If( lTruePixel == nil, lTruePixel := FW_SetTruePixel(), );
+
+   if nWidth <> 0 .OR. nHeight <> 0
+      if ! lPixels
+         lPixels = .T.
+      endif
+      nBottom = nHeight
+      nRight  = nWidth
+   endif
+
+   if ! Empty( aNewGradColors ) .OR. ! Empty( aGradColors )
+      lTransparent = .T.
+   endif
+
+   ::aControls  = {}
+   ::cResName   = cResName
+   ::cCaption   = If( cCaption <> nil, RTrim( cCaption ), )
+   ::hResources = hResources
+   ::lModify    = .T.
+   ::lVbx       = lVbx
+   ::lVisible   = .F.
+   ::nResult    = 0
+   ::nStyle     = nStyle
+   ::oWnd       = oWnd
+   ::oIcon      = oIco
+   if oFont <> nil
+      oFont:nCount++
+      ::oFont      = oFont
+   endif
+   ::nLastKey   = 0
+   ::nHelpId    = nHelpId
+   ::lResize16  = .F.
+   ::lTransparent = lTransparent
+   ::aGradColors  = aNewGradColors
+   ::cVarName   = cVarName
+   ::lUnicode   = lUnicode
+   ::lTruePixel = lTruePixel
+
+   if ValType( oIco ) == "C"
+      if File( oIco )
+         oIco := TIcon():New( ,,, oIco, )
+      else
+         oIco := TIcon():New( ,, oIco,, )
+      endif
+      ::oIcon := oIco
+   endif
+
+   ::SetColor( nClrText, nClrBack, oBrush )
+
+   if lPixels
+      ::nTop       = nTop
+      ::nLeft      = nLeft
+      ::nBottom    = nBottom
+      ::nRight     = nRight
+   else
+
+      ::nTop    := int( nTop    * 15.1 )
+      ::nLeft   := int( nLeft   * 7.9 )
+      ::nBottom := int( nBottom * 15.1  )
+      ::nRight  := int( nRight  * 7.9  )
+   endif
+
+   ::Register( nOr( 1, 2 ) )
+
+   SetWndDefault( Self )
+
+   ::initKeys()
+
+return Self
+
+
+
+
+
+static FUNCTION TDialog_Activate( bLClicked, bMoved, bPainted, lCentered,  bValid, lModal, bInit, bRClicked, bWhen, lResize16,  lCenterInWnd ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   static nDlgCount := 0
+
+   local hActiveWnd, hWnd, bDlgProc
+
+   If( lModal == nil, lModal := IfNil( ::lModal, .T. ), ) ;
+   If( ::hWnd == nil, ::hWnd := 0, ) ;
+
+   ::nLastKey = 0
+
+   ++nDlgCount
+
+
+
+   hActiveWnd = If( ::oWnd <> nil, ::oWnd:hWnd, If( nDlgCount > 1 .OR. lWRunning(), GetActiveWindow(), GetWndApp() ) )
+
+
+   ::lCentered   = lCentered == .T. .OR. ::lCentered == .T.
+   ::lCenterInWnd = lCenterInWnd == .T. .OR. ::lCenterInWnd == .T.
+   ::lModal      = lModal
+   ::bLClicked   = IfNil( bLClicked,::bLClicked )
+   ::bRClicked   = IfNil( bRClicked,::bRClicked )
+   ::bWhen       = IfNil( bWhen,    ::bWhen  )
+   ::bValid      = IfNil( bValid,   ::bValid )
+   ::bInit       = IfNil( bInit, ::bInit )
+   ::bPainted    = bPainted
+   ::bMoved      = bMoved
+   ::nResult     = nil
+   ::lValidating = .F.
+   ::lVisible    = .T.
+   ::lResize16   = IfNil( lResize16, ::lResize16, .F. )
+
+   if ::bWhen <> nil
+      if ! Eval( ::bWhen, Self )
+          ::nResult  = 2
+          ::lVisible = .F.
+          return nil
+      endif
+   endif
+
+   if lModal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ::nResult = if( ! Empty( ::cResName ), IF( ::lUnicode, DialogBoxW( ::hResources, ::cResName, hActiveWnd, Self ), DialogBox( ::hResources, ::cResName, hActiveWnd, Self ) ), IF( ::lUnicode, DialogBoxIndirectW( GetInstance(), If( ! Empty( ::cResData ), ::cResData, ::cToChar( hActiveWnd ) ), hActiveWnd, Self ), DialogBoxIndirect( GetInstance(), If( ! Empty( ::cResData ), ::cResData, ::cToChar( hActiveWnd ) ), hActiveWnd, Self ) ) )
+
+      if ::nResult == 65535
+         CreateDlgError( Self )
+      endif
+
+   else
+
+      if ( Len( ::aControls ) > 0 .AND. CanRegDialog() ) .OR.  Len( ::aControls ) == 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+         ::hWnd = if( ! Empty( ::cResName ), IF( ::lUnicode, CreateDlgW( ::hResources, ::cResName, hActiveWnd, Self ), CreateDlg( ::hResources, ::cResName, hActiveWnd, Self ) ), IF( ::lUnicode, CreateDlgIndirectW( GetInstance(), ::cToChar( hActiveWnd ), hActiveWnd, Self ), CreateDlgIndirect( GetInstance(), ::cToChar( hActiveWnd ), hActiveWnd, Self ) ) )
+
+         if ::hWnd == 0
+            CreateDlgError( Self )
+         else
+            ShowWindow( ::hWnd, 0 )
+         endif
+
+         if Len( ::aControls ) > 0 .AND. ! RegDialog( ::hWnd )
+            ::SendMsg( 16 )
+            MsgAlert( "Not possible to create more non-modal Dialogs" )
+         endif
+
+         if ::Initiate()
+            ::SetFocus()
+         endif
+
+         ::Show()
+         ::Refresh()
+      else
+         MsgAlert( "Not possible to create more non-modal Dialogs" )
+      endif
+   endif
+
+   nDlgCount--
+
+   if ::lModal
+      ::lVisible = .F.
+   endif
+
+return nil
+
+
+
+static FUNCTION TDialog_DefControl( oCtrl ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   If( oCtrl:nId == nil, oCtrl:nId := oCtrl:GetNewId(), ) ;
+
+   if AScan( ::aControls, { | o | o:nId == oCtrl:nId } ) > 0
+
+
+      Eval( ErrorBlock(), _FWGenError( 2,  "No: " + Str( oCtrl:nId, 6 ) ) )
+   else
+      AAdd( ::aControls, oCtrl )
+      oCtrl:hWnd = 0
+   endif
+
+return nil
+
+
+
+static FUNCTION TDialog_Command( nWParam, nLParam ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   local oWnd, nNotifyCode, nID, hWndCtl, oCtrl
+
+   nNotifyCode = nHiWord( nWParam )
+   nID         = nLoWord( nWParam )
+   hWndCtl     = nLParam
+
+   do case
+      case ::oPopup <> nil
+           ::oPopup:Command( nID )
+
+
+      case hWndCtl == 0 .AND. ::oMenu <> nil .AND.  If( nNotifyCode == 0, nID <> 2, .F. )
+           ::oMenu:Command( nID )
+
+      case GetClassName( hWndCtl ) == "ToolbarWindow32"
+           oWndFromHwnd( hWndCtl ):Command( nWParam, nLParam )
+           return .T.
+
+
+      case ::oMenu <> nil .AND. nId <> 2 .AND. nNotifyCode <> 0 .AND.  nNotifyCode <> 1
+           if nNotifyCode == 1
+              ::oMenu:Command( nID )
+           endif
+
+      case nID <> 0
+           do case
+              case nNotifyCode == 0
+                   if hWndCtl <> 0 .AND. nID <> 2
+                      oWnd := oWndFromhWnd( hWndCtl )
+                      if ValType( ::nResult ) == "O"
+
+                         if oWnd <> nil
+                            if ! oWnd:lCancel
+                               if ::nResult:nID <> nID .AND. ! ::nResult:lValid()
+                                  return nil
+                               endif
+                            endif
+                         else
+                            if ::nResult:nID <> nID .AND. ! ::nResult:lValid()
+                               return nil
+                            endif
+                         endif
+                      endif
+
+                      if AScan( ::aControls, { |o| o:nID == nID } ) > 0
+                         SendMessage( hWndCtl, 1024+1024, 0, 0 )
+                      elseif nID == 1
+                         ::End( 1 )
+                      endif
+                   else
+                      if nID == 1
+                         ::GoNextCtrl( GetFocus() )
+                         if ! ::lModal
+                            return 0
+                         endif
+
+                      elseif hWndCtl <> 0 .AND.  AScan( ::aControls, { |o| o:nID == nID } ) > 0
+                             SendMessage( hWndCtl, 1024+1024, 0, 0 )
+                             return .F.
+                      else
+                         ::End( 2 )
+                      endif
+                   endif
+
+              case nNotifyCode == 1
+                   SendMessage( hWndCtl, 1024+1029, 0, 0 )
+
+              case nNotifyCode == 8
+                   SendMessage( hWndCtl, 1024+1042, 0, 0 )
+
+           endcase
+
+      case GetClassName( hWndCtl ) == "Edit"
+           oCtrl := oWndFromHwnd( hWndCtl )
+           if oCtrl <> nil .AND. oCtrl:ClassName() == "TEDIT"
+              oCtrl:Command( nWParam, nLParam )
+              return nil
+           endif
+   endcase
+
+return nil
+
+
+
+static FUNCTION TDialog_CtlColor( hWndChild, hDCChild ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   local uVal
+
+
+
+   if ::oWnd <> nil .AND. Upper( ::oWnd:ClassName() ) $ "TFOLDER,TFOLDEREX,TPAGES"  .AND. GetClassName( hWndChild ) $ "Button,Static"  .AND. IsAppThemed()
+      uVal = DrawThemed( hWndChild, hDCChild )
+      SendMessage( hWndChild, 1024+1030, hDCChild )
+      return uVal
+   endif
+
+return ::Super:CtlColor( hWndChild, hDCChild )
+
+
+
+static FUNCTION TDialog_cGenPrg( ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   local cSource := ::Super:cGenPrg( , .T. )
+
+   cSource = StrTran( cSource, "WINDOW", "DIALOG" )
+   cSource = StrTran( cSource, "oWnd", "oDlg" )
+
+return cSource
+
+
+
+static FUNCTION TDialog_cToChar( hActiveWnd ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   local cResult
+   local aControls := ::aControls
+   local n     := GetDlgBaseUnits()
+   local aRect := GetWndRect( hActiveWnd )
+
+   If( ::cCaption == nil, ::cCaption := "", ) ;
+
+
+
+
+
+
+   cResult = cDlg2Chr( Len( aControls ), Int( 8 * ( ::nTop  - aRect[ 1 ]   ) / nHiWord( n ) ), Int( 4 * ( ::nLeft - aRect[ 2 ]   ) / nLoWord( n ) ), Int( 8 * ( ::nBottom - aRect[ 1 ] ) / nHiWord( n ) ), Int( 4 * ( ::nRight  - aRect[ 2 ] ) / nLoWord( n ) ), ::cCaption, ::nStyle )
+
+   for n = 1 to Len( aControls )
+      cResult += aControls[ n ]:cToChar()
+   next
+
+return cResult
+
+
+
+
+static FUNCTION TDialog_Define( nTop, nLeft, nBottom, nRight, cCaption, nStyle, lVbx, nClrText, nClrBack, oBrush ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+
+   If( lVbx == nil, lVbx := .F., ) ; If( nClrText == nil, nClrText := GetSysColor( 18 ), ); If( nClrBack == nil, nClrBack := GetSysColor( 15 ), );
+
+   ::hWnd      = 0
+   ::nTop      = nTop
+   ::nLeft     = nLeft
+   ::nBottom   = nBottom
+   ::nRight    = nRight
+   ::cCaption  = If( cCaption <> nil, SubStr( cCaption, 1, Min( Len( cCaption ), 140 ) ), nil )
+   ::nStyle    = nStyle
+   ::lVbx      = lVbx
+   ::nLastKey  = 0
+
+
+   ::SetColor( nClrText, nClrBack, oBrush )
+
+return Self
+
+
+
+static FUNCTION TDialog_End( nResult ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   If( nResult == nil, nResult := 2, ) ;
+
+   if ! ::lModal
+      ::PostMsg( 16, nResult )
+   else
+      if ValType( ::bValid ) == "B"
+         if ! Eval( ::bValid, Self )
+            return .F.
+         endif
+      endif
+      ::nResult = nResult
+      EndDialog( ::hWnd, nResult )
+   endif
+
+   SysRefresh()
+
+
+return .T.
+
+
+
+static function CreateDlgError( Self )
+
+   local cRes := If( ValType( ::cResName ) == "N", Str( ::cResName ), ::cResName )
+   local cPad := Replicate( Chr( 32 ), 22 )
+
+
+
+
+
+   Eval( ErrorBlock(),  _FwGenError( 3, Chr(13)+Chr(10) + cPad +  If( ! Empty( cRes ), "Resource: " + cRes, "Title: " + If( Empty( ::cCaption ), "", ::cCaption ) ) ) )
+return nil
+
+
+
+static FUNCTION TDialog_GetHotPos( nChar, hCtrlAt ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   local hCtrl := GetWindow( ::hWnd, 5 )
+   local nAt, cText
+
+   while hCtrl <> 0
+
+
+
+      if hCtrl <> hCtrlAt .AND. GetParent( hCtrl ) == ::hWnd .AND.  IsWindowEnabled( hCtrl ) .AND.  ( nAt := At( "&", cText := GetWindowText( hCtrl ) ) ) <> 0 .AND.  Lower( SubStr( cText, nAt + 1, 1 ) ) == Lower( Chr( nChar ) )
+         while Upper( GetClassName( hCtrl ) ) == "STATIC" .AND. hCtrl <> 0
+            hCtrl = GetWindow( hCtrl, 2 )
+         end
+         return hCtrl
+      else
+         hCtrl = GetWindow( hCtrl, 2 )
+      endif
+   end
+
+return 0
+
+
+
+static FUNCTION TDialog_Help( nWParam, nLParam ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   local hWndChild := HelpCtrlHwnd( nLParam ), nAtChild
+
+   static lShow := .F.
+
+   ::lHelpIcon = .F.
+
+   if ! lShow
+      lShow = .T.
+
+      if ( nAtChild := AScan( ::aControls, { | o | o:hWnd == hWndChild } ) ) <> 0 .AND.  ! Empty( ::aControls[ nAtChild ]:nHelpID )
+         ::aControls[ nAtChild ]:HelpTopic()
+      else
+         ::HelpTopic()
+      endif
+      lShow = .F.
+      return 1
+   endif
+
+return nil
+
+
+
+static FUNCTION TDialog_Initiate( hWndFocus, hWnd ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   local lFocus := .T., lResult, hCtrl, lEnd := .F., aRect
+   local oParentWnd
+
+   if hWnd <> nil
+      ::hWnd = hWnd
+   endif
+
+   if ! ::lModal
+      ::Link()
+   endif
+
+   if ::oFont == nil
+      ::GetFont()
+   else
+      ::SetFont( ::oFont )
+   endif
+
+   if ! Empty( ::aGradColors )
+      ::Gradient( ::aGradColors )
+   elseif ! Empty( aGradColors )
+      ::Gradient( aGradColors )
+   endif
+
+
+   if ::lTransparent
+      FixSays( ::hWnd, ::oBrush:hBrush )
+
+
+
+      AEval( ::aControls, { | o | If( ! Upper( o:ClassName() ) $  "TBAR;TGET;TMULTIGET;TBTNBMP;TCOMBOBOX;TWBROWSE;TCBROWSE;TXBROWSE;TLISTBOX;TDBCOMBO;TDATEPICK" .AND.  ! o:IsKindOf( "TXBROWSE" ) .AND. ! o:isKindOf( "TBTNFLAT" ), o:lTransparent := .T., ) } )
+   endif
+
+   ASend( ::aControls, "INITIATE()", ::hWnd )
+
+
+
+   if ::lResize16 .AND. ! Empty( ::cResName )
+      ::nWidth = ::nWidth * 1.16668
+      hCtrl = GetWindow( ::hWnd, 5 )
+      if hCtrl <> 0
+         while ! lEnd
+            aRect = GetCoors( hCtrl )
+
+
+
+            SetWindowPos( hCtrl, 0, aRect[ 1 ], aRect[ 2 ] * 1.16668, ( aRect[ 4 ] - aRect[ 2 ] ) * 1.16668, aRect[ 3 ] - aRect[ 1 ], nOr( 4, 8, 16 ) )
+            hCtrl = GetWindow( hCtrl, 2 )
+            lEnd = ! ( ( hCtrl <> 0 ) .AND. ( GetParent( hCtrl ) == ::hWnd ) )
+         end
+      endif
+   endif
+
+   if ::lCentered
+      if SetCenterOnParent() .OR. ::lCenterInWnd
+         oParentWnd := If( ::oWnd <> nil, ::oWnd, WndMain() )
+      endif
+      WndCenter( ::hWnd, If( oParentWnd <> nil, oParentWnd:hWnd, 0 ) )
+
+   else
+      if Empty( ::cResName ) .AND. Empty( ::cResData )
+         ::Move( ::nTop, ::nLeft )
+      endif
+   endif
+
+   if ::cCaption <> nil
+      ::SetText( ::cCaption )
+   endif
+
+   if ! Empty( ::cResName )
+      ::nStyle := GetWindowLong( ::hWnd, -16 )
+   endif
+
+   if lAnd( ::nStyle, 2097152 )
+      ::oVScroll := TScrollBar():WinNew(,,, (!.F.) .OR. .T., Self,,,,,,,,, .F.,, )
+   endif
+
+   if lAnd( ::nStyle, 1048576 )
+      ::oHScroll := TScrollBar():WinNew(,,, (!.T.), Self,,,,,,,,, .F.,, )
+   endif
+
+   if ::oIcon <> nil
+      ::SendMsg( 128, 0, ::oIcon:hIcon )
+   endif
+
+   ::SetAlphaLevel()
+
+   if ::oBar <> nil
+      ::oBar:Adjust()
+   endif
+
+   if ::bInit <> nil
+      lResult = Eval( ::bInit, Self )
+      if ValType( lResult ) == "L" .AND. ! lResult
+         lFocus = .F.
+      endif
+   endif
+
+   ::Help95()
+
+   ::AEvalWhen()
+
+
+
+return lFocus
+
+
+
+static FUNCTION TDialog_EraseBkGnd( hDC ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   if ! Empty( ::bEraseBkGnd )
+      return Eval( ::bEraseBkGnd, hDC )
+   endif
+
+   if ::oBrush <> nil
+      ::PaintBack( hDC )
+      return 1
+   endif
+
+return nil
+
+
+
+static FUNCTION TDialog_Close( nResult ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   if ! ::lModal
+      if ValType( ::bValid ) == "B"
+         if ! Eval( ::bValid, Self )
+            return .F.
+         endif
+      endif
+      if ValType( nResult ) $ "NU"
+         ::nResult = nResult
+      endif
+      ::lVisible = .F.
+      DestroyWindow( ::hWnd )
+      return .T.
+   endif
+
+return nil
+
+
+
+static FUNCTION TDialog_KeyChar( nKey, nFlags ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   if nKey == 27
+
+      if ::oWnd <> nil .AND. ( ::oWnd:IsKindOf( "TMDICHILD" ) .OR.  ::oWnd:IsKindOf( "TDIALOG" ) .OR. ::oWnd:IsKindOf( "TMDIFRAME" ) )
+         if SetDialogEsc()
+            ::End()
+         endif
+      endif
+      return nil
+   endif
+
+return ::Super:KeyChar( nKey, nFlags )
+
+
+
+static FUNCTION TDialog_KeyDown( nKey, nFlags ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   if nKey == 27
+      if ::oWnd == nil
+         if SetDialogEsc()
+            ::End()
+         endif
+      else
+         if ::oWnd:IsKindOf( "TMDICHILD" )
+            if SetDialogEsc()
+               ::End()
+            endif
+         else
+            if ::oWnd:IsKindOf( "TDIALOG" )
+               if SetDialogEsc()
+                  ::End()
+               endif
+            elseif Upper( ::oWnd:ClassName() ) == "TMDIFRAME"
+               if SetDialogEsc()
+                  ::End()
+               endif
+            else
+               return ::Super:KeyDown( nKey, nFlags )
+            endif
+         endif
+      endif
+   else
+      ::keysControl( nKey )
+      return ::Super:KeyDown( nKey, nFlags )
+   endif
+
+return nil
+
+
+
+static FUNCTION TDialog_MouseMove( nRow, nCol, nKeyFlags ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   if ::lHelpIcon <> nil .AND. ! ::lHelpIcon
+      if ::oCursor <> nil
+         WSetCursor( ::oCursor:hCursor )
+      else
+         CursorArrow()
+      endif
+   endif
+
+   ::SetMsg( ::cMsg )
+
+   ::CheckToolTip()
+
+   if ::bMMoved <> nil
+      return Eval( ::bMMoved, nRow, nCol, nKeyFlags )
+   endif
+
+return .F.
+
+
+
+static FUNCTION TDialog_Paint( ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   local uVal
+
+   if ValType( ::bPainted ) == "B"
+      uVal = Eval( ::bPainted, ::hDC, ::cPS, Self )
+   endif
+
+return uVal
+
+
+
+static FUNCTION TDialog_SetFont( oFont ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   local hDlg  := ::hWnd
+   local hCtrl := GetWindow( hDlg, 5 )
+   local hFont := If( ::oFont <> nil, ::oFont:hFont, 0 )
+
+   ::Super:SetFont( oFont )
+
+   if hFont <> 0
+      while hCtrl <> 0 .AND. GetParent( hCtrl ) == hDlg
+         SendMessage( hCtrl, 48, hFont, 1 )
+         hCtrl = GetWindow( hCtrl, 2 )
+      end
+   endif
+
+return nil
+
+
+
+static FUNCTION TDialog_SysCommand( nWParam, nLParam ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   if nWParam == 61536 .AND. ::lModal
+      if GetCapture() <> 0
+         ReleaseCapture()
+      endif
+      return .F.
+   endif
+
+   if nWParam == 61824
+      ::lHelpIcon = .T.
+      return .F.
+   endif
+
+return ::Super:SysCommand( nWParam, nLParam )
+
+
+
+static FUNCTION TDialog_Help95( ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   if ::lHelpIcon == nil .OR. ::lHelpIcon
+
+      SetWindowLong( ::hWnd, -20, nOr( GetWindowLong( ::hWnd, -20 ), 1024 ) )
+   endif
+
+return nil
+
+
+
+static FUNCTION TDialog_HandleEvent( nMsg, nWParam, nLParam ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   if ::oMenu <> nil .AND. ::oMenu:oAccTable <> nil
+
+      TranslateAccelerator( ::hWnd, ::oMenu:oAccTable:nHandle, GetFocus(), nMsg, nWParam, nLParam )
+   endif
+
+   do case
+      case nMsg == 272
+           return ::Initiate( nWParam, nLParam )
+
+      case nMsg == 15
+           return ::Display()
+
+      case nMsg == 792
+           return ::PrintClient( nWParam )
+
+      case nMsg == 513
+           if ::lHelpIcon <> nil .AND. ::lHelpIcon
+              ::Help()
+           else
+              logwrite( nMsg)
+              logwrite( nWParam )
+              logwrite( nLParam )
+              return ::Super:HandleEvent( nMsg, nWParam, nLParam )
+           endif
+
+      otherwise
+
+         return ::Super:HandleEvent( nMsg, nWParam, nLParam )
+   endcase
+
+return nil
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function SetDialogEsc( lOnOff )
+
+   local lOldStatus
+
+   static lStatus := .T.
+
+   lOldStatus = lStatus
+
+   if PCount() == 1 .AND. ValType( lOnOff ) == "L"
+      lStatus = lOnOff
+   endif
+
+return lOldStatus
+
+
+
+function SetCenterOnParent( lOnOff )
+
+   local lOldStatus
+
+   static lStatus := .F.
+
+   lOldStatus = lStatus
+
+   if PCount() == 1 .AND. ValType( lOnOff ) == "L"
+      lStatus = lOnOff
+   endif
+
+return lOldStatus
+
+
+
+function SetDlgGradient( aNewGradColors )
+
+   local aOldGradColors := aGradColors
+
+   aGradColors = aNewGradColors
+
+return aOldGradColors
+
+
+
+function FW_SetTruePixel( lOnOff )
+
+   local oDlg := TDialog()
+
+   if lOnOff <> nil
+      oDlg:lClsTruePixel = lOnOff
+   endif
+
+return oDlg:lClsTruePixel
+
+
+
+
+
+
+
+
+
+
+
+static FUNCTION TDialog_keysControl( nKey ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   if GetKeyState( 17 )
+
+      if isArray( ::aControlKeys ) .AND. len( ::aControlKeys ) > 0
+         aEval( ::aControlKeys, {|aKey| if( nKey == aKey[1] , Eval( aKey[2] ), ) } )
+      end
+
+   else
+
+      if isArray( ::aFastKeys ) .AND. len( ::aFastKeys ) > 0
+         aEval( ::aFastKeys, {|aKey| if( nKey == aKey[1] , Eval( aKey[2] ), ) } )
+      end
+
+   end
+
+RETURN nil
+
+
+
+static FUNCTION TDialog_setControlFastKey( cDirectory, uParam1, uParam2, uParam3, uParam4, uParam5, uParam6, uParam7, uParam8, uParam9, uParam10 ) ; local Self AS CLASS TDialog := QSelf() AS CLASS TDialog
+
+   if Empty( cDirectory )
+      RETURN ( nil )
+   end
+
+   ::AddControlKeys( 113,   {|| runEventScript( cDirectory + "\F2", uParam1, uParam2, uParam3, uParam4, uParam5, uParam6, uParam7, uParam8, uParam9, uParam10 ) } )
+   ::AddControlKeys( 114,   {|| runEventScript( cDirectory + "\F3", uParam1, uParam2, uParam3, uParam4, uParam5, uParam6, uParam7, uParam8, uParam9, uParam10 ) } )
+   ::AddControlKeys( 115,   {|| runEventScript( cDirectory + "\F4", uParam1, uParam2, uParam3, uParam4, uParam5, uParam6, uParam7, uParam8, uParam9, uParam10 ) } )
+   ::AddControlKeys( 116,   {|| runEventScript( cDirectory + "\F5", uParam1, uParam2, uParam3, uParam4, uParam5, uParam6, uParam7, uParam8, uParam9, uParam10 ) } )
+   ::AddControlKeys( 117,   {|| runEventScript( cDirectory + "\F6", uParam1, uParam2, uParam3, uParam4, uParam5, uParam6, uParam7, uParam8, uParam9, uParam10 ) } )
+   ::AddControlKeys( 118,   {|| runEventScript( cDirectory + "\F7", uParam1, uParam2, uParam3, uParam4, uParam5, uParam6, uParam7, uParam8, uParam9, uParam10 ) } )
+   ::AddControlKeys( 119,   {|| runEventScript( cDirectory + "\F8", uParam1, uParam2, uParam3, uParam4, uParam5, uParam6, uParam7, uParam8, uParam9, uParam10 ) } )
+   ::AddControlKeys( 120,   {|| runEventScript( cDirectory + "\F9", uParam1, uParam2, uParam3, uParam4, uParam5, uParam6, uParam7, uParam8, uParam9, uParam10 ) } )
+
+RETURN ( nil )

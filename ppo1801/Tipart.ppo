@@ -1,0 +1,2727 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 7 ".\.\Prg\Tipart.prg"
+_HB_CLASS TTipArt ; function TTipArt ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TTipArt", iif( .T., { @TMant() }, { @HBObject() } ), @TTipArt() ) ) ;
+
+   _HB_MEMBER { oClasificacionArticulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oClasificacionArticulo"}, .F. )
+
+   _HB_MEMBER { cText } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cText"}, .F. )
+   _HB_MEMBER { oSender } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSender"}, .F. )
+   _HB_MEMBER { cIniFile } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cIniFile"}, .F. )
+
+   _HB_MEMBER { nNumberSend } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nNumberSend"}, .F. )
+   _HB_MEMBER { nNumberRecive } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nNumberRecive"}, .F. )
+
+   _HB_MEMBER { lSelectSend } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lSelectSend"}, .F. )
+   _HB_MEMBER { lSelectRecive } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lSelectRecive"}, .F. )
+
+   _HB_MEMBER { cFileName } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFileName"}, .F. )
+
+   _HB_MEMBER New( cPath, oWndParent, oMenuItem) AS CLASS TTipArt; oClass:AddMethod( "New", @TTipArt_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Initiate( cText, oSender) AS CLASS TTipArt; oClass:AddMethod( "Initiate", @TTipArt_Initiate(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles( lExclusive); oClass:AddMethod( "OpenFiles", @TTipArt_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER OpenService( lExclusive); oClass:AddMethod( "OpenService", @TTipArt_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DefineFiles(); oClass:AddMethod( "DefineFiles", @TTipArt_DefineFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Activate(); oClass:AddMethod( "Activate", @TTipArt_Activate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lValid( oGet, oSay); oClass:AddMethod( "lValid", @TTipArt_lValid(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cNombre( cCodArt); oClass:AddMethod( "cNombre", @TTipArt_cNombre(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTipo( cCodArt); oClass:AddMethod( "nTipo", @TTipArt_nTipo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Resource( nMode); oClass:AddMethod( "Resource", @TTipArt_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InitResource(); oClass:AddMethod( "InitResource", @TTipArt_InitResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SaveResource( oGet, oGet2, oDlg); oClass:AddMethod( "SaveResource", @TTipArt_SaveResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PublicarWeb( lLoad); oClass:AddMethod( "PublicarWeb", @TTipArt_PublicarWeb(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Enviar( lLoad); oClass:AddMethod( "Enviar", @TTipArt_Enviar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lSelect( lSel, oBrw); oClass:AddMethod( "lSelect", @TTipArt_lSelect(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SelectAll( lSel, oBrw); oClass:AddMethod( "SelectAll", @TTipArt_SelectAll(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER getTitle(); oClass:AddInline( "getTitle", {|Self | ( ( Self ) ), ( ::cText ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setSelectSend(); oClass:AddInline( "setSelectSend", {|Self, lSelect | ( ( Self ) ), ( ::lSelectSend := lSelect ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getSelectSend(); oClass:AddInline( "getSelectSend", {|Self | ( ( Self ) ), ( ::lSelectSend ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setSelectRecive(); oClass:AddInline( "setSelectRecive", {|Self, lSelect | ( ( Self ) ), ( ::lSelectRecive := lSelect ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getSelectRecive(); oClass:AddInline( "getSelectRecive", {|Self | ( ( Self ) ), ( ::lSelectRecive ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CreateData(); oClass:AddMethod( "CreateData", @TTipArt_CreateData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER RestoreData(); oClass:AddMethod( "RestoreData", @TTipArt_RestoreData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SendData(); oClass:AddMethod( "SendData", @TTipArt_SendData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ReciveData(); oClass:AddMethod( "ReciveData", @TTipArt_ReciveData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Process(); oClass:AddMethod( "Process", @TTipArt_Process(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nGetNumberToSend(); oClass:AddInline( "nGetNumberToSend", {|Self | ( ( Self ) ), ( GetPvProfInt( "Numero", ::cText, ::nNumberSend, ::cIniFile ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setNumberToSend(); oClass:AddInline( "setNumberToSend", {|Self | ( ( Self ) ), ( WritePProString( "Numero", ::cText, cValToChar( ::nNumberSend ), ::cIniFile ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER incNumberToSend(); oClass:AddInline( "incNumberToSend", {|Self | ( ( Self ) ), ( WritePProString( "Numero", ::cText, cValToChar( ++::nNumberSend ), ::cIniFile ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER Save(); oClass:AddInline( "Save", {|Self | ( ( Self ) ), ( WritePProString( "Envio",     ::cText, cValToChar( ::lSelectSend ), ::cIniFile ), WritePProString( "Recepcion", ::cText, cValToChar( ::lSelectRecive ), ::cIniFile ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Load(); oClass:AddInline( "Load", {|Self | ( ( Self ) ), ( ::lSelectSend     := ( Upper( GetPvProfString( "Envio",     ::cText, cValToChar( ::lSelectSend ),   ::cIniFile ) ) == ".T." ), ::lSelectRecive   := ( Upper( GetPvProfString( "Recepcion", ::cText, cValToChar( ::lSelectRecive ), ::cIniFile ) ) == ".T." ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TTipArt ;
+
+
+
+static FUNCTION TTipArt_New( cPath, cDriver, oWndParent, oMenuItem ) ; local Self AS CLASS TTipArt := QSelf() AS CLASS TTipArt
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+   If( cDriver == nil, cDriver := cDriver(), ) ;
+   If( oWndParent == nil, oWndParent := GetWndFrame(), ) ;
+
+   ::cPath              := cPath
+   ::cDriver            := cDriver
+   ::oWndParent         := oWndParent
+
+   if oMenuItem <> nil
+      ::nLevel          := Auth():Level( oMenuItem )
+   else
+      ::nLevel          := Auth():Level( "01013" )
+   end
+
+   ::oDbf               := nil
+
+   ::cMru               := "gc_objects_16"
+
+   ::cBitmap            := ( 104 + ( 0 * 256 ) + ( 63 * 65536 ) )
+
+   ::cMessageNotFound   := "Tipo de artículo no encontrado."
+
+   ::lAutoButtons       := .F.
+   ::lCreateShell       := .F.
+
+RETURN ( Self )
+
+
+
+static FUNCTION TTipArt_Initiate( cText, oSender ) ; local Self AS CLASS TTipArt := QSelf() AS CLASS TTipArt
+
+   ::cText              := cText
+   ::oSender            := oSender
+   ::cIniFile           := cIniEmpresa()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TTipArt_OpenFiles( lExclusive, cPath ) ; local Self AS CLASS TTipArt := QSelf() AS CLASS TTipArt
+
+   local oBlock
+   local oError
+   local lOpen          := .T.
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   oBlock               := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      if Empty( ::oDbf )
+         ::DefineFiles( cPath )
+      end
+
+      ::oDbf:Activate( .F., !( lExclusive ) )
+
+   RECOVER USING oError
+
+      msgStop( ErrorMessage( oError ), "Imposible abrir las bases de datos de tipos de artículos" )
+
+      ::CloseFiles()
+
+      lOpen             := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TTipArt_DefineFiles( cPath, cDriver ) ; local Self AS CLASS TTipArt := QSelf() AS CLASS TTipArt
+
+   If( cPath == nil, cPath := if( empty( ::cPath ), cPatEmp(), ::cPath ), ) ;
+   If( cDriver == nil, cDriver := if( empty( ::cDriver ), cDriver(), ::cDriver ), ) ;
+
+   ::oDbf := DbfServer( "Tipart.Dbf", "Tipart" ):New( "Tipart.Dbf", "Tipart", ( cDriver ), "Tipos de artículos", ( cPath ) )
+
+
+      ::oDbf:AddField( "bSndDoc", "B", 14, 0,,,, {|| ::oDbf:FieldGetByName( "lSelect" ) }, { "Enviar", "gc_mail2_16", 3 }, .F., 20, .F., {"gc_mail2_12", "Nil16"} )
+
+
+      ::oDbf:AddField( "bPubInt", "B", 14, 0,,,, {|| ::oDbf:FieldGetByName( "lPubInt" ) }, { "Publicar", "gc_earth_16", 3 }, .F., 20, .F., {"gc_earth_12", "Nil16"} )
+
+      ::oDbf:AddField( "cCodTip", "C", 4, 0, "@!",,,, "Código", .F., 60, .F., {} )
+      ::oDbf:AddField( "cNomTip", "C", 100, 0,,,,, "Nombre", .F., 200, .F., {} )
+
+
+      ::oDbf:AddField( "cTipArt", "B", 100, 0,,,, {|| ClasificacionTipoArticulo():GetNombre( ::oDbf:FieldGetByName( "nTipArt" ) ) }, "Clasificación", .F., 120, .F., {} )
+
+      ::oDbf:AddField( "nTipArt", "N", 1, 0,,,,, "", .F., 0, .T., {} )
+      ::oDbf:AddField( "lSelect", "L", 1, 0,,,,, "", .F., 0, .T., {} )
+      ::oDbf:AddField( "lPubInt", "L", 1, 0,,,,, "", .F., 0, .T., {} )
+      ::oDbf:AddField( "cCodWeb", "N", 11, 0,,,,, "Código Web", .F.,, .T., {} )
+      ::oDbf:AddField( "cImgTip", "C", 250, 0,,,,, "Imagen", .F.,, .T., {} )
+      ::oDbf:AddField( "nPosInt", "N", 3, 0,,,,, "nPosInt", .F.,, .T., {} )
+      ::oDbf:AddField( "cNomInt", "C", 100, 0,,,,, "Nombre comercio electrónico", .F.,, .F., {} )
+
+      ::oDbf:AddIndex( "cCodTip", "TipArt.CDX", "cCodTip",,, .F., .F., "Código",,, .T., .F. )
+      ::oDbf:AddIndex( "cNomTip", "TipArt.CDX", "Upper( cNomTip )",,, .F., .F., "Nombre",,, .T., .F. )
+      ::oDbf:AddIndex( "cCodWeb", "TipArt.CDX", "Str( cCodWeb, 11 )",,, .F., .F., "Códigoweb",,, .T., .F. )
+
+
+
+RETURN ( ::oDbf )
+
+
+
+static FUNCTION TTipArt_Activate( ) ; local Self AS CLASS TTipArt := QSelf() AS CLASS TTipArt
+
+   if nAnd( ::nLevel, 1 ) == 0
+      msgStop( "Acceso no permitido." )
+      Return ( Self )
+   end
+
+
+
+
+
+   if ::oWndParent <> nil
+      ::oWndParent:CloseAll()
+   end
+
+   if Empty( ::oDbf ) .OR. !::oDbf:Used()
+      ::lOpenFiles      := ::OpenFiles()
+   end
+
+
+
+
+
+   if ::lOpenFiles
+
+      if !::lCreateShell
+         ::CreateShell( ::nLevel )
+      end
+
+      ::oWndBrw:GralButtons( Self )
+
+
+
+
+
+
+      ::oWndBrw:NewAt( "Lbl",,, {||( ::Enviar( .T. ) )}, "En(v)iar", "V",,, 4,, .F. )
+
+
+
+
+
+
+      ::oWndBrw:NewAt( "SNDINT",,, {||( ::PublicarWeb( .T. ) )}, "(P)ublicar", "P",,, 4,, .F. )
+
+      ::oWndBrw:EndButtons( Self )
+
+      if ::cHtmlHelp <> nil
+         ::oWndBrw:cHtmlHelp  := ::cHtmlHelp
+      end
+
+      ::oWndBrw:Activate( nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, {|| ::CloseFiles() }, nil, nil )
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TTipArt_Resource( nMode ) ; local Self AS CLASS TTipArt := QSelf() AS CLASS TTipArt
+
+    local oDlg
+   local oGet
+   local oGetNombre
+   local oGetNombreInt
+   local oGetImagen
+   local oBmpImagen
+
+   if ( nMode == 1 )
+      ::oDbf:nPosInt := 1
+      ::oDbf:nTipArt := 1
+   end
+
+   oDlg = TDialog():New(,,,, LblTitle( nMode ) + "tipos de artículos", "TipArt",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+      oGet := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, ::oDbf:cCodTip, ::oDbf:cCodTip:= u ) }, oDlg,, "@!",,,,,,, .T., {||     ( nMode == 1 )},, .F., .F.,,,,,, nil,,, )
+
+         oGet:bHelp           := {|| oGet:cText( NextKey( ::oDbf:cCodTip, ::oDbf, , 4 ) ) }
+         oGet:cBmp            := "BOT"
+
+
+
+
+      oGetNombre := TGetHlp():ReDefine( 110, { | u | If( PCount()==0, ::oDbf:cNomTip, ::oDbf:cNomTip:= u ) }, oDlg,,,,,,,,, .T., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+      ::oClasificacionArticulo   := ClasificacionTipoArticulo():New( 200, oDlg )
+      ::oClasificacionArticulo:SetMode( nMode )
+
+
+
+
+      oGetNombreInt := TGetHlp():ReDefine( 150, { | u | If( PCount()==0, ::oDbf:cNomInt, ::oDbf:cNomInt:= u ) }, oDlg,,,,,,,,, .T., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TCheckBox():ReDefine( 130, { | u | If( PCount()==0, ::oDbf:lPubInt, ::oDbf:lPubInt:= u ) }, oDlg,,,,,,, .F., {||     ( nMode <> 3 )}, .F. )
+
+
+
+
+
+
+
+
+      TGetHlp():ReDefine( 180, { | u | If( PCount()==0, ::oDbf:nPosInt, ::oDbf:nPosInt:= u ) }, oDlg,,, {||    ( ::oDbf:nPosInt >= 1 .AND. ::oDbf:nPosInt <= 999 )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,, {||      1}, {||      999},, nil,,, )
+
+
+
+
+
+
+
+      oGetImagen := TGetHlp():ReDefine( 120, { | u | If( PCount()==0, ::oDbf:cImgTip, ::oDbf:cImgTip:= u ) }, oDlg,,,,,,,,, .T., {||     ( nMode <> 3 )}, {|nKey,nFlags,Self| ( ChgBmp( oGetImagen, oBmpImagen ) ) }, .F., .F.,,,,, {|Self|( GetBmp( oGetImagen, oBmpImagen ) )}, nil, "Folder",, )
+
+
+
+
+      oBmpImagen := TImage():ReDefine( 600,, cFileBmpName( ::oDbf:cImgTip ), oDlg,,, .F., .F.,,, .F.,,, .F. )
+
+      oBmpImagen:SetColor( , GetSysColor( 15 ) )
+      oBmpImagen:bLClicked  := {|| ShowImage( oBmpImagen ) }
+      oBmpImagen:bRClicked  := {|| ShowImage( oBmpImagen ) }
+
+
+
+
+
+      TGetHlp():ReDefine( 140, { | u | If( PCount()==0, ::oDbf:cCodWeb, ::oDbf:cCodWeb:= u ) }, oDlg,, "99999",,,,,,, .T., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      TButton():ReDefine( 1, {||( ::SaveResource( oGet, oGetNombre, oDlg, nMode ) )}, oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+        TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+
+
+
+   TButton():ReDefine( 9, {||( ChmHelp( "Tipos_de_artículos" ) )}, oDlg,,, .F.,,,, .F. )
+
+   if nMode <> 3
+      oDlg:AddFastKey( 116, {|| ::SaveResource( oGet, oGetNombre, oDlg ) } )
+   end
+
+   oDlg:AddFastKey( 112, {|| ChmHelp( "Tipos_de_artículos" ) } )
+
+   oDlg:bStart    := {|| oGet:SetFocus() }
+
+   oDlg:Activate( , , , .T., , , {|| ::InitResource() } )
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+static FUNCTION TTipArt_InitResource( ) ; local Self AS CLASS TTipArt := QSelf() AS CLASS TTipArt
+
+   ::oClasificacionArticulo:SetNumber( ::oDbf:nTipArt )
+
+Return ( Self )
+
+
+
+static FUNCTION TTipArt_SaveResource( oGet, oGetNombre, oDlg ) ; local Self AS CLASS TTipArt := QSelf() AS CLASS TTipArt
+
+   if ( ::nMode == 1 .OR. ::nMode == 4 )
+
+      if Empty( ::oDbf:cCodTip )
+         MsgStop( "Código de tipo de artículo no puede estar vacío." )
+         oGet:SetFocus()
+         Return .F.
+      end
+
+
+
+      if ::oDbf:SeekInOrd( ::oDbf:cCodTip, "cCodTip" )
+         MsgStop( "Código ya existe " + Rtrim( ::oDbf:cCodTip ) )
+         return .F.
+      end
+
+   end
+
+   if Empty( ::oDbf:cNomTip )
+      MsgStop( "Nombre de tipo de artículo no puede estar vacío." )
+      oGetNombre:SetFocus()
+      Return .F.
+   end
+
+   ::oDbf:lSelect    := .T.
+   ::oDbf:cCodWeb    := 0
+   ::oDbf:nTipArt    := ::oClasificacionArticulo:GetNumber()
+
+RETURN ( oDlg:end( 1 ) )
+
+
+
+static FUNCTION TTipArt_lSelect( lSel, oBrw ) ; local Self AS CLASS TTipArt := QSelf() AS CLASS TTipArt
+
+   ::oDbf:FieldPutByName( "lSelect", lSel )
+
+   if oBrw <> nil
+      oBrw:Refresh()
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TTipArt_SelectAll( lSel, oBrw ) ; local Self AS CLASS TTipArt := QSelf() AS CLASS TTipArt
+
+   If( lSel == nil, lSel := .F., ) ;
+
+   ::oDbf:GetStatus()
+
+   ::oDbf:GoTop()
+   while !( ::oDbf:eof() )
+      ::lSelect( lSel )
+      ::oDbf:Skip()
+   end
+
+   ::oDbf:SetStatus()
+
+   if oBrw <> nil
+      oBrw:Refresh()
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TTipArt_lValid( oGet, oSay ) ; local Self AS CLASS TTipArt := QSelf() AS CLASS TTipArt
+
+   local cCodArt  := oGet:VarGet()
+
+   if empty( cCodArt )
+      return .T.
+   end
+
+   if ::oDbf:SeekInOrd( cCodArt, "cCodTip" )
+
+      oGet:cText( cCodArt )
+
+      if oSay <> nil
+         oSay:cText( ::oDbf:cNomTip )
+      end
+
+   else
+
+      msgStop( "Código de tipo de artículo no encontrado" )
+
+      return .F.
+
+   end
+
+RETURN .T.
+
+
+
+static FUNCTION TTipArt_cNombre( cCodTip ) ; local Self AS CLASS TTipArt := QSelf() AS CLASS TTipArt
+
+   local cNombre  := ""
+
+   if ::oDbf:Seek( cCodTip )
+      cNombre     := ::oDbf:cNomTip
+   end
+
+RETURN ( cNombre )
+
+
+
+static FUNCTION TTipArt_nTipo( cCodTip ) ; local Self AS CLASS TTipArt := QSelf() AS CLASS TTipArt
+
+   local nTipo  := 0
+
+   if ::oDbf:Seek( cCodTip )
+      nTipo     := ::oDbf:nTipArt
+   end
+
+RETURN ( nTipo )
+
+
+
+static FUNCTION TTipArt_PublicarWeb( ) ; local Self AS CLASS TTipArt := QSelf() AS CLASS TTipArt
+
+   local nSelected
+   local lPublicar   := !::oDbf:lPubInt
+
+   ::oDbf:getStatus()
+
+   for each nSelected in ( ::oWndBrw:oBrw:aSelected )
+      ::oDbf:goTo( nSelected )
+      ::oDbf:FieldPutByName( "lPubInt", lPublicar )
+      ::oDbf:FieldPutByName( "lSelect", lPublicar )
+      ::oDbf:FieldPutByName( "cCodWeb", 0 )
+   next
+
+   ::oDbf:setStatus()
+
+   ::oWndBrw:Refresh()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TTipArt_Enviar( lLoad ) ; local Self AS CLASS TTipArt := QSelf() AS CLASS TTipArt
+
+   local nSelected
+
+   ::oDbf:getStatus()
+
+   for each nSelected in ( ::oWndBrw:oBrw:aSelected )
+      ::oDbf:goTo( nSelected )
+      ::oDbf:FieldPutByName( "lSelect", !::oDbf:lSelect )
+      ::oDbf:FieldPutByName( "cCodWeb", 0 )
+   next
+
+   ::oDbf:setStatus()
+
+   ::oWndBrw:Refresh()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TTipArt_CreateData( ) ; local Self AS CLASS TTipArt := QSelf() AS CLASS TTipArt
+
+   local lSnd           := .F.
+   local oTipoArt
+   local oTipoArtTmp
+
+   if ::oSender:lServer
+      ::cFileName       := "TipArt" + win_uuidcreatestring() + ".All"
+   else
+      ::cFileName       := "TipArt" + win_uuidcreatestring() + "." + retSufEmp()
+   end
+
+   oTipoArt             := TTipArt():Create( cPatEmp(), cDriver() )
+   oTipoArt:OpenService()
+
+
+
+   oTipoArtTmp          := TTipArt():Create( cPatSnd(), cLocalDriver() )
+   oTipoArtTmp:OpenService( .T. )
+
+
+
+   ::oSender:SetText( "Enviando tipos de artículos" )
+
+   oTipoArt:oDbf:GoTop()
+   while !oTipoArt:oDbf:eof()
+
+      if oTipoArt:oDbf:lSelect
+
+         lSnd           := .T.
+
+         ::oSender:SetText( oTipoArt:oDbf:cCodTip + "; " + oTipoArt:oDbf:cNomTip )
+
+         dbPass( oTipoArt:oDbf:cAlias, oTipoArtTmp:oDbf:cAlias, .T. )
+
+      end
+
+      oTipoArt:oDbf:Skip()
+
+      SysRefresh()
+
+   end
+
+
+
+   oTipoArt:CloseService()
+   oTipoArt:End()
+
+   oTipoArtTmp:CloseService()
+   oTipoArtTmp:End()
+
+
+
+   if lSnd
+
+      ::oSender:SetText( "Comprimiendo tipos de artículos" )
+
+      if ::oSender:lZipData( ::cFileName )
+         ::oSender:SetText( "Ficheros comprimidos en " + ::cFileName )
+      else
+         ::oSender:SetText( "¡ERROR! al crear fichero comprimido" )
+      end
+
+   else
+
+      ::oSender:SetText( "No hay tipos de artículos para enviar" )
+
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TTipArt_RestoreData( ) ; local Self AS CLASS TTipArt := QSelf() AS CLASS TTipArt
+
+   ::cPath     := cPatEmp()
+
+   if ::OpenService()
+
+      while !::oDbf:eof()
+
+         if ::oDbf:lSelect
+            ::oDbf:FieldPutByName( "lSelect", .F. )
+         end
+
+         ::oDbf:Skip()
+
+      end
+
+      ::CloseService()
+
+   end
+
+
+Return ( Self )
+
+
+
+static FUNCTION TTipArt_SendData( ) ; local Self AS CLASS TTipArt := QSelf() AS CLASS TTipArt
+
+   if file( cPatOut() + ::cFileName )
+
+      if ::oSender:SendFiles( cPatOut() + ::cFileName, ::cFileName )
+         ::oSender:SetText( "Fichero " + lower( cPatOut() + ::cFileName ) + " enviado" )
+      else
+         ::oSender:SetText( "¡ERROR! fichero " + lower( cPatOut() + ::cFileName ) + " no enviado" )
+      end
+
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TTipArt_ReciveData( ) ; local Self AS CLASS TTipArt := QSelf() AS CLASS TTipArt
+
+   local cDelegacion
+   local aDelegaciones
+
+   if ::oSender:lServer
+      aDelegaciones     := aRetDlgEmp()
+   else
+      aDelegaciones     := { "All" }
+   end
+
+
+
+
+
+   ::oSender:SetText( "Recibiendo tipos de artículos" )
+
+   for each cDelegacion in aDelegaciones
+      ::oSender:GetFiles( "TipArt*." + cDelegacion, cPatIn() )
+   next
+
+   ::oSender:SetText( "Tipos de artículos recibidas" )
+
+Return ( Self )
+
+
+
+static FUNCTION TTipArt_Process( ) ; local Self AS CLASS TTipArt := QSelf() AS CLASS TTipArt
+
+   local m
+   local oBlock
+   local oError
+   local oTipArt
+   local oTipArtTmp
+   local aFiles      := Directory( cPatIn() )
+
+   for m := 1 to len( aFiles )
+
+      ::oSender:SetText( "Procesando fichero : " + aFiles[ m, 1 ] )
+
+      oBlock         := ErrorBlock( { | oError | ApoloBreak( oError ) } )
+      BEGIN SEQUENCE
+
+
+
+         if ::oSender:lUnZipData( cPatIn() + aFiles[ m, 1 ] )
+
+
+
+            if file( cPatSnd() + "TipArt.Dbf" )
+
+               oTipArtTmp   := TTipArt():New( cPatSnd(), cLocalDriver() )
+               oTipArtTmp:OpenService( .F. )
+
+               oTipArt      := TTipArt():New( cPatEmp(), cDriver() )
+               oTipArt:OpenService()
+
+
+
+               oTipArtTmp:oDbf:GoTop()
+               while !oTipArtTmp:oDbf:eof()
+
+                  if oTipArt:oDbf:Seek( oTipArtTmp:oDbf:cCodTip )
+
+                     dbPass( oTipArtTmp:oDbf:cAlias, oTipArt:oDbf:cAlias, .F. )
+
+                     oTipArt:oDbf:Load()
+                     oTipArt:oDbf:lSelect := .F.
+                     oTipArt:oDbf:Save()
+
+                     ::oSender:SetText( "Reemplazado : " + oTipArt:oDbf:cCodTip + "; " + oTipArt:oDbf:cNomTip )
+
+                  else
+
+                     dbPass( oTipArtTmp:oDbf:cAlias, oTipArt:oDbf:cAlias, .T. )
+
+                     oTipArt:oDbf:Load()
+                     oTipArt:oDbf:lSelect := .F.
+                     oTipArt:oDbf:Save()
+
+                     ::oSender:SetText( "Añadido : " + oTipArt:oDbf:cCodTip + "; " + oTipArt:oDbf:cNomTip )
+
+                  end
+
+                  oTipArtTmp:oDbf:Skip()
+
+                  SysRefresh()
+
+               end
+
+
+
+
+
+               oTipArt:CloseService()
+               oTipArt:End()
+
+               oTipArtTmp:CloseService()
+               oTipArtTmp:End()
+
+            else
+
+               ::oSender:SetText( "No existe el fichero " + cPatSnd() + "TipArt.Dbf" )
+
+            end
+
+         end
+
+         ::oSender:AppendFileRecive( aFiles[ m, 1 ] )
+
+      RECOVER USING oError
+
+         ::oSender:SetText( "Error procesando fichero " + aFiles[ m, 1 ] )
+         ::oSender:SetText( ErrorMessage( oError ) )
+
+      end
+
+      ErrorBlock( oBlock )
+
+   next
+
+Return ( Self )
+
+
+
+_HB_CLASS ClasificacionTipoArticulo ; function ClasificacionTipoArticulo ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "ClasificacionTipoArticulo", iif( .F., { }, { @HBObject() } ), @ClasificacionTipoArticulo() ) ) ;
+
+   _HB_MEMBER { oClasificacionArticulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oClasificacionArticulo"}, .F. )
+   _HB_MEMBER { cClasificacionArticulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cClasificacionArticulo"}, .F. )
+
+   _HB_MEMBER { aClasificacionArticulo } ; oClass:AddMultiClsData(, { "Terminado", "Semiterminado", "Materia prima", "Desecho", "Otros" }, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aClasificacionArticulo"}, .F. )
+
+   _HB_MEMBER New( nId, oDialog); oClass:AddMethod( "New", @ClasificacionTipoArticulo_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Change() ; oClass:AddVirtual( "Change" )
+
+   _HB_MEMBER GetText(); oClass:AddInline( "GetText", {|Self | ( ( Self ) ), ( ::oClasificacionArticulo:VarGet() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetText(); oClass:AddInline( "SetText", {|Self, cText | ( ( Self ) ), ( ::oClasificacionArticulo:Set( cText ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetNumber(); oClass:AddInline( "GetNumber", {|Self | ( ( Self ) ), ( ::oClasificacionArticulo:nAt ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetNumber(); oClass:AddInline( "SetNumber", {|Self, nNumber | ( ( Self ) ), ( ::SetText( nNumber ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetMode(); oClass:AddInline( "SetMode", {|Self, nMode | ( ( Self ) ), ( ::oClasificacionArticulo:bWhen := {| nMode | nMode <> 1 } ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetNombre(); oClass:AddMethod( "GetNombre", @ClasificacionTipoArticulo_GetNombre(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS ClasificacionTipoArticulo ;
+
+
+
+static FUNCTION ClasificacionTipoArticulo_New( nId, oDialog ) ; local Self AS CLASS ClasificacionTipoArticulo := QSelf() AS CLASS ClasificacionTipoArticulo
+
+
+
+
+
+   ::oClasificacionArticulo := TComboBox():ReDefine( ( nId ), { | u | If( PCount()==0, ::cClasificacionArticulo, ::cClasificacionArticulo:= u ) }, ::aClasificacionArticulo, oDialog,,,,,,, .F.,,,,,,, "::oClasificacionArticulo",,,,,,, )
+
+   ::oClasificacionArticulo:bChange := {|| ::Change( ::oClasificacionArticulo ) }
+
+RETURN ( Self )
+
+
+
+static FUNCTION ClasificacionTipoArticulo_GetNombre( nTipArt ) ; local Self AS CLASS ClasificacionTipoArticulo := QSelf() AS CLASS ClasificacionTipoArticulo
+
+   local cNombre     := ""
+
+   if nTipArt > 0
+      cNombre        := ::aClasificacionArticulo[ ( Min( Max( nTipArt, 1 ), len( ::aClasificacionArticulo ) ) ) ]
+   end
+
+RETURN ( cNombre )
+
+
+
+Function GetNombreClasificacionTipoArticulo( nTipoArticulo )
+
+Return ( ClasificacionTipoArticulo():GetNombre( nTipoArticulo ) )

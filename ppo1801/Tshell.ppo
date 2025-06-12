@@ -1,0 +1,4878 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 35 ".\.\Prg\Tshell.prg"
+static oFontLittelTitle
+static oFontBigTitle
+static oFontTotal
+
+
+
+
+
+
+
+_HB_CLASS TShell ; function TShell ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TShell", iif( .T., { @TMdiChild() }, { @HBObject() } ), @TShell() ) ) ;
+
+   _HB_MEMBER { oBrw } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrw"}, .F. )
+   _HB_MEMBER { oWndBar } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oWndBar"}, .F. )
+   _HB_MEMBER { oBtnBar } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnBar"}, .F. )
+   _HB_MEMBER { oBtnMain } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnMain"}, .F. )
+   _HB_MEMBER { oBtnTop } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnTop"}, .F. )
+   _HB_MEMBER { oMsgBar } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oMsgBar"}, .F. )
+   _HB_MEMBER { oTabs } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTabs"}, .F. )
+   _HB_MEMBER { oCombobox } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCombobox"}, .F. )
+   _HB_MEMBER { cCombobox } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCombobox"}, .F. )
+   _HB_MEMBER { oFont } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFont"}, .F. )
+   _HB_MEMBER { oIcon } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oIcon"}, .F. )
+
+   _HB_MEMBER { nWindow } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nWindow"}, .F. )
+
+   _HB_MEMBER { xAlias } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"xAlias"}, .F. )
+   _HB_MEMBER { nArea } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nArea"}, .F. )
+   _HB_MEMBER { cTitle } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTitle"}, .F. )
+   _HB_MEMBER { cWinName } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cWinName"}, .F. )
+   _HB_MEMBER { cCodigoUsuario } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoUsuario"}, .F. )
+
+   _HB_MEMBER { aPrompt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aPrompt"}, .F. )
+   _HB_MEMBER { aFastKey } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aFastKey"}, .F. )
+   _HB_MEMBER { AS ARRAY aFlds } ; oClass:AddMultiData( "ARRAY", {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aFlds"}, .F. )
+   _HB_MEMBER { AS ARRAY aHeaders } ; oClass:AddMultiData( "ARRAY", {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aHeaders"}, .F. )
+   _HB_MEMBER { AS ARRAY aColSizes } ; oClass:AddMultiData( "ARRAY", {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aColSizes"}, .F. )
+   _HB_MEMBER { AS ARRAY aColSelect } ; oClass:AddMultiData( "ARRAY", {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aColSelect"}, .F. )
+   _HB_MEMBER { AS ARRAY aColPos } ; oClass:AddMultiData( "ARRAY", {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aColPos"}, .F. )
+   _HB_MEMBER { AS ARRAY aJustify } ; oClass:AddMultiData( "ARRAY", {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aJustify"}, .F. )
+   _HB_MEMBER { nLevel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nLevel"}, .F. )
+   _HB_MEMBER { lCenter } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lCenter"}, .F. )
+   _HB_MEMBER { nSizeBtn } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nSizeBtn"}, .F. )
+   _HB_MEMBER { AS ARRAY aKey } ; oClass:AddMultiData( "ARRAY", {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aKey"}, .F. )
+   _HB_MEMBER { oTxtSea } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTxtSea"}, .F. )
+   _HB_MEMBER { AS ARRAY aLstSea } ; oClass:AddMultiData( "ARRAY", {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aLstSea"}, .F. )
+   _HB_MEMBER { dbfUsr } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dbfUsr"}, .F. )
+   _HB_MEMBER { dbfCol } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dbfCol"}, .F. )
+   _HB_MEMBER { AS NUMERIC nRec } ; oClass:AddMultiData( "NUMERIC", 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRec"}, .F. )
+   _HB_MEMBER { nTab } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTab"}, .F. )
+   _HB_MEMBER { cCfg } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCfg"}, .F. )
+   _HB_MEMBER { lMin } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lMin"}, .F. )
+   _HB_MEMBER { lZoom } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lZoom"}, .F. )
+   _HB_MEMBER { AS LOGIC lNoSave } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lNoSave"}, .F. )
+   _HB_MEMBER { AS LOGIC lBmpMenu } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lBmpMenu"}, .F. )
+   _HB_MEMBER { AS LOGIC lAutoSeek } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lAutoSeek"}, .F. )
+   _HB_MEMBER { bExpFilter } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bExpFilter"}, .F. )
+   _HB_MEMBER { AS ARRAY aRecFilter } ; oClass:AddMultiData( "ARRAY",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aRecFilter"}, .F. )
+   _HB_MEMBER { AS LOGIC lBigStyle } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lBigStyle"}, .F. )
+   _HB_MEMBER { AS LOGIC lDrag } ; oClass:AddMultiData( "LOGIC",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lDrag"}, .F. )
+   _HB_MEMBER { AS LOGIC lAutoPos } ; oClass:AddMultiData( "LOGIC", .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lAutoPos"}, .F. )
+   _HB_MEMBER { nFlds } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nFlds"}, .F. )
+   _HB_MEMBER { cHtmlHelp } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cHtmlHelp"}, .F. )
+   _HB_MEMBER { aGoTo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aGoTo"}, .F. )
+
+   _HB_MEMBER { aOriginal } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aOriginal"}, .F. )
+
+   _HB_MEMBER { bAdd } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bAdd"}, .F. )
+   _HB_MEMBER { bEdit } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bEdit"}, .F. )
+   _HB_MEMBER { bDel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bDel"}, .F. )
+   _HB_MEMBER { bDup } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bDup"}, .F. )
+   _HB_MEMBER { bZoo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bZoo"}, .F. )
+
+   _HB_MEMBER { AS LOGIC lFastButtons } ; oClass:AddMultiData( "LOGIC", .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lFastButtons"}, .F. )
+
+   _HB_MEMBER { AS LOGIC lTactil } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lTactil"}, .F. )
+
+   _HB_MEMBER { cAsteriskFilter } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAsteriskFilter"}, .F. )
+
+   _HB_MEMBER { oActiveFilter } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oActiveFilter"}, .F. )
+   _HB_MEMBER { AS LOGIC lActiveFilter } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lActiveFilter"}, .F. )
+
+   _HB_MEMBER { AS LOGIC lChanged } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lChanged"}, .F. )
+
+   _HB_MEMBER { bDestroy } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bDestroy"}, .F. )
+
+   _HB_MEMBER { oImageList } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oImageList"}, .F. )
+   _HB_MEMBER { oVerticalSplitter } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oVerticalSplitter"}, .F. )
+   _HB_MEMBER { oHorizontalSplitter } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oHorizontalSplitter"}, .F. )
+
+   _HB_MEMBER { AS LOGIC lOnProcess } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lOnProcess"}, .F. )
+
+   _HB_MEMBER { AS LOGIC lOpenData } ; oClass:AddMultiData( "LOGIC", .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lOpenData"}, .F. )
+
+   _HB_MEMBER { AS LOGIC lFechado } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lFechado"}, .F. )
+   _HB_MEMBER { AS LOGIC lFooter } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lFooter"}, .F. )
+
+   _HB_MEMBER { oFilter } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFilter"}, .F. )
+
+   _HB_MEMBER { bToolTip } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bToolTip"}, .F. )
+   _HB_MEMBER { oDialogTip } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDialogTip"}, .F. )
+   _HB_MEMBER { oTimer } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTimer"}, .F. )
+
+   _HB_MEMBER { bChgIndex } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bChgIndex"}, .F. )
+
+   _HB_MEMBER { bFilter } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bFilter"}, .F. )
+
+   _HB_MEMBER { cSearchType } ; oClass:AddMultiData(, "justSpace", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSearchType"}, .F. )
+   _HB_MEMBER { nLenSearchType } ; oClass:AddMultiData(, 10, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nLenSearchType"}, .F. )
+
+   _HB_MEMBER { AS LOGIC lFilterClient } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lFilterClient"}, .F. )
+   _HB_MEMBER { AS LOGIC lFilterProvee } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lFilterProvee"}, .F. )
+
+   _HB_MEMBER { AS NUMERIC nToolTip } ; oClass:AddMultiClsData( "NUMERIC", 900, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nToolTip"}, .F. )
+
+
+
+
+   _HB_MEMBER New( nTop, nLeft, nBottom, nRight, cTitle, oMenu, oWnd, oIcon, oCursor, lPixel, nHelpId, aFlds, xAlias, aHeaders, aColSizes, aColSelect, aJustify, aPrompt, bAdd, bEdit, bDel, bDup, nSizeBtn, nLevel, cMru, cInifile) AS CLASS TShell; oClass:AddMethod( "New", @TShell_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Create(); oClass:AddInline( "Create", {|Self | ( ( Self ) ), ( Self ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+   _HB_MEMBER Activate( cShow, bLClicked, bRClicked, bMoved, bResized, bPainted, bKeyDown, bInit, bUp, bDown, bPgUp, bPgDn, bLeft, bRight, bPgLeft, bPgRight, bValid, bDropFiles, bLButtonUp); oClass:AddMethod( "Activate", @TShell_Activate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setXAlias(); oClass:AddInline( "setXAlias", {|Self, xAlias | ( ( Self ) ), ( if( isObject( xAlias ), ::xAlias := xAlias:cAlias, ::xAlias := xAlias ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CreateXBrowse(); oClass:AddMethod( "CreateXBrowse", @TShell_CreateXBrowse(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CreateXFromCode(); oClass:AddMethod( "CreateXFromCode", @TShell_CreateXFromCode(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getBrowse(); oClass:AddInline( "getBrowse", {|Self | ( ( Self ) ), ( msgalert(hb_valtoexp(::oBrw)), ::oBrw ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddXCol(); oClass:AddInline( "AddXCol", {|Self | ( ( Self ) ), ( ::oBrw:AddCol() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddCol(); oClass:AddInline( "AddCol", {|Self | ( ( Self ) ), ( ::oBrw:AddCol() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER selectColumnOrder(); oClass:AddMethod( "selectColumnOrder", @TShell_selectColumnOrder(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER compareOrden(); oClass:AddMethod( "compareOrden", @TShell_compareOrden(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER GotFocus(); oClass:AddMethod( "GotFocus", @TShell_GotFocus(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER KeyChar( nKey, nFlags); oClass:AddMethod( "KeyChar", @TShell_KeyChar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER KeySearch( nKey, nFlags, oWndBar); oClass:AddMethod( "KeySearch", @TShell_KeySearch(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER RecAdd(); oClass:AddMethod( "RecAdd", @TShell_RecAdd(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER RecEdit(); oClass:AddMethod( "RecEdit", @TShell_RecEdit(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER RecDup(); oClass:AddMethod( "RecDup", @TShell_RecDup(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER RecZoom(); oClass:AddMethod( "RecZoom", @TShell_RecZoom(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER RecDel(); oClass:AddMethod( "RecDel", @TShell_RecDel(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER CtrlKey( nKey); oClass:AddMethod( "CtrlKey", @TShell_CtrlKey(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER KeyDown( nKey, nFlags); oClass:AddMethod( "KeyDown", @TShell_KeyDown(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER NewAt( cResName1, cResName2, cBmpFile1, cBmpFile2, cMsg, bAction, lGroup, lAdjust, bWhen, cToolTip, lPressed, bDrop, cAction, cPrompt, oFont, lNoBorder, bMenu, cKey, lMru, lSeaMru, lOpened); oClass:AddMethod( "NewAt", @TShell_NewAt(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER Search(); oClass:AddMethod( "Search", @TShell_Search(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER killScope(); oClass:AddMethod( "killScope", @TShell_killScope(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ChangeSeek( oIndice); oClass:AddMethod( "ChangeSeek", @TShell_ChangeSeek(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ChgIndex( oGet, oIndice); oClass:AddMethod( "ChgIndex", @TShell_ChgIndex(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER fastSeek(); oClass:AddMethod( "fastSeek", @TShell_fastSeek(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lCloseArea(); oClass:AddInline( "lCloseArea", {|Self | ( ( Self ) ), ( .T. )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER Refresh(); oClass:AddInline( "Refresh", {|Self | ( ( Self ) ), ( if( !empty( ::oBtnMain ), ::oBtnBar:Select( ::oBtnMain ), ), if( !empty( ::oBrw ) .AND. ( ::oBrw:lActive ), ::oBrw:Refresh(), ), if( !empty( ::oBtnTop ), ::oBtnTop:Refresh(), ), ::Super:Refresh() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER UpStable(); oClass:AddInline( "UpStable", {|Self | ( ( Self ) ), ( if( !empty( ::oBtnMain ), ::oBtnBar:Select( ::oBtnMain ), ), if( !empty( ::oBrw ) .AND. ( ::oBrw:lActive ), ::oBrw:Refresh(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GoUp(); oClass:AddInline( "GoUp", {|Self | ( ( Self ) ), ( ::oBrw:GoUp() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GoDown(); oClass:AddInline( "GoDown", {|Self | ( ( Self ) ), ( ::oBrw:GoDown() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Select(); oClass:AddInline( "Select", {|Self | ( ( Self ) ), ( if( !empty( ::oBrw ) .AND. ( ::oBrw:lActive ), ( ::oBrw:Refresh(), ::oBrw:Select() ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SelectOne(); oClass:AddInline( "SelectOne", {|Self | ( ( Self ) ), ( if( !empty( ::oBrw ) .AND. ( ::oBrw:lActive ), ( ::oBrw:SelectOne() ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetFocus(); oClass:AddMethod( "SetFocus", @TShell_SetFocus(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER putFocus(); oClass:AddInline( "putFocus", {|Self | ( ( Self ) ), ( ::setWindowsBar(), ::SetFocus() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetIndex( nIndex); oClass:AddMethod( "SetIndex", @TShell_SetIndex(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER RButtonDown( nRow, nCol, nFlags); oClass:AddMethod( "RButtonDown", @TShell_RButtonDown(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddMru(); oClass:AddMethod( "AddMru", @TShell_AddMru(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SaveOriginal(); oClass:AddMethod( "SaveOriginal", @TShell_SaveOriginal(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PutOriginal(); oClass:AddMethod( "PutOriginal", @TShell_PutOriginal(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetColumn(); oClass:AddMethod( "SetColumn", @TShell_SetColumn(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ActColSizes(); oClass:AddMethod( "ActColSizes", @TShell_ActColSizes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER UpColumn( nPos); oClass:AddMethod( "UpColumn", @TShell_UpColumn(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DwColumn( nPos); oClass:AddMethod( "DwColumn", @TShell_DwColumn(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AutoButtons( oParent); oClass:AddMethod( "AutoButtons", @TShell_AutoButtons(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GralButtons( oParent); oClass:AddMethod( "GralButtons", @TShell_GralButtons(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EndButtons( oParent); oClass:AddMethod( "EndButtons", @TShell_EndButtons(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER End(); oClass:AddMethod( "End", @TShell_End(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Destroy(); oClass:AddMethod( "Destroy", @TShell_Destroy(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Maximize(); oClass:AddMethod( "Maximize", @TShell_Maximize(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SysCommand( nWParam, nLParam); oClass:AddMethod( "SysCommand", @TShell_SysCommand(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Display(); oClass:AddInline( "Display", {|Self | ( ( Self ) ), ( ::BeginPaint(), ::Paint(), ::EndPaint() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ChgTabs(); oClass:AddMethod( "ChgTabs", @TShell_ChgTabs(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ChgCombo( nTab); oClass:AddMethod( "ChgCombo", @TShell_ChgCombo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ChgFilter( nTab); oClass:AddMethod( "ChgFilter", @TShell_ChgFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddSeaBar(); oClass:AddMethod( "AddSeaBar", @TShell_AddSeaBar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER NextTabOption(); oClass:AddMethod( "NextTabOption", @TShell_NextTabOption(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PrevTabOption(); oClass:AddMethod( "PrevTabOption", @TShell_PrevTabOption(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lPressCol(); oClass:AddMethod( "lPressCol", @TShell_lPressCol(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ClickOnHeader( oCol); oClass:AddMethod( "ClickOnHeader", @TShell_ClickOnHeader(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER HelpTopic(); oClass:AddMethod( "HelpTopic", @TShell_HelpTopic(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addGoTo( cCaption, bAction); oClass:AddMethod( "addGoTo", @TShell_addGoTo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER searchSetFocus(); oClass:AddInline( "searchSetFocus", {|Self | ( ( Self ) ), ( if( !empty( ::oWndBar ), ::oWndBar:setGetFocus(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getYearComboBoxExpression(); oClass:AddInline( "getYearComboBoxExpression", {|Self | ( ( Self ) ), ( if( !empty( ::oWndBar ), ::oWndBar:getYearComboBoxExpression(), "" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setYearComboBoxChange(); oClass:AddInline( "setYearComboBoxChange", {|Self, bBlock | ( ( Self ) ), ( if( !empty( ::oWndBar ), ::oWndBar:setYearComboBoxChange( bBlock ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setYearComboBox(); oClass:AddInline( "setYearComboBox", {|Self, nYear | ( ( Self ) ), ( if( !empty( ::oWndBar ), ::oWndBar:setYearComboBox( nYear ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getAsteriskFilter(); oClass:AddInline( "getAsteriskFilter", {|Self | ( ( Self ) ), ( ::cAsteriskFilter ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getComboFilter(); oClass:AddMethod( "getComboFilter", @TShell_getComboFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setActionDeleteButtonFilter(); oClass:AddInline( "setActionDeleteButtonFilter", {|Self, bBlock | ( ( Self ) ), ( if( !empty( ::oWndBar ), ::oWndBar:SetActionDeleteButtonFilter( bBlock ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addImageList( cImage); oClass:AddMethod( "addImageList", @TShell_addImageList(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ClickTree(); oClass:AddMethod( "ClickTree", @TShell_ClickTree(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER BarDisable(); oClass:AddInline( "BarDisable", {|Self | ( ( Self ) ), ( if( !empty( ::oWndBar ), ::oWndBar:Disable(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER BarEnable(); oClass:AddInline( "BarEnable", {|Self | ( ( Self ) ), ( if( !empty( ::oWndBar ), ::oWndBar:Enable(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER BrwDisable(); oClass:AddInline( "BrwDisable", {|Self | ( ( Self ) ), ( if( !empty( ::oBrw ), ::oBrw:Disable(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER BrwEnable(); oClass:AddInline( "BrwEnable", {|Self | ( ( Self ) ), ( if( !empty( ::oBrw ), ::oBrw:Enable(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetOnProcess(); oClass:AddInline( "SetOnProcess", {|Self | ( ( Self ) ), ( ::BrwDisable(), ::BarDisable(), ::lOnProcess := .T., ::CheckExtendInfo() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER KillProcess(); oClass:AddInline( "KillProcess", {|Self | ( ( Self ) ), ( ::lOnProcess := .F., ::BarEnable(), ::BrwEnable() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER QuitOnProcess(); oClass:AddInline( "QuitOnProcess", {|Self | ( ( Self ) ), ( ::lOnProcess := .F., ::BarEnable(), ::BrwEnable() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ShowDeleteButtonFilter(); oClass:AddInline( "ShowDeleteButtonFilter", {|Self | ( ( Self ) ), ( ::lActiveFilter := .T., ::oWndBar:ShowDeleteButtonFilter() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER HideDeleteButtonFilter(); oClass:AddInline( "HideDeleteButtonFilter", {|Self | ( ( Self ) ), ( ::lActiveFilter := .F., ::oWndBar:HideDeleteButtonFilter() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ShowAddButtonFilter(); oClass:AddInline( "ShowAddButtonFilter", {|Self | ( ( Self ) ), ( ::oWndBar:ShowAddButtonFilter() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER HideAddButtonFilter(); oClass:AddInline( "HideAddButtonFilter", {|Self | ( ( Self ) ), ( ::oWndBar:HideAddButtonFilter() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ShowEditButtonFilter(); oClass:AddInline( "ShowEditButtonFilter", {|Self | ( ( Self ) ), ( ::oWndBar:ShowEditButtonFilter() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER HideEditButtonFilter(); oClass:AddInline( "HideEditButtonFilter", {|Self | ( ( Self ) ), ( ::oWndBar:HideEditButtonFilter() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getComboBox(); oClass:AddInline( "getComboBox", {|Self | ( ( Self ) ), ( ::oWndBar:oCombobox ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setFilter( cFilter); oClass:AddMethod( "setFilter", @TShell_setFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER AddFilter(); oClass:AddInline( "AddFilter", {|Self | ( ( Self ) ), ( if(   !empty( ::oActiveFilter ), ( ::oActiveFilter:AddFilter(), ::EnableComboFilter( ::oActiveFilter:FiltersName() ), ::changeFilter( ::oActiveFilter:cExpresionFilter ) ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EditFilter(); oClass:AddInline( "EditFilter", {|Self | ( ( Self ) ), ( if(   !empty( ::oActiveFilter ) .AND. !empty( ::oWndBar ), ( ::oActiveFilter:EditFilter( ::oWndBar:GetComboFilter() ), ::ChgFilter() ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER KillFilter(); oClass:AddMethod( "KillFilter", @TShell_KillFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CreateData(); oClass:AddMethod( "CreateData", @TShell_CreateData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AppendData( cPath, cPathFrom); oClass:AddMethod( "AppendData", @TShell_AppendData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER OpenData(); oClass:AddMethod( "OpenData", @TShell_OpenData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DeleteData(); oClass:AddMethod( "DeleteData", @TShell_DeleteData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CloseData(); oClass:AddMethod( "CloseData", @TShell_CloseData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ReindexData(); oClass:AddMethod( "ReindexData", @TShell_ReindexData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER LoadData(); oClass:AddMethod( "LoadData", @TShell_LoadData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SaveData(); oClass:AddMethod( "SaveData", @TShell_SaveData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DefControl() ; oClass:AddVirtual( "DefControl" )
+
+   _HB_MEMBER CheckExtendInfo(); oClass:AddMethod( "CheckExtendInfo", @TShell_CheckExtendInfo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ShowExtendInfo( nRow, nCol, cToolTip); oClass:AddMethod( "ShowExtendInfo", @TShell_ShowExtendInfo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DestroyToolTip(); oClass:AddMethod( "DestroyToolTip", @TShell_DestroyToolTip(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER asteriskFilter(); oClass:AddMethod( "asteriskFilter", @TShell_asteriskFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setAutoFilter(); oClass:AddMethod( "setAutoFilter", @TShell_setAutoFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER aplyFilter(); oClass:AddMethod( "aplyFilter", @TShell_aplyFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER changeFilter(); oClass:AddInline( "changeFilter", {|Self, cFilter | ( ( Self ) ), ( ::setFilter( ::oActiveFilter:cExpresionFilter ), ::ShowDeleteButtonFilter(), ::oBrw:Refresh() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EnableComboFilter(); oClass:AddInline( "EnableComboFilter", {|Self, aFilter | ( ( Self ) ), ( ::oWndBar:EnableComboFilter( aFilter ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetDefaultComboFilter(); oClass:AddInline( "SetDefaultComboFilter", {|Self, aFilter | ( ( Self ) ), ( ::oWndBar:SetDefaultComboFilter( aFilter ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetComboFilter(); oClass:AddInline( "SetComboFilter", {|Self, cItem | ( ( Self ) ), ( ::oWndBar:SetComboFilter( cItem ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+
+   _HB_MEMBER setFilterByUser(); oClass:AddInline( "setFilterByUser", {|Self, cFilterExpresion | ( ( Self ) ), (  cFilterExpresion := ::oActiveFilter:defaultFilterByUser(), iif(  !empty( cFilterExpresion ), ::oWndBar:setComboFilter( cFilterExpresion ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER toExcel(); oClass:AddMethod( "toExcel", @TShell_toExcel(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setWindowsBar(); oClass:AddMethod( "setWindowsBar", @TShell_setWindowsBar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER aSelected(); oClass:AddInline( "aSelected", {|Self | ( ( Self ) ), ( ::oBrw:aSelected ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER RefreshCurrent(); oClass:AddInline( "RefreshCurrent", {|Self | ( ( Self ) ), ( ::oBrw:RefreshCurrent() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getActiveExpresionFilter(); oClass:AddMethod( "getActiveExpresionFilter", @TShell_getActiveExpresionFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TShell ;
+
+
+
+
+
+
+static FUNCTION TShell_New( nTop, nLeft, nBottom, nRight, cTitle, oMenu, oWnd, oIcon, oCursor, lPixel, nHelpId, aFlds, xAlias, aHeaders, aColSizes, aColSelect, aJustify, aPrompt, bAdd, bEdit, bDel, bDup, nSizeBtn, nLevel, cMru, cBitmap, lBigStyle, bZoo, lXBrowse ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local n
+   local nPos
+   local aRect
+
+   If( nTop == nil, nTop := 0, ) ;
+   If( nLeft == nil, nLeft := 0, ) ;
+   If( nBottom == nil, nBottom := 22, ) ;
+   If( nRight == nil, nRight := 80, ) ;
+   If( cTitle == nil, cTitle := "MDI Child", ) ;
+   If( oWnd == nil, oWnd := GetWndFrame(), ) ;
+   If( lPixel == nil, lPixel := .F., ) ;
+   If( oIcon == nil, oIcon := TIcon():New( ,, "BROWSE",, ), ) ;
+   If( oCursor == nil, oCursor := TCursor():New( , "ARROW" ), ) ;
+   If( aPrompt == nil, aPrompt := { "General" }, ) ;
+   If( nSizeBtn == nil, nSizeBtn := 42, ) ;
+   If( nLevel == nil, nLevel := nOr( 2, 4, 8, 16, 32 ), ) ;
+   If( aFlds == nil, aFlds := {}, ) ;
+   If( aHeaders == nil, aHeaders := {}, ) ;
+   If( aColSizes == nil, aColSizes := {}, ) ;
+   If( aColSelect == nil, aColSelect := {}, ) ;
+   If( aJustify == nil, aJustify := {}, ) ;
+   If( cBitmap == nil, cBitmap := ( 0 + ( 0 * 256 ) + ( 0 * 65536 ) ), ) ;
+   If( lBigStyle == nil, lBigStyle := .F., ) ;
+
+   ::oWndBar         := oWndBar()
+
+   ::BarDisable()
+
+
+
+   aRect             := GetWndRect( GetDeskTopWindow() )
+   if aRect[4] >= 800
+      nBottom        += 6
+      nRight         += 20
+   endif
+
+   ::nTop            := nTop
+   ::nLeft           := nLeft
+   ::nBottom         := nBottom
+   ::nRight          := nRight
+   ::cTitle          := cTitle
+    ::aFastKey            := {}
+   ::aPrompt         := aPrompt
+   ::oIcon           := oIcon
+   ::nSizeBtn        := nSizeBtn
+   ::aKey            := {}
+   ::aFlds           := aFlds
+   ::aHeaders        := aHeaders
+   ::aColSizes       := aColSizes
+   ::aColSelect      := aColSelect
+   ::aJustify        := aJustify
+   ::lBigStyle       := lBigStyle
+
+   ::bAdd            := bAdd
+   ::bEdit           := bEdit
+   ::bDel            := bDel
+   ::bDup            := bDup
+   ::bZoo            := bZoo
+
+   ::setXAlias( xAlias )
+
+
+
+   ::setFont( oFontLittelTitle() )
+
+
+
+   ::nTop            := nTop    * if( !lPixel, 16, 1 )
+   ::nLeft           := nLeft   * if( !lPixel, 8, 1 )
+   ::nBottom         := nBottom * if( !lPixel, 16, 1 )
+   ::nRight          := nRight  * if( !lPixel, 8, 1 )
+
+
+
+   ::lAutoSeek       := .F.
+
+
+
+   ::oActiveFilter   := TFilterCreator():Init( Self )
+
+
+
+   ::Super:New( 0, 0, 0, 0, cTitle, 0, oMenu, oWnd, oIcon, , , , oCursor, , .T., , nHelpId, "NONE", .F., .F., .F., .F. )
+
+
+
+   if ::lBigStyle
+      ::oImageList      := TImageList():New( 32, 32 )
+   else
+      ::oImageList      := TImageList():New( 16, 16 )
+   end
+
+
+
+   if IsNum( cBitmap )
+      ::oBtnTop         := TWebBar():New( 0, 0, 400, 44,,,, ( 255 + ( 255 * 256 ) + ( 255 * 65536 ) ), ( cBitmap ),,,,,, Self )
+   else
+      ::oBtnTop         := TWebBar():New( 0, 0, 400, 44,,,, ( 255 + ( 255 * 256 ) + ( 255 * 65536 ) ), ( 104 + ( 0 * 256 ) + ( 63 * 65536 ) ),,,,,, Self )
+   end
+
+   ::oBtnTop:Say( -14, 250, ::cTitle )
+
+   ::oBtnBar            := TTreeView():New( 44, 0, Self, , , .T., .F., 250, 400 )
+
+   ::oBtnBar:SetItemHeight( 20 )
+
+   ::oBtnBar:OnClick    := {|| ::ClickTree() }
+
+   if !::lBigStyle
+      ::oBtnMain        := ::oBtnBar:Add( ::cTitle, ::AddImageList( cMru ) )
+   end
+
+
+
+   if At( ":", ::cTitle ) <> 0
+      ::cWinName        := Padr( SubStr( ::cTitle, 1, At( ":", ::cTitle ) ), 30 )
+   else
+      ::cWinName        := Padr( Rtrim( ::cTitle ), 30 )
+   end
+
+
+
+   ::cCodigoUsuario     := Auth():Codigo()
+
+
+
+   ::nLevel             := nLevel
+
+
+
+   ::CreateXBrowse()
+
+
+
+   ::oHorizontalSplitter         := TSplitter():New( 44 , 0, .F., { ::oBtnTop }, .T., { ::oBtnBar, ::oBrw }, .T., {|| 0}, {|| 0}, Self, , 800, 0, .T., .T., ( 255 + ( 255 * 256 ) + ( 255 * 65536 ) ), .F., .F., .F. )
+   ::oHorizontalSplitter:lStatic := .T.
+
+   ::oVerticalSplitter           := TSplitter():New( 44 + 0, 250, .T., { ::oBtnBar }, .T., { ::oBrw }, .T., {|| 0}, {|| 0}, Self, , 0, 800, .T., .F., , .F., .T., .T. )
+
+RETURN Self
+
+
+
+static FUNCTION TShell_Activate( cShow, bLClicked, bRClicked, bMoved, bResized, bPainted, bKeyDown, bInit, bUp, bDown, bPgUp, bPgDn, bLeft, bRight, bPgLeft, bPgRight, bValid, bDropFiles, bLButtonUp, lCenter ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local oError
+   local oBlock
+
+   If( lCenter == nil, lCenter := ( ::nTop == 0 .AND. ::nLeft == 0 ), ) ;
+
+
+
+
+   CursorWait()
+
+   if empty( bValid )
+      bValid         := {|| ::oBrw:Hide() }
+   end
+
+   ::lCenter         := lCenter
+
+   ::Super:Activate( cShow, bLClicked, bRClicked, bMoved, bResized, bPainted, bKeyDown, bInit, bUp, bDown, bPgUp, bPgDn, bLeft, bRight, bPgLeft, bPgRight, bValid, bDropFiles, bLButtonUp )
+
+   ::Maximize()
+
+   if !::lBigStyle
+      ::oHorizontalSplitter:AdjRight()
+   end
+
+   ::oVerticalSplitter:AdjBottom()
+
+   ::oBtnBar:SetImagelist( ::oImageList )
+
+   ::oBtnBar:Select( ::oBtnMain )
+
+   ::oBtnMain:Expand()
+
+
+
+   ::selectColumnOrder()
+
+
+
+   ::oActiveFilter:FiltersName()
+
+
+
+   ::setWindowsBar()
+
+   CursorWE()
+
+
+
+
+
+
+
+
+
+
+
+   ::BarEnable()
+
+RETURN NIL
+
+
+
+static FUNCTION TShell_selectColumnOrder( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if ( ::xAlias )->( Used() ) .AND. !empty( ::oBrw )
+      aEval( ::oBrw:aCols, {|oCol| if( ::compareOrden( oCol:cSortOrder, ( ::xAlias )->( ordsetfocus() ) ), ( oCol:SetOrder(), oCol:Adjust() ), ) } )
+      ::nTab      := ::oWndBar:GetComboBoxAt( .T. )
+   end
+
+RETURN NIL
+
+
+
+static FUNCTION TShell_compareOrden( cSortOrder, cOrdAlias ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if Empty( cSortOrder )
+      Return .F.
+   end
+
+   if AllTrim( upper( cSortOrder ) ) <> AllTrim( upper( cOrdAlias ) )
+      Return .F.
+   end
+
+RETURN .T.
+
+
+
+static FUNCTION TShell_GotFocus( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+    ::Super:GotFocus()
+
+   if ::oBrw <> nil
+        ::oBrw:SetFocus()
+   end
+
+return 0
+
+
+
+static FUNCTION TShell_KeyChar( nKey, nFlags ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   do case
+   case nKey == 27 .AND. ::oWnd <> nil
+      if ( ::oTxtSea <> nil .AND. GetFocus() == ::oTxtSea:hWnd )
+         ::oBrw:SetFocus()
+      else
+         ::End()
+      end
+      return 0
+   case nKey == 13 .AND. ::oWnd <> nil
+      ::RecEdit()
+   case nKey == 45 .AND. ::oWnd <> nil
+      ::RecAdd()
+   case nKey == 46 .AND. ::oWnd <> nil
+      ::RecDel()
+   case nKey == 116
+      ::Refresh()
+   case nKey == 120
+      ::PutOriginal()
+   case nKey == 120
+      ::oBrw:Refresh()
+   end
+
+return ::Super:KeyChar( nKey, nFlags )
+
+
+
+static FUNCTION TShell_KeySearch( nKey, nFlags, oWndBar ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if ( nKey == 27 .OR. nKey == 13 )
+      ::brwEnable()
+      ::gotFocus()
+      Return ( 0 )
+   end
+
+Return ( 1 )
+
+
+
+static FUNCTION TShell_NewAt( cResName1, cResName2, cMsg, bAction, cToolTip, cKey, cPrompt, bMenu, nLevel, oGroup, lAllowExit ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local oBtn
+
+   If( cMsg == nil, cMsg := "", ) ;
+   If( oGroup == nil, oGroup := nil, ) ;
+   If( cToolTip == nil, cToolTip := "", ) ;
+   If( lAllowExit == nil, lAllowExit := .F., ) ;
+
+
+
+   if nLevel <> nil .AND. nAnd( ::nLevel, nLevel ) == 0
+      return nil
+   end
+
+   if !empty( cResName1 )
+      if ::lBigStyle
+         cResName1   += "32"
+      else
+         cResName1   += "16"
+      end
+   end
+
+   cToolTip          := StrTran( cToolTip, "(", "" )
+   cToolTip          := StrTran( cToolTip, ")", ""  )
+
+   if empty( oGroup )
+      if ::lBigStyle
+         oBtn        := ::oBtnBar:Add( cTooltip, ::AddImageList( cResName1 ), bAction )
+      else
+         oBtn        := ::oBtnMain:Add( cTooltip, ::AddImageList( cResName1 ), bAction )
+      end
+   else
+      if empty( cResName1 )
+         oBtn        := oGroup:Add( cTooltip, nil, bAction )
+      else
+         oBtn        := oGroup:Add( cTooltip, ::AddImageList( cResName1 ), bAction )
+      end
+   end
+
+   oBtn:Cargo        := lAllowExit
+
+   if cKey <> nil
+
+      if Valtype( cKey ) == "C"
+         cKey        := Upper( cKey )
+      end
+
+      aAdd( ::aFastKey, { cKey, bAction } )
+
+   end
+
+return oBtn
+
+
+
+static FUNCTION TShell_CtrlKey( nKey ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local nLen
+   local nCont
+
+   if !::lOnProcess
+
+      nLen        := len( ::aFastKey )
+
+      for nCont   := 1 to nLen
+
+
+         if ( IsChar( ::aFastKey[ nCont, 1 ] ) .AND. ( nKey == Asc( Upper( ::aFastKey[ nCont, 1 ] ) ) .OR. nKey == Asc( Lower( ::aFastKey[ nCont, 1 ] ) ) ) ) .OR.  ( IsNum( ::aFastKey[ nCont, 1 ] ) .AND. nKey == ::aFastKey[ nCont, 1 ] )
+
+            if ( nCont <> 1 ) .AND. ( nCont <> nLen )
+               ::SetOnProcess()
+            end
+
+            Eval( ::aFastKey[ nCont, 2 ] )
+
+            SysRefresh()
+
+            ::QuitOnProcess()
+
+         end
+
+      next
+
+
+
+
+
+      if nKey == 43
+         ::NextTabOption()
+      end
+
+      if nKey == 45
+         ::PrevTabOption()
+      end
+
+
+
+
+
+   end
+
+return ( 0 )
+
+
+
+static FUNCTION TShell_KeyDown( nKey, nFlags ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if ::lOnProcess
+      Return 0
+   end
+
+   if !( ::oBrw:lEditMode )
+
+      do case
+         case nKey == 27
+            ::End()
+         case nKey == 13 .AND. ::oWnd <> nil
+            ::RecEdit()
+         case nKey == 45 .AND. ::oWnd <> nil
+            ::RecAdd()
+         case nKey == 46 .AND. ::oWnd <> nil
+            ::RecDel()
+         case nKey == 116
+            ::Refresh()
+         case nKey == 120
+            ::PutOriginal()
+         case nKey == 113
+            ::NextTabOption()
+         case nKey == 114
+            ::PrevTabOption()
+      end
+
+   end
+
+return ::Super:KeyDown( nKey, nFlags )
+
+
+
+static FUNCTION TShell_End( lForceExit ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   If( lForceExit == nil, lForceExit := .F., ) ;
+
+   if ::lOnProcess .AND. !lForceExit
+      Return ( .F. )
+   end
+
+   CursorWait()
+
+   if !empty( ::oDialogTip )
+      ::oDialogTip:End()
+   end
+
+
+
+   ::KillFilter()
+
+   ::oActiveFilter:End()
+
+   if ::lOpenData
+
+
+
+      if ( ::xAlias )->( Used() )
+         ::nRec               := ( ::xAlias )->( recno() )
+      end
+
+      if !::lBigStyle .AND. !empty( ::oWndBar )
+         ::nTab               := ::oWndBar:GetComboBoxAt( .T. )
+      end
+
+
+
+      ::oBrw:saveRecnoAndOrder( ::nRec, ::nTab )
+
+      ::CloseData()
+
+   end
+
+
+
+   if !empty( ::oWndBar )
+
+      ::oWndBar:DisableGet()
+      ::oWndBar:DisableComboBox()
+      ::oWndBar:DisableComboFilter()
+      ::oWndBar:HideYearCombobox()
+
+      ::HideDeleteButtonFilter()
+      ::HideAddButtonFilter()
+      ::HideEditButtonFilter()
+
+   end
+
+
+
+   if !empty( ::oBrw )
+      ::oBrw:End()
+      ::oBrw   := nil
+   end
+
+   ::oWndClient:ChildClose( Self )
+
+   ::Super:End()
+
+   sysRefresh()
+
+   CursorWE()
+
+Return ( .T. )
+
+
+
+static FUNCTION TShell_Search( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+RETURN NIL
+
+
+
+
+
+
+static FUNCTION TShell_killScope( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local nRec
+
+   CursorWait()
+
+
+
+   if ( ::xAlias )->( Used() )
+
+      nRec  := ( ::xAlias )->( recno() )
+
+      ( ::xAlias )->( OrdScope( 0, nil ) )
+      ( ::xAlias )->( OrdScope( 1, nil ) )
+
+      ( ::xAlias )->( dbGoTo( nRec ) )
+
+   end
+
+
+
+   CursorWE()
+
+RETURN .T.
+
+
+
+
+
+
+
+static FUNCTION TShell_ChgIndex( oIndice ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if ( ::xAlias )->( Used() )
+      ( ::xAlias )->( OrdSetFocus( oIndice:nAt ) )
+   end
+
+   if !empty( ::oWndBar )
+      ::oWndBar:SetComboBoxSelect( oIndice:nAt )
+   end
+
+   ::oComboBox:Select( oIndice:nAt )
+
+
+
+   if !empty( ::bChgIndex )
+      Eval( ::bChgIndex )
+   end
+
+   ::oBrw:SetOrder()
+
+   ::oTxtSea:SetFocus()
+   ::oTxtSea:SelectAll()
+
+RETURN NIL
+
+
+
+
+
+
+static FUNCTION TShell_ChangeSeek( oIndice ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local n
+   local xValueToSearch
+   local cType
+   local oGet     := ::oTxtSea:oGet
+   local nOrd     := if( SubStr( oGet:varGet(), 1, 1 ) $ "0123456789", 1, 2 )
+
+   if ( ::xAlias )->( Used() )
+      ( ::xAlias )->( OrdSetFocus( n ) )
+      cType       := ValType( ( ::xAlias )->( OrdKey() ) )
+   end
+
+   oIndice:Set( nOrd )
+
+   if !empty( ::oWndBar )
+      ::oWndBar:SetComboBoxSelect( nOrd )
+   end
+
+   ::oComboBox:Select( nOrd )
+
+   do case
+   case IsChar( cType )
+      xValueToSearch     := Rtrim( oGet:GetText() )
+   case IsNum( cType )
+      xValueToSearch     := Val( Rtrim( oGet:GetText() ) )
+   end
+
+   if ( ::xAlias )->( Used() )
+      ( ::xAlias )->( dbSeek( xValueToSearch ) )
+   end
+
+   ::oBrw:Refresh()
+
+RETURN .T.
+
+
+
+
+
+
+static FUNCTION TShell_fastSeek( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local nRec
+   local nOrd
+   local oCol
+   local oGet
+   local lSeek
+   local cAlias
+   local xValueToSearch
+
+   cAlias            := ::xAlias
+
+   if empty( cAlias ) .OR. !( cAlias )->( Used() )
+      Return .F.
+   end
+
+   if empty( ::oWndBar ) .OR. empty( ::oWndBar:oGet )
+      Return .F.
+   end
+
+   CursorWait()
+
+   oGet              := ::oWndBar:oGet
+
+
+
+   xValueToSearch    := oGet:oGet:Buffer()
+   xValueToSearch    := alltrim( upper( cvaltochar( xValueToSearch ) ) )
+   xValueToSearch    := strtran( xValueToSearch, chr( 8 ), "" )
+
+
+
+   nRec              := ( cAlias )->( recno() )
+   nOrd              := ( cAlias )->( ordnumber() )
+
+
+
+   lSeek             := ::asteriskFilter( xValueToSearch, cAlias )
+
+   if !lSeek
+      lSeek          := lSeekKeyType( xValueToSearch, cAlias )
+   end
+
+   if !lSeek .AND. nOrd == 1
+
+      if ::cSearchType == "justZero"
+         lSeek       := seekCodigoTerceros( xValueToSearch, cAlias, ::nLenSearchType )
+      end
+
+      if ::cSearchType == "justSpace"
+         lSeek       := seekDocumento( xValueToSearch, cAlias, ::nLenSearchType )
+      endif
+
+   end
+
+
+
+   if lSeek .OR. empty( xValueToSearch ) .OR. ( "*" $ xValueToSearch )
+      oGet:SetColor( ( 0 + ( 0 * 256 ) + ( 0 * 65536 ) ), ( 255 + ( 255 * 256 ) + ( 255 * 65536 ) ) )
+   else
+      oGet:SetColor( ( 255 + ( 255 * 256 ) + ( 255 * 65536 ) ), ( 255 + ( 102 * 256 ) + ( 102 * 65536 ) ) )
+   end
+
+   if !empty( ::oBrw )
+      ::oBrw:Refresh()
+      ::oBrw:Select( 0 )
+      ::oBrw:Select( 1 )
+   end
+
+   CursorWE()
+
+Return ( lSeek )
+
+
+
+static FUNCTION TShell_asteriskFilter( xValueToSearch, cAlias ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if left( xValueToSearch, 1 ) == "*" .AND. right( xValueToSearch, 1 ) == "*" .AND. len( rtrim( xValueToSearch ) ) > 1
+
+      xValueToSearch       := substr( xValueToSearch, 2, len( xValueToSearch ) - 2 )
+
+      ::cAsteriskFilter    := '"' + xValueToSearch + '" $ ' + ( cAlias )->( ordkey() )
+
+      ::chgFilter()
+
+      Return .T.
+
+   end
+
+   ::cAsteriskFilter    := ""
+
+Return .F.
+
+
+
+static FUNCTION TShell_RButtonDown( nRow, nCol, nFlags ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local nFor
+   local nLen
+   local oCol
+   local oMenu
+   local oMenuItem
+   local bMenuSelect
+
+
+
+   oMenu             := MenuBegin( .T. )
+
+   bMenuSelect       := ::bMenuSelect
+
+   ::bMenuSelect     := nil
+
+   MenuAddItem( "Columnas", "Columnas de la rejilla de datos", .F., .T., , , "gc_table_selection_column_16", oMenu )
+
+   MenuBegin( .F., , , .F., .F., , , , , , , , , , , , .F., .T., .F., .T. )
+
+   for each oCol in ::oBrw:aCols
+      MenuAddItem( oCol:cHeader, , !oCol:lHide, ( Len( ::oBrw:aDisplay ) <> 1 .OR. oCol:nPos <> 1 ), GenMenuBlock( oCol ) )
+   next
+
+   MenuEnd()
+
+   MenuAddItem( "Guardar vista actual", "Guarda la vista actual de la rejilla de datos", .F., .T., {|| ::oBrw:Save( .T. ) }, , "gc_table_selection_column_disk_16", oMenu )
+
+   MenuAddItem( "Cargar vista por defecto", "Carga la vista por defecto de la rejilla de datos", .F., .T., {|| ::PutOriginal() }, , "gc_table_selection_column_refresh_16", oMenu )
+
+   MenuAddItem()
+
+   MenuAddItem( "Seleccionar &todo", "Selecciona todas las filas de la rejilla", .F., .T., {|| ::oBrw:SelectAll() }, , "gc_table_selection_all_16", oMenu )
+
+   MenuAddItem( "&Quitar selección", "Quita la selección de todas las filas de la rejilla", .F., .T., {|| ::oBrw:SelectNone() }, , "gc_table_16", oMenu )
+
+   MenuAddItem()
+
+   MenuAddItem( "Exportar a E&xcel", "Exportar rejilla de datos a Excel", .F., .T., {|| ::ToExcel() }, , "gc_spreadsheet_sum_16", oMenu )
+
+   MenuEnd()
+
+   oMenu:Activate( nRow, nCol, ::oBrw )
+
+   ::bMenuSelect := bMenuSelect
+
+   oMenu:end()
+
+   if !empty( ::oBrw )
+      ::oBrw:SetFocus()
+   end
+
+Return nil
+
+
+
+static function GenMenuBlock( oCol )
+
+return {|| iif( oCol:lHide, oCol:Show(), oCol:Hide() ) }
+
+
+
+static FUNCTION TShell_AddMru( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if empty( ( ::xAlias )->( OrdSetFocus() ) )
+      Return nil
+   end
+
+RETURN NIL
+
+
+
+static FUNCTION TShell_RecDel( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if nAnd( ::nLevel, 16 ) <> 0 .AND. !empty( ::bDel )
+
+      ::SetOnProcess()
+
+      Eval( ::bDel )
+
+      ::QuitOnProcess()
+
+      ::Refresh()
+
+      ::SetFocus()
+
+   end
+
+RETURN NIL
+
+
+
+static FUNCTION TShell_RecAdd( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if nAnd( ::nLevel, 2 ) <> 0 .AND. !empty( ::bAdd )
+
+      ::killScope()
+
+      ::setOnProcess()
+
+      eval( ::bAdd )
+
+      ::quitOnProcess()
+
+      ::Refresh()
+
+      ::SetFocus()
+
+   else
+
+      msgStop( "Acceso no permitido" )
+
+   end
+
+RETURN NIL
+
+
+
+static FUNCTION TShell_RecEdit( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if nAnd( ::nLevel, 4 ) <> 0 .AND. !empty( ::bEdit )
+
+      ::killScope()
+
+      ::setOnProcess()
+
+      eval( ::bEdit )
+
+      if !empty( ::oBrw )
+         ::oBrw:Refresh()
+      end
+
+      ::QuitOnProcess()
+
+      ::SetFocus()
+
+   else
+
+      msgStop( "Acceso no permitido" )
+
+   end
+
+RETURN NIL
+
+
+
+static FUNCTION TShell_RecDup( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if nAnd( ::nLevel, 2 ) <> 0 .AND. !empty( ::bDup )
+
+      ::killScope()
+
+      ::setOnProcess()
+
+      eval( ::bDup )
+
+      ::Refresh()
+
+      ::quitOnProcess()
+
+      ::setFocus()
+
+   else
+
+      msgStop( "Acceso no permitido" )
+
+   end
+
+RETURN NIL
+
+
+
+static FUNCTION TShell_RecZoom( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if nAnd( ::nLevel, 8 ) <> 0 .AND. !empty( ::bZoo )
+
+      ::killScope()
+
+      ::SetOnProcess()
+
+      Eval( ::bZoo )
+
+      ::QuitOnProcess()
+
+      ::SetFocus()
+
+   else
+
+      msgStop( "Acceso no permitido" )
+
+   end
+
+RETURN NIL
+
+
+
+
+
+
+static function SeaSeek( nKey, Self )
+
+   local xKey
+   local nOrd
+   local cType
+
+   if nKey > 0 .AND. nKey <= 10
+
+
+
+
+
+      nOrd     := if( SubStr( ::aLstSea[ nKey ], 1, 1 ) $ "0123456789", 1, 2 )
+      nOrd     := ( ::xAlias )->( OrdSetFocus( nOrd ) )
+      cType    := ValType( ( ::xAlias )->( OrdKey() ) )
+
+      ::oBrw:GoTop()
+
+      if cType == "C"
+         xKey  := ::aLstSea[ nKey ]
+      elseif cType == "N"
+         xKey  := Val( ::aLstSea[ nKey ] )
+      end
+
+      ( ::xAlias )->( dbSeek( ::aLstSea[ nKey ] ) )
+      ( ::xAlias )->( OrdSetFocus( nOrd ) )
+
+      ::oBrw:SetFocus()
+      ::oBrw:Refresh()
+
+   end
+
+return  nil
+
+
+
+static function bSeaSeek( n, Self )
+return {|| SeaSeek( n, Self ) }
+
+
+
+static FUNCTION TShell_SaveOriginal( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   ::aOriginal := ::oBrw:SaveState()
+
+return nil
+
+
+
+static FUNCTION TShell_PutOriginal( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   ::oBrw:RestoreState( ::aOriginal )
+
+
+
+
+
+   if ( ::xAlias )->( Used() )
+      ( ::xAlias )->( dbGoTop() )
+   end
+
+return nil
+
+
+
+static function bSelColumn( nFor, Self )
+return {|| ::aColSelect[ nFor ] := !::aColSelect[ nFor ], ::SetColumn() }
+
+
+
+static FUNCTION TShell_SetColumn( lChanged ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local aData       := _aData( ::aFlds, ::aColSelect )
+   local aHeaders    := _aColHead( ::aHeaders, ::aColSelect )
+   local aColSizes   := _aColSize( ::aColSizes, ::aColSelect )
+   local aJustify    := _aColJustify( ::aJustify, ::aColSelect )
+
+   if lChanged <> nil
+      ::lChanged     := lChanged
+   end
+
+   ::oBrw:SetCols( aData, aHeaders, aColSizes )
+   ::oBrw:aJustify   := aJustify
+   ::oBrw:Refresh()
+
+return nil
+
+
+
+
+
+
+static FUNCTION TShell_ActColSizes( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local nFor
+   local n     := 1
+   local nLen  := len( ::aFlds )
+
+
+
+
+
+   for nFor := 1 to nLen
+      if ::aColSelect[ nFor ]
+         ::aColSizes[ nFor ]  := ::oBrw:aColSizes[n]
+         n++
+      end
+   next
+
+return nil
+
+
+
+static FUNCTION TShell_UpColumn( oBrw, aFlds, aHeaders, aColSizes, aColSelect, aColPos, aJustify ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local nPos  := oBrw:nAt
+
+   if nPos <= len( aFlds ) .AND. nPos > 1
+
+      SwapUpArray( aFlds,      nPos )
+      SwapUpArray( aHeaders,   nPos )
+      SwapUpArray( aColSizes,  nPos )
+      SwapUpArray( aColSelect, nPos )
+      SwapUpArray( aColPos,    nPos )
+      SwapUpArray( aJustify,   nPos )
+
+      oBrw:GoUp()
+      oBrw:Refresh()
+      oBrw:SetFocus()
+
+   end
+
+return ( Self )
+
+
+
+static FUNCTION TShell_DwColumn( oBrw, aFlds, aHeaders, aColSizes, aColSelect, aColPos, aJustify ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local nPos  := oBrw:nAt
+
+   if nPos < len( aFlds ) .AND. nPos > 0
+
+      SwapDwArray( aFlds,      nPos )
+      SwapDwArray( aHeaders,   nPos )
+      SwapDwArray( aColSizes,  nPos )
+      SwapDwArray( aColSelect, nPos )
+      SwapDwArray( aColPos,    nPos )
+      SwapDwArray( aJustify,   nPos )
+
+      oBrw:GoDown()
+      oBrw:Refresh()
+      oBrw:SetFocus()
+
+   end
+
+return ( Self )
+
+
+
+static FUNCTION TShell_AutoButtons( oParent ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   ::GralButtons( oParent )
+
+   ::EndButtons( oParent )
+
+return nil
+
+
+
+static FUNCTION TShell_GralButtons( oParent ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+
+
+
+
+
+   Self:NewAt( "BUS",,, {||( ::SearchSetFocus() )}, "(B)uscar", "B",,,,, .F. )
+      ::AddSeaBar()
+
+   if !empty( ::bAdd )
+
+
+
+
+
+
+
+
+   Self:NewAt( "NEW",,, {||( ::RecAdd() )}, "(A)ñadir", "A",,, 2,, .F. )
+
+   end
+
+   if !empty( ::bDup )
+
+
+
+
+
+
+   Self:NewAt( "DUP",,, {||( ::RecDup() )}, "(D)uplicar", "D",,, 2,, .F. )
+
+   end
+
+   if !empty( ::bEdit )
+
+
+
+
+
+
+   Self:NewAt( "EDIT",,, {||( ::RecEdit() )}, "(M)odificar", "M",,, 4,, .F. )
+
+   end
+
+   if !empty( ::bZoo )
+
+
+
+
+
+
+   Self:NewAt( "ZOOM",,, {||( ::RecZoom() )}, "(Z)oom", "Z",,, 8,, .F. )
+
+   end
+
+
+
+
+
+
+
+   Self:NewAt( "DEL",,, {||( ::RecDel() )}, "(E)liminar", "E",,, 16,, .F. )
+
+   if oParent:lReport
+
+
+
+
+
+
+   Self:NewAt( "IMP",,, {||( oParent:Report() )}, "(L)istado", "L",,, 32,, .F. )
+
+   end
+
+return nil
+
+
+
+static FUNCTION TShell_EndButtons( oParent ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if oParent <> nil
+
+
+
+
+
+   Self:NewAt( "END",,, {||( oParent:end() )}, "(S)alir", "S",,,,, .F. )
+
+   end
+
+return nil
+
+
+
+STATIC FUNCTION ChgGet( cType, nLen, nDec, oVal )
+
+    oVal:bValid            := {|| .T. }
+    oVal:oGet:Picture := ""
+
+    DO CASE
+    CASE cType == "L"
+        oVal:bValid    := {| oVal | oVal:varGet() $ "SN" }
+        oVal:cText( "Si" )
+    CASE cType == "N"
+        oVal:oGet:Picture := retPic( nLen, nDec, .T. )
+    end
+
+    oVal:cText( retGet( cType, nLen, nDec ) )
+    oVal:refresh()
+
+RETURN NIL
+
+
+
+STATIC FUNCTION retGet( cType, nLen, nDec )
+
+    local cRet    := ""
+
+    DO CASE
+    CASE cType == "L"
+      cRet     := "S"
+    CASE cType == "C"
+      cRet     := Space( nLen )
+    CASE cType == "N"
+      cRet     := 0
+    CASE cType == "D"
+      cRet     := date()
+    end
+
+RETURN cRet
+
+
+
+STATIC FUNCTION mkExpSea( aTblFld, oFld, oCon, aVal, oNex )
+
+    local n            := 1
+    local cExp        := ""
+    local aNex        := {     " .AND. ", " .OR. " }
+
+
+
+
+
+
+    local aTblCon    := {     " == ",    " != ",    " > ",    " < ",    " >= ",    " <= ",    " $ " }
+
+    WHILE n <= len( aVal )
+
+        IF aTblCon[ oCon[n]:nAt ] == " $ "
+
+
+
+            cExp    += cGetVal( aVal[n] ) +     aTblCon[ oCon[n]:nAt ] +     rtrim( aTblFld[ oFld[n]:nAt ] )
+
+        ELSE
+
+
+
+            cExp    += rtrim( aTblFld[ oFld[n]:nAt ] ) +     aTblCon[ oCon[n]:nAt ] +     cGetVal( aVal[n] )
+
+        end
+
+        IF oNex[n]:nAt <> 1
+            cExp     += aNex[ oNex[n]:nAt - 1 ]
+        ELSE
+            EXIT
+        end
+
+        n++
+
+    end
+
+    IF At( Type( cExp ), "UEUI" ) <> 0
+      msgStop( "Expresión " + rtrim( cExp ) + " no valida" )
+        cExp    := NIL
+   ELSE
+      cExp  := &( "{|| " + cExp + " }" )
+   end
+
+RETURN cExp
+
+
+
+STATIC FUNCTION cGetVal( xVal )
+
+    local cTemp
+   local cType := Valtype( xVal )
+
+   do case
+   case cType == "C"
+
+        IF Upper( xVal )         == "S"
+            cTemp := ".T."
+        ELSEIF Upper( xVal ) == "N"
+            cTemp := ".F."
+        ELSE
+            xVal    := rtrim( xVal )
+            cTemp := '"' + cValToChar( xVal ) + '"'
+        end
+
+   case cType == "N"
+
+        cTemp := cValToChar( xVal )
+
+   case cType == "D"
+
+        cTemp := 'CTOD( "' + cValToChar( xVal ) + '" )'
+
+   end
+
+RETURN ( cTemp )
+
+
+
+static FUNCTION TShell_Maximize( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local oWnd  := GetWndFrame()
+
+   ::Restore()
+
+   ::nTop      := 0
+   ::nLeft     := 0
+   ::nBottom   := oWnd:oWndClient:nHeight()
+   ::nRight    := oWnd:oWndClient:nWidth()
+
+   ::Move( ::nTop, ::nLeft, ::nRight, ::nBottom,  .T. )
+
+return nil
+
+
+
+static FUNCTION TShell_SysCommand( nWParam, nLParam ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if nWParam == 61488
+      ::Maximize()
+      return 0
+   else
+      ::Super:SysCommand( nWParam, nLParam )
+   endif
+
+return nil
+
+
+
+static FUNCTION TShell_Destroy( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if ::oBrw <> nil
+      ::oBrw:end()
+   end
+
+   if ::oBtnBar <> nil
+      ::oBtnBar:end()
+   end
+
+   if ::oBtnTop <> nil
+      ::oBtnTop:end()
+   end
+
+   if ::oMsgBar <> nil
+      ::oMsgBar:end()
+   end
+
+   if ::oComboBox <> nil
+      ::oComboBox:end()
+   end
+
+   if ::oIcon <> nil
+      ::oIcon:end()
+   end
+
+   if ::oCursor <> nil
+      ::oCursor:end()
+   end
+
+   if ::oTop <> nil
+      ::oTop:end()
+   end
+
+   if ::oLeft <> nil
+      ::oLeft:end()
+   end
+
+   if ::oRight <> nil
+      ::oRight:end()
+   end
+
+   if ::oClient <> nil
+      ::oClient:end()
+   end
+
+   if ::oTxtSea <> nil
+      ::oTxtSea:end()
+   end
+
+   if ::oImageList <> nil
+      ::oImageList:End()
+   end
+
+   if ::oHorizontalSplitter <> nil
+      ::oHorizontalSplitter:End()
+   end
+
+   if ::oVerticalSplitter <> nil
+      ::oVerticalSplitter:End()
+   end
+
+   if ::hWnd <> 0
+      ::Super:Destroy()
+   endif
+
+   if ::bDestroy <> nil
+      Eval( ::bDestroy )
+   end
+
+return ( Self )
+
+
+
+static FUNCTION TShell_ChgTabs( nTab ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   If( nTab == nil, nTab := ::oTabs:nOption, ) ;
+
+   if ( ::xAlias )->( Used() )
+      (::xAlias)->( dbSetOrder( nTab ) )
+   end
+
+
+
+   if !empty( ::bChgIndex )
+      Eval( ::bChgIndex )
+   end
+
+
+
+   ::oBrw:Refresh()
+
+   if ::oTxtSea <> nil .AND. ::oTxtSea:ClassName() == "TGET"
+      ::oTxtSea:oGet:Home()
+      ::oTxtSea:cText( Space( 100 ) )
+   end
+
+return ( Self )
+
+
+
+static FUNCTION TShell_ChgCombo( nTab ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local oCol
+   local cOrd                 := ""
+
+   if empty( nTab ) .AND. !empty( ::oWndBar )
+      nTab                    := ::oWndBar:GetComboBoxAt( .T. )
+   end
+
+   if empty( nTab ) .AND. ( ::xAlias )->( used() )
+      nTab                    := ( ::xAlias )->( ordnumber() )
+   end
+
+   nTab                       := Max( nTab, 1 )
+
+   if !empty( ::oWndBar )
+      ::oWndBar:SetComboBoxSelect( nTab )
+   end
+
+
+
+   if !empty( ::bChgIndex )
+      eval( ::bChgIndex )
+   end
+
+
+
+   if !empty( ::oWndBar )
+      cOrd                    := ::oWndBar:GetComboBox()
+   end
+
+
+
+   if !empty( ::oBrw ) .AND. !empty( cOrd )
+
+      with object ::oBrw
+
+         if ( ::xAlias )->( Used() )
+
+            for each oCol in :aCols
+
+               if Equal( cOrd, oCol:cHeader )
+                  oCol:SetOrder()
+               else
+                  oCol:cOrder       := " "
+               end
+
+            next
+
+         end
+
+      end
+
+
+
+      ::AplyFilter()
+
+
+
+      ::oBrw:Refresh()
+
+   end
+
+return ( Self )
+
+
+
+static FUNCTION TShell_AddSeaBar( cSearchType, nLenSearchType ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   If( cSearchType == nil, cSearchType := "justSpace", ) ;
+   If( nLenSearchType == nil, nLenSearchType := 10, ) ;
+
+   ::cSearchType           := cSearchType
+   ::nLenSearchType        := nLenSearchType
+
+   if !empty( ::oWndBar )
+
+      ::oWndBar:SetComboBoxChange(              {|| ::ChgCombo() } )
+      ::oWndBar:SetComboFilterChange(           {|| ::ChgFilter() } )
+
+      ::oWndBar:SetActionAddButtonFilter(       {|| ::AddFilter() } )
+      ::oWndBar:SetActionEditButtonFilter(      {|| ::EditFilter() } )
+      ::oWndBar:SetActionDeleteButtonFilter(    {|| ::KillFilter() } )
+
+      ::oWndBar:SetGetChange( nil )
+
+      ::oWndBar:SetGetKeyUp(                    {|| ::fastSeek( ::oWndBar:oGet, ::oWndBar:oGet:oGet:buffer() ) } )
+      ::oWndBar:SetGetKeyDown(                  {| nKey, nFlags | ::KeySearch( nKey ) } )
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TShell_SetIndex( nOrd ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if ( ::xAlias )->( Used() )
+      ( ::xAlias )->( dbSetOrder( nOrd ) )
+   end
+
+   if !empty( ::oWndBar )
+      ::oWndBar:SetComboBoxSelect( nOrd )
+   end
+
+   ::oComboBox:Select( nOrd )
+
+   ::oBrw:Refresh()
+
+RETURN nil
+
+
+
+static FUNCTION TShell_NextTabOption( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local nOpt
+
+   if !empty( ::oWndBar )
+
+      nOpt        := ::oWndBar:GetComboBoxAt( .T. )
+
+      if nOpt < len( ::aPrompt )
+         nOpt++
+         ::ChgCombo( nOpt )
+      end
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TShell_PrevTabOption( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local nOpt
+
+   if !empty( ::oWndBar )
+
+      nOpt  := ::oWndBar:GetComboBoxAt( .T. )
+
+      if nOpt > 1
+         nOpt--
+         ::ChgCombo( nOpt )
+      end
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TShell_lPressCol( nCol ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local nPos
+   local cHeader
+
+   if !empty( nCol ) .AND. nCol <= len( ::oBrw:aHeaders )
+
+      cHeader     := ::oBrw:aHeaders[ nCol ]
+
+      nPos        := aScan( ::aPrompt, cHeader )
+      if nPos     <> 0
+
+         ::oWndBar:SetComboBoxItem( cHeader )
+
+         if ( ::xAlias )->( used() )
+            ( ::xAlias )->( ordsetfocus( ::oWndBar:GetComboBoxAt() ) )
+         end
+
+         ::oBrw:Refresh()
+
+      end
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TShell_ClickOnHeader( oCol ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   ::killScope()
+
+   if !empty( oCol )
+      if aScan( ::aPrompt, oCol:cHeader ) <> 0
+         ::oWndBar:SetComboBoxItem( oCol:cHeader )
+      end
+   end
+
+   ::AplyFilter()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TShell_HelpTopic( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if !empty( ::cHtmlHelp )
+      HtmlHelp( ::cHtmlHelp )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TShell_addGoTo( cCaption, bAction ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   aAdd( ::aGoTo, { cCaption, bAction } )
+
+Return ( Self )
+
+
+
+static FUNCTION TShell_addImageList( cImage ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local oImage
+   local nImageList     := 0
+
+   if !empty( cImage )
+      oImage            := TBitmap():Define( cImage )
+      oImage:cResName   := cImage
+      ::oImageList:AddMasked( oImage, ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+      nImageList        := len( ::oImageList:aBitmaps ) - 1
+   end
+
+Return ( nImageList )
+
+
+
+static FUNCTION TShell_ClickTree( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local oItem       := ::oBtnBar:GetSelected()
+
+   if !empty( oItem ) .AND. oItem:ClassName() == "TTVITEM" .AND. Valtype( oItem:bAction ) == "B"
+
+      if !::lOnProcess
+
+         if !( oItem:cPrompt $ "Salir" ) .AND. !oItem:Cargo
+            ::SetOnProcess()
+         end
+
+         Eval( oItem:bAction )
+
+         if ::oBtnMain <> nil
+            ::oBtnBar:Select( ::oBtnMain )
+         end
+
+         ::QuitOnProcess()
+
+      end
+
+      if !( oItem:cPrompt $ "Buscar" )
+         if !empty( ::oBrw )
+            ::oBrw:SetFocus()
+         end
+      end
+
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TShell_OpenData( cPath ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Return ( Self )
+
+
+
+static FUNCTION TShell_CreateData( cPath ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+
+
+
+
+
+
+
+
+
+
+
+
+Return ( Self )
+
+
+
+static FUNCTION TShell_ReindexData( cPath ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Return ( self )
+
+
+
+static FUNCTION TShell_AppendData( cPath, cPathFrom ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+
+
+
+
+
+
+
+
+
+
+
+
+Return ( self )
+
+
+
+static FUNCTION TShell_LoadData( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   if !::lAutoPos
+      RETURN ( Self )
+   end
+
+   ::oBrw:LoadRecnoAndOrder()
+
+Return ( Self )
+
+
+
+static FUNCTION TShell_SaveData( lSaveBrowseState ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Return ( Self )
+
+
+
+static FUNCTION TShell_DeleteData( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if File( cPatEmp() + "CfgUse.Dbf" )
+      fErase( cPatEmp() + "CfgUse.Dbf" )
+   end
+
+   if File( cPatEmp() + "CfgUse.Cdx" )
+      fErase( cPatEmp() + "CfgUse.Cdx" )
+   end
+
+   if File( cPatEmp() + "CfgCol.Dbf" )
+      fErase( cPatEmp() + "CfgCol.Dbf" )
+   end
+
+   if File( cPatEmp() + "CfgCol.Cdx" )
+      fErase( cPatEmp() + "CfgCol.Cdx" )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TShell_CloseData( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if !empty( ::dbfUsr ) .AND. ( ::dbfUsr )->( Used() )
+      ( ::dbfUsr )->( dbCloseArea() )
+   end
+
+   if !empty( ::dbfCol ) .AND. ( ::dbfCol )->( Used() )
+      ( ::dbfCol )->( dbCloseArea() )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TShell_CreateXBrowse( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local oError
+   local oBlock
+   local lCreateXBrowse    := .T.
+
+   oBlock                  := ErrorBlock( { | oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      ::oBrw                  := IXBrowse():New( Self )
+      ::oBrw:nStyle           := nOr( 1073741824, 268435456, 65536 )
+      ::oBrw:l2007            := .F.
+      ::oBrw:cName            := ::cWinName
+
+      ::oBrw:lRecordSelector  := .F.
+      ::oBrw:lAutoSort        := .T.
+      ::oBrw:lSortDescend     := .F.
+
+
+
+      ::oBrw:nMarqueeStyle    := 6
+
+      ::oBrw:bClrStd          := {|| { 0, 16777215 } }
+      ::oBrw:bClrSel          := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      ::oBrw:bClrSelFocus     := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      ::oBrw:bRClicked        := {| nRow, nCol, nFlags | ::RButtonDown( nRow, nCol, nFlags ) }
+
+      ::oBrw:nDataType        := 0
+      ::oBrw:cAlias           := ::xAlias
+      ::oBrw:bGoTop           := {|| if( ( ::xAlias )->( Used() ), ( ::xAlias )->( dbGoTop() ), ) }
+      ::oBrw:bGoBottom        := {|| if( ( ::xAlias )->( Used() ), ( ::xAlias )->( dbGoBottom() ), ) }
+      ::oBrw:bBof             := {|| if( ( ::xAlias )->( Used() ), ( ::xAlias )->( Bof() ), ) }
+      ::oBrw:bEof             := {|| if( ( ::xAlias )->( Used() ), ( ::xAlias )->( Eof() ), ) }
+      ::oBrw:bLock            := {|| if( ( ::xAlias )->( Used() ), ( ::xAlias )->( dbrLock() ), ) }
+      ::oBrw:bUnlock          := {|| if( ( ::xAlias )->( Used() ), ( ::xAlias )->( dbrUnlock() ), ) }
+
+      ::oBrw:bBookMark        := {| n | iif( n == nil, ( ::xAlias )->( recno() ), ( if( ( ::xAlias )->( Used() ), ( ::xAlias )->( dbGoto( n ) ), ) ) ) }
+      ::oBrw:bSkip            := {| n | iif( n == nil, n := 1, ), ( if( ( ::xAlias )->( Used() ), ( ::xAlias )->( __DbSkipper( n ) ), ) ) }
+
+      if lAIS()
+
+
+         ::oBrw:bKeyNo        := {| n | iif( n == nil, ( if( ( ::xAlias )->( Used() ), Round( ( ::xAlias )->( ADSGetRelKeyPos() ) * if( !empty(::oBrw), ::oBrw:nLen, 1 ), 0 ), ) ), ( if( ( ::xAlias )->( Used() ), ( ::xAlias )->( ADSSetRelKeyPos( n / if( !empty(::oBrw), ::oBrw:nLen, 1 ) ) ), ) ) ) }
+         ::oBrw:bKeyCount     := {|| if( ( ::xAlias )->( Used() ), ( ::xAlias )->( ADSKeyCount(,,1) ), ) }
+      else
+
+
+         ::oBrw:bKeyNo        := {| n | iif( n == nil, ( if( ( ::xAlias )->( Used() ), ( ::xAlias )->( OrdKeyNo() ), ) ), ( if( ( ::xAlias )->( Used() ), ( ::xAlias )->( OrdKeyGoto( n ) ), ) ) ) }
+         ::oBrw:bKeyCount     := {|| if( ( ::xAlias )->( Used() ), ( ::xAlias )->( OrdKeyCount() ), 0 ) }
+      end
+
+      ::oBrw:lFastEdit        := .T.
+
+      ::oBrw:bKeyChar         := {|nKey| ::CtrlKey( nKey ) }
+
+
+
+      if !::lBigStyle
+         ::oBrw:nTop       := 44 + 0
+      else
+         ::oBrw:nTop       := 0
+         ::oBrw:nRowHeight := 36
+      endif
+
+      ::oBrw:nLeft         := 250 + 0
+      ::oBrw:nRight        := ::nRight - ::nLeft
+      ::oBrw:nBottom       := ::nBottom - ::nTop
+
+   RECOVER USING oError
+
+      msgStop( ErrorMessage( oError ), "Imposible crear rejilla de datos" )
+
+      lCreateXBrowse       := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+Return ( lCreateXBrowse )
+
+
+
+static FUNCTION TShell_CreateXFromCode( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local oCol
+
+
+
+
+
+
+
+
+
+
+
+   for each oCol in ::oBrw:aCols
+      if empty( oCol:bLDClickData ) .AND. !( oCol:lEditable )
+         oCol:bLDClickData    := {|| ::RecEdit() }
+      end
+   next
+
+
+
+   ::oBrw:CreateFromCode()
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ::oBrw:LoadRecnoAndOrder( ::oWndBar )
+
+   ::oBrw:SetFocus()
+
+Return ( Self )
+
+
+
+static FUNCTION TShell_CheckExtendInfo( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if empty( ::bToolTip )
+      Return ( Self )
+   endif
+
+   if !empty( ::oDialogTip )
+      ::oDialogTip:End()
+      ::oDialogTip  := nil
+   endif
+
+   if !empty( ::oTimer )
+      ::oTimer:End()
+      ::oTimer    := nil
+   endif
+
+   if !::lOnProcess .AND. !::oBrw:lEditMode
+      ::oTimer             := TTimer():New( ::nToolTip, {|| ::ShowExtendInfo(), if( ::oTimer <> nil, ::oTimer:End(), nil ), ::oTimer := nil }, )
+      ::oTimer:hWndOwner   := GetActiveWindow()
+      ::oTimer:Activate()
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TShell_ShowExtendInfo( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local nRow
+   local oBlock
+
+   ::lOnProcess      := .T.
+
+   oBlock            := ErrorBlock( { | oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   if ::oDialogTip == nil
+
+      ::oDialogTip   := CheckEval( ::bToolTip )
+
+      if isObject( ::oDialogTip )
+
+         nRow        := ( ::oBrw:nRowSel * ::oBrw:DataHeight ) + ::oBrw:HeaderHeight()
+
+         if ( nRow + ::oDialogTip:nHeight() ) >= ( ::oBrw:BrwHeight() - 100 )
+            nRow     -= ( ::oDialogTip:nHeight() + ::oBrw:DataHeight + 108 )
+            nRow     := Max( nRow, 0 )
+         else
+            nRow     += 4
+         end
+
+         ::oDialogTip:Activate( , , , .F., , .F., {|o| o:Move( nRow, ( ::oBrw:BrwWidth() - ::oDialogTip:nWidth() - 4 ), ::oDialogTip:nWidth(), ::oDialogTip:nHeight() ) } )
+
+         ::oBrw:SetFocus()
+         ::oBrw:Select()
+
+         if !empty( ::oTimer )
+            ::oTimer:End()
+            ::oTimer := nil
+         endif
+
+      end
+
+   end
+
+   end
+
+   ErrorBlock( oBlock )
+
+   ::lOnProcess     := .F.
+
+return nil
+
+
+
+static FUNCTION TShell_DestroyToolTip( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+  if !empty( ::oDialogTip )
+
+     ::oDialogTip:End()
+     ::oDialogTip      := nil
+
+       ::oBrw:SetFocus()
+
+  endif
+
+
+
+return nil
+
+
+
+static FUNCTION TShell_setAutoFilter( cFilter ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if empty( ::bFilter ) .AND. !empty( cFilter )
+
+      if ( ::xAlias )->( Used() )
+         dbSelectArea( ( ::xAlias )->( Used() ) )
+      end
+
+      if empty( cFilter ) .OR. At( Type( cFilter ), "UEUI" ) <> 0
+         ::bFilter   := nil
+      else
+         ::bFilter   := Compile( cFilter )
+      end
+
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TShell_ChgFilter( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local cFilter              := ""
+   local cFilterCombo         := ""
+   local cFilterExpresion     := ""
+   local cFilterYear          := ""
+   local cFilterAsterisk      := ""
+
+   CursorWait()
+
+   cFilterCombo               := ::getActiveExpresionFilter()
+   cFilterYear                := ::getYearComboBoxExpression()
+   cFilterAsterisk            := ::getAsteriskFilter()
+
+   if !empty(cFilterCombo)
+      cFilter                 := cFilterCombo
+      ::ShowDeleteButtonFilter()
+      ::ShowEditButtonFilter()
+   else
+      ::HideDeleteButtonFilter()
+      ::HideEditButtonFilter()
+   end
+
+   if !empty(cFilterYear)
+      if !empty( cFilter )
+         cFilter              += " .and. " + cFilterYear
+      else
+         cFilter              := cFilterYear
+      end
+   end
+
+   if !empty(cFilterAsterisk)
+      if !empty( cFilter )
+         cFilter              += " .and. " + cFilterAsterisk
+      else
+         cFilter              := cFilterAsterisk
+      end
+   end
+
+   ::setFilter( cFilter )
+
+   ::Refresh()
+
+   CursorWE()
+
+   if !Empty( cFilterAsterisk )
+      ::oBrw:GoTop()
+   end
+
+   ::SetFocus()
+
+Return ( Self )
+
+
+
+static FUNCTION TShell_toExcel( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   CreateWaitMeter( "Exportando a excel", "Espere por favor...", Eval( ::oBrw:bKeyCount ) )
+
+   ::oBrw:ToExcel( {|n| RefreshWaitMeter( n ) } )
+
+   EndWaitMeter()
+
+Return ( Self )
+
+
+
+static FUNCTION TShell_aplyFilter( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if !empty( ::oActiveFilter )
+      ::ChgFilter()
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TShell_SetFocus( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local nScan
+
+   if !empty(::oWndClient)
+      nScan    := ascan( ::oWndClient:aWnd, {|o| o:hWnd == ::hWnd } )
+      if nScan <> 0
+         ::oWndClient:select( nScan )
+      end
+   end
+
+   if !empty( ::oBtnMain )
+      ::oBtnBar:Select( ::oBtnMain )
+   end
+
+   if !empty( ::oBrw )
+      ::oBrw:SetFocus()
+      ::oBrw:Select( 0 )
+      ::oBrw:Select( 1 )
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TShell_setWindowsBar( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if empty( ::oWndBar )
+      Return ( Self )
+   end
+
+   ::oWndBar:EnableComboBox( ::aPrompt )
+
+   if !empty( ::oActiveFilter:Ready() )
+
+      ::enableComboFilter( ::oActiveFilter:aFiltersName )
+
+      ::setDefaultComboFilter()
+
+      ::showAddButtonFilter()
+
+      ::setFilterByUser()
+
+   end
+
+   ::oWndBar:enableGet()
+
+   if ::lFechado
+      ::oWndBar:ShowYearCombobox()
+   end
+
+   ::chgCombo( ::nTab )
+
+Return ( Self )
+
+
+
+static FUNCTION TShell_getActiveExpresionFilter( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local cActiveExpresionFilter  := ""
+
+   if !empty( ::oWndBar:GetComboFilter() )
+      cActiveExpresionFilter     := ::oActiveFilter:getExpresionFilter( ::oWndBar:GetComboFilter() )
+   end
+
+Return ( cActiveExpresionFilter )
+
+
+
+static FUNCTION TShell_setFilter( cFilter ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if !( ::xAlias )->( used() )
+      RETURN ( nil )
+   end
+
+   if !empty( cFilter )
+      ( ::xAlias )->( setCustomFilter( cFilter ) )
+   else
+      ( ::xAlias )->( quitCustomFilter() )
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION TShell_KillFilter( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   if !empty( ::oActiveFilter )
+      ::oActiveFilter:KillFilter()
+   end
+
+   if !empty( ::oWndBar )
+      ::oWndBar:HideDeleteButtonFilter()
+      ::oWndBar:HideEditButtonFilter()
+   end
+
+   ::chgFilter()
+
+Return ( Self )
+
+
+
+static FUNCTION TShell_getComboFilter( ) ; local Self AS CLASS TShell := QSelf() AS CLASS TShell
+
+   local cFilter  := ""
+
+   if empty( ::oWndBar )
+      Return ( cFilter )
+   end
+
+   if ::oWndBar:GetComboFilter() <> ""
+      cFilter     := ::oWndBar:GetComboFilter()
+   end
+
+Return ( cFilter )
+
+
+
+Function aItmHea()
+
+   local aBase := {}
+
+   aAdd( aBase, { "cCodUse",  "C",  3, 0, "Código usuario"           } )
+   aAdd( aBase, { "cNomCfg",  "C", 30, 0, "Nombre ventana"           } )
+   aAdd( aBase, { "nRecCfg",  "N", 10, 0, "Recno de la ventana"      } )
+   aAdd( aBase, { "nTabCfg",  "N", 10, 0, "Orden de la ventana"      } )
+   aAdd( aBase, { "cOrdCfg",  "C", 60, 0, "Tag de la ventana"        } )
+   aAdd( aBase, { "cBrwCfg",  "M", 10, 0, "Configuración del browse" } )
+
+Return ( aBase )
+
+
+
+Static Function aItmCol()
+
+   local aBase := {}
+
+   aAdd( aBase, { "cCodUse",  "C",  3, 0, "Código usuario"           } )
+   aAdd( aBase, { "cNomCfg",  "C", 30, 0, "Nombre ventana"           } )
+   aAdd( aBase, { "nNumCol",  "N",  2, 0, "Número de la columna"     } )
+   aAdd( aBase, { "lSelCol",  "L",  1, 0, "Columna seleccionada"     } )
+   aAdd( aBase, { "nPosCol",  "N",  2, 0, "Posicición de la columna" } )
+   aAdd( aBase, { "nSizCol",  "N",  6, 0, "Tamaño de la columna"     } )
+   aAdd( aBase, { "lJusCol",  "L",  1, 0, "Columna a la derecha"     } )
+
+Return ( aBase )
+
+
+
+
+
+
+
+
+
+
+
+function CheckOne( aColSelect )
+
+   local lOne  := .F.
+
+   aEval( aColSelect, {|x| if( x, lOne := .T., ) } )
+
+   if !lOne
+      msgStop( "La ventana debe de contener al menos una columna seleccionada" )
+   end
+
+return ( lOne )
+
+
+
+function SwapDwArray( aArray, nPos )
+
+   local uTmp
+
+   If( nPos == nil, nPos := len( aArray ), ) ;
+
+   if nPos < len( aArray ) .AND. nPos > 0
+      uTmp              := aArray[nPos]
+      aArray[nPos]      := aArray[nPos + 1 ]
+      aArray[nPos + 1 ] := uTmp
+   end
+
+return nil
+
+
+
+function SwapUpArray( aArray, nPos )
+
+   local uTmp
+
+   If( nPos == nil, nPos := len( aArray ), ) ;
+
+   if nPos <= len( aArray ) .AND. nPos > 1
+      uTmp              := aArray[nPos]
+      aArray[nPos]      := aArray[nPos - 1 ]
+      aArray[nPos - 1 ] := uTmp
+   end
+
+return nil
+
+
+
+Function _aColFoot( aColFoot, aColSel )
+
+   local nFor
+   local nLen  := Len( aColFoot )
+   local aFoo  := {}
+
+   for nFor = 1 to nLen
+      if aColSel[ nFor ]
+         aAdd( aFoo, aColFoot[ nFor ] )
+      end
+   next
+
+return ( aFoo )
+
+
+
+Function _aData( aFields, aColSel )
+
+   local nFor
+   local nLen  := Len( aFields )
+   local aFld  := {}
+
+   for nFor = 1 to nLen
+      if aColSel[ nFor ]
+         aAdd( aFld, aFields[ nFor ] )
+      end
+   next
+
+return aFld
+
+
+
+Function _aColHead( aHeaders, aColSel )
+
+   local nFor
+   local nLen  := Len( aHeaders )
+   local aHea  := {}
+
+   for nFor = 1 to nLen
+      if aColSel[ nFor ]
+         aAdd( aHea, aHeaders[ nFor ] )
+      end
+   next
+
+return aHea
+
+
+
+Function _aColSize( aColSizes, aColSel, oBrw )
+
+   local nFor
+   local nLen  := Len( aColSizes )
+   local aSiz  := {}
+
+   for nFor = 1 to nLen
+      if aColSel[ nFor ]
+         aAdd( aSiz, aColSizes[ nFor ] )
+      end
+   next
+
+return aSiz
+
+
+
+Function _aColJustify( aColJustify, aColSel, oBrw )
+
+   local nFor
+   local nLen  := Len( aColJustify )
+   local aJus  := {}
+
+   for nFor = 1 to nLen
+      if aColSel[ nFor ]
+         aAdd( aJus, aColJustify[ nFor ] )
+      end
+   next
+
+return aJus
+
+
+
+Function _aFld( aFields, aColSel )
+
+   local nFor
+   local nLen  := Len( aFields )
+   local aFld  := {}
+
+   for nFor := 1 to nLen
+      if aColSel[ nFor ] .AND. !empty( aFields[ nFor ] )
+         aAdd( aFld, Eval( aFields[ nFor ] ) )
+      end
+   next
+
+return aFld
+
+
+
+
+Function Equal( uFirst, uSecond, lExact )
+
+   local c
+
+   If( lExact == nil, lExact := .T., ) ;
+
+   if ( c := Valtype( uFirst ) ) == Valtype( uSecond )
+      if c == "C"
+         if lExact
+            if Upper( AllTrim( uFirst ) ) == Upper( AllTrim( uSecond ) )
+               return .T.
+            endif
+         else
+            if Upper( AllTrim( uFirst ) ) = Upper( AllTrim( uSecond ) )
+               return .T.
+            endif
+         endif
+      else
+         if uFirst == uSecond
+            return .T.
+         endif
+      endif
+   endif
+
+return .F.
+
+
+
+Function oFontLittelTitle()
+
+   if empty( oFontLittelTitle )
+      oFontLittelTitle  := TFont():New( "Ms Sans Serif", 6, 12, .F. )
+   end
+
+Return ( oFontLittelTitle )
+
+
+
+Function oFontLittelTitleEnd()
+
+   if !empty( oFontLittelTitle )
+      oFontLittelTitle:end()
+   end
+
+   oFontLittelTitle     := nil
+
+Return ( nil )
+
+
+
+Function oFontBigTitle()
+
+   if empty( oFontBigTitle )
+      oFontBigTitle     := TFont():New( "Segoe UI Light", 0, -48, .F., .F. )
+   end
+
+Return ( oFontBigTitle )
+
+
+
+Function oFontTotal()
+
+   if empty( oFontTotal )
+      oFontTotal        := TFont():New( "Arial", 8, 26, .F., .T. )
+   end
+
+Return ( oFontTotal )

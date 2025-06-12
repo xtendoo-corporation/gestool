@@ -1,0 +1,2772 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 12 ".\.\Prg\TpvMenu.prg"
+_HB_CLASS TpvMenu ; function TpvMenu ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TpvMenu", iif( .T., { @TMasDet() }, { @HBObject() } ), @TpvMenu() ) ) ;
+
+   _HB_MEMBER { oInstance } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oInstance"}, .F. )
+
+   _HB_MEMBER { cMru } ; oClass:AddMultiData(, "gc_clipboard_empty_16", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cMru"}, .F. )
+   _HB_MEMBER { cBitmap } ; oClass:AddMultiData(, ( 164 + ( 55 * 256 ) + ( 58 * 65536 ) ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cBitmap"}, .F. )
+
+   _HB_MEMBER { oGetCodigo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetCodigo"}, .F. )
+   _HB_MEMBER { oGetNombre } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetNombre"}, .F. )
+
+   _HB_MEMBER { oOrdenComandas } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oOrdenComandas"}, .F. )
+
+   _HB_MEMBER { oDbfArticulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfArticulo"}, .F. )
+
+   _HB_MEMBER { oDetMenuArticulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDetMenuArticulo"}, .F. )
+   _HB_MEMBER { oMenuOrdenes } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oMenuOrdenes"}, .F. )
+
+   _HB_MEMBER { oDlgAcompannamiento } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDlgAcompannamiento"}, .F. )
+
+   _HB_MEMBER { oBrwOrdenesComanda } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwOrdenesComanda"}, .F. )
+   _HB_MEMBER { oBrwAcompannamiento } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwAcompannamiento"}, .F. )
+
+   _HB_MEMBER { oLstArticulos } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oLstArticulos"}, .F. )
+
+   _HB_MEMBER { oSender } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSender"}, .F. )
+
+   _HB_MEMBER { aIngredientes } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aIngredientes"}, .F. )
+
+   _HB_MEMBER New( cPath, oWndParent, oMenuItem) AS CLASS TpvMenu; oClass:AddMethod( "New", @TpvMenu_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Create( cPath) AS CLASS TpvMenu; oClass:AddMethod( "Create", @TpvMenu_Create(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DefineFiles(); oClass:AddMethod( "DefineFiles", @TpvMenu_DefineFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles( lExclusive, cPath); oClass:AddMethod( "OpenFiles", @TpvMenu_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CloseFiles( lExclusive, cPath); oClass:AddMethod( "CloseFiles", @TpvMenu_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenService( lExclusive, cPath); oClass:AddMethod( "OpenService", @TpvMenu_OpenService(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CloseService( lExclusive,cPath); oClass:AddMethod( "CloseService", @TpvMenu_CloseService(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Resource( nMode); oClass:AddMethod( "Resource", @TpvMenu_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER StartResource() ; oClass:AddVirtual( "StartResource" )
+   _HB_MEMBER lSaveResource(); oClass:AddMethod( "lSaveResource", @TpvMenu_lSaveResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lIsMenuActive(); oClass:AddMethod( "lIsMenuActive", @TpvMenu_lIsMenuActive(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nMenuActive(); oClass:AddMethod( "nMenuActive", @TpvMenu_nMenuActive(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cMenuActive(); oClass:AddMethod( "cMenuActive", @TpvMenu_cMenuActive(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cNombre( cCodMnu); oClass:AddMethod( "cNombre", @TpvMenu_cNombre(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nPrecio( cCodMnu); oClass:AddMethod( "nPrecio", @TpvMenu_nPrecio(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER InitAcompannamientoMultiple(); oClass:AddMethod( "InitAcompannamientoMultiple", @TpvMenu_InitAcompannamientoMultiple(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InitAcompannamientoSimple( cCodigoMenu, cCodigoOrden); oClass:AddMethod( "InitAcompannamientoSimple", @TpvMenu_InitAcompannamientoSimple(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CargaDatosAcompannamiento(); oClass:AddMethod( "CargaDatosAcompannamiento", @TpvMenu_CargaDatosAcompannamiento(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ProcesaDatosAcompannamiento(); oClass:AddMethod( "ProcesaDatosAcompannamiento", @TpvMenu_ProcesaDatosAcompannamiento(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER SumaUnidadesAcompannamiento(); oClass:AddInline( "SumaUnidadesAcompannamiento", {|Self | ( ( Self ) ), ( ::aIngredientes[ ::oBrwAcompannamiento:nArrayAt, "Unidades" ]++, ::oBrwAcompannamiento:Refresh() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+   _HB_MEMBER RestaUnidadesAcompannamiento(); oClass:AddInline( "RestaUnidadesAcompannamiento", {|Self | ( ( Self ) ), ( if (  ::aIngredientes[ ::oBrwAcompannamiento:nArrayAt, "Unidades" ] > 0, ::aIngredientes[ ::oBrwAcompannamiento:nArrayAt, "Unidades" ]--, ), ::oBrwAcompannamiento:Refresh() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nUnidadesAcompannamiento(); oClass:AddMethod( "nUnidadesAcompannamiento", @TpvMenu_nUnidadesAcompannamiento(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Acompannamiento( cCodigoMenu); oClass:AddMethod( "Acompannamiento", @TpvMenu_Acompannamiento(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER AgregarAcompannamientoSimple( cCodigoArticulo, cCodigoMenu, cCodigoOrden); oClass:AddMethod( "AgregarAcompannamientoSimple", @TpvMenu_AgregarAcompannamientoSimple(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER StartDialogAcompannamiento(); oClass:AddMethod( "StartDialogAcompannamiento", @TpvMenu_StartDialogAcompannamiento(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CreateItemAcompannamiento(); oClass:AddMethod( "CreateItemAcompannamiento", @TpvMenu_CreateItemAcompannamiento(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ActionAcompannamientoSimple(); oClass:AddMethod( "ActionAcompannamientoSimple", @TpvMenu_ActionAcompannamientoSimple(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TpvMenu ;
+
+
+
+static FUNCTION TpvMenu_New( cPath, oWndParent, nLevel ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   If( oWndParent == nil, oWndParent := GetWndFrame(), ) ;
+   If( nLevel == nil, nLevel := "menus", ) ;
+
+   ::Create( cPath )
+
+   if Empty( ::nLevel )
+      ::nLevel          := Auth():Level( nLevel )
+   end
+
+
+
+
+
+   if oWndParent <> nil
+      oWndParent:CloseAll()
+   end
+
+   ::cPath              := cPath
+   ::oWndParent         := oWndParent
+
+   ::lAutoButtons       := .T.
+   ::lCreateShell       := .F.
+
+   ::oOrdenComandas     := TOrdenComanda():Create()
+
+   ::oMenuOrdenes       := TpvMenuOrdenes():New( cPath, cDriver(), Self )
+   ::AddDetail( ::oMenuOrdenes )
+
+   ::oDetMenuArticulo   := TpvMenuArticulo():New( cPath, cDriver(), Self )
+   ::AddDetail( ::oDetMenuArticulo )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TpvMenu_Create( cPath, oSender ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+
+   ::cPath              := cPath
+   ::oSender            := oSender
+
+   ::oDbf               := nil
+
+RETURN ( Self )
+
+
+
+static FUNCTION TpvMenu_DefineFiles( cPath, cDriver ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   local oDbf
+
+   If( cPath == nil, cPath := ::cPath, ) ;
+   If( cDriver == nil, cDriver := cDriver(), ) ;
+
+   oDbf := DbfServer( "TpvMenus.Dbf", "TpvMenus" ):New( "TpvMenus.Dbf", "TpvMenus", ( cDriver ), "Menús TPV", ( cPath ) )
+
+      oDbf:AddField( "cCodMnu", "C", 03, 0,,,,, "Código", .F., 80, .F., {} )
+      oDbf:AddField( "cNomMnu", "C", 40, 0,,,,, "Nombre", .F., 200, .F., {} )
+      oDbf:AddField( "nImpMnu", "N", 16, 6, cPorDiv(),,,, "Precio", .T., 80, .F., {} )
+      oDbf:AddField( "lObsMnu", "L", 01, 0,,,,, "Obsoleto", .F.,, .T., {} )
+      oDbf:AddField( "lAcomp", "L", 01, 0,,,,, "Menú acompañamiento", .F.,, .T., {} )
+
+      oDbf:AddIndex( "cCodMnu", "TpvMenus.Cdx", "cCodMnu",,, .F., .F., "Código",,, .T., .F. )
+      oDbf:AddIndex( "cNomMnu", "TpvMenus.Cdx", "cNomMnu",,, .F., .F., "Nombre",,, .T., .F. )
+      oDbf:AddIndex( "lObsMnu", "TpvMenus.Cdx", "cCodMnu", "!Deleted() .and. !Field->lObsMnu",, .F., .F., "",,, .F., .F. )
+      oDbf:AddIndex( "lAcomp", "TpvMenus.Cdx", "cCodMnu", "!Deleted() .and. !Field->lAcomp",, .F., .F., "",,, .F., .F. )
+      oDbf:AddIndex( "lShwMnu", "TpvMenus.Cdx", "cCodMnu", "!Deleted() .and. !Field->lAcomp .and. !Field->lObsMnu",, .F., .F., "",,, .F., .F. )
+
+
+
+RETURN ( oDbf )
+
+
+
+static FUNCTION TpvMenu_OpenFiles( lExclusive, cPath ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   local oError
+   local oBlock
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   ::lOpenFiles         := .T.
+
+   oBlock               := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      if Empty( ::oDbf )
+         ::oDbf         := ::DefineFiles( cPath )
+      end
+
+      ::oDbf:Activate( .F., !( lExclusive ) )
+
+      ::oDbfArticulo := DbfServer( "ARTICULO.DBF", ):NewOpen( "ARTICULO.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oDbfArticulo:AddBag( "ARTICULO.CDX" ) ; ::oDbfArticulo:AddBag( ) ; ::oDbfArticulo:AutoIndex()
+
+      ::oOrdenComandas:OpenFiles()
+
+      ::OpenDetails()
+
+      ::bFirstKey          := {|| ::oDbf:cCodMnu }
+
+   RECOVER USING oError
+
+      msgStop( ErrorMessage( oError ), "Imposible abrir las bases de datos de TPV Menús." )
+
+      ::CloseFiles()
+
+      ::lOpenFiles      := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( ::lOpenFiles )
+
+
+
+static FUNCTION TpvMenu_CloseFiles( ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   if !Empty( ::oDbf ) .AND. ::oDbf:Used()
+      ::oDbf:End()
+   end
+
+   if !empty( ::oOrdenComandas )
+      ::oOrdenComandas:CloseFiles()
+   end
+
+   if !Empty( ::oDbfArticulo ) .AND. ( ::oDbfArticulo:used() )
+      ::oDbfArticulo:End()
+   end
+
+   ::CloseDetails()
+
+   ::oDbf      := nil
+
+RETURN .T.
+
+
+
+static FUNCTION TpvMenu_OpenService( lExclusive, cPath ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   local lOpen             := .T.
+   local oError
+   local oBlock
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   oBlock                  := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      if Empty( ::oDbf )
+         ::oDbf            := ::DefineFiles()
+      end
+
+      ::oDbf:Activate( .F., !( lExclusive ) )
+
+      ::oMenuOrdenes       := TpvMenuOrdenes():New( cPath, Self )
+      if !::oMenuOrdenes:OpenService()
+         lOpen             := .F.
+      end
+
+      ::oDetMenuArticulo   := TpvMenuArticulo():New( cPath, Self )
+      if !::oDetMenuArticulo:OpenService()
+         lOpen             := .F.
+      end
+
+   RECOVER USING oError
+
+      lOpen                := .F.
+
+      ::CloseService()
+
+      msgStop( ErrorMessage( oError ), "Imposible abrir las bases de datos de TpvMenus" )
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TpvMenu_CloseService( ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   if !empty( ::oDbf ) .AND. ::oDbf:Used()
+      ::oDbf:End()
+   end
+
+   if !empty( ::oMenuOrdenes )
+      ::oMenuOrdenes:CloseService()
+      ::oMenuOrdenes:End()
+   end
+
+   if !empty( ::oDetMenuArticulo )
+      ::oDetMenuArticulo:CloseService()
+      ::oDetMenuArticulo:End()
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TpvMenu_Resource( nMode ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+    local oDlg
+
+   oDlg = TDialog():New(,,,, LblTitle( nMode ) + "Ménus", "TpvMenus",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+
+
+      ::oGetCodigo := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, ::oDbf:cCodMnu, ::oDbf:cCodMnu:= u ) }, oDlg,, "@!", {||    NotValid( ::oGetCodigo, ::oDbf:cAlias, .T., "0" )},,,,,, .F., {||     ( nMode == 1 .OR. nMode == 4 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      ::oGetNombre := TGetHlp():ReDefine( 110, { | u | If( PCount()==0, ::oDbf:cNomMnu, ::oDbf:cNomMnu:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      TGetHlp():ReDefine( 120, { | u | If( PCount()==0, ::oDbf:nImpMnu, ::oDbf:nImpMnu:= u ) }, oDlg,, ( cPorDiv() ),,,,,,, .F., {||     ( nMode <> 3 .AND. !::oDbf:lAcomp )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TCheckBox():ReDefine( 130, { | u | If( PCount()==0, ::oDbf:lObsMnu, ::oDbf:lObsMnu:= u ) }, oDlg,,,,,,, .F., {||     ( nMode <> 3 )}, .F. )
+
+
+
+
+      TCheckBox():ReDefine( 140, { | u | If( PCount()==0, ::oDbf:lAcomp, ::oDbf:lAcomp:= u ) }, oDlg,,,,,,, .F., {||     ( nMode <> 3 )}, .F. )
+
+
+
+      ::oBrwOrdenesComanda                := IXBrowse():New( oDlg )
+
+      ::oBrwOrdenesComanda:bClrSel        := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      ::oBrwOrdenesComanda:bClrSelFocus   := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      ::oMenuOrdenes:oDbfVir:SetBrowse( ::oBrwOrdenesComanda )
+
+      ::oBrwOrdenesComanda:nMarqueeStyle  := 6
+      ::oBrwOrdenesComanda:cName          := "Lineas de ordenes de comanda"
+      ::oBrwOrdenesComanda:lFooter        := .F.
+
+      ::oBrwOrdenesComanda:bLDblClick     := {|| ::oMenuOrdenes:Edit( ::oBrwOrdenesComanda ) }
+
+      ::oBrwOrdenesComanda:CreateFromResource( 400 )
+
+      with object ( ::oBrwOrdenesComanda:AddCol() )
+         :cHeader          := "Código"
+         :bStrData         := {|| ::oMenuOrdenes:oDbfVir:FieldGetByName( "cCodOrd" ) }
+         :nWidth           := 50
+      end
+
+      with object ( ::oBrwOrdenesComanda:AddCol() )
+         :cHeader          := "Orden de comanda"
+         :bStrData         := {|| ::oOrdenComandas:cNombre( ::oMenuOrdenes:oDbfVir:FieldGetByName( "cCodOrd" ) ) }
+         :nWidth           := 200
+      end
+
+      with object ( ::oBrwOrdenesComanda:AddCol() )
+         :cHeader          := "Intercambiable"
+         :bStrData         := {|| ::oMenuOrdenes:Intercambiable( ::oMenuOrdenes:oDbfVir:FieldGetByName( "lIntOrd" ) ) }
+         :nWidth           := 100
+      end
+
+
+
+
+
+      TButton():ReDefine( 500, {||( ::oMenuOrdenes:Append( ::oBrwOrdenesComanda ) )}, oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 501, {||( ::oMenuOrdenes:Edit( ::oBrwOrdenesComanda ) )}, oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 502, {||( ::oMenuOrdenes:Del( ::oBrwOrdenesComanda ) )}, oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+
+
+
+
+      TButton():ReDefine( 1, {||( ::lSaveResource( nMode, oDlg ) )}, oDlg,,, .F., {||         ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+        TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+   oDlg:AddFastKey( 113, {|| ::oMenuOrdenes:Append( ::oBrwOrdenesComanda ) } )
+   oDlg:AddFastKey( 114, {|| ::oMenuOrdenes:Edit( ::oBrwOrdenesComanda ) } )
+   oDlg:AddFastKey( 115, {|| ::oMenuOrdenes:Del( ::oBrwOrdenesComanda ) } )
+   oDlg:AddFastKey( 116, {|| ::lSaveResource( nMode, oDlg ) } )
+
+   oDlg:bStart    := {|| ::StartResource() }
+
+    oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+static FUNCTION TpvMenu_lSaveResource( nMode, oDlg ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   if ( nMode == 1 .OR. nMode == 4 )
+
+      if Empty( ::oDbf:cCodMnu )
+         MsgStop( "Código de menú no puede estar vacío" )
+         ::oGetCodigo:SetFocus()
+         Return nil
+      end
+
+      if ::oDbf:SeekInOrd( ::oDbf:cCodMnu, "cCodMnu" )
+         msgStop( "Código existente" )
+         ::oGetCodigo:SetFocus()
+         Return nil
+      end
+
+   end
+
+   if Empty( ::oDbf:cNomMnu )
+      MsgStop( "Nombre de menú no puede estar vacío" )
+      ::oGetNombre:SetFocus()
+      Return nil
+   end
+
+   if ::oMenuOrdenes:nIntercambiables( ::oMenuOrdenes:oDbfVir:cCodMnu, ::oMenuOrdenes:oDbfVir ) == 1
+      MsgStop( "Tiene que haber más de un orden intercambiable o ninguno." )
+      Return ( .F. )
+   end
+
+
+
+Return ( oDlg:end( 1 ) )
+
+
+
+static FUNCTION TpvMenu_lIsMenuActive( ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+Return ( ::nMenuActive() > 0 )
+
+
+
+static FUNCTION TpvMenu_nMenuActive( ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   local nMenuActive := 0
+
+   ::oDbf:getStatus()
+   ::oDbf:ordsetfocus( "lShwMnu" )
+
+   nMenuActive       := ::oDbf:ordKeyCount()
+
+   ::oDbf:setStatus()
+
+Return ( nMenuActive )
+
+
+
+static FUNCTION TpvMenu_cMenuActive( ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   local cMenuActive := ""
+
+   ::oDbf:getStatus()
+   ::oDbf:ordSetfocus( "lShwMnu" )
+   ::oDbf:goTop()
+
+   cMenuActive       := ::oDbf:cCodMnu
+
+   ::oDbf:setStatus()
+
+Return ( cMenuActive )
+
+
+
+static FUNCTION TpvMenu_cNombre( cCodMnu ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   local cNombre        := ""
+
+   ::oDbf:GetStatus()
+
+   if ::oDbf:SeekInOrd( cCodMnu, "cCodMnu" )
+      cNombre           := ::oDbf:cNomMnu
+   end
+
+   ::oDbf:SetStatus()
+
+RETURN ( cNombre )
+
+
+
+static FUNCTION TpvMenu_nPrecio( cCodMnu ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   local nPrecio        := 0
+
+   ::oDbf:GetStatus()
+
+   if ::oDbf:SeekInOrd( cCodMnu, "cCodMnu" )
+      nPrecio           := ::oDbf:nImpMnu
+   end
+
+   ::oDbf:SetStatus()
+
+RETURN ( nPrecio )
+
+
+
+static FUNCTION TpvMenu_InitAcompannamientoMultiple( cCodigoMenu, cCodigoOrden, nUnidades ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   local oFntBrw
+   local cCodigoArticulo
+
+   if !::CargaDatosAcompannamiento( cCodigoMenu, cCodigoOrden )
+      Return ( Self )
+   end
+
+   oFntBrw                          := TFont():New( "Segoe UI",  0, 27, .F., .T. )
+
+
+
+   ::oDlgAcompannamiento = TDialog():New(,,,,, "TPVMenuAcomp",, .F.,,,,,, .F.,,,,,, .F.,, "::oDlgAcompannamiento", nil, )
+
+
+
+
+
+      TButtonBmp():ReDefine( 110, {||( ::oBrwAcompannamiento:Select( 0 ), ::oBrwAcompannamiento:PageUp(), ::oBrwAcompannamiento:Select( 1 ) )}, ::oDlgAcompannamiento,,, .F.,,,, .F., "gc_navigate_up2a_32",,, .F. )
+
+
+
+
+
+      TButtonBmp():ReDefine( 111, {||( ::oBrwAcompannamiento:Select( 0 ), ::oBrwAcompannamiento:PageDown(), ::oBrwAcompannamiento:Select( 1 ) )}, ::oDlgAcompannamiento,,, .F.,,,, .F., "gc_navigate_down2a_32",,, .F. )
+
+
+
+
+
+      TButtonBmp():ReDefine( 1, {||( ::ProcesaDatosAcompannamiento( nUnidades ) )}, ::oDlgAcompannamiento,,, .F.,,,, .F., "gc_check_32",,, .F. )
+
+
+
+
+
+      TButtonBmp():ReDefine( 2, {||( ::oDlgAcompannamiento:End() )}, ::oDlgAcompannamiento,,, .F.,,,, .F., "Delete_32",,, .F. )
+
+      ::oBrwAcompannamiento                  := IXBrowse():New( ::oDlgAcompannamiento )
+
+      ::oBrwAcompannamiento:bClrSel          := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      ::oBrwAcompannamiento:bClrSelFocus     := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+      ::oBrwAcompannamiento:nMarqueeStyle    := 3
+      ::oBrwAcompannamiento:cName            := "Acompañamiento de artículo"
+      ::oBrwAcompannamiento:lHeader          := .F.
+      ::oBrwAcompannamiento:lHScroll         := .F.
+      ::oBrwAcompannamiento:nRowHeight       := 55
+
+      ::oBrwAcompannamiento:lFooter          := .T.
+
+      ::oBrwAcompannamiento:CreateFromResource( 100 )
+
+      ::oBrwAcompannamiento:SetFont( oFntBrw )
+
+      ::oBrwAcompannamiento:setArray( ::aIngredientes, , , .F. )
+
+      with object ( ::oBrwAcompannamiento:AddCol() )
+         :bEditValue                         := {|| hGet( ::aIngredientes[ ::oBrwAcompannamiento:nArrayAt ], "Nombre" ) }
+         :nWidth                             := 490
+         :bFooter                            := {|| "Total ingredientes a seleccionar: " + alltrim( str( nUnidades ) ) }
+      end
+
+      with object ( ::oBrwAcompannamiento:AddCol() )
+         :bEditValue                         := {|| hGet( ::aIngredientes[ ::oBrwAcompannamiento:nArrayAt ], "Unidades" ) }
+         :cEditPicture                       := "9"
+         :nWidth                             := 65
+         :nDataStrAlign                      := 1
+         :nHeadStrAlign                      := 1
+         :nFooterType                        := 1
+      end
+
+      with object ( ::oBrwAcompannamiento:AddCol() )
+         :cHeader             := "Sumar unidades"
+         :bEditBlock          := {|| ::SumaUnidadesAcompannamiento() }
+         :nEditType           := 5
+         :nWidth              := 53
+         :nHeadBmpNo          := 1
+         :nBtnBmp             := 1
+         :nHeadBmpAlign       := 1
+         :AddResource( "Navigate2_plus_48" )
+      end
+
+      with object ( ::oBrwAcompannamiento:AddCol() )
+         :cHeader             := "Restar unidades"
+         :bEditBlock          := {|| ::RestaUnidadesAcompannamiento() }
+         :nEditType           := 5
+         :nWidth              := 53
+         :nHeadBmpNo          := 1
+         :nBtnBmp             := 1
+         :nHeadBmpAlign       := 1
+         :AddResource( "Navigate2_minus_48" )
+      end
+
+      ::oDlgAcompannamiento:bStart             := {|| ::oSender:SeleccionarDefecto( ::oBrwAcompannamiento ) }
+
+   ::oDlgAcompannamiento:Activate( ::oDlgAcompannamiento:bLClicked, ::oDlgAcompannamiento:bMoved, ::oDlgAcompannamiento:bPainted, .T.,,,, ::oDlgAcompannamiento:bRClicked,,, )
+
+   ::oSender:oBrwLineas:Refresh()
+
+   if !Empty( oFntBrw )
+      oFntBrw:End()
+   end
+
+Return ( cCodigoArticulo )
+
+
+
+static FUNCTION TpvMenu_Acompannamiento( cCodigoMenu ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   local cOrden
+   local aOrdenes    := ::oMenuOrdenes:aOrdenes( cCodigoMenu )
+
+   for each cOrden in aOrdenes
+
+      if ::oMenuOrdenes:nUnidadesOrdenAcompannamiento( cCodigoMenu, cOrden ) > 1
+
+         ::InitAcompannamientoMultiple( cCodigoMenu, cOrden, ::oMenuOrdenes:nUnidadesOrdenAcompannamiento( cCodigoMenu, cOrden ) )
+
+      else
+
+         ::InitAcompannamientoSimple( cCodigoMenu, cOrden )
+
+      end
+
+   next
+
+RETURN( Self )
+
+
+
+static FUNCTION TpvMenu_CargaDatosAcompannamiento( cCodigoMenu, cCodigoOrden ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   ::aIngredientes     := {}
+
+   ::oDetMenuArticulo:oDbf:GetStatus()
+   ::oDetMenuArticulo:oDbf:OrdSetFocus( "cMnuOrd" )
+
+   if ::oDetMenuArticulo:oDbf:Seek( cCodigoMenu + cCodigoOrden )
+
+      while ::oDetMenuArticulo:oDbf:cCodMnu == cCodigoMenu .AND. ::oDetMenuArticulo:oDbf:cCodOrd == cCodigoOrden .AND. !::oDetMenuArticulo:oDbf:Eof()
+
+
+
+
+
+
+
+         aAdd( ::aIngredientes,  {  "Codigo"       => ::oDetMenuArticulo:oDbf:cCodArt , "Nombre"       => Alltrim( oRetFld( ::oDetMenuArticulo:oDbf:cCodArt, ::oSender:oArticulo )) , "Unidades"     => 0 , "Imagen"       => oRetFld( ::oDetMenuArticulo:oDbf:cCodArt, ::oSender:oArticulo, "cImagen" ) , "Color"        => oRetFld( ::oDetMenuArticulo:oDbf:cCodArt, ::oSender:oArticulo, "nColBtn" ) , "CodigoMenu"   => cCodigoMenu , "CodigoOrden"  => cCodigoOrden })
+
+         ::oDetMenuArticulo:oDbf:skip()
+
+      end
+
+   end
+
+   ::oDetMenuArticulo:oDbf:SetStatus()
+
+RETURN ( len( ::aIngredientes ) > 0 )
+
+
+
+static FUNCTION TpvMenu_ProcesaDatosAcompannamiento( nUnidades ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   local aIngrediente
+   local nTotal      := 0
+
+   If( nUnidades == nil, nUnidades := 1, ) ;
+
+   if ::nUnidadesAcompannamiento() > nUnidades
+      MsgStop( "Has introducido más ingredientes de lo permitido." )
+      Return nil
+   end
+
+   if ::nUnidadesAcompannamiento() == 0
+      MsgStop( "No has seleccionado ningún ingrediente." )
+      Return nil
+   end
+
+   ::oDlgAcompannamiento:Disable()
+
+   for each aIngrediente in ::aIngredientes
+
+      if aIngrediente[ "Unidades" ] > 0
+
+         ::oSender:AgregarAcompannamiento( aIngrediente[ "Codigo" ], aIngrediente[ "Unidades" ], aIngrediente[ "CodigoMenu" ], aIngrediente[ "CodigoOrden" ] )
+
+      end
+
+   next
+
+   ::oDlgAcompannamiento:Enable()
+
+   ::oDlgAcompannamiento:End()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TpvMenu_nUnidadesAcompannamiento( ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   local aIngrediente
+   local nTotal      := 0
+
+   for each aIngrediente in ::aIngredientes
+
+      if aIngrediente[ "Unidades" ] > 0
+
+         nTotal   += aIngrediente[ "Unidades" ]
+
+      end
+
+   next
+
+RETURN ( nTotal )
+
+
+
+static FUNCTION TpvMenu_InitAcompannamientoSimple( cCodigoMenu, cCodigoOrden ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   local cCodigoArticulo
+
+   if !::CargaDatosAcompannamiento( cCodigoMenu, cCodigoOrden )
+      Return ( Self )
+   end
+
+
+
+   ::oDlgAcompannamiento = TDialog():New(,,,,, "TPVMenuAcompSimple",, .F.,,,,,, .F.,,,,,, .F.,, "::oDlgAcompannamiento", nil, )
+
+
+
+
+
+      TButtonBmp():ReDefine( 110, {||( ::oLstArticulos:PageUp() )}, ::oDlgAcompannamiento,,, .F.,,,, .F., "gc_navigate_up2a_32",,, .F. )
+
+
+
+
+
+      TButtonBmp():ReDefine( 111, {||( ::oLstArticulos:PageDown() )}, ::oDlgAcompannamiento,,, .F.,,,, .F., "gc_navigate_down2a_32",,, .F. )
+
+
+
+
+
+      TButtonBmp():ReDefine( 2, {||( ::oDlgAcompannamiento:End() )}, ::oDlgAcompannamiento,,, .F.,,,, .F., "Delete_32",,, .F. )
+
+      ::oLstArticulos               := C5ImageView():Redefine( 100, ::oDlgAcompannamiento )
+      ::oLstArticulos:nWItem        := ::oSender:nImageViewWItem
+      ::oLstArticulos:nHItem        := ::oSender:nImageViewHItem
+      ::oLstArticulos:nVSep         := ::oSender:nImageViewVSep
+      ::oLstArticulos:nHSep         := ::oSender:nImageViewHSep
+      ::oLstArticulos:aTextMargin   := ::oSender:aImageViewTextMargin
+      ::oLstArticulos:lTitle        := ::oSender:lImagenArticulos
+      ::oLstArticulos:nHTitle       := ::oSender:nImageViewTitle
+      ::oLstArticulos:lShowOption   := .F.
+      ::oLstArticulos:lxVScroll     := .F.
+      ::oLstArticulos:lxHScroll     := .F.
+      ::oLstArticulos:lAdjust       := .F.
+      ::oLstArticulos:nClrTextSel   := 0
+      ::oLstArticulos:nClrPane      := 16777215
+      ::oLstArticulos:nClrPaneSel   := 16777215
+      ::oLstArticulos:nAlignText    := nOr( 0x00000000, 0x00000001, 0x00000010 )
+
+      ::oLstArticulos:nOption       := 0
+      ::oLstArticulos:bAction       := {|| ::ActionAcompannamientoSimple() }
+
+      ::oLstArticulos:SetFont( ::oSender:oFntBrw )
+
+      ::oDlgAcompannamiento:bStart  := {|| ::StartDialogAcompannamiento()}
+
+   ::oDlgAcompannamiento:Activate( ::oDlgAcompannamiento:bLClicked, ::oDlgAcompannamiento:bMoved, ::oDlgAcompannamiento:bPainted, .T.,,,, ::oDlgAcompannamiento:bRClicked,,, )
+
+   ::oSender:oBrwLineas:Refresh()
+
+Return ( cCodigoArticulo )
+
+
+
+static FUNCTION TpvMenu_StartDialogAcompannamiento( ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   local aItems         := {}
+   local aIngrediente
+
+   for each aIngrediente in ::aIngredientes
+      ::CreateItemAcompannamiento( aIngrediente, aItems )
+   next
+
+   ::oLstArticulos:SetItems( aItems )
+
+Return ( aItems )
+
+
+
+static FUNCTION TpvMenu_CreateItemAcompannamiento( aIngrediente, aItems ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   with object ( C5ImageViewItem() )
+
+      :Cargo            := aIngrediente[ "Codigo" ]
+      :cText            := aIngrediente[ "Nombre" ]
+
+      :bAction          := {|cCodigoArticulo| ::AgregarAcompannamientoSimple( cCodigoArticulo, aIngrediente[ "CodigoMenu" ], aIngrediente[ "CodigoOrden" ] ) }
+
+      if ( ::oSender:lImagenArticulos ) .AND. ( ::oSender:lFileBmpName( aIngrediente[ "Imagen" ] ) )
+
+         :cImage        := ::oSender:cFileBmpName( aIngrediente[ "Imagen" ] )
+
+      else
+
+         :nClrPane      := aIngrediente[ "Color" ]
+
+      end
+
+      :Add( aItems )
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TpvMenu_AgregarAcompannamientoSimple( cCodigoArticulo, cCodigoMenu, cCodigoOrden ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   ::oSender:AgregarAcompannamiento( cCodigoArticulo, 1, cCodigoMenu, cCodigoOrden )
+
+   ::oDlgAcompannamiento:End()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TpvMenu_ActionAcompannamientoSimple( ) ; local Self AS CLASS TpvMenu := QSelf() AS CLASS TpvMenu
+
+   local oOpt
+
+   oOpt     := ::oLstArticulos:GetSelection()
+
+   if Empty( oOpt )
+      MsgStop( "Seleccione una opción valida." )
+      Return ( Self )
+   end
+
+   if !empty( ::oLstArticulos:GetSelection():bAction )
+      eval( ::oLstArticulos:GetSelection():bAction, ::oLstArticulos:GetSelection():Cargo )
+   end
+
+RETURN ( Self )

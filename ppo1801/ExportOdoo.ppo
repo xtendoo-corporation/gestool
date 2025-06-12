@@ -1,0 +1,3595 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 5 ".\.\Prg\ExportOdoo.prg"
+_HB_CLASS ExportOdoo ; function ExportOdoo ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "ExportOdoo", iif( .F., { }, { @HBObject() } ), @ExportOdoo() ) ) ;
+
+   _HB_MEMBER { oDlg } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDlg"}, .F. )
+   _HB_MEMBER { oGet } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGet"}, .F. )
+
+   _HB_MEMBER { aLgcIndices } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aLgcIndices"}, .F. )
+   _HB_MEMBER { aChkIndices } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aChkIndices"}, .F. )
+   _HB_MEMBER { aMtrIndices } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aMtrIndices"}, .F. )
+   _HB_MEMBER { aNumIndices } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aNumIndices"}, .F. )
+
+   _HB_MEMBER { cConector } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cConector"}, .F. )
+
+   _HB_MEMBER { cPathFac } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPathFac"}, .F. )
+
+   _HB_MEMBER { cIncidencia } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cIncidencia"}, .F. )
+
+   _HB_MEMBER { oSayProcess } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayProcess"}, .F. )
+
+   _HB_MEMBER { aDni } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aDni"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @ExportOdoo_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Resource(); oClass:AddMethod( "Resource", @ExportOdoo_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Exportar(); oClass:AddMethod( "Exportar", @ExportOdoo_Exportar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SelectChk( lSet); oClass:AddMethod( "SelectChk", @ExportOdoo_SelectChk(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ExportaClientes(); oClass:AddMethod( "ExportaClientes", @ExportOdoo_ExportaClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ExportaBancosClientes(); oClass:AddMethod( "ExportaBancosClientes", @ExportOdoo_ExportaBancosClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ExportaDireccionesClientes(); oClass:AddMethod( "ExportaDireccionesClientes", @ExportOdoo_ExportaDireccionesClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ExportaGruposClientes(); oClass:AddMethod( "ExportaGruposClientes", @ExportOdoo_ExportaGruposClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ExportaFormasPago(); oClass:AddMethod( "ExportaFormasPago", @ExportOdoo_ExportaFormasPago(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ExportaAgentes(); oClass:AddMethod( "ExportaAgentes", @ExportOdoo_ExportaAgentes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ExportaArticulos(); oClass:AddMethod( "ExportaArticulos", @ExportOdoo_ExportaArticulos(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ExportaAtipicas(); oClass:AddMethod( "ExportaAtipicas", @ExportOdoo_ExportaAtipicas(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ExportaTickets(); oClass:AddMethod( "ExportaTickets", @ExportOdoo_ExportaTickets(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ExportaTarifas(); oClass:AddMethod( "ExportaTarifas", @ExportOdoo_ExportaTarifas(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ExportaFamilias(); oClass:AddMethod( "ExportaFamilias", @ExportOdoo_ExportaFamilias(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ExportaKits(); oClass:AddMethod( "ExportaKits", @ExportOdoo_ExportaKits(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ExportaPropiedades(); oClass:AddMethod( "ExportaPropiedades", @ExportOdoo_ExportaPropiedades(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cNameFile( cName); oClass:AddMethod( "cNameFile", @ExportOdoo_cNameFile(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER createFile( cMemo, cName); oClass:AddMethod( "createFile", @ExportOdoo_createFile(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER createLogFile(); oClass:AddMethod( "createLogFile", @ExportOdoo_createLogFile(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cNameLogFile(); oClass:AddMethod( "cNameLogFile", @ExportOdoo_cNameLogFile(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cClearEmail( cEmail); oClass:AddMethod( "cClearEmail", @ExportOdoo_cClearEmail(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cClearStr(); oClass:AddInline( "cClearStr", {|Self, cStr | ( ( Self ) ), ( StrTran( AllTrim( cStr ), ",", " " ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cValidDni( cDni, cTitle); oClass:AddMethod( "cValidDni", @ExportOdoo_cValidDni(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cValidDniCliente(); oClass:AddInline( "cValidDniCliente", {|Self, cDni | ( ( Self ) ), ( ::cValidDni( cDni, "cliente" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cValidDniProveedor(); oClass:AddInline( "cValidDniProveedor", {|Self, cDni | ( ( Self ) ), ( ::cValidDni( cDni, "proveedor" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER bankCount( cPaisIBAN, cCtrlIBAN, cEntBnc, cSucBnc, cDigBnc, cCtaBnc); oClass:AddMethod( "bankCount", @ExportOdoo_bankCount(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER sanitizedBankCount( cPaisIBAN, cCtrlIBAN, cEntBnc, cSucBnc, cDigBnc, cCtaBnc); oClass:AddMethod( "sanitizedBankCount", @ExportOdoo_sanitizedBankCount(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER formatNumeric( cVal); oClass:AddMethod( "formatNumeric", @ExportOdoo_formatNumeric(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS ExportOdoo ;
+
+
+
+static FUNCTION ExportOdoo_New( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   ::cPathFac     := Space( 200 )
+
+   ::aLgcIndices  := Afill( Array( 10 ), .T. )
+   ::aChkIndices  := Array( 10 )
+   ::aMtrIndices  := Array( 10 )
+   ::aNumIndices  := Afill( Array( 10 ), 0 )
+
+   ::cConector    := ","
+
+   ::cIncidencia  := ""
+
+   ::aDni         := {}
+
+RETURN ( Self )
+
+
+
+static FUNCTION ExportOdoo_Resource( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local oBmp
+
+   if oWnd() <> nil
+      oWnd():CloseAll()
+   end
+
+   ::oDlg = TDialog():New(,,,,, "IMPODOO",, .F.,,,,, oWnd(), .F.,,,,,, .F.,, "::oDlg", nil, )
+
+      oBmp := TBitmap():ReDefine( 600, "odoo_48",, ::oDlg,,, .F., .F.,,, .F.,,, .T. )
+
+      ::oGet := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, ::cPathFac, ::cPathFac:= u ) }, ::oDlg,,,,,,,,, .F.,,, .F., .F.,,,,,, nil, "FOLDER",, )
+      ::oGet:bHelp   := {|| ::oGet:cText( cGetDir32( "Seleccione destino" ) ) }
+
+      ::aChkIndices[ 1 ] := TCheckBox():ReDefine( 110, { | u | If( PCount()==0, ::aLgcIndices[ 1 ], ::aLgcIndices[ 1 ]:= u ) }, ::oDlg,,,,,,, .F.,, .F. )
+
+      ::aChkIndices[ 2 ] := TCheckBox():ReDefine( 120, { | u | If( PCount()==0, ::aLgcIndices[ 2 ], ::aLgcIndices[ 2 ]:= u ) }, ::oDlg,,,,,,, .F.,, .F. )
+
+      ::aChkIndices[ 3 ] := TCheckBox():ReDefine( 130, { | u | If( PCount()==0, ::aLgcIndices[ 3 ], ::aLgcIndices[ 3 ]:= u ) }, ::oDlg,,,,,,, .F.,, .F. )
+
+      ::aChkIndices[ 4 ] := TCheckBox():ReDefine( 140, { | u | If( PCount()==0, ::aLgcIndices[ 4 ], ::aLgcIndices[ 4 ]:= u ) }, ::oDlg,,,,,,, .F.,, .F. )
+
+      ::aChkIndices[ 5 ] := TCheckBox():ReDefine( 150, { | u | If( PCount()==0, ::aLgcIndices[ 5 ], ::aLgcIndices[ 5 ]:= u ) }, ::oDlg,,,,,,, .F.,, .F. )
+
+      ::aChkIndices[ 6 ] := TCheckBox():ReDefine( 160, { | u | If( PCount()==0, ::aLgcIndices[ 6 ], ::aLgcIndices[ 6 ]:= u ) }, ::oDlg,,,,,,, .F.,, .F. )
+
+      ::aChkIndices[ 7 ] := TCheckBox():ReDefine( 170, { | u | If( PCount()==0, ::aLgcIndices[ 7 ], ::aLgcIndices[ 7 ]:= u ) }, ::oDlg,,,,,,, .F.,, .F. )
+
+      ::aChkIndices[ 8 ] := TCheckBox():ReDefine( 180, { | u | If( PCount()==0, ::aLgcIndices[ 8 ], ::aLgcIndices[ 8 ]:= u ) }, ::oDlg,,,,,,, .F.,, .F. )
+
+      ::aChkIndices[ 9 ] := TCheckBox():ReDefine( 190, { | u | If( PCount()==0, ::aLgcIndices[ 9 ], ::aLgcIndices[ 9 ]:= u ) }, ::oDlg,,,,,,, .F.,, .F. )
+
+      ::aChkIndices[ 10 ] := TCheckBox():ReDefine( 200, { | u | If( PCount()==0, ::aLgcIndices[ 10 ], ::aLgcIndices[ 10 ]:= u ) }, ::oDlg,,,,,,, .F.,, .F. )
+
+
+
+
+
+
+      ::aMtrIndices[ 1 ] := TApoloMeter():ReDefine( 111, { | u | If( PCount()==0, ::aNumIndices[ 1 ], ::aNumIndices[ 1 ]:= u ) },, ::oDlg, .F.,,, .T.,,, nRgb( 128, 255, 0 ), nRgb( 255, 255, 255 ) )
+
+
+
+
+
+
+      ::aMtrIndices[ 2 ] := TApoloMeter():ReDefine( 121, { | u | If( PCount()==0, ::aNumIndices[ 2 ], ::aNumIndices[ 2 ]:= u ) },, ::oDlg, .F.,,, .T.,,, nRgb( 128, 255, 0 ), nRgb( 255, 255, 255 ) )
+
+
+
+
+
+
+      ::aMtrIndices[ 3 ] := TApoloMeter():ReDefine( 131, { | u | If( PCount()==0, ::aNumIndices[ 3 ], ::aNumIndices[ 3 ]:= u ) },, ::oDlg, .F.,,, .T.,,, nRgb( 128, 255, 0 ), nRgb( 255, 255, 255 ) )
+
+
+
+
+
+
+      ::aMtrIndices[ 4 ] := TApoloMeter():ReDefine( 141, { | u | If( PCount()==0, ::aNumIndices[ 4 ], ::aNumIndices[ 4 ]:= u ) },, ::oDlg, .F.,,, .T.,,, nRgb( 128, 255, 0 ), nRgb( 255, 255, 255 ) )
+
+
+
+
+
+
+      ::aMtrIndices[ 5 ] := TApoloMeter():ReDefine( 151, { | u | If( PCount()==0, ::aNumIndices[ 5 ], ::aNumIndices[ 5 ]:= u ) },, ::oDlg, .F.,,, .T.,,, nRgb( 128, 255, 0 ), nRgb( 255, 255, 255 ) )
+
+
+
+
+
+
+      ::aMtrIndices[ 6 ] := TApoloMeter():ReDefine( 161, { | u | If( PCount()==0, ::aNumIndices[ 6 ], ::aNumIndices[ 6 ]:= u ) },, ::oDlg, .F.,,, .T.,,, nRgb( 128, 255, 0 ), nRgb( 255, 255, 255 ) )
+
+
+
+
+
+
+      ::aMtrIndices[ 7 ] := TApoloMeter():ReDefine( 171, { | u | If( PCount()==0, ::aNumIndices[ 7 ], ::aNumIndices[ 7 ]:= u ) },, ::oDlg, .F.,,, .T.,,, nRgb( 128, 255, 0 ), nRgb( 255, 255, 255 ) )
+
+
+
+
+
+
+      ::aMtrIndices[ 8 ] := TApoloMeter():ReDefine( 181, { | u | If( PCount()==0, ::aNumIndices[ 8 ], ::aNumIndices[ 8 ]:= u ) },, ::oDlg, .F.,,, .T.,,, nRgb( 128, 255, 0 ), nRgb( 255, 255, 255 ) )
+
+
+
+
+
+
+      ::aMtrIndices[ 9 ] := TApoloMeter():ReDefine( 191, { | u | If( PCount()==0, ::aNumIndices[ 9 ], ::aNumIndices[ 9 ]:= u ) },, ::oDlg, .F.,,, .T.,,, nRgb( 128, 255, 0 ), nRgb( 255, 255, 255 ) )
+
+
+
+
+
+
+      ::aMtrIndices[ 10 ] := TApoloMeter():ReDefine( 201, { | u | If( PCount()==0, ::aNumIndices[ 10 ], ::aNumIndices[ 10 ]:= u ) },, ::oDlg, .F.,,, .T.,,, nRgb( 128, 255, 0 ), nRgb( 255, 255, 255 ) )
+
+      ::oSayProcess := TSay():ReDefine( 700,, ::oDlg,,,, .F.,, .F., .F., )
+
+      TButton():ReDefine( 500, {||( ::SelectChk( .T. ) )}, ::oDlg,,, .F.,,,, .F. )
+      TButton():ReDefine( 501, {||( ::SelectChk( .F. ) )}, ::oDlg,,, .F.,,,, .F. )
+
+      TButton():ReDefine( 1, {||( ::Exportar() )}, ::oDlg,,, .F.,,,, .F. )
+      TButton():ReDefine( 2, {||( ::oDlg:end() )}, ::oDlg,,, .F.,,,, .F. )
+
+   ::oDlg:AddFastKey( 116, {|| ::Exportar() } )
+
+   ::oDlg:Activate( ::oDlg:bLClicked, ::oDlg:bMoved, ::oDlg:bPainted, .T.,,,, ::oDlg:bRClicked,,, )
+
+   oBmp:End()
+
+RETURN ( Self )
+
+
+
+static FUNCTION ExportOdoo_SelectChk( lSet ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local n
+
+   for n := 1 to len( ::aLgcIndices )
+      ::aLgcIndices[n] := lSet
+      ::aChkIndices[n]:Refresh()
+   next
+
+RETURN ( Self )
+
+
+
+static FUNCTION ExportOdoo_Exportar( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   if Empty( ::cPathFac )
+      MsgStop( "Tiene que seleccionar un directorio donde exportar los ficheros." )
+      ::oGet:SetFocus()
+      return .F.
+   end
+
+   ::oDlg:Disable()
+
+   if ::aLgcIndices[ 1 ]
+      ::ExportaClientes()
+      ::ExportaBancosClientes()
+      ::ExportaDireccionesClientes()
+   end
+
+   if ::aLgcIndices[ 2 ]
+      ::ExportaArticulos()
+   end
+
+   if ::aLgcIndices[ 3 ]
+      ::ExportaFamilias()
+   end
+
+   if ::aLgcIndices[ 4 ]
+      ::ExportaAtipicas()
+      ::ExportaTarifas()
+   end
+
+   if ::aLgcIndices[ 5 ]
+      ::ExportaGruposClientes()
+   end
+
+   if ::aLgcIndices[ 6 ]
+      ::ExportaFormasPago()
+   end
+
+   if ::aLgcIndices[ 7 ]
+      ::ExportaAgentes()
+   end
+
+   if ::aLgcIndices[ 8 ]
+      ::ExportaPropiedades()
+   end
+
+   if ::aLgcIndices[ 9 ]
+      ::ExportaTickets()
+   end
+
+   if ::aLgcIndices[ 10 ]
+      ::ExportaKits()
+   end
+
+   ::createLogFile()
+
+   ::oSayProcess:setText( "Exportación realizada con éxito." )
+
+   msgInfo( "Exportación realizada con éxito." )
+
+   ::oDlg:Enable()
+   ::oDlg:end()
+
+RETURN ( Self )
+
+
+
+static FUNCTION ExportOdoo_ExportaClientes( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cSqlCli              := "clientes"
+   local cSqlPrv              := "proveedores"
+   local cMemo                := ""
+   local cNameFile
+   local nCount
+
+
+
+
+
+   ::oSayProcess:setText( "Exportando clientes" )
+
+   ClientesModel():getToOdoo( @cSqlCli )
+
+   ( cSqlCli )->( dbGoTop() )
+
+   ::aMtrIndices[ 1 ]:SetTotal( ( cSqlCli )->( OrdKeyCount() ) )
+
+   while !( cSqlCli )->( Eof() )
+
+      if !( cSqlCli )->lInaCli
+
+         nCount                  := OdooIdsModel():getCountCliente( ( cSqlCli )->Cod )
+
+         cMemo                   += "C" + ::cClearStr( ( cSqlCli )->Cod )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( ( cSqlCli )->Titulo )
+         cMemo                   += ::cConector
+         cMemo                   += ::cValidDniCliente( cSqlCli )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( ( cSqlCli )->Domicilio )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( ( cSqlCli )->Poblacion )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( ( cSqlCli )->CodPostal )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( ( cSqlCli )->Provincia )
+         cMemo                   += ::cConector
+         cMemo                   += StrTran( StrTran( StrTran( StrTran( StrTran( StrTran( AllTrim( ::cClearStr( ( cSqlCli )->Telefono ) ), " ", "" ), ".", "" ), "-", "" ), "_", "" ), "/", "" ), "\", "" )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( ( cSqlCli )->Movil )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( ( cSqlCli )->cWebInt )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearEmail( ( cSqlCli )->cMeiInt )
+         cMemo                   += ::cConector
+         cMemo                   += "es_ES"
+         cMemo                   += ::cConector
+         cMemo                   += if( ( cSqlCli )->lBlqCli, "False", "True" )
+         cMemo                   += ::cConector
+         cMemo                   += "True"
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( ( cSqlCli )->Titulo )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( ( cSqlCli )->NbrEst )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( PaisModel():getNombre( allTrim( ( cSqlCli )->cCodPai ) ) )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( StrTran( ( cSqlCli )->mComent, Chr(13)+Chr(10) , " " ) )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( GrupoClientesModel():getName( ( cSqlCli )->cCodGrp ) )
+         cMemo                   += ::cConector
+         cMemo                   += "1"
+         cMemo                   += ::cConector
+         cMemo                   += "0"
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( FormasPagoModel():getName( ( cSqlCli )->CodPago ) )
+         cMemo                   += ::cConector
+         cMemo                   += ""
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( Upper( AgentesModel():getNombre( ( cSqlCli )->cAgente ) ) )
+         cMemo                   += ::cConector
+         cMemo                   += AllTrim( nCount )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( Str( Val( ( cSqlCli )->cCodGrp ) ) )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( upper( RutasModel():getNombre( ( cSqlCli )->cCodRut ) ) )
+         cMemo                   += Chr(13)+Chr(10)
+
+         OdooIdsModel():insertClienteToOdooId( rtrim( ( cSqlCli )->Cod ), AllTrim( nCount ) )
+
+      end
+
+
+      ( cSqlCli )->( dbSkip() )
+
+      ::aMtrIndices[ 1 ]:Set( ( cSqlCli )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 1 ]:Set( ( cSqlCli )->( 100 ) )
+
+
+
+
+
+   ::oSayProcess:setText( "Exportando proveedores" )
+
+   ProveedoresModel():getToOdoo( @cSqlPrv )
+
+   ( cSqlPrv )->( dbGoTop() )
+
+   ::aMtrIndices[ 1 ]:SetTotal( ( cSqlPrv )->( OrdKeyCount() ) )
+
+   while !( cSqlPrv )->( Eof() )
+
+      nCount                  := OdooIdsModel():getCountProveedor( ( cSqlPrv )->Cod )
+
+      cMemo                   += "P" + ::cClearStr( ( cSqlPrv )->Cod )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( ( cSqlPrv )->Titulo )
+      cMemo                   += ::cConector
+      cMemo                   += ::cValidDniProveedor( cSqlPrv )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( ( cSqlPrv )->Domicilio )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( ( cSqlPrv )->Poblacion )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( ( cSqlPrv )->CodPostal )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( ( cSqlPrv )->Provincia )
+      cMemo                   += ::cConector
+      cMemo                   += StrTran( StrTran( StrTran( StrTran( StrTran( StrTran( AllTrim( ::cClearStr( ( cSqlPrv )->Telefono ) ), " ", "" ), ".", "" ), "-", "" ), "_", "" ), "/", "" ), "\", "" )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( ( cSqlPrv )->Movil )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( ( cSqlPrv )->cWebInt )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearEmail( ( cSqlPrv )->cMeiInt )
+      cMemo                   += ::cConector
+      cMemo                   += "es_ES"
+      cMemo                   += ::cConector
+      cMemo                   += "True"
+      cMemo                   += ::cConector
+      cMemo                   += "True"
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( ( cSqlPrv )->Titulo )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( ( cSqlPrv )->cNbrEst )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( PaisModel():getNombre( allTrim( ( cSqlPrv )->cCodPai ) ) )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( StrTran( ( cSqlPrv )->mComent, Chr(13)+Chr(10), " " ) )
+      cMemo                   += ::cConector
+      cMemo                   += ""
+      cMemo                   += ::cConector
+      cMemo                   += "0"
+      cMemo                   += ::cConector
+      cMemo                   += "1"
+      cMemo                   += ::cConector
+      cMemo                   += ""
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( FormasPagoModel():getName( ( cSqlPrv )->FPAGO ) )
+      cMemo                   += ::cConector
+      cMemo                   += ""
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( nCount )
+      cMemo                   += ::cConector
+      cMemo                   += ""
+      cMemo                   += ::cConector
+      cMemo                   += ""
+      cMemo                   += Chr(13)+Chr(10)
+
+      OdooIdsModel():insertProveedorToOdooId( rtrim( ( cSqlPrv )->Cod ), AllTrim( nCount ) )
+
+      ( cSqlPrv )->( dbSkip() )
+
+      ::aMtrIndices[ 1 ]:Set( ( cSqlPrv )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 1 ]:Set( ( cSqlPrv )->( 100 ) )
+
+   ::createFile( cMemo, "Respartner" )
+
+Return ( .T. )
+
+
+
+static FUNCTION ExportOdoo_ExportaBancosClientes( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cSqlCli              := "clientes"
+   local cSqlPrv              := "proveedores"
+   local cSqlCliBnc           := "clientes_bnc"
+   local cSqlPrvBnc           := "proveedores_bnc"
+   local cMemo                := ""
+   local cNameFile
+   local nCount
+
+
+
+
+
+   ::oSayProcess:setText( "Exportando bancos de clientes" )
+
+   ClientesModel():getToOdoo( @cSqlCli )
+
+   ( cSqlCli )->( dbGoTop() )
+
+   ::aMtrIndices[ 1 ]:SetTotal( ( cSqlCli )->( OrdKeyCount() ) )
+
+   while !( cSqlCli )->( Eof() )
+
+      nCount                  := OdooIdsModel():getCountCliente( ( cSqlCli )->Cod )
+
+      ClientesBancosModel():getToOdoo( @cSqlCliBnc, ( cSqlCli )->Cod )
+
+      ( cSqlCliBnc )->( dbGoTop() )
+
+      while !( cSqlCliBnc )->( Eof() )
+
+
+
+
+
+
+
+         if !Empty( ( cSqlCliBnc )->cPaisIBAN ) .AND. !Empty( ( cSqlCliBnc )->cCtrlIBAN ) .AND. !Empty( ( cSqlCliBnc )->cEntBnc ) .AND. !Empty( ( cSqlCliBnc )->cSucBnc ) .AND. !Empty( ( cSqlCliBnc )->cDigBnc ) .AND. !Empty( ( cSqlCliBnc )->cCtaBnc ) .AND. Empty( ( cSqlCliBnc )->cCodBnc )
+
+            cMemo                   += ::bankCount( ( cSqlCliBnc )->cPaisIBAN, ( cSqlCliBnc )->cCtrlIBAN, ( cSqlCliBnc )->cEntBnc, ( cSqlCliBnc )->cSucBnc, ( cSqlCliBnc )->cDigBnc, ( cSqlCliBnc )->cCtaBnc )
+            cMemo                   += ::cConector
+            cMemo                   += ::sanitizedBankCount( ( cSqlCliBnc )->cPaisIBAN, ( cSqlCliBnc )->cCtrlIBAN, ( cSqlCliBnc )->cEntBnc, ( cSqlCliBnc )->cSucBnc, ( cSqlCliBnc )->cDigBnc, ( cSqlCliBnc )->cCtaBnc )
+            cMemo                   += ::cConector
+            cMemo                   += ::cClearStr( ( cSqlCli )->Cod )
+            cMemo                   += ::cConector
+            cMemo                   += Space(1)
+            cMemo                   += ::cConector
+            cMemo                   += ::cClearStr( ( cSqlCliBnc )->cCodBnc )
+            cMemo                   += ::cConector
+            cMemo                   += strtran( ::cClearStr( ( cSqlCli )->Titulo ), ",", "." )
+            cMemo                   += Chr(13)+Chr(10)
+
+         end
+
+         ( cSqlCliBnc )->( dbSkip() )
+
+      end
+
+      ( cSqlCli )->( dbSkip() )
+
+      ::aMtrIndices[ 1 ]:Set( ( cSqlCli )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 1 ]:Set( ( cSqlCli )->( 100 ) )
+
+
+
+
+
+   ::oSayProcess:setText( "Exportando bancos de proveedores" )
+
+   ProveedoresModel():getToOdoo( @cSqlPrv )
+
+   ( cSqlPrv )->( dbGoTop() )
+
+   ::aMtrIndices[ 1 ]:SetTotal( ( cSqlPrv )->( OrdKeyCount() ) )
+
+   while !( cSqlPrv )->( Eof() )
+
+      nCount                     := OdooIdsModel():getCountProveedor( ( cSqlPrv )->Cod )
+
+      ProveedoresBancosModel():getToOdoo( @cSqlPrvBnc, ( cSqlPrv )->Cod )
+
+      ( cSqlPrvBnc )->( dbGoTop() )
+
+      while !( cSqlPrvBnc )->( Eof() )
+
+
+
+
+
+
+
+         if !Empty( ( cSqlPrvBnc )->cPaisIBAN ) .AND. !Empty( ( cSqlPrvBnc )->cCtrlIBAN ) .AND. !Empty( ( cSqlPrvBnc )->cEntBnc ) .AND. !Empty( ( cSqlPrvBnc )->cSucBnc ) .AND. !Empty( ( cSqlPrvBnc )->cDigBnc ) .AND. !Empty( ( cSqlPrvBnc )->cCtaBnc ) .AND. Empty( ( cSqlPrvBnc )->cCodBnc )
+
+            cMemo                   += ::bankCount( ( cSqlPrvBnc )->cPaisIBAN, ( cSqlPrvBnc )->cCtrlIBAN, ( cSqlPrvBnc )->cEntBnc, ( cSqlPrvBnc )->cSucBnc, ( cSqlPrvBnc )->cDigBnc, ( cSqlPrvBnc )->cCtaBnc )
+            cMemo                   += ::cConector
+            cMemo                   += ::sanitizedBankCount( ( cSqlPrvBnc )->cPaisIBAN, ( cSqlPrvBnc )->cCtrlIBAN, ( cSqlPrvBnc )->cEntBnc, ( cSqlPrvBnc )->cSucBnc, ( cSqlPrvBnc )->cDigBnc, ( cSqlPrvBnc )->cCtaBnc )
+            cMemo                   += ::cConector
+            cMemo                   += "P" + ::cClearStr( ( cSqlPrv )->Cod )
+            cMemo                   += ::cConector
+            cMemo                   += Space(1)
+            cMemo                   += ::cConector
+            cMemo                   += ::cClearStr( ( cSqlPrvBnc )->cCodBnc )
+            cMemo                   += ::cConector
+            cMemo                   += strtran( ::cClearStr( ( cSqlPrv )->Titulo ), ",", "." )
+            cMemo                   += Chr(13)+Chr(10)
+
+         end
+
+         ( cSqlPrvBnc )->( dbSkip() )
+
+      end
+
+      ( cSqlPrv )->( dbSkip() )
+
+      ::aMtrIndices[ 1 ]:Set( ( cSqlPrv )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 1 ]:Set( 100 )
+
+   ::createFile( cMemo, "Respartner_bank" )
+
+Return ( .T. )
+
+
+
+static FUNCTION ExportOdoo_ExportaDireccionesClientes( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cSqlCli              := "clientes"
+   local cSqlCliDir           := "clientes_dir"
+   local cMemo                := ""
+   local cNameFile
+   local nCount
+
+
+
+
+
+   ::oSayProcess:setText( "Exportando direcciones de clientes" )
+
+   ClientesModel():getToOdoo( @cSqlCli )
+
+   ( cSqlCli )->( dbGoTop() )
+
+   ::aMtrIndices[ 1 ]:SetTotal( ( cSqlCli )->( OrdKeyCount() ) )
+
+   while !( cSqlCli )->( Eof() )
+
+      nCount                  := OdooIdsModel():getCountCliente( ( cSqlCli )->Cod )
+
+      ClientesDireccionesModel():getToOdoo( @cSqlCliDir, ( cSqlCli )->Cod )
+
+      ( cSqlCliDir )->( dbGoTop() )
+
+      while !( cSqlCliDir )->( Eof() )
+
+         cMemo                   += AllTrim( nCount )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( ( cSqlCliDir )->cNomObr )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( ( cSqlCliDir )->cDirObr )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( ( cSqlCliDir )->cPobObr )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( ( cSqlCliDir )->cPrvObr )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( ( cSqlCliDir )->cPosObr )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( ( cSqlCliDir )->cTelObr )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( ( cSqlCliDir )->cFaxObr )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( ( cSqlCliDir )->cCntObr )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( ( cSqlCliDir )->cMovObr )
+         cMemo                   += ::cConector
+         cMemo                   += ::cClearStr( ( cSqlCliDir )->Nif )
+         cMemo                   += Chr(13)+Chr(10)
+
+         ( cSqlCliDir )->( dbSkip() )
+
+      end
+
+      ( cSqlCli )->( dbSkip() )
+
+      ::aMtrIndices[ 1 ]:Set( ( cSqlCli )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 1 ]:Set( 100 )
+
+   ::createFile( cMemo, "Respartner_dir" )
+
+Return ( .T. )
+
+
+
+static FUNCTION ExportOdoo_ExportaGruposClientes( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cSql                 := "grupo_cliente"
+   local cMemo                := ""
+   local cNameFile
+   local aClientes            := {}
+
+   GrupoClientesModel():getToOdoo( @cSql )
+
+   ::oSayProcess:setText( "Exportando grupos de clientes" )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 6 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      cMemo                   += AllTrim( ( cSql )->cCodGrp )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( capitalize( ( cSql )->cNomGrp ) )
+      cMemo                   += Chr(13)+Chr(10)
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 6 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 6 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "Respartner_group" )
+
+Return ( .T. )
+
+
+
+static FUNCTION ExportOdoo_ExportaFormasPago( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cSql                 := "Formas_pago"
+   local cMemo                := ""
+   local cNameFile
+
+   FormasPagoModel():getToOdoo( @cSql )
+
+   ::oSayProcess:setText( "Exportando formas de pago" )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 7 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      cMemo                   += AllTrim( ( cSql )->cCodPago )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( capitalize( ( cSql )->cDesPago ) )
+      cMemo                   += Chr(13)+Chr(10)
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 7 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 7 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "property_payment" )
+
+Return ( .T. )
+
+
+
+static FUNCTION ExportOdoo_ExportaAgentes( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cSql                 := "Agentes"
+   local cMemo                := ""
+   local cNameFile
+   local nCount
+
+   AgentesModel():getToOdoo( @cSql )
+
+   ::oSayProcess:setText( "Exportando Agentes comerciales" )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 7 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      nCount                  := OdooIdsModel():getCountAgente( ( cSql )->cCodAge )
+
+      cMemo                   += AllTrim( nCount )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( Upper( ( cSql )->cNbrAge ) ) + space(1) + ::cClearStr( Upper( ( cSql )->cApeAge ) )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( capitalize( ( cSql )->cDniNif ) )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( capitalize( ( cSql )->cDirAge ) )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( capitalize( ( cSql )->cPobAge ) )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( capitalize( ( cSql )->cProv ) )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( capitalize( ( cSql )->cPtlAge ) )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( capitalize( ( cSql )->cTfoAge ) )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( capitalize( ( cSql )->cFaxAge ) )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( capitalize( ( cSql )->cMovAge ) )
+      cMemo                   += ::cConector
+      cMemo                   += ::cClearStr( capitalize( ( cSql )->cMailAge ) )
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( ( cSql )->nCom1 )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( ( cSql )->cCodAge )
+      cMemo                   += Chr(13)+Chr(10)
+
+      OdooIdsModel():insertAgenteToOdooId( rtrim( ( cSql )->cCodAge ), AllTrim( nCount ) )
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 7 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 7 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "cAgentes" )
+
+Return ( .T. )
+
+
+
+static FUNCTION ExportOdoo_ExportaArticulos( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cSql                 := "articulos"
+   local cMemo                := ""
+   local cNameFile
+   local nTipoIva             := 0
+
+   ::oSayProcess:setText( "Exportando artículos" )
+
+   ArticulosModel():getToOdoo( @cSql )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 2 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      nTipoIva                := nIva( , ( cSql )->TIPOIVA )
+
+      cMemo                   += AllTrim( strtran( ( cSql )->Codigo, ",", "." ) )
+      cMemo                   += ::cConector
+      cMemo                   += "True"
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( strtran( capitalize( ( cSql )->Nombre ), ",", "." ) )
+      cMemo                   += ::cConector
+      cMemo                   += "False"
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( ( cSql )->pVenta1 )
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( ( cSql )->pCosto )
+      cMemo                   += ::cConector
+
+      do case
+         case nTipoIva == 21
+            cMemo             += "IVA 21% (Bienes)"
+            cMemo             += ::cConector
+            cMemo             += "21% IVA (bienes corrientes)"
+
+         case nTipoIva == 10
+            cMemo             += "IVA 10% (Bienes)"
+            cMemo             += ::cConector
+            cMemo             += "10% IVA soportado (bienes corrientes)"
+
+         case nTipoIva == 4
+            cMemo             += "IVA 4% (Bienes)"
+            cMemo             += ::cConector
+            cMemo             += "4% IVA soportado (bienes corrientes)"
+
+         otherwise
+            cMemo             += "IVA Exento Repercutido Sujeto"
+            cMemo             += ::cConector
+            cMemo             += "IVA Soportado exento (operaciones corrientes)"
+
+      end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      cMemo                   += ::cConector
+      cMemo                   += capitalize( AllTrim( retFamilia( ( cSql )->Familia ) ) )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( ArticulosCodigosBarraModel():getDefaultCodigo( ( cSql )->Codigo ) )
+      cMemo                   += Chr(13)+Chr(10)
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 2 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 2 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "Product" )
+
+Return ( .T. )
+
+
+
+static FUNCTION ExportOdoo_ExportaFamilias( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cSql                 := "familias"
+   local cMemo                := ""
+   local cNameFile
+   local aClientes            := {}
+
+   FamiliasModel():getToOdoo( @cSql )
+
+   ::oSayProcess:setText( "Exportando familias" )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 3 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      cMemo                   += ::cClearStr( AllTrim( capitalize( ( cSql )->cNomFam ) ) )
+      cMemo                   += ::cConector
+      cMemo                   += "All/" + ::cClearStr( AllTrim( capitalize( ( cSql )->cNomFam ) ) )
+      cMemo                   += ::cConector
+      cMemo                   += "1"
+      cMemo                   += ::cConector
+      cMemo                   += "average"
+      cMemo                   += ::cConector
+      cMemo                   += "real_time"
+      cMemo                   += Chr(13)+Chr(10)
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 3 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 3 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "Category" )
+
+Return ( .T. )
+
+
+
+static FUNCTION ExportOdoo_ExportaAtipicas( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cSql                 := "atipicas"
+   local cMemo                := ""
+   local cNameFile
+   local cCodCli              := ""
+
+   AtipicasModel():getToOdoo( @cSql )
+
+   ::oSayProcess:setText( "Exportando lineas atipicas" )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 4 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      cCodCli                    := OdooIdsModel():getCountCliente( ( cSql )->cCodCli, .F. )
+
+      if !Empty( ( cSql )->cCodArt ) .AND. !Empty( cCodCli )
+
+         ::oSayProcess:setText( AllTrim( cCodCli ) + "-" + AllTrim( ( cSql )->cCodArt ) +  "-" + retArticulo( ( cSql )->cCodArt ) )
+
+         cMemo                   += AllTrim( cCodCli )
+         cMemo                   += ::cConector
+         cMemo                   += AllTrim( ( cSql )->cCodArt )
+         cMemo                   += ::cConector
+         cMemo                   += ::formatNumeric( ( cSql )->nPrcArt )
+         cMemo                   += ::cConector
+         cMemo                   += ::formatNumeric( ( cSql )->nDtoArt )
+         cMemo                   += Chr(13)+Chr(10)
+
+      end
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 4 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 4 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "Prices_lines" )
+
+Return ( .T. )
+
+
+
+static FUNCTION ExportOdoo_ExportaTarifas( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cSql                 := "lineastarifas"
+   local cMemo                := ""
+   local cNameFile
+   local cCodCli              := ""
+
+   TarifasLineasModel():getToOdoo( @cSql )
+
+   ::oSayProcess:setText( "Exportando lineas Tarifas" )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 4 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      if !Empty( ( cSql )->cCodArt ) .AND. !Empty( ( cSql )->cCodTar )
+
+         ::oSayProcess:setText( AllTrim( ( cSql )->cCodTar ) + "-" + AllTrim( ( cSql )->cCodArt ) +  "-" + AllTrim( ( cSql )->cNomArt ) )
+
+         cMemo                   += AllTrim( ( cSql )->cCodTar )
+         cMemo                   += ::cConector
+         cMemo                   += AllTrim( ( cSql )->cCodArt )
+         cMemo                   += ::cConector
+         cMemo                   += ::formatNumeric( ( cSql )->nPrcTar1 )
+         cMemo                   += ::cConector
+         cMemo                   += ::formatNumeric( ( cSql )->nDtoArt )
+         cMemo                   += Chr(13)+Chr(10)
+
+      end
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 4 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 4 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "tarifas_lineas" )
+
+Return ( .T. )
+
+
+
+static FUNCTION ExportOdoo_ExportaKits( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cSql                 := "lineaskits"
+   local cMemo                := ""
+   local cNameFile
+   local cCodCli              := ""
+
+   EscandallosArticuloModel():getToOdoo( @cSql )
+
+   ::oSayProcess:setText( "Exportando lineas Kits" )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 10 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      ::oSayProcess:setText( AllTrim( ( cSql )->cCodKit ) + "-" + AllTrim( ( cSql )->cRefKit ) )
+
+      cMemo                   += AllTrim( ( cSql )->cCodKit )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( ( cSql )->cRefKit )
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( ( cSql )->nUndKit )
+      cMemo                   += Chr(13)+Chr(10)
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 10 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 10 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "kits" )
+
+Return ( .T. )
+
+
+
+static FUNCTION ExportOdoo_ExportaTickets ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cSql                 := "tickets"
+   local cMemo                := ""
+   local cNameFile
+   local cCodCli              := ""
+
+
+
+   TicketsClientesLineasModel():getToOdoo( @cSql )
+
+   ::oSayProcess:setText( "Exportando lineas de tickets" )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 9 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      ::oSayProcess:setText( AllTrim( ( cSql )->cSerTil ) + "/" + AllTrim( ( cSql )->cNumTil ) )
+
+      cMemo                   += AllTrim( ( cSql )->cSerTil )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( ( cSql )->cNumTil )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( ( cSql )->cSufTil )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( ( cSql )->paruuid )
+      cMemo                   += ::cConector
+      cMemo                   += "C" + ::cClearStr( TicketsClientesModel():getField( ( cSql )->cSerTil, ( cSql )->cNumTil, ( cSql )->cSufTil, "cCliTik" ) )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( dtoc( TicketsClientesModel():getField( ( cSql )->cSerTil, ( cSql )->cNumTil, ( cSql )->cSufTil, "dFecTik" ) ) )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( TicketsClientesModel():getField( ( cSql )->cSerTil, ( cSql )->cNumTil, ( cSql )->cSufTil, "cTurTik" ) )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( TicketsClientesModel():getField( ( cSql )->cSerTil, ( cSql )->cNumTil, ( cSql )->cSufTil, "cAlmTik" ) )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( TicketsClientesModel():getField( ( cSql )->cSerTil, ( cSql )->cNumTil, ( cSql )->cSufTil, "cCodAge" ) )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( TicketsClientesModel():getField( ( cSql )->cSerTil, ( cSql )->cNumTil, ( cSql )->cSufTil, "cCodRut" ) )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( TicketsClientesModel():getField( ( cSql )->cSerTil, ( cSql )->cNumTil, ( cSql )->cSufTil, "cCodObr" ) )
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( TicketsClientesModel():getField( ( cSql )->cSerTil, ( cSql )->cNumTil, ( cSql )->cSufTil, "nTotNet" ) )
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( TicketsClientesModel():getField( ( cSql )->cSerTil, ( cSql )->cNumTil, ( cSql )->cSufTil, "nTotIva" ) )
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( TicketsClientesModel():getField( ( cSql )->cSerTil, ( cSql )->cNumTil, ( cSql )->cSufTil, "nTotTik" ) )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( ( cSql )->uuid )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( ( cSql )->cCbaTil )
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( ( cSql )->nPvpTil )
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( ( cSql )->nUntTil )
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( ( cSql )->nIvaTil )
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( ( cSql )->nDtoLin )
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( ( cSql )->nDtoDiv )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( ( cSql )->cAlmLin )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( ( cSql )->cLote )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( ( cSql )->cCodPr1 )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( ( cSql )->cCodPr2 )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( ( cSql )->cValPr1 )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( ( cSql )->cValPr2 )
+      cMemo                   += ::cConector
+      cMemo                   += Chr(13)+Chr(10)
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 9 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 9 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "tickets" )
+
+Return ( .T. )
+
+
+
+static FUNCTION ExportOdoo_ExportaPropiedades( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cSql                 := "propiedades"
+   local cMemo                := ""
+   local cNameFile
+   local cCodCli              := ""
+
+
+
+   PropiedadesModel():getToOdoo( @cSql )
+
+   ::oSayProcess:setText( "Exportando propiedades" )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 8 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      ::oSayProcess:setText( AllTrim( ( cSql )->cDesPro ) )
+
+      cMemo                   += AllTrim( ( cSql )->cCodPro )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( ( cSql )->cDesPro )
+      cMemo                   += Chr(13)+Chr(10)
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 8 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 8 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "propiedades" )
+
+
+
+   cSql                 := "propiedades_lineas"
+
+   PropiedadesLineasModel():getToOdoo( @cSql )
+
+   ::oSayProcess:setText( "Exportando lineas de propiedades" )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 8 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      ::oSayProcess:setText( AllTrim( ( cSql )->cDesTbl ) )
+
+      cMemo                   += AllTrim( ( cSql )->cCodPro )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( ( cSql )->cCodTbl )
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( ( cSql )->cDesTbl )
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( ( cSql )->nColor )
+      cMemo                   += Chr(13)+Chr(10)
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 8 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 8 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "propiedades_lineas" )
+
+Return ( .T. )
+
+
+
+static FUNCTION ExportOdoo_createLogFile( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local nHand
+   local cFile      := ::cNameLogFile()
+
+   fErase( cFile )
+   nHand       := fCreate( cFile )
+   fWrite( nHand, ::cIncidencia )
+   fClose( nHand )
+
+Return ( .T. )
+
+
+
+static FUNCTION ExportOdoo_cNameLogFile( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cPath
+
+   cPath             := StrTran( AllTrim( ::cPathFac ), "/", "\" )
+
+   if right( cPath, 1 ) <> "\"
+      cPath          += "\"
+   end
+
+   cPath             += "incidencias.log"
+
+Return ( cPath )
+
+
+
+static FUNCTION ExportOdoo_createFile( cMemo, cName ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local nHand
+   local cFile      := ::cNameFile( cName )
+
+   cMemo            := hb_strtoutf8( cMemo )
+
+   fErase( cFile )
+   nHand       := fCreate( cFile )
+   fWrite( nHand, cMemo )
+   fClose( nHand )
+
+Return ( .T. )
+
+
+
+static FUNCTION ExportOdoo_cNameFile( cName ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cPath
+
+   cPath             := StrTran( AllTrim( ::cPathFac ), "/", "\" )
+
+   if right( cPath, 1 ) <> "\"
+      cPath          += "\"
+   end
+
+   cPath             += cName
+   cPath             += ".csv"
+
+Return ( cPath )
+
+
+
+static FUNCTION ExportOdoo_cClearEmail( cEmail ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local nPos
+
+   cEmail      := rTrim( cEmail )
+
+   nPos        := at( ";", cEmail )
+
+   if nPos <> 0
+      cEmail   := SubStr( cEmail, 1, nPos - 1 )
+   end
+
+   nPos        := at( ",", cEmail )
+
+   if nPos <> 0
+      cEmail   := SubStr( cEmail, 1, nPos - 1 )
+   end
+
+Return ( cEmail )
+
+
+
+static FUNCTION ExportOdoo_cValidDni( cAlias, cTitle ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cDni           := ( cAlias )->Nif
+
+   If( cTitle == nil, cTitle := "cliente", ) ;
+
+   if Empty( cDni )
+      ::cIncidencia     += "Cif del " + cTitle + Space( 1 ) + AllTrim( ( cAlias )->Cod ) + ":" + AllTrim( ( cAlias )->Titulo ) + " vacío." + Chr(13)+Chr(10)
+      Return ( "" )
+   end
+
+   cDni                 := AllTrim( cDni )
+
+   cDni                 := StrTran( cDni, ".", "" )
+
+   cDni                 := StrTran( cDni, " ", "" )
+
+   cDni                 := StrTran( cDni, "-", "" )
+
+   cDni                 := StrTran( cDni, "/", "" )
+
+   cDni                 := StrTran( cDni, "\", "" )
+
+   if len( cDni ) < 9
+      ::cIncidencia     += "Cif del " + cTitle + Space( 1 ) + AllTrim( ( cAlias )->Cod ) + ":" + AllTrim( ( cAlias )->Titulo ) + " no válido." + Chr(13)+Chr(10)
+      Return ( "" )
+   end
+
+   if !Empty( cDni ) .AND. AllTrim( ( cAlias )->cCodPai ) == "ESP"
+      cDni                 := "ES" + cDni
+   end
+
+   if AScan( ::aDni, { | aDni | aDni == cDni } ) == 0
+      aAdd( ::aDni, cDni )
+   else
+      cDni := ""
+   end
+
+Return ( cDni )
+
+
+
+static FUNCTION ExportOdoo_bankCount( cPaisIBAN, cCtrlIBAN, cEntBnc, cSucBnc, cDigBnc, cCtaBnc ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cCuentaBanco   := ""
+
+   cCuentaBanco         += AllTrim( cPaisIBAN )
+   cCuentaBanco         += AllTrim( cCtrlIBAN )
+   cCuentaBanco         += Space(1)
+   cCuentaBanco         += AllTrim( cEntBnc )
+   cCuentaBanco         += Space(1)
+   cCuentaBanco         += AllTrim( cSucBnc )
+   cCuentaBanco         += Space(1)
+   cCuentaBanco         += AllTrim( cDigBnc )
+   cCuentaBanco         += SubStr( AllTrim( cCtaBnc ), 1, 2 )
+   cCuentaBanco         += Space(1)
+   cCuentaBanco         += SubStr( AllTrim( cCtaBnc ), 3, 4 )
+   cCuentaBanco         += Space(1)
+   cCuentaBanco         += SubStr( AllTrim( cCtaBnc ), 7, 4 )
+
+Return ( cCuentaBanco )
+
+
+
+static FUNCTION ExportOdoo_sanitizedBankCount( cPaisIBAN, cCtrlIBAN, cEntBnc, cSucBnc, cDigBnc, cCtaBnc ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cCuentaBanco   := ""
+
+   cCuentaBanco         += AllTrim( cPaisIBAN )
+   cCuentaBanco         += AllTrim( cCtrlIBAN )
+   cCuentaBanco         += AllTrim( cEntBnc )
+   cCuentaBanco         += AllTrim( cSucBnc )
+   cCuentaBanco         += AllTrim( cDigBnc )
+   cCuentaBanco         += AllTrim( cCtaBnc )
+
+Return ( cCuentaBanco )
+
+
+
+static FUNCTION ExportOdoo_formatNumeric( uVal ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cFormat  := "0.000"
+
+   if hb_isnumeric( uVal )
+      cFormat     := AllTrim( Trans( uVal, "@E 999999.999999" ) )
+   end
+
+
+   cFormat        := strtran( cFormat, ",", "." )
+
+Return ( cFormat )
+
+
+
+
+
+
+
+FUNCTION ExpOdoo( oMenuItem, oWnd )
+
+   local oExpOdoo
+   local nLevel   := Auth():Level( oMenuItem )
+   if nAnd( nLevel, 1 ) == 0
+      msgStop( "Acceso no permitido." )
+      return ( nil )
+   end
+
+   oExpOdoo       := ExportOdoo():New():Resource()
+
+RETURN nil
+
+
+
+
+
+
+
+_HB_CLASS TOdooIds ; function TOdooIds ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TOdooIds", iif( .T., { @TMant() }, { @HBObject() } ), @TOdooIds() ) ) ;
+
+   _HB_MEMBER DefineFiles(); oClass:AddMethod( "DefineFiles", @TOdooIds_DefineFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TOdooIds ;
+
+
+
+static FUNCTION TOdooIds_DefineFiles( cPath, cDriver ) ; local Self AS CLASS TOdooIds := QSelf() AS CLASS TOdooIds
+
+   If( cPath == nil, cPath := ::cPath, ) ;
+   If( cDriver == nil, cDriver := cDriver(), ) ;
+
+   ::oDbf := DbfServer( "ODOOIDS.DBF", "ODOOIDS" ):New( "ODOOIDS.DBF",, ( cDriver ), "ODOOIDS", ( cPath ) )
+
+      ::oDbf:AddField( "uuid", "C", 40, 0,, win_uuidcreatestring(),,, "Identificador", .F.,, .F., {} )
+      ::oDbf:AddField( "cCodEmp", "C", 4, 0,,,,, "Nombre", .F.,, .F., {} )
+      ::oDbf:AddField( "cTipDoc", "C", 60, 0,,,,, "Tipo de documento", .F.,, .F., {} )
+      ::oDbf:AddField( "cCodGest", "C", 40, 0,,,,, "Código Gestool", .F.,, .F., {} )
+      ::oDbf:AddField( "id_odoo", "C", 40, 0,,,,, "Código Odoo", .F.,, .F., {} )
+
+      ::oDbf:AddIndex( "UUID", "ODOOIDS.CDX", "UUID",,, .F., .F., "UUID",,, .T., .F. )
+
+
+
+RETURN ( ::oDbf )
+
+
+
+
+
+
+
+_HB_CLASS OdooIdsModel ; function OdooIdsModel ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "OdooIdsModel", iif( .T., { @ADSBaseModel() }, { @HBObject() } ), @OdooIdsModel() ) ) ;
+
+   _HB_MEMBER getTableName(); oClass:AddInline( "getTableName", {|Self | ( ( Self ) ), ::getDatosTableName( "ODOOIDS" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InsertFromHashSql( hHash); oClass:AddMethod( "InsertFromHashSql", @OdooIdsModel_InsertFromHashSql(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER lExisteUuid( uuid); oClass:AddMethod( "lExisteUuid", @OdooIdsModel_lExisteUuid(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER insertOdooId( cTipo, idGestool, idOdoo); oClass:AddMethod( "insertOdooId", @OdooIdsModel_insertOdooId(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER insertClienteToOdooId(); oClass:AddInline( "insertClienteToOdooId", {|Self, idGestool, idOdoo | ( ( Self ) ), ( ::insertOdooId( "cliente", idGestool, idOdoo ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER insertProveedorToOdooId(); oClass:AddInline( "insertProveedorToOdooId", {|Self, idGestool, idOdoo | ( ( Self ) ), ( ::insertOdooId( "proveedor", idGestool, idOdoo ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER insertAgenteToOdooId(); oClass:AddInline( "insertAgenteToOdooId", {|Self, idGestool, idOdoo | ( ( Self ) ), ( ::insertOdooId( "agente", idGestool, idOdoo ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getCount( cCodigo, cTipo); oClass:AddMethod( "getCount", @OdooIdsModel_getCount(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getCountCliente(); oClass:AddInline( "getCountCliente", {|Self, cCodigo, lNew | ( ( Self ) ), ( ::getCount( cCodigo, "cliente", lNew ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getCountProveedor(); oClass:AddInline( "getCountProveedor", {|Self, cCodigo, lNew | ( ( Self ) ), ( ::getCount( cCodigo, "proveedor", lNew ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getCountAgente(); oClass:AddInline( "getCountAgente", {|Self, cCodigo, lNew | ( ( Self ) ), ( ::getCount( cCodigo, "agente", lNew ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lastCountResPartner(); oClass:AddMethod( "lastCountResPartner", @OdooIdsModel_lastCountResPartner(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS OdooIdsModel ;
+
+
+
+static FUNCTION OdooIdsModel_InsertFromHashSql( hHash ) ; local Self AS CLASS OdooIdsModel := QSelf() AS CLASS OdooIdsModel
+
+   local cStm     := "InsertFromHashSql"
+   local cSql     := ""
+
+   if !Empty( hHash ) .AND. !::lExisteUuid( hGet( hHash, "uuid" ) )
+
+      cSql         := "INSERT INTO " + ::getTableName()
+      cSql         += " ( uuid, cCodEmp, cTipDoc, cCodGest, id_odoo ) VALUES "
+      cSql         += " ( " + quoted( hGet( hHash, "uuid" ) )
+      cSql         += ", " + quoted( hGet( hHash, "empresa_codigo" ) )
+      cSql         += ", " + quoted( hGet( hHash, "tipo_documento" ) )
+      cSql         += ", " + quoted( hGet( hHash, "codigo_gestool" ) )
+      cSql         += ", " + quoted( hGet( hHash, "id_odoo" ) ) + " )"
+
+      ::ExecuteSqlStatement( cSql, @cStm )
+
+   end
+
+Return ( nil )
+
+
+
+static FUNCTION OdooIdsModel_lExisteUuid( uuid ) ; local Self AS CLASS OdooIdsModel := QSelf() AS CLASS OdooIdsModel
+
+   local cStm     := "lExisteUuid"
+   local cSql     := ""
+
+   cSql     := "SELECT * FROM " + ::getTableName() + " WHERE uuid = " + quoted( uuid )
+
+      if ::ExecuteSqlStatement( cSql, @cStm )
+
+         if ( cStm )->( RecCount() ) > 0
+            Return ( .T. )
+         end
+
+      end
+
+Return ( .F. )
+
+
+
+static FUNCTION OdooIdsModel_insertOdooId( cTipo, idGestool, idOdoo ) ; local Self AS CLASS OdooIdsModel := QSelf() AS CLASS OdooIdsModel
+
+   local cStm        := "OdooIds_insertOdooId"
+   local nId
+   local cSentence   := ""
+
+
+
+
+
+   cSentence         := "SELECT id_odoo FROM " + ::getTableName() +  " WHERE cTipDoc = " + quoted( cTipo ) + " AND " +  "cCodGest = " + quoted( idGestool ) + " AND " +  "id_odoo = " + quoted( idOdoo ) + " AND " +  "cCodEmp = " + quoted( cCodEmp() )
+
+   if ::ExecuteSqlStatement( cSentence, @cStm )
+
+      if ( cStm )->( RecCount() ) > 0
+
+         ( cStm )->( dbGoTop() )
+
+         nId   := ( cStm )->id_odoo
+
+      end
+
+   end
+
+   if Empty( nId )
+
+
+
+
+
+
+
+
+      cSentence         := "INSERT INTO " + ::getTableName() + " ( "          +  "uuid, cCodEmp, cTipDoc, cCodGest, id_odoo ) "  +  "VALUES  ( "                                       +  quoted( win_uuidcreatestring() ) + ", "         +  quoted( cCodEmp() ) + ", "                      +  quoted( cTipo ) + ", "                          +  quoted( idGestool ) + ", "                      +  quoted( idOdoo ) + " )"
+
+      ::ExecuteSqlStatement( cSentence, @cStm )
+
+   end
+
+Return .T.
+
+
+
+static FUNCTION OdooIdsModel_lastCountResPartner( ) ; local Self AS CLASS OdooIdsModel := QSelf() AS CLASS OdooIdsModel
+
+   local cStm        := "OdooIds_lastCountResPartner"
+   local lastid      := 0
+   local cSentence   := ""
+
+
+
+
+   cSentence         := "SELECT id_odoo FROM " + ::getTableName() +  " WHERE cTipDoc IN ( 'cliente', 'proveedor', 'agente' ) AND " +  "cCodEmp = " + quoted( cCodEmp() ) + Space( 1 ) +  "ORDER BY cast(id_odoo as SQL_INTEGER) DESC"
+
+   if ::ExecuteSqlStatement( cSentence, @cStm )
+
+      if ( cStm )->( RecCount() ) > 0
+
+         ( cStm )->( dbGoTop() )
+
+         lastid   := ( cStm )->id_odoo
+
+      end
+
+   end
+
+   if ValType( lastid ) == "C"
+      lastid      := Val( AllTrim( lastid ) )
+   end
+
+   if Empty( lastid )
+      lastid      := 1
+   end
+
+Return lastid
+
+
+
+static FUNCTION OdooIdsModel_getCount( cCodigo, cTipo, lNew ) ; local Self AS CLASS OdooIdsModel := QSelf() AS CLASS OdooIdsModel
+
+   local cStm        := "OdooIds_getCount"
+   local nCount      := 0
+   local cSentence   := ""
+
+   If( lNew == nil, lNew := .T., ) ;
+
+
+
+
+   cSentence         := "SELECT id_odoo FROM " + ::getTableName() +  " WHERE cTipDoc = " + quoted( cTipo ) + " AND " +  "cCodGest = " + quoted( cCodigo ) + " AND " +  "cCodEmp = " + quoted( cCodEmp() )
+
+   if ::ExecuteSqlStatement( cSentence, @cStm )
+
+      if ( cStm )->( RecCount() ) > 0
+
+         ( cStm )->( dbGoTop() )
+
+         nCount   := ( cStm )->id_odoo
+
+      end
+
+   end
+
+   if lNew
+      if Empty( nCount )
+         nCount         := Str( ::lastCountResPartner() + 1 )
+      end
+   end
+
+Return nCount

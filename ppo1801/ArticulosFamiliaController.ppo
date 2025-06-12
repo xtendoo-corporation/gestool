@@ -1,0 +1,2655 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 6 ".\Prg\Controllers\ArticulosFamiliaController.prg"
+_HB_CLASS ArticulosFamiliasController ; function ArticulosFamiliasController ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "ArticulosFamiliasController", iif( .T., { @SQLNavigatorController() }, { @HBObject() } ), @ArticulosFamiliasController() ) ) ;
+
+   _HB_MEMBER { oImagenesController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oImagenesController"}, .F. )
+
+   _HB_MEMBER { oComentariosController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oComentariosController"}, .F. )
+
+   _HB_MEMBER { oPrimeraPropiedadController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oPrimeraPropiedadController"}, .F. )
+
+   _HB_MEMBER { oSegundaPropiedadController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSegundaPropiedadController"}, .F. )
+
+   _HB_MEMBER { oTraduccionesController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTraduccionesController"}, .F. )
+
+   _HB_MEMBER { oCamposExtraValoresController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCamposExtraValoresController"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @ArticulosFamiliasController_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER End(); oClass:AddMethod( "End", @ArticulosFamiliasController_End(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS ArticulosFamiliasController ;
+
+
+
+static FUNCTION ArticulosFamiliasController_New( oSenderController ) ; local Self AS CLASS ArticulosFamiliasController := QSelf() AS CLASS ArticulosFamiliasController
+
+   ::Super:New( oSenderController )
+
+   ::cTitle                         := "Familia de artículos"
+
+   ::cName                          := "articulos_familias"
+
+
+
+   ::hImage                         := {  "16" => "gc_cubes_16", "32" => "gc_cubes_32", "48" => "gc_cubes_48" }
+
+   ::nLevel                         := Auth():Level( ::cName )
+
+   ::oModel                         := SQLArticulosFamiliaModel():New( self )
+
+   ::oBrowseView                    := ArticulosFamiliaBrowseView():New( self )
+
+   ::oDialogView                    := ArticulosFamiliaView():New( self )
+
+   ::oValidator                     := ArticulosFamiliaValidator():New( self, ::oDialogView )
+
+   ::oRepository                    := ArticulosFamiliaRepository():New( self )
+
+   ::oPrimeraPropiedadController    := PropiedadesController():New( self )
+
+   ::oSegundaPropiedadController    := PropiedadesController():New( self )
+
+   ::oImagenesController            := ImagenesController():New( self )
+
+   ::oComentariosController         := ComentariosController():New( self )
+
+   ::oTraduccionesController        := TraduccionesController():New( self )
+
+   ::oCamposExtraValoresController  := CamposExtraValoresController():New( self, ::oModel:cTableName )
+
+   ::oGetSelector                   := GetSelector():New( self )
+
+   ::oFilterController:setTableToFilter( ::oModel:cTableName )
+
+   ::oModel:setEvent( "loadedBlankBuffer",            {|| ::oImagenesController:loadPrincipalBlankBuffer() } )
+   ::oModel:setEvent( "insertedBuffer",               {|| ::oImagenesController:insertBuffer() } )
+
+   ::oModel:setEvent( "loadedCurrentBuffer",          {|| ::oImagenesController:loadedCurrentBuffer( ::getUuid() ) } )
+   ::oModel:setEvent( "updatedBuffer",                {|| ::oImagenesController:updateBuffer( ::getUuid() ) } )
+
+   ::oModel:setEvent( "loadedDuplicateCurrentBuffer", {|| ::oImagenesController:loadedDuplicateCurrentBuffer( ::getUuid() ) } )
+   ::oModel:setEvent( "loadedDuplicateBuffer",        {|| ::oImagenesController:loadedDuplicateBuffer( ::getUuid() ) } )
+
+   ::oModel:setEvent( "deletedSelection",             {|| ::oImagenesController:deleteBuffer( ::getUuidFromRecno( ::oBrowseView:getBrowse():aSelected ) ) } )
+
+RETURN ( Self )
+
+
+
+static FUNCTION ArticulosFamiliasController_End( ) ; local Self AS CLASS ArticulosFamiliasController := QSelf() AS CLASS ArticulosFamiliasController
+
+   ::oModel:End()
+
+   ::oBrowseView:End()
+
+   ::oDialogView:End()
+
+   ::oValidator:End()
+
+   ::oRepository:End()
+
+   ::oImagenesController:End()
+
+   ::oComentariosController:End()
+
+   ::oTraduccionesController:End()
+
+   ::oCamposExtraValoresController:End()
+
+   ::Super:End()
+
+RETURN ( Self )
+
+
+
+
+
+
+
+
+_HB_CLASS ArticulosFamiliaBrowseView ; function ArticulosFamiliaBrowseView ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "ArticulosFamiliaBrowseView", iif( .T., { @SQLBrowseView() }, { @HBObject() } ), @ArticulosFamiliaBrowseView() ) ) ;
+
+   _HB_MEMBER addColumns(); oClass:AddMethod( "addColumns", @ArticulosFamiliaBrowseView_addColumns(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS ArticulosFamiliaBrowseView ;
+
+
+
+static FUNCTION ArticulosFamiliaBrowseView_addColumns( ) ; local Self AS CLASS ArticulosFamiliaBrowseView := QSelf() AS CLASS ArticulosFamiliaBrowseView
+
+   with object ( ::oBrowse:AddCol() )
+      :cSortOrder          := "id"
+      :cHeader             := "Id"
+      :nWidth              := 60
+      :bEditValue          := {|| ::getRowSet():fieldGet( "id" ) }
+      :bLClickHeader       := {| row, col, flags, oColumn | ::onClickHeader( oColumn ) }
+   end
+
+   with object ( ::oBrowse:AddCol() )
+      :cHeader             := "Uuid"
+      :nWidth              := 300
+      :bEditValue          := {|| ::getRowSet():fieldGet( "uuid" ) }
+      :bLClickHeader       := {| row, col, flags, oColumn | ::onClickHeader( oColumn ) }
+      :lHide               := .T.
+   end
+
+   with object ( ::oBrowse:AddCol() )
+      :cSortOrder          := "codigo"
+      :cHeader             := "Código"
+      :nWidth              := 50
+      :bEditValue          := {|| ::getRowSet():fieldGet( "codigo" ) }
+      :bLClickHeader       := {| row, col, flags, oColumn | ::onClickHeader( oColumn ) }
+   end
+
+   with object ( ::oBrowse:AddCol() )
+      :cSortOrder          := "nombre"
+      :cHeader             := "Nombre"
+      :nWidth              := 300
+      :bEditValue          := {|| ::getRowSet():fieldGet( "nombre" ) }
+      :bLClickHeader       := {| row, col, flags, oColumn | ::onClickHeader( oColumn ) }
+   end
+
+RETURN ( self )
+
+
+
+
+
+
+
+
+
+_HB_CLASS ArticulosFamiliaView ; function ArticulosFamiliaView ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "ArticulosFamiliaView", iif( .T., { @SQLBaseView() }, { @HBObject() } ), @ArticulosFamiliaView() ) ) ;
+
+   _HB_MEMBER { oGetCodigo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetCodigo"}, .F. )
+
+   _HB_MEMBER { oGetTipo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetTipo"}, .F. )
+
+   _HB_MEMBER { oGetColorRGB } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetColorRGB"}, .F. )
+
+   _HB_MEMBER { oGetImagen } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetImagen"}, .F. )
+
+   _HB_MEMBER { oBmpImagen } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBmpImagen"}, .F. )
+
+   _HB_MEMBER { oGetPosicion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetPosicion"}, .F. )
+
+   _HB_MEMBER { oCheckBoxMostrarComentario } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCheckBoxMostrarComentario"}, .F. )
+
+   _HB_MEMBER { oCheckBoxArticuloNoAcumulable } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCheckBoxArticuloNoAcumulable"}, .F. )
+
+   _HB_MEMBER { oTreeRelaciones } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTreeRelaciones"}, .F. )
+
+   _HB_MEMBER { uuidSelected } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"uuidSelected"}, .F. )
+
+   _HB_MEMBER Activate(); oClass:AddMethod( "Activate", @ArticulosFamiliaView_Activate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER startActivate(); oClass:AddMethod( "startActivate", @ArticulosFamiliaView_startActivate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addLinksToExplorerBar(); oClass:AddMethod( "addLinksToExplorerBar", @ArticulosFamiliaView_addLinksToExplorerBar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER changeColorRGB(); oClass:AddMethod( "changeColorRGB", @ArticulosFamiliaView_changeColorRGB(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER changeTreeRelaciones(); oClass:AddMethod( "changeTreeRelaciones", @ArticulosFamiliaView_changeTreeRelaciones(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER loadTreeRelaciones(); oClass:AddMethod( "loadTreeRelaciones", @ArticulosFamiliaView_loadTreeRelaciones(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setTreeRelaciones( uuidParent, oNode); oClass:AddMethod( "setTreeRelaciones", @ArticulosFamiliaView_setTreeRelaciones(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getSelectedUuidTreeRelaciones(); oClass:AddMethod( "getSelectedUuidTreeRelaciones", @ArticulosFamiliaView_getSelectedUuidTreeRelaciones(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER changeIncluirTPVTactil(); oClass:AddMethod( "changeIncluirTPVTactil", @ArticulosFamiliaView_changeIncluirTPVTactil(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER endActivate(); oClass:AddMethod( "endActivate", @ArticulosFamiliaView_endActivate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS ArticulosFamiliaView ;
+
+
+
+static FUNCTION ArticulosFamiliaView_Activate( ) ; local Self AS CLASS ArticulosFamiliaView := QSelf() AS CLASS ArticulosFamiliaView
+
+   local oSayCamposExtra
+
+
+
+   ::oDialog = TDialog():New(,,,, ::LblTitle() + "familia", "CONTAINER_MEDIUM_EXTENDED",, .F.,,,,,, .F.,,,,,, .F.,, "::oDialog", nil, )
+
+
+
+
+
+   ::oBitmap := TBitmap():ReDefine( 900, ::oController:getimage("48"),, ::oDialog,,, .F., .F.,,, .F.,,, .T. )
+
+
+
+
+
+   ::oMessage := TSay():ReDefine( 800, {||      "Familia"}, ::oDialog,,,, .F., getBoldFont(), .F., .F., )
+
+   ::redefineExplorerBar()
+
+
+
+
+
+
+
+   ::oFolder := TFolder():ReDefine( 500, {"&General" , "&Relaciones"}, { "FAMILIA_GENERAL","FAMILIA_RELACIONES" }, ::oDialog,,,,, .F., )
+
+   ::oFolder:aDialogs[2]:bGotFocus  := {|| ::setTreeRelaciones() }
+
+
+
+
+
+
+
+   ::oGetCodigo := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, ::oController:oModel:hBuffer[ "codigo" ], ::oController:oModel:hBuffer[ "codigo" ]:= u ) }, ::oFolder:aDialogs[1],, "@! NNNNNNNNNNNNNNNNNNNN", {||       ( ::oController:validate( "codigo" ) )},,,,,, .F., {||        ( ::oController:isNotZoomMode() )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+   TGetHlp():ReDefine( 110, { | u | If( PCount()==0, ::oController:oModel:hBuffer[ "nombre" ], ::oController:oModel:hBuffer[ "nombre" ]:= u ) }, ::oFolder:aDialogs[1],,, {||       ( ::oController:validate( "nombre" ) )},,,,,, .F., {||        ( ::oController:isNotZoomMode() )},, .F., .F.,,,,,, nil,,, )
+
+
+
+   ::oController:oPrimeraPropiedadController:oGetSelector:Bind( { | u | If( PCount()==0, ::oController:oModel:hBuffer[ "primera_propiedad_uuid" ], ::oController:oModel:hBuffer[ "primera_propiedad_uuid" ]:= u ) } )
+   ::oController:oPrimeraPropiedadController:oGetSelector:Activate( 120, 121, ::oFolder:aDialogs[ 1 ] )
+
+
+
+   ::oController:oSegundaPropiedadController:oGetSelector:Bind( { | u | If( PCount()==0, ::oController:oModel:hBuffer[ "segunda_propiedad_uuid" ], ::oController:oModel:hBuffer[ "segunda_propiedad_uuid" ]:= u ) } )
+   ::oController:oSegundaPropiedadController:oGetSelector:Activate( 130, 131, ::oFolder:aDialogs[ 1 ] )
+
+
+
+
+
+
+
+   TCheckBox():ReDefine( 140, { | u | If( PCount()==0, ::oController:oModel:hBuffer[ "incluir_tpv_tactil" ], ::oController:oModel:hBuffer[ "incluir_tpv_tactil" ]:= u ) }, ::oFolder:aDialogs[1],, {||   ( ::changeIncluirTPVTactil() )},,,,, .F., {||        ( ::oController:isNotZoomMode() )}, .F. )
+
+
+
+
+
+
+
+
+
+   ::oGetColorRGB := TGetHlp():ReDefine( 150, { | u | If( PCount()==0, ::oController:oModel:hBuffer[ "color_rgb" ], ::oController:oModel:hBuffer[ "color_rgb" ]:= u ) }, ::oFolder:aDialogs[1],,,,,,,,, .F., {||        ( ::oController:isNotZoomMode() )},, .F., .F.,,,,,, nil, "gc_photographic_filters_16", 151, )
+
+   ::oGetColorRGB:setColor( ::oController:oModel:hBuffer[ "color_rgb" ], ::oController:oModel:hBuffer[ "color_rgb" ] )
+   ::oGetColorRGB:bHelp := {|| ::changeColorRGB() }
+
+
+
+
+
+
+
+
+
+   ::oGetImagen := TGetHlp():ReDefine( 160, { | u | If( PCount()==0, ::oController:oImagenesController:oModel:hBuffer[ "imagen" ], ::oController:oImagenesController:oModel:hBuffer[ "imagen" ]:= u ) }, ::oFolder:aDialogs[1],,,,,,,,, .F., {||        ( ::oController:oImagenesController:isNotZoomMode() )},, .F., .F.,,,,,, nil, "Folder", 161, )
+
+   ::oGetImagen:bHelp      := {|| GetBmp( ::oGetImagen, ::oBmpImagen ) }
+   ::oGetImagen:bChange    := {|| ChgBmp( ::oGetImagen, ::oBmpImagen ) }
+
+
+
+
+   ::oBmpImagen := TImage():ReDefine( 1010,, cFileBmpName( ::oController:oImagenesController:oModel:hBuffer[ "imagen" ] ), ::oFolder:aDialogs[1],,, .F., .F.,,, .F.,,, .F. )
+
+   ::oBmpImagen:SetColor( , getsyscolor( 15 ) )
+   ::oBmpImagen:bLClicked   := {|| ShowImage( ::oBmpImagen ) }
+   ::oBmpImagen:bRClicked   := {|| ShowImage( ::oBmpImagen ) }
+
+
+
+
+
+
+
+
+
+   ::oGetPosicion := TGetHlp():ReDefine( 170, { | u | If( PCount()==0, ::oController:oModel:hBuffer[ "posicion" ], ::oController:oModel:hBuffer[ "posicion" ]:= u ) }, ::oFolder:aDialogs[1],,, {||       ( ::oController:oModel:hBuffer[ "posicion" ] >= 0 )},,,,,, .F., {||        ( ::oController:isNotZoomMode() )},, .F., .T.,,, {||         1},,, nil,, 171, )
+
+
+
+   ::oController:oComentariosController:oGetSelector:Bind( { | u | If( PCount()==0, ::oController:oModel:hBuffer[ "comentario_uuid" ], ::oController:oModel:hBuffer[ "comentario_uuid" ]:= u ) } )
+   ::oController:oComentariosController:oGetSelector:Build( { "idGet" => 180, "idText" => 181, "idSay" => 182, "oDialog" => ::oFolder:aDialogs[1] } )
+
+
+
+
+
+   ::oCheckBoxMostrarComentario := TCheckBox():ReDefine( 190, { | u | If( PCount()==0, ::oController:oModel:hBuffer[ "mostrar_ventana_comentarios" ], ::oController:oModel:hBuffer[ "mostrar_ventana_comentarios" ]:= u ) }, ::oFolder:aDialogs[1],,,,,,, .F., {||        ( ::oController:isNotZoomMode() )}, .F. )
+
+
+
+
+
+   ::oCheckBoxArticuloNoAcumulable := TCheckBox():ReDefine( 200, { | u | If( PCount()==0, ::oController:oModel:hBuffer[ "articulo_no_acumulable" ], ::oController:oModel:hBuffer[ "articulo_no_acumulable" ]:= u ) }, ::oFolder:aDialogs[1],,,,,,, .F., {||        ( ::oController:isNotZoomMode() )}, .F. )
+
+
+
+   ::oTreeRelaciones                      := TTreeView():Redefine( 100, ::oFolder:aDialogs[2] )
+   ::oTreeRelaciones:bItemSelectChanged   := {|| ::changeTreeRelaciones() }
+   ::oTreeRelaciones:bValid               := {|| ::oController:validate( "relaciones" ) }
+
+
+
+
+
+
+
+   TButton():ReDefine( 1, {||( ::endActivate() )}, ::oDialog,,, .F., {||        ( ::oController:isNotZoomMode() )},,, .F. )
+
+
+
+
+
+   TButton():ReDefine( 2, {||( ::oDialog:end() )}, ::oDialog,,, .F.,,,, .T. )
+
+   if ::oController:isNotZoomMode()
+      ::oDialog:AddFastKey( 116, {|| ::endActivate() } )
+   end
+
+   ::oDialog:bStart  := {|| ::startActivate() }
+
+   ::oDialog:Activate( ::oDialog:bLClicked, ::oDialog:bMoved, ::oDialog:bPainted, .T.,,,, ::oDialog:bRClicked,,, )
+
+   ::oBitmap:end()
+
+   ::oBmpImagen:End()
+
+RETURN ( ::oDialog:nResult )
+
+
+
+static FUNCTION ArticulosFamiliaView_addLinksToExplorerBar( ) ; local Self AS CLASS ArticulosFamiliaView := QSelf() AS CLASS ArticulosFamiliaView
+
+   local oPanel
+
+   oPanel            := ::oExplorerBar:AddPanel( "Datos relacionados", nil, 1 )
+
+   if ::oController:isZoomMode()
+      RETURN ( self )
+   end
+
+
+
+   oPanel:AddLink(   "Traducciones...", {|| ::oController:oTraduccionesController:activateDialogView() }, ::oController:oTraduccionesController:getImage( "16" ) )
+
+   oPanel            := ::oExplorerBar:AddPanel( "Otros", nil, 1 )
+
+
+
+   oPanel:AddLink(   "Campos extra...", {|| ::oController:oCamposExtraValoresController:Edit( ::oController:getUuid() ) }, ::oController:oCamposExtraValoresController:getImage( "16" ) )
+
+RETURN ( self )
+
+
+
+
+static FUNCTION ArticulosFamiliaView_endActivate( ) ; local Self AS CLASS ArticulosFamiliaView := QSelf() AS CLASS ArticulosFamiliaView
+
+   if validateDialog( ::oFolder:aDialogs )
+
+      ::uuidSelected    := ::getSelectedUuidTreeRelaciones()
+
+      ::oDialog:end( 1 )
+
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION ArticulosFamiliaView_changeIncluirTPVTactil( ) ; local Self AS CLASS ArticulosFamiliaView := QSelf() AS CLASS ArticulosFamiliaView
+
+   if ::oController:oModel:hBuffer[ "incluir_tpv_tactil" ]
+      ::oGetColorRGB:Show()
+      ::oGetImagen:Show()
+      ::oBmpImagen:Show()
+      ::oGetPosicion:Show()
+      ::oCheckBoxMostrarComentario:Show()
+      ::oCheckBoxArticuloNoAcumulable:Show()
+      ::oController:oComentariosController:oGetSelector:Show()
+   else
+      ::oGetColorRGB:Hide()
+      ::oGetImagen:Hide()
+      ::oBmpImagen:Hide()
+      ::oGetPosicion:Hide()
+      ::oCheckBoxMostrarComentario:Hide()
+      ::oCheckBoxArticuloNoAcumulable:Hide()
+      ::oController:oComentariosController:oGetSelector:Hide()
+   end
+
+RETURN ( self )
+
+
+
+static FUNCTION ArticulosFamiliaView_changeColorRGB( ) ; local Self AS CLASS ArticulosFamiliaView := QSelf() AS CLASS ArticulosFamiliaView
+
+   local nColorRGB   := ChooseColor()
+
+   if !empty( nColorRGB )
+      ::oGetColorRGB:setColor( nColorRGB, nColorRGB )
+      ::oGetColorRGB:cText( nColorRGB )
+   end
+
+RETURN ( self )
+
+
+
+static FUNCTION ArticulosFamiliaView_changeTreeRelaciones( aItems ) ; local Self AS CLASS ArticulosFamiliaView := QSelf() AS CLASS ArticulosFamiliaView
+
+   if empty( aItems )
+      aItems      := ::oTreeRelaciones:aItems
+   end
+
+
+   aeval( aItems, {|oItem| ::oTreeRelaciones:setCheck( oItem, .F. ), iif( len( oItem:aItems ) > 0, ::changeTreeRelaciones( oItem:aItems ), ) } )
+
+   sysrefresh()
+
+RETURN ( .T. )
+
+
+
+static FUNCTION ArticulosFamiliaView_loadTreeRelaciones( oTree, familiaUuid ) ; local Self AS CLASS ArticulosFamiliaView := QSelf() AS CLASS ArticulosFamiliaView
+
+   local oNode
+   local oHashList
+
+   If( oTree == nil, oTree := ::oTreeRelaciones, ) ;
+   If( familiaUuid == nil, familiaUuid := "", ) ;
+
+   oHashList            := ::oController:oModel:getRowSetWhereFamiliaUuid( familiaUuid )
+
+   if hb_isnil( oHashList )
+      RETURN ( self )
+   end
+
+   while !( oHashList:Eof() )
+
+      oNode             := oTree:Add( oHashList:fieldGet( "nombre" ) )
+      oNode:Cargo       := oHashList:fieldGet( "uuid" )
+
+      oHashList:Skip()
+
+   end
+
+   aeval( oTree:aItems, {| oNode | ::loadTreeRelaciones( oNode, oNode:Cargo ) } )
+
+   oNode:Expand()
+
+RETURN ( self )
+
+
+
+static FUNCTION ArticulosFamiliaView_setTreeRelaciones( uuidParent, aItems ) ; local Self AS CLASS ArticulosFamiliaView := QSelf() AS CLASS ArticulosFamiliaView
+
+   local oItem
+
+   If( uuidParent == nil, uuidParent := ::oController:oModel:hBuffer[ "familia_uuid" ], ) ;
+   If( aItems == nil, aItems := ::oTreeRelaciones:aItems, ) ;
+
+   if empty( uuidParent )
+      RETURN ( nil )
+   end
+
+   if empty( aItems )
+      RETURN ( nil )
+   end
+
+   for each oItem in aItems
+
+      if alltrim( oItem:Cargo ) == alltrim( uuidParent )
+         ::oTreeRelaciones:Select( oItem )
+         ::oTreeRelaciones:SetCheck( oItem, .T. )
+         sysrefresh()
+      end
+
+      if !empty( oItem:aItems )
+         ::setTreeRelaciones( uuidParent, oItem:aItems )
+      end
+
+   next
+
+RETURN ( .T. )
+
+
+
+static FUNCTION ArticulosFamiliaView_getSelectedUuidTreeRelaciones( aItems, uuidSelected ) ; local Self AS CLASS ArticulosFamiliaView := QSelf() AS CLASS ArticulosFamiliaView
+
+   local oItem
+
+   If( uuidSelected == nil, uuidSelected := "", ) ;
+
+   if empty( aItems )
+      aItems                  := ::oTreeRelaciones:aItems
+   end
+
+   for each oItem in aItems
+
+      if ::oTreeRelaciones:GetCheck( oItem )
+         uuidSelected         := oItem:Cargo
+      end
+
+      if len( oItem:aItems ) > 0
+         ::getSelectedUuidTreeRelaciones( oItem:aItems, @uuidSelected )
+      end
+
+   next
+
+RETURN ( uuidSelected )
+
+
+
+static FUNCTION ArticulosFamiliaView_startActivate( ) ; local Self AS CLASS ArticulosFamiliaView := QSelf() AS CLASS ArticulosFamiliaView
+
+   CursorWait()
+
+   ::addLinksToExplorerBar()
+
+   ::oController:oPrimeraPropiedadController:oGetSelector:Start()
+
+   ::oController:oSegundaPropiedadController:oGetSelector:Start()
+
+   ::oController:oComentariosController:oGetSelector:Start()
+
+   ::loadTreeRelaciones()
+
+   ::changeIncluirTPVTactil()
+
+   ::oGetCodigo:setFocus()
+
+   CursorWE()
+
+RETURN ( self )
+
+
+
+
+
+
+
+_HB_CLASS ArticulosFamiliaValidator ; function ArticulosFamiliaValidator ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "ArticulosFamiliaValidator", iif( .T., { @SQLCompanyValidator() }, { @HBObject() } ), @ArticulosFamiliaValidator() ) ) ;
+
+   _HB_MEMBER getValidators(); oClass:AddMethod( "getValidators", @ArticulosFamiliaValidator_getValidators(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER sameFamily(); oClass:AddMethod( "sameFamily", @ArticulosFamiliaValidator_sameFamily(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS ArticulosFamiliaValidator ;
+
+
+
+static FUNCTION ArticulosFamiliaValidator_getValidators( ) ; local Self AS CLASS ArticulosFamiliaValidator := QSelf() AS CLASS ArticulosFamiliaValidator
+
+
+
+
+
+   ::hValidators  := {  "nombre" =>       {  "required"           => "El nombre es un dato requerido", "unique"             => "El nombre introducido ya existe" }, "codigo" =>       {  "required"           => "El código es un dato requerido" , "unique"             => "El código introducido ya existe" }, "relaciones" =>   {  "samefamily"         => "Familia relacionada no puede ser la misma" } }
+
+RETURN ( ::hValidators )
+
+
+
+static FUNCTION ArticulosFamiliaValidator_sameFamily( ) ; local Self AS CLASS ArticulosFamiliaValidator := QSelf() AS CLASS ArticulosFamiliaValidator
+
+   local uuidSelected := ::oController:oDialogView:getSelectedUuidTreeRelaciones()
+
+   if empty( uuidSelected )
+      RETURN ( .T. )
+   end
+
+   if alltrim( ::oController:oModel:hBuffer[ "uuid" ] ) == alltrim( uuidSelected )
+      RETURN ( .F. )
+   end
+
+RETURN ( .T. )
+
+
+
+
+
+
+_HB_CLASS SQLArticulosFamiliaModel ; function SQLArticulosFamiliaModel ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "SQLArticulosFamiliaModel", iif( .T., { @SQLCompanyModel() }, { @HBObject() } ), @SQLArticulosFamiliaModel() ) ) ;
+
+   _HB_MEMBER { cTableName } ; oClass:AddMultiData(, "articulos_familias", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTableName"}, .F. )
+
+   _HB_MEMBER getColumns(); oClass:AddMethod( "getColumns", @SQLArticulosFamiliaModel_getColumns(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER getPrimeraPropiedadUuidAttribute(); oClass:AddInline( "getPrimeraPropiedadUuidAttribute", {|Self, uuid | ( ( Self ) ), ( if( empty( uuid ), space( 18 ), SQLPropiedadesModel():getCodigoWhereUuid( uuid ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER setPrimeraPropiedadUuidAttribute(); oClass:AddInline( "setPrimeraPropiedadUuidAttribute", {|Self, codigo | ( ( Self ) ), ( if( empty( codigo ), "", SQLPropiedadesModel():getUuidWhereCodigo( codigo ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER getComentarioUuidAttribute(); oClass:AddInline( "getComentarioUuidAttribute", {|Self, uuid | ( ( Self ) ), ( if( empty( uuid ), space( 3 ), SQLComentariosModel():getCodigoWhereUuid( uuid ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER setComentarioUuidAttribute(); oClass:AddInline( "setComentarioUuidAttribute", {|Self, codigo | ( ( Self ) ), ( if( empty( codigo ), "", SQLComentariosModel():getUuidWhereCodigo( codigo ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setFamiliaUuidAttribute( value); oClass:AddMethod( "setFamiliaUuidAttribute", @SQLArticulosFamiliaModel_setFamiliaUuidAttribute(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getRowSetWhereFamiliaUuid( uuid); oClass:AddMethod( "getRowSetWhereFamiliaUuid", @SQLArticulosFamiliaModel_getRowSetWhereFamiliaUuid(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS SQLArticulosFamiliaModel ;
+
+
+
+static FUNCTION SQLArticulosFamiliaModel_getColumns( ) ; local Self AS CLASS SQLArticulosFamiliaModel := QSelf() AS CLASS SQLArticulosFamiliaModel
+
+
+   hset( ::hColumns, "id",                            {  "create"    => "INTEGER AUTO_INCREMENT UNIQUE"           , "default"   => {|| 0 } }                                 )
+
+
+   hset( ::hColumns, "uuid",                          {  "create"    => "VARCHAR( 40 ) NOT NULL UNIQUE"           , "default"   => {|| win_uuidcreatestring() } }            )
+
+
+   hset( ::hColumns, "familia_uuid",                  {  "create"    => "VARCHAR( 40 )"                           , "default"   => {|| space( 40 ) } }                       )
+
+   ::getEmpresaColumns()
+
+
+   hset( ::hColumns, "codigo",                        {  "create"    => "VARCHAR( 20 )"                           , "default"   => {|| space( 20 ) } }                       )
+
+
+   hset( ::hColumns, "nombre",                        {  "create"    => "VARCHAR( 200 )"                          , "default"   => {|| space( 200 ) } }                      )
+
+
+   hset( ::hColumns, "primera_propiedad_uuid",        {  "create"    => "VARCHAR( 40 )"                           , "default"   => {|| space( 40 ) } }                       )
+
+
+   hset( ::hColumns, "segunda_propiedad_uuid",        {  "create"    => "VARCHAR( 40 )"                           , "default"   => {|| space( 40 ) } }                       )
+
+
+   hset( ::hColumns, "incluir_tpv_tactil",            {  "create"    => "BIT"                                     , "default"   => {|| .F. } }                               )
+
+
+   hset( ::hColumns, "color_rgb",                     {  "create"    => "INT UNSIGNED"                            , "default"   => {|| ( 255 + ( 255 * 256 ) + ( 255 * 65536 ) ) } }              )
+
+
+   hset( ::hColumns, "posicion",                      {  "create"    => "INTEGER( 5 )"                            , "default"   => {|| 0 } }                                 )
+
+
+   hset( ::hColumns, "comentario_uuid",               {  "create"    => "VARCHAR( 40 )"                           , "default"   => {|| space( 40 ) } }                       )
+
+
+   hset( ::hColumns, "articulo_no_acumulable",        {  "create"    => "BIT"                                     , "default"   => {|| .F. } }                               )
+
+
+   hset( ::hColumns, "mostrar_ventana_comentarios",   {  "create"    => "BIT"                                     , "default"   => {|| .F. } }                               )
+
+   ::getTimeStampColumns()
+
+RETURN ( ::hColumns )
+
+
+
+static FUNCTION SQLArticulosFamiliaModel_setFamiliaUuidAttribute( value ) ; local Self AS CLASS SQLArticulosFamiliaModel := QSelf() AS CLASS SQLArticulosFamiliaModel
+
+   if empty( ::oController )
+      RETURN ( value )
+   end
+
+   if empty( ::oController:oDialogView )
+      RETURN ( value )
+   end
+
+RETURN ( ::oController:oDialogView:uuidSelected )
+
+
+
+static FUNCTION SQLArticulosFamiliaModel_getRowSetWhereFamiliaUuid( familiaUuid ) ; local Self AS CLASS SQLArticulosFamiliaModel := QSelf() AS CLASS SQLArticulosFamiliaModel
+
+   local cSQL
+   local oHashList
+
+   cSQL                 := "SELECT uuid, nombre FROM " + ::cTableName            + " "
+   cSQL                 +=    "WHERE familia_uuid = " + quoted( familiaUuid )    + " "
+   cSQL                 +=    "AND empresa_codigo = " + quoted( cCodEmp() ) + " "
+
+   oHashList            := getSQLDatabase():selectHashList( cSQL )
+
+   if hb_isnil( oHashList )
+      RETURN ( nil )
+   end
+
+   oHashList:goTop()
+
+RETURN ( oHashList )
+
+
+
+
+
+
+
+_HB_CLASS ArticulosFamiliaRepository ; function ArticulosFamiliaRepository ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "ArticulosFamiliaRepository", iif( .T., { @SQLBaseRepository() }, { @HBObject() } ), @ArticulosFamiliaRepository() ) ) ;
+
+   _HB_MEMBER getTableName(); oClass:AddInline( "getTableName", {|Self | ( ( Self ) ), ( SQLArticulosFamiliaModel():getTableName() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS ArticulosFamiliaRepository ;

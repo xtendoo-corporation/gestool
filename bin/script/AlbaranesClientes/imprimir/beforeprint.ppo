@@ -1,0 +1,148 @@
+#line 203 "C:\fwh1801\Gestool\bin\include\hbclass.ch"
+DECLARE HBClass  New( cName AS STRING, OPTIONAL SuperParams ) AS CLASS HBClass  Create() AS OBJECT  Instance() AS OBJECT  AddClsMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC, n2 AS NUMERIC, n3 AS NUMERIC )  AddMultiClsData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING )  AddMultiData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING, x AS LOGICAL, lPer AS LOGICAL )  AddMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC )  AddInLine( cName AS STRING, bBlock AS CODEBLOCK, nScope AS NUMERIC )  AddVirtual( cName AS STRING )
+#line 7 "C:\fwh1801\Gestool\bin\Script\AlbaranesClientes\imprimir\beforeprint.prg"
+Function Inicio( nView )
+
+   local oAlbarenesClientesQR
+
+   oAlbarenesClientesQR    := AlbarenesClientesQR():New( nView )
+
+   oAlbarenesClientesQR:Run()
+
+Return ( nil )
+
+
+
+_HB_CLASS AlbarenesClientesQR ; function AlbarenesClientesQR ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "AlbarenesClientesQR", iif( .F., { }, { @HBObject() } ), @AlbarenesClientesQR() ) ) ;
+
+; _HB_MEMBER { nView } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nView"}, .F. )
+
+; _HB_MEMBER { cNumAlbaran } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNumAlbaran"}, .F. )
+; _HB_MEMBER { cFormatNumAlbaran } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFormatNumAlbaran"}, .F. )
+; _HB_MEMBER { dFechaAlbaran } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dFechaAlbaran"}, .F. )
+
+; _HB_MEMBER { cTextoQR } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTextoQR"}, .F. )
+
+; _HB_MEMBER { cConector } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cConector"}, .F. )
+
+; _HB_MEMBER { cFileName } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFileName"}, .F. )
+
+; _HB_MEMBER { cIdMetodoProduccion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cIdMetodoProduccion"}, .F. )
+; _HB_MEMBER { cIdConServacion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cIdConServacion"}, .F. )
+; _HB_MEMBER { cIdNomCientifico } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cIdNomCientifico"}, .F. )
+; _HB_MEMBER { cIdZonaFao } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cIdZonaFao"}, .F. )
+; _HB_MEMBER { cIdArtePesca } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cIdArtePesca"}, .F. )
+; _HB_MEMBER { cIdFechaCongelacion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cIdFechaCongelacion"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @AlbarenesClientesQR_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Run(); oClass:AddMethod( "Run", @AlbarenesClientesQR_Run(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GeneraContenidoCabeceraQR(); oClass:AddMethod( "GeneraContenidoCabeceraQR", @AlbarenesClientesQR_GeneraContenidoCabeceraQR(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GeneraContenidoLineasQR(); oClass:AddMethod( "GeneraContenidoLineasQR", @AlbarenesClientesQR_GeneraContenidoLineasQR(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS AlbarenesClientesQR ;
+
+
+
+static FUNCTION AlbarenesClientesQR_New( nView ) ; local Self AS CLASS AlbarenesClientesQR := QSelf() AS CLASS AlbarenesClientesQR
+
+   ::cTextoQR                    := ""
+   ::cConector                   := "|"
+   ::nView                       := nView
+
+   ::cIdMetodoProduccion         := "015"
+   ::cIdConServacion             := "016"
+   ::cIdNomCientifico            := "017"
+   ::cIdZonaFao                  := "018"
+   ::cIdArtePesca                := "019"
+   ::cIdFechaCongelacion         := "020"
+
+   ::cFileName                   := "C:\Gestion\Gestool\QR.bmp"
+
+   ::cNumAlbaran                 := ( D():AlbaranesClientes( ::nView ) )->cSerAlb + Str( ( D():AlbaranesClientes( ::nView ) )->nNumAlb ) + ( D():AlbaranesClientes( ::nView ) )->cSufAlb
+   ::cFormatNumAlbaran           := ( D():AlbaranesClientes( ::nView ) )->cSerAlb + "/" + AllTrim( Str( ( D():AlbaranesClientes( ::nView ) )->nNumAlb ) ) + "/" + ( D():AlbaranesClientes( ::nView ) )->cSufAlb
+   ::dFechaAlbaran               := dToc( ( D():AlbaranesClientes( ::nView ) )->dFecAlb )
+
+Return ( Self )
+
+
+
+static FUNCTION AlbarenesClientesQR_Run( ) ; local Self AS CLASS AlbarenesClientesQR := QSelf() AS CLASS AlbarenesClientesQR
+
+   ::GeneraContenidoCabeceraQR()
+
+   ::GeneraContenidoLineasQR()
+
+
+
+   QrCodeToHBmp( 20, 20, AllTrim( ::cTextoQR ), ::cFileName )
+
+Return ( Self )
+
+
+
+static FUNCTION AlbarenesClientesQR_GeneraContenidoCabeceraQR( ) ; local Self AS CLASS AlbarenesClientesQR := QSelf() AS CLASS AlbarenesClientesQR
+
+   ::cTextoQR  += "NUM_ALBARAN=" + ::cFormatNumAlbaran + chr( 13 ) + chr( 10 )
+   ::cTextoQR  += "FECHA=" + ::dFechaAlbaran + chr( 13 ) + chr( 10 )
+
+
+
+
+
+
+
+
+
+   ::cTextoQR  += "NUMLINEA" + ::cConector +  "NOMCOMERCIAL" + ::cConector +  "NOMCIENTIFICO" + ::cConector +  "METODOPRODUCCION" + ::cConector +  "CONSERVACION" + ::cConector +  "ZONAFAO" + ::cConector +  "ARTEPESCA" + ::cConector +  "CONSUMOPREFERENTE/CADUCIDAD" + ::cConector +  "FECHACONGELACION" + ::cConector +  "LOTE" + chr( 13 ) + chr( 10 )
+
+Return ( Self )
+
+
+
+static FUNCTION AlbarenesClientesQR_GeneraContenidoLineasQR( ) ; local Self AS CLASS AlbarenesClientesQR := QSelf() AS CLASS AlbarenesClientesQR
+
+   local nRec     := ( D():AlbaranesClientesLineas( ::nView ) )->( Recno() )
+   local nOrdAnt  := ( D():AlbaranesClientesLineas( ::nView ) )->( OrdSetFocus( "nNumAlb" ) )
+   local nNumLin  := 1
+   local lBreak   := .F.
+
+   if ( D():AlbaranesClientesLineas( ::nView ) )->( dbSeek( ::cNumAlbaran ) )
+
+
+
+      while ( D():AlbaranesClientesLineas( ::nView ) )->cSerAlb + Str( ( D():AlbaranesClientesLineas( ::nView ) )->nNumAlb ) + ( D():AlbaranesClientesLineas( ::nView ) )->cSufAlb == ::cNumAlbaran .AND. !( D():AlbaranesClientesLineas( ::nView ) )->( Eof() ) .AND.  !lBreak
+
+         if !Empty( ( D():AlbaranesClientesLineas( ::nView ) )->cRef )
+
+
+
+
+
+
+
+
+
+
+            ::cTextoQR  += AllTrim( Str( nNumLin ) ) + ::cConector +  AllTrim( ( D():AlbaranesClientesLineas( ::nView ) )->cDetalle ) + ::cConector +  AllTrim( getCustomExtraField( ::cIdNomCientifico, "Artículos", ( D():AlbaranesClientesLineas( ::nView ) )->cRef ) ) + ::cConector +  AllTrim( getCustomExtraField( ::cIdMetodoProduccion, "Artículos", ( D():AlbaranesClientesLineas( ::nView ) )->cRef ) ) + ::cConector +  AllTrim( getCustomExtraField( ::cIdConServacion, "Artículos", ( D():AlbaranesClientesLineas( ::nView ) )->cRef ) ) + ::cConector +  AllTrim( getCustomExtraField( ::cIdZonaFao, "Lineas de albaranes a clientes", ::cNumAlbaran + Str( ( D():AlbaranesClientesLineas( ::nView ) )->nNumLin ) ) ) + ::cConector +  AllTrim( getCustomExtraField( ::cIdArtePesca, "Artículos", ( D():AlbaranesClientesLineas( ::nView ) )->cRef ) ) + ::cConector +  AllTrim( dToc( ( D():AlbaranesClientesLineas( ::nView ) )->dFecCad ) ) + ::cConector +  if( !Empty( getCustomExtraField( ::cIdFechaCongelacion, "Lineas de albaranes a clientes", ::cNumAlbaran + Str( ( D():AlbaranesClientesLineas( ::nView ) )->nNumLin ) ) ), AllTrim( dToc( getCustomExtraField( ::cIdFechaCongelacion, "Lineas de albaranes a clientes", ::cNumAlbaran + Str( ( D():AlbaranesClientesLineas( ::nView ) )->nNumLin ) ) ) ), "" ) + ::cConector +  AllTrim( ( D():AlbaranesClientesLineas( ::nView ) )->cLote ) + ::cConector + chr( 13 ) + chr( 10 )
+
+            nNumLin++
+
+            if nNumLin == 30
+               lBreak := .T.
+            end
+
+         end
+
+         ( D():AlbaranesClientesLineas( ::nView ) )->( dbSkip() )
+
+      end
+
+   end
+
+   ( D():AlbaranesClientesLineas( ::nView ) )->( OrdSetFocus( nOrdAnt ) )
+   ( D():AlbaranesClientesLineas( ::nView ) )->( dbGoTo( nRec ) )
+
+Return ( Self )

@@ -1,0 +1,213 @@
+#line 38 "C:\fwh1801\Gestool\bin\include\FiveWin.Ch"
+      static bError
+#line 203 "C:\fwh1801\Gestool\bin\include\hbclass.ch"
+DECLARE HBClass  New( cName AS STRING, OPTIONAL SuperParams ) AS CLASS HBClass  Create() AS OBJECT  Instance() AS OBJECT  AddClsMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC, n2 AS NUMERIC, n3 AS NUMERIC )  AddMultiClsData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING )  AddMultiData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING, x AS LOGICAL, lPer AS LOGICAL )  AddMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC )  AddInLine( cName AS STRING, bBlock AS CODEBLOCK, nScope AS NUMERIC )  AddVirtual( cName AS STRING )
+#line 79 "C:\fwh1801\Gestool\bin\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+#line 10 "C:\fwh1801\Gestool\bin\Script\FacturasProveedores\ImputarGastos.prg"
+Function ImputarGastos( nView )
+
+   local oImputaGastos
+
+   oImputaGastos     := ImputaGastos():New( nView )
+   oImputaGastos:Run()
+
+Return nil
+
+
+
+_HB_CLASS ImputaGastos ; function ImputaGastos ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "ImputaGastos", iif( .F., { }, { @HBObject() } ), @ImputaGastos() ) ) ;
+
+; _HB_MEMBER { nView } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nView"}, .F. )
+
+; _HB_MEMBER { cNumeroFactura } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNumeroFactura"}, .F. )
+
+; _HB_MEMBER { cFamiliaGastos } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFamiliaGastos"}, .F. )
+; _HB_MEMBER { cIdExtraFieldCosto } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cIdExtraFieldCosto"}, .F. )
+; _HB_MEMBER { nPorcentajeGastos } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nPorcentajeGastos"}, .F. )
+; _HB_MEMBER { nTotalNeto } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalNeto"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @ImputaGastos_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Run(); oClass:AddMethod( "Run", @ImputaGastos_Run(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER RecalculaTotales(); oClass:AddMethod( "RecalculaTotales", @ImputaGastos_RecalculaTotales(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CalculoPorcentajeGasto(); oClass:AddMethod( "CalculoPorcentajeGasto", @ImputaGastos_CalculoPorcentajeGasto(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GuardaCostoExtraField(); oClass:AddMethod( "GuardaCostoExtraField", @ImputaGastos_GuardaCostoExtraField(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS ImputaGastos ;
+
+
+
+static FUNCTION ImputaGastos_New( nView, oStock ) ; local Self AS CLASS ImputaGastos := QSelf() AS CLASS ImputaGastos
+
+   ::nView                    := nView
+
+   ::cFamiliaGastos           := Padr( "001", 16 )
+   ::cIdExtraFieldCosto       := "001"
+
+   ::nPorcentajeGastos        := 0
+
+   ::cNumeroFactura           := ( D():FacturasProveedores( nView ) )->cSerFac + Str( ( D():FacturasProveedores( nView ) )->nNumFac ) + ( D():FacturasProveedores( nView ) )->cSufFac
+   ::nTotalNeto               := ( D():FacturasProveedores( nView ) )->nTotNet
+
+Return ( Self )
+
+
+
+static FUNCTION ImputaGastos_Run( ) ; local Self AS CLASS ImputaGastos := QSelf() AS CLASS ImputaGastos
+
+   local oError
+   local oBlock
+   local nCosto
+
+   oBlock            := ErrorBlock( { | oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   ::CalculoPorcentajeGasto()
+
+   if ::nPorcentajeGastos <> 0
+
+   ( D():FacturasProveedoresLineas( ::nView ) )->( dbGoTop() )
+
+      if ( D():FacturasProveedoresLineas( ::nView ) )->( dbSeek( ::cNumeroFactura ) )
+
+
+         while ( D():FacturasProveedoresLineas( ::nView ) )->cSerFac + Str( ( D():FacturasProveedoresLineas( ::nView ) )->nNumFac ) + ( D():FacturasProveedoresLineas( ::nView ) )->cSufFac == ::cNumeroFactura .AND. !( D():FacturasProveedoresLineas( ::nView ) )->( Eof() )
+
+
+               if ( D():FacturasProveedoresLineas( ::nView ) )->cCodFam <> ::cFamiliaGastos .AND. ( D():FacturasProveedoresLineas( ::nView ) )->nUniCaja <> 0
+
+                  ::GuardaCostoExtraField()
+
+
+
+
+
+
+                  nCosto := ( ( D():FacturasProveedoresLineas( ::nView ) ) )->nPreUnit + ( 1 + ( ::nPorcentajeGastos / 100 ) )
+
+                  ArticulosModel():updateCosto( ( D():FacturasProveedoresLineas( ::nView ) )->cRef, nCosto )
+
+               end
+
+            ( D():FacturasProveedoresLineas( ::nView ) )->( dbSkip() )
+
+         end
+
+      end
+
+   end
+
+
+
+   RECOVER USING oError
+
+      msgStop( ErrorMessage( oError ), "Error en el script"  )
+
+   end
+   ErrorBlock( oBlock )
+
+   MsgInfo( "Proceso finalizado con éxito" )
+
+Return ( .T. )
+
+
+
+static FUNCTION ImputaGastos_CalculoPorcentajeGasto( ) ; local Self AS CLASS ImputaGastos := QSelf() AS CLASS ImputaGastos
+
+   local nTotalGastos   := 0
+
+   ( D():FacturasProveedoresLineas( ::nView ) )->( dbGoTop() )
+
+   if ( D():FacturasProveedoresLineas( ::nView ) )->( dbSeek( ::cNumeroFactura ) )
+
+
+      while ( D():FacturasProveedoresLineas( ::nView ) )->cSerFac + Str( ( D():FacturasProveedoresLineas( ::nView ) )->nNumFac ) + ( D():FacturasProveedoresLineas( ::nView ) )->cSufFac == ::cNumeroFactura .AND. !( D():FacturasProveedoresLineas( ::nView ) )->( Eof() )
+
+
+            if ( D():FacturasProveedoresLineas( ::nView ) )->cCodFam == ::cFamiliaGastos .AND. ( D():FacturasProveedoresLineas( ::nView ) )->nUniCaja == 0
+
+               nTotalGastos   += ( D():FacturasProveedoresLineas( ::nView ) )->nPreUnit
+
+            end
+
+         ( D():FacturasProveedoresLineas( ::nView ) )->( dbSkip() )
+
+      end
+
+   end
+
+   ::nPorcentajeGastos  := ( ( nTotalGastos * 100 ) / ::nTotalNeto )
+
+Return ( .T. )
+
+
+
+static FUNCTION ImputaGastos_GuardaCostoExtraField( ) ; local Self AS CLASS ImputaGastos := QSelf() AS CLASS ImputaGastos
+
+   if Empty( getCustomExtraField( ::cIdExtraFieldCosto, "Lineas facturas a proveedores", ::cNumeroFactura + Str( ( D():FacturasProveedoresLineas( ::nView ) )->nNumLin ) ) )
+
+      if dbSeekInOrd( "38" + ::cIdExtraFieldCosto + ::cNumeroFactura + Str( ( D():FacturasProveedoresLineas( ::nView ) )->nNumLin ) , "cTotClave", D():DetCamposExtras( ::nView ) )
+
+         if dbLock( D():DetCamposExtras( ::nView ) )
+            ( D():DetCamposExtras( ::nView ) )->cValor     := Str( ( D():FacturasProveedoresLineas( ::nView ) )->nPreUnit )
+            ( D():DetCamposExtras( ::nView ) )->( dbUnlock() )
+         end
+
+      else
+
+         ( D():DetCamposExtras( ::nView ) )->( dbAppend() )
+
+         ( D():DetCamposExtras( ::nView ) )->cTipDoc    := "38"
+         ( D():DetCamposExtras( ::nView ) )->cCodTipo   := ::cIdExtraFieldCosto
+         ( D():DetCamposExtras( ::nView ) )->cClave     := ::cNumeroFactura + Str( ( D():FacturasProveedoresLineas( ::nView ) )->nNumLin )
+         ( D():DetCamposExtras( ::nView ) )->cValor     := Str( ( D():FacturasProveedoresLineas( ::nView ) )->nPreUnit )
+         ( D():DetCamposExtras( ::nView ) )->uuid       := win_uuidcreatestring()
+
+         ( D():DetCamposExtras( ::nView ) )->( dbUnlock() )
+
+      end
+
+   end
+
+Return ( .T. )
+
+
+
+static FUNCTION ImputaGastos_RecalculaTotales( ) ; local Self AS CLASS ImputaGastos := QSelf() AS CLASS ImputaGastos
+
+   local aTotal
+
+
+
+
+
+
+
+   aTotal   := aTotFacPrv( ::cNumeroFactura, D():FacturasProveedores( ::nView ), D():FacturasProveedoresLineas( ::nView ), D():TiposIva( ::nView ), D():Divisas( ::nView ), D():FacturasProveedoresPagos( ::nView ) )
+
+
+   if dbLock( ( D():FacturasProveedores( ::nView ) ) )
+      ( ( D():FacturasProveedores( ::nView ) ) )->nTotNet := aTotal[1]
+      ( ( D():FacturasProveedores( ::nView ) ) )->nTotIva := aTotal[2]
+      ( ( D():FacturasProveedores( ::nView ) ) )->nTotReq := aTotal[3]
+      ( ( D():FacturasProveedores( ::nView ) ) )->nTotFac := aTotal[4]
+      ( ( D():FacturasProveedores( ::nView ) ) )->( dbUnLock() )
+   end
+
+Return ( .T. )

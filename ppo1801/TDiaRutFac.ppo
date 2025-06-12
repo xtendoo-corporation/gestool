@@ -1,0 +1,2293 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 8 ".\.\Prg\TDiaRutFac.prg"
+_HB_CLASS TDiaRutFac ; function TDiaRutFac ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TDiaRutFac", iif( .T., { @TInfGen() }, { @HBObject() } ), @TDiaRutFac() ) ) ;
+
+   _HB_MEMBER { AS LOGIC lResumen } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lResumen"}, .F. )
+   _HB_MEMBER { AS LOGIC lExcCero } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lExcCero"}, .F. )
+   _HB_MEMBER { AS OBJECT oEstado } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oEstado"}, .F. )
+   _HB_MEMBER { AS CHARACTER cEstado } ; oClass:AddMultiData( "CHARACTER", "Todas", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cEstado"}, .F. )
+   _HB_MEMBER { AS ARRAY aEstado } ; oClass:AddMultiData( "ARRAY", { "Pendientes", "Cobradas", "Todas" }, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aEstado"}, .F. )
+   _HB_MEMBER { AS OBJECT oFacCliT } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacCliT"}, .F. )
+   _HB_MEMBER { AS OBJECT oFacCliL } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacCliL"}, .F. )
+   _HB_MEMBER { AS OBJECT oFacRecT } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacRecT"}, .F. )
+   _HB_MEMBER { AS OBJECT oFacRecL } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacRecL"}, .F. )
+   _HB_MEMBER { AS OBJECT oFacCliP } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacCliP"}, .F. )
+   _HB_MEMBER { AS OBJECT oAntCliT } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAntCliT"}, .F. )
+   _HB_MEMBER { AS OBJECT oDbfIva } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfIva"}, .F. )
+   _HB_MEMBER { AS OBJECT oOrdenado } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oOrdenado"}, .F. )
+   _HB_MEMBER { AS CHARACTER cOrdenado } ; oClass:AddMultiData( "CHARACTER", "Fechas", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cOrdenado"}, .F. )
+   _HB_MEMBER { AS ARRAY aOrdenado } ; oClass:AddMultiData( "ARRAY", { "Clientes", "Fechas", "Documento" }, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aOrdenado"}, .F. )
+
+   _HB_MEMBER Create(); oClass:AddMethod( "Create", @TDiaRutFac_Create(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles(); oClass:AddMethod( "OpenFiles", @TDiaRutFac_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @TDiaRutFac_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lResource( cFld); oClass:AddMethod( "lResource", @TDiaRutFac_lResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lGenerate(); oClass:AddMethod( "lGenerate", @TDiaRutFac_lGenerate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AppendLineFacCli( aTotal, nTotPag); oClass:AddMethod( "AppendLineFacCli", @TDiaRutFac_AppendLineFacCli(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AppendLineFacRec( aTotal, nTotPag); oClass:AddMethod( "AppendLineFacRec", @TDiaRutFac_AppendLineFacRec(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TDiaRutFac ;
+
+
+
+static FUNCTION TDiaRutFac_Create( ) ; local Self AS CLASS TDiaRutFac := QSelf() AS CLASS TDiaRutFac
+
+   ::AddField( "cCodRut", "C",  4, 0, {|| "@!" },                 "Cod. Rut.",        .F., "Código ruta",         4, .F. )
+   ::AddField( "cNomRut", "C", 50, 0, {|| "@!" },                 "Ruta",             .F., "Nombre ruta",        20, .F. )
+   ::AddField( "cNumDoc", "C", 12, 0, {|| "@R #/#########/##" },  "Doc.",             .T., "Documento",          20, .F. )
+   ::AddField( "dFecDoc", "D",  8, 0, {|| "" },                   "Fecha",            .T., "Fecha",              12, .F. )
+   ::FldCliente()
+   ::AddField( "nTotNet", "N", 16, 6, {|| ::cPicOut },            "Neto",             .T., "Neto",               12 )
+   ::AddField( "nTotIva", "N", 16, 6, {|| ::cPicOut },            cImp(),              .T., cImp(),                12 )
+   ::AddField( "nTotReq", "N", 16, 3, {|| ::cPicOut },            "Rec",              .T., "Rec",                12 )
+   ::AddField( "nTotPnt", "N", 16, 6, {|| ::cPicPnt },            "Pnt.Ver.",         .F., "Punto verde",        12 )
+   ::AddField( "nTotTrn", "N", 16, 6, {|| ::cPicOut },            "Transp.",          .F., "Transporte",         12 )
+   ::AddField( "nTotDoc", "N", 16, 6, {|| ::cPicOut },            "Total",            .T., "Total",              12 )
+   ::AddField( "nTotPgd", "N", 16, 6, {|| ::cPicOut },            "Pagado",           .T., "Pagado",             12 )
+   ::AddField( "nTotAge", "N", 16, 6, {|| ::cPicOut },            "Com. agente",      .T., "Comisión agente",    12 )
+
+   ::AddTmpIndex( "cCodCli", "cCodRut + cCodCli" )
+   ::AddTmpIndex( "cCodFec", "cCodRut + DtoS( dFecDoc )" )
+   ::AddTmpIndex( "cCodNum", "cCodRut + cNumDoc" )
+
+   ::AddGroup( {|| ::oDbf:cCodRut }, {|| "Ruta  : " + Rtrim( ::oDbf:cCodRut ) + "-" + Rtrim( ::oDbf:cNomRut ) }, {||"Total ruta..."} )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TDiaRutFac_OpenFiles( ) ; local Self AS CLASS TDiaRutFac := QSelf() AS CLASS TDiaRutFac
+
+   local lOpen    := .T.
+   local oBlock   := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   BEGIN SEQUENCE
+
+      ::oFacCliT := TDataCenter():oFacCliT()
+
+      ::oFacCliL := DbfServer( "FACCLIL.DBF", ):NewOpen( "FACCLIL.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oFacCliL:AddBag( "FACCLIL.CDX" ) ; ::oFacCliL:AddBag( ) ; ::oFacCliL:AutoIndex()
+
+      ::oFacRecT := DbfServer( "FACRECT.DBF", ):NewOpen( "FACRECT.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oFacRecT:AddBag( "FACRECT.CDX" ) ; ::oFacRecT:AddBag( ) ; ::oFacRecT:AutoIndex()
+
+      ::oFacRecL := DbfServer( "FACCLIL.DBF", ):NewOpen( "FACCLIL.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oFacRecL:AddBag( "FACCLIL.CDX" ) ; ::oFacRecL:AddBag( ) ; ::oFacRecL:AutoIndex()
+
+      ::oFacCliP := TDataCenter():oFacCliP()
+
+      ::oDbfCli := DbfServer( "CLIENT.DBF", ):NewOpen( "CLIENT.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oDbfCli:AddBag( "CLIENT.CDX" ) ; ::oDbfCli:AddBag( ) ; ::oDbfCli:AutoIndex()
+
+      ::oDbfIva := DbfServer( "TIVA.DBF", ):NewOpen( "TIVA.DBF",, ( cDriver() ),, ( cPatDat () ), .F., .T., .F., .F. ) ; ::oDbfIva:AddBag( "TIVA.CDX" ) ; ::oDbfIva:AddBag( ) ; ::oDbfIva:AutoIndex()
+
+      ::oAntCliT := DbfServer( "ANTCLIT.DBF", ):NewOpen( "ANTCLIT.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oAntCliT:AddBag( "ANTCLIT.CDX" ) ; ::oAntCliT:AddBag( ) ; ::oAntCliT:AutoIndex()
+
+   RECOVER
+
+      msgStop( "Imposible abrir todas las bases de datos" )
+
+      ::CloseFiles()
+
+      lOpen       := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TDiaRutFac_CloseFiles( ) ; local Self AS CLASS TDiaRutFac := QSelf() AS CLASS TDiaRutFac
+
+   if !Empty( ::oFacCliT ) .AND. ::oFacCliT:Used()
+      ::oFacCliT:End()
+   end
+   if !Empty( ::oFacCliL ) .AND. ::oFacCliL:Used()
+      ::oFacCliL:End()
+   end
+   if !Empty( ::oFacRecT ) .AND. ::oFacRecT:Used()
+      ::oFacRecT:End()
+   end
+   if !Empty( ::oFacRecL ) .AND. ::oFacRecL:Used()
+      ::oFacRecL:End()
+   end
+   if !Empty( ::oFacCliP ) .AND. ::oFacCliP:Used()
+      ::oFacCliP:End()
+   end
+   if !Empty( ::oDbfCli ) .AND. ::oDbfCli:Used()
+      ::oDbfCli:End()
+   end
+   if !Empty( ::oDbfIva ) .AND. ::oDbfIva:Used()
+      ::oDbfIva:End()
+   end
+   if !Empty( ::oAntCliT ) .AND. ::oAntCliT:Used()
+      ::oAntCliT:End()
+   end
+
+   ::oFacCliT := nil
+   ::oFacCliL := nil
+   ::oFacRecT := nil
+   ::oFacRecL := nil
+   ::oFacCliP := nil
+   ::oDbfCli  := nil
+   ::oDbfIva  := nil
+   ::oAntCliT := nil
+
+RETURN ( Self )
+
+
+
+static FUNCTION TDiaRutFac_lResource( cFld ) ; local Self AS CLASS TDiaRutFac := QSelf() AS CLASS TDiaRutFac
+
+   if !::StdResource( "DIAFACRUT" )
+      return .F.
+   end
+
+
+
+
+
+   if !::oDefRutInf( 70, 80, 90, 100, 600 )
+      return .F.
+   end
+
+
+
+
+
+   ::oMtrInf:SetTotal( ::oFacCliT:Lastrec() )
+
+   ::oDefResInf()
+
+
+
+
+
+   ::oEstado := TComboBox():ReDefine( 218, { | u | If( PCount()==0, ::cEstado, ::cEstado:= u ) }, ::aEstado, ::oFld:aDialogs[1],,,,,,, .F.,,,,,,, "::oEstado",,,,,,, )
+
+
+
+
+
+   ::oOrdenado := TComboBox():ReDefine( 219, { | u | If( PCount()==0, ::cOrdenado, ::cOrdenado:= u ) }, ::aOrdenado, ::oFld:aDialogs[1],,,,,,, .F.,,,,,,, "::oOrdenado",,,,,,, )
+
+   ::CreateFilter( aItmFacCli(), ::oFacCliT:cAlias )
+
+RETURN .T.
+
+
+
+
+
+
+static FUNCTION TDiaRutFac_lGenerate( ) ; local Self AS CLASS TDiaRutFac := QSelf() AS CLASS TDiaRutFac
+
+   local aTotal
+   local nTotPag
+   local cExpHead := ""
+
+   ::oDlg:Disable()
+   ::oBtnCancel:Enable()
+   ::oDbf:Zap()
+
+
+
+
+
+   ::aHeader      := {  {|| "Fecha   : " + Dtoc( Date() ) }, {|| "Periodo : " + Dtoc( ::dIniInf ) + " > " + Dtoc( ::dFinInf ) }, {|| "Rutas   : " + if( ::lAllRut, "Todas", AllTrim( ::cRutOrg ) + " > " + AllTrim( ::cRutDes ) ) }, {|| "Estado  : " + ::cEstado }, {|| "Ordenado: " + ::cOrdenado } }
+
+   ::oFacCliT:OrdSetFocus( "dFecFac" )
+
+   cExpHead       := 'dFecFac >= Ctod( "' + Dtoc( ::dIniInf ) + '" ) .and. dFecFac <= Ctod( "' + Dtoc( ::dFinInf ) + '" )'
+
+   if !::lAllRut
+      cExpHead    += ' .and. cCodRut >= "' + Rtrim( ::cRutOrg ) + '" .and. cCodRut <= "' + Rtrim( ::cRutDes ) + '"'
+   end
+
+   if !Empty( ::oFilter:cExpresionFilter )
+      cExpHead       += " .and. " + ::oFilter:cExpresionFilter
+   end
+
+   ::oFacCliT:AddTmpIndex( Auth():Codigo(), GetFileNoExt( ::oFacCliT:cFile ), ::oFacCliT:OrdKey(), ( cExpHead ), , , , , , , , .T. )
+
+   ::oMtrInf:SetTotal( ::oFacCliT:OrdKeyCount() )
+
+
+
+
+
+   ::oFacCliT:GoTop()
+
+   while !::lBreak .AND. !::oFacCliT:Eof()
+
+      if lChkSer( ::oFacCliT:cSerie, ::aSer )
+
+         nTotPag           := nPagFacCli( ::oFacCliT:cSerie + Str( ::oFacCliT:NNUMFAC ) + ::oFacCliT:CSUFFAC, ::oFacCliT:cAlias, ::oFacCliP:cAlias, ::oDbfIva:cAlias, ::oDbfDiv:cAlias )
+         aTotal            := aTotFacCli( ::oFacCliT:cSerie + Str( ::oFacCliT:NNUMFAC ) + ::oFacCliT:CSUFFAC, ::oFacCliT:cAlias, ::oFacCliL:cAlias, ::oDbfIva:cAlias, ::oDbfDiv:cAlias, ::oFacCliP:cAlias, ::oAntCliT:cAlias )
+
+         do case
+            case ::oEstado:nAt == 1
+               if abs( aTotal[ 4 ] ) > abs( nTotPag ) .AND. abs( aTotal[ 4 ] ) > 0
+                  ::AppendLineFacCli( aTotal, nTotPag )
+               end
+            case ::oEstado:nAt == 2
+               if abs( aTotal[ 4 ] ) <= abs( nTotPag )
+                  ::AppendLineFacCli( aTotal, nTotPag )
+               end
+            case ::oEstado:nAt == 3
+               ::AppendLineFacCli( aTotal, nTotPag )
+         end
+
+      end
+
+      ::oFacCliT:Skip()
+
+      ::oMtrInf:AutoInc()
+
+   end
+
+   ::oFacCliT:IdxDelete( Auth():Codigo(), GetFileNoExt( ::oFacCliT:cFile ) )
+
+
+
+
+
+   ::oFacRecT:OrdSetFocus( "dFecFac" )
+
+   cExpHead       := 'dFecFac >= Ctod( "' + Dtoc( ::dIniInf ) + '" ) .and. dFecFac <= Ctod( "' + Dtoc( ::dFinInf ) + '" )'
+
+   if !::lAllRut
+      cExpHead    += ' .and. cCodRut >= "' + Rtrim( ::cRutOrg ) + '" .and. cCodRut <= "' + Rtrim( ::cRutDes ) + '"'
+   end
+
+   if !Empty( ::oFilter:cExpresionFilter )
+      cExpHead    += " .and. " + ::oFilter:cExpresionFilter
+   end
+
+   ::oFacRecT:AddTmpIndex( Auth():Codigo(), GetFileNoExt( ::oFacRecT:cFile ), ::oFacRecT:OrdKey(), ( cExpHead ), , , , , , , , .T. )
+
+   ::oMtrInf:SetTotal( ::oFacRecT:OrdKeyCount() )
+
+   ::oFacRecT:GoTop()
+
+   while !::lBreak .AND. !::oFacRecT:Eof()
+
+      if lChkSer( ::oFacRecT:cSerie, ::aSer )
+
+         nTotPag           := nPagFacRec( ::oFacRecT:cSerie + Str( ::oFacRecT:NNUMFAC ) + ::oFacRecT:CSUFFAC, ::oFacRecT:cAlias, ::oFacCliP:cAlias, ::oDbfIva:cAlias, ::oDbfDiv:cAlias )
+         aTotal            := aTotFacRec( ::oFacRecT:cSerie + Str( ::oFacRecT:NNUMFAC ) + ::oFacRecT:CSUFFAC, ::oFacRecT:cAlias, ::oFacRecL:cAlias, ::oDbfIva:cAlias, ::oDbfDiv:cAlias )
+
+         do case
+            case ::oEstado:nAt == 1
+               if abs( aTotal[ 4 ] ) > abs( nTotPag ) .AND. abs( aTotal[ 4 ] ) > 0
+                  ::AppendLineFacRec( aTotal, nTotPag )
+               end
+            case ::oEstado:nAt == 2
+               if abs( aTotal[ 4 ] ) <= abs( nTotPag )
+                  ::AppendLineFacRec( aTotal, nTotPag )
+               end
+            case ::oEstado:nAt == 3
+               ::AppendLineFacRec( aTotal, nTotPag )
+         end
+
+      end
+
+      ::oFacRecT:Skip()
+
+      ::oMtrInf:AutoInc()
+
+   end
+
+   ::oFacRecT:IdxDelete( Auth():Codigo(), GetFileNoExt( ::oFacRecT:cFile ) )
+
+
+   do case
+      case ::oOrdenado:nAt == 1
+         ::oDbf:OrdSetFocus( "CCODCLI" )
+      case ::oOrdenado:nAt == 2
+         ::oDbf:OrdSetFocus( "CCODFEC" )
+      case ::oOrdenado:nAt == 3
+         ::oDbf:OrdSetFocus( "CCODNUM" )
+   end
+
+   ::oDlg:Enable()
+
+RETURN ( ::oDbf:LastRec() > 0 )
+
+
+
+static FUNCTION TDiaRutFac_AppendLineFacCli( aTotal, nTotPag ) ; local Self AS CLASS TDiaRutFac := QSelf() AS CLASS TDiaRutFac
+
+   ::oDbf:Append()
+
+   ::oDbf:cCodRut    := ::oFacCliT:cCodRut
+   ::oDbf:cNomRut    := oRetFld( ::oDbf:cCodRut, ::oDbfRut )
+
+   ::oDbf:cCodCli    := ::oFacCliT:cCodCli
+   ::oDbf:cNomCli    := ::oFacCliT:cNomCli
+
+   ::AddCliente( ::oFacCliT:cCodCli, ::oFacCliT, .F. )
+
+   ::oDbf:dFecDoc    := ::oFacCliT:dFecFac
+   ::oDbf:cNumDoc    := ::oFacCliT:cSerie + Str( ::oFacCliT:nNumFac ) + ::oFacCliT:cSufFac
+   ::oDbf:nTotNet    := aTotal[ 1 ] - aTotal[ 5 ] - aTotal[ 6 ]
+   ::oDbf:nTotIva    := aTotal[ 2 ]
+   ::oDbf:nTotReq    := aTotal[ 3 ]
+   ::oDbf:nTotDoc    := aTotal[ 4 ]
+   ::oDbf:nTotPnt    := aTotal[ 5 ]
+   ::oDbf:nTotTrn    := aTotal[ 6 ]
+   ::oDbf:nTotAge    := aTotal[ 7 ]
+   ::oDbf:nTotPgd    := nTotPag
+
+   ::oDbf:Save()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TDiaRutFac_AppendLineFacRec( aTotal, nTotPag ) ; local Self AS CLASS TDiaRutFac := QSelf() AS CLASS TDiaRutFac
+
+   ::oDbf:Append()
+
+   ::oDbf:cCodRut    := ::oFacRecT:cCodRut
+   ::oDbf:cNomRut    := oRetFld( ::oDbf:cCodRut, ::oDbfRut )
+
+   ::oDbf:cCodCli    := ::oFacRecT:cCodCli
+   ::oDbf:cNomCli    := ::oFacRecT:cNomCli
+
+   ::AddCliente( ::oFacRecT:cCodCli, ::oFacRecT, .F. )
+
+   ::oDbf:dFecDoc    := ::oFacRecT:dFecFac
+   ::oDbf:cNumDoc    := ::oFacRecT:cSerie + Str( ::oFacRecT:nNumFac ) + ::oFacRecT:cSufFac
+   ::oDbf:nTotNet    := aTotal[ 1 ] - aTotal[ 5 ] - aTotal[ 6 ]
+   ::oDbf:nTotIva    := aTotal[ 2 ]
+   ::oDbf:nTotReq    := aTotal[ 3 ]
+   ::oDbf:nTotDoc    := aTotal[ 4 ]
+   ::oDbf:nTotPnt    := aTotal[ 5 ]
+   ::oDbf:nTotTrn    := aTotal[ 6 ]
+   ::oDbf:nTotAge    := aTotal[ 7 ]
+   ::oDbf:nTotPgd    := nTotPag
+
+   ::oDbf:Save()
+
+RETURN ( Self )

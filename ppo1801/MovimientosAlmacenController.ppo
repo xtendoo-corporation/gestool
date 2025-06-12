@@ -1,0 +1,2714 @@
+#line 91 "\fwh1801\include\Fivewin.ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 7 ".\Prg\Controllers\MovimientosAlmacenController.prg"
+_HB_CLASS MovimientosAlmacenController ; function MovimientosAlmacenController ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "MovimientosAlmacenController", iif( .T., { @SQLNavigatorController() }, { @HBObject() } ), @MovimientosAlmacenController() ) ) ;
+
+   _HB_MEMBER { aRollBackStock } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aRollBackStock"}, .F. )
+
+   _HB_MEMBER { cFileName } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFileName"}, .F. )
+
+   _HB_MEMBER { oLineasController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oLineasController"}, .F. )
+
+   _HB_MEMBER { oImportadorController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oImportadorController"}, .F. )
+
+   _HB_MEMBER { oCapturadorController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCapturadorController"}, .F. )
+
+
+
+   _HB_MEMBER { oConfiguracionesController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oConfiguracionesController"}, .F. )
+
+   _HB_MEMBER { oImprimirSeriesController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oImprimirSeriesController"}, .F. )
+
+   _HB_MEMBER { oNumeroDocumentoComponent } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oNumeroDocumentoComponent"}, .F. )
+
+   _HB_MEMBER { oReport } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oReport"}, .F. )
+
+   _HB_MEMBER { oSenderReciver } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSenderReciver"}, .F. )
+
+   _HB_MEMBER { cOldName } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cOldName"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @MovimientosAlmacenController_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER End(); oClass:AddMethod( "End", @MovimientosAlmacenController_End(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER validateNumero(); oClass:AddMethod( "validateNumero", @MovimientosAlmacenController_validateNumero(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER validateAlmacenOrigen(); oClass:AddInline( "validateAlmacenOrigen", {|Self | ( ( Self ) ), ( iif(  ::validate( "almacen_origen" ), ::stampAlmacenNombre( ::oDialogView:oGetAlmacenOrigen ), .F. ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER validateAlmacenDestino(); oClass:AddInline( "validateAlmacenDestino", {|Self | ( ( Self ) ), ( iif(  ::validate( "almacen_destino" ), ::stampAlmacenNombre( ::oDialogView:oGetAlmacenDestino ), .F. ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setFileName(); oClass:AddInline( "setFileName", {|Self, cFileName | ( ( Self ) ), ( ::cFileName := cFileName ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getFileName(); oClass:AddInline( "getFileName", {|Self | ( ( Self ) ), ( ::cFileName ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getSenderReciver( oParent); oClass:AddMethod( "getSenderReciver", @MovimientosAlmacenController_getSenderReciver(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER stampNumero(); oClass:AddMethod( "stampNumero", @MovimientosAlmacenController_stampNumero(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER checkSerie( oGetNumero); oClass:AddMethod( "checkSerie", @MovimientosAlmacenController_checkSerie(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER stampAlmacenNombre(); oClass:AddMethod( "stampAlmacenNombre", @MovimientosAlmacenController_stampAlmacenNombre(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER stampGrupoMovimientoNombre(); oClass:AddMethod( "stampGrupoMovimientoNombre", @MovimientosAlmacenController_stampGrupoMovimientoNombre(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER stampMarcadores(); oClass:AddMethod( "stampMarcadores", @MovimientosAlmacenController_stampMarcadores(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER printDocument(); oClass:AddMethod( "printDocument", @MovimientosAlmacenController_printDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER labelDocument(); oClass:AddMethod( "labelDocument", @MovimientosAlmacenController_labelDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setConfig(); oClass:AddMethod( "setConfig", @MovimientosAlmacenController_setConfig(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER deleteLines(); oClass:AddMethod( "deleteLines", @MovimientosAlmacenController_deleteLines(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER refreshLineasBrowse(); oClass:AddInline( "refreshLineasBrowse", {|Self | ( ( Self ) ), ( iif( !empty( ::oLineasController ), ::getBrowse():Refresh(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER printSerialDocument(); oClass:AddInline( "printSerialDocument", {|Self | ( ( Self ) ), ( ::oImprimirSeriesController:Activate() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER buildNotSentJson(); oClass:AddMethod( "buildNotSentJson", @MovimientosAlmacenController_buildNotSentJson(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER zipNotSentJson(); oClass:AddMethod( "zipNotSentJson", @MovimientosAlmacenController_zipNotSentJson(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setSentFromFetch(); oClass:AddMethod( "setSentFromFetch", @MovimientosAlmacenController_setSentFromFetch(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER isUnzipToJson( cZipFile); oClass:AddMethod( "isUnzipToJson", @MovimientosAlmacenController_isUnzipToJson(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER jsonToSQL(); oClass:AddMethod( "jsonToSQL", @MovimientosAlmacenController_jsonToSQL(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setSender( cSentence); oClass:AddMethod( "setSender", @MovimientosAlmacenController_setSender(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setSent(); oClass:AddInline( "setSent", {|Self | ( ( Self ) ), ( ::setSender( ::oModel:getSentenceSentFromIds(      ::getIdFromRecno( ::getBrowse():aSelected ) ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setNotSent(); oClass:AddInline( "setNotSent", {|Self | ( ( Self ) ), ( ::setSender( ::oModel:getSentenceNotSentFromIds(   ::getIdFromRecno( ::getBrowse():aSelected ) ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER isAddedTag( cMarcador); oClass:AddMethod( "isAddedTag", @MovimientosAlmacenController_isAddedTag(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER addTag( uuidTag); oClass:AddMethod( "addTag", @MovimientosAlmacenController_addTag(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER deleteTag( idTageable); oClass:AddMethod( "deleteTag", @MovimientosAlmacenController_deleteTag(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Recalcular(); oClass:AddMethod( "Recalcular", @MovimientosAlmacenController_Recalcular(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lValidaDocumento(); oClass:AddMethod( "lValidaDocumento", @MovimientosAlmacenController_lValidaDocumento(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER isEditing(); oClass:AddMethod( "isEditing", @MovimientosAlmacenController_isEditing(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER isDeleting(); oClass:AddMethod( "isDeleting", @MovimientosAlmacenController_isDeleting(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER exitEdited(); oClass:AddMethod( "exitEdited", @MovimientosAlmacenController_exitEdited(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER rollBackStock(); oClass:AddMethod( "rollBackStock", @MovimientosAlmacenController_rollBackStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER stampStock(); oClass:AddMethod( "stampStock", @MovimientosAlmacenController_stampStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER deleteRollbackStock(); oClass:AddMethod( "deleteRollbackStock", @MovimientosAlmacenController_deleteRollbackStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER appenedOrDuplicated(); oClass:AddMethod( "appenedOrDuplicated", @MovimientosAlmacenController_appenedOrDuplicated(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER edited(); oClass:AddMethod( "edited", @MovimientosAlmacenController_edited(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER stampConsolidacion(); oClass:AddMethod( "stampConsolidacion", @MovimientosAlmacenController_stampConsolidacion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER rollBackEditConsolidacion(); oClass:AddMethod( "rollBackEditConsolidacion", @MovimientosAlmacenController_rollBackEditConsolidacion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS MovimientosAlmacenController ;
+
+
+
+static FUNCTION MovimientosAlmacenController_New( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   ::Super:New()
+
+   ::cTitle                      := "Movimientos de almacén"
+
+   ::cOldName                    := "MovAlm"
+
+   ::setName( "movimientos_de_almacen" )
+
+   ::cDirectory                  := cPatDocuments( "Movimientos almacen" )
+
+
+
+   ::hImage                      := {  "16"  => "gc_pencil_package_16", "48"  => "gc_package_48", "64"  => "gc_package_64" }
+
+   ::nLevel                      := Auth():Level( ::getName() )
+
+   if nAnd( ::nLevel, 1 ) == 0
+      msgStop( "Acceso no permitido." )
+      return ( self )
+   end
+
+   ::lTransactional              := .T.
+
+   ::lDocuments                  := .T.
+
+   ::lLabels                     := .T.
+
+   ::lConfig                     := .T.
+
+   ::lOthers                     := .T.
+
+   ::oModel                      := SQLMovimientosAlmacenModel():New( self )
+
+   ::oBrowseView                 := MovimientosAlmacenBrowseView():New( self )
+
+   ::oDialogView                 := MovimientosAlmacenView():New( self )
+
+   ::oValidator                  := MovimientosAlmacenValidator():New( self )
+
+   ::oLineasController           := MovimientosAlmacenLineasController():New( self )
+
+   ::oImportadorController       := ImportadorMovimientosAlmacenLineasController():New( self )
+
+   ::oCapturadorController       := CapturadorMovimientosAlmacenLineasController():New( self )
+
+   ::oImprimirSeriesController   := ImprimirSeriesController():New( self )
+
+
+
+   ::oConfiguracionesController  := ConfiguracionesController():New( self )
+
+   ::oReport                     := MovimientosAlmacenReport():New( self )
+
+   ::oNumeroDocumentoComponent   := NumeroDocumentoComponent():New( self )
+
+   ::oSenderReciver              := SenderReciverController():New( self )
+
+   ::loadDocuments()
+
+
+   ::oNavigatorView:oMenuTreeView:setEvent( "addedConfigButton", {|| ::oNavigatorView:oMenuTreeView:AddButton( "Marcar para envio", "gc_mail2_delete_16", {|| ::setNotSent() }, , 4, ::oNavigatorView:oMenuTreeView:oButtonOthers ) } )
+
+
+   ::oNavigatorView:oMenuTreeView:setEvent( "addedConfigButton", {|| ::oNavigatorView:oMenuTreeView:AddButton( "Marcar como enviado", "gc_mail2_check_16", {|| ::setSent() }, , 4, ::oNavigatorView:oMenuTreeView:oButtonOthers ) } )
+
+   ::setEvents( { "editing" }, {|| ::isEditing() } )
+   ::setEvents( { "exitEdited" }, {|| ::exitEdited() } )
+   ::setEvents( { "deleting" }, {|| ::isDeleting() } )
+
+   ::aRollBackStock              := {}
+
+   ::setEvents( { "appended", "duplicated" }, {|| ::appenedOrDuplicated() } )
+   ::setEvents( { "edited" }, {|| ::edited() } )
+   ::oModel:setEvents( { "deletingSelection" }, {|| ::deleteRollbackStock() } )
+   ::setEvents( { "deletedSelection" }, {|| ::rollBackStock() } )
+
+RETURN ( Self )
+
+
+
+static FUNCTION MovimientosAlmacenController_End( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   ::oModel:End()
+
+   ::oBrowseView:End()
+
+   ::oDialogView:End()
+
+   ::oValidator:End()
+
+   ::oLineasController:End()
+
+   ::oCapturadorController:End()
+
+   ::oImportadorController:End()
+
+
+
+   ::oReport:End()
+
+   ::oConfiguracionesController:End()
+
+   ::oNumeroDocumentoComponent:End()
+
+   ::oSenderReciver:End()
+
+   ::Super:End()
+
+RETURN ( Self )
+
+
+
+static FUNCTION MovimientosAlmacenController_getSenderReciver( oParent ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   if !Empty( ::oSenderReciver )
+      ::oSenderReciver:oSender                  := oParent
+   end
+
+Return ( ::oSenderReciver )
+
+
+
+static FUNCTION MovimientosAlmacenController_validateNumero( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   if !::validate( "numero" )
+      RETURN ( .F. )
+   end
+
+   ::stampNumero( ::oDialogView:oGetNumero )
+
+RETURN ( ::checkSerie( ::oDialogView:oGetNumero ) )
+
+
+
+static FUNCTION MovimientosAlmacenController_stampNumero( oGetNumero ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   local nAt
+   local cSerie   := ""
+   local nNumero
+   local cNumero  := alltrim( oGetNumero:varGet() )
+
+   nAt            := rat( "/", cNumero )
+   if nAt == 0
+      cNumero     := padr( rjust( cNumero, "0", 6 ), 50 )
+   else
+      cSerie      := upper( substr( cNumero, 1, nAt - 1 ) )
+      nNumero     := substr( cNumero, nAt + 1 )
+      cNumero     := padr( cSerie + "/" + rjust( nNumero, "0", 6 ), 50 )
+   end
+
+   oGetNumero:cText( cNumero )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenController_checkSerie( oGetNumero ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   local nAt
+   local cSerie
+   local cNumero  := alltrim( oGetNumero:varGet() )
+
+   nAt            := rat( "/", cNumero )
+   if nAt == 0
+      RETURN ( .T. )
+   end
+
+   cSerie         := upper( substr( cNumero, 1, nAt - 1 ) )
+
+   if SQLConfiguracionesModel():isSerie( ::cName, cSerie )
+      RETURN ( .T. )
+   end
+
+   if msgYesNo( "La serie " + cSerie + ", no existe.", "¿ Desea crear una nueva serie ?" )
+      SQLConfiguracionesModel():setSerie( ::cName, cSerie )
+   else
+      RETURN ( .F. )
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenController_stampAlmacenNombre( oGetAlmacen ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   local cCodigoAlmacen    := oGetAlmacen:varGet()
+   local cNombreAlmacen    := AlmacenesModel():getNombre( cCodigoAlmacen )
+
+   oGetAlmacen:oHelpText:cText( cNombreAlmacen )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenController_stampGrupoMovimientoNombre( oGetGrupoMovimiento ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   local cCodigoGrupo      := oGetGrupoMovimiento:varGet()
+   local cNombreGrupo      := GruposMovimientosModel():getNombre( cCodigoGrupo )
+
+   oGetGrupoMovimiento:oHelpText:cText( cNombreGrupo )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenController_stampMarcadores( oTagsEver ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+
+
+
+
+
+
+
+
+
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenController_deleteLines( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   aeval( ::getRowSet():IdFromRecno( ::aSelected, "uuid" ), {| uuid | ::oLineasController:deleteLines( uuid ) } )
+
+RETURN ( self )
+
+
+
+static FUNCTION MovimientosAlmacenController_printDocument( nDevice, cFile, nCopies, cPrinter ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   If( nDevice == nil, nDevice := 2, ) ;
+
+   if empty( ::aDocuments )
+      msgStop( "No hay formatos para impresión" )
+      RETURN ( self )
+   end
+
+   if empty( cFile )
+      cFile          := ::oConfiguracionesController:oModel:getDocumentoMovimientosAlmacen()
+   end
+
+   if empty( cFile )
+      cFile          := afirst( ::aDocuments )
+   end
+
+   if empty( cFile )
+      msgStop( "No hay formatos por defecto" )
+      RETURN ( self )
+   end
+
+   if empty( nCopies )
+      nCopies        := ::oConfiguracionesController:oModel:getCopiasMovimientosAlmacen()
+   end
+
+   ::oImprimirSeriesController:showDocument( nDevice, cFile, nCopies, cPrinter )
+
+RETURN ( self )
+
+
+
+static FUNCTION MovimientosAlmacenController_labelDocument( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+
+
+RETURN ( self )
+
+
+
+static FUNCTION MovimientosAlmacenController_setConfig( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   ::oConfiguracionesController:Edit()
+
+RETURN ( self )
+
+
+
+static FUNCTION MovimientosAlmacenController_buildNotSentJson( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   ::oModel:selectNotSentToJson()
+
+   if empty( ::oModel:aFetch )
+      RETURN ( nil )
+   end
+
+
+   ::oLineasController:oModel:selectFetchToJson(  ::oLineasController:oModel:getSentenceNotSent( ::oModel:aFetch ) )
+
+   if empty( ::oLineasController:oModel:aFetch )
+      RETURN ( nil )
+   end
+
+
+   ::oLineasController:oSeriesControler:oModel:selectFetchToJson(  ::oLineasController:oSeriesControler:oModel:getSentenceNotSent( ::oLineasController:oModel:aFetch ) )
+
+RETURN ( self )
+
+
+
+static FUNCTION MovimientosAlmacenController_zipNotSentJson( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   local cZipFile
+
+
+
+   if !file( ::oModel:getJsonFileToExport() )                                    .AND.  !file( ::oLineasController:oModel:getJsonFileToExport() )                  .AND.  !file( ::oLineasController:oSeriesControler:oModel:getJsonFileToExport() )
+      RETURN ( self )
+   end
+
+   cZipFile       := cpatout() + ::cName + "_" + hb_ttos( hb_datetime() ) + ".zip"
+
+   hb_setdiskzip( {|| nil } )
+
+   hb_zipfile( cZipFile, ::oModel:getJsonFileToExport(), 9 )
+   hb_zipfile( cZipFile, ::oLineasController:oModel:getJsonFileToExport(), 9 )
+   hb_zipfile( cZipFile, ::oLineasController:oSeriesControler:oModel:getJsonFileToExport(), 9 )
+
+   hb_gcall()
+
+   ::oExportableController:setZipFile( cZipFile )
+
+RETURN ( self )
+
+
+
+static FUNCTION MovimientosAlmacenController_setSentFromFetch( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   local cSentence   := ::oModel:getSentenceSentFromFetch()
+
+   if !empty( cSentence )
+      getSQLDatabase():Exec( cSentence )
+   end
+
+RETURN ( self )
+
+
+
+static FUNCTION MovimientosAlmacenController_isUnzipToJson( cZipFile ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   local aFiles
+   local lUnZiped    := .T.
+
+   if !file( cZipFile )
+      RETURN ( .F. )
+   end
+
+   aFiles            := hb_getfilesinzip( cZipFile )
+
+   if !hb_unzipfile( cZipFile, , , , cpatin(), aFiles )
+      msgStop( "No se ha descomprimido el fichero " + cZipFile, "Error" )
+      lUnZiped       :=  .F.
+   end
+
+   hb_gcall()
+
+RETURN ( lUnZiped )
+
+
+
+static FUNCTION MovimientosAlmacenController_jsonToSQL( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   if !::oModel:isInsertOrUpdateFromJson( ::oModel:getJsonFileToImport() )
+      msgStop( "No se ha incorporado el fichero " + ::oModel:getJsonFileToImport(), "Error" )
+      RETURN ( .F. )
+   end
+
+   if !::oLineasController:oModel:isInsertOrUpdateFromJson()
+      msgStop( "No se ha incorporado el fichero " + ::oLineasController:oModel:getJsonFileToImport(), "Error" )
+      RETURN ( .F. )
+   end
+
+   if !::oLineasController:oSeriesControler:oModel:isInsertOrUpdateFromJson()
+      msgStop( "No se ha incorporado el fichero " + ::oLineasController:oSeriesControler:oModel:getJsonFileToImport(), "Error" )
+      RETURN ( .F. )
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenController_setSender( cSentence ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   if empty( cSentence )
+      RETURN ( self )
+   end
+
+   getSQLDatabase():Exec( cSentence )
+
+   ::getRowSet():Refresh()
+
+   ::getBrowse():Refresh()
+
+RETURN ( self )
+
+
+
+static FUNCTION MovimientosAlmacenController_isAddedTag( cMarcador ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   local uuidTag
+
+   if empty( uuidTag )
+      RETURN ( .F. )
+   end
+
+   ::addTag( uuidTag )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenController_addTag( uuidTag ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+
+
+
+
+
+
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenController_deleteTag( idTageable ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenController_Recalcular( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   if !MsgYesNo( "¿Desea recalcular los precios del documento?", "Confirme" )
+      Return ( nil )
+   end
+
+   ::oModel:RecalcularPreciosLineas()
+
+   ::oLineasController:getRowSet:Refresh()
+
+   ::oLineasController:getBrowse():Refresh()
+
+Return ( nil )
+
+
+
+static FUNCTION MovimientosAlmacenController_lValidaDocumento( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   ::oModel:ValidaDocumento()
+
+   ::oLineasController:oModel:ValidaDocumentos( ::oModel:hBuffer, ::oDialogView:oMeter )
+
+Return ( nil )
+
+
+
+static FUNCTION MovimientosAlmacenController_isEditing( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   if ( ::getRowSet():fieldGet( "tipo_movimiento" ) == 4 ) .AND. ( ::getRowSet():fieldGet( "validado" ) == 1 )
+      MsgStop( "No se puede editar una consolidación validada." )
+      Return ( .F. )
+   end
+
+Return ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenController_isDeleting( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   local nRec
+   local lFlag    := .F.
+
+   for each nRec in ::getBrowse():aSelected
+
+      ::gotoRowSetRecno( nRec )
+
+      if ( ::getRowSet():fieldGet( "tipo_movimiento" ) == 4 ) .AND. ( ::getRowSet():fieldGet( "validado" ) == 1 )
+
+         lFlag    := .T.
+      end
+
+   next
+
+   if lFlag
+      MsgStop( "No se puede eliminar una consolidación validada." )
+      Return .F.
+   end
+
+Return ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenController_exitEdited ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   ::setSender( ::oModel:getSentenceNotSentFromIds( { ::getRowSet():fieldGet( "id" ) } ) )
+
+Return ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenController_stampStock( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   local hStock      := {=>}
+
+   ::oLineasController:oRowSet:goTop()
+
+   while !( ::oLineasController:oRowSet:Eof() )
+
+      hset( hStock, "codigo_articulo", AllTrim( ::oLineasController:oRowSet:fieldget( "codigo_articulo" ) ) )
+      hset( hStock, "codigo_almacen_entrada", AllTrim( ::oModel:hBuffer[ "almacen_destino" ] ) )
+      hset( hStock, "codigo_almacen_salida", AllTrim( ::oModel:hBuffer[ "almacen_origen" ] ) )
+      hset( hStock, "codigo_primera_propiedad", AllTrim( ::oLineasController:oRowSet:fieldget( "codigo_primera_propiedad" ) ) )
+      hset( hStock, "valor_primera_propiedad", AllTrim( ::oLineasController:oRowSet:fieldget( "valor_primera_propiedad" ) ) )
+      hset( hStock, "codigo_segunda_propiedad", AllTrim( ::oLineasController:oRowSet:fieldget( "codigo_segunda_propiedad" ) ) )
+      hset( hStock, "valor_segunda_propiedad", AllTrim( ::oLineasController:oRowSet:fieldget( "valor_segunda_propiedad" ) ) )
+      hset( hStock, "lote", AllTrim( ::oLineasController:oRowSet:fieldget( "lote" ) ) )
+      hset( hStock, "bultos_articulo", ::oLineasController:oRowSet:fieldget( "bultos_articulo" ) )
+      hset( hStock, "cajas_articulo", ::oLineasController:oRowSet:fieldget( "cajas_articulo" ) )
+      hset( hStock, "unidades_articulo", ( NotCaja( ::oLineasController:oRowSet:fieldget( "cajas_articulo" ) ) * ::oLineasController:oRowSet:fieldget( "unidades_articulo" ) ) )
+      hset( hStock, "fecha", hb_ttod( ::oModel:hBuffer[ "fecha_hora" ] ) )
+      hset( hStock, "hora", substr( hb_tstostr( ::oModel:hBuffer[ "fecha_hora" ] ), 12, 8 ) )
+
+      hStock      := {=>}
+
+      ::oLineasController:oRowSet:skip()
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION MovimientosAlmacenController_rollBackStock( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+RETURN ( Self )
+
+
+
+static FUNCTION MovimientosAlmacenController_deleteRollbackStock( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   local aRecords
+   local hRecord
+   local hRollbackStock         := {=>}
+
+   ::aRollBackStock     := {}
+
+   aRecords             := ::oLineasController:oModel:getLinesFromStock( ::oModel:aUuidsToDelete )
+
+   if hb_isArray( aRecords ) .AND. ( len( aRecords ) > 0 )
+
+      for each hRecord in aRecords
+
+         hset( hRollbackStock, "codigo_articulo", AllTrim( hRecord[ "codigo_articulo" ] ) )
+         hset( hRollbackStock, "codigo_almacen_entrada", AllTrim( hRecord[ "almacen_destino" ] ) )
+         hset( hRollbackStock, "codigo_almacen_salida", AllTrim( hRecord[ "almacen_origen" ] ) )
+         hset( hRollbackStock, "codigo_primera_propiedad", AllTrim( hRecord[ "codigo_primera_propiedad" ] ) )
+         hset( hRollbackStock, "valor_primera_propiedad", AllTrim( hRecord[ "valor_primera_propiedad" ] ) )
+         hset( hRollbackStock, "codigo_segunda_propiedad", AllTrim( hRecord[ "codigo_segunda_propiedad" ] ) )
+         hset( hRollbackStock, "valor_segunda_propiedad", AllTrim( hRecord[ "valor_segunda_propiedad" ] ) )
+         hset( hRollbackStock, "lote", AllTrim( hRecord[ "lote" ] ) )
+         hset( hRollbackStock, "bultos_articulo", hRecord[ "bultos" ] )
+         hset( hRollbackStock, "cajas_articulo", hRecord[ "cajas" ] )
+         hset( hRollbackStock, "unidades_articulo", ( NotCaja( hRecord[ "cajas" ] ) * hRecord[ "unidades" ] ) )
+         hset( hRollbackStock, "fecha", hb_ttod( hRecord[ "fecha_hora" ] ) )
+         hset( hRollbackStock, "hora", substr( hb_tstostr( hRecord[ "fecha_hora" ] ), 12, 8 ) )
+         hset( hRollbackStock, "tipo_movimiento", hRecord[ "tipo" ] )
+
+         aAdd( ::aRollBackStock, hRollbackStock )
+
+         hRollbackStock := {=>}
+
+      next
+
+   end
+
+
+
+RETURN ( Self )
+
+
+
+static FUNCTION MovimientosAlmacenController_appenedOrDuplicated( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   if ::oModel:hBuffer[ "tipo_movimiento" ] == 4
+
+      ::stampConsolidacion()
+
+      RETURN ( Self )
+
+   end
+
+   ::stampStock()
+
+RETURN ( Self )
+
+
+
+static FUNCTION MovimientosAlmacenController_edited( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   if ::oModel:hBuffer[ "tipo_movimiento" ] == 4
+
+      ::rollBackEditConsolidacion()
+      ::stampConsolidacion()
+
+      RETURN ( Self )
+
+   end
+
+   ::rollBackStock()
+   ::stampStock()
+
+RETURN ( Self )
+
+
+
+static FUNCTION MovimientosAlmacenController_rollBackEditConsolidacion( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   local aRecords
+   local hRecord
+   local hRollbackStock          := {=>}
+   local aRec                    := {}
+   local n
+
+   aRecords                      := ::oLineasController:oModel:getLinesFromStock( { ::oModel:hBuffer[ "uuid" ] } )
+
+   if hb_isArray( ::aRollBackStock ) .AND. ( len( ::aRollBackStock ) > 0 )
+
+      for each hRecord in ::aRollBackStock
+
+
+
+
+
+
+
+
+         n := aScan( aRecords, {|a| AllTrim( a[ "codigo_articulo" ] ) == AllTrim( hGet( hRecord, "codigo_articulo" ) ) .AND. AllTrim( a[ "almacen_destino" ] ) == AllTrim( hGet( hRecord, "codigo_almacen_entrada" ) ) .AND. AllTrim( a[ "almacen_origen" ] ) == AllTrim( hGet( hRecord, "codigo_almacen_salida" ) ) .AND. AllTrim( a[ "codigo_primera_propiedad" ] ) == AllTrim( hGet( hRecord, "codigo_primera_propiedad" ) ) .AND. AllTrim( a[ "valor_primera_propiedad" ] ) == AllTrim( hGet( hRecord, "valor_primera_propiedad" ) ) .AND. AllTrim( a[ "codigo_segunda_propiedad" ] ) == AllTrim( hGet( hRecord, "codigo_segunda_propiedad" ) ) .AND. AllTrim( a[ "valor_segunda_propiedad" ] ) == AllTrim( hGet( hRecord, "valor_segunda_propiedad" ) ) .AND. AllTrim( a[ "lote" ] ) == AllTrim( hGet( hRecord, "lote" ) ) } )
+
+         if n == 0
+            aAdd( aRec, hRecord )
+         end
+
+      next
+
+   end
+
+   ::aRollBackStock     := aRec
+
+
+RETURN ( Self )
+
+
+
+static FUNCTION MovimientosAlmacenController_stampConsolidacion( ) ; local Self AS CLASS MovimientosAlmacenController := QSelf() AS CLASS MovimientosAlmacenController
+
+   local hStock      := {=>}
+
+   ::oLineasController:oRowSet:goTop()
+
+   while !( ::oLineasController:oRowSet:Eof() )
+
+      hset( hStock, "codigo_articulo", AllTrim( ::oLineasController:oRowSet:fieldget( "codigo_articulo" ) ) )
+      hset( hStock, "codigo_almacen_entrada", AllTrim( ::oModel:hBuffer[ "almacen_destino" ] ) )
+      hset( hStock, "codigo_almacen_salida", AllTrim( ::oModel:hBuffer[ "almacen_origen" ] ) )
+      hset( hStock, "codigo_primera_propiedad", AllTrim( ::oLineasController:oRowSet:fieldget( "codigo_primera_propiedad" ) ) )
+      hset( hStock, "valor_primera_propiedad", AllTrim( ::oLineasController:oRowSet:fieldget( "valor_primera_propiedad" ) ) )
+      hset( hStock, "codigo_segunda_propiedad", AllTrim( ::oLineasController:oRowSet:fieldget( "codigo_segunda_propiedad" ) ) )
+      hset( hStock, "valor_segunda_propiedad", AllTrim( ::oLineasController:oRowSet:fieldget( "valor_segunda_propiedad" ) ) )
+      hset( hStock, "lote", AllTrim( ::oLineasController:oRowSet:fieldget( "lote" ) ) )
+      hset( hStock, "bultos_articulo", ::oLineasController:oRowSet:fieldget( "bultos_articulo" ) )
+      hset( hStock, "cajas_articulo", ::oLineasController:oRowSet:fieldget( "cajas_articulo" ) )
+      hset( hStock, "unidades_articulo", ( NotCaja( ::oLineasController:oRowSet:fieldget( "cajas_articulo" ) ) * ::oLineasController:oRowSet:fieldget( "unidades_articulo" ) ) )
+      hset( hStock, "fecha", hb_ttod( ::oModel:hBuffer[ "fecha_hora" ] ) )
+      hset( hStock, "hora", substr( hb_tstostr( ::oModel:hBuffer[ "fecha_hora" ] ), 12, 8 ) )
+
+      hStock      := {=>}
+
+      ::oLineasController:oRowSet:skip()
+
+   end
+
+RETURN ( Self )

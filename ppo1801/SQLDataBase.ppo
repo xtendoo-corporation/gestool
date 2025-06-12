@@ -1,0 +1,2472 @@
+#line 91 "\fwh1801\include\fiveWin.ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 7 ".\Prg\Services\SQLDataBase.prg"
+static oSqlDatabase
+
+
+
+_HB_CLASS SQLDatabase ; function SQLDatabase ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "SQLDatabase", iif( .F., { }, { @HBObject() } ), @SQLDatabase() ) ) ;
+
+   _HB_MEMBER { oConexion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oConexion"}, .F. )
+
+   _HB_MEMBER { oStatement } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oStatement"}, .F. )
+
+   _HB_MEMBER { cPathDatabaseMySQL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPathDatabaseMySQL"}, .F. )
+
+   _HB_MEMBER { cDatabaseMySQL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDatabaseMySQL"}, .F. )
+
+   _HB_MEMBER { cIpMySQL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cIpMySQL"}, .F. )
+   _HB_MEMBER { cUserMySQL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cUserMySQL"}, .F. )
+   _HB_MEMBER { cPasswordMySQL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPasswordMySQL"}, .F. )
+   _HB_MEMBER { nPortMySQL } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nPortMySQL"}, .F. )
+
+   _HB_MEMBER { aModels } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aModels"}, .F. )
+
+   _HB_MEMBER New() AS CLASS SQLDatabase; oClass:AddMethod( "New", @SQLDatabase_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Conexion(); oClass:AddInline( "Conexion", {|Self | ( ( Self ) ), ( ::oConexion ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Connect(); oClass:AddMethod( "Connect", @SQLDatabase_Connect(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ConnectWithoutDataBase(); oClass:AddMethod( "ConnectWithoutDataBase", @SQLDatabase_ConnectWithoutDataBase(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Disconnect(); oClass:AddInline( "Disconnect", {|Self | ( ( Self ) ), ( if( !empty( ::oConexion ), ::oConexion:disconnect(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER RowSet(); oClass:AddInline( "RowSet", {|Self, cSql | ( ( Self ) ), ( if( !empty( ::oConexion ), ::oConexion:RowSet( cSql ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Ping(); oClass:AddInline( "Ping", {|Self | ( ( Self ) ), ( if( !empty( ::oConexion ), ::oConexion:Ping(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER isParseError(); oClass:AddMethod( "isParseError", @SQLDatabase_isParseError(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Exec( cSql); oClass:AddMethod( "Exec", @SQLDatabase_Exec(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ExecWithOutParse(); oClass:AddInline( "ExecWithOutParse", {|Self, cSql | ( ( Self ) ), ( ::Exec( cSql, .F. ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Execs( aSql); oClass:AddMethod( "Execs", @SQLDatabase_Execs(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TransactionalExec(); oClass:AddInline( "TransactionalExec", {|Self, cSql | ( ( Self ) ), ( ::BeginTransaction(), ::Exec( cSql ), ::Commit() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Query(); oClass:AddInline( "Query", {|Self, cSql | ( ( Self ) ), ( if( !empty( ::oConexion ), ::oConexion:Query( cSql ), msgstop( "No ha conexiones disponibles" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Prepare(); oClass:AddInline( "Prepare", {|Self, cSql | ( ( Self ) ), ( if( !empty( ::oConexion ), ::oConexion:Prepare( cSql ), msgstop( "No ha conexiones disponibles" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Parse(); oClass:AddInline( "Parse", {|Self, cSql | ( ( Self ) ), ( if( !empty( ::oConexion ), ::oConexion:Parse( cSql ), msgstop( "No ha conexiones disponibles" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER escapeStr(); oClass:AddInline( "escapeStr", {|Self, cEscape | ( ( Self ) ), ( if( !empty( ::oConexion ), ::oConexion:escapeStr( cEscape ), cEscape ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER selectFetch( cSql); oClass:AddMethod( "selectFetch", @SQLDatabase_selectFetch(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER selectFetchHash(); oClass:AddInline( "selectFetchHash", {|Self, cSentence, attributePad | ( ( Self ) ), ::selectFetch( cSentence, 2, attributePad ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER selectTrimedFetchHash(); oClass:AddInline( "selectTrimedFetchHash", {|Self, cSentence | ( ( Self ) ), ::selectFetchHash( cSentence, .F. ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER selectPadedFetchHash(); oClass:AddInline( "selectPadedFetchHash", {|Self, cSentence | ( ( Self ) ), ::selectFetchHash( cSentence, .T. ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER firstTrimedFetchHash( cSentence); oClass:AddMethod( "firstTrimedFetchHash", @SQLDatabase_firstTrimedFetchHash(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER selectFetchArray(); oClass:AddInline( "selectFetchArray", {|Self, cSentence, attributePad | ( ( Self ) ), ::selectFetch( cSentence, 1, attributePad ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER selectTrimedFetchArray(); oClass:AddInline( "selectTrimedFetchArray", {|Self, cSentence | ( ( Self ) ), ::selectFetchArray( cSentence, .F. ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER selectFetchToJson( cSentence); oClass:AddMethod( "selectFetchToJson", @SQLDatabase_selectFetchToJson(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER selectFetchArrayOneColumn( cSentence); oClass:AddMethod( "selectFetchArrayOneColumn", @SQLDatabase_selectFetchArrayOneColumn(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER selectHashList( cSentence); oClass:AddMethod( "selectHashList", @SQLDatabase_selectHashList(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getValue( cSql, nColumn); oClass:AddMethod( "getValue", @SQLDatabase_getValue(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lastInsertId(); oClass:AddInline( "lastInsertId", {|Self | ( ( Self ) ), ( if( !empty( ::oConexion ), ::oConexion:lastInsertId(), msgstop( "No ha conexiones disponibles" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER beginTransaction(); oClass:AddInline( "beginTransaction", {|Self | ( ( Self ) ), ( if( !empty( ::oConexion ), ::oConexion:beginTransaction(),  msgstop( "No ha conexiones disponibles" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Commit(); oClass:AddInline( "Commit", {|Self | ( ( Self ) ), ( if( !empty( ::oConexion ), ::oConexion:commit(), msgstop( "No ha conexiones disponibles" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER rollBack(); oClass:AddInline( "rollBack", {|Self | ( ( Self ) ), ( if( !empty( ::oConexion ), ::oConexion:rollback(),  msgstop( "No ha conexiones disponibles" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER errorInfo(); oClass:AddInline( "errorInfo", {|Self | ( ( Self ) ), ( if( !empty( ::oConexion ), ::oConexion:errorInfo(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Export( cFileName); oClass:AddMethod( "Export", @SQLDatabase_Export(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER exportTable( hFileName, cTable); oClass:AddMethod( "exportTable", @SQLDatabase_exportTable(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER checkModels(); oClass:AddMethod( "checkModels", @SQLDatabase_checkModels(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER checkModel( oModel); oClass:AddMethod( "checkModel", @SQLDatabase_checkModel(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getSchemaColumns(); oClass:AddMethod( "getSchemaColumns", @SQLDatabase_getSchemaColumns(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getListTables(); oClass:AddMethod( "getListTables", @SQLDatabase_getListTables(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+
+   _HB_MEMBER sayConexionInfo(); oClass:AddInline( "sayConexionInfo", {|Self | ( ( Self ) ), ( "Database : " + ::cDatabaseMySQL + Chr(13)+Chr(10) +  "IP : " + ::cIpMySQL             + Chr(13)+Chr(10) +  "User : " + ::cUserMySQL         + Chr(13)+Chr(10) +  "Password : " + ::cPasswordMySQL + Chr(13)+Chr(10) +  "Port : " + alltrim( str( ::nPortMySQL ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS SQLDatabase ;
+
+
+
+static FUNCTION SQLDatabase_New( ) ; local Self AS CLASS SQLDatabase := QSelf() AS CLASS SQLDatabase
+
+   ::cPathDatabaseMySQL       := fullCurDir() + "Database\"
+
+   if !lIsDir( ::cPathDatabaseMySQL )
+      makedir( ::cPathDatabaseMySQL )
+   end
+
+   ::cDatabaseMySQL           := GetPvProfString(  "MySQL",    "Database", "gestool",     cIniAplication() )
+   ::cIpMySQL                 := GetPvProfString(  "MySQL",    "Ip",       "127.0.0.1",   cIniAplication() )
+   ::cUserMySQL               := GetPvProfString(  "MySQL",    "User",     "root",        cIniAplication() )
+   ::cPasswordMySQL           := GetPvProfString(  "MySQL",    "Password", "",            cIniAplication() )
+   ::nPortMySQL               := GetPvProfInt(     "MySQL",    "Port",     3306,          cIniAplication() )
+
+   ::oConexion                := THDO():new( "mysql" )
+
+   ::oConexion:setAttribute( 100005, .T. )
+
+   ::oConexion:setAttribute( 20, .T. )
+
+   ::oConexion:setAttribute( 100003, .T. )
+
+RETURN ( Self )
+
+
+
+static FUNCTION SQLDatabase_Connect( ) ; local Self AS CLASS SQLDatabase := QSelf() AS CLASS SQLDatabase
+
+   local lConnect    := .T.
+
+   BEGIN SEQUENCE WITH { | oErr | Break( oErr ) }
+
+      if !empty( ::oConexion )
+
+         lConnect    := ::oConexion:Connect( ::cDatabaseMySQL, ::cIpMySQL, ::cUserMySQL, ::cPasswordMySQL, ::nPortMySQL )
+
+      end
+
+   RECOVER
+
+      lConnect       := .F.
+
+   end
+
+RETURN ( lConnect )
+
+
+
+static FUNCTION SQLDatabase_ConnectWithoutDataBase( ) ; local Self AS CLASS SQLDatabase := QSelf() AS CLASS SQLDatabase
+
+   local lConnect    := .T.
+
+   BEGIN SEQUENCE WITH { | oErr | Break( oErr ) }
+
+      if !empty( ::oConexion )
+
+         lConnect    := ::oConexion:Connect( nil, ::cIpMySQL, ::cUserMySQL, ::cPasswordMySQL, ::nPortMySQL )
+
+      end
+
+   RECOVER
+
+      lConnect       := .F.
+
+   end
+
+RETURN ( lConnect )
+
+
+
+static FUNCTION SQLDatabase_isParseError( cSentence ) ; local Self AS CLASS SQLDatabase := QSelf() AS CLASS SQLDatabase
+
+   if empty( cSentence )
+      msgstop( "La sentencia esta vacia", "SQLDatabase" )
+      RETURN ( .T. )
+   end
+
+   if empty( ::oConexion )
+      msgstop( "No hay conexiones disponibles" )
+      RETURN ( .T. )
+   end
+
+   ::oConexion:Ping()
+
+   if !::oConexion:Parse( cSentence )
+      msgstop( cSentence, "Error en el comando SQL" )
+      logwrite( cSentence )
+      RETURN ( .T. )
+   end
+
+RETURN ( .F. )
+
+
+
+static FUNCTION SQLDatabase_Exec( cSentence, lParse ) ; local Self AS CLASS SQLDatabase := QSelf() AS CLASS SQLDatabase
+
+   local lExec    := .T.
+   local oError
+
+   If( lParse == nil, lParse := .T., ) ;
+
+   if lParse .AND. ::isParseError( cSentence )
+      RETURN ( .F. )
+   end
+
+   BEGIN SEQUENCE WITH { | oErr | Break( oErr ) }
+
+      ::oConexion:Exec( cSentence )
+
+   RECOVER USING oError
+
+      eval( errorBlock(), oError )
+
+      lExec       := .F.
+
+   end
+
+RETURN ( lExec )
+
+
+
+static FUNCTION SQLDatabase_Execs( cSentence ) ; local Self AS CLASS SQLDatabase := QSelf() AS CLASS SQLDatabase
+
+   if hb_isarray( cSentence )
+      RETURN ( aeval( cSentence, {|cSql| ::Exec( cSql ) } ) )
+   end
+
+RETURN ( ::Exec( cSentence ) )
+
+
+
+static FUNCTION SQLDatabase_selectFetch( cSentence, fetchType, attributePad ) ; local Self AS CLASS SQLDatabase := QSelf() AS CLASS SQLDatabase
+
+   local oError
+   local aFetch
+   local oStatement
+
+   If( fetchType == nil, fetchType := 1, ) ;
+   If( attributePad == nil, attributePad := .T., ) ;
+
+   if ::isParseError( cSentence )
+      RETURN ( nil )
+   end
+
+   BEGIN SEQUENCE WITH { | oErr | Break( oErr ) }
+
+      oStatement        := ::Query( cSentence )
+
+      oStatement:setAttribute( 100002, attributePad )
+
+      aFetch            := oStatement:fetchAll( fetchType )
+
+   RECOVER USING oError
+
+      eval( errorBlock(), oError )
+
+   ALWAYS
+
+      if !empty( oStatement )
+         oStatement:Free()
+      end
+
+   end
+
+   if !empty( aFetch ) .AND. hb_isarray( aFetch )
+      RETURN ( aFetch )
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION SQLDatabase_firstTrimedFetchHash( cSentence ) ; local Self AS CLASS SQLDatabase := QSelf() AS CLASS SQLDatabase
+
+   local aSelect        := ::selectTrimedFetchHash( cSentence )
+
+   if hb_isarray( aSelect )
+      RETURN ( afirst( aSelect ) )
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION SQLDatabase_selectFetchToJson( cSentence, attributePad ) ; local Self AS CLASS SQLDatabase := QSelf() AS CLASS SQLDatabase
+
+   local aFetch
+
+   If( attributePad == nil, attributePad := .F., ) ;
+
+   aFetch               := ::selectFetchHash( cSentence, attributePad )
+
+   if hb_isarray( aFetch )
+      RETURN ( hb_jsonencode( aFetch, .T. ) )
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION SQLDatabase_selectHashList( cSentence ) ; local Self AS CLASS SQLDatabase := QSelf() AS CLASS SQLDatabase
+
+   local oError
+   local oHashList
+   local oStatement
+   local oStatementFetch
+
+   if ::isParseError( cSentence )
+      RETURN ( nil )
+   end
+
+   BEGIN SEQUENCE WITH { | oErr | Break( oErr ) }
+
+      oStatement           := ::Query( cSentence )
+
+      if !empty( oStatement )
+
+          oStatementFetch  := oStatement:fetchAll( 2 )
+
+          if !empty( oStatementFetch )
+            oHashList      := THashList():new( oStatementFetch )
+         end
+
+      end
+
+   RECOVER USING oError
+
+      eval( errorBlock(), oError )
+
+   ALWAYS
+
+      if !empty( oStatement )
+         oStatement:Free()
+      end
+
+   end
+
+   if !empty( oHashList )
+      RETURN ( oHashList )
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION SQLDatabase_getValue( cSentence ) ; local Self AS CLASS SQLDatabase := QSelf() AS CLASS SQLDatabase
+
+   local oError
+   local uValue
+   local oStatement
+
+   BEGIN SEQUENCE WITH { | oErr | Break( oErr ) }
+
+      oStatement     := ::Query( cSentence )
+
+      oStatement:setAttribute( 100002, .T. )
+
+      if oStatement:fetchDirect()
+         uValue      := oStatement:getValue( 1 )
+      end
+
+   RECOVER USING oError
+
+      eval( errorBlock(), oError )
+
+   ALWAYS
+
+      if !empty( oStatement )
+         oStatement:Free()
+      end
+
+      oStatement     := nil
+
+   end
+
+RETURN ( uValue )
+
+
+
+static FUNCTION SQLDatabase_selectFetchArrayOneColumn( cSentence ) ; local Self AS CLASS SQLDatabase := QSelf() AS CLASS SQLDatabase
+
+   local aFetch
+   local aResult  := {}
+
+   aFetch         := ::selectFetchArray( cSentence, .F. )
+
+   if !hb_isarray( aFetch )
+      RETURN ( aResult )
+   end
+
+   aResult        := array( len( aFetch ) )
+
+   aeval( aFetch, {|x, n| aResult[ n ] := alltrim( afirst( x ) ) } )
+
+RETURN ( aResult )
+
+
+
+static FUNCTION SQLDatabase_checkModels( ) ; local Self AS CLASS SQLDatabase := QSelf() AS CLASS SQLDatabase
+
+RETURN ( aeval( ::aModels, {|oModel| ::checkModel( oModel ) } ) )
+
+
+
+static FUNCTION SQLDatabase_checkModel( oModel ) ; local Self AS CLASS SQLDatabase := QSelf() AS CLASS SQLDatabase
+
+   local aSchemaColumns    := ::getSchemaColumns( oModel )
+
+   if empty( aSchemaColumns )
+      ::Exec( oModel:getCreateTableSentence() )
+   else
+      ::Execs( oModel:getAlterTableSentences( aSchemaColumns ) )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION SQLDatabase_getSchemaColumns( oModel ) ; local Self AS CLASS SQLDatabase := QSelf() AS CLASS SQLDatabase
+
+   local oError
+   local cSentence
+   local oStatement
+   local aSchemaColumns
+
+
+
+   cSentence               := "SELECT COLUMN_NAME "                                 + "FROM INFORMATION_SCHEMA.COLUMNS "                 + "WHERE table_name = " + quoted( oModel:cTableName )
+
+   if ::isParseError( cSentence )
+      RETURN ( nil )
+   end
+
+   BEGIN SEQUENCE WITH { | oErr | Break( oErr ) }
+
+      oStatement           := ::Query( cSentence )
+
+      aSchemaColumns       := oStatement:fetchAll( 2 )
+
+   RECOVER USING oError
+
+      eval( errorBlock(), oError )
+
+   ALWAYS
+
+      if !empty( oStatement )
+        oStatement:free()
+      end
+
+   end
+
+   if empty( aSchemaColumns ) .OR. !hb_isarray( aSchemaColumns )
+      RETURN ( nil )
+   end
+
+RETURN ( aSchemaColumns )
+
+
+
+static FUNCTION SQLDatabase_getListTables( ) ; local Self AS CLASS SQLDatabase := QSelf() AS CLASS SQLDatabase
+
+   local oError
+   local oStatement
+   local aListTables
+
+   BEGIN SEQUENCE WITH { | oErr | Break( oErr ) }
+
+      oStatement           := ::Query( "SHOW TABLES FROM " + ::cDatabaseMySQL )
+
+      aListTables          := oStatement:fetchAllArray()
+
+   RECOVER USING oError
+
+      eval( errorBlock(), oError )
+
+   ALWAYS
+
+      if !empty( oStatement )
+         oStatement:Free()
+      end
+
+   end
+
+RETURN ( aListTables )
+
+
+
+static FUNCTION SQLDatabase_Export( cFileName ) ; local Self AS CLASS SQLDatabase := QSelf() AS CLASS SQLDatabase
+
+   local cString
+   local hFileName
+   local aListTables
+
+   hFileName         := fcreate( cFileName )
+   if ferror() <> 0
+      msgStop( "Error creando fichero de backup : " + cFileName + ", error " + alltrim( str(  ferror() ) ), "Error" )
+      RETURN ( .F. )
+   endif
+
+   aListTables       := ::getListTables()
+   if empty( aListTables )
+      RETURN ( .F. )
+   endif
+
+   cString           := "USE `" + ::cDatabaseMySQL + "`;" + hb_osnewline() + hb_osnewline()
+
+   fwrite( hFileName, cString )
+
+
+
+   aeval( aListTables, {|aTables| aeval( aTables, {|cTable| ::exportTable( hFileName, cTable ) } ) } )
+
+   cString           := "--  " + hb_OSNewLine()
+   cString           += "--  Fin del procesado de la base de datos " + ::cDatabaseMySQL + hb_OSNewLine()
+   cString           += "--  " + hb_OSNewLine() + hb_OSNewLine()
+
+   fwrite( hFileName, cString )
+
+   fclose( hFileName )
+
+RETURN ( self )
+
+
+
+static FUNCTION SQLDatabase_exportTable( hFileName, cTable ) ; local Self AS CLASS SQLDatabase := QSelf() AS CLASS SQLDatabase
+
+   local nCount
+   local aFetch
+   local oQuery
+   local cString
+
+   oQuery         := ::Query( "SELECT * FROM " + cTable )
+
+   aFetch         := oQuery:fetch()
+
+   oQuery:free()
+
+   if aFetch == nil
+      RETURN ( self )
+   end
+
+   cString        := "--  Datos de la tabla " + cTable + hb_osnewline()
+   cString        += "INSERT INTO `" + cTable + "` VALUES " + hb_osnewline()
+
+   fwrite( hFileName, cString )
+
+   hdo_rowprocess( ::oConexion:getHandle(), hFileName, cTable )
+
+   cString        :=  hb_osnewline() + "--  Fin de datos de la tabla " + cTable + hb_osnewline() + hb_osnewline()
+
+   fwrite( hFileName, cString )
+
+RETURN ( self )
+
+
+
+Function getSQLDatabase()
+
+   if empty( oSqlDatabase )
+      oSqlDatabase            := SQLDatabase():New()
+   end
+
+RETURN ( oSqlDatabase )

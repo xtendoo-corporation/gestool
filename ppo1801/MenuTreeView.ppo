@@ -1,0 +1,2453 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 13 ".\Prg\Views\MenuTreeView.prg"
+_HB_CLASS MenuTreeView ; function MenuTreeView ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "MenuTreeView", iif( .F., { }, { @HBObject() } ), @MenuTreeView() ) ) ;
+
+   _HB_MEMBER { oSender } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSender"}, .F. )
+
+   _HB_MEMBER { oTreeView } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTreeView"}, .F. )
+
+   _HB_MEMBER { oImageList } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oImageList"}, .F. )
+
+   _HB_MEMBER { oButtonMain } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oButtonMain"}, .F. )
+
+   _HB_MEMBER { oButtonPrint } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oButtonPrint"}, .F. )
+
+   _HB_MEMBER { oButtonPreview } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oButtonPreview"}, .F. )
+
+   _HB_MEMBER { oButtonPdf } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oButtonPdf"}, .F. )
+
+   _HB_MEMBER { oButtonLabel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oButtonLabel"}, .F. )
+
+   _HB_MEMBER { oButtonConfig } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oButtonConfig"}, .F. )
+
+   _HB_MEMBER { oButtonOthers } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oButtonOthers"}, .F. )
+
+   _HB_MEMBER { lDocumentButtons } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lDocumentButtons"}, .F. )
+
+   _HB_MEMBER { oEvents } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oEvents"}, .F. )
+
+   _HB_MEMBER New( oSender); oClass:AddMethod( "New", @MenuTreeView_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER End(); oClass:AddMethod( "End", @MenuTreeView_End(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Exit(); oClass:AddMethod( "Exit", @MenuTreeView_Exit(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ActivateMDI(); oClass:AddMethod( "ActivateMDI", @MenuTreeView_ActivateMDI(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ActivateDialog(); oClass:AddMethod( "ActivateDialog", @MenuTreeView_ActivateDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Default(); oClass:AddMethod( "Default", @MenuTreeView_Default(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setImageList(); oClass:AddInline( "setImageList", {|Self | ( ( Self ) ), ( ::oTreeView:SetImagelist( ::oImageList ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getController(); oClass:AddInline( "getController", {|Self | ( ( Self ) ), ( ::oSender:getController() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getBrowse(); oClass:AddInline( "getBrowse", {|Self | ( ( Self ) ), ( ::oSender:getBrowse() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER isControllerDocuments(); oClass:AddInline( "isControllerDocuments", {|Self | ( ( Self ) ), ( ::getController():lDocuments ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER isControllerLabels(); oClass:AddInline( "isControllerLabels", {|Self | ( ( Self ) ), ( ::getController():lLabels ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER isControllerConfig(); oClass:AddInline( "isControllerConfig", {|Self | ( ( Self ) ), ( ::getController():lConfig ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER isControllerOthers(); oClass:AddInline( "isControllerOthers", {|Self | ( ( Self ) ), ( ::getController():lOthers ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getControllerDocuments(); oClass:AddInline( "getControllerDocuments", {|Self | ( ( Self ) ), ( ::getController():aDocuments ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addImage(); oClass:AddMethod( "addImage", @MenuTreeView_addImage(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addButton(); oClass:AddMethod( "addButton", @MenuTreeView_addButton(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addSearchButton(); oClass:AddMethod( "addSearchButton", @MenuTreeView_addSearchButton(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addAppendButton(); oClass:AddMethod( "addAppendButton", @MenuTreeView_addAppendButton(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addDuplicateButton(); oClass:AddMethod( "addDuplicateButton", @MenuTreeView_addDuplicateButton(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addEditButton(); oClass:AddMethod( "addEditButton", @MenuTreeView_addEditButton(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addZoomButton(); oClass:AddMethod( "addZoomButton", @MenuTreeView_addZoomButton(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addDeleteButton(); oClass:AddMethod( "addDeleteButton", @MenuTreeView_addDeleteButton(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addRefreshButton(); oClass:AddMethod( "addRefreshButton", @MenuTreeView_addRefreshButton(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addSelectButton(); oClass:AddMethod( "addSelectButton", @MenuTreeView_addSelectButton(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addExitButton(); oClass:AddMethod( "addExitButton", @MenuTreeView_addExitButton(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addCloseButton(); oClass:AddMethod( "addCloseButton", @MenuTreeView_addCloseButton(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+
+
+
+
+
+   _HB_MEMBER addGeneralButton(); oClass:AddInline( "addGeneralButton", {|Self | ( ( Self ) ), ( ::fireEvent( "addingGeneralButton" ), ::addSearchButton(), ::addRefreshButton(), ::addAppendButton(), ::addDuplicateButton(), ::addEditButton(), ::addZoomButton(), ::addDeleteButton(), ::fireEvent( "addedGeneralButton" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+
+
+
+
+
+   _HB_MEMBER addAutoButtons(); oClass:AddInline( "addAutoButtons", {|Self | ( ( Self ) ), ( ::fireEvent( "addingAutoButton" ), ::addGeneralButton(), ::addDocumentsButton(), ::addLabelButton(), ::addOthersButton(), ::addConfigButton(), ::addExitButton(), ::oButtonMain:Expand(), ::fireEvent( "addedAutoButton" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+
+
+   _HB_MEMBER addSelectorButtons(); oClass:AddInline( "addSelectorButtons", {|Self | ( ( Self ) ), ( ::fireEvent( "addingSelectorButton" ), ::addGeneralButton(), ::addSelectButton(), ::addCloseButton(), ::oButtonMain:Expand(), ::fireEvent( "addedSelectorButton" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+
+   _HB_MEMBER addDialogButtons(); oClass:AddInline( "addDialogButtons", {|Self | ( ( Self ) ), ( ::fireEvent( "addingSelectorButton" ), ::addGeneralButton(), ::addCloseButton(), ::oButtonMain:Expand(), ::fireEvent( "addedSelectorButton" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addPrintSerialButton(); oClass:AddMethod( "addPrintSerialButton", @MenuTreeView_addPrintSerialButton(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addPrintButtons(); oClass:AddMethod( "addPrintButtons", @MenuTreeView_addPrintButtons(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addPreviewButtons(); oClass:AddMethod( "addPreviewButtons", @MenuTreeView_addPreviewButtons(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addPdfButtons(); oClass:AddMethod( "addPdfButtons", @MenuTreeView_addPdfButtons(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addLabelButton(); oClass:AddMethod( "addLabelButton", @MenuTreeView_addLabelButton(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addConfigButton(); oClass:AddMethod( "addConfigButton", @MenuTreeView_addConfigButton(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addOthersButton(); oClass:AddMethod( "addOthersButton", @MenuTreeView_addOthersButton(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addDocumentsButton(); oClass:AddMethod( "addDocumentsButton", @MenuTreeView_addDocumentsButton(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER blockPrintDocument( nDevice, cFormato); oClass:AddMethod( "blockPrintDocument", @MenuTreeView_blockPrintDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SelectButtonMain(); oClass:AddInline( "SelectButtonMain", {|Self | ( ( Self ) ), ( ::oTreeView:Select( ::oButtonMain ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER onChange(); oClass:AddMethod( "onChange", @MenuTreeView_onChange(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER setEvent(); oClass:AddInline( "setEvent", {|Self, cEvent, bEvent | ( ( Self ) ), ( if( !empty( ::oEvents ), ::oEvents:set( cEvent, bEvent ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER fireEvent(); oClass:AddInline( "fireEvent", {|Self, cEvent | ( ( Self ) ), ( if( !empty( ::oEvents ), ::oEvents:fire( cEvent ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS MenuTreeView ;
+
+
+
+static FUNCTION MenuTreeView_New( oSender ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   ::oSender      := oSender
+
+   ::oEvents      := Events():New()
+
+   ::oImageList   := TImageList():New( 16, 16 )
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_ActivateMDI( nWidth, nHeight ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   ::fireEvent( "activatingMDI" )
+
+   ::oTreeView    := TTreeView():New( 0, 0, ::oSender:getWindow(), , , .T., .F., nWidth, nHeight )
+
+   ::Default()
+
+   ::fireEvent( "activatedMDI" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_ActivateDialog( oDialog, id ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   ::fireEvent( "activatingDialog" )
+
+   ::oTreeView    := TTreeView():Redefine( id, oDialog )
+
+   ::fireEvent( "activatedDialog" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_Default( ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   ::SetImagelist()
+
+   ::oTreeView:SetItemHeight( 20 )
+
+   ::oTreeView:bChanged := {|| ::onChange() }
+
+   if !empty( ::getController():getImage( "16" ) )
+      ::oButtonMain     := ::oTreeView:Add( ::getController():cTitle, ::AddImage( ::getController():getImage( "16" ) ) )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_End( ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   if !empty( ::oImageList )
+      ::oImageList:End()
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION MenuTreeView_Exit( ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   if empty( ::oSender )
+      RETURN ( nil )
+   end
+
+   ::oSender:getWindow():End()
+
+RETURN ( nil )
+
+
+
+static FUNCTION MenuTreeView_addButton( cText, cResource, bAction, uKey, nLevel, oGroup, lAllowExit ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   local oTreeButton
+
+   If( oGroup == nil, oGroup := ::oButtonMain, ) ;
+   If( lAllowExit == nil, lAllowExit := .F., ) ;
+
+
+
+   if empty( cText )
+      RETURN ( nil )
+   end
+
+
+
+   if nLevel <> nil .AND. nAnd( ::getController():nLevel, nLevel ) == 0
+      RETURN ( nil )
+   end
+
+   oTreeButton          := oGroup:Add( cText, ::AddImage( cResource ), bAction )
+   oTreeButton:Cargo    := lAllowExit
+
+   ::getController():addFastKey( uKey, bAction )
+
+RETURN ( oTreeButton )
+
+
+
+static FUNCTION MenuTreeView_addImage( cImage ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   local oImage
+   local nImageList  := 0
+
+   if empty( cImage )
+      RETURN ( nImageList )
+   end
+
+   ::fireEvent( "addingImage" )
+
+   oImage            := TBitmap():Define( cImage )
+   oImage:cResName   := cImage
+
+   ::oImageList:addMasked( oImage, ( 255 + ( 0 * 256 ) + ( 255 * 65536 ) ) )
+
+   nImageList        := len( ::oImageList:aBitmaps ) - 1
+
+   ::fireEvent( "addedImage" )
+
+RETURN ( nImageList )
+
+
+
+static FUNCTION MenuTreeView_addSearchButton( ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   ::fireEvent( "addingSearchButton" )
+
+   ::AddButton( "Buscar", "Bus16", {|| ::oSender:getGetSearch():setFocus() }, "B" )
+
+   ::fireEvent( "addedSearchButton" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_addRefreshButton( ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   ::fireEvent( "addingRefreshButton" )
+
+   ::AddButton( "Refrescar", "Refresh16", {|| ::oSender:RefreshRowSet() }, "R" )
+
+   ::fireEvent( "addedRefreshButton" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_addAppendButton( ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   ::fireEvent( "addingAppendButton" )
+
+   ::AddButton( "Añadir", "New16", {|| ::getController():Append(), ::oSender:Refresh() }, "A", 2 )
+
+   ::fireEvent( "addedAppendButton" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_addDuplicateButton( ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   ::fireEvent( "addingDuplicateButton" )
+
+   ::AddButton( "Duplicar", "Dup16", {|| ::getController():Duplicate(), ::oSender:Refresh() }, "D", 2 )
+
+   ::fireEvent( "addedDuplicateButton" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_addEditButton( ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   ::fireEvent( "addingEditButton" )
+
+   ::AddButton( "Modificar", "Edit16", {|| ::getController():Edit(), ::oSender:Refresh() }, "M", 4 )
+
+   ::fireEvent( "addedEditButton" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_addZoomButton( ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   ::fireEvent( "addingZoomButton" )
+
+   ::AddButton( "Zoom", "Zoom16", {|| ::getController():Zoom(), ::oSender:Refresh() }, "Z", 8 )
+
+   ::fireEvent( "addedZoomButton" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_addDeleteButton( ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   ::fireEvent( "addingDeleteButton" )
+
+   ::AddButton( "Eliminar", "Del16", {|| ::getController():Delete( ::getBrowse():aSelected ), ::oSender:Refresh() }, "E", 16 )
+
+   ::fireEvent( "addedDeleteButton" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_addSelectButton( ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   ::fireEvent( "addingSelectButton" )
+
+   ::AddButton( "Seleccionar [Enter]", "Select16", {|| ::oSender:Select() }, 13 )
+
+   ::fireEvent( "addedSelectButton" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_addExitButton( ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   ::fireEvent( "addingExitButton" )
+
+   ::AddButton( "Salir [ESC]", "End16", {|| ::Exit() }, "S" )
+
+   ::fireEvent( "addedExitButton" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_addCloseButton( ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   ::fireEvent( "addingCloseButton" )
+
+   ::AddButton( "Salir [ESC]", "End16", {|| ::oSender:End() }, "S" )
+
+   ::fireEvent( "addedCloseButton" )
+
+RETURN ( Self )
+
+
+
+
+static FUNCTION MenuTreeView_addPrintSerialButton( cWorkArea ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   ::fireEvent( "addingPrintSerialButton")
+
+   ::oButtonPrint    := ::AddButton( "Imprimir series", "Imp16", {|| ::getController():printSerialDocument() }, nil, 32 )
+
+   ::fireEvent( "addedPrintSerialButton")
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_addPrintButtons( cWorkArea ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   ::fireEvent( "addingPrintButton")
+
+   ::oButtonPrint    := ::AddButton( "Imprimir", "Imp16", {|| ::getController():printDocument( 1 ) }, "I", 32 )
+
+   aeval( ::getControllerDocuments(), {|cFile| ::AddButton( getFileNoExt( cFile ), "Imp16", ::blockPrintDocument( 1, getFileNoExt( cFile ) ), , 32, ::oButtonPrint ) } )
+
+   ::fireEvent( "addedPrintButton")
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_addPreviewButtons( cWorkArea ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   ::fireEvent( "addingPreviewButton")
+
+   ::oButtonPreview  := ::AddButton( "Previsualizar", "Prev116", {|| ::getController():printDocument( 2 ) }, "P", 32 )
+
+      aeval( ::getControllerDocuments(), {|cFile| ::AddButton( getFileNoExt( cFile ), "Prev116", ::blockPrintDocument( 2, getFileNoExt( cFile ) ), , 32, ::oButtonPreview ) } )
+
+   ::fireEvent( "addedPreviewButton")
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_addPdfButtons( cWorkArea ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   ::fireEvent( "addingPdfButton")
+
+   ::oButtonPdf  := ::AddButton( "Pdf", "Doclock16", {|| ::getController():printDocument( 3 ) }, "F", 32 )
+
+      aeval( ::getControllerDocuments(), {|cFile| ::AddButton( getFileNoExt( cFile ), "Doclock16", ::blockPrintDocument( 3, getFileNoExt( cFile ) ), , 32, ::oButtonPdf ) } )
+
+   ::fireEvent( "addedPdfButton")
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_addLabelButton( ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   if !( ::isControllerLabels() )
+      RETURN ( Self )
+   end
+
+   ::fireEvent( "addingLabelButton")
+
+   ::oButtonLabel  := ::AddButton( "Etiquetas", "gc_portable_barcode_scanner_16", {|| ::getController():labelDocument() }, "Q", 32 )
+
+   ::fireEvent( "addedLabelButton")
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_addConfigButton( ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   if !( ::isControllerConfig() )
+      RETURN ( Self )
+   end
+
+   ::fireEvent( "addingConfigButton")
+
+   ::oButtonConfig   := ::AddButton( "Configuraciones", "gc_wrench_16", {|| ::getController():setConfig() }, "N", 32 )
+
+   ::fireEvent( "addedConfigButton")
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_addOthersButton( ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   if !( ::isControllerOthers() )
+      RETURN ( Self )
+   end
+
+   ::fireEvent( "addingOthersButton")
+
+   ::oButtonOthers   := ::AddButton( "Otros", "gc_more_16", {|| ::oButtonOthers:Toggle() }, "O", 32 )
+
+   ::fireEvent( "addedOthersButton")
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_blockPrintDocument( nDevice, cFormato ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+RETURN ( {|| ::getController():printDocument( nDevice, cFormato ) } )
+
+
+
+static FUNCTION MenuTreeView_addDocumentsButton( ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   if !( ::isControllerDocuments() )
+      RETURN ( Self )
+   end
+
+   ::fireEvent( "addingDocumentButton" )
+
+   ::addPrintSerialButton()
+
+   ::addPrintButtons()
+
+   ::addPreviewButtons()
+
+   ::addPdfButtons()
+
+   ::fireEvent( "addedDocumentButton" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION MenuTreeView_onChange( ) ; local Self AS CLASS MenuTreeView := QSelf() AS CLASS MenuTreeView
+
+   local oItem    := ::oTreeView:GetSelected()
+
+   if empty( oItem )
+      RETURN ( nil )
+   end
+
+   if ( oItem:ClassName() <> "TTVITEM" )
+      RETURN ( nil )
+   end
+
+   if ( !hb_isblock( oItem:bAction ) )
+      RETURN ( nil )
+   end
+
+   eval( oItem:bAction )
+
+   ::selectButtonMain()
+
+RETURN ( Self )

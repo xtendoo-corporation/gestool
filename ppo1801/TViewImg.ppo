@@ -1,0 +1,3228 @@
+#line 91 "\fwh1801\include\fivewin.ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 43 ".\.\Prg\TViewImg.prg"
+_HB_CLASS C5ImageView ; function C5ImageView ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "C5ImageView", iif( .T., { @TControl() }, { @HBObject() } ), @C5ImageView() ) ) ;
+
+    _HB_MEMBER { AS LOGICAL lRegistered } ; oClass:AddMultiClsData( "LOGICAL",, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lRegistered"}, .F. )
+
+    _HB_MEMBER { aItems } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aItems"}, .F. )
+    _HB_MEMBER { aCoors } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aCoors"}, .F. )
+    _HB_MEMBER { aGrid } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aGrid"}, .F. )
+
+    _HB_MEMBER { nOption } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nOption"}, .F. )
+    _HB_MEMBER { nFirstItem } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nFirstItem"}, .F. )
+
+    _HB_MEMBER { nClrPaneTile } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nClrPaneTile"}, .F. )
+    _HB_MEMBER { nClrPaneSel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nClrPaneSel"}, .F. )
+    _HB_MEMBER { nClrTextSel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nClrTextSel"}, .F. )
+
+    _HB_MEMBER { nRows } ; oClass:AddMultiData(,, 4 + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRows"}, .F. )
+    _HB_MEMBER { nCols } ; oClass:AddMultiData(,, 4 + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nCols"}, .F. )
+
+    _HB_MEMBER { nxWItem } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nxWItem"}, .F. )
+    _HB_MEMBER { nxHItem } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nxHItem"}, .F. )
+    _HB_MEMBER { nAlignText } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nAlignText"}, .F. )
+
+    _HB_MEMBER { bChanged } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bChanged"}, .F. )
+    _HB_MEMBER { bAction } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bAction"}, .F. )
+
+    _HB_MEMBER { lShowOption } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lShowOption"}, .F. )
+    _HB_MEMBER { bOwnerDraw } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bOwnerDraw"}, .F. )
+
+    _HB_MEMBER { lxVScroll } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lxVScroll"}, .F. )
+    _HB_MEMBER { lxHScroll } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lxHScroll"}, .F. )
+    _HB_MEMBER { lxBorder } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lxBorder"}, .F. )
+
+    _HB_MEMBER { lTitle } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lTitle"}, .F. )
+    _HB_MEMBER { cTitle } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTitle"}, .F. )
+    _HB_MEMBER { lBoxSelection } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lBoxSelection"}, .F. )
+    _HB_MEMBER { aTextMargin } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aTextMargin"}, .F. )
+    _HB_MEMBER { nHTitle } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nHTitle"}, .F. )
+    _HB_MEMBER { lAdjust } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lAdjust"}, .F. )
+
+    _HB_MEMBER { nSideTitle } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nSideTitle"}, .F. )
+
+    _HB_MEMBER { nVSep } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nVSep"}, .F. )
+    _HB_MEMBER { nHSep } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nHSep"}, .F. )
+
+    _HB_MEMBER { cAlphaBmp } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAlphaBmp"}, .F. )
+    _HB_MEMBER { nAlphaLevel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nAlphaLevel"}, .F. )
+
+    _HB_MEMBER New( nTop, nLeft, nWidth, nHeight, oWnd) AS CLASS C5ImageView; oClass:AddMethod( "New", @C5ImageView_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER Redefine( nID, oWnd) AS CLASS C5ImageView; oClass:AddMethod( "Redefine", @C5ImageView_Redefine(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER Display(); oClass:AddInline( "Display", {|Self | ( ( Self ) ), ::BeginPaint(),::Paint(),::EndPaint(),0 }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER Default(); oClass:AddMethod( "Default", @C5ImageView_Default(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER Initiate( hDlg); oClass:AddMethod( "Initiate", @C5ImageView_Initiate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER Paint(); oClass:AddMethod( "Paint", @C5ImageView_Paint(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER EraseBkGnd(); oClass:AddInline( "EraseBkGnd", {|Self, hDC | ( ( Self ) ), 1 }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER Resize( nType, nWidth, nHeight); oClass:AddMethod( "Resize", @C5ImageView_Resize(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER KeyDown( nKey, nFlags); oClass:AddMethod( "KeyDown", @C5ImageView_KeyDown(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GoHome(); oClass:AddMethod( "GoHome", @C5ImageView_GoHome(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GoEnd(); oClass:AddMethod( "GoEnd", @C5ImageView_GoEnd(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GoUp(); oClass:AddMethod( "GoUp", @C5ImageView_GoUp(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GoDown(); oClass:AddMethod( "GoDown", @C5ImageView_GoDown(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GoLeft(); oClass:AddMethod( "GoLeft", @C5ImageView_GoLeft(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GoRight(); oClass:AddMethod( "GoRight", @C5ImageView_GoRight(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER PageUp(); oClass:AddMethod( "PageUp", @C5ImageView_PageUp(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER PageDown(); oClass:AddMethod( "PageDown", @C5ImageView_PageDown(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER Page(); oClass:AddMethod( "Page", @C5ImageView_Page(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER LButtonDown( nRow, nCol); oClass:AddMethod( "LButtonDown", @C5ImageView_LButtonDown(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER LButtonUp( nRow, nCol); oClass:AddMethod( "LButtonUp", @C5ImageView_LButtonUp(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER MouseWheel( nKey, nDelta, nXPos, nYPos); oClass:AddMethod( "MouseWheel", @C5ImageView_MouseWheel(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GetOption( nRow, nCol); oClass:AddMethod( "GetOption", @C5ImageView_GetOption(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GetDlgCode( nLastKey); oClass:AddMethod( "GetDlgCode", @C5ImageView_GetDlgCode(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER AddItem( oItem); oClass:AddMethod( "AddItem", @C5ImageView_AddItem(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER VScrAdjust(); oClass:AddMethod( "VScrAdjust", @C5ImageView_VScrAdjust(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER nLineCount(); oClass:AddMethod( "nLineCount", @C5ImageView_nLineCount(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER nLineVisib(); oClass:AddInline( "nLineVisib", {|Self | ( ( Self ) ), ::nRows }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER nCurLine(); oClass:AddInline( "nCurLine", {|Self | ( ( Self ) ), if( ::nOption <> 0, int( ::nOption / ::nCols ), 0 ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER SetItems( aItems); oClass:AddMethod( "SetItems", @C5ImageView_SetItems(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GetSelection(); oClass:AddInline( "GetSelection", {|Self | ( ( Self ) ), if(::nOption <> 0, ::aItems[::nOption], nil) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER nFactor( hBmp, rc); oClass:AddMethod( "nFactor", @C5ImageView_nFactor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER lVScroll( lNewValue); _HB_MEMBER _lVScroll( lNewValue); oClass:AddMethod( "lVScroll", @C5ImageView_lVScroll(), nScope + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) ) ; oClass:AddMethod( "_lVScroll", @C5ImageView_lVScroll(), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER lBorder( lNewValue); _HB_MEMBER _lBorder( lNewValue); oClass:AddMethod( "lBorder", @C5ImageView_lBorder(), nScope + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) ) ; oClass:AddMethod( "_lBorder", @C5ImageView_lBorder(), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER nHItem( nNewValue); _HB_MEMBER _nHItem( nNewValue); oClass:AddMethod( "nHItem", @C5ImageView_nHItem(), nScope + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) ) ; oClass:AddMethod( "_nHItem", @C5ImageView_nHItem(), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER nWItem( nNewValue); _HB_MEMBER _nWItem( nNewValue); oClass:AddMethod( "nWItem", @C5ImageView_nWItem(), nScope + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) ) ; oClass:AddMethod( "_nWItem", @C5ImageView_nWItem(), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER Goto( nLine); oClass:AddMethod( "Goto", @C5ImageView_Goto(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS C5ImageView ;
+
+
+  static FUNCTION C5ImageView_New( nTop, nLeft, nWidth, nHeight, oWnd ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+  ::nTop          := nTop
+  ::nLeft         := nLeft
+  ::nBottom       := nTop + nHeight
+  ::nRight        := nLeft + nWidth
+  ::oWnd          := oWnd
+
+  ::aItems        := {}
+  ::aCoors        := {}
+  ::aGrid         := {}
+  ::nFirstItem    := 1
+  ::nOption       := 1
+  ::nClrPane      := 16777215
+  ::nClrText      := 0
+  ::nClrTextSel   := 16777215
+  ::nClrPaneSel   := ( 105 + ( 105 * 256 ) + ( 105 * 65536 ) )
+  ::nxWItem       := 120
+  ::nxHItem       := 150
+  ::lShowOption   := .T.
+  ::lTitle        := .T.
+  ::aTextMargin   := {3,3,3,3}
+  ::lAdjust       := .T.
+  ::nHTitle       := 30
+  ::lxVScroll     := .T.
+  ::lxHScroll     := .F.
+  ::lxBorder      := .F.
+  ::nAlignText    := nOr( 0x00000008, 0x00000001, 0x00000020 )
+  ::lBoxSelection := .F.
+  ::nSideTitle    := 2
+
+  ::nVSep         := 0
+  ::nHSep         := 0
+
+  ::cAlphaBmp     := ""
+  ::nAlphaLevel   := 150
+
+  ::nStyle        := nOr( 1073741824, 65536, 268435456, 2097152 )
+  ::nId           := ::GetNewId()
+
+  ::Register( nOR( 1, 2 ) )
+
+  if ! Empty( oWnd:hWnd )
+     ::Create()
+     ::Default()
+     oWnd:AddControl( Self )
+  else
+     oWnd:DefControl( Self )
+  endif
+
+return self
+
+
+  static FUNCTION C5ImageView_Redefine( nID, oWnd ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+  ::oWnd          := oWnd
+  ::nId           := nID
+
+  ::aItems        := {}
+  ::aCoors        := {}
+  ::aGrid         := {}
+  ::nFirstItem    := 1
+  ::nOption       := 1
+  ::nClrPane      := 16777215
+  ::nClrText      := 0
+  ::nClrTextSel   := 16777215
+  ::nClrPaneSel   := ( 105 + ( 105 * 256 ) + ( 105 * 65536 ) )
+  ::nxWItem       := 120
+  ::nxHItem       := 150
+  ::lShowOption   := .T.
+  ::lTitle        := .T.
+  ::aTextMargin   := {3,3,3,3}
+  ::lAdjust       := .T.
+  ::nHTitle       := 30
+  ::lxVScroll     := .T.
+  ::lxHScroll     := .F.
+  ::lxBorder      := .F.
+  ::nAlignText    := nOr( 0x00000000, 0x00000001, 0x00000020 )
+  ::lBoxSelection := .F.
+  ::nSideTitle    := 2
+
+  ::nVSep         := 0
+  ::nHSep         := 0
+
+  ::cAlphaBmp     := ""
+  ::nAlphaLevel   := 150
+
+  ::Register( nOR( 1, 2 ) )
+
+  if oWnd <> nil
+     oWnd:DefControl( Self )
+  endif
+
+return Self
+
+
+  static FUNCTION C5ImageView_Default( ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+  if !lAnd( GetWindowLong( ::hWnd, -16 ), 2097152 )
+     SumarEstilo(::hWnd,2097152)
+     ShowScrollBar(::hWnd, 1, ::lVScroll )
+  endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ::Resize()
+
+return 0
+
+
+  static FUNCTION C5ImageView_Initiate( hDlg ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+   local uValue
+
+   uValue = ::Super:Initiate( hDlg )
+   ::Default()
+
+
+return uValue
+
+
+    static FUNCTION C5ImageView_lVScroll( lNewValue ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+if pcount() > 0
+
+   if lNewValue
+      if !lAnd( GetWindowLong( ::hWnd, -16 ), 2097152 )
+         SumarEstilo(::hWnd, 2097152)
+      endif
+      ::lxVScroll := .F.
+      ShowScrollBar(::hWnd, 1, .F. )
+   else
+      ::lxVScroll := .F.
+      ShowScrollBar(::hWnd, 1, .F. )
+   endif
+   ::Resize()
+endif
+
+return ::lxVScroll
+
+
+
+
+    static FUNCTION C5ImageView_lBorder( lNewValue ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+if pcount() > 0
+   if lNewValue
+      ::lxBorder := .T.
+      SumarEstilo(::hWnd, 8388608)
+   else
+      ::lxBorder := .F.
+      QuitarEstilo(::hWnd, 8388608)
+   endif
+   ::Resize()
+endif
+
+return ::lxBorder
+
+
+
+    static FUNCTION C5ImageView_nHItem( nNewValue ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+if pcount() > 0
+   ::nxHItem := nNewValue
+   ::Resize()
+endif
+
+return ::nxHItem
+
+
+    static FUNCTION C5ImageView_nWItem( nNewValue, lResize ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+If( lResize == nil, lResize := .T., ) ;
+
+if pcount() > 0
+   ::nxWItem      := nNewValue
+   if lResize
+      ::Resize()
+   endif
+endif
+
+return ::nxWItem
+
+
+    static FUNCTION C5ImageView_SetItems( aItems ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+if empty(aItems)
+   return 0
+endif
+
+::aItems    := {}
+
+if valtype(aItems[1]) == "A"
+   aeval( aItems, {|a| ::AddItem( a[1], if(len(a) >= 2,a[2],""), if(len(a) == 3,a[3],"") ) } )
+else
+   aeval( aItems, {|oItem| ::AddItem( oItem ) } )
+endif
+
+::nFirstItem := 1
+::nOption    := 1
+::VScrAdjust()
+::Refresh()
+
+return nil
+
+
+  static FUNCTION C5ImageView_AddItem( p1, p2, p3, p4 ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+if valtype( p1 ) == "C"
+   p1 := C5ImageViewItem():New( p1, p2, p3, p4 )
+endif
+
+aadd(::aItems, p1 )
+
+::Resize()
+
+return p1
+
+
+  static FUNCTION C5ImageView_GetDlgCode( nLastKey ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+   if ! ::oWnd:lValidating
+      if nLastKey == 13 .OR. nLastKey == 9
+         ::oWnd:nLastKey = nLastKey
+      endif
+   endif
+
+return 4
+
+
+  static FUNCTION C5ImageView_Paint( ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+local aInfo
+local hBmp
+local hBmp2
+local hOldFont
+local lDraw
+local n
+local nClrPane
+local nColor
+local nCount
+local nFactor
+local nHImage
+local nHeight
+local nLeft
+local nLen
+local nMode
+local nTop
+local nWImage
+local nWidth
+local oItem
+local rc
+local rc2
+local cText
+
+local hBmpAlpha
+local hBmpAlpha2
+
+aInfo    := ::DispBegin()
+nLen     := len(::aItems)
+nCount   := 1
+
+::aGrid  := aFill( Array( ::nRows * ::nCols ), 0 )
+
+hOldFont := SelectObject(::hDC, if(::oFont == nil, GetStockObject( 17 ), ::oFont:hFont ))
+nMode    := SetBkMode(::hDC, 1 )
+nColor   := SetTextColor(::hDC, ::nClrText )
+
+FillSolidRect( ::hDC, GetClientRect( ::hWnd ), ::nClrPane )
+
+if nLen > 0
+
+   if !Empty( ::cAlphaBmp )
+
+      if At( ".", ::cAlphaBmp ) <> 0
+         hBmpAlpha   := FILoadImg( AllTrim( ::cAlphaBmp ) )
+      else
+         hBmpAlpha   := PalBmpLoad( ::cAlphaBmp )[1]
+      endif
+
+   endif
+
+
+
+   for n := ::nFirstItem to nLen
+
+       lDraw               := .T.
+
+       ::aGrid[ nCount ]   := n
+
+       if ::bOwnerDraw <> nil
+          lDraw            := Eval( ::bOwnerDraw, self, n )
+       endif
+
+       if lDraw
+
+          oItem            := ::aItems[ n ]
+
+          rc               := { ::aCoors[ nCount, 1 ], ::aCoors[ nCount, 2 ], ::aCoors[ nCount, 3 ], ::aCoors[ nCount, 4 ] }
+
+          rc[ 1 ]          += ::nVSep / 2
+          rc[ 2 ]          += ::nHSep / 2
+
+          rc[ 3 ]          -= ::nVSep / 2
+          rc[ 4 ]          -= ::nHSep / 2
+
+          nClrPane := nil
+
+          if oItem:nClrPane <> nil
+             nClrPane      := oItem:nClrPane
+          else
+             if ::nClrPaneTile <> nil
+                nClrPane   := ::nClrPaneTile
+             endif
+          endif
+
+          if nClrPane <> nil
+            if !::lBoxSelection
+               FillSolidRect( ::hDC, rc, nClrPane )
+            endif
+          endif
+
+
+
+
+
+          rc2           := { rc[ 1 ], rc[ 2 ], rc[ 3 ], rc[ 4 ] }
+
+          if ::lTitle
+             rc2[ 3 ]   -= ::nHTitle
+          endif
+
+          if !Empty( oItem:cImage )
+
+             if At( ".", oItem:cImage ) <> 0
+                hBmp    := FILoadImg( AllTrim( oItem:cImage ) )
+             else
+                hBmp    := PalBmpLoad( oItem:cImage )[1]
+             endif
+
+          else
+
+             hBmp       := 0
+
+          end
+
+          if hBmp <> 0
+
+             nHImage    := nBmpHeight( hBmp )
+             nWImage    := nBmpWidth ( hBmp )
+
+
+
+             if ::lAdjust
+
+                nFactor    := ::nFactor( hBmp, rc2 )
+
+                nHeight    := min( nHImage  * nFactor, ( rc2[ 3 ] - rc2[ 1 ] ) )
+                nWidth     := min( nWImage  * nFactor, ( rc2[ 4 ] - rc2[ 2 ] ) )
+
+                nTop       := rc2[ 1 ] + max( ( rc2[ 3 ] - rc2[ 1 ] ) / 2 - ( nHeight / 2 ), 0 )
+                nLeft      := rc2[ 2 ] + max( ( rc2[ 4 ] - rc2[ 2 ] ) / 2 - ( nWidth  / 2 ), 0 )
+
+                rc2        := { nTop, nLeft, nTop + nHeight, nLeft + nWidth }
+
+             else
+
+                nTop       := rc2[ 1 ] + max( ( rc2[ 3 ] - rc2[ 1 ] ) / 2 - ( nHImage / 2 ), 0 ) + 1
+                nLeft      := rc2[ 2 ] + max( ( rc2[ 4 ] - rc2[ 2 ] ) / 2 - ( nWImage / 2 ), 0 ) + 1
+
+                nHeight    := nHImage
+                nWidth     := nWImage
+
+             endif
+
+             if HasAlpha( hBmp )
+
+                if ::lAdjust
+                   hBmp2   := Resizebmp( hBmp, rc2[ 4 ] - rc2[ 2 ], rc2[ 3 ] - rc2[ 1 ] )
+                   DeleteObject( hBmp )
+                   hBmp    := hBmp2
+                endif
+
+                ABPaint( ::hDC, nLeft, nTop, hBmp, 255 )
+
+             else
+
+                DrawBitmapEx( ::hDC, hBmp, nTop, nLeft, nWidth, nHeight, 13369376 )
+
+             endif
+
+             DeleteObject( hBmp )
+
+          endif
+
+          if ( n == ::nOption ) .AND. ::lShowOption .AND. ::lBoxSelection
+            Box( ::hDC, rc, nClrPane )
+          endif
+
+          cText      := oItem:cText
+
+          if Empty( cText ) .AND. !empty( oItem:cImage )
+            cText    := cFileName( oItem:cImage )
+          endif
+
+          if !Empty( cText )
+
+
+
+
+             rc      := {  ::aCoors[ nCount, 1 ] + ::aTextMargin[ 1 ], ::aCoors[ nCount, 2 ] + ::aTextMargin[ 2 ], ::aCoors[ nCount, 3 ] - ::aTextMargin[ 3 ], ::aCoors[ nCount, 4 ] - ::aTextMargin[ 4 ]}
+
+             if ::nSideTitle == 1
+                rc[3] := rc[1] + ::nHTitle
+             elseif ::nSideTitle == 2
+                rc[1] := rc[3] - ::nHTitle
+             endif
+
+             SetTextColor( ::hDC, nColor )
+             nColor  := SetTextColor(::hDC, ::nClrTextSel )
+
+
+
+             if !Empty( hBmpAlpha ) .AND. HasAlpha( hBmpAlpha )
+
+                hBmpAlpha2 := Resizebmp( hBmpAlpha, rc[ 4 ] - rc[ 2 ], rc[ 3 ] - rc[ 1 ] )
+                DeleteObject( hBmpAlpha )
+                hBmpAlpha  := hBmpAlpha2
+
+                ABPaint( ::hDC, rc[ 2 ], rc[ 1 ], hBmpAlpha, ::nAlphaLevel )
+
+             endif
+
+
+
+             DrawText( ::hDC, cText, rc, ::nAlignText )
+
+             SetTextColor( ::hDC, nColor )
+             nColor  := SetTextColor(::hDC, ::nClrText )
+
+          endif
+
+       endif
+
+       nCount++
+
+       if nCount > len(::aCoors)
+          exit
+       endif
+
+   next
+
+   if !Empty( hBmpAlpha )
+      DeleteObject( hBmpAlpha )
+   end
+
+endif
+
+SetTextColor(::hDC, nColor )
+SetBkMode(::hDC, nMode )
+SelectObject(::hDC, hOldFont )
+
+::DispEnd( aInfo )
+
+return 0
+
+
+  static FUNCTION C5ImageView_Resize( nType, nWidth, nHeight ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+local rc
+local nHRow
+local nWCol
+local nTop, nLeft, nBottom, nRight
+local nCount := 1
+local nR, nC
+local nWOffset
+local nHOffset
+
+rc      := GetClientRect(::hWnd)
+rc      := {rc[1],rc[2],rc[3],rc[4]}
+
+
+
+::nRows := max( int( ( rc[3] - rc[1] ) / ( ::nHItem ) ), 1 )
+::nCols := max( int( ( rc[4] - rc[2] ) / ( ::nWItem ) ), 1 )
+
+nHOffset := int( ( ( rc[3] - rc[1] ) - ( ::nHItem * ::nRows ) ) / ::nRows )
+nWOffset := int( ( ( rc[4] - rc[2] ) - ( ::nWItem * ::nCols ) ) / ::nCols )
+
+
+
+
+
+::aCoors := array( ::nRows * ::nCols )
+
+for nR := 1 to ::nRows
+
+    nTop     := ( nR - 1 ) * ( ::nHItem + nHOffset ) + rc[1]
+    nBottom  := nTop + ::nHItem + nHOffset
+
+    for nC := 1 to ::nCols
+        nLeft               := ( nC - 1 ) * ( ::nWItem + rc[2] + nWOffset )
+        nRight              := nLeft + ::nWItem + nWOffset
+        ::aCoors[ nCount ]  := { nTop, nLeft, nBottom, nRight }
+        nCount++
+    next
+
+next
+
+::VScrAdjust()
+
+return ::Super:Resize( nType, nWidth, nHeight )
+
+
+  static FUNCTION C5ImageView_KeyDown( nKey, nFlags ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+      do case
+         case nKey == 13 .OR. nKey == 32
+              if ::nOption <> 0
+                 if ::bAction <> nil
+                    eval(::bAction, self )
+                 endif
+              endif
+
+         case nKey == 36
+              ::GoHome()
+
+         case nKey == 35
+              ::GoEnd()
+
+         case nKey == 38
+
+              ::oVScroll:GoUp()
+
+         case nKey == 40
+
+              ::oVScroll:GoDown()
+
+         case nKey == 37
+              ::GoLeft()
+
+         case nKey == 39
+              ::GoRight()
+
+         case nKey == 33
+
+              ::oVScroll:PageUp()
+
+         case nKey == 34
+
+              ::oVScroll:PageDown()
+
+         otherwise
+              return ::Super:KeyDown( nKey, nFlags )
+      endcase
+
+return 0
+
+
+    static FUNCTION C5ImageView_GoHome( ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+  ::nOption    := 1
+  ::nFirstItem := 1
+
+  if ::bChanged <> nil
+     eval( ::bChanged, ::GetSelection() )
+  endif
+
+  ::Refresh(.T.)
+
+return 0
+
+
+    static FUNCTION C5ImageView_GoEnd( ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+  ::nOption    := len(::aItems)
+  ::nFirstItem := max(1, len(::aItems)- (::nCols*::nRows)+1)
+
+   if ::bChanged <> nil
+      eval( ::bChanged, ::GetSelection() )
+   endif
+
+  ::Refresh(.T.)
+
+return 0
+
+
+
+
+    static FUNCTION C5ImageView_PageUp( ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+  ::nOption    := max(1, ::nOption    - (::nCols*::nRows))
+  ::nFirstItem := max(1, ::nFirstItem - (::nCols*::nRows))
+
+   if ::bChanged <> nil
+      eval( ::bChanged, ::GetSelection() )
+   endif
+
+  ::Refresh(.T.)
+
+return 0
+
+
+    static FUNCTION C5ImageView_PageDown( ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+  ::nOption    := min(len(::aItems), ::nOption    + (::nCols*::nRows))
+  ::nFirstItem := min(len(::aItems), ::nFirstItem + (::nCols*::nRows))
+
+   if ::bChanged <> nil
+      eval( ::bChanged, ::GetSelection() )
+   endif
+
+  ::Refresh(.T.)
+
+return 0
+
+
+
+   static FUNCTION C5ImageView_Page( nLine ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+   ::oVScroll:SetPos( nLine )
+   ::Goto( nLine )
+
+   if ::bChanged <> nil
+      eval( ::bChanged, ::GetSelection() )
+   endif
+
+
+return nil
+
+
+
+    static FUNCTION C5ImageView_Goto( nLine ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+::nFirstItem := (nLine-1)*::nCols + 1
+
+::Refresh()
+
+
+
+return nil
+
+
+
+    static FUNCTION C5ImageView_GoLeft( ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+if !::lShowOption
+   return ::PageUp()
+endif
+
+::nOption := max( 1, ::nOption-1)
+
+if ::nOption < ::nFirstItem
+   ::nFirstItem := max( 1, ::nFirstItem - ::nCols )
+endif
+
+   if ::bChanged <> nil
+      eval( ::bChanged, ::GetSelection() )
+   endif
+
+
+::Refresh()
+
+return 0
+
+
+    static FUNCTION C5ImageView_GoRight( ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+if !::lShowOption
+   return ::PageDown()
+endif
+
+::nOption := min( len(::aItems), ::nOption+1)
+if ::nOption - ::nFirstItem >= ::nRows*::nCols
+   ::nFirstItem := min( len(::aItems), ::nFirstItem+::nCols)
+endif
+
+   if ::bChanged <> nil
+      eval( ::bChanged, ::GetSelection() )
+   endif
+
+
+::Refresh()
+
+
+return 0
+
+
+
+    static FUNCTION C5ImageView_GoUp( ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+if !::lShowOption
+   return ::PageUp()
+endif
+
+if ::nLineCount == 1
+   return 0
+endif
+
+::nOption := max( 1, ::nOption-::nCols)
+
+if ::nOption < ::nFirstItem
+   ::nFirstItem := max( 1, ::nFirstItem - ::nCols )
+endif
+
+if ::bChanged <> nil
+   eval( ::bChanged, ::GetSelection() )
+endif
+
+::Refresh()
+
+
+return 0
+
+
+    static FUNCTION C5ImageView_GoDown( ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+if !::lShowOption
+   return ::PageDown()
+endif
+
+if ::nLineCount == 1
+   return 0
+endif
+
+::nOption := min( len(::aItems), ::nOption+::nCols)
+
+if ::nOption - ::nFirstItem >= ::nRows*::nCols
+   ::nFirstItem := min( len(::aItems), ::nFirstItem+::nCols)
+endif
+
+if ::bChanged <> nil
+   eval( ::bChanged, ::GetSelection() )
+endif
+::Refresh()
+
+return 0
+
+
+   static FUNCTION C5ImageView_LButtonDown( nRow, nCol ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+local nOldOption  := ::nOption
+
+::nOption         := ::GetOption( nRow, nCol )
+
+
+
+if ::nOption <> 0
+
+   if !Empty( ::oVScroll )
+      ::oVScroll:SetPos( ::nCurLine() )
+   end
+
+   if ::bChanged <> nil .AND. ::nOption <> nOldOption
+      eval( ::bChanged, ::GetSelection() )
+   endif
+
+   if ::bAction <> nil
+      eval(::bAction, self )
+   endif
+
+   ::nOption := 0
+
+endif
+
+return 0
+
+
+static FUNCTION C5ImageView_LButtonUp( nRow, nCol ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return 0
+
+
+ static FUNCTION C5ImageView_MouseWheel( nKey, nDelta, nXPos, nYPos ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+if !Empty( ::oVScroll )
+   if nDelta > 0
+      ::oVScroll:GoUp()
+   else
+      ::oVScroll:GoDown()
+   endif
+end
+
+return nil
+
+
+return 0
+
+
+
+  static FUNCTION C5ImageView_GetOption( nRow, nCol ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+local n
+local nCell := 0
+
+
+
+for n := 1 to len(::aCoors)
+
+    if PtInRect( nRow, nCol, ::aCoors[n] )
+       nCell := n
+       exit
+    endif
+next
+
+if nCell == 0
+   return 0
+endif
+
+nCell := ::nFirstItem + nCell -1
+
+if nCell <= 0 .OR. nCell > len(::aItems)
+   return 0
+endif
+
+return nCell
+
+
+
+
+   static FUNCTION C5ImageView_VScrAdjust( ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+
+local nRes
+
+   if !Empty( ::oVScroll )
+
+   if ::lVScroll
+
+      if ::nLineCount == 1
+         ::oVScroll:SetRange( 0, 1 )
+         SetScrollInfo( ::hWnd, 1, -1, .T. )
+         ShowScrollBar(::hWnd, 1, .F. )
+      else
+         ShowScrollBar(::hWnd, 1, .F. )
+         nRes := ::nLineCount + ::nLineVisib - 1
+         ::oVScroll:SetRange( 1, nRes )
+         SetScrollInfo( ::hWnd, 1, ::nLineVisib, .T. )
+      endif
+
+   endif
+
+   end
+
+return nil
+
+
+   static FUNCTION C5ImageView_nLineCount( ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+local nLines
+local nLen := len(::aItems)
+
+
+if nLen == 0
+   return 0
+endif
+
+if ::lShowOption
+   nLines := int(nLen / ::nCols ) + if( nLen % ::nCols > 0, 1, 0)
+else
+   nLines := int(nLen / (::nRows*::nCols)) + if( nLen % (::nRows*::nCols) > 0, 1, 0)
+endif
+
+return nLines
+
+
+  static FUNCTION C5ImageView_nFactor( hImage, rc ) ; local Self AS CLASS C5ImageView := QSelf() AS CLASS C5ImageView
+
+Local nHImage
+Local nWImage
+local nFactor
+
+nHImage := nBmpHeight( hImage )
+nWImage := nBmpWidth( hImage )
+
+if nHImage > nWImage
+   nFactor := (rc[3]-rc[1]) / nHImage
+else
+   nFactor := (rc[4]-rc[2]) / nWImage
+endif
+
+
+
+return nFactor
+
+
+
+
+
+
+
+
+_HB_CLASS C5ImageViewItem ; function C5ImageViewItem ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "C5ImageViewItem", iif( .F., { }, { @HBObject() } ), @C5ImageViewItem() ) ) ;
+
+   _HB_MEMBER { cImage } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cImage"}, .F. )
+   _HB_MEMBER { cText } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cText"}, .F. )
+   _HB_MEMBER { Cargo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"Cargo"}, .F. )
+   _HB_MEMBER { bAction } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bAction"}, .F. )
+   _HB_MEMBER { nClrPane } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nClrPane"}, .F. )
+
+   _HB_MEMBER New( cImage, cText, nClrPane, Cargo) AS CLASS C5ImageViewItem; oClass:AddMethod( "New", @C5ImageViewItem_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cFileName(); oClass:AddMethod( "cFileName", @C5ImageViewItem_cFileName(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Add(); oClass:AddInline( "Add", {|Self, aItems | ( ( Self ) ), ( aAdd( aItems, Self ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS C5ImageViewItem ;
+
+
+   static FUNCTION C5ImageViewItem_New( cImage, cText, nClrPane, Cargo ) ; local Self AS CLASS C5ImageViewItem := QSelf() AS CLASS C5ImageViewItem
+
+
+   ::cImage   := cImage
+   ::cText    := cText
+   ::nClrPane := nClrPane
+   ::Cargo    := Cargo
+
+return self
+
+
+   static FUNCTION C5ImageViewItem_cFileName( ) ; local Self AS CLASS C5ImageViewItem := QSelf() AS CLASS C5ImageViewItem
+
+
+local n := RAt( "\", ::cImage )
+
+return if( n > 0, substr( ::cImage, n+1 ), ::cImage )
+
+
+
+Function SaveImage( cFileIn, cFileOut, nWidth, nHeight )
+
+   local hDib
+   local cTempFile
+   local lSaved
+   local hBitmap
+   local hBmp
+   local cExt     := cFileExt(cFileOut)
+   local nFormat  := 0
+
+
+
+
+   if Upper(cExt) == "JPG"
+      nFormat := 2
+   elseif Upper(cExt) == "PNG"
+      nFormat := 13
+   endif
+
+   hBmp        := FiLoadImg( cFileIn )
+   hBitmap     := ResizeBmpEx( hBmp, nWidth, nHeight )
+
+   hDib        := DibFromBitmap( hBitmap )
+   cTempFile   := cTempFile()
+
+   DibWrite( cTempFile, hDib )
+   GloBalFree( hDib )
+   DeleteObject( hBmp )
+   DeleteObject( hBitmap )
+
+   lSaved      := FIConvertImageFile( cTempFile, cFileOut, nFormat, 100 )
+
+   FErase( cTempFile )
+
+return lSaved
+
+
+
+Function ResizeBmpEx( hBmp, nWidth, nHeight  )
+
+   local hBmpMem
+   local hOldBmp
+   local hDCMem
+   local hDCMem2
+   local hDC
+
+   If( nWidth == nil, nWidth := nBmpWidth( hBmp ), ) ;
+   If( nHeight == nil, nHeight := nBmpHeight( hBmp ), ) ;
+
+   hDc               := CreateDC( "DISPLAY",0,0,0)
+   hDCMem            := CreateCompatibleDC( hDC )
+   hDCMem2           := CreateCompatibleDC( hDC )
+   hOldBmp           := SelectObject( hDCMem2, hBmp )
+   hBmpMem           := CreateCompatibleBitmap( hDC, nWidth, nHeight )
+   hOldBmp           := SelectObject( hDCMem, hBmpMem )
+
+   SetStretchBltMode( hDCMem, 3 )
+   StretchBlt( hDCMem, 0, 0, nWidth, nHeight, hDCMem2, 0, 0, nBmpWidth( hBmp ), nBmpHeight( hBmp ), 13369376 )
+
+   SelectObject( hDCMem, hOldBmp )
+   SelectObject( hDCMem2, hBmp )
+
+   DeleteDC( hDCMem )
+   DeleteDC( hDCMem2 )
+   DeleteDC( hDC )
+
+return hBmpMem
+
+
+
+#pragma BEGINDUMP
+
+#include <windows.h>
+#include "hbapi.h"
+
+void DrawBitmapEx( HDC hdc, HBITMAP hbm, WORD wCol, WORD wRow, WORD wWidth,
+                 WORD wHeight, DWORD dwRaster )
+{
+    HDC       hDcMem, hDcMemX;
+    BITMAP    bm, bmx;
+    HBITMAP   hBmpOld, hbmx, hBmpOldX;
+
+    if( !hdc || !hbm )
+       return;
+
+    hDcMem  = CreateCompatibleDC( hdc );
+    hBmpOld = ( HBITMAP ) SelectObject( hDcMem, hbm );
+
+    if( ! dwRaster )
+       dwRaster = SRCCOPY;
+
+    GetObject( hbm, sizeof( BITMAP ), ( LPSTR ) &bm );
+
+    if( ! wWidth || ! wHeight )
+       BitBlt( hdc, wRow, wCol, bm.bmWidth, bm.bmHeight, hDcMem, 0, 0, dwRaster );
+    else
+    {
+       hDcMemX          = CreateCompatibleDC( hdc );
+       bmx              = bm;
+       bmx.bmWidth      = wWidth;
+       bmx.bmHeight     = wHeight;
+
+       bmx.bmWidthBytes = ( bmx.bmWidth * bmx.bmBitsPixel + 15 ) / 16 * 2;
+
+       hbmx = CreateBitmapIndirect( &bmx );
+
+       SetStretchBltMode (hDcMemX, COLORONCOLOR);
+       hBmpOldX = ( HBITMAP ) SelectObject( hDcMemX, hbmx );
+       StretchBlt( hDcMemX, 0, 0, wWidth, wHeight, hDcMem, 0, 0,
+                   bm.bmWidth, bm.bmHeight, dwRaster );
+       BitBlt( hdc, wRow, wCol, wWidth, wHeight, hDcMemX, 0, 0, dwRaster );
+       SelectObject( hDcMemX, hBmpOldX );
+       DeleteDC( hDcMemX );
+       DeleteObject( hbmx );
+    }
+
+    SelectObject( hDcMem, hBmpOld );
+    DeleteDC( hDcMem );
+}
+HB_FUNC_STATIC( DRAWBITMAPEX ) //  hDC, hBitmap, nRow, nCol, nWidth, nHeight, nRaster
+{
+   DrawBitmapEx( ( HDC ) hb_parnl( 1 ), ( HBITMAP ) hb_parnl( 2 ),
+               hb_parni( 3 ), hb_parni( 4 ),
+               hb_parni( 5 ), hb_parni( 6 ), hb_parnl( 7 ) );
+}
+
+HB_FUNC_STATIC( FILLSOLIDRECT )
+{
+    RECT rct;
+    COLORREF nColor;
+    HPEN hPen, hOldPen;
+    HDC hDC = ( HDC ) hb_parnl( 1 );
+    rct.top    = hb_parvni( 2, 1 );
+    rct.left   = hb_parvni( 2, 2 );
+    rct.bottom = hb_parvni( 2, 3 );
+    rct.right  = hb_parvni( 2, 4 );
+
+    nColor = SetBkColor( hDC, hb_parnl( 3 ) );
+    ExtTextOut( hDC, 0, 0, ETO_OPAQUE, &rct, NULL, 0, NULL);
+    SetBkColor( hDC, nColor );
+
+    if( hb_pcount()  > 3 )
+    {
+       hPen = CreatePen( PS_SOLID, 1,(COLORREF)hb_parnl( 4 ));
+       hOldPen = (HPEN) SelectObject( hDC, hPen );
+       MoveToEx( hDC, rct.left, rct.top, NULL );
+       LineTo( hDC, rct.right-3, rct.top );
+       LineTo( hDC, rct.right-3, rct.bottom );
+       LineTo( hDC, rct.left, rct.bottom );
+       LineTo( hDC, rct.left, rct.top );
+       SelectObject( hDC, hOldPen );
+       DeleteObject( hPen );
+    }
+}
+
+HB_FUNC_STATIC( PTINRECT )
+{
+   POINT pt;
+   RECT  rct;
+
+   pt.y = hb_parnl( 1 );
+   pt.x = hb_parnl( 2 );
+
+   rct.top    = hb_parvni( 3, 1 );
+   rct.left   = hb_parvni( 3, 2 );
+   rct.bottom = hb_parvni( 3, 3 );
+   rct.right  = hb_parvni( 3, 4 );
+
+   hb_retl( PtInRect( &rct, pt ) );
+}
+
+HB_FUNC_STATIC( SHOWSCROLLBAR )
+{
+   hb_retl( ShowScrollBar( (HWND)hb_parnl(1), hb_parni(2), hb_parl( 3 ) ) );
+}
+
+//#define SB_HORZ             0
+//#define SB_VERT             1
+//#define SB_CTL              2
+//#define SB_BOTH             3
+
+HB_FUNC_STATIC( SETSTRETCHBLTMODE )
+{
+    hb_retni( SetStretchBltMode( ( HDC ) hb_parnl( 1 ), 4 ));
+}
+
+HB_FUNC_STATIC( QUITARESTILO )
+{
+   HWND hWnd = (HWND) hb_parnl( 1 );
+   DWORD dwStyle = GetWindowLong( hWnd, GWL_STYLE );
+   dwStyle &= ~ ((DWORD)hb_parnl(2));
+   SetWindowLong( hWnd, GWL_STYLE, dwStyle );
+   SetWindowPos( hWnd,0,0,0,0,0, SWP_NOMOVE | SWP_NOSIZE | SWP_NOZORDER | SWP_FRAMECHANGED | SWP_DRAWFRAME);
+}
+
+HB_FUNC_STATIC( SUMARESTILO )
+{
+   HWND hWnd = (HWND) hb_parnl( 1 );
+   DWORD dwStyle = GetWindowLong( hWnd, GWL_STYLE );
+   dwStyle |= ((DWORD)hb_parnl(2));
+   SetWindowLong( hWnd, GWL_STYLE, dwStyle );
+   SetWindowPos( hWnd,0,0,0,0,0, SWP_NOMOVE | SWP_NOSIZE | SWP_NOZORDER | SWP_FRAMECHANGED | SWP_DRAWFRAME);
+}
+
+
+HB_FUNC_STATIC( BOX )
+{
+      HDC hDC = (HDC) hb_parnl( 1 );
+      HPEN hPen;
+      HPEN hOldPen;
+      RECT rc;
+
+      if( hb_pcount() > 3 )
+      {
+         hPen = CreatePen( hb_parni(4),1, (COLORREF)hb_parnl( 3 ));
+      }
+      else
+      {
+         hPen = CreatePen( PS_SOLID,1, (COLORREF)hb_parnl( 3 ));
+      }
+      rc.top    = hb_parvni( 2, 1);
+      rc.left   = hb_parvni( 2, 2);
+      rc.bottom = hb_parvni( 2, 3);
+      rc.right  = hb_parvni( 2, 4);
+      hOldPen = (HPEN) SelectObject( hDC, hPen );
+      MoveToEx( hDC, rc.left, rc.top, NULL );
+      LineTo( hDC, rc.right, rc.top );
+      LineTo( hDC, rc.right, rc.bottom );
+      LineTo( hDC, rc.left, rc.bottom );
+      LineTo( hDC, rc.left, rc.top );
+      SelectObject( hDC, hOldPen );
+      DeleteObject( hPen );
+}
+
+
+#pragma ENDDUMP

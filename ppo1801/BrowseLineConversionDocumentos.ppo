@@ -1,0 +1,2599 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 9 ".\.\Prg\BrowseLineConversionDocumentos.prg"
+_HB_CLASS TBrowseLineConversionDocumentos ; function TBrowseLineConversionDocumentos ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TBrowseLineConversionDocumentos", iif( .F., { }, { @HBObject() } ), @TBrowseLineConversionDocumentos() ) ) ;
+
+   _HB_MEMBER { oSender } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSender"}, .F. )
+
+   _HB_MEMBER { oDocumentLines } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDocumentLines"}, .F. )
+
+   _HB_MEMBER { oSearchLines } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSearchLines"}, .F. )
+   _HB_MEMBER { cSearchLines } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSearchLines"}, .F. )
+
+   _HB_MEMBER { oSortLines } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSortLines"}, .F. )
+   _HB_MEMBER { cSortLines } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSortLines"}, .F. )
+   _HB_MEMBER { aSortLines } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aSortLines"}, .F. )
+
+   _HB_MEMBER { oTitle } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTitle"}, .F. )
+   _HB_MEMBER { cTitle } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTitle"}, .F. )
+
+   _HB_MEMBER { oBrwLines } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwLines"}, .F. )
+
+   _HB_MEMBER { oColumnNumeroDocumento } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oColumnNumeroDocumento"}, .F. )
+
+   _HB_MEMBER { aPropertiesTable } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aPropertiesTable"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @TBrowseLineConversionDocumentos_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getView(); oClass:AddInline( "getView", {|Self | ( ( Self ) ), ( ::oSender:nView ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getPictureRound(); oClass:AddInline( "getPictureRound", {|Self | ( ( Self ) ), ( ::oSender:cPictureRound ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getDecimalPrice(); oClass:AddInline( "getDecimalPrice", {|Self | ( ( Self ) ), ( ::oSender:nDecimalPrice ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getRoundDecimalPrice(); oClass:AddInline( "getRoundDecimalPrice", {|Self | ( ( Self ) ), ( ::oSender:nRoundDecimalPrice ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Dialog(); oClass:AddMethod( "Dialog", @TBrowseLineConversionDocumentos_Dialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER buildBrowse(); oClass:AddMethod( "buildBrowse", @TBrowseLineConversionDocumentos_buildBrowse(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER buildColumnsBrowse(); oClass:AddMethod( "buildColumnsBrowse", @TBrowseLineConversionDocumentos_buildColumnsBrowse(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER buildOrdersColumns(); oClass:AddMethod( "buildOrdersColumns", @TBrowseLineConversionDocumentos_buildOrdersColumns(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER setTitle(); oClass:AddInline( "setTitle", {|Self, cTitle | ( ( Self ) ), ( ::cTitle := cTitle ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER setName(); oClass:AddInline( "setName", {|Self, cName | ( ( Self ) ), ( if( !empty( ::oBrwLines ), ::oBrwLines:cName := cName, ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER load(); oClass:AddInline( "load", {|Self | ( ( Self ) ), ( if( !empty( ::oBrwLines ), ::oBrwLines:Load(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER addCol(); oClass:AddInline( "addCol", {|Self | ( ( Self ) ), ( if( !empty( ::oBrwLines ), ::oBrwLines:addCol(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER insCol(); oClass:AddInline( "insCol", {|Self, nPos | ( ( Self ) ), ( if( !empty( ::oBrwLines ), ::oBrwLines:insCol( nPos ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER goTop(); oClass:AddInline( "goTop", {|Self | ( ( Self ) ), ( if( !empty( ::oBrwLines ), ::oBrwLines:goTop(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER Refresh(); oClass:AddInline( "Refresh", {|Self | ( ( Self ) ), ( if( !empty( ::oBrwLines ), ::oBrwLines:Refresh(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER setArray(); oClass:AddInline( "setArray", {|Self | ( ( Self ) ), ( if( !empty( ::oBrwLines ), ::oBrwLines:setArray( ::oDocumentLines:getLines(), .T., , .F. ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER Reset(); oClass:AddMethod( "Reset", @TBrowseLineConversionDocumentos_Reset(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER changeSearchLines(); oClass:AddInline( "changeSearchLines", {|Self | ( ( Self ) ), ( if( !empty( ::oBrwLines ), ::oBrwLines:Seek( alltrim( ::cSearchLines ) ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER getDocument(); oClass:AddInline( "getDocument", {|Self | ( ( Self ) ), ( alltrim( ::cDocument ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER selectLine(); oClass:AddMethod( "selectLine", @TBrowseLineConversionDocumentos_selectLine(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER unSelectLine(); oClass:AddMethod( "unSelectLine", @TBrowseLineConversionDocumentos_unSelectLine(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER toogleSelectLine(); oClass:AddMethod( "toogleSelectLine", @TBrowseLineConversionDocumentos_toogleSelectLine(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER selectAllLine(); oClass:AddInline( "selectAllLine", {|Self | ( ( Self ) ), ( ::oDocumentLines:selectAll(),       ::oBrwLines:Refresh() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER unselectAllLine(); oClass:AddInline( "unselectAllLine", {|Self | ( ( Self ) ), ( ::oDocumentLines:unSelectAll(),     ::oBrwLines:Refresh() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getLinesDocument(); oClass:AddInline( "getLinesDocument", {|Self | ( ( Self ) ), ( ::oDocumentLines:getLines() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER propertiesLine(); oClass:AddMethod( "propertiesLine", @TBrowseLineConversionDocumentos_propertiesLine(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER changeUnits( oColumn, uValue, nKey); oClass:AddMethod( "changeUnits", @TBrowseLineConversionDocumentos_changeUnits(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER clickOnHeader(); oClass:AddMethod( "clickOnHeader", @TBrowseLineConversionDocumentos_clickOnHeader(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER seekLine(); oClass:AddMethod( "seekLine", @TBrowseLineConversionDocumentos_seekLine(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER changeSortLines(); oClass:AddMethod( "changeSortLines", @TBrowseLineConversionDocumentos_changeSortLines(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER injectValuesBrowseProperties(); oClass:AddMethod( "injectValuesBrowseProperties", @TBrowseLineConversionDocumentos_injectValuesBrowseProperties(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER saveValuesBrowseProperties(); oClass:AddMethod( "saveValuesBrowseProperties", @TBrowseLineConversionDocumentos_saveValuesBrowseProperties(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setValuesBrowseProperties(); oClass:AddMethod( "setValuesBrowseProperties", @TBrowseLineConversionDocumentos_setValuesBrowseProperties(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setBrowseLinesDocument(); oClass:AddMethod( "setBrowseLinesDocument", @TBrowseLineConversionDocumentos_setBrowseLinesDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getDocumentLine(); oClass:AddInline( "getDocumentLine", {|Self, nPosition | ( ( Self ) ), ( ::oDocumentLines:getLine( if( !empty( nPosition ), nPosition, ::oBrwLines:nArrayAt ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TBrowseLineConversionDocumentos ;
+
+
+
+static FUNCTION TBrowseLineConversionDocumentos_New( oSender ) ; local Self AS CLASS TBrowseLineConversionDocumentos := QSelf() AS CLASS TBrowseLineConversionDocumentos
+
+   ::oSender            := oSender
+
+   ::oDocumentLines     := DocumentLines():New( Self )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TBrowseLineConversionDocumentos_Dialog( oDlg ) ; local Self AS CLASS TBrowseLineConversionDocumentos := QSelf() AS CLASS TBrowseLineConversionDocumentos
+
+
+
+
+   ::oTitle := TSay():ReDefine( 300, {||      ::cTitle}, oDlg,,,, .F.,, .F., .F., )
+
+
+
+
+
+
+   ::oSearchLines := TGetHlp():ReDefine( 200, { | u | If( PCount()==0, ::cSearchLines, ::cSearchLines:= u ) }, oDlg,, "@!",,,,,,, .F.,,, .F., .F.,,,,,, nil, "Find",, )
+
+   ::oSearchLines:bChange           := {|| ::changeSearchLines() }
+   ::oSearchLines:bValid            := {|| ::oSearchLines:varPut( space( 100 ) ), .T. }
+
+
+
+
+
+   ::oSortLines := TComboBox():ReDefine( 210, { | u | If( PCount()==0, ::cSortLines, ::cSortLines:= u ) }, ::aSortLines, oDlg,,,,,,, .F.,,,,,,, "::oSortLines",,,,,,, )
+
+   ::oSortLines:bChange             := {|| ::changeSortLines() }
+
+
+
+
+   TButton():ReDefine( 500, {||( ::selectLine() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 510, {||( ::unselectLine() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 520, {||( ::selectAllLine() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 530, {||( ::unselectAllLine() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 540, {||( ::propertiesLine() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+   ::buildBrowse( oDlg )
+
+   ::buildColumnsBrowse()
+
+   ::buildOrdersColumns()
+
+   ::clickOnHeader( ::oColumnNumeroDocumento )
+
+RETURN ( Self )
+
+
+
+
+
+
+static FUNCTION TBrowseLineConversionDocumentos_buildBrowse( oDlg ) ; local Self AS CLASS TBrowseLineConversionDocumentos := QSelf() AS CLASS TBrowseLineConversionDocumentos
+
+   ::oBrwLines                      := IXBrowse():New( oDlg )
+
+   ::oBrwLines:lAutoSort            := .F.
+   ::oBrwLines:bClrSel              := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+   ::oBrwLines:bClrSelFocus         := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+   ::oBrwLines:nMarqueeStyle        := 6
+   ::oBrwLines:cName                := "Browse.Lineas." + ::ClassName()
+
+   ::oBrwLines:lFooter              := .T.
+
+   ::setBrowseLinesDocument()
+
+   ::oBrwLines:CreateFromResource( 100 )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TBrowseLineConversionDocumentos_buildColumnsBrowse( ) ; local Self AS CLASS TBrowseLineConversionDocumentos := QSelf() AS CLASS TBrowseLineConversionDocumentos
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Seleccionando"
+      :bEditValue                   := {|| ::getDocumentLine():isSelectLine() }
+      :nWidth                       := 20
+      :SetCheck( { "Sel16", "Nil16" } )
+   end
+
+   ::oColumnNumeroDocumento               := ::oBrwLines:AddCol()
+   ::oColumnNumeroDocumento:cHeader       := "Número"
+   ::oColumnNumeroDocumento:Cargo         := "getNumeroDocumento"
+   ::oColumnNumeroDocumento:bEditValue    := {|| ::getDocumentLine():getNumeroDocumento() }
+   ::oColumnNumeroDocumento:nWidth        := 80
+   ::oColumnNumeroDocumento:bLClickHeader := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+   ::oColumnNumeroDocumento:bLDClickData  := {|| ::toogleSelectLine() }
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Fecha"
+      :Cargo                        := "getHeaderDate"
+      :bEditValue                   := {|| ::getDocumentLine():getHeaderDate() }
+      :nWidth                       := 80
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+      :lHide                        := .T.
+      :nDataStrAlign                := 3
+      :nHeadStrAlign                := 3
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Cliente"
+      :Cargo                        := "getHeaderClient"
+      :bEditValue                   := {|| ::getDocumentLine():getHeaderClient() }
+      :nWidth                       := 80
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+      :lHide                        := .T.
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Nombre cliente"
+      :Cargo                        := "getHeaderClientName"
+      :bEditValue                   := {|| ::getDocumentLine():getHeaderClientName() }
+      :nWidth                       := 280
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+      :lHide                        := .T.
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Código"
+      :Cargo                        := "getCode"
+      :bEditValue                   := {|| ::getDocumentLine():getCode() }
+      :nWidth                       := 80
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Descripción"
+      :Cargo                        := "getDescription"
+      :bEditValue                   := {|| ::getDocumentLine():getDescription() }
+      :nWidth                       := 340
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Prop. 1"
+      :Cargo                        := "getCodeFirstProperty"
+      :bEditValue                   := {|| ::getDocumentLine():getCodeFirstProperty() }
+      :nWidth                       := 60
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Prop. 2"
+      :Cargo                        := "getCodeSecondProperty"
+      :bEditValue                   := {|| ::getDocumentLine():getCodeSecondProperty() }
+      :nWidth                       := 60
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Valor propiedad 1"
+      :Cargo                        := "getValueFirstProperty"
+      :bEditValue                   := {|| ::getDocumentLine():getValueFirstProperty() }
+      :nWidth                       := 60
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Valor propiedad 2"
+      :Cargo                        := "getValueSecondProperty"
+      :bEditValue                   := {|| ::getDocumentLine():getValueSecondProperty() }
+      :nWidth                       := 60
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Nombre propiedad 1"
+      :Cargo                        := "getNameFirstProperty"
+      :bEditValue                   := {|| ::getDocumentLine():getNameFirstProperty() }
+      :nWidth                       := 60
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Nombre propiedad 2"
+      :Cargo                        := "getNameSecondProperty"
+      :bEditValue                   := {|| ::getDocumentLine():getNameSecondProperty() }
+      :nWidth                       := 60
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Lote"
+      :Cargo                        := "getLote"
+      :bEditValue                   := {|| ::getDocumentLine():getLote() }
+      :nWidth                       := 80
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := cNombreCajas()
+      :Cargo                        := "getBoxes"
+      :bEditValue                   := {|| ::getDocumentLine():getBoxes() }
+      :cEditPicture                 := masUnd()
+      :nWidth                       := 50
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := cNombreUnidades()
+      :Cargo                        := "getUnits"
+      :bEditValue                   := {|| ::getDocumentLine():getUnits() }
+      :cEditPicture                 := masUnd()
+      :nWidth                       := 60
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+      :nEditType                    := 1
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bOnPostEdit                  := {|oColumn, uValue, nKey| ::changeUnits( oColumn, uValue, nKey ) }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Total " + cNombreUnidades()
+      :Cargo                        := "getTotalUnits"
+      :bEditValue                   := {|| ::getDocumentLine():getTotalUnits() }
+      :cDataType                    := "N"
+      :cEditPicture                 := masUnd()
+      :cFooterPicture               := masUnd()
+      :nWidth                       := 60
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+      :nFootStrAlign                := 1
+      :lHide                        := .F.
+      :nFooterType                  := 1
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "UM. Unidad de medición"
+      :Cargo                        := "getMeasurementUnit"
+      :bEditValue                   := {|| ::getDocumentLine():getMeasurementUnit() }
+      :nWidth                       := 25
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Almacen"
+      :Cargo                        := "getStore"
+      :bEditValue                   := {|| ::getDocumentLine():getStore() }
+      :nWidth                       := 60
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Importe"
+      :Cargo                        := "getNetPrice"
+      :bEditValue                   := {|| ::getDocumentLine():getNetPrice() }
+      :cEditPicture                 := ::getPictureRound()
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "% Dto."
+      :Cargo                        := "getPercentageDiscount"
+      :bEditValue                   := {|| ::getDocumentLine():getPercentageDiscount() }
+      :cEditPicture                 := "@E 999.99"
+      :nWidth                       := 50
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "% Dto. promoción"
+      :Cargo                        := "getPercentagePromotion"
+      :bEditValue                   := {|| ::getDocumentLine():getPercentagePromotion() }
+      :cEditPicture                 := "@E 999.99"
+      :nWidth                       := 50
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+      :lHide                        := .T.
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "% " + cImp()
+      :Cargo                        := "getPercentageTax"
+      :bEditValue                   := {|| ::getDocumentLine():getPercentageTax() }
+      :cEditPicture                 := "@E 999.99"
+      :nWidth                       := 50
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+   with object ( ::oBrwLines:AddCol() )
+      :cHeader                      := "Total"
+      :Cargo                        := "getBruto"
+      :bEditValue                   := {|| MsgInfo( ::getPictureRound(), "::getPictureRound()" ), Transform( ::getDocumentLine():getBruto(), ::getPictureRound() ) }
+      :cEditPicture                 := ::getPictureRound()
+      :nWidth                       := 80
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+      :bLClickHeader                := {|nMRow, nMCol, nFlags, oColumn| ::clickOnHeader( oColumn ) }
+      :bLDClickData                 := {|| ::toogleSelectLine() }
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TBrowseLineConversionDocumentos_buildOrdersColumns( ) ; local Self AS CLASS TBrowseLineConversionDocumentos := QSelf() AS CLASS TBrowseLineConversionDocumentos
+
+RETURN ( aeval( ::oBrwLines:aCols, {|oColumn| aadd( ::aSortLines, oColumn:cHeader ) } ) )
+
+
+
+static FUNCTION TBrowseLineConversionDocumentos_changeUnits( oColumn, uValue, nKey ) ; local Self AS CLASS TBrowseLineConversionDocumentos := QSelf() AS CLASS TBrowseLineConversionDocumentos
+
+   if isNum( nKey ) .AND. ( nKey == 27 )
+      Return ( Self )
+   end
+
+   if !isNil( uValue )
+      ::getDocumentLine():setUnits( uValue  )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TBrowseLineConversionDocumentos_propertiesLine( ) ; local Self AS CLASS TBrowseLineConversionDocumentos := QSelf() AS CLASS TBrowseLineConversionDocumentos
+
+   local idProduct               := ::getDocumentLine():getCode()
+   local oDialogBrowseProperties
+
+   ::aPropertiesTable            := D():getArticuloTablaPropiedades( idProduct, ::getView() )
+   if empty( ::aPropertiesTable )
+      msgStop( "Este artículo no tiene propiedades." )
+      Return ( Self )
+   end
+
+   ::injectValuesBrowseProperties( idProduct )
+
+   oDialogBrowseProperties       := DialogBrowseProperties():new( Self )
+   if oDialogBrowseProperties:Dialog()
+
+      ::saveValuesBrowseProperties()
+
+      ::oBrwLines:Refresh()
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TBrowseLineConversionDocumentos_selectLine( ) ; local Self AS CLASS TBrowseLineConversionDocumentos := QSelf() AS CLASS TBrowseLineConversionDocumentos
+
+   local position
+
+   for each position in ::oBrwLines:aSelected
+      ::getDocumentLine( position ):selectLine()
+   next
+
+   ::oBrwLines:Refresh()
+
+Return ( Self )
+
+
+
+static FUNCTION TBrowseLineConversionDocumentos_unSelectLine( ) ; local Self AS CLASS TBrowseLineConversionDocumentos := QSelf() AS CLASS TBrowseLineConversionDocumentos
+
+   local position
+
+   for each position in ::oBrwLines:aSelected
+      ::getDocumentLine( position ):unSelectLine()
+   next
+
+   ::oBrwLines:Refresh()
+
+Return ( Self )
+
+
+
+static FUNCTION TBrowseLineConversionDocumentos_toogleSelectLine( ) ; local Self AS CLASS TBrowseLineConversionDocumentos := QSelf() AS CLASS TBrowseLineConversionDocumentos
+
+   local position
+
+   for each position in ::oBrwLines:aSelected
+      ::getDocumentLine( position ):toogleSelectLine()
+   next
+
+   ::oBrwLines:Refresh()
+
+Return ( Self )
+
+
+
+static FUNCTION TBrowseLineConversionDocumentos_setBrowseLinesDocument( ) ; local Self AS CLASS TBrowseLineConversionDocumentos := QSelf() AS CLASS TBrowseLineConversionDocumentos
+
+   ::oBrwLines:setArray( ::oDocumentLines:getLines(), .T., , .F. )
+
+   ::oBrwLines:bSeek := {|c| ::seekLine( c ) }
+
+   ::oBrwLines:makeTotals()
+
+   ::oBrwLines:goTop()
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TBrowseLineConversionDocumentos_clickOnHeader( oColumn, setSortLines ) ; local Self AS CLASS TBrowseLineConversionDocumentos := QSelf() AS CLASS TBrowseLineConversionDocumentos
+
+   If( setSortLines == nil, setSortLines := .T., ) ;
+
+   aeval( ::oBrwLines:aCols, {|o| if( o:cHeader == oColumn:cHeader, o:cOrder := "A", o:cOrder := "" ) } )
+
+   ::oDocumentLines:sortingPleaseWait( oColumn:Cargo )
+
+   ::oBrwLines:Refresh()
+
+   if setSortLines
+      ::oSortLines:set( oColumn:cHeader )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TBrowseLineConversionDocumentos_seekLine( cSeek ) ; local Self AS CLASS TBrowseLineConversionDocumentos := QSelf() AS CLASS TBrowseLineConversionDocumentos
+
+   local nRow
+   local uVal
+   local nColumnToSearch
+
+   nColumnToSearch         := ascan( ::oBrwLines:aCols, { |o| !Empty( o:cOrder ) } )
+
+   if nColumnToSearch == 0
+      Return .F.
+   end
+
+   nRow                    := ::oBrwLines:nArrayAt
+
+   for ::oBrwLines:nArrayAt := 1 to ::oBrwLines:nLen
+
+      uVal                 := eval( ::oBrwLines:aCols[ nColumnToSearch ]:bEditValue )
+
+      if hb_WildMatch( "*" + cSeek, uVal )
+         ::oBrwLines:SelectCurrent()
+         Return .T.
+      endif
+
+   next
+
+   ::oBrwLines:nArrayAt    := nRow
+
+Return .T.
+
+
+
+static FUNCTION TBrowseLineConversionDocumentos_changeSortLines( ) ; local Self AS CLASS TBrowseLineConversionDocumentos := QSelf() AS CLASS TBrowseLineConversionDocumentos
+
+   local nScan
+
+   nScan          := ascan( ::oBrwLines:aCols, {| oColumn | oColumn:cHeader == ::cSortLines } )
+   if nScan <> 0
+      ::clickOnHeader( ::oBrwLines:aCols[ nScan ], .F. )
+   end
+
+Return ( .T. )
+
+
+
+static FUNCTION TBrowseLineConversionDocumentos_injectValuesBrowseProperties( idProduct ) ; local Self AS CLASS TBrowseLineConversionDocumentos := QSelf() AS CLASS TBrowseLineConversionDocumentos
+
+   local oLine
+   local aLines   := ::getLinesDocument()
+
+   for each oLine in aLines
+      if idProduct == oLine:getProductId()
+         D():setArticuloTablaPropiedades( oLine:getProductId(), oLine:getCodeFirstProperty(), oLine:getCodeSecondProperty(), oLine:getValueFirstProperty(), oLine:getValueSecondProperty(), oLine:getTotalUnits(), ::aPropertiesTable )
+      end
+   next
+
+Return ( .T. )
+
+
+
+static FUNCTION TBrowseLineConversionDocumentos_saveValuesBrowseProperties( idProduct ) ; local Self AS CLASS TBrowseLineConversionDocumentos := QSelf() AS CLASS TBrowseLineConversionDocumentos
+
+   local oLineSave
+   local aLinesSaved
+
+   for each aLinesSaved in ::aPropertiesTable
+      for each oLineSave in aLinesSaved
+         ::setValuesBrowseProperties( oLineSave )
+      next
+   next
+
+Return ( .T. )
+
+
+
+static FUNCTION TBrowseLineConversionDocumentos_setValuesBrowseProperties( oLineSave ) ; local Self AS CLASS TBrowseLineConversionDocumentos := QSelf() AS CLASS TBrowseLineConversionDocumentos
+
+   local oLineDocument
+   local aLinesDocument    := ::getLinesDocument()
+
+   for each oLineDocument in aLinesDocument
+
+
+
+
+
+      if rtrim( oLineSave:cCodigo )            == rtrim( oLineDocument:getProductId() )            .AND.  rtrim( oLineSave:cCodigoPropiedad1 )  == rtrim( oLineDocument:getCodeFirstProperty() )    .AND.  rtrim( oLineSave:cCodigoPropiedad2 )  == rtrim( oLineDocument:getCodeSecondProperty() )   .AND.  rtrim( oLineSave:cValorPropiedad1 )   == rtrim( oLineDocument:getValueFirstProperty() )   .AND.  rtrim( oLineSave:cValorPropiedad2 )   == rtrim( oLineDocument:getValueSecondProperty() )
+
+         oLineDocument:setUnidades( oLineSave:Value )
+
+         oLineDocument:selectLine()
+
+      end
+
+   next
+
+Return ( .T. )
+
+
+
+static FUNCTION TBrowseLineConversionDocumentos_Reset( ) ; local Self AS CLASS TBrowseLineConversionDocumentos := QSelf() AS CLASS TBrowseLineConversionDocumentos
+
+   if empty( ::oDocumentLines )
+      Return ( .F. )
+   end
+
+   if empty( ::oBrwLines )
+      Return ( .F. )
+   end
+
+   ::oDocumentLines:Reset()
+
+   ::oBrwLines:setArray( ::oDocumentLines:getLines(), .T., , .F. )
+
+Return ( .T. )

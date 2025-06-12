@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fe:Facturae xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:fe="http://www.facturae.es/Facturae/2009/v3.2/Facturae">
+ <FileHeader>
+  <SchemaVersion>3.2</SchemaVersion>
+  <Modality>I</Modality>
+  <InvoiceIssuerType>EM</InvoiceIssuerType>
+  <Batch>
+   <BatchIdentifier>2023/A00/14</BatchIdentifier>
+   <InvoicesCount>1</InvoicesCount>
+   <TotalInvoicesAmount>
+    <TotalAmount>102.00</TotalAmount>
+    <EquivalentInEuros>0.00</EquivalentInEuros>
+   </TotalInvoicesAmount>
+   <TotalOutstandingAmount>
+    <TotalAmount>102.00</TotalAmount>
+    <EquivalentInEuros>0.00</EquivalentInEuros>
+   </TotalOutstandingAmount>
+   <TotalExecutableAmount>
+    <TotalAmount>102.00</TotalAmount>
+    <EquivalentInEuros>0.00</EquivalentInEuros>
+   </TotalExecutableAmount>
+   <InvoiceCurrencyCode>EUR</InvoiceCurrencyCode>
+  </Batch>
+ </FileHeader>
+ <Parties>
+  <SellerParty>
+   <TaxIdentification>
+    <PersonTypeCode>J</PersonTypeCode>
+    <ResidenceTypeCode>R</ResidenceTypeCode>
+    <TaxIdentificationNumber>ESB16890287</TaxIdentificationNumber>
+   </TaxIdentification>
+   <LegalEntity>
+    <CorporateName>XTENDOO SOFTWARE S.L.U.</CorporateName>
+    <TradeName>XTENDOO SOFTWARE S.L.U.</TradeName>
+    <RegistrationData>
+     <Sheet>-</Sheet>
+    </RegistrationData>
+    <AddressInSpain>
+     <Address>Calle Real, 58</Address>
+     <PostCode>21700</PostCode>
+     <Town>La Palma Del Condado</Town>
+     <Province>Huelva</Province>
+     <CountryCode>ESP</CountryCode>
+    </AddressInSpain>
+    <ContactDetails>
+     <Telephone>655945025</Telephone>
+     <ElectronicMail>manuelcalero@xtendoo.es</ElectronicMail>
+    </ContactDetails>
+   </LegalEntity>
+  </SellerParty>
+  <BuyerParty>
+   <TaxIdentification>
+    <PersonTypeCode>J</PersonTypeCode>
+    <ResidenceTypeCode>R</ResidenceTypeCode>
+    <TaxIdentificationNumber>ES00000000T</TaxIdentificationNumber>
+   </TaxIdentification>
+   <AdministrativeCentres>
+    <AdministrativeCentre>
+     <CentreCode>L01220201</CentreCode>
+     <RoleTypeCode>01</RoleTypeCode>
+     <AddressInSpain>
+      <Address>CL. PORTUGAL</Address>
+      <PostCode>21710</PostCode>
+      <Town>Bollullos del condado</Town>
+      <Province>Huelva</Province>
+      <CountryCode>ESP</CountryCode>
+     </AddressInSpain>
+     <CentreDescription>BOLLULLOS</CentreDescription>
+    </AdministrativeCentre>
+    <AdministrativeCentre>
+     <CentreCode>L01220201</CentreCode>
+     <RoleTypeCode>02</RoleTypeCode>
+     <AddressInSpain>
+      <Address>CL. PORTUGAL</Address>
+      <PostCode>21710</PostCode>
+      <Town>Bollullos del condado</Town>
+      <Province>Huelva</Province>
+      <CountryCode>ESP</CountryCode>
+     </AddressInSpain>
+     <CentreDescription>BOLLULLOS</CentreDescription>
+    </AdministrativeCentre>
+    <AdministrativeCentre>
+     <CentreCode>L01220201</CentreCode>
+     <RoleTypeCode>03</RoleTypeCode>
+     <AddressInSpain>
+      <Address>CL. PORTUGAL</Address>
+      <PostCode>21710</PostCode>
+      <Town>Bollullos del condado</Town>
+      <Province>Huelva</Province>
+      <CountryCode>ESP</CountryCode>
+     </AddressInSpain>
+     <CentreDescription>BOLLULLOS</CentreDescription>
+    </AdministrativeCentre>
+   </AdministrativeCentres>
+   <LegalEntity>
+    <CorporateName>ACADENÍA BRITÁNICA Y CASA INTERNA. S.L.</CorporateName>
+    <TradeName>ACADENÍA BRITÁNICA Y CASA INTERNA. S.L.</TradeName>
+    <RegistrationData>
+     <Sheet>-</Sheet>
+    </RegistrationData>
+    <AddressInSpain>
+     <Address>c/ Rodríguez Sánchez, 15</Address>
+     <PostCode>14003</PostCode>
+     <Town></Town>
+     <Province></Province>
+     <CountryCode>ESP</CountryCode>
+    </AddressInSpain>
+    <ContactDetails>
+     <Telephone>957 470 350</Telephone>
+     <ElectronicMail>rafarevilla@acabri.com</ElectronicMail>
+    </ContactDetails>
+   </LegalEntity>
+  </BuyerParty>
+ </Parties>
+ <Invoices>
+  <Invoice>
+   <InvoiceHeader>
+    <InvoiceNumber>2023/A00/14</InvoiceNumber>
+    <InvoiceSeriesCode>A</InvoiceSeriesCode>
+    <InvoiceDocumentType>FC</InvoiceDocumentType>
+    <InvoiceClass>OO</InvoiceClass>
+   </InvoiceHeader>
+   <InvoiceIssueData>
+    <IssueDate>2023-04-11</IssueDate>
+    <OperationDate>2023-04-11</OperationDate>
+    <PlaceOfIssue>
+     <PostCode>21700</PostCode>
+     <PlaceOfIssueDescription>La Palma Del Condado</PlaceOfIssueDescription>
+    </PlaceOfIssue>
+    <InvoicingPeriod>
+     <StartDate>2023-04-11</StartDate>
+     <EndDate>2023-04-11</EndDate>
+    </InvoicingPeriod>
+    <InvoiceCurrencyCode>EUR</InvoiceCurrencyCode>
+    <TaxCurrencyCode>EUR</TaxCurrencyCode>
+    <LanguageName>es</LanguageName>
+   </InvoiceIssueData>
+   <TaxesOutputs>
+    <Tax>
+     <TaxTypeCode>01</TaxTypeCode>
+     <TaxRate>21.00</TaxRate>
+     <TaxableBase>
+      <TotalAmount>100.00</TotalAmount>
+      <EquivalentInEuros>0.00</EquivalentInEuros>
+     </TaxableBase>
+     <TaxAmount>
+      <TotalAmount>21.00</TotalAmount>
+      <EquivalentInEuros>0.00</EquivalentInEuros>
+     </TaxAmount>
+    </Tax>
+   </TaxesOutputs>
+   <InvoiceTotals>
+    <TotalGrossAmount>100.00</TotalGrossAmount>
+    <TotalGeneralDiscounts>0.00</TotalGeneralDiscounts>
+    <TotalGeneralSurcharges>0.00</TotalGeneralSurcharges>
+    <TotalGrossAmountBeforeTaxes>100.00</TotalGrossAmountBeforeTaxes>
+    <TotalTaxOutputs>21.00</TotalTaxOutputs>
+    <TotalTaxesWithheld>0.00</TotalTaxesWithheld>
+    <InvoiceTotal>102.00</InvoiceTotal>
+    <TotalOutstandingAmount>102.00</TotalOutstandingAmount>
+    <AmountsWithheld>
+     <WithholdingReason>Retencion</WithholdingReason>
+     <WithholdingRate>19.00</WithholdingRate>
+     <WithholdingAmount>19.00</WithholdingAmount>
+    </AmountsWithheld>
+    <TotalExecutableAmount>102.00</TotalExecutableAmount>
+    <TotalReimbursableExpenses>0.00</TotalReimbursableExpenses>
+   </InvoiceTotals>
+   <Items>
+    <InvoiceLine>
+     <ItemDescription>21%</ItemDescription>
+     <Quantity>1.00</Quantity>
+     <UnitOfMeasure>01</UnitOfMeasure>
+     <UnitPriceWithoutTax>100.000000</UnitPriceWithoutTax>
+     <TotalCost>100.000000</TotalCost>
+     <GrossAmount>100.000000</GrossAmount>
+     <TaxesOutputs>
+      <Tax>
+       <TaxTypeCode>01</TaxTypeCode>
+       <TaxRate>21.00</TaxRate>
+       <TaxableBase>
+        <TotalAmount>100.00</TotalAmount>
+        <EquivalentInEuros>0.00</EquivalentInEuros>
+       </TaxableBase>
+       <TaxAmount>
+        <TotalAmount>21.00</TotalAmount>
+        <EquivalentInEuros>0.00</EquivalentInEuros>
+       </TaxAmount>
+      </Tax>
+     </TaxesOutputs>
+    </InvoiceLine>
+   </Items>
+  </Invoice>
+ </Invoices>
+</fe:Facturae>
+

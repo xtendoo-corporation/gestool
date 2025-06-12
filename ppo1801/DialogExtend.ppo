@@ -1,0 +1,2439 @@
+#line 91 "\fwh1801\include\Fivewin.ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 5 ".\.\Prg\DialogExtend.prg"
+FUNCTION appDialogExtend()
+
+   local hClass
+
+   hClass        := TDialog():ClassH
+
+   __clsAddMsg( hClass, "aErrors", __cls_IncData( hClass ), 9, {}, 1, .F., .F. )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   __clsAddMsg( hClass, "Enable", @DialogEnable(), 0, nil, 1, .F., .F. )
+
+   __clsAddMsg( hClass, "Disable", @DialogDisable(), 0, nil, 1, .F., .F. )
+
+   __clsAddMsg( hClass, "hasErrors", @DialogHasError(), 0, nil, 1, .F., .F. )
+
+   __clsAddMsg( hClass, "aEvalValid", @DialogEvalValid(), 0, nil, 1, .F., .F. )
+
+
+
+  hClass        := TCheckBox():ClassH
+
+  __clsAddMsg( hClass, "HardEnable", {|Self| Self, ::bWhen := ::Cargo, ::Enable() }, 3, nil, 1, .F., .F. )
+
+  __clsAddMsg( hClass, "HardDisable", {|Self| Self, ::Cargo := ::bWhen, ::bWhen := {|| .F. } }, 3, nil, 1, .F., .F. )
+
+  __clsModMsg( hClass, "Click", @CheckBoxClick(), 1 )
+
+
+
+  hClass        := TXBrowse():ClassH
+
+  __clsAddMsg( hClass, "SelectOne", {|Self| Self, ::Select( 0 ), ::Select( 1 ) }, 3, nil, 1, .F., .F. )
+
+  __clsModMsg( hClass, "ToExcel", @TXBrowseToExcel(), 1 )
+
+
+
+  hClass        := TWBrowse():ClassH
+
+  __clsAddMsg( hClass, "_lDrawHeaders", __cls_IncData( hClass ), 9, .F., 1, .F., .F. )
+
+
+
+  hClass        := TComboBox():ClassH
+
+  __clsAddMsg( hClass, "GetFont", {|| nil }, 3, nil, 1, .F., .F. )
+
+
+
+  hClass        := TButton():ClassH
+
+  __clsAddMsg( hClass, "setText", {|Self, cCaption| Self, ::cCaption := cCaption, SetWindowText( ::hWnd, cCaption ) }, 3, nil, 1, .F., .F. )
+
+RETURN nil
+
+
+
+STATIC FUNCTION DialogHasError()
+
+   local Self
+   local oControl
+
+   Self              := HB_QSelf()
+   Self:Cargo        := {}
+
+   for each oControl in Self:aControls
+      if ( oControl:ClassName() == "TGETHLP" ) .AND. !empty( oControl:cError )
+         aadd( Self:Cargo, oControl:cError )
+      end
+   next
+
+RETURN ( !empty( Self:Cargo ) )
+
+
+
+STATIC FUNCTION DialogDisable()
+
+   local Self
+   local oControl
+
+   Self              := HB_QSelf()
+
+   CursorWait()
+
+   Self:Cargo        := Self:bValid
+   Self:bValid       := {|| .F. }
+
+   for each oControl in Self:aControls
+      if oControl:ClassName() <> "TSAY" .AND. oControl:ClassName() <> "TBITMAP"
+         oControl:Disable()
+      end
+   next
+
+RETURN ( .T. )
+
+
+
+STATIC FUNCTION DialogEnable()
+
+   local oControl
+   local Self       := HB_QSelf()
+
+   for each oControl in Self:aControls
+      if oControl:ClassName() <> "TSAY" .AND. oControl:ClassName() <> "TBITMAP"
+         oControl:Enable()
+      end
+   next
+
+   Self:bValid      := Self:Cargo
+
+   CursorArrow()
+
+RETURN ( .T. )
+
+
+
+STATIC FUNCTION setControlFastKey( cDirectory, uParam1, uParam2, uParam3, uParam4, uParam5, uParam6, uParam7, uParam8, uParam9, uParam10 )
+
+   local Self        := HB_QSelf()
+
+   if Empty( cDirectory )
+      RETURN ( nil )
+   end
+
+   Self:AddControlKeys(  113,    {|| runEventScript( cDirectory + "\F2", uParam1, uParam2, uParam3, uParam4, uParam5, uParam6, uParam7, uParam8, uParam9, uParam10 ) } )
+   Self:AddControlKeys(  114,    {|| runEventScript( cDirectory + "\F3", uParam1, uParam2, uParam3, uParam4, uParam5, uParam6, uParam7, uParam8, uParam9, uParam10 ) } )
+   Self:AddControlKeys(  115,    {|| runEventScript( cDirectory + "\F4", uParam1, uParam2, uParam3, uParam4, uParam5, uParam6, uParam7, uParam8, uParam9, uParam10 ) } )
+   Self:AddControlKeys(  116,    {|| runEventScript( cDirectory + "\F5", uParam1, uParam2, uParam3, uParam4, uParam5, uParam6, uParam7, uParam8, uParam9, uParam10 ) } )
+   Self:AddControlKeys(  117,    {|| runEventScript( cDirectory + "\F6", uParam1, uParam2, uParam3, uParam4, uParam5, uParam6, uParam7, uParam8, uParam9, uParam10 ) } )
+   Self:AddControlKeys(  118,    {|| runEventScript( cDirectory + "\F7", uParam1, uParam2, uParam3, uParam4, uParam5, uParam6, uParam7, uParam8, uParam9, uParam10 ) } )
+   Self:AddControlKeys(  119,    {|| runEventScript( cDirectory + "\F8", uParam1, uParam2, uParam3, uParam4, uParam5, uParam6, uParam7, uParam8, uParam9, uParam10 ) } )
+   Self:AddControlKeys(  120,    {|| runEventScript( cDirectory + "\F9", uParam1, uParam2, uParam3, uParam4, uParam5, uParam6, uParam7, uParam8, uParam9, uParam10 ) } )
+
+RETURN ( nil )
+
+
+
+STATIC FUNCTION DialogEvalValid()
+
+   local oControl
+   local aControls
+
+   aControls   := hb_qself():aControls
+
+   if empty( aControls )
+      RETURN ( .T. )
+   end
+
+   for each oControl in aControls
+
+      if empty( oControl:bWhen ) .OR. eval( oControl:bWhen )
+
+         if empty( oControl:bValid ) .OR. !eval( oControl:bValid )
+
+            oControl:SetFocus()
+
+            RETURN ( .F. )
+
+         endif
+
+      end
+
+   next
+
+RETURN ( .T. )
+
+
+
+STATIC FUNCTION DialogKeyDown( nKey, nFlags )
+
+   local Self       := HB_QSelf()
+
+   if nKey == 27
+
+      if ::oWnd == nil
+         if SetDialogEsc()
+            ::End()
+         endif
+      else
+         if ::oWnd:IsKindOf( "TMDICHILD" )
+            if SetDialogEsc()
+               ::End()
+            endif
+         else
+            if ::oWnd:IsKindOf( "TDIALOG" )
+               if SetDialogEsc()
+                  ::End()
+               endif
+            elseif Upper( ::oWnd:ClassName() ) == "TMDIFRAME"
+               if SetDialogEsc()
+                  ::End()
+               endif
+            else
+               RETURN ::Super:KeyDown( nKey, nFlags )
+            endif
+         endif
+      endif
+
+   else
+
+        if GetKeyState( 17 )
+
+          if isArray( ::aControlKeys ) .AND. len( ::aControlKeys ) > 0
+            aEval( ::aControlKeys, {|aKey| if( nKey == aKey[1] , Eval( aKey[2] ), ) } )
+          end
+
+        else
+
+          if isArray( ::aFastKeys ) .AND. len( ::aFastKeys ) > 0
+            aEval( ::aFastKeys, {|aKey| if( nKey == aKey[1] , Eval( aKey[2] ), ) } )
+          end
+
+        end
+
+      RETURN ::Super:KeyDown( nKey, nFlags )
+
+   endif
+
+RETURN ( nil )
+
+
+
+STATIC FUNCTION BtnBmpReAdjust()
+
+   local Self     := HB_QSelf()
+   local nRow     := if( !empty( Self:bRow ),     eval( Self:bRow ),    Self:nTop   )
+   local nLeft    := if( !empty( Self:bCol ),     eval( Self:bCol ),    Self:nLeft  )
+   local nWidth   := if( !empty( Self:bWidth ),   eval( Self:bWidth ),  Self:nWidth )
+   local nHeight  := if( !empty( Self:bHeight ),  eval( Self:bHeight ), Self:nHeight )
+
+   Self:Move( nRow, nLeft, nWidth, nHeight )
+
+RETURN ( Self )
+
+
+
+STATIC FUNCTION CheckBoxClick( lValue )
+
+   local Self       := HB_QSelf()
+
+   If( lValue == nil, lValue := !Eval( ::bSetGet ), ) ;
+
+   if ::bSetGet <> nil
+      Eval( ::bSetGet, lValue )
+      ::Refresh()
+   endif
+
+   if ::bChange <> nil
+      Eval( ::bChange, Eval( ::bSetGet ), Self )
+   endif
+
+   ::Super:Click()
+
+RETURN ( Self )
+
+
+
+STATIC FUNCTION TXBrowseToExcel( bProgress, nGroupBy, aCols )
+
+   local oExcel, oBook, oSheet, oWin
+   local nCol, nXCol, oCol, cType, uValue, nAt, cxlAggr
+   local uBookMark, nRow
+   local nDataRows
+   local oClip, cText, nPasteRow, nStep, cFormat
+   local aTotals     := {}
+   local lAnyTotals  := .F.
+   local aWidths     := {}
+   local lContinue   := .T.
+   local oBlock
+   local oError
+
+   local Self        := HB_QSelf()
+
+   nDataRows   := EVAL( ::bKeyCount )
+   if nDataRows == 0
+      RETURN Self
+   endif
+
+   If( aCols == nil, aCols := ::GetVisibleCols(), ) ;
+
+   if Empty( aCols )
+      RETURN Self
+   endif
+
+   if ( oExcel := ExcelObj() ) == nil
+      msgStop( "Excel not installed" )
+      RETURN Self
+   endif
+
+   oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   oExcel:ScreenUpdating := .F.
+
+   oBook          := oExcel:WorkBooks:Add()
+   oSheet         := oExcel:ActiveSheet
+
+   uBookMark      := EVAL( ::bBookMark )
+
+   nRow     := 1
+   nCol     := 0
+   aWidths  := Array( Len( aCols ) )
+
+   for nXCol := 1 TO Len( aCols )
+      oCol   := aCols[ nXCol ]
+
+      nCol ++
+
+      oSheet:Cells( nRow, nCol ):Value   := oCol:cHeader
+      cType      := oCol:cDataType
+
+      if ::nDataType <> 2
+         DO CASE
+         CASE Empty( cType )
+
+         CASE cType == "N"
+            cFormat                                      := Clp2xlNumPic( oCol:cEditPicture )
+            oSheet:Columns( nCol ):NumberFormat          := cFormat
+            oSheet:Columns( nCol ):HorizontalAlignment   := - 4152
+
+         CASE cType == "D"
+              if ValType( oCol:cEditPicture ) == "C" .AND. Left( oCol:cEditPicture, 1 ) <> "@"
+                 oSheet:Columns( nCol ):NumberFormat := Lower( oCol:cEditPicture )
+              else
+                 oSheet:Columns( nCol ):NumberFormat := Lower( Set( 4 ) )
+              endif
+              oSheet:Columns( nCol ):HorizontalAlignment := - 4152
+         CASE cType $ "LPFM"
+
+         OTHERWISE
+            oSheet:Columns( nCol ):NumberFormat := "@"
+            if ! Empty( oCol:nDataStrAlign )
+               oSheet:Columns( nCol ):HorizontalAlignment := If( oCol:nDataStrAlign == 2, -4108, -4152 )
+            endif
+         ENDCASE
+      endif
+
+      if cType <> nil .AND. cType $ "PFM"
+         aWidths[ nCol ]                     := oCol:nWidth / 7.5
+         oSheet:Columns( nCol ):ColumnWidth  := aWidths[ nCol ]
+         oSheet:Rows( "2:" + LTrim(Str( ::nLen + 1 )) ):RowHeight := ::nRowHeight
+         if cType == "M"
+            oSheet:Columns( nCol ):WrapText  := .T.
+         endif
+      endif
+
+   next
+
+   oSheet:Range( oSheet:Cells( 1, 1 ), oSheet:Cells( 1, Len( aCols ) ) ):Select()
+   oExcel:Selection:Borders(9):LineStyle := 1
+   oExcel:Selection:Borders(9):Weight    := -4138
+
+   if Empty( ::aSelected ) .OR. Len( ::aSelected ) == 1
+
+      Eval( ::bGoTop )
+
+      if bProgress == nil
+         if ::oWnd:oMsgBar == nil
+            bProgress := { || nil }
+         else
+            bProgress := { | n, t | ::oWnd:SetMsg( "To Excel : " + Ltrim( Str( n ) ) + "/" + Ltrim( Str( t ) ) ) }
+         endif
+      endif
+
+      nRow      := 2
+      nStep     := Max( 1, Min( 100, Int( nDataRows / 100 ) ) )
+
+      while nRow <= ( nDataRows + 1 ) .AND. lContinue
+
+         nCol        := 0
+         for nxCol   := 1 to Len( aCols )
+            oCol     := aCols[ nXCol ]
+            nCol++
+            oCol:ToExcel( oSheet, nRow, nCol )
+         next
+
+         lContinue := ( ::Skip( 1 ) == 1 )
+         nRow ++
+         If ( nRow - 2 ) % nStep == 0
+            if Eval( bProgress, nRow - 2, nDataRows ) == .F.
+               Exit
+            endif
+            SysRefresh()
+         endif
+
+      enddo
+
+   else
+
+      ::Copy()
+      oSheet:Cells( 2, 1 ):Select()
+      oSheet:Paste()
+      nRow := Len( ::aSelected ) + 2
+
+   endif
+
+   oSheet:Cells( 1, 1 ):Select()
+
+
+
+   oSheet:Rows(    1 ):Font:Bold   := .T.
+   oSheet:Rows( nRow ):Font:Bold   := .T.
+
+   if ValType( nGroupBy ) == "N"
+      for nxCol := 1 TO Len( aCols )
+         if aCols[ nxCol ]:lTotal
+            AAdd( aTotals, nxCol )
+         endif
+      next
+      if ! Empty( aTotals )
+         oSheet:Activate()
+
+
+
+
+         oExcel:Selection:Subtotal( nGroupBy , -4157,   aTotals,  .T.,  .F.,  .T. )
+
+      endif
+   else
+      nCol   := 0
+      oSheet:Range( oSheet:Cells( nRow, 1 ), oSheet:Cells( nRow, Len( aCols ) ) ):Select()
+      oExcel:Selection:Borders(8):LineStyle := 1
+      oExcel:Selection:Borders(8):Weight    := -4138
+
+      for nXCol := 1 TO Len ( aCols )
+         oCol   := aCols[ nXCol ]
+         nCol ++
+      next
+   endif
+
+   for nCol := 1 to Len( aCols )
+      if aWidths[ nCol ] == nil
+         oSheet:Columns( nCol ):AutoFit()
+      endif
+      oSheet:Columns( nCol ):VerticalAlignment := -4108
+   next
+
+   oSheet:Cells(1,1):Select()
+   oWin   := oExcel:ActiveWindow
+   oWin:SplitRow := 1
+   oWin:FreezePanes := .T.
+
+   Eval( ::bBookMark, uBookMark )
+   ::Refresh()
+   ::SetFocus()
+
+   oExcel:ScreenUpdating   := .T.
+   oExcel:visible          := .T.
+   ShowWindow( oExcel:hWnd, 3 )
+   BringWindowToTop( oExcel:hWnd )
+
+   RECOVER USING oError
+
+      msgStop( ErrorMessage( oError ), "Imposible establecer lenguaje de Excel" )
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN oSheet
+
+
+
+FUNCTION validateDialog( uDialogs )
+
+   local oDialog
+
+   if hb_isobject( uDialogs )
+      RETURN ( validateControls( uDialogs ) )
+   end
+
+   if hb_isarray( uDialogs )
+      for each oDialog in uDialogs
+         if !( validateControls( oDialog ) )
+            RETURN ( .F. )
+         end
+      next
+   end
+
+RETURN ( .T. )
+
+
+
+FUNCTION validateControls( oDialog )
+
+   local oControl
+   local aControls   := oDialog:aControls
+
+   if empty( aControls )
+      RETURN ( .T. )
+   end
+
+   for each oControl in aControls
+
+      if empty( oControl:bWhen ) .OR. eval( oControl:bWhen )
+
+         if !empty( oControl:bValid ) .AND. !eval( oControl:bValid )
+
+            oControl:SetFocus()
+
+            RETURN ( .F. )
+
+         endif
+
+      end
+
+   next
+
+RETURN ( .T. )

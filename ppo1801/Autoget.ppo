@@ -1,0 +1,2675 @@
+#line 91 "\fwh1801\include\fivewin.ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 23 ".\.\Prg\Autoget.prg"
+_HB_CLASS TAutoCombo ; function TAutoCombo ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TAutoCombo", iif( .T., { @TComboBox() }, { @HBObject() } ), @TAutoCombo() ) ) ;
+
+   _HB_MEMBER { aOriginalList } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aOriginalList"}, .F. )
+
+   _HB_MEMBER setOrginalList(); oClass:AddInline( "setOrginalList", {|Self, aList | ( ( Self ) ), ( ::aOriginalList := aList ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER KeyChar( nKey, nFlags); oClass:AddMethod( "KeyChar", @TAutoCombo_KeyChar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetKeyChar( nKey); oClass:AddMethod( "GetKeyChar", @TAutoCombo_GetKeyChar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TAutoCombo ;
+
+
+
+static FUNCTION TAutoCombo_KeyChar( nKey, nFlags ) ; local Self AS CLASS TAutoCombo := QSelf() AS CLASS TAutoCombo
+
+   local nNewAT := 0, nOldAT := ::nAT, uItem
+
+   msgStop( "keychar")
+
+   if Len( ::aItems ) == 0
+      return 0
+   endif
+
+   if ::lIncSearch
+      do case
+         case nKey = 32
+              if Empty( ::oGet:hWnd )
+                 ::cSearchKey = ""
+                 nNewAt = 1
+                 uItem  = ::aItems[ nNewAt ]
+              else
+                 ::cSearchKey += " "
+              endif
+
+         case nKey = 8
+              ::cSearchKey = Left( ::cSearchKey, Len( ::cSearchKey ) - 1 )
+
+         case nKey = 190
+              nKey = 0
+              ::cSearchKey += "."
+
+         case ! Empty( ::oGet:hWnd ) .AND. nKey = 9
+              if ! GetKeyState( 16 )
+                 ::oWnd:GoNextCtrl( ::hWnd )
+              else
+                 ::oWnd:GoPrevCtrl( ::hWnd )
+              endif
+              return 0
+
+         otherwise
+              if ::lCaseSensitive
+                 ::cSearchKey += Chr( nKey )
+              else
+                ::cSearchKey += Upper( Chr( nKey ) )
+              endif
+      endcase
+
+      msgStop( ::cSearchKey, "cSearchKey" )
+
+      if Empty( uItem )
+         if nNewAt == 0
+            if ::lCaseSensitive
+               nNewAt = AScan( ::aItems, { | x | msgStop( alltrim(::cSearchKey), "cSearchKey"), msgStop(x, "x"), alltrim(::cSearchKey) $ x } )
+
+            else
+
+               nNewAt = AScan( ::aItems, { | x |  msgStop( alltrim(::cSearchKey), "cSearchKey"), msgStop(x, "x"), alltrim(::cSearchKey) $ Upper( x ) } )
+            endif
+            if Empty( ::oGet:hWnd )
+               uItem = ::aItems[ If( nNewAt > 0, nNewAt, Max( ::nAT, 1 ) ) ]
+            else
+               uItem = If( nNewAt > 0, ::aItems[ nNewAt ], ::cSearchKey )
+            endif
+         else
+            uItem = ::aItems[ Max( nNewAt, 1) ]
+         endif
+      endif
+      ::Set( If( ValType( Eval( ::bSetGet ) ) == "N", AScan( ::aItems, uItem ), uItem ) )
+      if ! Empty( ::oGet:hWnd )
+         ::oGet:SetPos( Len( ::cSearchKey ) + 1 )
+      endif
+   endif
+
+   if ::bChange <> nil
+      if ! Empty( ::oGet:hWnd ) .OR. ( nNewAT <> nOldAt .AND. nNewAt <> 0 )
+         Eval( ::bChange, Self, ::VarGet() )
+      endif
+   endif
+
+   if nKey == 13
+      return ::oWnd:GoNextCtrl( ::hWnd )
+   endif
+
+return If( ::lIncSearch, 0, nil )
+
+
+
+static FUNCTION TAutoCombo_GetKeyChar( nKey ) ; local Self AS CLASS TAutoCombo := QSelf() AS CLASS TAutoCombo
+
+   local nAt, cText
+
+   if ( nKey == 9 .AND. ! GetKeyState( 16 ) ) .OR. nKey == 13
+      ::oWnd:GoNextCtrl( ::hWnd )
+      return 0
+   else
+      if nKey == 9 .AND. GetKeyState( 16 )
+         ::oWnd:GoPrevCtrl( ::hWnd )
+         return 0
+      endif
+   endif
+
+
+
+
+   if ( nKey >= Asc( "A" ) .AND. nKey <= Asc( "Z" ) ) .OR.  ( nKey >= Asc( "a" ) .AND. nKey <= Asc( "z" ) ) .OR.  ( nKey >= Asc( "0" ) .AND. nKey <= Asc( "9" ) ) .OR.  Chr( nKey ) $ "+-/=?$*&%$() " .OR. nKey == 8
+
+      ::Close()
+
+      if nKey == 8
+         cText = SubStr( ::oGet:GetText(), 1, ::oGet:oGet:pos - 1 )
+      else
+         cText = SubStr( ::oGet:GetText(), 1, ::oGet:oGet:pos - 1 ) + Chr( nKey )
+      endif
+      if ! Empty( cText )
+         if ( nAt := AScan( ::aItems, { | c | Upper( cText ) $ Upper( c ) } ) ) <> 0
+            ::oGet:SetText( ::aItems[ nAt ] )
+            ::oGet:oGet:buffer = PadR( ::aItems[ nAt ], Len( ::oGet:oGet:buffer ) )
+
+            ::Open()
+
+            if nKey <> 8
+               ::oGet:SetPos( ::oGet:oGet:pos + 1 )
+            else
+               ::oGet:SetPos( ::oGet:oGet:pos )
+            endif
+            return 0
+         endif
+      else
+         ::oGet:SetText( "" )
+         ::oGet:oGet:buffer = Space( Len( ::oGet:oGet:buffer ) )
+         ::oGet:oGet:pos = 0
+         ::oGet:SetPos( 0 )
+      endif
+   endif
+
+return nKey
+
+
+
+
+_HB_CLASS TAutoGet ; function TAutoGet ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TAutoGet", iif( .T., { @TGetHlp() }, { @HBObject() } ), @TAutoGet() ) ) ;
+
+   _HB_MEMBER { aGradList } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aGradList"}, .F. )
+   _HB_MEMBER { aGradItem } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aGradItem"}, .F. )
+   _HB_MEMBER { nClrLine } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nClrLine"}, .F. )
+   _HB_MEMBER { nClrText, nClrSel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nClrText", "nClrSel"}, .F. )
+
+   _HB_MEMBER { uDataSource } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"uDataSource"}, .F. )
+   _HB_MEMBER { uOrgData } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"uOrgData"}, .F. )
+   _HB_MEMBER { nDataType } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nDataType"}, .F. )
+   _HB_MEMBER { cField } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cField"}, .F. )
+   _HB_MEMBER { oList } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oList"}, .F. )
+   _HB_MEMBER { bCreateList } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bCreateList"}, .F. )
+   _HB_MEMBER { bCloseList } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bCloseList"}, .F. )
+   _HB_MEMBER { nLHeight } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nLHeight"}, .F. )
+
+
+
+
+
+
+
+   _HB_MEMBER New( nRow, nCol, bSetGet, oWnd, nWidth, nHeight, cPict, bValid, nClrFore, nClrBack, oFont, lDesign, oCursor, lPixel, cMsg, lUpdate, bWhen, lCenter, lRight, bChanged, lReadOnly, lPassword, lNoBorder, nHelpId, lSpinner, bUp, bDown, bMin, bMax, bAction, cBmpName, cVarName, cCueText, uDataSrc, Flds    , nLHeight,  bCreateList, aGradList, aGradItem, nClrLine) AS CLASS TAutoGet; oClass:AddMethod( "New", @TAutoGet_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+   _HB_MEMBER ReDefine( nId,       bSetGet,  oWnd,    nHelpId, cPict,   bValid, nClrFore, nClrBack,  oFont,    oCursor, cMsg,    lUpdate, bWhen,  bChanged, lReadOnly, lSpinner, bUp,     bDown,   bMin,    bMax,   bAction, cBmpName,  cVarName, cCueText) AS CLASS TAutoGet; oClass:AddMethod( "ReDefine", @TAutoGet_ReDefine(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER CloseList(); oClass:AddInline( "CloseList", {|Self | ( ( Self ) ), If(  ::ValidList(), ( ::oList:End(), ::oList:hWnd := nil, Eval( ::bCloseList, Self ) ), ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CreateList( uDataSource); oClass:AddMethod( "CreateList", @TAutoGet_CreateList(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER KeyChar(); oClass:AddInline( "KeyChar", {|Self, nKey, nFlags | ( ( Self ) ), ::OpenList( nKey, nFlags ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER KeyDown( nKey, nFlags); oClass:AddMethod( "KeyDown", @TAutoGet_KeyDown(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER OpenList(); oClass:AddMethod( "OpenList", @TAutoGet_OpenList(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LostFocus(); oClass:AddMethod( "LostFocus", @TAutoGet_LostFocus(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER MouseWheel( nKeys, nDelta, nXPos, nYPos); oClass:AddMethod( "MouseWheel", @TAutoGet_MouseWheel(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetList(); oClass:AddInline( "SetList", {|Self, uDataSource, cField | ( ( Self ) ), ::uDataSource := uDataSource, ::cField := cField }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ValidList(); oClass:AddInline( "ValidList", {|Self | ( ( Self ) ), ( ::oList <> NIL .AND. ::oList:hWnd <> NIL ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TAutoGet ;
+
+
+
+
+
+
+
+
+
+static FUNCTION TAutoGet_New( nRow, nCol, bSetGet, oWnd, nWidth, nHeight, cPict, bValid, nClrFore, nClrBack, oFont, lDesign, oCursor, lPixel, cMsg, lUpdate, bWhen, lCenter, lRight, bChanged, lReadOnly, lPassword, lNoBorder, nHelpId, lSpinner, bUp, bDown, bMin, bMax, bAction, cBmpName, cVarName, cCueText, uDataSrc, Flds    , nLHeight,  bCreateList, aGradList, aGradItem, nClrLine, nClrText, nClrSel ) ; local Self AS CLASS TAutoGet := QSelf() AS CLASS TAutoGet
+
+   If( Flds == nil, Flds := 1, ) ;
+   If( nLHeight == nil, nLHeight := 170, ) ;
+
+
+
+
+
+   If( aGradItem == nil, aGradItem := { { 1/2, nRGB( 253, 249, 225 ), nRGB( 253, 249, 225 ) }, { 1/2, nRGB( 253, 245, 206 ), nRGB( 253, 249, 225 ) } }, ) ; If( aGradList == nil, aGradList := { { 1, nRGB( 248, 248, 248 ), nRGB( 228, 228, 228 ) } }, ); If( nClrLine == nil, nClrLine := nRGB( 251, 203, 9 ), ); If( nClrSel == nil, nClrSel := nRGB( 199, 116, 5 ), ); If( nClrText == nil, nClrText := GetSysColor( 8 ), );
+
+   ::cField   = Flds
+   ::nLHeight = nLHeight
+
+   ::bCloseList  = {| | ::uDataSource := ::uOrgData }
+   ::uDataSource = uDataSrc
+   ::bCreateList = bCreateList
+   ::SetList( uDataSrc, ::cField )
+   ::aGradList = aGradList
+   ::aGradItem = aGradItem
+   ::nClrLine  = nClrLine
+   ::nClrText  = nClrText
+   ::nClrSel   = nClrSel
+
+
+
+
+
+   ::Super:New(nRow   , nCol    , bSetGet  , oWnd     , nWidth   , nHeight, cPict  , bValid  , nClrFore , nClrBack , oFont    , lDesign, oCursor, lPixel  , cMsg     , lUpdate  , bWhen    , lCenter, lRight , bChanged, lReadOnly, lPassword, lNoBorder, nHelpId, lSpinner, bUp    , bDown    , bMin     , bMax )
+
+RETURN Self
+
+
+
+
+
+
+
+
+static FUNCTION TAutoGet_ReDefine( nId,       bSetGet,  oWnd,    nHelpId, cPict,   bValid, nClrFore, nClrBack,  oFont,    oCursor, cMsg,    lUpdate, bWhen,  bChanged, lReadOnly, lSpinner, bUp,     bDown,   bMin,    bMax,   bAction, cBmpName,  cVarName, cCueText, uDataSrc, Flds    , nLHeight,  bCreateList, aGradList, aGradItem, nClrLine, nClrText, nClrSel ) ; local Self AS CLASS TAutoGet := QSelf() AS CLASS TAutoGet
+
+   If( Flds == nil, Flds := 1, ) ;
+   If( nLHeight == nil, nLHeight := 170, ) ;
+
+
+
+
+
+   If( aGradItem == nil, aGradItem := { { 1/2, nRGB( 253, 249, 225 ), nRGB( 253, 249, 225 ) }, { 1/2, nRGB( 253, 245, 206 ), nRGB( 253, 249, 225 ) } }, ) ; If( aGradList == nil, aGradList := { { 1, nRGB( 248, 248, 248 ), nRGB( 228, 228, 228 ) } }, ); If( nClrLine == nil, nClrLine := nRGB( 251, 203, 9 ), ); If( nClrSel == nil, nClrSel := nRGB( 199, 116, 5 ), ); If( nClrText == nil, nClrText := GetSysColor( 9 ), );
+
+
+   ::cField   = Flds
+   ::nLHeight = nLHeight
+
+   ::bCloseList  = {| | ::uDataSource := ::uOrgData }
+   ::uDataSource = uDataSrc
+   ::bCreateList := bCreateList
+   ::SetList( uDataSrc, ::cField )
+   ::aGradList = aGradList
+   ::aGradItem = aGradItem
+   ::nClrLine  = nClrLine
+   ::nClrText  = nClrText
+   ::nClrSel   = nClrSel
+
+
+
+
+   ::Super:ReDefine( nId,       bSetGet,  oWnd,    nHelpId, cPict,   bValid, nClrFore, nClrBack,  oFont,    oCursor, cMsg,    lUpdate, bWhen,  bChanged, lReadOnly, lSpinner, bUp,     bDown,   bMin,    bMax,   bAction, cBmpName,  cVarName, cCueText )
+
+RETURN Self
+
+
+
+static FUNCTION TAutoGet_CreateList( ) ; local Self AS CLASS TAutoGet := QSelf() AS CLASS TAutoGet
+
+   if ! ::ValidList()
+
+
+      ::oList := TGetList():New( ::nTop + ::nHeight + 1, ::nLeft, ::oWnd, ::nWidth,  ::nLHeight, Self, ::aGradItem, ::aGradList, ::nClrLine, ::nClrText, ::nClrSel )
+      ::oList:SetList( ::uDataSource, ::cField )
+      if ::oList:KeyCount() == 0
+         ::uDataSource := ::uOrgData
+         ::oList:end()
+         ::oList := NIL
+      else
+         ::oList:Adjust()
+
+
+      endif
+   else
+      if ::oList <> NIL
+         ::uDataSource := Eval( ::bCreateList, ::uDataSource, AllTrim( ::oGet:Buffer ), Self )
+         ::oList:SetList( ::uDataSource, ::cField )
+         if ::oList:KeyCount() == 0
+            ::uDataSource := ::uOrgData
+            ::oList:end()
+            ::oList = NIL
+         else
+            ::oList:Adjust()
+            ::oList:Refresh()
+         endif
+      endif
+   endif
+
+RETURN NIL
+
+
+
+static FUNCTION TAutoGet_LostFocus( hWndLost ) ; local Self AS CLASS TAutoGet := QSelf() AS CLASS TAutoGet
+
+   ::CloseList()
+
+RETURN ::Super:LostFocus( hWndLost )
+
+
+
+static FUNCTION TAutoGet_MouseWheel( nKeys, nDelta, nXPos, nYPos ) ; local Self AS CLASS TAutoGet := QSelf() AS CLASS TAutoGet
+
+   local aPos := { nYPos, nXPos }
+
+   if ::ValidList()
+      if nDelta < 0
+         ::oList:GoDown()
+      else
+         ::oList:GoUp()
+      endif
+   endif
+
+return nil
+
+
+
+static FUNCTION TAutoGet_KeyDown( nKey, nFlags ) ; local Self AS CLASS TAutoGet := QSelf() AS CLASS TAutoGet
+
+
+   if ::ValidList()
+      switch nKey
+         case 8
+            ::CreateList()
+            return ::Super:KeyDown( nKey, nFlags )
+         case 37
+         case 39
+
+            return ::Super:KeyDown( nKey, nFlags )
+            EXIT
+         case 40
+            ::oList:GoDown()
+            EXIT
+         case 38
+            ::oList:GoUp()
+      endswitch
+   else
+      return ::Super:KeyDown( nKey, nFlags )
+   endif
+
+RETURN 0
+
+
+
+static FUNCTION TAutoGet_OpenList( nKey, nFlags ) ; local Self AS CLASS TAutoGet := QSelf() AS CLASS TAutoGet
+
+   local nTop   := ::nBottom
+   local nLeft  := ::nLeft
+   local aPoint := { nTop, nLeft }
+   local nBottom, nRight
+   local nRet
+
+   switch nKey
+      case 27
+         ::CloseList()
+         return ::Super:KeyChar( nKey, nFlags )
+      case 8
+         nRet = ::Super:KeyChar( nKey, nFlags )
+
+         if Len( AllTrim( ::oGet:Buffer ) ) == 0
+            ::CloseList()
+         else
+            ::uDataSource := Eval( ::bCreateList, ::uDataSource, AllTrim( ::oGet:Buffer ), Self )
+            ::CreateList()
+         endif
+         return nRet
+      case 13
+      case 40
+         return ::Super:KeyChar( nKey, nFlags )
+   end
+
+   nret = ::Super:KeyChar( nKey, nFlags )
+
+   if ::oGet:Buffer <> nil .AND. len( alltrim( ::oGet:Buffer ) ) > 0
+
+      if empty( ::uOrgData )
+         ::uOrgData = ::uDataSource
+      endif
+      ::uDataSource := Eval( ::bCreateList, ::uDataSource, AllTrim( ::oGet:Buffer ), Self )
+      ::CreateList()
+   endif
+
+RETURN  nRet
+
+
+
+
+_HB_CLASS TGetList ; function TGetList ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TGetList", iif( .T., { @TControl() }, { @HBObject() } ), @TGetList() ) ) ;
+
+   _HB_MEMBER { AS LOGICAL lRegistered } ; oClass:AddMultiClsData( "LOGICAL",, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lRegistered"}, .F. )
+
+   _HB_MEMBER { aGradList } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aGradList"}, .F. )
+   _HB_MEMBER { aGradItem } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aGradItem"}, .F. )
+   _HB_MEMBER { nClrLine } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nClrLine"}, .F. )
+   _HB_MEMBER { nClrText, nClrSel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nClrText", "nClrSel"}, .F. )
+
+   _HB_MEMBER { uOrgValue } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"uOrgValue"}, .F. )
+
+   _HB_MEMBER { bKeyCount } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bKeyCount"}, .F. )
+
+   _HB_MEMBER { bData } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bData"}, .F. )
+
+   _HB_MEMBER { lSBVisible } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lSBVisible"}, .F. )
+
+   _HB_MEMBER { nDataType } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nDataType"}, .F. )
+   _HB_MEMBER { nRowHeight } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRowHeight"}, .F. )
+   _HB_MEMBER { nMaxHeight } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nMaxHeight"}, .F. )
+
+   _HB_MEMBER { oGet } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGet"}, .F. )
+
+   _HB_MEMBER { nFirstRow } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nFirstRow"}, .F. )
+   _HB_MEMBER { nRecNo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRecNo"}, .F. )
+
+   _HB_MEMBER { nRowAt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRowAt"}, .F. )
+
+   _HB_MEMBER New( nTop, nLeft, oWnd, nWidth, nHeight); oClass:AddMethod( "New", @TGetList_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Adjust(); oClass:AddMethod( "Adjust", @TGetList_Adjust(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER KeyCount(); oClass:AddInline( "KeyCount", {|Self | ( ( Self ) ), Eval( ::bKeyCount ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Display(); oClass:AddInline( "Display", {|Self | ( ( Self ) ), ::BeginPaint(), ::Paint(), ::EndPaint(), 0 }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER EraseBkGnd(); oClass:AddInline( "EraseBkGnd", {|Self, hDC | ( ( Self ) ), 1 }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetRowAt(); oClass:AddInline( "GetRowAt", {|Self, nRow | ( ( Self ) ), Min( ::RowCount(),  Int( nRow / ::nRowHeight ) + 1 ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GoDown(); oClass:AddMethod( "GoDown", @TGetList_GoDown(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GoUp(); oClass:AddMethod( "GoUp", @TGetList_GoUp(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER HandleEvent( nMsg, nWParam, nLParam); oClass:AddMethod( "HandleEvent", @TGetList_HandleEvent(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LButtonUp( nRow, nCol); oClass:AddMethod( "LButtonUp", @TGetList_LButtonUp(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER MouseLeave(); oClass:AddMethod( "MouseLeave", @TGetList_MouseLeave(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER MouseMove( nRow, nCol, nFlags); oClass:AddMethod( "MouseMove", @TGetList_MouseMove(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Paint(); oClass:AddMethod( "Paint", @TGetList_Paint(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PaintData( hDC); oClass:AddMethod( "PaintData", @TGetList_PaintData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetList( uDataSource, cField); oClass:AddMethod( "SetList", @TGetList_SetList(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER RowCount(); oClass:AddInline( "RowCount", {|Self | ( ( Self ) ), Int( ::nHeight  / ::nRowHeight ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TGetList ;
+
+
+
+static FUNCTION TGetList_New( nTop, nLeft, oWnd, nWidth, nHeight, oGet, aGradItem, aGradList, nClrLine, nClrText, nClrSel ) ; local Self AS CLASS TGetList := QSelf() AS CLASS TGetList
+
+   local n
+
+
+   If( nTop == nil, nTop := 0, ) ; If( nLeft == nil, nLeft := 0, ); If( oWnd == nil, oWnd := GetWndDefault(), );
+
+   ::nStyle    = nOR( 1073741824, 8388608, 268435456 )
+   ::nId       = ::GetNewId()
+   ::oWnd      = oWnd
+   ::nTop      = nTop
+   ::nLeft     = nLeft
+   ::nBottom   = ::nTop + nHeight - 1
+   ::nRight    = ::nLeft + nWidth - 1
+   ::lDrag     = .F.
+   ::lCaptured = .F.
+   ::oGet      = oGet
+   ::Register()
+   ::aGradItem = aGradItem
+   ::aGradList = aGradList
+   ::nClrLine  = nClrLine
+   ::nClrText  = nClrText
+   ::nClrSel   = nClrSel
+
+   ::oBrush = TBrush():New( , 16777215 )
+
+   if ::oFont <> nil
+      ::oFont:End()
+      ::oFont = NIL
+   endif
+
+   ::oFont := TFont():New()
+   ::oFont:hFont := GetStockObject( 17 )
+
+
+   ::nFirstRow = 1
+
+   ::Create()
+   ::nMaxHeight := ::nHeight
+
+return Self
+
+
+
+static FUNCTION TGetList_SetList( uDataSource, cField ) ; local Self AS CLASS TGetList := QSelf() AS CLASS TGetList
+
+   local cType := ValType( uDataSource )
+   local bExpr
+
+   If( cField == nil, cField := 1, ) ;
+
+
+   if cType == "A"
+      ::nDataType = 2
+      ::bKeyCount = { || Len( ::oGet:uDataSource ) }
+      ::bData     = { | nRow | ::oGet:uDataSource[ nRow ][ cField ] }
+   elseif cType == "H"
+      ::nDataType = 256
+      ::bKeyCount = { || Len( ::oGet:uDataSource ) }
+      ::bData     = { | nRow | ::oGet:uDataSource[ nRow ][ cField ] }
+   endif
+
+
+return NIL
+
+
+
+static FUNCTION TGetList_Adjust( ) ; local Self AS CLASS TGetList := QSelf() AS CLASS TGetList
+
+   local nVHeight
+   local nFlags := 0x0200
+
+   ::nRowHeight = FontHeight( Self, ::oFont ) + 6
+
+   nVHeight := Min( ::nMaxHeight, ::KeyCount() * ::nRowHeight )
+
+   ::nRowAt = 0
+   ::nFirstRow = 1
+
+   if ::nMaxHeight > nVHeight
+      ::Move( , , , nVHeight + 2 )
+   else
+      ::Move( , , , Int( ::nMaxHeight / ::nRowHeight ) * ::nRowHeight + 2 )
+   endif
+
+RETURN NIL
+
+
+
+static FUNCTION TGetList_GoDown( ) ; local Self AS CLASS TGetList := QSelf() AS CLASS TGetList
+
+   local nMaxRow := ::RowCount()
+
+   if ::nRowAt == 0
+      ::uOrgValue = ::oGet:oGet:Buffer
+   endif
+
+   if ::nFirstRow + ::nRowAt - 1 < ::KeyCount()
+      ::nRowAt++
+      if ::nRowAt > nMaxRow
+         ::nFirstRow++
+      endif
+      ::nRowAt = Min( nMaxRow, ::nRowAt )
+      ::oGet:cText = Eval( ::bData, ::nFirstRow + ::nRowAt - 1 )
+      ::oGet:setPos( Len( AllTrim( ::oGet:cText ) ) + 1 )
+      ::refresh()
+   endif
+
+RETURN NIL
+
+
+
+static FUNCTION TGetList_GoUp( ) ; local Self AS CLASS TGetList := QSelf() AS CLASS TGetList
+
+   local nMaxRow := ::RowCount()
+
+   if ::nFirstRow + ::nRowAt - 1 > 1
+      ::nRowAt--
+      if ::nRowAt < 1
+         ::nFirstRow--
+      endif
+      ::nRowAt = Max( 1, ::nRowAt )
+      ::oGet:cText = Eval( ::bData, ::nFirstRow + ::nRowAt - 1 )
+      ::oGet:setPos( Len( AllTrim( ::oGet:cText ) ) + 1 )
+      ::refresh()
+   else
+      if ::uOrgValue <> NIL
+         ::oGet:cText = ::uOrgValue
+         ::oGet:setPos( Len( AllTrim( ::uOrgValue ) ) + 1 )
+      endif
+      ::oGet:CloseList()
+   endif
+
+RETURN NIL
+
+
+static FUNCTION TGetList_HandleEvent( nMsg, nWParam, nLParam ) ; local Self AS CLASS TGetList := QSelf() AS CLASS TGetList
+
+   switch nMsg
+      case 675
+         return ::MouseLeave( nHiWord( nLParam ), nLoWord( nLParam ), nWParam )
+         exit
+   endswitch
+
+return ::Super:HandleEvent( nMsg, nWParam, nLParam )
+
+
+
+static FUNCTION TGetList_LButtonUp( nRow, nCol ) ; local Self AS CLASS TGetList := QSelf() AS CLASS TGetList
+
+   local nRowAt := ::GetRowAt( nRow )
+
+   ::oGet:cText = Eval( ::bData, ::nFirstRow + ::nRowAt - 1 )
+   ::oGet:setPos( Len( AllTrim( ::oGet:cText ) ) + 1 )
+
+   ::oGet:CloseList()
+
+RETURN NIL
+
+
+
+static FUNCTION TGetList_MouseLeave( ) ; local Self AS CLASS TGetList := QSelf() AS CLASS TGetList
+
+   ::nRowAt = 0
+
+   ::Refresh()
+
+RETURN nil
+
+
+
+static FUNCTION TGetList_MouseMove( nRow, nCol, nFlags ) ; local Self AS CLASS TGetList := QSelf() AS CLASS TGetList
+
+   local nRowAt := ::GetRowAt( nRow )
+
+   ::nRowAt = nRowAt
+
+   ::Refresh()
+
+   TrackMouseEvent( ::hWnd, 2 )
+
+return ::Super:MouseMove( nRow, nCol, nFlags )
+
+
+
+static FUNCTION TGetList_Paint( ) ; local Self AS CLASS TGetList := QSelf() AS CLASS TGetList
+
+   local aInfo
+   local aRect  := GetClientRect( ::hWnd )
+   local n, nRowPos
+   local nMaxRow  := ::RowCount()
+   local aBack    := ::aGradList
+
+   aInfo   = ::DispBegin()
+
+   GradientFill( ::hDC, aRect[ 1 ], aRect[ 2 ], aRect[ 3 ], aRect[ 4 ], aBack )
+   nRowPos = 1
+
+   while nRowPos <= nMaxRow
+      ::PaintData( ::hDC, nRowPos )
+      nRowPos ++
+
+   end
+
+   ::DispEnd( aInfo )
+
+RETURN NIL
+
+
+
+static FUNCTION TGetList_PaintData( hDC, nAtItem ) ; local Self AS CLASS TGetList := QSelf() AS CLASS TGetList
+
+   local aRect := { ( nAtItem - 1 ) * ::nRowHeight , 1, nAtItem * ::nRowHeight, ::nWidth-1 }
+   local hBrush
+   local hOldBrush
+   local nRound := 3
+   local aGrad := ::aGradItem
+   local nClrOut := ::nClrLine
+   local nRecNo := Min( ::KeyCount(), ::nFirstRow + nAtItem - 1 )
+   local hOldFonf
+   local nOldColor
+   local nColorTxt := ::nClrText
+
+   if ::nRowAt == nAtItem
+      if aGrad <> nil
+         hBrush = GradientBrush( hDC, 0, 0, ::nWidth, ::nRowHeight, aGrad )
+         hOldBrush = SelectObject( hDC, hBrush )
+
+
+
+
+         Roundrect( hDC, aRect[ 2 ],  aRect[ 1 ],  aRect[ 4 ]-2,  aRect[ 3 ], nRound, nRound )
+
+
+
+
+
+         RoundBox( hDC, aRect[ 2 ],  aRect[ 1 ],  aRect[ 4 ]-2,  aRect[ 3 ], nRound, nRound, nClrOut )
+
+         SelectObject( hDC, hOldBrush )
+
+         DeleteObject( hBrush )
+      endif
+      nColorTxt = ::nClrSel
+   endif
+
+   hOldFonf = SelectObject( hDC, ::oFont:hFont )
+   nOldColor = SetTextColor( hDC, nColorTxt )
+   DrawTextTransparent( hDC, Eval( ::bData, nRecNo ), { aRect[ 1 ] + 2, aRect[ 2 ] + 2, aRect[ 3 ], aRect[ 4 ] - 2 } , 0 )
+   SelectObject( hDC, hOldFonf )
+   SetTextColor( hDC, nOldColor )
+
+RETURN NIL
+
+
+
+static function FontHeight( oObj, oFont )
+
+   local hDC
+   local nHeight
+
+   hDC := oObj:GetDC()
+   oFont:Activate( hDC )
+   nHeight := GetTextHeight( oObj:hWnd, hDC )
+   oObj:ReleaseDC()
+
+return nHeight
+
+
+
+static function IsRecordSet( o )
+
+   local lRecSet  := .F.
+   local u
+
+   BEGIN SEQUENCE WITH {| oErr | Break( oErr ) }
+      u           := o:Fields:Count()
+      lRecSet     := .T.
+   RECOVER
+   END
+
+return lRecSet

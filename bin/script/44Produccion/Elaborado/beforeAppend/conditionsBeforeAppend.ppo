@@ -1,0 +1,21 @@
+function InicioHRB( oElaborado )
+
+
+
+
+
+
+
+
+
+
+   if Empty( oElaborado:oDbfVir:cCodTmp )
+      setAlertTextDialog( "Código de temporada es obligatorio", oElaborado:oDlg )
+      oElaborado:oFld:SetOption( 2 )
+      oElaborado:oGetTemporada:SetFocus()
+      Return .F.
+   else
+      endAutoTextDialog()
+   end
+
+return .T.

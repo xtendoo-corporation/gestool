@@ -1,0 +1,3192 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 27 ".\.\Prg\TpvCobros.prg"
+static oThis
+
+
+
+_HB_CLASS TpvCobros ; function TpvCobros ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TpvCobros", iif( .F., { }, { @HBObject() } ), @TpvCobros() ) ) ;
+
+   _HB_MEMBER { oSender } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSender"}, .F. )
+
+   _HB_MEMBER { nExit } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nExit"}, .F. )
+
+   _HB_MEMBER { aFormasdePago } ; oClass:AddMultiClsData(, {}, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aFormasdePago"}, .F. )
+   _HB_MEMBER { aResourceFormaPago } ; oClass:AddMultiClsData(, aMiddleResourceFormaPago(), nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aResourceFormaPago"}, .F. )
+   _HB_MEMBER { aBigResourceFormaPago } ; oClass:AddMultiClsData(, aBigResourceFormaPago(), nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aBigResourceFormaPago"}, .F. )
+
+   _HB_MEMBER { oDlg } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDlg"}, .F. )
+   _HB_MEMBER { oDlgLiq } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDlgLiq"}, .F. )
+
+      _HB_MEMBER { aButtonsMoney } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aButtonsMoney"}, .F. )
+      _HB_MEMBER { oBtnLimpiarTexto } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnLimpiarTexto"}, .F. )
+      _HB_MEMBER { oBtnAddCobro } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnAddCobro"}, .F. )
+      _HB_MEMBER { oBtnDelCobro } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnDelCobro"}, .F. )
+      _HB_MEMBER { oBtnTipoImpresion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnTipoImpresion"}, .F. )
+      _HB_MEMBER { oBtnAceptar } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnAceptar"}, .F. )
+      _HB_MEMBER { oBtnCalcMoney } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnCalcMoney"}, .F. )
+
+      _HB_MEMBER { oTextoTotal } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTextoTotal"}, .F. )
+      _HB_MEMBER { cTextoTotal } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTextoTotal"}, .F. )
+
+      _HB_MEMBER { oGetEntregado } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetEntregado"}, .F. )
+      _HB_MEMBER { nGetEntregado } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nGetEntregado"}, .F. )
+      _HB_MEMBER { cGetEntregado } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cGetEntregado"}, .F. )
+
+      _HB_MEMBER { oBrwPago } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwPago"}, .F. )
+      _HB_MEMBER { oBrwFormasPago } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwFormasPago"}, .F. )
+      _HB_MEMBER { cBmpSalidaImpresora } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cBmpSalidaImpresora"}, .F. )
+
+      _HB_MEMBER { lDecimalPoint } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lDecimalPoint"}, .F. )
+
+   _HB_MEMBER { lEfectivoMoney } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lEfectivoMoney"}, .F. )
+   _HB_MEMBER { lClickMoneda } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lClickMoneda"}, .F. )
+
+   _HB_MEMBER { cCodigoFormaPago } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoFormaPago"}, .F. )
+
+   _HB_MEMBER { nUbiTik } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nUbiTik"}, .F. )
+   _HB_MEMBER { nEstado } ; oClass:AddMultiData(, 2, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nEstado"}, .F. )
+
+   _HB_MEMBER { nTotal } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotal"}, .F. )
+
+   _HB_MEMBER { aCobros } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aCobros"}, .F. )
+
+   _HB_MEMBER { aBtnFPago } ; oClass:AddMultiData(, Array(4), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aBtnFPago"}, .F. )
+
+   _HB_MEMBER { aTicketsPendientes } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aTicketsPendientes"}, .F. )
+
+   _HB_MEMBER { aTicketsLiquidados } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aTicketsLiquidados"}, .F. )
+
+   _HB_MEMBER { oBrwPendientes } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwPendientes"}, .F. )
+
+   _HB_MEMBER { nUltimoCambio } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nUltimoCambio"}, .F. )
+
+   _HB_MEMBER { cCodigoClienteSeleccionado } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoClienteSeleccionado"}, .F. )
+
+
+
+
+
+   _HB_MEMBER New( oSender) AS CLASS TpvCobros; oClass:AddMethod( "New", @TpvCobros_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER End(); oClass:AddMethod( "End", @TpvCobros_End(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lCobro(); oClass:AddMethod( "lCobro", @TpvCobros_lCobro(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lCobroExacto(); oClass:AddMethod( "lCobroExacto", @TpvCobros_lCobroExacto(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lCobroExactoTicket(); oClass:AddMethod( "lCobroExactoTicket", @TpvCobros_lCobroExactoTicket(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER lCobroExactoAlbaran(); oClass:AddMethod( "lCobroExactoAlbaran", @TpvCobros_lCobroExactoAlbaran(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+
+   _HB_MEMBER lResource(); oClass:AddMethod( "lResource", @TpvCobros_lResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER RefreshResource(); oClass:AddInline( "RefreshResource", {|Self | ( ( Self ) ), ( ::oBrwPago:Refresh(), ::SetTextoTotal() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PushCalculadora( cTexto); oClass:AddMethod( "PushCalculadora", @TpvCobros_PushCalculadora(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER PushMoney( nImporte); oClass:AddMethod( "PushMoney", @TpvCobros_PushMoney(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER OnClickReset(); oClass:AddInline( "OnClickReset", {|Self | ( ( Self ) ), ( ::oGetEntregado:cText( 0 ), ::cGetEntregado := "" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER OnClickFormadePago( oBoton); oClass:AddMethod( "OnClickFormadePago", @TpvCobros_OnClickFormadePago(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER OnClickAnnadirCobro(); oClass:AddMethod( "OnClickAnnadirCobro", @TpvCobros_OnClickAnnadirCobro(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER OnClickEliminarCobro(); oClass:AddInline( "OnClickEliminarCobro", {|Self | ( ( Self ) ), ( ::EliminaCobro(), ::RefreshResource() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER OnClickAceptar(); oClass:AddMethod( "OnClickAceptar", @TpvCobros_OnClickAceptar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER ChangeButtonsFormaPago( cTipo); oClass:AddMethod( "ChangeButtonsFormaPago", @TpvCobros_ChangeButtonsFormaPago(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER ChangeBtnImpresion(); oClass:AddMethod( "ChangeBtnImpresion", @TpvCobros_ChangeBtnImpresion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER ChangeCalcMoney(); oClass:AddMethod( "ChangeCalcMoney", @TpvCobros_ChangeCalcMoney(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER SetTextoTotal(); oClass:AddMethod( "SetTextoTotal", @TpvCobros_SetTextoTotal(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER CreaCobro(); oClass:AddMethod( "CreaCobro", @TpvCobros_CreaCobro(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER EliminaCobro(); oClass:AddInline( "EliminaCobro", {|Self | ( ( Self ) ), ( hb_ADel( ::aCobros, ::oBrwPago:nArrayAt, .T. ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ValidCobro(); oClass:AddInline( "ValidCobro", {|Self | ( ( Self ) ), ( ::Entregado() >= ::Total() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CargaCobros( cNumeroTicket); oClass:AddMethod( "CargaCobros", @TpvCobros_CargaCobros(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER EliminaCobros(); oClass:AddMethod( "EliminaCobros", @TpvCobros_EliminaCobros(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GuardaCobros(); oClass:AddMethod( "GuardaCobros", @TpvCobros_GuardaCobros(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InitCobros(); oClass:AddInline( "InitCobros", {|Self | ( ( Self ) ), ( ::aCobros := {} ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ArchivaCobros(); oClass:AddInline( "ArchivaCobros", {|Self | ( ( Self ) ), ( ::EliminaCobros(), ::GuardaCobros() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER CargaFormasdePago(); oClass:AddMethod( "CargaFormasdePago", @TpvCobros_CargaFormasdePago(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SalidaImpresoraDefecto(); oClass:AddMethod( "SalidaImpresoraDefecto", @TpvCobros_SalidaImpresoraDefecto(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Total(); oClass:AddInline( "Total", {|Self | ( ( Self ) ), ( ::nTotal ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Entregado(); oClass:AddMethod( "Entregado", @TpvCobros_Entregado(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Cambio(); oClass:AddInline( "Cambio", {|Self | ( ( Self ) ), ( ::Total() - ::Entregado() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nSenderView(); oClass:AddInline( "nSenderView", {|Self | ( ( Self ) ), ( ::oSender:nView ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CheckVentaCredito( nEstado); oClass:AddMethod( "CheckVentaCredito", @TpvCobros_CheckVentaCredito(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LiquidacionCliente(); oClass:AddMethod( "LiquidacionCliente", @TpvCobros_LiquidacionCliente(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER loadHashTicketsPendientes(); oClass:AddMethod( "loadHashTicketsPendientes", @TpvCobros_loadHashTicketsPendientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LiquidaRecibos(); oClass:AddMethod( "LiquidaRecibos", @TpvCobros_LiquidaRecibos(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LiquidaTicket( hTicket, nImporte); oClass:AddMethod( "LiquidaTicket", @TpvCobros_LiquidaTicket(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ImprimirTicketsLiquidados(); oClass:AddMethod( "ImprimirTicketsLiquidados", @TpvCobros_ImprimirTicketsLiquidados(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER UltimoCambio(); oClass:AddMethod( "UltimoCambio", @TpvCobros_UltimoCambio(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LoadBtnFPago(); oClass:AddMethod( "LoadBtnFPago", @TpvCobros_LoadBtnFPago(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FormaPagoSeleccionada(); oClass:AddMethod( "FormaPagoSeleccionada", @TpvCobros_FormaPagoSeleccionada(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TpvCobros ;
+
+
+
+static FUNCTION TpvCobros_New( oSender ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   ::oSender                  := oSender
+
+   ::lEfectivoMoney           := .T.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ::aButtonsMoney            := {  {  "Id" => 170, "Object" => nil, "Money" =>        { "Text" => "50",    "Action" => {|| ::PushMoney( 50 ) } }, "Calculadora" =>  { "Text" => "7",     "Action" => {|| ::PushCalculadora( "7" ) } } }, {  "Id" => 180, "Object" => nil, "Money" =>        { "Text" => "20",    "Action" => {|| ::PushMoney( 20 ) } }, "Calculadora" =>  { "Text" => "8",     "Action" => {|| ::PushCalculadora( "8" ) } } }, {  "Id" => 190, "Object" => nil, "Money" =>        { "Text" => "10",    "Action" => {|| ::PushMoney( 10 ) } }, "Calculadora" =>  { "Text" => "9",     "Action" => {|| ::PushCalculadora( "9" ) } } }, {  "Id" => 200, "Object" => nil, "Money" =>        { "Text" => "5",     "Action" => {|| ::PushMoney( 5 ) } }, "Calculadora" =>  { "Text" => "4",     "Action" => {|| ::PushCalculadora( "4" ) } } }, {  "Id" => 210, "Object" => nil, "Money" =>        { "Text" => "2",     "Action" => {|| ::PushMoney( 2 ) } }, "Calculadora" =>  { "Text" => "5",     "Action" => {|| ::PushCalculadora( "5" ) } } }, {  "Id" => 220, "Object" => nil, "Money" =>        { "Text" => "1",     "Action" => {|| ::PushMoney( 1 ) } }, "Calculadora" =>  { "Text" => "6",     "Action" => {|| ::PushCalculadora( "6" ) } } }, {  "Id" => 230, "Object" => nil, "Money" =>        { "Text" => "0,50",  "Action" => {|| ::PushMoney( 0.50 ) } }, "Calculadora" =>  { "Text" => "1",     "Action" => {|| ::PushCalculadora( "1" ) } } }, {  "Id" => 240, "Object" => nil, "Money" =>        { "Text" => "0,20",  "Action" => {|| ::PushMoney( 0.20 ) } }, "Calculadora" =>  { "Text" => "2",     "Action" => {|| ::PushCalculadora( "2" ) } } }, {  "Id" => 250, "Object" => nil, "Money" =>        { "Text" => "0,10",  "Action" => {|| ::PushMoney( 0.10 ) } }, "Calculadora" =>  { "Text" => "3",     "Action" => {|| ::PushCalculadora( "3" ) } } }, {  "Id" => 260, "Object" => nil, "Money" =>        { "Text" => "0,05",  "Action" => {|| ::PushMoney( 0.05 ) } }, "Calculadora" =>  { "Text" => "0",     "Action" => {|| ::PushCalculadora( "0" ) } } }, {  "Id" => 270, "Object" => nil, "Money" =>        { "Text" => "0,02",  "Action" => {|| ::PushMoney( 0.02 ) } }, "Calculadora" =>  { "Text" => ",",     "Action" => {|| ::PushCalculadora( "." ) } } }, {  "Id" => 280, "Object" => nil, "Money" =>        { "Text" => "0.01",  "Action" => {|| ::PushMoney( 0.01 ) } }, "Calculadora" =>  { "Text" => "",      "Action" => {|| ::PushCalculadora( "." ) } } } }
+
+
+   ::CargaFormasdePago()
+
+Return Self
+
+
+
+static FUNCTION TpvCobros_End( ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   if !Empty( ::oDlg )
+      ::oDlg:End()
+   end
+
+   ::oDlg               := nil
+
+Return Self
+
+
+
+
+
+
+static FUNCTION TpvCobros_lCobro( ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   ::nTotal             := ::oSender:sTotal:nTotalDocumento
+   ::nUbiTik            := ::oSender:oTiketCabecera:nUbiTik
+   ::cCodigoFormaPago   := ::oSender:oTiketCabecera:cFpgTik
+
+   ::InitCobros()
+
+   if lImporteExacto()
+      Return ::lCobroExacto()
+   else
+      Return ::lResource()
+   end
+
+Return .T.
+
+
+
+static FUNCTION TpvCobros_lCobroExacto( ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   do case
+      case ::oSender:nTipoDocumento == 2
+         ::lCobroExactoAlbaran()
+
+      otherwise
+         ::lCobroExactoTicket()
+
+   end
+
+Return .T.
+
+
+
+static FUNCTION TpvCobros_lCobroExactoTicket( ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   ::CreaCobro( ::Total() )
+
+   ::nEstado                  := 2
+
+   ::nExit                    := 3
+
+Return .T.
+
+
+
+static FUNCTION TpvCobros_lCobroExactoAlbaran( ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   ::nExit                    := 2
+
+Return .T.
+
+
+
+static FUNCTION TpvCobros_lResource( ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   local cResourceFormaPago
+
+
+
+
+
+   ::SalidaImpresoraDefecto()
+
+   ::CargaCobros()
+
+   ::lClickMoneda       := .F.
+
+   if uFieldEmpresa( "lTotTikCob" )
+      ::nGetEntregado   := ( ::Total() - ::Entregado() )
+   else
+      ::nGetEntregado   := 0
+   end
+
+
+
+
+   ::oDlg = TDialog():New(,,,, ( ::oSender:cTipoDocumento() ), ( "NewCobro" ),, .F.,,,,,, .F.,, ( ::oSender:oFntDlg ),,,, .F.,, "::oDlg", nil, )
+
+
+
+
+
+
+
+
+      ::oTextoTotal := TSay():ReDefine( 100, {||            ::cTextoTotal}, ::oDlg,,,, .F.,, .F., .F., )
+
+
+
+
+
+      ::oBtnTipoImpresion  := TButtonBmp():ReDefine( 110, {|| ::ChangeBtnImpresion() }, ::oDlg,,, .F.,,,, .F., ::cBmpSalidaImpresora )
+
+
+
+
+
+      ::oBtnAceptar        := TButtonBmp():ReDefine( 120, {|| ::OnClickAceptar() }, ::oDlg,,, .F.,,,, .F., "gc_check_32" )
+
+
+
+
+
+      ::oBrwPago                 := IXBrowse():New( ::oDlg )
+      ::oBrwPago:bClrSel         := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      ::oBrwPago:bClrSelFocus    := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+      ::oBrwPago:lVScroll        := .T.
+      ::oBrwPago:lHScroll        := .F.
+      ::oBrwPago:nMarqueeStyle   := 5
+      ::oBrwPago:lHeader         := .F.
+      ::oBrwPago:lFooter         := .F.
+      ::oBrwPago:lRecordSelector := .F.
+
+      ::oBrwPago:SetArray( ::aCobros, , , .F. )
+
+      with object ( ::oBrwPago:AddCol() )
+         :cHeader                := "Pago"
+         :bEditValue             := {|| ::aCobros[ ::oBrwPago:nArrayAt ]:cTexto }
+         :nWidth                 := 210
+      end
+
+      with object ( ::oBrwPago:AddCol() )
+         :cHeader                := "Importe"
+         :bEditValue             := {|| ::aCobros[ ::oBrwPago:nArrayAt ]:nImporte }
+         :cEditPicture           := ::oSender:cPictureTotal
+         :nWidth                 := 150
+         :nDataStrAlign          := 1
+         :nHeadStrAlign          := 1
+      end
+
+      ::oBrwPago:CreateFromResource( 130 )
+
+
+
+
+
+      ::aBtnFPago[1]                   := TBtnBmp():ReDefine( 410,,,,,,, ::oDlg, .F., , .F. )
+      ::aBtnFPago[2]                   := TBtnBmp():ReDefine( 420,,,,,,, ::oDlg, .F., , .F. )
+      ::aBtnFPago[3]                   := TBtnBmp():ReDefine( 430,,,,,,, ::oDlg, .F., , .F. )
+      ::aBtnFPago[4]                   := TBtnBmp():ReDefine( 440,,,,,,, ::oDlg, .F., , .F. )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ::oGetEntregado := TGetHlp():ReDefine( 150, { | u | If( PCount()==0, ::nGetEntregado, ::nGetEntregado:= u ) }, ::oDlg,, ::oSender:cPictureTotal,,,,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      ::oBtnLimpiarTexto   := TButton():ReDefine( 160, {|| ::OnClickReset() }, ::oDlg, , , .F. )
+
+
+
+
+
+      aEval( ::aButtonsMoney, {|h| h[ "Object" ] := TButton():ReDefine( h[ "Id" ], h[ "Money", "Action" ], ::oDlg, , , .F. ) } )
+
+
+
+
+
+      ::oBtnCalcMoney      := TButtonBmp():ReDefine( 300, {|| ::ChangeCalcMoney() }, ::oDlg,,, .F.,,,, .F., "gc_calculator_32",, )
+
+
+
+
+
+      ::oBtnAddCobro       := TButtonBmp():ReDefine( 290, {|| ::OnClickAnnadirCobro() }, ::oDlg,,, .F.,,,, .F., "New32",, )
+
+
+
+
+
+      ::oBtnDelCobro       := TButtonBmp():ReDefine( 310, {|| ::OnClickEliminarCobro() }, ::oDlg,,, .F.,,,, .F., "Del32",, )
+
+
+
+
+
+   ::oDlg:bStart           := {|| ::LoadBtnFPago(), ::SetTextoTotal() }
+
+
+
+
+
+   ::oDlg:Activate( ::oDlg:bLClicked, ::oDlg:bMoved, ::oDlg:bPainted, .T.,,,, ::oDlg:bRClicked,,, )
+
+   if !Empty( ::oBrwPago )
+      ::oBrwPago:End()
+   end
+
+
+
+
+
+   ::oBrwPago              := nil
+
+
+Return ( ::oDlg:nResult == 1 )
+
+
+
+static FUNCTION TpvCobros_ChangeBtnImpresion( ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   do case
+      case ::nExit == 3
+
+         ::nExit   := 2
+         ::oBtnTipoImpresion:LoadBitmap( "gc_printer2_ok_32" )
+
+      case ::nExit == 2
+
+         ::nExit   := 1
+         ::oBtnTipoImpresion:LoadBitmap( "gc_printer2_sun_32" )
+
+      case ::nExit == 1
+
+         ::nExit   := 3
+         ::oBtnTipoImpresion:LoadBitmap( "gc_printer2_delete_32" )
+
+   end
+
+   ::oBtnTipoImpresion:Refresh()
+
+Return ( Self )
+
+
+
+static FUNCTION TpvCobros_SalidaImpresoraDefecto ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   do case
+      case uFieldEmpresa( "nTipImpTpv" ) <= 1
+
+         ::nExit                 := 3
+         ::cBmpSalidaImpresora   := "gc_printer2_delete_32"
+
+      case uFieldEmpresa( "nTipImpTpv" ) == 2
+
+         ::nExit                 := 2
+         ::cBmpSalidaImpresora   := "gc_printer2_ok_32"
+
+      otherwise
+
+         ::nExit                 := 1
+         ::cBmpSalidaImpresora   := "gc_printer2_sun_32"
+
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TpvCobros_SetTextoTotal( ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   if ::Entregado() >= ::Total()
+      ::oTextoTotal:SetText( "Cambio: " + alltrim( Trans( Abs( ::Cambio() ), ::oSender:cPictureTotal ) ) )
+   else
+      ::oTextoTotal:SetText( "Pendiente: " + alltrim( Trans( ::Cambio(), ::oSender:cPictureTotal ) ) )
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TpvCobros_PushCalculadora( cTexto ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   ::cGetEntregado            += cTexto
+
+   ::oGetEntregado:cText( ValToMoney( ::cGetEntregado ) )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TpvCobros_PushMoney( nImporte ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   if !::lClickMoneda
+      ::oGetEntregado:cText( 0 )
+   end
+
+   ::nGetEntregado      += nImporte
+
+   ::oGetEntregado:cText( ::nGetEntregado )
+
+   ::lClickMoneda       := .T.
+
+RETURN ( Self )
+
+
+
+static FUNCTION TpvCobros_CargaFormasdePago( ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   if empty( ::aFormasdePago )
+
+      if ( ::oSender:oFormaPago:Used() )
+
+         ::oSender:oFormaPago:GetStatus()
+
+         ::oSender:oFormaPago:OrdSetFocus( "nPosTpv" )
+
+         ::oSender:oFormaPago:GoTop()
+         while !::oSender:oFormaPago:eof()
+
+
+
+
+            aAdd( ::aFormasdePago, { "Codigo" =>      ::oSender:oFormaPago:cCodPago, "Descripcion" => Rtrim( ::oSender:oFormaPago:cDesPago ), "lEfectivo" =>   ( ::oSender:oFormaPago:nTipPgo <= 1 ) , "Imagen" =>      ::oSender:oFormaPago:nImgTpv } )
+
+            ::oSender:oFormaPago:Skip()
+
+         end
+
+         ::oSender:oFormaPago:SetStatus()
+
+      end
+
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TpvCobros_ChangeButtonsFormaPago( cTipo, lEfectivo ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+    AEval( ::aButtonsMoney, {|h| h[ "Object" ]:bAction := h[ cTipo, "Action" ], SetWindowText( h[ "Object" ]:hWnd, h[ cTipo, "Text" ] ) } )
+
+    if !Empty( ::oBtnCalcMoney )
+
+      if lEfectivo
+         ::oBtnCalcMoney:Show()
+         ::lEfectivoMoney := .T.
+      else
+         ::oGetEntregado:cText( ::Cambio() )
+         ::oBtnCalcMoney:Hide()
+      end
+
+      ::oBtnCalcMoney:Refresh()
+
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TpvCobros_OnClickAceptar( ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   local lEnd        := .T.
+
+   ::oDlg:Disable()
+
+   if ::CreaCobro( ::nGetEntregado )
+
+      ::RefreshResource()
+
+
+
+      if ( ::oSender:nTipoDocumento <> 2 ) .AND. ( ::Total() <> 0 )
+
+         do case
+            case ::Entregado() == 0
+
+               lEnd  := ::CheckVentaCredito( 3 )
+
+            case ::Entregado() >= ::Total()
+
+               ::nEstado      := 2
+
+            case ::Entregado() < ::Total()
+
+               lEnd  := ::CheckVentaCredito( 1 )
+
+         end
+
+
+
+
+
+
+
+
+      end
+
+   else
+
+       lEnd           := .F.
+
+   end
+
+   ::oDlg:Enable()
+
+   if lEnd
+      ::oDlg:End( 1 )
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TpvCobros_CheckVentaCredito( nEstado ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   if Empty( ::oSender:oTiketCabecera:cCliTik )
+      apoloMsgStop( "Tiene que seleccionar un cliente para poder hacer una venta a crédito" )
+      Return .F.
+   end
+
+   if ::oSender:oTiketCabecera:cCliTik == cDefCli()
+      ::nEstado   := nEstado
+      return .T.
+   end
+
+   if ApoloMsgNoYes( "¿Desea vender a crédito a " + AllTrim( ::oSender:oTiketCabecera:cNomTik ) + " ?", "", .T. )
+      ::nEstado   := nEstado
+   else
+      return .F.
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TpvCobros_ChangeCalcMoney ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   if ::lEfectivoMoney
+      AEval( ::aButtonsMoney, {|h| h[ "Object" ]:bAction := h[ "Calculadora", "Action" ], SetWindowText( h[ "Object" ]:hWnd, h[ "Calculadora", "Text" ] ) } )
+      ::oBtnCalcMoney:LoadBitmap( "gc_money2_32" )
+      ::oBtnCalcMoney:Refresh()
+   else
+      AEval( ::aButtonsMoney, {|h| h[ "Object" ]:bAction := h[ "Money", "Action" ], SetWindowText( h[ "Object" ]:hWnd, h[ "Money", "Text" ] ) } )
+      ::oBtnCalcMoney:LoadBitmap( "gc_calculator_32" )
+      ::oBtnCalcMoney:Refresh()
+   end
+
+   ::lEfectivoMoney := !::lEfectivoMoney
+
+Return ( Self )
+
+
+
+static FUNCTION TpvCobros_LoadBtnFPago( ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   local n     := 1
+   local hFormaPago
+
+   for each hFormaPago in ::aFormasdePago
+
+      ::aBtnFPago[n]:bAction  := {| o | ::OnClickFormadePago( o ) }
+      ::aBtnFPago[n]:SetText( Capitalize( hGet( hFormaPago, "Descripcion" ) ) )
+      ::aBtnFPago[n]:LoadBitmaps( ::aBigResourceFormaPago[ hGet( hFormaPago, "Imagen" ) ] )
+      ::aBtnFPago[n]:Cargo    := hFormaPago
+      ::aBtnFPago[n]:Show()
+
+      if !Empty( cDefFpg() )
+
+         if AllTrim( cDefFpg() ) == AllTrim( hGet( hFormaPago, "Codigo" ) )
+            ::aBtnFPago[n]:lPressed := .T.
+         end
+
+      end
+
+      n++
+
+      if n > 4
+         exit
+      end
+
+   next
+
+Return ( Self )
+
+
+
+static FUNCTION TpvCobros_OnClickFormadePago( oBoton ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   ::ChangeButtonsFormaPago( if( hGet( oBoton:Cargo, "lEfectivo" ), "Money", "Calculadora" ), hGet( oBoton:Cargo, "lEfectivo" ) )
+
+   aEval( ::aBtnFPago, {| o | o:lPressed  := .F., o:SetColor( 0, ( 240 + ( 240 * 256 ) + ( 240 * 65536 ) ) ) } )
+
+   oBoton:SetColor( 0, ( 255 + ( 205 * 256 ) + ( 67 * 65536 ) ) )
+   oBoton:lPressed      := .T.
+
+   aEval( ::aBtnFPago, {| o | o:Refresh() } )
+
+Return .T.
+
+
+
+static FUNCTION TpvCobros_FormaPagoSeleccionada( ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   local oBtn
+   local cCodigo  := ""
+
+   for each oBtn in ::aBtnFPago
+
+      if oBtn:lPressed .AND. !Empty( oBtn:Cargo )
+         cCodigo  := hGet( oBtn:Cargo, "Codigo" )
+      end
+
+   next
+
+Return cCodigo
+
+
+
+static FUNCTION TpvCobros_OnClickAnnadirCobro( ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   ::CreaCobro( ::nGetEntregado )
+
+   ::oGetEntregado:cText( 0 )
+
+   ::RefreshResource()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TpvCobros_CreaCobro( nImporte ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   local cCodigo
+   local sTipoCobro
+   local nCambio              := 0
+
+   if !lImporteExacto()
+
+      if len( ::aFormasdePago ) < 1
+         apoloMsgStop( "No existen formas de pago" )
+         RETURN .F.
+      end
+
+      if ::oSender:nTipoDocumento <> 2
+
+         if Empty( ::FormaPagoSeleccionada() )
+            apoloMsgStop( "Tiene que seleccionar una forma de pago" )
+            RETURN .F.
+         end
+
+      end
+
+   end
+
+   CursorWait()
+
+   if lImporteExacto()
+      cCodigo                 := ::cCodigoFormaPago
+   else
+      cCodigo                 := ::FormaPagoSeleccionada()
+   end
+
+   if !empty( nImporte )
+
+      nCambio                 := ::Total() - ::Entregado() - nImporte
+
+      sTipoCobro              := STipoCobro()
+
+      sTipoCobro:cCodigo      := cCodigo
+      sTipoCobro:cTexto       := oRetFld( cCodigo, ::oSender:oFormaPago )
+      sTipoCobro:nImporte     := nImporte
+
+      if ( nCambio < 0 )
+         sTipoCobro:nCambio   := abs( nCambio )
+      end
+
+      sTipoCobro:AddCobro( ::aCobros )
+
+   end
+
+   CursorWE()
+
+RETURN .T.
+
+
+
+
+
+
+static FUNCTION TpvCobros_CargaCobros( ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   local sTipoCobro
+   local cNumeroTicket
+
+   if ::oSender:lBlankTicket()
+      return .F.
+   endif
+
+   cNumeroTicket                 := ::oSender:cNumeroTicket()
+
+   ::InitCobros()
+
+   if ::oSender:oTiketCobro:Seek( cNumeroTicket )
+
+      while ( ::oSender:oTiketCobro:cSerTik + ::oSender:oTiketCobro:cNumTik + ::oSender:oTiketCobro:cSufTik == cNumeroTicket ) .AND. !( ::oSender:oTiketCobro:Eof() )
+
+         sTipoCobro              := STipoCobro()
+         sTipoCobro:cCodigo      := ::oSender:oTiketCobro:cFpgPgo
+         sTipoCobro:cTexto       := oRetFld( ::oSender:oTiketCobro:cFpgPgo, ::oSender:oFormaPago )
+         sTipoCobro:nImporte     := ::oSender:oTiketCobro:nImpTik
+         sTipoCobro:nCambio      := Max( ::oSender:oTiketCobro:nDevTik, 0 )
+         sTipoCobro:lCloseCobro  := ::oSender:oTiketCobro:lCloPgo
+         sTipoCobro:cSesionCobro := ::oSender:oTiketCobro:cTurPgo
+
+         sTipoCobro:AddCobro( ::aCobros )
+
+         ::oSender:oTiketCobro:Skip()
+
+      end
+
+      ::oSender:oTemporalCobro:GoTop()
+
+   end
+
+Return .T.
+
+
+
+
+
+
+static FUNCTION TpvCobros_EliminaCobros( cNumeroTicket ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   If( cNumeroTicket == nil, cNumeroTicket := ::oSender:cNumeroTicket(), ) ;
+
+   if !empty( cNumeroTicket )
+
+      ::oSender:oTiketCobro:GetStatus()
+
+      while ( ::oSender:oTiketCobro:Seek( cNumeroTicket ) )
+         ::oSender:oTiketCobro:Delete(.F.)
+      end
+
+      ::oSender:oTiketCobro:SetStatus()
+
+   end
+
+Return .T.
+
+
+
+static FUNCTION TpvCobros_Entregado( ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   local nEntregado  := 0
+
+   aEval( ::aCobros, {|sCobro| nEntregado += sCobro:nImporte } )
+
+RETURN ( nEntregado )
+
+
+
+static FUNCTION TpvCobros_GuardaCobros( ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   local sCobro
+
+   for each sCobro in ::aCobros
+
+      if ::oSender:oTiketCobro:Append()
+
+         ::oSender:oTiketCobro:cSerTik    := ::oSender:oTiketCabecera:cSerTik
+         ::oSender:oTiketCobro:cNumTik    := ::oSender:oTiketCabecera:cNumTik
+         ::oSender:oTiketCobro:cSufTik    := ::oSender:oTiketCabecera:cSufTik
+         ::oSender:oTiketCobro:uuid       := win_uuidcreatestring()
+         ::oSender:oTiketCobro:paruuid    := ::oSender:oTiketCabecera:uuid
+
+         ::oSender:oTiketCobro:cCtaRec    := cCtaCob()
+         ::oSender:oTiketCobro:dPgoTik    := GetSysDate()
+         ::oSender:oTiketCobro:cTimTik    := SubStr( Time(), 1, 5 )
+         ::oSender:oTiketCobro:cCodCaj    := Application():CodigoCaja()
+
+         ::oSender:oTiketCobro:cDivPgo    := cDivEmp()
+         ::oSender:oTiketCobro:nVdvPgo    := nChgDiv( cDivEmp(), ::oSender:oDivisas:cAlias )
+
+         ::oSender:oTiketCobro:lCloPgo    := sCobro:lCloseCobro
+         ::oSender:oTiketCobro:cFpgPgo    := sCobro:cCodigo
+         ::oSender:oTiketCobro:nImpTik    := sCobro:nImporte
+         ::oSender:oTiketCobro:nDevTik    := sCobro:nCambio
+
+         if sCobro:lCloseCobro
+            ::oSender:oTiketCobro:cTurPgo := sCobro:cSesionCobro
+         else
+            ::oSender:oTiketCobro:cTurPgo := cCurSesion()
+         end
+
+         ::oSender:oTiketCobro:Save()
+
+      else
+
+         msgStop( "No he podido almacenar los pagos del ticket " + ::oSender:cNumeroTicketFormato() )
+
+         Return .F.
+
+      end
+
+   next
+
+Return .T.
+
+
+
+static FUNCTION TpvCobros_LiquidacionCliente( cCodCli, cNomcli ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   local oBmpTitle
+   local oTittle
+   local cTittle                 := "Liquidación: " + AllTrim( cNomcli )
+   local cResourceFormaPago
+
+   ::cCodigoClienteSeleccionado  := cCodCli
+
+   ::aTicketsLiquidados          := {}
+   ::nGetEntregado               := 0
+   ::CargaFormasdePago()
+
+   ::loadHashTicketsPendientes()
+
+   if len( ::aTicketsPendientes ) == 0
+      apoloMsgStop( "No hay tickets pendientes para: " + AllTrim( cNomcli ) )
+      return ( .T. )
+   end
+
+
+
+
+   ::oDlgLiq = TDialog():New(,,,, ( ::oSender:cTipoDocumento() ), ( "LIQCLIENTE" ),, .F.,,,,,, .F.,, ( ::oSender:oFntDlg ),,,, .F.,, "::oDlgLiq", nil, )
+
+
+
+
+
+   oBmpTitle := TBitmap():ReDefine( 500, "hand_money_64",, ::oDlgLiq,,, .F., .F.,,, .F.,,, .T. )
+
+
+
+
+   oTittle := TSay():ReDefine( 510, {||            cTittle}, ::oDlgLiq,,,, .F.,, .F., .F., )
+
+
+
+
+
+   ::oGetEntregado := TGetHlp():ReDefine( 110, { | u | If( PCount()==0, ::nGetEntregado, ::nGetEntregado:= u ) }, ::oDlgLiq,, ::oSender:cPictureTotal,,,,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+   ::oBrwPendientes                 := IXBrowse():New( ::oDlgLiq )
+
+   ::oBrwPendientes:bClrSel         := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+   ::oBrwPendientes:bClrSelFocus    := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+   ::oBrwPendientes:nMarqueeStyle   := 5
+   ::oBrwPendientes:lRecordSelector := .F.
+   ::oBrwPendientes:nRowHeight      := 50
+   ::oBrwPendientes:lFooter         := .T.
+   ::oBrwPendientes:SetArray( ::aTicketsPendientes, , , .F. )
+
+   ::oBrwPendientes:CreateFromResource( 100 )
+
+   with object ( ::oBrwPendientes:AddCol() )
+      :cHeader                      := "Número"
+      :bEditValue                   := {|| hGet( ::aTicketsPendientes[ ::oBrwPendientes:nArrayAt ], "numeroformato" ) }
+      :nWidth                       := 150
+   end
+
+   with object ( ::oBrwPendientes:AddCol() )
+      :cHeader                      := "Fecha"
+      :bEditValue                   := {|| hGet( ::aTicketsPendientes[ ::oBrwPendientes:nArrayAt ], "fecha" ) }
+      :nDataStrAlign                := 0
+      :nHeadStrAlign                := 0
+      :nWidth                       := 120
+   end
+
+   with object ( ::oBrwPendientes:AddCol() )
+      :cHeader                      := "Importe"
+      :bEditValue                   := {|| hGet( ::aTicketsPendientes[ ::oBrwPendientes:nArrayAt ], "importe" ) }
+      :cEditPicture                 := ::oSender:cPictureTotal
+      :nWidth                       := 160
+   end
+
+   with object ( ::oBrwPendientes:AddCol() )
+      :cHeader                      := "Pendiente"
+      :bEditValue                   := {|| hGet( ::aTicketsPendientes[ ::oBrwPendientes:nArrayAt ], "pendiente" ) }
+      :cEditPicture                 := ::oSender:cPictureTotal
+      :nWidth                       := 160
+      :nFooterType                  := 1
+   end
+
+
+
+
+
+   ::oBrwFormasPago                 := IXBrowse():New( ::oDlgLiq )
+   ::oBrwFormasPago:bClrSel         := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+   ::oBrwFormasPago:bClrSelFocus    := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+   ::oBrwFormasPago:lVScroll        := .F.
+   ::oBrwFormasPago:lHScroll        := .F.
+   ::oBrwFormasPago:nMarqueeStyle   := 5
+   ::oBrwFormasPago:lHeader         := .F.
+   ::oBrwFormasPago:lFooter         := .F.
+   ::oBrwFormasPago:lRecordSelector := .F.
+   ::oBrwFormasPago:nRowHeight      := 50
+
+   ::oBrwFormasPago:SetArray( ::aFormasdePago, , , .F. )
+
+   ::oBrwFormasPago:CreateFromResource( 140 )
+
+   with object ( ::oBrwFormasPago:AddCol() )
+      :cHeader                      := "Imagen"
+      :bBmpData                     := {|| ::oBrwFormasPago:aRow[ "Imagen" ] }
+      :nWidth                       := 24
+
+      for each cResourceFormaPago in ::aResourceFormaPago
+         :AddResource( cResourceFormaPago )
+      next
+   end
+
+   with object ( ::oBrwFormasPago:AddCol() )
+      :cHeader                      := "Forma"
+      :bEditValue                   := {|| ::oBrwFormasPago:aRow[ "Descripcion" ] }
+      :nWidth                       := 90
+   end
+
+   TButtonBmp():ReDefine( 120, {|| Calculadora( 0, ::oGetEntregado ) }, ::oDlgLiq,,, .F.,,,, .F., "gc_calculator_32",, )
+
+   TButtonBmp():ReDefine( 1, {|| ::LiquidaRecibos() }, ::oDlgLiq,,, .F.,,,, .F., "gc_check_32" )
+
+   TButtonBmp():ReDefine( 2, {|| ::oDlgLiq:End( 2 ) }, ::oDlgLiq,,, .F.,,,, .F., "gc_door_open2_32" )
+
+   ::oDlgLiq:bStart  := {|| ::oBrwPendientes:MakeTotals() }
+
+   ::oDlgLiq:Activate( ::oDlgLiq:bLClicked, ::oDlgLiq:bMoved, ::oDlgLiq:bPainted, .T.,,,, ::oDlgLiq:bRClicked,,, )
+
+   oBmpTitle:End()
+
+Return nil
+
+
+
+static FUNCTION TpvCobros_loadHashTicketsPendientes( ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   local cConsulta
+
+   ::aTicketsPendientes := {}
+
+   cConsulta            := TicketsClientesModel():hTicketsPendientesFromCliente( ::cCodigoClienteSeleccionado )
+
+   ( cConsulta )->( dbGoTop() )
+
+   while !( cConsulta )->( Eof() )
+
+
+
+
+
+
+
+
+
+      aAdd( ::aTicketsPendientes, {  "cSerTik" => ( cConsulta )->cSerTik , "cNumTik" => ( cConsulta )->cNumTik , "cSufTik" => ( cConsulta )->cSufTik , "numero" => ( cConsulta )->cSerTik + ( cConsulta )->cNumTik + ( cConsulta )->cSufTik , "numeroformato" => ( cConsulta )->cSerTik + "/" + AllTrim( ( cConsulta )->cNumTik ) + "/" + ( cConsulta )->cSufTik , "fecha" => ( cConsulta )->dFecTik , "importe" => ( cConsulta )->nTotTik , "pendiente" => ( ( cConsulta )->nTotTik - nTotCobTik( ( cConsulta )->cSerTik + ( cConsulta )->cNumTik + ( cConsulta )->cSufTik, ::oSender:oTiketCobro:cAlias, ::oSender:oDivisas:cAlias ) ) } )
+
+      ( cConsulta )->( dbSkip() )
+
+   end
+
+Return nil
+
+
+
+static FUNCTION TpvCobros_LiquidaRecibos( ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   local nImporteResto
+   local hTicket
+
+   if ::nGetEntregado <= 0
+      apoloMsgStop( "Importe incorrecto" )
+      ::oGetEntregado:SetFocus()
+      Return ( nil )
+   end
+
+   nImporteResto  := ::nGetEntregado
+
+   for each hTicket in ::aTicketsPendientes
+
+      if nImporteResto > 0
+
+         ::LiquidaTicket( hTicket, nImporteResto )
+
+         aAdd( ::aTicketsLiquidados, hTicket )
+
+         nImporteResto -= hGet( hTicket, "pendiente" )
+
+      end
+
+   next
+
+   ::ImprimirTicketsLiquidados()
+
+   if nImporteResto > 0
+      ::UltimoCambio( nImporteResto )
+   end
+
+   ::oDlgLiq:End( 1 )
+
+Return ( nil )
+
+
+
+static FUNCTION TpvCobros_LiquidaTicket( hTicket, nImporte ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   local nRec     := ( D():TiketsClientes( ::nSenderView() ) )->( Recno() )
+   local nOrdAnt  := ( D():TiketsClientes( ::nSenderView() ) )->( OrdSetFocus( "CNUMTIK" ) )
+
+   if ::oSender:oTiketCobro:Append()
+
+      ::oSender:oTiketCobro:cSerTik    := hGet( hTicket, "cSerTik" )
+      ::oSender:oTiketCobro:cNumTik    := hGet( hTicket, "cNumTik" )
+      ::oSender:oTiketCobro:cSufTik    := hGet( hTicket, "cSufTik" )
+      ::oSender:oTiketCobro:nNumRec    := 1
+
+      ::oSender:oTiketCobro:cCtaRec    := cCtaCob()
+      ::oSender:oTiketCobro:dPgoTik    := GetSysDate()
+      ::oSender:oTiketCobro:cTimTik    := SubStr( Time(), 1, 5 )
+      ::oSender:oTiketCobro:cCodCaj    := Application():CodigoCaja()
+
+      ::oSender:oTiketCobro:cDivPgo    := cDivEmp()
+      ::oSender:oTiketCobro:nVdvPgo    := nChgDiv( cDivEmp(), ::oSender:oDivisas:cAlias )
+
+      ::oSender:oTiketCobro:lCloPgo    := .F.
+      ::oSender:oTiketCobro:cFpgPgo    := hGet( ::aFormasdePago[ ::oBrwFormasPago:nArrayAt ], "Codigo" )
+
+      if nImporte < hGet( hTicket, "pendiente" )
+         ::oSender:oTiketCobro:nImpTik := nImporte
+      else
+         ::oSender:oTiketCobro:nImpTik := hGet( hTicket, "pendiente" )
+      end
+
+      ::oSender:oTiketCobro:nDevTik    := 0
+      ::oSender:oTiketCobro:cTurPgo    := cCurSesion()
+
+      ::oSender:oTiketCobro:Save()
+
+   end
+
+   if ( hGet( hTicket, "importe" ) - nTotCobTik( hGet( hTicket, "numero" ), ::oSender:oTiketCobro:cAlias, ::oSender:oDivisas:cAlias ) ) == 0
+
+      if ( D():TiketsClientes( ::nSenderView() ) )->( dbSeek( hGet( hTicket, "numero" ) ) )
+
+         if dbLock( ( D():TiketsClientes( ::nSenderView() ) ) )
+            ( D():TiketsClientes( ::nSenderView() ) )->lPgdTik    := .T.
+            ( D():TiketsClientes( ::nSenderView() ) )->( dbunlock() )
+         end
+
+      end
+
+   end
+
+   ( D():TiketsClientes( ::nSenderView() ) )->( OrdSetFocus( nOrdAnt ) )
+   ( D():TiketsClientes( ::nSenderView() ) )->( dbGoTo( nRec ) )
+
+Return ( nil )
+
+
+
+static FUNCTION TpvCobros_ImprimirTicketsLiquidados( ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   local hTicket
+
+   for each hTicket in ::aTicketsLiquidados
+
+      MsgWait( "Imprimiendo ticket " + hGet( hTicket, "numeroformato" ), "", 0.5 )
+
+      ::oSender:CargaDocumento( hGet( hTicket, "numero" ) )
+
+      ::oSender:ImprimeTicket()
+
+   next
+
+   ::oSender:InicializaDocumento()
+
+Return ( nil )
+
+
+
+static FUNCTION TpvCobros_UltimoCambio( nImporte ) ; local Self AS CLASS TpvCobros := QSelf() AS CLASS TpvCobros
+
+   if !Empty( ::oSender:oSayImporte )
+      ::oSender:oSayImporte:SetText( "Último cambio" )
+   end
+
+   if !Empty( ::oSender:oTotalTicket )
+      ::oSender:oTotalTicket:SetText( abs( nImporte ) )
+   end
+
+Return ( nil )
+
+
+
+
+
+
+
+_HB_CLASS STipoCobro ; function STipoCobro ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "STipoCobro", iif( .F., { }, { @HBObject() } ), @STipoCobro() ) ) ;
+
+   _HB_MEMBER { cCodigo } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigo"}, .F. )
+   _HB_MEMBER { cTexto } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTexto"}, .F. )
+   _HB_MEMBER { nImporte } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nImporte"}, .F. )
+   _HB_MEMBER { nCambio } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nCambio"}, .F. )
+   _HB_MEMBER { lCloseCobro } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lCloseCobro"}, .F. )
+   _HB_MEMBER { cSesionCobro } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSesionCobro"}, .F. )
+
+   _HB_MEMBER { lVale } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lVale"}, .F. )
+   _HB_MEMBER { cSerie } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSerie"}, .F. )
+   _HB_MEMBER { cNumero } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNumero"}, .F. )
+   _HB_MEMBER { cSufijo } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSufijo"}, .F. )
+
+   _HB_MEMBER cNumeroVale(); oClass:AddInline( "cNumeroVale", {|Self | ( ( Self ) ), ( ::cSerie + ::cNumero + ::cSufijo ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddCobro(); oClass:AddInline( "AddCobro", {|Self, aCobros | ( ( Self ) ), aAdd( aCobros, Self ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS STipoCobro ;

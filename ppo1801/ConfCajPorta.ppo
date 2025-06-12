@@ -1,0 +1,2644 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 5 ".\.\Prg\ConfCajPorta.prg"
+static oWndBrw
+
+static dbfCajPorta
+
+static bEdit      := { |aTmp, aGet, dbfImpTik, oBrw, bWhen, bValid, nMode | EdtRec( aTmp, aGet, dbfImpTik, oBrw, bWhen, bValid, nMode ) }
+
+
+
+
+
+
+STATIC FUNCTION OpenFiles()
+
+   local lOpen    := .T.
+   local oBlock   := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   BEGIN SEQUENCE
+
+      if !lExistTable( cPatDat() + "CajPorta.Dbf" )
+         mkCajPorta( cPatDat() )
+      end
+
+      dbUseArea( .T., ( cDriver() ), ( cPatDat() + "CajPorta.Dbf" ), ( cCheckArea( "CAJPORTA", @dbfCajPorta ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+      if !lAIS() ; ordListAdd( ( cPatDat() + "CajPorta.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   RECOVER
+
+      lOpen       := .F.
+
+      CloseFiles()
+
+      msgStop( "Imposible Abrir todas las bases de datos" )
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+
+
+
+STATIC FUNCTION CloseFiles ()
+
+   if dbfCajPorta <> nil
+      ( dbfCajPorta ) -> ( dbCloseArea() )
+   end
+
+   dbfCajPorta := nil
+   oWndBrw     := nil
+
+RETURN .T.
+
+
+
+
+
+
+FUNCTION ConfCajPorta( oMenuItem, oWnd )
+
+   local nLevel
+
+   If( oMenuItem == nil, oMenuItem := "cajon_portamonedas", ) ;
+   If( oWnd == nil, oWnd := oWnd(), ) ;
+
+   if oWndBrw == NIL
+
+
+
+
+
+      nLevel            := Auth():Level( oMenuItem )
+
+      if nAnd( nLevel, 1 ) == 0
+         msgStop( "Acceso no permitido." )
+         return nil
+      end
+
+
+
+
+
+      if oWnd <> nil
+         SysRefresh(); oWnd:CloseAll(); SysRefresh()
+      end
+
+
+
+
+
+      if !OpenFiles()
+         return Nil
+      end
+
+
+
+
+
+      AddMnuNext( "Configurar cajón portamonedas", ProcName() )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      oWndBrw := TShell():New( 2, 10, 18, 70, "Configurar cajón portamonedas",, oWnd,,, .F.,,, ( dbfCajPorta ),,,,, {"Código", "Descripción"}, {||( WinAppRec( oWndBrw:oBrw, bEdit, dbfCajPorta ) )}, {||( WinEdtRec( oWndBrw:oBrw, bEdit, dbfCajPorta ) )}, {||( WinDelRec( oWndBrw:oBrw, dbfCajPorta ) )}, {||( WinDupRec( oWndBrw:oBrw, bEdit, dbfCajPorta ) )}, nil, nLevel, "gc_modem_screw_16", ( 164 + ( 55 * 256 ) + ( 58 * 65536 ) ),,, .T. )
+
+      with object ( oWndBrw:AddXCol() )
+         :cHeader          := "Código"
+         :cSortOrder       := "cCodCaj"
+         :bEditValue       := {|| ( dbfCajPorta )->cCodCaj }
+         :nWidth           := 80
+         :bLClickHeader    := {| nMRow, nMCol, nFlags, oCol | oWndBrw:ClickOnHeader( oCol ) }
+      end
+
+      with object ( oWndBrw:AddXCol() )
+         :cHeader          := "Descripción"
+         :cSortOrder       := "cNomCaj"
+         :bEditValue       := {|| ( dbfCajPorta )->cNomCaj }
+         :nWidth           := 280
+         :bLClickHeader    := {| nMRow, nMCol, nFlags, oCol | oWndBrw:ClickOnHeader( oCol ) }
+      end
+
+      oWndBrw:CreateXFromCode()
+
+
+
+
+
+      oWndBrw:NewAt( "BUS",,, {||( oWndBrw:SearchSetFocus() )}, "(B)uscar", "B",,,,, .F. )
+
+      oWndBrw:AddSeaBar()
+
+
+
+
+
+
+
+
+      oWndBrw:NewAt( "NEW",,, {||( oWndBrw:RecAdd() )}, "(A)ñadir", "A",,, 2,, .F. )
+
+
+
+
+
+
+
+      oWndBrw:NewAt( "DUP",,, {||( oWndBrw:RecDup() )}, "(D)uplicar", "D",,, 2,, .F. )
+
+
+
+
+
+
+
+      oWndBrw:NewAt( "EDIT",,, {||( oWndBrw:RecEdit() )}, "(M)odificar", "M",,, 4,, .F. )
+
+
+
+
+
+
+
+        oWndBrw:NewAt( "ZOOM",,, {||( WinZooRec( oWndBrw:oBrw, bEdit, dbfCajPorta ) )}, "(Z)oom", "Z",,, 8,, .F. )
+
+
+
+
+
+
+
+        oWndBrw:NewAt( "DEL",,, {||( oWndBrw:RecDel() )}, "(E)liminar", "E",,, 16,, .F. )
+
+
+
+
+
+      oWndBrw:NewAt( "END",,, {||( oWndBrw:end() )}, "(S)alir", "S",,,,, .F. )
+
+      oWndBrw:Activate(, oWndBrw:bLClicked, oWndBrw:bRClicked, oWndBrw:bMoved, oWndBrw:bResized, oWndBrw:bPainted, oWndBrw:bKeyDown, oWndBrw:bInit,,,,,,,,, {|| ( CloseFiles() )},, oWndBrw:bLButtonUp, .F. )
+
+   else
+
+        oWndBrw:SetFocus()
+
+   end
+
+ RETURN NIL
+
+
+STATIC FUNCTION EdtRec( aTmp, aGet, dbfCajPorta, oBrw, bWhen, bValid, nMode )
+
+   local oDlg
+
+   if Empty( aTmp[ ( dbfCajPorta )->( FieldPos ( "cCodAper" ) ) ] )
+      aTmp[ ( dbfCajPorta )->( FieldPos ( "cCodAper" ) ) ]  := "27 112 0 60 240"
+   end
+
+
+
+   oDlg = TDialog():New(,,,, LblTitle( nMode ) + "cajón portamonedas", "CNF_CAJ_TPV",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+
+
+
+
+
+   aGet[ ( dbfCajPorta )->( FieldPos( "cCodCaj" ) ) ] := TGetHlp():ReDefine( 80, { | u | If( PCount()==0, aTmp[ ( dbfCajPorta )->( FieldPos( "cCodCaj" ) ) ], aTmp[ ( dbfCajPorta )->( FieldPos( "cCodCaj" ) ) ]:= u ) }, oDlg,, "@!", {||    ( NotValid( aGet[ ( dbfCajPorta )->( FieldPos( "cCodCaj" ) ) ], dbfCajPorta, .T., "0" ) )},,,,,, .T., {||     ( nMode == 1 .OR. nMode == 4 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+   aGet[ ( dbfCajPorta )->( FieldPos( "cNomCaj" ) ) ] := TGetHlp():ReDefine( 90, { | u | If( PCount()==0, aTmp[ ( dbfCajPorta )->( FieldPos( "cNomCaj" ) ) ], aTmp[ ( dbfCajPorta )->( FieldPos( "cNomCaj" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+   aGet[ ( dbfCajPorta )->( FieldPos( "cPrinter" ) ) ] := TGetHlp():ReDefine( 170, { | u | If( PCount()==0, aTmp[ ( dbfCajPorta )->( FieldPos( "cPrinter" ) ) ], aTmp[ ( dbfCajPorta )->( FieldPos( "cPrinter" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+   TBtnBmp():ReDefine( 171, "gc_printer2_check_16",,,,,{|| if( nMode <> 3, PrinterPreferences( aGet[ ( dbfCajPorta )->( FieldPos( "cPrinter" ) ) ] ), ) }, oDlg, .F.,, .F.,  )
+
+
+
+
+
+   aGet[ ( dbfCajPorta )-> ( FieldPos ( "cCodAper" ) ) ] := TGetHlp():ReDefine( 110, { | u | If( PCount()==0, aTmp[ ( dbfCajPorta )-> ( FieldPos ( "cCodAper" ) ) ], aTmp[ ( dbfCajPorta )-> ( FieldPos ( "cCodAper" ) ) ]:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+
+   TButton():ReDefine( 160, {||( TestCajon( aTmp, dbfCajPorta ) )}, oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+   TButton():ReDefine( 1, {||( EndTrans( aTmp, aGet, dbfCajPorta, oBrw, nMode, oDlg ) )}, oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+   TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+
+
+   if nMode <> 3
+      oDlg:AddFastKey( 116, {|| EndTrans( aTmp, aGet, dbfCajPorta, oBrw, nMode, oDlg ) } )
+   end
+
+   oDlg:bStart := {|| aGet[ ( dbfCajPorta )->( FieldPos( "cCodCaj" ) ) ]:SetFocus() }
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+
+ RETURN ( oDlg:nResult == 1 )
+
+
+
+
+
+STATIC FUNCTION EndTrans( aTmp, aGet, dbfCajPorta, oBrw, nMode, oDlg )
+
+
+
+   if nMode == 1 .OR. nMode == 4
+
+      if Empty( aTmp[ ( dbfCajPorta )->( FieldPos( "cCodCaj" ) ) ] )
+         MsgStop( "El código del cajón portamonedas no puede estar vacío" )
+         aGet[ ( dbfCajPorta )->( FieldPos( "cCodCaj" ) ) ]:SetFocus()
+         return nil
+      end
+
+      if dbSeekInOrd( aTmp[ ( dbfCajPorta )->( FieldPos( "cCodCaj" ) ) ], "CCODCAJ", dbfCajPorta )
+         msgStop( "Código existente" )
+         return nil
+      end
+
+   end
+
+
+
+   if Empty( aTmp[ ( dbfCajPorta )->( FieldPos( "cNomCaj" ) ) ] )
+      MsgStop( "El nombre del portamonedas no puede estar vacío" )
+      aGet[ ( dbfCajPorta )->( FieldPos( "cNomCaj" ) ) ]:SetFocus()
+      Return nil
+   end
+
+
+
+   if Empty( aTmp[ ( dbfCajPorta )->( FieldPos( "cCodAper" ) ) ] )
+      MsgStop( "El código de apertura del portamonedas no puede estar vacío" )
+      aGet[ ( dbfCajPorta )->( FieldPos( "cCodAper" ) ) ]:SetFocus()
+      Return nil
+   end
+
+
+
+   WinGather( aTmp, aGet, dbfCajPorta, oBrw, nMode )
+
+RETURN ( oDlg:end( 1 ) )
+
+
+
+
+
+
+FUNCTION mkCajPorta( cPath, lAppend, cPathOld, oMeter )
+
+   local oCajPorta
+
+   If( cPath == nil, cPath := cPatDat(), ) ;
+   If( lAppend == nil, lAppend := .F., ) ;
+
+   oCajPorta := DbfServer( "CajPorta.Dbf", ):New( "CajPorta.Dbf", "CajPorta", ( cDriver() ), "Cajón Portamonedas", ( cPath ) )
+
+      oCajPorta:AddField( "CCODCAJ", "C", 3, 0,,,,, "Código del cajón portamonedas", .F.,, .F., {} )
+      oCajPorta:AddField( "CNOMCAJ", "C", 35, 0,,,,, "Nombre del cajón portamonedas", .F.,, .F., {} )
+      oCajPorta:AddField( "CPORT", "C", 50, 0,,,,, "Puerto del cajón", .F.,, .F., {} )
+      oCajPorta:AddField( "CCODAPER", "C", 50, 0,,,,, "Código de apertura del cajón", .F.,, .F., {} )
+      oCajPorta:AddField( "NBITSSEC", "N", 6, 0,,,,, "Bit segundos", .F.,, .F., {} )
+      oCajPorta:AddField( "NBITSPARA", "N", 1, 0,,,,, "Bit de parada", .F.,, .F., {} )
+      oCajPorta:AddField( "NBITSDATOS", "N", 1, 0,,,,, "Bit de datos", .F.,, .F., {} )
+      oCajPorta:AddField( "CBITSPARI", "C", 50, 0,,,,, "Bit de paridad", .F.,, .F., {} )
+      oCajPorta:AddField( "NDRIVER", "N", 1, 0,,,,, "Selección impresora de windows", .F.,, .F., {} )
+      oCajPorta:AddField( "CPRINTER", "C", 254, 0,,,,, "Impresora de windows", .F.,, .F., {} )
+
+      oCajPorta:AddIndex( "CCODCAJ", "CAJPORTA.CDX", "CCODCAJ",,, .F., .F.,,,, .T., .F. )
+      oCajPorta:AddIndex( "CNOMCAJ", "CAJPORTA.CDX", "Upper( CNOMCAJ )",,, .F., .F.,,,, .T., .F. )
+
+
+
+   oCajPorta:Activate( .F., .T. )
+
+   if lAppend .AND. !Empty( cPathOld ) .AND. lExistTable( cPathOld + "CajPorta.Dbf" )
+      oCajPorta:AppendFrom( cPathOld + "CajPorta.Dbf" )
+   end
+
+   oCajPorta:end()
+
+ RETURN .T.
+
+
+
+
+
+
+ FUNCTION rxCajPorta( cPath, oMeter )
+
+   local dbfCajPorta
+
+   If( cPath == nil, cPath := cPatDat(), ) ;
+
+   if !lExistTable( cPath + "CAJPORTA.DBF" )
+      mkCajPorta( cPath )
+   end
+
+   fEraseIndex( cPath + "CAJPORTA.CDX" )
+
+   if lExistTable( cPath + "CAJPORTA.DBF" )
+
+      dbUseArea( .T., cDriver(), cPath + "CAJPORTA.DBF", cCheckArea( "CAJPORTA", @dbfCajPorta ), .F. )
+
+      if !( dbfCajPorta )->( neterr() )
+         ( dbfCajPorta )->( __dbPack() )
+
+         ( dbfCajPorta )->( ordCondSet("!Deleted()", {||!Deleted()}  ) )
+         ( dbfCajPorta )->( ordCreate( cPath + "CAJPORTA.CDX", "CCODCAJ", "Field->cCodCaj", {|| Field->cCodCaj } ) )
+
+         ( dbfCajPorta )->( ordCondSet("!Deleted()", {||!Deleted()}  ) )
+         ( dbfCajPorta )->( ordCreate( cPath + "CAJPORTA.CDX", "CNOMCAJ", "Upper( Field->cNomCaj )", {|| Upper( Field->cNomCaj ) } ) )
+
+         ( dbfCajPorta )->( dbCloseArea() )
+      else
+         msgStop( "Imposible abrir en modo exclusivo cajón portamonedas" )
+      end
+
+   end
+
+ RETURN NIL
+
+
+
+
+
+
+FUNCTION IsCajPorta()
+
+   local oBlock
+   local oError
+   local dbfCajPorta
+
+   if !lExistTable( cPatDat() + "CajPorta.Dbf" )
+      mkCajPorta( cPatDat() )
+   end
+
+   if !lExistIndex( cPatDat() + "CajPorta.Cdx" )
+      rxCajPorta( cPatDat() )
+   end
+
+RETURN ( .T. )
+
+
+
+
+
+
+FUNCTION BrwSelCajPorta( oGet, dbfCajPorta, oGet2 )
+
+   local oDlg
+    local oBrw
+   local nRec
+   local oGet1
+   local cGet1
+   local nOrdAnt        := 1
+   local oCbxOrd
+   local aCbxOrd        := { "Código", "Descripción" }
+   local cCbxOrd
+   local nLevel         := Auth():Level( "01091" )
+
+   nOrdAnt              := Min( Max( nOrdAnt, 1 ), len( aCbxOrd ) )
+   cCbxOrd              := aCbxOrd[ nOrdAnt ]
+
+   nRec                 := ( dbfCajPorta )->( RecNo() )
+   nOrdAnt              := ( dbfCajPorta )->( OrdSetFocus( nOrdAnt ) )
+
+   ( dbfCajPorta )->( dbGoTop() )
+
+
+
+   oDlg = TDialog():New(,,,, "Seleccionar cajón portamonedas", "HELPENTRY",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+
+   oGet1 := TGetHlp():ReDefine( 104, { | u | If( PCount()==0, cGet1, cGet1:= u ) }, oDlg,,, {||       ( OrdClearScope( oBrw, dbfCajPorta ) )},,,,,, .F.,, {|nKey,nFlags,Self| ( AutoSeek( nKey, nFlags, Self, oBrw, dbfCajPorta ) ) }, .F., .F.,,,,,, nil, "FIND",, )
+
+
+
+
+
+
+   oCbxOrd := TComboBox():ReDefine( 102, { | u | If( PCount()==0, cCbxOrd, cCbxOrd:= u ) }, aCbxOrd, oDlg,,, {|Self|( ( dbfCajPorta )->( OrdSetFocus( oCbxOrd:nAt ) ), oBrw:Refresh(), oGet1:SetFocus() )},,,, .F.,,,,,,, "oCbxOrd",,,,,,, )
+
+   oBrw                 := IXBrowse():New( oDlg )
+
+   oBrw:nMarqueeStyle   := 5
+   oBrw:lHScroll        := .F.
+   oBrw:cAlias          := dbfCajPorta
+
+   oBrw:bClrSel         := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+   oBrw:bClrSelFocus    := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+   oBrw:bLDblClick      := {|| oDlg:end( 1 ) }
+
+   oBrw:CreateFromResource( 105 )
+
+   with object ( oBrw:AddCol() )
+      :cHeader          := "Código"
+      :cSortOrder       := "cCodCaj"
+      :bEditValue       := {|| ( dbfCajPorta )->cCodCaj }
+      :nWidth           := 80
+      :bLClickHeader    := {| nMRow, nMCol, nFlags, oCol | oCbxOrd:Set( oCol:cHeader ) }
+   end
+
+   with object ( oBrw:AddCol() )
+      :cHeader          := "Descripción"
+      :cSortOrder       := "cNomCaj"
+      :bEditValue       := {|| ( dbfCajPorta )->cNomCaj }
+      :nWidth           := 280
+      :bLClickHeader    := {| nMRow, nMCol, nFlags, oCol | oCbxOrd:Set( oCol:cHeader ) }
+  end
+
+
+
+
+
+   TButton():ReDefine( 500, {||( WinAppRec( oBrw, bEdit, dbfCajPorta ) )}, oDlg,,, .F., {||     ( nAnd( nLevel, 2 ) <> 0 )},,, .F. )
+
+
+
+
+
+   TButton():ReDefine( 501, {||( WinEdtRec( oBrw, bEdit, dbfCajPorta ) )}, oDlg,,, .F., {||     ( nAnd( nLevel, 4 ) <> 0 )},,, .F. )
+
+
+
+
+   TButton():ReDefine( 1, {||( oDlg:end(1) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .F. )
+
+   oDlg:AddFastKey( 113,       {|| if( nAnd( nLevel, 2 ) <> 0, WinAppRec( oBrw, bEdit, dbfCajPorta ), ) } )
+   oDlg:AddFastKey( 114,       {|| if( nAnd( nLevel, 4 ) <> 0, WinEdtRec( oBrw, bEdit, dbfCajPorta ), ) } )
+   oDlg:AddFastKey( 116,       {|| oDlg:end( 1 ) } )
+   oDlg:AddFastKey( 13,   {|| oDlg:end( 1 ) } )
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   if oDlg:nResult == 1
+
+      oGet:cText( ( dbfCajPorta )->cCodCaj )
+      oGet:lValid()
+
+      if ValType( oGet2 ) == "O"
+         oGet2:cText( ( dbfCajPorta )->cNomCaj )
+      end
+
+   end
+
+   DestroyFastFilter( dbfCajPorta )
+
+   SetBrwOpt( "BrwCajPorta", ( dbfCajPorta )->( OrdNumber() ) )
+
+   ( dbfCajPorta )->( OrdSetFocus( nOrdAnt ) )
+   ( dbfCajPorta )->( dbGoTo( nRec ) )
+
+   oGet:setFocus()
+
+ RETURN oDlg:nResult == 1
+
+
+
+ FUNCTION cCajPorta( oGet, dbfCajPorta, oGet2 )
+
+   local lValid   := .F.
+   local xValor   := oGet:VarGet()
+
+   if Empty( xValor )
+      if( oGet2 <> nil, oGet2:cText( "" ), )
+      return .T.
+   else
+      xValor   := RJustObj( oGet, "0" )
+   end
+
+   do case
+      case Valtype( dbfCajPorta ) == "C"
+
+         if ( dbfCajPorta )->( dbSeek( xValor ) )
+            oGet:cText( ( dbfCajPorta )->cCodCaj )
+            if( oGet2 <> nil, oGet2:cText( ( dbfCajPorta )->cNomCaj ), )
+            lValid   := .T.
+         else
+            oGet:Refresh()
+            msgStop( "Cajón portamonedas no encontrado" )
+         end
+
+      case Valtype( dbfCajPorta ) == "O"
+
+         if dbfCajPorta:Seek( xValor )
+            oGet:cText( dbfCajPorta:cCodCaj )
+            if( oGet2 <> nil, oGet2:cText( dbfCajPorta:cNomCaj ), )
+            lValid   := .T.
+         else
+            oGet:Refresh()
+            msgStop( "Cajón portamonedas no encontrado" )
+         end
+
+   end
+
+RETURN lValid
+
+
+
+Static Function TestCajon( aTmp, dbfCajPorta )
+
+   local oCajon      := TCajon():New( aTmp[ ( dbfCajPorta )-> ( FieldPos ( "cCodAper" ) ) ], aTmp[ ( dbfCajPorta )->( FieldPos( "cPrinter" ) ) ] )
+
+   if !Empty( oCajon )
+      oCajon:OpenTest()
+   end
+
+Return ( nil )
+
+
+
+Function OpnCaj()
+
+   local oBlock
+   local oError
+   local cCajon
+   local oCajon
+   local dbfCajon
+
+   oBlock            := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   dbUseArea( .T., ( cDriver() ), ( cPatDat() + "CAJAS.DBF" ), ( cCheckArea( "CAJAS", @dbfCajon ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+   if !lAIS() ; ordListAdd( ( cPatDat() + "CAJAS.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   cCajon            := cCajonEnCaja( Application():CodigoCaja(), dbfCajon )
+
+   if !Empty( cCajon )
+
+      oCajon         := TCajon():Create( cCajon )
+
+      if oCajon <> nil
+         oCajon:OpenTest()
+         oCajon:End()
+      end
+
+   end
+
+   RECOVER USING oError
+
+      msgStop( "Imposible abrir todas las bases de datos " + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+   end
+
+   ErrorBlock( oBlock )
+
+   ( dbfCajon )->( dbCloseArea() )
+
+Return nil
+
+
+
+FUNCTION mkLogPorta( cPath )
+
+   local oLogPorta
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+
+   oLogPorta := DbfServer( "LogPorta.Dbf", ):New( "LogPorta.Dbf", "LogPorta", ( cDriver() ), "Cajón Portamonedas", ( cPath ) )
+
+      oLogPorta:AddField( "cNumTur", "C", 6, 0,,,,, "Sesión de la apertura de cajón", .F.,, .F., {} )
+      oLogPorta:AddField( "cSufTur", "C", 2, 0,,,,, "", .F.,, .F., {} )
+      oLogPorta:AddField( "cCodCaj", "C", 3, 0,,,,, "Código de la caja", .F.,, .F., {} )
+      oLogPorta:AddField( "cCodUse", "C", 3, 0,,,,, "Código del usuario", .F.,, .F., {} )
+      oLogPorta:AddField( "dFecApt", "D", 8, 0,,,,, "Fecha de la apertura del cajón", .F.,, .F., {} )
+      oLogPorta:AddField( "cHorApt", "C", 5, 0,,,,, "Hora de apertura de cajón", .F.,, .F., {} )
+
+      oLogPorta:AddIndex( "cNumTur", "LogPorta.Cdx", "cNumTur + cSufTur", "!Deleted()",, .F., .F.,,,, .F., .F. )
+      oLogPorta:AddIndex( "cTurCaj", "LogPorta.Cdx", "cNumTur + cSufTur + cCodCaj ", "!Deleted()",, .F., .F.,,,, .F., .F. )
+      oLogPorta:AddIndex( "dFecApt", "LogPorta.Cdx", "dFecApt", "!Deleted()",, .F., .F.,,,, .F., .F. )
+
+
+
+   oLogPorta:Activate( .F., .F. )
+   oLogPorta:End()
+
+ RETURN .T.
+
+
+
+
+
+ FUNCTION rxLogPorta( cPath, oMeter )
+
+   local dbfLogPorta
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+
+   if !lExistTable( cPath + "LogPorta.Dbf" )
+      mkLogPorta( cPath )
+   end
+
+   fEraseIndex( cPath + "LogPorta.CDX" )
+
+   if lExistTable( cPath + "LogPorta.DBF" )
+
+      dbUseArea( .T., cDriver(), cPath + "LogPorta.DBF", cCheckArea( "LogPorta", @dbfLogPorta ), .F. )
+
+      if !( dbfLogPorta )->( neterr() )
+         ( dbfLogPorta )->( __dbPack() )
+
+         ( dbfLogPorta )->( ordCondSet( "!Deleted()", {|| !Deleted() }  ) )
+         ( dbfLogPorta )->( ordCreate( cPath + "LogPorta.CDX", "cNumTur", "Field->cNumTur + Field->cSufTur", {|| Field->cNumTur + Field->cSufTur } ) )
+
+         ( dbfLogPorta )->( ordCondSet( "!Deleted()", {|| !Deleted() }  ) )
+         ( dbfLogPorta )->( ordCreate( cPath + "LogPorta.CDX", "cTurCaj", "Field->cNumTur + Field->cSufTur + Field->cCodCaj", {|| Field->cNumTur + Field->cSufTur + Field->cCodCaj } ) )
+
+         ( dbfLogPorta )->( ordCondSet( "!Deleted()", {|| !Deleted() }  ) )
+         ( dbfLogPorta )->( ordCreate( cPath + "LogPorta.CDX", "dFecApt", "Field->dFecApt", {|| Field->dFecApt } ) )
+
+         ( dbfLogPorta )->( dbCloseArea() )
+      else
+         msgStop( "Imposible abrir en modo exclusivo log de cajón portamonedas" )
+      end
+
+   end
+
+ RETURN NIL
+
+
+
+
+
+
+FUNCTION IsLogPorta()
+
+   local dbfLogPorta
+
+   if !lExistTable( cPatEmp() + "LogPorta.Dbf" )
+      mkLogPorta( cPatEmp() )
+   end
+
+   if !lExistIndex( cPatEmp() + "LogPorta.Cdx" )
+      rxLogPorta( cPatEmp() )
+   end
+
+RETURN ( .T. )

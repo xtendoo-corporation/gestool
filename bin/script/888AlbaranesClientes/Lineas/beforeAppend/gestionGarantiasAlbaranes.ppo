@@ -1,0 +1,438 @@
+#line 203 "C:\fw195\Gestool\bin\include\hbclass.ch"
+DECLARE HBClass  New( cName AS STRING, OPTIONAL SuperParams ) AS CLASS HBClass  Create() AS OBJECT  Instance() AS OBJECT  AddClsMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC, n2 AS NUMERIC, n3 AS NUMERIC )  AddMultiClsData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING )  AddMultiData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING, x AS LOGICAL, lPer AS LOGICAL )  AddMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC )  AddInLine( cName AS STRING, bBlock AS CODEBLOCK, nScope AS NUMERIC )  AddVirtual( cName AS STRING )
+#line 10 "C:\fw195\Gestool\bin\Script\AlbaranesClientes\Lineas\beforeAppend\gestionGarantiasAlbaranes.prg"
+Function gestionGarantiasAlbaranes( aLine, aHeader, nView, dbfTmpLin )
+
+Return ( .T. )
+
+
+
+
+
+_HB_CLASS TGestionGarantiasAlbaranes ; function TGestionGarantiasAlbaranes ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TGestionGarantiasAlbaranes", iif( .F., { }, { @HBObject() } ), @TGestionGarantiasAlbaranes() ) ) ;
+
+; _HB_MEMBER { aLine } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aLine"}, .F. )
+; _HB_MEMBER { aHeader } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aHeader"}, .F. )
+; _HB_MEMBER { nView } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nView"}, .F. )
+
+; _HB_MEMBER { idProduct } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"idProduct"}, .F. )
+; _HB_MEMBER { nameProduct } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nameProduct"}, .F. )
+
+; _HB_MEMBER { idFamily } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"idFamily"}, .F. )
+
+; _HB_MEMBER { dateAlbaran } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dateAlbaran"}, .F. )
+
+; _HB_MEMBER { warrantyDays } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"warrantyDays"}, .F. )
+
+; _HB_MEMBER { dateWarranty } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dateWarranty"}, .F. )
+
+; _HB_MEMBER { idClient } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"idClient"}, .F. )
+
+; _HB_MEMBER { unitsToReturn } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"unitsToReturn"}, .F. )
+; _HB_MEMBER { unitsToReturnClientWarranty } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"unitsToReturnClientWarranty"}, .F. )
+; _HB_MEMBER { unitsToReturnClient } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"unitsToReturnClient"}, .F. )
+; _HB_MEMBER { unitsToReturnAnonymusWarranty } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"unitsToReturnAnonymusWarranty"}, .F. )
+; _HB_MEMBER { unitsToReturnAnonymus } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"unitsToReturnAnonymus"}, .F. )
+
+; _HB_MEMBER { unitsInActualLine } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"unitsInActualLine"}, .F. )
+
+; _HB_MEMBER { lastDateSale } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lastDateSale"}, .F. )
+; _HB_MEMBER { typeSale } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"typeSale"}, .F. )
+; _HB_MEMBER { clientSale } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"clientSale"}, .F. )
+; _HB_MEMBER { nameSale } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nameSale"}, .F. )
+; _HB_MEMBER { priceSale } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"priceSale"}, .F. )
+; _HB_MEMBER { documentSale } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"documentSale"}, .F. )
+
+; _HB_MEMBER { cLine } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cLine"}, .F. )
+
+; _HB_MEMBER { maxiumnUnitsToReturnByClient } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"maxiumnUnitsToReturnByClient"}, .F. )
+
+   _HB_MEMBER New( aLine, aHeader, nView, dbfTmpLin) AS CLASS TGestionGarantiasAlbaranes; oClass:AddMethod( "New", @TGestionGarantiasAlbaranes_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Run(); oClass:AddMethod( "Run", @TGestionGarantiasAlbaranes_Run(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getClientSale(); oClass:AddInline( "getClientSale", {|Self | ( ( Self ) ), ( if( isNil( ::clientSale ), "", ::clientSale ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getNameSale(); oClass:AddInline( "getNameSale", {|Self | ( ( Self ) ), ( if( isNil( ::nameSale ), "", ::nameSale ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getPriceSale(); oClass:AddInline( "getPriceSale", {|Self | ( ( Self ) ), ( if( isNil( ::priceSale ), 0, ::priceSale ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getDocumentSale(); oClass:AddInline( "getDocumentSale", {|Self | ( ( Self ) ), ( if( isNil( ::documentSale ), "", ::documentSale ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER loadProductInformation(); oClass:AddMethod( "loadProductInformation", @TGestionGarantiasAlbaranes_loadProductInformation(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER countProductInLines(); oClass:AddMethod( "countProductInLines", @TGestionGarantiasAlbaranes_countProductInLines(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER totalProductInDocument(); oClass:AddInline( "totalProductInDocument", {|Self | ( ( Self ) ), ( abs( ::countProductInLines() + ::getUnitsInActualLine() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER searchLastSale(); oClass:AddMethod( "searchLastSale", @TGestionGarantiasAlbaranes_searchLastSale(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER searchLastSaleByClientWarranty(); oClass:AddInline( "searchLastSaleByClientWarranty", {|Self | ( ( Self ) ), (  ::unitsToReturnClientWarranty   := ::searchLastSale( ::idClient, ::dateWarranty ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER searchLastSaleByClient(); oClass:AddInline( "searchLastSaleByClient", {|Self | ( ( Self ) ), (  ::unitsToReturnClient           := ::searchLastSale( ::idClient, nil ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER searchLastSaleAnonymus(); oClass:AddInline( "searchLastSaleAnonymus", {|Self | ( ( Self ) ), (  ::unitsToReturnAnonymusWarranty := ::searchLastSale( nil, ::dateWarranty ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER searchLastSaleUniversal(); oClass:AddInline( "searchLastSaleUniversal", {|Self | ( ( Self ) ), (  ::unitsToReturnAnonymus         := ::searchLastSale( nil, nil ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER isEmptyDateInWarrantyPeriod(); oClass:AddInline( "isEmptyDateInWarrantyPeriod", {|Self, lInfo | ( ( Self ) ), ( if( istrue( lInfo ), msgalert( "Ultima fecha de venta : " + cvaltochar(::lastDateSale ), "isEmptyDateInWarrantyPeriod" ), ), empty( ::lastDateSale ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER isDateOutOfWarrantyPeriod(); oClass:AddInline( "isDateOutOfWarrantyPeriod", {|Self | ( ( Self ) ), ( ::isEmptyDateInWarrantyPeriod() .OR. ( ::dateAlbaran - ::lastDateSale ) > ::warrantyDays ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER isDateInWarrantyPeriod(); oClass:AddInline( "isDateInWarrantyPeriod", {|Self | ( ( Self ) ), (!( ::isDateOutOfWarrantyPeriod() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER searchLastSaleAlbaranesClientes(); oClass:AddMethod( "searchLastSaleAlbaranesClientes", @TGestionGarantiasAlbaranes_searchLastSaleAlbaranesClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER searchLastSaleFacturasClientes(); oClass:AddMethod( "searchLastSaleFacturasClientes", @TGestionGarantiasAlbaranes_searchLastSaleFacturasClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER searchLastSaleTicketsClientes(); oClass:AddMethod( "searchLastSaleTicketsClientes", @TGestionGarantiasAlbaranes_searchLastSaleTicketsClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER validateUnitsToReturn(); oClass:AddMethod( "validateUnitsToReturn", @TGestionGarantiasAlbaranes_validateUnitsToReturn(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER notValidateUnitsToReturn(); oClass:AddInline( "notValidateUnitsToReturn", {|Self | ( ( Self ) ), ( !( ::validateUnitsToReturn() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getUnitsInActualLine(); oClass:AddInline( "getUnitsInActualLine", {|Self | ( ( Self ) ), ( ::unitsInActualLine ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getAbsUnitsInActualLine(); oClass:AddInline( "getAbsUnitsInActualLine", {|Self | ( ( Self ) ), ( abs( ::getUnitsInActualLine() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER isZeroUnitsToReturn(); oClass:AddInline( "isZeroUnitsToReturn", {|Self | ( ( Self ) ), ( ::unitsToReturn == 0 ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setMaxiumnUnitsToReturnByClient(); oClass:AddInline( "setMaxiumnUnitsToReturnByClient", {|Self, nUnits | ( ( Self ) ), ( ::maxiumnUnitsToReturnByClient := nUnits ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getMaxiumnUnitsToReturnByClient(); oClass:AddInline( "getMaxiumnUnitsToReturnByClient", {|Self | ( ( Self ) ), ( ::maxiumnUnitsToReturnByClient ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER excedMaxiumnUnitsToReturnByClient(); oClass:AddInline( "excedMaxiumnUnitsToReturnByClient", {|Self | ( ( Self ) ), ( ::getAbsUnitsInActualLine() > ::getMaxiumnUnitsToReturnByClient() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setPriceUnit(); oClass:AddInline( "setPriceUnit", {|Self | ( ( Self ) ), ( ::aLine[ ( D():AlbaranesClientesLineas( ::nView ) )->( fieldpos( "nPreUnit" ) ) ] := ::priceSale ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TGestionGarantiasAlbaranes ;
+
+
+
+static FUNCTION TGestionGarantiasAlbaranes_New( aLine, aHeader, nView, cLine ) ; local Self AS CLASS TGestionGarantiasAlbaranes := QSelf() AS CLASS TGestionGarantiasAlbaranes
+
+   ::aLine     := aLine
+   ::aHeader   := aHeader
+   ::nView     := nView
+   ::cLine     := cLine
+
+Return ( Self )
+
+
+
+static FUNCTION TGestionGarantiasAlbaranes_Run( ) ; local Self AS CLASS TGestionGarantiasAlbaranes := QSelf() AS CLASS TGestionGarantiasAlbaranes
+
+   local lQuestion   := .F.
+
+   ::loadProductInformation()
+
+   if ::getUnitsInActualLine() >= 0
+      Return ( .T. )
+   end
+
+
+
+   ::searchLastSaleByClientWarranty()
+
+      if ::isDateInWarrantyPeriod() .AND. ::validateUnitsToReturn( .F. )
+         ::setPriceUnit()
+         Return ( .T. )
+      end
+
+      if ( ::isEmptyDateInWarrantyPeriod( .F. ) )
+
+         msgInfo( "El producto " + alltrim( ::idProduct ) + " " + alltrim( ::nameProduct ) + " no aparece en operaciones de venta, en el periodo de devolución, en el cliente " + alltrim( ::idClient ) + "." + chr( 13 ) + chr( 10 ) +  "Se procedera a la busqueda anonima del producto." )
+      end
+
+
+
+   ::searchLastSaleByClient()
+
+      if ( ::isZeroUnitsToReturn() )
+         msgStop( "El cliente [" + alltrim( ::getClientSale() ) + " " + alltrim( ::getNameSale() ) + "] no ha comprado nunca el producto " + alltrim( ::idProduct ) + " " + alltrim( ::nameProduct ) )
+         Return .F.
+      end
+
+      if ::notValidateUnitsToReturn( .T. )
+         msgStop( "El cliente [" + alltrim( ::getClientSale() ) + " " + alltrim( ::getNameSale() ) + "] puede devolver como máximo " + alltrim( str( ::getMaxiumnUnitsToReturnByClient() ) ) + " unidades." )
+         Return .F.
+      end
+
+
+
+   ::searchLastSaleAnonymus()
+
+      if !( ::isEmptyDateInWarrantyPeriod() )
+
+         if ::isDateInWarrantyPeriod() .AND. ( ::unitsToReturnAnonymusWarranty >= ::getAbsUnitsInActualLine() )
+
+
+
+
+
+            lQuestion   := msgNoYes(   "Unidades vendidas al cliente actual en periodo de garantía es de " + cvaltochar( round( ::unitsToReturnClientWarranty, 2 ) ) + chr( 13 ) + chr( 10 ) + chr( 13 ) + chr( 10 ) +  "El producto [" + alltrim( ::idProduct ) + " " + alltrim( ::nameProduct ) + "] se ha vendido en un cliente diferente a la venta actual." + chr( 13 ) + chr( 10 ) + chr( 13 ) + chr( 10 ) +  "Las unidades máximas a devolver en periodo de garantía serían " + alltrim( str( round( ::unitsToReturn, 2 ) ) + " unidades." ) + chr( 13 ) + chr( 10 ) + chr( 13 ) + chr( 10 ) +  "¿ Desea proceder a la devolución ?", "Devolución fuera de garantía" )
+
+            if ( lQuestion )
+               ::setPriceUnit()
+            end
+
+            Return ( lQuestion )
+         end
+
+      end
+
+
+
+   ::searchLastSaleUniversal()
+
+      if !( ::isEmptyDateInWarrantyPeriod() )
+
+         if ( oUser():lAdministrador() )
+
+
+
+            lQuestion   := msgNoYes(   "El producto [" + alltrim( ::idProduct ) + " " + alltrim( ::nameProduct ) + "] se ha vendido por ultima vez en la fecha " + dtoc( ::lastDateSale ) + chr( 13 ) + chr( 10 ) + chr( 13 ) + chr( 10 ) + "Al cliente [" + alltrim( ::getClientSale() ) + " " + alltrim( ::getNameSale() ) + "]" + chr( 13 ) + chr( 10 ) + chr( 13 ) + chr( 10 ) +  "Documento " + ::typeSale + " con número " + ::getDocumentSale(), "¿ Desea proceder a la devolución ?")
+
+            if ( lQuestion )
+               ::setPriceUnit()
+            end
+
+            Return ( lQuestion )
+         else
+
+
+
+
+            msgStop( "El producto [" + alltrim( ::idProduct ) + " " + alltrim( ::nameProduct ) + "] se ha vendido por ultima vez en la fecha " + dtoc( ::lastDateSale ) + chr( 13 ) + chr( 10 ) + chr( 13 ) + chr( 10 ) + "Al cliente [" + alltrim( ::getClientSale() ) + " " + alltrim( ::getNameSale() ) + "]" + chr( 13 ) + chr( 10 ) + chr( 13 ) + chr( 10 ) +  "Documento " + ::typeSale + " con número " + ::getDocumentSale() + chr( 13 ) + chr( 10 ) + chr( 13 ) + chr( 10 ) +  "Comuniquelo al administrador", "Devolución no permitida" )
+         end
+
+      end
+
+Return ( .F. )
+
+
+
+static FUNCTION TGestionGarantiasAlbaranes_loadProductInformation( ) ; local Self AS CLASS TGestionGarantiasAlbaranes := QSelf() AS CLASS TGestionGarantiasAlbaranes
+
+   ::priceSale          := 0
+
+   ::idProduct          := padr( ::aLine[ ( D():AlbaranesClientesLineas( ::nView ) )->( fieldpos( "cRef" ) ) ], 18 )
+   ::nameProduct        := alltrim( ::aLine[ ( D():AlbaranesClientesLineas( ::nView ) )->( fieldpos( "cDetalle" ) ) ] )
+   ::idFamily           := alltrim( ::aLine[ ( D():AlbaranesClientesLineas( ::nView ) )->( fieldpos( "cCodFam" ) ) ] )
+   ::unitsInActualLine  := ::aLine[ ( D():AlbaranesClientesLineas( ::nView ) )->( fieldpos( "nUniCaja" ) ) ]
+
+   ::dateAlbaran        := ::aHeader[ ( D():AlbaranesClientes( ::nView ) )->( fieldpos( "dFecAlb" ) ) ]
+   ::idClient           := ::aHeader[ ( D():AlbaranesClientes( ::nView ) )->( fieldpos( "cCodCli" ) ) ]
+
+   ::warrantyDays       := retFld( ::idFamily, D():Familias( ::nView ), "nDiaGrt" )
+
+   if ::warrantyDays == 0
+      ::warrantyDays    := 15
+   end
+
+   ::dateWarranty       := ::dateAlbaran - ::warrantyDays
+
+Return ( Self )
+
+
+
+static FUNCTION TGestionGarantiasAlbaranes_countProductInLines( ) ; local Self AS CLASS TGestionGarantiasAlbaranes := QSelf() AS CLASS TGestionGarantiasAlbaranes
+
+   local nStatus        := ( ::cLine )->( recno() )
+   local nProducts      := 0
+
+   while !( ::cLine )->( eof() )
+
+      if ::idProduct == ( ::cLine )->cRef
+         nProducts      += ( ::cLine )->nUniCaja
+      end
+
+      ( ::cLine )->( dbskip() )
+
+   end
+
+   ( ::cLine )->( dbgoto( nStatus ) )
+
+Return ( nProducts )
+
+
+
+static FUNCTION TGestionGarantiasAlbaranes_searchLastSale( idClient, dateWarranty ) ; local Self AS CLASS TGestionGarantiasAlbaranes := QSelf() AS CLASS TGestionGarantiasAlbaranes
+
+   ::unitsToReturn   := 0
+   ::lastDateSale    := nil
+
+   if ( idClient == nil )
+      idClient       := ""
+   end
+
+   if ::warrantyDays > 0
+
+      ::searchLastSaleAlbaranesClientes( idClient, dateWarranty, .F. )
+
+      ::searchLastSaleFacturasClientes( idClient, dateWarranty )
+
+      ::searchLastSaleTicketsClientes( idClient, dateWarranty )
+
+      ::setMaxiumnUnitsToReturnByClient( ::unitsToReturn )
+
+   end
+
+Return ( ::unitsToReturn )
+
+
+
+static FUNCTION TGestionGarantiasAlbaranes_searchLastSaleAlbaranesClientes( idClient, dateWarranty, lInfo ) ; local Self AS CLASS TGestionGarantiasAlbaranes := QSelf() AS CLASS TGestionGarantiasAlbaranes
+
+   D():getStatusAlbaranesClientesLineas( ::nView )
+
+   D():setFocusAlbaranesClientesLineas( "cRefFec", ::nView )
+
+   if ( D():AlbaranesClientesLineas( ::nView ) )->( dbseek( ::idProduct + idClient ) )
+
+
+
+      while ( D():AlbaranesClientesLineas( ::nView ) )->cRef == ::idProduct                              .AND.  ( empty( idClient ) .OR. ( D():AlbaranesClientesLineas( ::nView ) )->cCodCli == idClient )   .AND.  D():AlbaranesClientesLineasNotEof( ::nView )
+
+
+         if !( D():AlbaranesClientesLineas( ::nView ) )->lFacturado .AND.  ( empty( dateWarranty ) .OR. ( D():AlbaranesClientesLineas( ::nView ) )->dFecAlb >= dateWarranty )
+
+            ::unitsToReturn      += ( D():AlbaranesClientesLineas( ::nView ) )->nUniCaja
+
+            if isTrue( lInfo )
+
+
+
+
+
+
+               msgalert(   "Parametros------------------------------"         + chr( 13 ) + chr( 10 ) +  "Cliente : " + cvaltochar( idClient )              + chr( 13 ) + chr( 10 ) +  "Fecha garantía : " + cvaltochar( dateWarranty )   + chr( 13 ) + chr( 10 ) +  "fin parametros--------------------------"         + chr( 13 ) + chr( 10 ) +  "Unidades a devolver : " + str( ::unitsToReturn )  + chr( 13 ) + chr( 10 ) + "Documento : " +  ( D():AlbaranesClientesLineas( ::nView ) )->cSerAlb + "/" + alltrim( str( ( D():AlbaranesClientesLineas( ::nView ) )->nNumAlb ) ) + chr( 13 ) + chr( 10 ) + "Fecha en linea : " + dtoc( ( D():AlbaranesClientesLineas( ::nView ) )->dFecAlb ) )
+            end
+
+
+
+
+
+
+
+
+            if ( ( D():AlbaranesClientesLineas( ::nView ) )->nUniCaja > 0 ) .AND.  ( empty( ::lastDateSale ) .OR. ( D():AlbaranesClientesLineas( ::nView ) )->dFecAlb > ::lastDateSale )
+
+               ::typeSale        := "Albaranes de cliente"
+               ::clientSale      := ( D():AlbaranesClientesLineas( ::nView ) )->cCodCli
+               ::nameSale        := retFld( ::clientSale, D():Clientes( ::nView ), "Titulo" )
+               ::documentSale    := ( D():AlbaranesClientesLineas( ::nView ) )->cSerAlb + "/" + alltrim( str( ( D():AlbaranesClientesLineas( ::nView ) )->nNumAlb ) )
+               ::lastDateSale    := ( D():AlbaranesClientesLineas( ::nView ) )->dFecAlb
+
+               if !empty(idClient)
+                  ::priceSale    := ( D():AlbaranesClientesLineas( ::nView ) )->nPreUnit
+               end
+
+            end
+
+         end
+
+         ( D():AlbaranesClientesLineas( ::nView ) )->( dbskip() )
+
+      end
+
+   end
+
+   D():setStatusAlbaranesClientesLineas( ::nView )
+
+Return ( Self )
+
+
+
+static FUNCTION TGestionGarantiasAlbaranes_searchLastSaleFacturasClientes( idClient, dateWarranty ) ; local Self AS CLASS TGestionGarantiasAlbaranes := QSelf() AS CLASS TGestionGarantiasAlbaranes
+
+   D():getStatusFacturasClientesLineas( ::nView )
+
+   D():setFocusFacturasClientesLineas( "cRefFec", ::nView )
+
+   if ( D():FacturasClientesLineas( ::nView ) )->( dbseek( ::idProduct + idClient ) )
+
+
+
+      while ( D():FacturasClientesLineas( ::nView ) )->cRef == ::idProduct                            .AND.  ( empty( idClient ) .OR. ( D():FacturasClientesLineas( ::nView ) )->cCodCli == idClient ) .AND.  D():FacturasClientesLineasNotEof( ::nView )
+
+         if ( empty( dateWarranty ) .OR. ( D():FacturasClientesLineas( ::nView ) )->dFecFac >= dateWarranty )
+
+            ::unitsToReturn   += ( D():FacturasClientesLineas( ::nView ) )->nUniCaja
+
+
+            if ( ( D():FacturasClientesLineas( ::nView ) )->nUniCaja > 0 ) .AND.  ( empty( ::lastDateSale ) .OR. ( D():FacturasClientesLineas( ::nView ) )->dFecFac > ::lastDateSale )
+
+               ::typeSale     := "Facturas de clientes"
+               ::clientSale   := ( D():FacturasClientesLineas( ::nView ) )->cCodCli
+               ::nameSale     := retFld( ::clientSale, D():Clientes( ::nView ), "Titulo" )
+               ::documentSale := ( D():FacturasClientesLineas( ::nView ) )->cSerie + "/" + alltrim( str( ( D():FacturasClientesLineas( ::nView ) )->nNumFac ) )
+               ::lastDateSale := ( D():FacturasClientesLineas( ::nView ) )->dFecFac
+
+               if !empty(idClient)
+                  ::priceSale := ( D():FacturasClientesLineas( ::nView ) )->nPreUnit
+               end
+
+            end
+
+         end
+
+         ( D():FacturasClientesLineas( ::nView ) )->( dbskip() )
+
+      end
+
+   end
+
+   D():setStatusFacturasClientesLineas( ::nView )
+
+Return ( Self )
+
+
+
+static FUNCTION TGestionGarantiasAlbaranes_searchLastSaleTicketsClientes( idClient, dateWarranty ) ; local Self AS CLASS TGestionGarantiasAlbaranes := QSelf() AS CLASS TGestionGarantiasAlbaranes
+
+   D():getStatusTiketsLineas( ::nView )
+
+   D():setFocusTiketsLineas( "cCbaTil", ::nView )
+
+   if ( D():TiketsLineas( ::nView ) )->( dbseek( ::idProduct ) )
+
+      while ( D():TiketsLineas( ::nView ) )->cCbaTil == ::idProduct .AND. D():TiketsLineasNotEof( ::nView )
+
+         if D():gotoIdTikets( D():TiketsLineasId( ::nView ), ::nView )
+
+            if ( empty( idClient ) .OR. ( D():Tikets( ::nView ) )->cCliTik == idClient )
+
+               if ( empty( dateWarranty ) .OR. ( D():Tikets( ::nView ) )->dFecTik >= dateWarranty )
+
+                  ::unitsToReturn   += ( D():TiketsLineas( ::nView ) )->nUntTil
+
+
+                  if ( ( D():TiketsLineas( ::nView ) )->nUntTil > 0 ) .AND.  ( empty( ::lastDateSale ) .OR. ( D():Tikets( ::nView ) )->dFecTik > ::lastDateSale )
+
+                     ::typeSale     := "Ticket de cliente"
+                     ::clientSale   := ( D():Tikets( ::nView ) )->cCliTik
+                     ::nameSale     := retFld( ::clientSale, D():Clientes( ::nView ), "Titulo" )
+                     ::documentSale := ( D():Tikets( ::nView ) )->cSerTik + "/" + alltrim( ( D():Tikets( ::nView ) )->cNumTik )
+                     ::lastDateSale := ( D():Tikets( ::nView ) )->dFecTik
+
+                     if !empty(idClient)
+                        ::priceSale := nBasUTpv( ( D():TiketsLineas( ::nView ) ) )
+                     end
+
+                  end
+
+               end
+
+            end
+
+         end
+
+         ( D():TiketsLineas( ::nView ) )->( dbskip() )
+
+      end
+
+   end
+
+   D():getStatusTiketsLineas( ::nView )
+
+Return ( Self )
+
+
+
+static FUNCTION TGestionGarantiasAlbaranes_validateUnitsToReturn( lInfo ) ; local Self AS CLASS TGestionGarantiasAlbaranes := QSelf() AS CLASS TGestionGarantiasAlbaranes
+
+   if isTrue( lInfo )
+
+
+
+      msgAlert(   "Unidades en la linea actual : " + cvaltochar( abs( ::getUnitsInActualLine() ) )                      + chr( 13 ) + chr( 10 ) + "Unidades maximas a devolver por cliente : " + cvaltochar( ::getMaxiumnUnitsToReturnByClient() )      + chr( 13 ) + chr( 10 ) + "Retorno de función : " + cvaltochar( ::getMaxiumnUnitsToReturnByClient() >= abs( ::getUnitsInActualLine() ) ), "validateUnitsToReturn" )
+   end
+
+Return ( ::getMaxiumnUnitsToReturnByClient() >= abs( ::getUnitsInActualLine() ) )

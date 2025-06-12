@@ -1,0 +1,23 @@
+HTTP/1.1 500 Internal Server Error
+Date: Fri, 16 Nov 2018 12:26:23 GMT
+Server: Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11
+Vary: Authorization
+X-Powered-By: PrestaShop Webservice
+Access-Time: 1542371183
+PSWS-Version: 1.7.4.4
+Execution-Time: 0.031
+Set-Cookie: PrestaShop-a5a6b22973194fc377ca4f59e144ea71=def50200d1e307ec4619d72b0ceaa4f037a916f454eeb914a5d9105d530de1c1862c008a621eae0be086503dcfe6e4972a11717d9e63d812335f2016f1891b9a8b3286ba1b4fa53e8f91028d4c0c2558cf898083d90bc8d80e089918961db3113a686f831e6faee029108f7aa534a9e11db6a3df6b6aa7d223b77a4318dd0159c4e202c06b5233d0b1f92cd979113800d286e13366f3d2429790fff9d6857837fa03cefc; expires=Thu, 06-Dec-2018 12:26:23 GMT; Max-Age=1728000; path=/prestashop/; HttpOnly
+Content-Length: 230
+Connection: close
+Content-Type: text/xml;charset=utf-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+<errors>
+<error>
+<code><![CDATA[66]]></code>
+<message><![CDATA[Unable to save this image]]></message>
+</error>
+</errors>
+</prestashop>
+

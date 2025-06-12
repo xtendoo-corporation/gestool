@@ -1,0 +1,2393 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 5 ".\.\Prg\Ttrans.prg"
+static dbfTranspor
+
+
+
+_HB_CLASS TTrans ; function TTrans ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TTrans", iif( .T., { @TMANT() }, { @HBObject() } ), @TTrans() ) ) ;
+
+   _HB_MEMBER { cPouDiv } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPouDiv"}, .F. )
+
+   _HB_MEMBER { cMru } ; oClass:AddMultiData(, "gc_small_truck_16", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cMru"}, .F. )
+
+   _HB_MEMBER { cBitmap } ; oClass:AddMultiData(, ( 104 + ( 0 * 256 ) + ( 63 * 65536 ) ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cBitmap"}, .F. )
+
+   _HB_MEMBER Create( cPath) AS CLASS TTrans; oClass:AddMethod( "Create", @TTrans_Create(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER New( cPath, oWndParent, oMenuItem) AS CLASS TTrans; oClass:AddMethod( "New", @TTrans_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DefineFiles(); oClass:AddMethod( "DefineFiles", @TTrans_DefineFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles( lExclusive); oClass:AddMethod( "OpenFiles", @TTrans_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Resource( nMode); oClass:AddMethod( "Resource", @TTrans_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cBrwose( oGet); oClass:AddMethod( "cBrwose", @TTrans_cBrwose(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cNombre( cCodTrn); oClass:AddMethod( "cNombre", @TTrans_cNombre(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lPreSave( nMode); oClass:AddMethod( "lPreSave", @TTrans_lPreSave(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TTrans ;
+
+
+
+static FUNCTION TTrans_Create( cPath ) ; local Self AS CLASS TTrans := QSelf() AS CLASS TTrans
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+
+   ::cPath           := cPath
+   ::oDbf            := nil
+
+RETURN ( Self )
+
+
+
+static FUNCTION TTrans_New( cPath, oWndParent, oMenuItem ) ; local Self AS CLASS TTrans := QSelf() AS CLASS TTrans
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+   If( oWndParent == nil, oWndParent := oWnd(), ) ;
+
+   if oMenuItem <> nil
+      ::nLevel          := Auth():Level( oMenuItem )
+   else
+      ::nLevel          := 1
+   end
+
+   ::cPath              := cPath
+   ::oWndParent         := oWndParent
+   ::oDbf               := nil
+
+   ::cPouDiv            := cPouDiv( cDivEmp() )
+
+   ::lAutoButtons       := .T.
+   ::lCreateShell       := .F.
+
+RETURN ( Self )
+
+
+
+static FUNCTION TTrans_OpenFiles( lExclusive, cPath ) ; local Self AS CLASS TTrans := QSelf() AS CLASS TTrans
+
+   local lOpen          := .T.
+   local oError
+   local oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   BEGIN SEQUENCE
+
+      if Empty( ::oDbf )
+         ::DefineFiles( cPath )
+      end
+
+      ::oDbf:Activate( .F., !( lExclusive ) )
+
+  RECOVER USING oError
+
+      lOpen             := .F.
+
+      ::CloseFiles()
+
+      msgStop( ErrorMessage( oError ), "Imposible abrir las bases de datos de transportistas" )
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TTrans_DefineFiles( cPath, cDriver ) ; local Self AS CLASS TTrans := QSelf() AS CLASS TTrans
+
+   If( cPath == nil, cPath := ::cPath, ) ;
+   If( cDriver == nil, cDriver := cDriver(), ) ;
+
+   ::oDbf := DbfServer( "Transpor.Dbf", "Transpor" ):New( "Transpor.Dbf", "Transpor", ( cDriver ), "Transportistas", ( cPath ) )
+
+      ::oDbf:AddField( "cCodTrn", "C", 9, 0,,,,, "Código", .F., 60, .F., {} )
+      ::oDbf:AddField( "cNomTrn", "C", 50, 0,,,,, "Nombre", .F., 200, .F., {} )
+      ::oDbf:AddField( "cDirTrn", "C", 50, 0,,,,, "Domicilio", .F., 180, .F., {} )
+      ::oDbf:AddField( "cLocTrn", "C", 40, 0,,,,, "Localidad", .F., 180, .F., {} )
+      ::oDbf:AddField( "cCdpTrn", "C", 5, 0,,,,, "Código postal", .F., 60, .F., {} )
+      ::oDbf:AddField( "cPrvTrn", "C", 24, 0,,,,, "Provincia", .F., 80, .F., {} )
+      ::oDbf:AddField( "cTlfTrn", "C", 12, 0,,,,, "Teléfono", .F., 60, .F., {} )
+      ::oDbf:AddField( "cMovTrn", "C", 12, 0,,,,, "Móvil", .F., 60, .F., {} )
+      ::oDbf:AddField( "cFaxTrn", "C", 12, 0,,,,, "Fax", .F., 60, .F., {} )
+      ::oDbf:AddField( "nKgsTrn", "N", 16, 6, MasUnd(),,,, "Tara", .T., 100, .F., {} )
+      ::oDbf:AddField( "cMatTrn", "C", 20, 0,,,,, "Matrícula", .F.,, .T., {} )
+      ::oDbf:AddField( "cDniTrn", "C", 15, 0,,,,, "DNI Transportista", .F.,, .T., {} )
+      ::oDbf:AddField( "uuid", "C", 40, 0,,,,, "UUID Transportista", .F.,, .T., {} )
+
+      ::oDbf:AddIndex( "cCodTrn", "Transpor.Cdx", "cCodTrn",,, .F., .F., "Código",,, .T., .F. )
+      ::oDbf:AddIndex( "cNomTrn", "Transpor.Cdx", "Upper( cNomTrn )",,, .F., .F., "Nombre",,, .T., .F. )
+
+
+
+RETURN ( ::oDbf )
+
+
+
+static FUNCTION TTrans_Resource( nMode ) ; local Self AS CLASS TTrans := QSelf() AS CLASS TTrans
+
+    local oDlg
+   local oGet
+
+   oDlg = TDialog():New(,,,, LblTitle( nMode ) + "transportistas", "TRANSP",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+
+      oGet := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, ::oDbf:cCodTrn, ::oDbf:cCodTrn:= u ) }, oDlg,, "@!", {||    NotValid( oGet, ::oDbf:cAlias )},,,,,, .T., {||     ( nMode == 1 .OR. nMode == 4 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 110, { | u | If( PCount()==0, ::oDbf:cNomTrn, ::oDbf:cNomTrn:= u ) }, oDlg,,,,,,,,, .T., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 200, { | u | If( PCount()==0, ::oDbf:cDniTrn, ::oDbf:cDniTrn:= u ) }, oDlg,,,,,,,,, .T., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      TGetHlp():ReDefine( 120, { | u | If( PCount()==0, ::oDbf:cDirTrn, ::oDbf:cDirTrn:= u ) }, oDlg,,,,,,,,, .T., {||     ( nMode <> 3 )},, .F., .T.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 130, { | u | If( PCount()==0, ::oDbf:cLocTrn, ::oDbf:cLocTrn:= u ) }, oDlg,,,,,,,,, .T., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 140, { | u | If( PCount()==0, ::oDbf:cPrvTrn, ::oDbf:cPrvTrn:= u ) }, oDlg,,,,,,,,, .T., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 150, { | u | If( PCount()==0, ::oDbf:cCdpTrn, ::oDbf:cCdpTrn:= u ) }, oDlg,,,,,,,,, .T., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 160, { | u | If( PCount()==0, ::oDbf:cTlfTrn, ::oDbf:cTlfTrn:= u ) }, oDlg,,,,,,,,, .T., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 170, { | u | If( PCount()==0, ::oDbf:cMovTrn, ::oDbf:cMovTrn:= u ) }, oDlg,,,,,,,,, .T., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 180, { | u | If( PCount()==0, ::oDbf:cFaxTrn, ::oDbf:cFaxTrn:= u ) }, oDlg,,,,,,,,, .T., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      TGetHlp():ReDefine( 190, { | u | If( PCount()==0, ::oDbf:nKgsTrn, ::oDbf:nKgsTrn:= u ) }, oDlg,, ( MasUnd() ),,,,,,, .T., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 210, { | u | If( PCount()==0, ::oDbf:cMatTrn, ::oDbf:cMatTrn:= u ) }, oDlg,,,,,,,,, .T., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      TButton():ReDefine( 1, {||( if( ::lPreSave( nMode ), oDlg:end( 1 ), ) )}, oDlg,,, .F., {||         ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+        TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+
+
+
+      TButton():ReDefine( 9, {||( ChmHelp( "Transportistas" ) )}, oDlg,,, .F.,,,, .F. )
+
+   if nMode <> 3
+      oDlg:AddFastKey( 116, {|| if( ::lPreSave( nMode ), oDlg:end( 1 ), ) } )
+   end
+
+   oDlg:AddFastKey ( 112, {|| ChmHelp( "Transportistas" ) } )
+
+   oDlg:bStart := { || oGet:SetFocus() }
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+static FUNCTION TTrans_lPreSave( nMode ) ; local Self AS CLASS TTrans := QSelf() AS CLASS TTrans
+
+   if Empty( ::oDbf:cCodTrn )
+      MsgStop( "El código del transportista no puede estar vacío." )
+      Return .F.
+   end
+
+   if ( nMode == 1 .OR. nMode == 4 ) .AND. ::oDbf:SeekInOrd( ::oDbf:cCodTrn, "CCODTRN" )
+      MsgStop( "Código ya existe " + Rtrim( ::oDbf:cCodTrn ) )
+      Return .F.
+   end
+
+   if Empty( ::oDbf:cNomTrn )
+      MsgStop( "El nombre del transportista no puede estar vacío." )
+      Return .F.
+   end
+
+Return .T.
+
+
+
+static FUNCTION TTrans_cBrwose( oGet ) ; local Self AS CLASS TTrans := QSelf() AS CLASS TTrans
+
+   local n
+   local cCaption
+   local cAlias
+   local cField
+   local uOrden   := "cNomTrn"
+   local aSizes   := {}
+   local aOrd     := {}
+   local aCampos  := {}
+   local aTitulos := {}
+   local bAlta    := {|| ::Append() }
+   local bEdit    := {|| ::Edit()   }
+   local bZoom    := {|| ::Zoom()   }
+
+   cCaption       := ::oDbf:cComment
+   cAlias         := ::oDbf:cAlias
+   cField         := "cCodTrn"
+
+   for n := 1 to ::oDbf:FCount()
+
+      if !::oDbf:aTField[ n ]:lHide
+
+         aAdd( aCampos, FieldWBlock( ::oDbf:aTField[ n ]:cName, ::oDbf:nArea ) )
+         aAdd( aTitulos, ::oDbf:aTField[ n ]:cComment )
+         aAdd( aSizes, ::oDbf:aTField[ n ]:nColSize )
+
+      endif
+
+   next
+
+   for n := 1 to len( ::oDbf:aTIndex )
+      aAdd( aOrd, ::oDbf:aTIndex[ n ]:cComment )
+   next
+
+
+
+   ::oBuscar      := TBuscar():New( cCaption, cAlias, uOrden, cField, aOrd, aCampos, aTitulos, aSizes, bAlta, bEdit, bZoom )
+
+   ::oBuscar:Activate()
+
+   if oGet <> nil
+      oGet:cText( ::oBuscar:Getfield() )
+      oGet:lValid()
+   end
+
+RETURN nil
+
+
+
+static FUNCTION TTrans_cNombre( cCodTrn ) ; local Self AS CLASS TTrans := QSelf() AS CLASS TTrans
+
+   local cNomTrn  := ""
+
+   ::oDbf:GetStatus()
+   ::oDbf:OrdSetFocus( "cCodTrn" )
+
+   if ::oDbf:Seek( cCodtrn )
+      cNomTrn     := ::oDbf:cNomTrn
+   end
+
+   ::oDbf:SetStatus()
+
+RETURN ( cNomTrn )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FUNCTION EdtTrans( cCodTrans )
+
+   local nLevel         := Auth():Level( "01045" )
+   local oTrans
+
+   if nAnd( nLevel, 1 ) == 0 .OR. nAnd( nLevel, 4 ) == 0
+      msgStop( "Acceso no permitido." )
+      return .T.
+   end
+
+   oTrans            := TTrans():Create( cPatEmp() )
+
+   if oTrans:OpenFiles()
+
+      if oTrans:oDbf:SeekInOrd( cCodTrans, "cCodTrn" )
+
+         oTrans:Edit()
+
+      end
+
+      oTrans:CloseFiles()
+
+   end
+
+   oTrans:End()
+
+RETURN .T.
+
+
+
+_HB_CLASS pdaTransSenderReciver ; function pdaTransSenderReciver ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "pdaTransSenderReciver", iif( .F., { }, { @HBObject() } ), @pdaTransSenderReciver() ) ) ;
+
+   _HB_MEMBER CreateData(); oClass:AddMethod( "CreateData", @pdaTransSenderReciver_CreateData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS pdaTransSenderReciver ;
+
+
+
+static FUNCTION pdaTransSenderReciver_CreateData( oPgrActual, oSayStatus, cPatPreVenta ) ; local Self AS CLASS pdaTransSenderReciver := QSelf() AS CLASS pdaTransSenderReciver
+
+   local pdaTranspor
+   local pcTranspor
+   local lExist      := .F.
+   local cFileName
+   local cPatPc      := if( Empty( cPatPreVenta ), cPatPc(), cPatPreVenta )
+
+   dbUseArea( .T., ( cDriver() ), ( cPatEmp() + "Transpor.Dbf" ), ( cCheckArea( "Transpor", @pdaTranspor ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+   if !lAIS() ; ordListAdd( ( cPatEmp() + "Transpor.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   dbUseArea( .T., cDriver(), cPatPc + "Transpor.Dbf", cCheckArea( "Transpor", @pcTranspor ), .T. )
+   ( pcTranspor )->( ordListAdd( cPatPc + "Transpor.Cdx" ) )
+
+   if !Empty( oPgrActual )
+      oPgrActual:SetRange( 0, ( pcTranspor )->( OrdKeyCount() ) )
+   end
+
+   ( pcTranspor )->( dbGoTop() )
+   while !( pcTranspor )->( eof() )
+
+      if ( pdaTranspor )->( dbSeek( ( pcTranspor )->cCodTrn ) )
+         dbPass( pcTranspor, pdaTranspor, .F. )
+      else
+         dbPass( pcTranspor, pdaTranspor, .T. )
+      end
+
+      ( pcTranspor )->( dbSkip() )
+
+      if !Empty( oSayStatus )
+         oSayStatus:SetText( "Sincronizando transportistas " + Alltrim( Str( ( pcTranspor )->( OrdKeyNo() ) ) ) + " de " + Alltrim( Str( ( pcTranspor )->( OrdKeyCount() ) ) ) )
+      end
+
+      SysRefresh()
+
+      if !Empty( oPgrActual )
+         oPgrActual:SetPos( ( pcTranspor )->( OrdKeyNo() ) )
+      end
+
+      SysRefresh()
+
+   end
+
+   ( pcTranspor )->( dbCloseArea() )
+   ( pdaTranspor )->( dbCloseArea() )
+
+Return ( Self )
+
+
+
+Function SynTransportista( cPath )
+
+   local oBlock
+   local oError
+   local dbfTrans
+   local nOrdAnt
+
+   If( cPath == nil, cPath := cPatEmp(), ) ;
+
+   oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   dbUseArea( .T., ( cDriver() ), ( cPath + "TRANSPOR.DBF" ), ( cCheckArea( "TRANSPOR", @dbfTrans ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+   if !lAIS() ; ordListAdd( ( cPath + "TRANSPOR.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+
+
+
+
+   ( dbfTrans )->( ordSetFocus( 0 ) )
+
+   ( dbfTrans )->( dbGoTop() )
+   while !( dbfTrans )->( eof() )
+
+      if empty( ( dbfTrans )->uuid )
+         if dbLock( dbfTrans )
+            ( dbfTrans )->uuid          := win_uuidcreatestring()
+            ( dbfTrans )->( dbUnLock() )
+         end
+
+      end
+
+      ( dbfTrans )->( dbSkip() )
+
+   end
+
+   ( dbfTrans )->( ordSetFocus( 1 ) )
+
+   RECOVER USING oError
+
+      msgstop( "Imposible abrir todas las bases de datos de transportistas" + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+   end
+
+   ErrorBlock( oBlock )
+
+   ( dbfTrans )->( dbCloseArea() )
+
+return nil

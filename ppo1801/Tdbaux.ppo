@@ -1,0 +1,61 @@
+#line 5 ".\.\Prg\Tdbaux.prg"
+_HB_CLASS TDbAux ; function TDbAux ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TDbAux", iif( .F., { }, { @HBObject() } ), @TDbAux() ) ) ;
+
+   _HB_MEMBER { AS ARRAY aBuffer } ; oClass:AddMultiData( "ARRAY",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aBuffer"}, .F. )
+   _HB_MEMBER { AS ARRAY aFldNames } ; oClass:AddMultiData( "ARRAY",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aFldNames"}, .F. )
+
+   _HB_MEMBER New( oDbf) AS CLASS TDbAux; oClass:AddMethod( "New", @TDbAux_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FieldGet(); oClass:AddInline( "FieldGet", {|Self, nPos | ( ( Self ) ), ::aBuffer[ nPos ] }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FieldPut(); oClass:AddInline( "FieldPut", {|Self, nPos, uValue | ( ( Self ) ), ::aBuffer[ nPos ] := uValue }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FieldPos( cMsg); oClass:AddMethod( "FieldPos", @TDbAux_FieldPos(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OnError( cMsg, nError); oClass:SetOnError( @TDbAux_OnError() )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TDbAux ;
+
+
+
+static FUNCTION TDbAux_New( oDbf ) ; local Self AS CLASS TDbAux := QSelf() AS CLASS TDbAux
+
+   local i
+   local nLen  := oDbf:FCount()
+
+   ::aFldNames := {}
+   ::aBuffer   := Array( nLen )
+
+   for i := 1 to nLen
+      AAdd( ::aFldNames, oDbf:FieldName( i ) )
+   next
+
+return( Self )
+
+
+
+static FUNCTION TDbAux_FieldPos( cMsg ) ; local Self AS CLASS TDbAux := QSelf() AS CLASS TDbAux
+
+return ( AScan( ::aFldNames, { | cField | cMsg == RTrim( SubStr( cField, 1, 9 ) ) } ) )
+
+
+
+static FUNCTION TDbAux_OnError( cMsg, nError ) ; local Self AS CLASS TDbAux := QSelf() AS CLASS TDbAux
+
+   local nField
+
+   if SubStr( cMsg, 1, 1 ) == "_"
+      if( ( nField := ::FieldPos( SubStr( cMsg, 2 ) ) ) <> 0 )
+         ::FieldPut( nField, GetParam( 1, 1 ) )
+      else
+         _ClsSetError( _GenError( nError, ::ClassName(), SubStr( cMsg, 2 ) ) )
+      endif
+   else
+      if( ( nField := ::FieldPos( cMsg ) ) <> 0 )
+         return ::FieldGet( nField )
+      else
+         _ClsSetError( _GenError( nError, ::ClassName(), cMsg ) )
+      endif
+   endif
+
+return nil

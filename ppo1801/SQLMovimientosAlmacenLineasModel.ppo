@@ -1,0 +1,2597 @@
+#line 91 "\fwh1801\include\fivewin.ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 7 ".\Prg\Models\SQLMovimientosAlmacenLineasModel.prg"
+_HB_CLASS SQLMovimientosAlmacenLineasModel ; function SQLMovimientosAlmacenLineasModel ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "SQLMovimientosAlmacenLineasModel", iif( .T., { @SQLExportableModel() }, { @HBObject() } ), @SQLMovimientosAlmacenLineasModel() ) ) ;
+
+   _HB_MEMBER { cTableName } ; oClass:AddMultiData(, "movimientos_almacen_lineas", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTableName"}, .F. )
+
+   _HB_MEMBER { cTableTemporal } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTableTemporal"}, .F. )
+
+
+
+
+
+   _HB_MEMBER { cConstraints } ; oClass:AddMultiData(, "PRIMARY KEY ( id ), "                       +  "KEY ( uuid ), "                          +  "KEY ( parent_uuid ), "                   +  "KEY ( codigo_articulo ), "               +  "KEY stock ( codigo_articulo,codigo_primera_propiedad,valor_primera_propiedad,codigo_segunda_propiedad,valor_segunda_propiedad,lote ) ", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cConstraints"}, .F. )
+
+   _HB_MEMBER getColumns(); oClass:AddMethod( "getColumns", @SQLMovimientosAlmacenLineasModel_getColumns(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getInitialSelect(); oClass:AddMethod( "getInitialSelect", @SQLMovimientosAlmacenLineasModel_getInitialSelect(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getInsertSentence(); oClass:AddMethod( "getInsertSentence", @SQLMovimientosAlmacenLineasModel_getInsertSentence(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addInsertSentence(); oClass:AddMethod( "addInsertSentence", @SQLMovimientosAlmacenLineasModel_addInsertSentence(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addUpdateSentence(); oClass:AddMethod( "addUpdateSentence", @SQLMovimientosAlmacenLineasModel_addUpdateSentence(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addDeleteSentence(); oClass:AddMethod( "addDeleteSentence", @SQLMovimientosAlmacenLineasModel_addDeleteSentence(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addDeleteSentenceById(); oClass:AddMethod( "addDeleteSentenceById", @SQLMovimientosAlmacenLineasModel_addDeleteSentenceById(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER deleteWhereUuid( uuid); oClass:AddMethod( "deleteWhereUuid", @SQLMovimientosAlmacenLineasModel_deleteWhereUuid(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER aUuidToDelete( uuid); oClass:AddMethod( "aUuidToDelete", @SQLMovimientosAlmacenLineasModel_aUuidToDelete(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getDeleteSentenceFromParentsUuid(); oClass:AddMethod( "getDeleteSentenceFromParentsUuid", @SQLMovimientosAlmacenLineasModel_getDeleteSentenceFromParentsUuid(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getSQLSubSentenceTotalUnidadesLinea( cTable, cAs); oClass:AddMethod( "getSQLSubSentenceTotalUnidadesLinea", @SQLMovimientosAlmacenLineasModel_getSQLSubSentenceTotalUnidadesLinea(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getSQLSubSentenceTotalPrecioLinea( cTable, cAs); oClass:AddMethod( "getSQLSubSentenceTotalPrecioLinea", @SQLMovimientosAlmacenLineasModel_getSQLSubSentenceTotalPrecioLinea(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getSQLSubSentenceTotalVentaLinea( cTable, cAs); oClass:AddMethod( "getSQLSubSentenceTotalVentaLinea", @SQLMovimientosAlmacenLineasModel_getSQLSubSentenceTotalVentaLinea(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getSQLSubSentenceTotalIva( cTable, cAs); oClass:AddMethod( "getSQLSubSentenceTotalIva", @SQLMovimientosAlmacenLineasModel_getSQLSubSentenceTotalIva(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getSQLSubSentenceSumatorioUnidadesLinea( cTable, cAs); oClass:AddMethod( "getSQLSubSentenceSumatorioUnidadesLinea", @SQLMovimientosAlmacenLineasModel_getSQLSubSentenceSumatorioUnidadesLinea(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getSQLSubSentenceSumatorioTotalPrecioLinea( cTable, cAs); oClass:AddMethod( "getSQLSubSentenceSumatorioTotalPrecioLinea", @SQLMovimientosAlmacenLineasModel_getSQLSubSentenceSumatorioTotalPrecioLinea(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getSQLSumatorioTotalVentaLinea( cTable, cAs); oClass:AddMethod( "getSQLSumatorioTotalVentaLinea", @SQLMovimientosAlmacenLineasModel_getSQLSumatorioTotalVentaLinea(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getSentenceNotSent( aFetch); oClass:AddMethod( "getSentenceNotSent", @SQLMovimientosAlmacenLineasModel_getSentenceNotSent(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getIdProductAdded(); oClass:AddMethod( "getIdProductAdded", @SQLMovimientosAlmacenLineasModel_getIdProductAdded(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getUpdateUnitsSentece(); oClass:AddMethod( "getUpdateUnitsSentece", @SQLMovimientosAlmacenLineasModel_getUpdateUnitsSentece(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER createTemporalTableWhereUuid( id); oClass:AddMethod( "createTemporalTableWhereUuid", @SQLMovimientosAlmacenLineasModel_createTemporalTableWhereUuid(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER alterTemporalTableWhereUuid(); oClass:AddMethod( "alterTemporalTableWhereUuid", @SQLMovimientosAlmacenLineasModel_alterTemporalTableWhereUuid(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER replaceUuidInTemporalTable( duplicatedUuid); oClass:AddMethod( "replaceUuidInTemporalTable", @SQLMovimientosAlmacenLineasModel_replaceUuidInTemporalTable(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER insertTemporalTable(); oClass:AddMethod( "insertTemporalTable", @SQLMovimientosAlmacenLineasModel_insertTemporalTable(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER dropTemporalTable(); oClass:AddMethod( "dropTemporalTable", @SQLMovimientosAlmacenLineasModel_dropTemporalTable(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER duplicateByUuid( id, duplicatedUuid); oClass:AddMethod( "duplicateByUuid", @SQLMovimientosAlmacenLineasModel_duplicateByUuid(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getListToSend(); oClass:AddMethod( "getListToSend", @SQLMovimientosAlmacenLineasModel_getListToSend(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER prepareFromInsertBuffer( hBuffer); oClass:AddMethod( "prepareFromInsertBuffer", @SQLMovimientosAlmacenLineasModel_prepareFromInsertBuffer(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER updatePrecioVenta( uuid, nNewPrice); oClass:AddMethod( "updatePrecioVenta", @SQLMovimientosAlmacenLineasModel_updatePrecioVenta(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getLinesFromStock( cCodigoArticulo, dFechaInicio, dFechaFin, cCodigoAlmacen); oClass:AddMethod( "getLinesFromStock", @SQLMovimientosAlmacenLineasModel_getLinesFromStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ValidaDocumentos(); oClass:AddMethod( "ValidaDocumentos", @SQLMovimientosAlmacenLineasModel_ValidaDocumentos(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER exist( uuid); oClass:AddMethod( "exist", @SQLMovimientosAlmacenLineasModel_exist(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SeederToADS(); oClass:AddMethod( "SeederToADS", @SQLMovimientosAlmacenLineasModel_SeederToADS(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS SQLMovimientosAlmacenLineasModel ;
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_getColumns( ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+
+   hset( ::hColumns, "id",                         {  "create"    => "INTEGER AUTO_INCREMENT"         , "default"   => {|| 0 } }                        )
+
+
+   hset( ::hColumns, "uuid",                       {  "create"    => "VARCHAR(40) NOT NULL UNIQUE"    , "default"   => {|| win_uuidcreatestring() } }   )
+
+
+   hset( ::hColumns, "parent_uuid",                {  "create"    => "VARCHAR(40) NOT NULL"           , "default"   => {|| space(40) } }                )
+
+
+   hset( ::hColumns, "codigo_articulo",            {  "create"    => "VARCHAR(18) NOT NULL"           , "default"   => {|| space(18) } }                )
+
+
+   hset( ::hColumns, "nombre_articulo",            {  "create"    => "VARCHAR(250) NOT NULL"          , "default"   => {|| space(250) } }               )
+
+
+   hset( ::hColumns, "codigo_primera_propiedad",   {  "create"    => "VARCHAR(20)"                    , "default"   => {|| space(20) } }                )
+
+
+   hset( ::hColumns, "valor_primera_propiedad",    {  "create"    => "VARCHAR(200)"                   , "default"   => {|| space(200) } }               )
+
+
+   hset( ::hColumns, "codigo_segunda_propiedad",   {  "create"    => "VARCHAR(20)"                    , "default"   => {|| space(20) } }                )
+
+
+   hset( ::hColumns, "valor_segunda_propiedad",    {  "create"    => "VARCHAR(200)"                   , "default"   => {|| space(200) } }               )
+
+
+   hset( ::hColumns, "fecha_caducidad",            {  "create"    => "DATE"                           , "default"   => {|| ctod("") } }                 )
+
+
+   hset( ::hColumns, "lote",                       {  "create"    => "VARCHAR(40)"                    , "default"   => {|| space(40) } }                )
+
+
+   hset( ::hColumns, "bultos_articulo",            {  "create"    => "DECIMAL(19,6)"                  , "default"   => {|| 0 } }                        )
+
+
+   hset( ::hColumns, "cajas_articulo",             {  "create"    => "DECIMAL(19,6)"                  , "default"   => {|| 0 } }                        )
+
+
+   hset( ::hColumns, "unidades_articulo",          {  "create"    => "DECIMAL(19,6)"                  , "default"   => {|| 1 } }                        )
+
+
+   hset( ::hColumns, "precio_articulo",            {  "create"    => "DECIMAL(19,6)"                  , "default"   => {|| 0 } }                        )
+
+
+   hset( ::hColumns, "precio_venta",               {  "create"    => "DECIMAL(19,6)"                  , "default"   => {|| 0 } }                        )
+
+
+   hset( ::hColumns, "tipo_iva",                   {  "create"    => "DECIMAL(6,2)"                  , "default"   => {|| 0 } }                        )
+
+RETURN ( ::hColumns )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_getInitialSelect( ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   local cSelect  := "SELECT id, "                                            +  "uuid, "                                              +  "parent_uuid, "                                       +  "codigo_articulo, "                                   +  "nombre_articulo, "                                   +  "codigo_primera_propiedad, "                          +  "valor_primera_propiedad, "                           +  "codigo_segunda_propiedad, "                          +  "valor_segunda_propiedad, "                           +  "fecha_caducidad, "                                   +  "lote, "                                              +  "bultos_articulo, "                                   +  "cajas_articulo, "                                    +  "unidades_articulo, "                                 +  ::getSQLSubSentenceTotalUnidadesLinea() + ", "        +  "precio_articulo, "                                   +  ::getSQLSubSentenceTotalPrecioLinea() + ", "          +  "precio_venta, "                                      +  "tipo_iva, "                                          +  ::getSQLSubSentenceTotalVentaLinea() + ", "           +  ::getSQLSubSentenceTotalIva()                         +  "FROM " + ::getTableName()
+
+RETURN ( cSelect )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_getInsertSentence( hBuffer ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   local nId
+
+   if !Empty( hBuffer )
+      ::hBuffer   := hBuffer
+   end
+
+   nId            := ::getIdProductAdded()
+
+   if empty( nId )
+      RETURN ( ::Super:getInsertSentence( ::hBuffer ) )
+   end
+
+   ::setSQLInsert( ::getUpdateUnitsSentece( nId ) )
+
+RETURN ( self )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_addInsertSentence( aSQLInsert, oProperty ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   if empty( oProperty:Value )
+      RETURN ( nil )
+   end
+
+   hset( ::hBuffer, "uuid",                     win_uuidcreatestring() )
+   hset( ::hBuffer, "codigo_primera_propiedad", oProperty:cCodigoPropiedad1 )
+   hset( ::hBuffer, "valor_primera_propiedad",  oProperty:cValorPropiedad1 )
+   hset( ::hBuffer, "codigo_segunda_propiedad", oProperty:cCodigoPropiedad2 )
+   hset( ::hBuffer, "valor_segunda_propiedad",  oProperty:cValorPropiedad2 )
+   hset( ::hBuffer, "unidades_articulo",        oProperty:Value )
+
+   aadd( aSQLInsert, ::Super:getInsertSentence() + "; " )
+
+RETURN ( nil )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_addUpdateSentence( aSQLUpdate, oProperty ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+
+
+
+   aadd( aSQLUpdate, "UPDATE " + ::cTableName + " " +                                                        "SET unidades_articulo = " + toSqlString( oProperty:Value )                + ", " +  "precio_articulo = " + toSqlString( hget( ::hBuffer, "precio_articulo" ) ) + " " +   "WHERE uuid = " + quoted( oProperty:Uuid ) +  "; " )
+
+RETURN ( nil )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_addDeleteSentence( aSQLUpdate, oProperty ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+
+   aadd( aSQLUpdate, "DELETE FROM " + ::cTableName + " " +                           "WHERE uuid = " + quoted( oProperty:Uuid ) + "; " )
+
+RETURN ( nil )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_addDeleteSentenceById( aSQLUpdate, nId ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+
+   aadd( aSQLUpdate, "DELETE FROM " + ::cTableName + " " +                           "WHERE id = " + quoted( nId ) + "; " )
+
+RETURN ( nil )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_deleteWhereUuid( uuid ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+
+   local cSentence   := "DELETE FROM " + ::cTableName + " " +  "WHERE parent_uuid = " + quoted( uuid )
+
+RETURN ( ::getDatabase():Exec( cSentence ) )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_aUuidToDelete( aParentsUuid ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   local cSentence
+
+   cSentence            := "SELECT uuid FROM " + ::cTableName + " "
+   cSentence            +=    "WHERE parent_uuid IN ( "
+
+   aeval( aParentsUuid, {| v | cSentence += toSQLString( v ) + ", " } )
+
+   cSentence            := chgAtEnd( cSentence, " )", 2 )
+
+RETURN ( ::getDatabase():selectFetchArray( cSentence ) )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_getDeleteSentenceFromParentsUuid( aParentsUuid ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   local aUuid       := ::aUuidToDelete( aParentsUuid )
+
+   if !empty( aUuid )
+      RETURN ::getDeleteSentence( aUuid )
+   end
+
+RETURN ( "" )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_getSQLSubSentenceTotalUnidadesLinea( cTable, cAs ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   If( cTable == nil, cTable := "", ) ;
+   If( cAs == nil, cAs := "total_unidades", ) ;
+
+   if !empty( cTable )
+      cTable         += "."
+   end
+
+   do case
+      case lCalCaj() .AND. lCalBul()
+         RETURN ( "( IF( " + cTable + "bultos_articulo = 0, 1, " + cTable + "bultos_articulo ) * IF( " + cTable + "cajas_articulo = 0, 1, " + cTable + "cajas_articulo ) * " + cTable + "unidades_articulo ) AS " + cAs + " " )
+
+      case lCalCaj() .AND. !lCalBul()
+         RETURN ( "( IF( " + cTable + "cajas_articulo = 0, 1, " + cTable + "cajas_articulo ) * " + cTable + "unidades_articulo ) AS " + cAs + " " )
+
+      case !lCalCaj() .AND. lCalBul()
+         RETURN ( "( IF( " + cTable + "bultos_articulo = 0, 1, " + cTable + "bultos_articulo ) * " + cTable + "unidades_articulo ) AS " + cAs + " " )
+
+   end
+
+RETURN ( cTable + "unidades_articulo AS " + cAs + " " )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_getSQLSubSentenceTotalPrecioLinea( cTable, cAs ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   If( cTable == nil, cTable := "", ) ;
+   If( cAs == nil, cAs := "total_precio", ) ;
+
+   if !empty( cTable )
+      cTable         += "."
+   end
+
+   if lCalCaj()
+      RETURN ( "( IF( " + cTable + "cajas_articulo = 0, 1, " + cTable + "cajas_articulo ) * " + cTable + "unidades_articulo * " + cTable + "precio_articulo ) AS " + cAs + " " )
+   end
+
+RETURN ( cTable + "unidades_articulo * " + cTable + "precio_articulo AS " + cAs + " " )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_getSQLSubSentenceTotalVentaLinea( cTable, cAs ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   If( cTable == nil, cTable := "", ) ;
+   If( cAs == nil, cAs := "total_precio_venta", ) ;
+
+   if !empty( cTable )
+      cTable         += "."
+   end
+
+   if lCalCaj()
+      RETURN ( "( IF( " + cTable + "cajas_articulo = 0, 1, " + cTable + "cajas_articulo ) * " + cTable + "unidades_articulo * " + cTable + "precio_venta ) AS " + cAs + " " )
+   end
+
+RETURN ( cTable + "unidades_articulo * " + cTable + "precio_venta AS " + cAs + " " )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_getSQLSubSentenceTotalIva( cTable, cAs ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   If( cTable == nil, cTable := "", ) ;
+   If( cAs == nil, cAs := "total_precio_venta_iva", ) ;
+
+   if !empty( cTable )
+      cTable         += "."
+   end
+
+   if lCalCaj()
+      RETURN ( "( ( IF( " + cTable + "cajas_articulo = 0, 1, " + cTable + "cajas_articulo ) * " + cTable + "unidades_articulo * " + cTable + "precio_venta )  * ( 1 + ( " + cTable + "tipo_iva / 100 ) ) ) AS " + cAs + " " )
+   end
+
+RETURN ( "( ( " + cTable + "unidades_articulo * " + cTable + "precio_venta ) * ( 1 + ( " + cTable + "tipo_iva / 100 ) ) ) AS " + cAs + " " )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_getSQLSubSentenceSumatorioUnidadesLinea( cTable, cAs ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   If( cAs == nil, cAs := "total_unidades", ) ;
+
+   if empty( cTable )
+      cTable         := ""
+   else
+      cTable         += "."
+   end
+
+   if lCalCaj()
+      RETURN ( "SUM( IF( " + cTable + "cajas_articulo = 0, 1, " + cTable + "cajas_articulo ) * " + cTable + "unidades_articulo ) AS " + cAs + " " )
+   end
+
+RETURN ( "SUM( " + cTable + "unidades_articulo ) AS " + cAs + " " )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_getSQLSubSentenceSumatorioTotalPrecioLinea( cTable, cAs ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   If( cAs == nil, cAs := "total_precio", ) ;
+
+   if empty( cTable )
+      cTable         := ""
+   else
+      cTable         += "."
+   end
+
+   if lCalCaj()
+      RETURN ( "SUM( IF( " + cTable + "cajas_articulo = 0, 1, " + cTable + "cajas_articulo ) * " + cTable + "unidades_articulo * " + cTable + "precio_articulo ) AS " + cAs + " " )
+   end
+
+RETURN ( "SUM( " + cTable + "unidades_articulo * " + cTable + "precio_articulo ) AS " + cAs + " " )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_getSQLSumatorioTotalVentaLinea( cTable, cAs ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+
+
+   If( cAs == nil, cAs := "total_precio_venta_iva", ) ;
+
+   if empty( cTable )
+      cTable         := ""
+   else
+      cTable         += "."
+   end
+
+
+
+   if lCalCaj()
+      RETURN ( "SUM( IF( " + cTable + "cajas_articulo = 0, 1, " + cTable + "cajas_articulo ) * " + cTable + "unidades_articulo * precio_venta ) AS " + cAs + " " )
+   end
+
+RETURN ( "SUM( " + cTable + "unidades_articulo * precio_venta ) AS " + cAs + " " )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_getSentenceNotSent( aFetch ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   local cSentence   := "SELECT * FROM " + ::cTableName + " "
+
+   cSentence         +=    "WHERE parent_uuid IN ( "
+
+   aeval( aFetch, {|h| cSentence += toSQLString( hget( h, "uuid" ) ) + ", " } )
+
+   cSentence         := chgAtEnd( cSentence, " )", 2 )
+
+RETURN ( cSentence )
+
+
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_getIdProductAdded( ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+
+
+
+
+
+
+RETURN ( nil )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_getUpdateUnitsSentece( id ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+
+
+   local cSentence   := "UPDATE " + ::cTableName                                                                                    + " " +   "SET unidades_articulo = unidades_articulo + " + toSQLString( hget( ::hBuffer, "unidades_articulo" ) )   + " " +   "WHERE id = " + quoted( id )
+
+RETURN ( cSentence )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_createTemporalTableWhereUuid( uuid ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   local cSentence
+
+   ::cTableTemporal  := ::cTableName + hb_ttos( hb_datetime() )
+
+   cSentence         := "CREATE TEMPORARY TABLE " + ::cTableTemporal          + " "
+   cSentence         +=    "SELECT * from " + ::cTableName                    + " "
+   cSentence         += "WHERE parent_uuid = " + quoted( uuid )               + "; "
+
+RETURN ( ::getDatabase():Exec( cSentence ) )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_alterTemporalTableWhereUuid( ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   local cSentence
+
+   cSentence         := "ALTER TABLE " + ::cTableTemporal + " DROP id"
+
+RETURN ( ::getDatabase():Exec( cSentence ) )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_replaceUuidInTemporalTable( duplicatedUuid ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   local cSentence
+
+   cSentence         := "UPDATE " + ::cTableTemporal                          + " "
+   cSentence         +=    "SET id = 0"                                       + ", "
+   cSentence         +=       "uuid = UUID()"                                 + ", "
+   cSentence         +=       "parent_uuid = " + quoted( duplicatedUuid )
+
+RETURN ( ::getDatabase():Exec( cSentence ) )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_insertTemporalTable( ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   local cSentence
+
+   cSentence         := "INSERT INTO " + ::cTableName                         + " "
+   cSentence         +=    "SELECT * FROM " + ::cTableTemporal
+
+RETURN ( ::getDatabase():Exec( cSentence ) )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_dropTemporalTable( ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+RETURN ( ::getDatabase():Exec( "DROP TABLE " + ::cTableTemporal ) )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_duplicateByUuid( uuid, duplicatedUuid ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   if !( ::createTemporalTableWhereUuid( uuid ) )
+      RETURN ( nil )
+   end
+
+   if !( ::replaceUuidInTemporalTable( duplicatedUuid ) )
+      RETURN ( nil )
+   end
+
+   if !( ::insertTemporalTable() )
+      RETURN ( nil )
+   end
+
+   if !( ::dropTemporalTable() )
+      RETURN ( nil )
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_getListToSend( aListParentUuid ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   local cSentence   := ""
+
+   cSentence         +=  "SELECT * "
+   cSentence         +=  "FROM " + ::getTableName() + Space(1)
+   cSentence         +=  "WHERE parent_uuid in ( "
+
+   aeval( aListParentUuid, {|h| cSentence += toSQLString( h ) + ", " } )
+
+   cSentence         := chgAtEnd( cSentence, " )", 2 )
+
+RETURN ( ::getDatabase():selectFetchToJson( cSentence ) )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_prepareFromInsertBuffer( hBuffer ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   hSet( hBuffer, "fecha_caducidad", hb_SToT( hGet( hBuffer, "fecha_caducidad" ) ) )
+
+Return ( hBuffer )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_updatePrecioVenta( uuid, nNewPrice ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   local cSentence
+
+   cSentence         := "UPDATE " + ::getTableName()                             + " "
+   cSentence         +=    "SET precio_venta = " + AllTrim( Str( nNewPrice ) )   + " "
+   cSentence         +=    "WHERE uuid = " + quoted( uuid )
+
+RETURN ( ::getDatabase():Exec( cSentence ) )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_ValidaDocumentos( parentBuffer, oMeter ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   local cSql              := "select * FROM " + ::getTableName() + " WHERE parent_uuid = " + quoted( hGet( parentBuffer, "uuid" ) )
+   local aLineas
+   local hLine
+   local dConsolidacion
+
+   aLineas                 := ::getDatabase():selectFetchHash( cSql )
+
+   if !Empty( oMeter )
+      oMeter:Show()
+      oMeter:SetTotal( Len( aLineas ) )
+   end
+
+   for each hLine in aLineas
+
+
+
+
+
+
+
+      dConsolidacion       := MovimientosAlmacenLineasRepository():getFechaHoraConsolidacion(   hGet( hLine, "codigo_articulo" ), hGet( parentBuffer, "almacen_destino" ), hGet( hLine, "codigo_primera_propiedad" ), hGet( hLine, "codigo_segunda_propiedad" ), hGet( hLine, "valor_primera_propiedad" ), hGet( hLine, "valor_segunda_propiedad" ), hGet( hLine, "lote" ) )
+
+      if !Empty( dConsolidacion ) .AND. hget( parentBuffer, "fecha_hora" ) >= dConsolidacion
+
+
+
+
+
+
+
+
+         ValidateLinesTransaccionesComercialesLineas(   hGet( hLine, "codigo_articulo" ), hGet( parentBuffer, "almacen_destino" ), hGet( hLine, "codigo_primera_propiedad" ), hGet( hLine, "codigo_segunda_propiedad" ), hGet( hLine, "valor_primera_propiedad" ), hGet( hLine, "valor_segunda_propiedad" ), hGet( hLine, "lote" ), hget( parentBuffer, "fecha_hora" ) )
+
+      end
+
+      if !Empty( oMeter )
+         oMeter:AutoInc()
+      end
+
+   next
+
+   if !Empty( oMeter )
+      oMeter:Hide()
+   end
+
+Return ( .T. )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_getLinesFromStock( aParentsUuid ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   local cSql        := "SELECT cabecera.uuid, "                                                         +  "cabecera.numero AS numero, "                                                 +  "cabecera.almacen_origen AS almacen_origen, "                                 +  "cabecera.almacen_destino AS almacen_destino, "                               +  "cabecera.tipo_movimiento AS tipo, "                                          +  "cabecera.fecha_hora AS fecha_hora, "                                         +  "lineas.codigo_articulo AS codigo_articulo , "                                +  "lineas.nombre_articulo AS nombre_articulo, "                                 +  "lineas.codigo_primera_propiedad AS codigo_primera_propiedad, "               +  "lineas.valor_primera_propiedad AS valor_primera_propiedad, "                 +  "lineas.codigo_segunda_propiedad AS codigo_segunda_propiedad, "               +  "lineas.valor_primera_propiedad AS valor_segunda_propiedad, "                 +  "lineas.lote AS lote, "                                                       +  "lineas.bultos_articulo AS bultos, "                                          +  "lineas.cajas_articulo AS cajas, "                                            +  "lineas.unidades_articulo AS unidades "                                       +  "FROM " + ::getTableName() + " AS lineas "                                 +  "INNER JOIN movimientos_almacen AS cabecera "                           +  "ON cabecera.uuid = lineas.parent_uuid" + Space( 1 )                    +  "WHERE cabecera.empresa_codigo = " + quoted( cCodEmp() ) + " AND "         +  "lineas.parent_uuid IN ( "
+
+   aeval( aParentsUuid, {|v| cSql += toSQLString(v) + ", " } )
+
+   cSql            := chgAtEnd( cSql, " )", 2 )
+
+RETURN ( ::getDatabase():selectFetchHash( cSql ) )
+
+
+
+FUNCTION getValorLineasMovimientosAlmacen( id, uuid, parent_uuid, cField )
+
+   local uValue      := ""
+
+   if !Empty( id )
+      uValue         := SQLMovimientosAlmacenLineasModel():getField( cField, "id", id )
+   end
+
+   if !Empty( uuid )
+      uValue         := SQLMovimientosAlmacenLineasModel():getField( cField, "uuid", uuid )
+   end
+
+   if !Empty( parent_uuid )
+      uValue         := SQLMovimientosAlmacenLineasModel():getField( cField, "parent_uuid", parent_uuid )
+   end
+
+RETURN ( uValue )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_exist( uuid ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   local cStm
+
+
+   local cSql  := "SELECT codigo_articulo "                             +  "FROM " + ::getTableName() + " "                   +  "WHERE uuid = " + quoted( uuid )
+
+   if ::ExecuteSqlStatement( cSql, @cStm )
+      RETURN ( ( cStm )->( lastrec() ) > 0 )
+   end
+
+RETURN ( .F. )
+
+
+
+static FUNCTION SQLMovimientosAlmacenLineasModel_SeederToADS( parent_uuid ) ; local Self AS CLASS SQLMovimientosAlmacenLineasModel := QSelf() AS CLASS SQLMovimientosAlmacenLineasModel
+
+   local cSql  := "SELECT * FROM " + ::getTableName() + " WHERE parent_uuid = " + quoted( parent_uuid )
+
+RETURN ( getSQLDataBase():selectFetchHash( cSql ) )

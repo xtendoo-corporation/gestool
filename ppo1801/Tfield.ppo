@@ -1,0 +1,156 @@
+#line 15 ".\.\Prg\Tfield.prg"
+_HB_CLASS TField ; function TField ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TField", iif( .F., { }, { @HBObject() } ), @TField() ) ) ;
+
+    _HB_MEMBER { AS STRING cName, cType } ; oClass:AddMultiData( "STRING",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cName", "cType"}, .F. )
+    _HB_MEMBER { cPict, cComment } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPict", "cComment"}, .F. )
+    _HB_MEMBER { AS NUMERIC nPos, nLen, nDec } ; oClass:AddMultiData( "NUMERIC",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nPos", "nLen", "nDec"}, .F. )
+    _HB_MEMBER { AS CODEBLOCK bSetGet, bValid, bString, bDirect } ; oClass:AddMultiData( "CODEBLOCK",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bSetGet", "bValid", "bString", "bDirect"}, .F. )
+    _HB_MEMBER { AS LOGICAL lCalculate, lOEM } ; oClass:AddMultiData( "LOGICAL",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lCalculate", "lOEM"}, .F. )
+    _HB_MEMBER { AS OBJECT oDbf } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbf"}, .F. )
+
+    _HB_MEMBER { LowVal, Val, HighVal, Cargo, DefaultVal } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"LowVal", "Val", "HighVal", "Cargo", "DefaultVal"}, .F. )
+
+    _HB_MEMBER { lColAlign } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lColAlign"}, .F. )
+    _HB_MEMBER { nColSize } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nColSize"}, .F. )
+    _HB_MEMBER { lHide } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lHide"}, .F. )
+    _HB_MEMBER { aBitmaps } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aBitmaps"}, .F. )
+
+
+    _HB_MEMBER New( oDbf, cName, cType, nLen, nDec, cPict, DefaultVal, bValid,  bSetGet, cComment, lColAlign, nColSize, lHide, aBitmaps) AS CLASS TField; oClass:AddMethod( "New", @TField_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER Activate(); oClass:AddMethod( "Activate", @TField_Activate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER Destroy(); oClass:AddInline( "Destroy", {|Self | ( ( Self ) ), Self  := nil, .T. }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER Blank(); oClass:AddInline( "Blank", {|Self | ( ( Self ) ), ::Val := ::LowVal }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER Load(); oClass:AddInline( "Load", {|Self | ( ( Self ) ), ::Val := ( ::oDbf:nArea )->( eval( ::bSetGet ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER Save(); oClass:AddInline( "Save", {|Self | ( ( Self ) ), ( ( ::oDbf:nArea )->( eval( ::bSetGet, ::Val ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER SetHigh(); oClass:AddInline( "SetHigh", {|Self | ( ( Self ) ), ::Val := ::HighVal }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER SetLow(); oClass:AddInline( "SetLow", {|Self | ( ( Self ) ), ::Val := ::LowVal }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER SetDefault(); oClass:AddInline( "SetDefault", {|Self | ( ( Self ) ), ::Val := ::DefaultVal }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER AsString(); oClass:AddInline( "AsString", {|Self | ( ( Self ) ), transform( ::Val, ::cPict ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER Valid(); oClass:AddMethod( "Valid", @TField_Valid(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GetVal(); oClass:AddInline( "GetVal", {|Self | ( ( Self ) ), ( ::oDbf:nArea )->( eval( ::bSetGet ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER PutVal(); oClass:AddInline( "PutVal", {|Self, Val | ( ( Self ) ), ( ::oDbf:nArea )->( eval( ::bSetGet, Val ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GetString(); oClass:AddInline( "GetString", {|Self | ( ( Self ) ), transform( ( ::oDbf:nArea )->( eval( ::bSetGet ) ), if( ValType( ::cPict ) == "B", Eval( ::cPict, Self ), ::cPict ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER FieldGet(); oClass:AddInline( "FieldGet", {|Self | ( ( Self ) ), ( ::oDbf:nArea )->( FieldGet( ::nPos ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER FieldGetByName(); oClass:AddMethod( "FieldGetByName", @TField__FieldGetByName(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TField ;
+
+
+
+
+static FUNCTION TField_New( oDbf, cName, cType, nLen, nDec, cPict, DefaultVal, bValid,  bSetGet, cComment, lColAlign, nColSize, lHide, aBitmaps ) ; local Self AS CLASS TField := QSelf() AS CLASS TField
+
+   local cDateFormat := ""
+
+   cName := upper( cName )
+   cType := upper( cType )
+
+   ::oDbf := oDbf
+   ::cName := cName
+   ::cType := if( cType == NIL, "C", cType )
+   ::nLen := if( nLen == NIL, 10, nLen )
+   ::nDec := if( nDec == NIL, 0, nDec )
+   ::cPict := if( cPict == NIL, "@", cPict )
+   ::cComment := if( cComment == NIL, cName, cComment )
+
+   ::lColAlign := if( lColAlign == NIL, ( ::cType == "N" ), lColAlign )
+   ::nColSize := if( nColSize == NIL, ( GetTextWidth( 0, replicate( "B", ::nLen ) ) ), nColSize )
+   ::lHide := if( lHide == NIL, .F., lHide )
+   ::aBitmaps := if( aBitmaps == NIL, {}, aBitmaps )
+
+   ::nPos := len( ::oDbf:ATField ) + 1
+
+   ::lCalculate := .F.
+
+   do case
+      case ::cType == "C"
+           ::LowVal  := space( ::nLen )
+           ::HighVal := replicate( "þ", ::nLen )
+           if !empty( DefaultVal )
+                DefaultVal := PADR( DefaultVal, ::nLen, " " )
+           endif
+
+      case ::cType  == "N"
+           ::LowVal  := replicate( "0", ::nLen )
+           ::HighVal := replicate( "9", ::nLen )
+           if ::nDec > 0
+                ::LowVal  := Stuff( ::LowVal,  ( ::nLen - ::nDec ), 1, "." )
+                ::HighVal := Stuff( ::HighVal, ( ::nLen - ::nDec ), 1, "." )
+           endif
+           ::LowVal     := Val( ::LowVal )
+           ::HighVal    := Val( ::HighVal )
+
+      case ::cType == "L"
+           ::nLen       := 1
+           ::nDec       := 0
+           ::LowVal     := .F.
+           ::HighVal    := .T.
+
+      case ::cType == "D"
+           ::nLen       := 8
+           ::nDec       := 0
+           cDateFormat  := Set( 4, "dd/mm/yyyy" )
+           ::LowVal     := CToD( "" )
+           ::HighVal    := CToD( "31/12/2999" )
+           Set( 4, cDateFormat )
+
+      case ::cType == "M"
+           ::LowVal     := ::HighVal := ::DefaultVal := ""
+           ::nLen       := 10
+           ::nDec       := 0
+           ::oDbf:lMemo := .T.
+
+      case ::cType == "B"
+           ::lCalculate := .T.
+           if bSetGet == nil
+               bSetGet  := { || "" }
+           end
+           ::bSetGet := bSetGet
+   endcase
+
+   ::DefaultVal := if( DefaultVal == NIL, ::LowVal, DefaultVal )
+   ::bValid := if( bValid == NIL, { || .T. }, bValid )
+
+   ::Val := ::LowVal
+
+return( Self )
+
+
+
+static FUNCTION TField_Activate( ) ; local Self AS CLASS TField := QSelf() AS CLASS TField
+
+    ::bSetGet := if( ::lCalculate, ::bSetGet, ( ::oDbf:nArea )->( FieldBlock( ::cName ) ) )
+    ::bString := { || transform( if( ::oDbf:lBuffer, ::Val, ::GetVal() ), if( ValType( ::cPict ) == "B", Eval( ::cPict, Self ), ::cPict ) ) }
+    ::bDirect := { || transform( ::FieldGetByName(), if( ValType( ::cPict ) == "B", Eval( ::cPict, Self ), ::cPict ) ) }
+
+return( Self )
+
+
+
+static FUNCTION TField_Valid( ) ; local Self AS CLASS TField := QSelf() AS CLASS TField
+
+    local lRet := .T.
+
+    if !eval( ::bValid )
+        lRet := ::oDbf:lValid := .F.
+        ::oDbf:cFldInvalid  := ::cName
+    endif
+
+return( lRet )
+
+
+
+static FUNCTION TField__FieldGetByName( ) ; local Self AS CLASS TField := QSelf() AS CLASS TField
+
+    local Val
+    local nPos := ( ::oDbf:nArea )->( FieldPos( ::cName ) )
+
+    if nPos <> 0
+       Val     := ( ::oDbf:nArea )->( FieldGet( nPos ) )
+    endif
+
+return( Val )

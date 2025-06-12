@@ -1,0 +1,53 @@
+#line 38 "C:\fwh1801\Gestool\bin\include\FiveWin.Ch"
+      static bError
+#line 203 "C:\fwh1801\Gestool\bin\include\hbclass.ch"
+DECLARE HBClass  New( cName AS STRING, OPTIONAL SuperParams ) AS CLASS HBClass  Create() AS OBJECT  Instance() AS OBJECT  AddClsMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC, n2 AS NUMERIC, n3 AS NUMERIC )  AddMultiClsData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING )  AddMultiData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING, x AS LOGICAL, lPer AS LOGICAL )  AddMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC )  AddInLine( cName AS STRING, bBlock AS CODEBLOCK, nScope AS NUMERIC )  AddVirtual( cName AS STRING )
+#line 79 "C:\fwh1801\Gestool\bin\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+#line 8 "C:\fwh1801\Gestool\bin\Script\Articulos\pasaasociados.prg"
+STATIC nVista
+
+Function PasaAsociados( nView )
+
+   nVista   := nView
+
+   MsgRun( "Pasando artículos asociados", "Espere por favor...", {|| pasar( nView ) } )
+
+Return nil
+
+
+
+Function pasar( nView )
+
+   ( D():Kit( nView ) )->( dbGoTop() )
+
+   while !( D():Kit( nView ) )->( Eof() )
+
+      ( D():Asociado( nView ) )->( dbAppend() )
+
+      ( D():Asociado( nView ) )->cCodArt  := ( D():Kit( nView ) )->cCodKit
+      ( D():Asociado( nView ) )->cRefAsc  := ( D():Kit( nView ) )->cRefKit
+      ( D():Asociado( nView ) )->cDesAsc  := ( D():Kit( nView ) )->cDesKit
+      ( D():Asociado( nView ) )->nundAsc  := ( D():Kit( nView ) )->nUndKit
+
+      ( D():Asociado( nView ) )->( dbUnlock() )
+
+      ( D():Kit( nView ) )->( dbSkip() )
+
+   end
+
+   MsgInfo( "Proceso finalizado." )
+
+Return nil

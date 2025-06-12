@@ -1,0 +1,2449 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 7 ".\.\Prg\Operarios.prg"
+_HB_CLASS TOperarios ; function TOperarios ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TOperarios", iif( .T., { @TMasDet() }, { @HBObject() } ), @TOperarios() ) ) ;
+
+   _HB_MEMBER { cMru } ; oClass:AddMultiData(, "gc_worker2_16", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cMru"}, .F. )
+   _HB_MEMBER { cBitmap } ; oClass:AddMultiData(, ( 250 + ( 161 * 256 ) + ( 52 * 65536 ) ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cBitmap"}, .F. )
+   _HB_MEMBER { oSeccion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSeccion"}, .F. )
+   _HB_MEMBER { oHoras } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oHoras"}, .F. )
+   _HB_MEMBER { oDetHoras } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDetHoras"}, .F. )
+   _HB_MEMBER { oBmpSel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBmpSel"}, .F. )
+   _HB_MEMBER { cUltHora } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cUltHora"}, .F. )
+   _HB_MEMBER { lUltDef } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lUltDef"}, .F. )
+
+   _HB_MEMBER OpenFiles( lExclusive); oClass:AddMethod( "OpenFiles", @TOperarios_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @TOperarios_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenService( lExclusive, cPath); oClass:AddMethod( "OpenService", @TOperarios_OpenService(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CloseService(); oClass:AddMethod( "CloseService", @TOperarios_CloseService(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DefineFiles(); oClass:AddMethod( "DefineFiles", @TOperarios_DefineFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Resource( nMode); oClass:AddMethod( "Resource", @TOperarios_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lPreSave( oNom, oSec, nMode); oClass:AddMethod( "lPreSave", @TOperarios_lPreSave(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nCosteOperario(); oClass:AddMethod( "nCosteOperario", @TOperarios_nCosteOperario(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lPostSave( oBrw); oClass:AddMethod( "lPostSave", @TOperarios_lPostSave(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DelRecHora( oBrw); oClass:AddMethod( "DelRecHora", @TOperarios_DelRecHora(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TOperarios ;
+
+
+
+static FUNCTION TOperarios_OpenFiles( lExclusive ) ; local Self AS CLASS TOperarios := QSelf() AS CLASS TOperarios
+
+   local lOpen          := .T.
+   local oBlock
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   oBlock               := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      if Empty( ::oDbf )
+         ::oDbf         := ::DefineFiles()
+      end
+
+      ::oDbf:Activate( .F., !lExclusive )
+
+      ::oSeccion     := TSeccion():Create( ::cPath, ::cDriver )
+      ::oSeccion:OpenFiles()
+
+      ::oHoras       := THoras():Create( ::cPath, ::cDriver )
+      ::oHoras:OpenFiles()
+
+      ::oDetHoras    := TDetHoras():New( ::cPath, ::cDriver, Self )
+      ::AddDetail( ::oDetHoras )
+
+      ::OpenDetails()
+
+      ::bFirstKey    := {|| ::oDbf:cCodTra }
+
+   RECOVER
+
+      lOpen          := .F.
+
+      ::CloseFiles()
+
+      msgStop( "Imposible abrir todas las bases de datos" )
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TOperarios_CloseFiles( ) ; local Self AS CLASS TOperarios := QSelf() AS CLASS TOperarios
+
+   ::CloseDetails()
+
+   if ::oSeccion <> nil
+      ::oSeccion:End()
+      ::oSeccion  := nil
+   end
+
+   if ::oHoras <> nil
+      ::oHoras:End()
+      ::oHoras    := nil
+   end
+
+   if !Empty( ::oDbf )
+      ::oDbf:end()
+   end
+
+   ::oDbf         := nil
+
+RETURN .T.
+
+
+
+static FUNCTION TOperarios_OpenService( lExclusive, cPath ) ; local Self AS CLASS TOperarios := QSelf() AS CLASS TOperarios
+
+   local lOpen          := .T.
+   local oBlock
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+   If( cPath == nil, cPath := ::cPath, ) ;
+
+   oBlock               := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      if Empty( ::oDbf )
+         ::oDbf         := ::DefineFiles( cPath )
+      end
+
+      ::oDbf:Activate( .F., !( lExclusive ) )
+
+   RECOVER
+
+      lOpen             := .F.
+
+      ::CloseService()
+
+      msgStop( "Imposible abrir todas las bases de datos de detalle de operarios" )
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TOperarios_CloseService( ) ; local Self AS CLASS TOperarios := QSelf() AS CLASS TOperarios
+
+   if ::oDbf <> nil .AND. ::oDbf:Used()
+      ::oDbf:End()
+   end
+
+   ::oDbf               := nil
+
+RETURN .T.
+
+
+
+static FUNCTION TOperarios_DefineFiles( cPath, cDriver ) ; local Self AS CLASS TOperarios := QSelf() AS CLASS TOperarios
+
+   local oDbf
+
+   If( cPath == nil, cPath := ::cPath, ) ;
+   If( cDriver == nil, cDriver := ::cDriver, ) ;
+
+   oDbf := DbfServer( "OpeT.Dbf", "Operario" ):New( "OpeT.Dbf", "Operario", ( cDriver ), "Operarios", ( cPath ) )
+
+      oDbf:AddField( "cCodTra", "C", 5, 0,,,,, "Código", .F., 60, .F., {} )
+      oDbf:AddField( "cNomTra", "C", 35, 0,,,,, "Nombre", .F., 300, .F., {} )
+      oDbf:AddField( "cCodSec", "C", 3, 0,,,,, "Sección", .F., 60, .F., {} )
+      oDbf:AddField( "cDivTra", "C", 3, 0,,,,, "Divisa", .F.,, .T., {} )
+      oDbf:AddField( "cDirTra", "C", 50, 0,,,,, "Domicilio", .F.,, .T., {} )
+      oDbf:AddField( "cCdpTra", "C", 7, 0,,,,, "Código postal", .F.,, .T., {} )
+      oDbf:AddField( "cPobTra", "C", 25, 0,,,,, "Población", .F.,, .T., {} )
+      oDbf:AddField( "cPrvTra", "C", 20, 0,,,,, "Provincia", .F.,, .T., {} )
+      oDbf:AddField( "cTlfTra", "C", 12, 0,,,,, "Teléfono", .F.,, .T., {} )
+      oDbf:AddField( "cMovTra", "C", 12, 0,,,,, "Móvil", .F.,, .T., {} )
+      oDbf:AddField( "nCosNom", "N", 16, 6,,,,, "Nómina Mes", .F.,, .T., {} )
+      oDbf:AddField( "nCosSSSS", "N", 16, 6,,,,, "Seg. Social Mes", .F.,, .T., {} )
+      oDbf:AddField( "nPagas", "N", 3, 0,,,,, "Pagas Año", .F.,, .T., {} )
+      oDbf:AddField( "nDiaPro", "N", 5, 0,,,,, "Dias producctivos", .F.,, .T., {} )
+      oDbf:AddField( "nHorDia", "N", 16, 6,,,,, "Horas por día", .F.,, .T., {} )
+      oDbf:AddField( "cMeiTra", "C", 65, 0,,,,, "Email", .F.,, .T., {} )
+
+      oDbf:AddIndex( "cCodTra", "OpeT.Cdx", "cCodTra",,, .F., .F., "Código",,, .T., .F. )
+      oDbf:AddIndex( "cNomTra", "OpeT.Cdx", "cNomTra",,, .F., .F., "Nombre",,, .T., .F. )
+      oDbf:AddIndex( "cCodSec", "OpeT.Cdx", "cCodSec",,, .F., .F., "Sección",,, .T., .F. )
+
+
+
+RETURN ( oDbf )
+
+
+
+static FUNCTION TOperarios_Resource( nMode ) ; local Self AS CLASS TOperarios := QSelf() AS CLASS TOperarios
+
+    local oDlg
+   local oGet
+   local oSec
+   local oSay
+   local oNom
+   local oBrwHor
+   local cSay        := RetFld( ::oDbf:cCodSec, ::oSeccion:GetAlias() )
+   local oTotCosOpe
+   local oBmpGeneral
+
+   if nMode == 1 .OR. Empty( ::oDbf:cDivTra )
+      ::oDbf:cDivTra := cDivEmp()
+   end
+
+   ::lLoadDivisa( ::oDbf:cDivTra )
+
+   oDlg = TDialog():New(,,,, LblTitle( nMode ) + "operario", "Trabajador",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+      oBmpGeneral := TBitmap():ReDefine( 990, "gc_worker2_48",, oDlg,,, .F., .F.,,, .F.,,, .T. )
+
+
+
+
+
+
+      oGet := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, ::oDbf:cCodTra, ::oDbf:cCodTra:= u ) }, oDlg,, "@!", {||    ( RjustObj( oGet, "0" ), .T. )},,,,,, .F., {||     ( nMode == 1 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      oNom := TGetHlp():ReDefine( 110, { | u | If( PCount()==0, ::oDbf:cNomTra, ::oDbf:cNomTra:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      oSec := TGetHlp():ReDefine( 120, { | u | If( PCount()==0, ::oDbf:cCodSec, ::oDbf:cCodSec:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil, "LUPA",, )
+      oSec:bValid := {|| ::oSeccion:Existe( oSec, oSay, "cDesSec", .T., .T., "0" ) }
+      oSec:bHelp  := {|| ::oSeccion:Buscar( oSec ) }
+
+
+
+
+      oSay := TGetHlp():ReDefine( 121, { | u | If( PCount()==0, cSay, cSay:= u ) }, oDlg,,,,,,,,, .F., {||     ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 140, { | u | If( PCount()==0, ::oDbf:cDirTra, ::oDbf:cDirTra:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 150, { | u | If( PCount()==0, ::oDbf:cCdpTra, ::oDbf:cCdpTra:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 160, { | u | If( PCount()==0, ::oDbf:cPobTra, ::oDbf:cPobTra:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 170, { | u | If( PCount()==0, ::oDbf:cPrvTra, ::oDbf:cPrvTra:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 180, { | u | If( PCount()==0, ::oDbf:cTlfTra, ::oDbf:cTlfTra:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 190, { | u | If( PCount()==0, ::oDbf:cMovTra, ::oDbf:cMovTra:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 260, { | u | If( PCount()==0, ::oDbf:cMeiTra, ::oDbf:cMeiTra:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+
+
+
+
+      TGetHlp():ReDefine( 200, { | u | If( PCount()==0, ::oDbf:nCosNom, ::oDbf:nCosNom:= u ) }, oDlg,, ::cPouDiv, {||    ( oTotCosOpe:Refresh(), .T. )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+      TGetHlp():ReDefine( 210, { | u | If( PCount()==0, ::oDbf:nCosSSSS, ::oDbf:nCosSSSS:= u ) }, oDlg,, ::cPouDiv, {||    ( oTotCosOpe:Refresh(), .T. )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+
+
+
+      TGetHlp():ReDefine( 220, { | u | If( PCount()==0, ::oDbf:nDiaPro, ::oDbf:nDiaPro:= u ) }, oDlg,, "999", {||    ( oTotCosOpe:Refresh(), .T. )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,, {||      0}, {||      365},, nil,,, )
+
+
+
+
+
+
+
+
+
+      TGetHlp():ReDefine( 230, { | u | If( PCount()==0, ::oDbf:nPagas, ::oDbf:nPagas:= u ) }, oDlg,, "99", {||    ( oTotCosOpe:Refresh(), .T. )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,, {||      0}, {||      99},, nil,,, )
+
+
+
+
+
+
+
+
+
+      TGetHlp():ReDefine( 240, { | u | If( PCount()==0, ::oDbf:nHorDia, ::oDbf:nHorDia:= u ) }, oDlg,, "99", {||    ( oTotCosOpe:Refresh(), .T. )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,, {||      0}, {||      24},, nil,,, )
+
+
+
+
+
+      oTotCosOpe := TSay():ReDefine( 250, {|| ::nCosteOperario()}, oDlg, ::cPouDiv, "N/W*",, .F.,, .F., .F., )
+
+
+
+
+
+
+
+
+
+        TButton():ReDefine( 500, {||( ::oDetHoras:Append( oBrwHor ), ::lPostSave( oBrwHor ) )}, oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+        TButton():ReDefine( 501, {||( ::oDetHoras:Edit( oBrwHor ), ::lPostSave( oBrwHor ) )}, oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+        TButton():ReDefine( 502, {||( ::oDetHoras:Zoom() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 503, {||( ::DelRecHora( oBrwHor ) )}, oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+      oBrwHor                 := IXBrowse():New( oDlg )
+
+      oBrwHor:bClrSel         := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      oBrwHor:bClrSelFocus    := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      oBrwHor:nMarqueeStyle   := 5
+
+      oBrwHor:bLDblClick      := { || ::oDetHoras:Edit( oBrwHor ), ::lPostSave( oBrwHor ) }
+
+      ::oDetHoras:oDbfVir:SetBrowse( oBrwHor )
+
+      with object ( oBrwHor:AddCol() )
+         :cHeader          := "Defecto"
+         :bEditValue       := {|| ::oDetHoras:oDbfVir:lDefHor }
+         :nWidth           := 65
+         :SetCheck( { "Sel16", "Nil16" } )
+      end
+
+      with object ( oBrwHor:AddCol() )
+         :cHeader          := "Código"
+         :bEditValue       := {|| ::oDetHoras:oDbfVir:cCodHra }
+         :nWidth           := 65
+      end
+
+      with object ( oBrwHor:AddCol() )
+         :cHeader          := "Tipo de hora"
+         :bEditValue       := {|| RetFld( ::oDetHoras:oDbfVir:cCodHra, ::oHoras:oDbf:cAlias, "cDesHra" ) }
+         :nWidth           := 485
+      end
+
+      with object ( oBrwHor:AddCol() )
+         :cHeader          := "Precio"
+         :bEditValue       := {|| Trans( ::oDetHoras:oDbfVir:nCosHra, ::cPouDiv ) }
+         :nWidth           := 90
+         :nDataStrAlign    := 1
+         :nHeadStrAlign    := 1
+      end
+
+      oBrwHor:CreateFromResource( 400 )
+
+
+
+
+
+      TButton():ReDefine( 1, {||( ::lPreSave( oGet, oNom, oSec, oDlg, nMode ) )}, oDlg,,, .F., {||         ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+        TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+
+
+
+
+   TButton():ReDefine( 559, {||( MsgInfo( "Ayuda no definida" ) )}, oDlg,,, .F.,,,, .T. )
+
+   if nMode <> 3
+      oDlg:AddFastKey( 113, {|| ::oDetHoras:Append( oBrwHor ) } )
+      oDlg:AddFastKey( 114, {|| ::oDetHoras:Edit( oBrwHor ) } )
+      oDlg:AddFastKey( 115, {|| ::oDetHoras:Del( oBrwHor ) } )
+      oDlg:AddFastKey( 116, {|| ::lPreSave( oGet, oNom, oSec, oDlg, nMode ) } )
+   end
+
+   oDlg:bStart := { || oGet:SetFocus() }
+
+    oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   oBmpGeneral:End()
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+static FUNCTION TOperarios_lPreSave( oGet, oNom, oSec, oDlg, nMode ) ; local Self AS CLASS TOperarios := QSelf() AS CLASS TOperarios
+
+   if ( nMode == 1 .OR. nMode == 4 )
+
+      oGet:lValid()
+
+      if ::oDbf:SeekInOrd( ::oDbf:cCodTra, "CCODTRA" )
+         MsgStop( "Código ya existe " + Rtrim( ::oDbf:cCodTra ) )
+         return .F.
+      end
+
+      if Empty( ::oDbf:cCodTra )
+         MsgStop( "El código del operario no puede estar vacío." )
+         oGet:SetFocus()
+         Return .F.
+      end
+
+   end
+
+   if Empty( ::oDbf:cNomTra )
+      MsgStop( "La descripción del operario no puede estar vacío." )
+      oNom:SetFocus()
+      Return .F.
+   end
+
+Return ( oDlg:End( 1 ) )
+
+
+
+static FUNCTION TOperarios_nCosteOperario( ) ; local Self AS CLASS TOperarios := QSelf() AS CLASS TOperarios
+
+   local nCosteOperario := 0
+
+   nCosteOperario := ( ::oDbf:nCosNom + ::oDbf:nCosSSSS ) * ::oDbf:nPagas
+
+   nCosteOperario := nCosteOperario / ::oDbf:nDiaPro
+
+   nCosteOperario := nCosteOperario / ::oDbf:nHorDia
+
+RETURN nCosteOperario
+
+
+
+static FUNCTION TOperarios_lPostSave( oBrw ) ; local Self AS CLASS TOperarios := QSelf() AS CLASS TOperarios
+
+   if ::lUltDef
+
+      ::oDetHoras:oDbfVir:GoTop()
+
+      while !::oDetHoras:oDbfVir:Eof()
+
+         if ::oDetHoras:oDbfVir:cCodHra  <> ::cUltHora
+
+            ::oDetHoras:oDbfVir:Load()
+            ::oDetHoras:oDbfVir:lDefHor   := .F.
+            ::oDetHoras:oDbfVir:Save()
+
+         end
+
+         ::oDetHoras:oDbfVir:Skip()
+
+      end
+
+   end
+
+   ::oDetHoras:oDbfVir:GoTop()
+
+   oBrw:Refresh()
+
+RETURN .T.
+
+
+
+static FUNCTION TOperarios_DelRecHora( oBrw ) ; local Self AS CLASS TOperarios := QSelf() AS CLASS TOperarios
+
+   local lDefHora := .F.
+
+   if ::oDetHoras:oDbfVir:Recno() == 0
+      RETURN ( Self )
+   end
+
+   if RolesModel():getRolNoConfirmacionEliminacion( Auth():rolUuid() ) .OR. ApoloMsgNoYes("¿ Desea eliminar definitivamente este registro ?", "Confirme supersión" )
+
+      if ::oDetHoras:oDbfVir:lDefHor
+         lDefHora := .T.
+      end
+
+      ::oDetHoras:oDbfVir:Delete()
+
+   end
+
+   if lDefHora
+
+      ::oDetHoras:oDbfVir:GoTop()
+
+      if !::oDetHoras:oDbfVir:Eof()
+         ::oDetHoras:oDbfVir:Load()
+         ::oDetHoras:oDbfVir:lDefHor   := .T.
+         ::oDetHoras:oDbfVir:Save()
+      end
+
+   end
+
+   oBrw:Refresh()
+
+RETURN ( Self )

@@ -1,0 +1,2457 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 6 ".\Prg\Controllers\CamposExtraValoresController.prg"
+_HB_CLASS CamposExtraValoresController ; function CamposExtraValoresController ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "CamposExtraValoresController", iif( .T., { @SQLBrowseController() }, { @HBObject() } ), @CamposExtraValoresController() ) ) ;
+
+   _HB_MEMBER { cEntidad } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cEntidad"}, .F. )
+
+   _HB_MEMBER { uuidEntidad } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"uuidEntidad"}, .F. )
+
+   _HB_MEMBER { oCamposExtraValoresController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCamposExtraValoresController"}, .F. )
+
+   _HB_MEMBER New( self); oClass:AddMethod( "New", @CamposExtraValoresController_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER End(); oClass:AddMethod( "End", @CamposExtraValoresController_End(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setEntidad(); oClass:AddInline( "setEntidad", {|Self, cEntidad | ( ( Self ) ), ( ::cEntidad := cEntidad ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setUuidEntidad(); oClass:AddInline( "setUuidEntidad", {|Self, uuidEntidad | ( ( Self ) ), ( ::uuidEntidad := uuidEntidad ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER NewArticulo(); oClass:AddInline( "NewArticulo", {|Self, cEntidad, uuidEntidad | ( ( Self ) ), ( ::New( "articulos", uuidEntidad ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Edit( uuidEntidad); oClass:AddMethod( "Edit", @CamposExtraValoresController_Edit(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER assertCamposExtraValores(); oClass:AddMethod( "assertCamposExtraValores", @CamposExtraValoresController_assertCamposExtraValores(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER insertIgnoreCamposExtraValores( hValor); oClass:AddMethod( "insertIgnoreCamposExtraValores", @CamposExtraValoresController_insertIgnoreCamposExtraValores(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER gettingSelectSentence(); oClass:AddMethod( "gettingSelectSentence", @CamposExtraValoresController_gettingSelectSentence(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS CamposExtraValoresController ;
+
+
+
+static FUNCTION CamposExtraValoresController_New( oSenderController, cEntidad ) ; local Self AS CLASS CamposExtraValoresController := QSelf() AS CLASS CamposExtraValoresController
+
+   ::Super:New( oSenderController )
+
+   ::setEntidad( cEntidad )
+
+   ::cTitle                            := "Campos extra valores"
+
+   ::setName( "campos_extra_valores" )
+
+   ::lTransactional                    := .T.
+
+
+
+   ::hImage                            := {  "16" => "gc_form_plus2_16", "32" => "gc_form_plus2_32", "48" => "gc_form_plus2_48" }
+
+   ::oModel                            := SQLCamposExtraValoresModel():New( self )
+
+   ::oBrowseView                       := CamposExtraValoresBrowseView():New( self )
+
+   ::oRepository                       := CamposExtraValoresRepository():New( self )
+
+   ::oDialogView                       := CamposExtraValoresView():New( self )
+
+   ::oValidator                        := CamposExtraValoresValidator():New( self, ::oDialogView )
+
+   ::oModel:setEvent( "gettingSelectSentence",  {|| ::gettingSelectSentence() } )
+
+RETURN ( Self )
+
+
+
+static FUNCTION CamposExtraValoresController_End( ) ; local Self AS CLASS CamposExtraValoresController := QSelf() AS CLASS CamposExtraValoresController
+
+   ::oModel:End()
+
+   ::oBrowseView:End()
+
+   ::oDialogView:End()
+
+   ::oValidator:End()
+
+   ::oRepository:End()
+
+   ::Super:End()
+
+RETURN ( Self )
+
+
+
+static FUNCTION CamposExtraValoresController_Edit( uuidEntidad ) ; local Self AS CLASS CamposExtraValoresController := QSelf() AS CLASS CamposExtraValoresController
+
+   if empty( uuidEntidad )
+      RETURN .F.
+   end
+
+   ::setUuidEntidad( uuidEntidad )
+
+   ::setEditMode()
+
+   if !( ::assertCamposExtraValores() )
+      RETURN .F.
+   end
+
+   ::oRowSet:buildPad( ::oModel:getSelectSentence() )
+
+   ::beginTransactionalMode()
+
+   if ::DialogViewActivate()
+
+      ::commitTransactionalMode()
+
+   else
+
+      ::rollbackTransactionalMode()
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION CamposExtraValoresController_assertCamposExtraValores( ) ; local Self AS CLASS CamposExtraValoresController := QSelf() AS CLASS CamposExtraValoresController
+
+   local aValores
+
+   aValores          := ::oRepository:getHashCampoExtraValoresWhereEntidad( ::cEntidad )
+
+   if empty( aValores )
+      RETURN .F.
+   end
+
+   aeval( aValores, {|hValor| ::insertIgnoreCamposExtraValores( hValor ) } )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION CamposExtraValoresController_insertIgnoreCamposExtraValores( hValor ) ; local Self AS CLASS CamposExtraValoresController := QSelf() AS CLASS CamposExtraValoresController
+
+   local hBuffer
+
+   hBuffer        := ::oModel:loadBlankBuffer()
+
+   hset( hBuffer, "campo_extra_entidad_uuid", hget( hValor, "uuid" ) )
+   hset( hBuffer, "entidad_uuid", ::uuidEntidad )
+
+   ::oModel:insertIgnoreBuffer( hBuffer )
+
+RETURN ( nil )
+
+
+
+static FUNCTION CamposExtraValoresController_gettingSelectSentence( ) ; local Self AS CLASS CamposExtraValoresController := QSelf() AS CLASS CamposExtraValoresController
+
+   if !empty( ::uuidEntidad  )
+      ::oModel:setGeneralWhere( "entidad_uuid = " + quoted( ::uuidEntidad ) )
+   end
+
+RETURN ( Self )
+
+
+
+
+
+
+
+
+
+
+_HB_CLASS CamposExtraValoresBrowseView ; function CamposExtraValoresBrowseView ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "CamposExtraValoresBrowseView", iif( .T., { @SQLBrowseView() }, { @HBObject() } ), @CamposExtraValoresBrowseView() ) ) ;
+
+   _HB_MEMBER { oColumnValor } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oColumnValor"}, .F. )
+
+   _HB_MEMBER Create( oDialog); oClass:AddMethod( "Create", @CamposExtraValoresBrowseView_Create(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addColumns(); oClass:AddMethod( "addColumns", @CamposExtraValoresBrowseView_addColumns(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER changeBrowse(); oClass:AddMethod( "changeBrowse", @CamposExtraValoresBrowseView_changeBrowse(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setColType(); oClass:AddInline( "setColType", {|Self, uValue | ( ( Self ) ), ( ::oColumnValor:nEditType := uValue ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setColPicture(); oClass:AddInline( "setColPicture", {|Self, uValue | ( ( Self ) ), ( ::oColumnValor:cEditPicture := uValue ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setColListTxt(); oClass:AddInline( "setColListTxt", {|Self, aValue | ( ( Self ) ), ( ::oColumnValor:aEditListTxt := aValue ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER fieldGetPicture(); oClass:AddInline( "fieldGetPicture", {|Self | ( ( Self ) ), ( NumPict( ::getRowSet():fieldget( "longitud" ) + ::getRowSet():fieldget( "decimales" ) - 1, ::getRowSet():fieldget( "decimales" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER fieldGetTipo(); oClass:AddInline( "fieldGetTipo", {|Self | ( ( Self ) ), ( alltrim( ::getRowSet():fieldGet( "tipo" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER fieldGetTipoNumerico(); oClass:AddInline( "fieldGetTipoNumerico", {|Self | ( ( Self ) ), ( ::fieldGetTipo() == "Número" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER fieldGetTipoTexto(); oClass:AddInline( "fieldGetTipoTexto", {|Self | ( ( Self ) ), ( ::fieldGetTipo() == "Texto" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER fieldGetTipoFecha(); oClass:AddInline( "fieldGetTipoFecha", {|Self | ( ( Self ) ), ( ::fieldGetTipo() == "Fecha" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER fieldGetTipoLogico(); oClass:AddInline( "fieldGetTipoLogico", {|Self | ( ( Self ) ), ( ::fieldGetTipo() == "Lógico" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER fieldGetTipoLista(); oClass:AddInline( "fieldGetTipoLista", {|Self | ( ( Self ) ), ( ::fieldGetTipo() == "Lista" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER fieldGetValor(); oClass:AddMethod( "fieldGetValor", @CamposExtraValoresBrowseView_fieldGetValor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER fieldGetValorPicture(); oClass:AddInline( "fieldGetValorPicture", {|Self | ( ( Self ) ), ( ::fieldGetValor( .T. ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER fieldPutValor( uValue); oClass:AddMethod( "fieldPutValor", @CamposExtraValoresBrowseView_fieldPutValor(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS CamposExtraValoresBrowseView ;
+
+
+
+static FUNCTION CamposExtraValoresBrowseView_Create( oDialog ) ; local Self AS CLASS CamposExtraValoresBrowseView := QSelf() AS CLASS CamposExtraValoresBrowseView
+
+   ::oBrowse                  := SQLXBrowse():New( self, oDialog )
+   ::oBrowse:l2007            := .F.
+
+   ::oBrowse:lRecordSelector  := .F.
+   ::oBrowse:lSortDescend     := .F.
+   ::oBrowse:lFooter          := .F.
+   ::oBrowse:lFastEdit        := .T.
+   ::oBrowse:nMarqueeStyle    := 3
+
+
+
+   ::oBrowse:bClrStd          := {|| { 0, 16777215 } }
+   ::oBrowse:bClrSel          := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+   ::oBrowse:bClrSelFocus     := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+   ::oBrowse:bChange          := {|| ::ChangeBrowse() }
+
+   ::oBrowse:setRowSet( ::getRowSet() )
+
+   ::oBrowse:nColSel          := 3
+
+RETURN ( Self )
+
+
+
+static FUNCTION CamposExtraValoresBrowseView_addColumns( ) ; local Self AS CLASS CamposExtraValoresBrowseView := QSelf() AS CLASS CamposExtraValoresBrowseView
+
+   with object ( ::oBrowse:AddCol() )
+      :cHeader                   := "Nombre"
+      :nWidth                    := 200
+      :bEditValue                := {|| ::getRowSet():fieldGet( "nombre" ) }
+   end
+
+   ::oColumnValor                := ::oBrowse:AddCol()
+   ::oColumnValor:cHeader        := "Valor"
+   ::oColumnValor:nWidth         := 300
+   ::oColumnValor:bEditValue     := {|| ::fieldGetValor() }
+   ::oColumnValor:bStrData       := {|| ::fieldGetValorPicture() }
+   ::oColumnValor:bOnPostEdit    := {|o,x| ::fieldPutValor( x ) }
+   ::oColumnValor:nEditType      := 1
+   ::oColumnValor:nDataStrAlign  := 3
+   ::oColumnValor:nHeadStrAlign  := 3
+   ::oColumnValor:nFootStrAlign  := 3
+
+RETURN ( self )
+
+
+
+static FUNCTION CamposExtraValoresBrowseView_changeBrowse( ) ; local Self AS CLASS CamposExtraValoresBrowseView := QSelf() AS CLASS CamposExtraValoresBrowseView
+
+   do case
+      case ( ::fieldGetTipoTexto() )
+
+         ::setColType( 1 )
+         ::setColPicture( "@!" )
+
+      case ( ::fieldGetTipoNumerico() )
+
+         ::setColType( 1 )
+         ::setColPicture( ::fieldGetPicture(), , .T. )
+
+      case ( ::fieldGetTipoFecha() )
+
+         ::setColType( 1 )
+         ::setColPicture( "" )
+
+      case ( ::fieldGetTipoLogico() )
+
+         ::setColType( 2 )
+         ::setColListTxt( { "Si", "No" } )
+         ::setColPicture( "" )
+
+      case ( ::fieldGetTipoLista() )
+
+         ::setColType( 2 )
+         ::setColListTxt( hb_deserialize( ::getRowSet():fieldget( "lista" ) ) )
+         ::setColPicture( "" )
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION CamposExtraValoresBrowseView_fieldPutValor( uValue ) ; local Self AS CLASS CamposExtraValoresBrowseView := QSelf() AS CLASS CamposExtraValoresBrowseView
+
+   local uuidValor   := ::getRowSet():fieldget( "valor_uuid" )
+
+   if empty( uuidValor )
+      RETURN ( Self )
+   end
+
+   uValue            := alltrim( cValToStr( uValue ) )
+
+   if ( ::fieldGetTipoNumerico() )
+      uValue         := strtran( uValue, ",", "." )
+   end
+
+   ::oController:oModel:updateValorWhereUuid( uuidValor, uValue )
+
+   ::getRowSet():Refresh()
+
+   ::oBrowse:Refresh()
+
+RETURN ( Self )
+
+
+
+static FUNCTION CamposExtraValoresBrowseView_fieldGetValor( lPicture ) ; local Self AS CLASS CamposExtraValoresBrowseView := QSelf() AS CLASS CamposExtraValoresBrowseView
+
+   local uValor      := ::getRowSet():fieldget( "valor" )
+
+   If( lPicture == nil, lPicture := .F., ) ;
+
+   do case
+      case ( ::fieldGetTipoNumerico() )
+
+         uValor      := val( alltrim( uValor ) )
+
+         if lPicture
+            uValor   := trans( uValor, ::fieldGetPicture() )
+         end
+
+      case ( ::fieldGetTipoFecha() )
+
+         uValor      := ctod( alltrim( uValor ) )
+
+   end
+
+RETURN ( uValor )
+
+
+
+
+
+
+
+
+
+_HB_CLASS CamposExtraValoresView ; function CamposExtraValoresView ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "CamposExtraValoresView", iif( .T., { @SQLBaseView() }, { @HBObject() } ), @CamposExtraValoresView() ) ) ;
+
+   _HB_MEMBER New( oSender); oClass:AddMethod( "New", @CamposExtraValoresView_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Activate(); oClass:AddMethod( "Activate", @CamposExtraValoresView_Activate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS CamposExtraValoresView ;
+
+
+
+static FUNCTION CamposExtraValoresView_New( oSender ) ; local Self AS CLASS CamposExtraValoresView := QSelf() AS CLASS CamposExtraValoresView
+
+   ::oController  := oSender
+
+Return ( self )
+
+
+
+static FUNCTION CamposExtraValoresView_Activate( ) ; local Self AS CLASS CamposExtraValoresView := QSelf() AS CLASS CamposExtraValoresView
+
+
+
+   ::oDialog = TDialog():New(,,,, ::LblTitle() + "valor", "CAMPOS_EXTRA_VALORES",, .F.,,,,,, .F.,,,,,, .F.,, "::oDialog", nil, )
+
+
+
+
+
+   ::oBitmap := TBitmap():ReDefine( 900, ::oController:getImage( "48" ),, ::oDialog,,, .F., .F.,,, .F.,,, .T. )
+
+
+
+
+   ::oMessage := TSay():ReDefine( 800,, ::oDialog,,,, .F., getBoldFont(), .F., .F., )
+
+   ::oController:oBrowseView:ActivateDialog( ::oDialog, 100 )
+
+
+
+
+
+   TButton():ReDefine( 1, {||( if( validateDialog( ::oDialog ), ::oDialog:end( 1 ), ) )}, ::oDialog,,, .F., {||        ( ::oController:isNotZoomMode() )},,, .F. )
+
+
+
+
+
+   TButton():ReDefine( 2, {||( ::oDialog:end() )}, ::oDialog,,, .F.,,,, .T. )
+
+   if ::oController:isNotZoomMode()
+      ::oDialog:AddFastKey( 116, {|| if( validateDialog( ::oDialog ), ::oDialog:end( 1 ), ) } )
+   end
+
+   ::oDialog:Activate( ::oDialog:bLClicked, ::oDialog:bMoved, ::oDialog:bPainted, .T.,,,, ::oDialog:bRClicked,,, )
+
+   ::oBitmap:end()
+
+RETURN ( ::oDialog:nResult )
+
+
+
+
+
+
+
+
+
+_HB_CLASS CamposExtraValoresValidator ; function CamposExtraValoresValidator ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "CamposExtraValoresValidator", iif( .T., { @SQLBaseValidator() }, { @HBObject() } ), @CamposExtraValoresValidator() ) ) ;
+
+   _HB_MEMBER getValidators(); oClass:AddMethod( "getValidators", @CamposExtraValoresValidator_getValidators(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS CamposExtraValoresValidator ;
+
+
+
+static FUNCTION CamposExtraValoresValidator_getValidators( ) ; local Self AS CLASS CamposExtraValoresValidator := QSelf() AS CLASS CamposExtraValoresValidator
+
+
+
+   ::hValidators  := {  "campo_extra_relacion_uuid"   => {  "required"     => "El lugar donde se encuentra el campo extra es un dato requerido"}, "uuid_registro"               => {  "required"     => "El Registro es un dato requerido", "unique"       => "El Registro introducido ya existe" } }
+
+RETURN ( ::hValidators )
+
+
+
+
+
+
+
+
+
+
+_HB_CLASS SQLCamposExtraValoresModel ; function SQLCamposExtraValoresModel ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "SQLCamposExtraValoresModel", iif( .T., { @SQLBaseModel() }, { @HBObject() } ), @SQLCamposExtraValoresModel() ) ) ;
+
+   _HB_MEMBER { cTableName } ; oClass:AddMultiData(, "campos_extra_valores", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTableName"}, .F. )
+
+   _HB_MEMBER { cConstraints } ; oClass:AddMultiData(, "PRIMARY KEY ( id ), UNIQUE KEY ( campo_extra_entidad_uuid, entidad_uuid )", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cConstraints"}, .F. )
+
+   _HB_MEMBER { cColumnOrder } ; oClass:AddMultiData(, "nombre", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cColumnOrder"}, .F. )
+
+   _HB_MEMBER getInitialSelect(); oClass:AddMethod( "getInitialSelect", @SQLCamposExtraValoresModel_getInitialSelect(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getColumns(); oClass:AddMethod( "getColumns", @SQLCamposExtraValoresModel_getColumns(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getListaAttribute(); oClass:AddInline( "getListaAttribute", {|Self, value | ( ( Self ) ), ( if( empty( value ), {}, hb_deserialize( value ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setListaAttribute(); oClass:AddInline( "setListaAttribute", {|Self, value | ( ( Self ) ), ( hb_serialize( value ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER updateValorWhereUuid(); oClass:AddInline( "updateValorWhereUuid", {|Self, uuid, uValue | ( ( Self ) ), ( ::updateFieldWhereUuid( uuid, "valor", uValue ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS SQLCamposExtraValoresModel ;
+
+
+
+static FUNCTION SQLCamposExtraValoresModel_getInitialSelect( ) ; local Self AS CLASS SQLCamposExtraValoresModel := QSelf() AS CLASS SQLCamposExtraValoresModel
+
+   local cSQL
+
+   cSQL        := "SELECT "
+   cSQL        +=       "campos.nombre as nombre, "
+   cSQL        +=       "campos.tipo as tipo, "
+   cSQL        +=       "campos.longitud as longitud, "
+   cSQL        +=       "campos.decimales as decimales, "
+   cSQL        +=       "campos.lista as lista, "
+   cSQL        +=       "valores.valor as valor, "
+   cSQL        +=       "valores.uuid as valor_uuid, "
+   cSQL        +=       "entidad.parent_uuid "
+   cSQL        +=    "FROM " + ::cTableName + " valores "
+   cSQL        +=    "INNER JOIN " + SQLCamposExtraEntidadesModel():cTableName + " entidad ON entidad.uuid = valores.campo_extra_entidad_uuid "
+   cSQL        +=    "INNER JOIN " + SQLCamposExtraModel():cTableName + " campos ON campos.uuid = entidad.parent_uuid "
+
+   if !empty( ::oController )
+      cSQL     += "WHERE entidad.entidad = " + quoted( ::oController:cEntidad )
+   end
+
+RETURN ( cSQL)
+
+
+
+static FUNCTION SQLCamposExtraValoresModel_getColumns( ) ; local Self AS CLASS SQLCamposExtraValoresModel := QSelf() AS CLASS SQLCamposExtraValoresModel
+
+
+   hset( ::hColumns, "id",                         {  "create"    => "INTEGER AUTO_INCREMENT"                  , "default"   => {|| 0 } }                                 )
+
+
+   hset( ::hColumns, "uuid",                       {  "create"    => "VARCHAR( 40 ) NOT NULL"                  , "default"   => {|| win_uuidcreatestring() } }            )
+
+
+   hset( ::hColumns, "campo_extra_entidad_uuid",   {  "create"    => "VARCHAR( 40 ) NOT NULL"                  , "default"   => {|| space( 40 ) } }                       )
+
+
+   hset( ::hColumns, "entidad_uuid",               {  "create"    => "VARCHAR( 40 ) NOT NULL"                  , "default"   => {|| space( 40 ) } }                       )
+
+
+   hset( ::hColumns, "valor",                      {  "create"    => "VARCHAR( 200 )"                          , "default"   => {|| space( 200 ) } }                      )
+
+RETURN ( ::hColumns )
+
+
+
+
+
+
+
+
+
+
+
+_HB_CLASS CamposExtraValoresRepository ; function CamposExtraValoresRepository ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "CamposExtraValoresRepository", iif( .T., { @SQLBaseRepository() }, { @HBObject() } ), @CamposExtraValoresRepository() ) ) ;
+
+   _HB_MEMBER getTableName(); oClass:AddInline( "getTableName", {|Self | ( ( Self ) ), ( SQLCamposExtraValoresModel():getTableName() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getTableNameCamposExtra(); oClass:AddInline( "getTableNameCamposExtra", {|Self | ( ( Self ) ), ( SQLCamposExtraModel():getTableName() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getSentenceCampoExtraValoresWhereEntidad( cEntidad); oClass:AddMethod( "getSentenceCampoExtraValoresWhereEntidad", @CamposExtraValoresRepository_getSentenceCampoExtraValoresWhereEntidad(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getHashCampoExtraValoresWhereEntidad( cEntidad); oClass:AddMethod( "getHashCampoExtraValoresWhereEntidad", @CamposExtraValoresRepository_getHashCampoExtraValoresWhereEntidad(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS CamposExtraValoresRepository ;
+
+
+
+static FUNCTION CamposExtraValoresRepository_getSentenceCampoExtraValoresWhereEntidad( cEntidad ) ; local Self AS CLASS CamposExtraValoresRepository := QSelf() AS CLASS CamposExtraValoresRepository
+
+   local cSQL
+
+   If( cEntidad == nil, cEntidad := "clientes", ) ;
+
+   cSQL              := "SELECT entidad.id, entidad.uuid, entidad.parent_uuid, entidad.entidad, campos.nombre, valores.valor "
+   cSQL              +=    "FROM campos_extra_entidad entidad "
+   cSQL              +=    "INNER JOIN campos_extra campos ON entidad.parent_uuid = campos.uuid "
+   cSQL              +=    "LEFT JOIN campos_extra_valores valores ON valores.campo_extra_entidad_uuid = entidad.uuid "
+   cSQL              +=    "WHERE entidad = " + quoted( cEntidad )
+
+RETURN ( cSQL )
+
+
+
+static FUNCTION CamposExtraValoresRepository_getHashCampoExtraValoresWhereEntidad( cEntidad ) ; local Self AS CLASS CamposExtraValoresRepository := QSelf() AS CLASS CamposExtraValoresRepository
+
+   local cSQL        := ::getSentenceCampoExtraValoresWhereEntidad( cEntidad )
+
+RETURN ( getSQLDataBase():selectFetchHash( cSQL ) )

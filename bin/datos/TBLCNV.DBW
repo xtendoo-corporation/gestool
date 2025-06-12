@@ -1,0 +1,55 @@
+[File Application]
+System=PROMETHEUS v2000
+Program=The DataBase WorkShop for Windows
+Author=Copyright ©1998/2002, Andrade A. Daniel
+[File Setup]
+FileName=C:\FW195\CAMERO\DATOS\TBLCNV.DBF
+CurPath=C:\FW195\CAMERO\DATOS\
+Driver=SIXCDX
+Indexes=
+TagActive=
+BagActive=
+RecNo=4
+RowPos=4
+ColPos=1
+FilterActive=
+FilterList=
+[Expresions]
+For=
+While=
+[Columns Positions]
+1=1
+2=2
+3=3
+4=4
+5=5
+[Columns Names]
+1=CCODCNV
+2=CDETCNV
+3=CUNDSTK
+4=CUNDVTA
+5=NFACCNV
+[Columns Sizes]
+1=75.0400
+2=290.7800
+3=75.0400
+4=75.0400
+5=131.3200
+[Columns Pictures]
+1=@X
+2=@X
+3=@X
+4=@X
+5=99999999.9999
+[Columns Aligns]
+1=0
+2=0
+3=0
+4=0
+5=2
+[Columns Types]
+1=C
+2=C
+3=C
+4=C
+5=N

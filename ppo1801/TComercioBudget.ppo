@@ -1,0 +1,2558 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 9 ".\Prg\Comercio\TComercioBudget.prg"
+_HB_CLASS TComercioDocument ; function TComercioDocument ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TComercioDocument", iif( .T., { @TComercioConector() }, { @HBObject() } ), @TComercioDocument() ) ) ;
+
+   _HB_MEMBER { TComercio } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"TComercio"}, .F. )
+
+   _HB_MEMBER { idDocumentPrestashop } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"idDocumentPrestashop"}, .F. )
+   _HB_MEMBER { dateDocumentPrestashop } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dateDocumentPrestashop"}, .F. )
+
+   _HB_MEMBER { cSerieDocument } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSerieDocument"}, .F. )
+   _HB_MEMBER { nNumeroDocument } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nNumeroDocument"}, .F. )
+   _HB_MEMBER { cSufijoDocument } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSufijoDocument"}, .F. )
+
+   _HB_MEMBER New( TComercio) AS CLASS TComercioDocument; oClass:AddMethod( "New", @TComercioDocument_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER insertDocumentIngestoolIfNotExist( oQuery); oClass:AddMethod( "insertDocumentIngestoolIfNotExist", @TComercioDocument_insertDocumentIngestoolIfNotExist(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER isDocumentIngestool( oQuery) ; oClass:AddVirtual( "isDocumentIngestool" )
+
+   _HB_MEMBER insertDocumentgestool( oQuery); oClass:AddMethod( "insertDocumentgestool", @TComercioDocument_insertDocumentgestool(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER getCountersDocumentgestool( oQuery) ; oClass:AddVirtual( "getCountersDocumentgestool" )
+      _HB_MEMBER insertHeaderDocumentgestool( oQuery); oClass:AddMethod( "insertHeaderDocumentgestool", @TComercioDocument_insertHeaderDocumentgestool(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+         _HB_MEMBER setCustomerInDocument( oQuery); oClass:AddMethod( "setCustomerInDocument", @TComercioDocument_setCustomerInDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER insertLinesDocumentgestool( oQuery); oClass:AddMethod( "insertLinesDocumentgestool", @TComercioDocument_insertLinesDocumentgestool(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+         _HB_MEMBER setProductInDocumentLine( oQueryLine); oClass:AddMethod( "setProductInDocumentLine", @TComercioDocument_setProductInDocumentLine(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+         _HB_MEMBER getProductProperty( idPropertygestool, productName); oClass:AddMethod( "getProductProperty", @TComercioDocument_getProductProperty(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+         _HB_MEMBER getNameProductProperty( idPropertygestool); oClass:AddMethod( "getNameProductProperty", @TComercioDocument_getNameProductProperty(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER insertMessageDocument( oQuery); oClass:AddMethod( "insertMessageDocument", @TComercioDocument_insertMessageDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER insertStateDocumentPrestashop( oQuery); oClass:AddMethod( "insertStateDocumentPrestashop", @TComercioDocument_insertStateDocumentPrestashop(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setgestoolIdDocument( oDatabase) ; oClass:AddVirtual( "setgestoolIdDocument" )
+   _HB_MEMBER setgestoolSpecificDocument( oQuery) ; oClass:AddVirtual( "setgestoolSpecificDocument" )
+   _HB_MEMBER setPrestashopIdDocument() ; oClass:AddVirtual( "setPrestashopIdDocument" )
+   _HB_MEMBER setgestoolSpecificLineDocument() ; oClass:AddVirtual( "setgestoolSpecificLineDocument" )
+
+   _HB_MEMBER idDocumentgestool(); oClass:AddInline( "idDocumentgestool", {|Self | ( ( Self ) ), ( ::cSerieDocument + str( ::nNumeroDocument ) + ::cSufijoDocument ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER insertLinesKitsgestool(); oClass:AddMethod( "insertLinesKitsgestool", @TComercioDocument_insertLinesKitsgestool(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TComercioDocument ;
+
+
+
+static FUNCTION TComercioDocument_New( TComercio ) ; local Self AS CLASS TComercioDocument := QSelf() AS CLASS TComercioDocument
+
+   ::TComercio          := TComercio
+
+Return ( Self )
+
+
+
+static FUNCTION TComercioDocument_insertDocumentIngestoolIfNotExist( oQuery ) ; local Self AS CLASS TComercioDocument := QSelf() AS CLASS TComercioDocument
+
+   ::idDocumentPrestashop     := oQuery:fieldGet( 1 )
+
+   if ::isDocumentIngestool( oQuery:fieldGetByName( "reference" ) )
+      ::writeText( "El documento con el identificador " + alltrim( str( ::idDocumentPrestashop ) ) + " ya ha sido recibido." )
+   else
+      ::insertDocumentgestool( oQuery )
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TComercioDocument_insertDocumentgestool( oQuery ) ; local Self AS CLASS TComercioDocument := QSelf() AS CLASS TComercioDocument
+
+   ::TComercioCustomer():insertCustomerIngestoolIfNotExist( oQuery )
+
+   if empty( ::TComercioCustomer():getCustomergestool() )
+      ::writeText( "Cliente no encontrado, imposible añadir documento" )
+      Return ( .F. )
+   end
+
+   ::getCountersDocumentgestool(      oQuery )
+   ::insertHeaderDocumentgestool(     oQuery )
+   ::insertLinesDocumentgestool(      oQuery )
+   ::insertMessageDocument(           oQuery )
+   ::insertStateDocumentPrestashop(   oQuery )
+
+   ::setPrestashopIdDocument()
+
+Return ( .T. )
+
+
+
+static FUNCTION TComercioDocument_insertHeaderDocumentgestool( oQuery ) ; local Self AS CLASS TComercioDocument := QSelf() AS CLASS TComercioDocument
+
+   ( ::oDocumentHeaderDatabase() )->( dbappend() )
+
+   ::setgestoolIdDocument( ::oDocumentHeaderDatabase() )
+
+   ::setgestoolSpecificDocument( oQuery )
+
+   ( ::oDocumentHeaderDatabase() )->cCodWeb      := ::idDocumentPrestashop
+   ( ::oDocumentHeaderDatabase() )->cCodAlm      := Application():codigoAlmacen()
+   ( ::oDocumentHeaderDatabase() )->cCodCaj      := Application():CodigoCaja()
+   ( ::oDocumentHeaderDatabase() )->cCodObr      := "@" + alltrim( str( oQuery:FieldGetByName( "id_address_delivery" ) ) )
+   ( ::oDocumentHeaderDatabase() )->cCodPgo      := cFPagoWeb( alltrim( oQuery:FieldGetByName( "module" ) ), D():FormasPago( ::getView() ) )
+   ( ::oDocumentHeaderDatabase() )->nTarifa      := 1
+   ( ::oDocumentHeaderDatabase() )->lSndDoc      := .T.
+   ( ::oDocumentHeaderDatabase() )->lIvaInc      := uFieldEmpresa( "lIvaInc" )
+   ( ::oDocumentHeaderDatabase() )->cManObr      := Padr( "Gastos envio", 250 )
+   ( ::oDocumentHeaderDatabase() )->nManObr      := oQuery:FieldGetByName( "total_shipping_tax_excl" )
+   ( ::oDocumentHeaderDatabase() )->nIvaMan      := oQuery:FieldGetByName( "carrier_tax_rate" )
+   ( ::oDocumentHeaderDatabase() )->cCodUsr      := Auth():Codigo()
+   ( ::oDocumentHeaderDatabase() )->dFecCre      := GetSysDate()
+   ( ::oDocumentHeaderDatabase() )->cTimCre      := Time()
+   ( ::oDocumentHeaderDatabase() )->cCodDlg      := Application():CodigoDelegacion()
+   ( ::oDocumentHeaderDatabase() )->lWeb         := .T.
+   ( ::oDocumentHeaderDatabase() )->lInternet    := .T.
+   ( ::oDocumentHeaderDatabase() )->nTotNet      := oQuery:FieldGetByName( "total_products" )
+   ( ::oDocumentHeaderDatabase() )->nTotIva      := oQuery:FieldGetByName( "total_paid_tax_incl" ) - ( oQuery:FieldGetByName( "total_products" ) + oQuery:FieldGetByName( "total_shipping_tax_incl" ) )
+
+   ::setCustomerInDocument( oQuery )
+
+   if !( ::oDocumentHeaderDatabase() )->( neterr() )
+      ( ::oDocumentHeaderDatabase() )->( dbcommit() )
+      ( ::oDocumentHeaderDatabase() )->( dbunlock() )
+
+      ::writeText( "Documento " + ::cSerieDocument + "/" + alltrim( str( ::nNumeroDocument ) ) + "/" + ::cSufijoDocument + " introducido correctamente.", 3 )
+
+   else
+
+      ::writeText( "Error al descargar el documento : " + ::cSerieDocument + "/" + alltrim( str( ::nNumeroDocument ) ) + "/" + ::cSufijoDocument, 3 )
+
+   end
+
+Return ( .T. )
+
+
+
+ static FUNCTION TComercioDocument_setCustomerInDocument( oQuery ) ; local Self AS CLASS TComercioDocument := QSelf() AS CLASS TComercioDocument
+
+   local idCustomergestool                := ::TComercioCustomer():getCustomergestool()
+
+   if !( D():gotoCliente( idCustomergestool, ::getView() ) )
+      ::writeText( "Código de cliente " + alltrim( idCustomergestool ) + " no encontrado", 3 )
+      Return ( .F. )
+   end
+
+   ( ::oDocumentHeaderDatabase() )->cCodCli    := ( D():Clientes( ::getView() ) )->Cod
+   ( ::oDocumentHeaderDatabase() )->cNomCli    := ( D():Clientes( ::getView() ) )->Titulo
+   ( ::oDocumentHeaderDatabase() )->cDirCli    := ( D():Clientes( ::getView() ) )->Domicilio
+   ( ::oDocumentHeaderDatabase() )->cPobCli    := ( D():Clientes( ::getView() ) )->Poblacion
+   ( ::oDocumentHeaderDatabase() )->cPrvCli    := ( D():Clientes( ::getView() ) )->Provincia
+   ( ::oDocumentHeaderDatabase() )->cPosCli    := ( D():Clientes( ::getView() ) )->CodPostal
+   ( ::oDocumentHeaderDatabase() )->cDniCli    := ( D():Clientes( ::getView() ) )->Nif
+   ( ::oDocumentHeaderDatabase() )->cTlfCli    := ( D():Clientes( ::getView() ) )->Telefono
+   ( ::oDocumentHeaderDatabase() )->cCodGrp    := ( D():Clientes( ::getView() ) )->cCodGrp
+   ( ::oDocumentHeaderDatabase() )->nRegIva    := ( D():Clientes( ::getView() ) )->nRegIva
+   ( ::oDocumentHeaderDatabase() )->lModCli    := .T.
+
+Return ( .T. )
+
+
+
+static FUNCTION TComercioDocument_insertLinesDocumentgestool( oQuery ) ; local Self AS CLASS TComercioDocument := QSelf() AS CLASS TComercioDocument
+
+   local nNumLin           := 1
+   local cQueryLine
+   local oQueryLine
+   local lKitArt           := .F.
+   local cCodArt           := ""
+
+
+   cQueryLine              := "SELECT * FROM " + ::TComercio:cPrefixtable( "order_detail" ) + " " +  "WHERE id_order = " + alltrim( str( ::idDocumentPrestashop ) )
+   oQueryLine              := TMSQuery():New( ::oConexionMySQLDatabase(), cQueryLine )
+
+   if oQueryLine:Open() .AND. ( oQueryLine:RecCount() > 0 )
+
+      oQueryLine:GoTop()
+      while !( oQueryLine:eof() )
+
+         ( ::oDocumentLineDatabase() )->( dbappend() )
+
+         ::setgestoolIdDocument( ::oDocumentLineDatabase() )
+
+         ::setgestoolSpecificLineDocument()
+
+         ( ::oDocumentLineDatabase() )->dFecha        := ::getDate( oQuery:FieldGetByName( "date_add" ) )
+         ( ::oDocumentLineDatabase() )->cDetalle      := oQueryLine:FieldGetByName( "product_name" )
+         ( ::oDocumentLineDatabase() )->mLngDes       := oQueryLine:FieldGetByName( "product_name" )
+         ( ::oDocumentLineDatabase() )->nPosPrint     := nNumLin
+         ( ::oDocumentLineDatabase() )->nNumLin       := nNumLin
+         ( ::oDocumentLineDatabase() )->cAlmLin       := cDefAlm()
+         ( ::oDocumentLineDatabase() )->nTarLin       := 1
+         ( ::oDocumentLineDatabase() )->nUniCaja      := oQueryLine:FieldGetByName( "product_quantity" )
+         ( ::oDocumentLineDatabase() )->nPreDiv       := oQueryLine:FieldGetByName( "product_price" )
+         ( ::oDocumentLineDatabase() )->nDto          := oQueryLine:FieldGetByName( "reduction_percent" )
+         ( ::oDocumentLineDatabase() )->nDtoDiv       := oQueryLine:FieldGetByName( "reduction_amount_tax_excl" )
+         ( ::oDocumentLineDatabase() )->nIva          := ::TComercio:nIvaProduct( oQueryLine:FieldGetByName( "product_id" ) )
+
+         ::setProductInDocumentLine( oQueryLine, @lKitArt, @cCodArt )
+
+         if ( ::oDocumentLineDatabase() )->( neterr() )
+            ::writeText( "Error al guardar las lineas del documento " + ::idDocumentgestool() )
+         else
+            ( ::oDocumentLineDatabase() )->( dbunlock() )
+         end
+
+         if lKitArt
+            ::insertLinesKitsgestool( nNumLin, cCodArt, oQuery )
+         end
+
+         lKitArt     := .F.
+
+         oQueryLine:Skip()
+
+         nNumLin++
+
+      end
+
+   end
+
+   oQueryLine:Free()
+
+Return ( .T. )
+
+
+
+static FUNCTION TComercioDocument_insertLinesKitsgestool( nNumLin, cCodArt, oQuery ) ; local Self AS CLASS TComercioDocument := QSelf() AS CLASS TComercioDocument
+
+   local nRec     := ( D():Kit( ::getView() ) )->( Recno() )
+   local nOrdAnt  := ( D():Kit( ::getView() ) )->( OrdSetFocus( "CCODKIT" ) )
+   local nNumKit  := 1
+
+   if ( D():Kit( ::getView() ) )->( dbSeek( cCodArt ) )
+
+      while ( D():Kit( ::getView() ) )->cCodKit == cCodArt .AND. !( D():Kit( ::getView() ) )->( Eof() )
+
+         ( ::oDocumentLineDatabase() )->( dbappend() )
+
+         ::setgestoolIdDocument( ::oDocumentLineDatabase() )
+
+         ::setgestoolSpecificLineDocument()
+
+         ( ::oDocumentLineDatabase() )->cRef          := ( D():Kit( ::getView() ) )->cRefKit
+         ( ::oDocumentLineDatabase() )->cAlmLin       := cDefAlm()
+         ( ::oDocumentLineDatabase() )->nPosPrint     := nNumLin
+         ( ::oDocumentLineDatabase() )->nNumLin       := nNumLin
+         ( ::oDocumentLineDatabase() )->nNumKit       := nNumKit
+         ( ::oDocumentLineDatabase() )->nUniCaja      := ( D():Kit( ::getView() ) )->nUndKit
+         ( ::oDocumentLineDatabase() )->lKitChl       := .T.
+         ( ::oDocumentLineDatabase() )->nTarLin       := 1
+         ( ::oDocumentLineDatabase() )->dFecha        := ::getDate( oQuery:FieldGetByName( "date_add" ) )
+
+         if ( D():gotoArticulos( ( D():Kit( ::getView() ) )->cRefKit, ::getView() ) )
+
+            ( ::oDocumentLineDatabase() )->cDetalle    := ( D():Articulos( ::getView() ) )->Nombre
+            ( ::oDocumentLineDatabase() )->mLngDes     := ( D():Articulos( ::getView() ) )->Descrip
+            ( ::oDocumentLineDatabase() )->cUnidad     := ( D():Articulos( ::getView() ) )->cUnidad
+            ( ::oDocumentLineDatabase() )->nPesoKg     := ( D():Articulos( ::getView() ) )->nPesoKg
+            ( ::oDocumentLineDatabase() )->cPesoKg     := ( D():Articulos( ::getView() ) )->cUnidad
+            ( ::oDocumentLineDatabase() )->nVolumen    := ( D():Articulos( ::getView() ) )->nVolumen
+            ( ::oDocumentLineDatabase() )->cVolumen    := ( D():Articulos( ::getView() ) )->cVolumen
+            ( ::oDocumentLineDatabase() )->nCtlStk     := ( D():Articulos( ::getView() ) )->nCtlStock
+            ( ::oDocumentLineDatabase() )->cCodTip     := ( D():Articulos( ::getView() ) )->cCodTip
+            ( ::oDocumentLineDatabase() )->cCodFam     := ( D():Articulos( ::getView() ) )->Familia
+            ( ::oDocumentLineDatabase() )->cGrpFam     := retfld( ( D():Articulos( ::getView() ) )->Familia, D():Familias( ::getView() ), "cCodGrp" )
+
+            ( ::oDocumentLineDatabase() )->lLote       := ( D():Articulos( ::getView() ) )->lLote
+            ( ::oDocumentLineDatabase() )->cLote       := ( D():Articulos( ::getView() ) )->cLote
+
+            ( ::oDocumentLineDatabase() )->nIva        := nIva( D():TiposIva( ::getView() ), ( D():Articulos( ::getView() ) )->TipoIva )
+
+         end
+
+         ( ::oDocumentLineDatabase() )->( dbunlock() )
+
+         nNumKit++
+
+         ( D():Kit( ::getView() ) )->( dbSkip() )
+
+      end
+
+   end
+
+   ( D():Kit( ::getView() ) )->( OrdSetFocus( nOrdAnt ) )
+   ( D():Kit( ::getView() ) )->( dbGoTo( nRec ) )
+
+Return ( .T. )
+
+
+
+static FUNCTION TComercioDocument_setProductInDocumentLine( oQueryLine, lKitArt, cCodArt ) ; local Self AS CLASS TComercioDocument := QSelf() AS CLASS TComercioDocument
+
+   local idProductgestool                 := oQueryLine:FieldGetByName( "product_reference" )
+
+   if empty( idProductgestool )
+      idProductgestool                    := ::TPrestashopId:getgestoolProduct( oQueryLine:FieldGetByName( "product_id" ), ::getCurrentWebName() )
+   end
+
+   if empty( idProductgestool )
+      Return ( .F. )
+   end
+
+   if ( D():gotoArticulos( idProductgestool, ::getView() ) )
+
+      ( ::oDocumentLineDatabase() )->cRef        := ( D():Articulos( ::getView() ) )->Codigo
+      cCodArt                                    := ( D():Articulos( ::getView() ) )->Codigo
+      ( ::oDocumentLineDatabase() )->cUnidad     := ( D():Articulos( ::getView() ) )->cUnidad
+      ( ::oDocumentLineDatabase() )->nPesoKg     := ( D():Articulos( ::getView() ) )->nPesoKg
+      ( ::oDocumentLineDatabase() )->cPesoKg     := ( D():Articulos( ::getView() ) )->cUnidad
+      ( ::oDocumentLineDatabase() )->nVolumen    := ( D():Articulos( ::getView() ) )->nVolumen
+      ( ::oDocumentLineDatabase() )->cVolumen    := ( D():Articulos( ::getView() ) )->cVolumen
+      ( ::oDocumentLineDatabase() )->nCtlStk     := ( D():Articulos( ::getView() ) )->nCtlStock
+      ( ::oDocumentLineDatabase() )->nCosDiv     := nCosto( ( D():Articulos( ::getView() ) )->Codigo, D():Articulos( ::getView() ), D():ArticulosCodigosBarras( ::getView() ) )
+      ( ::oDocumentLineDatabase() )->cCodTip     := ( D():Articulos( ::getView() ) )->cCodTip
+      ( ::oDocumentLineDatabase() )->cCodFam     := ( D():Articulos( ::getView() ) )->Familia
+      ( ::oDocumentLineDatabase() )->cGrpFam     := retfld( ( D():Articulos( ::getView() ) )->Familia, D():Familias( ::getView() ), "cCodGrp" )
+
+      ( ::oDocumentLineDatabase() )->lLote       := ( D():Articulos( ::getView() ) )->lLote
+      ( ::oDocumentLineDatabase() )->cLote       := ( D():Articulos( ::getView() ) )->cLote
+
+      ( ::oDocumentLineDatabase() )->cCodPr1     := ( D():Articulos( ::getView() ) )->cCodPrp1
+      ( ::oDocumentLineDatabase() )->cCodPr2     := ( D():Articulos( ::getView() ) )->cCodPrp2
+      ( ::oDocumentLineDatabase() )->cValPr1     := ::getProductProperty( ( D():Articulos( ::getView() ) )->cCodPrp1, oQueryLine:FieldGetByName( "product_name" ) )
+      ( ::oDocumentLineDatabase() )->cValPr2     := ::getProductProperty( ( D():Articulos( ::getView() ) )->cCodPrp2, oQueryLine:FieldGetByName( "product_name" ) )
+
+      ( ::oDocumentLineDatabase() )->lKitArt     := ( D():Articulos( ::getView() ) )->lKitArt
+
+      lKitArt                                    := ( D():Articulos( ::getView() ) )->lKitArt
+
+      Return ( .T. )
+
+   end
+
+Return ( .F. )
+
+
+
+static FUNCTION TComercioDocument_getProductProperty( idPropertygestool, productName ) ; local Self AS CLASS TComercioDocument := QSelf() AS CLASS TComercioDocument
+
+   local productProperty      := ""
+   local productPropertyName  := ::getNameProductProperty( idPropertygestool, productName )
+
+   if !empty( productPropertyName )
+      Return ( productProperty )
+   end
+
+   if ( D():PropiedadesLineas( ::getView() ) )->( dbseekinord( upper( idPropertygestool ) + upper( productPropertyName ), "cCodDes" ) )
+      productProperty         := ( D():PropiedadesLineas( ::getView() ) )->cCodTbl
+   end
+
+Return ( productProperty )
+
+
+
+static FUNCTION TComercioDocument_getNameProductProperty( idPropertygestool, productName ) ; local Self AS CLASS TComercioDocument := QSelf() AS CLASS TComercioDocument
+
+   local cPropertieCode       := ""
+   local cPropertieName       := retFld( idPropertygestool, D():Propiedades( ::getView() ), "cDesPro" )
+
+   if empty( cPropertieName )
+      Return ( cPropertieCode )
+   end
+
+   cPropertieName             := alltrim( cPropertieName ) + " : "
+
+   if at( cPropertieName, productName ) > 0
+      cPropertieCode          := substr( productName, at( cPropertieName, productName ) )
+      cPropertieCode          := strtran( cPropertieCode, cPropertieName, "" )
+      if at( ",", cPropertieCode ) > 0
+         cPropertieCode       := substr( cPropertieCode, 1, at( ",", cPropertieCode ) - 1 )
+      end
+   end
+
+Return ( cPropertieCode )
+
+
+
+static FUNCTION TComercioDocument_insertMessageDocument( oQuery ) ; local Self AS CLASS TComercioDocument := QSelf() AS CLASS TComercioDocument
+
+   local dFecha
+   local cQueryThead
+   local oQueryThead
+   local cQueryMessage
+   local oQueryMessage
+
+   dFecha                  := ::getDate( oQuery:FieldGetByName( "date_add" ) )
+
+
+   cQueryThead             := "SELECT * FROM " + ::Tcomercio:cPrefixtable( "customer_thread" ) + " " +  "WHERE id_order = " + alltrim( str( ::idDocumentPrestashop ) )
+   oQueryThead             := TMSQuery():New( ::oConexionMySQLDatabase(), cQueryThead )
+
+   if oQueryThead:Open() .AND. ( oQueryThead:recCount() > 0 )
+
+      oQueryThead:GoTop()
+      while !oQueryThead:eof()
+
+
+         cQueryMessage     := "SELECT * FROM " + ::Tcomercio:cPrefixtable( "customer_message" ) + " " + "WHERE id_customer_thread = " + alltrim( str( oQueryThead:fieldget( 1 ) ) )
+         oQueryMessage     := TMSQuery():New( ::oConexionMySQLDatabase(), cQueryMessage )
+
+         if oQueryMessage:Open() .AND. ( oQueryMessage:recCount() > 0 )
+
+            oQueryMessage:GoTop()
+            while !oQueryMessage:eof()
+
+               ( ::oDocumentIncidenciaDatabase() )->( dbappend() )
+
+               ::setgestoolIdDocument( ::oDocumentIncidenciaDatabase() )
+
+               ( ::oDocumentIncidenciaDatabase() )->dFecInc    := dFecha
+               ( ::oDocumentIncidenciaDatabase() )->mDesInc    := oQueryMessage:FieldGetByName( "message" )
+               ( ::oDocumentIncidenciaDatabase() )->lAviso     := .T.
+
+               ( ::oDocumentIncidenciaDatabase() )->( dbunlock() )
+
+               oQueryMessage:Skip()
+
+            end
+
+         end
+
+         oQueryMessage:Free()
+
+         oQueryThead:Skip()
+
+      end
+
+   end
+
+   oQueryThead:Free()
+
+Return ( .T. )
+
+
+
+static FUNCTION TComercioDocument_insertStateDocumentPrestashop( oQuery ) ; local Self AS CLASS TComercioDocument := QSelf() AS CLASS TComercioDocument
+
+   local nLanguage
+   local cQueryState
+   local oQueryState
+
+
+
+   cQueryState    := "SELECT * FROM " + ::TComercio:cPrefixtable( "order_history" ) + " h " +  "INNER JOIN " + ::TComercio:cPrefixtable( "order_state_lang" ) + " s on h.id_order_state = s.id_order_state " +  "WHERE s.id_lang = " + ::TComercio:nLanguage + " and id_order = " + alltrim( str( ::idDocumentPrestashop ) )
+   oQueryState    := TMSQuery():New( ::oConexionMySQLDatabase(), cQueryState  )
+
+   if oQueryState:Open() .AND. oQueryState:RecCount() > 0
+
+      oQueryState:GoTop()
+
+      while !oQueryState:Eof()
+
+         ( ::oDocumentEstadoDatabase() )->( dbappend() )
+
+         ::setgestoolIdDocument( ::oDocumentEstadoDatabase() )
+
+         ( ::oDocumentEstadoDatabase() )->cSitua    := oQueryState:FieldGetByName( "name" )
+         ( ::oDocumentEstadoDatabase() )->dFecSit   := ::getDate( oQueryState:FieldGetByName( "date_add" ) )
+         ( ::oDocumentEstadoDatabase() )->tFecSit   := ::getTime( oQueryState:FieldGetByName( "date_add" ) )
+         ( ::oDocumentEstadoDatabase() )->idPs      := oQueryState:FieldGetByName( "id_order_history" )
+
+         ( ::oDocumentEstadoDatabase() )->( dbunlock() )
+
+         oQueryState:Skip()
+
+      end
+
+   end
+
+Return ( .T. )
+
+
+
+
+
+
+
+
+
+_HB_CLASS TComercioBudget ; function TComercioBudget ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TComercioBudget", iif( .T., { @TComercioDocument() }, { @HBObject() } ), @TComercioBudget() ) ) ;
+
+   _HB_MEMBER isDocumentIngestool(); oClass:AddMethod( "isDocumentIngestool", @TComercioBudget_isDocumentIngestool(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getCountersDocumentgestool( oQuery); oClass:AddMethod( "getCountersDocumentgestool", @TComercioBudget_getCountersDocumentgestool(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setgestoolIdDocument( oDatabase); oClass:AddMethod( "setgestoolIdDocument", @TComercioBudget_setgestoolIdDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setgestoolSpecificDocument( oQuery); oClass:AddMethod( "setgestoolSpecificDocument", @TComercioBudget_setgestoolSpecificDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setgestoolSpecificLineDocument(); oClass:AddMethod( "setgestoolSpecificLineDocument", @TComercioBudget_setgestoolSpecificLineDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setPrestashopIdDocument(); oClass:AddMethod( "setPrestashopIdDocument", @TComercioBudget_setPrestashopIdDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER oDocumentHeaderDatabase(); oClass:AddInline( "oDocumentHeaderDatabase", {|Self | ( ( Self ) ), ( D():PresupuestosClientes( ::getView() )  ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER oDocumentLineDatabase(); oClass:AddInline( "oDocumentLineDatabase", {|Self | ( ( Self ) ), ( D():PresupuestosClientesLineas( ::getView() )  ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER oDocumentIncidenciaDatabase(); oClass:AddInline( "oDocumentIncidenciaDatabase", {|Self | ( ( Self ) ), ( D():PresupuestosClientesIncidencias( ::getView() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER oDocumentEstadoDatabase(); oClass:AddInline( "oDocumentEstadoDatabase", {|Self | ( ( Self ) ), ( D():PresupuestosClientesSituaciones( ::getView() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TComercioBudget ;
+
+
+
+static FUNCTION TComercioBudget_isDocumentIngestool( idDocumentPrestashop ) ; local Self AS CLASS TComercioBudget := QSelf() AS CLASS TComercioBudget
+
+   if empty( idDocumentPrestashop )
+      Return .F.
+   end
+
+Return ( ( ::oDocumentHeaderDatabase() )->( dbseekInOrd( idDocumentPrestashop, "cSuPre" ) ) )
+
+
+
+static FUNCTION TComercioBudget_getCountersDocumentgestool( oQuery ) ; local Self AS CLASS TComercioBudget := QSelf() AS CLASS TComercioBudget
+
+   ::idDocumentPrestashop  := oQuery:fieldGet( 1 )
+   ::cSerieDocument        := ::TComercioConfig():getBudgetSerie()
+   ::nNumeroDocument       := nNewDoc( ::cSerieDocument, ::oDocumentHeaderDatabase(), "nPreCli", , D():Contadores( ::getView() ) )
+   ::cSufijoDocument       := retSufEmp()
+
+Return ( .T. )
+
+
+
+static FUNCTION TComercioBudget_setgestoolIdDocument( oDatabase ) ; local Self AS CLASS TComercioBudget := QSelf() AS CLASS TComercioBudget
+
+   ( oDatabase )->cSerPre  := ::cSerieDocument
+   ( oDatabase )->nNumPre  := ::nNumeroDocument
+   ( oDatabase )->cSufPre  := ::cSufijoDocument
+
+Return ( self )
+
+
+
+static FUNCTION TComercioBudget_setgestoolSpecificDocument( oQuery ) ; local Self AS CLASS TComercioBudget := QSelf() AS CLASS TComercioBudget
+
+   ( ::oDocumentHeaderDatabase() )->dFecPre  := ::getDate( oQuery:FieldGetByName( "date_add" ) )
+   ( ::oDocumentHeaderDatabase() )->cTurPre  := cCurSesion()
+   ( ::oDocumentHeaderDatabase() )->cSuPre   := oQuery:FieldGetByName( "reference" )
+   ( ::oDocumentHeaderDatabase() )->lEstado  := .T.
+   ( ::oDocumentHeaderDatabase() )->cDivPre  := cDivEmp()
+   ( ::oDocumentHeaderDatabase() )->nVdvPre  := nChgDiv( cDivEmp(), D():Divisas( ::getView() ) )
+   ( ::oDocumentHeaderDatabase() )->lCloPre  := .F.
+   ( ::oDocumentHeaderDatabase() )->nTotPre  := oQuery:FieldGetByName( "total_paid_tax_incl" )
+
+Return ( self )
+
+
+
+static FUNCTION TComercioBudget_setgestoolSpecificLineDocument( ) ; local Self AS CLASS TComercioBudget := QSelf() AS CLASS TComercioBudget
+
+   ( ::oDocumentLineDatabase() )->nCanPre    := 1
+
+Return ( self )
+
+
+
+static FUNCTION TComercioBudget_setPrestashopIdDocument( ) ; local Self AS CLASS TComercioBudget := QSelf() AS CLASS TComercioBudget
+
+   ::TPrestashopId():setgestoolBudget( ::idDocumentgestool(), ::getCurrentWebName(), ::idDocumentPrestashop )
+
+Return ( self )
+
+
+
+
+
+
+
+
+
+
+_HB_CLASS TComercioOrder ; function TComercioOrder ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TComercioOrder", iif( .T., { @TComercioDocument() }, { @HBObject() } ), @TComercioOrder() ) ) ;
+
+   _HB_MEMBER isDocumentIngestool(); oClass:AddMethod( "isDocumentIngestool", @TComercioOrder_isDocumentIngestool(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getCountersDocumentgestool( oQuery); oClass:AddMethod( "getCountersDocumentgestool", @TComercioOrder_getCountersDocumentgestool(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setgestoolIdDocument( oDatabase); oClass:AddMethod( "setgestoolIdDocument", @TComercioOrder_setgestoolIdDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setPrestashopIdDocument(); oClass:AddMethod( "setPrestashopIdDocument", @TComercioOrder_setPrestashopIdDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setgestoolSpecificDocument( oQuery); oClass:AddMethod( "setgestoolSpecificDocument", @TComercioOrder_setgestoolSpecificDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setgestoolSpecificLineDocument(); oClass:AddMethod( "setgestoolSpecificLineDocument", @TComercioOrder_setgestoolSpecificLineDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER oDocumentHeaderDatabase(); oClass:AddInline( "oDocumentHeaderDatabase", {|Self | ( ( Self ) ), ( D():PedidosClientes( ::getView() )  ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER oDocumentLineDatabase(); oClass:AddInline( "oDocumentLineDatabase", {|Self | ( ( Self ) ), ( D():PedidosClientesLineas( ::getView() )  ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER oDocumentIncidenciaDatabase(); oClass:AddInline( "oDocumentIncidenciaDatabase", {|Self | ( ( Self ) ), ( D():PedidosClientesIncidencias( ::getView() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER oDocumentEstadoDatabase(); oClass:AddInline( "oDocumentEstadoDatabase", {|Self | ( ( Self ) ), ( D():PedidosClientesSituaciones( ::getView() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TComercioOrder ;
+
+
+
+static FUNCTION TComercioOrder_isDocumentIngestool( idDocumentPrestashop ) ; local Self AS CLASS TComercioOrder := QSelf() AS CLASS TComercioOrder
+
+   if empty( idDocumentPrestashop )
+      Return .F.
+   end
+
+Return ( ( ::oDocumentHeaderDatabase() )->( dbseekInOrd( idDocumentPrestashop, "cSuPed" ) ) )
+
+
+
+static FUNCTION TComercioOrder_getCountersDocumentgestool( oQuery ) ; local Self AS CLASS TComercioOrder := QSelf() AS CLASS TComercioOrder
+
+   ::idDocumentPrestashop  := oQuery:fieldGet( 1 )
+   ::cSerieDocument        := ::TComercioConfig():getBudgetSerie()
+   ::nNumeroDocument       := nNewDoc( ::cSerieDocument, ::oDocumentHeaderDatabase(), "nPedCli", , D():Contadores( ::getView() ) )
+   ::cSufijoDocument       := retSufEmp()
+
+Return ( .T. )
+
+
+
+static FUNCTION TComercioOrder_setgestoolIdDocument( oDatabase ) ; local Self AS CLASS TComercioOrder := QSelf() AS CLASS TComercioOrder
+
+   ( oDatabase )->cSerPed  := ::cSerieDocument
+   ( oDatabase )->nNumPed  := ::nNumeroDocument
+   ( oDatabase )->cSufPed  := ::cSufijoDocument
+
+Return ( self )
+
+
+
+static FUNCTION TComercioOrder_setgestoolSpecificDocument( oQuery ) ; local Self AS CLASS TComercioOrder := QSelf() AS CLASS TComercioOrder
+
+   ( ::oDocumentHeaderDatabase() )->dFecPed  := ::getDate( oQuery:FieldGetByName( "date_add" ) )
+   ( ::oDocumentHeaderDatabase() )->cTurPed  := cCurSesion()
+   ( ::oDocumentHeaderDatabase() )->cSuPed   := oQuery:FieldGetByName( "reference" )
+   ( ::oDocumentHeaderDatabase() )->cDivPed  := cDivEmp()
+   ( ::oDocumentHeaderDatabase() )->nVdvPed  := nChgDiv( cDivEmp(), D():Divisas( ::getView() ) )
+   ( ::oDocumentHeaderDatabase() )->lCloPed  := .F.
+   ( ::oDocumentHeaderDatabase() )->nTotPed  := oQuery:FieldGetByName( "total_paid_tax_incl" )
+
+Return ( self )
+
+
+
+static FUNCTION TComercioOrder_setgestoolSpecificLineDocument( ) ; local Self AS CLASS TComercioOrder := QSelf() AS CLASS TComercioOrder
+
+   ( ::oDocumentLineDatabase() )->nCanPed    := 1
+
+Return ( self )
+
+
+
+static FUNCTION TComercioOrder_setPrestashopIdDocument( ) ; local Self AS CLASS TComercioOrder := QSelf() AS CLASS TComercioOrder
+
+   ::TPrestashopId():setgestoolOrder( ::idDocumentgestool(), ::getCurrentWebName(), ::idDocumentPrestashop )
+
+Return ( self )

@@ -1,0 +1,38 @@
+{
+  "Traslations" : 
+  {
+    "Pedidos de clientes" : "Pedidos de clientes",
+    "Categorías" : "Categorías",
+    "categorías" : "categorías",
+    "Temporadas" : "Temporadas",
+    "temporadas" : "temporadas",
+    "Entregado" : "Entregado",
+    "Gastos" : "Gastos",
+    "Situaciones" : "Situaciones",
+    "Grupo familia" : "Grupo familia",
+    "Familia" : "Familia",
+    "Tipo" : "Tipo",
+    "Categoría" : "Categoría",
+    "Temporada" : "Temporada",
+    "Fabricante" : "Fabricante",
+    "Operación" : "Operación",
+    "Proyectos" : "Proyectos",
+    "Ubicación" : "Ubicación",
+    "categoría" : "categoría",
+    "temporada" : "temporada",
+    "CategorÃ­as" : "CategorÃ­as",
+    "categorÃ­a" : "categorÃ­a",
+    "Temporadas de artículos" : "Temporadas de artículos"
+  },
+  "Empresa" : 
+  {
+    "PermitirCambioFacturaIVAIncluido" : false
+  },
+  "000" : 
+  {
+    "Esquema" : "CORE",
+    "Sequencia" : "OOFF",
+    "AgruparRecibos" : false,
+    "UsarVencimiento" : false
+  }
+}

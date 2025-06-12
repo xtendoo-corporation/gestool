@@ -1,0 +1,17 @@
+{
+  "Traslations" : 
+  {
+    "Pedidos de clientes" : "Pedidos de clientes",
+    "Temporadas" : "Temporadas",
+    "temporadas" : "temporadas",
+    "Gastos" : "Gastos",
+    "Familia" : "Familia",
+    "Ubicación" : "Ubicación",
+    "Temporada" : "Temporada",
+    "Entregado" : "Entregado"
+  },
+  "Empresa" : 
+  {
+    "PermitirCambioFacturaIVAIncluido" : false
+  }
+}

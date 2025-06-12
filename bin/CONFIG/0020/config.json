@@ -1,0 +1,28 @@
+{
+  "Traslations":
+  {
+    "Temporadas": "Temporadas",
+    "temporadas": "temporadas",
+    "Familia": "Familia",
+    "Temporada": "Temporada",
+    "Ubicación": "Ubicación",
+    "Gastos": "Gastos",
+    "Entregado": "Entregado",
+    "Proyectos": "Proyectos",
+    "categoría": "categoría",
+    "temporada": "temporada",
+    "Pedidos de clientes": "Pedidos de clientes"
+  },
+  "Empresa":
+  {
+    "PermitirCambioFacturaIVAIncluido": false
+  },
+  "999":
+  {
+    "Esquema": "CORE",
+    "Sequencia": "OOFF",
+    "AgruparRecibos": false,
+    "UsarVencimiento": false
+  }
+}
+

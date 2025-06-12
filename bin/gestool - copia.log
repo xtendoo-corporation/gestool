@@ -1,0 +1,23 @@
+13/06/2017 09:23:10: WNDREADPALBMPEX( 629 )	uBmp = "bNoFilter16"	"not found" = "not found"	
+13/06/2017 09:23:10: WNDREADPALBMPEX( 633 )	uBmp = "bNoFilter16"	"invalid resource" = "invalid resource"	
+15/06/2017 11:06:06: WNDREADPALBMPEX( 629 )	uBmp = "bNoFilter16"	"not found" = "not found"	
+15/06/2017 11:06:06: WNDREADPALBMPEX( 633 )	uBmp = "bNoFilter16"	"invalid resource" = "invalid resource"	
+16/06/2017 11:15:24: WNDREADPALBMPEX( 629 )	uBmp = "bNoFilter16"	"not found" = "not found"	
+16/06/2017 11:15:24: WNDREADPALBMPEX( 633 )	uBmp = "bNoFilter16"	"invalid resource" = "invalid resource"	
+16/06/2017 11:27:19: WNDREADPALBMPEX( 629 )	uBmp = "bNoFilter16"	"not found" = "not found"	
+16/06/2017 11:27:19: WNDREADPALBMPEX( 633 )	uBmp = "bNoFilter16"	"invalid resource" = "invalid resource"	
+16/06/2017 11:50:57: WNDREADPALBMPEX( 629 )	uBmp = "bNoFilter16"	"not found" = "not found"	
+16/06/2017 11:50:57: WNDREADPALBMPEX( 633 )	uBmp = "bNoFilter16"	"invalid resource" = "invalid resource"	
+16/06/2017 11:57:56: WNDREADPALBMPEX( 629 )	uBmp = "bNoFilter16"	"not found" = "not found"	
+16/06/2017 11:57:56: WNDREADPALBMPEX( 633 )	uBmp = "bNoFilter16"	"invalid resource" = "invalid resource"	
+16/06/2017 13:45:37: WNDREADPALBMPEX( 629 )	uBmp = "bNoFilter16"	"not found" = "not found"	
+16/06/2017 13:45:37: WNDREADPALBMPEX( 633 )	uBmp = "bNoFilter16"	"invalid resource" = "invalid resource"	
+19/06/2017 08:19:43: EXCESS RELEASE OF FONT Ms Sans Serif[ hFont : 0] ( nCount : 0 )
+	 <-TFONT:END(285) <-TCONTROL:DESTROY(2139) <-TBTNBMP:DESTROY(929) <-TWINDOW:HANDLEEVENT(0) <-TCONTROL:HANDLEEVENT(1731) <-TBTNBMP:HANDLEEVENT(1843) <-_FWH(3325) <-WINRUN(0) <-TMDIFRAME:ACTIVATE(1036)
+	------------------------------------------------------------	
+19/06/2017 08:19:44: EXCESS RELEASE OF FONT Ms Sans Serif[ hFont : 0] ( nCount : -1 )
+	 <-TFONT:END(285) <-TCONTROL:DESTROY(2139) <-TBTNBMP:DESTROY(929) <-TWINDOW:HANDLEEVENT(0) <-TCONTROL:HANDLEEVENT(1731) <-TBTNBMP:HANDLEEVENT(1843) <-_FWH(3325) <-WINRUN(0) <-TMDIFRAME:ACTIVATE(1036)
+	------------------------------------------------------------	
+19/06/2017 08:19:44: EXCESS RELEASE OF FONT Ms Sans Serif[ hFont : 0] ( nCount : -2 )
+	 <-TFONT:END(285) <-TCONTROL:DESTROY(2139) <-TBTNBMP:DESTROY(929) <-TWINDOW:HANDLEEVENT(0) <-TCONTROL:HANDLEEVENT(1731) <-TBTNBMP:HANDLEEVENT(1843) <-_FWH(3325) <-WINRUN(0) <-TMDIFRAME:ACTIVATE(1036)
+	------------------------------------------------------------	

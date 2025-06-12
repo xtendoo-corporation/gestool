@@ -1,0 +1,2274 @@
+
+DataBases in use
+================
+
+  1:    ADSAREA                            RddName: ADSADT
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          1      .F.   .F.
+
+     Indexes in use                        TagName
+
+     Relations in use
+
+  2:    FACCLIT                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        2          2      .F.   .F.
+
+     Indexes in use                        TagName
+        => CSERIE + str( NNUMFAC ) + CSUFFAC  NNUMFAC
+           dFecFac                            DFECFAC
+           CCODCLI                            CCODCLI
+           Upper( CNOMCLI )                   CNOMCLI
+           CPOBCLI                            CPOBCLI
+           cCodObr + Dtos( dFecFac )          CCODOBR
+           cCodAge + Dtos( dFecFac )          CCODAGE
+           CTURFAC + CSUFFAC + CCODCAJ        CTURFAC
+           cCodPago                           CCODPAGO
+           CCODAGE + DtoS( DFECFAC )          CAGEFEC
+           str( NNUMLIQ ) + CSUFLIQ           NNUMLIQ
+           lSndDoc                            LSNDDOC
+           cNumDoc                            CNUMDOC
+           cNumPre                            CNUMPRE
+           cNumPed                            CNUMPED
+
+     Relations in use
+
+  3:    FACCLIL                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        8          8      .F.   .F.
+
+     Indexes in use                        TagName
+        => cSerie + str( nNumFac ) + cSufFac  NNUMFAC
+           cRef                               CREF
+           cLote                              LOTE
+           cCodAlb                            CCODALB
+           cSerie + str( nNumFac ) + cSufFac +CNUMREF
+           '11' + cSerie + str( nNumFac ) + SpINUMFAC
+           cRef + cCodCli + dtos( dFecFac ) + CREFFEC
+           cRef + cAlmLin + dtos( dFecFac ) + CSTKFAST
+           cSerie + str( nNumFac ) + cSufFac +NNUMLIN
+           cSerie + str( nNumFac ) + cSufFac +NPOSPRINT
+
+     Relations in use
+
+  4:    FACCLIE                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerFac + str( nNumFac ) + cSufFac NNUMFAC
+
+     Relations in use
+
+  5:    FACCLIC                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .F.   .T.
+
+     Indexes in use                        TagName
+        => cSerFac + str( nNumFac ) + cSufFac NNUMFAC
+           cSitua                             CSITUA
+           str( idPs )                        IDPS
+
+     Relations in use
+
+  6:    CLIENT                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        2        168      .F.   .F.
+
+     Indexes in use                        TagName
+        => Upper( Field->COD )                COD
+           UPPER( Field->TITULO )             TITULO
+           Field->NIF                         NIF
+           UPPER( Field->POBLACION )          POBLACION
+           UPPER( Field->PROVINCIA )          PROVINCIA
+           Field->CodPostal                   CODPOSTAL
+           Field->Telefono                    TELEFONO
+           Upper( Field->NbrEst )             NBREST
+           Upper( Field->cMeiInt )            CMEIINT
+           UPPER( Field->DOMICILIO )          DOMICILIO
+           UPPER( Field->CCODRUT )            CCODRUT
+           COD                                CCLIWEB
+           Field->lSndInt                     LSNDINT
+           Field->cCodUsr + Dtos( Field->dFecCCCODUSR
+           Str( Field->cCodWeb, 11 )          CCODWEB
+
+     Relations in use
+
+  7:    DBA                                RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CCODGRP                            CCODGRP
+           CNOMGRP                            CNOMGRP
+           CCODPDR                            CCODPDR
+
+     Relations in use
+
+  8:    CLIDAD                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cCodCli                            CCODCLI
+           cDesFac                            CDESFAC
+
+     Relations in use
+
+  9:    ARTALM                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cCodArt + cCodAlm                  CCODART +
+
+     Relations in use
+
+ 10:    ARTICULO                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+      741       1265      .F.   .F.
+
+     Indexes in use                        TagName
+        => Codigo                             CODIGO
+           UPPER( NOMBRE )                    NOMBRE
+           FAMILIA + CODIGO                   CFAMCOD
+           cPrvHab                            CPRVHAB
+           Codigo                             CODOBS
+           Upper( Nombre )                    NOMOBS
+           CCODTIP                            CCODTIP
+           CCODCATE                           CCODCATE
+           CCODTEMP                           CCODTEMP
+           CCODFAB                            CCODFAB
+           Field->cCodEst                     CCODEST
+           FAMILIA + NOMBRE                   CFAMNOM
+           Field->Familia + Str( Field->nPosTpNPOSTPV
+           Field->Familia + Field->NOMBRE     NNOMTPV
+           FAMILIA                            FAMILIA
+
+     Relations in use
+
+ 11:    NCOUNT                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        9         26      .F.   .F.
+
+     Indexes in use                        TagName
+        => Upper( Doc )                       DOC
+           Upper( Des )                       DES
+           cCodDlg                            CCODDLG
+
+     Relations in use
+
+ 12:    AGENTES                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CCODAGE                            CCODAGE
+           CAPEAGE                            CAPEAGE
+           CNBRAGE                            CNBRAGE
+           CAGEREL                            CAGEREL
+
+     Relations in use
+
+ 13:    RDOCUMEN                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+       11         48      .F.   .F.
+
+     Indexes in use                        TagName
+           Codigo                             CODIGO
+        => cTipo + Codigo                     CTIPO
+           cDescrip                           CDESCRIP
+
+     Relations in use
+
+ 14:    ARTLENG                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cCodArt                            CCODART
+           cCodArt + CCODLEN                  CARTLEN
+
+     Relations in use
+
+ 15:    DBA2                               RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          1      .F.   .F.
+
+     Indexes in use                        TagName
+        => CCODMED                            CCODMED
+           CNOMBRE                            CNOMBRE
+
+     Relations in use
+
+ 16:    DBA3                               RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CCODIMP                            CCODIMP
+           CNOMIMP                            CNOMIMP
+           NVALIMP                            NVALIMP
+
+     Relations in use
+
+ 17:    FACCLIP                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        8          8      .F.   .F.
+
+     Indexes in use                        TagName
+           cSerie + str( nNumFac ) + cSufFac +NNUMFAC
+           cCodCli + cSerie + str( nNumFac ) +CCODCLI
+           cNomCli + cSerie + str( nNumFac ) +CNOMCLI
+           dPreCob                            DPRECOB
+           dFecVto                            DFECVTO
+           dEntrada                           DENTRADA
+           nImporte                           NIMPORTE
+           cCodPgo                            CCODPGO
+           cCodAge                            CCODAGE
+           cCodCli                            LCODCLI
+           str( nNumRem ) + cSufRem           NNUMREM
+           cCtaRem                            CCTAREM
+           str( nNumCob ) + cSufCob           NNUMCOB
+           cTurRec + cSufFac + cCodCaj        CTURREC
+        => cSerie + str( nNumFac ) + cSufFac +FNUMFAC
+
+     Relations in use
+
+ 18:    PRO                                RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => Field->CCODPRO                     CCODPRO
+           Field->CDESPRO                     CDESPRO
+           Str( Field->cCodWeb, 11 )          CCODWEB
+
+     Relations in use
+
+ 19:    TBLPRO                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .F.   .T.
+
+     Indexes in use                        TagName
+        => upper( Field->cCodPro ) + upper( FiCCODPRO
+           upper( Field->cCodPro ) + upper( FiCCODDES
+           upper( Field->cCodPro ) + Str( FielNORDPRO
+           upper( Field->cCodPro ) + Field->nBNBARPRO
+           upper( Field->cCodPro )            CPRO
+           Str( Field->cCodWeb, 11 )          CCODWEB
+           Field->cCodTbl                     CCODTBL
+
+     Relations in use
+
+ 20:    FPAGO                              RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          1      .F.   .F.
+
+     Indexes in use                        TagName
+        => Field->cCodPago                    CCODPAGO
+           Field->CDESPAGO                    CDESPAGO
+           Str( Field->nPosTpv )              NPOSTPV
+           UPPER( Field->CCODPAGO )           CCODPGOBIG
+           UPPER( Field->CDESPAGO )           CDESPGOBIG
+           upper( Field->cCodWeb )            CCODWEB
+
+     Relations in use
+
+ 21:    ANTCLIT                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerAnt + Str( nNumAnt ) + cSufAnt NNUMANT
+           dFecAnt                            DFECANT
+           cCodCli                            CCODCLI
+           Upper( cNomCli )                   CNOMCLI
+           cCodObr                            CCODOBR
+           cTurAnt + cSufAnt + cCodCaj        CTURANT
+           cCodAge                            CCODAGE
+           cCodRut                            CCODRUT
+           cPobCli + cNomCli                  CPOBCLI
+           cCodAge + DtoS( dFecAnt )          CAGEFEC
+           cNumDoc                            CNUMDOC
+           lSndDoc                            LSNDDOC
+           cTurLiq + cSufAnt + cCajLiq        CTURLIQ
+           cCodUsr + Dtos( dFecCre ) + cTimCreCCODUSR
+           cSerAnt + Str( nNumAnt ) + cSufAnt LLIQUIDADA
+
+     Relations in use
+
+ 22:    EMPBNC                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CCODBNC                            CCODBNC
+           CNOMBNC                            CNOMBNC
+           CPAISIBAN + CCTRLIBAN + CENTBNC + CCCTABNC
+
+     Relations in use
+
+ 23:    FACCLII                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerie + str( nNumFac ) + cSufFac  NNUMFAC
+           '11' + cSerie + str( nNumFac ) + SpINUMFAC
+
+     Relations in use
+
+ 24:    FACCLID                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerFac + str( nNumFac ) + cSufFac NNUMFAC
+           '11' + cSerFac + str( nNumFac ) + SINUMFAC
+
+     Relations in use
+
+ 25:    FACCLIS                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerFac + str( nNumFac ) + cSufFac NNUMFAC
+           cRef + cAlmLin + cNumSer           CREFSER
+           cNumSer                            CNUMSER
+           '11' + cSerFac + str( nNumFac ) + SINUMFAC
+
+     Relations in use
+
+ 26:    CLIATP                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CCODCLI                            CCODCLI
+           CCODGRP                            CCODGRP
+           CCODCLI + CCODART + CCODPR1 + CCODPCCLIART
+           CCODCLI + CCODFAM                  CCODFAM
+           CCODGRP + CCODART + CCODPR1 + CCODPCGRPART
+           CCODGRP + CCODFAM                  CGRPFAM
+           CCODAGE                            CCODAGE
+           CCODAGE + CCODART + CCODPR1 + CCODPCAGEART
+
+     Relations in use
+
+ 27:    CLIINC                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CCODCLI + dtos(dFecInc)            CCODCLI
+
+     Relations in use
+
+ 28:    FACRECT                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .F.   .T.
+
+     Indexes in use                        TagName
+        => CSERIE + Str( NNUMFAC ) + CSUFFAC  NNUMFAC
+           dFecFac                            DFECFAC
+           CCODCLI                            CCODCLI
+           Upper( CNOMCLI )                   CNOMCLI
+           CCODOBR                            CCODOBR
+           CTURFAC + CSUFFAC + CCODCAJ        CTURFAC
+           cCodAge                            CCODAGE
+           CCODRUT                            CCODRUT
+           cCodPago                           CCODPAGO
+           CPOBCLI + CNOMCLI                  CPOBCLI
+           CDOCORG                            CDOCORG
+           CCODAGE + DtoS( DFECFAC )          CAGEFEC
+           Str( NNUMLIQ ) + CSUFLIQ           NNUMLIQ
+           CABNFAC                            CABNFAC
+           lSndDoc                            LSNDDOC
+
+     Relations in use
+
+ 29:    FACRECL                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERIE + Str(NNUMFAC) + CSUFFAC    NNUMFAC
+           CSERIE + Str(NNUMFAC) + CSUFFAC + CCFACREF
+           CREF                               CREF
+           cLote                              LOTE
+           cRef + cAlmLin + dtos( dFecFac ) + CSTKFAST
+           '14' + cSerie + Str( nNumFac ) + SpINUMFAC
+           cSerie + Str(nNumFac) + cSufFac + sNPOSPRINT
+
+     Relations in use
+
+ 30:    FACRECS                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerFac + Str( nNumFac ) + cSufFac NNUMFAC
+           cRef + cAlmLin + cNumSer           CREFSER
+           cNumSer                            CNUMSER
+           '14' + cSerFac + Str( nNumFac ) + SINUMFAC
+
+     Relations in use
+
+ 31:    ALBCLIT                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERALB + Str(NNUMALB) + CSUFALB   NNUMALB
+           dFecAlb                            DFECALB
+           CCODCLI                            CCODCLI
+           Upper( CNOMCLI )                   CNOMCLI
+           cCodObr + Dtos( dFecAlb )          COBRA
+           cCodAge + Dtos( dFecAlb )          CCODAGE
+           CCODSUALB                          CCODSUALB
+           LFACTURADO                         LFACTURADO
+           CNUMFAC                            CNUMFAC
+           CTURALB + CSUFALB + CCODCAJ        CTURALB
+           Str( nNumOrd ) + cSufOrd           NNUMORD
+           CCODTRN                            CCODTRN
+           CCODCLI + CCODOBR                  CCODOBR
+           lSndDoc                            LSNDDOC
+           Field->cCodUsr + Dtos( Field->dFecCCCODUSR
+
+     Relations in use
+
+ 32:    ALBCLIL                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerAlb + Str( nNumAlb ) + cSufAlb NNUMALB
+           cRef + cCodPr1 + cCodPr2 + cSerAlb CREF
+           cLote                              LOTE
+           cRef + cLote                       CREFLOTE
+           cNumPed                            CNUMPED
+           cNumPed + cRef + cValPr1 + cValPr2 CNUMPEDREF
+           cNumPed + cRef + cValPr1 + cValPr2 CREFNOFAC
+           cNumPed + cRef + cCodPr1 + cCodPr2 CNUMPEDDET
+           cSerAlb + Str( nNumAlb ) + cSufAlb CNUMREF
+           cRef + cCodCli + dtos( dFecAlb ) + CREFFEC
+           cNumPed + cRef                     CPEDREF
+           '10' + cSerAlb + Str( nNumAlb ) + SINUMALB
+           cSerAlb + Str( nNumAlb ) + cSufAlb NPOSPRINT
+           cRef + cAlmLin + dtos( dFecAlb )   CSTKFAST
+           cRef + cAlmLin + dtos( dFecAlb )   CVTAFAST
+
+     Relations in use
+
+ 33:    ALBCLIP                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERALB + STR( NNUMALB ) + CSUFALB NNUMALB
+           cTurRec + cSufAlb + cCodCaj        CTURREC
+           cCodCli                            CCODCLI
+           dEntrega                           DENTREGA
+           cEPaisIBAN + cECtrlIBAN + cEntEmp +LCTABNC
+           '10' + cSerAlb + Str( nNumAlb ) + SINUMALB
+
+     Relations in use
+
+ 34:    ALBCLII                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERALB + STR( NNUMALB ) + CSUFALB NNUMALB
+           '10' + cSerAlb + Str( nNumAlb ) + SINUMALB
+
+     Relations in use
+
+ 35:    ALBCLID                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERALB + STR( NNUMALB ) + CSUFALB NNUMALB
+           '10' + cSerAlb + Str( nNumAlb ) + SINUMALB
+
+     Relations in use
+
+ 36:    ALBCLIS                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerAlb + Str( nNumAlb ) + cSufAlb NNUMALB
+           cRef + cAlmLin + cNumSer           CREFSER
+           cNumSer                            CNUMSER
+           '10' + cSerAlb + Str( nNumAlb ) + SINUMALB
+
+     Relations in use
+
+ 37:    SATCLIT                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERSAT + STR( NNUMSAT ) + CSUFSAT NNUMSAT
+           DFECSAT                            DFECSAT
+           CCODCLI + Dtos( dFecSat )          CCODCLI
+           cNomCli + Dtos( dFecSat )          CNOMCLI
+           cCodObr                            CCODOBR
+           cCodAge                            CCODAGE
+           CTURSAT + CSUFSAT + cCodCaj        CTURSAT
+           lSndDoc                            LSNDDOC
+           cCodUsr + Dtos( dFecCre ) + cTimCreCCODUSR
+           cNumAlb                            CNUMALB
+           '32' + cSerSat + Str( nNumSat ) + SINUMSAT
+           cCodOpe                            CCODOPE
+           cCodCat                            CCODCAT
+           cSituac                            CSITUAC
+           cCodEst                            CCODEST
+
+     Relations in use
+
+ 38:    SATCLIL                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERSAT + STR( NNUMSAT ) + CSUFSAT NNUMSAT
+           CREF                               CREF
+           cLote                              LOTE
+           '32' + cSerSat + Str( nNumSat ) + SINUMSAT
+           Str( NNUMSAT ) + Str( nNumLin )    NNUMLIN
+           cCodCli                            CCODCLI
+           cCodCli + cRef                     CCLIART
+           cSerSat + Str( nNumSat ) + cSufSat NPOSPRINT
+
+     Relations in use
+
+ 39:    SATCLII                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERSAT + STR( NNUMSAT ) + CSUFSAT NNUMSAT
+           '32' + cSerSat + Str( nNumSat ) + SINUMSAT
+
+     Relations in use
+
+ 40:    SATCLID                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERSAT + STR( NNUMSAT ) + CSUFSAT NNUMSAT
+           '32' + cSerSat + Str( nNumSat ) + SINUMSAT
+
+     Relations in use
+
+ 41:    SATCLIS                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerSat + Str( nNumSat ) + cSufSat NNUMSAT
+           cRef + cAlmLin + cNumSer           CREFSER
+           cNumSer                            CNUMSER
+           '32' + cSerSat + Str( nNumSat ) + SINUMSAT
+           cSerSat + Str( nNumSat ) + cSufSat NNUMREF
+           cRef + cNumSer                     CREF
+
+     Relations in use
+
+ 42:    PEDCLIT                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => Field->CSERPED + STR( Field->NNUMPENNUMPED
+           Field->DFECPED                     DFECPED
+           Field->CCODCLI                     CCODCLI
+           Upper( Field->CNOMCLI )            CNOMCLI
+           Field->cCodObr + Dtos( Field->dFecPCCODOBR
+           Field->cCodAge + Dtos( Field->dFecPCCODAGE
+           Dtos( Field->dFecEnt )             DFECENT
+           Field->CTURPED + Field->CSUFPED + FCTURPED
+           Field->cNumPre                     CNUMPRE
+           Field->lSndDoc                     LSNDDOC
+           Field->cCodUsr + Dtos( Field->dFecCCCODUSR
+           Dtos( Field->dFecPed )             LINTPEDCLI
+           Field->cNumAlb                     CNUMALB
+           Str( Field->cCodWeb )              CCODWEB
+           '09' + Field->cSerPed + Str( Field-INUMPED
+
+     Relations in use
+
+ 43:    PEDCLIT2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERPED + STR( NNUMPED ) + CSUFPED NNUMPED
+           cRef                               CREF
+           cLote                              LOTE
+           '09' + cSerPed + Str( nNumPed ) + SINUMPED
+           cSerPed + Str( nNumPed ) + cSufPed NPOSPRINT
+           cRef + cAlmLin                     CSTKFAST
+
+     Relations in use
+
+ 44:    PEDCLIP                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerPed + Str( nNumPed ) + cSufPed NNUMPED
+           cTurRec + cSufPed + cCodCaj        CTURREC
+           cCodCli                            CCODCLI
+           dEntrega                           DENTREGA
+           cEPaisIBAN + cECtrlIBAN + cEntEmp +LCTABNC
+
+     Relations in use
+
+ 45:    PEDCLII                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERPED + STR( NNUMPED ) + CSUFPED NNUMPED
+           CSERPED + STR( NNUMPED ) + CSUFPED LSNDWEB
+           '09' + cSerPed + Str( nNumPed ) + SINUMPED
+
+     Relations in use
+
+ 46:    PEDCLID                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERPED + STR( NNUMPED ) + CSUFPED NNUMPED
+           '09' + cSerPed + Str( nNumPed ) + SINUMPED
+
+     Relations in use
+
+ 47:    PEDCLIR                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERPED + STR( NNUMPED ) + CSUFPED NNUMPED
+           CREF + CVALPR1 + CVALPR2           CREF
+           '09' + cSerPed + Str( nNumPed ) + SINUMPED
+
+     Relations in use
+
+ 48:    PRECLIT                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERPRE + STR( NNUMPRE ) + CSUFPRE NNUMPRE
+           DFECPRE                            DFECPRE
+           CCODCLI + Dtos( dFecPre )          CCODCLI
+           cNomCli + Dtos( dFecPre )          CNOMCLI
+           cCodObr                            CCODOBR
+           cCodAge                            CCODAGE
+           CTURPRE + CSUFPRE + cCodCaj        CTURPRE
+           lSndDoc                            LSNDDOC
+           cCodUsr + Dtos( dFecCre ) + cTimCreCCODUSR
+           '08' + cSerPre + Str( nNumPre ) + SINUMPRE
+           Str( Field->cCodWeb )              CCODWEB
+           UPPER( Field->cPobCli )            POBLACION
+           UPPER( Field->cPrvCli )            PROVINCIA
+           Field->cPosCli                     CODPOSTAL
+           dFecPre                            DDESFEC
+
+     Relations in use
+
+ 49:    PRECLIL                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERPRE + STR( NNUMPRE ) + CSUFPRE NNUMPRE
+           CREF                               CREF
+           cLote                              LOTE
+           '08' + cSerPre + Str( nNumPre ) + SINUMPRE
+           Str( NNUMPRE ) + Str( nNumLin )    NNUMLIN
+           CSERPRE + STR( NNUMPRE ) + CSUFPRE CCODFAM
+           cSerPre + Str( nNumPre ) + cSufPre NPOSPRINT
+
+     Relations in use
+
+ 50:    PRECLII                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERPRE + STR( NNUMPRE ) + CSUFPRE NNUMPRE
+           '08' + cSerPre + Str( nNumPre ) + SINUMPRE
+
+     Relations in use
+
+ 51:    PRECLID                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERPRE + STR( NNUMPRE ) + CSUFPRE NNUMPRE
+           '08' + cSerPre + Str( nNumPre ) + SINUMPRE
+
+     Relations in use
+
+ 52:    TIKET                              RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERTIK + CNUMTIK + CSUFTIK        CNUMTIK
+           dFecTik                            DFECTIK
+           CCLITIK                            CCLITIK
+           CNOMTIK                            CNOMTIK
+           CCCJTIK                            CNCJTIK
+           CCCJTIK                            CCCJTIK
+           CRETMAT                            CRETMAT
+           CTURTIK + CSUFTIK + CNCJTIK        CTURTIK
+           CALMTIK                            CALMTIK
+           cSufTik                            CSUFTIK
+           CNUMDOC                            CNUMDOC
+           LSNDDOC                            LSNDDOC
+           cCcjTik + Dtos( dFecCre ) + cTimCreCCODUSR
+           cValDoc                            CDOCVAL
+           cSerTik + cNumTik + cSufTik        CNUMVAL
+
+     Relations in use
+
+ 53:    TIKEL                              RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERTIL + CNUMTIL + CSUFTIL        CNUMTIL
+           CCBATIL                            CCBATIL
+           CCOMTIL                            CCOMTIL
+           cCbaTil + cAlmLin + dtos( dFecTik )CSTKFAST
+           cComTil  + cAlmLin + dtos( dFecTik CSTKCOMB
+           CSERTIL + CNUMTIL + CSUFTIL        CTIKVAL
+           nOrTImp                            NORTIMP
+           CSERTIL + CNUMTIL + CSUFTIL + CCBATCNUMCBA
+           cNumDev + Str( nNumLin )           CNUMDEV
+           cNumDev                            CDEVTIK
+           '12' + cSerTil + cNumTil + cSufTil INUMTIK
+           cSerTil + cNumTil + cSufTil + Str( NORDLIN
+
+     Relations in use
+
+ 54:    TIKES                              RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerTik + cNumTik + cSufTik + Str( NNUMTIK
+           cCbaTil + cAlmLin + cNumSer        CREFSER
+           cNumSer                            CNUMSER
+           '12' + cSerTik + cNumTik + cSufTik INUMTIK
+
+     Relations in use
+
+ 55:    CLIBNC                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cCodCli                            CCODCLI
+           cCodCli + cEntBnc + cSucBnc + cDigBCCTABNC
+           cCodCli                            CBNCDEF
+           cCodCli + cEntBnc + cSucBnc + cDigBCCODDEF
+
+     Relations in use
+
+ 56:    PROVART                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cCodArt                            CCODART
+           cCodPrv + cCodArt                  CCODPRV
+           cCodPrv + cRefPrv                  CREFPRV
+           cCodArt + cCodPrv + cRefPrv        CREFART
+           cCodArt                            LDEFPRV
+
+     Relations in use
+
+ 57:    CODEBAR                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+      185        270      .F.   .F.
+
+     Indexes in use                        TagName
+        => cCodArt                            CCODART
+           cCodBar                            CCODBAR
+           cCodArt + cCodBar                  CARTBAR
+           cCodArt                            CDEFART
+
+     Relations in use
+
+ 58:    FAMILIAS                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        2         18      .F.   .F.
+
+     Indexes in use                        TagName
+        => Field->cCodFam                     CCODFAM
+           Upper( Field->cNomFam )            CNOMFAM
+           Str( Field->nPosTpv )              NPOSTPV
+           Upper( cNomFam )                   LINCTPV
+           lSelDoc                            LSELDOC
+           cType                              CTYPE
+           cFamCmb                            CFAMCMB
+
+     Relations in use
+
+ 59:    ARTTIK                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CCODKIT                            CCODKIT
+           CCODKIT + cRefKit                  CCODREF
+           cRefKit                            CREFKIT
+
+     Relations in use
+
+ 60:    TARPRET                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => Field->CCODTAR                     CCODTAR
+           Field->CNOMTAR                     CNOMTAR
+
+     Relations in use
+
+ 61:    TARPREL                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => Field->CCODTAR + Field->CCODART    CCODART
+           Field->CCODTAR + Field->CNOMART    CNOMART
+           Field->CCODTAR + Field->CCODFAM    CCODFAM
+           Field->CCODTAR + Field->CNOMFAM    CNOMFAM
+           Field->CCODTAR + Field->CCODART + FCTARPRP
+
+     Relations in use
+
+ 62:    TARPRES                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => Field->CCODTAR + Field->CCODART + FCCODACC
+           Field->CCODTAR + Field->CCODART + FCCODAGE
+
+     Relations in use
+
+ 63:    PROMOL                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => Field->CCODPRO                     CCODPRO
+           Field->CNOMPRO                     CNOMPRO
+           Field->CCODTAR + Field->CCODART    CCODTAR
+           Field->CCODART                     CCODART
+
+     Relations in use
+
+ 64:    PROMOL2                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => Field->CCODPRO                     CCODPRO
+           Field->CCODPRO + Field->CCODAGE    CCODTAR
+
+     Relations in use
+
+ 65:    PROMOC                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => Field->CCODPRO                     CCODPRO
+           Field->CCODPRO + Field->CCODCLI + FCCODCLI
+
+     Relations in use
+
+ 66:    TIVA                               RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        5          5      .F.   .F.
+
+     Indexes in use                        TagName
+        => Field->Tipo                        TIPO
+           Upper( Field->DescIva )            DESCIVA
+           Str( Field->TpIva, 6, 2 )          TPIVA
+           Str( Field->nOldIva, 6, 2 )        NOLDIVA
+           Field->CodTer                      CODTER
+           Str( Field->cCodWeb, 11 )          CCODWEB
+
+     Relations in use
+
+ 67:    DIVISAS                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          2      .F.   .F.
+
+     Indexes in use                        TagName
+        => CCODDIV                            CCODDIV
+           CNOMDIV                            CNOMDIV
+
+     Relations in use
+
+ 68:    OBRAST                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cCodCli + cCodObr                  CCODCLI
+           cCodCli + cNomObr                  CNOMOBR
+           cCodCli                            LDEFOBR
+           cCodObr                            CCODIGO
+           cNomObr                            CNOMBRE
+           Str( cCodWeb, 11 )                 CCODWEB
+           Upper( cDirObr )                   CDIROBR
+           cCodPos                            CCODPOS
+           Field->cCodEdi + Field->cDeparta   CCODEDI
+
+     Relations in use
+
+ 69:    OFERTA                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CARTOFE + CCODPR1 + CCODPR2 + CVALPCARTOFE
+           CDESOFE                            CDESOFE
+           DTOC( DINIOFE )                    DINIOFE
+           DTOC( DFINOFE )                    DFINOFE
+
+     Relations in use
+
+ 70:    RUTA                               RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CCODRUT                            CCODRUT
+           CDESRUT                            CDESRUT
+           PadL( AllTrim( CCODRUT ), 4 )      TRMCOD
+
+     Relations in use
+
+ 71:    ARTDIV                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1        669      .F.   .F.
+
+     Indexes in use                        TagName
+        => cCodArt + cCodPr1 + cCodPr2 + cValPCCODART
+           cCodArt + cValPr1 + cValPr2        CVALPRP
+           cCodArt                            CCODIGO
+
+     Relations in use
+
+ 72:    CAJAS                              RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          1      .F.   .F.
+
+     Indexes in use                        TagName
+        => Upper( cCodCaj )                   CCODCAJ
+           Upper( cNomCaj )                   CNOMCAJ
+           Upper( cCodCaj )                   LNOARQ
+           Upper( cCajPrt )                   CCAJPRT
+
+     Relations in use
+
+ 73:    ALMACEN                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          1      .F.   .F.
+
+     Indexes in use                        TagName
+        => CCODALM                            CCODALM
+           Upper( CNOMALM )                   CNOMALM
+           CCOMALM                            CCOMALM
+
+     Relations in use
+
+ 74:    DELEGA                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        2          8      .F.   .F.
+
+     Indexes in use                        TagName
+        => CCODEMP + CCODDLG                  CCODEMP
+
+     Relations in use
+
+ 75:    AGECOM                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cCodAge + Str( nImpVta )           CCODAGE
+
+     Relations in use
+
+ 76:    ALBPROVL                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+     2008       2676      .F.   .F.
+
+     Indexes in use                        TagName
+        => cSerAlb + Str( nNumAlb ) + cSufAlb NNUMALB
+           cSerAlb + Str( nNumAlb ) + cSufAlb NNUMLIN
+           cRef + cValPr1 + cValPr2           CREF
+           cLote                              LOTE
+           cNumPed                            CNUMPED
+           cNumPed + cRef + cCodPr1 + cCodPr2 CPEDCLIREF
+           cCodPed                            CCODPED
+           cCodPed + cRef + cValPr1 + cValPr2 CPEDPRVREF
+           cCodPed + cRef + cValPr1 + cValPr2 CPEDPRVDET
+           cRef + cValPr1 + cValPr2 + cLote   CSTKREF
+           cNumPed + cRef + cValPr1 + cValPr2 CPCLIDET
+           cCodPed + cRef                     CPEDREF
+           '02' + CSERALB + STR( NNUMALB ) + CINUMALB
+           cRef + cLote                       CARTLOTE
+           cRef + cAlmLin + dtos( dFecAlb ) + CSTKFASTIN
+
+     Relations in use
+
+ 77:    ALBPRVS                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerAlb + Str( nNumAlb ) + cSufAlb NNUMALB
+           cRef + cAlmLin + cNumSer           CREFSER
+           cNumSer                            CNUMSER
+
+     Relations in use
+
+ 78:    EMPRESA                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        3         12      .F.   .F.
+
+     Indexes in use                        TagName
+        => CodEmp                             CODEMP
+           CNOMBRE                            CNOMBRE
+           CCODGRP                            CCODGRP
+
+     Relations in use
+
+ 79:    FACPRVT                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERFAC + STR( NNUMFAC ) + CSUFFAC NNUMFAC
+           DFECFAC                            DFECFAC
+           CCODPRV                            CCODPRV
+           Upper( CNOMPRV )                   CNOMPRV
+           Upper( cSuPed )                    CSUPED
+           Upper( cNumDoc )                   CNUMDOC
+           Upper( cNfc )                      CNFC
+           CTURFAC + CSUFFAC + cCodCaj        CTURFAC
+           Field->cCodUsr + Dtos( Field->dFecCCCODUSR
+           cCodPago                           CCODPAGO
+           '03' + CSERFAC + STR( NNUMFAC ) + SINUMFAC
+           cCodPrv + Upper( cSuPed )          CPRVFAC
+           cCtrCoste                          CCTRCOSTE
+           DFECFAC                            DDESFEC
+
+     Relations in use
+
+ 80:    FACPRVS                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerFac + Str( nNumFac ) + cSufFac NNUMFAC
+           cRef + cAlmLin + cNumSer           CREFSER
+           cNumSer                            CNUMSER
+
+     Relations in use
+
+ 81:    FACPRVL                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+           CSERFAC + STR( NNUMFAC ) + CSUFFAC NNUMFAC
+        => cRef + cValPr1 + cValPr2           CREF
+           cRef + cValPr1 + cValPr2 + cLote   CREFLOTE
+           cLote                              LOTE
+           cSerFac + Str( nNumFac ) + cSufFac CREFPRV
+           cRef + dTos( dFecFac )             CREFFEC
+           '03' + CSERFAC + STR( NNUMFAC ) + CINUMFAC
+           cRef + cLote                       CARTLOTE
+           cRef + cAlmLin + dtos( dFecFac ) + CSTKFAST
+           cRef + cAlmOrigen + dtos( dFecFac )CSTKFASTOU
+           cSerFac + Str( nNumFac ) + cSufFac NPOSPRINT
+           dFecFac                            DFECFAC
+
+     Relations in use
+
+ 82:    RCTPRVL                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+           CSERFAC + STR( NNUMFAC ) + CSUFFAC NNUMFAC
+        => cRef + cValPr1 + cValPr2           CREF
+           cLote                              LOTE
+           cRef + cAlmLin + dtos( dFecFac ) + CSTKFAST
+           cRef + cAlmOrigen + dtos( dFecFac )CSTKFASTOU
+           '04' + CSERFAC + STR( NNUMFAC ) + CINUMRCT
+
+     Relations in use
+
+ 83:    RCTPRVS                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerFac + Str( nNumFac ) + cSufFac NNUMFAC
+           cRef + cAlmLin + cNumSer           CREFSER
+           cNumSer                            CNUMSER
+
+     Relations in use
+
+ 84:    PROLIN                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+           CSERORD + STR( NNUMORD,9 ) + CSUFORCNUMORD
+        => CCODART                            CCODART
+           CCODART + CVALPR1 + CVALPR2 + CLOTECARTLOT
+           CLOTE                              CLOTE
+           STR( NNUMLIN, 4 )                  NNUMLIN
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCGRPFAM
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCCODFAM
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCCODTIP
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCCODCAT
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCCODTMP
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCCODFAB
+           CSERORD + STR( NNUMORD, 9 ) + CSUFONTIPART
+           '30' + CSERORD + STR( NNUMORD, 9 ) INUMORD
+           CCODART + CALMORD + DTOS( DFECORD )CSTKFAST
+
+     Relations in use
+
+ 85:    PROMAT                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCNUMORD
+           CCODPRO                            CCODPRO
+        => CCODART                            CCODART
+           CCODART + CVALPR1 + CVALPR2 + CLOTECARTLOT
+           STR( NNUMLIN, 4 )                  NNUMLIN
+           CLOTE                              CLOTE
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCGRPFAM
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCCODFAM
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCCODTIP
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCCODCAT
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCCODTMP
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCCODFAB
+           CSERORD + STR( NNUMORD, 9 ) + CSUFONTIPART
+           '30' + CSERORD + STR( NNUMORD, 9 ) INUMORD
+           CCODART + CALMORD + DTOS( DFECORD )CSTKFAST
+
+     Relations in use
+
+ 86:    PROSER                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERORD + STR( NNUMORD ) + CSUFORD CNUMORD
+           CCODART + CALMORD + CNUMSER        CCODART
+           CNUMSER                            CNUMSER
+           STR( NNUMLIN, 4 ) + CCODART        NNUMLIN
+
+     Relations in use
+
+ 87:    MATSER                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERORD + STR( NNUMORD ) + CSUFORD CNUMORD
+           CCODART + CALMORD + CNUMSER        CCODART
+           CNUMSER                            CNUMSER
+           STR( NNUMLIN, 4 ) + CCODART        NNUMLIN
+
+     Relations in use
+
+ 88:    PEDPRVL                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+           cSerPed + Str( nNumPed ) + cSufPed NNUMPED
+        => cRef                               CREF
+           cLote                              LOTE
+           cRef + cLote                       CREFLOTE
+           cPedCli + cRef + cValPr1 + cValPr2 CPEDCLIREF
+           cPedCli + cRef + cValPr1 + cValPr2 CPEDCLIDET
+           '01' + cSerPed + Str( nNumPed ) + SINUMPED
+           cRef + cAlmLin                     CSTKFAST
+           cRef + cCodPr1 + cCodPr2 + cValPr1 CPEDREF
+           cSerPed + Str( nNumPed ) + cSufPed NPOSPRINT
+           cSerPed + Str( nNumPed ) + cSufPed NNUMPEDREF
+           cSerPed + Str( nNumPed ) + cSufPed CCODFAM
+
+     Relations in use
+
+ 89:    PROVEE                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+      171        171      .F.   .F.
+
+     Indexes in use                        TagName
+        => COD                                COD
+           UPPER( TITULO )                    TITULO
+           NIF                                NIF
+           POBLACION                          POBLACION
+           Telefono                           TELEFONO
+           Fax                                FAX
+           CodPostal                          CODPOSTAL
+           Provincia                          PROVINCIA
+           cMeiInt                            CMEIINT
+           cPerCto                            CPERCTO
+           Upper( cNbrEst )                   CNBREST
+           lSndInt                            LSNDINT
+           Field->cCodUsr + Dtos( Field->dFecCCCODUSR
+
+     Relations in use
+
+ 90:    SATCLIT2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERSAT + STR( NNUMSAT ) + CSUFSAT NNUMSAT
+           DFECSAT                            DFECSAT
+           CCODCLI + Dtos( dFecSat )          CCODCLI
+           cNomCli + Dtos( dFecSat )          CNOMCLI
+           cCodObr                            CCODOBR
+           cCodAge                            CCODAGE
+           CTURSAT + CSUFSAT + cCodCaj        CTURSAT
+           lSndDoc                            LSNDDOC
+           cCodUsr + Dtos( dFecCre ) + cTimCreCCODUSR
+           cNumAlb                            CNUMALB
+           '32' + cSerSat + Str( nNumSat ) + SINUMSAT
+           cCodOpe                            CCODOPE
+           cCodCat                            CCODCAT
+           cSituac                            CSITUAC
+           cCodEst                            CCODEST
+
+     Relations in use
+
+ 91:    SATCLIL2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERSAT + STR( NNUMSAT ) + CSUFSAT NNUMSAT
+           CREF                               CREF
+           cLote                              LOTE
+           '32' + cSerSat + Str( nNumSat ) + SINUMSAT
+           Str( NNUMSAT ) + Str( nNumLin )    NNUMLIN
+           cCodCli                            CCODCLI
+           cCodCli + cRef                     CCLIART
+           cSerSat + Str( nNumSat ) + cSufSat NPOSPRINT
+
+     Relations in use
+
+ 92:    PEDCLIT3                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => Field->CSERPED + STR( Field->NNUMPENNUMPED
+           Field->DFECPED                     DFECPED
+           Field->CCODCLI                     CCODCLI
+           Upper( Field->CNOMCLI )            CNOMCLI
+           Field->cCodObr + Dtos( Field->dFecPCCODOBR
+           Field->cCodAge + Dtos( Field->dFecPCCODAGE
+           Dtos( Field->dFecEnt )             DFECENT
+           Field->CTURPED + Field->CSUFPED + FCTURPED
+           Field->cNumPre                     CNUMPRE
+           Field->lSndDoc                     LSNDDOC
+           Field->cCodUsr + Dtos( Field->dFecCCCODUSR
+           Dtos( Field->dFecPed )             LINTPEDCLI
+           Field->cNumAlb                     CNUMALB
+           Str( Field->cCodWeb )              CCODWEB
+           '09' + Field->cSerPed + Str( Field-INUMPED
+
+     Relations in use
+
+ 93:    PEDCLIL                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERPED + STR( NNUMPED ) + CSUFPED NNUMPED
+           cRef                               CREF
+           cLote                              LOTE
+           '09' + cSerPed + Str( nNumPed ) + SINUMPED
+           cSerPed + Str( nNumPed ) + cSufPed NPOSPRINT
+           cRef + cAlmLin                     CSTKFAST
+
+     Relations in use
+
+ 94:    PEDCLIR2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERPED + STR( NNUMPED ) + CSUFPED NNUMPED
+           CREF + CVALPR1 + CVALPR2           CREF
+           '09' + cSerPed + Str( nNumPed ) + SINUMPED
+
+     Relations in use
+
+ 95:    ALBCLIT2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERALB + Str(NNUMALB) + CSUFALB   NNUMALB
+           dFecAlb                            DFECALB
+           CCODCLI                            CCODCLI
+           Upper( CNOMCLI )                   CNOMCLI
+           cCodObr + Dtos( dFecAlb )          COBRA
+           cCodAge + Dtos( dFecAlb )          CCODAGE
+           CCODSUALB                          CCODSUALB
+           LFACTURADO                         LFACTURADO
+           CNUMFAC                            CNUMFAC
+           CTURALB + CSUFALB + CCODCAJ        CTURALB
+           Str( nNumOrd ) + cSufOrd           NNUMORD
+           CCODTRN                            CCODTRN
+           CCODCLI + CCODOBR                  CCODOBR
+           lSndDoc                            LSNDDOC
+           Field->cCodUsr + Dtos( Field->dFecCCCODUSR
+
+     Relations in use
+
+ 96:    ALBCLIL2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerAlb + Str( nNumAlb ) + cSufAlb NNUMALB
+           cRef + cCodPr1 + cCodPr2 + cSerAlb CREF
+           cLote                              LOTE
+           cRef + cLote                       CREFLOTE
+           cNumPed                            CNUMPED
+           cNumPed + cRef + cValPr1 + cValPr2 CNUMPEDREF
+           cNumPed + cRef + cValPr1 + cValPr2 CREFNOFAC
+           cNumPed + cRef + cCodPr1 + cCodPr2 CNUMPEDDET
+           cSerAlb + Str( nNumAlb ) + cSufAlb CNUMREF
+           cRef + cCodCli + dtos( dFecAlb ) + CREFFEC
+           cNumPed + cRef                     CPEDREF
+           '10' + cSerAlb + Str( nNumAlb ) + SINUMALB
+           cSerAlb + Str( nNumAlb ) + cSufAlb NPOSPRINT
+           cRef + cAlmLin + dtos( dFecAlb )   CSTKFAST
+           cRef + cAlmLin + dtos( dFecAlb )   CVTAFAST
+
+     Relations in use
+
+ 97:    ALBCLIS2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerAlb + Str( nNumAlb ) + cSufAlb NNUMALB
+           cRef + cAlmLin + cNumSer           CREFSER
+           cNumSer                            CNUMSER
+           '10' + cSerAlb + Str( nNumAlb ) + SINUMALB
+
+     Relations in use
+
+ 98:    FACCLIT2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        2          2      .F.   .F.
+
+     Indexes in use                        TagName
+        => CSERIE + str( NNUMFAC ) + CSUFFAC  NNUMFAC
+           dFecFac                            DFECFAC
+           CCODCLI                            CCODCLI
+           Upper( CNOMCLI )                   CNOMCLI
+           CPOBCLI                            CPOBCLI
+           cCodObr + Dtos( dFecFac )          CCODOBR
+           cCodAge + Dtos( dFecFac )          CCODAGE
+           CTURFAC + CSUFFAC + CCODCAJ        CTURFAC
+           cCodPago                           CCODPAGO
+           CCODAGE + DtoS( DFECFAC )          CAGEFEC
+           str( NNUMLIQ ) + CSUFLIQ           NNUMLIQ
+           lSndDoc                            LSNDDOC
+           cNumDoc                            CNUMDOC
+           cNumPre                            CNUMPRE
+           cNumPed                            CNUMPED
+
+     Relations in use
+
+ 99:    FACCLIL2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        7          8      .F.   .F.
+
+     Indexes in use                        TagName
+        => cSerie + str( nNumFac ) + cSufFac  NNUMFAC
+           cRef                               CREF
+           cLote                              LOTE
+           cCodAlb                            CCODALB
+           cSerie + str( nNumFac ) + cSufFac +CNUMREF
+           '11' + cSerie + str( nNumFac ) + SpINUMFAC
+           cRef + cCodCli + dtos( dFecFac ) + CREFFEC
+           cRef + cAlmLin + dtos( dFecFac ) + CSTKFAST
+           cSerie + str( nNumFac ) + cSufFac +NNUMLIN
+           cSerie + str( nNumFac ) + cSufFac +NPOSPRINT
+
+     Relations in use
+
+100:    FACCLIS2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerFac + str( nNumFac ) + cSufFac NNUMFAC
+           cRef + cAlmLin + cNumSer           CREFSER
+           cNumSer                            CNUMSER
+           '11' + cSerFac + str( nNumFac ) + SINUMFAC
+
+     Relations in use
+
+101:    FACCLIP2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        7          8      .F.   .F.
+
+     Indexes in use                        TagName
+        => cSerie + str( nNumFac ) + cSufFac +NNUMFAC
+           cCodCli + cSerie + str( nNumFac ) +CCODCLI
+           cNomCli + cSerie + str( nNumFac ) +CNOMCLI
+           dPreCob                            DPRECOB
+           dFecVto                            DFECVTO
+           dEntrada                           DENTRADA
+           nImporte                           NIMPORTE
+           cCodPgo                            CCODPGO
+           cCodAge                            CCODAGE
+           cCodCli                            LCODCLI
+           str( nNumRem ) + cSufRem           NNUMREM
+           cCtaRem                            CCTAREM
+           str( nNumCob ) + cSufCob           NNUMCOB
+           cTurRec + cSufFac + cCodCaj        CTURREC
+           cSerie + str( nNumFac ) + cSufFac +FNUMFAC
+
+     Relations in use
+
+102:    ANTCLIT2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerAnt + Str( nNumAnt ) + cSufAnt NNUMANT
+           dFecAnt                            DFECANT
+           cCodCli                            CCODCLI
+           Upper( cNomCli )                   CNOMCLI
+           cCodObr                            CCODOBR
+           cTurAnt + cSufAnt + cCodCaj        CTURANT
+           cCodAge                            CCODAGE
+           cCodRut                            CCODRUT
+           cPobCli + cNomCli                  CPOBCLI
+           cCodAge + DtoS( dFecAnt )          CAGEFEC
+           cNumDoc                            CNUMDOC
+           lSndDoc                            LSNDDOC
+           cTurLiq + cSufAnt + cCajLiq        CTURLIQ
+           cCodUsr + Dtos( dFecCre ) + cTimCreCCODUSR
+           cSerAnt + Str( nNumAnt ) + cSufAnt LLIQUIDADA
+
+     Relations in use
+
+103:    FACRECT2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERIE + Str( NNUMFAC ) + CSUFFAC  NNUMFAC
+           dFecFac                            DFECFAC
+           CCODCLI                            CCODCLI
+           Upper( CNOMCLI )                   CNOMCLI
+           CCODOBR                            CCODOBR
+           CTURFAC + CSUFFAC + CCODCAJ        CTURFAC
+           cCodAge                            CCODAGE
+           CCODRUT                            CCODRUT
+           cCodPago                           CCODPAGO
+           CPOBCLI + CNOMCLI                  CPOBCLI
+           CDOCORG                            CDOCORG
+           CCODAGE + DtoS( DFECFAC )          CAGEFEC
+           Str( NNUMLIQ ) + CSUFLIQ           NNUMLIQ
+           CABNFAC                            CABNFAC
+           lSndDoc                            LSNDDOC
+
+     Relations in use
+
+104:    FACRECL2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERIE + Str(NNUMFAC) + CSUFFAC    NNUMFAC
+           CSERIE + Str(NNUMFAC) + CSUFFAC + CCFACREF
+           CREF                               CREF
+           cLote                              LOTE
+           cRef + cAlmLin + dtos( dFecFac ) + CSTKFAST
+           '14' + cSerie + Str( nNumFac ) + SpINUMFAC
+           cSerie + Str(nNumFac) + cSufFac + sNPOSPRINT
+
+     Relations in use
+
+105:    FACRECS2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerFac + Str( nNumFac ) + cSufFac NNUMFAC
+           cRef + cAlmLin + cNumSer           CREFSER
+           cNumSer                            CNUMSER
+           '14' + cSerFac + Str( nNumFac ) + SINUMFAC
+
+     Relations in use
+
+106:    ADSAREA                            RddName: ADSADT
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          1      .F.   .F.
+
+     Indexes in use                        TagName
+
+     Relations in use
+
+107:    TIKT                               RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERTIK + CNUMTIK + CSUFTIK        CNUMTIK
+           dFecTik                            DFECTIK
+           CCLITIK                            CCLITIK
+           CNOMTIK                            CNOMTIK
+           CCCJTIK                            CNCJTIK
+           CCCJTIK                            CCCJTIK
+           CRETMAT                            CRETMAT
+           CTURTIK + CSUFTIK + CNCJTIK        CTURTIK
+           CALMTIK                            CALMTIK
+           cSufTik                            CSUFTIK
+           CNUMDOC                            CNUMDOC
+           LSNDDOC                            LSNDDOC
+           cCcjTik + Dtos( dFecCre ) + cTimCreCCODUSR
+           cValDoc                            CDOCVAL
+           cSerTik + cNumTik + cSufTik        CNUMVAL
+
+     Relations in use
+
+108:    TIKL                               RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERTIL + CNUMTIL + CSUFTIL        CNUMTIL
+           CCBATIL                            CCBATIL
+           CCOMTIL                            CCOMTIL
+           cCbaTil + cAlmLin + dtos( dFecTik )CSTKFAST
+           cComTil  + cAlmLin + dtos( dFecTik CSTKCOMB
+           CSERTIL + CNUMTIL + CSUFTIL        CTIKVAL
+           nOrTImp                            NORTIMP
+           CSERTIL + CNUMTIL + CSUFTIL + CCBATCNUMCBA
+           cNumDev + Str( nNumLin )           CNUMDEV
+           cNumDev                            CDEVTIK
+           '12' + cSerTil + cNumTil + cSufTil INUMTIK
+           cSerTil + cNumTil + cSufTil + Str( NORDLIN
+
+     Relations in use
+
+109:    TIKS                               RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerTik + cNumTik + cSufTik + Str( NNUMTIK
+           cCbaTil + cAlmLin + cNumSer        CREFSER
+           cNumSer                            CNUMSER
+           '12' + cSerTik + cNumTik + cSufTik INUMTIK
+
+     Relations in use
+
+110:    PEDPRVT                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerPed + str( nNumPed ) + cSufPed NNUMPED
+           dFecPed                            DFECPED
+           dFecEnt                            DFECENT
+           cCodPrv                            CCODPRV
+           Upper( cNomPrv )                   CNOMPRV
+           str( Year( dFecPed ) ) + cSerPed + NNUMPEDYEA
+           str( Year( dFecPed ) ) + Dtoc( dFecDFECPEDYEA
+           str( Year( dFecPed ) ) + Dtoc( dFecDFECENTYEA
+           str( Year( dFecPed ) ) + cCodPrv   CCODPRVYEA
+           str( Year( dFecPed ) ) + Upper( cNoCNOMPRVYEA
+           nEstado                            NESTADO
+           cTurPed + cSufPed + cCodCaj        CTURPED
+           cNumPedCli                         CPEDCLI
+           cCodUsr + Dtos( dFecChg ) + cTimChgCCODUSR
+           cNumAlb                            CNUMALB
+
+     Relations in use
+
+111:    PEDPRVL2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerPed + Str( nNumPed ) + cSufPed NNUMPED
+           cRef                               CREF
+           cLote                              LOTE
+           cRef + cLote                       CREFLOTE
+           cPedCli + cRef + cValPr1 + cValPr2 CPEDCLIREF
+           cPedCli + cRef + cValPr1 + cValPr2 CPEDCLIDET
+           '01' + cSerPed + Str( nNumPed ) + SINUMPED
+           cRef + cAlmLin                     CSTKFAST
+           cRef + cCodPr1 + cCodPr2 + cValPr1 CPEDREF
+           cSerPed + Str( nNumPed ) + cSufPed NPOSPRINT
+           cSerPed + Str( nNumPed ) + cSufPed NNUMPEDREF
+           cSerPed + Str( nNumPed ) + cSufPed CCODFAM
+
+     Relations in use
+
+112:    ALBPRVL                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+     2008       2676      .F.   .F.
+
+     Indexes in use                        TagName
+        => cSerAlb + Str( nNumAlb ) + cSufAlb NNUMALB
+           cSerAlb + Str( nNumAlb ) + cSufAlb NNUMLIN
+           cRef + cValPr1 + cValPr2           CREF
+           cLote                              LOTE
+           cNumPed                            CNUMPED
+           cNumPed + cRef + cCodPr1 + cCodPr2 CPEDCLIREF
+           cCodPed                            CCODPED
+           cCodPed + cRef + cValPr1 + cValPr2 CPEDPRVREF
+           cCodPed + cRef + cValPr1 + cValPr2 CPEDPRVDET
+           cRef + cValPr1 + cValPr2 + cLote   CSTKREF
+           cNumPed + cRef + cValPr1 + cValPr2 CPCLIDET
+           cCodPed + cRef                     CPEDREF
+           '02' + CSERALB + STR( NNUMALB ) + CINUMALB
+           cRef + cLote                       CARTLOTE
+           cRef + cAlmLin + dtos( dFecAlb ) + CSTKFASTIN
+
+     Relations in use
+
+113:    ALBPRVS2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerAlb + Str( nNumAlb ) + cSufAlb NNUMALB
+           cRef + cAlmLin + cNumSer           CREFSER
+           cNumSer                            CNUMSER
+
+     Relations in use
+
+114:    FACPRVL2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERFAC + STR( NNUMFAC ) + CSUFFAC NNUMFAC
+           cRef + cValPr1 + cValPr2           CREF
+           cRef + cValPr1 + cValPr2 + cLote   CREFLOTE
+           cLote                              LOTE
+           cSerFac + Str( nNumFac ) + cSufFac CREFPRV
+           cRef + dTos( dFecFac )             CREFFEC
+           '03' + CSERFAC + STR( NNUMFAC ) + CINUMFAC
+           cRef + cLote                       CARTLOTE
+           cRef + cAlmLin + dtos( dFecFac ) + CSTKFAST
+           cRef + cAlmOrigen + dtos( dFecFac )CSTKFASTOU
+           cSerFac + Str( nNumFac ) + cSufFac NPOSPRINT
+           dFecFac                            DFECFAC
+
+     Relations in use
+
+115:    FACPRVS2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerFac + Str( nNumFac ) + cSufFac NNUMFAC
+           cRef + cAlmLin + cNumSer           CREFSER
+           cNumSer                            CNUMSER
+
+     Relations in use
+
+116:    RCTPRVL2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERFAC + STR( NNUMFAC ) + CSUFFAC NNUMFAC
+           cRef + cValPr1 + cValPr2           CREF
+           cLote                              LOTE
+           cRef + cAlmLin + dtos( dFecFac ) + CSTKFAST
+           cRef + cAlmOrigen + dtos( dFecFac )CSTKFASTOU
+           '04' + CSERFAC + STR( NNUMFAC ) + CINUMRCT
+
+     Relations in use
+
+117:    RCTPRVS2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => cSerFac + Str( nNumFac ) + cSufFac NNUMFAC
+           cRef + cAlmLin + cNumSer           CREFSER
+           cNumSer                            CNUMSER
+
+     Relations in use
+
+118:    PRODUCL                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERORD + STR( NNUMORD,9 ) + CSUFORCNUMORD
+           CCODART                            CCODART
+           CCODART + CVALPR1 + CVALPR2 + CLOTECARTLOT
+           CLOTE                              CLOTE
+           STR( NNUMLIN, 4 )                  NNUMLIN
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCGRPFAM
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCCODFAM
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCCODTIP
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCCODCAT
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCCODTMP
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCCODFAB
+           CSERORD + STR( NNUMORD, 9 ) + CSUFONTIPART
+           '30' + CSERORD + STR( NNUMORD, 9 ) INUMORD
+           CCODART + CALMORD + DTOS( DFECORD )CSTKFAST
+
+     Relations in use
+
+119:    PRODUCM                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERORD + STR( NNUMORD, 9 ) + CSUFOCNUMORD
+           CCODPRO                            CCODPRO
+           CCODART                            CCODART
+           CCODART + CVALPR1 + CVALPR2 + CLOTECARTLOT
+           STR( NNUMLIN, 4 )                  NNUMLIN
+           CLOTE                              CLOTE
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCGRPFAM
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCCODFAM
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCCODTIP
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCCODCAT
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCCODTMP
+           CSERORD + STR( NNUMORD, 9 ) + CSUFOCCODFAB
+           CSERORD + STR( NNUMORD, 9 ) + CSUFONTIPART
+           '30' + CSERORD + STR( NNUMORD, 9 ) INUMORD
+           CCODART + CALMORD + DTOS( DFECORD )CSTKFAST
+
+     Relations in use
+
+120:    PRODUCS                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERORD + STR( NNUMORD ) + CSUFORD CNUMORD
+           CCODART + CALMORD + CNUMSER        CCODART
+           CNUMSER                            CNUMSER
+           STR( NNUMLIN, 4 ) + CCODART        NNUMLIN
+
+     Relations in use
+
+121:    PRODUCP                            RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CSERORD + STR( NNUMORD ) + CSUFORD CNUMORD
+           CCODART + CALMORD + CNUMSER        CCODART
+           CNUMSER                            CNUMSER
+           STR( NNUMLIN, 4 ) + CCODART        NNUMLIN
+
+     Relations in use
+
+122:    ARTICULO2                          RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+      741       1265      .F.   .F.
+
+     Indexes in use                        TagName
+        => Codigo                             CODIGO
+           UPPER( NOMBRE )                    NOMBRE
+           FAMILIA + CODIGO                   CFAMCOD
+           cPrvHab                            CPRVHAB
+           Codigo                             CODOBS
+           Upper( Nombre )                    NOMOBS
+           CCODTIP                            CCODTIP
+           CCODCATE                           CCODCATE
+           CCODTEMP                           CCODTEMP
+           CCODFAB                            CCODFAB
+           Field->cCodEst                     CCODEST
+           FAMILIA + NOMBRE                   CFAMNOM
+           Field->Familia + Str( Field->nPosTpNPOSTPV
+           Field->Familia + Field->NOMBRE     NNOMTPV
+           FAMILIA                            FAMILIA
+
+     Relations in use
+
+123:    KIT                                RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CCODKIT                            CCODKIT
+           CCODKIT + cRefKit                  CCODREF
+           cRefKit                            CREFKIT
+
+     Relations in use
+
+124:    ALMACEN2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        2          1      .F.   .T.
+
+     Indexes in use                        TagName
+        => CCODALM                            CCODALM
+           Upper( CNOMALM )                   CNOMALM
+           CCOMALM                            CCOMALM
+
+     Relations in use
+
+125:    DIVISAS2                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          2      .F.   .F.
+
+     Indexes in use                        TagName
+        => CCODDIV                            CCODDIV
+           CNOMDIV                            CNOMDIV
+
+     Relations in use
+
+126:    TIVA2                              RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        5          5      .F.   .F.
+
+     Indexes in use                        TagName
+        => Field->Tipo                        TIPO
+           Upper( Field->DescIva )            DESCIVA
+           Str( Field->TpIva, 6, 2 )          TPIVA
+           Str( Field->nOldIva, 6, 2 )        NOLDIVA
+           Field->CodTer                      CODTER
+           Str( Field->cCodWeb, 11 )          CCODWEB
+
+     Relations in use
+
+127:    FPAGO2                             RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          1      .F.   .F.
+
+     Indexes in use                        TagName
+        => Field->cCodPago                    CCODPAGO
+           Field->CDESPAGO                    CDESPAGO
+           Str( Field->nPosTpv )              NPOSTPV
+           UPPER( Field->CCODPAGO )           CCODPGOBIG
+           UPPER( Field->CDESPAGO )           CDESPGOBIG
+           upper( Field->cCodWeb )            CCODWEB
+
+     Relations in use
+
+128:    DBA4                               RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CCODBNC                            CCODBNC
+           CNOMBNC                            CNOMBNC
+
+     Relations in use
+
+129:    DBA5                               RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CCODCTA                            CCODCTA
+           CNOMCTA                            CNOMCTA
+
+     Relations in use
+
+130:    DBA6                               RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CCODIMP                            CCODIMP
+           CNOMIMP                            CNOMIMP
+           NVALIMP                            NVALIMP
+
+     Relations in use
+
+131:    DBA7                               RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          9      .F.   .F.
+
+     Indexes in use                        TagName
+        => CCODTIP                            CCODTIP
+           UPPER( CNOMTIP )                   CNOMTIP
+           STR( CCODWEB, 11 )                 CCODWEB
+
+     Relations in use
+
+132:    DBA8                               RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CCODGRP                            CCODGRP
+           UPPER( CNOMGRP )                   CNOMGRP
+           STR( CCODWEB, 11 )                 CCODWEB
+
+     Relations in use
+
+133:    DBA9                               RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          1      .F.   .F.
+
+     Indexes in use                        TagName
+        => CCODMED                            CCODMED
+           CNOMBRE                            CNOMBRE
+
+     Relations in use
+
+134:    DBA10                              RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          1      .F.   .F.
+
+     Indexes in use                        TagName
+        => CTIPDOC                            CTIPDOC
+           CCODTIPO                           CCODTIPO
+           CCLAVE                             CCLAVE
+           CCODTIPO + CCLAVE                  CTIPOCLAVE
+           CTIPDOC + CCODTIPO + CCLAVE        CTOTCLAVE
+
+     Relations in use
+
+135:    DBA11                              RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          1      .F.   .F.
+
+     Indexes in use                        TagName
+        => CCODIGO                            CCODIGO
+           UPPER( "CNOMBRE" )                 CNOMBRE
+
+     Relations in use
+
+136:    DBA12                              RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CCODFRA                            CCODFRA
+           CTXTFRA                            CTXTFRA
+
+     Relations in use
+
+137:    DBA13                              RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CCODBNC                            CCODBNC
+           CNOMBNC                            CNOMBNC
+
+     Relations in use
+
+138:    DBA14                              RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CCODENT                            CCODENT
+           CDESENT                            CDESENT
+
+     Relations in use
+
+139:    DBA15                              RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1         23      .F.   .F.
+
+     Indexes in use                        TagName
+        => CCODIGO                            CCODIGO
+           CNOMBRE                            CNOMBRE
+
+     Relations in use
+
+140:    DBA16                              RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        4         31      .F.   .F.
+
+     Indexes in use                        TagName
+        => CTIPDOC + UPPER( CTEXFLT )         CTIPDOC
+           CTIPDOC + CCODUSR                  LDEFFLT
+
+     Relations in use
+
+141:    DBA17                              RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          0      .T.   .T.
+
+     Indexes in use                        TagName
+        => CDOCUMENTO                         CDOCUMENTO
+           CDOCUMENTO + CCLAVE                CCLAVE
+           CDOCUMENTO + CWEB                  CDOCUWEB
+           CDOCUMENTO + CCLAVE + CWEB         CWEB
+           CDOCUMENTO + STR( IDWEB, 11 ) + CWECID
+
+     Relations in use
+
+142:    DBA18                              RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          1      .F.   .F.
+
+     Indexes in use                        TagName
+           CTIPDOC                            CTIPDOC
+           CCODTIPO                           CCODTIPO
+           CCLAVE                             CCLAVE
+           CCODTIPO + CCLAVE                  CTIPOCLAVE
+        => CTIPDOC + CCODTIPO + CCLAVE        CTOTCLAVE
+
+     Relations in use
+
+143:    DBA19                              RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        2          1      .F.   .T.
+
+     Indexes in use                        TagName
+        => CCODIGO                            CCODIGO
+           UPPER( "CNOMBRE" )                 CNOMBRE
+
+     Relations in use
+
+144:    DBA20                              RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          1      .F.   .F.
+
+     Indexes in use                        TagName
+           CTIPDOC                            CTIPDOC
+           CCODTIPO                           CCODTIPO
+           CCLAVE                             CCLAVE
+           CCODTIPO + CCLAVE                  CTIPOCLAVE
+        => CTIPDOC + CCODTIPO + CCLAVE        CTOTCLAVE
+
+     Relations in use
+
+145:    ADSAREA                            RddName: ADSADT
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          1      .F.   .F.
+
+     Indexes in use                        TagName
+
+     Relations in use
+
+146:    DBA21                              RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        2          1      .F.   .T.
+
+     Indexes in use                        TagName
+        => CCODIGO                            CCODIGO
+           UPPER( "CNOMBRE" )                 CNOMBRE
+
+     Relations in use
+
+147:    DBA22                              RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+       32         31      .F.   .T.
+
+     Indexes in use                        TagName
+        => CTIPDOC + UPPER( CTEXFLT )         CTIPDOC
+           CTIPDOC + CCODUSR                  LDEFFLT
+
+     Relations in use
+
+148:    ADSAREA                            RddName: ADSADT
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        1          1      .F.   .F.
+
+     Indexes in use                        TagName
+
+     Relations in use
+
+149: => ALLLOCKS                           RddName: ADSCDX
+     ==============================
+     RecNo    RecCount    BOF   EOF
+        0          0      .F.   .F.
+
+     Indexes in use                        TagName
+
+     Relations in use

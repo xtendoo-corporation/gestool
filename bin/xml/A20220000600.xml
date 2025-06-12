@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fe:Facturae xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:fe="http://www.facturae.es/Facturae/2009/v3.2/Facturae">
+ <FileHeader>
+  <SchemaVersion>3.2</SchemaVersion>
+  <Modality>I</Modality>
+  <InvoiceIssuerType>EM</InvoiceIssuerType>
+  <Batch>
+   <BatchIdentifier>2022/A00/202200006</BatchIdentifier>
+   <InvoicesCount>1</InvoicesCount>
+   <TotalInvoicesAmount>
+    <TotalAmount>302.50</TotalAmount>
+    <EquivalentInEuros>0.00</EquivalentInEuros>
+   </TotalInvoicesAmount>
+   <TotalOutstandingAmount>
+    <TotalAmount>302.50</TotalAmount>
+    <EquivalentInEuros>0.00</EquivalentInEuros>
+   </TotalOutstandingAmount>
+   <TotalExecutableAmount>
+    <TotalAmount>302.50</TotalAmount>
+    <EquivalentInEuros>0.00</EquivalentInEuros>
+   </TotalExecutableAmount>
+   <InvoiceCurrencyCode>EUR</InvoiceCurrencyCode>
+  </Batch>
+ </FileHeader>
+ <Parties>
+  <SellerParty>
+   <TaxIdentification>
+    <PersonTypeCode>F</PersonTypeCode>
+    <ResidenceTypeCode>R</ResidenceTypeCode>
+    <TaxIdentificationNumber>ES75558136P</TaxIdentificationNumber>
+   </TaxIdentification>
+   <Individual>
+    <Name>DARIO CRUZ MAURO</Name>
+    <FirstSurname>DARIO CRUZ MAURO</FirstSurname>
+    <AddressInSpain>
+     <Address>CL.PIO XII, 50</Address>
+     <PostCode>21710</PostCode>
+     <Town>BOLLULLOS DEL CONDADO</Town>
+     <Province>HUELVA</Province>
+     <CountryCode>ESP</CountryCode>
+    </AddressInSpain>
+    <ContactDetails>
+     <Telephone>651858079</Telephone>
+    </ContactDetails>
+   </Individual>
+  </SellerParty>
+  <BuyerParty>
+   <TaxIdentification>
+    <PersonTypeCode>J</PersonTypeCode>
+    <ResidenceTypeCode>R</ResidenceTypeCode>
+    <TaxIdentificationNumber>ESP2101300H</TaxIdentificationNumber>
+   </TaxIdentification>
+   <AdministrativeCentres>
+    <AdministrativeCentre>
+     <CentreCode>L01210139</CentreCode>
+     <RoleTypeCode>01</RoleTypeCode>
+     <AddressInSpain>
+      <Address>PLZA. CORAZÓN DE JESUS, 1</Address>
+      <PostCode>21710</PostCode>
+      <Town>BOLLULLOS PAR DEL CONDADO</Town>
+      <Province>HUELVA</Province>
+      <CountryCode>ESP</CountryCode>
+     </AddressInSpain>
+     <CentreDescription>Ayto Bollullos</CentreDescription>
+    </AdministrativeCentre>
+    <AdministrativeCentre>
+     <CentreCode>L01210139</CentreCode>
+     <RoleTypeCode>02</RoleTypeCode>
+     <AddressInSpain>
+      <Address>PLZA. CORAZÓN DE JESUS, 1</Address>
+      <PostCode>21710</PostCode>
+      <Town>BOLLULLOS PAR DEL CONDADO</Town>
+      <Province>HUELVA</Province>
+      <CountryCode>ESP</CountryCode>
+     </AddressInSpain>
+     <CentreDescription>Ayto Bollullos</CentreDescription>
+    </AdministrativeCentre>
+    <AdministrativeCentre>
+     <CentreCode>L01210139</CentreCode>
+     <RoleTypeCode>03</RoleTypeCode>
+     <AddressInSpain>
+      <Address>PLZA. CORAZÓN DE JESUS, 1</Address>
+      <PostCode>21710</PostCode>
+      <Town>BOLLULLOS PAR DEL CONDADO</Town>
+      <Province>HUELVA</Province>
+      <CountryCode>ESP</CountryCode>
+     </AddressInSpain>
+     <CentreDescription>Ayto Bollullos</CentreDescription>
+    </AdministrativeCentre>
+   </AdministrativeCentres>
+   <LegalEntity>
+    <CorporateName>ILMO. AYUNTAMIENTO DE BOLLULLOS DEL CONDADO</CorporateName>
+    <TradeName>ILMO. AYUNTAMIENTO DE BOLLULLOS DEL COND</TradeName>
+    <RegistrationData>
+     <Sheet>-</Sheet>
+    </RegistrationData>
+    <AddressInSpain>
+     <Address>PLZA. CORAZÓN DE JESUS, 1</Address>
+     <PostCode>21710</PostCode>
+     <Town>BOLLULLOS PAR DEL CONDADO</Town>
+     <Province>HUELVA</Province>
+     <CountryCode>ESP</CountryCode>
+    </AddressInSpain>
+    <ContactDetails>
+     <ElectronicMail>cultura2@bollullosdelcondado.es</ElectronicMail>
+    </ContactDetails>
+   </LegalEntity>
+  </BuyerParty>
+ </Parties>
+ <Invoices>
+  <Invoice>
+   <InvoiceHeader>
+    <InvoiceNumber>2022/A00/202200006</InvoiceNumber>
+    <InvoiceSeriesCode>A</InvoiceSeriesCode>
+    <InvoiceDocumentType>FC</InvoiceDocumentType>
+    <InvoiceClass>OO</InvoiceClass>
+   </InvoiceHeader>
+   <InvoiceIssueData>
+    <IssueDate>2022-11-05</IssueDate>
+    <OperationDate>2022-11-05</OperationDate>
+    <PlaceOfIssue>
+     <PostCode>21710</PostCode>
+     <PlaceOfIssueDescription>BOLLULLOS DEL CONDAD</PlaceOfIssueDescription>
+    </PlaceOfIssue>
+    <InvoicingPeriod>
+     <StartDate>2022-11-05</StartDate>
+     <EndDate>2022-11-05</EndDate>
+    </InvoicingPeriod>
+    <InvoiceCurrencyCode>EUR</InvoiceCurrencyCode>
+    <TaxCurrencyCode>EUR</TaxCurrencyCode>
+    <LanguageName>es</LanguageName>
+   </InvoiceIssueData>
+   <TaxesOutputs>
+    <Tax>
+     <TaxTypeCode>01</TaxTypeCode>
+     <TaxRate>21.00</TaxRate>
+     <TaxableBase>
+      <TotalAmount>250.00</TotalAmount>
+      <EquivalentInEuros>0.00</EquivalentInEuros>
+     </TaxableBase>
+     <TaxAmount>
+      <TotalAmount>52.50</TotalAmount>
+      <EquivalentInEuros>0.00</EquivalentInEuros>
+     </TaxAmount>
+    </Tax>
+   </TaxesOutputs>
+   <InvoiceTotals>
+    <TotalGrossAmount>250.00</TotalGrossAmount>
+    <TotalGeneralDiscounts>0.00</TotalGeneralDiscounts>
+    <TotalGeneralSurcharges>0.00</TotalGeneralSurcharges>
+    <TotalGrossAmountBeforeTaxes>250.00</TotalGrossAmountBeforeTaxes>
+    <TotalTaxOutputs>52.50</TotalTaxOutputs>
+    <TotalTaxesWithheld>0.00</TotalTaxesWithheld>
+    <InvoiceTotal>302.50</InvoiceTotal>
+    <TotalOutstandingAmount>302.50</TotalOutstandingAmount>
+    <TotalExecutableAmount>302.50</TotalExecutableAmount>
+    <TotalReimbursableExpenses>0.00</TotalReimbursableExpenses>
+   </InvoiceTotals>
+   <Items>
+    <InvoiceLine>
+     <ItemDescription>Presupuesto Nº A/10/00 - Fecha 20/10/2022</ItemDescription>
+     <Quantity>0.00</Quantity>
+     <UnitOfMeasure>01</UnitOfMeasure>
+     <UnitPriceWithoutTax>0.000000</UnitPriceWithoutTax>
+     <TotalCost>0.000000</TotalCost>
+     <GrossAmount>0.000000</GrossAmount>
+     <TaxesOutputs>
+      <Tax>
+       <TaxTypeCode>01</TaxTypeCode>
+       <TaxRate>0.00</TaxRate>
+       <TaxableBase>
+        <TotalAmount>0.00</TotalAmount>
+        <EquivalentInEuros>0.00</EquivalentInEuros>
+       </TaxableBase>
+       <TaxAmount>
+        <TotalAmount>0.00</TotalAmount>
+        <EquivalentInEuros>0.00</EquivalentInEuros>
+       </TaxAmount>
+      </Tax>
+     </TaxesOutputs>
+    </InvoiceLine>
+    <InvoiceLine>
+     <ItemDescription>-------------21 DE OCTUBRE--------------
+Sonorización para actuación de Raquel Salas en Bodegas Andrade</ItemDescription>
+     <Quantity>1.00</Quantity>
+     <UnitOfMeasure>01</UnitOfMeasure>
+     <UnitPriceWithoutTax>250.000000</UnitPriceWithoutTax>
+     <TotalCost>250.000000</TotalCost>
+     <GrossAmount>250.000000</GrossAmount>
+     <TaxesOutputs>
+      <Tax>
+       <TaxTypeCode>01</TaxTypeCode>
+       <TaxRate>21.00</TaxRate>
+       <TaxableBase>
+        <TotalAmount>250.00</TotalAmount>
+        <EquivalentInEuros>0.00</EquivalentInEuros>
+       </TaxableBase>
+       <TaxAmount>
+        <TotalAmount>52.50</TotalAmount>
+        <EquivalentInEuros>0.00</EquivalentInEuros>
+       </TaxAmount>
+      </Tax>
+     </TaxesOutputs>
+    </InvoiceLine>
+   </Items>
+   <PaymentDetails>
+    <Installment>
+     <InstallmentDueDate>2022-11-05</InstallmentDueDate>
+     <InstallmentAmount>302.50</InstallmentAmount>
+     <PaymentMeans>04</PaymentMeans>
+     <AccountToBeCredited>
+      <IBAN>ES6100491967092210052570</IBAN>
+      <BankCode>0049</BankCode>
+      <BranchCode>1967</BranchCode>
+      <BranchInSpainAddress>
+       <Address>AVDA CONSTITUCION, 34</Address>
+       <PostCode>21710</PostCode>
+       <Town>BOLLULLOS DEL CONDADO</Town>
+       <Province>HUELVA</Province>
+       <CountryCode>ESP</CountryCode>
+      </BranchInSpainAddress>
+     </AccountToBeCredited>
+    </Installment>
+   </PaymentDetails>
+  </Invoice>
+ </Invoices>
+</fe:Facturae>
+

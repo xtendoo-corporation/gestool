@@ -1,0 +1,2486 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 7 ".\.\Prg\Tultvta.prg"
+_HB_CLASS TIUltFam ; function TIUltFam ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TIUltFam", iif( .T., { @TInfGen() }, { @HBObject() } ), @TIUltFam() ) ) ;
+
+   _HB_MEMBER { AS LOGIC lSinVta } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lSinVta"}, .F. )
+   _HB_MEMBER { AS NUMERIC nSinVta } ; oClass:AddMultiData( "NUMERIC", 15, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nSinVta"}, .F. )
+   _HB_MEMBER { AS OBJECT oFacCliT } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacCliT"}, .F. )
+   _HB_MEMBER { AS OBJECT oFacCliL } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacCliL"}, .F. )
+   _HB_MEMBER { AS OBJECT oFacCliP } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacCliP"}, .F. )
+   _HB_MEMBER { AS OBJECT oAlbCliT } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAlbCliT"}, .F. )
+   _HB_MEMBER { AS OBJECT oAlbCliL } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAlbCliL"}, .F. )
+   _HB_MEMBER { AS OBJECT oAntCliT } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAntCliT"}, .F. )
+   _HB_MEMBER { AS OBJECT oDbfIva } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfIva"}, .F. )
+   _HB_MEMBER { AS CHARACTER cAgeDoc } ; oClass:AddMultiData( "CHARACTER", "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAgeDoc"}, .F. )
+   _HB_MEMBER { AS CHARACTER cCliDoc } ; oClass:AddMultiData( "CHARACTER", "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCliDoc"}, .F. )
+   _HB_MEMBER { AS CHARACTER cNomDoc } ; oClass:AddMultiData( "CHARACTER", "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNomDoc"}, .F. )
+   _HB_MEMBER { dLasDoc } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dLasDoc"}, .F. )
+   _HB_MEMBER { AS CHARACTER cNumDoc } ; oClass:AddMultiData( "CHARACTER", "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNumDoc"}, .F. )
+   _HB_MEMBER { AS CHARACTER cTipDoc } ; oClass:AddMultiData( "CHARACTER", "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTipDoc"}, .F. )
+
+   _HB_MEMBER Create(); oClass:AddMethod( "Create", @TIUltFam_Create(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles(); oClass:AddMethod( "OpenFiles", @TIUltFam_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @TIUltFam_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lResource( cFld); oClass:AddMethod( "lResource", @TIUltFam_lResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lGenerate(); oClass:AddMethod( "lGenerate", @TIUltFam_lGenerate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetInfCli(); oClass:AddMethod( "GetInfCli", @TIUltFam_GetInfCli(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetDocument(); oClass:AddMethod( "GetDocument", @TIUltFam_GetDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddDocument(); oClass:AddMethod( "AddDocument", @TIUltFam_AddDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddEmpty(); oClass:AddMethod( "AddEmpty", @TIUltFam_AddEmpty(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddFactura(); oClass:AddMethod( "AddFactura", @TIUltFam_AddFactura(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AddAlbaran(); oClass:AddMethod( "AddAlbaran", @TIUltFam_AddAlbaran(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TIUltFam ;
+
+
+
+static FUNCTION TIUltFam_Create( ) ; local Self AS CLASS TIUltFam := QSelf() AS CLASS TIUltFam
+
+   ::AddField ( "cCodAge", "C",  3, 0, {|| "@!" },         "Cód. age.",               .F., "Código agente"           ,  8 )
+   ::AddField ( "cNomAge", "C", 50, 0, {|| "@!" },         "Agente",                  .F., "Nombre agente"           , 25 )
+   ::AddField ( "cCodCli", "C", 12, 0, {|| "@!" },         "Cód. cli",                .F., "Código cliente"          ,  8 )
+   ::AddField ( "cNomCli", "C", 50, 0, {|| "@!" },         "Cliente",                 .F., "Nombre cliente"          , 25 )
+   ::AddField ( "cNifCli", "C", 15, 0, {|| "@!" },         "Nif",                     .F., "Nif"                     ,  8 )
+   ::AddField ( "cDomCli", "C", 35, 0, {|| "@!" },         "Domicilio",               .F., "Domicilio"               , 25 )
+   ::AddField ( "cPobCli", "C", 25, 0, {|| "@!" },         "Población",               .F., "Población"               , 20 )
+   ::AddField ( "cProCli", "C", 20, 0, {|| "@!" },         "Provincia",               .F., "Provincia"               , 20 )
+   ::AddField ( "cCdpCli", "C",  7, 0, {|| "@!" },         "CP",                      .F., "Código postal"           , 20 )
+   ::AddField ( "cTlfCli", "C", 12, 0, {|| "@!" },         "Tlf",                     .F., "Teléfono"                ,  7 )
+   ::AddField ( "cTipDoc", "C", 10, 0, {|| "@!" },         "Tipo documento",          .F., "Tipo documento"          , 12 )
+   ::AddField ( "cDocFac", "C", 12, 0, {|| "@!" },         "Documento",               .F., "Documento"               , 12 )
+   ::AddField ( "dFecFac", "D",  8, 0, {|| "" },           "Fecha",                   .F., "Fecha factura"           , 10 )
+   ::AddField ( "nBasFac", "N", 16, 6, {|| ::cPicOut },    "Base",                    .F., "Base"                    , 12 )
+   ::AddField ( "nIvaFac", "N", 16, 6, {|| ::cPicOut },    cImp(),                  .F., cImp()                  , 12 )
+   ::AddField ( "nReqFac", "N", 16, 6, {|| ::cPicOut },    "R.E.",                    .F., "R.E."                    , 12 )
+   ::AddField ( "nTotFac", "N", 16, 6, {|| ::cPicOut },    "Total",                   .F., "Total"                   , 12 )
+   ::AddField ( "nTotCob", "N", 16, 6, {|| ::cPicOut },    "Cobrado",                 .F., "Total cobrado"           , 12 )
+   ::AddField ( "cCodFam", "C", 16, 0, {|| "" },           "Cod. fam.",               .T., "Código família"          ,  8 )
+   ::AddField ( "cNomFam", "C", 40, 0, {|| "" },           "Nom. família",            .T., "Nombre família"          , 30 )
+   ::AddField ( "cCodAlm", "C",  3, 0, {|| "" },           "Alm.",                    .T., "Código almecén"          ,  4 )
+   ::AddField ( "nCajArt", "N", 16, 6, {|| ::cPicOut },    cNombreCajas(),            lUseCaj(), cNombreCajas()      , 12 )
+   ::AddField ( "nUndArt", "N", 16, 6, {|| ::cPicOut },    cNombreunidades(),         lUseCaj(), cNombreunidades()   , 12 )
+   ::AddField ( "nTotArt", "N", 16, 6, {|| ::cPicOut },    "Tot. " + cNombreunidades(),.T., "Total " + cNombreunidades() , 12 )
+   ::AddField ( "nImpArt", "N", 16, 6, {|| ::cPicOut },    "Tot. imp.",               .T., "Total importe"           , 12 )
+
+   ::AddTmpIndex( "cCodAge", "cCodAge + cCodCli + cCodFam" )
+
+   ::AddGroup( {|| ::oDbf:cCodAge }, {|| "Agente : " + Rtrim( ::oDbf:cCodAge ) + "-" + Rtrim( oRetFld( ::oDbf:cCodAge, ::oDbfAge ) ) }, {||"Total agente..."} )
+   ::AddGroup( {|| ::oDbf:cCodAge + ::oDbf:cCodCli }, {|| ::GetInfCli() }, {||"Total cliente..."} )
+
+
+RETURN ( self )
+
+
+
+static FUNCTION TIUltFam_OpenFiles( ) ; local Self AS CLASS TIUltFam := QSelf() AS CLASS TIUltFam
+
+   local lOpen    := .T.
+   local oBlock   := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   BEGIN SEQUENCE
+
+   ::oFacCliT     := TDataCenter():oFacCliT()
+
+   ::oFacCliL := DbfServer( "FACCLIL.DBF", ):NewOpen( "FACCLIL.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oFacCliL:AddBag( "FACCLIL.CDX" ) ; ::oFacCliL:AddBag( ) ; ::oFacCliL:AutoIndex()
+
+   ::oFacCliP := TDataCenter():oFacCliP()
+
+   ::oAlbCliT := TDataCenter():oAlbCliT()
+
+   ::oAlbCliL := DbfServer( "ALBCLIL.DBF", ):NewOpen( "ALBCLIL.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oAlbCliL:AddBag( "ALBCLIL.CDX" ) ; ::oAlbCliL:AddBag( ) ; ::oAlbCliL:AutoIndex()
+
+   ::oAntCliT := DbfServer( "ANTCLIT.DBF", ):NewOpen( "ANTCLIT.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oAntCliT:AddBag( "ANTCLIT.CDX" ) ; ::oAntCliT:AddBag( ) ; ::oAntCliT:AutoIndex()
+
+   ::oDbfIva := DbfServer( "TIVA.DBF", ):NewOpen( "TIVA.DBF",, ( cDriver() ),, ( cPatDat() ), .F., .T., .F., .F. ) ; ::oDbfIva:AddBag( "TIVA.CDX" ) ; ::oDbfIva:AddBag( ) ; ::oDbfIva:AutoIndex()
+
+   ::oDbfArt := DbfServer( "ARTICULO.DBF", ):NewOpen( "ARTICULO.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oDbfArt:AddBag( "ARTICULO.CDX" ) ; ::oDbfArt:AddBag( ) ; ::oDbfArt:AutoIndex()
+
+   RECOVER
+
+      msgStop( "Imposible abrir todas las bases de datos" )
+      ::CloseFiles()
+      lOpen          := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TIUltFam_CloseFiles( ) ; local Self AS CLASS TIUltFam := QSelf() AS CLASS TIUltFam
+
+   if !Empty( ::oFacCliT ) .AND. ::oFacCliT:Used()
+      ::oFacCliT:End()
+   end
+   if !Empty( ::oFacCliL ) .AND. ::oFacCliL:Used()
+      ::oFacCliL:End()
+   end
+   if !Empty( ::oFacCliP ) .AND. ::oFacCliP:Used()
+      ::oFacCliP:End()
+   end
+   if !Empty( ::oAlbCliT ) .AND. ::oAlbCliT:Used()
+      ::oAlbCliT:End()
+   end
+   if !Empty( ::oAlbCliL ) .AND. ::oAlbCliL:Used()
+      ::oAlbCliL:End()
+   end
+   if !Empty( ::oDbfIva ) .AND. ::oDbfIva:Used()
+      ::oDbfIva:End()
+   end
+   if !Empty( ::oDbfArt ) .AND. ::oDbfArt:Used()
+      ::oDbfArt:End()
+   end
+   if !Empty( ::oAntCliT ) .AND. ::oAntCliT:Used()
+      ::oAntCliT:End()
+   end
+
+   ::oFacCliT := nil
+   ::oFacCliL := nil
+   ::oFacCliP := nil
+   ::oAlbCliT := nil
+   ::oAlbCliL := nil
+   ::oAntCliT := nil
+   ::oDbfIva  := nil
+   ::oDbfArt  := nil
+
+RETURN ( Self )
+
+
+
+static FUNCTION TIUltFam_lResource( cFld ) ; local Self AS CLASS TIUltFam := QSelf() AS CLASS TIUltFam
+
+   if !::StdResource( "INF_GEN29" )
+      return .F.
+   end
+
+
+
+
+
+   if !::oDefAgeInf( 110, 120, 130, 140, 620 )
+      return .F.
+   end
+
+
+
+
+
+   if !::oDefCliInf( 70, 80, 90, 100, , 600 )
+      return .F.
+   end
+
+
+
+
+
+   if !::lDefFamInf( 150, 160, 170, 180, 610 )
+      return .F.
+   end
+
+
+
+   TCheckBox():ReDefine( 190, { | u | If( PCount()==0, ::lSinVta, ::lSinVta:= u ) }, ::oFld:aDialogs[1],,,,,,, .F.,, .F. )
+
+
+
+
+
+
+
+
+   TGetHlp():ReDefine( 200, { | u | If( PCount()==0, ::nSinVta, ::nSinVta:= u ) }, ::oFld:aDialogs[1],, "999",,,,,,, .F., {||     ::lSinVta},, .F., .T.,,, {||      0}, {||      999},, nil,,, )
+
+
+
+
+
+   ::oMtrInf:SetTotal( ::oDbfCli:Lastrec() )
+
+   ::CreateFilter( aItmCli(), ::oDbfCli:cAlias )
+
+RETURN .T.
+
+
+
+
+
+
+static FUNCTION TIUltFam_lGenerate( ) ; local Self AS CLASS TIUltFam := QSelf() AS CLASS TIUltFam
+
+   local aTotFac
+   local cExpHead := ""
+
+   ::oDlg:Disable()
+   ::oBtnCancel:Enable()
+   ::oDbf:Zap()
+
+   ::oFacCliT:GetStatus()
+   ::oFacCliT:OrdSetFocus( "cCodCli" )
+
+   ::oAlbCliT:GetStatus()
+   ::oAlbCliT:OrdSetFocus( "cCodCli" )
+
+
+
+
+
+
+
+
+
+   ::aHeader   := {  {|| "Fecha     : " + Dtoc( Date() ) }, {|| "Periodo   : " + Dtoc( ::dIniInf )   + " > " + Dtoc( ::dFinInf )    }, {|| "Cliente   : " + Rtrim( ::cCliOrg )  + " > " + Rtrim( ::cCliDes )   }, {|| "Agente    : " + Rtrim( ::cAgeOrg )  + " > " + Rtrim( ::cAgeDes )   }, {|| "Família   : " + Rtrim( ::cFamOrg )  + " > " + Rtrim( ::cFamDes ) } }
+
+   ::oDbfCli:OrdSetFocus( "COD" )
+
+   if !Empty( ::oFilter:cExpresionFilter )
+      cExpHead       := ::oFilter:cExpresionFilter
+   else
+      cExpHead       := ".t."
+   end
+
+   ::oDbfCli:AddTmpIndex( Auth():Codigo(), GetFileNoExt( ::oDbfCli:cFile ), ::oDbfCli:OrdKey(), ( cExpHead ), , , , , , , , .T. )
+
+   ::oDbfCli:GoTop()
+   while !::lBreak .AND. !::oDbfCli:Eof()
+
+
+      if ( ::lAllCli .OR. ( ::oDbfCli:Cod >= ::cCliOrg .AND. ::oDbfCli:Cod <= ::cCliDes ) )         .AND. ( ::lAgeAll .OR. ( ::oDbfCli:cAgente >= ::cAgeOrg .AND. ::oDbfCli:cAgente <= ::cAgeDes ) )
+
+         ::GetDocument()
+
+         if ::lSinVta
+
+            if Empty( ::dLasDoc ) .OR. ( GetSysDate() - ::dLasDoc ) >= ::nSinVta
+               ::AddDocument()
+            end
+
+         else
+
+            if !Empty( ::dLasDoc )
+               ::AddDocument()
+            end
+
+         end
+
+      end
+
+      ::oDbfCli:Skip()
+
+      ::oMtrInf:AutoInc( ::oDbfCli:OrdKeyNo() )
+
+   end
+
+   ::oDbfCli:IdxDelete( Auth():Codigo(), GetFileNoExt( ::oDbfCli:cFile ) )
+
+   ::oMtrInf:AutoInc( ::oDbfCli:LastRec() )
+
+   ::oFacCliT:SetStatus()
+   ::oAlbCliT:SetStatus()
+
+   ::oDlg:Enable()
+
+RETURN ( ::oDbf:LastRec() > 0 )
+
+
+
+static FUNCTION TIUltFam_GetInfCli( ) ; local Self AS CLASS TIUltFam := QSelf() AS CLASS TIUltFam
+
+   local cTxt  := "Cliente : " + Rtrim( ::oDbf:cCodCli ) + " - " + Rtrim( oRetFld( ::oDbf:cCodCli, ::oDbfCli ) ) + " - "
+         cTxt  += AllTrim( ::oDbf:cTipDoc ) + " : " + AllTrim( ::oDbf:cDocFac ) + " - "
+         cTxt  += "Fecha : " + Dtoc( ::oDbf:dFecFac )
+
+RETURN ( cTxt )
+
+
+
+static FUNCTION TIUltFam_GetDocument( ) ; local Self AS CLASS TIUltFam := QSelf() AS CLASS TIUltFam
+
+   ::cCliDoc      := ::oDbfCli:Cod
+   ::cNomDoc      := ::oDbfCli:Titulo
+   ::cAgeDoc      := ::oDbfCli:cAgente
+   ::dLasDoc      := Ctod( "" )
+   ::cNumDoc      := ""
+   ::cTipDoc      := ""
+
+   if ::oAlbCliT:Seek( ::oDbfCli:Cod )
+
+      while ::oAlbCliT:cCodCli == ::oDbfCli:Cod .AND. !::oAlbCliT:Eof()
+
+
+
+
+
+
+         if !lFacturado( ::oAlbCliT )                                                                    .AND. ( ::lAgeAll .OR. ( ::oAlbCliT:cCodAge >= ::cAgeOrg .AND. ::oAlbCliT:cCodAge <= ::cAgeDes ) ) .AND. ::oAlbCliT:dFecAlb >= ::dIniInf                                                              .AND. ::oAlbCliT:dFecAlb <= ::dFinInf                                                              .AND. lChkSer( ::oAlbCliT:cSerAlb, ::aSer )                                                        .AND. ::oAlbCliT:dFecAlb >= ::dLasDoc
+
+            ::cAgeDoc   := ::oAlbCliT:cCodAge
+            ::cCliDoc   := ::oAlbCliT:cCodCli
+            ::dLasDoc   := ::oAlbCliT:dFecAlb
+            ::cNumDoc   := ::oAlbCliT:cSerAlb + Str( ::oAlbCliT:nNumAlb ) + ::oAlbCliT:cSufAlb
+            ::cTipDoc   := "Albaran"
+
+         end
+
+         ::oAlbCliT:Skip()
+
+      end
+
+   end
+
+   if ::oFacCliT:Seek( ::oDbfCli:Cod )
+
+      while ::oFacCliT:cCodCli == ::oDbfCli:Cod .AND. !::oFacCliT:Eof()
+
+
+
+
+
+         if ( ::lAgeAll .OR. ( ::oFacCliT:cCodAge >= ::cAgeOrg .AND. ::oFacCliT:cCodAge <= ::cAgeDes ) ) .AND. ::oFacCliT:dFecFac >= ::dIniInf                                                              .AND. ::oFacCliT:dFecFac <= ::dFinInf                                                              .AND. lChkSer( ::oFacCliT:cSerie, ::aSer )                                                         .AND. ::oFacCliT:dFecFac >= ::dLasDoc
+
+            ::cAgeDoc   := ::oFacCliT:cCodAge
+            ::cCliDoc   := ::oFacCliT:cCodCli
+            ::dLasDoc   := ::oFacCliT:dFecFac
+            ::cNumDoc   := ::oFacCliT:cSerie + Str( ::oFacCliT:nNumFac ) + ::oFacCliT:cSufFac
+            ::cTipDoc   := "Factura"
+
+         end
+
+         ::oFacCliT:Skip()
+
+      end
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TIUltFam_AddDocument( ) ; local Self AS CLASS TIUltFam := QSelf() AS CLASS TIUltFam
+
+   do case
+      case ::cTipDoc == ""
+         ::AddEmpty()
+      case ::cTipDoc == "Factura"
+         ::AddFactura()
+      case ::cTipDoc == "Albaran"
+         ::AddAlbaran()
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION TIUltFam_AddFactura( ) ; local Self AS CLASS TIUltFam := QSelf() AS CLASS TIUltFam
+
+   local cCodFam
+   local aTotFac
+
+
+
+
+
+   if ::oFacCliL:Seek( ::cNumDoc )
+
+      while ::oFacCliL:cSerie + Str( ::oFacCliL:nNumFac ) + ::oFacCliL:cSufFac == ::cNumDoc .AND. !::oFacCliL:Eof()
+
+
+
+
+
+         cCodFam              := RetFamArt( ::oFacCliL:cRef, ::oDbfArt:cAlias )
+
+
+
+
+
+
+         if !Empty( cCodFam )                                                       .AND. ( ::lAllFam .OR. ( cCodFam >= ::cFamOrg .AND. cCodFam <= ::cFamDes ) )
+
+
+
+
+
+            if !::oDbf:Seek( ::cAgeDoc + ::cCliDoc + cCodFam )
+
+               ::oDbf:Append()
+               ::oDbf:Blank()
+
+               ::oDbf:cTipDoc := "Factura"
+               ::oDbf:dFecFac := ::dLasDoc
+
+               ::oDbf:dFecFac := ::dLasDoc
+               ::oDbf:cCodAge := ::cAgeDoc
+               ::oDbf:cCodCli := ::cCliDoc
+               ::oDbf:cNomCli := ::cNomDoc
+
+               ::AddCliente( ::cCliDoc, ::oFacCliT )
+
+               ::oDbf:cDocFac := StrTran( ::oFacCliL:cSerie + "/" + Str( ::oFacCliL:nNumFac ) + "/" + ::oFacCliL:cSufFac, " ", "" )
+               aTotFac        := aTotFacCli( ::cNumDoc, ::oFacCliT:cAlias, ::oFacCliL:cAlias, ::oDbfIva:cAlias, ::oDbfDiv:cAlias, ::oFacCliP:cAlias, ::oAntCliT:cAlias )
+               ::oDbf:nBasFac := aTotFac[ 1 ] - aTotFac[ 5 ] - aTotFac[ 6 ]
+               ::oDbf:nIvaFac := aTotFac[ 2 ]
+               ::oDbf:nReqFac := aTotFac[ 3 ]
+               ::oDbf:nTotFac := aTotFac[ 4 ]
+
+               ::oDbf:cCodFam := cCodFam
+               ::oDbf:cNomFam := Rtrim( oRetFld( cCodFam, ::oDbfFam ) )
+
+               ::oDbf:nCajArt := ::oFacCliL:nCanEnt
+               ::oDbf:nUndArt := ::oFacCliL:nUniCaja
+               ::oDbf:nTotArt := nTotNFacCli( ::oFacCliL )
+               ::oDbf:nImpArt := nTotLFacCli( ::oFacCliL:cAlias, ::nDecOut, ::nDerOut )
+               ::oDbf:cCodAlm := ::oFacCliL:cAlmLin
+
+               ::oDbf:Save()
+
+            else
+
+               ::oDbf:Load()
+
+               ::oDbf:nCajArt += ::oFacCliL:nCanEnt
+               ::oDbf:nUndArt += ::oFacCliL:nUniCaja
+               ::oDbf:nTotArt += nTotNFacCli( ::oFacCliL )
+               ::oDbf:nImpArt += nTotLFacCli( ::oFacCliL:cAlias, ::nDecOut, ::nDerOut )
+
+               ::oDbf:Save()
+
+            end
+
+         end
+
+         ::oFacCliL:Skip()
+
+      end
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TIUltFam_AddAlbaran( ) ; local Self AS CLASS TIUltFam := QSelf() AS CLASS TIUltFam
+
+   local cCodFam
+   local aTotAlb
+
+
+
+
+
+   if ::oAlbCliL:Seek( ::cNumDoc )
+
+      while ::oAlbCliL:cSerAlb + Str( ::oAlbCliL:nNumAlb ) + ::oAlbCliL:cSufAlb == ::cNumDoc .AND. !::oAlbCliL:Eof()
+
+
+
+
+
+         cCodFam              := RetFamArt( ::oFacCliL:cRef, ::oDbfArt:cAlias )
+
+
+
+
+
+
+         if !Empty( cCodFam )                                                         .AND. ( ::lAllFam .OR. ( cCodFam >= ::cFamOrg .AND. cCodFam <= ::cFamDes ) )
+
+
+
+
+
+            if !::oDbf:Seek( ::cAgeDoc + ::cCliDoc + cCodFam )
+
+               ::oDbf:Append()
+               ::oDbf:Blank()
+
+               ::oDbf:cTipDoc := "Albaran"
+
+               ::oDbf:dFecFac := ::dLasDoc
+               ::oDbf:cCodAge := ::cAgeDoc
+               ::oDbf:cCodCli := ::cCliDoc
+               ::oDbf:cNomCli := ::cNomDoc
+
+               ::AddCliente( ::cCliDoc, ::oAlbCliT )
+
+               ::oDbf:cDocFac := StrTran( ::oAlbCliL:cSerAlb + "/" + Str( ::oAlbCliL:nNumAlb ) + "/" + ::oAlbCliL:cSufAlb, " ", "" )
+               aTotAlb        := aTotAlbCli( ::cNumDoc, ::oAlbCliT:cAlias, ::oAlbCliL:cAlias, ::oDbfIva:cAlias, ::oDbfDiv:cAlias, ::cDivInf )
+               ::oDbf:nBasFac := aTotAlb[ 1 ] - aTotAlb[ 5 ] - aTotAlb[ 6 ]
+               ::oDbf:nIvaFac := aTotAlb[ 2 ]
+               ::oDbf:nReqFac := aTotAlb[ 3 ]
+               ::oDbf:nTotFac := aTotAlb[ 4 ]
+
+               ::oDbf:cCodFam := cCodFam
+               ::oDbf:cNomFam := Rtrim( oRetFld( cCodFam, ::oDbfFam ) )
+
+               ::oDbf:nCajArt := ::oAlbCliL:nCanEnt
+               ::oDbf:nUndArt := ::oAlbCliL:nUniCaja
+               ::oDbf:nTotArt := nTotNAlbCli( ::oAlbCliL )
+               ::oDbf:nImpArt := nTotLAlbCli( ::oAlbCliL:cAlias, ::nDecOut, ::nDerOut )
+               ::oDbf:cCodAlm := ::oAlbCliL:cAlmLin
+
+               ::oDbf:Save()
+
+            else
+
+               ::oDbf:Load()
+
+               ::oDbf:nCajArt += ::oAlbCliL:nCanEnt
+               ::oDbf:nUndArt += ::oAlbCliL:nUniCaja
+               ::oDbf:nTotArt += nTotNAlbCli( ::oAlbCliL )
+               ::oDbf:nImpArt += nTotLAlbCli( ::oAlbCliL:cAlias, ::nDecOut, ::nDerOut )
+
+               ::oDbf:Save()
+
+            end
+
+         end
+
+         ::oAlbCliL:Skip()
+
+      end
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TIUltFam_AddEmpty( ) ; local Self AS CLASS TIUltFam := QSelf() AS CLASS TIUltFam
+
+   ::oDbf:Append()
+   ::oDbf:Blank()
+
+   ::oDbf:cTipDoc := ""
+   ::oDbf:dFecFac := ::dLasDoc
+   ::oDbf:cCodAge := ::cAgeDoc
+   ::oDbf:cCodCli := ::cCliDoc
+   ::oDbf:cNomCli := ::cNomDoc
+
+   ::oDbf:Save()
+
+RETURN ( Self )

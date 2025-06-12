@@ -1,0 +1,2259 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 8 ".\.\Prg\Infart.prg"
+_HB_CLASS TInfArtFam ; function TInfArtFam ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TInfArtFam", iif( .T., { @TInfGen() }, { @HBObject() } ), @TInfArtFam() ) ) ;
+
+   _HB_MEMBER { cDbfArt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDbfArt"}, .F. )
+   _HB_MEMBER { cDbfDiv } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDbfDiv"}, .F. )
+   _HB_MEMBER { cDbfKit } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDbfKit"}, .F. )
+   _HB_MEMBER { cDbfIva } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDbfIva"}, .F. )
+   _HB_MEMBER { cDbfFam } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDbfFam"}, .F. )
+
+   _HB_MEMBER { AS LOGIC lOnlySelected } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lOnlySelected"}, .F. )
+
+   _HB_MEMBER { AS LOGIC lExcPre } ; oClass:AddMultiData( "LOGIC", .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lExcPre"}, .F. )
+   _HB_MEMBER { AS LOGIC lExcObsoletos } ; oClass:AddMultiData( "LOGIC", .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lExcObsoletos"}, .F. )
+
+   _HB_MEMBER { AS OBJECT oCmbArt } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCmbArt"}, .F. )
+   _HB_MEMBER { AS OBJECT oCmbFam } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCmbFam"}, .F. )
+   _HB_MEMBER { AS LOGIC lActCos } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lActCos"}, .F. )
+
+   _HB_MEMBER Create(); oClass:AddMethod( "Create", @TInfArtFam_Create(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lResource( cFld); oClass:AddMethod( "lResource", @TInfArtFam_lResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lGenerate(); oClass:AddMethod( "lGenerate", @TInfArtFam_lGenerate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Play( lOnlySelected, dbfArticulo, dbfDiv, dbfKit, dbfIva, dbfFam, oWndBrw); oClass:AddMethod( "Play", @TInfArtFam_Play(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TInfArtFam ;
+
+
+
+static FUNCTION TInfArtFam_Create( ) ; local Self AS CLASS TInfArtFam := QSelf() AS CLASS TInfArtFam
+
+   ::AddField( "Codigo",  "C", 28, 0, {|| "@!" },        "Código",         .T., "Código del artículo",                  14, .F. )
+   ::AddField( "CodeBar", "C", 20, 0, {|| "@!" },        "Cód. barras",    .T., "Código de barras",                     14, .F. )
+   ::AddField( "ImgBar",  "C", 20, 0, {|| "" },          "",               .F., "Imagen del código de barras",          20, .F., {|| 4 } )
+   ::AddField( "Nombre",  "C", 60, 0, {|| "" },          "Artículo",       .T., "Nombre del artículo",                  30, .F. )
+   ::AddField( "cDesTik", "C", 20, 0, {|| "" },          "Des. tiket",     .F., "Descripción para tiket",               14, .F. )
+   if !oUser():lNotCostos()
+   ::AddField( "pCosto",  "N", 15, 6, {|| ::cPicIn },    "Costo" ,         .F., "Precio de costo",                      10, .F. )
+   end
+
+   ::AddField( "pVprec",  "N", 15, 6, {|| ::cPicOut },    "P.V.R.",        .F., "Precio venta recomendado" ,            10, .F. )
+   ::AddField( "nStock",  "N", 16, 6, {|| MasUnd() },     "Stock",         .F., "Stock" ,                               10, .F. )
+   ::AddField( "Benef1",  "N",  6, 2, {|| "@EZ 999.99" },"%Bnf. 1",        .F., "Porcentaje beneficio precio 1" ,        4, .F. )
+   ::AddField( "Benef2",  "N",  6, 2, {|| "@EZ 999.99" },"%Bnf. 2" ,       .F., "Porcentaje beneficio precio 2" ,        4, .F. )
+   ::AddField( "Benef3",  "N",  6, 2, {|| "@EZ 999.99" },"%Bnf. 3" ,       .F., "Porcentaje beneficio precio 3" ,        4, .F. )
+   ::AddField( "Benef4",  "N",  6, 2, {|| "@EZ 999.99" },"%Bnf. 4" ,       .F., "Porcentaje beneficio precio 4" ,        4, .F. )
+   ::AddField( "Benef5",  "N",  6, 2, {|| "@EZ 999.99" },"%Bnf. 5" ,       .F., "Porcentaje beneficio precio 5" ,        4, .F. )
+   ::AddField( "Benef6",  "N",  6, 2, {|| "@EZ 999.99" },"%Bnf. 6" ,       .F., "Porcentaje beneficio precio 6" ,        4, .F. )
+   ::AddField( "pVenta1", "N", 15, 6, {|| ::cPicOut },   "PVP 1" ,         .T., "Precio de venta 1" ,                   10, .F. )
+   ::AddField( "pVenta2", "N", 15, 6, {|| ::cPicOut },   "PVP 2" ,         .F., "Precio de venta 2" ,                   10, .F. )
+   ::AddField( "pVenta3", "N", 15, 6, {|| ::cPicOut },   "PVP 3" ,         .F., "Precio de venta 3" ,                   10, .F. )
+   ::AddField( "pVenta4", "N", 15, 6, {|| ::cPicOut },   "PVP 4" ,         .F., "Precio de venta 4" ,                   10, .F. )
+   ::AddField( "pVenta5", "N", 15, 6, {|| ::cPicOut },   "PVP 5" ,         .F., "Precio de venta 5" ,                   10, .F. )
+   ::AddField( "pVenta6", "N", 15, 6, {|| ::cPicOut },   "PVP 6" ,         .F., "Precio de venta 6" ,                   10, .F. )
+   ::AddField( "pVtaIva1","N", 15, 6, {|| ::cPicOut },   "PVP 1 I.I." ,    .T., "Precio de venta 1 " + cImp() + " incluido",       10, .F. )
+   ::AddField( "pVtaIva2","N", 15, 6, {|| ::cPicOut },   "PVP 2 I.I." ,    .F., "Precio de venta 2 " + cImp() + " incluido",       10, .F. )
+   ::AddField( "pVtaIva3","N", 15, 6, {|| ::cPicOut },   "PVP 3 I.I." ,    .F., "Precio de venta 3 " + cImp() + " incluido",       10, .F. )
+   ::AddField( "pVtaIva4","N", 15, 6, {|| ::cPicOut },   "PVP 4 I.I." ,    .F., "Precio de venta 4 " + cImp() + " incluido",       10, .F. )
+   ::AddField( "pVtaIva5","N", 15, 6, {|| ::cPicOut },   "PVP 5 I.I." ,    .F., "Precio de venta 5 " + cImp() + " incluido",       10, .F. )
+   ::AddField( "pVtaIva6","N", 15, 6, {|| ::cPicOut },   "PVP 6 I.I." ,    .F., "Precio de venta 6 " + cImp() + " incluido",       10, .F. )
+
+   ::AddField( "pAlq1",   "N", 15, 6, {|| ::cPicOut },   "Alq. 1" ,        .F., "Precio de alquiler 1" ,                10, .F. )
+   ::AddField( "pAlq2",   "N", 15, 6, {|| ::cPicOut },   "Alq 2" ,         .F., "Precio de alquiler 2" ,                10, .F. )
+   ::AddField( "pAlq3",   "N", 15, 6, {|| ::cPicOut },   "Alq 3" ,         .F., "Precio de alquiler 3" ,                10, .F. )
+   ::AddField( "pAlq4",   "N", 15, 6, {|| ::cPicOut },   "Alq 4" ,         .F., "Precio de alquiler 4" ,                10, .F. )
+   ::AddField( "pAlq5",   "N", 15, 6, {|| ::cPicOut },   "Alq 5" ,         .F., "Precio de alquiler 5" ,                10, .F. )
+   ::AddField( "pAlq6",   "N", 15, 6, {|| ::cPicOut },   "Alq 6" ,         .F., "Precio de alquiler 6" ,                10, .F. )
+   ::AddField( "pAlqIva1","N", 15, 6, {|| ::cPicOut },   "Alq 1 I.I." ,    .F., "Precio de alquiler 1 " + cImp() + " incluido",    10, .F. )
+   ::AddField( "pAlqIva2","N", 15, 6, {|| ::cPicOut },   "Alq 2 I.I." ,    .F., "Precio de alquiler 2 " + cImp() + " incluido",    10, .F. )
+   ::AddField( "pAlqIva3","N", 15, 6, {|| ::cPicOut },   "Alq 3 I.I." ,    .F., "Precio de alquiler 3 " + cImp() + " incluido",    10, .F. )
+   ::AddField( "pAlqIva4","N", 15, 6, {|| ::cPicOut },   "Alq 4 I.I." ,    .F., "Precio de alquiler 4 " + cImp() + " incluido",    10, .F. )
+   ::AddField( "pAlqIva5","N", 15, 6, {|| ::cPicOut },   "Alq 5 I.I." ,    .F., "Precio de alquiler 5 " + cImp() + " incluido",    10, .F. )
+   ::AddField( "pAlqIva6","N", 15, 6, {|| ::cPicOut },   "Alq 6 I.I." ,    .F., "Precio de alquiler 6 " + cImp() + " incluido",    10, .F. )
+
+   ::AddField( "nPntVer1","N", 15, 6, {|| ::cPicPnt },   "P.V.",           .F., "Contribución punto verde" ,            10, .F. )
+   ::AddField( "nPnvIva1","N", 15, 6, {|| ::cPicPnt },   "P.V. I.I.",      .F., "Contribución punto verde " + cImp() + " inc.",    10, .F. )
+   ::AddField( "nIva",    "N",  5, 2, {|| "@EZ 99.9" },  "%" + cImp(),        .T., "Tipo de " + cImp(),                        6, .F. )
+   ::AddField( "Familia", "C", 16, 0, {|| "@!" },        "Cod. Fam.",      .F., "Código de la familia",                  8, .F. )
+   ::AddField( "Nombref", "C", 40, 0, {|| "@!" },        "Nom. Fam.",      .F., "Nombre de la familia",                 20, .F. )
+
+   ::AddField( "cUnidad", "C",  2, 0, {|| "@!" },        "Und. medición",  .F., "Unidad de medición",                   10, .F. )
+   ::AddField( "nLngArt", "N", 16, 6, {|| MasUnd() },    "Largo",          .F., "Largo del artículo",                    8, .F. )
+   ::AddField( "nAltArt", "N", 16, 6, {|| MasUnd() },    "Alto",           .F., "Alto del artículo",                     8, .F. )
+   ::AddField( "nAncArt", "N", 16, 6, {|| MasUnd() },    "Ancho",          .F., "Ancho del artículo",                    8, .F. )
+   ::AddField( "nPesoKG", "N", 16, 6, {|| MasUnd() },    "Peso",           .F., "Peso del artículo",                     8, .F. )
+   ::AddField( "nVolumen","N", 16, 6, {|| MasUnd() },    "Volumen",        .F., "Volumen del artículo",                  8, .F. )
+
+   ::AddTmpIndex( "FamCod1", "Familia + Codigo" )
+   ::AddTmpIndex( "FamNom1", "Familia + Nombre" )
+   ::AddTmpIndex( "FamBar1", "Familia + CodeBar" )
+   ::AddTmpIndex( "FamCod2", "Nombref + Codigo" )
+   ::AddTmpIndex( "FamNom2", "Nombref + Nombre" )
+   ::AddTmpIndex( "FamBar2", "Nombref + CodeBar" )
+
+   ::AddGroup( {|| ::oDbf:Familia }, {|| "Familia : " + Rtrim( ::oDbf:Familia ) + "-" + oRetFld( ::oDbf:Familia, ::oDbfFam ) }, {||""} )
+
+   ::lDefFecInf   := .F.
+   ::lDefSerInf   := .F.
+
+RETURN ( Self )
+
+
+
+static FUNCTION TInfArtFam_lResource( cFld ) ; local Self AS CLASS TInfArtFam := QSelf() AS CLASS TInfArtFam
+
+   local cCmbArt   := "Código"
+   local cCmbFam   := "Código"
+
+   if !::StdResource( "INF_ART01" )
+      return .F.
+   end
+
+
+
+
+
+   ::lDefFamInf( 70, 80, 90, 100, 600 )
+
+   ::lIntArtInf( 110, 120, 130, 140, 800, ::cDbfArt, ::oDbfDiv, ::cDbfKit, ::cDbfIva )
+
+
+
+   TCheckBox():ReDefine( 190, { | u | If( PCount()==0, ::lExcPre, ::lExcPre:= u ) }, ::oFld:aDialogs[1],,,,,,, .F.,, .F. )
+
+
+
+   TCheckBox():ReDefine( 200, { | u | If( PCount()==0, ::lSalto, ::lSalto:= u ) }, ::oFld:aDialogs[1],,,,,,, .F.,, .F. )
+
+
+
+   TCheckBox():ReDefine( 210, { | u | If( PCount()==0, ::lExcObsoletos, ::lExcObsoletos:= u ) }, ::oFld:aDialogs[1],,,,,,, .F.,, .F. )
+
+
+
+
+   ::oCmbFam := TComboBox():ReDefine( 219, { | u | If( PCount()==0, cCmbFam, cCmbFam:= u ) }, { "Código", "Nombre" }, ::oFld:aDialogs[1],,,,,,, .F.,,,,,,, "::oCmbFam",,,,,,, )
+
+
+
+
+   ::oCmbArt := TComboBox():ReDefine( 220, { | u | If( PCount()==0, cCmbArt, cCmbArt:= u ) }, { "Código", "Código barras", "Nombre" }, ::oFld:aDialogs[1],,,,,,, .F.,,,,,,, "::oCmbArt",,,,,,, )
+
+   ::CreateFilter( aItmArt(), ::cDbfArt )
+
+
+
+
+
+   ::oMtrInf:SetTotal( ( ::cDbfArt )->( Lastrec() ) )
+
+   ::oFld:aDialogs[1]:AddFastKey( 123, {|| ::lActCos := .T., MsgInfo( "Coste activado" ) } )
+
+RETURN .T.
+
+
+
+
+
+
+static FUNCTION TInfArtFam_lGenerate( ) ; local Self AS CLASS TInfArtFam := QSelf() AS CLASS TInfArtFam
+
+   ::oDlg:Disable()
+   ::oDbf:Zap()
+
+
+
+   ::aHeader      := {  {|| "Fecha     : " + Dtoc( Date() ) }, {|| "Familias  : " + if( ::lAllFam, "Todas", AllTrim( ::cFamOrg ) + " > " + AllTrim( ::cFamDes ) ) }, {|| "Artículos : " + if( ::lAllArt, "Todos", AllTrim( ::cArtOrg ) + " > " + AllTrim( ::cArtDes ) ) } }
+
+   ::aoGroup[1]:lEject  := ::lSalto
+
+   ::oMtrInf:SetTotal( ( ::cDbfArt )->( OrdKeyCount() ) )
+
+   ( ::cDbfArt )->( dbGoTop() )
+
+   while !( ::cDbfArt )->( Eof() )
+
+
+
+
+
+      if ( ::lAllArt .OR. ( ( ::cDbfArt )->Codigo >= ::cArtOrg .AND. ( ::cDbfArt )->Codigo  <= ::cArtDes ) )   .AND. ( ::lAllFam .OR. ( ( ::cDbfArt )->Familia >= ::cFamOrg .AND. ( ::cDbfArt )->Familia <= ::cFamDes ) )  .AND. ( if( ::lExcObsoletos, !( ::cDbfArt )->lObs, .T. ) )                                                  .AND. ( if( ::lExcPre, ( ::cDbfArt )->pVenta1 <> 0 .OR. ( ::cDbfArt )->pVenta2 <> 0 .OR. ( ::cDbfArt )->pVenta3 <> 0 .OR. ( ::cDbfArt )->pVenta4 <> 0 .OR. ( ::cDbfArt )->pVenta5 <> 0 .OR. ( ::cDbfArt )->pVenta6 <> 0, .T. ) ) .AND.  ( if( ::lOnlySelected, ( ::cDbfArt )->lLabel, .T. ) )
+
+         if ::oDbf:Append()
+
+            if ::lActCos
+               ::oDbf:Codigo  := AllTrim( ( ::cDbfArt )->Codigo )
+               ::oDbf:Codigo  += AllTrim( Str( Int( nCosto( nil, ::cDbfArt, ::cDbfKit ) ) ) )
+               ::oDbf:Codigo  += "C"
+               ::oDbf:Codigo  += AllTrim( Str( Int( ( nCosto( nil, ::cDbfArt, ::cDbfKit ) - Int( nCosto( nil, ::cDbfArt, ::cDbfKit ) ) ) * 100 ) ) )
+               ::oDbf:Codigo  += "1"
+            else
+               ::oDbf:Codigo  := ( ::cDbfArt )->Codigo
+            end
+
+            ::oDbf:CodeBar    := ( ::cDbfArt )->CodeBar
+            ::oDbf:ImgBar     := cEan13( Rtrim( ( ::cDbfArt )->CodeBar ) )
+            ::oDbf:Nombre     := ( ::cDbfArt )->Nombre
+            ::oDbf:cDesTik    := ( ::cDbfArt )->cDesTik
+
+            if !oUser():lNotCostos()
+               ::oDbf:pCosto  := nCosto( nil, ::cDbfArt, ::cDbfKit )
+            end
+
+            ::oDbf:PvpRec     := nCnv2Div( ( ::cDbfArt )->PvpRec, cDivEmp(), ::cDivInf, ::oDbfDiv:cAlias )
+
+            if ( ::cDbfArt )->nCtlStock <= 1
+               ::oDbf:nStock  := StocksModel():nGlobalStockArticulo( ( ::cDbfArt )->Codigo )
+            else
+               ::oDbf:nStock  := 0
+            end
+
+            ::oDbf:Benef1     := ( ::cDbfArt )->Benef1
+            ::oDbf:Benef2     := ( ::cDbfArt )->Benef2
+            ::oDbf:Benef3     := ( ::cDbfArt )->Benef3
+            ::oDbf:Benef4     := ( ::cDbfArt )->Benef4
+            ::oDbf:Benef5     := ( ::cDbfArt )->Benef5
+            ::oDbf:Benef6     := ( ::cDbfArt )->Benef6
+
+            ::oDbf:pVenta1    := nCnv2Div( ( ::cDbfArt )->pVenta1, cDivEmp(), ::cDivInf )
+            ::oDbf:pVenta2    := nCnv2Div( ( ::cDbfArt )->pVenta2, cDivEmp(), ::cDivInf )
+            ::oDbf:pVenta3    := nCnv2Div( ( ::cDbfArt )->pVenta3, cDivEmp(), ::cDivInf )
+            ::oDbf:pVenta4    := nCnv2Div( ( ::cDbfArt )->pVenta4, cDivEmp(), ::cDivInf )
+            ::oDbf:pVenta5    := nCnv2Div( ( ::cDbfArt )->pVenta5, cDivEmp(), ::cDivInf )
+            ::oDbf:pVenta6    := nCnv2Div( ( ::cDbfArt )->pVenta6, cDivEmp(), ::cDivInf )
+            ::oDbf:pVtaIva1   := nCnv2Div( ( ::cDbfArt )->pVtaIva1, cDivEmp(), ::cDivInf )
+            ::oDbf:pVtaIva2   := nCnv2Div( ( ::cDbfArt )->pVtaIva2, cDivEmp(), ::cDivInf )
+            ::oDbf:pVtaIva3   := nCnv2Div( ( ::cDbfArt )->pVtaIva3, cDivEmp(), ::cDivInf )
+            ::oDbf:pVtaIva4   := nCnv2Div( ( ::cDbfArt )->pVtaIva4, cDivEmp(), ::cDivInf )
+            ::oDbf:pVtaIva5   := nCnv2Div( ( ::cDbfArt )->pVtaIva5, cDivEmp(), ::cDivInf )
+            ::oDbf:pVtaIva6   := nCnv2Div( ( ::cDbfArt )->pVtaIva6, cDivEmp(), ::cDivInf )
+            ::oDbf:nPntVer1   := nCnv2Div( ( ::cDbfArt )->nPntVer1, cDivEmp(), ::cDivInf )
+            ::oDbf:nPnvIva1   := nCnv2Div( ( ::cDbfArt )->nPnvIva1, cDivEmp(), ::cDivInf )
+
+            ::oDbf:pAlq1      := nCnv2Div( ( ::cDbfArt )->pAlq1, cDivEmp(), ::cDivInf )
+            ::oDbf:pAlq2      := nCnv2Div( ( ::cDbfArt )->pAlq2, cDivEmp(), ::cDivInf )
+            ::oDbf:pAlq3      := nCnv2Div( ( ::cDbfArt )->pAlq3, cDivEmp(), ::cDivInf )
+            ::oDbf:pAlq4      := nCnv2Div( ( ::cDbfArt )->pAlq4, cDivEmp(), ::cDivInf )
+            ::oDbf:pAlq5      := nCnv2Div( ( ::cDbfArt )->pAlq5, cDivEmp(), ::cDivInf )
+            ::oDbf:pAlq6      := nCnv2Div( ( ::cDbfArt )->pAlq6, cDivEmp(), ::cDivInf )
+            ::oDbf:pAlqIva1   := nCnv2Div( ( ::cDbfArt )->pAlqIva1, cDivEmp(), ::cDivInf )
+            ::oDbf:pAlqIva2   := nCnv2Div( ( ::cDbfArt )->pAlqIva2, cDivEmp(), ::cDivInf )
+            ::oDbf:pAlqIva3   := nCnv2Div( ( ::cDbfArt )->pAlqIva3, cDivEmp(), ::cDivInf )
+            ::oDbf:pAlqIva4   := nCnv2Div( ( ::cDbfArt )->pAlqIva4, cDivEmp(), ::cDivInf )
+            ::oDbf:pAlqIva5   := nCnv2Div( ( ::cDbfArt )->pAlqIva5, cDivEmp(), ::cDivInf )
+            ::oDbf:pAlqIva6   := nCnv2Div( ( ::cDbfArt )->pAlqIva6, cDivEmp(), ::cDivInf )
+
+            ::oDbf:nPntVer1   := nCnv2Div( ( ::cDbfArt )->nPntVer1, cDivEmp(), ::cDivInf )
+            ::oDbf:nPnvIva1   := nCnv2Div( ( ::cDbfArt )->nPnvIva1, cDivEmp(), ::cDivInf )
+
+            ::oDbf:cUnidad    := ( ::cDbfArt )->cUnidad
+            ::oDbf:nLngArt    := ( ::cDbfArt )->nLngArt
+            ::oDbf:nAltArt    := ( ::cDbfArt )->nAltArt
+            ::oDbf:nAncArt    := ( ::cDbfArt )->nAncArt
+            ::oDbf:nPesoKG    := ( ::cDbfArt )->nPesoKG
+            ::oDbf:nVolumen   := ( ::cDbfArt )->nVolumen
+
+
+            ::oDbf:Familia    := ( ::cDbfArt )->Familia
+
+            ::oDbf:nIva       := nIva( ::cDbfIva, ( ::cDbfArt )->TipoIva )
+
+            if ( ::cDbfFam )->( dbSeek( ( ::cDbfArt )->Familia ) )
+               ::oDbf:Nombref := ( ::cDbfFam )->cNomFam
+            else
+               ::oDbf:Nombref := ""
+            end
+
+            ::oDbf:Save()
+
+         else
+            MsgStop( "Error al agregar registros" )
+         end
+
+      end
+
+      ( ::cDbfArt )->( dbSkip() )
+
+      ::oMtrInf:AutoInc()
+
+   end
+
+   ::oMtrInf:AutoInc( ( ::cDbfArt )->( LastRec() ) )
+
+   if ::oDbf:RecCount() > 0
+
+      do case
+         case ::oCmbFam:nAt == 1 .AND. ::oCmbArt:nAt == 1
+            ::oDbf:OrdSetFocus( "FamCod1" )
+         case ::oCmbFam:nAt == 2 .AND. ::oCmbArt:nAt == 1
+            ::oDbf:OrdSetFocus( "FamCod2" )
+         case ::oCmbFam:nAt == 1 .AND. ::oCmbArt:nAt == 2
+            ::oDbf:OrdSetFocus( "FamBar1" )
+         case ::oCmbFam:nAt == 2 .AND. ::oCmbArt:nAt == 2
+            ::oDbf:OrdSetFocus( "FamBar2" )
+         case ::oCmbFam:nAt == 1 .AND. ::oCmbArt:nAt == 3
+            ::oDbf:OrdSetFocus( "FamNom1" )
+         case ::oCmbFam:nAt == 2 .AND. ::oCmbArt:nAt == 3
+            ::oDbf:OrdSetFocus( "FamNom2" )
+
+      end
+
+   end
+
+   ::AplyFilter()
+
+   ::oDlg:Enable()
+
+RETURN ( ::oDbf:LastRec() > 0 )
+
+
+
+static FUNCTION TInfArtFam_Play( lOnlySelected, dbfArticulo, dbfDiv, dbfKit, dbfIva, dbfFam, oWndBrw ) ; local Self AS CLASS TInfArtFam := QSelf() AS CLASS TInfArtFam
+
+   local nRec              := ( dbfArticulo )->( Recno() )
+   local nOrd              := ( dbfArticulo )->( OrdSetFocus( 1 ) )
+
+   If( lOnlySelected == nil, lOnlySelected := .F., ) ;
+
+   ::cDbfArt               := dbfArticulo
+   ::cDbfDiv               := dbfDiv
+   ::cDbfKit               := dbfKit
+   ::cDbfIva               := dbfIva
+   ::cDbfFam               := dbfFam
+   ::lOnlySelected         := lOnlySelected
+
+   ::Create()
+
+   if ::lOpenFiles
+      if ::lResource()
+         ::Activate()
+      end
+   end
+
+   ::End()
+
+   ( dbfArticulo )->( dbGoTo( nRec ) )
+   ( dbfArticulo )->( OrdSetFocus( nOrd ) )
+
+   oWndBrw:Refresh()
+
+RETURN ( Self )

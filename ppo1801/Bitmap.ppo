@@ -1,0 +1,2946 @@
+#line 91 "\fwh1801\include\FiveWin.ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 29 ".\.\Prg\Bitmap.prg"
+_HB_CLASS TBitmap ; function TBitmap ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TBitmap", iif( .T., { @TControl() }, { @HBObject() } ), @TBitmap() ) ) ;
+
+   _HB_MEMBER { AS LOGICAL lRegistered } ; oClass:AddMultiClsData( "LOGICAL",, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lRegistered"}, .F. )
+
+   _HB_MEMBER { aProperties } ; oClass:AddMultiClsData(, { "cVarName", "cBmpFile", "lStretch", "nTop", "nLeft", "nWidth", "nHeight", "nZoom" }, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aProperties"}, .F. )
+
+   _HB_MEMBER { nX, nY, nOldX, nOldY } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nX", "nY", "nOldX", "nOldY"}, .F. )
+   _HB_MEMBER { hBitmap, hPalette } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hBitmap", "hPalette"}, .F. )
+   _HB_MEMBER { cBmpFile, cResName } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cBmpFile", "cResName"}, .F. )
+   _HB_MEMBER { lScroll, lStretch } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lScroll", "lStretch"}, .F. )
+   _HB_MEMBER { aHotAreas } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aHotAreas"}, .F. )
+   _HB_MEMBER { nVStep, nHStep } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nVStep", "nHStep"}, .F. )
+   _HB_MEMBER { nZoom } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nZoom"}, .F. )
+   _HB_MEMBER { AS LOGICAL lTransparent } ; oClass:AddMultiData( "LOGICAL", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lTransparent"}, .F. )
+   _HB_MEMBER { AS LOGICAL lHasAlpha } ; oClass:AddMultiData( "LOGICAL", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lHasAlpha"}, .F. )
+   _HB_MEMBER { bAlphaLevel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bAlphaLevel"}, .F. )
+   _HB_MEMBER { hAlphaLevel } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hAlphaLevel"}, .F. )
+   _HB_MEMBER { bMLeave } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bMLeave"}, .F. )
+
+
+
+
+   _HB_MEMBER New( nTop, nLeft, nWidth, nHeight, cResName, cBmpFile, lNoBorder, oWnd, bLClicked, bRClicked, lScroll, lStretch, oCursor, cMsg, lUpdate, bWhen, lPixel, bValid, lDesign) AS CLASS TBitmap; oClass:AddMethod( "New", @TBitmap_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Define( cResName, cBmpFile, oWnd, hBitmap) AS CLASS TBitmap; oClass:AddMethod( "Define", @TBitmap_Define(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER ReDefine( nId, cResName, cBmpFile, oWnd, bLClicked, bRClicked, lScroll, lStretch, oCursor, cMsg, lUpdate, bWhen, bValid, lTransparent) AS CLASS TBitmap; oClass:AddMethod( "ReDefine", @TBitmap_ReDefine(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AdjControls( lDown); oClass:AddMethod( "AdjControls", @TBitmap_AdjControls(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Center(); oClass:AddMethod( "Center", @TBitmap_Center(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CopyToClipboard(); oClass:AddMethod( "CopyToClipboard", @TBitmap_CopyToClipboard(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Destroy(); oClass:AddMethod( "Destroy", @TBitmap_Destroy(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EraseBkGnd( hDC); oClass:AddMethod( "EraseBkGnd", @TBitmap_EraseBkGnd(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Zoom( nZoom); oClass:AddMethod( "Zoom", @TBitmap_Zoom(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER Command(); oClass:AddInline( "Command", {|Self, nWParam, nLParam | ( ( Self ) ), SendMessage( nLoWord( nLParam ), 1024+1024, 0, 0 ), 0 }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Default(); oClass:AddMethod( "Default", @TBitmap_Default(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GotFocus(); oClass:AddInline( "GotFocus", {|Self | ( ( Self ) ), ::Super:GotFocus(), ::SetFore() }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Inspect( cData); oClass:AddMethod( "Inspect", @TBitmap_Inspect(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER KeyDown( nKey, nFlag); oClass:AddMethod( "KeyDown", @TBitmap_KeyDown(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Display(); oClass:AddInline( "Display", {|Self | ( ( Self ) ), ::BeginPaint(), ::Paint(), ::EndPaint(), 0 }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER End(); oClass:AddInline( "End", {|Self | ( ( Self ) ), If( ::hWnd == 0, ::Destroy(), ::Super:End() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER HandleEvent( nMsg, nWParam, nLParam); oClass:AddMethod( "HandleEvent", @TBitmap_HandleEvent(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER PageUp(); oClass:AddMethod( "PageUp", @TBitmap_PageUp(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PageDown(); oClass:AddMethod( "PageDown", @TBitmap_PageDown(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PageLeft(); oClass:AddMethod( "PageLeft", @TBitmap_PageLeft(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PageRight(); oClass:AddMethod( "PageRight", @TBitmap_PageRight(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Paint(); oClass:AddMethod( "Paint", @TBitmap_Paint(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LoadFromClipboard( oWnd); oClass:AddMethod( "LoadFromClipboard", @TBitmap_LoadFromClipboard(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LoadFromString( cString); oClass:AddMethod( "LoadFromString", @TBitmap_LoadFromString(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LoadImage( cResName, cBmpFile); oClass:AddMethod( "LoadImage", @TBitmap_LoadImage(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ReLoad( cResName, cBmpFile); oClass:AddMethod( "ReLoad", @TBitmap_ReLoad(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER ReSize(); oClass:AddInline( "ReSize", {|Self, nType, nWidth, nHeight | ( ( Self ) ), ::ScrollAdjust(), ::Super:ReSize( nType, nWidth, nHeight ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetBMP(); oClass:AddInline( "SetBMP", {|Self, cResName | ( ( Self ) ), ::ReLoad( cResName ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetFore(); oClass:AddInline( "SetFore", {|Self | ( ( Self ) ), SetForeBmp( ::hBitmap, ::hPalette ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LoadBMP(); oClass:AddInline( "LoadBMP", {|Self, cBmpFile | ( ( Self ) ), ::ReLoad( "", AllTrim( cBmpFile ) ), ::HasAlpha() }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ScrollAdjust(); oClass:AddMethod( "ScrollAdjust", @TBitmap_ScrollAdjust(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Initiate(); oClass:AddInline( "Initiate", {|Self, hDlg | ( ( Self ) ), ::Super:Initiate( hDlg ), ::Default() }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+   _HB_MEMBER nHeight(); oClass:AddInline( "nHeight", {|Self | ( ( Self ) ), If( ::lDrag == nil, ::lDrag := .F.,), If( ::lDrag, ::Super:nHeight(), If( ! Empty( ::hBitmap ), nBmpHeight( ::hBitmap ) * ::nZoom, 0 ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+   _HB_MEMBER nWidth(); oClass:AddInline( "nWidth", {|Self | ( ( Self ) ), If( ::lDrag == nil, ::lDrag := .F.,), If( ::lDrag, ::Super:nWidth(), If( ! Empty( ::hBitmap ), nBmpWidth( ::hBitmap ) * ::nZoom, 0 ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ScrollUp(); oClass:AddMethod( "ScrollUp", @TBitmap_ScrollUp(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ScrollLeft(); oClass:AddMethod( "ScrollLeft", @TBitmap_ScrollLeft(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ScrollDown(); oClass:AddMethod( "ScrollDown", @TBitmap_ScrollDown(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ScrollRight(); oClass:AddMethod( "ScrollRight", @TBitmap_ScrollRight(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nXExtra(); oClass:AddInline( "nXExtra", {|Self | ( ( Self ) ), ::nHeight() - ( ::Super:nHeight() ) + 1 }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nYExtra(); oClass:AddInline( "nYExtra", {|Self | ( ( Self ) ), ::nWidth()  - ( ::Super:nWidth() ) + 1 }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER VScroll( nWParam, nLParam); oClass:AddMethod( "VScroll", @TBitmap_VScroll(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER HScroll( nWParam, nLParam); oClass:AddMethod( "HScroll", @TBitmap_HScroll(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER HasAlpha(); oClass:AddInline( "HasAlpha", {|Self | ( ( Self ) ), ::lHasAlpha := .F. }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nAlphaLevel( nLevel); _HB_MEMBER _nAlphaLevel( nLevel); oClass:AddMethod( "nAlphaLevel", @TBitmap_nAlphaLevel(), nScope + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) ) ; oClass:AddMethod( "_nAlphaLevel", @TBitmap_nAlphaLevel(), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER MouseLeave( nRow, nCol, nFlags); oClass:AddMethod( "MouseLeave", @TBitmap_MouseLeave(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Clear(); oClass:AddMethod( "Clear", @TBitmap_Clear(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TBitmap ;
+
+
+
+
+
+static FUNCTION TBitmap_New( nTop, nLeft, nWidth, nHeight, cResName, cBmpFile, lNoBorder, oWnd, bLClicked, bRClicked, lScroll, lStretch, oCursor, cMsg, lUpdate, bWhen, lPixel, bValid, lDesign ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+
+
+
+
+
+
+
+   If( nTop == nil, nTop := 0, ) ; If( nLeft == nil, nLeft := 0, ); If( oWnd == nil, oWnd := GetWndDefault(), ); If( lNoBorder == nil, lNoBorder := .F., ); If( lScroll == nil, lScroll := .F., ); If( lStretch == nil, lStretch := .F., ); If( lUpdate == nil, lUpdate := .F., ); If( lPixel == nil, lPixel := .F., ); If( lDesign == nil, lDesign := .F., );
+
+   ::nZoom     = 1
+   ::hBitmap   = 0
+   ::hPalette  = 0
+   ::lStretch  = lStretch
+
+   ::LoadImage( cResName, cBmpFile )
+
+   if ! Empty( cResName ) .OR. ! Empty( cBmpFile )
+
+      If( nWidth == nil, nWidth := Min( ::nWidth(), oWnd:nWidth() ), ) ; If( nHeight == nil, nHeight := Min( ::nHeight(), oWnd:nHeight() ), );
+
+   else
+      If( nWidth == nil, nWidth := 100, ) ; If( nHeight == nil, nHeight := 100, );
+
+   endif
+
+
+
+
+
+
+      ::nTop   = If( lPixel, nTop, nTop * 14 )
+      ::nLeft  = If( lPixel, nLeft, nLeft * 8)
+
+
+   ::nBottom   = ::nTop + nHeight - 1
+   ::nRight    = ::nLeft + nWidth - 1
+   ::nX        = 0
+   ::nY        = 0
+
+
+
+   ::nStyle    = nOR( If( ! lNoBorder, 8388608, 0 ), If( lScroll, nOR( 2097152, 1048576 ), 0 ), 1073741824, 268435456, 67108864, 33554432, 131072 )
+   ::nId       = ::GetNewId()
+   ::oWnd      = oWnd
+   ::lCaptured = .F.
+   ::lDrag     = lDesign
+   ::bLClicked = bLClicked
+   ::bRClicked = bRClicked
+   ::lScroll   = lScroll
+   ::aHotAreas = {}
+   ::nVStep    = 1
+   ::nHStep    = 1
+   ::lUpdate   = lUpdate
+   ::bWhen     = bWhen
+   ::bValid    = bValid
+   ::lTransparent = .F.
+
+   ::hAlphaLevel = 255
+
+   ::SetColor( GetSysColor( 8 ), GetSysColor( 15 ) )
+
+   if ! Empty( cBmpFile )
+      ::cBmpFile = cBmpFile
+   endif
+
+   ::oCursor   = oCursor
+
+
+
+
+
+   ::Register( nOR( 1, 2 ) )
+
+   if ! Empty( oWnd:hWnd )
+      ::Create()
+      ::Default()
+      ::lVisible = .T.
+      oWnd:AddControl( Self )
+   else
+      oWnd:DefControl( Self )
+      ::lVisible  = .F.
+   endif
+
+   if lDesign
+      ::CheckDots()
+   endif
+
+return Self
+
+
+
+
+
+static FUNCTION TBitmap_Define( cResName, cBmpFile, oWnd, hBitmap ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   local aBmpPal
+
+   If( oWnd == nil, oWnd := GetWndDefault(), ) ;
+
+   ::oWnd     = oWnd
+   ::nZoom    = 1
+   ::hWnd     = 0
+   ::hBitmap  = 0
+   ::hPalette = 0
+   ::lScroll  = .F.
+
+   ::hAlphaLevel = 255
+
+   ::SetColor( GetSysColor( 8 ), GetSysColor( 15 ) )
+
+   if ! Empty( cResName )
+      aBmpPal    = PalBmpLoad( cResName )
+      ::hBitmap  = aBmpPal[ 1 ]
+      ::hPalette = aBmpPal[ 2 ]
+      cBmpFile   = nil
+   endif
+
+   if cBmpFile <> nil
+      cBmpFile = AllTrim( cBmpFile )
+   endif
+
+   if ! Empty( cBmpFile ) .AND. File( cBmpFile )
+      ::cBmpFile = cBmpFile
+      aBmpPal = PalBmpRead( If( oWnd <> nil, oWnd:GetDC(), 0 ), cBmpFile )
+      ::hBitmap  = aBmpPal[ 1 ]
+      ::hPalette = aBmpPal[ 2 ]
+      If( oWnd <> nil, oWnd:ReleaseDC(),)
+   endif
+
+   if ! Empty( hBitmap )
+      ::hBitmap = hBitmap
+   endif
+
+   if ::hBitmap <> 0
+      PalBmpNew( 0, ::hBitmap, ::hPalette )
+   endif
+
+return Self
+
+
+
+static FUNCTION TBitmap_EraseBkGnd( hDC ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   if ! Empty( ::bEraseBkGnd )
+      return Eval( ::bEraseBkGnd, hDC )
+   endif
+
+   if ::hBitmap <> 0
+      return 1
+   elseif ::oBrush <> nil
+      FillRect( hDC, GetClientRect( ::hWnd ), ::oBrush:hBrush )
+      return 1
+   endif
+
+return nil
+
+
+
+static FUNCTION TBitmap_AdjControls( lDown ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   local n, oCtl
+
+   If( lDown == nil, lDown := .F., ) ;
+
+   if ! Empty( ::aControls ) .AND. ::nOldX <> ::nX
+      if ! lDown
+         for n = 1 to Len( ::aControls )
+             oCtl = ::aControls[ n ]
+             ::aControls[ n ]:Move( oCtl:nTop + ( ::nX - ::nOldX ), oCtl:nLeft )
+         next
+      else
+         for n = Len( ::aControls ) to 1 step -1
+             oCtl = ::aControls[ n ]
+             ::aControls[ n ]:Move( oCtl:nTop + ( ::nX - ::nOldX ), oCtl:nLeft )
+         next
+      endif
+   endif
+
+return nil
+
+
+
+static FUNCTION TBitmap_Center( ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   local aRect := ::oWnd:GetCliRect()
+
+   local oRect := TRect():New( aRect:nTop, aRect:nLeft, aRect:nBottom, aRect:nRight )
+
+   oRect:nTop    := Max( 0, Int( ( aRect:nBottom - ::nHeight ) / 2 ) )
+   oRect:nBottom := oRect:nTop  + ::nHeight - 1
+   oRect:nLeft   := Max( 0, Int( ( aRect:nRight - ::nWidth ) / 2 ) )
+   oRect:nRight  := oRect:nLeft + ::nWidth - 1
+
+   ::SetCoors( oRect )
+
+return nil
+
+
+
+static FUNCTION TBitmap_Default( ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   if ::lScroll == nil
+      ::lScroll = WndHasScrolls( ::hWnd )
+   endif
+
+   if ::lScroll
+      ::oVScroll := TScrollBar():WinNew(,,, (!.F.) .OR. .T., Self,,,,,,,,, .F.,, )
+      ::oHScroll := TScrollBar():WinNew(,,, (!.T.), Self,,,,,,,,, .F.,, )
+      ::ScrollAdjust()
+   endif
+
+
+
+
+   if ::hBitmap <> 0
+      PalBmpNew( ::hWnd, ::hBitmap, ::hPalette )
+   endif
+
+return nil
+
+
+
+static FUNCTION TBitmap_CopyToClipboard( ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   local oClipboard := TClipboard():New( 2 )
+
+   oClipboard:SetBitmap( Self )
+
+   oClipboard:End()
+
+return nil
+
+
+
+static FUNCTION TBitmap_LoadFromClipboard( oWnd ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   local oClipboard := TClipboard():New( 2, oWnd )
+   local hBitmap    := oClipboard:GetBitmap()
+   local lSuccess   := .F.
+
+   if hBitmap <> 0
+      if ::hBitmap <> 0
+         PalBmpFree( ::hBitmap, ::hPalette )
+         ::hBitmap  = 0
+         ::hPalette = 0
+      endif
+
+      ::hBitmap  = hBitmap
+      ::hPalette = 0
+      PalBmpNew( ::hWnd, hBitmap, 0 )
+      ::ScrollAdjust()
+      ::nX = 0
+      ::nY = 0
+      lSuccess = .T.
+      ::hBitmap()
+   endif
+
+
+   oClipboard:End()
+
+return lSuccess
+
+
+
+static FUNCTION TBitmap_LoadFromString( cString ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   local hBmpOld := ::hBitmap
+   local hPalOld := ::hPalette
+
+   if Empty( cString )
+      return .F.
+   endif
+
+   ::hBitmap = CreateMemBitmap( ::GetDC(), cString )
+   ::ReleaseDC()
+
+   if ! Empty( hBmpOld )
+      PalBmpFree( hBmpOld, hPalOld )
+   endif
+
+   PalBmpNew( ::hWnd, ::hBitmap, nil )
+   ::HasAlpha()
+
+return .T.
+
+
+
+static FUNCTION TBitmap_Destroy( ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   if ::hBitmap <> 0
+      PalBmpFree( ::hBitmap, ::hPalette )
+      ::hBitmap  = 0
+      ::hPalette = 0
+   endif
+
+   if ::oVScroll <> nil
+      ::oVScroll:End()
+   endif
+
+   if ::oHScroll <> nil
+      ::oHScroll:End()
+   endif
+
+   if ::hWnd <> 0
+      ::Super:Destroy()
+   else
+      if ::oBrush <> nil
+         ::oBrush:End()
+      endif
+   endif
+
+return nil
+
+
+
+
+
+static FUNCTION TBitmap_ReDefine( nId, cResName, cBmpFile, oWnd, bLClicked, bRClicked, lScroll, lStretch, oCursor, cMsg, lUpdate,  bWhen, bValid, lTransparent ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+
+   If( lScroll == nil, lScroll := .F., ) ; If( lStretch == nil, lStretch := .F., ); If( lUpdate == nil, lUpdate := .F., ); If( lTransparent == nil, lTransparent := .F., ); If( oWnd == nil, oWnd := GetWndDefault(), );
+
+   ::nId       = nId
+   ::nX        = 0
+   ::nY        = 0
+   ::nOldX     = 0
+   ::nOldY     = 0
+   ::lCaptured = .F.
+   ::lDrag     = .F.
+   ::bLClicked = bLClicked
+   ::bRClicked = bRClicked
+   ::lScroll   = lScroll
+   ::lStretch  = lStretch
+   ::aHotAreas = {}
+   ::oCursor   = oCursor
+   ::oWnd      = oWnd
+   ::nVStep    = 1
+   ::nHStep    = 1
+   ::lUpdate   = lUpdate
+   ::bWhen     = bWhen
+   ::bValid    = bValid
+   ::nZoom     = 1
+   ::lTransparent = lTransparent
+
+   ::LoadImage( cResName, If( cBmpFile <> nil, AllTrim( cBmpFile ), nil ) )
+
+   ::Register( nOR( 1, 2 ) )
+
+   if oWnd <> nil
+      oWnd:DefControl( Self )
+   endif
+
+
+
+   ::SetColor( GetSysColor( 8 ), GetSysColor( 15 ) )
+
+return Self
+
+
+
+static FUNCTION TBitmap_HandleEvent( nMsg, nWParam, nLParam ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   if nMsg == 675
+      return ::MouseLeave( nHiWord( nLParam ), nLoWord( nLParam ), nWParam )
+   elseif nMsg == 132
+      return DefWindowProc( ::hWnd, nMsg, nWParam, nLParam )
+   endif
+
+return ::Super:HandleEvent( nMsg, nWParam, nLParam )
+
+
+
+static FUNCTION TBitmap_MouseLeave( nRow, nCol, nFlags ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   if ! Empty( ::bMLeave )
+      Eval( ::bMLeave, nRow, nCol, nFlags, Self )
+   endif
+
+return nil
+
+
+
+
+
+static FUNCTION TBitmap_KeyDown( nKey, nFlags ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   if ::lScroll
+
+      do case
+         case nKey == 38
+              ::ScrollDown()
+
+         case nKey == 40
+              ::ScrollUp()
+
+         case nKey == 33
+              ::PageUp()
+
+         case nKey == 34
+              ::PageDown()
+
+         otherwise
+              return ::Super:KeyDown( nKey, nFlags )
+      endcase
+   else
+      return ::Super:KeyDown( nKey, nFlags )
+   endif
+
+return 0
+
+
+
+static FUNCTION TBitmap_nAlphaLevel( uNew ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   if uNew <> NIL
+      ::hAlphaLevel := uNew
+   else
+      if ::bAlphaLevel <> NIL
+         ::hAlphaLevel = eval( ::bAlphaLevel, Self )
+      endif
+   endif
+
+return ::hAlphaLevel
+
+
+
+static FUNCTION TBitmap_PageUp( ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   local nVisible := ::Super:nHeight() - If( ::oHScroll:nMax <> 0, GetSysMetrics( 3 ), 0 ) - 1
+
+   ::nOldX = ::nX
+   if ::nX < -nVisible
+      ::nX += nVisible
+   else
+      ::nX = 0
+   endif
+   ::Refresh( .F. )
+   ::oVScroll:SetPos( Int( -::nX / ::nVStep ) )
+
+   ::AdjControls()
+
+return nil
+
+
+
+static FUNCTION TBitmap_PageDown( ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   local nVisible := ::Super:nHeight() - If( ::oHScroll:nMax <> 0, GetSysMetrics( 3 ), 0 ) - 1
+
+   ::nOldX = ::nX
+   ::nX -= Min( nVisible, ::nHeight() + ::nX - nVisible )
+   ::Refresh( .F. )
+   ::oVScroll:SetPos( Int( -::nX / ::nVStep ) )
+
+   ::AdjControls()
+
+return nil
+
+
+
+static FUNCTION TBitmap_PageLeft( ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   local nVisible := ::Super:nWidth() - If( ::oVScroll:nMax <> 0, GetSysMetrics( 2 ), 0 ) - 1
+
+   ::nOldY = ::nY
+   if ::nY < -nVisible
+      ::nY += nVisible
+   else
+      ::nY = 0
+   endif
+   ::Refresh( .F. )
+   ::oHScroll:SetPos( Int( -::nY / ::nHStep ) )
+
+   ::AdjControls()
+
+return nil
+
+
+
+static FUNCTION TBitmap_PageRight( ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   local nVisible := ::Super:nWidth() - If( ::oVScroll:nMax <> 0, GetSysMetrics( 2 ), 0 ) - 1
+
+   ::nOldY = ::nY
+   ::nY -= Min( nVisible, ::nWidth() + ::nY - nVisible )
+   ::Refresh( .F. )
+   ::oHScroll:SetPos( Int( -::nY / ::nHStep ) )
+
+   ::AdjControls()
+
+return nil
+
+
+
+static FUNCTION TBitmap_Paint( ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   local aInfo := ::DispBegin(), hBmpOld, nZeroZeroClr, nOldClr
+   local nAlphaLevel, hBitmap
+
+   if IsAppThemed() .AND. Empty( ::oBrush:hBitmap ) .AND. ::lTransparent
+      if ::oWnd:ClassName() == "TDIALOG"
+         DrawPBack( ::hWnd, ::hDC )
+      else
+         FillRect( ::hDC, GetClientRect( ::hWnd ), ::oWnd:oBrush:hBrush )
+      endif
+   else
+
+
+
+         SetBrushOrgEx( ::hDC, nBmpWidth( ::oBrush:hBitmap ) - ::nLeft, nBmpHeight( ::oBrush:hBitmap ) - ::nTop )
+
+      FillRect( ::hDC, GetClientRect( ::hWnd ), ::oWnd:oBrush:hBrush )
+   endif
+
+   if Empty( ::hBitmap ) .AND. ! Empty( ::cBmpFile )
+      ::LoadBmp( ::cBmpFile )
+   endif
+
+   if ! Empty( ::hBitmap )
+      if ::lStretch
+         if SetAlpha() .AND. ::lHasAlpha
+            hBitmap := resizebmp( ::hBitmap, ::Super:nWidth(), ::Super:nHeight )
+            ABPaint( ::hDC, ::nX, ::nY, hBitmap, ::nAlphaLevel() )
+         else
+            if ! ::lTransparent
+
+               PalBmpDraw( ::hDC, ::nX, ::nY, ::hBitmap, ::hPalette, ::Super:nWidth(), ::Super:nHeight(),, ::lTransparent, ::nClrPane )
+            else
+               hBmpOld = SelectObject( ::hDC, ::hBitmap )
+               nZeroZeroClr = GetPixel( ::hDC, 0, 0 )
+               SelectObject( ::hDC, hBmpOld )
+               nOldClr = SetBkColor( ::hDC, nRGB( 255, 255, 255 ) )
+
+               TransBmp( ::hBitmap, ::nWidth(), ::nHeight(), nZeroZeroClr, ::hDC, ::nY, ::nX, ::Super:nWidth(), ::Super:nHeight() )
+               SetBkColor( ::hDC, nOldClr )
+            endif
+         endif
+      else
+         if ::nZoom > 0
+            if SetAlpha() .AND. ::lHasAlpha
+               hBitmap := resizebmp( ::hBitmap, ::nWidth, ::nHeight )
+               ABPaint( ::hDC, ::nX, ::nY, hBitmap, ::nAlphaLevel() )
+            else
+              if ! ::lTransparent
+
+                  PalBmpDraw( ::hDC, ::nX, ::nY, ::hBitmap, ::hPalette, ::nWidth(), ::nHeight(),, ::lTransparent, ::nClrPane )
+               else
+                  hBmpOld = SelectObject( ::hDC, ::hBitmap )
+                  nZeroZeroClr = GetPixel( ::hDC, 0, 0 )
+                  SelectObject( ::hDC, hBmpOld )
+                  nOldClr = SetBkColor( ::hDC, nRGB( 255, 255, 255 ) )
+
+                  TransBmp( ::hBitmap, ::nWidth(), ::nHeight(), nZeroZeroClr, ::hDC, ::nY, ::nX, ::nWidth(), ::nHeight() )
+                  SetBkColor( ::hDC, nOldClr )
+               endif
+            endif
+         endif
+      endif
+   endif
+
+   if ::bPainted <> nil
+      Eval( ::bPainted, ::hDC )
+   endif
+
+   ::DispEnd( aInfo )
+
+return nil
+
+
+
+static FUNCTION TBitmap_ReLoad( cResName, cBmpFile ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+  local lSuccess := ::LoadImage( cResName, cBmpFile )
+
+  if lSuccess .AND. ! Empty( ::hWnd )
+     ::ScrollAdjust()
+     ::nX = 0
+     ::nY = 0
+     ::Refresh()
+  endif
+
+return lSuccess
+
+
+
+static FUNCTION TBitmap_LoadImage( cResName, cBmpFile ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   local lChanged := .F.
+   local hBmpOld  := ::hBitmap
+   local hPalOld  := ::hPalette
+   local aBmpPal
+
+   If( cResName == nil, cResName := ::cResName, ) ; If( cBmpFile == nil, cBmpFile := ::cBmpFile, );
+
+   if ! Empty( cResName )
+       aBmpPal    = PalBmpLoad( cResName )
+       ::hBitmap  = aBmpPal[ 1 ]
+       ::hPalette = aBmpPal[ 2 ]
+       lChanged   = .T.
+       cBmpFile   = nil
+
+    elseif File( cBmpFile )
+       if Upper( Right( cBmpFile, 3 ) ) == "PNG"
+          ::hBitmap  = FWOpenPngFile( cBmpFile )
+          ::hPalette = 0
+       else
+         aBmpPal = PalBmpRead( ::GetDC(), AllTrim( cBmpFile ) )
+         ::hBitmap  = aBmpPal[ 1 ]
+         ::hPalette = aBmpPal[ 2 ]
+         ::ReleaseDC()
+         lChanged   = .T.
+         cResName   = nil
+      endif
+   endif
+
+   if lChanged
+
+      ::cResName = cResName
+      ::cBmpFile = cBmpFile
+
+      if ! Empty( hBmpOld )
+         PalBmpFree( hBmpOld, hPalOld )
+      endif
+
+   endif
+
+  ::HasAlpha()
+
+return lChanged
+
+
+
+static FUNCTION TBitmap_ScrollUp( ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   local nVisible := ::Super:nHeight() - If( ::oHScroll:nMax <> 0, GetSysMetrics( 3 ), 0 )
+   local nStep
+
+   ::nOldX = ::nX
+   ::oVScroll:GoDown()
+
+   nStep := ( ::nHeight() + ::nX ) - nVisible
+
+   if ::nHeight() > nVisible
+      if ::nX > -::nXExtra() - If( ::oHScroll:nMax <> 0, GetSysMetrics( 3 ), 0 )
+         ::nX -= Min( nStep, ::nVStep )
+         ::Refresh( .F. )
+      endif
+   endif
+
+   ::AdjControls()
+
+return nil
+
+
+
+static FUNCTION TBitmap_ScrollDown( ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   ::nOldX = ::nX
+
+   ::oVScroll:GoUp()
+   ::nX := Min( ::nX + ::nVStep, 0 )
+   ::Refresh( .F. )
+
+   ::AdjControls( .T. )
+
+return nil
+
+
+
+static FUNCTION TBitmap_ScrollLeft( ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   local nVisible := ::Super:nWidth() - If( ::oVScroll:nMax <> 0, GetSysMetrics( 2 ), 0 ) - 1
+   local nStep, n
+
+   nStep := ( ::nWidth() + ::nY ) - nVisible
+
+   ::oHScroll:GoDown()
+   if ::nWidth() > nVisible
+      if ::nY > -::nYExtra() - If( ::oVScroll:nMax <> 0, GetSysMetrics( 2 ), 0 )
+         ::nY -= Min( nStep, ::nHStep )
+         ::Refresh( .F. )
+      endif
+   endif
+
+   if ! Empty( ::aControls )
+      for n = Len( ::aControls ) to 1 step -1
+
+          ::aControls[ n ]:Move( ::aControls[ n ]:nTop, ::aControls[ n ]:nLeft - 10 )
+      next
+   endif
+
+return nil
+
+
+
+static FUNCTION TBitmap_ScrollRight( ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+
+   local nVisible := ::Super:nWidth() - If( ::oVScroll <> nil .AND.  ::oVScroll:nMax <> 0, GetSysMetrics( 2 ), 0 ) - 1
+   local n
+
+   ::oHScroll:GoUp()
+   if ::nWidth() > nVisible
+      ::nY := Min( ::nY + ::nHStep, 0 )
+      ::Refresh( .F. )
+   endif
+
+   if ! Empty( ::aControls )
+      for n = Len( ::aControls ) to 1 step -1
+
+          ::aControls[ n ]:Move( ::aControls[ n ]:nTop, ::aControls[ n ]:nLeft + 10 )
+      next
+   endif
+
+return nil
+
+
+
+static FUNCTION TBitmap_VScroll( nWParam, nLParam ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+
+
+
+      local nScrollCode := nLoWord( nWParam )
+
+
+   local nPos := nHiWord( nWParam )
+
+   do case
+      case nScrollCode == 0
+           ::ScrollDown()
+
+      case nScrollCode == 1
+           ::ScrollUp()
+
+      case nScrollCode == 2
+           ::PageUp()
+
+      case nScrollCode == 3
+           ::PageDown()
+
+      case nScrollCode == 6
+           ::nX = 0
+           ::oVScroll:GoTop()
+           ::Refresh( .F. )
+
+      case nScrollCode == 7
+           ::nX = ::nXExtra()
+           ::oVScroll:GoBottom()
+           ::Refresh( .F. )
+
+
+
+
+
+
+      otherwise
+           return nil
+   endcase
+
+return 0
+
+
+
+static FUNCTION TBitmap_HScroll( nWParam, nLParam ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+
+
+
+      local nScrollCode := nLoWord( nWParam )
+
+
+   local nPos := nHiWord( nWParam )
+
+   do case
+      case nScrollCode == 0
+           ::ScrollRight()
+
+      case nScrollCode == 1
+           ::ScrollLeft()
+
+      case nScrollCode == 2
+           ::PageLeft()
+
+      case nScrollCode == 3
+           ::PageRight()
+
+      case nScrollCode == 6
+           ::nY = 0
+           ::oHScroll:GoTop()
+           ::Refresh( .F. )
+
+      case nScrollCode == 7
+           ::nY = ::nYExtra()
+           ::oHScroll:GoBottom()
+           ::Refresh( .F. )
+
+
+
+
+
+
+      otherwise
+           return nil
+   endcase
+
+return 0
+
+
+
+static FUNCTION TBitmap_ScrollAdjust( ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   local nVisHeight, nVisWidth
+   local lHor := .F., lVer := .F.
+
+   nVisHeight = ::Super:nHeight()
+   nVisWidth  = ::Super:nWidth()
+
+   if ::lScroll .AND. ! Empty( ::hBitmap ) .AND. ::oVScroll <> nil
+      if ::nHeight() <= nVisHeight .OR. ::lStretch
+         ::oVScroll:SetRange( 0, 0 )
+         ::nX = 0
+
+      else
+         lVer = .T.
+      endif
+      if ::nWidth() <= nVisWidth .OR. ::lStretch .AND. ::oHScroll <> nil
+         ::oHScroll:SetRange( 0, 0 )
+
+         ::nY = 0
+      else
+         lHor = .T.
+      endif
+      if lVer .AND. ::oVScroll <> nil
+
+         ::oVScroll:SetRange( 0, ( ( ::nXExtra() +  If( lHor, GetSysMetrics( 3 ), 0 ) ) / ::nVStep ) )
+         if ::nX == 0
+            ::oVScroll:SetPos( 0 )
+         endif
+      endif
+      if lHor .AND. ::oHScroll <> nil
+
+         ::oHScroll:SetRange( 0, Int( ( ::nYExtra() +  If( lVer, GetSysMetrics( 2 ), 0 ) ) / ::nHStep ) )
+         if ::nY == 0
+            ::oHScroll:SetPos( 0 )
+         endif
+      endif
+   endif
+
+return nil
+
+
+
+static FUNCTION TBitmap_Zoom( nZoom ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   if nZoom <> nil
+      ::nZoom = nZoom
+   endif
+
+return ::nZoom
+
+
+
+static FUNCTION TBitmap_Inspect( cData ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   do case
+      case cData == "cBmpFile"
+
+
+
+
+
+           return { | cFileName |  cFileName := If( cFileName == nil, "*.bmp|*.bmp", cFileName + "|*.bmp" ), cFileName := cGetFile( cFileName, "Select a BMP file" ), ::LoadImage( ,cFileName ), cFileName }
+   endcase
+
+return nil
+
+
+
+static FUNCTION TBitmap_Clear( ) ; local Self AS CLASS TBitmap := QSelf() AS CLASS TBitmap
+
+   if ! Empty( ::hBitmap )
+      PalBmpFree( ::hBitmap, ::hPalette )
+      ::hBitmap := ::hPalette := 0
+      ::cBmpFile := ::cResName := nil
+      ::Refresh()
+   endif
+
+return nil
+
+
+
+function PalBmpFree( hBmp, hPal )
+
+   DeleteObject( hBmp )
+   DeleteObject( hPal )
+
+return nil

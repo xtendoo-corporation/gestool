@@ -1,0 +1,2868 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 8 ".\.\Prg\TInfEsp.prg"
+_HB_CLASS TInfEsp ; function TInfEsp ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TInfEsp", iif( .T., { @TInfGen() }, { @HBObject() } ), @TInfEsp() ) ) ;
+
+   _HB_MEMBER { AS OBJECT oDbfArt } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfArt"}, .F. )
+   _HB_MEMBER { AS OBJECT oDbfFam } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfFam"}, .F. )
+   _HB_MEMBER { AS OBJECT oDbfKit } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfKit"}, .F. )
+   _HB_MEMBER { AS OBJECT oDbfDiv } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfDiv"}, .F. )
+   _HB_MEMBER { AS OBJECT oDbfIva } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfIva"}, .F. )
+   _HB_MEMBER { AS OBJECT oDbfPrv } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfPrv"}, .F. )
+   _HB_MEMBER { AS OBJECT oBrwArticulo } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwArticulo"}, .F. )
+   _HB_MEMBER { AS OBJECT oBrwFamilia } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwFamilia"}, .F. )
+   _HB_MEMBER { AS OBJECT oBrwSeleccion } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwSeleccion"}, .F. )
+   _HB_MEMBER { AS OBJECT oGetFamilia } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetFamilia"}, .F. )
+   _HB_MEMBER { AS OBJECT oGetArticulo } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetArticulo"}, .F. )
+   _HB_MEMBER { AS OBJECT oCodigo } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCodigo"}, .F. )
+   _HB_MEMBER { cGetArticulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cGetArticulo"}, .F. )
+   _HB_MEMBER { cGetFamilia } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cGetFamilia"}, .F. )
+   _HB_MEMBER { cCodigo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigo"}, .F. )
+   _HB_MEMBER { AS LOGIC lFiltrarFamilias } ; oClass:AddMultiData( "LOGIC", .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lFiltrarFamilias"}, .F. )
+   _HB_MEMBER { AS ARRAY aCbxFamilia } ; oClass:AddMultiData( "ARRAY", { "Código", "Nombre" }, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aCbxFamilia"}, .F. )
+   _HB_MEMBER { AS OBJECT oCbxFamilia } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCbxFamilia"}, .F. )
+   _HB_MEMBER { AS ARRAY aCbxArticulo } ; oClass:AddMultiData( "ARRAY", { "Código", "Nombre", "Código de barras", "Família + Código", "Família + Nombre" }, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aCbxArticulo"}, .F. )
+   _HB_MEMBER { AS OBJECT oCbxArticulo } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCbxArticulo"}, .F. )
+
+   _HB_MEMBER Create(); oClass:AddMethod( "Create", @TInfEsp_Create(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles(); oClass:AddMethod( "OpenFiles", @TInfEsp_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @TInfEsp_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lResource( cFld); oClass:AddMethod( "lResource", @TInfEsp_lResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lGenerate(); oClass:AddMethod( "lGenerate", @TInfEsp_lGenerate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AgregarArticulo(); oClass:AddMethod( "AgregarArticulo", @TInfEsp_AgregarArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AgregarTodos( cCodFam); oClass:AddMethod( "AgregarTodos", @TInfEsp_AgregarTodos(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER BorrarArticulo(); oClass:AddMethod( "BorrarArticulo", @TInfEsp_BorrarArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InsertarArticulo(); oClass:AddMethod( "InsertarArticulo", @TInfEsp_InsertarArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EscribeArticulo( lAppend); oClass:AddMethod( "EscribeArticulo", @TInfEsp_EscribeArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ActualizaArticulo(); oClass:AddMethod( "ActualizaArticulo", @TInfEsp_ActualizaArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GuardarArchivo(); oClass:AddMethod( "GuardarArchivo", @TInfEsp_GuardarArchivo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CargarArchivo(); oClass:AddMethod( "CargarArchivo", @TInfEsp_CargarArchivo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ChangeFamilias(); oClass:AddMethod( "ChangeFamilias", @TInfEsp_ChangeFamilias(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SeekFamilia( nKey, nFlags); oClass:AddMethod( "SeekFamilia", @TInfEsp_SeekFamilia(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SeekArticulo( nKey, nFlags); oClass:AddMethod( "SeekArticulo", @TInfEsp_SeekArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EditColumn(); oClass:AddMethod( "EditColumn", @TInfEsp_EditColumn(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SubirArticulo( lAppend); oClass:AddMethod( "SubirArticulo", @TInfEsp_SubirArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER BajarArticulo( lAppend); oClass:AddMethod( "BajarArticulo", @TInfEsp_BajarArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER BorrarTodosArticulos(); oClass:AddInline( "BorrarTodosArticulos", {|Self | ( ( Self ) ), ( ::oDbf:Zap(), ::oBrwSeleccion:Refresh() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TInfEsp ;
+
+
+
+static FUNCTION TInfEsp_Create( ) ; local Self AS CLASS TInfEsp := QSelf() AS CLASS TInfEsp
+
+   ::AddField( "cCodArt", "C", 18, 0, {|| "@!" },            "Art.",           .T., "Código artículo"       , 14, .F. )
+   ::AddField( "cNomArt", "C",100, 0, {|| "@!" },            "Descripción",    .T., "Descripción artículo"  , 80, .F. )
+   ::AddField( "cCodFam", "C", 16, 0, {|| "@!" },            "Fam.",           .F., "Familia"               ,  5, .F. )
+   ::AddField( "cNomFam", "C", 40, 0, {|| "@!" },            "Nom. Fam.",      .F., "Nombre familia"        , 20, .F. )
+   ::AddField( "pCosto",  "N", 15, 6, {|| cPinDiv() },       "Costo",          .F., "Precio de costo"       , 15, .F. )
+   ::AddField( "pVenta1", "N", 15, 6, {|| ::cPicImp },       "Precio 1",       .T., "Precio 1"              , 15, .F. )
+   ::AddField( "pVtaIva1","N", 15, 6, {|| ::cPicImp },       'Precio " + cImp() + " 1',   .F., 'Precio " + cImp() + " 1'          , 15, .F. )
+   ::AddField( "pVenta2", "N", 15, 6, {|| ::cPicImp },       "Precio 2",       .F., "Precio 2"              , 15, .F. )
+   ::AddField( "pVtaIva2","N", 15, 6, {|| ::cPicImp },       'Precio " + cImp() + " 2',   .F., 'Precio " + cImp() + " 2'          , 15, .F. )
+   ::AddField( "pVenta3", "N", 15, 6, {|| ::cPicImp },       "Precio 3",       .F., "Precio 3"              , 15, .F. )
+   ::AddField( "pVtaIva3","N", 15, 6, {|| ::cPicImp },       'Precio " + cImp() + " 3',   .F., 'Precio " + cImp() + " 3'          , 15, .F. )
+   ::AddField( "pVenta4", "N", 15, 6, {|| ::cPicImp },       "Precio 4",       .F., "Precio 4"              , 15, .F. )
+   ::AddField( "pVtaIva4","N", 15, 6, {|| ::cPicImp },       'Precio " + cImp() + " 4',   .F., 'Precio " + cImp() + " 4'          , 15, .F. )
+   ::AddField( "pVenta5", "N", 15, 6, {|| ::cPicImp },       "Precio 5",       .F., "Precio 5"              , 15, .F. )
+   ::AddField( "pVtaIva5","N", 15, 6, {|| ::cPicImp },       'Precio " + cImp() + " 5',   .F., 'Precio " + cImp() + " 5'          , 15, .F. )
+   ::AddField( "pVenta6", "N", 15, 6, {|| ::cPicImp },       "Precio 6",       .F., "Precio 6"              , 15, .F. )
+   ::AddField( "pVtaIva6","N", 15, 6, {|| ::cPicImp },       'Precio " + cImp() + " 6',   .F., 'Precio " + cImp() + " 6'          , 15, .F. )
+   ::AddField( "nNumArt", "N",  9, 0, {|| "@!" },            "Num.",           .F., "Posición en el informe", 10, .F. )
+   ::AddField( "cCodPrv", "C", 12, 0, {|| "@!" },            "Prv.",           .F., "Código proveedor"      , 14, .F. )
+   ::AddField( "cNomPrv", "C", 40, 0, {|| "@!" },            "Nom. Prv.",      .F., "Nombre Proveedor"      , 20, .F. )
+
+   ::AddTmpIndex ( "cCodFam", "cCodFam + cCodArt" )
+   ::AddTmpIndex ( "cNomFam", "cNomFam + Str( nNumArt )" )
+   ::AddTmpIndex ( "nNumArt", "Str( nNumArt )" )
+
+   ::AddGroup( {|| ::oDbf:cNomFam }, {|| "Familia  : " + Rtrim( ::oDbf:cCodFam ) + "-" + Rtrim( ::oDbf:cNomFam ) }, {|| "" } )
+
+   ::lDefSerInf   := .F.
+   ::lDefFecInf   := .F.
+   ::lDefDivInf   := .F.
+   ::lDefTitInf   := .F.
+   ::lDefMetInf   := .F.
+
+   ::bPreGenerate := {|| ::oDbf:ordSetFocus( "cNomFam" ), ::oDbf:GoTop() }
+   ::bPostGenerate:= {|| ::oDbf:ordSetFocus( "nNumArt" ), ::oDbf:GoTop() }
+
+RETURN ( self )
+
+
+
+static FUNCTION TInfEsp_OpenFiles( ) ; local Self AS CLASS TInfEsp := QSelf() AS CLASS TInfEsp
+
+   local lOpen    := .T.
+   local oBlock   := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   BEGIN SEQUENCE
+
+   ::oDbfArt := DbfServer( "ARTICULO.DBF", ):NewOpen( "ARTICULO.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oDbfArt:AddBag( "ARTICULO.CDX" ) ; ::oDbfArt:AddBag( ) ; ::oDbfArt:AutoIndex()
+
+   ::oDbfFam := DbfServer( "FAMILIAS.DBF", ):NewOpen( "FAMILIAS.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oDbfFam:AddBag( "FAMILIAS.CDX" ) ; ::oDbfFam:AddBag( ) ; ::oDbfFam:AutoIndex()
+
+   ::oDbfKit := DbfServer( "ARTKIT.DBF", ):NewOpen( "ARTKIT.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oDbfKit:AddBag( "ARTKIT.CDX" ) ; ::oDbfKit:AddBag( ) ; ::oDbfKit:AutoIndex()
+
+   ::oDbfDiv := DbfServer( "DIVISAS.DBF", ):NewOpen( "DIVISAS.DBF",, ( cDriver() ),, ( cPatDat() ), .F., .T., .F., .F. ) ; ::oDbfDiv:AddBag( "DIVISAS.CDX" ) ; ::oDbfDiv:AddBag( ) ; ::oDbfDiv:AutoIndex()
+
+   ::oDbfIva := DbfServer( "TIVA.DBF", ):NewOpen( "TIVA.DBF",, ( cDriver() ),, ( cPatDat() ), .F., .T., .F., .F. ) ; ::oDbfIva:AddBag( "TIVA.CDX" ) ; ::oDbfIva:AddBag( ) ; ::oDbfIva:AutoIndex()
+
+   ::oDbfPrv := DbfServer( "PROVEE.DBF", ):NewOpen( "PROVEE.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oDbfPrv:AddBag( "PROVEE.CDX" ) ; ::oDbfPrv:AddBag( ) ; ::oDbfPrv:AutoIndex()
+
+   RECOVER
+
+      msgStop( "Imposible abrir todas las bases de datos" )
+      ::CloseFiles()
+      lOpen       := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TInfEsp_CloseFiles( ) ; local Self AS CLASS TInfEsp := QSelf() AS CLASS TInfEsp
+
+   if !Empty( ::oDbfArt ) .AND. ::oDbfArt:Used()
+      ::oDbfArt:End()
+   end
+   if !Empty( ::oDbfFam ) .AND. ::oDbfFam:Used()
+      ::oDbfFam:End()
+   end
+   if !Empty( ::oDbfKit ) .AND. ::oDbfKit:Used()
+      ::oDbfKit:End()
+   end
+   if !Empty( ::oDbfDiv ) .AND. ::oDbfDiv:Used()
+      ::oDbfDiv:End()
+   end
+   if !Empty( ::oDbfIva ) .AND. ::oDbfIva:Used()
+      ::oDbfIva:End()
+   end
+   if !Empty( ::oDbfPrv ) .AND. ::oDbfPrv:Used()
+      ::oDbfPrv:End()
+   end
+
+   ::oDbfArt := nil
+   ::oDbfFam := nil
+   ::oDbfKit := nil
+   ::oDbfDiv := nil
+   ::oDbfPrv := nil
+
+RETURN ( Self )
+
+
+
+static FUNCTION TInfEsp_lResource( cFld ) ; local Self AS CLASS TInfEsp := QSelf() AS CLASS TInfEsp
+
+   local cCbxFamilia          := "Nombre"
+   local cCbxArticulo         := "Código"
+
+   ::lBig                     := .T.
+
+   if !::StdResource( "INFESPECIAL" )
+      return .F.
+   end
+
+   ::lLoadDivisa()
+
+   ::oDbfArt:OrdSetFocus( "cFamCod" )
+   ::oDbfFam:OrdSetFocus( "cNomFam" )
+
+
+
+
+
+   ::oGetFamilia := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, ::cGetFamilia, ::cGetFamilia:= u ) }, ::oFld:aDialogs[1],, "@!",, "N/W*",,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+      ::oGetFamilia:bChange   := { |nKey, nFlags| ::SeekFamilia( nKey, nFlags ) }
+      ::oGetFamilia:bValid    := { || ::oDbfFam:OrdClearScope(), ::oBrwFamilia:Refresh(), .T. }
+
+
+
+
+
+   ::oCbxFamilia := TComboBox():ReDefine( 110, { | u | If( PCount()==0, cCbxFamilia, cCbxFamilia:= u ) }, ::aCbxFamilia, ::oFld:aDialogs[1],,,,,,, .F.,,,,,,, "::oCbxFamilia",,,,,,, )
+
+      ::oCbxFamilia:bChange   := {|| ::oDbfFam:ordSetFocus( ::oCbxFamilia:nAt ), ::oBrwFamilia:Refresh(), ::oBrwArticulo:Refresh(), ::oGetFamilia:SetFocus() }
+
+
+
+
+
+   ::oGetArticulo := TGetHlp():ReDefine( 220, { | u | If( PCount()==0, ::cGetArticulo, ::cGetArticulo:= u ) }, ::oFld:aDialogs[1],, "@!",, "N/W*",,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+      ::oGetArticulo:bValid   := { || ::oDbfArt:OrdClearScope(), ::oBrwArticulo:Refresh(), .T. }
+      ::oGetArticulo:bKeyDown := { | nKey | if( nKey == 13, ::AgregarArticulo(), ), ::oGetArticulo:lValid() }
+      ::oGetArticulo:bChange  := { | nKey, nFlags | ::SeekArticulo( nKey, nFlags ) }
+
+
+
+
+
+   ::oCbxArticulo := TComboBox():ReDefine( 230, { | u | If( PCount()==0, cCbxArticulo, cCbxArticulo:= u ) }, ::aCbxArticulo, ::oFld:aDialogs[1],,,,,,, .F.,,,,,,, "::oCbxArticulo",,,,,,, )
+
+      ::oCbxArticulo:bChange  := {|| ::oDbfArt:ordSetFocus( ::oCbxArticulo:nAt ), ::oBrwArticulo:Refresh(), ::oGetArticulo:SetFocus() }
+
+   ::oBrwFamilia                    := IXBrowse():New( ::oFld:aDialogs[1] )
+
+   ::oBrwFamilia:bClrSel            := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+   ::oBrwFamilia:bClrSelFocus       := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+   ::oDbfFam:SetBrowse( ::oBrwFamilia )
+
+   ::oBrwFamilia:nMarqueeStyle      := 5
+
+   ::oBrwFamilia:bChange            := {|| ::ChangeFamilias() }
+
+   ::oBrwFamilia:lRecordSelector    := .F.
+
+   ::oBrwFamilia:CreateFromResource( 120 )
+
+   with object ( ::oBrwFamilia:AddCol() )
+      :cHeader                      := "Código"
+      :bEditValue                   := {|| ::oDbfFam:cCodFam }
+      :nWidth                       := 75
+   end
+
+   with object ( ::oBrwFamilia:AddCol() )
+      :cHeader                      := "Familia"
+      :bEditValue                   := {|| ::oDbfFam:cNomFam }
+      :nWidth                       := 160
+   end
+
+   ::oBrwArticulo                   := IXBrowse():New( ::oFld:aDialogs[1] )
+
+   ::oBrwArticulo:bClrSel           := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+   ::oBrwArticulo:bClrSelFocus      := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+   ::oBrwArticulo:blDblClick        := { || ::AgregarArticulo() }
+
+   ::oDbfArt:SetBrowse( ::oBrwArticulo )
+
+   ::oBrwArticulo:lRecordSelector   := .F.
+
+   ::oBrwArticulo:nMarqueeStyle     := 5
+
+   ::oBrwArticulo:CreateFromResource( 130 )
+
+   with object ( ::oBrwArticulo:AddCol() )
+      :cHeader                      := "Referencia"
+      :bEditValue                   := {|| ::oDbfArt:Codigo }
+      :nWidth                       := 90
+   end
+
+   with object ( ::oBrwArticulo:AddCol() )
+      :cHeader                      := "Descripción"
+      :bEditValue                   := {|| ::oDbfArt:Nombre }
+      :nWidth                       := 290
+   end
+
+   with object ( ::oBrwArticulo:AddCol() )
+      :cHeader                      := "Precio 1 EUR"
+      :bEditValue                   := {|| Trans( ::oDbfArt:pVenta1,  ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwArticulo:AddCol() )
+      :cHeader                      := "Precio 1 " + cImp() + " EUR"
+      :bEditValue                   := {|| Trans( ::oDbfArt:pVtaIva1, ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwArticulo:AddCol() )
+      :cHeader                      := "Precio 2 EUR"
+      :bEditValue                   := {|| Trans( ::oDbfArt:pVenta2,  ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwArticulo:AddCol() )
+      :cHeader                      := "Precio 2 " + cImp() + " EUR"
+      :bEditValue                   := {|| Trans( ::oDbfArt:pVtaIva2, ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwArticulo:AddCol() )
+      :cHeader                      := "Precio 3 EUR"
+      :bEditValue                   := {|| Trans( ::oDbfArt:pVenta3,  ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwArticulo:AddCol() )
+      :cHeader                      := "Precio 3 " + cImp() + " EUR"
+      :bEditValue                   := {|| Trans( ::oDbfArt:pVtaIva3, ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwArticulo:AddCol() )
+      :cHeader                      := "Precio 4 EUR"
+      :bEditValue                   := {|| Trans( ::oDbfArt:pVenta4,  ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwArticulo:AddCol() )
+      :cHeader                      := "Precio 4 " + cImp() + " EUR"
+      :bEditValue                   := {|| Trans( ::oDbfArt:pVtaIva4, ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwArticulo:AddCol() )
+      :cHeader                      := "Precio 5 EUR"
+      :bEditValue                   := {|| Trans( ::oDbfArt:pVenta5,  ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwArticulo:AddCol() )
+      :cHeader                      := "Precio 5 " + cImp() + " EUR"
+      :bEditValue                   := {|| Trans( ::oDbfArt:pVtaIva5, ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwArticulo:AddCol() )
+      :cHeader                      := "Precio 6 EUR"
+      :bEditValue                   := {|| Trans( ::oDbfArt:pVenta6,  ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwArticulo:AddCol() )
+      :cHeader                      := "Precio 6 " + cImp() + " EUR"
+      :bEditValue                   := {|| Trans( ::oDbfArt:pVtaIva6, ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+
+
+
+   TButton():ReDefine( 260, {||( ::BorrarTodosArticulos() )}, ::oFld:aDialogs[1],,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 240, {||( ::SubirArticulo() )}, ::oFld:aDialogs[1],,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 250, {||( ::BajarArticulo() )}, ::oFld:aDialogs[1],,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 140, {||( ::AgregarArticulo() )}, ::oFld:aDialogs[1],,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 150, {||( ::AgregarTodos( ::oDbfFam:cCodFam ) )}, ::oFld:aDialogs[1],,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 160, {||( ::BorrarArticulo() )}, ::oFld:aDialogs[1],,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 190, {||( ::GuardarArchivo() )}, ::oFld:aDialogs[1],,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 200, {||( ::CargarArchivo() )}, ::oFld:aDialogs[1],,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 210, {||( ::ActualizaArticulo() )}, ::oFld:aDialogs[1],,, .F.,,,, .F. )
+
+
+   ::oBrwSeleccion                   := IXBrowse():New( ::oFld:aDialogs[1] )
+
+   ::oBrwSeleccion:bClrSel           := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+   ::oBrwSeleccion:bClrSelFocus      := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+   ::oBrwSeleccion:lFastEdit         := .T.
+
+   ::oDbf:SetBrowse( ::oBrwSeleccion )
+
+   ::oBrwSeleccion:lRecordSelector   := .F.
+
+   ::oBrwSeleccion:nMarqueeStyle     := 5
+
+   ::oBrwSeleccion:CreateFromResource( 170 )
+
+   with object ( ::oBrwSeleccion:AddCol() )
+      :cHeader                      := "Num."
+      :bEditValue                   := {|| Trans( ::oDbf:nNumArt, "999999" ) }
+      :nWidth                       := 40
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwSeleccion:AddCol() )
+      :cHeader                      := "Referencia"
+      :bEditValue                   := {|| ::oDbf:cCodArt }
+      :nWidth                       := 120
+   end
+
+   with object ( ::oBrwSeleccion:AddCol() )
+      :cHeader                      := "Familia"
+      :bEditValue                   := {|| ::oDbf:cCodFam }
+      :nWidth                       := 70
+   end
+
+   with object ( ::oBrwSeleccion:AddCol() )
+      :cHeader                      := "Descripción"
+      :bEditValue                   := {|| ::oDbf:cNomArt }
+      :nWidth                       := 330
+      :nEditType                    := 1
+      :bOnPostEdit                  := { | oCol, xVal | ::oDbf:cNomArt  := xVal  }
+   end
+
+   with object ( ::oBrwSeleccion:AddCol() )
+      :cHeader                      := "Costo"
+      :bEditValue                   := {|| Trans( ::oDbf:pCosto, cPinDiv() ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwSeleccion:AddCol() )
+      :cHeader                      := "Precio 1 EUR"
+      :bEditValue                   := {|| Trans( ::oDbf:pVenta1, ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwSeleccion:AddCol() )
+      :cHeader                      := "Precio 1 " + cImp() + " EUR"
+      :bEditValue                   := {|| Trans( ::oDbf:pVtaIva1, ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwSeleccion:AddCol() )
+      :cHeader                      := "Precio 2 EUR"
+      :bEditValue                   := {|| Trans( ::oDbf:pVenta2, ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwSeleccion:AddCol() )
+      :cHeader                      := "Precio 2 " + cImp() + " EUR"
+      :bEditValue                   := {|| Trans( ::oDbf:pVtaIva2, ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwSeleccion:AddCol() )
+      :cHeader                      := "Precio 3 EUR"
+      :bEditValue                   := {|| Trans( ::oDbf:pVenta3, ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwSeleccion:AddCol() )
+      :cHeader                      := "Precio 3 " + cImp() + " EUR"
+      :bEditValue                   := {|| Trans( ::oDbf:pVtaIva3, ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwSeleccion:AddCol() )
+      :cHeader                      := "Precio 4 EUR"
+      :bEditValue                   := {|| Trans( ::oDbf:pVenta4, ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwSeleccion:AddCol() )
+      :cHeader                      := "Precio 4 " + cImp() + " EUR"
+      :bEditValue                   := {|| Trans( ::oDbf:pVtaIva4, ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwSeleccion:AddCol() )
+      :cHeader                      := "Precio 5 EUR"
+      :bEditValue                   := {|| Trans( ::oDbf:pVenta5, ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwSeleccion:AddCol() )
+      :cHeader                      := "Precio 5 " + cImp() + " EUR"
+      :bEditValue                   := {|| Trans( ::oDbf:pVtaIva5, ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwSeleccion:AddCol() )
+      :cHeader                      := "Precio 6 EUR"
+      :bEditValue                   := {|| Trans( ::oDbf:pVenta6, ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   with object ( ::oBrwSeleccion:AddCol() )
+      :cHeader                      := "Precio 6 " + cImp() + " EUR"
+      :bEditValue                   := {|| Trans( ::oDbf:pVtaIva6, ::cPicImp ) }
+      :nWidth                       := 90
+      :nDataStrAlign                := 1
+      :nHeadStrAlign                := 1
+   end
+
+   ::CreateFilter( aItmArt(), ::oDbfArt:cAlias )
+
+RETURN .T.
+
+
+
+static FUNCTION TInfEsp_lGenerate( ) ; local Self AS CLASS TInfEsp := QSelf() AS CLASS TInfEsp
+
+RETURN ( ::oDbf:LastRec() > 0 )
+
+
+
+static FUNCTION TInfEsp_AgregarArticulo( ) ; local Self AS CLASS TInfEsp := QSelf() AS CLASS TInfEsp
+
+   local lAppend  := .F.
+
+   ::oBrwArticulo:Refresh()
+
+   msgWait( "", "", 0.01 )
+
+   ::oDbf:OrdSetFocus( "cCodFam" )
+
+   lAppend        := !( ::oDbf:Seek( ::oDbfArt:Familia + ::oDbfArt:Codigo ) )
+
+   ::EscribeArticulo( lAppend )
+
+   ::oDbf:OrdSetFocus( "nNumArt" )
+
+   ::oBrwSeleccion:Refresh()
+
+   ::oGetArticulo:SetFocus()
+   ::oGetArticulo:SelectAll()
+
+RETURN nil
+
+
+static FUNCTION TInfEsp_AgregarTodos( cCodFam ) ; local Self AS CLASS TInfEsp := QSelf() AS CLASS TInfEsp
+
+   CursorWait()
+
+   ::oDbf:OrdSetFocus( "cCodFam" )
+
+   ::oDbfArt:GetStatus()
+
+   ::oDbfArt:GoTop()
+   while !::oDbfArt:Eof()
+
+      if ::oDbfArt:Familia == cCodFam
+         if !::oDbf:Seek( ::oDbfArt:Familia + ::oDbfArt:Codigo )
+            ::EscribeArticulo( .T. )
+         else
+            ::EscribeArticulo( .F. )
+         end
+
+      end
+
+      ::oDbfArt:Skip()
+
+   end
+
+   ::oDbfArt:SetStatus()
+
+   ::oDbf:OrdSetFocus( "nNumArt" )
+
+   ::oBrwSeleccion:Refresh()
+
+   CursorWE()
+
+RETURN nil
+
+
+
+static FUNCTION TInfEsp_BorrarArticulo( ) ; local Self AS CLASS TInfEsp := QSelf() AS CLASS TInfEsp
+
+   ::oDbf:Delete()
+   ::oBrwSeleccion:Refresh()
+
+RETURN nil
+
+
+
+static FUNCTION TInfEsp_InsertarArticulo( ) ; local Self AS CLASS TInfEsp := QSelf() AS CLASS TInfEsp
+
+   ::oDbfArt:GetStatus()
+
+   ::oDbf:OrdSetFocus( "cCodFam" )
+
+   if ::oDbfArt:Seek( ::cCodigo )
+
+      if !::oDbf:Seek( ::oDbfArt:Familia + ::oDbfArt:Codigo )
+         ::EscribeArticulo( .T. )
+         ::oBrwSeleccion:Refresh()
+      else
+         ::EscribeArticulo( .F. )
+         ::oBrwSeleccion:Refresh()
+      end
+
+      ::oBrwArticulo:Refresh()
+
+   else
+
+      msginfo( "Código artículo no encontrado" )
+
+   end
+
+   ::oDbf:OrdSetFocus( "nNumArt" )
+
+   ::oDbfArt:SetStatus()
+
+RETURN nil
+
+
+
+static FUNCTION TInfEsp_EscribeArticulo( lAppend ) ; local Self AS CLASS TInfEsp := QSelf() AS CLASS TInfEsp
+
+   if lAppend
+      ::oDbf:Append()
+   else
+      ::oDbf:Load()
+   end
+
+   ::oDbf:cCodArt    := ::oDbfArt:Codigo
+   ::oDbf:cNomArt    := ::oDbfArt:Nombre
+   ::oDbf:cCodFam    := ::oDbfArt:Familia
+   ::oDbf:cNomFam    := cNomFam( ::oDbfArt:Familia, ::oDbfFam )
+   ::oDbf:pVenta1    := ::oDbfArt:pVenta1
+   ::oDbf:pVtaIva1   := ::oDbfArt:pVtaIva1
+   ::oDbf:pVenta2    := ::oDbfArt:pVenta2
+   ::oDbf:pVtaIva2   := ::oDbfArt:pVtaIva2
+   ::oDbf:pVenta3    := ::oDbfArt:pVenta3
+   ::oDbf:pVtaIva3   := ::oDbfArt:pVtaIva3
+   ::oDbf:pVenta4    := ::oDbfArt:pVenta4
+   ::oDbf:pVtaIva4   := ::oDbfArt:pVtaIva4
+   ::oDbf:pVenta5    := ::oDbfArt:pVenta5
+   ::oDbf:pVtaIva5   := ::oDbfArt:pVtaIva5
+   ::oDbf:pVenta6    := ::oDbfArt:pVenta6
+   ::oDbf:pVtaIva6   := ::oDbfArt:pVtaIva6
+   ::oDbf:pCosto     := nCosto( nil, ::oDbfArt:cAlias, ::oDbfKit:cAlias, .F., nil, ::oDbfDiv )
+   ::oDbf:cCodPrv    := ::oDbfArt:cPrvHab
+   ::oDbf:cNomPrv    := RetProvee( ::oDbfArt:cPrvHab, ::oDbfPrv:cAlias )
+
+   if lAppend
+      ::oDbf:nNumArt := ::oDbf:LastRec()
+   end
+
+   ::oDbf:Save()
+
+RETURN nil
+
+
+
+static FUNCTION TInfEsp_GuardarArchivo( ) ; local Self AS CLASS TInfEsp := QSelf() AS CLASS TInfEsp
+
+   local cArchivoOrigen   := ::cFileName
+   local cArchivoDestino  := cGetFile( "Informe ( *.Dat ) | " + "*.Dat", "Seleccione el nombre del fichero a guardar", , , .T. )
+
+   if !Empty( cArchivoDestino )
+      cArchivoDestino     := cNoExt( cArchivoDestino ) + ".Dat"
+   else
+      Return nil
+   end
+
+   if !Empty( ::oDbf ) .AND. ::oDbf:Used()
+
+     CursorWait()
+
+     ::oBrwSeleccion:Hide()
+
+     ::oDbf:Close()
+      __CopyFile( cArchivoOrigen, cArchivoDestino )
+     ::oDbf:ReActivate()
+
+     ::oBrwSeleccion:Show()
+
+     msgInfo( cArchivoDestino + " exportado con exito." )
+
+     CursorWE()
+
+   end
+
+Return Nil
+
+
+
+static FUNCTION TInfEsp_CargarArchivo( ) ; local Self AS CLASS TInfEsp := QSelf() AS CLASS TInfEsp
+
+   local cArchivoDestino  := cGetFile( "Informe ( *.Dat ) | " + "*.Dat", "Seleccione el nombre del fichero a cargar" )
+
+   if !Empty( cArchivoDestino ) .AND. File( cArchivoDestino )
+
+      CursorWait()
+
+      ::oBrwSeleccion:Hide()
+
+      ::oDbf:Zap()
+      ::oDbf:AppendFrom( cArchivoDestino )
+      ::oDbf:ReindexAll()
+      ::oDbf:GoTop()
+
+      ::oBrwSeleccion:Show()
+
+      CursorWE()
+
+      msgInfo( "Archivo " + cArchivoDestino + " cargado satisfactoriamente" )
+
+   end
+
+   ::oBrwSeleccion:Refresh()
+
+Return Nil
+
+
+static FUNCTION TInfEsp_ActualizaArticulo( ) ; local Self AS CLASS TInfEsp := QSelf() AS CLASS TInfEsp
+
+   ::oDbfArt:GetStatus( .T. )
+
+   ::oDbf:GoTop()
+   while !::oDbf:Eof()
+      if ::oDbfArt:Seek( ::oDbf:cCodArt )
+         ::EscribeArticulo( .F. )
+      end
+      ::oDbf:Skip()
+   end
+   ::oDbf:GoTop()
+
+   ::oDbfArt:SetStatus()
+
+   ::oBrwSeleccion:Refresh()
+   ::oBrwArticulo:Refresh()
+
+   msginfo( "Registros actualizados satisfactoriamente" )
+
+Return nil
+
+
+
+static FUNCTION TInfEsp_ChangeFamilias( ) ; local Self AS CLASS TInfEsp := QSelf() AS CLASS TInfEsp
+
+   ::oDbfArt:OrdSetFocus( "cFamCod" )
+   ::oDbfArt:OrdScope( ::oDbfFam:cCodFam )
+   ::oDbfArt:GoTop()
+
+   ::oCbxArticulo:Set( "Família + Código" )
+
+   ::oBrwArticulo:Refresh()
+
+Return Self
+
+
+
+static FUNCTION TInfEsp_SeekFamilia( nKey, nFlags ) ; local Self AS CLASS TInfEsp := QSelf() AS CLASS TInfEsp
+
+   local lAutoseek   := AutoSeek( nKey, nFlags, ::oGetFamilia, ::oBrwFamilia, ::oDbfFam:cAlias, .T. )
+
+   if lAutoSeek
+      ::ChangeFamilias()
+   end
+
+Return ( lAutoSeek )
+
+
+
+static FUNCTION TInfEsp_SeekArticulo( nKey, nFlags ) ; local Self AS CLASS TInfEsp := QSelf() AS CLASS TInfEsp
+
+   if ::oDbfArt:OrdSetFocus() $ "CFAMCOD CFAMNOM"
+      ::oDbfArt:OrdSetFocus( "Codigo" )
+      ::oCbxArticulo:Set( "Código" )
+   end
+
+Return ( AutoSeek( nKey, nFlags, ::oGetArticulo, ::oBrwArticulo, ::oDbfArt:cAlias, .T. ) )
+
+
+
+static FUNCTION TInfEsp_EditColumn( ) ; local Self AS CLASS TInfEsp := QSelf() AS CLASS TInfEsp
+
+   local uVar           := ::oDbf:cNomArt
+   local bValid         := { || .T. }
+
+   if ::oBrwSeleccion:lEditCol( 4, @uVar, nil, bValid )
+
+      if !Empty( uVar )
+
+         ::oDbf:Load()
+         ::oDbf:cNomArt := uVar
+         ::oDbf:Save()
+
+      end
+
+      ::oBrwSeleccion:DrawSelect()
+
+   end
+
+Return Self
+
+
+
+static FUNCTION TInfEsp_SubirArticulo( ) ; local Self AS CLASS TInfEsp := QSelf() AS CLASS TInfEsp
+
+   local nRecNuevo
+   local nNumNuevo
+   local nRecActual
+   local nNumActual
+
+   if ::oDbf:Bof()
+      Return Self
+   end
+
+   ::oDbf:GetStatus()
+
+   nNumActual        := ::oDbf:nNumArt
+   nRecActual        := ::oDbf:Recno()
+
+   ::oDbf:Skip( -1 )
+
+   nNumNuevo         := ::oDbf:nNumArt
+   nRecNuevo         := ::oDbf:Recno()
+
+   if Empty( nNumNuevo )
+      Return Self
+   end
+
+   ::oDbf:GoTo( nRecActual )
+
+   ::oDbf:Load()
+   ::oDbf:nNumArt    := nNumNuevo
+   ::oDbf:Save()
+
+   ::oDbf:GoTo( nRecNuevo )
+
+   ::oDbf:Load()
+   ::oDbf:nNumArt    := nNumActual
+   ::oDbf:Save()
+
+   ::oDbf:SetStatus()
+
+   ::oBrwSeleccion:Refresh()
+
+Return Self
+
+
+
+static FUNCTION TInfEsp_BajarArticulo( ) ; local Self AS CLASS TInfEsp := QSelf() AS CLASS TInfEsp
+
+   local nRecNuevo
+   local nNumNuevo
+   local nRecActual
+   local nNumActual
+
+   if ::oDbf:Eof()
+      Return Self
+   end
+
+   ::oDbf:GetStatus()
+
+   nNumActual        := ::oDbf:nNumArt
+   nRecActual        := ::oDbf:Recno()
+
+   ::oDbf:Skip( 1 )
+
+   nNumNuevo         := ::oDbf:nNumArt
+   nRecNuevo         := ::oDbf:Recno()
+
+   if Empty( nNumNuevo )
+      Return Self
+   end
+
+   ::oDbf:GoTo( nRecActual )
+
+   ::oDbf:Load()
+   ::oDbf:nNumArt    := nNumNuevo
+   ::oDbf:Save()
+
+   ::oDbf:GoTo( nRecNuevo )
+
+   ::oDbf:Load()
+   ::oDbf:nNumArt    := nNumActual
+   ::oDbf:Save()
+
+   ::oDbf:SetStatus()
+
+   ::oBrwSeleccion:Refresh()
+
+Return Self

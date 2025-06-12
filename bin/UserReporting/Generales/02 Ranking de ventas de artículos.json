@@ -1,0 +1,53 @@
+{
+   "fields" : 
+   {
+      "Delegacion" : 
+      {
+         "name" : "cDelega",
+         "description" : "Código delegación",
+         "type" : "C",
+         "size" : 2,
+         "decimal" : 0,
+         "picture" : ""
+      },
+      "Código artículo" :
+      {
+         "name" : "cCodArt",
+         "description" : "Código artículo",
+         "type" : "C",
+         "size" : 18,
+         "decimal" : 0, 
+         "picture" : ""
+      },
+      "Nombre artículo" :
+      {
+         "name" : "cNomArt",
+         "description" : "Nombre artículo",
+         "type" : "C",
+         "size" : 100,
+         "decimal" : 0, 
+         "picture" : ""
+      },
+      "Total unidades" :
+      {
+         "name" : "total",
+         "description" : "Total unidades",
+         "type" : "N",
+         "size" : 16,
+         "decimal" : 6, 
+         "picture" : "@E 999,999,999.999"
+      }
+   },
+   "sql" : [
+      "SELECT cDelega, cCodArt, SUM( nTotal ) as [total], cNomArt FROM ( ",
+      "SELECT AlbCliL.cRef AS cCodArt, AlbCliL.cSufAlb AS cDelega, ( AlbCliL.nunicaja * AlbCliL.nPreUnit ) AS nTotal, AlbCliL.cDetalle AS cNomArt FROM {{empresa}}AlbCliL AS AlbCliL WHERE NOT AlbCliL.lFacturado AND NOT( AlbCliL.cRef = '' ) AND ( AlbCliL.dFecAlb >= {{dIniInf}} AND AlbCliL.dFecAlb <= {{dFinInf}} ) ",
+      "UNION SELECT FacCliL.cRef AS cCodArt, FacCliL.cSufFac AS cDelega, ( FacCliL.nunicaja * FacCliL.nPreUnit ) AS nTotal, FacCliL.cDetalle AS cNomArt FROM {{empresa}}FacCliL AS FacCliL WHERE NOT ( FacCliL.cRef = '' ) AND ( FacCliL.dFecFac >= {{dIniInf}} AND FacCliL.dFecFac <= {{dFinInf}} ) ",
+      "UNION SELECT FacRecL.cRef AS cCodArt, FacRecL.cSufFac AS cDelega, ( FacRecL.nunicaja * FacRecL.nPreUnit ) AS nTotal, FacRecL.cDetalle AS cNomArt FROM {{empresa}}FacRecL AS FacRecL WHERE NOT ( FacRecL.cRef = '' ) AND ( FacRecL.dFecFac >= {{dIniInf}} AND FacRecL.dFecFac <= {{dFinInf}} ) ",
+      "UNION SELECT TikeL.cCbaTil AS cCodArt, TikeL.cSufTil AS cDelega, ( TikeL.nUntTil * TikeL.nPvpTil ) AS nTotal, TikeL.cNomTil AS cNomArt FROM {{empresa}}TikeL AS TikeL WHERE NOT ( TikeL.cCbaTil = '' ) AND ( TikeL.dFecTik >= {{dIniInf}} AND TikeL.dFecTik <= {{dFinInf}} ) ",
+      ") nTotales"
+      ],
+   "group" : "cDelega, cCodArt, cNomArt",
+   "order" : "cDelega, total DESC",
+
+
+}

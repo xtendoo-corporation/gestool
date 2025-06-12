@@ -1,0 +1,2698 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 60 ".\.\Prg\Dlgtools.prg"
+FUNCTION cGetExpression( cExpr, aBase, cAlias )
+
+    local oDlg, oExpr, oFields, cTemp
+    local oBtnDate, oBtnChar, oBtnNumber
+    local aUnDo       := { "" }
+    local nField      := 1
+    local cTitle      := "Generador de Expresiones"
+    local hOldRes     := GetResources()
+
+    If( cExpr == nil, cExpr := Space( 200 ), ) ;
+    If( aBase == nil, aBase := { {"Not passed"}, {"C"} }, ) ;
+    If( cAlias == nil, cAlias := Alias(), ) ;
+
+    cTemp = PadR( cExpr, 200 )
+
+    SetResources( "FwTools.dll" )
+
+   oDlg = TDialog():New(,,,, cTitle, "ExpBuilder",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+    oExpr := TGet():ReDefine( 110, { | u | If( PCount()==0, cTemp, cTemp:= u ) }, oDlg,,,,,,,,, .F.,,, .F., .F.,,,,,,, "cTemp",,,, )
+
+
+
+
+    oFields := TListBox():ReDefine( 130, { | u | If( PCount()==0, nField, nField:= u ) },, {||CheckBtn( aBase[nField,2] , oBtnDate, oBtnChar, oBtnNumber )}, oDlg,,,,,,, {|| ExprAdd( " " + cAlias + " > " + ( aBase[nField, 1] ),    @cTemp, oExpr, aUnDo )},, .F.,, )
+
+
+   TButton():ReDefine( 150, {||ExprAdd( " = ", @cTemp, oExpr, aUnDo )}, oDlg,,, .F.,,,, .F. )
+
+
+   TButton():ReDefine( 160, {||ExprAdd( " <> ", @cTemp, oExpr, aUnDo )}, oDlg,,, .F.,,,, .F. )
+
+
+   TButton():ReDefine( 170, {||ExprAdd( " .and. ", @cTemp, oExpr, aUnDo )}, oDlg,,, .F.,,,, .F. )
+
+
+   TButton():ReDefine( 180, {||ExprAdd( " + ", @cTemp, oExpr, aUnDo )}, oDlg,,, .F.,,,, .F. )
+
+
+   TButton():ReDefine( 190, {||ExprAdd( " < ", @cTemp, oExpr, aUnDo )}, oDlg,,, .F.,,,, .F. )
+
+
+   TButton():ReDefine( 200, {||ExprAdd( " > ", @cTemp, oExpr, aUnDo )}, oDlg,,, .F.,,,, .F. )
+
+
+   TButton():ReDefine( 210, {||ExprAdd( " .or. ", @cTemp, oExpr, aUnDo )}, oDlg,,, .F.,,,, .F. )
+
+
+    TButton():ReDefine( 220, {||ExprAdd( " - ", @cTemp, oExpr, aUnDo )}, oDlg,,, .F.,,,, .F. )
+
+
+    TButton():ReDefine( 230, {||ExprAdd( " <= ", @cTemp, oExpr, aUnDo )}, oDlg,,, .F.,,,, .F. )
+
+
+    TButton():ReDefine( 240, {||ExprAdd( " >= ", @cTemp, oExpr, aUnDo )}, oDlg,,, .F.,,,, .F. )
+
+
+    TButton():ReDefine( 250, {||ExprAdd( " .not. ", @cTemp, oExpr, aUnDo )}, oDlg,,, .F.,,,, .F. )
+
+
+    TButton():ReDefine( 260, {||ExprAdd( " * ", @cTemp, oExpr, aUnDo )}, oDlg,,, .F.,,,, .F. )
+
+
+    TButton():ReDefine( 270, {||ExprAdd( " ( ", @cTemp, oExpr, aUnDo )}, oDlg,,, .F.,,,, .F. )
+
+
+    TButton():ReDefine( 280, {||ExprAdd( " ) ", @cTemp, oExpr, aUnDo )}, oDlg,,, .F.,,,, .F. )
+
+
+    TButton():ReDefine( 290, {||ExprAdd( " $ ", @cTemp, oExpr, aUnDo )}, oDlg,,, .F.,,,, .F. )
+
+
+    TButton():ReDefine( 300, {||ExprAdd( " / ", @cTemp, oExpr, aUnDo )}, oDlg,,, .F.,,,, .F. )
+
+
+    oBtnDate := TButton():ReDefine( 310, {||( ExprAdd( GetValue("D"), @cTemp, oExpr, aUnDo ) )}, oDlg,,, .F.,,,, .F. )
+
+
+    oBtnChar := TButton():ReDefine( 320, {||( ExprAdd( GetValue("C"), @cTemp, oExpr, aUnDo ) )}, oDlg,,, .F.,,,, .F. )
+
+
+    oBtnNumber := TButton():ReDefine( 330, {||( ExprAdd( GetValue("N"), @cTemp, oExpr, aUnDo ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+
+
+
+    TButton():ReDefine( 345, {||UnDo( @cTemp, oExpr, aUnDo )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 350, {||If( At( Type( cTemp ), "UIUE" ) == 0, MsgInfo( "Expresion Correcta" ), msgStop( "Expresion Invalida" ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+    oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,, {|Self|( ShowFields( aBase, oFields ),    CheckBtn( aBase[nField,2], oBtnDate, oBtnChar, oBtnNumber ) )}, oDlg:bRClicked,,, )
+
+   IF oDlg:nResult == 1
+        cExpr = AllTrim( cTemp )
+    ENDIF
+
+    SetResources(hOldRes)
+
+RETURN cExpr
+
+
+
+
+
+
+
+STATIC FUNCTION UnDo( cTemp, oExpr, aUnDo )
+
+   if Len( aUnDo ) > 0
+      cTemp = PadR( ATail( aUnDo ), 100 )
+      oExpr:Refresh()
+      ASize( aUnDo, Len( aUnDo ) - 1 )
+   else
+      Tone( 900, 2 )
+   endif
+
+RETURN NIL
+
+
+
+
+
+
+
+STATIC FUNCTION ExprAdd( cNew, cExpr, oExpr, aUnDo )
+
+   AAdd( aUnDo, RTrim( cExpr ) )
+   cExpr = PadR( RTrim( cExpr ) + cNew, 100 )
+   oExpr:Refresh()
+
+RETURN NIL
+
+
+
+
+
+
+
+STATIC FUNCTION ShowFields( aBase, oLbx )
+
+   local n
+
+   oLbx:Reset()
+
+    for n = 1 to Len( aBase )
+        oLbx:Add( aBase[ n ][ 2 ]  )
+   next
+
+   oLbx:GoTop()
+
+RETURN NIL
+
+
+
+STATIC FUNCTION CheckBtn( cType, oBtnDate, oBtnChar, oBtnNumber )
+
+    DO CASE
+    CASE ( cType == "D" )
+        oBtnDate:Enable()
+        oBtnChar:Disable()
+        oBtnNumber:Disable()
+
+    CASE ( cType == "C" )
+        oBtnDate:Disable()
+        oBtnChar:Enable()
+        oBtnNumber:Disable()
+
+    CASE ( cType == "N" )
+        oBtnDate:Disable()
+        oBtnChar:Disable()
+        oBtnNumber:Enable()
+
+    end
+
+RETURN ( .T. )
+
+
+
+STATIC FUNCTION GetValue( cType )
+
+    local oDlg
+    local cTemp   := Space( 100 )
+
+    If( cType == nil, cType := "C", ) ;
+
+    oDlg = TDialog():New(,,,,, "GETVALUE",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+    TGet():ReDefine( 101, { | u | If( PCount()==0, cTemp, cTemp:= u ) }, oDlg,,,,,,,,, .F.,,, .F., .F.,,,,,,, "cTemp",,,, )
+
+
+
+
+    TButton():ReDefine( 1, {||( oDlg:end( 1 ) )}, oDlg,,, .F.,,,, .F. )
+
+    oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   IF oDlg:nResult == 1
+
+        DO CASE
+        CASE cType == "C"
+            cTemp = '"' + AllTrim( cTemp ) + '"'
+        CASE cType == "N"
+            cTemp = AllTrim( cTemp )
+        CASE cType == "D"
+            cTemp = 'CTOD( "' + AllTrim( cTemp ) + '" )'
+        end
+
+    ELSE
+
+        cTemp = ""
+
+    end
+
+RETURN ( cTemp )
+
+
+
+
+
+
+
+
+
+FUNCTION Filtering( cAlias, aBase, oBrw )
+
+    local cExpression := cGetExpression( cExpression, aBase, cAlias)
+
+    IF At( Type( cExpression ), "UEUI" ) == 0
+        (cAlias)->(dbSetFilter( &( "{|| " + cExpression + " }" ) ) )
+    ELSE
+        (cAlias)->(dbClearFilter(NIL))
+    ENDIF
+
+    (cAlias)->(DbGotop())
+
+    IF oBrw <> NIL
+        oBrw:refresh()
+    end
+
+RETURN NIL
+
+
+
+FUNCTION ChangeIndx( aIndexes, cAlias, oBrw )
+
+    local oDlg
+    local nLbx
+
+    If( cAlias == nil, cAlias := Alias(), ) ;
+
+    nLbx := (cAlias)->(ORDNUMBER())
+
+    oDlg = TDialog():New(,,,,, "ChangeIndx",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+    TListBox():ReDefine( 110, { | u | If( PCount()==0, nLbx, nLbx:= u ) }, aIndexes,, oDlg,,,,,,,,, .F.,, )
+
+
+   TButton():ReDefine( 1, {||( oDlg:End( 1 ) )}, oDlg,,, .F.,,,, .F. )
+
+
+    TButton():ReDefine( 2, {||( oDlg:End() )}, oDlg,,, .F.,,,, .F. )
+
+    oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   IF oDlg:nResult == 1
+        (cAlias)->(DBSETORDER( nLbx ) )
+    end
+
+    IF oBrw <> NIL
+        oBrw:refresh()
+        oBrw:setfocus()
+    end
+
+
+RETURN NIL
+
+
+
+FUNCTION SetRep( cTitulo, cSubTitulo, nDevice )
+
+    local oDlg
+
+    If( cTitulo == nil, cTitulo := Space( 100 ), ) ;
+    If( cSubTitulo == nil, cSubTitulo := Space( 100 ), ) ;
+    If( nDevice == nil, nDevice := 1, ) ;
+
+    oDlg = TDialog():New(,,,,, "SETREP",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+    TGet():ReDefine( 100, { | u | If( PCount()==0, cTitulo, cTitulo:= u ) }, oDlg,,,,,,,,, .F.,,, .F., .F.,,,,,,, "cTitulo",,,, )
+
+
+
+    TGet():ReDefine( 110, { | u | If( PCount()==0, cSubTitulo, cSubTitulo:= u ) }, oDlg,,,,,,,,, .F.,,, .F., .F.,,,,,,, "cSubTitulo",,,, )
+
+
+
+
+    TButton():ReDefine( 506, {||( nDevice := 1, oDlg:end( 1 ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+    TButton():ReDefine( 505, {||( nDevice := 2, oDlg:end( 1 ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+    TButton():ReDefine( 510, {||( oDlg:end() )}, oDlg,,, .F.,,,, .F. )
+
+    oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+
+
+
+
+
+FUNCTION DlgDateLimit()
+
+    local oDlg
+   local oFont1
+    local hOldRes := GetResources()
+
+    oFont1 := TFont():New( "Arial", 0, -14,, .T.,,,,,,,,,,,, )
+
+    SetResources( "FwTools.dll" )
+
+    oDlg = TDialog():New(,,,,, "REGISTER",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+    TSay():ReDefine( 10, {|| "La aplicación ha Excedido la fecha"}, oDlg,, "R/W",, .F., oFont1, .F., .F., )
+
+
+
+
+
+    TSay():ReDefine( 11, {|| "programada para su uso."}, oDlg,, "R/W",, .F., oFont1, .F., .F., )
+
+
+
+
+    TButton():ReDefine( 1, {||( oDlg:end() )}, oDlg,,, .F.,,,, .F. )
+
+    oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+    oFont1:End() ; oFont1 := nil
+
+    SetResources(hOldRes)
+
+RETURN NIL
+
+
+
+FUNCTION HelpBrowse( oGet, cAlias, cTitle, bAppend, bEdit )
+
+    local oDlg
+    local oGet1, cGet1
+    local nRadio := 1
+    local oBrw
+
+    If( cAlias == nil, cAlias := Alias(), ) ;
+    If( cTitle == nil, cTitle := "Ayuda a la Entrada", ) ;
+    If( bAppend == nil, bAppend := MsgInfo( "Append !" ), ) ;
+    If( bEdit == nil, bEdit := MsgInfo( "Edit !" ), ) ;
+
+    (cAlias)->(DBGOTOP())
+
+
+
+    oDlg = TDialog():New(,,,, cTitle, "HELPENTRY",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+
+        oGet1 := TGet():ReDefine( 104, { | u | If( PCount()==0, cGet1, cGet1:= u ) }, oDlg,,, {||    ( OrdClearScope( oBrw, cAlias ) )},,,,,, .F.,, {|nKey,nFlags,Self| ( AutoSeek( nKey, nFlags, Self, oBrw, cAlias ) ) }, .F., .F.,,,,,, "FIND", "cGet1",,,, )
+
+
+
+
+        TRadMenu():Redefine( { | u | If( PCount()==0, nRadio, nRadio:= u ) }, oDlg,, { 102, 103 }, {|| ( (cAlias)->(ORDSETFOCUS(nRadio )), oBrw:refresh() )},,,, .F.,, )
+
+
+
+
+        oBrw := TWBrowse():ReDefine( 105, {|| { (cAlias)->(FieldGet(1)), (cAlias)->(FieldGet(2)) } }, oDlg,,,,,,,,,,,,,, .F.,,,,, )
+
+
+
+
+        TButton():ReDefine( 1, {||( oGet:varput( (cAlias)->(FieldGet(1)) ), oDlg:end(1) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+        TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+        TButton():ReDefine( 110, {||( Eval( bAppend, oBrw, cAlias ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+        TButton():ReDefine( 120, {||( Eval( bEdit, oBrw, cAlias ) )}, oDlg,,, .F.,,,, .F. )
+
+    oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .F.,,,, oDlg:bRClicked,,, )
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+
+
+
+
+FUNCTION EraseFilesInDirectory(cPath, cMask )
+
+   If( cMask == nil, cMask := "*.*", ) ;
+
+   aEval( Directory( cPath + cMask ), {|aFile| fErase( cPath + aFile[ 1 ] ) } )
+
+
+
+RETURN NIL
+
+
+
+
+
+
+
+FUNCTION MsgTime( cMsg, cTitle, nSec )
+
+   local oDlg, oMeter, oText, oBtn
+    local nVal := 0
+    local oTimer
+
+    If( cMsg == nil, cMsg := "Processing...", ) ; If( cTitle == nil, cTitle := "Waiting...", ); If( nSec == nil, nSec := 4, );
+
+   oDlg = TDialog():New( 5, 5, 10.4, 45, cTitle,,, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+    oTimer := TTimer():New( 100, {||( nVal := nVal + 0.1, oMeter:set( nVal ), if( nVal == nSec, oDlg:end(), ) )}, )
+
+   oText := TSay():New( 0.2, 0.5, {|| cMsg}, oDlg,,, .F., .F., .F., .F.,,, 130, 10, .F., .F., .F., .F., .F., .F., .F., "oText",, .F. )
+
+
+
+
+
+    oMeter := TMeter():New( 1.2, 0.5, { | u | If( PCount()==0, nVal, nVal:= u ) }, nSec, oDlg, 150, 5, .F., .F.,, "", .T.,,,,, .F. )
+
+
+    oBtn := TButton():New( 2.8, 18, "&Aceptar", oDlg, {|| ( oDlg:End() )}, 32, 11,,, .F., .F., .F.,, .F.,,, .F., "oBtn", .F. )
+
+    oDlg:bStart = { || oTimer:activate() }
+
+
+
+    oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted := {|hDC,cPS|( sysrefresh() )}, .T., {|Self|( oTimer:end(), .T. )},,, oDlg:bRClicked,,, )
+
+RETURN NIL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Function Calendario( dDate, cTitle )
+
+   local oDlg
+   local oCal
+
+   If( dDate == nil, dDate := Date(), ) ;
+   If( cTitle == nil, cTitle := "Calendario", ) ;
+
+   oDlg = TDialog():New(,,,, cTitle, "Calendar",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+      oCal        := TCalendar():ReDefine( 100, { |u| if( pCount() == 0, dDate, dDate := u ) }, , oDlg, , , , , , , , , , , , {|| oDlg:End( 1 ) }, {|| oDlg:End( 1 ) } )
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   if ( oDlg:nResult == 1 )
+      dDate       := oCal:GetDate()
+   end
+
+RETURN ( dDate )
+
+
+
+
+FUNCTION RowColDate(nDia,nMes,nAno,oBrowse,nSemana)
+
+  LOCAL dFecha    := GetDate(nDia,nMes,nAno)
+  LOCAL dFirstDay := dFecha - DAY(dFecha)
+
+  oBrowse:GoTop()
+  oBrowse:nColPos  = 1
+  oBrowse:nColAct  = IF( DOW(dFecha) = 1 , 7 , DOW(dFecha) - 1 )
+  nSemana = INT( ( DAY(dFecha) + DOW(dFirstDay) - 1 - oBrowse:nColAct + 7 ) / 7 )
+  oBrowse:nRowPos = nSemana
+  oBrowse:Refresh()
+
+RETURN dFecha
+
+
+
+FUNCTION GetDate(nDia,nMes,nAno)
+
+  LOCAL dDate
+
+  WHILE EMPTY( dDate := CTOD(STRZERO(nDia,2)+"/"+STRZERO(nMes,2)+"/"+STRZERO(nAno,4)) )
+        --nDia
+        nDia = MAX(nDia,1)
+  END
+
+RETURN dDate
+
+
+
+FUNCTION aSemanas(nMes,nAno)
+
+  LOCAL aSemana := {{"","","","","","",""}}
+  LOCAL dFecha  := CTOD("01/"+STRZERO(nMes,2)+"/"+STRZERO(nAno,4))
+  LOCAL nDia    := IF( DOW(dFecha) = 1 , 7 , DOW(dFecha) - 1 )
+  LOCAL nSemana := 1
+
+  WHILE MONTH(dFecha) = nMes
+        IF nDia > 7
+           nDia = 1
+           ++nSemana
+           AADD(aSemana,{"","","","","","",""})
+        ENDIF
+        aSemana[nSemana][nDia] = PADL( STR(DAY(dFecha)) , 4 )
+        ++dFecha
+        ++nDia
+  END
+
+RETURN aSemana
+
+
+
+function aEvalValid( oDlg )
+
+   local n
+   local aControls := oDlg:aControls
+
+   if aControls <> nil .AND. ! Empty( aControls )
+      for n = 1 to Len( aControls )
+          if aControls[ n ] <> nil .AND. aControls[ n ]:bValid <> nil
+             if !Eval( aControls[ n ]:bValid )
+                oDlg:aControls[ n ]:SetFocus()
+             endif
+         endif
+      next
+   endif
+
+return nil
+
+
+
+Function PrintPreview( oDevice )
+
+   local nFor
+   local hMeta
+   local aFiles   := oDevice:aMeta
+
+   CursorWait()
+
+   StartDoc( oDevice:hDC, oDevice:cDocument )
+
+   for nFor := 1 to len( aFiles )
+      StartPage( oDevice:hDC )
+      hMeta := GetEnhMetaFile( aFiles[nFor] )
+      PlayEnhMetaFile( oDevice:hDC, hMeta,, .T. )
+      DeleteEnhMetafile( hMeta )
+      EndPage( oDevice:hDC )
+   next
+
+   EndDoc( oDevice:hDC )
+
+   CursorArrow()
+
+return nil
+
+
+
+Function Week( dDate )
+
+   local nMonth
+   local nDay
+   local nYear
+   local nWeek
+   local dDate2
+
+   if valtype( dDate ) == "D" .AND. empty( dDate )
+      return 0
+   endif
+
+   if empty( dDate )
+      dDate    := date()
+   endif
+
+   nMonth      := month( dDate )
+   nDay        := day( dDate )
+   nYear       := year( dDate )
+
+   dDate2      := dDate + 3 - ( ( dow( dDate ) + 5 ) % 7 )
+   nWeek       := 1 + int( ( dDate2 - ctod( "01/01/" + str( year( dDate2 ) ) ) ) / 7 )
+
+return nWeek
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FUNCTION PrintPdf( oDevice )
+
+   CursorWait()
+
+   I2PDF_License_xH()
+
+   aEval( oDevice:aMeta, {|cFile| I2PDF_AddImage_xH( cFile ) } )
+
+   I2PDF_SetDPI_xH( 96 )
+
+   I2PDF_MakePDF_xH( oDevice:cDocument )
+
+   CursorArrow()
+
+return nil
+
+
+
+
+
+
+
+
+
+
+
+
+FUNCTION ExitNoSave( nMode, cAlias )
+
+   IF ( cAlias ) <> nil .AND. ( cAlias )->( LastRec() ) == 0
+      RETURN .T.
+   end
+
+    IF nMode == 1
+      RETURN ApoloMsgNoYes("¿ Salir sin grabar ?" , "!! Atención!!" )
+    end
+
+RETURN .T.

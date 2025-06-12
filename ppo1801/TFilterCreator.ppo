@@ -1,0 +1,3417 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 20 ".\.\Prg\TFilterCreator.prg"
+_HB_CLASS TFilterCreator ; function TFilterCreator ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TFilterCreator", iif( .F., { }, { @HBObject() } ), @TFilterCreator() ) ) ;
+
+   _HB_MEMBER { oSender } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSender"}, .F. )
+
+   _HB_MEMBER { aFiltersName } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aFiltersName"}, .F. )
+
+   _HB_MEMBER { oFilterDialog } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFilterDialog"}, .F. )
+   _HB_MEMBER { oFilterDatabase } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFilterDatabase"}, .F. )
+
+   _HB_MEMBER { aFilter } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aFilter"}, .F. )
+
+   _HB_MEMBER { aDescriptions } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aDescriptions"}, .F. )
+
+   _HB_MEMBER { cExpresionFilter } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cExpresionFilter"}, .F. )
+   _HB_MEMBER { bExpresionFilter } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bExpresionFilter"}, .F. )
+
+   _HB_MEMBER { cName } ; oClass:AddMultiData(, "Filtro de pruebas", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cName"}, .F. )
+   _HB_MEMBER { cType } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cType"}, .F. )
+
+   _HB_MEMBER { aStructure } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aStructure"}, .F. )
+
+
+
+   _HB_MEMBER { hNexo } ; oClass:AddMultiData(, {  ""    => "", "Y"   => " .and. ", "O"   => " .or. " }, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hNexo"}, .F. )
+
+
+
+
+
+
+
+   _HB_MEMBER { hConditions } ; oClass:AddMultiData(, {  "Igual"        => " == ", "Distinto"     => " != ", "Mayor"        => " > ", "Menor"        => " < ", "Mayor igual"  => " >= ", "Menor igual"  => " <= ", "Contenga"     => " $ " }, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hConditions"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @TFilterCreator_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Init( oSender); oClass:AddMethod( "Init", @TFilterCreator_Init(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER End(); oClass:AddMethod( "End", @TFilterCreator_End(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddFilter(); oClass:AddInline( "AddFilter", {|Self | ( ( Self ) ), ( ::oFilterDialog:Dialog() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER EditFilter(); oClass:AddInline( "EditFilter", {|Self, cFilterName | ( ( Self ) ), ( ::oFilterDialog:Dialog( cFilterName ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Dialog(); oClass:AddInline( "Dialog", {|Self | ( ( Self ) ), ( ::oFilterDialog:Dialog() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Ready(); oClass:AddInline( "Ready", {|Self | ( ( Self ) ), ( !Empty( ::cType ) .AND. !Empty( ::oFilterDatabase ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER filtersName(); oClass:AddMethod( "filtersName", @TFilterCreator_filtersName(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER defaultFilterByUser(); oClass:AddInline( "defaultFilterByUser", {|Self | ( ( Self ) ), ( ::oFilterDatabase:defaultFilterByUser() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setFiltersName(); oClass:AddInline( "setFiltersName", {|Self, aFilter | ( ( Self ) ), ( ::aFiltersName := aFilter ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getFiltersName(); oClass:AddInline( "getFiltersName", {|Self | ( ( Self ) ), ( ::aFiltersName ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getExpresionFilter(); oClass:AddInline( "getExpresionFilter", {|Self, cFilterName | ( ( Self ) ), ( if( ::BuildFilter( ::oFilterDatabase:ArrayFilter( cFilterName ) ), ::cExpresionFilter, "" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ArrayFilter(); oClass:AddInline( "ArrayFilter", {|Self, cFilterName | ( ( Self ) ), ( ::oFilterDatabase:ArrayFilter( cFilterName ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER BuildFilter( aFilter); oClass:AddMethod( "BuildFilter", @TFilterCreator_BuildFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER BuildExpresion( cExpresionFilter); oClass:AddMethod( "BuildExpresion", @TFilterCreator_BuildExpresion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetExpresion(); oClass:AddInline( "SetExpresion", {|Self, bExpresion | ( ( Self ) ), ( ::bExpresionFilter := bExpresion ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetExpresion(); oClass:AddInline( "GetExpresion", {|Self | ( ( Self ) ), ( ::bExpresionFilter ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetTextExpresion(); oClass:AddInline( "SetTextExpresion", {|Self, cExpresion | ( ( Self ) ), ( ::cExpresionFilter := cExpresion ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetTextExpresion(); oClass:AddInline( "GetTextExpresion", {|Self | ( ( Self ) ), ( ::cExpresionFilter ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER QuitExpresion(); oClass:AddInline( "QuitExpresion", {|Self | ( ( Self ) ), ( ::cExpresionFilter := "", ::bExpresionFilter := nil ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetFields( aFieldStructure); oClass:AddMethod( "SetFields", @TFilterCreator_SetFields(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetDatabase( oDatabase); oClass:AddMethod( "SetDatabase", @TFilterCreator_SetDatabase(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetStructure(); oClass:AddInline( "GetStructure", {|Self | ( ( Self ) ), ( ::aStructure ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetFilter(); oClass:AddInline( "SetFilter", {|Self, aFilter | ( ( Self ) ), ( ::aFilter := aFilter ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetDescriptions(); oClass:AddInline( "GetDescriptions", {|Self | ( ( Self ) ), ( if( Empty( ::aDescriptions ), ( ::aDescriptions := GetSubArray( ::aStructure, 1 ) ), ), ::aDescriptions ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetFields(); oClass:AddInline( "GetFields", {|Self | ( ( Self ) ), ( if( Empty( ::aFields ), ( ::aFields := GetSubArray( ::aStructure, 2 ) ), ), ::aFields ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetTypes(); oClass:AddInline( "GetTypes", {|Self | ( ( Self ) ), ( if( Empty( ::aTypes ), ( ::aTypes := GetSubArray( ::aStructure, 3 ) ), ), ::aTypes ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ScanStructure( cDescription, nPos); oClass:AddMethod( "ScanStructure", @TFilterCreator_ScanStructure(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetField(); oClass:AddInline( "GetField", {|Self, cDescription | ( ( Self ) ), ( ::ScanStructure( cDescription, 2 ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetFieldAllTrim(); oClass:AddInline( "GetFieldAllTrim", {|Self, cDescription | ( ( Self ) ), ( "Trim( Field->" + ::GetField( cDescription ) + " ) " ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetType(); oClass:AddInline( "GetType", {|Self, cDescription | ( ( Self ) ), ( ::ScanStructure( cDescription, 3 ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetCondition(); oClass:AddInline( "GetCondition", {|Self, cCondition | ( ( Self ) ), ( HGet( ::hConditions, cCondition ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetNexo(); oClass:AddInline( "GetNexo", {|Self, cNexo | ( ( Self ) ), ( HGet( ::hNexo, cNexo ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetFilterType(); oClass:AddInline( "SetFilterType", {|Self, cType | ( ( Self ) ), ( ::cType := cType, if( !Empty( ::oFilterDatabase ) .AND. !Empty( cType ), ::oFilterDatabase:SetScope( cType ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetFilterType(); oClass:AddInline( "GetFilterType", {|Self | ( ( Self ) ), ( ::cType ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetFilterDatabase(); oClass:AddInline( "SetFilterDatabase", {|Self, oDbf | ( ( Self ) ), ( ::oFilterDatabase:SetDbf( oDbf ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER KillFilter() ; oClass:AddVirtual( "KillFilter" )
+
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TFilterCreator ;
+
+
+
+static FUNCTION TFilterCreator_New( ) ; local Self AS CLASS TFilterCreator := QSelf() AS CLASS TFilterCreator
+
+   ::oFilterDatabase    := TFilterDatabase():New( Self )
+
+   ::oFilterDatabase:OpenFiles()
+   ::oFilterDatabase:SetScope( ::GetFilterType() )
+
+   ::oFilterDialog      := TFilterDialog():New( Self )
+   ::oFilterDialog:Dialog()
+
+   ::oFilterDatabase:End()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFilterCreator_Init( oSender ) ; local Self AS CLASS TFilterCreator := QSelf() AS CLASS TFilterCreator
+
+   ::oSender            := oSender
+
+   ::oFilterDatabase    := TFilterDatabase():New( Self )
+   ::oFilterDatabase:OpenFiles()
+
+   ::oFilterDialog      := TFilterDialog():New( Self )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFilterCreator_End( ) ; local Self AS CLASS TFilterCreator := QSelf() AS CLASS TFilterCreator
+
+   ::oFilterDatabase:End()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFilterCreator_SetFields( aFieldStructure ) ; local Self AS CLASS TFilterCreator := QSelf() AS CLASS TFilterCreator
+
+    local aField
+
+    ::aStructure        := {}
+
+   for each aField in aFieldStructure
+
+      if !Empty( aField[ 5 ] )
+         aAdd( ::aStructure, { aField[ 5 ], aField[ 1 ], aField[ 2 ] } )
+         end
+
+   next
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFilterCreator_SetDatabase( oDatabase ) ; local Self AS CLASS TFilterCreator := QSelf() AS CLASS TFilterCreator
+
+   local oField
+
+   ::aStructure        := {}
+
+   for each oField in oDatabase:aTField
+
+      if !Empty( oField:cComment ) .AND. !( oField:lCalculate ) .AND. !( oField:lHide )
+         aAdd( ::aStructure, { oField:cComment, oField:cName, oField:cType } )
+      end
+
+   next
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFilterCreator_ScanStructure( cDescription, nPos ) ; local Self AS CLASS TFilterCreator := QSelf() AS CLASS TFilterCreator
+
+   local n
+   local cValue   := ""
+
+   cDescription   := alltrim( cDescription )
+
+   n              := aScan( ::aStructure, {|a| a[ 1 ] == cDescription } )
+   if n <> 0
+      cValue      := ::aStructure[ n, nPos ]
+   end
+
+RETURN ( cValue )
+
+
+
+static FUNCTION TFilterCreator_BuildFilter( aFilter ) ; local Self AS CLASS TFilterCreator := QSelf() AS CLASS TFilterCreator
+
+   local a
+   local oError
+   local oBlock
+   local cCondition
+   local cType
+
+   if Empty( aFilter )
+      RETURN .F.
+   end
+
+   CursorWait()
+
+   oBlock                        := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      ::SetTextExpresion( "" )
+
+      ::SetFilter( aFilter )
+
+      for each a in aFilter
+
+         cCondition              := ::GetCondition( a[ 2 ] )
+
+         cType                   := ::GetType( a[ 1 ] )
+
+         if cCondition == " $ "
+            ::cExpresionFilter   += cGetValue( a[ 3 ], cType ) + cCondition + ::GetField( a[ 1 ] )
+         else
+
+            if cType == "C"
+               ::cExpresionFilter   += ::GetFieldAllTrim( a[ 1 ] ) + cCondition + cGetValue( a[ 3 ], cType )
+            else
+               ::cExpresionFilter   += ::GetField( a[ 1 ] ) + cCondition + cGetValue( a[ 3 ], cType )
+            end
+
+         end
+
+         ::cExpresionFilter      += ::GetNexo( a[ 4 ] )
+
+      next
+
+      ::BuildExpresion( ::cExpresionFilter )
+
+   RECOVER USING oError
+
+   end
+
+   ErrorBlock( oBlock )
+
+   CursorWE()
+
+RETURN ( ::bExpresionFilter <> nil )
+
+
+
+static FUNCTION TFilterCreator_BuildExpresion( cExpresionFilter ) ; local Self AS CLASS TFilterCreator := QSelf() AS CLASS TFilterCreator
+
+   ::bExpresionFilter         := Compile( cExpresionFilter )
+
+   if empty( ::bExpresionFilter )
+      msgStop( "Expresión erronea " + cExpresionFilter, "Error!" )
+   end
+
+RETURN ( ::bExpresionFilter <> nil )
+
+
+
+static FUNCTION TFilterCreator_filtersName( ) ; local Self AS CLASS TFilterCreator := QSelf() AS CLASS TFilterCreator
+
+   local aFilters             := ::oFilterDatabase:FiltersName()
+
+   ::setFiltersName( aFilters )
+
+RETURN ( aFilters )
+
+
+
+
+
+
+
+
+_HB_CLASS TReplaceCreator ; function TReplaceCreator ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TReplaceCreator", iif( .T., { @TFilterCreator() }, { @HBObject() } ), @TReplaceCreator() ) ) ;
+
+   _HB_MEMBER { cDbfReplace } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDbfReplace"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @TReplaceCreator_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Init(); oClass:AddMethod( "Init", @TReplaceCreator_Init(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetDatabaseToReplace(); oClass:AddInline( "SetDatabaseToReplace", {|Self, cDbf | ( ( Self ) ), ( ::cDbfReplace := cDbf ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TReplaceCreator ;
+
+
+
+static FUNCTION TReplaceCreator_New( ) ; local Self AS CLASS TReplaceCreator := QSelf() AS CLASS TReplaceCreator
+
+   ::oFilterDatabase   := TFilterDatabase():New( Self )
+
+   ::oFilterDatabase:OpenFiles()
+   ::oFilterDatabase:SetScope( ::GetFilterType() )
+
+   ::oFilterDialog     := TReplaceDialog():New( Self )
+   ::oFilterDialog:Dialog()
+
+   ::oFilterDatabase:End()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TReplaceCreator_Init( oSender ) ; local Self AS CLASS TReplaceCreator := QSelf() AS CLASS TReplaceCreator
+
+   ::oSender            := oSender
+
+   ::oFilterDatabase    := TFilterDatabase():New( Self )
+
+   ::oFilterDatabase:OpenFiles()
+
+   ::oFilterDialog      := TReplaceDialog():New( Self )
+
+RETURN ( Self )
+
+
+
+
+
+
+
+
+_HB_CLASS TFilterDialog ; function TFilterDialog ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TFilterDialog", iif( .F., { }, { @HBObject() } ), @TFilterDialog() ) ) ;
+
+    _HB_MEMBER { oDlg } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDlg"}, .F. )
+
+    _HB_MEMBER { oFld } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFld"}, .F. )
+   _HB_MEMBER { oBmp } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBmp"}, .F. )
+
+   _HB_MEMBER { cTitle } ; oClass:AddMultiData(, "Generador de filtros", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTitle"}, .F. )
+   _HB_MEMBER { cResource } ; oClass:AddMultiData(, "FastFiltros", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cResource"}, .F. )
+   _HB_MEMBER { cIcon } ; oClass:AddMultiData(, "gc_funnel_48", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cIcon"}, .F. )
+
+   _HB_MEMBER { cFilterName } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFilterName"}, .F. )
+
+    _HB_MEMBER { oFilterCreator } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFilterCreator"}, .F. )
+   _HB_MEMBER { oFilterDatabase } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFilterDatabase"}, .F. )
+
+    _HB_MEMBER { oBrwFilter } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwFilter"}, .F. )
+    _HB_MEMBER { oBrwAlmacenados } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwAlmacenados"}, .F. )
+
+    _HB_MEMBER New( oFilterCreator); oClass:AddMethod( "New", @TFilterDialog_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER Dialog(); oClass:AddMethod( "Dialog", @TFilterDialog_Dialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER HeaderDialog(); oClass:AddMethod( "HeaderDialog", @TFilterDialog_HeaderDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ReplaceDialog() ; oClass:AddVirtual( "ReplaceDialog" )
+   _HB_MEMBER FilterDialog(); oClass:AddMethod( "FilterDialog", @TFilterDialog_FilterDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AlmacenadosDialog(); oClass:AddMethod( "AlmacenadosDialog", @TFilterDialog_AlmacenadosDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ActivateDialog( cFilterName); oClass:AddMethod( "ActivateDialog", @TFilterDialog_ActivateDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InitDialog( cFilterName); oClass:AddMethod( "InitDialog", @TFilterDialog_InitDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER okDialog(); oClass:AddMethod( "okDialog", @TFilterDialog_okDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER endDialog(); oClass:AddMethod( "endDialog", @TFilterDialog_endDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Save(); oClass:AddMethod( "Save", @TFilterDialog_Save(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Load(); oClass:AddMethod( "Load", @TFilterDialog_Load(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Delete(); oClass:AddMethod( "Delete", @TFilterDialog_Delete(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetFilter(); oClass:AddInline( "SetFilter", {|Self, aArrayFilter | ( ( Self ) ), ( ::oBrwFilter:SetFilter( aArrayFilter ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetFilter(); oClass:AddInline( "GetFilter", {|Self | ( ( Self ) ), ( ::oBrwFilter:aFilter ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TitleFilter(); oClass:AddInline( "TitleFilter", {|Self | ( ( Self ) ), Rtrim( ::oFilterDatabase:oDbf:cTexFlt ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetExpresion(); oClass:AddInline( "SetExpresion", {|Self, cExpresion | ( ( Self ) ), ( ::oFilterCreator:SetExpresion( cExpresion ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Ready(); oClass:AddInline( "Ready", {|Self | ( ( Self ) ), ( ::oFilterCreator:Ready() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TFilterDialog ;
+
+
+
+static FUNCTION TFilterDialog_New( oFilterCreator ) ; local Self AS CLASS TFilterDialog := QSelf() AS CLASS TFilterDialog
+
+    ::oFilterCreator    := oFilterCreator
+
+   ::oFilterDatabase   := oFilterCreator:oFilterDatabase
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFilterDialog_Dialog( cFilterName ) ; local Self AS CLASS TFilterDialog := QSelf() AS CLASS TFilterDialog
+
+   ::cFilterName        := cFilterName
+
+   ::SetExpresion()
+
+   ::HeaderDialog()
+
+   ::FilterDialog()
+
+   ::ReplaceDialog()
+
+   ::AlmacenadosDialog()
+
+   ::ActivateDialog()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFilterDialog_HeaderDialog( ) ; local Self AS CLASS TFilterDialog := QSelf() AS CLASS TFilterDialog
+
+
+
+
+
+
+
+
+   ::oDlg = TDialog():New(,,,, ( ::cTitle ), ( ::cResource ),, .F.,,,,,, .F.,,,,,, .F.,, "::oDlg", nil, )
+
+
+
+
+
+
+      ::oFld := TFolder():ReDefine( 100, {"&Generador", "&Almacenados"}, { "FastFiltros_Definicion","FastFiltros_Almacenados" }, ::oDlg,,,,, .F., )
+
+
+
+
+
+      ::oBmp := TBitmap():ReDefine( 500, ( ::cIcon ),, ::oDlg,,, .F., .F.,,, .F.,,, .T. )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFilterDialog_FilterDialog( ) ; local Self AS CLASS TFilterDialog := QSelf() AS CLASS TFilterDialog
+
+   local oError
+   local oBlock
+
+   oBlock            := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+
+
+
+
+
+
+
+
+      TButton():ReDefine( 110, {||( ::Save() )}, ( ::oFld:aDialogs[ 1 ] ),,, .F.,,,, .F. )
+
+      ::oBrwFilter      := TBrowseFilter():New( Self )
+
+      ::oBrwFilter:SetStructure( ::oFilterCreator:GetStructure() )
+      ::oBrwFilter:Activate()
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFilterDialog_AlmacenadosDialog( ) ; local Self AS CLASS TFilterDialog := QSelf() AS CLASS TFilterDialog
+
+
+
+
+
+
+
+
+      TButton():ReDefine( 100, {||( ::Load( ::oFilterDatabase:oDbf:cFldFlt ) )}, ( ::oFld:aDialogs[ 2 ] ),,, .F.,,,, .F. )
+
+
+
+
+      TButton():ReDefine( 110, {||( ::Delete() )}, ( ::oFld:aDialogs[ 2 ] ),,, .F.,,,, .F. )
+
+      ::oBrwAlmacenados := TBrowseAlmacenado():New( Self )
+
+      ::oBrwAlmacenados:SetDatabase( ::oFilterDatabase:oDbf )
+      ::oBrwAlmacenados:Activate()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFilterDialog_ActivateDialog( ) ; local Self AS CLASS TFilterDialog := QSelf() AS CLASS TFilterDialog
+
+
+
+
+
+
+
+
+      TButton():ReDefine( 1, {||( ::okDialog() )}, ( ::oDlg ),,, .F.,,,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 2, {||( ::endDialog() )}, ( ::oDlg ),,, .F.,,,, .T. )
+
+      ::oDlg:AddFastKey( 116, {|| ::okDialog() } )
+
+   ::oDlg:Activate( , , , .T., , .T., {|| ::InitDialog() } )
+
+   ::oBmp:End()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFilterDialog_InitDialog( ) ; local Self AS CLASS TFilterDialog := QSelf() AS CLASS TFilterDialog
+
+   if !Empty( ::cFilterName )
+      ::Load( ::cFilterName )
+   end
+
+   if !::Ready()
+      ::oFld:aEnable := { .T., .F. }
+   else
+      ::oBrwAlmacenados:GoTop()
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFilterDialog_endDialog( ) ; local Self AS CLASS TFilterDialog := QSelf() AS CLASS TFilterDialog
+
+   ::oFilterCreator:QuitExpresion()
+
+   ::oDlg:End()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFilterDialog_okDialog( ) ; local Self AS CLASS TFilterDialog := QSelf() AS CLASS TFilterDialog
+
+   if ::oFilterCreator:BuildFilter( ::oBrwFilter:aFilter )
+      ::oDlg:End( 1 )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFilterDialog_Save( ) ; local Self AS CLASS TFilterDialog := QSelf() AS CLASS TFilterDialog
+
+   if ::oFilterCreator:BuildFilter( ::oBrwFilter:aFilter )
+      ::oFilterDatabase:Save( ::cFilterName )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFilterDialog_Delete( ) ; local Self AS CLASS TFilterDialog := QSelf() AS CLASS TFilterDialog
+
+   if ::oFilterDatabase:Del()
+      ::oBrwAlmacenados:Refresh()
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFilterDialog_Load( ) ; local Self AS CLASS TFilterDialog := QSelf() AS CLASS TFilterDialog
+
+   local aArrayFilter   := ::oFilterDatabase:ArrayFilter( ::cFilterName )
+
+   if !Empty( aArrayFilter )
+      ::SetFilter( aArrayFilter )
+   end
+
+   ::oDlg:cTitle( ::cTitle + " [" + ::TitleFilter() + "]" )
+
+   ::oFld:SetOption( 1 )
+
+RETURN ( Self )
+
+
+
+
+
+_HB_CLASS TReplaceDialog ; function TReplaceDialog ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TReplaceDialog", iif( .T., { @TFilterDialog() }, { @HBObject() } ), @TReplaceDialog() ) ) ;
+
+   _HB_MEMBER { cTitle } ; oClass:AddMultiData(, "Reemplazar campos", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTitle"}, .F. )
+   _HB_MEMBER { cResource } ; oClass:AddMultiData(, "FastReplace", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cResource"}, .F. )
+   _HB_MEMBER { cIcon } ; oClass:AddMultiData(, "gc_arrow_circle2_48", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cIcon"}, .F. )
+
+   _HB_MEMBER { oReplace } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oReplace"}, .F. )
+   _HB_MEMBER { cReplace } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cReplace"}, .F. )
+
+   _HB_MEMBER { oExpReplace } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oExpReplace"}, .F. )
+   _HB_MEMBER { cExpReplace } ; oClass:AddMultiData(, Space( 100 ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cExpReplace"}, .F. )
+
+   _HB_MEMBER { lAllRecno } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lAllRecno"}, .F. )
+
+   _HB_MEMBER getField(); oClass:AddInline( "getField", {|Self, cDescription | ( ( Self ) ), ( ::oFilterCreator:GetField( cDescription ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setDatabaseToReplace(); oClass:AddInline( "setDatabaseToReplace", {|Self, cDbf | ( ( Self ) ), ( ::cDbfReplace := cDbf ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER replaceDialog(); oClass:AddMethod( "replaceDialog", @TReplaceDialog_replaceDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER validDialog(); oClass:AddMethod( "validDialog", @TReplaceDialog_validDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER okDialog(); oClass:AddMethod( "okDialog", @TReplaceDialog_okDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER dbfReplace(); oClass:AddInline( "dbfReplace", {|Self | ( ( Self ) ), ( ::oFilterCreator:cDbfReplace ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getExpresionFilter(); oClass:AddInline( "getExpresionFilter", {|Self | ( ( Self ) ), ( ::oFilterCreator:bExpresionFilter ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TReplaceDialog ;
+
+
+
+static FUNCTION TReplaceDialog_replaceDialog( ) ; local Self AS CLASS TReplaceDialog := QSelf() AS CLASS TReplaceDialog
+
+
+
+
+
+   ::oReplace := TComboBox():ReDefine( 80, { | u | If( PCount()==0, ::cReplace, ::cReplace:= u ) }, ::oFilterCreator:GetDescriptions(), ::oDlg,,,,,,, .F.,,,,,,, "::oReplace",,,,,,, )
+
+
+
+
+   ::oExpReplace := TGetHlp():ReDefine( 90, { | u | If( PCount()==0, ::cExpReplace, ::cExpReplace:= u ) }, ::oDlg,,,,,,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+
+
+
+   TCheckBox():ReDefine( 70, { | u | If( PCount()==0, ::lAllRecno, ::lAllRecno:= u ) }, ::oDlg,, {||( if( ::lAllRecno, ::oFld:Hide(), ::oFld:Show() ) )},,,,, .F.,, .F. )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TReplaceDialog_validDialog( ) ; local Self AS CLASS TReplaceDialog := QSelf() AS CLASS TReplaceDialog
+
+   if Empty( ::cReplace )
+      msgStop( "El campo a reemplazar esta vacio")
+      RETURN ( .F. )
+   end
+
+   if Empty( ::cExpReplace )
+      msgStop( "La expresión a reemplazar esta vacia")
+      RETURN ( .F. )
+   end
+
+   if Empty( ::dbfReplace() )
+      msgStop( "No hay bases de datos para reemplazar")
+      RETURN ( .F. )
+   end
+
+   if !::oFilterCreator:BuildFilter( ::oBrwFilter:aFilter )
+      RETURN ( .F. )
+   end
+
+RETURN .T.
+
+
+
+static FUNCTION TReplaceDialog_okDialog( ) ; local Self AS CLASS TReplaceDialog := QSelf() AS CLASS TReplaceDialog
+
+   local nRpl     := 0
+   local cGetVal
+   local nOrdAnt
+   local nDbfRec
+   local nFldPos
+
+   if !::ValidDialog()
+      msgStop( "Salida por dialogo invalido." )
+      Return .F.
+   end
+
+   AutoMeterDialog( ::oDlg )
+
+   SetTotalAutoMeterDialog( ( ::dbfReplace() )->( LastRec() ) )
+
+   nDbfRec        := ( ::dbfReplace() )->( Recno() )
+   nOrdAnt        := ( ::dbfReplace() )->( OrdSetFocus( 0 ) )
+   nFldPos        := ( ::dbfReplace() )->( FieldPos( ::oFilterCreator:GetField( ::cReplace ) ) )
+
+   if nFldPos <> 0
+
+      ( ::dbfReplace() )->( dbGoTop() )
+      while !( ::dbfReplace() )->( eof() )
+
+         cGetVal  := ( ::dbfReplace() )->( Eval( Compile( cGetValue( ::cExpReplace, ValType( ( ::dbfReplace() )->( FieldGet( nFldPos ) ) ) ) ) ) )
+
+         if ::lAllRecno .OR. ( ::dbfReplace() )->( Eval( ::getExpresionFilter( ) ) )
+
+            if ( ::dbfReplace() )->( dbRLock() )
+               ( ::dbfReplace() )->( FieldPut( nFldPos, cGetVal ) )
+               ( ::dbfReplace() )->( dbUnLock() )
+            end
+
+            ++nRpl
+
+         end
+
+         SetAutoMeterDialog( ( ::dbfReplace() )->( Recno() ) )
+
+         ( ::dbfReplace() )->( dbSkip() )
+
+      end
+
+   end
+
+   ( ::dbfReplace() )->( OrdSetFocus( nOrdAnt ) )
+   ( ::dbfReplace() )->( dbGoTo( nDbfRec ) )
+
+   msgInfo( "Total de registros reemplazados " + Str( nRpl ), "Proceso finalizado." )
+
+   EndAutoMeterDialog( ::oDlg )
+
+RETURN ( nil )
+
+
+
+
+
+_HB_CLASS TBrowseFilter ; function TBrowseFilter ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TBrowseFilter", iif( .F., { }, { @HBObject() } ), @TBrowseFilter() ) ) ;
+
+   _HB_MEMBER { aFilter } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aFilter"}, .F. )
+
+   _HB_MEMBER { oFilterDialog } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFilterDialog"}, .F. )
+
+    _HB_MEMBER { oDlg } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDlg"}, .F. )
+
+   _HB_MEMBER { oEditMemo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oEditMemo"}, .F. )
+
+    _HB_MEMBER { oBrwFilter } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwFilter"}, .F. )
+
+    _HB_MEMBER { oColCondicion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oColCondicion"}, .F. )
+    _HB_MEMBER { oColValor } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oColValor"}, .F. )
+
+   _HB_MEMBER { bExpresionFilter } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bExpresionFilter"}, .F. )
+
+    _HB_MEMBER { aFields } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aFields"}, .F. )
+    _HB_MEMBER { aTypes } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aTypes"}, .F. )
+
+    _HB_MEMBER { lSaveFilter } ; oClass:AddMultiData(, .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lSaveFilter"}, .F. )
+
+
+
+
+
+    _HB_MEMBER { aStructure } ; oClass:AddMultiData(, {     {    "Código",    "Codigo",     "C" },    {    "Nombre",     "Nombre",     "C" },    {    "Importe",    "Importe",     "N" }, {  "Fecha",    "Fecha",    "D" }, {  "Lógico",   "Logico",   "L" } }, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aStructure"}, .F. )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   _HB_MEMBER { hConditions } ; oClass:AddMultiData(, {     "N"     => {  "Value"        => 0, "Edit"         => 5, "List"         => nil, "Block"        => {| nRow, nCol, oBrw, nKey | msgStop( nRow ) }, "Conditions"   => { "Igual", "Distinto", "Mayor", "Menor", "Mayor igual", "Menor igual" } },    "C"     => {  "Value"        => Space( 100 ), "Edit"         => 5, "List"         => nil, "Block"        => {|| nil }, "Conditions"   => {     "Igual", "Distinto", "Contenga", "Mayor", "Menor", "Mayor igual", "Menor igual" } },    "D"    => {  "Value"        => GetSysDate(), "Edit"         => 5, "List"         => nil, "Conditions"   => {  "Igual", "Distinto", "Mayor", "Menor", "Mayor igual", "Menor igual" } },    "L"     => {  "Value"        => "Si", "Edit"         => 4, "List"         => { "Si", "No" }, "Conditions"   => {  "Igual", "Distinto" } } }, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hConditions"}, .F. )
+
+    _HB_MEMBER New( oDlg, oFilterCreator); oClass:AddMethod( "New", @TBrowseFilter_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER SetDialog(); oClass:AddInline( "SetDialog", {|Self, oDlg | ( ( Self ) ), ( ::oDlg := oDlg ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER SetStructure(); oClass:AddInline( "SetStructure", {|Self, aStructure | ( ( Self ) ), ( ::aStructure := aStructure ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GetStructure(); oClass:AddInline( "GetStructure", {|Self | ( ( Self ) ), ( ::aStructure ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GetStructurePos(); oClass:AddInline( "GetStructurePos", {|Self, nPos | ( ( Self ) ), ( ::GetStructure()[ nPos ] ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GetStructureType( cDescripcion); oClass:AddMethod( "GetStructureType", @TBrowseFilter_GetStructureType(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER GetDescriptions(); oClass:AddInline( "GetDescriptions", {|Self | ( ( Self ) ), ( ::oFilterDialog:oFilterCreator:GetDescriptions() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GetDescriptionsPos(); oClass:AddInline( "GetDescriptionsPos", {|Self, nPos | ( ( Self ) ), ( ::GetDescriptions()[ nPos ] ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER GetFields(); oClass:AddInline( "GetFields", {|Self | ( ( Self ) ), ( if( Empty( ::aFields ), ( ::aFields := GetSubArray( ::aStructure, 2 ) ), ), ::aFields ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GetTypes(); oClass:AddInline( "GetTypes", {|Self | ( ( Self ) ), ( if( Empty( ::aTypes ), ( ::aTypes := GetSubArray( ::aStructure, 3 ) ), ), ::aTypes ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER GetHashType(); oClass:AddInline( "GetHashType", {|Self, cType | ( ( Self ) ), ( HGet( ::hConditions, cType ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetValueType(); oClass:AddInline( "GetValueType", {|Self, cType | ( ( Self ) ), ( HGet( ::GetHashType( cType ), "Value" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetEditType(); oClass:AddInline( "GetEditType", {|Self, cType | ( ( Self ) ), ( HGet( ::GetHashType( cType ), "Edit" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetListType(); oClass:AddInline( "GetListType", {|Self, cType | ( ( Self ) ), ( HGet( ::GetHashType( cType ), "List" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetConditionsType(); oClass:AddInline( "GetConditionsType", {|Self, cType | ( ( Self ) ), ( HGet( ::GetHashType( cType ), "Conditions" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetBlockType(); oClass:AddInline( "GetBlockType", {|Self, cType | ( ( Self ) ), ( HGet( ::GetHashType( cType ), "Block" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER GetConditionsCaracter(); oClass:AddInline( "GetConditionsCaracter", {|Self | ( ( Self ) ), ( HGet( ::GetHashType( "C" ), "Conditions" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GetConditionsCaracterPos(); oClass:AddInline( "GetConditionsCaracterPos", {|Self, nPos | ( ( Self ) ), ( ::GetConditionsCaracter()[ nPos ] ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER SetFilter( aFilter); oClass:AddMethod( "SetFilter", @TBrowseFilter_SetFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER SetFilterLine( nLine, nField); oClass:AddMethod( "SetFilterLine", @TBrowseFilter_SetFilterLine(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER SetFilterLineBrowse(); oClass:AddInline( "SetFilterLineBrowse", {|Self, nField, uValue | ( ( Self ) ), ( ::SetFilterLine( ::oBrwFilter:nArrayAt, nField, uValue ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER GetFilter(); oClass:AddMethod( "GetFilter", @TBrowseFilter_GetFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GetFilterLine( nLine, nField); oClass:AddMethod( "GetFilterLine", @TBrowseFilter_GetFilterLine(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GetFilterLineBrowse(); oClass:AddInline( "GetFilterLineBrowse", {|Self, nField | ( ( Self ) ), ( ::GetFilterLine( ::oBrwFilter:nArrayAt, nField ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetFilterTypeLineBrowse(); oClass:AddInline( "GetFilterTypeLineBrowse", {|Self | ( ( Self ) ), ( ::GetStructureType( ::GetFilterLineBrowse( 1 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AppendLine(); oClass:AddInline( "AppendLine", {|Self | ( ( Self ) ), ( aAdd(::aFilter, { ::GetDescriptionsPos( 1 ), ::GetConditionsCaracterPos( 1 ), Space( 100 ), "" } ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DeleteLine(); oClass:AddMethod( "DeleteLine", @TBrowseFilter_DeleteLine(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InitLine(); oClass:AddInline( "InitLine", {|Self | ( ( Self ) ), ( ::aFilter := {}, ::AppendLine(), ::oBrwFilter:SetArray( ::aFilter, , , .F. ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ChangeLine(); oClass:AddMethod( "ChangeLine", @TBrowseFilter_ChangeLine(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER Activate(); oClass:AddMethod( "Activate", @TBrowseFilter_Activate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER DescriptionsOnPostEdit( o, x, n); oClass:AddMethod( "DescriptionsOnPostEdit", @TBrowseFilter_DescriptionsOnPostEdit(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER NexoOnPostEdit( o, x, n); oClass:AddMethod( "NexoOnPostEdit", @TBrowseFilter_NexoOnPostEdit(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TBrowseFilter ;
+
+
+
+static FUNCTION TBrowseFilter_New( oFilterDialog ) ; local Self AS CLASS TBrowseFilter := QSelf() AS CLASS TBrowseFilter
+
+   ::oFilterDialog   := oFilterDialog
+
+   ::oEditMemo       := EditMemo()
+
+    ::SetDialog( ::oFilterDialog:oFld:aDialogs[ 1 ] )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TBrowseFilter_GetStructureType( cDescripcion ) ; local Self AS CLASS TBrowseFilter := QSelf() AS CLASS TBrowseFilter
+
+    local nPos
+    local cType := ""
+
+    nPos             := aScan( ::GetStructure(), {|a| Alltrim( Upper( a[ 1 ] ) ) == Alltrim( Upper( cDescripcion ) ) } )
+    if nPos <> 0
+        cType     := ::GetStructure()[ nPos, 3 ]
+    end
+
+RETURN ( cType )
+
+
+
+static FUNCTION TBrowseFilter_SetFilter( aFilter ) ; local Self AS CLASS TBrowseFilter := QSelf() AS CLASS TBrowseFilter
+
+    if !Empty( aFilter )
+        ::aFilter     := aFilter
+    end
+
+   if !Empty( ::oBrwFilter )
+      ::oBrwFilter:SetArray( ::aFilter )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TBrowseFilter_SetFilterLine( nLine, nField, uValue ) ; local Self AS CLASS TBrowseFilter := QSelf() AS CLASS TBrowseFilter
+
+    ::aFilter[ nLine, nField ] := uValue
+
+RETURN ( Self )
+
+
+
+static FUNCTION TBrowseFilter_GetFilter( ) ; local Self AS CLASS TBrowseFilter := QSelf() AS CLASS TBrowseFilter
+
+   if Empty( ::aFilter )
+      ::AppendLine()
+   end
+
+RETURN ( ::aFilter )
+
+
+
+static FUNCTION TBrowseFilter_GetFilterLine( nLine, nField ) ; local Self AS CLASS TBrowseFilter := QSelf() AS CLASS TBrowseFilter
+
+RETURN ( ::GetFilter()[ nLine, nField ] )
+
+
+
+static FUNCTION TBrowseFilter_DeleteLine( ) ; local Self AS CLASS TBrowseFilter := QSelf() AS CLASS TBrowseFilter
+
+   local nLineasFilter  := len( ::aFilter )
+
+   if ( nLineasFilter > 1 ) .AND. ( ::oBrwFilter:nArrayAt <= nLineasFilter )
+      hb_ADel( ::aFilter, ::oBrwFilter:nArrayAt, .T. )
+      ::oBrwFilter:Refresh()
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TBrowseFilter_Activate( ) ; local Self AS CLASS TBrowseFilter := QSelf() AS CLASS TBrowseFilter
+
+
+
+
+   TButton():ReDefine( 100, {||( ::InitLine() )}, ( ::oDlg ),,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 120, {||( ::DeleteLine() )}, ( ::oDlg ),,, .F.,,,, .F. )
+
+   ::oBrwFilter                  := IXBrowse():New( ::oDlg )
+
+   ::oBrwFilter:bClrSel          := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+   ::oBrwFilter:bClrSelFocus     := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+   ::oBrwFilter:SetArray( ::GetFilter(), , , .F. )
+
+   ::oBrwFilter:lHScroll         := .F.
+   ::oBrwFilter:lVScroll         := .F.
+   ::oBrwFilter:lRecordSelector  := .T.
+   ::oBrwFilter:lFastEdit        := .T.
+
+   ::oBrwFilter:nMarqueeStyle    := 3
+
+   ::oBrwFilter:bChange          := {|| ::ChangeLine() }
+
+   ::oBrwFilter:CreateFromResource( 200 )
+
+   with object ( ::oBrwFilter:AddCol() )
+      :cHeader                   := "Campo"
+      :bEditValue                := {|| ::aFilter[ ::oBrwFilter:nArrayAt, 1 ] }
+      :nEditType                 := 2
+      :aEditListTxt              := ::GetDescriptions()
+      :nWidth                    := 240
+      :bOnPostEdit               := {|o,x,n| ::DescriptionsOnPostEdit( o, x, n ) }
+   end
+
+   with object ( ::oColCondicion := ::oBrwFilter:AddCol() )
+      :cHeader                   := "Condicion"
+      :bEditValue                := {|| Padr( ::aFilter[ ::oBrwFilter:nArrayAt, 2 ], 100 ) }
+      :nEditType                 := 2
+      :aEditListTxt              := ::GetConditionsCaracter()
+      :nWidth                    := 100
+      :bOnPostEdit               := {|o,x,n| If( n <> 27, ::SetFilterLineBrowse( 2, x ), ) }
+   end
+
+   with object ( ::oColValor := ::oBrwFilter:AddCol() )
+      :cHeader                   := "Valor"
+      :bEditValue                := {|| ::aFilter[ ::oBrwFilter:nArrayAt, 3 ] }
+      :nEditType                 := 5
+      :nWidth                    := 200
+      :bOnPostEdit               := {|o,x,n| If( n <> 27, ::SetFilterLineBrowse( 3, x ), ) }
+      :bEditBlock                := {|n,c,o| ::oEditMemo:Show( o ) }
+   end
+
+   with object ( ::oBrwFilter:AddCol() )
+      :cHeader                   := "Nexo"
+      :bEditValue                := {|| ::aFilter[ ::oBrwFilter:nArrayAt, 4 ] }
+      :nEditType                 := 2
+      :aEditListTxt              := { "", "Y", "O" }
+      :nWidth                    := 60
+      :bOnPostEdit               := {|o,x,n| ::NexoOnPostEdit( o, x, n ) }
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TBrowseFilter_DescriptionsOnPostEdit( o, uNewValue, nKey ) ; local Self AS CLASS TBrowseFilter := QSelf() AS CLASS TBrowseFilter
+
+   if IsNum( nKey ) .AND. ( nKey <> 27 )
+
+      if !IsNil( uNewValue ) .AND. ValType( uNewValue ) == "C"
+
+         if ::GetFilterLineBrowse( 1 ) <> uNewValue
+
+            ::SetFilterLineBrowse( 1, uNewValue )
+
+            ::SetFilterLineBrowse( 3, ::GetValueType( ::GetFilterTypeLineBrowse() ) )
+
+            ::ChangeLine()
+
+         end
+
+      end
+
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TBrowseFilter_NexoOnPostEdit( o, uValue, n ) ; local Self AS CLASS TBrowseFilter := QSelf() AS CLASS TBrowseFilter
+
+   if IsNum( n ) .AND. ( n <> 27 )
+
+      ::SetFilterLineBrowse( 4, uValue )
+
+      if ( ::oBrwFilter:nArrayAt ) == len( ::aFilter ) .AND. !Empty( uValue )
+         ::AppendLine()
+      end
+
+      ::oBrwFilter:Refresh()
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TBrowseFilter_ChangeLine( ) ; local Self AS CLASS TBrowseFilter := QSelf() AS CLASS TBrowseFilter
+
+   local cType                      := ::GetFilterTypeLineBrowse()
+
+   if !Empty( cType )
+      ::oColCondicion:aEditListTxt  := ::GetConditionsType( cType )
+      ::oColValor:nEditType         := ::GetEditType( cType )
+      ::oColValor:aEditListTxt      := ::GetListType( cType )
+   end
+
+   ::oBrwFilter:Refresh()
+
+RETURN ( .T. )
+
+
+
+
+
+_HB_CLASS TBrowseAlmacenado ; function TBrowseAlmacenado ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TBrowseAlmacenado", iif( .F., { }, { @HBObject() } ), @TBrowseAlmacenado() ) ) ;
+
+   _HB_MEMBER { oFilterDialog } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFilterDialog"}, .F. )
+
+   _HB_MEMBER { oDlg } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDlg"}, .F. )
+   _HB_MEMBER { oDbf } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbf"}, .F. )
+
+   _HB_MEMBER { oBrwAlmacenados } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwAlmacenados"}, .F. )
+
+    _HB_MEMBER New( oDlg, oFilterCreator); oClass:AddMethod( "New", @TBrowseAlmacenado_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER Activate(); oClass:AddMethod( "Activate", @TBrowseAlmacenado_Activate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetDialog(); oClass:AddInline( "SetDialog", {|Self, oDlg | ( ( Self ) ), ( ::oDlg := oDlg ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetDatabase(); oClass:AddInline( "SetDatabase", {|Self, oDbf | ( ( Self ) ), ( ::oDbf := oDbf ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GoTop(); oClass:AddInline( "GoTop", {|Self | ( ( Self ) ), ( if( !Empty( ::oBrwAlmacenados ), ( ::oBrwAlmacenados:GoTop() ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Refresh(); oClass:AddInline( "Refresh", {|Self | ( ( Self ) ), ( if( !Empty( ::oBrwAlmacenados ), ( ::oBrwAlmacenados:Refresh() ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TBrowseAlmacenado ;
+
+
+
+static FUNCTION TBrowseAlmacenado_New( oFilterDialog ) ; local Self AS CLASS TBrowseAlmacenado := QSelf() AS CLASS TBrowseAlmacenado
+
+   ::oFilterDialog   := oFilterDialog
+
+   ::SetDialog( ::oFilterDialog:oFld:aDialogs[ 2 ] )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TBrowseAlmacenado_Activate( ) ; local Self AS CLASS TBrowseAlmacenado := QSelf() AS CLASS TBrowseAlmacenado
+
+   ::oBrwAlmacenados                   := IXBrowse():New( ::oDlg )
+
+   ::oBrwAlmacenados:bClrSel           := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+   ::oBrwAlmacenados:bClrSelFocus      := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+   ::oBrwAlmacenados:nMarqueeStyle     := 5
+
+   ::oBrwAlmacenados:lHScroll          := .F.
+   ::oBrwAlmacenados:lVScroll          := .T.
+   ::oBrwAlmacenados:lRecordSelector   := .T.
+
+   ::oDbf:SetBrowse( ::oBrwAlmacenados )
+
+   ::oBrwAlmacenados:bLDblClick        := {|| ::oFilterDialog:Load() }
+
+   ::oBrwAlmacenados:CreateFromResource( 200 )
+
+   with object ( ::oBrwAlmacenados:AddCol() )
+      :cHeader                         := "Filtro"
+      :bEditValue                      := {|| ::oDbf:FieldGetByName( "cTexFlt" ) }
+      :nWidth                          := 600
+   end
+
+RETURN ( Self )
+
+
+
+
+
+
+_HB_CLASS TFilterDatabase ; function TFilterDatabase ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TFilterDatabase", iif( .T., { @TMant() }, { @HBObject() } ), @TFilterDatabase() ) ) ;
+
+   _HB_MEMBER { cType } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cType"}, .F. )
+   _HB_MEMBER { oFilterCreator } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFilterCreator"}, .F. )
+
+   _HB_MEMBER { cFilterName } ; oClass:AddMultiData(, Space( 100 ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFilterName"}, .F. )
+   _HB_MEMBER { lDefault } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lDefault"}, .F. )
+   _HB_MEMBER { lAllUser } ; oClass:AddMultiData(, .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lAllUser"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @TFilterDatabase_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER End(); oClass:AddMethod( "End", @TFilterDatabase_End(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DefineFiles(); oClass:AddMethod( "DefineFiles", @TFilterDatabase_DefineFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER OpenFiles( lExclusive); oClass:AddMethod( "OpenFiles", @TFilterDatabase_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetScope( uScope); oClass:AddMethod( "SetScope", @TFilterDatabase_SetScope(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Save(); oClass:AddMethod( "Save", @TFilterDatabase_Save(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Delete(); oClass:AddInline( "Delete", {|Self | ( ( Self ) ), ( ::oDbf:Delete() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Dialog(); oClass:AddMethod( "Dialog", @TFilterDatabase_Dialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER lValidDialog(); oClass:AddMethod( "lValidDialog", @TFilterDatabase_lValidDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SeekFullKey( cFilterName); oClass:AddMethod( "SeekFullKey", @TFilterDatabase_SeekFullKey(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SerializeFilter(); oClass:AddMethod( "SerializeFilter", @TFilterDatabase_SerializeFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER UnSerializeFilter(); oClass:AddMethod( "UnSerializeFilter", @TFilterDatabase_UnSerializeFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER filtersName(); oClass:AddMethod( "filtersName", @TFilterDatabase_filtersName(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER defaultFilterByUser( cFilterType, cFilterUser); oClass:AddMethod( "defaultFilterByUser", @TFilterDatabase_defaultFilterByUser(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getDefaultFilter( cFilterName); oClass:AddMethod( "getDefaultFilter", @TFilterDatabase_getDefaultFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getExpresionFilter( cFilterName); oClass:AddMethod( "getExpresionFilter", @TFilterDatabase_getExpresionFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ArrayFilter( cFilterName); oClass:AddMethod( "ArrayFilter", @TFilterDatabase_ArrayFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TFilterDatabase ;
+
+
+
+static FUNCTION TFilterDatabase_New( oFilterCreator ) ; local Self AS CLASS TFilterDatabase := QSelf() AS CLASS TFilterDatabase
+
+   ::oFilterCreator     := oFilterCreator
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFilterDatabase_End( ) ; local Self AS CLASS TFilterDatabase := QSelf() AS CLASS TFilterDatabase
+
+   if !Empty( ::oDbf ) .AND. ::oDbf:Used()
+      ::oDbf:End()
+   end
+
+   ::oDbf      := nil
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFilterDatabase_OpenFiles( lExclusive ) ; local Self AS CLASS TFilterDatabase := QSelf() AS CLASS TFilterDatabase
+
+   local lOpen          := .T.
+   local oError
+   local oBlock
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   oBlock               := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      if Empty( ::oDbf )
+         ::oDbf         := ::DefineFiles()
+      end
+
+      ::oDbf:Activate( .F., !( lExclusive ) )
+
+   RECOVER USING oError
+
+      msgStop( "Imposible abrir todas las bases de datos" + Chr(13)+Chr(10) + ErrorMessage( oError )  )
+
+      ::CloseFiles()
+
+      lOpen             := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TFilterDatabase_DefineFiles( cPath, cDriver ) ; local Self AS CLASS TFilterDatabase := QSelf() AS CLASS TFilterDatabase
+
+   local oDbf
+
+   If( cPath == nil, cPath := cPatDat(), ) ;
+   If( cDriver == nil, cDriver := cDriver(), ) ;
+
+   oDbf := DbfServer( "CnfFlt.Dbf", ):New( "CnfFlt.Dbf", "CnfFlt", ( cDriver ), "Filtros", ( cPath ) )
+
+      oDbf:AddField( "cTipDoc", "C", 2, 0,,,,, "Tipo de documento", .F.,, .F., {} )
+      oDbf:AddField( "cCodUsr", "C", 3, 0,,,,, "Usuario", .F.,, .F., {} )
+      oDbf:AddField( "cTexFlt", "C", 100, 0,,,,, "Descripción", .F.,, .F., {} )
+      oDbf:AddField( "cFldFlt", "M", 10, 0,,,,, "Texto largo de la nota", .F.,, .F., {} )
+      oDbf:AddField( "cExpFlt", "M", 10, 0,,,,, "Expresión del filtro", .F.,, .F., {} )
+      oDbf:AddField( "lDefFlt", "L", 1, 0,,,,, "Lógico de filtro por defecto", .F.,, .F., {} )
+
+      oDbf:AddIndex( "cTipDoc", "CnfFlt.Cdx", "cTipDoc + Upper( cTexFlt )",,, .F., .F., "Código",,, .T., .F. )
+      oDbf:AddIndex( "lDefFlt", "CnfFlt.Cdx", "cTipDoc + cCodUsr", "lDefFlt",, .F., .F., "Usuario",,, .T., .F. )
+
+
+
+RETURN ( oDbf )
+
+
+
+static FUNCTION TFilterDatabase_SetScope( uScope ) ; local Self AS CLASS TFilterDatabase := QSelf() AS CLASS TFilterDatabase
+
+   if !Empty( ::oDbf ) .AND. ( ::oDbf:Used() )
+      ::oDbf:SetScope( uScope, uScope )
+      ::oDbf:GoTop()
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFilterDatabase_SerializeFilter( aFilter ) ; local Self AS CLASS TFilterDatabase := QSelf() AS CLASS TFilterDatabase
+
+   local cLineFilter
+   local aLineFilter
+   local cSerializeFilter  := ""
+
+   for each aLineFilter in aFilter
+      for each cLineFilter in aLineFilter
+         cSerializeFilter  += Alltrim( cValToChar( cLineFilter ) ) + ","
+      next
+   next
+
+RETURN ( cSerializeFilter )
+
+
+
+static FUNCTION TFilterDatabase_UnSerializeFilter( cFilterSerialized ) ; local Self AS CLASS TFilterDatabase := QSelf() AS CLASS TFilterDatabase
+
+   local cFilter
+   local aFilter
+   local aSerializedFilter
+
+   If( cFilterSerialized == nil, cFilterSerialized := ::oDbf:cFldFlt, ) ;
+
+   aSerializedFilter          := hb_ATokens( cFilterSerialized, "," )
+
+   aFilter                    := { {} }
+
+   for each cFilter in aSerializedFilter
+
+      aAdd( aTail( aFilter ), cFilter )
+
+      if ( mod( hb_EnumIndex(), 4 ) == 0 )
+         aAdd( aFilter, {} )
+      end
+
+   next
+
+   aSize( aFilter, len( aFilter ) - 1 )
+
+RETURN ( aFilter )
+
+
+
+static FUNCTION TFilterDatabase_Save( cFilterName ) ; local Self AS CLASS TFilterDatabase := QSelf() AS CLASS TFilterDatabase
+
+   if ::Dialog( cFilterName )
+
+      if ::seekFullKey()
+         ::oDbf:Delete()
+      end
+
+      ::oDbf:Blank()
+
+      ::oDbf:cTipDoc    := ::oFilterCreator:GetFilterType()
+      ::oDbf:cTexFlt    := ::cFilterName
+      ::oDbf:cExpFlt    := ::oFilterCreator:cExpresionFilter
+      ::oDbf:cFldFlt    := ::SerializeFilter( ::oFilterCreator:aFilter )
+      ::oDbf:lDefFlt    := ::lDefault
+
+      if !::lAllUser
+         ::oDbf:cCodUsr := Auth():Codigo()
+      end
+
+      ::oDbf:Insert()
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFilterDatabase_Dialog( cFilterName ) ; local Self AS CLASS TFilterDatabase := QSelf() AS CLASS TFilterDatabase
+
+   local oDlg
+
+   if !Empty( cFilterName )
+      ::cFilterName  := padr( cFilterName, 100 )
+   else
+      ::cFilterName  := Space( 100 )
+   end
+
+   ::lDefault     := ::getDefaultFilter()
+
+   oDlg = TDialog():New(,,,,, "Nombre_Filtro",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+   TGetHlp():ReDefine( 100, { | u | If( PCount()==0, ::cFilterName, ::cFilterName:= u ) }, oDlg,,,,,,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+
+
+   TCheckBox():ReDefine( 110, { | u | If( PCount()==0, ::lDefault, ::lDefault:= u ) }, oDlg,,,,,,, .F.,, .F. )
+
+
+
+
+   TCheckBox():ReDefine( 120, { | u | If( PCount()==0, ::lAllUser, ::lAllUser:= u ) }, oDlg,,,,,,, .F., {||        ( oUser():lAdministrador() )}, .F. )
+
+
+
+
+   TButton():ReDefine( 1, {||( ::lValidDialog( oDlg ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+   TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .F. )
+
+   oDlg:AddFastKey( 116, {|| ::lValidDialog( oDlg ) } )
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+static FUNCTION TFilterDatabase_lValidDialog( oDlg ) ; local Self AS CLASS TFilterDatabase := QSelf() AS CLASS TFilterDatabase
+
+   if Empty( ::cFilterName )
+
+      MsgStop( "El nombre del filtro no puede estar vacio" )
+
+      RETURN ( .F. )
+
+   else
+
+      oDlg:End( 1 )
+
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TFilterDatabase_filtersName( cFilterType ) ; local Self AS CLASS TFilterDatabase := QSelf() AS CLASS TFilterDatabase
+
+   local aFilter        := {}
+
+   If( cFilterType == nil, cFilterType := ::oFilterCreator:GetFilterType(), ) ;
+
+   if empty( ::oDbf )
+      RETURN ( aFilter )
+   end
+
+   if ::oDbf:Seek( cFilterType )
+      while ( ::oDbf:cTipDoc == cFilterType ) .AND. !( ::oDbf:Eof() )
+         aAdd( aFilter, ::oDbf:cTexFlt )
+         ::oDbf:Skip()
+      end
+   end
+
+RETURN ( aFilter )
+
+
+
+static FUNCTION TFilterDatabase_defaultFilterByUser( cFilterType, cFilterUser ) ; local Self AS CLASS TFilterDatabase := QSelf() AS CLASS TFilterDatabase
+
+   local cFilter        := ""
+
+   If( cFilterType == nil, cFilterType := ::oFilterCreator:GetFilterType(), ) ;
+   If( cFilterUser == nil, cFilterUser := Auth():Codigo(), ) ;
+
+   if empty( ::oDbf )
+      RETURN ( cFilter )
+   end
+
+   if ::oDbf:SeekInOrd( cFilterType + cFilterUser, "lDefFlt" )
+      cFilter           := ::oDbf:cTexFlt
+   end
+
+RETURN ( cFilter )
+
+
+
+static FUNCTION TFilterDatabase_getExpresionFilter( cFilterName ) ; local Self AS CLASS TFilterDatabase := QSelf() AS CLASS TFilterDatabase
+
+   local cFilterExpresion  := ""
+
+   if ::SeekFullKey( cFilterName )
+      cFilterExpresion     := ::oDbf:cExpFlt
+   end
+
+RETURN ( cFilterExpresion )
+
+
+
+static FUNCTION TFilterDatabase_getDefaultFilter( cFilterName ) ; local Self AS CLASS TFilterDatabase := QSelf() AS CLASS TFilterDatabase
+
+   local defaultFilter  := .F.
+
+   If( cFilterName == nil, cFilterName := ::cFilterName, ) ;
+
+   if ::SeekFullKey( cFilterName )
+      defaultFilter     := ::oDbf:lDefFlt
+   end
+
+RETURN ( defaultFilter )
+
+
+
+static FUNCTION TFilterDatabase_ArrayFilter( cFilterName ) ; local Self AS CLASS TFilterDatabase := QSelf() AS CLASS TFilterDatabase
+
+   local aArrayFilter      := nil
+
+   if ::SeekFullKey( cFilterName )
+      aArrayFilter         := ::UnSerializeFilter()
+   end
+
+RETURN ( aArrayFilter )
+
+
+
+static FUNCTION TFilterDatabase_SeekFullKey( cFilterName ) ; local Self AS CLASS TFilterDatabase := QSelf() AS CLASS TFilterDatabase
+
+   If( cFilterName == nil, cFilterName := ::cFilterName, ) ;
+
+   if !Empty( cFilterName )
+      RETURN ( ::oDbf:Seek( ::oFilterCreator:GetFilterType() + upper( alltrim( cFilterName ) ) ) )
+   end
+
+RETURN .T.
+
+
+
+_HB_CLASS EditMemo ; function EditMemo ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "EditMemo", iif( .F., { }, { @HBObject() } ), @EditMemo() ) ) ;
+
+   _HB_MEMBER { oDlg } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDlg"}, .F. )
+   _HB_MEMBER { oMemo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oMemo"}, .F. )
+   _HB_MEMBER { cMemo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cMemo"}, .F. )
+
+   _HB_MEMBER SetMemo(); oClass:AddInline( "SetMemo", {|Self, oSender | ( ( Self ) ), ( ::cMemo := oSender:VarGet() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Show(); oClass:AddMethod( "Show", @EditMemo_Show(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS EditMemo ;
+
+
+
+static FUNCTION EditMemo_Show( oSender ) ; local Self AS CLASS EditMemo := QSelf() AS CLASS EditMemo
+
+   ::SetMemo( oSender )
+
+   ::oDlg = TDialog():New(,,,,, "EditMemo",, .F.,,,,,, .F.,,,,,, .F.,, "::oDlg", nil, )
+
+
+
+
+
+      ::oMemo := TMultiGet():ReDefine( 100, { | u | If( PCount()==0, ::cMemo, ::cMemo:= u ) }, ::oDlg,,,,,,, .F.,, .F.,, )
+
+
+
+
+      TButton():ReDefine( 1, {||( ::oDlg:end( 1 ) )}, ::oDlg,,, .F.,,,, .F. )
+
+
+
+
+      TButton():ReDefine( 2, {||( ::oDlg:end() )}, ::oDlg,,, .F.,,,, .F. )
+
+      ::oDlg:AddFastKey( 116, {|| ::oDlg:end( 1 ) } )
+
+   ::oDlg:Activate( ::oDlg:bLClicked, ::oDlg:bMoved, ::oDlg:bPainted, .T.,,,, ::oDlg:bRClicked,,, )
+
+   if ( ::oDlg:nResult == 1 )
+      oSender:VarPut( ::cMemo )
+   end
+
+RETURN ( nil )

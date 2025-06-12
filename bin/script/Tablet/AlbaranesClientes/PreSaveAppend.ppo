@@ -1,0 +1,301 @@
+#line 38 "C:\fwh1801\Gestool\bin\include\FiveWin.ch"
+      static bError
+#line 203 "C:\fwh1801\Gestool\bin\include\hbclass.ch"
+DECLARE HBClass  New( cName AS STRING, OPTIONAL SuperParams ) AS CLASS HBClass  Create() AS OBJECT  Instance() AS OBJECT  AddClsMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC, n2 AS NUMERIC, n3 AS NUMERIC )  AddMultiClsData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING )  AddMultiData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING, x AS LOGICAL, lPer AS LOGICAL )  AddMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC )  AddInLine( cName AS STRING, bBlock AS CODEBLOCK, nScope AS NUMERIC )  AddVirtual( cName AS STRING )
+#line 79 "C:\fwh1801\Gestool\bin\include\FiveWin.ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+#line 8 "C:\fwh1801\Gestool\bin\Script\Tablet\AlbaranesClientes\PreSaveAppend.prg"
+Function PreSave( oSender )
+
+   local oPre
+
+   oPre := oPreSave():New( oSender )
+
+   if !Empty( oPre )
+      oPre:setAlmacenPrincipal( "000" )
+      oPre:setAlmacenTablet( Application():codigoAlmacen() )
+      oPre:run()
+   end
+
+Return nil
+
+
+
+_HB_CLASS oPreSave ; function oPreSave ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "oPreSave", iif( .F., { }, { @HBObject() } ), @oPreSave() ) ) ;
+
+; _HB_MEMBER { nView2 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nView2"}, .F. )
+
+; _HB_MEMBER { cAlmacenPrincipal } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAlmacenPrincipal"}, .F. )
+; _HB_MEMBER { cAlmacenTablet } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAlmacenTablet"}, .F. )
+
+; _HB_MEMBER { oSender } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSender"}, .F. )
+
+; _HB_MEMBER { cSerieDuplicate } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSerieDuplicate"}, .F. )
+; _HB_MEMBER { nNumeroDuplicate } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nNumeroDuplicate"}, .F. )
+; _HB_MEMBER { cSufijoDuplicate } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSufijoDuplicate"}, .F. )
+
+; _HB_MEMBER { cCodigoArticuloCarga } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoArticuloCarga"}, .F. )
+
+   _HB_MEMBER new( oSender); oClass:AddMethod( "new", @oPreSave_new(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER run(); oClass:AddMethod( "run", @oPreSave_run(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setAlmacenPrincipal(); oClass:AddInline( "setAlmacenPrincipal", {|Self, cAlmacen | ( ( Self ) ), ( ::cAlmacenPrincipal  := cAlmacen ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setAlmacenTablet(); oClass:AddInline( "setAlmacenTablet", {|Self, cAlmacen | ( ( Self ) ), ( ::cAlmacenTablet     := cAlmacen ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER runAppendMode(); oClass:AddMethod( "runAppendMode", @oPreSave_runAppendMode(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER runEditMode(); oClass:AddMethod( "runEditMode", @oPreSave_runEditMode(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER duplicateAlbaran(); oClass:AddMethod( "duplicateAlbaran", @oPreSave_duplicateAlbaran(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setAlmacenEnAlbaran(); oClass:AddMethod( "setAlmacenEnAlbaran", @oPreSave_setAlmacenEnAlbaran(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER delDocumentoAsociado(); oClass:AddMethod( "delDocumentoAsociado", @oPreSave_delDocumentoAsociado(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lArticuloCarga(); oClass:AddMethod( "lArticuloCarga", @oPreSave_lArticuloCarga(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS oPreSave ;
+
+
+
+static FUNCTION oPreSave_new( oSender ) ; local Self AS CLASS oPreSave := QSelf() AS CLASS oPreSave
+
+   ::nView2                := D():CreateView()
+
+   D():AlbaranesClientes( ::nView2 )
+
+   ::oSender               := oSender
+
+   ::cSerieDuplicate       := "H"
+
+   ::cCodigoArticuloCarga  := "999"
+
+Return self
+
+
+
+static FUNCTION oPreSave_run( ) ; local Self AS CLASS oPreSave := QSelf() AS CLASS oPreSave
+
+   if AllTrim( ::cAlmacenPrincipal ) == AllTrim( Application():codigoAlmacen() )
+      return nil
+   end
+
+   if hGet( ::oSender:hDictionaryMaster, "Serie" ) == ::cSerieDuplicate
+      Return nil
+   end
+
+   if hGet( ::oSender:hDictionaryMaster, "Estado" ) > 2
+      Return nil
+   end
+
+   if !::lArticuloCarga()
+      Return nil
+   end
+
+   do case
+      case ::oSender:lAppendMode()
+
+         ::runAppendMode()
+
+      case ::oSender:lEditMode()
+
+         ::runEditMode()
+
+   end
+
+   D():DeleteView( ::nView2 )
+
+Return nil
+
+
+
+static FUNCTION oPreSave_runAppendMode( ) ; local Self AS CLASS oPreSave := QSelf() AS CLASS oPreSave
+
+
+
+
+
+   ::duplicateAlbaran()
+
+
+
+
+
+   ::setAlmacenEnAlbaran()
+
+Return nil
+
+
+
+static FUNCTION oPreSave_runEditMode( ) ; local Self AS CLASS oPreSave := QSelf() AS CLASS oPreSave
+
+
+
+
+
+   ::delDocumentoAsociado()
+
+
+
+
+
+   ::duplicateAlbaran()
+
+
+
+
+
+   ::setAlmacenEnAlbaran()
+
+Return nil
+
+
+
+static FUNCTION oPreSave_duplicateAlbaran( ) ; local Self AS CLASS oPreSave := QSelf() AS CLASS oPreSave
+
+   local hLine
+   local aTotAlb
+   local hCloneDictionaryMaster
+   local aCloneDocumentLines
+
+   ::nNumeroDuplicate   := nNewDoc( ::cSerieDuplicate, ::oSender:getWorkArea(), ::oSender:getCounterDocuments(), , D():Contadores( ::nView2 ) )
+   ::cSufijoDuplicate   := RetSufEmp()
+
+   hCloneDictionaryMaster  := hb_hClone( ::oSender:hDictionaryMaster )
+   aCloneDocumentLines     := aclone( ::oSender:oDocumentLines:getDictionaryArray() )
+
+
+
+
+
+   hSet( hCloneDictionaryMaster, "Serie", ::cSerieDuplicate )
+   hSet( hCloneDictionaryMaster, "Numero", ::nNumeroDuplicate )
+   hSet( hCloneDictionaryMaster, "Sufijo", ::cSufijoDuplicate )
+   hSet( hCloneDictionaryMaster, "Almacen", ::cAlmacenTablet )
+
+   D():appendHashRecord( hCloneDictionaryMaster, "AlbCliT", ::nView2 )
+
+
+
+
+
+   for each hLine in aCloneDocumentLines
+      hSet( hLine, "Serie", ::cSerieDuplicate )
+      hSet( hLine, "Numero", ::nNumeroDuplicate )
+      hSet( hLine, "Sufijo", ::cSufijoDuplicate )
+      hSet( hLine, "Unidades", ( hGet( hLine, "Unidades" ) * ( - 1 ) ) )
+      hSet( hLine, "Almacen", ::cAlmacenTablet )
+
+      D():appendHashRecord( hLine, "AlbCliL", ::nView2 )
+
+   next
+
+
+
+
+
+   if ( D():AlbaranesClientes( ::nView2 ) )->( dbSeek( ::cSerieDuplicate + Str( ::nNumeroDuplicate ) + ::cSufijoDuplicate ) )
+
+      if dbLock( D():AlbaranesClientes( ::nView2 ) )
+
+         aTotAlb              := aTotAlbCli( ::cSerieDuplicate + Str( ::nNumeroDuplicate ) + ::cSufijoDuplicate, D():AlbaranesClientes( ::nView2 ), D():AlbaranesClientesLineas( ::nView2 ), D():TiposIva( ::nView2 ), D():Divisas( ::nView2 ), ( D():AlbaranesClientes( ::nView2 ) )->cDivAlb )
+
+         ( D():AlbaranesClientes( ::nView2 ) )->nTotNet := aTotAlb[1]
+         ( D():AlbaranesClientes( ::nView2 ) )->nTotIva := aTotAlb[2]
+         ( D():AlbaranesClientes( ::nView2 ) )->nTotReq := aTotAlb[3]
+         ( D():AlbaranesClientes( ::nView2 ) )->nTotAlb := aTotAlb[4]
+
+         ( D():AlbaranesClientes( ::nView2 ) )->( dbUnlock() )
+
+      end
+
+   end
+
+Return nil
+
+
+
+static FUNCTION oPreSave_setAlmacenEnAlbaran( ) ; local Self AS CLASS oPreSave := QSelf() AS CLASS oPreSave
+
+   local hLine
+
+
+
+
+
+   hSet( ::oSender:hDictionaryMaster, "Almacen", ::cAlmacenPrincipal )
+   hSet( ::oSender:hDictionaryMaster, "NumeroDocumento", ::cSerieDuplicate + Str( ::nNumeroDuplicate ) + ::cSufijoDuplicate )
+
+
+
+
+
+   for each hLine in ::oSender:oDocumentLines:getDictionaryArray()
+      hSet( hLine, "Almacen", ::cAlmacenPrincipal )
+   next
+
+Return nil
+
+
+
+static FUNCTION oPreSave_delDocumentoAsociado( ) ; local Self AS CLASS oPreSave := QSelf() AS CLASS oPreSave
+
+   local cNumDoc  := hGet( ::oSender:hDictionaryMaster, "NumeroDocumento" )
+
+   if Empty( cNumDoc )
+      Return nil
+   end
+
+
+
+
+
+   while ( D():AlbaranesClientesLineas( ::nView2 ) )->( dbSeek( cNumDoc ) ) .AND. !( D():AlbaranesClientesLineas( ::nView2 ) )->( eof() )
+
+      if dbLock( D():AlbaranesClientesLineas( ::nView2 ) )
+         ( D():AlbaranesClientesLineas( ::nView2 ) )->( dbDelete() )
+         ( D():AlbaranesClientesLineas( ::nView2 ) )->( dbUnLock() )
+      end
+
+   end
+
+
+
+
+
+   if ( D():AlbaranesClientes( ::nView2 ) )->( dbSeek( cNumDoc ) )
+
+      if dbLock( D():AlbaranesClientes( ::nView2 ) )
+         ( D():AlbaranesClientes( ::nView2 ) )->( dbDelete() )
+         ( D():AlbaranesClientes( ::nView2 ) )->( dbUnLock() )
+      end
+
+   end
+
+Return nil
+
+
+
+static FUNCTION oPreSave_lArticuloCarga ; local Self AS CLASS oPreSave := QSelf() AS CLASS oPreSave
+
+   local lReturn           := .F.
+   local aCloneDocumentLines
+
+   aCloneDocumentLines     := aclone( ::oSender:oDocumentLines:getDictionaryArray() )
+
+   aEval( aCloneDocumentLines, { | h | if( AllTrim( hGet( h, "Articulo" ) ) == ::cCodigoArticuloCarga, lReturn := .T., ) } )
+
+Return lReturn

@@ -1,0 +1,49 @@
+[File Application]
+System=PROMETHEUS v2000
+Program=The DataBase WorkShop for Windows
+Author=Copyright ©1998/2002, Andrade A. Daniel
+[File Setup]
+FileName=C:\FW195\CAMERO\EMPW9\FSTINF.DBF
+CurPath=C:\FW195\CAMERO\EMPW9\
+Driver=SIXCDX
+Indexes=C:\FW195\CAMERO\EMPW9\FSTINF.CDX
+TagActive=CCODUSE
+BagActive=C:\FW195\CAMERO\EMPW9\FSTINF.CDX
+RecNo=3
+RowPos=3
+ColPos=4
+FilterActive=
+FilterList=
+[Expresions]
+For=
+While=
+[Columns Positions]
+1=1
+2=2
+3=3
+4=4
+[Columns Names]
+1=CCODUSE
+2=CNOMINF
+3=MORGINF
+4=MMODINF
+[Columns Sizes]
+1=75.040000000
+2=857.000000
+3=100
+4=100
+[Columns Pictures]
+1=@X
+2=@X
+3=@X
+4=@X
+[Columns Aligns]
+1=0
+2=0
+3=1
+4=1
+[Columns Types]
+1=C
+2=C
+3=M
+4=M

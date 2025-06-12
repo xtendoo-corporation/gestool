@@ -1,0 +1,143 @@
+#line 38 "C:\fw195\Gestool\bin\include\FiveWin.Ch"
+      static bError
+#line 203 "C:\fw195\Gestool\bin\include\hbclass.ch"
+DECLARE HBClass  New( cName AS STRING, OPTIONAL SuperParams ) AS CLASS HBClass  Create() AS OBJECT  Instance() AS OBJECT  AddClsMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC, n2 AS NUMERIC, n3 AS NUMERIC )  AddMultiClsData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING )  AddMultiData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING, x AS LOGICAL, lPer AS LOGICAL )  AddMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC )  AddInLine( cName AS STRING, bBlock AS CODEBLOCK, nScope AS NUMERIC )  AddVirtual( cName AS STRING )
+#line 79 "C:\fw195\Gestool\bin\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+#line 16 "C:\fw195\Gestool\bin\Script\TPV\BestsellerFtp.prg"
+_HB_CLASS BestsellerFtp ; function BestsellerFtp ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "BestsellerFtp", iif( .F., { }, { @HBObject() } ), @BestsellerFtp() ) ) ;
+
+; _HB_MEMBER { cFtpSite } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFtpSite"}, .F. )
+; _HB_MEMBER { cUserName } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cUserName"}, .F. )
+; _HB_MEMBER { cPassword } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPassword"}, .F. )
+; _HB_MEMBER { cUrl } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cUrl"}, .F. )
+; _HB_MEMBER { lPassive } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lPassive"}, .F. )
+; _HB_MEMBER { cLocalDirectory } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cLocalDirectory"}, .F. )
+; _HB_MEMBER { cLocalDirectoryProcessed } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cLocalDirectoryProcessed"}, .F. )
+; _HB_MEMBER { cDirectory } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDirectory"}, .F. )
+
+; _HB_MEMBER { lConnect } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lConnect"}, .F. )
+; _HB_MEMBER { oFtp } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFtp"}, .F. )
+; _HB_MEMBER { oInt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oInt"}, .F. )
+
+; _HB_MEMBER { oAlbPrvT } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAlbPrvT"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @BestsellerFtp_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Run(); oClass:AddMethod( "Run", @BestsellerFtp_Run(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ftpConexion(); oClass:AddMethod( "ftpConexion", @BestsellerFtp_ftpConexion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER closeConexion(); oClass:AddMethod( "closeConexion", @BestsellerFtp_closeConexion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ftpGetFiles(); oClass:AddMethod( "ftpGetFiles", @BestsellerFtp_ftpGetFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER fileNotProccess( cFile); oClass:AddMethod( "fileNotProccess", @BestsellerFtp_fileNotProccess(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER fileDownload( cFile); oClass:AddMethod( "fileDownload", @BestsellerFtp_fileDownload(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS BestsellerFtp ;
+
+
+
+static FUNCTION BestsellerFtp_New( ) ; local Self AS CLASS BestsellerFtp := QSelf() AS CLASS BestsellerFtp
+
+   ::cFtpSite                 := "ftp.gestool.es"
+   ::cUserName                := "bestseller"
+   ::cPassword                := "Qwm6p_94"
+   ::cUrl                     := "ftp://" + ::cUserName + ":" + ::cPassword + "@" + ::cFtpSite
+   ::lPassive                 := .T.
+   ::cLocalDirectory          := "c:\Bestseller\"
+   ::cLocalDirectoryProcessed := "c:\Bestseller\Processed\"
+
+   msgRun( "Conectando con el sito " + ::cUrl, "Espere por favor...", {|| ::Run() } )
+
+RETURN ( Self )
+
+
+
+static FUNCTION BestsellerFtp_Run( ) ; local Self AS CLASS BestsellerFtp := QSelf() AS CLASS BestsellerFtp
+
+   if ::ftpConexion()
+      ::ftpGetFiles()
+      ::closeConexion()
+   else
+      msgInfo( "Error al conectar" )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION BestsellerFtp_ftpConexion( ) ; local Self AS CLASS BestsellerFtp := QSelf() AS CLASS BestsellerFtp
+
+   ::oFTP               := TFTPCurl():New( ::cUserName, ::cPassword, ::cFtpSite )
+
+   if ::oFTP:createConexion()
+
+      ::lConnect        := .T.
+
+   else
+
+      msgStop( "Imposible conectar con el sitio ftp " + ::cFtpSite, "Error" )
+
+      ::lConnect        := .F.
+
+   end
+
+Return ( ::lConnect )
+
+
+
+static FUNCTION BestsellerFtp_closeConexion( ) ; local Self AS CLASS BestsellerFtp := QSelf() AS CLASS BestsellerFtp
+
+   if !empty( ::oFtp )
+      ::oFtp            := nil
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION BestsellerFtp_ftpGetFiles( ) ; local Self AS CLASS BestsellerFtp := QSelf() AS CLASS BestsellerFtp
+
+   local cFile
+   local aFiles            := ::oFTP:listFiles()
+
+   for each cFile in aFiles
+
+      if lower( cfileext( cFile ) ) == "xml"
+
+         if ::fileNotProccess( cFile )
+            ::fileDownload( cFile )
+         end
+
+      end
+
+   next
+
+Return ( Self )
+
+
+
+static FUNCTION BestsellerFtp_fileNotProccess( cFile ) ; local Self AS CLASS BestsellerFtp := QSelf() AS CLASS BestsellerFtp
+
+   local fileNotProccess   := file( ::cLocalDirectoryProcessed + cFile ) .OR. file( ::cLocalDirectory + cFile )
+
+Return ( !fileNotProccess )
+
+
+
+static FUNCTION BestsellerFtp_fileDownload( cFile ) ; local Self AS CLASS BestsellerFtp := QSelf() AS CLASS BestsellerFtp
+
+   msgRun( "Descargando fichero " + cFile, "Espere por favor...", {|| ::oFtp:downLoadFile( cFile, ::cLocalDirectory + cFile ) } )
+
+RETURN ( Self )

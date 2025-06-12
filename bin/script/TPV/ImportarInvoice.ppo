@@ -1,0 +1,538 @@
+#line 38 "C:\fw195\Gestool\bin\include\FiveWin.Ch"
+      static bError
+#line 203 "C:\fw195\Gestool\bin\include\hbclass.ch"
+DECLARE HBClass  New( cName AS STRING, OPTIONAL SuperParams ) AS CLASS HBClass  Create() AS OBJECT  Instance() AS OBJECT  AddClsMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC, n2 AS NUMERIC, n3 AS NUMERIC )  AddMultiClsData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING )  AddMultiData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING, x AS LOGICAL, lPer AS LOGICAL )  AddMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC )  AddInLine( cName AS STRING, bBlock AS CODEBLOCK, nScope AS NUMERIC )  AddVirtual( cName AS STRING )
+#line 79 "C:\fw195\Gestool\bin\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+#line 17 "C:\fw195\Gestool\bin\Script\TPV\ImportarInvoice.prg"
+static aXmlDocuments
+static oXmlDocument
+
+static cDirectoryXml
+
+static aFacturaLinea
+
+static hFacturaCabecera
+static hFacturaLinea
+
+static dbfFacPrvT
+static dbfFacPrvL
+static dbfFacPrvI
+static dbfFacPrvD
+static dbfFacPrvS
+static dbfFacPrvP
+static dbfPrv
+static dbfIva
+
+static dbfArticulo
+static dbfCodebar
+static dbfFamilia
+static dbfPropieades
+static dbfCategorias
+static dbfTipoArticulo
+static dbfTemporadaArticulo
+
+
+
+Function ImportaXmlBestseller()
+
+   local cDocumentXml
+
+   if msgYesNo( "¿Desea descargar los ficheros del ftp?" )
+      BestsellerFtp():New()
+   end
+
+   dbUseArea( .T., ( cDriver() ), ( cPatEmp() + "FACPRVT.DBF" ), ( cCheckArea( "FACPRVT", @dbfFacPrvT ) ), .T., .F. )
+   if !lAIS() ; ordListAdd( ( cPatEmp() + "FACPRVT.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   dbUseArea( .T., ( cDriver() ), ( cPatEmp() + "FACPRVL.DBF" ), ( cCheckArea( "FACPRVL", @dbfFacPrvL ) ), .T., .F. )
+   if !lAIS() ; ordListAdd( ( cPatEmp() + "FACPRVL.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   dbUseArea( .T., ( cDriver() ), ( cPatEmp() + "FACPRVI.DBF" ), ( cCheckArea( "FACPRVI", @dbfFacPrvI ) ), .T., .F. )
+   if !lAIS() ; ordListAdd( ( cPatEmp() + "FACPRVI.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   dbUseArea( .T., ( cDriver() ), ( cPatEmp() + "FACPRVD.DBF" ), ( cCheckArea( "FACPRVD", @dbfFacPrvD ) ), .T., .F. )
+   if !lAIS() ; ordListAdd( ( cPatEmp() + "FACPRVD.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   dbUseArea( .T., ( cDriver() ), ( cPatEmp() + "FACPRVS.DBF" ), ( cCheckArea( "FACPRVS", @dbfFacPrvS ) ), .T., .F. )
+   if !lAIS() ; ordListAdd( ( cPatEmp() + "FACPRVS.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   dbUseArea( .T., ( cDriver() ), ( cPatEmp() + "FACPRVP.DBF" ), ( cCheckArea( "FACPRVP", @dbfFacPrvP ) ), .T., .F. )
+   if !lAIS() ; ordListAdd( ( cPatEmp() + "FACPRVP.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   dbUseArea( .T., ( cDriver() ), ( cPatPrv() + "PROVEE.DBF" ), ( cCheckArea( "PROVEE", @dbfPrv ) ), .T., .F. )
+   if !lAIS() ; ordListAdd( ( cPatPrv() + "PROVEE.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   dbUseArea( .T., ( cDriver() ), ( cPatDat() + "TIVA.DBF" ), ( cCheckArea( "TIVA", @dbfIva ) ), .T., .F. )
+   if !lAIS() ; ordListAdd( ( cPatDat() + "TIVA.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   dbUseArea( .T., ( cDriver() ), ( cPatArt() + "Articulo.Dbf" ), ( cCheckArea( "Articulo", @dbfArticulo ) ), .T., .F. )
+   if !lAIS() ; ordListAdd( ( cPatArt() + "Articulo.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   dbUseArea( .T., ( cDriver() ), ( cPatArt() + "ArtCodebar.Dbf" ), ( cCheckArea( "ArtCodebar", @dbfCodebar ) ), .T., .F. )
+   if !lAIS() ; ordListAdd( ( cPatArt() + "ArtCodebar.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+   ( dbfCodebar )->( ordSetFocus( "cCodBar" ) )
+
+   dbUseArea( .T., ( cDriver() ), ( cPatArt() + "Familias.Dbf" ), ( cCheckArea( "Familias", @dbfFamilia ) ), .T., .F. )
+   if !lAIS() ; ordListAdd( ( cPatArt() + "Familias.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   dbUseArea( .T., ( cDriver() ), cPatArt() + "Pro.Dbf", cCheckArea( "Pro", @dbfPropieades ), .T., .F. )
+   if !lAIS() ; ordListAdd( ( cPatArt() + "Pro.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   dbUseArea( .T., ( cDriver() ), cPatArt() + "Categorias.Dbf", cCheckArea( "Categorias", @dbfCategorias ), .T., .F. )
+   if !lAIS() ; ordListAdd( ( cPatArt() + "Categorias.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   dbUseArea( .T., ( cDriver() ), cPatArt() + "Tipart.Dbf", cCheckArea( "Tipart", @dbfTipoArticulo ), .T., .F. )
+   if !lAIS() ; ordListAdd( ( cPatArt() + "Tipart.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   dbUseArea( .T., ( cDriver() ), cPatArt() + "Temporadas.Dbf", cCheckArea( "Temporadas", @dbfTemporadaArticulo ), .T., .F. )
+   if !lAIS() ; ordListAdd( ( cPatArt() + "Temporadas.Cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   aXmlDocuments        := Directory( "c:\Bestseller\" + "INVOIC_*.*" )
+
+   if !empty( aXmlDocuments )
+      for each cDocumentXml in aXmlDocuments
+         if msgyesno( "procesando fichero " + alltrim( cDocumentXml[ 1 ] ) + ":" + alltrim( str( hb_enumindex() ) ) + " de " + alltrim( str( len( aXmlDocuments) ) ), "¿Desea continuar?" )
+            proccessXml( cDocumentXml[ 1 ] )
+            moveXml( cDocumentXml[ 1 ] )
+         else
+            exit
+         end
+      next
+   else
+      msgStop( "No hay ficheros en el directorio")
+   end
+
+   ( dbfFacPrvT            )->( dbCloseArea() )
+   ( dbfFacPrvL            )->( dbCloseArea() )
+   ( dbfFacPrvI            )->( dbCloseArea() )
+   ( dbfFacPrvD            )->( dbCloseArea() )
+   ( dbfFacPrvS            )->( dbCloseArea() )
+   ( dbfFacPrvP            )->( dbCloseArea() )
+   ( dbfPrv                )->( dbCloseArea() )
+
+   ( dbfArticulo           )->( dbCloseArea() )
+   ( dbfCodebar            )->( dbCloseArea() )
+   ( dbfFamilia            )->( dbCloseArea() )
+   ( dbfPropieades         )->( dbCloseArea() )
+   ( dbfCategorias         )->( dbCloseArea() )
+   ( dbfTipoArticulo       )->( dbCloseArea() )
+   ( dbfTemporadaArticulo  )->( dbCloseArea() )
+
+   msgStop( "Proceso finalizado :)")
+
+Return ( nil )
+
+
+
+Static Function ProccessXml( cDocumentXml )
+
+   local cXml
+   local oXmlDocument
+   local oXmlIter
+   local oTagActual
+
+   aFacturaLinea        := {}
+   hFacturaCabecera     := {=>}
+
+   cDocumentXml         := "c:\Bestseller\" + cDocumentXml
+
+
+
+   oXmlDocument         := TXmlDocument():New( cDocumentXml )
+
+   if oXmlDocument:nStatus <> 1
+
+      switch oXmlDocument:nStatus
+         case 0
+            msgStop( "Ay! pillin, nos jorobo alguna cosa....!!" )
+         case 5
+            msgStop( "No es un documento xml" )
+      end
+
+   else
+
+      oXmlNode                := oXmlDocument:FindFirst()
+      while !Empty( oXmlNode )
+         proccessNode( oXmlNode )
+         oXmlNode             := oXmlDocument:FindNext()
+      end
+
+      proccessFactura()
+
+   end
+
+Return ( nil )
+
+
+
+Static Function moveXml( cDocumentXml )
+
+   __copyFile( "c:\Bestseller\" + cDocumentXml, "c:\Bestseller\Processed\" + cDocumentXml )
+   ferase( "c:\Bestseller\" + cDocumentXml )
+
+Return ( nil )
+
+
+
+Static Function ProccessNode( oXmlNode )
+
+   local cNodeName   := cValtoChar( oXmlNode:cName )
+
+   do case
+      case cNodeName == "Invoice"
+         msgwait( "invoice", "invoice", 0.05 )
+         IteratorInvoice( oXmlNode )
+
+      case cNodeName == "cac:InvoiceLine"
+         IteratorInvoiceLine( oXmlNode )
+
+   end
+
+Return ( nil )
+
+
+
+Static Function IteratorInvoice( oXmlNode )
+
+   local oIter
+   local oNode
+
+   oIter                := TXMLIteratorScan():New( oXmlNode )
+
+   oNode                := oIter:Find( "cbc:ID" )
+   if !Empty( oNode )
+      hSet( hFacturaCabecera, "Numero", Val( oNode:cData ) )
+   end
+
+   oNode                := oIter:Find( "cbc:IssueDate" )
+   if !Empty( oNode )
+      hSet( hFacturaCabecera, "Fecha", StoD( StrTran( oNode:cData, "-", "" ) ) )
+   end
+
+Return ( nil )
+
+
+
+Static Function IteratorInvoiceLine( oXmlNode )
+
+   local oId
+   local oItem
+   local oQuantity
+   local oPrice
+   local oNode
+   local oStandard
+   local oDescription
+
+   hFacturaLinea        := {=>}
+
+
+
+   oQuantity            := TXMLIteratorScan():New( oXmlNode ):Find( "cbc:InvoicedQuantity" )
+
+   if !Empty( oQuantity )
+      hSet( hFacturaLinea, "Unidades", Val( oQuantity:cData ) )
+   end
+
+
+
+   oItem                := TXMLIteratorScan():New( oXmlNode ):Find( "cac:Item" )
+
+   if !Empty( oItem )
+
+      oStandard         := TXMLIteratorScan():New( oItem ):Find( "cac:StandardItemIdentification" )
+
+      if !Empty( oStandard )
+
+         oId            := TXMLIteratorScan():New( oStandard ):Find( "cbc:ID" )
+
+         if !Empty( oId )
+            msgwait( oId:cData, "Codigo encontrado", 0.05 )
+            hSet( hFacturaLinea, "Codigo", oId:cData )
+         end
+
+      end
+
+
+
+      oDescription      := TXMLIteratorScan():New( oItem ):Find( "cbc:Name" )
+
+      if !Empty( oDescription )
+         hSet( hFacturaLinea, "Descripcion", oDescription:cData )
+      end
+
+   end
+
+
+
+   oItem                := TXMLIteratorScan():New( oXmlNode ):Find( "cac:Price" )
+
+   if !Empty( oItem )
+
+      oPrice            := TXMLIteratorScan():New( oItem ):Find( "cbc:PriceAmount" )
+
+      if !Empty( oPrice )
+
+         hSet( hFacturaLinea, "Precio", Val( oPrice:cData ) )
+
+      end
+
+   end
+
+   aAdd( aFacturaLinea, hFacturaLinea )
+
+
+
+Return ( nil )
+
+
+
+Static Function ProccessFactura()
+
+   local hLinea
+   local lAppend
+   local cNumero
+   local nNumero
+   local dFecha
+
+   if Empty( hFacturaCabecera )
+      Return ( nil )
+   end
+
+   cNumero                          := "A" + Str( hGet( hFacturaCabecera, "Numero" ), 9 ) + "00"
+   nNumero                          := hGet( hFacturaCabecera, "Numero" )
+   dFecha                           := hGet( hFacturaCabecera, "Fecha")
+   lAppend                          := !( dbfFacPrvT )->( dbSeek( cNumero ) )
+
+   if dbDialogLock( dbfFacPrvT, lAppend )
+
+      ( dbfFacPrvT )->cSerFac       := "A"
+      ( dbfFacPrvT )->nNumFac       := nNumero
+      ( dbfFacPrvT )->cSufFac       := "00"
+      ( dbfFacPrvT )->dFecFac       := dFecha
+      ( dbfFacPrvT )->cCodPrv       := "0000003"
+      ( dbfFacPrvT )->cCodAlm       := "000"
+      ( dbfFacPrvT )->cCodCaj       := "000"
+      ( dbfFacPrvT )->cNomPrv       := "BESTSELLER WHOLESALE S.L.U."
+      ( dbfFacPrvT )->cDirPrv       := "Av. Los Manantianles Esq. C.N. 340"
+      ( dbfFacPrvT )->cPobPrv       := "Torremolinos"
+      ( dbfFacPrvT )->cProvProv     := "Malaga"
+      ( dbfFacPrvT )->cPosPrv       := "29620"
+      ( dbfFacPrvT )->cDniPrv       := "B29826351"
+      ( dbfFacPrvT )->cCodPago      := "60"
+
+      ( dbfFacPrvT )->( dbUnlock() )
+
+   end
+
+   while ( dbfFacPrvL )->( dbSeek( cNumero ) ) .AND. !( dbfFacPrvL )->( eof() )
+      if dbLock( dbfFacPrvL )
+         ( dbfFacPrvL )->( dbDelete() )
+         ( dbfFacPrvL )->( dbUnLock() )
+      end
+   end
+
+   for each hLinea in aFacturaLinea
+
+      if CodigoPropiedadesLineas( hLinea )
+
+         if dbDialogLock( dbfFacPrvL, .T. )
+
+            msgwait( "linea" + str( hb_enumindex() ), "procesando linea", 0.05 )
+
+            ( dbfFacPrvL )->nNumLin    := hb_enumIndex()
+            ( dbfFacPrvL )->cSerFac    := "A"
+            ( dbfFacPrvL )->nNumFac    := nNumero
+            ( dbfFacPrvL )->cSufFac    := "00"
+            ( dbfFacPrvL )->cAlmLin    := "000"
+            ( dbfFacPrvL )->cRef       := hGet( hLinea, "Referencia" )
+            ( dbfFacPrvL )->cDetalle   := hGet( hLinea, "Descripcion" )
+            ( dbfFacPrvL )->cCodPr1    := hGet( hLinea, "Codigo propiedad 1" )
+            ( dbfFacPrvL )->cCodPr2    := hGet( hLinea, "Codigo propiedad 2" )
+            ( dbfFacPrvL )->cValPr1    := hGet( hLinea, "Valor propiedad 1" )
+            ( dbfFacPrvL )->cValPr2    := hGet( hLinea, "Valor propiedad 2" )
+            ( dbfFacPrvL )->nUniCaja   := hGet( hLinea, "Unidades" )
+            ( dbfFacPrvL )->nPreUnit   := hGet( hLinea, "Precio" )
+            ( dbfFacPrvL )->nIva       := 21
+
+            ( dbfFacPrvL )->( dbUnlock() )
+
+         else
+            msgWait("no puedo bloquear", "stop", 0.05 )
+         end
+
+      else
+         msgWait("no CodigoPropiedadesLineas", "stop", 0.05 )
+
+      end
+
+   next
+
+   EdtFacPrv( cNumero )
+
+Return ( nil )
+
+
+
+Static Function CodigoPropiedadesLineas( hLinea )
+
+   local lReturn                     := .F.
+   local cCodigo              := alltrim( hGet( hLinea, "Codigo" ) )
+   local nOrd                         := ( dbfCodebar )->( ordsetfocus( "cCodBar" ) )
+
+   if ( dbfCodebar )->( dbSeek( cCodigo ) )
+
+      hSet( hLinea, "Referencia",         ( dbfCodebar )->cCodArt )
+      hSet( hLinea, "Codigo propiedad 1", ( dbfCodebar )->cCodPr1 )
+      hSet( hLinea, "Codigo propiedad 2", ( dbfCodebar )->cCodPr2 )
+      hSet( hLinea, "Valor propiedad 1",  ( dbfCodebar )->cValPr1 )
+      hSet( hLinea, "Valor propiedad 2",  ( dbfCodebar )->cValPr2 )
+
+      lReturn := .T.
+
+   else
+
+      msgWait( "Codigo de barras " + Alltrim( cCodigo ) + " no encontrado.", "Atención", 0.05 )
+
+   end
+
+   ( dbfCodebar )->( ordsetfocus( nOrd ) )
+
+Return ( lReturn )
+#line 16 "C:\fw195\Gestool\bin\Script\TPV\BestsellerFtp.prg"
+_HB_CLASS BestsellerFtp ; function BestsellerFtp ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "BestsellerFtp", iif( .F., { }, { @HBObject() } ), @BestsellerFtp() ) ) ;
+
+; _HB_MEMBER { cFtpSite } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFtpSite"}, .F. )
+; _HB_MEMBER { cUserName } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cUserName"}, .F. )
+; _HB_MEMBER { cPassword } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPassword"}, .F. )
+; _HB_MEMBER { cUrl } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cUrl"}, .F. )
+; _HB_MEMBER { lPassive } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lPassive"}, .F. )
+; _HB_MEMBER { cLocalDirectory } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cLocalDirectory"}, .F. )
+; _HB_MEMBER { cLocalDirectoryProcessed } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cLocalDirectoryProcessed"}, .F. )
+; _HB_MEMBER { cDirectory } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDirectory"}, .F. )
+
+; _HB_MEMBER { lConnect } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lConnect"}, .F. )
+; _HB_MEMBER { oFtp } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFtp"}, .F. )
+; _HB_MEMBER { oInt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oInt"}, .F. )
+
+; _HB_MEMBER { oAlbPrvT } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAlbPrvT"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @BestsellerFtp_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Run(); oClass:AddMethod( "Run", @BestsellerFtp_Run(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ftpConexion(); oClass:AddMethod( "ftpConexion", @BestsellerFtp_ftpConexion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER closeConexion(); oClass:AddMethod( "closeConexion", @BestsellerFtp_closeConexion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ftpGetFiles(); oClass:AddMethod( "ftpGetFiles", @BestsellerFtp_ftpGetFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER fileNotProccess( cFile); oClass:AddMethod( "fileNotProccess", @BestsellerFtp_fileNotProccess(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER fileDownload( cFile); oClass:AddMethod( "fileDownload", @BestsellerFtp_fileDownload(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS BestsellerFtp ;
+
+
+
+static FUNCTION BestsellerFtp_New( ) ; local Self AS CLASS BestsellerFtp := QSelf() AS CLASS BestsellerFtp
+
+   ::cFtpSite                 := "ftp.gestool.es"
+   ::cUserName                := "bestseller"
+   ::cPassword                := "Qwm6p_94"
+   ::cUrl                     := "ftp://" + ::cUserName + ":" + ::cPassword + "@" + ::cFtpSite
+   ::lPassive                 := .T.
+   ::cLocalDirectory          := "c:\Bestseller\"
+   ::cLocalDirectoryProcessed := "c:\Bestseller\Processed\"
+
+   msgRun( "Conectando con el sito " + ::cUrl, "Espere por favor...", {|| ::Run() } )
+
+RETURN ( Self )
+
+
+
+static FUNCTION BestsellerFtp_Run( ) ; local Self AS CLASS BestsellerFtp := QSelf() AS CLASS BestsellerFtp
+
+   if ::ftpConexion()
+      ::ftpGetFiles()
+      ::closeConexion()
+   else
+      msgInfo( "Error al conectar" )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION BestsellerFtp_ftpConexion( ) ; local Self AS CLASS BestsellerFtp := QSelf() AS CLASS BestsellerFtp
+
+   ::oFTP               := TFTPCurl():New( ::cUserName, ::cPassword, ::cFtpSite )
+
+   if ::oFTP:createConexion()
+
+      ::lConnect        := .T.
+
+   else
+
+      msgStop( "Imposible conectar con el sitio ftp " + ::cFtpSite, "Error" )
+
+      ::lConnect        := .F.
+
+   end
+
+Return ( ::lConnect )
+
+
+
+static FUNCTION BestsellerFtp_closeConexion( ) ; local Self AS CLASS BestsellerFtp := QSelf() AS CLASS BestsellerFtp
+
+   if !empty( ::oFtp )
+      ::oFtp            := nil
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION BestsellerFtp_ftpGetFiles( ) ; local Self AS CLASS BestsellerFtp := QSelf() AS CLASS BestsellerFtp
+
+   local cFile
+   local aFiles            := ::oFTP:listFiles()
+
+   for each cFile in aFiles
+
+      if lower( cfileext( cFile ) ) == "xml"
+
+         if ::fileNotProccess( cFile )
+            ::fileDownload( cFile )
+         end
+
+      end
+
+   next
+
+Return ( Self )
+
+
+
+static FUNCTION BestsellerFtp_fileNotProccess( cFile ) ; local Self AS CLASS BestsellerFtp := QSelf() AS CLASS BestsellerFtp
+
+   local fileNotProccess   := file( ::cLocalDirectoryProcessed + cFile ) .OR. file( ::cLocalDirectory + cFile )
+
+Return ( !fileNotProccess )
+
+
+
+static FUNCTION BestsellerFtp_fileDownload( cFile ) ; local Self AS CLASS BestsellerFtp := QSelf() AS CLASS BestsellerFtp
+
+   msgRun( "Descargando fichero " + cFile, "Espere por favor...", {|| ::oFtp:downLoadFile( cFile, ::cLocalDirectory + cFile ) } )
+
+RETURN ( Self )

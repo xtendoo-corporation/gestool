@@ -1,0 +1,2501 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 9 ".\.\Prg\TCaptura.prg"
+_HB_CLASS TCaptura ; function TCaptura ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TCaptura", iif( .T., { @TMasDet() }, { @HBObject() } ), @TCaptura() ) ) ;
+
+   _HB_MEMBER { oCapCampos } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCapCampos"}, .F. )
+
+   _HB_MEMBER { oVisible } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oVisible"}, .F. )
+   _HB_MEMBER { oCaptura } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCaptura"}, .F. )
+   _HB_MEMBER { oTitulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTitulo"}, .F. )
+   _HB_MEMBER { oAncho } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAncho"}, .F. )
+   _HB_MEMBER { oChkBitmap } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oChkBitmap"}, .F. )
+
+   _HB_MEMBER { cMru } ; oClass:AddMultiData(, "gc_window_pencil_16", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cMru"}, .F. )
+   _HB_MEMBER { cBitmap } ; oClass:AddMultiData(, ( 164 + ( 55 * 256 ) + ( 58 * 65536 ) ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cBitmap"}, .F. )
+
+   _HB_MEMBER New( cPath, oWndParent, oMenuItem); oClass:AddMethod( "New", @TCaptura_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles( lExclusive); oClass:AddMethod( "OpenFiles", @TCaptura_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER OpenService( lExclusive); oClass:AddMethod( "OpenService", @TCaptura_OpenService(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @TCaptura_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CloseService(); oClass:AddMethod( "CloseService", @TCaptura_CloseService(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Reindexa(); oClass:AddMethod( "Reindexa", @TCaptura_Reindexa(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Activate(); oClass:AddMethod( "Activate", @TCaptura_Activate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lExistCaptura(); oClass:AddInline( "lExistCaptura", {|Self, cCodCaptura | ( ( Self ) ), ( ::oCapCampos:oDbf:Seek( cCodCaptura ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DefineFiles(); oClass:AddMethod( "DefineFiles", @TCaptura_DefineFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Resource( nMode); oClass:AddMethod( "Resource", @TCaptura_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lPreSave( nMode); oClass:AddMethod( "lPreSave", @TCaptura_lPreSave(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER RefreshGet( nMode); oClass:AddMethod( "RefreshGet", @TCaptura_RefreshGet(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CreateFields( cCodCaptura); oClass:AddMethod( "CreateFields", @TCaptura_CreateFields(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CreateTitles( cCodCaptura); oClass:AddMethod( "CreateTitles", @TCaptura_CreateTitles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CreateSizes( cCodCaptura); oClass:AddMethod( "CreateSizes", @TCaptura_CreateSizes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CreateJustify( cCodCaptura); oClass:AddMethod( "CreateJustify", @TCaptura_CreateJustify(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CreateColumns( cCodCaptura, oBrw); oClass:AddMethod( "CreateColumns", @TCaptura_CreateColumns(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TCaptura ;
+
+
+
+static FUNCTION TCaptura_New( cPath, oWndParent, oMenuItem ) ; local Self AS CLASS TCaptura := QSelf() AS CLASS TCaptura
+
+   If( cPath == nil, cPath := cPatDat(), ) ;
+   If( oWndParent == nil, oWndParent := GetWndFrame(), ) ;
+   If( oMenuItem == nil, oMenuItem := "01083", ) ;
+
+   ::nLevel                := Auth():Level( oMenuItem )
+
+   ::cPath                 := cPath
+   ::oWndParent            := oWndParent
+   ::lReport               := .F.
+
+   ::bFirstKey             := {|| ::oDbf:cCodigo }
+
+   ::oCapCampos            := TDetCaptura():New( cPath, , Self )
+   ::AddDetail( ::oCapCampos )
+
+
+   ::oCapCampos:bDefaultValues        := {|| ::oCapCampos:CheckDefaultVir() }
+   ::bOnPreEdit            := {|| if( ::oDbf:cCodigo == "000", ( msgStop( "No se puede modificar la captura por defecto" ),.F. ), .T. ) }
+
+RETURN ( Self )
+
+
+
+static FUNCTION TCaptura_OpenFiles( lExclusive ) ; local Self AS CLASS TCaptura := QSelf() AS CLASS TCaptura
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   if Empty( ::oDbf )
+      ::DefineFiles()
+   end
+
+   ::oDbf:Activate( .F., !( lExclusive ) )
+
+   if !::oDbf:Seek( "000" )
+      ::oDbf:Append()
+      ::oDbf:cCodigo       := "000"
+      ::oDbf:cNombre       := "Captura por defecto"
+      ::oDbf:Save()
+   end
+
+   ::OpenDetails()
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TCaptura_CloseFiles( ) ; local Self AS CLASS TCaptura := QSelf() AS CLASS TCaptura
+
+   if !Empty( ::oDbf ) .AND. ::oDbf:Used()
+      ::oDbf:end()
+      ::oDbf      := nil
+   end
+
+   ::CloseDetails()
+
+   ::oCapCampos:End()
+
+RETURN .T.
+
+
+
+static FUNCTION TCaptura_DefineFiles( cPath, cDriver ) ; local Self AS CLASS TCaptura := QSelf() AS CLASS TCaptura
+
+   If( cPath == nil, cPath := ::cPath, ) ;
+   If( cDriver == nil, cDriver := cDriver(), ) ;
+
+   ::oDbf := DbfServer( "Captura.Dbf", "Captura" ):New( "Captura.Dbf", "Captura", ( cDriver ), "Captura de TPV", ( cPath ) )
+
+      ::oDbf:AddField( "cCodigo", "C", 3, 0,,,,, "Código", .F., 100, .F., {} )
+      ::oDbf:AddField( "cNombre", "C", 35, 0,,,,, "Nombre", .F., 400, .F., {} )
+
+      ::oDbf:AddIndex( "cCodigo", "Captura.Cdx", "cCodigo",,, .F., .F., "Código",,, .T., .F. )
+      ::oDbf:AddIndex( "cNombre", "Captura.Cdx", "cNombre",,, .F., .F., "Nombre",,, .T., .F. )
+
+
+
+RETURN ( ::oDbf )
+
+
+
+static FUNCTION TCaptura_Resource( nMode ) ; local Self AS CLASS TCaptura := QSelf() AS CLASS TCaptura
+
+    local oDlg
+   local oBrwCampos
+   local oGetCodigo
+
+   oDlg = TDialog():New(,,,, LblTitle( nMode ) + "capturas de T.P.V.", "Captura",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+
+      oGetCodigo := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, ::oDbf:cCodigo, ::oDbf:cCodigo:= u ) }, oDlg,, "@!", {||    NotValid( oGetCodigo, ::oDbf:cAlias )},,,,,, .F., {||     ( nMode == 1 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 110, { | u | If( PCount()==0, ::oDbf:cNombre, ::oDbf:cNombre:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+      oBrwCampos := TWBrowse():ReDefine( 120, {|| { ::oCapCampos:oDbfVir:cNombre } }, oDlg, {""}, {120},,,,,,,,,,,, .F.,,,,, )
+
+         oBrwCampos:bGoTop       := {|| ::oCapCampos:oDbfVir:GoTop() }
+         oBrwCampos:bGoBottom    := {|| ::oCapCampos:oDbfVir:GoBottom() }
+         oBrwCampos:bSkip        := {|n|::oCapCampos:oDbfVir:Skipper( n ) }
+         oBrwCampos:bLogicLen    := {|| ::oCapCampos:oDbfVir:LastRec() }
+         oBrwCampos:bChange      := {|| ::RefreshGet( nMode ) }
+         oBrwCampos:lDrawHeaders := .F.
+
+
+
+
+
+      TButton():ReDefine( 130, {||( ::oCapCampos:oDbfVir:SwapUp(), oBrwCampos:GoUp() )}, oDlg,,, .F., {||         ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 140, {||( ::oCapCampos:oDbfVir:SwapDown(), oBrwCampos:GoDown() )}, oDlg,,, .F., {||         ( nMode <> 3 )},,, .F. )
+
+
+
+
+      ::oVisible := TCheckBox():ReDefine( 150, { | u | If( PCount()==0, ::oCapCampos:oDbfVir:lVisible, ::oCapCampos:oDbfVir:lVisible:= u ) }, oDlg,,,,,,, .F., {||         ( nMode <> 3 )}, .F. )
+
+
+
+
+      ::oCaptura := TRadMenu():Redefine( { | u | If( PCount()==0, ::oCapCampos:oDbfVir:nCaptura, ::oCapCampos:oDbfVir:nCaptura:= u ) }, oDlg,, { 160, 161, 162 },,,,, .F., {||     ( nMode <> 3 )}, )
+
+
+
+
+      ::oTitulo := TGetHlp():ReDefine( 170, { | u | If( PCount()==0, ::oCapCampos:oDbfVir:cTitulo, ::oCapCampos:oDbfVir:cTitulo:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+      ::oAncho := TGetHlp():ReDefine( 180, { | u | If( PCount()==0, ::oCapCampos:oDbfVir:nAncho, ::oCapCampos:oDbfVir:nAncho:= u ) }, oDlg,, "999",,,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,,,,, nil,,, )
+
+
+
+
+      ::oChkBitmap := TCheckBox():ReDefine( 190, { | u | If( PCount()==0, ::oCapCampos:oDbfVir:lBitmap, ::oCapCampos:oDbfVir:lBitmap:= u ) }, oDlg,,,,,,, .F., {||     ( nMode <> 3 )}, .F. )
+
+
+
+
+
+      TButton():ReDefine( 1, {||( if( ::lPreSave( nMode ), oDlg:end( 1 ), ) )}, oDlg,,, .F., {||         ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+        TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+      if nMode <> 3
+         oDlg:AddFastKey( 116, {|| if( ::lPreSave( nMode ), oDlg:end( 1 ), ) } )
+      end
+
+      oDlg:bStart := {|| ::RefreshGet( nMode ), oGetCodigo:SetFocus() }
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+static FUNCTION TCaptura_lPreSave( nMode ) ; local Self AS CLASS TCaptura := QSelf() AS CLASS TCaptura
+
+   if nMode == 1 .OR. nMode == 4
+
+      if Empty( ::oDbf:cCodigo )
+         MsgStop( "El código no puede estar vacío." )
+         Return .F.
+      end
+
+      if ::oDbf:SeekInOrd( ::oDbf:cCodigo, "cCodigo" )
+         MsgStop( "Código ya existe " + Rtrim( ::oDbf:cCodigo ) )
+         return .F.
+      end
+
+   end
+
+   if Empty( ::oDbf:cNombre )
+      MsgStop( "El nombre no puede estar vacío." )
+      Return .F.
+   end
+
+Return .T.
+
+
+
+static FUNCTION TCaptura_RefreshGet( nMode ) ; local Self AS CLASS TCaptura := QSelf() AS CLASS TCaptura
+
+   if !Empty( ::oVisible )
+
+      if nMode <> 3
+
+         if ::oCapCampos:oDbfVir:lEditable
+            ::oVisible:bWhen  := {|| .T. }
+            ::oVisible:Enable()
+         else
+            ::oVisible:bWhen  := {|| .F. }
+            ::oVisible:Disable()
+         end
+
+      end
+
+      ::oVisible:Refresh()
+
+   end
+
+   if !Empty( ::oCaptura )
+      ::oCaptura:Refresh()
+   end
+
+   if !Empty( ::oTitulo )
+      ::oTitulo:Refresh()
+   end
+
+   if !Empty( ::oAncho )
+      ::oAncho:Refresh()
+   end
+
+   if !Empty( ::oChkBitmap )
+      ::oChkBitmap:Refresh()
+   end
+
+Return ( .T. )
+
+
+
+static FUNCTION TCaptura_CreateFields( cCodCaptura ) ; local Self AS CLASS TCaptura := QSelf() AS CLASS TCaptura
+
+   local aFld           := {}
+
+   If( cCodCaptura == nil, cCodCaptura := "000", ) ;
+
+   if ::oCapCampos:oDbf:Seek( cCodCaptura )
+
+      while ::oCapCampos:oDbf:cCodigo == cCodCaptura .AND. !::oCapCampos:oDbf:eof()
+
+         if ::oCapCampos:oDbf:lVisible
+            aAdd( aFld, Eval( NameToField( ::oCapCampos:oDbf:cNombre ) ) )
+         end
+
+         ::oCapCampos:oDbf:Skip()
+
+      end
+
+      aAdd( aFld, "" )
+
+   end
+
+return ( aFld )
+
+
+
+static FUNCTION TCaptura_CreateTitles( cCodCaptura ) ; local Self AS CLASS TCaptura := QSelf() AS CLASS TCaptura
+
+   local aTitles        := {}
+
+   If( cCodCaptura == nil, cCodCaptura := "000", ) ;
+
+   if ::oCapCampos:oDbf:Seek( cCodCaptura )
+
+      while ::oCapCampos:oDbf:cCodigo == cCodCaptura .AND. !::oCapCampos:oDbf:eof()
+
+         if ::oCapCampos:oDbf:lVisible
+            aAdd( aTitles, Rtrim( ::oCapCampos:oDbf:cTitulo ) )
+         end
+
+         ::oCapCampos:oDbf:Skip()
+
+      end
+
+      aAdd( aTitles, "" )
+
+   end
+
+return aTitles
+
+
+
+static FUNCTION TCaptura_CreateSizes( cCodCaptura ) ; local Self AS CLASS TCaptura := QSelf() AS CLASS TCaptura
+
+   local aSizes         := {}
+
+   If( cCodCaptura == nil, cCodCaptura := "000", ) ;
+
+   if ::oCapCampos:oDbf:Seek( cCodCaptura )
+
+      while ::oCapCampos:oDbf:cCodigo == cCodCaptura .AND. !::oCapCampos:oDbf:eof()
+
+         if ::oCapCampos:oDbf:lVisible
+            aAdd( aSizes, ::oCapCampos:oDbf:nAncho )
+         end
+
+         ::oCapCampos:oDbf:Skip()
+
+      end
+
+      aAdd( aSizes, 200 )
+
+   end
+
+return aSizes
+
+
+
+static FUNCTION TCaptura_CreateJustify( cCodCaptura ) ; local Self AS CLASS TCaptura := QSelf() AS CLASS TCaptura
+
+   local aSizes         := {}
+
+   If( cCodCaptura == nil, cCodCaptura := "000", ) ;
+
+   if ::oCapCampos:oDbf:Seek( cCodCaptura )
+
+      while ::oCapCampos:oDbf:cCodigo == cCodCaptura .AND. !::oCapCampos:oDbf:eof()
+
+         if ::oCapCampos:oDbf:lVisible
+            aAdd( aSizes, ::oCapCampos:oDbf:lAlign )
+         end
+
+         ::oCapCampos:oDbf:Skip()
+
+      end
+
+      aAdd( aSizes, 200 )
+
+   end
+
+return aSizes
+
+
+
+static FUNCTION TCaptura_CreateColumns( cCodCaptura, oBrw ) ; local Self AS CLASS TCaptura := QSelf() AS CLASS TCaptura
+
+   If( cCodCaptura == nil, cCodCaptura := "000", ) ;
+
+   if ::oCapCampos:oDbf:Seek( cCodCaptura )
+
+      while ::oCapCampos:oDbf:cCodigo == cCodCaptura .AND. !::oCapCampos:oDbf:eof()
+
+         if ::oCapCampos:oDbf:lVisible
+
+            with object ( oBrw:AddCol() )
+
+               :cHeader             := Rtrim( ::oCapCampos:oDbf:cTitulo )
+               :nWidth              := ::oCapCampos:oDbf:nAncho
+               :bEditValue          := NameToField( ::oCapCampos:oDbf:cNombre )
+
+               if ( ::oCapCampos:oDbf:lBitmap )
+                  :SetCheck( { "gc_star2_blue_16", "Nil16" } )
+               end
+
+               if ( ::oCapCampos:oDbf:lAlign )
+                  :nDataStrAlign    := 1
+                  :nHeadStrAlign    := 1
+               end
+
+               :Cargo               := { Rtrim( ::oCapCampos:oDbf:cNombre ), ::oCapCampos:oDbf:nCaptura }
+
+            end
+
+         end
+
+         ::oCapCampos:oDbf:Skip()
+
+      end
+
+   end
+
+return ( Self )
+
+
+
+static FUNCTION TCaptura_OpenService( lExclusive, cPath ) ; local Self AS CLASS TCaptura := QSelf() AS CLASS TCaptura
+
+   local lOpen          := .T.
+   local oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   BEGIN SEQUENCE
+
+      if Empty( ::oDbf )
+         ::DefineFiles( cPath )
+      end
+
+      ::oDbf:Activate( .F., !( lExclusive ) )
+
+   RECOVER
+
+      lOpen             := .F.
+
+      ::CloseService()
+
+      msgStop( "Imposible abrir todas las bases de datos de capturas" )
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TCaptura_CloseService( ) ; local Self AS CLASS TCaptura := QSelf() AS CLASS TCaptura
+
+   if !Empty( ::oDbf )
+      ::oDbf:End()
+   end
+
+   ::oDbf   := nil
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TCaptura_Reindexa( ) ; local Self AS CLASS TCaptura := QSelf() AS CLASS TCaptura
+
+
+
+
+
+   if Empty( ::oDbf )
+      ::oDbf   := ::DefineFiles()
+   end
+
+   ::oDbf:IdxFDel()
+
+   if ::OpenService( .T. )
+      ::oDbf:Pack()
+   end
+
+   ::CloseService()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TCaptura_Activate( ) ; local Self AS CLASS TCaptura := QSelf() AS CLASS TCaptura
+
+   if nAnd( ::nLevel, 1 ) == 0
+      msgStop( "Acceso no permitido." )
+      RETURN ( Self )
+   end
+
+
+
+
+
+   if ::oWndParent <> nil
+      ::oWndParent:CloseAll()
+   end
+
+   if Empty( ::oDbf )
+      if !::OpenFiles()
+         return nil
+      end
+   end
+
+
+
+
+
+   if !::lCreateShell
+      ::CreateShell( ::nLevel )
+   end
+
+
+
+
+
+
+   ::oWndBrw:NewAt( "BUS",,, {||( ::oWndBrw:SearchSetFocus() )}, "(B)uscar", "B",,,,, .F. )
+      ::oWndBrw:AddSeaBar()
+
+
+
+
+
+
+
+   ::oWndBrw:NewAt( "NEW",,, {||( ::oWndBrw:RecAdd() )}, "(A)ñadir", "A",,, 2,, .F. )
+
+
+
+
+
+
+   ::oWndBrw:NewAt( "DUP",,, {||( ::oWndBrw:RecDup() )}, "(D)uplicar", "D",,, 2,, .F. )
+
+
+
+
+
+
+   ::oWndBrw:NewAt( "EDIT",,, {||( ::oWndBrw:RecEdit() )}, "(M)odificar", "M",,, 4,, .F. )
+
+
+
+
+
+
+   ::oWndBrw:NewAt( "ZOOM",,, {||( ::oWndBrw:RecZoom() )}, "(Z)oom", "Z",,, 8,, .F. )
+
+
+
+
+
+
+
+   ::oWndBrw:NewAt( "DEL",,, {||( ::oWndBrw:RecDel() )}, "(E)liminar", "E",,, 16,, .F. )
+
+   ::oWndBrw:EndButtons( Self )
+
+   if ::cHtmlHelp <> nil
+      ::oWndBrw:cHtmlHelp  := ::cHtmlHelp
+   end
+
+   ::oWndBrw:Activate( nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, {|| ::CloseFiles() } )
+
+RETURN ( Self )

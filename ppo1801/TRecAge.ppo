@@ -1,0 +1,2320 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 8 ".\.\Prg\TRecAge.prg"
+_HB_CLASS TRecAge ; function TRecAge ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TRecAge", iif( .T., { @TInfGen() }, { @HBObject() } ), @TRecAge() ) ) ;
+
+   _HB_MEMBER { AS LOGIC lResumen } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lResumen"}, .F. )
+   _HB_MEMBER { AS LOGIC lExcCero } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lExcCero"}, .F. )
+   _HB_MEMBER { AS LOGIC lNumDias } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lNumDias"}, .F. )
+   _HB_MEMBER { AS NUMERIC nNumDias } ; oClass:AddMultiData( "NUMERIC", 15, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nNumDias"}, .F. )
+   _HB_MEMBER { AS OBJECT oOrden } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oOrden"}, .F. )
+   _HB_MEMBER { AS OBJECT oFacCliT } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacCliT"}, .F. )
+   _HB_MEMBER { AS OBJECT oFacCliL } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacCliL"}, .F. )
+
+   _HB_MEMBER { AS OBJECT oDbfIva } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfIva"}, .F. )
+   _HB_MEMBER { AS OBJECT oFacCliP } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacCliP"}, .F. )
+   _HB_MEMBER { AS OBJECT oAntCliT } ; oClass:AddMultiData( "OBJECT",, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAntCliT"}, .F. )
+   _HB_MEMBER { dLasDoc } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dLasDoc"}, .F. )
+   _HB_MEMBER { cNumDoc } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNumDoc"}, .F. )
+   _HB_MEMBER { nImpDoc } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nImpDoc"}, .F. )
+   _HB_MEMBER { oEstado } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oEstado"}, .F. )
+   _HB_MEMBER { AS CHARACTER cEstado } ; oClass:AddMultiData( "CHARACTER", "Cobrados", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cEstado"}, .F. )
+   _HB_MEMBER { AS ARRAY aEstado } ; oClass:AddMultiData( "ARRAY", { "Cobrados", "Pendientes" }, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aEstado"}, .F. )
+
+   _HB_MEMBER OpenFiles(); oClass:AddMethod( "OpenFiles", @TRecAge_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @TRecAge_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Create(); oClass:AddMethod( "Create", @TRecAge_Create(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lResource( cFld); oClass:AddMethod( "lResource", @TRecAge_lResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lGenerate(); oClass:AddMethod( "lGenerate", @TRecAge_lGenerate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetDocument(); oClass:AddMethod( "GetDocument", @TRecAge_GetDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddDocument(); oClass:AddMethod( "AddDocument", @TRecAge_AddDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddLine( cAgeFac); oClass:AddMethod( "AddLine", @TRecAge_AddLine(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TRecAge ;
+
+
+
+static FUNCTION TRecAge_OpenFiles( ) ; local Self AS CLASS TRecAge := QSelf() AS CLASS TRecAge
+
+   local lOpen    := .T.
+   local oBlock   := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   BEGIN SEQUENCE
+
+   ::oFacCliT     := TDataCenter():oFacCliT()
+
+   ::oFacCliL := DbfServer( "FACCLIL.DBF", ):NewOpen( "FACCLIL.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oFacCliL:AddBag( "FACCLIL.CDX" ) ; ::oFacCliL:AddBag( ) ; ::oFacCliL:AutoIndex()
+
+   ::oFacCliP := TDataCenter():oFacCliP()
+   ::oFacCliP:OrdSetFocus( "CCODCLI" )
+
+   ::oDbfIva := DbfServer( "TIVA.DBF", ):NewOpen( "TIVA.DBF",, ( cDriver() ),, ( cPatDat() ), .F., .T., .F., .F. ) ; ::oDbfIva:AddBag( "TIVA.CDX" ) ; ::oDbfIva:AddBag( ) ; ::oDbfIva:AutoIndex()
+
+   ::oAntCliT := DbfServer( "ANTCLIT.DBF", ):NewOpen( "ANTCLIT.DBF",, ( cDriver() ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oAntCliT:AddBag( "ANTCLIT.CDX" ) ; ::oAntCliT:AddBag( ) ; ::oAntCliT:AutoIndex()
+
+   RECOVER
+
+      msgStop( "Imposible abrir todas las bases de datos" )
+      ::CloseFiles()
+      lOpen          := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TRecAge_CloseFiles( ) ; local Self AS CLASS TRecAge := QSelf() AS CLASS TRecAge
+
+   if !Empty( ::oFacCliT ) .AND. ::oFacCliT:Used()
+      ::oFacCliT:End()
+   end
+   if !Empty( ::oFacCliL ) .AND. ::oFacCliL:Used()
+      ::oFacCliL:End()
+   end
+   if !Empty( ::oFacCliP ) .AND. ::oFacCliP:Used()
+      ::oFacCliP:End()
+   end
+   if !Empty( ::oDbfIva ) .AND. ::oDbfIva:Used()
+      ::oDbfIva:End()
+   end
+   if !Empty( ::oAntCliT ) .AND. ::oAntCliT:Used()
+      ::oAntCliT:End()
+   end
+
+   ::oFacCliT := nil
+   ::oFacCliL := nil
+   ::oFacCliP := nil
+   ::oAntCliT := nil
+   ::oDbfIva  := nil
+
+RETURN ( Self )
+
+
+
+static FUNCTION TRecAge_Create( ) ; local Self AS CLASS TRecAge := QSelf() AS CLASS TRecAge
+
+   ::AddField( "cCodAge", "C",  3, 0, {|| "@!" },         "Cód. age.",              .F., "Código agente"             ,  8, .F. )
+   ::AddField( "cNomAge", "C", 50, 0, {|| "@!" },         "Agente",                 .F., "Nombre agente"             , 25, .F. )
+   ::AddField( "cCodCli", "C", 12, 0, {|| "@!" },         "Código",                 .T., "Código cliente"            ,  8, .F. )
+   ::AddField( "cNomCli", "C", 50, 0, {|| "@!" },         "Cliente",                .T., "Nombre cliente"            , 25, .F. )
+   ::AddField( "cDocMov", "C", 20, 0, {|| "@!" },         "Recibo",                 .T., "Recibo"                    , 14, .F. )
+   ::AddField( "dFecMov", "D",  8, 0, {|| "@!" },         "Fecha",                  .T., "Fecha"                     , 14, .F. )
+   ::AddField( "cDniCli", "C", 15, 0, {|| "@!" },         "Nif",                    .F., "Nif"                       ,  8, .F. )
+   ::AddField( "cDomCli", "C", 35, 0, {|| "@!" },         "Domicilio",              .F., "Domicilio"                 , 25, .F. )
+   ::AddField( "cPobCli", "C", 25, 0, {|| "@!" },         "Población",              .F., "Población"                 , 20, .F. )
+   ::AddField( "cProCli", "C", 20, 0, {|| "@!" },         "Provincia",              .F., "Provincia"                 , 20, .F. )
+   ::AddField( "cCdpCli", "C",  7, 0, {|| "@!" },         "CP",                     .F., "Cod. Postal"               , 20, .F. )
+   ::AddField( "cTlfCli", "C", 12, 0, {|| "@!" },         "Tlf",                    .F., "Teléfono"                  ,  7, .F. )
+   ::AddField( "nTotDoc", "N", 16, 6, {|| ::cPicOut },    "Tot. Rec",               .T., "Total recibo"              , 10, .T. )
+   ::AddField( "nTotDia", "N", 16, 0, {|| "99999" },      "Dias",                   .T., "Dias transcurridos"        ,  4, .T. )
+   ::AddField( "nTotFac", "N", 16, 6, {|| ::cPicOut },    "Tot. Fac",               .T., "Total factura"             , 10, .T. )
+   ::AddField( "nTotCob", "N", 16, 6, {|| ::cPicOut },    "Tot. Cob",               .T., "Total cobrado"             , 10, .T. )
+   ::AddField( "nTotPen", "N", 16, 6, {|| ::cPicOut },    "Tot. Pen",               .T., "Total pendiente"           , 10, .T. )
+   ::AddField( "dLasDoc", "D",  8, 0, {|| "" },           "",                       .F., ""                          ,  0, .F. )
+   ::AddField( "cNumDoc", "C", 16, 0, {|| "" },           "",                       .F., ""                          ,  0, .F. )
+   ::AddField( "nImpDoc", "N", 16, 6, {|| ::cPicOut },    "",                       .F., ""                          ,  0, .F. )
+   ::AddField( "cBanco",  "C", 50, 0, {|| "@!" },         "Banco",                  .F., "Nombre del banco"          , 20, .F. )
+   ::AddField( "cCuenta", "C", 30, 0, {|| "@!" },         "Cuenta",                 .F., "Cuenta bancaria"           , 35, .F. )
+
+   ::AddTmpIndex( "cCodAge", "cCodAge + cCodCli" )
+
+
+
+   ::AddGroup( {|| ::oDbf:cCodAge }, {|| "Agente : " + if( ::lAgeAll, "Todos", Rtrim( ::oDbf:cCodAge ) + "-" + Rtrim( oRetFld( ::oDbf:cCodAge, ::oDbfAge, 2 ) ) + "," + Rtrim( oRetFld( ::oDbf:cCodAge, ::oDbfAge, 3 ) ) ) }, {|| "Total agente..."} )
+
+
+   ::AddGroup( {|| ::oDbf:cCodAge + ::oDbf:cCodCli }, {|| "Cliente : " + Rtrim( ::oDbf:cCodCli ) + " - " + Rtrim( oRetFld( ::oDbf:cCodCli, ::oDbfCli ) ) + " - Ultimo cobro : " + Dtoc( ::oDbf:dLasDoc ) + " - Recibo :" + StrTran( Trans( ::oDbf:cNumDoc, "@R #/#########/##/##" ), " ", "" ) + " - Importe " + Trans( ::oDbf:nImpDoc, ::cPicOut ) }, {|| "Total cliente..."} )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TRecAge_lResource( cFld ) ; local Self AS CLASS TRecAge := QSelf() AS CLASS TRecAge
+
+   if !::StdResource( "INF_GEN28B" )
+      return .F.
+   end
+
+
+
+
+
+   if !::oDefCliInf( 70, 71, 80, 81, , 600)
+      return .F.
+   end
+
+
+
+
+
+   if !::oDefAgeInf( 90, 91, 100, 101, 110 )
+      return .F.
+   end
+
+
+
+
+
+   ::oEstado := TComboBox():ReDefine( 210, { | u | If( PCount()==0, ::cEstado, ::cEstado:= u ) }, ::aEstado, ::oFld:aDialogs[1],,,,,,, .F.,,,,,,, "::oEstado",,,,,,, )
+
+
+
+   TCheckBox():ReDefine( 190, { | u | If( PCount()==0, ::lNumDias, ::lNumDias:= u ) }, ::oFld:aDialogs[1],,,,,,, .F.,, .F. )
+
+
+
+
+
+
+
+
+   TGetHlp():ReDefine( 200, { | u | If( PCount()==0, ::nNumDias, ::nNumDias:= u ) }, ::oFld:aDialogs[1],, "999",,,,,,, .F., {||     ::lNumDias},, .F., .T.,,, {||      0}, {||      999},, nil,,, )
+
+
+
+
+
+   ::oMtrInf:SetTotal( ::oDbfCli:Lastrec() )
+
+   ::CreateFilter( aItmCli(), ::oDbfCli )
+
+RETURN .T.
+
+
+
+
+
+
+static FUNCTION TRecAge_lGenerate( ) ; local Self AS CLASS TRecAge := QSelf() AS CLASS TRecAge
+
+   local cExpHead := ""
+
+   ::oDlg:Disable()
+   ::oBtnCancel:Enable()
+   ::oDbf:Zap()
+
+
+
+
+
+
+
+
+
+
+   ::aHeader   := {  {|| "Fecha   : " + Dtoc( Date() ) }, {|| "Periodo : " + Dtoc( ::dIniInf ) + " > " + Dtoc( ::dFinInf ) }, {|| "Cliente : " + AllTrim( ::cCliOrg ) + " > " + AllTrim( ::cCliDes ) }, {|| "Agente  : " + if( !::lAgeAll, ( ::cAgeOrg + " > " + ::cAgeDes ), "Todos" ) }, {|| "Estado  : " + ::cEstado }, {|| "Dias    : " + if( ::lNumDias, Trans( ::nNumDias, "999" ), "Sin especificar" ) } }
+
+   ::oDbfCli:OrdSetFocus( "COD" )
+
+   if !Empty( ::oFilter:cExpresionFilter )
+      cExpHead       := ::oFilter:cExpresionFilter
+   else
+      cExpHead       := ".t."
+   end
+
+   ::oDbfCli:AddTmpIndex( Auth():Codigo(), GetFileNoExt( ::oDbfCli:cFile ), ::oDbfCli:OrdKey(), ( cExpHead ), , , , , , , , .T. )
+
+   ::oDbfCli:GoTop()
+   while !::lBreak .AND. !::oDbfCli:Eof()
+
+      if ::lAgeAll
+
+
+         if ( ::lAllCli .OR. ( ::oDbfCli:Cod >= ::cCliOrg .AND. ::oDbfCli:Cod <= ::cCliDes ) )   .AND. ::oFacCliP:Seek( ::oDbfCli:Cod )
+
+            ::GetDocument()
+            ::AddDocument()
+
+         end
+
+      else
+
+         ::oDbfAge:GoTop()
+         while !::oDbfAge:Eof()
+
+
+
+
+
+            if ::oDbfCli:Cod >= ::cCliOrg                         .AND. ::oDbfCli:Cod <= ::cCliDes                         .AND. ::oDbfAge:cCodAge >= ::cAgeOrg                     .AND. ::oDbfAge:cCodAge <= ::cAgeDes                     .AND. ::oFacCliP:Seek( ::oDbfCli:Cod )
+
+               ::GetDocument()
+               ::AddDocument()
+
+            end
+
+            ::oDbfAge:Skip()
+
+         end
+
+      end
+
+      ::oDbfCli:Skip()
+
+      ::oMtrInf:AutoInc( ::oDbfCli:OrdKeyNo() )
+
+   end
+
+   ::oDbfCli:IdxDelete( Auth():Codigo(), GetFileNoExt( ::oDbfCli:cFile ) )
+
+   ::oMtrInf:AutoInc( ::oDbfCli:LastRec() )
+
+   ::oDlg:Enable()
+
+RETURN ( ::oDbf:LastRec() > 0 )
+
+
+
+static FUNCTION TRecAge_GetDocument( ) ; local Self AS CLASS TRecAge := QSelf() AS CLASS TRecAge
+
+   local cAgeFac
+
+   ::dLasDoc      := Ctod( "" )
+   ::cNumDoc      := ""
+   ::nImpDoc      := 0
+
+   if ::oFacCliP:Seek( ::oDbfCli:Cod )
+
+      while ::oFacCliP:cCodCli == ::oDbfCli:Cod .AND. !::oFacCliP:Eof()
+
+         if ::lAgeAll
+            cAgeFac     := ""
+         else
+            if Empty( ::oFacCliP:cCodAge )
+               cAgeFac  := cAgeFacCli( ::oFacCliP:cSerie + Str( ::oFacCliP:nNumFac ) + ::oFacCliP:cSufFac, ::oFacCliT )
+            else
+               cAgeFac  := ::oFacCliP:cCodAge
+            end
+         end
+
+
+
+
+
+
+         if ( if( ::lAgeAll, .T., ::oDbfAge:cCodAge == cAgeFac ) )                        .AND. ::oFacCliP:dPreCob >= ::dIniInf                                               .AND. ::oFacCliP:dPreCob <= ::dFinInf                                               .AND. ::oFacCliP:lCobrado                                                           .AND. lChkSer( ::oFacCliP:cSerie, ::aSer )                                          .AND. ::oFacCliP:dEntrada >= ::dLasDoc
+
+            ::dLasDoc   := ::oFacCliP:dEntrada
+            ::cNumDoc   := ::oFacCliP:cSerie + Str( ::oFacCliP:nNumFac ) + ::oFacCliP:cSufFac + Str( ::oFacCliP:nNumRec )
+            ::nImpDoc   := nTotRecCli( ::oFacCliP:cAlias, ::oDbfDiv:cAlias, ::cDivInf )
+
+         end
+
+         ::oFacCliP:Skip()
+
+      end
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TRecAge_AddDocument( ) ; local Self AS CLASS TRecAge := QSelf() AS CLASS TRecAge
+
+   local cAgeFac
+
+   if ::oFacCliP:Seek( ::oDbfCli:Cod )
+
+      while ::oFacCliP:cCodCli == ::oDbfCli:Cod .AND. !::oFacCliP:Eof()
+
+         if ::lAgeAll
+            cAgeFac     := ""
+         else
+            if Empty( ::oFacCliP:cCodAge )
+               cAgeFac  := cAgeFacCli( ::oFacCliP:cSerie + Str( ::oFacCliP:nNumFac ) + ::oFacCliP:cSufFac, ::oFacCliT )
+            else
+               cAgeFac  := ::oFacCliP:cCodAge
+            end
+         end
+
+
+
+
+
+         if ( if( ::lAgeAll, .T., ::oDbfAge:cCodAge == cAgeFac ) )                        .AND. ( if( ::oEstado:nAt == 1, ::oFacCliP:lCobrado, !::oFacCliP:lCobrado ) )       .AND. ::oFacCliP:dPreCob >= ::dIniInf                                               .AND. ::oFacCliP:dPreCob <= ::dFinInf                                               .AND. lChkSer( ::oFacCliP:cSerie, ::aSer )
+
+            if ::lNumDias
+               if ::cEstado == "Cobrados"
+                  if GetSysDate() - ::oFacCliP:dEntrada <= ::nNumDias
+                     ::AddLine( cAgeFac )
+                  end
+               else
+                  if GetSysDate() - ::oFacCliP:dPreCob >= ::nNumDias
+                     ::AddLine( cAgeFac )
+                  end
+               end
+            else
+               ::AddLine( cAgeFac )
+            end
+
+         end
+
+         ::oFacCliP:Skip()
+
+      end
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TRecAge_AddLine( cAgeFac ) ; local Self AS CLASS TRecAge := QSelf() AS CLASS TRecAge
+
+   ::oDbf:Append()
+   ::oDbf:Blank()
+
+   ::oDbf:cCodAge := cAgeFac
+   ::oDbf:cNomAge := oRetFld( ::oDbf:cCodAge, ::oDbfAge, 3 )
+
+   ::oDbf:cCodCli := ::oDbfCli:Cod
+   ::oDbf:cNomCli := ::oDbfCli:Titulo
+   ::oDbf:cDniCli := ::oDbfCli:Nif
+   ::oDbf:cDomCli := ::oDbfCli:Domicilio
+   ::oDbf:cPobCli := ::oDbfCli:Poblacion
+   ::oDbf:cProCli := ::oDbfCli:Provincia
+   ::oDbf:cCdpCli := ::oDbfCli:CodPostal
+   ::oDbf:cTlfCli := ::oDbfCli:Telefono
+
+   ::oDbf:dFecMov := ::oFacCliP:dPreCob
+   ::oDbf:nTotDoc := nTotRecCli( ::oFacCliP:cAlias, ::oDbfDiv:cAlias, ::cDivInf )
+   ::oDbf:nTotFac := nTotFacCli( ::oFacCliP:cSerie + Str( ::oFacCliP:nNumFac ) + ::oFacCliP:cSufFac, ::oFacCliT:cAlias, ::oFacCliL:cAlias, ::oDbfIva:cAlias, ::oDbfDiv:cAlias, ::oFacCliP:cAlias )
+   ::oDbf:nTotCob := nPagFacCli( ::oFacCliP:cSerie + Str( ::oFacCliP:nNumFac ) + ::oFacCliP:cSufFac, ::oFacCliT:cAlias, ::oFacCliP:cAlias, ::oDbfIva:cAlias, ::oDbfDiv:cAlias, ::cDivInf, .T. )
+   ::oDbf:nTotPen := ::oDbf:nTotFac - ::oDbf:nTotCob
+   ::oDbf:cDocMov := StrTran( ::oFacCliP:cSerie + "/" + Str( ::oFacCliP:nNumFac ) + "/" + ::oFacCliP:cSufFac + "/" + Str( ::oFacCliP:nNumRec ), " ", "" )
+   ::oDbf:nTotDia := GetSysDate() - ::oFacCliP:dPreCob
+   ::oDbf:dLasDoc := ::dLasDoc
+   ::oDbf:cNumDoc := ::cNumDoc
+   ::oDbf:nImpDoc := ::nImpDoc
+   ::oDbf:cBanco  := ::oFacCliP:cBncCli
+   ::oDbf:cCuenta := ::oFacCliP:cEntCli + "-" + ::oFacCliP:cSucCli + "-" + ::oFacCliP:cDigCli + "-" + ::oFacCliP:cCtaCli
+
+   ::oDbf:Save()
+
+RETURN ( Self )

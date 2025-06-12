@@ -1,0 +1,963 @@
+#line 21 ".\.\Prg\SepaXml.prg"
+_HB_CLASS SepaXml ; function SepaXml ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "SepaXml", iif( .F., { }, { @HBObject() } ), @SepaXml() ) ) ;
+
+   _HB_MEMBER { hXmlDoc } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hXmlDoc"}, .F. )
+
+   _HB_MEMBER { oXml } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXml"}, .F. )
+   _HB_MEMBER { oXmlDocument } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlDocument"}, .F. )
+   _HB_MEMBER { oXmlFinancial } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlFinancial"}, .F. )
+   _HB_MEMBER { oXmlHeader } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlHeader"}, .F. )
+   _HB_MEMBER { oXmlPmtInf } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlPmtInf"}, .F. )
+   _HB_MEMBER { oXmlPmtTpInf } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlPmtTpInf"}, .F. )
+   _HB_MEMBER { oXmlSvcLvl } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlSvcLvl"}, .F. )
+   _HB_MEMBER { oXmlLclInstrm } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlLclInstrm"}, .F. )
+   _HB_MEMBER { oXmlCtgyPurp } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlCtgyPurp"}, .F. )
+
+   _HB_MEMBER { AS CHARACTER FinancialMessage } ; oClass:AddMultiData( "CHARACTER", "CstmrDrctDbtInitn", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"FinancialMessage"}, .F. )
+   _HB_MEMBER { AS CHARACTER DocumentType } ; oClass:AddMultiData( "CHARACTER", "pain.008.001.02", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"DocumentType"}, .F. )
+
+   _HB_MEMBER { AS CHARACTER SchmeNm } ; oClass:AddMultiData( "CHARACTER", "COR1", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"SchmeNm"}, .F. )
+   _HB_MEMBER { cFileOut } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFileOut"}, .F. )
+   _HB_MEMBER { AS LOGICAL lMinified } ; oClass:AddMultiData( "LOGICAL", .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lMinified"}, .F. )
+   _HB_MEMBER { AS ARRAY aErrors } ; oClass:AddMultiData( "ARRAY", {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aErrors"}, .F. )
+   _HB_MEMBER { AS ARRAY ErrorMessages } ; oClass:AddMultiData( "ARRAY", {=>}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"ErrorMessages"}, .F. )
+   _HB_MEMBER { AS ARRAY aDebtors } ; oClass:AddMultiData( "ARRAY", {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aDebtors"}, .F. )
+
+   _HB_MEMBER { MsgId } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"MsgId"}, .F. )
+   _HB_MEMBER { CreDtTm } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"CreDtTm"}, .F. )
+   _HB_MEMBER { AS NUMERIC NbOfTxs } ; oClass:AddMultiData( "NUMERIC", 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"NbOfTxs"}, .F. )
+   _HB_MEMBER { AS NUMERIC CtrlSum } ; oClass:AddMultiData( "NUMERIC", 0.00, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"CtrlSum"}, .F. )
+
+   _HB_MEMBER { AS CHARACTER ServiceLevel } ; oClass:AddMultiData( "CHARACTER", "SEPA", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"ServiceLevel"}, .F. )
+   _HB_MEMBER { AS CHARACTER SeqTp } ; oClass:AddMultiData( "CHARACTER", "OOFF", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"SeqTp"}, .F. )
+   _HB_MEMBER { PurposeCd } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"PurposeCd"}, .F. )
+   _HB_MEMBER { PurposePrtry } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"PurposePrtry"}, .F. )
+
+   _HB_MEMBER { oInitPart } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oInitPart"}, .F. )
+   _HB_MEMBER { oCreditor } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCreditor"}, .F. )
+   _HB_MEMBER { oUltimateCreditor } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oUltimateCreditor"}, .F. )
+   _HB_MEMBER { oDebtor } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDebtor"}, .F. )
+   _HB_MEMBER { oUltimateDebtor } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oUltimateDebtor"}, .F. )
+
+   _HB_MEMBER { PmtInfId } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"PmtInfId"}, .F. )
+   _HB_MEMBER { AS CHARACTER PmtMtd } ; oClass:AddMultiData( "CHARACTER", "DD", nScope + iif( .T., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"PmtMtd"}, .F. )
+   _HB_MEMBER { AS CHARACTER BtchBookg } ; oClass:AddMultiData( "CHARACTER", "false", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"BtchBookg"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @SepaXml_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setFinancialMessage( nFinancialMessage); oClass:AddMethod( "setFinancialMessage", @SepaXml_setFinancialMessage(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setScheme( nScheme); oClass:AddMethod( "setScheme", @SepaXml_setScheme(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setSeqTp(); oClass:AddInline( "setSeqTp", {|Self, SeqTp | ( ( Self ) ), ( ::SeqTp := SeqTp ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setPaymentInformationIdentification(); oClass:AddInline( "setPaymentInformationIdentification", {|Self, informationId | ( ( Self ) ), ( ::PmtInfId := informationId ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setOriginalMessageIdentification(); oClass:AddInline( "setOriginalMessageIdentification", {|Self, messageId | ( ( Self ) ), ( ::MsgId := messageId ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER { ReqdColltnDt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"ReqdColltnDt"}, .F. )
+
+   _HB_MEMBER setRequestedCollectionDate(); oClass:AddInline( "setRequestedCollectionDate", {|Self, sDate | ( ( Self ) ), ( ::ReqdColltnDt := sDate ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getRquiredPayDateXML(); oClass:AddInline( "getRquiredPayDateXML", {|Self | ( ( Self ) ), ( TXmlParseNode():New( "ReqdColltnDt", ::ReqdColltnDt, 10 ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CreateDocumentXML(); oClass:AddMethod( "CreateDocumentXML", @SepaXml_CreateDocumentXML(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CreateFinancialNode(); oClass:AddInline( "CreateFinancialNode", {|Self | ( ( Self ) ), ( ::oXmlFinancial   := TXmlNode():new( , ::FinancialMessage ), ::oXmlDocument:addBelow( ::oXmlFinancial ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getInfoPaymentXML(); oClass:AddMethod( "getInfoPaymentXML", @SepaXml_getInfoPaymentXML(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getTypePaymentXML(); oClass:AddMethod( "getTypePaymentXML", @SepaXml_getTypePaymentXML(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CalculateOperationsNumber(); oClass:AddMethod( "CalculateOperationsNumber", @SepaXml_CalculateOperationsNumber(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ProcessDebtors(); oClass:AddMethod( "ProcessDebtors", @SepaXml_ProcessDebtors(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SaveDocumentXML(); oClass:AddMethod( "SaveDocumentXML", @SepaXml_SaveDocumentXML(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER trimDocumentXML(); oClass:AddMethod( "trimDocumentXML", @SepaXml_trimDocumentXML(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addDebtor(); oClass:AddInline( "addDebtor", {|Self, oDebtor | ( ( Self ) ), ( aadd( ::aDebtors, oDebtor ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GroupHeader(); oClass:AddMethod( "GroupHeader", @SepaXml_GroupHeader(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InfoPayment(); oClass:AddMethod( "InfoPayment", @SepaXml_InfoPayment(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InitPart(); oClass:AddMethod( "InitPart", @SepaXml_InitPart(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetLanguage(); oClass:AddMethod( "SetLanguage", @SepaXml_SetLanguage(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Activate(); oClass:AddMethod( "Activate", @SepaXml_Activate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER resetErrors(); oClass:AddInline( "resetErrors", {|Self | ( ( Self ) ), ( ::aErrors := {} ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER addError(); oClass:AddInline( "addError", {|Self, cError | ( ( Self ) ), ( aadd( ::aErrors, cError ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS SepaXml ;
+
+
+
+static FUNCTION SepaXml_New( cFileOut ) ; local Self AS CLASS SepaXml := QSelf() AS CLASS SepaXml
+
+   ::cFileOut           := cFileOut
+   ::CreDtTm            := IsoDateTime()
+
+   ::oInitPart          := SepaDebitActor():New( Self, "InitgPty" )
+   ::oCreditor          := SepaDebitActor():New( Self )
+   ::oUltimateCreditor  := SepaDebitActor():New( Self )
+   ::oDebtor            := SepaDebitActor():New( Self )
+   ::oUltimateDebtor    := SepaDebitActor():New( Self )
+
+return Self
+
+
+
+static FUNCTION SepaXml_setFinancialMessage( nFinancialMessage ) ; local Self AS CLASS SepaXml := QSelf() AS CLASS SepaXml
+
+   if nFinancialMessage == 0
+      ::FinancialMessage   := "CstmrDrctDbtInitn"
+      ::DocumentType       := "pain.008.001.02"
+   end
+
+   if nFinancialMessage == 1
+      ::FinancialMessage   := "CstmrCdtTrfInitn"
+      ::DocumentType       := "pain.001.001.03"
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION SepaXml_setScheme( uScheme ) ; local Self AS CLASS SepaXml := QSelf() AS CLASS SepaXml
+
+   if valtype( uScheme ) == "C"
+      ::SchmeNm         := uScheme
+      Return ( Self )
+   end
+
+   if valtype( uScheme ) == "N"
+      switch uScheme
+         case 0
+            ::SchmeNm   := "CORE" ; exit
+         case 1
+            ::SchmeNm   := "COR1" ; exit
+         case 2
+            ::SchmeNm   := "B2B"  ; exit
+         otherwise
+            ::SchmeNm   := "SEPA"
+      end
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION SepaXml_GroupHeader( hParent ) ; local Self AS CLASS SepaXml := QSelf() AS CLASS SepaXml
+
+   local hItem
+   local lError   := .F.
+
+   if empty( ::MsgId )
+      ::addError( "Identificación del mensaje no puede estar vacio." )
+      lError      := .T.
+   endif
+
+   if empty( ::CreDtTm )
+      ::addError( "Fecha y hora de creación no puede estar vacio." )
+      lError      := .T.
+   endif
+
+   if empty( ::NbOfTxs )
+      ::addError( "Número de operaciones no puede estar vacia." )
+      lError      := .T.
+   endif
+
+   if empty( ::CtrlSum )
+      ::addError( "Control de suma no puede estar vacio." )
+      lError      := .T.
+   endif
+
+   if !lError
+
+      ::oXmlHeader   := TXmlNode():new( , "GrpHdr" )
+         ::oXmlHeader:addBelow( TXmlParseNode():New( "MsgId", ::MsgId, 35 ) )
+         ::oXmlHeader:addBelow( TXmlParseNode():New( "CreDtTm", ::CreDtTm, 19 ) )
+         ::oXmlHeader:addBelow( TXmlParseNode():New( "NbOfTxs", str( ::NbOfTxs, 0 ), 15 ) )
+         ::oXmlHeader:addBelow( TXmlParseNode():New( "CtrlSum", ::CtrlSum, 18 ) )
+
+      ::oXmlFinancial:addBelow( ::oXmlHeader )
+
+      ::oXmlHeader:addBelow( ::oInitPart:getNodeXML() )
+
+   endif
+
+Return ( nil )
+
+
+
+static FUNCTION SepaXml_getInfoPaymentXML( ) ; local Self AS CLASS SepaXml := QSelf() AS CLASS SepaXml
+
+   ::oXmlPmtInf      := TXmlNode():New( , "PmtInf" )
+   ::oXmlPmtInf:addBelow( TXmlParseNode():New( "PmtInfId",  ::PmtInfId, 35 ) )
+   ::oXmlPmtInf:addBelow( TXmlParseNode():New( "PmtMtd",    ::PmtMtd, 2 ) )
+   ::oXmlPmtInf:addBelow( TXmlParseNode():New( "BtchBookg", ::BtchBookg, 5 ) )
+   ::oXmlPmtInf:addBelow( TXmlParseNode():New( "NbOfTxs",   str( ::NbOfTxs, 0 ), 15 ) )
+   ::oXmlPmtInf:addBelow( TXmlParseNode():New( "CtrlSum",   ::CtrlSum, 18 ) )
+
+Return ( ::oXmlPmtInf )
+
+
+
+static FUNCTION SepaXml_SetLanguage( ) ; local Self AS CLASS SepaXml := QSelf() AS CLASS SepaXml
+
+   ::ErrorMessages["SEPA_DEBTOR_AGENT"]      := "La entidad del cliente no existe"
+   ::ErrorMessages["SEPA_DEBTOR_NAME"]       := "El nombre del deudor no existe"
+   ::ErrorMessages["SEPA_DEBTOR_ACCOUNT"]    := "La cuenta del deudor no existe"
+
+return nil
+
+
+
+static FUNCTION SepaXml_Activate( ) ; local Self AS CLASS SepaXml := QSelf() AS CLASS SepaXml
+
+   local hItem, oDebtor
+
+   ::SetLanguage()
+
+   ::CalculateOperationsNumber()
+
+   ::CreateDocumentXML()
+
+   ::CreateFinancialNode()
+
+   ::GroupHeader()
+
+   ::InfoPayment()
+
+   ::ProcessDebtors()
+
+   ::saveDocumentXML()
+
+   ::trimDocumentXML()
+
+return nil
+
+
+
+static FUNCTION SepaXml_CreateDocumentXML( ) ; local Self AS CLASS SepaXml := QSelf() AS CLASS SepaXml
+
+   ::oXml            := TXmlDocument():new( '<?xml version="1.0" encoding="UTF-8" standalone="no"?>' )
+
+   ::oXmlDocument    := TXmlNode():new( , "Document", { "xmlns" => "urn:iso:std:iso:20022:tech:xsd:" + ::DocumentType } )
+   ::oXml:oRoot:addBelow( ::oXmlDocument )
+
+return ( nil )
+
+
+
+static FUNCTION SepaXml_SaveDocumentXML( ) ; local Self AS CLASS SepaXml := QSelf() AS CLASS SepaXml
+
+   ferase( ::cFileOut )
+
+   ::oXml:Write( ::cFileOut, 2 )
+
+return nil
+
+
+
+static FUNCTION SepaXml_trimDocumentXML( ) ; local Self AS CLASS SepaXml := QSelf() AS CLASS SepaXml
+
+   local cString
+   local nHandle
+
+   if file( ::cFileOut )
+
+      cString  := memoread( ::cFileOut )
+      cString  := alltrim( cString )
+      cString  := StrTran( cString, chr( 13 ) + chr( 10 ), "" )
+
+      ferase( ::cFileOut )
+      nHandle  := fcreate( ::cFileOut )
+      if ferror() == 0
+         fwrite( nHandle, cString, len( cString ) )
+         fclose( nHandle )
+      end
+
+   end
+
+Return nil
+
+
+
+
+
+static FUNCTION SepaXml_CalculateOperationsNumber( ) ; local Self AS CLASS SepaXml := QSelf() AS CLASS SepaXml
+
+   local oDebtor
+
+   for each oDebtor in ::aDebtors
+      ::NbOfTxs         += 1
+      ::CtrlSum         += oDebtor:InstdAmt
+   next
+
+return nil
+
+
+
+static FUNCTION SepaXml_InfoPayment( ) ; local Self AS CLASS SepaXml := QSelf() AS CLASS SepaXml
+
+   ::oXmlPmtInf         := ::getInfoPaymentXML()
+   ::oXmlPmtInf:addBelow( ::getTypePaymentXML() )
+   ::oXmlPmtInf:addBelow( ::getRquiredPayDateXML() )
+
+   ::InitPart()
+
+   ::oXmlFinancial:addBelow( ::oXmlPmtInf )
+
+return nil
+
+
+
+static FUNCTION SepaXml_InitPart( ) ; local Self AS CLASS SepaXml := QSelf() AS CLASS SepaXml
+
+   ::oXmlPmtInf:addBelow( ::oInitPart:getCreditorXML() )
+   ::oXmlPmtInf:addBelow( ::oInitPart:getCreditorIBANXML() )
+   ::oXmlPmtInf:addBelow( ::oInitPart:getCreditorBICXML() )
+   ::oXmlPmtInf:addBelow( ::oInitPart:getChrgBrXML() )
+   ::oXmlPmtInf:addBelow( ::oInitPart:getIdCreditorXML() )
+
+return nil
+
+
+
+
+
+
+
+
+static FUNCTION SepaXml_ProcessDebtors( hItem ) ; local Self AS CLASS SepaXml := QSelf() AS CLASS SepaXml
+
+   local oDebtor
+
+   for each oDebtor in ::aDebtors
+
+      ::oDebtor            := oDebtor
+
+      ::oXmlPmtInf:addBelow( ::oDebtor:getDirectDebitTransactionInformationXml() )
+
+   next
+
+return nil
+
+
+
+static FUNCTION SepaXml_getTypePaymentXML( ) ; local Self AS CLASS SepaXml := QSelf() AS CLASS SepaXml
+
+   ::oXmlPmtTpInf       := TXmlNode():New( , "PmtTpInf")
+
+      ::oXmlSvcLvl      := TXmlNode():New( , "SvcLvl")
+      if ::ServiceLevel <> nil
+         ::oXmlSvcLvl:addBelow( TXmlParseNode():New( "Cd", ::ServiceLevel, 4 ) )
+      end
+
+   ::oXmlPmtTpInf:addBelow( ::oXmlSvcLvl )
+
+      ::oXmlLclInstrm   := TXmlNode():New( , "LclInstrm" )
+      if ::SchmeNm <> nil
+         ::oXmlLclInstrm:addBelow( TXmlParseNode():New( "Cd", ::SchmeNm, 35 ) )
+      end
+
+   ::oXmlPmtTpInf:addBelow( ::oXmlLclInstrm )
+
+   ::oXmlPmtTpInf:addBelow( TXmlParseNode():New( "SeqTp", ::SeqTp, 4 ) )
+
+
+
+
+   if ::PurposeCd <> nil
+
+      ::oXmlCtgyPurp    := TXmlNode():New( , "CtgyPurp" )
+      if ::PurposeCd <> nil
+         ::oXmlCtgyPurp:addBelow( TXmlParseNode():New( "Cd", ::PurposeCd, 4 ) )
+      end
+      ::oXmlCtgyPurp:addBelow( TXmlParseNode():New( "Prtry", ::PurposePrtry, 35 ) )
+
+      ::oXmlPmtTpInf:addBelow( ::oXmlCtgyPurp )
+
+   endif
+
+Return ( ::oXmlPmtTpInf )
+
+
+
+_HB_CLASS SepaDebitActor ; function SepaDebitActor ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "SepaDebitActor", iif( .F., { }, { @HBObject() } ), @SepaDebitActor() ) ) ;
+
+   _HB_MEMBER { oSender } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSender"}, .F. )
+   _HB_MEMBER { cName } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cName"}, .F. )
+
+   _HB_MEMBER { nEntity } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nEntity"}, .F. )
+
+   _HB_MEMBER { Nm } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"Nm"}, .F. )
+   _HB_MEMBER { Ctry } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"Ctry"}, .F. )
+   _HB_MEMBER { AdrLine1 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"AdrLine1"}, .F. )
+   _HB_MEMBER { AdrLine2 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"AdrLine2"}, .F. )
+   _HB_MEMBER { IBAN } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"IBAN"}, .F. )
+   _HB_MEMBER { BIC } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"BIC"}, .F. )
+   _HB_MEMBER { BICOrBEI } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"BICOrBEI"}, .F. )
+   _HB_MEMBER { BirthDt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"BirthDt"}, .F. )
+   _HB_MEMBER { PrvcOfBirth } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"PrvcOfBirth"}, .F. )
+   _HB_MEMBER { CityOfBirth } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"CityOfBirth"}, .F. )
+   _HB_MEMBER { CtryOfBirth } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"CtryOfBirth"}, .F. )
+   _HB_MEMBER { Id } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"Id"}, .F. )
+   _HB_MEMBER { Issr } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"Issr"}, .F. )
+   _HB_MEMBER { Cd } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"Cd"}, .F. )
+   _HB_MEMBER { AS CHARACTER Prtry } ; oClass:AddMultiData( "CHARACTER", "SEPA", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"Prtry"}, .F. )
+
+   _HB_MEMBER { PmtInfId } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"PmtInfId"}, .F. )
+   _HB_MEMBER { AS CHARACTER BtchBookg } ; oClass:AddMultiData( "CHARACTER", "false", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"BtchBookg"}, .F. )
+   _HB_MEMBER { ReqdColltnDt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"ReqdColltnDt"}, .F. )
+   _HB_MEMBER { Ustrd } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"Ustrd"}, .F. )
+   _HB_MEMBER { AS NUMERIC NbOfTxs } ; oClass:AddMultiData( "NUMERIC", 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"NbOfTxs"}, .F. )
+   _HB_MEMBER { AS NUMERIC CtrlSum } ; oClass:AddMultiData( "NUMERIC", 0.00, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"CtrlSum"}, .F. )
+   _HB_MEMBER { AS CHARACTER PmtMtd } ; oClass:AddMultiData( "CHARACTER", "DD", nScope + iif( .T., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"PmtMtd"}, .F. )
+   _HB_MEMBER { AS CHARACTER ChrgBr } ; oClass:AddMultiData( "CHARACTER", "SLEV", nScope + iif( .T., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"ChrgBr"}, .F. )
+   _HB_MEMBER { InstrId } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"InstrId"}, .F. )
+   _HB_MEMBER { EndToEndId } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"EndToEndId"}, .F. )
+   _HB_MEMBER { AS NUMERIC InstdAmt } ; oClass:AddMultiData( "NUMERIC", 0.00, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"InstdAmt"}, .F. )
+   _HB_MEMBER { MndtId } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"MndtId"}, .F. )
+   _HB_MEMBER { DtOfSgntr } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"DtOfSgntr"}, .F. )
+   _HB_MEMBER { AS CHARACTER AmdmntInd } ; oClass:AddMultiData( "CHARACTER", "false", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"AmdmntInd"}, .F. )
+   _HB_MEMBER { OrgnlMndtId } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"OrgnlMndtId"}, .F. )
+
+   _HB_MEMBER { oXmlActor } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlActor"}, .F. )
+   _HB_MEMBER { oXmlId } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlId"}, .F. )
+   _HB_MEMBER { oXmlOrgId } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlOrgId"}, .F. )
+   _HB_MEMBER { oXmlOthr } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlOthr"}, .F. )
+   _HB_MEMBER { oXmlSchmeNm } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlSchmeNm"}, .F. )
+   _HB_MEMBER { oXmlPrvId } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlPrvId"}, .F. )
+   _HB_MEMBER { oXmlDtAndPlcOfBirth } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlDtAndPlcOfBirth"}, .F. )
+   _HB_MEMBER { oXmlPmtInf } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlPmtInf"}, .F. )
+   _HB_MEMBER { oXmlCdrt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlCdrt"}, .F. )
+   _HB_MEMBER { oXmlPstlAdr } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlPstlAdr"}, .F. )
+   _HB_MEMBER { oXmlCdtrAcct } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlCdtrAcct"}, .F. )
+   _HB_MEMBER { oXmlIdIBAN } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlIdIBAN"}, .F. )
+   _HB_MEMBER { oXmlCdtrAgt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlCdtrAgt"}, .F. )
+   _HB_MEMBER { oXmlFinInstnId } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlFinInstnId"}, .F. )
+   _HB_MEMBER { oXmlCdtrSchmeId } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlCdtrSchmeId"}, .F. )
+   _HB_MEMBER { oXmlDrctDbtTxInf } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlDrctDbtTxInf"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @SepaDebitActor_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getNodeXML(); oClass:AddMethod( "getNodeXML", @SepaDebitActor_getNodeXML(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getOtherNodeXML(); oClass:AddMethod( "getOtherNodeXML", @SepaDebitActor_getOtherNodeXML(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getRquiredPayDateXML(); oClass:AddInline( "getRquiredPayDateXML", {|Self | ( ( Self ) ), ( TXmlParseNode():New( "ReqdColltnDt", ::ReqdColltnDt, 10 ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getCreditorXML(); oClass:AddMethod( "getCreditorXML", @SepaDebitActor_getCreditorXML(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getCreditorIBANXML(); oClass:AddMethod( "getCreditorIBANXML", @SepaDebitActor_getCreditorIBANXML(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getCreditorBICXML(); oClass:AddMethod( "getCreditorBICXML", @SepaDebitActor_getCreditorBICXML(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getChrgBrXML(); oClass:AddInline( "getChrgBrXML", {|Self | ( ( Self ) ), ( TXmlParseNode():New( "ChrgBr", ::ChrgBr, 4 ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getIdCreditorXML(); oClass:AddMethod( "getIdCreditorXML", @SepaDebitActor_getIdCreditorXML(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getDirectDebitTransactionInformationXml(); oClass:AddMethod( "getDirectDebitTransactionInformationXml", @SepaDebitActor_getDirectDebitTransactionInformationXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS SepaDebitActor ;
+
+
+
+static FUNCTION SepaDebitActor_New( oSender, cName ) ; local Self AS CLASS SepaDebitActor := QSelf() AS CLASS SepaDebitActor
+
+   ::oSender   := oSender
+   ::cName     := cName
+
+Return ( Self )
+
+
+
+static FUNCTION SepaDebitActor_getNodeXML( ) ; local Self AS CLASS SepaDebitActor := QSelf() AS CLASS SepaDebitActor
+
+   ::oXmlActor       := TXmlNode():new( , ::cName )
+   ::oXmlActor:addBelow( TXmlParseNode():New( "Nm", ::Nm, 70 ) )
+
+   ::oXmlId          := TXmlNode():new( , "Id" )
+      ::oXmlActor:addBelow( ::oXmlId )
+
+   do case
+   case ( ::nEntity == 0 )
+
+      ::oXmlOrgId    := TXmlNode():new( , "OrgId" )
+
+      if !empty( ::BICOrBEI )
+         ::oXmlOrgId:addBelow( TXmlParseNode():New( "BICOrBEI", ::BICOrBEI, 11 ) )
+      else
+         ::oSender:addError( "BIC o BEI no puede estar vacio." )
+      end
+
+      ::oXmlId:addBelow( ::oXmlOrgId )
+
+      ::getOtherNodeXML()
+
+   case ( ::nEntity == 1 )
+
+      ::oXmlOrgId    := TXmlNode():New( , "PrvtId" )
+
+         ::oXmlDtAndPlcOfBirth    := TXmlNode():New( , "DtAndPlcOfBirth" )
+         ::oXmlDtAndPlcOfBirth:addBelow( TXmlParseNode():New( "BirthDt", ::BirthDt, 8 ) )
+         ::oXmlDtAndPlcOfBirth:addBelow( TXmlParseNode():New( "PrvcOfBirth", ::PrvcOfBirth, 35 ) )
+         ::oXmlDtAndPlcOfBirth:addBelow( TXmlParseNode():New( "CityOfBirth", ::CityOfBirth, 35 ) )
+         ::oXmlDtAndPlcOfBirth:addBelow( TXmlParseNode():New( "CtryOfBirth", ::CtryOfBirth, 2 ) )
+
+         ::oXmlOrgId:addBelow( ::oXmlDtAndPlcOfBirth )
+
+      ::oXmlId:addBelow( ::oXmlOrgId )
+
+      ::getOtherNodeXML()
+
+   otherwise
+
+      ::oSender:addError( "No se ha especificado el tipo de entidad juridica o física." )
+
+   end
+
+Return ( ::oXmlActor )
+
+
+
+static FUNCTION SepaDebitActor_getOtherNodeXML( ) ; local Self AS CLASS SepaDebitActor := QSelf() AS CLASS SepaDebitActor
+
+   if empty( ::Id )
+      Return ( nil )
+   end
+
+   ::oXmlOthr        := TXmlNode():new( , "Othr" )
+   ::oXmlOthr:addBelow( TXmlParseNode():New( "Id", ::Id, 35 ) )
+
+      ::oXmlSchmeNm  := TXmlNode():new( , "SchmeNm" )
+         if ::Cd <> nil
+            ::oXmlSchmeNm:addBelow( TXmlParseNode():New( "Cd", ::Cd, 4 ) )
+         end
+         ::oXmlSchmeNm:addBelow( TXmlParseNode():New( "Prtry", ::Prtry, 35 ) )
+
+   ::oXmlOthr:addBelow( ::oXmlSchmeNm )
+
+   if ::Issr <> nil
+      ::oXmlOthr:addBelow( TXmlParseNode():New( "Issr", ::Issr, 35 ) )
+   end
+
+   ::oXmlOrgId:addBelow( ::oXmlOthr )
+
+Return ( nil )
+
+
+
+static FUNCTION SepaDebitActor_getCreditorXML( ) ; local Self AS CLASS SepaDebitActor := QSelf() AS CLASS SepaDebitActor
+
+   ::oXmlCdrt     := TXmlNode():New( , "Cdtr" )
+
+   if ::Nm <> nil
+
+      ::oXmlCdrt:addBelow( TXmlParseNode():New( "Nm", ::Nm, 70 ) )
+
+      if ::Ctry <> nil .OR. ::AdrLine1 <> nil
+         ::oXmlPstlAdr  := TXmlNode():New( , "PstlAdr" )
+         ::oXmlPstlAdr:addBelow( TXmlParseNode():New( "Ctry", ::oCtry, 2 ) )
+         ::oXmlPstlAdr:addBelow( TXmlParseNode():New( "AdrLine", ::AdrLine1, 70 ) )
+         ::oXmlPstlAdr:addBelow( TXmlParseNode():New( "AdrLine", ::AdrLine2, 70 ) )
+      endif
+
+   else
+      ::oSender:addError( "Nombre del acreedor no existe" )
+   endif
+
+Return ( ::oXmlCdrt )
+
+
+
+static FUNCTION SepaDebitActor_getCreditorIBANXML( ) ; local Self AS CLASS SepaDebitActor := QSelf() AS CLASS SepaDebitActor
+
+   ::oXmlCdtrAcct    := TXmlNode():New( , "CdtrAcct" )
+
+   if ::IBAN <> nil
+      ::oXmlIdIBAN   := TXmlNode():New( , "Id" )
+         ::oXmlIdIBAN:addBelow( TXmlParseNode():New( "IBAN", ::IBAN, 34 ) )
+
+      ::oXmlCdtrAcct:addBelow( ::oXmlIdIBAN )
+   else
+      ::oSender:addError( "IBAN del acreedor no existe" )
+   endif
+
+Return ( ::oXmlCdtrAcct )
+
+
+
+static FUNCTION SepaDebitActor_getCreditorBICXML( ) ; local Self AS CLASS SepaDebitActor := QSelf() AS CLASS SepaDebitActor
+
+   ::oXmlCdtrAgt        := TXmlNode():New( , "CdtrAgt" )
+
+   if ::BICOrBEI <> nil
+      ::oXmlFinInstnId  := TXmlNode():New( , "FinInstnId" )
+         ::oXmlFinInstnId:addBelow( TXmlParseNode():New( "BIC", ::BICOrBEI, 11 ) )
+
+      ::oXmlCdtrAgt:addBelow( ::oXmlFinInstnId )
+   else
+      ::oSender:addError( "BIC del acreedor no existe" )
+   endif
+
+Return ( ::oXmlCdtrAgt )
+
+
+
+static FUNCTION SepaDebitActor_getIdCreditorXML( ) ; local Self AS CLASS SepaDebitActor := QSelf() AS CLASS SepaDebitActor
+
+   local oXmlId
+   local oXmlPrvtId
+   local oXmlOthr
+   local oXmlSchmeNm
+
+   ::oXmlCdtrSchmeId    := TXmlNode():New( , "CdtrSchmeId" )
+
+   if ::Id <> nil
+      oXmlId            := TXmlNode():New( , "Id" )
+
+         oXmlPrvtId     := TXmlNode():New( , "PrvtId" )
+
+            oXmlOthr    := TXmlNode():New( , "Othr" )
+            oXmlOthr:addBelow( TXmlParseNode():New( "Id", ::Id, 35 ) )
+
+            if ::Prtry <> nil
+               oXmlSchmeNm    := TXmlNode():New( , "SchmeNm" )
+               oXmlSchmeNm:addBelow( TXmlParseNode():New( "Prtry", ::Prtry, 35 ) )
+
+               oXmlOthr:addBelow( oXmlSchmeNm )
+            endif
+
+         oXmlPrvtId:addBelow( oXmlOthr )
+
+      oXmlId:addBelow( oXmlPrvtId )
+
+      ::oXmlCdtrSchmeId:addBelow( oXmlId )
+
+   else
+      ::oSender:addError( "Identificador del acreedor no existe" )
+   end
+
+Return ( ::oXmlCdtrSchmeId )
+
+
+
+static FUNCTION SepaDebitActor_getDirectDebitTransactionInformationXml( ) ; local Self AS CLASS SepaDebitActor := QSelf() AS CLASS SepaDebitActor
+
+   local oXmlPmtId
+   local oXmlDrctDbtTx
+   local oXmlMndtRltdInf
+   local oXmlAmdmntInd
+   local oXmlAmdmntInfDtls
+   local oXmlDbtrAgt
+   local oXmlFinInstnId
+   local oXmlDbtr
+   local oXmlDbtrAcct
+   local oXmlId
+   local oXmlPurp
+   local oXmlRmtInf
+
+   ::oXmlDrctDbtTxInf   := TXmlNode():New( , "DrctDbtTxInf" )
+
+   if ::InstdAmt > 0
+
+
+
+      if ::InstrId <> nil .OR. ::EndToEndId <> nil
+
+         oXmlPmtId      := TXmlNode():New( , "PmtId")
+
+         if ::InstrId <> nil
+            oXmlPmtId:addBelow( TXmlParseNode():New( "InstrId", ::InstrId, 35 ) )
+         end
+
+         if ::EndToEndId <> nil
+            oXmlPmtId:addBelow( TXmlParseNode():New( "EndToEndId", ::EndToEndId, 35 ) )
+         end
+
+         ::oXmlDrctDbtTxInf:addBelow( oXmlPmtId )
+
+      endif
+
+      ::oXmlDrctDbtTxInf:addBelow( TXmlParseNode():New( "InstdAmt", ::InstdAmt, 12, .T. ) )
+
+      if ::MndtId <> nil .OR. ::DtOfSgntr <> nil
+
+         oXmlDrctDbtTx        := TXmlNode():New( , "DrctDbtTx" )
+            oXmlMndtRltdInf   := TXmlNode():New( , "MndtRltdInf" )
+
+            if ::MndtId <> nil
+               oXmlMndtRltdInf:addBelow( TXmlParseNode():New( "MndtId", ::MndtId, 35 ) )
+            end
+
+            if ::DtOfSgntr <> nil
+               oXmlMndtRltdInf:addBelow( TXmlParseNode():New( "DtOfSgntr", ::DtOfSgntr, 10 ) )
+            end
+
+            oXmlAmdmntInd     := TXmlParseNode():New( "AmdmntInd", ::AmdmntInd, 5 )
+
+            if ::OrgnlMndtId <> nil
+               oXmlAmdmntInfDtls := TXmlNode():New( , "AmdmntInfDtls" )
+               oXmlAmdmntInfDtls:addBelow( TXmlParseNode():New( "OrgnlMndtId", ::OrgnlMndtId, 35 ) )
+
+               oXmlAmdmntInd:addBelow( oXmlAmdmntInfDtls )
+            endif
+
+            oXmlMndtRltdInf:addBelow( oXmlAmdmntInd )
+
+         oXmlDrctDbtTx:addBelow( oXmlMndtRltdInf )
+
+      ::oXmlDrctDbtTxInf:addBelow( oXmlDrctDbtTx )
+
+      endif
+
+
+
+      if ::BICOrBEI <> nil
+         oXmlDbtrAgt       := TXmlNode():New( , "DbtrAgt" )
+            oXmlFinInstnId := TXmlNode():New( , "FinInstnId" )
+            oXmlFinInstnId:addBelow( TXmlParseNode():New( "BIC", ::BICOrBEI, 11 ) )
+         oXmlDbtrAgt:addBelow( oXmlFinInstnId )
+
+         ::oXmlDrctDbtTxInf:addBelow( oXmlDbtrAgt )
+
+      else
+         ::oSender:addError( ::oSender:ErrorMessages[ "SEPA_DEBTOR_AGENT" ] )
+
+      endif
+
+
+
+      if ::Nm <> nil
+         ::oXmlDrctDbtTxInf:addBelow( ::getNodeXML() )
+      else
+         ::oSender:addError( ::oSender:ErrorMessages[ "SEPA_DEBTOR_NAME" ] )
+      endif
+
+
+
+      if ::IBAN <> nil
+         oXmlDbtrAcct   := TXmlNode():New( , "DbtrAcct" )
+            oXmlId      := TXmlNode():New( , "Id" )
+            oXmlId:addBelow( TXmlParseNode():New( "IBAN", ::IBAN, 34 ) )
+         oXmlDbtrAcct:addBelow( oXmlId )
+
+         ::oXmlDrctDbtTxInf:addBelow( oXmlDbtrAcct )
+      else
+         ::oSender:addError( ::oSender:ErrorMessages[ "SEPA_DEBTOR_ACCOUNT" ] )
+      endif
+
+
+
+      if ::oSender:PurposeCd <> nil
+         oXmlPurp       := TXmlNode():New( , "Purp" )
+
+         if ::oSender:PurposeCd <> nil
+            oXmlPurp:addBelow( TXmlParseNode():New( "Cd", ::oSender:PurposeCd, 4 ) )
+         end
+
+         ::oXmlDrctDbtTxInf:addBelow( oXmlPurp )
+      endif
+
+
+
+      if ::Ustrd <> nil
+         oXmlRmtInf     := TXmlNode():New( , "RmtInf" )
+         oXmlRmtInf:addBelow( TXmlParseNode():New( "Ustrd", ::Ustrd, 140 ) )
+
+         ::oXmlDrctDbtTxInf:addBelow( oXmlRmtInf )
+      endif
+
+   else
+      ::oSender:addError( "Recibo sin importe" )
+   endif
+
+Return ( ::oXmlDrctDbtTxInf )
+
+
+
+_HB_CLASS TXmlParseNode ; function TXmlParseNode ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TXmlParseNode", iif( .T., { @TXmlNode() }, { @HBObject() } ), @TXmlParseNode() ) ) ;
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @TXmlParseNode_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TXmlParseNode ;
+
+
+
+static FUNCTION TXmlParseNode_New( cName, xValue, nLen, lCurrency ) ; local Self AS CLASS TXmlParseNode := QSelf() AS CLASS TXmlParseNode
+
+   local cType
+   local cData
+   local hAttributes
+
+   if nLen == nil
+      nLen        := 0
+   end
+
+   cType          := valtype( xValue )
+
+   do case
+   case cType == "N"
+      cData       := ltrim( str( xValue, nLen, 2 ) )
+   case cType == "D"
+      cData       := sDate( xValue )
+   case cType == "C"
+      if nLen <> 0
+         cData    := alltrim( strToIso2022( padr( xValue, nLen ) ) )
+      else
+         cData    := alltrim( strToIso2022( xValue ) )
+      end
+   end
+
+   if lCurrency <> nil
+      hAttributes := { "Ccy" => "EUR" }
+   endif
+
+   ::Super:New( , cName, hAttributes, cData )
+
+Return ( Self )
+
+
+
+
+
+
+
+
+function cTime()
+
+   local strTime  := time()
+   strTime        := substr(strTime,1,2) + substr(strTime,4,2) + substr(strTime,7,2)
+
+return strTime
+
+function fDate( d )
+
+   local cDateFrm := Set( 4, "yyyy/mm/dd" )
+   local strDate  := If( d <> nil, dtos(d), dtos(date()) )
+
+   Set( 4, cDateFrm )
+
+return( strDate )
+
+function sDate( d )
+
+   local cDateFrm := Set( 4, "yyyy-mm-dd" )
+   local strDate  := If( d <> nil, dtoc(d), dtoc(date()) )
+
+   Set( 4, cDateFrm )
+
+return( strDate )
+
+function Dec2Str(nVal, nLen)
+
+   local strVal
+   strVal := str( nVal, nLen + 1, 2 )
+   strVal := strtran( strVal, "." )
+   strVal := strtran( strVal, " ", "0" )
+
+return( strVal )
+
+function IsoDateTime()
+
+return( sDate() + "T" + time() )
+
+function OutFile(nHandle, a)
+
+   local strRec := ""
+
+   aeval( a, {|e|  strRec += e } )
+   fwrite(nHandle, strRec + chr( 13 ) + chr( 10 ))
+
+return nil
+
+function Id_Name( cCountry, cCode, cNif )
+
+   local cId, n, nLen, cValue
+   local cAlgorithm := "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+   cId  := ""
+   nLen := len( cNif )
+   for n:= 1 to nLen
+      cValue := substr( cNif, n, 1 )
+      if isDigit(cValue)
+         cId += cValue
+      else
+         cId += str( at( cValue, cAlgorithm ) +9, 2, 0 )
+      endif
+   next
+
+   cId += str( at( substr(cCountry,1,1), cAlgorithm ) +9, 2, 0 )
+   cId += str( at( substr(cCountry,2,1), cAlgorithm ) +9, 2, 0 )
+   cId += "00"
+   cId := cCountry + strzero(98 - ( val(cId) % 97 ), 2) + cCode + cNif
+
+return padR(cId, 35)
+
+function id_File( cRef )
+
+   local cId   := "PRE" + fDate() + cTime() + strzero( seconds(), 5 ) + cRef
+
+return padR(cId, 35)
+
+function strToIso2022( xtxt )
+
+   LOCAL afrm, i, xret := "", xpos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   afrm  := {  { "À", "A" }, { "Á", "A" }, { "Â", "A" }, { "Ã", "A" }, { "Ä", "A" }, { "Å", "A" }, { "Æ", "A" }, { "Ç", "C" }, { "È", "E" }, { "É", "E" }, { "Ê", "E" }, { "Ë", "E" }, { "Ì", "I" }, { "Í", "I" }, { "Î", "I" }, { "Ï", "I" }, { "Ð", "D" }, { "Ñ", "N" }, { "Ò", "O" }, { "Ó", "O" }, { "Ô", "O" }, { "Õ", "O" }, { "Ö", "O" }, { "Ù", "U" }, { "Ú", "U" }, { "Û", "U" }, { "Ü", "U" }, { "Ý", "Y" }, { "à", "a" }, { "á", "a" }, { "â", "a" }, { "ã", "a" }, { "ä", "a" }, { "å", "a" }, { "æ", "a" }, { "ç", "c" }, { "è", "e" }, { "é", "e" }, { "ê", "e" }, { "ë", "e" }, { "ì", "i" }, { "í", "i" }, { "î", "i" }, { "ï", "i" }, { "ñ", "n" }, { "ò", "o" }, { "ó", "o" }, { "ô", "o" }, { "õ", "o" }, { "ö", "o" }, { "ù", "u" }, { "ú", "u" }, { "û", "u" }, { "ü", "u" }, { "ý", "y" }, { "ÿ", "y" }, { "Š", "S" }, { "š", "s" }, { "Ÿ", "Y" } }
+
+   for i := 1 to len( xtxt )
+      xpos := ascan( afrm, {| x | substr( xtxt, i, 1 ) == x[ 1 ] } )
+      if ( xpos > 0 )
+         xret += afrm[ xpos, 2 ]
+      else
+         xret += substr( xtxt, i, 1 )
+      endif
+   next
+
+return xret

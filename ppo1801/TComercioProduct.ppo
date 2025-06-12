@@ -1,0 +1,3782 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 12 ".\Prg\Comercio\TComercioProduct.prg"
+_HB_CLASS TComercioProduct ; function TComercioProduct ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TComercioProduct", iif( .T., { @TComercioConector() }, { @HBObject() } ), @TComercioProduct() ) ) ;
+
+   _HB_MEMBER { TComercio } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"TComercio"}, .F. )
+
+   _HB_MEMBER { aProducts } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aProducts"}, .F. )
+
+   _HB_MEMBER { idCategoryDefault } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"idCategoryDefault"}, .F. )
+   _HB_MEMBER { idTaxRulesGroup } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"idTaxRulesGroup"}, .F. )
+   _HB_MEMBER { idManufacturer } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"idManufacturer"}, .F. )
+
+   _HB_MEMBER isProductInDatabase( idProduct); oClass:AddMethod( "isProductInDatabase", @TComercioProduct_isProductInDatabase(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER isProductActiveInCurrentWeb(); oClass:AddMethod( "isProductActiveInCurrentWeb", @TComercioProduct_isProductActiveInCurrentWeb(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER isProductDeleteInCurrentWeb(); oClass:AddMethod( "isProductDeleteInCurrentWeb", @TComercioProduct_isProductDeleteInCurrentWeb(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER isProductInIncremental( idProduct); oClass:AddMethod( "isProductInIncremental", @TComercioProduct_isProductInIncremental(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER buildAllProductInformation(); oClass:AddMethod( "buildAllProductInformation", @TComercioProduct_buildAllProductInformation(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER buildProductInformation( idProduct); oClass:AddMethod( "buildProductInformation", @TComercioProduct_buildProductInformation(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER buildProduct( id); oClass:AddMethod( "buildProduct", @TComercioProduct_buildProduct(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER buildDeleteProduct( idProduct, lCleanProducts); oClass:AddMethod( "buildDeleteProduct", @TComercioProduct_buildDeleteProduct(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER buildHashProduct( idProduct, aImagesArticulos, aStockArticulo); oClass:AddMethod( "buildHashProduct", @TComercioProduct_buildHashProduct(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER getPrice(); oClass:AddMethod( "getPrice", @TComercioProduct_getPrice(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getPriceReduction(); oClass:AddMethod( "getPriceReduction", @TComercioProduct_getPriceReduction(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getPriceReductionTax(); oClass:AddInline( "getPriceReductionTax", {|Self | ( ( Self ) ), ( iif(  ( D():Articulos( ::getView() ) )->lIvaWeb, 1, 0 ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+      _HB_MEMBER getDescription(); oClass:AddInline( "getDescription", {|Self | ( ( Self ) ), ( iif(  !empty( ( D():Articulos( ::getView() ) )->mDestec ), alltrim( ( D():Articulos( ::getView() ) )->mDestec ), alltrim( ( D():Articulos( ::getView() ) )->Nombre ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER imagesProduct( id); oClass:AddMethod( "imagesProduct", @TComercioProduct_imagesProduct(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER langsProduct( id); oClass:AddMethod( "langsProduct", @TComercioProduct_langsProduct(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER stockProduct( id); oClass:AddMethod( "stockProduct", @TComercioProduct_stockProduct(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER insertNodeProductCategory(); oClass:AddMethod( "insertNodeProductCategory", @TComercioProduct_insertNodeProductCategory(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER insertProducts(); oClass:AddMethod( "insertProducts", @TComercioProduct_insertProducts(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER insertProduct(); oClass:AddMethod( "insertProduct", @TComercioProduct_insertProduct(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+         _HB_MEMBER insertProductPrestashopTable( hProduct); oClass:AddMethod( "insertProductPrestashopTable", @TComercioProduct_insertProductPrestashopTable(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+         _HB_MEMBER insertProductShop( idProduct, idCategory); oClass:AddMethod( "insertProductShop", @TComercioProduct_insertProductShop(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+         _HB_MEMBER insertProductLang( idProduct, idCategory); oClass:AddMethod( "insertProductLang", @TComercioProduct_insertProductLang(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+         _HB_MEMBER processImageProducts( idProduct, hProduct); oClass:AddMethod( "processImageProducts", @TComercioProduct_processImageProducts(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+            _HB_MEMBER insertImage( idProduct, hProduct, hImage, nImagePosition); oClass:AddMethod( "insertImage", @TComercioProduct_insertImage(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+               _HB_MEMBER insertImageLang( hProduct, hImage, idImagePrestashop); oClass:AddMethod( "insertImageLang", @TComercioProduct_insertImageLang(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+               _HB_MEMBER insertImageShop( idProduct, hProduct, hImage, idImagePrestashop); oClass:AddMethod( "insertImageShop", @TComercioProduct_insertImageShop(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER insertOneProducts(); oClass:AddMethod( "insertOneProducts", @TComercioProduct_insertOneProducts(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER insertOneProduct( hProduct); oClass:AddMethod( "insertOneProduct", @TComercioProduct_insertOneProduct(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER deleteProducts(); oClass:AddMethod( "deleteProducts", @TComercioProduct_deleteProducts(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER insertProductCategory( idProduct, idCategory); oClass:AddMethod( "insertProductCategory", @TComercioProduct_insertProductCategory(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER insertAditionalInformation(); oClass:AddMethod( "insertAditionalInformation", @TComercioProduct_insertAditionalInformation(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER truncateAllTables(); oClass:AddMethod( "truncateAllTables", @TComercioProduct_truncateAllTables(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER deleteProduct( hProduct); oClass:AddMethod( "deleteProduct", @TComercioProduct_deleteProduct(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER deleteImages( idProductPrestashop); oClass:AddMethod( "deleteImages", @TComercioProduct_deleteImages(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER inactivateProduct( idProduct); oClass:AddMethod( "inactivateProduct", @TComercioProduct_inactivateProduct(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cleangestoolReferences(); oClass:AddMethod( "cleangestoolReferences", @TComercioProduct_cleangestoolReferences(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER uploadImagesToPrestashop(); oClass:AddMethod( "uploadImagesToPrestashop", @TComercioProduct_uploadImagesToPrestashop(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER uploadImageToPrestashop( hProduct); oClass:AddMethod( "uploadImageToPrestashop", @TComercioProduct_uploadImageToPrestashop(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+         _HB_MEMBER buildFilesProductImages( hProductImage); oClass:AddMethod( "buildFilesProductImages", @TComercioProduct_buildFilesProductImages(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+         _HB_MEMBER ftpUploadFilesProductImages( hProductImage); oClass:AddMethod( "ftpUploadFilesProductImages", @TComercioProduct_ftpUploadFilesProductImages(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getTotalStock( hProduct); oClass:AddMethod( "getTotalStock", @TComercioProduct_getTotalStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER isTotalStockZero(); oClass:AddInline( "isTotalStockZero", {|Self, hProduct | ( ( Self ) ), ( ::getTotalStock( hProduct ) == 0 ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER insertReduction( hProduct, idProduct); oClass:AddMethod( "insertReduction", @TComercioProduct_insertReduction(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER processStockProduct( hProduct, idProduct); oClass:AddMethod( "processStockProduct", @TComercioProduct_processStockProduct(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER insertStockProduct( hStock); oClass:AddMethod( "insertStockProduct", @TComercioProduct_insertStockProduct(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getProductAttribute( idProductPrestashop, cCodWebValPr1, cCodWebValPr2); oClass:AddMethod( "getProductAttribute", @TComercioProduct_getProductAttribute(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getIdProductImage( id, cImgToken); oClass:AddMethod( "getIdProductImage", @TComercioProduct_getIdProductImage(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getDefaultProductImage( id, cImgToken); oClass:AddMethod( "getDefaultProductImage", @TComercioProduct_getDefaultProductImage(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getRootImage(); oClass:AddInline( "getRootImage", {|Self, hProductImage | ( ( Self ) ), ( cPatOut() + hget( hProductImage, "cPrefijoNombre" ) + ".jpg" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER putFileRootProductImage( hProductImage); oClass:AddMethod( "putFileRootProductImage", @TComercioProduct_putFileRootProductImage(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getCoverValue( lValue); oClass:AddMethod( "getCoverValue", @TComercioProduct_getCoverValue(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER notValidProductId(); oClass:AddInline( "notValidProductId", {|Self, idProduct | ( ( Self ) ), ( empty( idProduct ) .AND. !( ::TComercio:lDebugMode ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TComercioProduct ;
+
+
+
+static FUNCTION TComercioProduct_buildAllProductInformation( ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   ::writeText( "Procesando articulos ... " )
+
+   ( D():Articulos( ::getView() ) )->( ordsetfocus( "lWebShop" ) )
+
+   if ( D():Articulos( ::getView() ) )->( dbseek( ::getCurrentWebName() ) )
+
+      while ( alltrim( ( D():Articulos( ::getView() ) )->cWebShop ) == ::getCurrentWebName() ) .AND. !( ( D():Articulos( ::getView() ) )->( eof() ) )
+
+         ::buildProductInformation( ( D():Articulos( ::getView() ) )->Codigo )
+
+         ::writeText( "Procesando artículo " + alltrim( ( D():Articulos( ::getView() ) )->Codigo ) + " - " + alltrim( ( D():Articulos( ::getView() ) )->Nombre ) )
+
+         ( D():Articulos( ::getView() ) )->( dbskip() )
+
+      end
+
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TComercioProduct_buildProductInformation( idProduct ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   if !( ::isProductInDatabase( idProduct ) )
+      RETURN ( .F. )
+   end
+
+   if !( ::isProductActiveInCurrentWeb( idProduct ) )
+      RETURN ( .F. )
+   end
+
+
+
+
+
+
+   ::TComercioTax():buildTaxRuleGroup( ( D():Articulos( ::getView() ) )->TipoIva )
+
+   ::TComercioManufacturer():buildManufacturerProduct( ( D():Articulos( ::getView() ) )->cCodFab )
+
+   ::TComercioCategory():buildCategory( ( D():Articulos( ::getView() ) )->Familia )
+
+   ::TComercioProperty():buildPropertyProduct( ( D():Articulos( ::getView() ) )->Codigo )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TComercioProduct_isProductInDatabase( idProduct ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   if !( ( D():Articulos( ::getView() ) )->( dbseekinord( idProduct, "Codigo" ) ) )
+      ::writeText( "El artículo " + alltrim( idProduct  ) + " no se ha encontrado en la base de datos" )
+      RETURN ( .F. )
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TComercioProduct_isProductActiveInCurrentWeb( idProduct ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   if !( ( D():Articulos( ::getView() ) )->lPubInt )
+      ::writeText( "Artículo " + alltrim( idProduct ) + " no seleccionado para web" )
+      RETURN .F.
+   end
+
+   if ( alltrim( ( D():Articulos( ::getView() ) )->cWebShop ) <> ::getCurrentWebName() )
+      ::writeText( "Artículo " + alltrim( idProduct ) + " no pertence a la web seleccionada" )
+      RETURN .F.
+   end
+
+RETURN .T.
+
+
+
+static FUNCTION TComercioProduct_isProductInIncremental( idProduct ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   if !::TComercio:isIncrementalMode()
+      RETURN .F.
+   end
+
+   if !empty( ::TPrestashopId():getValueProduct( idProduct, ::getCurrentWebName() ) )
+      RETURN .F.
+   end
+
+RETURN .T.
+
+
+
+static FUNCTION TComercioProduct_isProductDeleteInCurrentWeb( idProduct ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   if ( ( D():Articulos( ::getView() ) )->lPubInt )
+      ::writeText( "Artículo " + alltrim( idProduct ) + " no eliminado de la web" )
+      RETURN .F.
+   end
+
+   if ( alltrim( ( D():Articulos( ::getView() ) )->cWebShop ) <> ::getCurrentWebName() )
+      ::writeText( "Artículo " + alltrim( idProduct ) + " no pertence a la web seleccionada" )
+      RETURN .F.
+   end
+
+RETURN .T.
+
+
+
+static FUNCTION TComercioProduct_buildProduct( idProduct, lCleanProducts ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local nTotStockArticulo    := 0
+   local aStockArticulo       := {}
+   local aImagesArticulos     := {}
+   local aLangsArticulos      := {}
+
+   If( lCleanProducts == nil, lCleanProducts := .F., ) ;
+
+   if lCleanProducts
+      ::aProducts             := {}
+   else
+      if aScan( ::aProducts, {|h| hGet( h, "id" ) == idProduct } ) <> 0
+         RETURN ( .F. )
+      end
+   end
+
+   if !( ::isProductInDatabase( idProduct ) )
+      RETURN ( .F. )
+   end
+
+   if !( ::isProductActiveInCurrentWeb( idProduct ) )
+      RETURN ( .F. )
+   end
+
+
+
+   nTotStockArticulo             := StocksModel():nGlobalStockArticulo( idProduct, ::TComercioConfig():getStore() )
+
+   if !( ::TComercioConfig():isProcessWithoutStock() ) .AND. ( nTotStockArticulo <= 0 )
+      ::writeText( "El artículo " + alltrim( idProduct ) + " no tiene stock en el almacen de la web")
+      RETURN ( .F. )
+   end
+
+
+
+   aImagesArticulos           := ::imagesProduct( idProduct )
+   if !( ::TComercioConfig():isProcessWithoutImage() ) .AND. empty( aImagesArticulos )
+      ::writeText( "El artículo " + alltrim( idProduct ) + " no tiene imagenes")
+      RETURN ( .F. )
+   end
+
+
+
+   aLangsArticulos            := ::langsProduct( idProduct )
+
+
+
+   aStockArticulo             := StocksModel():aStockArticulo( idProduct, ::TComercioConfig():getStore() )
+
+
+
+
+
+
+
+
+   aAdd( aStockArticulo, { "articulo" => idProduct, "almacen" => ::TComercioConfig():getStore(), "lote" => Space( 14 ), "propiedad1" => Space( 20 ), "propiedad2" => Space( 20 ), "valor1" => Space( 20 ), "valor2" => Space( 20 ), "unidades" => nTotStockArticulo } )
+
+
+
+   ::buildHashProduct( idProduct, aImagesArticulos, aStockArticulo, aLangsArticulos )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TComercioProduct_buildDeleteProduct( idProduct, lCleanProducts ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   If( lCleanProducts == nil, lCleanProducts := .F., ) ;
+
+   if lCleanProducts
+      ::aProducts             := {}
+   else
+      if aScan( ::aProducts, {|h| hGet( h, "id" ) == idProduct } ) <> 0
+         RETURN ( .F. )
+      end
+   end
+
+   if !( ::isProductInDatabase( idProduct ) )
+      RETURN ( .F. )
+   end
+
+   if !( ::isProductDeleteInCurrentWeb( idProduct ) )
+      RETURN ( .F. )
+   end
+
+   ::buildHashProduct( idProduct )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TComercioProduct_buildHashProduct( idProduct, aImagesArticulos, aStockArticulo, aLangsArticulos ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   If( aImagesArticulos == nil, aImagesArticulos := {}, ) ;
+   If( aStockArticulo == nil, aStockArticulo := {}, ) ;
+   If( aLangsArticulos == nil, aLangsArticulos := {}, ) ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   aAdd( ::aProducts,   {  "id"                    => idProduct, "uuid"                  => ArticulosModel():getUuid( idProduct ), "name"                  => alltrim( ( D():Articulos( ::getView() ) )->Nombre ), "id_manufacturer"       => ( D():Articulos( ::getView() ) )->cCodFab , "id_tax_rules_group"    => ( D():Articulos( ::getView() ) )->TipoIva , "id_category_default"   => ( D():Articulos( ::getView() ) )->Familia , "reference"             => ( D():Articulos( ::getView() ) )->Codigo , "weight"                => ( D():Articulos( ::getView() ) )->nPesoKg , "specific_price"        => ( D():Articulos( ::getView() ) )->lSbrInt, "description_short"     => alltrim( ( D():Articulos( ::getView() ) )->Nombre ) , "meta_title"            => alltrim( ( D():Articulos( ::getView() ) )->cTitSeo ) , "meta_description"      => alltrim( ( D():Articulos( ::getView() ) )->cDesSeo ) , "meta_keywords"         => alltrim( ( D():Articulos( ::getView() ) )->cKeySeo ) , "lPublicRoot"           => ( D():Articulos( ::getView() ) )->lPubPor, "cImagen"               => alltrim( ( D():Articulos( ::getView() ) )->cImagen ), "link_rewrite"          => cLinkRewrite( ( D():Articulos( ::getView() ) )->Nombre ), "price"                 => ::getPrice(), "reduction"             => ::getPriceReduction(), "reduction_tax"         => ::getPriceReductionTax(), "description"           => ::getDescription(), "aImages"               => aImagesArticulos, "aStock"                => aStockArticulo, "aLangs"                => aLangsArticulos } )
+
+RETURN ( ::aProducts )
+
+
+
+
+static FUNCTION TComercioProduct_getPrice( ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local priceProduct      := 0
+
+
+
+   if ( D():Articulos( ::getView() ) )->lSbrInt .AND. ( D():Articulos( ::getView() ) )->pVtaWeb <> 0
+
+      priceProduct         := ( D():Articulos( ::getView() ) )->pVtaWeb
+
+   else
+
+      if ( D():Articulos( ::getView() ) )->lIvaWeb
+         priceProduct      := round( ( D():Articulos( ::getView() ) )->nImpIva1 / ( ( nIva( D():TiposIva( ::getView() ), ( D():Articulos( ::getView() ) )->TipoIva ) / 100 ) + 1 ), 6 )
+      else
+         priceProduct      := ( D():Articulos( ::getView() ) )->nImpInt1
+      end
+
+   end
+
+RETURN ( priceProduct )
+
+
+
+
+
+
+static FUNCTION TComercioProduct_getPriceReduction( ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local priceReduction    := 0
+
+   if ( D():Articulos( ::getView() ) )->lSbrInt .AND. ( D():Articulos( ::getView() ) )->pVtaWeb <> 0
+
+      if ( D():Articulos( ::getView() ) )->lIvaWeb
+         priceReduction    := ( D():Articulos( ::getView() ) )->pVtaWeb
+         priceReduction    += ( D():Articulos( ::getView() ) )->pVtaWeb * nIva( D():TiposIva( ::getView() ), ( D():Articulos( ::getView() ) )->TipoIva ) / 100
+         priceReduction    -= ( D():Articulos( ::getView() ) )->nImpIva1
+      else
+         priceReduction    := ( D():Articulos( ::getView() ) )->pVtaWeb
+         priceReduction    -= ( D():Articulos( ::getView() ) )->nImpInt1
+      end
+
+   end
+
+RETURN ( priceReduction )
+
+
+
+static FUNCTION TComercioProduct_imagesProduct( idProduct ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local nDefault       := 0
+   local cImagen
+   local aImages        := {}
+   local cImgToken      := ""
+   local aImgToken      := {}
+   local nOrdAntImg
+   local nOrdAntDiv
+
+
+
+   nOrdAntDiv           := ( D():ArticuloPrecioPropiedades( ::getView() ) )->( ordsetfocus( "cCodigo" ) )
+
+   if ( D():ArticuloPrecioPropiedades( ::getView() ) )->( dbseek( idProduct ) )
+
+      while ( D():ArticuloPrecioPropiedades( ::getView() ) )->cCodArt == idProduct .AND. !( D():ArticuloPrecioPropiedades( ::getView() ) )->( eof() )
+
+         if !empty( ( D():ArticuloPrecioPropiedades( ::getView() ) )->mImgWeb )
+
+            aImgToken   := hb_atokens( ( D():ArticuloPrecioPropiedades( ::getView() ) )->mImgWeb, "," )
+
+            for each cImgToken in aImgToken
+
+               if file( cFileBmpName( cImgToken ) ) .AND. ascan( aImages, {|a| hGet( a, "name" ) == cImgToken } ) == 0
+
+                  if ::getDefaultProductImage( idProduct, cImgToken )
+                     nDefault++
+                  end
+
+
+
+
+                  aadd( aImages, {  "name"               => cFileBmpName( cImgToken ), "idProductgestool"   => idProduct, "id"                 => ::getIdProductImage( idProduct, cImgToken ), "lDefault"           => if( nDefault > 0, .F., ::getDefaultProductImage( idProduct, cImgToken ) ) } )
+               end
+
+            next
+
+         end
+
+         ( D():ArticuloPrecioPropiedades( ::getView() ) )->( dbskip() )
+
+      end
+
+   end
+
+   ( D():ArticuloPrecioPropiedades( ::getView() ) )->( ordsetfocus( nOrdAntDiv ) )
+
+
+
+   if empty( aImages )
+
+      nOrdAntImg     := ( D():ArticuloImagenes( ::getView() ) )->( ordsetfocus( "cCodArt" ) )
+
+      if ( D():ArticuloImagenes( ::getView() ) )->( dbseek( idProduct ) )
+
+         while ( D():ArticuloImagenes( ::getView() ) )->cCodArt == idProduct .AND. ( D():ArticuloImagenes( ::getView() ) )->( !eof() )
+
+            cImagen  := alltrim( ( D():ArticuloImagenes( ::getView() ) )->cImgArt )
+
+            if file( cFileBmpName( cImagen ) ) .AND. ascan( aImages, {|a| hGet( a, "name" ) == cImagen } ) == 0
+
+               if ( D():ArticuloImagenes( ::getView() ) )->lDefImg
+                  nDefault++
+               end
+
+
+
+
+               aadd( aImages, {  "name"               => cFileBmpName( cImagen ), "idProductgestool"   => idProduct, "id"                 => ( D():ArticuloImagenes( ::getView() ) )->nId, "lDefault"           => if( nDefault > 0, .F., ( D():ArticuloImagenes( ::getView() ) )->lDefImg ) } )
+            end
+
+            ( D():ArticuloImagenes( ::getView() ) )->( dbskip() )
+
+         end
+
+      end
+
+      ( D():ArticuloImagenes( ::getView() ) )->( ordsetfocus( nOrdAntImg ) )
+
+   end
+
+
+
+   if !empty( aImages ) .AND. ascan( aImages, {|a| hGet( a, "lDefault" ) == .T. } ) == 0
+      hSet( aImages[ 1 ], "lDefault", .T. )
+   end
+
+RETURN ( aImages )
+
+
+
+static FUNCTION TComercioProduct_langsProduct( idProduct ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local idLang
+   local aLangs         := {}
+   local nOrdenAnterior
+
+
+
+   nOrdenAnterior       := ( D():ArticuloLenguaje( ::getView() ) )->( ordsetfocus( "cCodArt" ) )
+
+   if ( D():ArticuloLenguaje( ::getView() ) )->( dbseek( idProduct ) )
+
+      while ( D():ArticuloLenguaje( ::getView() ) )->cCodArt == idProduct .AND. !( D():ArticuloLenguaje( ::getView() ) )->( eof() )
+
+         idLang         := ::TComercioConfig():getLang( ( D():ArticuloLenguaje( ::getView() ) )->cCodLen )
+
+         if !empty( idLang )
+
+
+            aadd( aLangs,  {  "idLang"             => idLang, "shortDescription"   => ( D():ArticuloLenguaje( ::getView() ) )->cDesTik, "longDescription"    => ( D():ArticuloLenguaje( ::getView() ) )->cDesArt } )
+         end
+
+         ( D():ArticuloLenguaje( ::getView() ) )->( dbskip() )
+
+      end
+
+   end
+
+   ( D():ArticuloLenguaje( ::getView() ) )->( ordsetfocus( nOrdenAnterior ) )
+
+RETURN ( aLangs )
+
+
+
+static FUNCTION TComercioProduct_stockProduct( id ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local sStock
+   local nStock            := 0
+   local aStockProduct     := {}
+   local aStockArticulo    := ::oStock():aStockArticulo( id, ::TComercioConfig():getStore() )
+   local lApunteResumen    := .T.
+
+   for each sStock in aStockArticulo
+
+      if sStock:nUnidades > 0
+
+
+
+
+         lApunteResumen    := (  AllTrim( sStock:cCodigoPropiedad1 ) <> "" .OR. AllTrim( sStock:cCodigoPropiedad2 ) <> "" .OR. AllTrim( sStock:cValorPropiedad1 ) <> "" .OR. AllTrim( sStock:cValorPropiedad2 ) <> "" )
+
+
+         if dbSeekInOrd( id + sStock:cCodigoPropiedad1 + sStock:cCodigoPropiedad2 + sStock:cValorPropiedad1 + sStock:cValorPropiedad2, "cCodArt", D():ArticuloPrecioPropiedades( ::getView() ) ) .OR. ( AllTrim( sStock:cCodigoPropiedad1 ) == "" .AND. AllTrim( sStock:cCodigoPropiedad2 ) == "" .AND. AllTrim( sStock:cValorPropiedad1 ) == "" .AND. AllTrim( sStock:cValorPropiedad2 ) == "" )
+
+
+
+
+
+
+            aAdd( aStockProduct, {  "idProduct"             => id , "idFirstProperty"       => sStock:cCodigoPropiedad1 , "idSecondProperty"      => sStock:cCodigoPropiedad2 , "valueFirstProperty"    => sStock:cValorPropiedad1 , "valueSecondProperty"   => sStock:cValorPropiedad2 , "unitStock"             => sStock:nUnidades } )
+
+         end
+
+         nStock            += sStock:nUnidades
+
+      end
+
+   next
+
+
+
+   if lApunteResumen
+
+
+
+
+
+
+      aAdd( aStockProduct, {  "idProduct"             => id , "idFirstProperty"       => space( 20 ) , "idSecondProperty"      => space( 20 ) , "valueFirstProperty"    => space( 20 ) , "valueSecondProperty"   => space( 20 ) , "unitStock"             => nStock } )
+
+   end
+
+RETURN ( aStockProduct )
+
+
+
+static FUNCTION TComercioProduct_truncateAllTables( ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local tableToDelete
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   local tablesToDelete := {  "tax", "tax_lang", "tax_rule", "tax_rules_group", "tax_rules_group_shop", "manufacturer", "manufacturer_shop", "manufacturer_lang", "image", "image_shop", "image_lang" , "attribute", "attribute_lang", "attribute_shop", "attribute_impact", "attribute_group", "attribute_group_lang", "product", "product_attachment", "product_attribute", "product_attribute_combination", "product_attribute_shop", "product_attribute_image", "product_country_tax", "product_download", "product_group_reduction_cache", "product_shop", "product_lang", "product_sale", "product_tag", "specific_price", "feature", "feature_lang", "feature_product", "feature_value", "feature_value_lang", "stock_available" }
+
+   for each tableToDelete in tablesToDelete
+      ::truncateTable( tableToDelete )
+   next
+
+RETURN ( self )
+
+
+
+static FUNCTION TComercioProduct_cleangestoolReferences( ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   ::writeText( "Limpiamos las referencias de las tablas de tipos de impuestos" )
+
+   ::TPrestashopId():deleteDocumentValuesTax( ::getCurrentWebName() )
+   ::TPrestashopId():deleteDocumentValuesTaxRuleGroup( ::getCurrentWebName() )
+
+   ::writeText( "Limpiamos las referencias de las tablas de fabricantes" )
+
+   ::TPrestashopId():deleteDocumentValuesManufacturer( ::getCurrentWebName() )
+
+   ::writeText( "Limpiamos las referencias de las tablas de propiedades" )
+
+   ::TPrestashopId():deleteDocumentValuesAttribute( ::getCurrentWebName() )
+   ::TPrestashopId():deleteDocumentValuesAttributeGroup( ::getCurrentWebName() )
+
+   ::writeText( "Limpiamos las referencias de las tablas de artículos" )
+
+   ::TPrestashopId():deleteDocumentValuesProduct( ::getCurrentWebName() )
+
+   ::writeText( "Limpiamos las referencias de las imagenes" )
+
+   ::TPrestashopId():deleteDocumentValuesImage( ::getCurrentWebName() )
+
+RETURN ( Self )
+
+
+
+
+
+
+static FUNCTION TComercioProduct_insertProducts( ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local hProduct
+   local nProducts   := len( ::aProducts )
+
+   ::meterProcesoSetTotal( nProducts )
+
+   for each hProduct in ::aProducts
+
+      ::meterProcesoText( "Eliminando artículo anterior " + alltrim( str( hb_enumindex() ) ) + " de " + alltrim( str( nProducts ) ) )
+
+      ::deleteProduct( hProduct )
+
+      ::meterProcesoText( "Subiendo artículo " + alltrim( str( hb_enumindex() ) ) + " de " + alltrim( str( nProducts ) ) )
+
+      ::insertProduct( hProduct )
+
+   next
+
+RETURN ( Self )
+
+
+
+static FUNCTION TComercioProduct_insertOneProducts( ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+
+   aeval( ::aProducts, {|hProduct| ::insertOneProduct( hProduct ) } )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TComercioProduct_deleteProducts( ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local hProduct
+   local nProducts   := len( ::aProducts )
+
+   ::meterProcesoSetTotal( nProducts )
+
+   for each hProduct in ::aProducts
+
+      ::meterProcesoText( "Eliminando artículo anterior " + alltrim( str( hb_enumindex() ) ) + " de " + alltrim( str( nProducts ) ) )
+
+      ::deleteProduct( hProduct )
+
+   next
+
+RETURN ( Self )
+
+
+
+static FUNCTION TComercioProduct_insertProduct( hProduct ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local idProduct
+
+   ::idCategoryDefault  := ::TPrestashopId():getValueCategory( hGet( hProduct, "id_category_default" ), ::getCurrentWebName(), 2 )
+
+   ::idTaxRulesGroup    := ::TPrestashopId():getValueTaxRuleGroup( hGet( hProduct, "id_tax_rules_group" ), ::getCurrentWebName() )
+
+   ::idManufacturer     := ::TPrestashopId():getValueManufacturer( hGet( hProduct, "id_manufacturer" ), ::getCurrentWebName() )
+
+
+
+   idProduct               := ::insertProductPrestashopTable( hProduct, hGet( hProduct, "id_category_default" ) )
+
+   if ::notValidProductId( idProduct )
+      RETURN ( Self )
+   end
+
+   ::insertNodeProductCategory( idProduct, hGet( hProduct, "id_category_default" ) )
+
+
+
+   if hGet( hProduct, "lPublicRoot" )
+      ::insertNodeProductCategory( idProduct, 2 )
+   end
+
+   ::insertProductShop( idProduct, hProduct )
+
+   ::insertProductLang( idProduct, hProduct )
+
+   ::processImageProducts( idProduct, hProduct )
+
+   ::TComercioProperty():processPropertyProduct( idProduct, hProduct )
+
+   ::insertReduction( idProduct, hProduct )
+
+   ::processStockProduct( idProduct, hProduct )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TComercioProduct_insertOneProduct( hProduct ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local idProduct
+   local aProperties
+
+
+
+
+   ::TComercioCategory():getOrBuildCategory( hGet( hProduct, "id_category_default" ), FamiliasModel():getField( "cFamCmb", "cCodFam", hGet( hProduct, "id_category_default" ) ) )
+   ::idCategoryDefault  := ::TPrestashopId():getValueCategory( hGet( hProduct, "id_category_default" ), ::getCurrentWebName(), 2 )
+
+
+
+
+
+   if !Empty( hGet( hProduct, "id_manufacturer" ) )
+      ::idManufacturer     := ::TComercio:TPrestashopWebService:getManufacturerWebService():InsertOrUpdateManufacturer( hGet( hProduct, "id_manufacturer" ) )
+   end
+
+
+
+
+   ::TComercioTax():getOrBuildTaxRulesGroup( hGet( hProduct, "id_tax_rules_group" ) )
+
+
+
+
+   idProduct            := ::TComercio:TPrestashopWebService:getProductsWebService():InsertOrUpdateProduct( hProduct )
+   ::processImageProducts( idProduct, hProduct )
+
+
+
+
+
+   aProperties    := ArticulosPrecios():getHashProperties( hGet( hProduct, "id" ) )
+
+   if isArray( aProperties ) .AND. Len( aProperties ) > 0
+      ::TComercio:TPrestashopWebService:getPropiedadesWebService():setProperties( aProperties )
+      ::TComercio:TPrestashopWebService:getValoresPropiedadesWebService():setValuesProperties( aProperties )
+      ::TComercio:TPrestashopWebService:getCombinationsWebService():setCombinations( aProperties )
+   end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RETURN ( Self )
+
+
+
+static FUNCTION TComercioProduct_insertProductPrestashopTable( hProduct, idCategory ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local cCommand
+   local idProduct
+
+   ::writeText( "Añadiendo artículo: " + hGet( hProduct, "description" ) )
+
+   idProduct         := 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   cCommand          := "INSERT IGNORE INTO " + ::cPrefixTable( "product" ) + " ( " +  "id_manufacturer, " +  "id_tax_rules_group, " +  "id_category_default, " +  "id_shop_default, " +  "quantity, " +  "minimal_quantity, " +  "price, " +  "reference, " +  "weight, " +  "active, " +  "date_add, " +  "date_upd ) " +  "VALUES ( " +  "'" + alltrim( str( ::idManufacturer ) ) + "', " +  "'" + alltrim( str( ::idTaxRulesGroup ) ) + "', " +  "'" + alltrim( str( ::idCategoryDefault ) ) + "', " +  "'1', " +  "'1', " +  "'1', " +  "'" + alltrim( str( hGet( hProduct, "price" ) ) ) + "', " +  "'" + alltrim( hGet( hProduct, "id" ) ) + "', " +  "'" + alltrim( str( hGet( hProduct, "weight" ) ) ) + "', " +  "'1', " +  "'" + dtos( GetSysDate() ) + "', " +  "'" + dtos( GetSysDate() ) + "' )"
+
+   if ::commandExecDirect( cCommand )
+
+      idProduct      := ::oConexionMySQLDatabase():getInsertId()
+
+      if !empty( idProduct )
+         ::TPrestashopId():setValueProduct( hGet( hProduct, "id" ), ::getCurrentWebName(), idProduct )
+      end
+
+   else
+
+      ::writeText( "Error al insertar el artículo " + hGet( hProduct, "name" ) + " en la tabla " + ::cPrefixTable( "product" ), 3 )
+
+      RETURN ( idProduct )
+
+   end
+
+RETURN ( idProduct )
+
+
+
+static FUNCTION TComercioProduct_insertProductShop( idProduct, hProduct ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local cCommand
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   cCommand    := "INSERT IGNORE INTO " + ::cPrefixTable( "product_shop" ) + " ( " + "id_product, " +  "id_shop, " +  "id_category_default, " +  "id_tax_rules_group, " +  "on_sale, " +  "price, " +  "active, " +  "date_add, " +  "date_upd )" +  " VALUES ( " +  "'" + alltrim( str( idProduct ) ) + "', " +  "'1', " +  "'" + alltrim( str( ::idCategoryDefault ) ) + "', " +  "'" + alltrim( str( ::idTaxRulesGroup ) ) + "', " +  "'0', " +  "'" + alltrim( str( hGet( hProduct, "price" ) ) ) + "', " +  "'1', " +  "'" + dtos( GetSysDate() ) + "', " +  "'" + dtos( GetSysDate() ) + "' )"
+
+   if !::commandExecDirect( cCommand )
+      ::writeText( "Error al insertar el artículo " + hGet( hProduct, "name" ) + " en la tabla " + ::cPrefixTable( "product_shop" ), 3 )
+   end
+
+   SysRefresh()
+
+RETURN ( self )
+
+
+
+static FUNCTION TComercioProduct_insertProductLang( idProduct, hProduct ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local hLang
+   local cCommand
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   cCommand    := "INSERT IGNORE INTO " + ::cPrefixTable( "product_lang" ) + " ( " + "id_product, " +  "id_lang, " +  "description, " +  "description_short, " +  "link_rewrite, " +  "meta_title, " +  "meta_description, " +  "meta_keywords, " +  "name, " +  "available_now, " +  "available_later ) " +  "VALUES ( " +  "'" + alltrim( str( idProduct ) ) + "', " +  ::getLanguage() + ", " +  "'" + ::oConexionMySQLDatabase():escapeStr( hGet( hProduct, "description" ) ) + "', " +  "'" + ::oConexionMySQLDatabase():escapeStr( hGet( hProduct, "description_short" ) ) + "', " +  "'" + hGet( hProduct, "link_rewrite" ) + "', " +  "'" + ::oConexionMySQLDatabase():escapeStr( hGet( hProduct, "meta_title" ) ) + "', " +  "'" + ::oConexionMySQLDatabase():escapeStr( hGet( hProduct, "meta_description" ) ) + "', " +  "'" + ::oConexionMySQLDatabase():escapeStr( hGet( hProduct, "meta_keywords" ) ) + "', " +  "'" + ::oConexionMySQLDatabase():escapeStr( hGet( hProduct, "name" ) ) + "', " +  "'En stock', " +  "'' )"
+
+   if !::commandExecDirect( cCommand )
+      ::writeText( "Error al insertar el artículo " + hGet( hProduct, "name" ) + " en la tabla " + ::cPrefixTable( "product_lang" ), 3 )
+   end
+
+   for each hLang in hGet( hProduct, "aLangs" )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      cCommand := "INSERT IGNORE INTO " + ::cPrefixTable( "product_lang" ) + " ( " + "id_product, " +  "id_lang, " +  "description, " +  "description_short, " +  "link_rewrite, " +  "meta_title, " +  "meta_description, " +  "meta_keywords, " +  "name, " +  "available_now, " +  "available_later ) " +  "VALUES ( " +  "'" + alltrim( str( idProduct ) ) + "', " +  hget( hLang, "idLang" ) + ", " +  "'" + ::oConexionMySQLDatabase():escapeStr( hGet( hLang, "longDescription" ) ) + "', " +  "'" + ::oConexionMySQLDatabase():escapeStr( hGet( hLang, "shortDescription" ) ) + "', " +  "'" + hGet( hProduct, "link_rewrite" ) + "', " +  "'" + ::oConexionMySQLDatabase():escapeStr( hGet( hProduct, "meta_title" ) ) + "', " +  "'" + ::oConexionMySQLDatabase():escapeStr( hGet( hProduct, "meta_description" ) ) + "', " +  "'" + ::oConexionMySQLDatabase():escapeStr( hGet( hProduct, "meta_keywords" ) ) + "', " +  "'" + ::oConexionMySQLDatabase():escapeStr( hGet( hProduct, "name" ) ) + "', " +  "'En stock', " +  "'' )"
+
+      if !::commandExecDirect( cCommand )
+         ::writeText( "Error al insertar el artículo " + hGet( hProduct, "name" ) + " en la tabla " + ::cPrefixTable( "product_lang" ), 3 )
+      end
+
+   next
+
+   SysRefresh()
+
+RETURN ( self )
+
+
+static FUNCTION TComercioProduct_insertNodeProductCategory( idProduct, idCategory ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local parentCategory
+   local nodeParentCategory
+
+   parentCategory          := ::TComercioCategory():getParentCategory( idCategory )
+
+   ::insertProductCategory( idProduct, parentCategory )
+
+   nodeParentCategory      := ::TComercioCategory():getNodeParentCategory( idCategory )
+
+   if !empty( nodeParentCategory )
+      ::insertNodeProductCategory( idProduct, nodeParentCategory )
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION TComercioProduct_insertProductCategory( idProduct, idCategory ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local cCommand
+
+
+
+   cCommand       := "DELETE FROM " + ::cPrefixTable( "category_product" )             + " " +  "WHERE id_category = " + alltrim( str( max( idCategory, 1 ) ) )   + " " +  "AND id_product = " + alltrim( str( idProduct ) )
+
+   ::commandExecDirect( cCommand )
+
+
+
+
+
+
+   cCommand       := "INSERT IGNORE INTO " + ::cPrefixTable( "category_product" ) + " ( " +  "id_category, " +  "id_product ) " +  "VALUES ( " +  "'" + alltrim( str( max( idCategory, 1 ) ) ) + "', " +  "'" + alltrim( str( idProduct ) ) + "' )"
+
+   if !::commandExecDirect( cCommand )
+      ::writeText( "Error al insertar el artículo " + str( idProduct ) + " en la tabla " + ::cPrefixTable( "category_product" ), 3 )
+      RETURN ( .F. )
+   end
+
+   SysRefresh()
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TComercioProduct_processImageProducts( idProduct, hProduct ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local hImage
+   local nImagePosition       := 1
+   local idImagePrestashop    := 0
+
+   if valtype( idProduct ) == "C"
+      idProduct   := Val( idProduct )
+   end
+
+   for each hImage in hGet( hProduct, "aImages" )
+
+      idImagePrestashop       := ::insertImage( idProduct, hProduct, hImage, nImagePosition )
+
+      if idImagePrestashop <> 0
+
+         ::insertImageLang( hProduct, hImage, idImagePrestashop )
+
+         ::insertImageShop( idProduct, hProduct, hImage, idImagePrestashop )
+
+      end
+
+      if idImagePrestashop == 0
+         idImagePrestashop    := ::TPrestashopId():getValueImage( hGet( hProduct, "id" ) + Str( hGet( hImage, "id" ), 10 ), ::getCurrentWebName() )
+      end
+
+      if idImagePrestashop <> 0
+
+
+
+         hSet( hImage, "nTipoImagen", 1 )
+         hSet( hImage, "cCarpeta", alltrim( str( idImagePrestashop ) ) )
+         hSet( hImage, "cPrefijoNombre", alltrim( str( idImagePrestashop ) ) )
+         hSet( hImage, "aTypeImages", {} )
+         hSet( hImage, "aRemoteImages", {} )
+
+      end
+
+      nImagePosition++
+
+   next
+
+RETURN .T.
+
+
+
+static FUNCTION TComercioProduct_insertImage( idProduct, hProduct, hImage, nImagePosition ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local cCommand
+   local idImagePrestashop    := 0
+
+   if hb_isNil( idProduct )
+      Return (0)
+   end
+
+   if valtype( idProduct ) == "C"
+      idProduct   := Val( idProduct )
+   end
+
+
+
+
+
+
+
+
+   cCommand := "INSERT IGNORE INTO " + ::cPrefixTable( "image" ) + " ( " + "id_product, " +  "position, " +  "cover ) " +  "VALUES ( " +  "'" + alltrim( str( idProduct ) ) + "', " +  "'" + alltrim( str( nImagePosition ) ) + "', " +  ::getCoverValue( hGet( hImage, "lDefault" ) ) + " )"
+
+   if ::commandExecDirect( cCommand )
+      idImagePrestashop       := ::oConexionMySQLDatabase():GetInsertId()
+      ::writeText( "Insertada la imagen " + hGet( hProduct, "name" ) + " correctamente en la tabla " + ::cPrefixTable( "image" ), 3 )
+   else
+      ::writeText( "Error al insertar la imagen " + hGet( hProduct, "name" ) + " en la tabla " + ::cPrefixTable( "image" ), 3 )
+   end
+
+   if !empty( idImagePrestashop )
+      ::TPrestashopId():setValueImage( hGet( hProduct, "id" ) + str( hGet( hImage, "id" ), 10 ), ::getCurrentWebName(), idImagePrestashop )
+   end
+
+RETURN ( idImagePrestashop )
+
+
+
+static FUNCTION TComercioProduct_insertImageLang( hProduct, hImage, idImagePrestashop ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local cCommand
+
+
+
+
+
+
+
+
+   cCommand := "INSERT IGNORE INTO " + ::cPrefixTable( "image_lang" ) + " ( "                             +  "id_image, "                                                                     +  "id_lang, "                                                                      +  "legend ) "                                                                      +  "VALUES ("                                                                          +  "'" + alltrim( str( idImagePrestashop ) ) + "', "                                +  ::getLanguage() + ", "                                                           +  "'" + ::oConexionMySQLDatabase():escapeStr( hGet( hProduct, "name" ) ) + "' )"
+
+   if ::commandExecDirect( cCommand )
+      ::writeText( "Insertada la imagen " + hGet( hProduct, "name" ) + " correctamente en la tabla " + ::cPrefixTable( "image_lang" ), 3 )
+   else
+      ::writeText( "Error al insertar la imagen " + hGet( hProduct, "name" ) + " en la tabla " + ::cPrefixTable( "image_lang" ), 3 )
+   end
+
+RETURN .T.
+
+
+
+static FUNCTION TComercioProduct_insertImageShop( idProduct, hProduct, hImage, idImagePrestashop ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local cCommand
+
+
+
+
+
+
+
+
+
+
+   cCommand := "INSERT IGNORE INTO " + ::cPrefixTable( "image_shop" ) + " ( "                         +  if( ::lProductIdColumnImageShop(), "id_product, ", "" )                             +  "id_image, "                                                                        +  "id_shop, "                                                                         +  "cover ) "                                                                          +  "VALUES ( "                                                                            +  if( ::lProductIdColumnImageShop(), "'" + alltrim( str( idProduct ) ) + "', ", "" )  +  "'" + alltrim( str( idImagePrestashop ) ) + "', "                                   +  "'1', "                                                                             +  ::getCoverValue( hGet( hImage, "lDefault" ) ) + " )"
+
+   if ::commandExecDirect( cCommand )
+      ::writeText( "Insertada la imagen " + hGet( hProduct, "name" ) + " correctamente en la tabla " + ::cPrefixTable( "image_shop" ), 3 )
+   else
+      ::writeText( "Error al insertar la imagen " + hGet( hProduct, "name" ) + " en la tabla " + ::cPrefixTable( "image_shop" ), 3 )
+   end
+
+RETURN .T.
+
+
+
+static FUNCTION TComercioProduct_deleteProduct( hProduct ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local oQuery
+   local oQuery2
+   local cCommand
+   local idDelete                      := 0
+   local idDelete2                     := 0
+   local idProductgestool              := hget( hProduct, "id" )
+   local idProductPrestashop
+
+   idProductPrestashop                 := alltrim( str( ::TPrestashopId():getValueProduct( idProductgestool, ::getCurrentWebName() ) ) )
+   if empty( idProductPrestashop )
+      RETURN ( Self )
+   end
+
+   ::writeText( "Eliminando artículo de Prestashop" )
+
+   cCommand          := "DELETE FROM " + ::cPrefixTable( "product" ) + " WHERE id_product = " + idProductPrestashop
+   ::commandExecDirect( cCommand )
+
+   ::writeText( "Eliminando adjuntos de Prestashop"  )
+
+   cCommand          := "DELETE FROM " + ::cPrefixTable( "product_attachment" ) + " WHERE id_product = " + idProductPrestashop
+   ::commandExecDirect( cCommand )
+
+   ::writeText( "Eliminando impuestos de Prestashop"  )
+
+   cCommand          := "DELETE FROM " + ::cPrefixTable( "product_country_tax" ) + " WHERE id_product = " + idProductPrestashop
+   ::commandExecDirect( cCommand )
+
+   ::writeText( "Eliminando archivos de Prestashop"  )
+
+   cCommand          := "DELETE FROM " + ::cPrefixTable( "product_download" ) + " WHERE id_product = " + idProductPrestashop
+   ::commandExecDirect( cCommand )
+
+   ::writeText( "Eliminando cache de Prestashop"  )
+
+   cCommand          := "DELETE FROM " + ::cPrefixTable( "product_group_reduction_cache" ) + " WHERE id_product = " + idProductPrestashop
+   ::commandExecDirect( cCommand )
+
+   ::writeText( "Eliminando multitienda de Prestashop"  )
+
+   cCommand          := "DELETE FROM " + ::cPrefixTable( "product_shop" ) + " WHERE id_product = " + idProductPrestashop
+   ::commandExecDirect( cCommand )
+
+   ::writeText( "Eliminando descripciones de Prestashop"  )
+
+   cCommand          := "DELETE FROM " + ::cPrefixTable( "product_lang" ) + " WHERE id_product = " + idProductPrestashop
+   ::commandExecDirect( cCommand )
+
+   ::writeText( "Eliminando ofertas de Prestashop"  )
+
+   cCommand          := "DELETE FROM " + ::cPrefixTable( "product_sale" ) + " WHERE id_product = " + idProductPrestashop
+   ::commandExecDirect( cCommand )
+
+   ::writeText( "Eliminando etiquetas de Prestashop"  )
+
+   cCommand          := "DELETE FROM " + ::cPrefixTable( "product_tag" ) + " WHERE id_product = " + idProductPrestashop
+   ::commandExecDirect( cCommand )
+
+   ::writeText( "Eliminando complementos de Prestashop"  )
+
+   cCommand          := "DELETE FROM " + ::cPrefixTable( "product_supplier" ) + " WHERE id_product = " + idProductPrestashop
+   ::commandExecDirect( cCommand )
+
+   ::writeText( "Eliminando transporte de Prestashop"  )
+
+   cCommand          := "DELETE FROM " + ::cPrefixTable( "product_carrier" ) + " WHERE id_product = " + idProductPrestashop
+   ::commandExecDirect( cCommand )
+
+   ::writeText( "Eliminando atributos de Prestashop"  )
+
+   cCommand          := "SELECT * FROM " + ::cPrefixTable( "product_attribute" ) +  " WHERE id_product=" + idProductPrestashop
+   oQuery            := ::queryExecDirect( cCommand )
+
+   ::writeText( "Eliminando lineas atributos de Prestashop"  )
+
+   if oQuery:Open() .AND. oQuery:RecCount() > 0
+
+      oQuery:GoTop()
+
+      while !oQuery:Eof()
+
+         idDelete    := oQuery:FieldGet( 1 )
+
+         if !empty( idDelete )
+
+            cCommand          := "DELETE FROM " + ::cPrefixTable( "product_attribute" ) + " WHERE id_product_attribute = " + alltrim( str( idDelete ) )
+            ::commandExecDirect( cCommand )
+
+            cCommand          := "DELETE FROM " + ::cPrefixTable( "product_attribute_combination" ) + " WHERE id_product_attribute = " + alltrim( str( idDelete ) )
+            ::commandExecDirect( cCommand )
+
+            cCommand          := "DELETE FROM " + ::cPrefixTable( "product_attribute_image" ) + " WHERE id_product_attribute = " + alltrim( str( idDelete ) )
+            ::commandExecDirect( cCommand )
+
+            cCommand          := "DELETE FROM " + ::cPrefixTable( "product_attribute_shop" ) + " WHERE id_product_attribute = " + alltrim( str( idDelete ) )
+            ::commandExecDirect( cCommand )
+
+         end
+
+         oQuery:Skip()
+
+         SysRefresh()
+
+      end
+
+   end
+
+   ::writeText( "Eliminando precios especificos de Prestashop"  )
+
+   cCommand          := "DELETE FROM " + ::cPrefixTable( "specific_price" ) + " WHERE id_product = " + idProductPrestashop
+   ::commandExecDirect( cCommand )
+
+   ::writeText( "Eliminando prioridad de precio de Prestashop"  )
+
+   cCommand          := "DELETE FROM " + ::cPrefixTable( "specific_price_priority" ) + " WHERE id_product = " + idProductPrestashop
+   ::commandExecDirect( cCommand )
+
+   sysrefresh()
+
+
+
+   ::writeText( "Eliminando imígenes de prestashop" )
+
+   ::deleteImages( idProductPrestashop )
+
+
+
+   ::writeText( "Eliminando referencias en gestool" )
+
+   ::TPrestashopId():deleteDocumentValuesProduct( idProductgestool, ::getCurrentWebName() )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TComercioProduct_inactivateProduct( idProduct ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local cCommand
+   local idProductPrestashop
+
+   idProductPrestashop  := alltrim( str( ::TPrestashopId():getValueProduct( idProduct, ::getCurrentWebName() ) ) )
+
+   if empty( idProductPrestashop )
+      RETURN ( Self )
+   end
+
+   ::writeText( "Desactivando artículo " + alltrim( idProduct ) + " de prestashop" )
+
+
+
+   cCommand             := "UPDATE " + ::cPrefixTable( "product" ) +  " SET active = 0, indexed = 0" +  " WHERE id_product = '" + idProductPrestashop + "'"
+
+
+
+   ::addMegaCommand( cCommand )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TComercioProduct_deleteImages( idProductPrestashop ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local idDelete
+   local oQuery
+   local cCommand    := ""
+
+   if empty( idProductPrestashop )
+      RETURN ( Self )
+   end
+
+   cCommand          := "SELECT * FROM " + ::cPrefixTable( "image" ) +  " WHERE id_product=" + idProductPrestashop
+   oQuery            := ::queryExecDirect( cCommand )
+
+   if oQuery:Open() .AND. oQuery:RecCount() > 0
+
+      oQuery:GoTop()
+
+      while !oQuery:Eof()
+
+         idDelete    := oQuery:FieldGet( 1 )
+
+         cCommand    := "DELETE FROM " + ::cPrefixTable( "image" ) + " WHERE id_image = " + alltrim( str( idDelete ) )
+         ::commandExecDirect( cCommand )
+
+         cCommand    := "DELETE FROM " + ::cPrefixTable( "image_shop" ) + " WHERE id_image = " + alltrim( str( idDelete ) )
+         ::commandExecDirect( cCommand )
+
+         cCommand    := "DELETE FROM " + ::cPrefixTable( "image_lang" ) + " WHERE id_image = " + alltrim( str( idDelete ) )
+         ::commandExecDirect( cCommand )
+
+         oQuery:Skip()
+
+         SysRefresh()
+
+      end
+
+   end
+
+   oQuery:Free()
+
+RETURN nil
+
+
+
+static FUNCTION TComercioProduct_uploadImagesToPrestashop( ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local hProduct
+   local nProducts   := len( ::aProducts )
+
+   ::meterProcesoSetTotal( nProducts )
+
+   for each hProduct in ::aProducts
+
+      ::uploadImageToPrestashop( hProduct )
+
+      ::meterProcesoText( "Subiendo imagenes " + alltrim( str( hb_enumindex() ) ) + " de " + alltrim( str( nProducts ) ) )
+
+   next
+
+   sysrefresh()
+
+RETURN ( Self )
+
+
+
+
+static FUNCTION TComercioProduct_uploadImageToPrestashop( hProduct ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local cTypeImage
+   local hProductImage
+   local aProductsImages   := hGet( hProduct, "aImages" )
+
+   if empty( aProductsImages )
+      RETURN ( nil )
+   end
+
+   CursorWait()
+
+   ::meterProcesoSetTotal( len( aProductsImages ) )
+
+   for each hProductImage in aProductsImages
+
+      ::buildFilesProductImages( hProductImage )
+
+      ::ftpUploadFilesProductImages( hProductImage )
+
+      ::putFileRootProductImage( hProductImage )
+
+   next
+
+   CursorWe()
+
+RETURN ( nil )
+
+
+
+static FUNCTION TComercioProduct_buildFilesProductImages( hProductImage ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local rootImage
+   local fileImage
+   local oTipoImage
+
+
+
+   if !hhaskey( hProductImage, "cPrefijoNombre" )  .OR. !hhaskey( hProductImage, "nTipoImagen" )     .OR. !hhaskey( hProductImage, "aTypeImages" )
+
+      RETURN ( nil )
+
+   end
+
+   CursorWait()
+
+   rootImage               := ::getRootImage( hProductImage )
+
+   ::meterProcesoText( "Root imagen obtenida : " + rootImage )
+
+   saveImage( hget( hProductImage, "name" ), rootImage )
+
+   ::meterProcesoText( "Imagen : " + hget( hProductImage, "name" ) + ", guardada como : " + rootImage )
+
+   aadd( hget( hProductImage, "aTypeImages" ), rootImage )
+
+   for each oTipoImage in ::aTypeImagesPrestashop()
+
+      if hget( hProductImage, "nTipoImagen" ) == 1 .AND. oTipoImage:lProducts
+
+         fileImage         := cPatOut() + hget( hProductImage, "cPrefijoNombre" ) + "-" + oTipoImage:cNombreTipo + ".jpg"
+
+         saveImage( rootImage, fileImage, oTipoImage:nAnchoTipo, oTipoImage:nAltoTipo )
+
+         aadd( hget( hProductImage, "aTypeImages" ), fileImage )
+
+         SysRefresh()
+
+      end
+
+   next
+
+   CursorWe()
+
+RETURN ( nil )
+
+
+
+static FUNCTION TComercioProduct_ftpUploadFilesProductImages( hProductImage ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local cTypeImage
+   local cRemoteImage
+
+   if !hhaskey( hProductImage, "aTypeImages")
+      RETURN ( nil )
+   end
+
+   for each cTypeImage in hget( hProductImage, "aTypeImages" )
+
+      ::meterProcesoText( "Subiendo imagen " + cTypeImage + " en directorio " + ::cDirectoryProduct() + "/" + ::getRecursiveFolderPrestashop( hget( hProductImage, "cCarpeta" ) ) )
+
+      ::oFtp():CreateFile( cTypeImage, ::cDirectoryProduct() + "/" + ::getRecursiveFolderPrestashop( hget( hProductImage, "cCarpeta" ) ) )
+
+      cRemoteImage      := "http://" + ::TComercioConfig():getMySqlServer() + "/" + ::cDirectoryProduct() + "/" + ::getRecursiveFolderPrestashop( hget( hProductImage, "cCarpeta" ) ) + cNoPath( cTypeImage )
+
+      aadd( hget( hProductImage, "aRemoteImages" ), cRemoteImage )
+
+      SysRefresh()
+
+      ferase( cTypeImage )
+
+      SysRefresh()
+
+   next
+
+RETURN ( nil )
+
+
+
+static FUNCTION TComercioProduct_insertAditionalInformation( ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   ::TComercioTax():insertTaxesPrestashop()
+
+   ::TComercioManufacturer():insertManufacturersPrestashop()
+
+   ::TComercioProperty():insertPropertiesPrestashop()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TComercioProduct_getTotalStock( aStock ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local hStock
+   local nTotalStock := 0
+
+   for each hStock in aStock
+      nTotalStock    += hGet( hStock, "unitStock" )
+   next
+
+RETURN ( nTotalStock )
+
+
+
+static FUNCTION TComercioProduct_insertReduction( idProduct, hProduct ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local cCommand       := ""
+
+   if hGet( hProduct, "specific_price" ) .AND. hGet( hProduct, "reduction" ) <> 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      cCommand          := "INSERT IGNORE INTO " + ::cPrefixTable( "specific_price" ) + " ( " +  "id_specific_price_rule, " +  "id_cart, " +  "id_product, " +  "id_shop, " +  "id_shop_group, " +  "id_currency, " +  "id_country, " +  "id_group, " +  "id_customer, " +  "id_product_attribute, " +  "price, " +  "from_quantity, " +  "reduction, " +  if( ::lSpecificPriceIdColumnReductionTax, "reduction_tax, ", "" ) +  "reduction_type ) " +  "VALUES ( " +  "'0', " +  "'0', " +  "'" + alltrim( str( idProduct ) ) + "', " +  "'1', " +  "'0', " +  "'0', " +  "'0', " +  "'0', " +  "'0', " +  "'0', " +  "'-1', " +  "'1', " +  "'" + alltrim( str( hGet( hProduct, "reduction" ) ) ) + "', " +  if( ::lSpecificPriceIdColumnReductionTax, "'" + alltrim( str( hGet( hProduct, "reduction_tax" ) ) ) + "', ", "" ) +  "'amount' )"
+
+      if !::commandExecDirect( cCommand )
+         ::writeText( "Error al insertar una oferta de " + hGet( hProduct, "name" ), 3 )
+      end
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TComercioProduct_processStockProduct( idProduct, hProduct ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local hStock
+   local cCommand
+   local idProductPrestashop
+
+   idProductPrestashop           := ::TPrestashopId():getValueProduct( hget( hProduct, "id" ), ::getCurrentWebName() )
+
+
+   cCommand                      := "DELETE FROM " + ::cPrefixTable( "stock_available" ) + " "                          +  "WHERE id_product = " + alltrim( str( idProductPrestashop ) )
+
+   ::commandExecDirect( cCommand )
+
+   for each hStock in hGet( hProduct, "aStock" )
+
+      ::insertStockProduct( idProductPrestashop, hStock )
+
+   next
+
+RETURN ( Self )
+
+
+
+static FUNCTION TComercioProduct_insertStockProduct( idProductPrestashop, hStock ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local cText
+   local cCommand
+   local unitStock
+   local attributeFirstProperty
+   local attributeSecondProperty
+   local idProductAttribute      := 0
+   local isStockByProperty       := .F.
+
+
+
+
+   isStockByProperty             := !empty( hget( hStock, "propiedad1" ) )    .OR. !empty( hget( hStock, "valor1" ) )        .OR. !empty( hget( hStock, "propiedad2" ) )    .OR. !empty( hget( hStock, "valor2" ) )
+
+   attributeFirstProperty        := ::TPrestashopId():getValueAttribute( hget( hStock, "propiedad1" ) + hget( hStock, "valor1" ),   ::getCurrentWebName() )
+   attributeSecondProperty       := ::TPrestashopId():getValueAttribute( hget( hStock, "propiedad2" ) + hget( hStock, "valor2" ),   ::getCurrentWebName() )
+
+   unitStock                     := hget( hStock, "unidades" )
+
+   if ( attributeFirstProperty <> 0 ) .OR. ( attributeSecondProperty <> 0 )
+
+      idProductAttribute         := ::getProductAttribute( idProductPrestashop, attributeFirstProperty, attributeSecondProperty )
+
+   end
+
+   if idProductAttribute <> 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         cCommand                      := "INSERT IGNORE INTO " + ::cPrefixTable( "stock_available" ) + " ( "                        +  "id_product, "                                                                   +  "id_product_attribute, "                                                         +  "id_shop, "                                                                      +  "id_shop_group, "                                                                +  "quantity, "                                                                     +  "depends_on_stock, "                                                             +  "out_of_stock ) "                                                                +  "VALUES ( "                                                                         +  "'" + alltrim( str( idProductPrestashop ) ) + "', "                              +  "'" + alltrim( str( idProductAttribute ) ) + "', "                               +  "'1', "                                                                          +  "'0', "                                                                          +  "'" + alltrim( str( unitStock ) ) + "', "                                        +  "'0', "                                                                          +  "'2' )"
+
+         ::commandExecDirect( cCommand )
+
+   else
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         cCommand                      := "INSERT IGNORE INTO " + ::cPrefixTable( "stock_available" ) + " ( "                        +  "id_product, "                                                                   +  "id_product_attribute, "                                                         +  "id_shop, "                                                                      +  "id_shop_group, "                                                                +  "quantity, "                                                                     +  "depends_on_stock, "                                                             +  "out_of_stock ) "                                                                +  "VALUES ( "                                                                         +  "'" + alltrim( str( idProductPrestashop ) ) + "', "                              +  "'0', "                                                                          +  "'1', "                                                                          +  "'0', "                                                                          +  "'" + alltrim( str( unitStock ) ) + "', "                                        +  "'0', "                                                                          +  "'2' )"
+
+         ::commandExecDirect( cCommand )
+
+   end
+
+
+
+   ::writeText(   "Actualizando stock con propiedades : " + alltrim( str( attributeFirstProperty ) ) + " , " +  alltrim( str( attributeSecondProperty ) ) + ", " +  "cantidad : " + alltrim( str( unitStock ) ) )
+
+RETURN .T.
+
+
+
+static FUNCTION TComercioProduct_getProductAttribute( idProductPrestashop, cCodWebValPr1, cCodWebValPr2 ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local idProductAttribute   := 0
+   local cCommand             := ""
+   local oQuery
+   local oQueryCombination
+   local lPrp1                := .F.
+   local lPrp2                := .F.
+
+   do case
+      case !empty( cCodWebValPr1 ) .AND. empty( cCodWebValPr2 )
+
+         cCommand             := "SELECT * FROM " + ::cPrefixTable( "product_attribute" ) + " WHERE id_product = " + alltrim( str( idProductPrestashop ) )
+
+         oQuery               := ::queryExecDirect( cCommand )
+
+         if oQuery:Open() .AND. oQuery:recCount() > 0
+
+            oQuery:GoTop()
+            while !oQuery:Eof()
+
+               cCommand       := "SELECT * FROM " + ::cPrefixTable( "product_attribute_combination" ) + " WHERE id_product_attribute = " + alltrim( str( oQuery:FieldGet( 1 ) ) )
+
+               oQueryCombination        := ::queryExecDirect( cCommand )
+
+                  if oQueryCombination:Open() .AND. oQueryCombination:recCount() == 1 .AND. oQueryCombination:FieldGet( 1 ) == cCodWebValPr1
+                     idProductAttribute     := oQuery:FieldGet( 1 )
+                  end
+
+               oQuery:Skip()
+
+            end
+
+         end
+
+      case !empty( cCodWebValPr1 ) .AND. !empty( cCodWebValPr2 )
+
+         cCommand                := "SELECT * FROM " + ::cPrefixTable( "product_attribute" ) + " WHERE id_product = " + alltrim( str( idProductPrestashop ) )
+
+         oQuery                  := ::queryExecDirect( cCommand )
+
+         if oQuery:Open()
+
+            oQuery:GoTop()
+            while !oQuery:Eof()
+
+               cCommand          := "SELECT * FROM " + ::cPrefixTable( "product_attribute_combination" ) + " WHERE id_product_attribute=" + alltrim( str( oQuery:FieldGet( 1 ) ) )
+
+               oQueryCombination           := ::queryExecDirect( cCommand )
+
+                  if oQueryCombination:Open() .AND. oQueryCombination:recCount() == 2
+
+                     oQueryCombination:GoTop()
+                     while !oQueryCombination:Eof()
+
+                        if !lPrp1
+                           lPrp1 := ( oQueryCombination:FieldGet( 1 ) == cCodWebValPr1 )
+                        end
+
+                        oQueryCombination:Skip()
+
+                     end
+
+                     oQueryCombination:GoTop()
+                     while !oQueryCombination:Eof()
+
+                        if !lPrp2
+                           lPrp2 := ( oQueryCombination:FieldGet( 1 ) == cCodWebValPr2 )
+                        end
+
+                        oQueryCombination:Skip()
+
+                     end
+
+                     if lPrp1 .AND. lPrp2
+                        idProductAttribute     := oQuery:FieldGet( 1 )
+                     end
+
+                  end
+
+               oQuery:Skip()
+
+               lPrp1          := .F.
+               lPrp2          := .F.
+
+            end
+
+         end
+
+   end
+
+RETURN ( idProductAttribute )
+
+
+
+static FUNCTION TComercioProduct_getIdProductImage( id, cImgToken ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   if ( D():ArticuloImagenes( ::getView() ) )->( dbseek( id ) )
+
+      while ( D():ArticuloImagenes( ::getView() ) )->cCodArt == id .AND. ( D():ArticuloImagenes( ::getView() ) )->( !eof() )
+
+         if alltrim( ( D():ArticuloImagenes( ::getView() ) )->cImgArt ) == alltrim( cImgToken )
+            RETURN ( ( D():ArticuloImagenes( ::getView() ) )->nId )
+         end
+
+         ( D():ArticuloImagenes( ::getView() ) )->( dbskip() )
+
+      end
+
+   end
+
+RETURN ( 0 )
+
+
+
+static FUNCTION TComercioProduct_getDefaultProductImage( id, cImgToken ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   if ( D():ArticuloImagenes( ::getView() ) )->( dbseek( id ) )
+
+      while ( D():ArticuloImagenes( ::getView() ) )->cCodArt == id .AND. ( D():ArticuloImagenes( ::getView() ) )->( !eof() )
+
+         if alltrim( ( D():ArticuloImagenes( ::getView() ) )->cImgArt ) == alltrim( cImgToken )
+            RETURN ( ( D():ArticuloImagenes( ::getView() ) )->lDefImg )
+         end
+
+         ( D():ArticuloImagenes( ::getView() ) )->( dbskip() )
+
+      end
+
+   end
+
+RETURN ( .F. )
+
+
+
+static FUNCTION TComercioProduct_putFileRootProductImage( hProductImage ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   local rootImage
+   local cNameImage
+   local aRemoteImages
+   local idProductgestool
+
+   if hhaskey( hProductImage, "name" )
+      cNameImage        := hget( hProductImage, "name" )
+   end
+
+   if hhaskey( hProductImage, "aRemoteImages" )
+      aRemoteImages     := hget( hProductImage, "aRemoteImages" )
+   end
+
+   if hhaskey( hProductImage, "idProductgestool" )
+      idProductgestool  := hget( hProductImage, "idProductgestool" )
+   end
+
+   if empty( cNameImage )
+      RETURN .F.
+   end
+
+   if empty( aRemoteImages )
+      RETURN .F.
+   end
+
+   if empty( idProductgestool )
+      RETURN .F.
+   end
+
+   rootImage               := aRemoteImages[ 1 ]
+
+   ::meterProcesoText( "Guardando imagen " + alltrim( rootImage ) + " en la base de datos" )
+
+   if ( D():ArticuloImagenes( ::getView() ) )->( dbseek( idProductgestool ) )
+
+      while ( alltrim( ( D():ArticuloImagenes( ::getView() ) )->cCodArt ) == alltrim( idProductgestool ) ) .AND. ( D():ArticuloImagenes( ::getView() ) )->( !eof() )
+
+         if alltrim( ( D():ArticuloImagenes( ::getView() ) )->cImgArt ) == alltrim( cNameImage )
+            if ( D():ArticuloImagenes( ::getView() ) )->( dbrlock() )
+               ( D():ArticuloImagenes( ::getView() ) )->cRmtArt   := rootImage
+               ( D():ArticuloImagenes( ::getView() ) )->( dbunlock() )
+            end
+         end
+
+         ( D():ArticuloImagenes( ::getView() ) )->( dbskip() )
+
+      end
+
+   end
+
+RETURN ( .F. )
+
+
+
+static FUNCTION TComercioProduct_getCoverValue( lValue ) ; local Self AS CLASS TComercioProduct := QSelf() AS CLASS TComercioProduct
+
+   if lValue
+      RETURN "1"
+   end
+
+   if ::TComercioConfig():isCoverValueNull()
+      RETURN "null"
+   end
+
+RETURN "0"

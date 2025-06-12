@@ -1,0 +1,2495 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 14 ".\.\Prg\Tgethlp.prg"
+_HB_CLASS TGetHlp ; function TGetHlp ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TGetHlp", iif( .T., { @TGet() }, { @HBObject() } ), @TGetHlp() ) ) ;
+
+   _HB_MEMBER { bHelp } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bHelp"}, .F. )
+   _HB_MEMBER { bMult } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bMult"}, .F. )
+   _HB_MEMBER { cBmp } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cBmp"}, .F. )
+   _HB_MEMBER { oBmp } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBmp"}, .F. )
+   _HB_MEMBER { oSay } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSay"}, .F. )
+   _HB_MEMBER { oHelpText } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oHelpText"}, .F. )
+   _HB_MEMBER { cHelpText } ; oClass:AddMultiData(, Space( 50 ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cHelpText"}, .F. )
+
+   _HB_MEMBER { Original } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"Original"}, .F. )
+
+   _HB_MEMBER { lValidado } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lValidado"}, .F. )
+   _HB_MEMBER { OriginalKeys } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"OriginalKeys"}, .F. )
+
+   _HB_MEMBER { bKeyUp } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bKeyUp"}, .F. )
+
+   _HB_MEMBER { lGotFocus } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lGotFocus"}, .F. )
+   _HB_MEMBER { lNeedGetFocus } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lNeedGetFocus"}, .F. )
+
+   _HB_MEMBER { bOldWhen } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bOldWhen"}, .F. )
+   _HB_MEMBER { bOldValid } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bOldValid"}, .F. )
+   _HB_MEMBER { bOldLostFocus } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bOldLostFocus"}, .F. )
+
+   _HB_MEMBER { bPreValidate } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bPreValidate"}, .F. )
+   _HB_MEMBER { bPostValidate } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bPostValidate"}, .F. )
+
+   _HB_MEMBER { nMargin } ; oClass:AddMultiData(, 16, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nMargin"}, .F. )
+
+   _HB_MEMBER { cError } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cError"}, .F. )
+
+   _HB_MEMBER New() AS CLASS TGetHlp; oClass:AddMethod( "New", @TGetHlp_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ReDefine() AS CLASS TGetHlp; oClass:AddMethod( "ReDefine", @TGetHlp_ReDefine(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Display(); oClass:AddMethod( "Display", @TGetHlp_Display(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Destroy(); oClass:AddMethod( "Destroy", @TGetHlp_Destroy(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EvalHelp(); oClass:AddMethod( "EvalHelp", @TGetHlp_EvalHelp(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER KeyChar( nKey, nFlags); oClass:AddMethod( "KeyChar", @TGetHlp_KeyChar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER KeyUp(); oClass:AddInline( "KeyUp", {|Self, nKey, nFlags | ( ( Self ) ), ( if( !empty( ::bKeyUp ), eval( ::bKeyUp ), ), ::Super:KeyUp( nKey, nFlags ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetPicture(); oClass:AddInline( "SetPicture", {|Self, cPicture | ( ( Self ) ), ( ::cPicture  := cPicture, ::oGet:Picture := cPicture, ::Refresh()  ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Home(); oClass:AddInline( "Home", {|Self | ( ( Self ) ), ( ::oGet:Home(), ::SetPos( ::oGet:Pos ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EvalMult(); oClass:AddInline( "EvalMult", {|Self | ( ( Self ) ), ( if( ::bMult <> nil, eval( ::bMult, Self ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Hide(); oClass:AddMethod( "Hide", @TGetHlp_Hide(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Show(); oClass:AddMethod( "Show", @TGetHlp_Show(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetText(); oClass:AddInline( "SetText", {|Self, cText | ( ( Self ) ), ( if( ::oSay <> nil, ::oSay:SetText( cText ), ::cText( cText ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER evalPreValidate(); oClass:AddInline( "evalPreValidate", {|Self | ( ( Self ) ), ( if( ::bPreValidate <> nil, eval( ::bPreValidate, Self ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER evalPostValidate(); oClass:AddInline( "evalPostValidate", {|Self | ( ( Self ) ), ( if( ::bPostValidate <> nil, eval( ::bPostValidate, Self ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER HardEnable(); oClass:AddMethod( "HardEnable", @TGetHlp_HardEnable(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER HardDisable(); oClass:AddMethod( "HardDisable", @TGetHlp_HardDisable(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GotFocus(); oClass:AddMethod( "GotFocus", @TGetHlp_GotFocus(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetDlgCode( nLastKey); oClass:AddMethod( "GetDlgCode", @TGetHlp_GetDlgCode(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER LostFocus( hCtlFocus); oClass:AddMethod( "LostFocus", @TGetHlp_LostFocus(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lValid(); oClass:AddMethod( "lValid", @TGetHlp_lValid(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setError( cError); oClass:AddMethod( "setError", @TGetHlp_setError(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getOriginal(); oClass:AddInline( "getOriginal", {|Self | ( ( Self ) ), ( ::Original ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setOriginal(); oClass:AddInline( "setOriginal", {|Self, value | ( ( Self ) ), ( ::Original := value ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER isOriginalChanged(); oClass:AddInline( "isOriginalChanged", {|Self, value | ( ( Self ) ), ( ::Original <> value ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addOriginalKey( value); oClass:AddMethod( "addOriginalKey", @TGetHlp_addOriginalKey(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getOriginalKey(); oClass:AddInline( "getOriginalKey", {|Self | ( ( Self ) ), ( ::OriginalKeys ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setOriginalKey(); oClass:AddInline( "setOriginalKey", {|Self, value | ( ( Self ) ), ( ::OriginalKeys := value ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TGetHlp ;
+
+
+
+
+
+
+
+static FUNCTION TGetHlp_New( nRow, nCol, bSetGet, oWnd, nWidth, nHeight, cPict, bValid, nClrFore, nClrBack, oFont, lDesign, oCursor, lPixel, cMsg, lUpdate, bWhen, lCenter, lRight, bChanged, lReadOnly, lPassword, lNoBorder, nHelpId, lSpinner, bUp, bDown, bMin, bMax, bHelp, bMult, cBmp ) ; local Self AS CLASS TGetHlp := QSelf() AS CLASS TGetHlp
+
+   If( cBmp == nil, cBmp := "", ) ;
+
+
+
+
+
+   ::Super:New(  nRow, nCol, bSetGet, oWnd, nWidth, nHeight, cPict, bValid, nClrFore, nClrBack, oFont, lDesign, oCursor, lPixel, cMsg, lUpdate, bWhen, lCenter, lRight, bChanged, lReadOnly, lPassword, lNoBorder, nHelpId, lSpinner, bUp, bDown, bMin, bMax )
+
+   ::bHelp           := bHelp
+   ::bMult           := bMult
+   ::cBmp            := cBmp
+
+   ::lNeedGetFocus   := .F.
+   ::lGotFocus       := .F.
+
+RETURN Self
+
+
+
+
+
+
+static FUNCTION TGetHlp_ReDefine( nId, bSetGet, oWnd, nHelpId, cPict, bValid, nClrFore, nClrBack, oFont, oCursor, cMsg, lUpdate, bWhen, bChanged, lReadOnly, lSpinner, bUp, bDown, bMin, bMax, bHelp, bMult, cBmp, nIdSay, nIdText ) ; local Self AS CLASS TGetHlp := QSelf() AS CLASS TGetHlp
+
+   local oError
+   local oBlock
+
+   oBlock            := ErrorBlock( { | oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   If( cBmp == nil, cBmp := "", ) ;
+
+
+
+   ::Super:ReDefine( nId, bSetGet, oWnd, nHelpId, cPict, bValid, nClrFore, nClrBack, oFont, oCursor, cMsg, lUpdate, bWhen, bChanged, lReadOnly, lSpinner, bUp, bDown, bMin, bMax )
+
+   ::bHelp           := bHelp
+   ::bMult           := bMult
+   ::cBmp            := cBmp
+
+   ::lNeedGetFocus   := .F.
+   ::lGotFocus       := .F.
+
+   ::lVisible        := .T.
+
+   if !empty( nIdSay )
+      ::oSay         := TSay():ReDefine( nIdSay, nil, oWnd )
+   end
+
+   if !empty( nIdText )
+      ::oHelpText    := TGet():ReDefine( nIdText, { | u | If( PCount() == 0, ::cHelpText, ::cHelpText := u ) }, oWnd, , , , , , oFont, , , .F., {||.F.} )
+   end
+
+   RECOVER USING oError
+
+      msgStop( "Imposible crear el control TGetHlp." + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+   end
+   ErrorBlock( oBlock )
+
+RETURN Self
+
+
+
+static FUNCTION TGetHlp_Display( ) ; local Self AS CLASS TGetHlp := QSelf() AS CLASS TGetHlp
+
+   if !Empty( ::cBmp ) .AND. Empty( ::oBmp )
+
+      ::oBmp               := TBitmap():New( 0, Self:nWidth - ( ::nMargin + 4 ),,, ::cBmp, ,.T., Self, {|| ::EvalHelp()},,,,,,,,.T. )
+      ::oBmp:lTransparent  := .T.
+
+      SendMessage( ::hWnd, 211, nOr( 1, 2 ), nMakeLong( 0, ::nMargin ) )
+
+   end
+
+RETURN ::Super:display()
+
+
+
+static FUNCTION TGetHlp_Destroy( ) ; local Self AS CLASS TGetHlp := QSelf() AS CLASS TGetHlp
+
+   if ::oBmp <> nil
+      ::oBmp:End()
+   end
+
+   if ::oSay <> nil
+      ::oSay:End()
+   end
+
+   if ::oHelpText <> nil
+      ::oHelpText:End()
+   end
+
+RETURN ( ::Super:Destroy() )
+
+
+
+static FUNCTION TGetHlp_Hide( ) ; local Self AS CLASS TGetHlp := QSelf() AS CLASS TGetHlp
+
+   if ::oSay <> nil
+      ::oSay:Hide()
+   end
+
+   if ::oHelpText <> nil
+      ::oHelpText:Hide()
+   end
+
+RETURN ( ::Super:Hide() )
+
+
+
+static FUNCTION TGetHlp_Show( ) ; local Self AS CLASS TGetHlp := QSelf() AS CLASS TGetHlp
+
+   if ::oSay <> nil
+      ::oSay:Show()
+   end
+
+   if ::oHelpText <> nil
+      ::oHelpText:Show()
+   end
+
+RETURN ( ::Super:Show() )
+
+
+
+static FUNCTION TGetHlp_KeyChar( nKey, nFlags ) ; local Self AS CLASS TGetHlp := QSelf() AS CLASS TGetHlp
+
+   local nHi, nLo
+   local lAccept
+   local bKeyAction := SetKey( nKey )
+
+    if ::lValidado
+        ::lValidado     := .F.
+        ::OriginalKeys  := ""
+    end
+
+   if nKey == 27
+      ::oWnd:KeyChar( nKey, nFlags )
+      RETURN 1
+   endif
+
+   if nKey == 29
+    ::addOriginalKey( space( 1 ) )
+   end
+
+   if ! Empty( ::cPicture ) .AND. "@!" $ ::cPicture
+      nKey = Asc( Upper( Chr( nKey ) ) )
+   endif
+
+   if bKeyAction <> nil .AND. lAnd( nFlags, 16777216 )
+      Eval( bKeyAction, ProcName( 4 ), ProcLine( 4 ), Self )
+      RETURN 0
+   endif
+
+   if ::lReadOnly
+      if nKey == 27
+         ::oWnd:End()
+      endif
+      RETURN 0
+   endif
+
+   do case
+      case nKey == 43 .AND. ::bHelp <> nil
+         ::EvalHelp()
+
+      case nKey == 42 .AND. ::bMult <> nil
+         ::EvalMult()
+
+      case nKey == 8
+           RETURN 0
+
+      case nKey == 9 .AND. GetKeyState( 16 )
+           if ::bChange <> nil
+              lAccept = Eval( ::bChange, nKey, nFlags, Self )
+              if hb_islogical( lAccept ) .AND. lAccept
+                 if Upper( ::oWnd:ClassName() ) == "TCOMBOBOX"
+                    ::oWnd:oWnd:GoPrevCtrl( ::hWnd )
+                 else
+                    ::oWnd:GoPrevCtrl( ::hWnd )
+                 endif
+              endif
+           else
+              if Upper( ::oWnd:ClassName() ) == "TCOMBOBOX"
+                 ::oWnd:oWnd:GoPrevCtrl( ::hWnd )
+              else
+                 ::oWnd:GoPrevCtrl( ::hWnd )
+              endif
+           endif
+           RETURN 0
+
+      case nKey == 9 .OR. nKey == 13
+           if ::bChange <> nil .AND. ( ::oGet:Changed .OR. ( ::oGet:buffer <> nil .AND. ::oGet:UnTransform() <> ::oGet:Original ) )
+              lAccept = Eval( ::bChange, nKey, nFlags, Self )
+              if hb_islogical( lAccept ) .AND. lAccept
+                 ::oWnd:GoNextCtrl( ::hWnd )
+              endif
+           else
+              ::oWnd:GoNextCtrl( ::hWnd )
+           endif
+
+
+               if nKey == 13
+                  ::Super:KeyChar( nKey, nFlags )
+               endif
+
+
+           RETURN 0
+
+      case nKey >= 32 .AND. nKey < 256
+
+
+
+              if ::oGet:buffer == nil
+                 RETURN 0
+              endif
+
+
+           ::GetSelPos( @nLo, @nHi )
+
+
+
+           if nHi <> nLo
+              ::GetDelSel( nLo, nHi )
+              ::EditUpdate()
+           endif
+
+
+           if ::oGet:Type == "N" .AND.  ( Chr( nKey ) == "." .OR. Chr( nKey ) == "," )
+              ::oGet:ToDecPos()
+           else
+              if Set( 29 )
+                 ::oGet:Insert( Chr( nKey ) )
+              else
+                 ::oGet:Overstrike( Chr( nKey ) )
+              end
+           endif
+
+           if ::oGet:Rejected
+              if Set( 26 )
+                 MsgBeep()
+              endif
+           endif
+
+           ::EditUpdate()
+
+           if ::oGet:TypeOut
+              if ! Set( 27 )
+                 ::oWnd:nLastKey = 13
+                 ::oWnd:GoNextCtrl( ::hWnd )
+              else
+                 if Set( 26 )
+                    MsgBeep()
+                 endif
+              endif
+           endif
+
+           ::oGet:Assign()
+
+           if ::bChange <> nil
+              lAccept = Eval( ::bChange, nKey, nFlags, Self )
+              if hb_islogical( lAccept ) .AND. ! lAccept
+                 RETURN 0
+              endif
+           endif
+
+           ::addOriginalKey( Chr( nKey ) )
+
+           Eval( ::bPostKey, Self, ::oGet:Buffer )
+
+      otherwise
+           RETURN ::Super:KeyChar( nKey, nFlags )
+
+   endcase
+
+RETURN ( 0 )
+
+
+
+static FUNCTION TGetHlp_EvalHelp( ) ; local Self AS CLASS TGetHlp := QSelf() AS CLASS TGetHlp
+
+   if hb_isblock( ::bLostFocus )
+      ::bOldLostFocus   := ::bLostFocus
+      ::bLostFocus      := nil
+   endif
+
+   if hb_isblock( ::bValid )
+      ::bOldValid       := ::bValid
+      ::bValid          := nil
+   endif
+
+   if hb_isblock( ::bHelp )
+      Eval( ::bHelp, Self )
+   end
+
+   if hb_isblock( ::bOldLostFocus )
+      ::bLostFocus      := ::bOldLostFocus
+      ::bOldLostFocus   := nil
+   endif
+
+   if hb_isblock( ::bOldValid )
+      ::bValid          := ::bOldValid
+      ::bOldValid       := nil
+   endif
+
+   if hb_isblock( ::bLostFocus )
+      Eval( ::bLostFocus )
+   endif
+
+   if hb_isblock( ::bValid )
+      Eval( ::bValid )
+   endif
+
+RETURN Self
+
+
+
+static FUNCTION TGetHlp_HardEnable( ) ; local Self AS CLASS TGetHlp := QSelf() AS CLASS TGetHlp
+
+   ::bWhen     := ::bOldWhen
+
+RETURN ( ::Enable() )
+
+
+
+static FUNCTION TGetHlp_HardDisable( ) ; local Self AS CLASS TGetHlp := QSelf() AS CLASS TGetHlp
+
+   ::bOldWhen  := ::bWhen
+   ::bWhen     := {|| .F. }
+
+RETURN ( ::Disable() )
+
+
+
+static FUNCTION TGetHlp_GotFocus( ) ; local Self AS CLASS TGetHlp := QSelf() AS CLASS TGetHlp
+
+    ::lFocused = .T.
+
+    if ! Empty( ::cPicture ) .AND. ::oGet:type == "N"
+       ::oGet:Picture := StrTran( ::cPicture, ",", "" )
+    endif
+
+    if ! ::lDrag
+       ::oGet:KillFocus()
+       ::oGet:SetFocus()
+       if Upper( ::oWnd:ClassName() ) == "TCOMBOBOX"
+          ::oGet:Buffer := ::oGet:Original
+       endif
+       ::DispText()
+       if ::oGet:type $ "DN"
+          ::nPos := 1
+       endif
+       ::oGet:Pos := ::nPos
+       ::SetPos( ::nPos )
+       CallWindowProc( ::nOldProc, ::hWnd, 7 )
+       if Set( 29 )
+          DestroyCaret()
+          CreateCaret( ::hWnd, 0, 6, ::nGetChrHeight() )
+          ShowCaret( ::hWnd )
+       endif
+    else
+       HideCaret( ::hWnd )
+    endif
+
+
+
+
+
+   if ::oGet:type == "C"
+      ::SetSel( 0, Len( Rtrim( ::oGet:VarGet() ) ) )
+   else
+      ::SelectAll()
+   end
+
+RETURN 0
+
+
+
+static FUNCTION TGetHlp_GetDlgCode( nLastKey ) ; local Self AS CLASS TGetHlp := QSelf() AS CLASS TGetHlp
+
+   if Len( ::oWnd:aControls ) == 1
+      RETURN 4
+   endif
+
+   ::oWnd:nLastKey = nLastKey
+
+RETURN 4
+
+
+
+static FUNCTION TGetHlp_LostFocus( hCtlFocus ) ; local Self AS CLASS TGetHlp := QSelf() AS CLASS TGetHlp
+
+   ::Super:LostFocus( hCtlFocus )
+
+   if !::lPassword
+      if ::oGet:buffer <> GetWindowText( ::hWnd )
+         ::oGet:buffer  := GetWindowText( ::hWnd )
+         ::oGet:Assign()
+      endif
+   endif
+
+   if !Empty( ::cPicture ) .AND. ::oGet:type == "N"
+      ::oGet:Assign()
+      ::oGet:Picture    := ::cPicture
+      ::oGet:UpdateBuffer()
+      ::oGet:KillFocus()
+   endif
+
+   ::oGet:SetFocus()
+
+   if !::oGet:BadDate .AND. !::lReadOnly .AND. ( ::oGet:changed .OR. ::oGet:unTransform() <> ::oGet:original )
+      ::oGet:Assign()
+   endif
+
+   ::DispText()
+
+   if !::oGet:BadDate
+      ::oGet:KillFocus()
+   else
+      ::oGet:Pos        := 1
+      ::nPos            := 1
+   endif
+
+   if ::lNeedGetFocus
+      ::lGotFocus       := .T.
+   end
+
+RETURN nil
+
+
+
+static FUNCTION TGetHlp_lValid( ) ; local Self AS CLASS TGetHlp := QSelf() AS CLASS TGetHlp
+
+   local lRet   := .T.
+
+   ::evalPreValidate()
+
+   if ::oGet:BadDate
+      ::oGet:KillFocus()
+      ::oGet:SetFocus()
+      msgBeep()
+      RETURN .F.
+   end
+
+   ::oGet:Assign()
+
+   if ( isBlock( ::bValid ) )
+
+      lRet     := eval( ::bValid, Self )
+      if isLogic( lRet ) .AND. !( lRet )
+         ::oWnd:nLastKey   := 0
+      else
+         lRet  := .T.
+      end
+
+   end
+
+   ::evalPostValidate()
+
+   ::lValidado     := .T.
+
+RETURN lRet
+
+
+
+static FUNCTION TGetHlp_setError( cError ) ; local Self AS CLASS TGetHlp := QSelf() AS CLASS TGetHlp
+
+   ::cError    := cError
+
+   if !empty( ::cError )
+      ::setColor( ( 255 + ( 255 * 256 ) + ( 255 * 65536 ) ), ( 255 + ( 102 * 256 ) + ( 102 * 65536 ) ) )
+   else
+      ::setColor( ( 0 + ( 0 * 256 ) + ( 0 * 65536 ) ), ( 255 + ( 255 * 256 ) + ( 255 * 65536 ) ) )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TGetHlp_addOriginalKey( value ) ; local Self AS CLASS TGetHlp := QSelf() AS CLASS TGetHlp
+
+  if Empty( ::OriginalKeys )
+    ::OriginalKeys := value
+  else
+    ::OriginalKeys += value
+  end
+
+RETURN ( Self )

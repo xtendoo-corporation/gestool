@@ -1,0 +1,3569 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 22 ".\.\Prg\TFacturaElectronica.prg"
+_HB_CLASS TFacturaElectronica ; function TFacturaElectronica ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TFacturaElectronica", iif( .F., { }, { @HBObject() } ), @TFacturaElectronica() ) ) ;
+
+   _HB_MEMBER { oXml } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXml"}, .F. )
+   _HB_MEMBER { oXmlNode } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlNode"}, .F. )
+   _HB_MEMBER { oXmlHeader } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlHeader"}, .F. )
+   _HB_MEMBER { oXmlBatch } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlBatch"}, .F. )
+   _HB_MEMBER { oXmlTotalInvoicesAmount } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlTotalInvoicesAmount"}, .F. )
+   _HB_MEMBER { oXmlTotalOutstandingAmount } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlTotalOutstandingAmount"}, .F. )
+   _HB_MEMBER { oXmlTotalExecutableAmount } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlTotalExecutableAmount"}, .F. )
+   _HB_MEMBER { oXmlParties } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlParties"}, .F. )
+   _HB_MEMBER { oXmlSellerParty } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlSellerParty"}, .F. )
+   _HB_MEMBER { oXmlTaxIdentification } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlTaxIdentification"}, .F. )
+   _HB_MEMBER { oXmlLegalEntity } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlLegalEntity"}, .F. )
+   _HB_MEMBER { oXmlRegistrationData } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlRegistrationData"}, .F. )
+   _HB_MEMBER { oXmlAddressInSpain } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlAddressInSpain"}, .F. )
+   _HB_MEMBER { oXmlLegalEntity } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlLegalEntity"}, .F. )
+   _HB_MEMBER { oXmlContactDetails } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlContactDetails"}, .F. )
+   _HB_MEMBER { oXmlBuyerParty } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlBuyerParty"}, .F. )
+   _HB_MEMBER { oXmlTaxIdentification } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlTaxIdentification"}, .F. )
+   _HB_MEMBER { oXmlLegalEntity } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlLegalEntity"}, .F. )
+   _HB_MEMBER { oXmlInvoices } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlInvoices"}, .F. )
+   _HB_MEMBER { oXmlInvoice } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlInvoice"}, .F. )
+   _HB_MEMBER { oXmlInvoiceHeader } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlInvoiceHeader"}, .F. )
+   _HB_MEMBER { oXmlCorrective } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlCorrective"}, .F. )
+   _HB_MEMBER { oXmlTaxPeriod } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlTaxPeriod"}, .F. )
+   _HB_MEMBER { oXmlInvoiceIssueData } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlInvoiceIssueData"}, .F. )
+   _HB_MEMBER { oXmlPlaceOfIssue } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlPlaceOfIssue"}, .F. )
+   _HB_MEMBER { oXmlInvoicingPeriod } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlInvoicingPeriod"}, .F. )
+   _HB_MEMBER { oXmlInvoiceCurrencyCode } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlInvoiceCurrencyCode"}, .F. )
+   _HB_MEMBER { oXmlTaxesOutputs } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlTaxesOutputs"}, .F. )
+   _HB_MEMBER { oXmlTax } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlTax"}, .F. )
+   _HB_MEMBER { oXmlTaxableBase } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlTaxableBase"}, .F. )
+   _HB_MEMBER { oXmlTaxAmount } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlTaxAmount"}, .F. )
+   _HB_MEMBER { oXmlEquivalenceSurcharge } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlEquivalenceSurcharge"}, .F. )
+   _HB_MEMBER { oXmlInvoiceTotals } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlInvoiceTotals"}, .F. )
+   _HB_MEMBER { oXmlGeneralDiscounts } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlGeneralDiscounts"}, .F. )
+   _HB_MEMBER { oXmlDiscount } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlDiscount"}, .F. )
+   _HB_MEMBER { oXmlInvoiceLine } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlInvoiceLine"}, .F. )
+   _HB_MEMBER { oXmlItems } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlItems"}, .F. )
+   _HB_MEMBER { oXmlDiscountsAndRebates } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlDiscountsAndRebates"}, .F. )
+   _HB_MEMBER { oXmlPaymentDetails } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlPaymentDetails"}, .F. )
+   _HB_MEMBER { oXmlInstallment } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlInstallment"}, .F. )
+   _HB_MEMBER { oXmlAccountToBeCredited } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlAccountToBeCredited"}, .F. )
+   _HB_MEMBER { oXmlAccountToBeDebited } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlAccountToBeDebited"}, .F. )
+
+   _HB_MEMBER { oXmlAdministrativeCentres } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlAdministrativeCentres"}, .F. )
+   _HB_MEMBER { oXmlAdministrativeCentre } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oXmlAdministrativeCentre"}, .F. )
+
+   _HB_MEMBER { hDC } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hDC"}, .F. )
+
+   _HB_MEMBER { cFicheroOrigen } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFicheroOrigen"}, .F. )
+   _HB_MEMBER { cFicheroDestino } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFicheroDestino"}, .F. )
+   _HB_MEMBER { cFicheroOriginal } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFicheroOriginal"}, .F. )
+   _HB_MEMBER { cNif } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNif"}, .F. )
+   _HB_MEMBER { oFirma } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFirma"}, .F. )
+
+   _HB_MEMBER { oTree } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTree"}, .F. )
+
+   _HB_MEMBER { cInvoiceNumber } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cInvoiceNumber"}, .F. )
+   _HB_MEMBER { cInvoiceSeriesCode } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cInvoiceSeriesCode"}, .F. )
+   _HB_MEMBER { cInvoiceCurrencyCode } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cInvoiceCurrencyCode"}, .F. )
+   _HB_MEMBER { nInvoiceTotalAmount } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nInvoiceTotalAmount"}, .F. )
+
+   _HB_MEMBER { nDtoEstatal } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nDtoEstatal"}, .F. )
+
+   _HB_MEMBER { nTotalGrossAmount } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalGrossAmount"}, .F. )
+   _HB_MEMBER { nTotalGrossAmountBeforeTaxes } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalGrossAmountBeforeTaxes"}, .F. )
+   _HB_MEMBER { nTotalGeneralDiscounts } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalGeneralDiscounts"}, .F. )
+   _HB_MEMBER { nTotalGeneralSurcharges } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalGeneralSurcharges"}, .F. )
+   _HB_MEMBER { nTotalTaxOutputs } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalTaxOutputs"}, .F. )
+   _HB_MEMBER { nTotalTaxesWithheld } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalTaxesWithheld"}, .F. )
+   _HB_MEMBER { nInvoiceTotal } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nInvoiceTotal"}, .F. )
+   _HB_MEMBER { nTotalOutstandingAmount } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalOutstandingAmount"}, .F. )
+   _HB_MEMBER { nTotalExecutableAmount } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalExecutableAmount"}, .F. )
+   _HB_MEMBER { nTotalReimbursableExpenses } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalReimbursableExpenses"}, .F. )
+   _HB_MEMBER { nPorcentajeRetencion } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nPorcentajeRetencion"}, .F. )
+   _HB_MEMBER { nImporteRetencion } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nImporteRetencion"}, .F. )
+
+   _HB_MEMBER TotalGrossAmount(); oClass:AddInline( "TotalGrossAmount", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nTotalGrossAmount,            "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InvoiceTotalAmount(); oClass:AddInline( "InvoiceTotalAmount", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nInvoiceTotalAmount,          "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TotalOutstandingAmount(); oClass:AddInline( "TotalOutstandingAmount", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nTotalOutstandingAmount,      "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TotalExecutableAmount(); oClass:AddInline( "TotalExecutableAmount", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nTotalExecutableAmount,       "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TotalExecutableAmountDtoEstatal(); oClass:AddInline( "TotalExecutableAmountDtoEstatal", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nTotalExecutableAmount - ::nDtoEstatal,       "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TotalGeneralSurcharges(); oClass:AddInline( "TotalGeneralSurcharges", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nTotalGeneralSurcharges,      "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DtoEstatal(); oClass:AddInline( "DtoEstatal", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nDtoEstatal,                  "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PorcentajeRetencion(); oClass:AddInline( "PorcentajeRetencion", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nPorcentajeRetencion,         "999999999.9999" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ImporteRetencion(); oClass:AddInline( "ImporteRetencion", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nImporteRetencion,            "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TotalTaxOutputs(); oClass:AddInline( "TotalTaxOutputs", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nTotalTaxOutputs,             "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TotalGrossAmountBeforeTaxes(); oClass:AddInline( "TotalGrossAmountBeforeTaxes", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nTotalGrossAmountBeforeTaxes, "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TotalGeneralDiscounts(); oClass:AddInline( "TotalGeneralDiscounts", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nTotalGeneralDiscounts,       "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TotalTaxesWithheld(); oClass:AddInline( "TotalTaxesWithheld", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nTotalTaxesWithheld,          "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InvoiceTotal(); oClass:AddInline( "InvoiceTotal", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nInvoiceTotal,                "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TotalOutstandingAmount(); oClass:AddInline( "TotalOutstandingAmount", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nTotalOutstandingAmount,      "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TotalReimbursableExpenses(); oClass:AddInline( "TotalReimbursableExpenses", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nTotalReimbursableExpenses,   "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER { cCorrectiveInvoiceNumber } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCorrectiveInvoiceNumber"}, .F. )
+   _HB_MEMBER { cCorrectiveReasonCode } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCorrectiveReasonCode"}, .F. )
+   _HB_MEMBER { cCorrectiveReasonDescription } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCorrectiveReasonDescription"}, .F. )
+   _HB_MEMBER { cCorrectiveCorrectionMethod } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCorrectiveCorrectionMethod"}, .F. )
+   _HB_MEMBER { cCorrectiveCorrectionMethodDescription } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCorrectiveCorrectionMethodDescription"}, .F. )
+
+   _HB_MEMBER { dCorrectiveStartDate } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dCorrectiveStartDate"}, .F. )
+   _HB_MEMBER { dCorrectiveEndDate } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dCorrectiveEndDate"}, .F. )
+   _HB_MEMBER { dIssueDate } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dIssueDate"}, .F. )
+   _HB_MEMBER { dOperationDate } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dOperationDate"}, .F. )
+
+   _HB_MEMBER IssueDate(); oClass:AddInline( "IssueDate", {|Self| ( ( Self ) ), ( dToIso( ::dIssueDate ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER OperationDate(); oClass:AddInline( "OperationDate", {|Self| ( ( Self ) ), ( dToIso( ::dOperationDate ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CorrectiveStartDate(); oClass:AddInline( "CorrectiveStartDate", {|Self| ( ( Self ) ), ( dToIso( ::dCorrectiveStartDate ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CorrectiveEndDate(); oClass:AddInline( "CorrectiveEndDate", {|Self| ( ( Self ) ), ( dToIso( ::dCorrectiveEndDate ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER { cPlaceOfIssuePostCode } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPlaceOfIssuePostCode"}, .F. )
+   _HB_MEMBER { cPlaceOfIssueDescription } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPlaceOfIssueDescription"}, .F. )
+
+   _HB_MEMBER PlaceOfIssuePostCode(); oClass:AddInline( "PlaceOfIssuePostCode", {|Self| ( ( Self ) ), ( Rtrim( Left( ::cPlaceOfIssuePostCode, 9 ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PlaceOfIssueDescription(); oClass:AddInline( "PlaceOfIssueDescription", {|Self| ( ( Self ) ), ( Rtrim( Left( ::cPlaceOfIssueDescription, 20 ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER { dFechaInicioOperacion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dFechaInicioOperacion"}, .F. )
+   _HB_MEMBER { dFechaFinOperacion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dFechaFinOperacion"}, .F. )
+
+   _HB_MEMBER FechaInicioOperacion(); oClass:AddInline( "FechaInicioOperacion", {|Self| ( ( Self ) ), ( if( !Empty( ::dFechaInicioOperacion ), dToIso( ::dFechaInicioOperacion ), ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER FechaFinOperacion(); oClass:AddInline( "FechaFinOperacion", {|Self| ( ( Self ) ), ( if( !Empty( ::dFechaFinOperacion ), dToIso( ::dFechaFinOperacion ), ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER { cTaxCurrencyCode } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTaxCurrencyCode"}, .F. )
+   _HB_MEMBER { cLanguageName } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cLanguageName"}, .F. )
+
+   _HB_MEMBER { oSellerParty } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSellerParty"}, .F. )
+   _HB_MEMBER { oBuyerParty } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBuyerParty"}, .F. )
+
+   _HB_MEMBER { aTax } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aTax"}, .F. )
+   _HB_MEMBER { aDiscount } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aDiscount"}, .F. )
+   _HB_MEMBER { aItemLine } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aItemLine"}, .F. )
+   _HB_MEMBER { aInstallment } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aInstallment"}, .F. )
+   _HB_MEMBER { aAdministrativeCentres } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aAdministrativeCentres"}, .F. )
+
+   _HB_MEMBER { lError } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lError"}, .F. )
+
+   _HB_MEMBER { oMail } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oMail"}, .F. )
+   _HB_MEMBER { cMailServer } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cMailServer"}, .F. )
+   _HB_MEMBER { cMailServerPort } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cMailServerPort"}, .F. )
+   _HB_MEMBER { cMailServerUserName } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cMailServerUserName"}, .F. )
+   _HB_MEMBER { cMailServerPassword } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cMailServerPassword"}, .F. )
+   _HB_MEMBER { cMailSubject } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cMailSubject"}, .F. )
+   _HB_MEMBER { cMailBody } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cMailBody"}, .F. )
+   _HB_MEMBER { cMailRecipient } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cMailRecipient"}, .F. )
+
+   _HB_MEMBER New() AS CLASS TFacturaElectronica; oClass:AddMethod( "New", @TFacturaElectronica_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GeneraXml(); oClass:AddMethod( "GeneraXml", @TFacturaElectronica_GeneraXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER HeaderXml(); oClass:AddMethod( "HeaderXml", @TFacturaElectronica_HeaderXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PartiesXml(); oClass:AddMethod( "PartiesXml", @TFacturaElectronica_PartiesXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InvoiceXml(); oClass:AddMethod( "InvoiceXml", @TFacturaElectronica_InvoiceXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TaxesXml(); oClass:AddMethod( "TaxesXml", @TFacturaElectronica_TaxesXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TotalXml(); oClass:AddMethod( "TotalXml", @TFacturaElectronica_TotalXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DiscountXml(); oClass:AddMethod( "DiscountXml", @TFacturaElectronica_DiscountXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ItemsXml(); oClass:AddMethod( "ItemsXml", @TFacturaElectronica_ItemsXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InstallmentXml(); oClass:AddMethod( "InstallmentXml", @TFacturaElectronica_InstallmentXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER AdministrativeCentresXml( oAdministrativeCentre); oClass:AddMethod( "AdministrativeCentresXml", @TFacturaElectronica_AdministrativeCentresXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ShowInWeb(); oClass:AddMethod( "ShowInWeb", @TFacturaElectronica_ShowInWeb(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER startInWeb( oActiveX, oDlg); oClass:AddMethod( "startInWeb", @TFacturaElectronica_startInWeb(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Firma(); oClass:AddMethod( "Firma", @TFacturaElectronica_Firma(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER VerificaFirma(); oClass:AddMethod( "VerificaFirma", @TFacturaElectronica_VerificaFirma(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER FirmaJava(); oClass:AddMethod( "FirmaJava", @TFacturaElectronica_FirmaJava(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Enviar(); oClass:AddMethod( "Enviar", @TFacturaElectronica_Enviar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addItemLine(); oClass:AddInline( "addItemLine", {|Self, oItemLine | ( ( Self ) ), ( aAdd( ::aItemLine, oItemLine ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER addInstallment(); oClass:AddInline( "addInstallment", {|Self, oInstallment | ( ( Self ) ), ( aAdd( ::aInstallment, oInstallment ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addAdministrativeCentres(); oClass:AddInline( "addAdministrativeCentres", {|Self, aAdministrativeCentres | ( ( Self ) ), ( aAdd( ::aAdministrativeCentres, aAdministrativeCentres ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER addTax(); oClass:AddInline( "addTax", {|Self, oTax | ( ( Self ) ), ( ::nTotalTaxOutputs += oTax:nTaxAmount, aAdd( ::aTax, oTax ), ::aTax ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER addDiscount(); oClass:AddInline( "addDiscount", {|Self, oDiscount | ( ( Self ) ), ( ::nTotalGeneralDiscounts += oDiscount:nDiscountAmount, aAdd( ::aDiscount, oDiscount ), ::aDiscount ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER MailServerSend(); oClass:AddInline( "MailServerSend", {|Self | ( ( Self ) ), ( ::cMailServer + if( !Empty( ::cMailServerPort ), ":" + Alltrim( Str( ::cMailServerPort ) ), "" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TFacturaElectronica ;
+
+
+
+static FUNCTION TFacturaElectronica_New( oTree ) ; local Self AS CLASS TFacturaElectronica := QSelf() AS CLASS TFacturaElectronica
+
+   ::oTree                          := oTree
+
+   ::cInvoiceCurrencyCode           := "EUR"
+   ::cLanguageName                  := "es"
+
+   ::nTotalGrossAmount              := 0
+   ::nTotalGeneralDiscounts         := 0
+   ::nTotalGeneralSurcharges        := 0
+   ::nTotalGrossAmountBeforeTaxes   := 0
+   ::nTotalTaxOutputs               := 0
+   ::nTotalTaxesWithheld            := 0
+   ::nInvoiceTotal                  := 0
+   ::nTotalOutstandingAmount        := 0
+   ::nTotalExecutableAmount         := 0
+   ::nDtoEstatal                    := 0
+   ::nTotalReimbursableExpenses     := 0
+   ::nInvoiceTotalAmount            := 0
+
+   ::oSellerParty                   := Party()
+   ::oBuyerParty                    := Party()
+
+   ::aTax                           := {}
+   ::aDiscount                      := {}
+   ::aItemLine                      := {}
+   ::aInstallment                   := {}
+   ::aAdministrativeCentres         := {}
+
+   ::cMailServer                    := Rtrim( uFieldEmpresa( "cSrvMai" ) )
+   ::cMailServerPort                := uFieldEmpresa( "nPrtMai" )
+   ::cMailServerUserName            := Rtrim( uFieldEmpresa( "cCtaMai" ) )
+   ::cMailServerPassword            := Rtrim( uFieldEmpresa( "cPssMai" ) )
+
+   ::cMailSubject                   := "Envío de  factura electrónica."
+   ::cMailBody                      := ""
+   ::cMailRecipient                 := ""
+
+   ::lError                         := .F.
+
+Return ( self )
+
+
+
+static FUNCTION TFacturaElectronica_GeneraXml( ) ; local Self AS CLASS TFacturaElectronica := QSelf() AS CLASS TFacturaElectronica
+
+   local oError
+   local oBlock
+
+   ::oXml         := TXmlDocument():new( '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' )
+
+
+
+
+
+
+
+   ::oXmlNode     := TXmlNode():new( , "fe:Facturae", {  "xmlns:ds" => "http://www.w3.org/2000/09/xmldsig#", "xmlns:fe" => "http://www.facturae.es/Facturae/2009/v3.2/Facturae" } )
+
+   ::HeaderXml()
+
+   ::PartiesXml()
+
+   ::InvoiceXml()
+
+   ::oXml:oRoot:addBelow( ::oXmlNode )
+
+
+
+
+
+   oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      ferase( ::cFicheroOrigen )
+
+      ::hDC       := fCreate( ::cFicheroOrigen )
+
+      if ::hDC < 0
+         ::hDC    := 0
+      endif
+
+      ::oXml:Write( ::hDC, 1 )
+
+      fClose( ::hDC )
+
+      ::hDC       := 0
+
+      ::oTree:Add( "Fichero generado " + Lower( ::cFicheroOrigen ) + " satisfactoriamente.", 1 )
+
+   RECOVER USING oError
+
+      ::lError    := .T.
+
+      ::oTree:Add( "Error el generar el fichero " + Lower( ::cFicheroOrigen ) )
+
+   end
+
+   ErrorBlock( oBlock )
+
+
+
+Return ( Self )
+
+
+
+static FUNCTION TFacturaElectronica_HeaderXml( ) ; local Self AS CLASS TFacturaElectronica := QSelf() AS CLASS TFacturaElectronica
+
+
+
+
+
+   ::oXmlHeader   := TXmlNode():new( , "FileHeader" )
+      ::oXmlHeader:addBelow( TXmlNode():new( , "SchemaVersion", ,       "3.2" ) )
+      ::oXmlHeader:addBelow( TXmlNode():new( , "Modality", ,            "I" ) )
+      ::oXmlHeader:addBelow( TXmlNode():new( , "InvoiceIssuerType", ,   "EM" ) )
+
+
+
+
+
+      ::oXmlBatch    := TXmlNode():new( , "Batch" )
+         ::oXmlBatch:addBelow( TXmlNode():new( , "BatchIdentifier", ,   ::cInvoiceNumber ) )
+         ::oXmlBatch:addBelow( TXmlNode():new( , "InvoicesCount", ,     "1"  ) )
+
+
+
+
+
+         ::oXmlTotalInvoicesAmount  := TXmlNode():new( , "TotalInvoicesAmount" )
+            ::oXmlTotalInvoicesAmount:addBelow( TXmlNode():new( , "TotalAmount", ,        ::InvoiceTotalAmount() ) )
+            ::oXmlTotalInvoicesAmount:addBelow( TXmlNode():new( , "EquivalentInEuros", ,  "0.00" ) )
+
+         ::oXmlBatch:addBelow( ::oXmlTotalInvoicesAmount )
+
+
+
+
+
+         ::oXmlTotalOutstandingAmount  := TXmlNode():new( , "TotalOutstandingAmount" )
+            ::oXmlTotalOutstandingAmount:addBelow( TXmlNode():new( , "TotalAmount", ,        ::TotalOutstandingAmount() ) )
+            ::oXmlTotalOutstandingAmount:addBelow( TXmlNode():new( , "EquivalentInEuros", ,  "0.00" ) )
+
+         ::oXmlBatch:addBelow( ::oXmlTotalOutstandingAmount )
+
+
+
+
+
+         ::oXmlTotalExecutableAmount  := TXmlNode():new( , "TotalExecutableAmount" )
+            if ConfiguracionesEmpresaModel():getLogic( "lDtoLinAfterTotal", .F. )
+               ::oXmlTotalExecutableAmount:addBelow( TXmlNode():new( , "TotalAmount", ,         ::TotalExecutableAmountDtoEstatal() ) )
+            else
+               ::oXmlTotalExecutableAmount:addBelow( TXmlNode():new( , "TotalAmount", ,         ::TotalExecutableAmount() ) )
+            end
+            ::oXmlTotalExecutableAmount:addBelow( TXmlNode():new( , "EquivalentInEuros", ,   "0.00" ) )
+
+         ::oXmlBatch:addBelow( ::oXmlTotalExecutableAmount )
+
+
+
+
+
+         ::oXmlBatch:addBelow( TXmlNode():new( , "InvoiceCurrencyCode", , ::cInvoiceCurrencyCode ) )
+
+      ::oXmlHeader:addBelow( ::oXmlBatch )
+
+   ::oXmlNode:addBelow( ::oXmlHeader )
+
+Return ( self )
+
+
+
+static FUNCTION TFacturaElectronica_PartiesXml( ) ; local Self AS CLASS TFacturaElectronica := QSelf() AS CLASS TFacturaElectronica
+
+   local oAdministrativeCentre
+
+
+
+
+
+   ::oXmlParties   := TXmlNode():new( , "Parties" )
+
+
+
+
+
+      ::oXmlSellerParty    := TXmlNode():new( , "SellerParty" )
+
+
+
+
+
+         ::oXmlTaxIdentification  := TXmlNode():new( , "TaxIdentification" )
+            ::oXmlTaxIdentification:addBelow( TXmlNode():new( , "PersonTypeCode", ,          ::oSellerParty:cPersonTypeCode ) )
+            ::oXmlTaxIdentification:addBelow( TXmlNode():new( , "ResidenceTypeCode", ,       ::oSellerParty:cResidenceTypeCode ) )
+            ::oXmlTaxIdentification:addBelow( TXmlNode():new( , "TaxIdentificationNumber", , ::oSellerParty:TaxIdentificationNumber() ) )
+
+         ::oXmlSellerParty:addBelow( ::oXmlTaxIdentification )
+
+
+
+
+
+         if !Empty( ::oSellerParty:cCorporateName )
+
+            ::oXmlLegalEntity  := TXmlNode():new( , "LegalEntity" )
+
+               if !Empty( ::oSellerParty:CorporateName() )
+                  ::oXmlLegalEntity:addBelow( TXmlNode():new( , "CorporateName", ,  ::oSellerParty:CorporateName() ) )
+               end
+
+               if !Empty( ::oSellerParty:TradeName() )
+                  ::oXmlLegalEntity:addBelow( TXmlNode():new( , "TradeName", ,      ::oSellerParty:TradeName() ) )
+               end
+
+               ::oXmlRegistrationData  := TXmlNode():new( , "RegistrationData" )
+
+                  if !Empty( ::oSellerParty:nBook )
+                     ::oXmlRegistrationData:addBelow( TXmlNode():new( , "Book", ,                        ::oSellerParty:nBook ) )
+                  end
+
+                  if !Empty( ::oSellerParty:cRegisterOfCompaniesLocation )
+                     ::oXmlRegistrationData:addBelow( TXmlNode():new( , "RegisterOfCompaniesLocation", , ::oSellerParty:cRegisterOfCompaniesLocation ) )
+                  end
+
+                  if !Empty( ::oSellerParty:nSheet )
+                     ::oXmlRegistrationData:addBelow( TXmlNode():new( , "Sheet", ,                       ::oSellerParty:nSheet ) )
+                  end
+
+                  if !Empty( ::oSellerParty:nFolio )
+                     ::oXmlRegistrationData:addBelow( TXmlNode():new( , "Folio", ,                       ::oSellerParty:nFolio ) )
+                  end
+
+                  if !Empty( ::oSellerParty:cSection )
+                     ::oXmlRegistrationData:addBelow( TXmlNode():new( , "Section", ,                     ::oSellerParty:cSection ) )
+                  end
+
+                  if !Empty( ::oSellerParty:nVolume )
+                     ::oXmlRegistrationData:addBelow( TXmlNode():new( , "Volume", ,                      ::oSellerParty:nVolume ) )
+                  end
+
+                  if !Empty( ::oSellerParty:AditionalRegistrationData() )
+                     ::oXmlRegistrationData:addBelow( TXmlNode():new( , "AditionalRegistrationData", ,   ::oSellerParty:AditionalRegistrationData() ) )
+                  end
+
+               ::oXmlLegalEntity:addBelow( ::oXmlRegistrationData )
+
+
+
+
+
+               ::oXmlAddressInSpain  := TXmlNode():new( , "AddressInSpain" )
+                  ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Address", ,     ::oSellerParty:Address() ) )
+                  ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "PostCode", ,    ::oSellerParty:PostCode() ) )
+                  ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Town", ,        ::oSellerParty:Town() ) )
+                  ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Province", ,    ::oSellerParty:Province() ) )
+                  ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "CountryCode", , ::oSellerParty:CountryCode() ) )
+
+               ::oXmlLegalEntity:addBelow( ::oXmlAddressInSpain )
+
+               ::oXmlContactDetails := TXmlNode():new( , "ContactDetails" )
+
+                  if !Empty( ::oSellerParty:Telephone() )
+                     ::oXmlContactDetails:addBelow( TXmlNode():new( , "Telephone", ,      ::oSellerParty:Telephone() ) )
+                  end
+
+                  if !Empty( ::oSellerParty:cTelFax )
+                     ::oXmlContactDetails:addBelow( TXmlNode():new( , "TeleFax", ,        ::oSellerParty:cTelFax ) )
+                  end
+
+                  if !Empty( ::oSellerParty:cWebAddress )
+                     ::oXmlContactDetails:addBelow( TXmlNode():new( , "WebAddress", ,     ::oSellerParty:cWebAddress ) )
+                  end
+
+                  if !Empty( ::oSellerParty:cElectronicMail )
+                     ::oXmlContactDetails:addBelow( TXmlNode():new( , "ElectronicMail", , ::oSellerParty:cElectronicMail ) )
+                  end
+
+                  ::oXmlLegalEntity:addBelow( ::oXmlContactDetails )
+
+               ::oXmlSellerParty:addBelow( ::oXmlLegalEntity )
+
+            ::oXmlParties:addBelow( ::oXmlSellerParty )
+
+         end
+
+
+
+
+
+         if !Empty( ::oSellerParty:cName )
+
+            ::oXmlLegalEntity  := TXmlNode():new( , "Individual" )
+
+               if !Empty( ::oSellerParty:cName )
+                  ::oXmlLegalEntity:addBelow( TXmlNode():new( , "Name", ,  ::oSellerParty:Name() ) )
+               end
+
+               if !Empty( ::oSellerParty:cName ) .OR. !Empty( ::oSellerParty:cFirstSurname )
+                  ::oXmlLegalEntity:addBelow( TXmlNode():new( , "FirstSurname", , ::oSellerParty:FirstSurname() ) )
+               end
+
+               if !Empty( ::oSellerParty:cSecondSurname )
+                  ::oXmlLegalEntity:addBelow( TXmlNode():new( , "SecondSurname", , ::oSellerParty:SecondSurname() ) )
+               end
+
+
+
+
+
+               ::oXmlAddressInSpain  := TXmlNode():new( , "AddressInSpain" )
+                  ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Address", ,     ::oSellerParty:Address() ) )
+                  ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "PostCode", ,    ::oSellerParty:PostCode() ) )
+                  ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Town", ,        ::oSellerParty:Town() ) )
+                  ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Province", ,    ::oSellerParty:Province() ) )
+                  ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "CountryCode", , ::oSellerParty:CountryCode() ) )
+
+               ::oXmlLegalEntity:addBelow( ::oXmlAddressInSpain )
+
+               ::oXmlContactDetails := TXmlNode():new( , "ContactDetails" )
+
+                  if !Empty( ::oSellerParty:Telephone() )
+                     ::oXmlContactDetails:addBelow( TXmlNode():new( , "Telephone", ,      ::oSellerParty:Telephone() ) )
+                  end
+
+                  if !Empty( ::oSellerParty:cTelFax )
+                     ::oXmlContactDetails:addBelow( TXmlNode():new( , "TeleFax", ,        ::oSellerParty:cTelFax ) )
+                  end
+
+                  if !Empty( ::oSellerParty:cWebAddress )
+                     ::oXmlContactDetails:addBelow( TXmlNode():new( , "WebAddress", ,     ::oSellerParty:cWebAddress ) )
+                  end
+
+                  if !Empty( ::oSellerParty:cElectronicMail )
+                     ::oXmlContactDetails:addBelow( TXmlNode():new( , "ElectronicMail", , ::oSellerParty:cElectronicMail ) )
+                  end
+
+                  ::oXmlLegalEntity:addBelow( ::oXmlContactDetails )
+
+               ::oXmlSellerParty:addBelow( ::oXmlLegalEntity )
+
+            ::oXmlParties:addBelow( ::oXmlSellerParty )
+
+         end
+
+
+
+
+
+      ::oXmlBuyerParty    := TXmlNode():new( , "BuyerParty" )
+
+
+
+
+
+         ::oXmlTaxIdentification  := TXmlNode():new( , "TaxIdentification" )
+            ::oXmlTaxIdentification:addBelow( TXmlNode():new( , "PersonTypeCode", ,          ::oBuyerParty:cPersonTypeCode ) )
+            ::oXmlTaxIdentification:addBelow( TXmlNode():new( , "ResidenceTypeCode", ,       ::oBuyerParty:cResidenceTypeCode ) )
+            ::oXmlTaxIdentification:addBelow( TXmlNode():new( , "TaxIdentificationNumber", , ::oBuyerParty:TaxIdentificationNumber() ) )
+
+         ::oXmlBuyerParty:addBelow( ::oXmlTaxIdentification )
+
+
+
+
+
+         if !empty( ::aAdministrativeCentres )
+
+            ::oXmlAdministrativeCentres      := TXmlNode():new( , "AdministrativeCentres" )
+
+            for each oAdministrativeCentre in ::aAdministrativeCentres
+               ::AdministrativeCentresXml( oAdministrativeCentre )
+            next
+
+            ::oXmlBuyerParty:addBelow( ::oXmlAdministrativeCentres )
+
+         end
+
+
+
+
+
+         if !Empty( ::oBuyerParty:cCorporateName )
+
+            ::oXmlLegalEntity  := TXmlNode():new( , "LegalEntity" )
+
+               if !Empty( ::oBuyerParty:CorporateName() )
+                  ::oXmlLegalEntity:addBelow( TXmlNode():new( , "CorporateName", ,  ::oBuyerParty:CorporateName() ) )
+               end
+
+               if !Empty( ::oBuyerParty:TradeName() )
+                  ::oXmlLegalEntity:addBelow( TXmlNode():new( , "TradeName", ,      ::oBuyerParty:TradeName() ) )
+               end
+
+               ::oXmlRegistrationData  := TXmlNode():new( , "RegistrationData" )
+
+                  if !Empty( ::oBuyerParty:nBook )
+                     ::oXmlRegistrationData:addBelow( TXmlNode():new( , "Book", ,                        ::oBuyerParty:nBook ) )
+                  end
+
+                  if !Empty( ::oBuyerParty:cRegisterOfCompaniesLocation )
+                     ::oXmlRegistrationData:addBelow( TXmlNode():new( , "RegisterOfCompaniesLocation", , ::oBuyerParty:cRegisterOfCompaniesLocation ) )
+                  end
+
+                  if !Empty( ::oBuyerParty:nSheet )
+                     ::oXmlRegistrationData:addBelow( TXmlNode():new( , "Sheet", ,                       ::oBuyerParty:nSheet ) )
+                  end
+
+                  if !Empty( ::oBuyerParty:nFolio )
+                     ::oXmlRegistrationData:addBelow( TXmlNode():new( , "Folio", ,                       ::oBuyerParty:nFolio ) )
+                  end
+
+                  if !Empty( ::oBuyerParty:cSection )
+                     ::oXmlRegistrationData:addBelow( TXmlNode():new( , "Section", ,                     ::oBuyerParty:cSection ) )
+                  end
+
+                  if !Empty( ::oBuyerParty:nVolume )
+                     ::oXmlRegistrationData:addBelow( TXmlNode():new( , "Volume", ,                      ::oBuyerParty:nVolume ) )
+                  end
+
+                  if !Empty( ::oBuyerParty:cAditionalRegistrationData )
+                     ::oXmlRegistrationData:addBelow( TXmlNode():new( , "AditionalRegistrationData", ,   ::oBuyerParty:cAditionalRegistrationData ) )
+                  end
+
+               ::oXmlLegalEntity:addBelow( ::oXmlRegistrationData )
+
+
+
+
+
+               ::oXmlAddressInSpain  := TXmlNode():new( , "AddressInSpain" )
+                  ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Address", ,     ::oBuyerParty:Address() ) )
+                  ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "PostCode", ,    ::oBuyerParty:PostCode() ) )
+                  ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Town", ,        ::oBuyerParty:Town() ) )
+                  ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Province", ,    ::oBuyerParty:Province() ) )
+                  ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "CountryCode", , ::oBuyerParty:CountryCode() ) )
+
+               ::oXmlLegalEntity:addBelow( ::oXmlAddressInSpain )
+
+               ::oXmlContactDetails := TXmlNode():new( , "ContactDetails" )
+
+                  if !Empty( ::oBuyerParty:Telephone )
+                     ::oXmlContactDetails:addBelow( TXmlNode():new( , "Telephone", ,   ::oBuyerParty:Telephone() ) )
+                  end
+
+                  if !Empty( ::oBuyerParty:TelFax() )
+                     ::oXmlContactDetails:addBelow( TXmlNode():new( , "TeleFax", ,     ::oBuyerParty:TelFax() ) )
+               end
+
+               if !Empty( ::oBuyerParty:WebAddress() )
+                  ::oXmlContactDetails:addBelow( TXmlNode():new( , "WebAddress", ,     ::oBuyerParty:WebAddress() ) )
+               end
+
+               if !Empty( ::oBuyerParty:ElectronicMail() )
+                  ::oXmlContactDetails:addBelow( TXmlNode():new( , "ElectronicMail", , ::oBuyerParty:ElectronicMail() ) )
+               end
+
+               ::oXmlLegalEntity:addBelow( ::oXmlContactDetails )
+
+            ::oXmlBuyerParty:addBelow( ::oXmlLegalEntity )
+
+         end
+
+
+
+
+
+         if !Empty( ::oBuyerParty:cName )
+
+            ::oXmlLegalEntity  := TXmlNode():new( , "Individual" )
+
+               if !Empty( ::oBuyerParty:cName )
+                  ::oXmlLegalEntity:addBelow( TXmlNode():new( , "Name", ,  ::oBuyerParty:Name() ) )
+               end
+
+               if !Empty( ::oBuyerParty:cFirstSurname )
+                  ::oXmlLegalEntity:addBelow( TXmlNode():new( , "FirstSurname", ,  ::oBuyerParty:FirstSurname() ) )
+               end
+
+               if !Empty( ::oBuyerParty:cSecondSurname() )
+                  ::oXmlLegalEntity:addBelow( TXmlNode():new( , "SecondSurname", ,  ::oBuyerParty:SecondSurname() ) )
+               end
+
+
+
+
+
+               ::oXmlAddressInSpain  := TXmlNode():new( , "AddressInSpain" )
+                  ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Address", ,     ::oBuyerParty:Address() ) )
+                  ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "PostCode", ,    ::oBuyerParty:PostCode() ) )
+                  ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Town", ,        ::oBuyerParty:Town() ) )
+                  ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Province", ,    ::oBuyerParty:Province() ) )
+                  ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "CountryCode", , ::oBuyerParty:CountryCode() ) )
+
+               ::oXmlLegalEntity:addBelow( ::oXmlAddressInSpain )
+
+               ::oXmlContactDetails := TXmlNode():new( , "ContactDetails" )
+
+               if !Empty( ::oBuyerParty:Telephone() )
+                  ::oXmlContactDetails:addBelow( TXmlNode():new( , "Telephone", ,      ::oBuyerParty:Telephone() ) )
+               end
+
+               if !Empty( ::oBuyerParty:TelFax() )
+                  ::oXmlContactDetails:addBelow( TXmlNode():new( , "TeleFax", ,        ::oBuyerParty:TelFax() ) )
+               end
+
+               if !Empty( ::oBuyerParty:WebAddress() )
+                  ::oXmlContactDetails:addBelow( TXmlNode():new( , "WebAddress", ,     ::oBuyerParty:WebAddress() ) )
+               end
+
+               if !Empty( ::oBuyerParty:ElectronicMail() )
+                  ::oXmlContactDetails:addBelow( TXmlNode():new( , "ElectronicMail", , ::oBuyerParty:ElectronicMail() ) )
+               end
+
+               ::oXmlLegalEntity:addBelow( ::oXmlContactDetails )
+
+            ::oXmlBuyerParty:addBelow( ::oXmlLegalEntity )
+
+         end
+
+         ::oXmlParties:addBelow( ::oXmlBuyerParty )
+
+      ::oXmlNode:addBelow( ::oXmlParties )
+
+Return ( self )
+
+
+
+static FUNCTION TFacturaElectronica_InvoiceXml( ) ; local Self AS CLASS TFacturaElectronica := QSelf() AS CLASS TFacturaElectronica
+
+   local oTax
+   local oItem
+   local oInstallment
+
+
+
+
+
+   ::oXmlInvoices    := TXmlNode():new( , "Invoices" )
+
+      ::oXmlInvoice  := TXmlNode():new( , "Invoice" )
+
+
+
+
+
+         ::oXmlInvoiceHeader  := TXmlNode():new( , "InvoiceHeader" )
+            ::oXmlInvoiceHeader:addBelow( TXmlNode():new( , "InvoiceNumber", ,         ::cInvoiceNumber ) )
+            ::oXmlInvoiceHeader:addBelow( TXmlNode():new( , "InvoiceSeriesCode", ,     ::cInvoiceSeriesCode ) )
+            ::oXmlInvoiceHeader:addBelow( TXmlNode():new( , "InvoiceDocumentType", ,   "FC" ) )
+            ::oXmlInvoiceHeader:addBelow( TXmlNode():new( , "InvoiceClass", ,          "OO" ) )
+
+
+
+
+
+            if !Empty( ::cCorrectiveInvoiceNumber )
+
+               ::oXmlCorrective  := TXmlNode():new( , "Corrective" )
+                  ::oXmlCorrective:addBelow( TXmlNode():new( , "InvoiceNumber", ,      ::cCorrectiveInvoiceNumber ) )
+                  ::oXmlCorrective:addBelow( TXmlNode():new( , "ReasonCode", ,         ::cCorrectiveReasonCode ) )
+                  ::oXmlCorrective:addBelow( TXmlNode():new( , "ReasonDescription", ,  ::cCorrectiveReasonDescription ) )
+
+                  ::oXmlTaxPeriod   := TXmlNode():new( , "TaxPeriod" )
+                     ::oXmlTaxPeriod:addBelow( TXmlNode():new( , "StartDate", ,  ::CorrectiveStartDate() ) )
+                     ::oXmlTaxPeriod:addBelow( TXmlNode():new( , "EndDate", ,    ::CorrectiveEndDate() ) )
+
+                  ::oXmlCorrective:addBelow( ::oXmlTaxPeriod )
+
+                  ::oXmlCorrective:addBelow( TXmlNode():new( , "CorrectionMethod", ,            ::cCorrectiveCorrectionMethod ) )
+                  ::oXmlCorrective:addBelow( TXmlNode():new( , "CorrectionMethodDescription", , ::cCorrectiveCorrectionMethodDescription ) )
+
+               ::oXmlInvoiceHeader:addBelow( ::oXmlCorrective )
+
+            end
+
+         ::oXmlInvoice:addBelow( ::oXmlInvoiceHeader )
+
+
+
+
+
+
+
+
+
+         if !Empty( ::dIssueDate )
+
+            ::oXmlInvoiceIssueData  := TXmlNode():new( , "InvoiceIssueData" )
+
+               ::oXmlInvoiceIssueData:addBelow( TXmlNode():new( , "IssueDate", ,      ::IssueDate() ) )
+               ::oXmlInvoiceIssueData:addBelow( TXmlNode():new( , "OperationDate", ,  ::OperationDate() ) )
+
+               ::oXmlPlaceOfIssue  := TXmlNode():new( , "PlaceOfIssue" )
+
+                  ::oXmlPlaceOfIssue:addBelow( TXmlNode():new( , "PostCode", ,                 ::PlaceOfIssuePostCode() ) )
+                  ::oXmlPlaceOfIssue:addBelow( TXmlNode():new( , "PlaceOfIssueDescription", ,  ::PlaceOfIssueDescription() ) )
+
+               ::oXmlInvoiceIssueData:addBelow( ::oXmlPlaceOfIssue )
+
+               if !Empty( ::FechaInicioOperacion() )
+
+               ::oXmlInvoicingPeriod  := TXmlNode():new( , "InvoicingPeriod" )
+
+                  ::oXmlInvoicingPeriod:addBelow( TXmlNode():new( , "StartDate", ,  ::FechaInicioOperacion() ) )
+                  ::oXmlInvoicingPeriod:addBelow( TXmlNode():new( , "EndDate", ,    ::FechaFinOperacion() ) )
+
+               ::oXmlInvoiceIssueData:addBelow( ::oXmlInvoicingPeriod )
+
+               end
+
+               ::oXmlInvoiceIssueData:addBelow( TXmlNode():new( , "InvoiceCurrencyCode", ,   ::cInvoiceCurrencyCode ) )
+               ::oXmlInvoiceIssueData:addBelow( TXmlNode():new( , "TaxCurrencyCode", ,       ::cTaxCurrencyCode ) )
+               ::oXmlInvoiceIssueData:addBelow( TXmlNode():new( , "LanguageName", ,          ::cLanguageName ) )
+
+            ::oXmlInvoice:addBelow( ::oXmlInvoiceIssueData )
+
+         end
+
+
+
+
+
+         ::oXmlTaxesOutputs   := TXmlNode():new( , "TaxesOutputs" )
+
+            for each oTax in ::aTax
+
+               ::TaxesXml( oTax )
+
+               ::oXmlTaxesOutputs:addBelow( ::oXmlTax )
+
+            next
+
+         ::oXmlInvoice:addBelow( ::oXmlTaxesOutputs )
+
+
+
+
+
+         ::TotalXml()
+
+
+
+
+
+         if !Empty( ::aItemLine )
+
+            ::oXmlItems := TXmlNode():new( , "Items" )
+
+               for each oItem in ::aItemLine
+
+                  ::ItemsXml( oItem )
+
+                  ::oXmlItems:addBelow( ::oXmlInvoiceLine )
+
+               next
+
+            ::oXmlInvoice:addBelow( ::oXmlItems )
+
+         end
+
+
+
+
+
+         if !Empty( ::aInstallment )
+
+            ::oXmlPaymentDetails := TXmlNode():new( , "PaymentDetails" )
+
+            for each oInstallment in ::aInstallment
+
+               ::InstallmentXml( oInstallment )
+
+               ::oXmlPaymentDetails:addBelow( ::oXmlInstallment )
+
+            next
+
+            ::oXmlInvoice:addBelow( ::oXmlPaymentDetails )
+
+         end
+
+
+
+
+
+      ::oXmlInvoices:addBelow( ::oXmlInvoice )
+
+   ::oXmlNode:addBelow( ::oXmlInvoices )
+
+Return ( self )
+
+
+
+static FUNCTION TFacturaElectronica_TaxesXml( oTax ) ; local Self AS CLASS TFacturaElectronica := QSelf() AS CLASS TFacturaElectronica
+
+   if Empty( oTax )
+      Return ( nil )
+   end
+
+
+
+
+
+
+
+
+
+   ::oXmlTax         := TXmlNode():new( , "Tax" )
+
+
+
+
+
+   ::oXmlTax:addBelow( TXmlNode():new( , "TaxTypeCode", ,   oTax:cTaxTypeCode ) )
+   ::oXmlTax:addBelow( TXmlNode():new( , "TaxRate", ,       oTax:TaxRate() ) )
+
+   ::oXmlTaxableBase := TXmlNode():new( , "TaxableBase" )
+
+      ::oXmlTaxableBase:addBelow( TXmlNode():new( , "TotalAmount", ,       oTax:TaxBase() ) )
+      ::oXmlTaxableBase:addBelow( TXmlNode():new( , "EquivalentInEuros", , "0.00" ) )
+
+   ::oXmlTax:addBelow( ::oXmlTaxableBase )
+
+   ::oXmlTaxAmount   := TXmlNode():new( , "TaxAmount" )
+
+      ::oXmlTaxAmount:addBelow( TXmlNode():new( , "TotalAmount", ,         oTax:TaxAmount() ) )
+      ::oXmlTaxAmount:addBelow( TXmlNode():new( , "EquivalentInEuros", ,   "0.00" ) )
+
+   ::oXmlTax:addBelow( ::oXmlTaxAmount )
+
+
+
+
+
+   if oTax:nEquivalenceSurchargeAmount <> 0
+
+      ::oXmlTax:addBelow( TXmlNode():new( , "EquivalenceSurcharge", ,   oTax:EquivalenceSurcharge() ) )
+
+      ::oXmlEquivalenceSurcharge := TXmlNode():new( , "EquivalenceSurchargeAmount" )
+
+         ::oXmlEquivalenceSurcharge:addBelow( TXmlNode():new( , "TotalAmount", ,         oTax:EquivalenceSurchargeAmount() ) )
+         ::oXmlEquivalenceSurcharge:addBelow( TXmlNode():new( , "EquivalentInEuros", ,   "0.00" ) )
+
+      ::oXmlTax:addBelow( ::oXmlEquivalenceSurcharge )
+
+   end
+
+Return ( ::oXmlTax )
+
+
+
+static FUNCTION TFacturaElectronica_AdministrativeCentresXml( oAdministrativeCentre ) ; local Self AS CLASS TFacturaElectronica := QSelf() AS CLASS TFacturaElectronica
+
+   local oXmlCentreDescription
+
+   ::oXmlAdministrativeCentre    := TXmlNode():new( , "AdministrativeCentre" )
+
+      ::oXmlAdministrativeCentre:addBelow( TXmlNode():new( , "CentreCode", ,     oAdministrativeCentre:CentreCode() ) )
+      ::oXmlAdministrativeCentre:addBelow( TXmlNode():new( , "RoleTypeCode", ,   oAdministrativeCentre:RoleTypeCode() ) )
+
+      ::oXmlAddressInSpain       := TXmlNode():new( , "AddressInSpain" )
+         ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Address", ,     oAdministrativeCentre:Address() ) )
+         ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "PostCode", ,    oAdministrativeCentre:PostCode() ) )
+         ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Town", ,        oAdministrativeCentre:Town() ) )
+         ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Province", ,    oAdministrativeCentre:Province() ) )
+         ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "CountryCode", , oAdministrativeCentre:CountryCode() ) )
+
+      ::oXmlAdministrativeCentre:addBelow( ::oXmlAddressInSpain )
+
+      oXmlCentreDescription      := TXmlNode():new( , "CentreDescription", , oAdministrativeCentre:CentreDescription() )
+      ::oXmlAdministrativeCentre:addBelow( oXmlCentreDescription )
+
+   ::oXmlAdministrativeCentres:addBelow( ::oXmlAdministrativeCentre )
+
+Return ( self )
+
+
+
+static FUNCTION TFacturaElectronica_TotalXml( ) ; local Self AS CLASS TFacturaElectronica := QSelf() AS CLASS TFacturaElectronica
+
+   local oDiscount
+   local oAmountsWithheld
+
+   ::oXmlInvoiceTotals   := TXmlNode():new( , "InvoiceTotals" )
+
+      if !Empty( ::TotalGrossAmount() )
+         ::oXmlInvoiceTotals:addBelow( TXmlNode():new( , "TotalGrossAmount", ,   ::TotalGrossAmount() ) )
+      end
+
+
+
+
+
+      if !Empty( ::aDiscount )
+
+         ::oXmlGeneralDiscounts  := TXmlNode():new( , "GeneralDiscounts" )
+
+            for each oDiscount in ::aDiscount
+
+               ::DiscountXml( oDiscount )
+
+               ::oXmlGeneralDiscounts:addBelow( ::oXmlDiscount )
+
+            next
+
+         ::oXmlInvoiceTotals:addBelow( ::oXmlGeneralDiscounts )
+
+      end
+
+
+
+
+
+      if !Empty( ::TotalGeneralDiscounts() )
+         ::oXmlInvoiceTotals:addBelow( TXmlNode():new( , "TotalGeneralDiscounts", ,       ::TotalGeneralDiscounts() ) )
+      end
+
+      if !Empty( ::TotalGeneralSurcharges() )
+         ::oXmlInvoiceTotals:addBelow( TXmlNode():new( , "TotalGeneralSurcharges", ,      ::TotalGeneralSurcharges() ) )
+      end
+
+      if !Empty( ::TotalGrossAmountBeforeTaxes() )
+         ::oXmlInvoiceTotals:addBelow( TXmlNode():new( , "TotalGrossAmountBeforeTaxes", , ::TotalGrossAmountBeforeTaxes() ) )
+      end
+
+      if !Empty( ::TotalTaxOutputs() )
+         ::oXmlInvoiceTotals:addBelow( TXmlNode():new( , "TotalTaxOutputs", ,             ::TotalTaxOutputs() ) )
+      end
+
+      if !Empty( ::TotalTaxesWithheld() )
+         ::oXmlInvoiceTotals:addBelow( TXmlNode():new( , "TotalTaxesWithheld", ,          ::TotalTaxesWithheld() ) )
+      end
+
+      if !Empty( ::InvoiceTotal() )
+         ::oXmlInvoiceTotals:addBelow( TXmlNode():new( , "InvoiceTotal", ,                ::InvoiceTotal() ) )
+      end
+
+      if !Empty( ::TotalOutstandingAmount() )
+         ::oXmlInvoiceTotals:addBelow( TXmlNode():new( , "TotalOutstandingAmount", ,      ::TotalOutstandingAmount() ) )
+      end
+
+      if ConfiguracionesEmpresaModel():getLogic( "lDtoLinAfterTotal", .F. ) .AND. ::nDtoEstatal <> 0
+
+         oAmountsWithheld := TXmlNode():new( , "AmountsWithheld" )
+
+         oAmountsWithheld:addBelow( TXmlNode():new( , "WithholdingReason", ,   "Descuento estatal" ) )
+         oAmountsWithheld:addBelow( TXmlNode():new( , "WithholdingAmount", ,   ::DtoEstatal() ) )
+
+         ::oXmlInvoiceTotals:addBelow( oAmountsWithheld )
+
+      end
+
+      if !Empty( ::PorcentajeRetencion() )
+
+         oAmountsWithheld := TXmlNode():new( , "AmountsWithheld" )
+
+         oAmountsWithheld:addBelow( TXmlNode():new( , "WithholdingReason", ,   "Retencion" ) )
+         oAmountsWithheld:addBelow( TXmlNode():new( , "WithholdingRate", ,     ::PorcentajeRetencion() ) )
+         oAmountsWithheld:addBelow( TXmlNode():new( , "WithholdingAmount", ,   ::ImporteRetencion() ) )
+
+         ::oXmlInvoiceTotals:addBelow( oAmountsWithheld )
+
+      end
+
+
+      if !Empty( ::TotalExecutableAmount() )
+         if ConfiguracionesEmpresaModel():getLogic( "lDtoLinAfterTotal", .F. )
+               ::oXmlInvoiceTotals:addBelow( TXmlNode():new( , "TotalExecutableAmount", ,       ::TotalExecutableAmountDtoEstatal() ) )
+         else
+               ::oXmlInvoiceTotals:addBelow( TXmlNode():new( , "TotalExecutableAmount", ,       ::TotalExecutableAmount() ) )
+         end
+      end
+
+      if !Empty( ::TotalReimbursableExpenses() )
+         ::oXmlInvoiceTotals:addBelow( TXmlNode():new( , "TotalReimbursableExpenses", ,   ::TotalReimbursableExpenses() ) )
+      end
+
+   ::oXmlInvoice:addBelow( ::oXmlInvoiceTotals )
+
+Return ( self )
+
+
+
+static FUNCTION TFacturaElectronica_DiscountXml( oDiscount ) ; local Self AS CLASS TFacturaElectronica := QSelf() AS CLASS TFacturaElectronica
+
+   ::oXmlDiscount   := TXmlNode():new( , "Discount" )
+
+      ::oXmlDiscount:addBelow( TXmlNode():new( , "DiscountReason", , oDiscount:DiscountReason() ) )
+
+      if ( oDiscount:nDiscountRate <> 0 )
+         ::oXmlDiscount:addBelow( TXmlNode():new( , "DiscountRate", ,   oDiscount:DiscountRate() ) )
+      end
+
+      ::oXmlDiscount:addBelow( TXmlNode():new( , "DiscountAmount", , oDiscount:DiscountAmount() ) )
+
+Return ( ::oXmlDiscount )
+
+
+
+static FUNCTION TFacturaElectronica_ItemsXml( oItemLine ) ; local Self AS CLASS TFacturaElectronica := QSelf() AS CLASS TFacturaElectronica
+
+   local oTax
+   local oDiscount
+
+   ::oXmlInvoiceLine := TXmlNode():new( , "InvoiceLine" )
+
+   ::oXmlInvoiceLine:addBelow( TXmlNode():new( , "ItemDescription", ,      oItemLine:ItemDescription() ) )
+   ::oXmlInvoiceLine:addBelow( TXmlNode():new( , "Quantity", ,             oItemLine:Quantity() ) )
+   ::oXmlInvoiceLine:addBelow( TXmlNode():new( , "UnitOfMeasure", ,        oItemLine:UnitOfMeasure() ) )
+   ::oXmlInvoiceLine:addBelow( TXmlNode():new( , "UnitPriceWithoutTax", ,  oItemLine:UnitPriceWithoutTax() ) )
+   ::oXmlInvoiceLine:addBelow( TXmlNode():new( , "TotalCost", ,            oItemLine:TotalCost() ) )
+
+
+
+
+
+   if !ConfiguracionesEmpresaModel():getLogic( "lDtoLinAfterTotal", .F. )
+
+      if !Empty( oItemLine:aDiscount )
+
+         ::oXmlDiscountsAndRebates := TXmlNode():new( , "DiscountsAndRebates" )
+
+         for each oDiscount in oItemLine:aDiscount
+
+            ::DiscountXml( oDiscount )
+
+            ::oXmlDiscountsAndRebates:addBelow( ::oXmlDiscount )
+
+         next
+
+         ::oXmlInvoiceLine:addBelow( ::oXmlDiscountsAndRebates )
+
+      end
+
+   end
+
+   ::oXmlInvoiceLine:addBelow( TXmlNode():new( , "GrossAmount", , oItemLine:GrossAmount() ) )
+
+
+
+
+
+   if !Empty( oItemLine:aTax )
+
+      ::oXmlTaxesOutputs   := TXmlNode():new( , "TaxesOutputs" )
+
+      for each oTax in oItemLine:aTax
+
+         ::TaxesXml( oTax )
+
+         ::oXmlTaxesOutputs:addBelow( ::oXmlTax )
+
+      next
+
+      ::oXmlInvoiceLine:addBelow( ::oXmlTaxesOutputs )
+
+   end
+
+Return ( self )
+
+
+
+static FUNCTION TFacturaElectronica_InstallmentXml( oInstallment ) ; local Self AS CLASS TFacturaElectronica := QSelf() AS CLASS TFacturaElectronica
+
+   ::oXmlInstallment := TXmlNode():new( , "Installment" )
+
+   ::oXmlInstallment:addBelow( TXmlNode():new( , "InstallmentDueDate", ,   oInstallment:InstallmentDueDate() ) )
+   ::oXmlInstallment:addBelow( TXmlNode():new( , "InstallmentAmount", ,    oInstallment:InstallmentAmount() ) )
+   ::oXmlInstallment:addBelow( TXmlNode():new( , "PaymentMeans", ,         oInstallment:cPaymentMeans ) )
+
+   if !Empty( oInstallment:oAccountToBeDebited )
+
+      ::oXmlAccountToBeDebited  := TXmlNode():new( , "AccountToBeDebited" )
+
+         ::oXmlAccountToBeDebited:addBelow( TXmlNode():new( , "IBAN", ,       oInstallment:oAccountToBeDebited:IBAN() ) )
+         ::oXmlAccountToBeDebited:addBelow( TXmlNode():new( , "BankCode", ,   oInstallment:oAccountToBeDebited:BankCode() ) )
+         ::oXmlAccountToBeDebited:addBelow( TXmlNode():new( , "BranchCode", , oInstallment:oAccountToBeDebited:BranchCode() ) )
+
+         ::oXmlAddressInSpain  := TXmlNode():new( , "AddressInSpain" )
+            ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Address", ,     oInstallment:oAccountToBeDebited:Address() ) )
+            ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "PostCode", ,    oInstallment:oAccountToBeDebited:PostCode() ) )
+            ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Town", ,        oInstallment:oAccountToBeDebited:Town() ) )
+            ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Province", ,    oInstallment:oAccountToBeDebited:Province() ) )
+            ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "CountryCode", , oInstallment:oAccountToBeDebited:CountryCode() ) )
+
+         ::oXmlAccountToBeDebited:addBelow( ::oXmlAddressInSpain )
+
+      ::oXmlInstallment:addBelow( ::oXmlAccountToBeDebited )
+
+   end
+
+   if !Empty( oInstallment:oAccountToBeCredited )
+
+      ::oXmlAccountToBeCredited  := TXmlNode():new( , "AccountToBeCredited" )
+
+         ::oXmlAccountToBeCredited:addBelow( TXmlNode():new( , "IBAN", ,         oInstallment:oAccountToBeCredited:IBAN() ) )
+         ::oXmlAccountToBeCredited:addBelow( TXmlNode():new( , "BankCode", ,     oInstallment:oAccountToBeCredited:BankCode() ) )
+         ::oXmlAccountToBeCredited:addBelow( TXmlNode():new( , "BranchCode", ,   oInstallment:oAccountToBeCredited:BranchCode() ) )
+
+         ::oXmlAddressInSpain  := TXmlNode():new( , "BranchInSpainAddress" )
+            ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Address", ,        oInstallment:oAccountToBeCredited:Address() ) )
+            ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "PostCode", ,       oInstallment:oAccountToBeCredited:PostCode() ) )
+            ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Town", ,           oInstallment:oAccountToBeCredited:Town() ) )
+            ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "Province", ,       oInstallment:oAccountToBeCredited:Province() ) )
+            ::oXmlAddressInSpain:addBelow( TXmlNode():new( , "CountryCode", ,    oInstallment:oAccountToBeCredited:CountryCode() ) )
+
+         ::oXmlAccountToBeCredited:addBelow( ::oXmlAddressInSpain )
+
+      ::oXmlInstallment:addBelow( ::oXmlAccountToBeCredited )
+
+   end
+
+Return ( self )
+
+
+
+static FUNCTION TFacturaElectronica_Firma( ) ; local Self AS CLASS TFacturaElectronica := QSelf() AS CLASS TFacturaElectronica
+
+   local xRet
+   local hLib
+   local oNode
+   local oError
+   local oBlock
+
+   if !File( FullCurDir() + "\aeatfact.dll")
+      ::oTree:Add( "No existe el componente AeatFact.Dll" )
+      Return ( Self )
+   end
+
+   oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      ::oFirma    := CreateObject( "AEATFACT.AeatFactCtl" )
+
+   RECOVER USING oError
+
+      WaitRun( "regsvr32 /s " + FullcurDir() + "AeatFact.Dll" )
+
+      ::oFirma    := CreateObject( "AEATFACT.AeatFactCtl" )
+
+   end
+
+   ErrorBlock( oBlock )
+
+   if !Empty( ::oFirma )
+
+      xRet        := ::oFirma:FIRMA( ::cFicheroOrigen, ::cNif, ::cFicheroDestino )
+      xRet        := ::oFirma:VERIFICA( ::cFicheroOrigen, ::cFicheroDestino )
+
+      if Left( xRet, 2 ) == "00"
+
+         oNode := ::oTree:Add( "Firma digital realizada satisfactoriamente.", 1 )
+
+         oNode:Add( xRet, 1 )
+         oNode:Expand()
+
+      else
+
+         oNode := ::oTree:Add( "Error al realizar la firma digital." )
+
+         oNode:Add( xRet )
+         oNode:Expand()
+
+      end
+
+   else
+
+      ::oTree:Add( "No se ha podido crear el objeto para la firma digital." )
+
+   end
+
+Return ( self )
+
+
+
+static FUNCTION TFacturaElectronica_VerificaFirma( ) ; local Self AS CLASS TFacturaElectronica := QSelf() AS CLASS TFacturaElectronica
+
+   local xRet
+   local oError
+   local oBlock
+
+   if !File( FullCurDir() + "\aeatfact.dll")
+      ::oTree:Add( "No existe el componente AeatFact.Dll" )
+      Return ( Self )
+   end
+
+   oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      ::oFirma    := CreateObject( "AEATFACT.AeatFactCtl" )
+
+   RECOVER USING oError
+
+      WaitRun( "regsvr32 /s " + FullcurDir() + "AeatFact.Dll" )
+
+      ::oFirma    := CreateObject( "AEATFACT.AeatFactCtl" )
+
+   end
+
+   ErrorBlock( oBlock )
+
+   if !Empty( ::oFirma )
+
+      xRet        := ::oFirma:VERIFICA( ::cFicheroOrigen, ::cFicheroDestino )
+
+      ::oTree:Add( xRet, if( Left( xRet, 2 ) == "00", 1, 0 ) )
+
+   end
+
+Return ( self )
+
+
+
+static FUNCTION TFacturaElectronica_FirmaJava( ) ; local Self AS CLASS TFacturaElectronica := QSelf() AS CLASS TFacturaElectronica
+
+   local oError
+   local oBlock
+
+   oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      logwrite(   "java -jar " + fullcurdir() + "firma\firma.jar " + ::cFicheroOrigen + space(1) + ::cFicheroDestino + space( 1 ) + "Explorer 0" )
+      waitRun(    "java -jar " + fullcurdir() + "firma\firma.jar " + ::cFicheroOrigen + space(1) + ::cFicheroDestino + space( 1 ) + "Explorer 0", 6 )
+
+      ::oTree:Add( "Proceso de firma digital iniciado.", 1 )
+
+   RECOVER USING oError
+
+      ::oTree:Add( "No se ha podido realizar la firma digital." )
+
+   end
+
+   ErrorBlock( oBlock )
+
+Return ( self )
+
+
+
+static FUNCTION TFacturaElectronica_Enviar( ) ; local Self AS CLASS TFacturaElectronica := QSelf() AS CLASS TFacturaElectronica
+
+   local oError
+   local oBlock
+   local lSendMail               := .F.
+
+   if Empty( ::cMailServer ) .OR. Empty( ::cMailServerUserName ) .OR. Empty( ::cMailServerPassword )
+      ::oTree:Add( "Debe cumplimentar los datos de servidor de correo electrónico en la configuración de empresa." )
+      Return ( lSendMail )
+   end
+
+   if !File( ::cFicheroDestino )
+      ::oTree:Add( "No existe fichero firmado " + Lower( ::cFicheroDestino ) + " en formato Facturae." )
+      Return ( lSendMail )
+   end
+
+   with object ( TGenMailing():New() )
+
+      :SetAdjunto(      ::cFicheroDestino )
+      :SetPara(         "mcalero@gestool.es" )
+      :SetAsunto(       "Envío de  factura de cliente" )
+      :SetMensaje(      "Adjunto le remito nuestra factura de cliente" )
+      :SetMensaje(      Chr(13)+Chr(10) )
+      :SetMensaje(      Chr(13)+Chr(10) )
+      :SetMensaje(      "Reciba un cordial saludo." )
+
+      :lExternalSend()
+
+   end
+
+Return ( lSendMail )
+
+
+
+static FUNCTION TFacturaElectronica_ShowInWeb( ) ; local Self AS CLASS TFacturaElectronica := QSelf() AS CLASS TFacturaElectronica
+
+   local oDlg
+   local oActiveX
+
+   oDlg = TDialog():New(,,,,, "ShowFacturae",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+   oActiveX := TActiveX():Redefine( 100, oDlg, "Shell.Explorer" )
+
+   TButton():ReDefine( 2, {||( oDlg:End() )}, oDlg,,, .F.,,,, .F. )
+
+   oDlg:bStart                := {|| ::startInWeb( oActiveX, oDlg ) }
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+Return ( self )
+
+
+
+static FUNCTION TFacturaElectronica_startInWeb( oActiveX, oDlg ) ; local Self AS CLASS TFacturaElectronica := QSelf() AS CLASS TFacturaElectronica
+
+   if file( ::cFicheroDestino )
+      oActiveX:Do( "Navigate", ::cFicheroDestino )
+   else
+      oActiveX:Do( "Navigate", ::cFicheroOrigen )
+   end
+
+   sysRefresh()
+
+Return ( self )
+
+
+
+
+
+
+
+
+_HB_CLASS Party ; function Party ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "Party", iif( .T., { @Address() }, { @HBObject() } ), @Party() ) ) ;
+
+   _HB_MEMBER { cTaxIdentificationNumber } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTaxIdentificationNumber"}, .F. )
+   _HB_MEMBER { cCorporateName } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCorporateName"}, .F. )
+   _HB_MEMBER { cTradeName } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTradeName"}, .F. )
+   _HB_MEMBER { cRegistrationData } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cRegistrationData"}, .F. )
+   _HB_MEMBER { nBook } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nBook"}, .F. )
+   _HB_MEMBER { cRegisterOfCompaniesLocation } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cRegisterOfCompaniesLocation"}, .F. )
+   _HB_MEMBER { nSheet } ; oClass:AddMultiData(, "-", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nSheet"}, .F. )
+   _HB_MEMBER { nFolio } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nFolio"}, .F. )
+   _HB_MEMBER { cSection } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSection"}, .F. )
+   _HB_MEMBER { nVolume } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nVolume"}, .F. )
+   _HB_MEMBER { cAditionalRegistrationData } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAditionalRegistrationData"}, .F. )
+   _HB_MEMBER { cTelephone } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTelephone"}, .F. )
+   _HB_MEMBER { cTelFax } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTelFax"}, .F. )
+   _HB_MEMBER { cWebAddress } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cWebAddress"}, .F. )
+   _HB_MEMBER { cElectronicMail } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cElectronicMail"}, .F. )
+   _HB_MEMBER { cPersonTypeCode } ; oClass:AddMultiData(, "F", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPersonTypeCode"}, .F. )
+   _HB_MEMBER { cResidenceTypeCode } ; oClass:AddMultiData(, "R", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cResidenceTypeCode"}, .F. )
+
+   _HB_MEMBER { cName } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cName"}, .F. )
+   _HB_MEMBER { cFirstSurname } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFirstSurname"}, .F. )
+   _HB_MEMBER { cSecondSurname } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSecondSurname"}, .F. )
+
+   _HB_MEMBER TaxIdentificationNumber(); oClass:AddInline( "TaxIdentificationNumber", {|Self| ( ( Self ) ), ( hb_StrToUTF8( Rtrim( Left( ::cTaxIdentificationNumber, 30 ) ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AditionalRegistrationData(); oClass:AddInline( "AditionalRegistrationData", {|Self| ( ( Self ) ), ( hb_StrToUTF8( Rtrim( ::cAditionalRegistrationData ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Telephone(); oClass:AddInline( "Telephone", {|Self| ( ( Self ) ), ( hb_StrToUTF8( Rtrim( ::cTelephone ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TelFax(); oClass:AddInline( "TelFax", {|Self| ( ( Self ) ), ( hb_StrToUTF8( Rtrim( ::cTelFax ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER WebAddress(); oClass:AddInline( "WebAddress", {|Self| ( ( Self ) ), ( hb_StrToUTF8( Rtrim( ::cWebAddress ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ElectronicMail(); oClass:AddInline( "ElectronicMail", {|Self| ( ( Self ) ), ( hb_StrToUTF8( Rtrim( ::cElectronicMail ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PersonTypeCode(); oClass:AddInline( "PersonTypeCode", {|Self| ( ( Self ) ), ( hb_StrToUTF8( Rtrim( ::cPersonTypeCode ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ResidenceTypeCode(); oClass:AddInline( "ResidenceTypeCode", {|Self| ( ( Self ) ), ( hb_StrToUTF8( Rtrim( ::cResidenceTypeCode ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CorporateName(); oClass:AddInline( "CorporateName", {|Self| ( ( Self ) ), ( hb_StrToUTF8( Rtrim( Left( ::cCorporateName, 80 ) ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TradeName(); oClass:AddInline( "TradeName", {|Self| ( ( Self ) ), ( hb_StrToUTF8( Rtrim( Left( ::cTradeName, 40 ) ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Name(); oClass:AddInline( "Name", {|Self| ( ( Self ) ), ( hb_StrToUTF8( Rtrim( Left( ::cName, 40 ) ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER FirstSurname(); oClass:AddInline( "FirstSurname", {|Self| ( ( Self ) ), ( hb_StrToUTF8( Rtrim( Left( ::cFirstSurname, 40 ) ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SecondSurname(); oClass:AddInline( "SecondSurname", {|Self| ( ( Self ) ), ( hb_StrToUTF8( Rtrim( Left( ::cSecondSurname, 40 ) ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS Party ;
+
+
+
+_HB_CLASS Tax ; function Tax ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "Tax", iif( .F., { }, { @HBObject() } ), @Tax() ) ) ;
+
+   _HB_MEMBER { cTaxTypeCode } ; oClass:AddMultiData(, "01", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTaxTypeCode"}, .F. )
+   _HB_MEMBER { nTaxRate } ; oClass:AddMultiData(, 0.00, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTaxRate"}, .F. )
+   _HB_MEMBER { nTaxBase } ; oClass:AddMultiData(, 0.00, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTaxBase"}, .F. )
+   _HB_MEMBER { nTaxAmount } ; oClass:AddMultiData(, 0.00, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTaxAmount"}, .F. )
+   _HB_MEMBER { nEquivalenceSurcharge } ; oClass:AddMultiData(, 0.00, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nEquivalenceSurcharge"}, .F. )
+   _HB_MEMBER { nEquivalenceSurchargeAmount } ; oClass:AddMultiData(, 0.00, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nEquivalenceSurchargeAmount"}, .F. )
+
+   _HB_MEMBER TaxRate(); oClass:AddInline( "TaxRate", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nTaxRate,                     "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TaxBase(); oClass:AddInline( "TaxBase", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nTaxBase,                     "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER TaxAmount(); oClass:AddInline( "TaxAmount", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nTaxAmount,                   "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER EquivalenceSurcharge(); oClass:AddInline( "EquivalenceSurcharge", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nEquivalenceSurcharge,        "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER EquivalenceSurchargeAmount(); oClass:AddInline( "EquivalenceSurchargeAmount", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nEquivalenceSurchargeAmount,  "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS Tax ;
+
+
+
+_HB_CLASS Discount ; function Discount ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "Discount", iif( .F., { }, { @HBObject() } ), @Discount() ) ) ;
+
+   _HB_MEMBER { cDiscountReason } ; oClass:AddMultiData(, "-", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cDiscountReason"}, .F. )
+   _HB_MEMBER { nDiscountRate } ; oClass:AddMultiData(, 0.00, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nDiscountRate"}, .F. )
+   _HB_MEMBER { nDiscountAmount } ; oClass:AddMultiData(, 0.000000, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nDiscountAmount"}, .F. )
+
+   _HB_MEMBER DiscountReason(); oClass:AddInline( "DiscountReason", {|Self| ( ( Self ) ), ( ::cDiscountReason )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DiscountRate(); oClass:AddInline( "DiscountRate", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nDiscountRate,    "999999999.9999" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DiscountAmount(); oClass:AddInline( "DiscountAmount", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nDiscountAmount,  "999999999.999999"  ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS Discount ;
+
+
+
+_HB_CLASS ItemLine ; function ItemLine ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "ItemLine", iif( .F., { }, { @HBObject() } ), @ItemLine() ) ) ;
+
+   _HB_MEMBER { oFacturaElectronica } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFacturaElectronica"}, .F. )
+
+   _HB_MEMBER { cItemDescription } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cItemDescription"}, .F. )
+   _HB_MEMBER { nQuantity } ; oClass:AddMultiData(, 0.00, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nQuantity"}, .F. )
+   _HB_MEMBER { cUnitOfMeasure } ; oClass:AddMultiData(, "01", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cUnitOfMeasure"}, .F. )
+   _HB_MEMBER { nUnitPriceWithTax } ; oClass:AddMultiData(, 0.000000, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nUnitPriceWithTax"}, .F. )
+   _HB_MEMBER { nUnitPriceWithoutTax } ; oClass:AddMultiData(, 0.000000, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nUnitPriceWithoutTax"}, .F. )
+   _HB_MEMBER { nTotalCost } ; oClass:AddMultiData(, 0.00, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalCost"}, .F. )
+   _HB_MEMBER { nIva } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nIva"}, .F. )
+   _HB_MEMBER { lIvaInc } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lIvaInc"}, .F. )
+   _HB_MEMBER { aDiscount } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aDiscount"}, .F. )
+   _HB_MEMBER { nGrossAmount } ; oClass:AddMultiData(, 0.00, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nGrossAmount"}, .F. )
+   _HB_MEMBER { aTax } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aTax"}, .F. )
+
+   _HB_MEMBER ItemDescription(); oClass:AddInline( "ItemDescription", {|Self| ( ( Self ) ), ( hb_StrToUTF8( rtrim( ::cItemDescription ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER UnitOfMeasure(); oClass:AddInline( "UnitOfMeasure", {|Self| ( ( Self ) ), ( ::cUnitOfMeasure )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Quantity(); oClass:AddInline( "Quantity", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nQuantity,                                      "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER UnitPriceWithoutTax(); oClass:AddInline( "UnitPriceWithoutTax", {|Self| ( ( Self ) ), ( Alltrim( Trans( ::nUnitPriceWithoutTax,                           "999999999.999999" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+   _HB_MEMBER New( oFacturaElectronica) AS CLASS ItemLine; oClass:AddMethod( "New", @ItemLine_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addDiscount( oDiscount); oClass:AddMethod( "addDiscount", @ItemLine_addDiscount(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GrossAmount(); oClass:AddMethod( "GrossAmount", @ItemLine_GrossAmount(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER TotalCost(); oClass:AddMethod( "TotalCost", @ItemLine_TotalCost(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addTax(); oClass:AddInline( "addTax", {|Self, oTax | ( ( Self ) ), aAdd( ::aTax, oTax ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS ItemLine ;
+
+
+
+static FUNCTION ItemLine_New( oFacturaElectronica ) ; local Self AS CLASS ItemLine := QSelf() AS CLASS ItemLine
+
+   ::oFacturaElectronica               := oFacturaElectronica
+
+RETURN ( Self )
+
+
+
+static FUNCTION ItemLine_addDiscount( oDiscount ) ; local Self AS CLASS ItemLine := QSelf() AS CLASS ItemLine
+
+   if Empty( ::nTotalCost )
+      ::nTotalCost                     := ::nQuantity * ::nUnitPriceWithoutTax
+   end
+
+   if oDiscount:nDiscountRate <> 0
+      oDiscount:nDiscountAmount       := Round( ::nTotalCost * oDiscount:nDiscountRate / 100, nRouDiv() )
+   end
+
+   aAdd( ::aDiscount, oDiscount )
+
+RETURN ( oDiscount )
+
+
+
+static FUNCTION ItemLine_GrossAmount( ) ; local Self AS CLASS ItemLine := QSelf() AS CLASS ItemLine
+
+   local oDiscount
+
+   ::nGrossAmount       := ::nQuantity * ::nUnitPriceWithTax
+
+   if !ConfiguracionesEmpresaModel():getLogic( "lDtoLinAfterTotal", .F. )
+
+      for each oDiscount in ::aDiscount
+         ::nGrossAmount    -= oDiscount:nDiscountAmount
+      next
+
+   end
+
+   ::nGrossAmount       := Round( ::nGrossAmount, 6 )
+
+   if ::lIvaInc
+
+      ::nGrossAmount    := ::nGrossAmount / ( 1 + ( ::nIva / 100 ) )
+      ::nGrossAmount    := Round( ::nGrossAmount, 6 )
+
+   end
+
+RETURN ( Alltrim( Trans( ::nGrossAmount, "999999999.999999" ) ) )
+
+
+
+static FUNCTION ItemLine_TotalCost( ) ; local Self AS CLASS ItemLine := QSelf() AS CLASS ItemLine
+
+   local oDiscount
+   local nTotal         := 0
+
+   nTotal       := ::nQuantity * ::nUnitPriceWithTax
+
+   if !ConfiguracionesEmpresaModel():getLogic( "lDtoLinAfterTotal", .F. )
+
+      for each oDiscount in ::aDiscount
+         nTotal    -= oDiscount:nDiscountAmount
+      next
+
+   end
+
+   nTotal       := Round( nTotal, 6 )
+
+   if ::lIvaInc
+
+      nTotal    := nTotal / ( 1 + ( ::nIva / 100 ) )
+      nTotal    := Round( nTotal, 6 )
+
+   end
+
+RETURN ( Alltrim( Trans( nTotal, "999999999.999999" ) ) )
+
+
+
+
+_HB_CLASS Installment ; function Installment ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "Installment", iif( .F., { }, { @HBObject() } ), @Installment() ) ) ;
+
+   _HB_MEMBER { dInstallmentDueDate } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dInstallmentDueDate"}, .F. )
+   _HB_MEMBER { nInstallmentAmount } ; oClass:AddMultiData(, 0.00, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nInstallmentAmount"}, .F. )
+   _HB_MEMBER { cPaymentMeans } ; oClass:AddMultiData(, "02", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPaymentMeans"}, .F. )
+
+   _HB_MEMBER { oAccountToBeCredited } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAccountToBeCredited"}, .F. )
+   _HB_MEMBER { oAccountToBeDebited } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oAccountToBeDebited"}, .F. )
+
+   _HB_MEMBER InstallmentDueDate(); oClass:AddInline( "InstallmentDueDate", {|Self| ( ( Self ) ), ( dtoiso( ::dInstallmentDueDate ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER InstallmentAmount(); oClass:AddInline( "InstallmentAmount", {|Self| ( ( Self ) ), ( alltrim( Trans( ::nInstallmentAmount,  "999999999.99" ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS Installment ;
+
+
+
+_HB_CLASS Address ; function Address ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "Address", iif( .F., { }, { @HBObject() } ), @Address() ) ) ;
+
+   _HB_MEMBER { cAddress } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAddress"}, .F. )
+   _HB_MEMBER { cPostCode } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPostCode"}, .F. )
+   _HB_MEMBER { cTown } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTown"}, .F. )
+   _HB_MEMBER { cProvince } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cProvince"}, .F. )
+   _HB_MEMBER { cCountryCode } ; oClass:AddMultiData(, "ESP", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCountryCode"}, .F. )
+
+   _HB_MEMBER Address(); oClass:AddInline( "Address", {|Self| ( ( Self ) ), ( hb_StrToUTF8( alltrim( left( ::cAddress, 80 ) ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER PostCode(); oClass:AddInline( "PostCode", {|Self| ( ( Self ) ), ( hb_StrToUTF8( alltrim( left( ::cPostCode, 9 ) ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Town(); oClass:AddInline( "Town", {|Self| ( ( Self ) ), ( hb_StrToUTF8( alltrim( left( ::cTown, 50 ) ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Province(); oClass:AddInline( "Province", {|Self| ( ( Self ) ), ( hb_StrToUTF8( alltrim( left( ::cProvince, 20 ) ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CountryCode(); oClass:AddInline( "CountryCode", {|Self| ( ( Self ) ), ( hb_StrToUTF8( alltrim( left( ::cCountryCode, 3 ) ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS Address ;
+
+
+
+_HB_CLASS Account ; function Account ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "Account", iif( .T., { @Address() }, { @HBObject() } ), @Account() ) ) ;
+
+   _HB_MEMBER { cIBAN } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cIBAN"}, .F. )
+   _HB_MEMBER { cBankCode } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cBankCode"}, .F. )
+   _HB_MEMBER { cBranchCode } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cBranchCode"}, .F. )
+
+   _HB_MEMBER IBAN(); oClass:AddInline( "IBAN", {|Self| ( ( Self ) ), ( alltrim( Left( ::cIBAN, 30 ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER BankCode(); oClass:AddInline( "BankCode", {|Self| ( ( Self ) ), ( alltrim( Left( ::cBankCode, 60 ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER BranchCode(); oClass:AddInline( "BranchCode", {|Self| ( ( Self ) ), ( alltrim( Left( ::cBranchCode, 60 ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS Account ;
+
+
+
+_HB_CLASS AdministrativeCentres ; function AdministrativeCentres ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "AdministrativeCentres", iif( .T., { @Address() }, { @HBObject() } ), @AdministrativeCentres() ) ) ;
+
+   _HB_MEMBER { cCentreCode } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCentreCode"}, .F. )
+   _HB_MEMBER { cRoleTypeCode } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cRoleTypeCode"}, .F. )
+   _HB_MEMBER { cCentreDescription } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCentreDescription"}, .F. )
+
+   _HB_MEMBER CentreCode(); oClass:AddInline( "CentreCode", {|Self| ( ( Self ) ), ( hb_StrToUTF8( alltrim( ::cCentreCode   ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER RoleTypeCode(); oClass:AddInline( "RoleTypeCode", {|Self| ( ( Self ) ), ( hb_StrToUTF8( alltrim( ::cRoleTypeCode ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CentreDescription(); oClass:AddInline( "CentreDescription", {|Self| ( ( Self ) ), ( hb_StrToUTF8( alltrim( ::cCentreDescription ) ) )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS AdministrativeCentres ;

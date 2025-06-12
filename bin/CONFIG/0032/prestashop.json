@@ -1,0 +1,35 @@
+{
+  "HideExportButton" : false,
+  "RealTimeConexion" : true,
+  "InvertedNameFormat" : false,
+  "Webs" : 
+  {
+    "web" : 
+    {
+      "Active" : true,
+      "MySqlServer" : "mysql365.srv-hostalia.com",
+      "MySqlPort" : 3306,
+      "MySqlDatabase" : "db3769059_prestaluisfelipe",
+      "MySqlUser" : "u3769059_preslu",
+      "MySqlPassword" : "SJTdXWT4m|lYq?xC",
+      "MySqlTimeOut" : 60,
+      "CookieKey" : "",
+      "PrefixDatabase" : "ps_",
+      "OrderSerie" : "I",
+      "BudgetSerie" : "I",
+      "DateStart" : "2016-01-01",
+      "FtpService" : "Curl",
+      "FtpServer" : "arguellesipo.com",
+      "FtpPort" : 21,
+      "FtpUser" : "gestool@arguellesipo.com",
+      "FtpPassword" : "gestoolftp1.",
+      "FtpPassive" : false,
+      "ImagesDirectory" : "",
+      "Store" : "000",
+      "SyncronizeManufacturers" : false,
+      "ProcessWithoutStock" : true,
+      "ProcessWithoutImage" : false,
+      "IdProduct" : ""
+    }
+  }
+}

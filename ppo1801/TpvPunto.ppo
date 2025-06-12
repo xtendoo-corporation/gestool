@@ -1,0 +1,2386 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 96 ".\.\Prg\TpvPunto.prg"
+_HB_CLASS sTpvPunto ; function sTpvPunto ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "sTpvPunto", iif( .F., { }, { @HBObject() } ), @sTpvPunto() ) ) ;
+
+   _HB_MEMBER { oSender } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSender"}, .F. )
+
+   _HB_MEMBER { nNumero } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nNumero"}, .F. )
+
+   _HB_MEMBER { oSala } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSala"}, .F. )
+
+   _HB_MEMBER { cCodigoSala } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodigoSala"}, .F. )
+   _HB_MEMBER { cPuntoVenta } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPuntoVenta"}, .F. )
+
+   _HB_MEMBER { cAlias } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAlias"}, .F. )
+   _HB_MEMBER { cNombre } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNombre"}, .F. )
+
+   _HB_MEMBER { nEstado } ; oClass:AddMultiData(, 1, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nEstado"}, .F. )
+
+   _HB_MEMBER { cSerie } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSerie"}, .F. )
+   _HB_MEMBER { cNumero } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNumero"}, .F. )
+   _HB_MEMBER { cSufijo } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSufijo"}, .F. )
+
+   _HB_MEMBER { dFecha } ; oClass:AddMultiData(, Ctod( "" ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dFecha"}, .F. )
+   _HB_MEMBER { cHora } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cHora"}, .F. )
+
+   _HB_MEMBER { cImagen } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cImagen"}, .F. )
+   _HB_MEMBER { nPrecio } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nPrecio"}, .F. )
+   _HB_MEMBER { nPreCmb } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nPreCmb"}, .F. )
+
+   _HB_MEMBER { lComensal } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lComensal"}, .F. )
+   _HB_MEMBER { cArticulo } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cArticulo"}, .F. )
+   _HB_MEMBER { lMultiplicar } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lMultiplicar"}, .F. )
+
+   _HB_MEMBER { nTotal } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotal"}, .F. )
+   _HB_MEMBER { cTotal } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTotal"}, .F. )
+
+   _HB_MEMBER { cToolTip } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cToolTip"}, .F. )
+
+   _HB_MEMBER { lAbierto } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lAbierto"}, .F. )
+   _HB_MEMBER { nUbicacion } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nUbicacion"}, .F. )
+
+   _HB_MEMBER { lMultiple } ; oClass:AddMultiData(, .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lMultiple"}, .F. )
+
+   _HB_MEMBER { nType } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nType"}, .F. )
+
+   _HB_MEMBER { nTop } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTop"}, .F. )
+   _HB_MEMBER { nLeft } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nLeft"}, .F. )
+   _HB_MEMBER { nHeight } ; oClass:AddMultiData(, 160, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nHeight"}, .F. )
+   _HB_MEMBER { nWidth } ; oClass:AddMultiData(, 100, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nWidth"}, .F. )
+
+   _HB_MEMBER { oSalon } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSalon"}, .F. )
+
+   _HB_MEMBER { oMesa } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oMesa"}, .F. )
+
+   _HB_MEMBER CreateFromSala( nNumero, oSender); oClass:AddMethod( "CreateFromSala", @sTpvPunto_CreateFromSala(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CreateFromSalon( nNumero, oSender); oClass:AddMethod( "CreateFromSalon", @sTpvPunto_CreateFromSalon(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CreateMesa(); oClass:AddMethod( "CreateMesa", @sTpvPunto_CreateMesa(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER LoadMesa(); oClass:AddMethod( "LoadMesa", @sTpvPunto_LoadMesa(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Llevar(); oClass:AddMethod( "Llevar", @sTpvPunto_Llevar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Encargar(); oClass:AddMethod( "Encargar", @sTpvPunto_Encargar(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cPunto(); oClass:AddInline( "cPunto", {|Self | ( ( Self ) ), ( ::cCodigoSala + ::cPuntoVenta ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cSala(); oClass:AddInline( "cSala", {|Self | ( ( Self ) ), ( ::cCodigoSala ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cTiket(); oClass:AddInline( "cTiket", {|Self | ( ( Self ) ), ( ::cSerie + ::cNumero + ::cSufijo ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cTextoTiket(); oClass:AddInline( "cTextoTiket", {|Self | ( ( Self ) ), ( ::cSerie + "/" + Alltrim( ::cNumero ) + "/" + Alltrim( ::cSufijo ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cTextoPunto(); oClass:AddMethod( "cTextoPunto", @sTpvPunto_cTextoPunto(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cImagenPunto( nItem); oClass:AddMethod( "cImagenPunto", @sTpvPunto_cImagenPunto(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cTexto(); oClass:AddInline( "cTexto", {|Self | ( ( Self ) ), ( if( !Empty( ::cPuntoVenta ), ::cTextoPunto(), ::cTextoTiket() ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lGenerico(); oClass:AddInline( "lGenerico", {|Self | ( ( Self ) ), ( ::nUbicacion == 0 ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER lLlevar(); oClass:AddInline( "lLlevar", {|Self | ( ( Self ) ), ( ::nUbicacion == 1 ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER lRecoger(); oClass:AddInline( "lRecoger", {|Self | ( ( Self ) ), ( ::nUbicacion == 3 ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER lEncargar(); oClass:AddInline( "lEncargar", {|Self | ( ( Self ) ), ( ::nUbicacion == 4 ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER oTiketCabecera(); oClass:AddInline( "oTiketCabecera", {|Self | ( ( Self ) ), ( ::oSender:oSender:oSender:oTiketCabecera ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lMultipleTicket(); oClass:AddMethod( "lMultipleTicket", @sTpvPunto_lMultipleTicket(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nTotalMultipleTicket(); oClass:AddMethod( "nTotalMultipleTicket", @sTpvPunto_nTotalMultipleTicket(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cTextoTotalTiket(); oClass:AddMethod( "cTextoTotalTiket", @sTpvPunto_cTextoTotalTiket(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nImagenTiket( n); oClass:AddMethod( "nImagenTiket", @sTpvPunto_nImagenTiket(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER cAliasTiket( n); oClass:AddMethod( "cAliasTiket", @sTpvPunto_cAliasTiket(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetSalon(); oClass:AddInline( "SetSalon", {|Self, oSalon | ( ( Self ) ), ( ::oSalon := oSalon ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetSalon(); oClass:AddInline( "GetSalon", {|Self, oSalon | ( ( Self ) ), ( ::oSalon ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GetSalonWnd(); oClass:AddInline( "GetSalonWnd", {|Self | ( ( Self ) ), ( ::oSalon:oWnd:oClient ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS sTpvPunto ;
+
+
+
+
+
+
+
+static FUNCTION sTpvPunto_CreateFromSala( nNumero, oSender ) ; local Self AS CLASS sTpvPunto := QSelf() AS CLASS sTpvPunto
+
+   ::nNumero         := nNumero
+   ::oSender         := oSender
+
+   ::SetSalon( ::oSender:oSender:oSalon )
+
+   ::cPuntoVenta     := ::oSender:oSender:oDetSalaVta:oDbf:FieldGetByName( "cDescrip" )
+   ::nType           := ::oSender:oSender:oDetSalaVta:oDbf:FieldGetByName( "nTipo"    )
+   ::nTop            := ::oSender:oSender:oDetSalaVta:oDbf:FieldGetByName( "nFila"    )
+   ::nLeft           := ::oSender:oSender:oDetSalaVta:oDbf:FieldGetByName( "nColumna" )
+
+   ::cCodigoSala     := ::oSender:cCodigo
+   ::nPrecio         := ::oSender:nPrecio
+   ::nPreCmb         := ::oSender:nPreCmb
+   ::lComensal       := ::oSender:lComensal
+   ::cArticulo       := ::oSender:cArticulo
+   ::lMultiplicar    := ::oSender:lMultiplicar
+
+   ::nUbicacion      := 2
+
+   ::cImagen         := ::cImagenPunto( ::nType )
+
+RETURN ( Self )
+
+
+
+
+
+
+static FUNCTION sTpvPunto_CreateMesa( lPuntosPendientes ) ; local Self AS CLASS sTpvPunto := QSelf() AS CLASS sTpvPunto
+
+   local oMesa
+
+   oMesa             := TTpvMesa():New( ::nTop, ::nLeft, ::nType, ::GetSalonWnd() )
+
+   oMesa:LoadFromPunto( Self )
+
+   if !Empty( oMesa ) .AND. IsChar( oMesa:cPuntoVenta )
+
+      if ( IsTrue( lPuntosPendientes ) .AND. ::nEstado <= 1 )
+         oMesa:Disable()
+      end
+
+      if ( IsFalse( lPuntosPendientes ) .AND. ::nEstado > 1 )
+         oMesa:Disable()
+      end
+
+      ::oMesa        := oMesa
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION sTpvPunto_CreateFromSalon( nNumero, oSender ) ; local Self AS CLASS sTpvPunto := QSelf() AS CLASS sTpvPunto
+
+   ::nNumero         := nNumero
+
+   ::oSender         := oSender
+
+   ::SetSalon( oSender )
+
+   ::nTop            := oSender:nTop
+   ::nLeft           := oSender:nLeft
+   ::nType           := oSender:nType
+
+   ::cSerie          := oSender:oSender:oSender:oTiketCabecera:FieldGetByName( "cSerTik"   )
+   ::cNumero         := oSender:oSender:oSender:oTiketCabecera:FieldGetByName( "cNumTik"   )
+   ::cSufijo         := oSender:oSender:oSender:oTiketCabecera:FieldGetByName( "cSufTik"   )
+   ::dFecha          := oSender:oSender:oSender:oTiketCabecera:FieldGetByName( "dFecTik"   )
+   ::cHora           := oSender:oSender:oSender:oTiketCabecera:FieldGetByName( "cHorTik"   )
+   ::cCodigoSala     := oSender:oSender:oSender:oTiketCabecera:FieldGetByName( "cCodSala"  )
+   ::cPuntoVenta     := oSender:oSender:oSender:oTiketCabecera:FieldGetByName( "cPntVenta" )
+   ::cAlias          := oSender:oSender:oSender:oTiketCabecera:FieldGetByName( "cAliasTik" )
+   ::cNombre         := oSender:oSender:oSender:oTiketCabecera:FieldGetByName( "cNomTik"   )
+   ::nPrecio         := oSender:oSender:oSender:oTiketCabecera:FieldGetByName( "nTarifa"   )
+   ::nTotal          := oSender:oSender:oSender:oTiketCabecera:FieldGetByName( "nTotTik"   )
+   ::lAbierto        := oSender:oSender:oSender:oTiketCabecera:FieldGetByName( "lAbierto"  )
+   ::nUbicacion      := oSender:oSender:oSender:oTiketCabecera:FieldGetByName( "nUbiTik"   )
+
+   ::nPreCmb         := uFieldEmpresa( "nPreTCmb" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION sTpvPunto_Llevar( dbfTikT ) ; local Self AS CLASS sTpvPunto := QSelf() AS CLASS sTpvPunto
+
+   ::nNumero         := 0
+
+   if !Empty( dbfTikT )
+      ::cSerie       := ( dbfTikT )->cSerTik
+      ::cNumero      := ( dbfTikT )->cNumTik
+      ::cSufijo      := ( dbfTikT )->cSufTik
+      ::dFecha       := ( dbfTikT )->dFecTik
+      ::cHora        := ( dbfTikT )->cHorTik
+      ::cAlias       := ( dbfTikT )->cAliasTik
+
+   else
+      ::cSerie       := ""
+      ::cNumero      := ""
+      ::cSufijo      := ""
+      ::dFecha       := Ctod( "" )
+      ::cHora        := ""
+      ::cAlias       := ""
+   end
+
+   ::cCodigoSala     := ""
+   ::cPuntoVenta     := "Llevar"
+
+   if !Empty( uFieldEmpresa( "nPreTPro" ) )
+      ::nPrecio      := Max( uFieldEmpresa( "nPreTPro" ), 1 )
+   else
+      ::nPrecio      := 1
+   end
+
+   if !Empty( uFieldEmpresa( "nPreTCmb" ) )
+      ::nPreCmb      := Max( uFieldEmpresa( "nPreTCmb" ), 1 )
+   else
+      ::nPreCmb      := 1
+   end
+
+   ::lComensal       := .F.
+
+   ::cImagen         := "gc_motor_scooter_32"
+   ::oSala           := nil
+
+RETURN ( Self )
+
+
+
+static FUNCTION sTpvPunto_Encargar( dbfTikT ) ; local Self AS CLASS sTpvPunto := QSelf() AS CLASS sTpvPunto
+
+   ::nNumero         := 0
+
+   if !Empty( dbfTikT )
+      ::cSerie       := ( dbfTikT )->cSerTik
+      ::cNumero      := ( dbfTikT )->cNumTik
+      ::cSufijo      := ( dbfTikT )->cSufTik
+      ::dFecha       := ( dbfTikT )->dFecTik
+      ::cHora        := ( dbfTikT )->cHorTik
+      ::cAlias       := ( dbfTikT )->cAliasTik
+   else
+      ::cSerie       := ""
+      ::cNumero      := ""
+      ::cSufijo      := ""
+      ::dFecha       := Ctod( "" )
+      ::cHora        := ""
+      ::cAlias       := ""
+   end
+
+   ::cCodigoSala     := ""
+   ::cPuntoVenta     := "Encargar"
+
+   if !Empty( uFieldEmpresa( "nPreTPro" ) )
+      ::nPrecio      := Max( uFieldEmpresa( "nPreTPro" ), 1 )
+   else
+      ::nPrecio      := 1
+   end
+
+   if !Empty( uFieldEmpresa( "nPreTCmb" ) )
+      ::nPreCmb      := Max( uFieldEmpresa( "nPreTCmb" ), 1 )
+   else
+      ::nPreCmb      := 1
+   end
+
+   ::lComensal       := .F.
+
+   ::cImagen         := "gc_notebook2_32"
+   ::oSala           := nil
+
+RETURN ( Self )
+
+
+
+static FUNCTION sTpvPunto_cTextoPunto( ) ; local Self AS CLASS sTpvPunto := QSelf() AS CLASS sTpvPunto
+
+   local cTextoPunto := ""
+
+   if !Empty( ::cPuntoVenta )
+      cTextoPunto    += Alltrim( ::cPuntoVenta )
+   else
+      if !Empty( ::oSala )
+         cTextoPunto += Alltrim( ::oSala:cDescripcion )
+      end
+   end
+
+RETURN ( cTextoPunto )
+
+
+
+static FUNCTION sTpvPunto_cImagenPunto( nItem ) ; local Self AS CLASS sTpvPunto := QSelf() AS CLASS sTpvPunto
+
+   do case
+      case nItem == 1
+         RETURN ( "Shape_circle_32" )
+
+      case nItem == 2
+         RETURN ( "Shape_ellipse_32" )
+
+      case nItem == 3
+         RETURN ( "Shape_square_32" )
+
+      case nItem == 4
+         RETURN ( "Shape_rectangle_32" )
+
+      case nItem == 5
+         RETURN ( "Bar_center_32" )
+
+      case nItem == 6
+         RETURN ( "Bar_left_32" )
+
+      case nItem == 7
+         RETURN ( "Bar_corner_left_32" )
+
+      case nItem == 8
+         RETURN ( "Bar_corner_right_32" )
+
+      case nItem == 9
+         RETURN ( "Bar_corner_top_left_32" )
+
+      case nItem == 10
+         RETURN ( "Bar_corner_top_right_32" )
+
+   end
+
+RETURN ( "" )
+
+
+
+static FUNCTION sTpvPunto_LoadMesa( ) ; local Self AS CLASS sTpvPunto := QSelf() AS CLASS sTpvPunto
+
+   local aStatus
+   local oTiketCabecera
+
+   ::cSerie          := ""
+   ::cNumero         := ""
+   ::cSufijo         := ""
+   ::dFecha          := Ctod( "" )
+   ::cHora           := ""
+   ::cAlias          := ""
+   ::cNombre         := ""
+   ::nTotal          := 0
+   ::nEstado         := 1
+   ::lMultiple       := .F.
+
+   oTiketCabecera    := ::oTiketCabecera()
+
+   aStatus           := oTiketCabecera:GetStatus()
+
+   if oTiketCabecera:SeekInOrd( ::cPunto(), "cCodSal" )
+
+      ::cSerie       := oTiketCabecera:fieldGetByName( "cSerTik"   )
+      ::cNumero      := oTiketCabecera:fieldGetByName( "cNumTik"   )
+      ::cSufijo      := oTiketCabecera:fieldGetByName( "cSufTik"   )
+      ::dFecha       := oTiketCabecera:fieldGetByName( "dFecTik"   )
+      ::cHora        := oTiketCabecera:fieldGetByName( "cHorTik"   )
+      ::cAlias       := oTiketCabecera:fieldGetByName( "cAliasTik" )
+      ::cNombre      := oTiketCabecera:fieldGetByName( "cNomTik"   )
+      ::nEstado      := if( oTiketCabecera:fieldGetByName( "lAbierto" ), 2, 3 )
+
+      ::lMultiple    := ::lMultipleTicket()
+      if ::lMultiple
+         ::nTotal    := ::nTotalMultipleTicket()
+      else
+         ::nTotal    := oTiketCabecera:fieldGetByName( "nTotTik"   )
+      end
+
+   end
+
+   oTiketCabecera:SetStatus( aStatus )
+
+RETURN ( Self )
+
+
+
+static FUNCTION sTpvPunto_lMultipleTicket( ) ; local Self AS CLASS sTpvPunto := QSelf() AS CLASS sTpvPunto
+
+   local lMultiple   := .T.
+   local aNumeros    := {}
+
+   with object ( ::oTiketCabecera() )
+
+      :GetStatus()
+
+      :OrdSetFocus( "cCodSal" )
+
+      if :Seek( ::cCodigoSala + Padr( ::cPuntoVenta, 30 ) )
+
+         while :FieldGetByName( "cCodSala" ) + :FieldGetByName( "cPntVenta" ) == ::cCodigoSala + Padr( ::cPuntoVenta, 30 ) .AND. !:Eof()
+
+            aAdd( aNumeros, :FieldGetByName( "cSerTik" ) + :FieldGetByName( "cNumTik" ) + :FieldGetByName( "cSufTik" ) )
+
+            :Skip()
+
+         end
+
+      end
+
+      :SetStatus()
+
+   end
+
+RETURN ( Len( aNumeros ) > 1 )
+
+
+
+static FUNCTION sTpvPunto_nTotalMultipleTicket( ) ; local Self AS CLASS sTpvPunto := QSelf() AS CLASS sTpvPunto
+
+   local nTotal         := 0
+
+   with object ( ::oTiketCabecera() )
+
+      :GetStatus()
+
+      :OrdSetFocus( "cCodSal" )
+
+      if :Seek( ::cCodigoSala + Padr( ::cPuntoVenta, 30 ) )
+
+         while :FieldGetByName( "cCodSala" ) + :FieldGetByName( "cPntVenta" ) == ::cCodigoSala + Padr( ::cPuntoVenta, 30 ) .AND. !:Eof()
+
+            nTotal      += :FieldGetByName( "nTotTik" )
+
+            :Skip()
+
+         end
+
+      end
+
+      :SetStatus()
+
+   end
+
+RETURN nTotal
+
+
+
+static FUNCTION sTpvPunto_cTextoTotalTiket( ) ; local Self AS CLASS sTpvPunto := QSelf() AS CLASS sTpvPunto
+
+   local cTexto         := ::cTextoTiket() + Chr(13)+Chr(10)
+   cTexto               += "[ Total : " + lTrim( Trans( ::nTotal, cPorDiv() ) ) + cSimDiv() + " ]"
+
+RETURN ( cTexto )
+
+
+
+static FUNCTION sTpvPunto_nImagenTiket( n ) ; local Self AS CLASS sTpvPunto := QSelf() AS CLASS sTpvPunto
+
+   local nImagen        := ( ( ( n + 1 ) * 2 ) - 2 )
+
+   if !Empty( ::cTiket() ) .AND. ::lAbierto
+      ++nImagen
+   end
+
+RETURN ( nImagen )
+
+
+
+static FUNCTION sTpvPunto_cAliasTiket( n ) ; local Self AS CLASS sTpvPunto := QSelf() AS CLASS sTpvPunto
+
+   local cTexto         := Upper( Rtrim( ::cAlias ) ) + Chr(13)+Chr(10)
+   cTexto               += "[ Total : " + lTrim( Trans( ::nTotal, cPorDiv() ) ) + cSimDiv() + " ]"
+
+RETURN ( cTexto )

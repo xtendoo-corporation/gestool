@@ -1,0 +1,3037 @@
+#line 91 "\fwh1801\include\fiveWin.ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 6 ".\Prg\Comercio\TPrestashopWebService.prg"
+_HB_CLASS TPrestaShopWebService ; function TPrestaShopWebService ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TPrestaShopWebService", iif( .F., { }, { @HBObject() } ), @TPrestaShopWebService() ) ) ;
+
+   _HB_MEMBER { oController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oController"}, .F. )
+
+   _HB_MEMBER { cUrl } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cUrl"}, .F. )
+
+   _HB_MEMBER { cWeb } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cWeb"}, .F. )
+
+   _HB_MEMBER { oLanguagesWebService } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oLanguagesWebService"}, .F. )
+   _HB_MEMBER { oImageTypesWebService } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oImageTypesWebService"}, .F. )
+   _HB_MEMBER { oCategoriesWebService } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCategoriesWebService"}, .F. )
+   _HB_MEMBER { oManufacturerWebService } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oManufacturerWebService"}, .F. )
+   _HB_MEMBER { oProductsWebService } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oProductsWebService"}, .F. )
+   _HB_MEMBER { oStocksWebService } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oStocksWebService"}, .F. )
+   _HB_MEMBER { oPropiedadesWebService } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oPropiedadesWebService"}, .F. )
+   _HB_MEMBER { oValoresPropiedadesWebService } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oValoresPropiedadesWebService"}, .F. )
+   _HB_MEMBER { oCombinationsWebService } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCombinationsWebService"}, .F. )
+
+   _HB_MEMBER { aIdsLanguages } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aIdsLanguages"}, .F. )
+   _HB_MEMBER { aImageTypes } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aImageTypes"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @TPrestaShopWebService_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER End(); oClass:AddMethod( "End", @TPrestaShopWebService_End(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setWeb(); oClass:AddInline( "setWeb", {|Self, cWeb | ( ( Self ) ), ( ::cWeb := cWeb ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getWeb(); oClass:AddInline( "getWeb", {|Self | ( ( Self ) ), ( ::cWeb ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setUrl(); oClass:AddInline( "setUrl", {|Self, cUrl | ( ( Self ) ), ( ::cUrl := cUrl ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getUrl(); oClass:AddInline( "getUrl", {|Self | ( ( Self ) ), ( ::cUrl ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setDefaultValuesWeb(); oClass:AddMethod( "setDefaultValuesWeb", @TPrestaShopWebService_setDefaultValuesWeb(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getLanguagesWebService(); oClass:AddInline( "getLanguagesWebService", {|Self | ( ( Self ) ), ( iif( empty( ::oLanguagesWebService ), ::oLanguagesWebService := TPrestashopLanguagesWebService():New( self ), ), ::oLanguagesWebService ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getImagesTypesWebService(); oClass:AddInline( "getImagesTypesWebService", {|Self | ( ( Self ) ), ( iif( empty( ::oImageTypesWebService ), ::oImageTypesWebService := TPrestashopImagesTypesWebService():New( self ), ), ::oImageTypesWebService ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getCategoriesWebService(); oClass:AddInline( "getCategoriesWebService", {|Self | ( ( Self ) ), ( iif( empty( ::oCategoriesWebService ), ::oCategoriesWebService := TPrestashopCategoriesWebService():New( self ), ), ::oCategoriesWebService ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getManufacturerWebService(); oClass:AddInline( "getManufacturerWebService", {|Self | ( ( Self ) ), ( iif( empty( ::oManufacturerWebService ), ::oManufacturerWebService := TPrestashopManufacturerWebService():New( self ), ), ::oManufacturerWebService ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getProductsWebService(); oClass:AddInline( "getProductsWebService", {|Self | ( ( Self ) ), ( iif( empty( ::oProductsWebService ), ::oProductsWebService := TPrestashopProductsWebService():New( self ), ), ::oProductsWebService ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getStocksWebService(); oClass:AddInline( "getStocksWebService", {|Self | ( ( Self ) ), ( iif( empty( ::oStocksWebService ), ::oStocksWebService := TPrestashopStocksWebService():New( self ), ), ::oStocksWebService ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getPropiedadesWebService(); oClass:AddInline( "getPropiedadesWebService", {|Self | ( ( Self ) ), ( iif( empty( ::oPropiedadesWebService ), ::oPropiedadesWebService := TPrestashopPropiedadesWebService():New( self ), ), ::oPropiedadesWebService ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getValoresPropiedadesWebService(); oClass:AddInline( "getValoresPropiedadesWebService", {|Self | ( ( Self ) ), ( iif( empty( ::oValoresPropiedadesWebService ), ::oValoresPropiedadesWebService := TPrestashopValoresPropiedadesWebService():New( self ), ), ::oValoresPropiedadesWebService ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getCombinationsWebService(); oClass:AddInline( "getCombinationsWebService", {|Self | ( ( Self ) ), ( iif( empty( ::oCombinationsWebService ), ::oCombinationsWebService := TPrestashopCombinationsWebService():New( self ), ), ::oCombinationsWebService ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getComercioInstance(); oClass:AddInline( "getComercioInstance", {|Self | ( ( Self ) ), ( TComercioConfig():getInstance() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getPrestashopIdInstance(); oClass:AddInline( "getPrestashopIdInstance", {|Self | ( ( Self ) ), ( ::oController:TPrestashopId ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER UploadCategoryImage( cFile); oClass:AddMethod( "UploadCategoryImage", @TPrestaShopWebService_UploadCategoryImage(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER UploadManufacturerImage( cFile); oClass:AddMethod( "UploadManufacturerImage", @TPrestaShopWebService_UploadManufacturerImage(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TPrestaShopWebService ;
+
+
+
+static FUNCTION TPrestaShopWebService_New( oController ) ; local Self AS CLASS TPrestaShopWebService := QSelf() AS CLASS TPrestaShopWebService
+
+   ::oController                  := oController
+
+RETURN ( self )
+
+
+
+static FUNCTION TPrestaShopWebService_End( ) ; local Self AS CLASS TPrestaShopWebService := QSelf() AS CLASS TPrestaShopWebService
+
+   if !empty( ::oLanguagesWebService )
+      ::oLanguagesWebService:end()
+   end
+
+   if !empty( ::oImageTypesWebService )
+      ::oImageTypesWebService:end()
+   end
+
+   if !empty( ::oCategoriesWebService )
+      ::oCategoriesWebService:end()
+   end
+
+   if !empty( ::oManufacturerWebService )
+      ::oManufacturerWebService:end()
+   end
+
+   if !empty( ::oStocksWebService )
+      ::oStocksWebService:end()
+   end
+
+RETURN ( self )
+
+
+
+static FUNCTION TPrestaShopWebService_setDefaultValuesWeb( cWeb ) ; local Self AS CLASS TPrestaShopWebService := QSelf() AS CLASS TPrestaShopWebService
+
+   ::SetWeb( cWeb )
+
+   TComercioConfig():getInstance():setCurrentWebName( cWeb )
+
+   if !Empty( ::getComercioInstance():getFromCurrentWebServices( "url" ) )
+      ::SetUrl( AllTrim( ::getComercioInstance():getFromCurrentWebServices( "url" ) ) )
+   end
+
+   ::aIdsLanguages   := ::getLanguagesWebService():getIdsIdiomas()
+   ::aImageTypes     := ::getImagesTypesWebService():getImagesTypes()
+
+RETURN ( self )
+
+
+
+static FUNCTION TPrestaShopWebService_UploadCategoryImage( idCategory, cFile ) ; local Self AS CLASS TPrestaShopWebService := QSelf() AS CLASS TPrestaShopWebService
+
+   local oFtp
+   local aImages     := {}
+   local hTypeImage
+   local cPath       := StrTran( alltrim( cPatOut() ), "\", "/" )
+   local hImage
+
+   if hb_isnil( idCategory )
+      return ( nil )
+   end
+
+   if !File( cFile )
+      Return ( nil )
+   end
+
+
+
+
+
+   aAdd( aImages, {  "name" => cPath + AllTrim( Str( idCategory ) ) + ".jpg", "width" => 0, "height" => 0 } )
+
+   for each hTypeImage in ::aImageTypes
+
+      if hGet( hTypeImage, "categories" ) == "1"
+
+
+
+         aAdd( aImages, {  "name" => cPath + AllTrim( Str( idCategory ) ) + "-" + hGet( hTypeImage, "name" ) + ".jpg" , "width" => Val( hGet( hTypeImage, "width" ) ), "height" => Val( hGet( hTypeImage, "height" ) ) } )
+
+      end
+
+   next
+
+
+
+
+
+
+
+
+   aEval( aImages, {|h| saveImage( cFile, hGet( h, "name" ), if( !Empty( hGet( h, "width" ) ), hGet( h, "width" ), nil ), if( !Empty( hGet( h, "height" ) ), hGet( h, "height" ), nil ) ) } )
+
+
+
+
+
+
+
+   aEval( aImages, {|h| ::oController:meterProcesoText( "Subiendo imagen " + hGet( h, "name" ) ), ::oController:oFtp:CreateFile( hGet( h, "name" ), ::oController:cDirectoryCategories() ) } )
+
+
+
+
+
+   aEval( aImages, {|h| if( File( hGet( h, "name" ) ), fErase( hGet( h, "name" ) ), ) } )
+
+RETURN ( self )
+
+
+
+static FUNCTION TPrestaShopWebService_UploadManufacturerImage( idFab, cFile ) ; local Self AS CLASS TPrestaShopWebService := QSelf() AS CLASS TPrestaShopWebService
+
+   local oFtp
+   local aImages     := {}
+   local hTypeImage
+   local cPath       := StrTran( alltrim( cPatOut() ), "\", "/" )
+   local hImage
+
+   if hb_isnil( idFab )
+      return ( nil )
+   end
+
+   if !File( cFile )
+      Return ( nil )
+   end
+
+
+
+
+
+   aAdd( aImages, {  "name" => cPath + AllTrim( Str( idFab ) ) + ".jpg", "width" => 0, "height" => 0 } )
+
+   for each hTypeImage in ::aImageTypes
+
+      if hGet( hTypeImage, "manufacturers" ) == "1"
+
+
+
+         aAdd( aImages, {  "name" => cPath + AllTrim( Str( idFab ) ) + "-" + hGet( hTypeImage, "name" ) + ".jpg" , "width" => Val( hGet( hTypeImage, "width" ) ), "height" => Val( hGet( hTypeImage, "height" ) ) } )
+
+      end
+
+   next
+
+
+
+
+
+
+
+
+   aEval( aImages, {|h| saveImage( cFile, hGet( h, "name" ), if( !Empty( hGet( h, "width" ) ), hGet( h, "width" ), nil ), if( !Empty( hGet( h, "height" ) ), hGet( h, "height" ), nil ) ) } )
+
+
+
+
+
+
+   aEval( aImages, {|h| ::oController:meterProcesoText( "Subiendo imagen " + hGet( h, "name" ) ), ::oController:oFtp:CreateFile( hGet( h, "name" ), ::oController:cDirectoryManufacture() ) } )
+
+
+
+
+
+   aEval( aImages, {|h| if( File( hGet( h, "name" ) ), fErase( hGet( h, "name" ) ), ) } )
+
+RETURN ( self )
+
+
+
+
+
+
+
+_HB_CLASS TPrestashopLanguagesWebService ; function TPrestashopLanguagesWebService ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TPrestashopLanguagesWebService", iif( .F., { }, { @HBObject() } ), @TPrestashopLanguagesWebService() ) ) ;
+
+   _HB_MEMBER { oController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oController"}, .F. )
+
+   _HB_MEMBER new( oController); oClass:AddMethod( "new", @TPrestashopLanguagesWebService_new(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getIdsIdiomas(); oClass:AddMethod( "getIdsIdiomas", @TPrestashopLanguagesWebService_getIdsIdiomas(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getComercioInstance(); oClass:AddInline( "getComercioInstance", {|Self | ( ( Self ) ), ( ::oController:getComercioInstance() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TPrestashopLanguagesWebService ;
+
+
+
+static FUNCTION TPrestashopLanguagesWebService_new( oController ) ; local Self AS CLASS TPrestashopLanguagesWebService := QSelf() AS CLASS TPrestashopLanguagesWebService
+
+   ::oController     :=  oController
+
+RETURN ( self )
+
+
+
+static FUNCTION TPrestashopLanguagesWebService_getIdsIdiomas( ) ; local Self AS CLASS TPrestashopLanguagesWebService := QSelf() AS CLASS TPrestashopLanguagesWebService
+
+   local aIds        := {}
+   local oService
+
+   if !Empty( ::getComercioInstance():getFromCurrentWebServices( "languages" ) )
+
+      with object( LanguagesWebService():New( self ) )
+         :setMethodGet()
+         if !Empty( ::oController:getUrl() )
+         :setUrl( AllTrim( ::oController:getUrl() ) )
+         end
+         :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+         :runGetJson()
+         aIds              := :getListIdsLenguages()
+         :End()
+      end
+
+   end
+
+RETURN ( aIds )
+
+
+
+
+
+
+
+_HB_CLASS TPrestashopImagesTypesWebService ; function TPrestashopImagesTypesWebService ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TPrestashopImagesTypesWebService", iif( .F., { }, { @HBObject() } ), @TPrestashopImagesTypesWebService() ) ) ;
+
+   _HB_MEMBER { oController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oController"}, .F. )
+
+   _HB_MEMBER new( oController); oClass:AddMethod( "new", @TPrestashopImagesTypesWebService_new(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getImagesTypes(); oClass:AddMethod( "getImagesTypes", @TPrestashopImagesTypesWebService_getImagesTypes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getComercioInstance(); oClass:AddInline( "getComercioInstance", {|Self | ( ( Self ) ), ( ::oController:getComercioInstance() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TPrestashopImagesTypesWebService ;
+
+
+
+static FUNCTION TPrestashopImagesTypesWebService_new( oController ) ; local Self AS CLASS TPrestashopImagesTypesWebService := QSelf() AS CLASS TPrestashopImagesTypesWebService
+
+   ::oController     :=  oController
+
+RETURN ( self )
+
+
+
+static FUNCTION TPrestashopImagesTypesWebService_getImagesTypes( ) ; local Self AS CLASS TPrestashopImagesTypesWebService := QSelf() AS CLASS TPrestashopImagesTypesWebService
+
+   local Id          := ""
+   local aIds        := {}
+   local oService
+   local aTypes      := {}
+
+   if !Empty( ::getComercioInstance():getFromCurrentWebServices( "image_types" ) )
+
+
+
+
+
+      with object( ImagesTypesWebService():New( self ) )
+         :setMethodGet()
+         if !Empty( ::oController:getUrl() )
+            :setUrl( AllTrim( ::oController:getUrl() ) )
+         end
+         :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+         :runGetJson()
+         aIds              := :ImagesTypesWebService():getListImageTypes()
+         :End()
+      end
+
+
+
+
+
+      for each Id in aIds
+
+         with object( ImagesTypesWebService():New( self ) )
+            :setMethodGet()
+            :setIdToGet( ID )
+
+            if !Empty( ::oController:getUrl() )
+               :setUrl( AllTrim( ::oController:getUrl() ) )
+            end
+
+            :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+
+            :runGetJson()
+
+            aAdd( aTypes, :ImagesTypesWebService():getArrayImageTypes() )
+
+            :End()
+
+         end
+
+      next
+
+   end
+
+RETURN ( aTypes )
+
+
+
+
+
+
+
+_HB_CLASS TPrestashopCategoriesWebService ; function TPrestashopCategoriesWebService ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TPrestashopCategoriesWebService", iif( .F., { }, { @HBObject() } ), @TPrestashopCategoriesWebService() ) ) ;
+
+   _HB_MEMBER { oController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oController"}, .F. )
+
+   _HB_MEMBER { aCodFam } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aCodFam"}, .F. )
+
+   _HB_MEMBER new( oController); oClass:AddMethod( "new", @TPrestashopCategoriesWebService_new(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getComercioInstance(); oClass:AddInline( "getComercioInstance", {|Self | ( ( Self ) ), ( ::oController:getComercioInstance() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getPrestashopIdInstance(); oClass:AddInline( "getPrestashopIdInstance", {|Self | ( ( Self ) ), ( ::oController:getPrestashopIdInstance() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetArrayUuids(); oClass:AddInline( "SetArrayUuids", {|Self, aCodFam | ( ( Self ) ), ( ::aCodFam := aCodFam ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InsertOrUpdateCategorie(); oClass:AddMethod( "InsertOrUpdateCategorie", @TPrestashopCategoriesWebService_InsertOrUpdateCategorie(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getIdsCategories(); oClass:AddMethod( "getIdsCategories", @TPrestashopCategoriesWebService_getIdsCategories(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER uploadImageCategorie( cCodFam); oClass:AddMethod( "uploadImageCategorie", @TPrestashopCategoriesWebService_uploadImageCategorie(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TPrestashopCategoriesWebService ;
+
+
+
+static FUNCTION TPrestashopCategoriesWebService_new( oController ) ; local Self AS CLASS TPrestashopCategoriesWebService := QSelf() AS CLASS TPrestashopCategoriesWebService
+
+   ::oController   :=  oController
+
+RETURN ( self )
+
+
+
+static FUNCTION TPrestashopCategoriesWebService_getIdsCategories( ) ; local Self AS CLASS TPrestashopCategoriesWebService := QSelf() AS CLASS TPrestashopCategoriesWebService
+
+   local aIds        := {}
+   local oService
+
+   if !Empty( ::getComercioInstance():getFromCurrentWebServices( "categories" ) )
+
+      with object( categoriesWebService():New( self ) )
+         :setMethodGet()
+         if !Empty( ::oController:getUrl() )
+         :setUrl( AllTrim( ::oController:getUrl() ) )
+         end
+         :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+         :runGetJson()
+         aIds              := :getListIdsCategories()
+         :End()
+      end
+
+   end
+
+RETURN ( aIds )
+
+
+
+static FUNCTION TPrestashopCategoriesWebService_InsertOrUpdateCategorie( cCodFam, idParent ) ; local Self AS CLASS TPrestashopCategoriesWebService := QSelf() AS CLASS TPrestashopCategoriesWebService
+
+   local nIdCategory
+   local nIdParent
+
+   nIdCategory    := ::getPrestashopIdInstance():getValueCategory( cCodFam, ::oController:getWeb() )
+   nIdParent      := ::getPrestashopIdInstance():getValueCategory( idParent, ::oController:getWeb() )
+
+   if nIdCategory <> 0
+
+
+
+
+
+      with object( categoriesWebService():New( self ) )
+
+         :setMethodPut()
+         :setUrl( ::oController:getUrl() )
+         :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+         :hName       := FamiliasModel():getNamesFromIdLanguagesPS( cCodFam, ::oController:aIdsLanguages )
+         :runPut( nIdCategory, nIdParent )
+         :End()
+
+      end
+
+   else
+
+
+
+
+
+      with object( categoriesWebService():New( self ) )
+
+         :setMethodPost()
+         :setUrl( ::oController:getUrl() )
+         :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+         :hName       := FamiliasModel():getNamesFromIdLanguagesPS( cCodFam, ::oController:aIdsLanguages )
+         :runPost( nIdParent )
+         nIdCategory  := :getResponseId()
+         iif( !Empty( nIdCategory ), ::getPrestashopIdInstance():setValueCategory( cCodFam, ::oController:getWeb(), val( nIdCategory ) ), )
+         :End()
+
+      end
+
+   end
+
+   ::uploadImageCategorie( cCodFam, nIdCategory )
+
+RETURN ( nIdCategory )
+
+
+
+static FUNCTION TPrestashopCategoriesWebService_uploadImageCategorie( cCodFam, nIdCategory ) ; local Self AS CLASS TPrestashopCategoriesWebService := QSelf() AS CLASS TPrestashopCategoriesWebService
+
+   ::oController:UploadCategoryImage( nIdCategory, cFileBmpName( AllTrim( FamiliasModel():getField( "cImgBtn", "cCodFam", cCodFam ) ) ) )
+
+RETURN ( nil )
+
+
+
+
+
+
+
+_HB_CLASS TPrestashopManufacturerWebService ; function TPrestashopManufacturerWebService ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TPrestashopManufacturerWebService", iif( .F., { }, { @HBObject() } ), @TPrestashopManufacturerWebService() ) ) ;
+
+   _HB_MEMBER { oController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oController"}, .F. )
+
+   _HB_MEMBER new( oController); oClass:AddMethod( "new", @TPrestashopManufacturerWebService_new(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getComercioInstance(); oClass:AddInline( "getComercioInstance", {|Self | ( ( Self ) ), ( ::oController:getComercioInstance() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getPrestashopIdInstance(); oClass:AddInline( "getPrestashopIdInstance", {|Self | ( ( Self ) ), ( ::oController:getPrestashopIdInstance() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InsertOrUpdateManufacturer( cCodFab); oClass:AddMethod( "InsertOrUpdateManufacturer", @TPrestashopManufacturerWebService_InsertOrUpdateManufacturer(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER uploadImageManuFacturer( cCodFab); oClass:AddMethod( "uploadImageManuFacturer", @TPrestashopManufacturerWebService_uploadImageManuFacturer(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TPrestashopManufacturerWebService ;
+
+
+
+static FUNCTION TPrestashopManufacturerWebService_new( oController ) ; local Self AS CLASS TPrestashopManufacturerWebService := QSelf() AS CLASS TPrestashopManufacturerWebService
+
+   ::oController   :=  oController
+
+RETURN ( self )
+
+
+
+static FUNCTION TPrestashopManufacturerWebService_InsertOrUpdateManufacturer( cCodFab ) ; local Self AS CLASS TPrestashopManufacturerWebService := QSelf() AS CLASS TPrestashopManufacturerWebService
+
+   local nIdManufacturer
+   local nIdParent
+
+   nIdManufacturer  := ::getPrestashopIdInstance():getValueManufacturer( cCodFab, ::oController:getWeb() )
+
+   if nIdManufacturer <> 0
+
+
+
+
+
+      with object( manufacturerWebService():New( self ) )
+
+         :setMethodPut()
+         :setUrl( ::oController:getUrl() )
+         :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+         :hName       := FabricantesModel():getNamesFromIdLanguagesPS( cCodFab, ::oController:aIdsLanguages )
+         :cName       := FabricantesModel():getNombre( cCodFab )
+         :runPut( nIdManufacturer )
+         :End()
+
+      end
+
+   else
+
+
+
+
+
+      with object( manufacturerWebService():New( self ) )
+
+         :setMethodPost()
+         :setUrl( ::oController:getUrl() )
+         :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+         :hName       := FabricantesModel():getNamesFromIdLanguagesPS( cCodFab, ::oController:aIdsLanguages )
+         :cName       := FabricantesModel():getNombre( cCodFab )
+         :runPost()
+         nIdManufacturer  := :getResponseId()
+         iif( !Empty( nIdManufacturer ), ::getPrestashopIdInstance():setValueManufacturer( cCodFab, ::oController:getWeb(), val( nIdManufacturer ) ), )
+         :End()
+
+      end
+
+   end
+
+   ::uploadImageManuFacturer( cCodFab, nIdManufacturer )
+
+RETURN ( nIdManufacturer )
+
+
+
+static FUNCTION TPrestashopManufacturerWebService_uploadImageManuFacturer( cCodFab, nIdManufacturer ) ; local Self AS CLASS TPrestashopManufacturerWebService := QSelf() AS CLASS TPrestashopManufacturerWebService
+
+   ::oController:UploadManufacturerImage( nIdManufacturer, cFileBmpName( AllTrim( FabricantesModel():getField( "cImgLogo", "cCodFab", cCodFab ) ) ) )
+
+RETURN ( nil )
+
+
+
+
+
+
+
+_HB_CLASS TPrestashopProductsWebService ; function TPrestashopProductsWebService ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TPrestashopProductsWebService", iif( .F., { }, { @HBObject() } ), @TPrestashopProductsWebService() ) ) ;
+
+   _HB_MEMBER { oController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oController"}, .F. )
+
+   _HB_MEMBER new( oController); oClass:AddMethod( "new", @TPrestashopProductsWebService_new(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getComercioInstance(); oClass:AddInline( "getComercioInstance", {|Self | ( ( Self ) ), ( ::oController:getComercioInstance() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getPrestashopIdInstance(); oClass:AddInline( "getPrestashopIdInstance", {|Self | ( ( Self ) ), ( ::oController:getPrestashopIdInstance() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InsertOrUpdateProduct( cCodArt); oClass:AddMethod( "InsertOrUpdateProduct", @TPrestashopProductsWebService_InsertOrUpdateProduct(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER uploadImageProduct( cCodArt); oClass:AddMethod( "uploadImageProduct", @TPrestashopProductsWebService_uploadImageProduct(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER uploadStocksProduct( hProduct, nIdProduct); oClass:AddMethod( "uploadStocksProduct", @TPrestashopProductsWebService_uploadStocksProduct(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TPrestashopProductsWebService ;
+
+
+
+static FUNCTION TPrestashopProductsWebService_new( oController ) ; local Self AS CLASS TPrestashopProductsWebService := QSelf() AS CLASS TPrestashopProductsWebService
+
+   ::oController   :=  oController
+
+RETURN ( self )
+
+
+
+static FUNCTION TPrestashopProductsWebService_InsertOrUpdateProduct( hProduct ) ; local Self AS CLASS TPrestashopProductsWebService := QSelf() AS CLASS TPrestashopProductsWebService
+
+   local nIdProduct
+
+   nIdProduct  := ::getPrestashopIdInstance():getValueProduct( hGet( hProduct, "id" ), ::oController:getWeb() )
+
+   if nIdProduct <> 0
+
+
+
+
+
+      with object( productWebService():New( self ) )
+
+         :setMethodPut()
+         :setUrl( ::oController:getUrl() )
+         :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+         :hName       := ArticulosModel():getNamesFromIdLanguagesPS( hGet( hProduct, "id" ), ::oController:aIdsLanguages )
+         :runPut( nIdProduct, hProduct )
+         :End()
+
+      end
+
+   else
+
+
+
+
+
+      with object( productWebService():New( self ) )
+
+         :setMethodPost()
+         :setUrl( ::oController:getUrl() )
+         :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+         :hName       := ArticulosModel():getNamesFromIdLanguagesPS( hGet( hProduct, "id" ), ::oController:aIdsLanguages )
+         :runPost( hProduct )
+         nIdProduct  := :getResponseId()
+         iif( !Empty( nIdProduct ), ::getPrestashopIdInstance():setValueProduct( hGet( hProduct, "id" ), ::oController:getWeb(), val( nIdProduct ) ), )
+         :End()
+
+      end
+
+   end
+
+   ::uploadStocksProduct( hProduct, nIdProduct )
+
+
+
+RETURN ( nIdProduct )
+
+
+
+static FUNCTION TPrestashopProductsWebService_uploadStocksProduct( hProduct, nIdProduct ) ; local Self AS CLASS TPrestashopProductsWebService := QSelf() AS CLASS TPrestashopProductsWebService
+
+   local hStock
+   local nIdStock
+   local nidproductattribute     := 0
+
+   if Empty( nIdProduct )
+      Return nil
+   end
+
+
+
+   for each hStock in hGet( hProduct, "aStock" )
+
+
+
+
+      if !Empty( hGet( hStock, "propiedad1" ) ) .AND.  !Empty( hGet( hStock, "propiedad2" ) ) .AND.  !Empty( hGet( hStock, "valor1" ) ) .AND.  !Empty( hGet( hStock, "valor2" ) )
+
+         nidproductattribute     := ::getPrestashopIdInstance():getValueProductAttributeCombination( hget( hStock, "articulo" ) + hget( hStock, "propiedad1" ) + hget( hStock, "valor1" ) + hget( hStock, "propiedad2" ) + hget( hStock, "valor2" ), ::oController:getWeb() )
+
+      end
+
+
+      nIdStock                   := ::oController:getStocksWebService():InsertOrUpdateStockProduct( hStock, nIdProduct, nidproductattribute )
+
+
+
+      with object( productWebService():New( self ) )
+
+         :setMethodPut()
+         :setUrl( ::oController:getUrl() )
+         :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+         :hName                  := ArticulosModel():getNamesFromIdLanguagesPS( hGet( hProduct, "id" ), ::oController:aIdsLanguages )
+         :runPut( nIdProduct, hProduct, nIdStock, nidproductattribute )
+         :End()
+
+      end
+
+      nidproductattribute     := 0
+
+   next
+
+RETURN ( nil )
+
+
+
+static FUNCTION TPrestashopProductsWebService_uploadImageProduct( hProduct, nIdProduct ) ; local Self AS CLASS TPrestashopProductsWebService := QSelf() AS CLASS TPrestashopProductsWebService
+
+
+
+
+
+
+
+RETURN ( nil )
+
+
+
+
+
+
+
+_HB_CLASS TPrestashopStocksWebService ; function TPrestashopStocksWebService ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TPrestashopStocksWebService", iif( .F., { }, { @HBObject() } ), @TPrestashopStocksWebService() ) ) ;
+
+   _HB_MEMBER { oController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oController"}, .F. )
+
+   _HB_MEMBER new( oController); oClass:AddMethod( "new", @TPrestashopStocksWebService_new(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getComercioInstance(); oClass:AddInline( "getComercioInstance", {|Self | ( ( Self ) ), ( ::oController:getComercioInstance() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getPrestashopIdInstance(); oClass:AddInline( "getPrestashopIdInstance", {|Self | ( ( Self ) ), ( ::oController:getPrestashopIdInstance() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InsertOrUpdateStockProduct( hProduct, nIdProduct); oClass:AddMethod( "InsertOrUpdateStockProduct", @TPrestashopStocksWebService_InsertOrUpdateStockProduct(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getIdStocks(); oClass:AddMethod( "getIdStocks", @TPrestashopStocksWebService_getIdStocks(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TPrestashopStocksWebService ;
+
+
+
+static FUNCTION TPrestashopStocksWebService_new( oController ) ; local Self AS CLASS TPrestashopStocksWebService := QSelf() AS CLASS TPrestashopStocksWebService
+
+   ::oController   :=  oController
+
+RETURN ( self )
+
+
+
+static FUNCTION TPrestashopStocksWebService_InsertOrUpdateStockProduct( hStock, nIdProduct, nidproductattribute ) ; local Self AS CLASS TPrestashopStocksWebService := QSelf() AS CLASS TPrestashopStocksWebService
+
+   local nIdsStock            := {}
+   local nId                  := 0
+
+   nId                        := ::getIdStocks( nIdProduct, nIdProductAttribute )
+
+   if nId <> 0
+
+
+
+
+
+         with object( stockProductWebService():New( self ) )
+
+            :setMethodPut()
+            :setUrl( ::oController:getUrl() )
+            :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+            :runPut( hStock, nIdProduct, nidproductattribute, nId )
+            :End()
+
+         end
+
+
+      else
+
+
+
+
+
+      with object( stockProductWebService():New( self ) )
+
+         :setMethodPost()
+         :setUrl( ::oController:getUrl() )
+         :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+         :runPost( hStock, nIdProduct, nidproductattribute )
+         nIdsStock  := :getResponseId()
+         :End()
+
+      end
+
+   end
+
+RETURN ( nIdsStock )
+
+
+
+static FUNCTION TPrestashopStocksWebService_getIdStocks( nIdProduct, nIdProductAttribute ) ; local Self AS CLASS TPrestashopStocksWebService := QSelf() AS CLASS TPrestashopStocksWebService
+
+   local nIdStock          := 0
+   local Id                := ""
+   local aIds              := {}
+   local oService
+   local aTypesStock       := {}
+   local hType
+
+   if !Empty( ::getComercioInstance():getFromCurrentWebServices( "stock_availables" ) )
+
+
+
+
+
+      with object( stockProductWebService():New( self ) )
+         :setMethodGet()
+         if !Empty( ::oController:getUrl() )
+            :setUrl( AllTrim( ::oController:getUrl() ) )
+         end
+         :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+         :runGetJson()
+         aIds              := :stockProductWebService():getListIdsStocks()
+         :End()
+      end
+
+
+
+
+
+      for each Id in aIds
+
+         with object( stockProductWebService():New( self ) )
+            :setMethodGet()
+            :setIdToGet( ID )
+
+            if !Empty( ::oController:getUrl() )
+               :setUrl( AllTrim( ::oController:getUrl() ) )
+            end
+
+            :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+
+            :runGetJson()
+
+            aAdd( aTypesStock, :stockProductWebService():getArrayStocks() )
+
+            :End()
+
+         end
+
+      next
+
+   end
+
+
+
+
+
+   for each hType in aTypesStock
+
+
+      if hGet( hType, "id_product" ) == hb_ntos( nIdProduct ) .AND. hGet( hType, "id_product_attribute" ) == hb_ntos( nIdProductAttribute )
+
+         nIdStock    := hGet( hType, "id" )
+
+      end
+
+   next
+
+RETURN ( nIdStock )
+
+
+
+
+
+
+
+_HB_CLASS TPrestashopPropiedadesWebService ; function TPrestashopPropiedadesWebService ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TPrestashopPropiedadesWebService", iif( .F., { }, { @HBObject() } ), @TPrestashopPropiedadesWebService() ) ) ;
+
+   _HB_MEMBER { oController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oController"}, .F. )
+
+   _HB_MEMBER new( oController); oClass:AddMethod( "new", @TPrestashopPropiedadesWebService_new(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getComercioInstance(); oClass:AddInline( "getComercioInstance", {|Self | ( ( Self ) ), ( ::oController:getComercioInstance() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getPrestashopIdInstance(); oClass:AddInline( "getPrestashopIdInstance", {|Self | ( ( Self ) ), ( ::oController:getPrestashopIdInstance() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setProperties( hPropierties); oClass:AddMethod( "setProperties", @TPrestashopPropiedadesWebService_setProperties(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InsertOrUpdate(); oClass:AddMethod( "InsertOrUpdate", @TPrestashopPropiedadesWebService_InsertOrUpdate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TPrestashopPropiedadesWebService ;
+
+
+
+static FUNCTION TPrestashopPropiedadesWebService_new( oController ) ; local Self AS CLASS TPrestashopPropiedadesWebService := QSelf() AS CLASS TPrestashopPropiedadesWebService
+
+   ::oController     :=  oController
+
+RETURN ( self )
+
+
+
+static FUNCTION TPrestashopPropiedadesWebService_setProperties( hPropierties ) ; local Self AS CLASS TPrestashopPropiedadesWebService := QSelf() AS CLASS TPrestashopPropiedadesWebService
+
+   aEval( hGet( hPropierties, "aProperties" ), {|h| ::InsertOrUpdate( h) } )
+
+RETURN ( nil )
+
+
+
+static FUNCTION TPrestashopPropiedadesWebService_InsertOrUpdate( hPropiertie ) ; local Self AS CLASS TPrestashopPropiedadesWebService := QSelf() AS CLASS TPrestashopPropiedadesWebService
+
+   local nId
+
+   nId               := ::getPrestashopIdInstance():getValueAttributeGroup( hGet( hPropiertie, "Codigo" ), ::oController:getWeb() )
+
+   if nId <> 0
+
+
+
+
+
+      with object( propiedadesWebService():New( self ) )
+
+         :setMethodPut()
+         :setUrl( ::oController:getUrl() )
+         :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+         :hName      := PropiedadesModel():getNamesFromIdLanguagesPS( hGet( hPropiertie, "Codigo" ), ::oController:aIdsLanguages )
+         :runPut( nId, hPropiertie )
+         :End()
+
+      end
+
+   else
+
+
+
+
+
+      with object( propiedadesWebService():New( self ) )
+
+         :setMethodPost()
+         :setUrl( ::oController:getUrl() )
+         :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+         :hName      := PropiedadesModel():getNamesFromIdLanguagesPS( hGet( hPropiertie, "Codigo" ), ::oController:aIdsLanguages )
+         :runPost( hPropiertie )
+         nId  := :getResponseId()
+         iif( !Empty( nId ), ::getPrestashopIdInstance():setValueAttributeGroup( hGet( hPropiertie, "Codigo" ), ::oController:getWeb(), val( nId ) ), )
+         :End()
+
+      end
+
+   end
+
+RETURN ( nId )
+
+
+
+
+
+
+
+_HB_CLASS TPrestashopValoresPropiedadesWebService ; function TPrestashopValoresPropiedadesWebService ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TPrestashopValoresPropiedadesWebService", iif( .F., { }, { @HBObject() } ), @TPrestashopValoresPropiedadesWebService() ) ) ;
+
+   _HB_MEMBER { oController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oController"}, .F. )
+
+   _HB_MEMBER new( oController); oClass:AddMethod( "new", @TPrestashopValoresPropiedadesWebService_new(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getComercioInstance(); oClass:AddInline( "getComercioInstance", {|Self | ( ( Self ) ), ( ::oController:getComercioInstance() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getPrestashopIdInstance(); oClass:AddInline( "getPrestashopIdInstance", {|Self | ( ( Self ) ), ( ::oController:getPrestashopIdInstance() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setValuesProperties( hPropierties); oClass:AddMethod( "setValuesProperties", @TPrestashopValoresPropiedadesWebService_setValuesProperties(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InsertOrUpdate(); oClass:AddMethod( "InsertOrUpdate", @TPrestashopValoresPropiedadesWebService_InsertOrUpdate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TPrestashopValoresPropiedadesWebService ;
+
+
+
+static FUNCTION TPrestashopValoresPropiedadesWebService_new( oController ) ; local Self AS CLASS TPrestashopValoresPropiedadesWebService := QSelf() AS CLASS TPrestashopValoresPropiedadesWebService
+
+   ::oController     :=  oController
+
+RETURN ( self )
+
+
+
+static FUNCTION TPrestashopValoresPropiedadesWebService_setValuesProperties( hValues ) ; local Self AS CLASS TPrestashopValoresPropiedadesWebService := QSelf() AS CLASS TPrestashopValoresPropiedadesWebService
+
+   aEval( hGet( hValues, "aValues" ), {|h| ::InsertOrUpdate( h ) } )
+
+RETURN ( nil )
+
+
+
+static FUNCTION TPrestashopValoresPropiedadesWebService_InsertOrUpdate( hValue ) ; local Self AS CLASS TPrestashopValoresPropiedadesWebService := QSelf() AS CLASS TPrestashopValoresPropiedadesWebService
+
+   local nId
+   local nIdProp
+
+   nIdProp           := ::getPrestashopIdInstance():getValueAttributeGroup( hGet( hValue, "codigo" ), ::oController:getWeb() )
+   nId               := ::getPrestashopIdInstance():getValueAttribute( hGet( hValue, "codigo" ) + hGet( hValue, "valor" ), ::oController:getWeb() )
+
+   if nId <> 0
+
+
+
+
+
+      with object( valoresPropiedadesWebService():New( self ) )
+
+         :setMethodPut()
+         :setUrl( ::oController:getUrl() )
+         :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+         aEval( ::oController:aIdsLanguages, {|id| hSet( :hName, AllTrim( Str( id ) ), AllTrim( hGet( hValue, "nombre" ) ) ) } )
+         :runPut( nId, hValue, nIdProp )
+         :End()
+
+      end
+
+   else
+
+
+
+
+
+      with object( valoresPropiedadesWebService():New( self ) )
+
+         :setMethodPost()
+         :setUrl( ::oController:getUrl() )
+         :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+         aEval( ::oController:aIdsLanguages, {|id| hSet( :hName, AllTrim( Str( id ) ), AllTrim( hGet( hValue, "nombre" ) ) ) } )
+         :runPost( hValue, nIdProp )
+         nId  := :getResponseId()
+         iif( !Empty( nId ), ::getPrestashopIdInstance():setValueAttribute( hGet( hValue, "codigo" ) + hGet( hValue, "valor" ), ::oController:getWeb(), val( nId ) ), )
+         :End()
+
+      end
+
+   end
+
+RETURN ( nId )
+
+
+
+
+
+
+
+_HB_CLASS TPrestashopCombinationsWebService ; function TPrestashopCombinationsWebService ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TPrestashopCombinationsWebService", iif( .F., { }, { @HBObject() } ), @TPrestashopCombinationsWebService() ) ) ;
+
+   _HB_MEMBER { oController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oController"}, .F. )
+
+   _HB_MEMBER new( oController); oClass:AddMethod( "new", @TPrestashopCombinationsWebService_new(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getComercioInstance(); oClass:AddInline( "getComercioInstance", {|Self | ( ( Self ) ), ( ::oController:getComercioInstance() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getPrestashopIdInstance(); oClass:AddInline( "getPrestashopIdInstance", {|Self | ( ( Self ) ), ( ::oController:getPrestashopIdInstance() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setCombinations( hValues); oClass:AddMethod( "setCombinations", @TPrestashopCombinationsWebService_setCombinations(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InsertOrUpdate(); oClass:AddMethod( "InsertOrUpdate", @TPrestashopCombinationsWebService_InsertOrUpdate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TPrestashopCombinationsWebService ;
+
+
+
+static FUNCTION TPrestashopCombinationsWebService_new( oController ) ; local Self AS CLASS TPrestashopCombinationsWebService := QSelf() AS CLASS TPrestashopCombinationsWebService
+
+   ::oController     :=  oController
+
+RETURN ( self )
+
+
+
+static FUNCTION TPrestashopCombinationsWebService_setCombinations( hValues ) ; local Self AS CLASS TPrestashopCombinationsWebService := QSelf() AS CLASS TPrestashopCombinationsWebService
+
+   aEval( hGet( hValues, "aValuesCombinations" ), {|h| ::InsertOrUpdate( h ) } )
+
+RETURN ( nil )
+
+
+
+static FUNCTION TPrestashopCombinationsWebService_InsertOrUpdate( hCombination ) ; local Self AS CLASS TPrestashopCombinationsWebService := QSelf() AS CLASS TPrestashopCombinationsWebService
+
+   local nId
+   local nIdProp
+
+   nId               := ::getPrestashopIdInstance():getValueProductAttributeCombination( hget( hCombination, "CCODART" ) + hget( hCombination, "CCODPR1" ) + hget( hCombination, "CVALPR1" ) + hget( hCombination, "CCODPR2" ) + hget( hCombination, "CVALPR2" ), ::oController:getWeb() )
+
+   if nId <> 0
+
+
+
+
+
+      with object( combinationsWebService():New( self ) )
+
+         :setMethodPut()
+         :setUrl( ::oController:getUrl() )
+         :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+         :runPut( nId, hCombination )
+         :End()
+
+      end
+
+   else
+
+
+
+
+
+      with object( combinationsWebService():New( self ) )
+
+         :setMethodPost()
+         :setUrl( ::oController:getUrl() )
+         :setKey( AllTrim( ::getComercioInstance():getFromCurrentSourceWebServices( :cSource, :cMethod, "" ) ) )
+         :runPost( hCombination )
+         nId  := :getResponseId()
+         iif( !Empty( nId ), ::getPrestashopIdInstance():setValueProductAttributeCombination( hget( hCombination, "CCODART" ) + hget( hCombination, "CCODPR1" ) + hget( hCombination, "CVALPR1" ) + hget( hCombination, "CCODPR2" ) + hget( hCombination, "CVALPR2" ), ::oController:getWeb(), val( nId ) ), )
+         :End()
+
+      end
+
+   end
+
+RETURN ( nId )

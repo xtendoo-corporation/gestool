@@ -1,0 +1,2993 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 5 ".\.\Prg\Notas.prg"
+Static oTimer
+Static dbfNotas
+Static oMsgAlarm
+Static lOnProcess       := .F.
+
+
+
+_HB_CLASS TNotas ; function TNotas ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TNotas", iif( .T., { @TMant() }, { @HBObject() } ), @TNotas() ) ) ;
+
+   _HB_MEMBER { cMru } ; oClass:AddMultiData(, "gc_notebook2_16", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cMru"}, .F. )
+   _HB_MEMBER { cBitmap } ; oClass:AddMultiData(, ( 33 + ( 115 * 256 ) + ( 70 * 65536 ) ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cBitmap"}, .F. )
+   _HB_MEMBER { oMenu } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oMenu"}, .F. )
+   _HB_MEMBER { oBmpAlr } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBmpAlr"}, .F. )
+
+   _HB_MEMBER { aCmbInteresado } ; oClass:AddMultiData(, { "Cliente", "Proveedor", "Artículo", "Agente", "Almacén" }, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aCmbInteresado"}, .F. )
+   _HB_MEMBER { aCmbTipo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aCmbTipo"}, .F. )
+
+   _HB_MEMBER { aBtnFecha } ; oClass:AddMultiData(, Array( 4 ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aBtnFecha"}, .F. )
+   _HB_MEMBER { aBtnFilter } ; oClass:AddMultiData(, Array( 6 ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aBtnFilter"}, .F. )
+
+   _HB_MEMBER { cFilterFecha } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFilterFecha"}, .F. )
+   _HB_MEMBER { cFilterEstado } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFilterEstado"}, .F. )
+
+   _HB_MEMBER { oDbfCli } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfCli"}, .F. )
+   _HB_MEMBER { oDbfPrv } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfPrv"}, .F. )
+   _HB_MEMBER { oDbfArt } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfArt"}, .F. )
+   _HB_MEMBER { oDbfAge } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfAge"}, .F. )
+   _HB_MEMBER { oDbfAlm } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oDbfAlm"}, .F. )
+
+   _HB_MEMBER New( cPath, cDriver, oWndParent, oMenuItem) AS CLASS TNotas; oClass:AddMethod( "New", @TNotas_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Activate(); oClass:AddMethod( "Activate", @TNotas_Activate(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Dialog(); oClass:AddMethod( "Dialog", @TNotas_Dialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER EditMenu( oDlg); oClass:AddMethod( "EditMenu", @TNotas_EditMenu(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles( lExclusive); oClass:AddMethod( "OpenFiles", @TNotas_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @TNotas_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DefineFiles( cPath); oClass:AddMethod( "DefineFiles", @TNotas_DefineFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenService( lExclusive); oClass:AddMethod( "OpenService", @TNotas_OpenService(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Resource( nMode); oClass:AddMethod( "Resource", @TNotas_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ValidCodigoInteresado(); oClass:AddMethod( "ValidCodigoInteresado", @TNotas_ValidCodigoInteresado(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER HelpCodigoInteresado(); oClass:AddMethod( "HelpCodigoInteresado", @TNotas_HelpCodigoInteresado(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ChangeCodigoInteresado(); oClass:AddMethod( "ChangeCodigoInteresado", @TNotas_ChangeCodigoInteresado(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetFilter( cExpresionFilter); oClass:AddMethod( "SetFilter", @TNotas_SetFilter(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetFilterFecha( cExpresionFilter); oClass:AddMethod( "SetFilterFecha", @TNotas_SetFilterFecha(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetFilterEstado( cExpresionFilter); oClass:AddMethod( "SetFilterEstado", @TNotas_SetFilterEstado(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ZoomDocument(); oClass:AddMethod( "ZoomDocument", @TNotas_ZoomDocument(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Report(); oClass:AddInline( "Report", {|Self | ( ( Self ) ), InfNotas():New( "Informe de notas", , , , , , ::oDbf ):Play() }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TNotas ;
+
+
+
+static FUNCTION TNotas_New( cPath, cDriver, oWndParent, oMenuItem ) ; local Self AS CLASS TNotas := QSelf() AS CLASS TNotas
+
+   If( cPath == nil, cPath := cPatDat(), ) ;
+   If( cDriver == nil, cDriver := cDriver(), ) ;
+   If( oWndParent == nil, oWndParent := oWnd(), ) ;
+   If( oMenuItem == nil, oMenuItem := "01075", ) ;
+
+   ::nLevel             := Auth():Level( oMenuItem )
+
+
+
+
+
+   if oWndParent <> nil
+      oWndParent:CloseAll()
+   end
+
+   ::cPath              := cPath
+   ::cDriver            := cDriver
+
+   ::oWndParent         := oWndParent
+   ::oDbf               := nil
+
+   ::lCreateShell       := .F.
+
+   ::cHtmlHelp          := "Notas"
+   ::oBmpAlr            := LoadBitmap( GetResources(), "gc_bell_16" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TNotas_OpenService( lExclusive, cPath ) ; local Self AS CLASS TNotas := QSelf() AS CLASS TNotas
+
+   local lOpen          := .T.
+   local oError
+   local oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   BEGIN SEQUENCE
+
+      if Empty( ::oDbf )
+         ::DefineFiles( cPath )
+      end
+
+      ::oDbf:Activate( .F., !( lExclusive ) )
+
+   RECOVER USING oError
+
+      msgStop( ErrorMessage( oError ), "Imposible abrir todas las bases de datos" )
+
+      ::CloseFiles()
+
+      lOpen             := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TNotas_OpenFiles( lExclusive, lCloseNotas ) ; local Self AS CLASS TNotas := QSelf() AS CLASS TNotas
+
+   local lOpen          := .T.
+   local oError
+   local oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+   If( lCloseNotas == nil, lCloseNotas := .F., ) ;
+
+   BEGIN SEQUENCE
+
+   if Empty( ::oDbf )
+      ::DefineFiles()
+   end
+
+   ::oDbf:Activate( .F., !( lExclusive ) )
+   ::oDbf:OrdScope( Auth():Codigo() )
+
+   ::oDbfCli := DbfServer( "Client.DBF", ):NewOpen( "Client.DBF",, ( ::cDriver ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oDbfCli:AddBag( "CLIENT.CDX" ) ; ::oDbfCli:AddBag( ) ; ::oDbfCli:AutoIndex()
+
+   ::oDbfPrv := DbfServer( "Provee.DBF", ):NewOpen( "Provee.DBF",, ( ::cDriver ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oDbfPrv:AddBag( "PROVEE.CDX" ) ; ::oDbfPrv:AddBag( ) ; ::oDbfPrv:AutoIndex()
+
+   ::oDbfArt := DbfServer( "Articulo.DBF", ):NewOpen( "Articulo.DBF",, ( ::cDriver ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oDbfArt:AddBag( "ARTICULO.CDX" ) ; ::oDbfArt:AddBag( ) ; ::oDbfArt:AutoIndex()
+
+   ::oDbfAge := DbfServer( "Agentes.Dbf", ):NewOpen( "Agentes.Dbf",, ( ::cDriver ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oDbfAge:AddBag( "Agentes.Cdx" ) ; ::oDbfAge:AddBag( ) ; ::oDbfAge:AutoIndex()
+
+   ::oDbfAlm := DbfServer( "Almacen.Dbf", ):NewOpen( "Almacen.Dbf",, ( ::cDriver ),, ( cPatEmp() ), .F., .T., .F., .F. ) ; ::oDbfAlm:AddBag( "Almacen.Cdx" ) ; ::oDbfAlm:AddBag( ) ; ::oDbfAlm:AutoIndex()
+
+   if lCloseNotas .AND. oUser():lAlerta()
+      CloseNotas()
+   end
+
+   RECOVER USING oError
+
+      msgStop( "Imposible abrir todas las bases de datos" + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+      ::CloseFiles()
+      lOpen             := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TNotas_CloseFiles( lSetNotas ) ; local Self AS CLASS TNotas := QSelf() AS CLASS TNotas
+
+   If( lSetNotas == nil, lSetNotas := .F., ) ;
+
+   if !Empty( ::oDbfCli ) .AND. ::oDbfCli:Used()
+      ::oDbfCli:End()
+   end
+
+   if !Empty( ::oDbfPrv ) .AND. ::oDbfPrv:Used()
+      ::oDbfPrv:End()
+   end
+
+   if !Empty( ::oDbfArt ) .AND. ::oDbfArt:Used()
+      ::oDbfArt:End()
+   end
+
+   if !Empty( ::oDbfAlm ) .AND. ::oDbfAlm:Used()
+      ::oDbfAlm:End()
+   end
+
+   if !Empty( ::oDbfAge ) .AND. ::oDbfAge:Used()
+      ::oDbfAge:End()
+   end
+
+   if ::oDbf <> nil .AND. ::oDbf:Used()
+      ::oDbf:End()
+   end
+
+   ::oDbf               := nil
+
+   DeleteObject( ::oBmpAlr )
+
+   if ::oMenu <> nil
+      ::oMenu:End()
+   end
+
+   if lSetNotas .AND. oUser():lAlerta()
+      SetNotas()
+   end
+
+RETURN .T.
+
+
+
+static FUNCTION TNotas_Activate( ) ; local Self AS CLASS TNotas := QSelf() AS CLASS TNotas
+
+   if nAnd( ::nLevel, 1 ) == 0
+      msgStop( "Acceso no permitido." )
+      Return ( Self )
+   end
+
+
+
+
+
+   if ::oWndParent <> nil
+      ::oWndParent:CloseAll()
+   end
+
+   if Empty( ::oDbf ) .OR. !::oDbf:Used()
+      ::lOpenFiles      := ::OpenFiles( .F., .T. )
+   end
+
+
+
+
+
+   if ::lOpenFiles
+
+      ::CreateShell( ::nLevel )
+
+      ::oWndBrw:GralButtons( Self )
+
+
+
+
+
+      ::aBtnFilter[ 1 ] := ::oWndBrw:NewAt( "bFilter",,, {||( ::SetFilter( nil, ::aBtnFilter[ 1 ], ::aBtnFilter ) )}, "(T)odas", "T",,,,, .F. )
+
+
+
+
+
+      ::aBtnFilter[ 2 ] := ::oWndBrw:NewAt( "bFilter",,, {||( ::SetFilter( "Rtrim( cEstNot ) == 'No comenzada'", ::aBtnFilter[ 2 ], ::aBtnFilter ) )}, "(N)o comenzada", "N",,,,, .F. )
+
+
+
+
+
+      ::aBtnFilter[ 3 ] := ::oWndBrw:NewAt( "bFilter",,, {||( ::SetFilter( "Rtrim( cEstNot ) == 'En curso'", ::aBtnFilter[ 3 ], ::aBtnFilter ) )}, "(E)n curso", "E",,,,, .F. )
+
+
+
+
+
+      ::aBtnFilter[ 4 ] := ::oWndBrw:NewAt( "bFilter",,, {||( ::SetFilter( "Rtrim( cEstNot ) == 'Completada'", ::aBtnFilter[ 4 ], ::aBtnFilter ) )}, "(C)ompletada", "C",,,,, .F. )
+
+
+
+
+
+      ::aBtnFilter[ 5 ] := ::oWndBrw:NewAt( "bFilter",,, {||( ::SetFilter( "Rtrim( cEstNot ) == 'A la espera de otra persona'", ::aBtnFilter[ 5 ], ::aBtnFilter ) )}, "A la es(p)era...", "P",,,,, .F. )
+
+
+
+
+
+      ::aBtnFilter[ 6 ] := ::oWndBrw:NewAt( "bFilter",,, {||( ::SetFilter( "Rtrim( cEstNot ) == 'Aplazada'", ::aBtnFilter[ 6 ], ::aBtnFilter ) )}, "Apla(z)ada", "Z",,,,, .F. )
+
+      ::oWndBrw:EndButtons( Self )
+
+      ::oWndBrw:cHtmlHelp  := "Notas"
+
+      ::oWndBrw:Activate(  , , , , , , , , , , , , , , , , {|| ::CloseFiles( .T. ) } )
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TNotas_Dialog( ) ; local Self AS CLASS TNotas := QSelf() AS CLASS TNotas
+
+   local oDlg
+   local oGetBuscar
+   local cGetBuscar  := Space( 100 )
+   local oCbxOrden
+   local cCbxOrden   := "Fecha"
+
+   if nAnd( ::nLevel, 1 ) == 0
+      msgStop( "Acceso no permitido." )
+      Return ( Self )
+   end
+
+
+
+
+
+   if Empty( ::oDbf ) .OR. !::oDbf:Used()
+      ::lOpenFiles   := ::OpenFiles()
+   end
+
+
+
+
+
+   if ::lOpenFiles
+
+      oDlg = TDialog():New(,,,,, "DIALOG_PDA",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+      oGetBuscar := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, cGetBuscar, cGetBuscar:= u ) }, oDlg,,,,,,,,, .F.,,, .F., .F.,,,,,, nil, "FIND",, )
+
+      oGetBuscar:bChange   := {| nKey, nFlags | AutoSeek( nKey, nFlags, oGetBuscar, ::oWndBrw, ::oDbf:nArea, .T., Auth():Codigo() ) }
+
+
+
+
+
+      oCbxOrden := TComboBox():ReDefine( 110, { | u | If( PCount()==0, cCbxOrden, cCbxOrden:= u ) }, { "Fecha", "Asunto", "Estado" }, oDlg,,,,,,, .F.,,,,,,, "oCbxOrden",,,,,,, )
+
+      oCbxOrden:bChange    := {|| ::oDbf:OrdSetFocus( oCbxOrden:nAt ), ::oDbf:GoTop(), ::oWndBrw:Refresh(), oGetBuscar:SetFocus() }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      oDlg:bValid          := {|| ::CloseFiles() }
+
+      oDlg:Activate( , , , .T., , , {|| ::EditMenu( oDlg ) } )
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TNotas_EditMenu( oDlg ) ; local Self AS CLASS TNotas := QSelf() AS CLASS TNotas
+
+   ::oMenu := MenuBegin( .F.,,, .F., .F.,,,,,,,,,, .F.,, .F., .F., .F., .F.,, ,,,,,, .F.,, .F., .F.,,,,,,,,,, .F.,,,,,, )
+
+      MenuAddItem( "1. Fecha",, .F.,,,,,,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+
+         MenuBegin( .F.,,, .F., .F.,,,,,,,,,, .F.,, .F., .F., .F., .F.,, ,,,,,, .F.,, .F., .F.,,,,,,,,,, .F.,,,,,, )
+
+
+
+
+
+            ::aBtnFecha[ 1 ] := MenuAddItem( "&1. Todas",, .T.,, {|oMenuItem|( ::SetFilterFecha( ".t.", ::aBtnFecha[ 1 ] ) )},,,,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+
+
+
+            ::aBtnFecha[ 2 ] := MenuAddItem( "&2. Hoy",, .F.,, {|oMenuItem|( ::SetFilterFecha( "dFecNot == Date()", ::aBtnFecha[ 2 ] ) )},,,,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+
+
+
+            ::aBtnFecha[ 3 ] := MenuAddItem( "&3. Semana",, .F.,, {|oMenuItem|( ::SetFilterFecha( "Week( dFecNot ) == Week( Date() )", ::aBtnFecha[ 3 ] ) )},,,,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+
+
+
+            ::aBtnFecha[ 4 ] := MenuAddItem( "&4. Mes",, .F.,, {|oMenuItem|( ::SetFilterFecha( "Month( dFecNot ) == Month( Date() )", ::aBtnFecha[ 4 ] ) )},,,,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+         MenuEnd()
+
+      MenuAddItem( "&2. Estado",, .F.,,,,,,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+
+         MenuBegin( .F.,,, .F., .F.,,,,,,,,,, .F.,, .F., .F., .F., .F.,, ,,,,,, .F.,, .F., .F.,,,,,,,,,, .F.,,,,,, )
+
+
+
+
+
+            ::aBtnFilter[ 1 ] := MenuAddItem( "&1. Todos los asuntos",, .T.,, {|oMenuItem|( ::SetFilterEstado( ".t.", ::aBtnFilter[ 1 ] ) )},,,,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+
+
+
+            ::aBtnFilter[ 2 ] := MenuAddItem( "&2. No comenzada",, .F.,, {|oMenuItem|( ::SetFilterEstado( "Rtrim( cEstNot ) == 'No comenzada'", ::aBtnFilter[ 2 ] ) )},,,,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+
+
+
+            ::aBtnFilter[ 3 ] := MenuAddItem( "&3. En curso",, .F.,, {|oMenuItem|( ::SetFilterEstado( "Rtrim( cEstNot ) == 'En curso'", ::aBtnFilter[ 3 ] ) )},,,,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+
+
+
+            ::aBtnFilter[ 4 ] := MenuAddItem( "&4. Completadas",, .F.,, {|oMenuItem|( ::SetFilterEstado( "Rtrim( cEstNot ) == 'Completada'", ::aBtnFilter[ 4 ] ) )},,,,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+
+
+
+            ::aBtnFilter[ 5 ] := MenuAddItem( "&5. A la espera...",, .F.,, {|oMenuItem|( ::SetFilterEstado( "Rtrim( cEstNot ) == 'A la espera de otra persona'", ::aBtnFilter[ 5 ] ) )},,,,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+
+
+
+            ::aBtnFilter[ 6 ] := MenuAddItem( "&6. Aplazada",, .F.,, {|oMenuItem|( ::SetFilterEstado( "Rtrim( cEstNot ) == 'Aplazada'", ::aBtnFilter[ 6 ] ) )},,,,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+         MenuEnd()
+
+      MenuAddItem( "&3. Edición",, .F.,,,,,,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+
+         MenuBegin( .F.,,, .F., .F.,,,,,,,,,, .F.,, .F., .F., .F., .F.,, ,,,,,, .F.,, .F., .F.,,,,,,,,,, .F.,,,,,, )
+
+
+
+            MenuAddItem( "&1. Añadir",, .F.,, {|oMenuItem|( if( nAnd( ::nLevel, 2 ) <> 0, ::Append(), MsgStop( "Acceso no permitido" ) ) )},,,,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+
+
+            MenuAddItem( "&2. Modificar",, .F.,, {|oMenuItem|( if( nAnd( ::nLevel, 4 ) <> 0, ::Edit(),   MsgStop( "Acceso no permitido" ) ) )},,,,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+
+
+            MenuAddItem( "&3. Eliminar",, .F.,, {|oMenuItem|( if( nAnd( ::nLevel, 16 ) <> 0, ::Del(),    MsgStop( "Acceso no permitido" ) ) )},,,,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+
+
+            MenuAddItem( "&4. Zoom",, .F.,, {|oMenuItem|( if( nAnd( ::nLevel, 8 ) <> 0, ::Zoom(),   MsgStop( "Acceso no permitido" ) ) )},,,,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+         MenuEnd()
+
+
+
+
+
+      MenuAddItem( "&S. Salir", "Salir de la ventana actual", .F.,, {|oMenuItem|( oDlg:End() )},, "End",,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+   MenuEnd()
+
+   oDlg:SetMenu( ::oMenu )
+
+Return ( ::oMenu )
+
+
+
+static FUNCTION TNotas_DefineFiles( cPath, cDriver ) ; local Self AS CLASS TNotas := QSelf() AS CLASS TNotas
+
+   If( cPath == nil, cPath := ::cPath, ) ;
+   If( cDriver == nil, cDriver := cDriver(), ) ;
+
+
+
+
+
+
+
+   ::oDbf := DbfServer( "AgendaUsr.dbf", "AgendaUsr" ):New( "AgendaUsr.dbf", "AgendaUsr", ( cDriver ), "Agenda/CRM", ( cPath ) )
+
+      ::oDbf:AddField( "lAlrNot", "L", 1, 0,,,,, "", .F.,, .T., {} )
+      ::oDbf:AddField( "nAlrNot", "B", 1, 0,,,, {|| ::oDbf:lAlrNot }, "", .F., 18, .F., {"Sel16", "Nil16"} )
+      ::oDbf:AddField( "cTexNot", "C", 100, 0,,,,, "Asunto", .F., 180, .F., {} )
+      ::oDbf:AddField( "nIntNot", "N", 1, 0,,,,, "Interesado", .F.,, .T., {} )
+      ::oDbf:AddField( "aIntNot", "B", 1, 0,,,, {|| ( ::aCmbInteresado[ Min( Max( ::oDbf:nIntNot, 1 ), len( ::aCmbInteresado ) ) ] )}, "Interesado", .F., 70, .F., {} )
+      ::oDbf:AddField( "cIntNot", "C", 12, 0,,,,, "Código", .F., 60, .F., {} )
+      ::oDbf:AddField( "cNomNot", "C", 100, 0,,,,, "Nombre", .F., 180, .F., {} )
+      ::oDbf:AddField( "cTipNot", "C", 30, 0,,,,, "Tipo", .F., 80, .F., {} )
+      ::oDbf:AddField( "dFecNot", "D", 8, 0,,,,, "Fecha", .F., 80, .F., {} )
+      ::oDbf:AddField( "cHorNot", "C", 4, 0, "@R 99:99",,,, "Hora", .F., 60, .F., {} )
+      ::oDbf:AddField( "lVisNot", "L", 1, 0,,,,, "Lógico para visto", .F.,, .T., {} )
+      ::oDbf:AddField( "dVctNot", "D", 8, 0,,,,, "Vencimiento", .F.,, .T., {} )
+      ::oDbf:AddField( "cDesNot", "M", 10, 0,,,,, "Texto largo de la nota", .F.,, .T., {} )
+      ::oDbf:AddField( "cObsNot", "M", 10, 0,,,,, "Observaciones de la nota", .F.,, .T., {} )
+      ::oDbf:AddField( "cEstNot", "C", 50, 0,,,,, "Estado", .F., 100, .F., {} )
+      ::oDbf:AddField( "cUsrNot", "C", 3, 0,,,,, "Usuario", .F.,, .T., {} )
+      ::oDbf:AddField( "cTipDoc", "C", 2, 0,,,,, "Tipo de documento", .F.,, .T., {} )
+      ::oDbf:AddField( "cNumDoc", "C", 12, 0,,,,, "Documento", .F.,, .T., {} )
+
+      ::oDbf:AddIndex( "dFecNot", "AgendaUsr.cdx", "cUsrNot + Dtos( dFecNot ) + cHorNot",,, .F., .F., "Fecha",,, .T., .F. )
+      ::oDbf:AddIndex( "cTexNot", "AgendaUsr.cdx", "cUsrNot + Upper( cTexNot )",,, .F., .F., "Asunto",,, .T., .F. )
+      ::oDbf:AddIndex( "cEstNot", "AgendaUsr.cdx", "cUsrNot + Upper( cEstNot )",,, .F., .F., "Estado",,, .T., .F. )
+
+
+
+RETURN ( ::oDbf )
+
+
+
+static FUNCTION TNotas_Resource( nMode, aInit ) ; local Self AS CLASS TNotas := QSelf() AS CLASS TNotas
+
+    local oDlg
+   local oGetHora
+   local oCmbTipo
+   local oCmbEstado
+   local oCmbInteresado
+   local cCmbInteresado
+   local oGetCodigoInteresado
+   local oGetNombreInteresado
+   local oGetNumeroDocumento
+   local oGetTipoDocumento
+   local cGetTipoDocumento
+   local oBmpGeneral
+
+   do case
+      case nMode == 6
+         ::oDbf:dFecNot    := GetSysDate()
+         ::oDbf:cHorNot    := SubStr( Time(), 1, 2 ) + SubStr( Time(), 4, 2 )
+         ::oDbf:cUsrNot    := Auth():Codigo()
+         cCmbInteresado    := ::aCmbInteresado[ 1 ]
+         ::oDbf:cTexNot    := aInit[ 1 ]
+         ::oDbf:cTipDoc    := aInit[ 2 ]
+         ::oDbf:cIntNot    := aInit[ 3 ]
+         ::oDbf:cNomNot    := aInit[ 4 ]
+         ::oDbf:cNumDoc    := aInit[ 5 ]
+         ::oDbf:cDesNot    := aInit[ 6 ]
+
+      case nMode == 1
+         ::oDbf:dFecNot    := GetSysDate()
+         ::oDbf:cHorNot    := SubStr( Time(), 1, 2 ) + SubStr( Time(), 4, 2 )
+         ::oDbf:cUsrNot    := Auth():Codigo()
+         cCmbInteresado    := ::aCmbInteresado[ 1 ]
+
+      otherwise
+         if ::oDbf:lVisNot
+            ::oDbf:cEstNot := "Completada"
+         end
+         cCmbInteresado    := ::aCmbInteresado[ Min( Max( ::oDbf:nIntNot, 1 ), len( ::aCmbInteresado ) ) ]
+
+   end
+
+   cGetTipoDocumento       := cTextoDocumento( ::oDbf:cTipDoc )
+
+   if ( "PDA" $ appParamsMain() )
+   oDlg = TDialog():New(,,,, LblTitle( nMode ) + "apunte de agenda", "NOTAS_PDA",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+   else
+   oDlg = TDialog():New(,,,, LblTitle( nMode ) + "apunte de agenda", "NOTAS",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+   end
+
+
+
+
+
+   oBmpGeneral := TBitmap():ReDefine( 990, "gc_notebook2_48",, oDlg,,, .F., .F.,,, .F.,,, .T. )
+
+
+
+
+
+   TGetHlp():ReDefine( 100, { | u | If( PCount()==0, ::oDbf:cTexNot, ::oDbf:cTexNot:= u ) }, oDlg,,, {||    ( !Empty( ::oDbf:cTexNot ) )},,,,,, .F., {||         ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+   oCmbInteresado := TComboBox():ReDefine( 110, { | u | If( PCount()==0, cCmbInteresado, cCmbInteresado:= u ) }, ::aCmbInteresado, oDlg,,,,,,, .F., {||     ( nMode <> 3 )},,,,,, "oCmbInteresado",,,,,,, )
+
+   oCmbInteresado:bChange        := {|| ::ChangeCodigoInteresado( oGetCodigoInteresado, oGetNombreInteresado ) }
+
+
+
+
+
+
+   oGetCodigoInteresado := TGetHlp():ReDefine( 120, { | u | If( PCount()==0, ::oDbf:cIntNot, ::oDbf:cIntNot:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil, "Lupa",, )
+
+   oGetCodigoInteresado:bValid   := {|| ::ValidCodigoInteresado( cCmbInteresado, oGetNombreInteresado ) }
+   oGetCodigoInteresado:bHelp    := {|| ::HelpCodigoInteresado( cCmbInteresado, oGetCodigoInteresado, oGetNombreInteresado ) }
+
+
+
+
+   oGetNombreInteresado := TGetHlp():ReDefine( 130, { | u | If( PCount()==0, ::oDbf:cNomNot, ::oDbf:cNomNot:= u ) }, oDlg,,,,,,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+   oCmbTipo := TComboBox():ReDefine( 140, { | u | If( PCount()==0, ::oDbf:cTipNot, ::oDbf:cTipNot:= u ) }, ::aCmbTipo, oDlg,,,,,,, .F., {||     ( nMode <> 3 )},,,,,, "oCmbTipo",,,,,,, )
+
+
+
+
+
+   TGetHlp():ReDefine( 150, { | u | If( PCount()==0, ::oDbf:dFecNot, ::oDbf:dFecNot:= u ) }, oDlg,,,,,,,,, .F., {||         ( nMode <> 3 )},, .F., .T.,,,,,, nil,,, )
+
+
+
+
+
+
+
+
+
+
+   oGetHora := TGetHlp():ReDefine( 160, { | u | If( PCount()==0, ::oDbf:cHorNot, ::oDbf:cHorNot:= u ) }, oDlg,, ::oDbf:FieldByName( "cHorNot" ):cPict, {||    ( validHourMinutes( ::oDbf:cHorNot ) )},,,,,, .F., {||     ( nMode <> 3 )},, .F., .T., {||    ( UpTime( oGetHora ) )}, {||  ( DwTime( oGetHora ) )},,,, nil,,, )
+
+
+
+
+   TCheckBox():ReDefine( 170, { | u | If( PCount()==0, ::oDbf:lAlrNot, ::oDbf:lAlrNot:= u ) }, oDlg,,,,,,, .F., {||         ( nMode <> 3 )}, .F. )
+
+
+
+
+
+
+   oCmbEstado := TComboBox():ReDefine( 180, { | u | If( PCount()==0, ::oDbf:cEstNot, ::oDbf:cEstNot:= u ) }, { "No comenzada", "En curso", "Completada", "A la espera de otra persona", "Aplazada" }, oDlg,,,,,,, .F., {||     ( nMode <> 3 )},,,,,, "oCmbEstado",,,,,,, )
+
+
+
+
+
+   TCheckBox():ReDefine( 190, { | u | If( PCount()==0, ::oDbf:lVisNot, ::oDbf:lVisNot:= u ) }, oDlg,, {||( if( ::oDbf:lVisNot, oCmbEstado:oGet:cText( "Completada" ), ) )},,,,, .F., {||         ( nMode <> 3 )}, .F. )
+
+
+
+
+   TMultiGet():ReDefine( 200, { | u | If( PCount()==0, ::oDbf:cDesNot, ::oDbf:cDesNot:= u ) }, oDlg,,,,,,, .F., {||     ( nMode <> 3 )}, .F.,, )
+
+
+
+
+   TMultiGet():ReDefine( 230, { | u | If( PCount()==0, ::oDbf:cObsNot, ::oDbf:cObsNot:= u ) }, oDlg,,,,,,, .F., {||     ( nMode <> 3 )}, .F.,, )
+
+
+
+
+
+
+   oGetNumeroDocumento := TGetHlp():ReDefine( 210, { | u | If( PCount()==0, ::oDbf:cNumDoc, ::oDbf:cNumDoc:= u ) }, oDlg,, "@R #/#########/##",,,,,,, .F.,,, .F., .F.,,,,,, nil, "gc_flash_16",, )
+
+   oGetNumeroDocumento:bHelp  := {|| ::ZoomDocument() }
+
+
+
+
+
+   oGetTipoDocumento := TGetHlp():ReDefine( 220, { | u | If( PCount()==0, cGetTipoDocumento, cGetTipoDocumento:= u ) }, oDlg,,,,,,,,, .F., {||     ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+   TButton():ReDefine( 1, {||( oDlg:end( 1 ) )}, oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+
+   TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+   if !( "PDA" $ appParamsMain() )
+
+
+
+   TButton():ReDefine( 9, {||( ChmHelp( "Notas" ) )}, oDlg,,, .F.,,,, .F. )
+   end
+
+   if nMode <> 3
+      oDlg:AddFastKey( 116, {|| oDlg:end( 1 ) } )
+   end
+      oDlg:AddFastKey( 112, {|| ChmHelp( "Notas" ) } )
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   oBmpGeneral:End()
+
+   ::oDbf:nIntNot := oCmbInteresado:nAt
+
+RETURN ( oDlg:nResult == 1 )
+
+
+
+Function AppendNotas()
+
+Return ( TNotas():New( cPatDat(), oWnd(), "01075" ):Activate():Append() )
+
+
+
+Function EditNotas( nRecno )
+
+   local oNotas   := TNotas():New( cPatDat(), oWnd(), "01075" )
+
+   if !Empty( oNotas )
+      oNotas:Activate()
+      oNotas:oDbf:GoTo( nRecno )
+      oNotas:Edit()
+   end
+
+Return ( nil )
+
+
+
+static FUNCTION TNotas_ValidCodigoInteresado( cCmbInteresado, oGetNombreInteresado ) ; local Self AS CLASS TNotas := QSelf() AS CLASS TNotas
+
+   if Empty( ::oDbf:cIntNot )
+      return .T.
+   end
+
+   do case
+      case cCmbInteresado == "Cliente"
+
+         if ::oDbfCli:Seek( ::oDbf:cIntNot )
+            oGetNombreInteresado:cText( ::oDbfCli:Titulo )
+         else
+            MsgStop( "Cliente no encontrado" )
+            Return .F.
+         end
+
+      case cCmbInteresado == "Proveedor"
+
+         if ::oDbfPrv:Seek( ::oDbf:cIntNot )
+            oGetNombreInteresado:cText( ::oDbfCli:Titulo )
+         else
+            MsgStop( "Proveedor no encontrado" )
+            Return .F.
+         end
+
+      case cCmbInteresado == "Artículo"
+
+         if ::oDbfArt:Seek( ::oDbf:cIntNot )
+            oGetNombreInteresado:cText( ::oDbfArt:Nombre )
+         else
+            MsgStop( "Artículo no encontrado" )
+            Return .F.
+         end
+
+      case cCmbInteresado == "Agente"
+
+         if ::oDbfAge:Seek( ::oDbf:cIntNot )
+            oGetNombreInteresado:cText( Rtrim( ::oDbfAge:cApeAge ) + ", " + ::oDbfAge:cNbrAge )
+         else
+            MsgStop( "Agente no encontrado" )
+            Return .F.
+         end
+
+      case cCmbInteresado == "Almacén"
+
+         if ::oDbfAlm:Seek( ::oDbf:cIntNot )
+            oGetNombreInteresado:cText( ::oDbfAlm:cNomAlm )
+         else
+            MsgStop( "Almacén no encontrado" )
+            Return .F.
+         end
+
+   end
+
+Return .T.
+
+
+
+static FUNCTION TNotas_HelpCodigoInteresado( cCmbInteresado, oGetCodigoInteresado, oGetNombreInteresado ) ; local Self AS CLASS TNotas := QSelf() AS CLASS TNotas
+
+   do case
+      case cCmbInteresado == "Cliente"
+         BrwClient( oGetCodigoInteresado, oGetNombreInteresado )
+
+      case cCmbInteresado == "Proveedor"
+         BrwProvee( oGetCodigoInteresado, oGetNombreInteresado )
+
+      case cCmbInteresado == "Artículo"
+         BrwArticulo( oGetCodigoInteresado, oGetNombreInteresado )
+
+      case cCmbInteresado == "Agente"
+         BrwAgentes( oGetCodigoInteresado, oGetNombreInteresado )
+
+      case cCmbInteresado == "Almacén"
+         BrwAlmacen( oGetCodigoInteresado, oGetNombreInteresado )
+
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TNotas_ChangeCodigoInteresado( oGetCodigoInteresado, oGetNombreInteresado ) ; local Self AS CLASS TNotas := QSelf() AS CLASS TNotas
+
+   oGetCodigoInteresado:cText( Space( 12 ) )
+   oGetNombreInteresado:cText( "" )
+
+Return ( Self )
+
+
+
+static FUNCTION TNotas_SetFilter( cFltExpresion, oBtn, aBtn ) ; local Self AS CLASS TNotas := QSelf() AS CLASS TNotas
+
+   ::oDbf:SetFilter( cFltExpresion )
+   ::oWndBrw:Refresh()
+
+
+
+   if oBtn:ClassName == "TMENUITEM"
+      aEval( aBtn, {| oBtn | oBtn:SetCheck( .F. ) } )
+      oBtn:SetCheck( .T. )
+   else
+
+
+   aEval( aBtn, {| oBtn | ::oWndBrw:oBtnBar:SetItemImage( oBtn, 8 ) } )
+
+
+   ::oWndBrw:oBtnBar:SetItemImage( oBtn, 7 )
+
+   end
+
+Return ( Self )
+
+
+
+static FUNCTION TNotas_SetFilterFecha( cFltExpresion, oBtn ) ; local Self AS CLASS TNotas := QSelf() AS CLASS TNotas
+
+   ::cFilterFecha    := cFltExpresion
+
+   if !Empty( ::cFilterEstado )
+      cFltExpresion  := ::cFilterEstado + " .and. " + cFltExpresion
+   end
+
+   ::oDbf:SetFilter( cFltExpresion )
+
+   ::oWndBrw:Refresh()
+
+
+
+   aEval( ::aBtnFecha, {| oBtn | oBtn:SetCheck( .F. ) } )
+
+   oBtn:SetCheck( .T. )
+
+Return ( Self )
+
+
+
+static FUNCTION TNotas_SetFilterEstado( cFltExpresion, oBtn ) ; local Self AS CLASS TNotas := QSelf() AS CLASS TNotas
+
+   ::cFilterEstado    := cFltExpresion
+
+   if !Empty( ::cFilterFecha )
+      cFltExpresion  := ::cFilterFecha + " .and. " + cFltExpresion
+   end
+
+   ::oDbf:SetFilter( cFltExpresion )
+
+   ::oWndBrw:Refresh()
+
+
+
+   aEval( ::aBtnFilter, {| oBtn | oBtn:SetCheck( .F. ) } )
+
+   oBtn:SetCheck( .T. )
+
+Return ( Self )
+
+
+
+static FUNCTION TNotas_ZoomDocument( ) ; local Self AS CLASS TNotas := QSelf() AS CLASS TNotas
+
+   do case
+      case ::oDbf:cTipDoc == "08"
+         ZooPreCli( ::oDbf:cNumDoc, .F., ( "PDA" $ appParamsMain() ) )
+
+      case ::oDbf:cTipDoc == "09"
+         ZooPedCli( ::oDbf:cNumDoc )
+
+      case ::oDbf:cTipDoc == "10"
+         ZooAlbCli( ::oDbf:cNumDoc )
+
+      case ::oDbf:cTipDoc == "11"
+         ZooFacCli( ::oDbf:cNumDoc )
+
+      case ::oDbf:cTipDoc == "13"
+         ZooAntCli( ::oDbf:cNumDoc )
+
+   end
+
+Return ( Self )
+
+
+
+Function GenerarNotas( aData )
+
+   local lAppend
+   local oNotas   := TNotas():New( cPatDat(), nil, "01075" )
+
+   if oNotas <> nil .AND. oNotas:OpenFiles()
+
+      oNotas:oDbf:Blank()
+      oNotas:oDbf:SetDefault()
+
+      lAppend     := oNotas:Resource( 6, aData )
+
+      if lAppend
+         oNotas:oDbf:Insert()
+      else
+         oNotas:oDbf:Cancel()
+      end
+
+   end
+
+   oNotas:End()
+
+Return ( lAppend )
+
+
+
+
+
+FUNCTION ChkNotas()
+
+   local cDate    := Dtos( date() )
+   local cTime    := Time()
+   local oBlock
+
+    cTime             := SubStr( cTime, 1, 2 ) + SubStr( cTime, 4, 2 )
+
+   if !File( cPatDat() + "AgendaUsr.dbf" ) .OR. !File( cPatDat() + "AgendaUsr.cdx" )
+      return nil
+   end
+
+   oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+
+   BEGIN SEQUENCE
+
+   if !Empty( dbfNotas ) .AND. ( dbfNotas )->( Used() ) .AND. !lOnProcess .AND. Empty( oMsgAlarm )
+
+      lOnProcess  := .T.
+
+      ( dbfNotas )->( dbGoTop() )
+      while ( dbfNotas )->( !Eof() )
+
+         if Dtos( ( dbfNotas )->dFecNot ) + ( dbfNotas )->cHorNot < cDate + cTime .AND. !( dbfNotas )->lVisNot .AND. ( dbfNotas )->lAlrNot
+            oMsgAlarm         := TMsgItem():New( oWnd():oMsgBar,,24,,,,.T.,,"gc_bell_16",, "Asunto : " + AllTrim( ( dbfNotas )->cTexNot ) )
+            oMsgAlarm:bAction := {|| TNotas():New( cPatDat(), oWnd(), "01075" ):Activate() }
+            exit
+         end
+
+            ( dbfNotas )->( dbSkip() )
+
+      end
+
+      lOnProcess  := .F.
+
+   end
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN NIL
+
+
+
+FUNCTION SetNotas()
+
+   if !lAIS()
+
+      if !file( cPatDat() + "AgendaUsr.dbf" )
+         msgStop( "El fichero " + ( cPatDat() + "AgendaUsr.dbf" ) + " no existe." )
+         return nil
+      end
+
+      if !file( cPatDat() + "AgendaUsr.cdx" )
+         msgStop( "El fichero " + ( cPatDat() + "AgendaUsr.cdx" ) + " no existe." )
+         return nil
+      end
+
+   end
+
+   dbUseArea( .T., ( cDriver() ), ( cPatDat() + "AgendaUsr.dbf" ), ( cCheckArea( "NOTAS", @dbfNotas ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+   if !lAIS() ; ordListAdd( ( cPatDat() + "AgendaUsr.cdx" ) ) ; else ; ordSetFocus( 1 ) ; end
+
+   ( dbfNotas )->( OrdScope( 0, Auth():Codigo() ) )
+   ( dbfNotas )->( OrdScope( 1, Auth():Codigo() ) )
+
+   oTimer      := TTimer():New( 6000, {|| ChkNotas() } ):Activate()
+
+RETURN NIL
+
+
+
+FUNCTION CloseNotas()
+
+   if !Empty( oTimer )
+      oTimer:End()
+   end
+
+   if !Empty( dbfNotas ) .AND. ( dbfNotas )->( Used() )
+      ( dbfNotas )->( dbCloseArea() )
+   end
+
+   if !Empty( oMsgAlarm )
+      oWnd():oMsgBar:DelItem( oMsgAlarm )
+   end
+
+   oTimer      := nil
+   dbfNotas    := nil
+   oMsgAlarm   := nil
+
+RETURN NIL
+
+
+
+Function DialogNotas()
+
+   local oDlg
+   local oBrw
+   local oGetBuscar
+   local cGetBuscar  := Space( 100 )
+   local oCbxOrden
+   local cCbxOrden   := "Fecha"
+
+   oDlg = TDialog():New(,,,,, "DIALOG_PDA",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+      oGetBuscar := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, cGetBuscar, cGetBuscar:= u ) }, oDlg,,,,,,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      oCbxOrden := TComboBox():ReDefine( 110, { | u | If( PCount()==0, cCbxOrden, cCbxOrden:= u ) }, { "Fecha", "Asunto", "Estado" }, oDlg,,,,,,, .F.,,,,,,, "oCbxOrden",,,,,,, )
+
+
+   oDlg:Activate( , , , .T. )
+
+
+RETURN ( nil )

@@ -1,0 +1,636 @@
+#line 203 "C:\fwh1801\Gestool\bin\include\hbclass.ch"
+DECLARE HBClass  New( cName AS STRING, OPTIONAL SuperParams ) AS CLASS HBClass  Create() AS OBJECT  Instance() AS OBJECT  AddClsMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC, n2 AS NUMERIC, n3 AS NUMERIC )  AddMultiClsData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING )  AddMultiData( cType AS STRING, uVal, nScope AS NUMERIC, aDatas AS ARRAY OF STRING, x AS LOGICAL, lPer AS LOGICAL )  AddMethod( cName AS STRING, @MethodName(), nScope AS NUMERIC )  AddInLine( cName AS STRING, bBlock AS CODEBLOCK, nScope AS NUMERIC )  AddVirtual( cName AS STRING )
+#line 7 "C:\fwh1801\Gestool\bin\Script\Articulos\ArticulosMotos.prg"
+Function Inicio( nView )
+
+   local oImportaArticulos := ImportaArticulos():New( nView )
+
+Return ( nil )
+
+
+
+_HB_CLASS ImportaArticulos ; function ImportaArticulos ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "ImportaArticulos", iif( .F., { }, { @HBObject() } ), @ImportaArticulos() ) ) ;
+
+; _HB_MEMBER { nView } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nView"}, .F. )
+; _HB_MEMBER { cFileArticulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFileArticulo"}, .F. )
+; _HB_MEMBER { cFileFamilia } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFileFamilia"}, .F. )
+; _HB_MEMBER { cFileFabricante } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFileFabricante"}, .F. )
+; _HB_MEMBER { cFileCliente } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFileCliente"}, .F. )
+; _HB_MEMBER { cFileDirecciones } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFileDirecciones"}, .F. )
+; _HB_MEMBER { cFileImagenes } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFileImagenes"}, .F. )
+; _HB_MEMBER { cFilePropiedades } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFilePropiedades"}, .F. )
+; _HB_MEMBER { cFileLineasPropiedades } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFileLineasPropiedades"}, .F. )
+; _HB_MEMBER { cFilePropiedadesArticulos } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFilePropiedadesArticulos"}, .F. )
+; _HB_MEMBER { cFileDescripcionesArticulos } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cFileDescripcionesArticulos"}, .F. )
+
+; _HB_MEMBER { cUrlPsImagen } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cUrlPsImagen"}, .F. )
+; _HB_MEMBER { cUrlDwImagen } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cUrlDwImagen"}, .F. )
+
+; _HB_MEMBER { aDownloadImagenes } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aDownloadImagenes"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @ImportaArticulos_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ImpArticulos(); oClass:AddMethod( "ImpArticulos", @ImportaArticulos_ImpArticulos(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ImpFamilias(); oClass:AddMethod( "ImpFamilias", @ImportaArticulos_ImpFamilias(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ImpFabricantes(); oClass:AddMethod( "ImpFabricantes", @ImportaArticulos_ImpFabricantes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ImpClientes(); oClass:AddMethod( "ImpClientes", @ImportaArticulos_ImpClientes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ImpDirecciones(); oClass:AddMethod( "ImpDirecciones", @ImportaArticulos_ImpDirecciones(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ImpImagenes(); oClass:AddMethod( "ImpImagenes", @ImportaArticulos_ImpImagenes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ImpPropiedades(); oClass:AddMethod( "ImpPropiedades", @ImportaArticulos_ImpPropiedades(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ImpLineasPropiedades(); oClass:AddMethod( "ImpLineasPropiedades", @ImportaArticulos_ImpLineasPropiedades(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ImpPropiedadesArticulos(); oClass:AddMethod( "ImpPropiedadesArticulos", @ImportaArticulos_ImpPropiedadesArticulos(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ImpDescripciones(); oClass:AddMethod( "ImpDescripciones", @ImportaArticulos_ImpDescripciones(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS ImportaArticulos ;
+
+
+
+static FUNCTION ImportaArticulos_New( nView ) ; local Self AS CLASS ImportaArticulos := QSelf() AS CLASS ImportaArticulos
+
+   ::nView                       := nView
+   ::cFileArticulo               := "c:\ficheros\product.csv"
+   ::cFileFamilia                := "c:\ficheros\category.csv"
+   ::cFileFabricante             := "c:\ficheros\manufacturer.csv"
+   ::cFileCliente                := "c:\ficheros\customer.csv"
+   ::cFileDirecciones            := "c:\ficheros\address.csv"
+   ::cFileImagenes               := "c:\ficheros\product.csv"
+   ::cFilePropiedades            := "c:\ficheros\propiedades.csv"
+   ::cFileLineasPropiedades      := "c:\ficheros\lineaspropiedades.csv"
+   ::cFilePropiedadesArticulos   := "c:\ficheros\propiedadesarticulos.csv"
+   ::cFileDescripcionesArticulos := "c:\ficheros\descripcionesarticulos.csv"
+
+   ::cUrlPsImagen                := "http://motosdasilva.com/t/img/p/"
+   ::cUrlDwImagen                := "c:\ficheros\images2020\"
+
+   ::aDownloadImagenes           := {}
+
+   if msgYesNo( "¿Desea importar productos?" )
+      ::ImpArticulos()
+   end
+
+   if msgYesNo( "¿Desea importar familias?" )
+      ::ImpFamilias()
+   end
+
+   if msgYesNo( "¿Desea importar fabricantes?" )
+      ::ImpFabricantes()
+   end
+
+   if msgYesNo( "¿Desea importar clientes?" )
+      ::ImpClientes()
+   end
+
+   if msgYesNo( "¿Desea importar direcciones?" )
+      ::ImpDirecciones()
+   end
+
+   if msgYesNo( "¿Desea importar imagenes?" )
+      ::ImpImagenes()
+   end
+
+   if msgYesNo( "¿Desea importar propiedades?" )
+      ::ImpPropiedades()
+   end
+
+   if msgYesNo( "¿Desea importar lineas propiedades?" )
+      ::ImpLineasPropiedades()
+   end
+
+   if msgYesNo( "¿Desea importar lineas propiedades de artículos?" )
+      ::ImpPropiedadesArticulos()
+   end
+
+   if msgYesNo( "¿Desea importar descripciones de artículos?" )
+      ::ImpDescripciones()
+   end
+
+
+Return ( Self )
+
+
+
+static FUNCTION ImportaArticulos_ImpArticulos( ) ; local Self AS CLASS ImportaArticulos := QSelf() AS CLASS ImportaArticulos
+
+   local cMemoRead
+   local aLineas
+   local line
+   local aRegistro
+   local n           := 1
+
+   if !File( ::cFileArticulo )
+      Return .F.
+   end
+
+   alineas           := hb_aTokens( MemoRead( ::cFileArticulo ), chr( 13 ) + chr( 10 ) )
+
+   for each line in alineas
+
+      aRegistro := hb_aTokens( line, ";" )
+
+      if len( aRegistro ) <> 0
+
+         msgWait( "Añadiendo " + AllTrim( Str( n ) ) + " - " + AllTrim( aRegistro[5] ), "Atención", 0.1 )
+
+         ( D():Articulos( ::nView ) )->( dbAppend() )
+
+         ( D():Articulos( ::nView ) )->Codigo      := AllTrim( aRegistro[1] )
+         ( D():Articulos( ::nView ) )->Familia     := AllTrim( aRegistro[2] )
+         ( D():Articulos( ::nView ) )->cCodFab     := if( AllTrim( aRegistro[3] ) <> "0", AllTrim( aRegistro[3] ), "" )
+         ( D():Articulos( ::nView ) )->pVenta1     := val( AllTrim( aRegistro[4] ) )
+         ( D():Articulos( ::nView ) )->pVtaIva1    := Round( val( AllTrim( aRegistro[4] ) ) * 1.21, 2 )
+         ( D():Articulos( ::nView ) )->Nombre      := AllTrim( aRegistro[5] )
+         ( D():Articulos( ::nView ) )->nTarWeb     := 1
+
+         ( D():Articulos( ::nView ) )->lSbrInt     := .T.
+         ( D():Articulos( ::nView ) )->pVtaWeb     := val( AllTrim( aRegistro[4] ) )
+         ( D():Articulos( ::nView ) )->nDtoInt1    := 0
+         ( D():Articulos( ::nView ) )->nImpInt1    := val( AllTrim( aRegistro[4] ) )
+         ( D():Articulos( ::nView ) )->nImpIva1    := Round( val( AllTrim( aRegistro[4] ) ) * 1.21, 2 )
+         ( D():Articulos( ::nView ) )->lIvaWeb     := .T.
+
+         ( D():Articulos( ::nView ) )->cTitSeo     := AllTrim( aRegistro[8] )
+         ( D():Articulos( ::nView ) )->cDesSeo     := AllTrim( aRegistro[9] )
+         ( D():Articulos( ::nView ) )->cKeySeo     := AllTrim( aRegistro[10] )
+         ( D():Articulos( ::nView ) )->mDesTec     := AllTrim( aRegistro[5] )
+
+         ( D():Articulos( ::nView ) )->lPubInt     := .T.
+         ( D():Articulos( ::nView ) )->cWebShop    := "dasilva"
+         ( D():Articulos( ::nView ) )->uuid        := win_uuidcreatestring()
+         ( D():Articulos( ::nView ) )->TipoIva     := "G"
+         ( D():Articulos( ::nView ) )->lObs        := ( AllTrim( aRegistro[11] ) <> "1" )
+
+         ( D():Articulos( ::nView ) )->( dbUnlock() )
+
+      end
+
+      n++
+
+   next
+
+Return .T.
+
+
+
+static FUNCTION ImportaArticulos_ImpFamilias( ) ; local Self AS CLASS ImportaArticulos := QSelf() AS CLASS ImportaArticulos
+
+   local cMemoRead
+   local aLineas
+   local line
+   local aRegistro
+
+   if !File( ::cFileFamilia )
+      Return .F.
+   end
+
+   alineas           := hb_aTokens( MemoRead( ::cFileFamilia ), chr( 13 ) + chr( 10 ) )
+
+   for each line in alineas
+
+      aRegistro := hb_aTokens( line, ";" )
+
+      if len( aRegistro ) <> 0
+
+         msgWait( "Añadiendo " + formatText( AllTrim( aRegistro[3] ) ), "Atención", 0.05 )
+
+         ( D():Familias( ::nView ) )->( dbAppend() )
+
+         ( D():Familias( ::nView ) )->cCodFam    := AllTrim( aRegistro[1] )
+         ( D():Familias( ::nView ) )->cFamCmb    := AllTrim( aRegistro[4] )
+         ( D():Familias( ::nView ) )->cNomFam    := hb_StrToUTF8( AllTrim( aRegistro[3] ) )
+
+         ( D():Familias( ::nView ) )->( dbUnlock() )
+
+      end
+
+   next
+
+Return .T.
+
+
+
+static FUNCTION ImportaArticulos_ImpFabricantes( ) ; local Self AS CLASS ImportaArticulos := QSelf() AS CLASS ImportaArticulos
+
+   local cMemoRead
+   local aLineas
+   local line
+   local aRegistro
+
+   if !File( ::cFileFabricante )
+      Return .F.
+   end
+
+   alineas           := hb_aTokens( MemoRead( ::cFileFabricante ), chr( 13 ) + chr( 10 ) )
+
+   for each line in alineas
+
+      aRegistro := hb_aTokens( line, ";" )
+
+      if len( aRegistro ) <> 0
+
+         msgWait( "Añadiendo " + formatText( AllTrim( aRegistro[2] ) ), "Atención", 0.05 )
+
+         ( D():Fabricantes( ::nView ) )->( dbAppend() )
+
+         ( D():Fabricantes( ::nView ) )->cCodFab    := AllTrim( aRegistro[1] )
+         ( D():Fabricantes( ::nView ) )->cNomFab    := AllTrim( aRegistro[3] )
+
+         ( D():Fabricantes( ::nView ) )->( dbUnlock() )
+
+      end
+
+   next
+
+Return .T.
+
+
+
+static FUNCTION ImportaArticulos_ImpClientes( ) ; local Self AS CLASS ImportaArticulos := QSelf() AS CLASS ImportaArticulos
+
+   local cMemoRead
+   local aLineas
+   local line
+   local aRegistro
+
+   if !File( ::cFileCliente )
+      Return .F.
+   end
+
+   alineas           := hb_aTokens( MemoRead( ::cFileCliente ), chr( 13 ) + chr( 10 ) )
+
+   for each line in alineas
+
+      aRegistro := hb_aTokens( line, "," )
+
+      if len( aRegistro ) <> 0
+
+         msgWait( "Añadiendo " + formatText( AllTrim( aRegistro[3] ) ), "Atención", 0.05 )
+
+         ( D():Clientes( ::nView ) )->( dbAppend() )
+
+         ( D():Clientes( ::nView ) )->Cod       := Rjust( formatText( AllTrim( aRegistro[1] ) ), "0", RetNumCodCliEmp() )
+         ( D():Clientes( ::nView ) )->Titulo    := formatText( AllTrim( aRegistro[5] ) ) + Space( 1 ) + formatText( AllTrim( aRegistro[4] ) )
+         ( D():Clientes( ::nView ) )->cMeiInt   := formatText( AllTrim( aRegistro[6] ) )
+
+         ( D():Clientes( ::nView ) )->( dbUnlock() )
+
+      end
+
+   next
+
+Return .T.
+
+
+
+static FUNCTION ImportaArticulos_ImpDirecciones( ) ; local Self AS CLASS ImportaArticulos := QSelf() AS CLASS ImportaArticulos
+
+   local cMemoRead
+   local aLineas
+   local line
+   local aRegistro
+   local cCliente    := ""
+
+   if !File( ::cFileDirecciones )
+      Return .F.
+   end
+
+   alineas           := hb_aTokens( MemoRead( ::cFileDirecciones ), chr( 13 ) + chr( 10 ) )
+
+   for each line in alineas
+
+      aRegistro := hb_aTokens( line, "," )
+
+      if len( aRegistro ) <> 0 .AND. len( aRegistro ) == 23
+
+         msgWait( "Añadiendo " + formatText( AllTrim( aRegistro[11] ) ), "Atención", 0.05 )
+
+         cCliente    := Rjust( formatText( AllTrim( aRegistro[4] ) ), "0", RetNumCodCliEmp() )
+
+         if ( D():Clientes( ::nView ) )->( dbSeek( cCliente ) )
+
+            if Empty( ( D():Clientes( ::nView ) )->Domicilio )
+
+               if dbLock( ( D():Clientes( ::nView ) ) )
+
+                  ( D():Clientes( ::nView ) )->Domicilio   := formatText( AllTrim( aRegistro[11] ) ) + Space( 1 ) + formatText( AllTrim( aRegistro[12] ) )
+                  ( D():Clientes( ::nView ) )->CodPostal   := formatText( AllTrim( aRegistro[13] ) )
+                  ( D():Clientes( ::nView ) )->Poblacion   := formatText( AllTrim( aRegistro[14] ) )
+                  ( D():Clientes( ::nView ) )->Telefono    := formatText( AllTrim( aRegistro[16] ) )
+                  ( D():Clientes( ::nView ) )->Movil       := formatText( AllTrim( aRegistro[17] ) )
+                  ( D():Clientes( ::nView ) )->Nif         := formatText( AllTrim( aRegistro[19] ) )
+
+                  ( D():Clientes( ::nView ) )->( dbUnlock() )
+
+               end
+
+            else
+
+               ( D():ClientesDirecciones( ::nView ) )->( dbAppend() )
+
+                  ( D():ClientesDirecciones( ::nView ) )->cCodCli   := cCliente
+                  ( D():ClientesDirecciones( ::nView ) )->cCodObr   := formatText( AllTrim( aRegistro[1] ) )
+                  ( D():ClientesDirecciones( ::nView ) )->cNomObr   := formatText( AllTrim( aRegistro[8] ) )
+                  ( D():ClientesDirecciones( ::nView ) )->cDirObr   := formatText( AllTrim( aRegistro[11] ) ) + Space( 1 ) + formatText( AllTrim( aRegistro[12] ) )
+                  ( D():ClientesDirecciones( ::nView ) )->cPosObr   := formatText( AllTrim( aRegistro[13] ) )
+                  ( D():ClientesDirecciones( ::nView ) )->cPobObr   := formatText( AllTrim( aRegistro[14] ) )
+                  ( D():ClientesDirecciones( ::nView ) )->cTelObr   := formatText( AllTrim( aRegistro[16] ) )
+                  ( D():ClientesDirecciones( ::nView ) )->cMovObr   := formatText( AllTrim( aRegistro[17] ) )
+                  ( D():ClientesDirecciones( ::nView ) )->Nif       := formatText( AllTrim( aRegistro[19] ) )
+
+               ( D():ClientesDirecciones( ::nView ) )->( dbUnlock() )
+
+            end
+
+         end
+
+      end
+
+   next
+
+Return .T.
+
+
+
+static FUNCTION ImportaArticulos_ImpImagenes( ) ; local Self AS CLASS ImportaArticulos := QSelf() AS CLASS ImportaArticulos
+
+   local cMemoRead
+   local aLineas
+   local line
+   local aRegistro
+   local cImagen  := ""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ( D():ArticuloImagenes( ::nView ) )->( dbGoTop() )
+
+   while !( D():ArticuloImagenes( ::nView ) )->( eof() )
+
+      msgWait( "Descargando " + AllTrim( ( D():ArticuloImagenes( ::nView ) )->cRmtArt ) , "Atención", 0.1 )
+
+      DownLoadFileToUrl( AllTrim( ( D():ArticuloImagenes( ::nView ) )->cRmtArt ), ::cUrlDwImagen + AllTrim( ( D():ArticuloImagenes( ::nView ) )->cImgArt ) )
+
+      ( D():ArticuloImagenes( ::nView ) )->( dbSkip() )
+
+   end
+
+
+
+
+
+
+
+
+
+
+
+
+
+Return .T.
+
+
+
+static FUNCTION ImportaArticulos_ImpPropiedades( ) ; local Self AS CLASS ImportaArticulos := QSelf() AS CLASS ImportaArticulos
+
+   local cMemoRead
+   local aLineas
+   local line
+   local aRegistro
+
+   if !File( ::cFilePropiedades )
+      Return .F.
+   end
+
+   alineas           := hb_aTokens( MemoRead( ::cFilePropiedades ), chr( 13 ) + chr( 10 ) )
+
+   for each line in alineas
+
+      aRegistro := hb_aTokens( line, ";" )
+
+      if len( aRegistro ) <> 0
+
+         msgWait( "Añadiendo " + AllTrim( aRegistro[2] ), "Atención", 0.05 )
+
+         ( D():Propiedades( ::nView ) )->( dbAppend() )
+
+         ( D():Propiedades( ::nView ) )->cCodPro    := AllTrim( aRegistro[1] )
+         ( D():Propiedades( ::nView ) )->cDesPro    := Upper( AllTrim( aRegistro[2] ) )
+
+         ( D():Propiedades( ::nView ) )->( dbUnlock() )
+
+      end
+
+   next
+
+
+Return .T.
+
+
+
+static FUNCTION ImportaArticulos_ImpLineasPropiedades( ) ; local Self AS CLASS ImportaArticulos := QSelf() AS CLASS ImportaArticulos
+
+   local cMemoRead
+   local aLineas
+   local line
+   local aRegistro
+
+   if !File( ::cFileLineasPropiedades )
+      Return .F.
+   end
+
+   alineas           := hb_aTokens( MemoRead( ::cFileLineasPropiedades ), chr( 13 ) + chr( 10 ) )
+
+   for each line in alineas
+
+      aRegistro := hb_aTokens( line, ";" )
+
+      if len( aRegistro ) <> 0
+
+         msgWait( "Añadiendo " + AllTrim( aRegistro[4] ), "Atención", 0.05 )
+
+         ( D():PropiedadesLineas( ::nView ) )->( dbAppend() )
+
+         ( D():PropiedadesLineas( ::nView ) )->cCodPro    := AllTrim( aRegistro[2] )
+         ( D():PropiedadesLineas( ::nView ) )->cCodTbl    := AllTrim( aRegistro[1] )
+         ( D():PropiedadesLineas( ::nView ) )->cDesTbl    := AllTrim( aRegistro[4] )
+         ( D():PropiedadesLineas( ::nView ) )->nColor     := nHex( AllTrim( aRegistro[3] ) )
+
+
+         ( D():PropiedadesLineas( ::nView ) )->( dbUnlock() )
+
+      end
+
+   next
+
+Return .T.
+
+
+
+static FUNCTION ImportaArticulos_ImpPropiedadesArticulos( ) ; local Self AS CLASS ImportaArticulos := QSelf() AS CLASS ImportaArticulos
+
+   local cMemoRead
+   local aLineas
+   local line
+   local aRegistro
+   local nOrdAnt     := ( D():PropiedadesLineas( ::nView ) )->( OrdSetFocus( "CCODTBL" ) )
+
+   if !File( ::cFilePropiedadesArticulos )
+      Return .F.
+   end
+
+   alineas           := hb_aTokens( MemoRead( ::cFilePropiedadesArticulos ), chr( 13 ) + chr( 10 ) )
+
+   for each line in alineas
+
+      aRegistro := hb_aTokens( line, ";" )
+
+      if len( aRegistro ) <> 0
+
+         msgWait( "Añadiendo " + formatText( AllTrim( aRegistro[1] ) ), "Atención", 0.05 )
+
+         if ( D():PropiedadesLineas( ::nView ) )->( dbSeek( Padr( AllTrim( aRegistro[2] ), 40 ) ) )
+
+            ( D():ArticuloPrecioPropiedades( ::nView ) )->( dbAppend() )
+
+            ( D():ArticuloPrecioPropiedades( ::nView ) )->cCodArt    := AllTrim( aRegistro[1] )
+            ( D():ArticuloPrecioPropiedades( ::nView ) )->cCodDiv    := "EUR"
+            ( D():ArticuloPrecioPropiedades( ::nView ) )->cCodPr1    := ( D():PropiedadesLineas( ::nView ) )->cCodPro
+            ( D():ArticuloPrecioPropiedades( ::nView ) )->cValPr1    := AllTrim( aRegistro[2] )
+
+            ( D():ArticuloPrecioPropiedades( ::nView ) )->( dbUnlock() )
+
+
+
+            if ( D():Articulos( ::nView ) )->( dbSeek( Padr( AllTrim( aRegistro[1] ), 18 ) ) )
+
+               if dbLock( D():Articulos( ::nView ) )
+
+                  ( D():Articulos( ::nView ) )->cCodPrp1             := ( D():PropiedadesLineas( ::nView ) )->cCodPro
+
+                  ( D():Articulos( ::nView ) )->( dbUnlock() )
+
+               end
+
+            end
+
+         end
+
+      end
+
+   next
+
+   ( D():PropiedadesLineas( ::nView ) )->( OrdSetFocus( nOrdAnt ) )
+
+Return .T.
+
+
+
+static FUNCTION ImportaArticulos_ImpDescripciones( ) ; local Self AS CLASS ImportaArticulos := QSelf() AS CLASS ImportaArticulos
+
+   local cMemoRead
+   local aLineas
+   local line
+   local aRegistro
+   local nOrdAnt     := ( D():Articulos( ::nView ) )->( OrdSetFocus( "Codigo" ) )
+
+   if !File( ::cFileDescripcionesArticulos )
+      Return .F.
+   end
+
+   alineas           := hb_aTokens( MemoRead( ::cFileDescripcionesArticulos ), chr( 13 ) + chr( 10 ) )
+
+   for each line in alineas
+
+      aRegistro := hb_aTokens( line, ";" )
+
+      if len( aRegistro ) <> 0
+
+         msgWait( "Añadiendo " + AllTrim( aRegistro[1] ) + "-" + AllTrim( aRegistro[2] ), "Atención", 0.05 )
+
+         if ( D():Articulos( ::nView ) )->( dbSeek( Padr( AllTrim( aRegistro[1] ), 18 ) ) )
+
+            if !Empty( AllTrim( aRegistro[2] ) )
+
+               if dbLock( D():Articulos( ::nView ) )
+
+                  ( D():Articulos( ::nView ) )->Nombre      := AllTrim( aRegistro[2] )
+                  ( D():Articulos( ::nView ) )->mDesTec     := AllTrim( aRegistro[2] )
+
+                  ( D():Articulos( ::nView ) )->( dbUnlock() )
+
+               end
+
+            end
+
+         end
+
+      end
+
+   next
+
+   ( D():Articulos( ::nView ) )->( OrdSetFocus( nOrdAnt ) )
+
+Return .T.
+
+
+
+static Function formatText( cText )
+
+   local cResult  := ""
+
+   if !Empty( cText )
+      cResult     := SubStr( cText, 2, Len( cText ) - 2 )
+   end
+
+Return cResult
+
+
+
+static Function formatNumber( cText )
+
+   local nResult  := 0
+
+   if !Empty( cText )
+      nResult     := Val( AllTrim( cText ) )
+   end
+
+Return nResult
+
+
+
+static Function cFileImageName( cText )
+
+   local cResult  := ""
+
+   if !Empty( cText )
+      cResult     := SubStr( AllTrim( cText ), 33 )
+      cResult     := SubStr( cResult, 1, at( "t", cResult ) - 2 )
+      cResult     := cResult + ".jpg"
+   end
+
+Return cResult

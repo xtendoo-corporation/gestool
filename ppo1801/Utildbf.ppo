@@ -1,0 +1,6765 @@
+#line 287 "\fwh1801\include\xbrowse.ch"
+   EXTERNAL ADSKEYCOUNT, ADSGETRELKEYPOS, ADSSETRELKEYPOS, ADSKEYNO
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 23 ".\.\Prg\Utildbf.prg"
+static aResources             := {}
+static aAdsDirectory          := {}
+
+static cLenguajeSegundario    := ""
+
+static hTraslations           := {=>}
+
+static scriptSystem
+
+
+
+
+
+
+FUNCTION dbSwapUp( cAlias, oBrw )
+
+    local aRecNew
+   local aRecOld  := dbScatter( cAlias )
+   local nOrdNum  := ( cAlias )->( OrdSetFocus( 0 ) )
+   local nRecNum  := ( cAlias )->( RecNo() )
+
+   ( cAlias )->( dbSkip( -1 ) )
+
+   if ( cAlias )->( Bof() )
+        Tone(300,1)
+        ( cAlias )->( dbGoTo( nRecNum ) )
+   else
+      aRecNew     := dbScatter( cAlias )
+      ( cAlias )->( dbSkip( 1 ) )
+      dbGather( aRecNew, cAlias )
+      ( cAlias )->( dbSkip( -1 ) )
+      dbGather( aRecOld, cAlias )
+   end
+
+   ( cAlias )->( OrdSetFocus( nOrdNum ) )
+
+   if !empty( oBrw )
+      oBrw:Refresh()
+      oBrw:select( 0 )
+      oBrw:select( 1 )
+      oBrw:SetFocus()
+   end
+
+RETURN NIL
+
+
+
+FUNCTION dbSwapDown( cAlias, oBrw )
+
+    local aRecNew
+   local aRecOld  := dbScatter( cAlias )
+   local nOrdNum  := ( cAlias )->( OrdSetFocus( 0 ) )
+   local nRecNum  := ( cAlias )->( RecNo() )
+
+   ( cAlias )->( dbSkip() )
+
+   if ( cAlias )->( Eof() )
+
+      Tone( 300, 1 )
+        ( cAlias )->( dbGoTo( nRecNum ) )
+
+   else
+
+      aRecNew     := dbScatter( cAlias )
+      ( cAlias )->( dbSkip( -1 ) )
+
+      dbGather( aRecNew, cAlias )
+      ( cAlias )->( dbSkip() )
+
+      dbGather( aRecOld, cAlias )
+
+   end
+
+   ( cAlias )->( OrdSetFocus( nOrdNum ) )
+
+   if !empty( oBrw )
+      oBrw:Refresh()
+      oBrw:select( 0 )
+      oBrw:select( 1 )
+      oBrw:SetFocus()
+   end
+
+RETURN nil
+
+
+
+FUNCTION DBTrans( cAliOrigen, cAliDestino, lApp )
+
+    local i
+    local nField     := (cAliOrigen)->( Fcount() )
+
+    If( lApp == nil, lApp := .F., ) ;
+
+    IF lApp
+        (cAliDestino)->( dbAppend() )
+   ELSE
+      (cAliDestino)->( dbRLock() )
+   end
+
+    for i = 1 to nField
+        (cAliDestino)->( FieldPut( i, (cAliOrigen)->( FieldGet( i ) ) ) )
+    next
+
+   ( cAliDestino )->( dbUnLock() )
+
+RETURN NIL
+
+
+
+
+
+
+FUNCTION DBFLock( cAlias )
+
+    if DBLock( cAlias, 1 )
+      RETURN .T.
+   endif
+
+   while ApoloMsgNoYes( "Fichero Bloquedo," + Chr(13)+Chr(10) + "¿ Reintentar ?" )
+
+        if DBLock( cAlias, 1 )
+         RETURN .T.
+        else
+            loop
+        endif
+
+   enddo
+
+RETURN .F.
+
+
+
+FUNCTION aBlankArray( aBlank, cAlias )
+
+   local i
+   local aStruct  := ( cAlias )->( dbStruct() )
+
+   for i = 1 to ( cAlias )->( fCount() )
+      Do Case
+         Case aStruct[ i, 2 ] == "C"
+            aBlank[ i ] := Space( aStruct[ i, 3 ] )
+         Case aStruct[ i, 2 ] == "M"
+            aBlank[ i ] := ""
+         Case aStruct[ i, 2 ] == "N"
+            aBlank[ 1 ] := Val( "0." + Replicate( "0", aStruct[ i, 4 ] ) )
+         Case aStruct[ i, 2 ] == "L"
+            aBlank[ 1 ] := .F.
+         Case aStruct[ i, 2 ] == "D"
+            aBlank[ 1 ] := GetSysDate()
+      end
+   next
+
+RETURN aBlank
+
+
+
+
+
+
+FUNCTION cFilName( cFilName )
+
+    local n := 1
+
+    while file( cFilName + rjust( str( n ), "0", 2 ) )
+        n++
+    end
+
+RETURN ( cFilName + rjust( str( n ), "0", 2 ) )
+
+
+
+
+
+
+
+
+FUNCTION dbFirst( cAlias, nField, oGet, xDesde, nOrd )
+
+    local xValRet
+   local nPosAct
+   local nOrdAct
+
+   If( cAlias == nil, cAlias := Alias(), ) ;
+    If( nField == nil, nField := 1, ) ;
+
+
+
+
+
+   if IsObject( cAlias )
+      cAlias      := cAlias:cAlias
+   end
+
+   nPosAct        := ( cAlias )->( Recno() )
+
+   if nOrd <> nil
+      nOrdAct     := ( cAlias )->( OrdSetFocus( nOrd ) )
+   end
+
+   if empty( xDesde )
+      ( cAlias )->( dbGoTop() )
+   else
+      ( cAlias )->( dbSeek( xDesde, .T. ) )
+      if ( cAlias )->( eof() )
+         ( cAlias )->( dbGoTop() )
+      end
+   end
+
+   if IsChar( nField )
+      nField      := ( cAlias )->( FieldPos( nField ) )
+   end
+
+   xValRet        := ( cAlias )->( FieldGet( nField ) )
+
+   ( cAlias )->( dbGoTo( nPosAct ) )
+
+   if !empty( nOrd )
+      ( cAlias )->( OrdSetFocus( nOrdAct ) )
+   end
+
+   if !empty( oGet )
+        oGet:cText( xValRet )
+      RETURN .T.
+   end
+
+RETURN ( xValRet )
+
+
+
+
+
+
+
+FUNCTION dbFirstIdx( cAlias, nOrden, oGet, xDesde )
+
+    local xValRet
+
+    If( cAlias == nil, cAlias := Alias(), ) ;
+
+    IF nOrden == NIL
+        nOrden := ( cAlias )->( OrdSetFocus() )
+    ELSE
+        ( cAlias )->( OrdSetFocus( nOrden ) )
+    end
+
+    dbSelectArea( ( cAlias ) )
+
+    IF xDesde == NIL
+        (cAlias)->( DbGoTop() )
+    ELSE
+        (cAlias)->( DbSeek( xDesde, .T. ) )
+        IF (cAlias)->(Eof())
+            (cAlias)->(DbGoTop())
+        END
+    END
+
+    xValRet    := Eval( Compile( (cAlias)->( OrdKey( nOrden ) ) ) )
+
+    IF oGet <> NIL
+        oGet:cText( xValRet )
+        RETURN .T.
+    END
+
+RETURN ( xValRet )
+
+
+
+
+
+
+
+FUNCTION dbLastIdx( cAlias, nOrden, oGet, xHasta )
+
+    local xValRet
+
+    If( cAlias == nil, cAlias := Alias(), ) ;
+
+    IF nOrden == NIL
+        nOrden := ( cAlias )->( OrdSetFocus() )
+    ELSE
+        ( cAlias )->( OrdSetFocus( nOrden ) )
+    end
+
+    dbSelectArea( ( cAlias ) )
+
+    IF xHasta == NIL
+        (cAlias)->(DbGoBottom())
+    ELSE
+        (cAlias)->( DbSeek( xHasta, .T. ) )
+        IF (cAlias)->( Eof() )
+            (cAlias)->(DbGoBottom())
+        END
+    END
+
+    xValRet := Eval( Compile( (cAlias)->( OrdKey( nOrden ) ) ) )
+
+    IF oGet <> NIL
+        oGet:cText( xValRet )
+        RETURN .T.
+    END
+
+RETURN ( xValRet )
+
+
+
+
+
+
+
+FUNCTION DBRetIndex( cAlias )
+
+    local aIndexes := { "<Ninguno>" }
+    local cIndice
+   local i        := 1
+
+   IF empty( ( cAlias )->( OrdSetFocus() ) )
+        RETURN aIndexes
+    end
+
+   while .T.
+      cIndice     := ( cAlias )->( OrdName( i ) )
+
+      if cIndice <> ""
+         aAdd( aIndexes, cIndice )
+      else
+         exit
+      end
+
+        i++
+   end
+
+RETURN aIndexes
+
+
+
+FUNCTION aDbfToArr( cAlias, nField )
+
+   local aTabla   := {}
+
+    If( cAlias == nil, cAlias := Alias(), ) ;
+    If( nField == nil, nField := 1, ) ;
+
+   ( cAlias )->( dbGoTop() )
+   while !( cAlias )->( Eof() )
+      aAdd( aTabla, cValToChar( ( cAlias )->( FieldGet( nField ) ) ) )
+      ( cAlias )->( dbSkip() )
+   end
+   ( cAlias )->( dbGoTop() )
+
+RETURN aTabla
+
+
+
+
+
+
+
+
+FUNCTION ChangeIndex( cAlias, nRadOrden, oGetDesde, oGetHasta )
+
+    If( cAlias == nil, cAlias := Alias(), ) ;
+    If( nRadOrden == nil, nRadOrden := ( cAlias )->( OrdSetFocus() ), ) ;
+
+    IF oGetDesde <> NIL
+        oGetDesde:cText( DBFirstIdx( cAlias, nRadOrden ) )
+    end
+
+    IF oGetHasta <> NIL
+        oGetHasta:cText( DBLastIdx( cAlias, nRadOrden ) )
+    end
+
+RETURN .T.
+
+
+
+FUNCTION oExiste( oClave, cAlias )
+
+RETURN Existe( oClave:varGet(), cAlias )
+
+
+
+FUNCTION oNotExiste( oClave, cAlias )
+
+RETURN ( !Existe( oClave:varGet(), cAlias ) )
+
+
+
+FUNCTION cNoExt( cFullFile )
+
+   local cNameFile := AllTrim( cFullFile )
+   local n         := AT( ".", cNameFile )
+
+RETURN AllTrim( if( n > 0, left( cNameFile, n - 1 ), cNameFile ) )
+
+
+
+FUNCTION cNoPathInt( cFileName, cCon )
+
+   If( cCon == nil, cCon := "/", ) ;
+
+RETURN Alltrim( SubStr( cFileName, RAt( cCon, cFileName ) + 1 ) )
+
+
+
+FUNCTION cOnlyPath( cFileName )
+
+RETURN Alltrim( SubStr( cFileName, 1, RAt( "\", cFileName ) ) )
+
+
+
+FUNCTION cDrivePath( cFileName )
+
+RETURN SubStr( cFileName, 1, RAt( ":", cFileName ) + 1 )
+
+
+
+FUNCTION cFirstPath( cPath )
+
+   local nAt     := At( "\", cPath )
+
+   if nAT == 0
+      nAt        := At( "/", cPath )
+   end
+
+RETURN SubStr( cPath, 1, nAt - 1 )
+
+
+
+FUNCTION cLastPath( cFileName )
+
+   local cLastPath   := cOnlyPath( cFileName )
+   local n           := Rat( "\", SubStr( cLastPath, 1, Len( cLastPath ) - 1 ) ) + 1
+
+RETURN ( SubStr( cLastPath, n ) )
+
+
+
+FUNCTION cPath( cPath )
+
+   cPath             := Rtrim( cPath )
+
+   if Right( cPath, 1 ) <> "\"
+      cPath          += "\"
+   end
+
+RETURN ( cPath )
+
+
+
+FUNCTION cLeftPath( cPath )
+
+   cPath             := Rtrim( cPath )
+
+   if Right( cPath, 1 ) <> "/"
+      cPath          += "/"
+   end
+
+RETURN ( cPath )
+
+
+
+FUNCTION RecursiveMakeDir( cPath )
+
+   local cRute       := ""
+   local aPath       := hb_atokens( cPath, "\" )
+
+   for each cPath in aPath
+      cRute          += cPath + "\"
+      if !( ":" $ cPath ) .AND. !lIsDir( cRute )
+         MakeDir( cRute )
+      end
+   next
+
+RETURN ( cPath )
+
+
+
+FUNCTION EvalGet( aGet, nMode )
+
+    local i
+   local nLen  := len( aGet )
+
+   for i = 1 to nLen
+
+      if ValType( aGet[i] ) == "O"
+         if "GET" $ aGet[ i ]:ClassName()
+            aGet[ i ]:lValid()
+         end
+      end
+
+   next
+
+RETURN nil
+
+
+
+FUNCTION bChar2Block( cChar, lLogic, lMessage, lHard )
+
+    local bBlock
+   local oBlock
+   local oError
+   local lError      := .F.
+
+   If( lLogic == nil, lLogic := .F., ) ;
+   If( lMessage == nil, lMessage := .T., ) ;
+   If( lHard == nil, lHard := .F., ) ;
+
+   if empty( cChar )
+
+      if lLogic
+         bBlock      := {|| .T.}
+      else
+         bBlock      := {|| "" }
+      end
+
+      RETURN ( bBlock )
+
+   end
+
+   oBlock            := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+
+
+
+
+      if ValType( cChar ) == "C"
+         cChar    := rtrim( cChar )
+         bBlock   := &( "{||" + cChar + "}" )
+
+      elseif ValType( cChar ) == "N"
+         bBlock   := {|| cChar }
+
+      end
+
+
+
+
+
+      Eval( bBlock )
+
+   RECOVER USING oError
+
+      lError         := .T.
+
+   end
+
+   ErrorBlock( oBlock )
+
+   if lError
+
+      if lMessage
+         msgStop( "Expresión incorrecta " + cChar + Chr(13)+Chr(10) + ErrorMessage( oError ), "bChar2Block" + Type( cChar ) )
+      end
+
+      if lHard
+         bBlock      := nil
+      else
+         if lLogic
+            bBlock   := {|| .T.}
+         else
+            bBlock   := {|| "" }
+         end
+      end
+
+   end
+
+RETURN ( bBlock )
+
+
+
+
+
+
+FUNCTION SetMarkRec( cMark, nRec  )
+
+   local nRecNo   := RecNo()
+   local nHdl     := DbfHdl()
+   local nOffSet  := 0
+
+   nRec           := if( ValType( nRec )  <> "N", RecNo(), nRec  )
+   cMark          := if( ValType( cMark ) <> "C", "#",     cMark )
+
+   nOffSet        := ( RecSize() * ( nRec - 1 ) ) + Header()
+
+   FSeek( nHdl, nOffSet, 0 )
+   FWrite( nHdl, cMark, 1 )
+
+   DbGoTo( nRecNo )
+
+RETURN( FError() == 0 )
+
+
+
+
+FUNCTION ChgMarked( cMark, nRec )
+
+   if lMarked( cMark, nRec )
+      SetMarkRec( Space( 1 ), nRec )
+   else
+      SetMarkRec( cMark, nRec )
+   end
+
+RETURN ( nil )
+
+
+
+
+
+FUNCTION SetAllMark( cMark, cAlias )
+
+   local nRecNo   := ( cAlias )->( RecNo() )
+
+   cMark          := if( ValType( cMark ) <> "C", "#", cMark )
+
+   ( cAlias )->( dbGoTop() )
+   while !( cAlias )->( eof() )
+
+      ( cAlias )->( SetMarkRec( cMark ) )
+      ( cAlias )->( dbSkip() )
+
+   end
+
+   ( cAlias )->( DbGoTo( nRecNo ) )
+
+RETURN ( nil )
+
+
+
+FUNCTION SkipFor( nWantMoved, cAlias, bFor )
+
+   local nMoved   := 0
+
+   if nWantMoved < 0
+
+      while nMoved > nWantMoved .AND. !( cAlias )->( bof() )
+         ( cAlias )->( dbSkip( -1 ) )
+         if ( cAlias )->( Eval( bFor ) )
+            nMoved--
+         end
+      end
+
+   else
+
+      while nMoved < nWantMoved .AND. !( cAlias )->( eof() )
+         ( cAlias )->( dbSkip() )
+         if ( cAlias )->( Eval( bFor ) )
+            nMoved++
+         end
+      end
+
+
+   end
+
+RETURN ( nMoved )
+
+
+
+FUNCTION NotMinus( nUnits )
+
+RETURN ( if( nUnits < 0, 0, nUnits ) )
+
+
+
+FUNCTION cDateTime()
+
+RETURN ( Dtos( Date() ) + Left( StrTran( Time(), ":","" ), 4 ) )
+
+
+
+FUNCTION lNegativo( nNum )
+
+RETURN ( -0.1 > nNum )
+
+
+
+FUNCTION IsArray( u )
+
+RETURN ( Valtype( u ) == "A" )
+
+
+
+FUNCTION IsHash( u )
+
+RETURN ( HB_isHash( u ) )
+
+
+
+FUNCTION retChr( cCadena )
+
+   local cChr     := ""
+
+   if Valtype( cCadena ) <> "C"
+      RETURN ( cChr )
+   end
+
+   cCadena        := AllTrim( cCadena )
+
+   if !empty( cCadena )
+      cCadena     += Space( 1 )
+   end
+
+   while !empty( cCadena )
+      cChr        += Chr( Val( SubStr( cCadena, 1, At( " ", cCadena ) ) ) )
+      cCadena     := SubStr( cCadena, At( " ", cCadena ) + 1 )
+   end
+
+RETURN ( cChr )
+
+
+
+FUNCTION DateToJuliano( dFecha )
+
+   local dInicial
+
+   If( dFecha == nil, dFecha := Date(), ) ;
+
+   dInicial       := Ctod( "01/01/" + AllTrim( Str( Year( dFecha ) ) ) )
+
+RETURN ( dFecha - dInicial + 1 )
+
+
+
+FUNCTION JulianoToDate( nYear, nJuliana )
+
+   local dFecIni
+
+   If( nYear == nil, nYear := Year( Date() ), ) ;
+   If( nJuliana == nil, nJuliana := 0, ) ;
+
+   dFecIni           := Ctod( "01/01/" + Str( nYear, 4, 0 ) )
+
+RETURN ( dFecIni + nJuliana - 1 )
+
+
+
+FUNCTION addMonth( ddate, nMth )
+
+   local nDay
+   local nMonth
+   local nYear
+   local nLDOM
+
+   nDay     := Day( dDate )
+   nMonth   := Month( dDate )
+   nYear    := Year( dDate )
+
+   nMonth   += nmth
+
+   if nMonth <= 0
+      while nMonth <= 0
+         nMonth += 12
+         nYear--
+      enddo
+   endif
+
+   if nMonth > 12
+      while nMonth > 12
+         nMonth -= 12
+         nYear++
+      enddo
+   endif
+
+
+   if nDay > ( nLDOM := lastdayom( nMonth ) )
+     nDay   := nLDOM
+   endif
+
+RETURN ( Ctod( StrZero( nDay, 2 ) + "/" + StrZero( nMonth, 2 ) + "/" + StrZero( nYear, 4 ) ) )
+
+
+
+FUNCTION LastDayoM( xDate )
+
+   local nMonth   := 0
+   local nDays    := 0
+   local lleap    := .F.
+
+   do case
+      case empty ( xDate)
+         nMonth   := month( date() )
+
+      case valtype ( xDate ) == "D"
+         nMonth   := month (xdate)
+         lleap    := isleap ( xdate)
+
+      case valtype (xDate ) == "N"
+         if xdate > 12
+            nmonth := 0
+         else
+            nMonth := xDate
+         endif
+   endcase
+
+   if nmonth <> 0
+      ndays       := daysInmonth( nMonth, lleap )
+   endif
+
+RETURN ndays
+
+
+
+FUNCTION isLeap ( ddate )
+
+   local nYear
+   local nMmyr
+   local nCyYr
+   local nQdYr
+   local lRetval
+
+   if empty ( ddate )
+     ddate  := date()
+   endif
+
+   nYear    := year (ddate)
+   nCyYr    := nYear / 400
+   nMmyr    := nYear /100
+   nQdYr    := nYear / 4
+
+   do case
+      case int (nCyYr) == nCyYr
+         lRetVal := .T.
+
+      case int (nMmyr) == nMmyr
+         lRetVal := .F.
+
+      case int (nQdYr) == nQdYr
+         lRetVal := .T.
+
+      otherwise
+         lRetVal := .F.
+   endcase
+
+RETURN lRetVal
+
+
+
+FUNCTION daysInmonth ( nMonth, lLeap )
+
+   local nday := 0
+
+   do case
+   case nMonth == 2 .AND. lLeap
+      nday  := 29
+   case nMonth == 2 .AND. !lLeap
+      nday  := 28
+   case nMonth == 4 .OR. nMonth == 6 .OR. nMonth == 9 .OR. nMonth == 11
+      nday  := 30
+   otherwise
+      nday  := 31
+   endcase
+
+RETURN nday
+
+
+
+
+
+
+
+FUNCTION lselectAll( oBrw, dbf, cFieldName, lselect, lTop, lMeter )
+
+   local nPos
+   local nRecAct        := ( dbf )->( Recno() )
+
+   If( cFieldName == nil, cFieldName := "lSndDoc", ) ;
+   If( lselect == nil, lselect := .T., ) ;
+   If( lTop == nil, lTop := .T., ) ;
+   If( lMeter == nil, lMeter := .F., ) ;
+
+   if lMeter
+      CreateWaitMeter( nil, nil, ( dbf )->( OrdKeyCount() ) )
+   else
+      CursorWait()
+   end
+
+   if lTop
+      ( dbf )->( dbGoTop() )
+   end
+
+   while !( dbf )->( eof() )
+
+      if dbLock( dbf )
+
+         nPos           := ( dbf )->( FieldPos( cFieldName ) )
+         if nPos <> 0
+            ( dbf )->( FieldPut( nPos, lselect ) )
+         end
+
+         nPos           := ( dbf )->( FieldPos( "dFecCre" ) )
+         if nPos <> 0
+            ( dbf )->( FieldPut( nPos, Date() ) )
+         end
+
+         nPos           := ( dbf )->( FieldPos( "cTimCre" ) )
+         if nPos <> 0
+            ( dbf )->( FieldPut( nPos, Time() ) )
+         end
+
+         dbSafeUnLock( dbf )
+
+      end
+
+      ( dbf )->( dbSkip() )
+
+      if lMeter
+         RefreshWaitMeter( ( dbf )->( OrdKeyNo() ) )
+      else
+         SysRefresh()
+      end
+
+   end
+
+   ( dbf )->( dbGoTo( nRecAct ) )
+
+   if lMeter
+      EndWaitMeter()
+   else
+      CursorWE()
+   end
+
+   if !empty( oBrw )
+      oBrw:Refresh()
+      oBrw:SetFocus()
+   end
+
+RETURN nil
+
+
+
+FUNCTION ChangeField( dbfAlias, xField, xValue, oBrowse )
+
+   if ( dbfAlias )->( dbRLock() )
+      ( dbfAlias )->( FieldPut( ( dbfAlias )->( FieldPos( xField ) ), xValue ) )
+      ( dbfAlias )->( dbCommit() )
+      ( dbfAlias )->( dbUnLock() )
+   end
+
+   if oBrowse <> nil
+      oBrowse:Refresh()
+   end
+
+RETURN nil
+
+
+
+FUNCTION Capitalize( cChar )
+
+RETURN ( Upper( Left( cChar, 1 ) ) + Rtrim( Lower( SubStr( cChar, 2 ) ) ) )
+
+
+
+
+
+_HB_CLASS TDesdeHasta ; function TDesdeHasta ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TDesdeHasta", iif( .F., { }, { @HBObject() } ), @TDesdeHasta() ) ) ;
+
+   _HB_MEMBER { cSerieInicio } ; oClass:AddMultiData(, "A", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSerieInicio"}, .F. )
+   _HB_MEMBER { cSerieFin } ; oClass:AddMultiData(, "A", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSerieFin"}, .F. )
+   _HB_MEMBER { nNumeroInicio } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nNumeroInicio"}, .F. )
+   _HB_MEMBER { nNumeroFin } ; oClass:AddMultiData(, 0, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nNumeroFin"}, .F. )
+   _HB_MEMBER { cSufijoInicio } ; oClass:AddMultiData(, Space( 2 ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSufijoInicio"}, .F. )
+   _HB_MEMBER { cSufijoFin } ; oClass:AddMultiData(, Space( 2 ), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSufijoFin"}, .F. )
+   _HB_MEMBER { dFechaInicio } ; oClass:AddMultiData(, Date(), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dFechaInicio"}, .F. )
+   _HB_MEMBER { dFechaFin } ; oClass:AddMultiData(, Date(), nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dFechaFin"}, .F. )
+   _HB_MEMBER { nRadio } ; oClass:AddMultiData(, 1, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nRadio"}, .F. )
+
+   _HB_MEMBER Init() AS CLASS TDesdeHasta; oClass:AddMethod( "Init", @TDesdeHasta_Init(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cNumeroInicio(); oClass:AddInline( "cNumeroInicio", {|Self | ( ( Self ) ), ::cSerieInicio + Str( ::nNumeroInicio ) + ::cSufijoInicio }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TDesdeHasta ;
+
+
+
+static FUNCTION TDesdeHasta_Init( cSerie, nNumero, cSufijo, dFecha ) ; local Self AS CLASS TDesdeHasta := QSelf() AS CLASS TDesdeHasta
+
+   If( cSerie == nil, cSerie := "A", ) ;
+   If( nNumero == nil, nNumero := 0, ) ;
+   If( cSufijo == nil, cSufijo := Space( 2 ), ) ;
+   If( dFecha == nil, dFecha := Date(), ) ;
+
+   ::cSerieInicio       := cSerie
+   ::cSerieFin          := cSerie
+   ::nNumeroInicio      := nNumero
+   ::nNumeroFin         := nNumero
+   ::cSufijoInicio      := cSufijo
+   ::cSufijoFin         := cSufijo
+   ::dFechaInicio       := dFecha
+   ::dFechaFin          := dFecha
+
+RETURN ( Self )
+
+
+
+FUNCTION DecimalMod( nDividend, nDivisor )
+
+   local nMod  := Int( nDividend / nDivisor )
+   nMod        := nDividend - ( nMod * nDivisor )
+
+RETURN ( nMod )
+
+
+
+FUNCTION LTrans( Exp, cSayPicture )
+
+RETURN ( Ltrim( Trans( Exp, cSayPicture ) ) )
+
+
+
+
+
+
+FUNCTION cNumTiket( cCodAlb, dbfAlbCliT )
+
+   local oBlock
+   local oError
+   local dbfTiket
+   local cNumTiq  := ""
+   local cNumDoc  := cCodAlb
+
+   oBlock            := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   dbUseArea( .T., ( cDriver() ), ( cPatEmp() + "TIKET.DBF" ), ( cCheckArea( "TIKET", @dbfTiket ) ), iif( .T. .OR. .F., ! .F., NIL ), .F. )
+   if !lAIS() ; ordListAdd( ( cPatEmp() + "TIKET.CDX" ) ) ; else ; ordSetFocus( 1 ) ; end
+   ( dbfTiket )->( OrdSetFocus( "CNUMDOC" ) )
+
+   if ( dbfTiket )->( dbSeek( cCodAlb ) )
+
+      if empty( ( dbfTiket )->cRetMat )
+
+         cNumTiq     := ( dbfTiket )->cNumDoc
+
+         if ( dbfAlbCliT )->( dbSeek( cNumTiq ) )
+            cNumDoc  := ( dbfAlbCliT )->cSerAlb + "/" + AllTrim( Str( ( dbfAlbCliT )->nNumAlb ) ) + "/" + ( dbfAlbCliT )->cSufAlb
+         end
+
+      else
+
+         cNumTiq     := ( dbfTiket )->cNumDoc
+         cNumDoc     := ( dbfTiket )->cSerTik + "/" + AllTrim( ( dbfTiket )->cNumTik ) + "/" + ( dbfTiket )->cSufTik
+
+      end
+
+   end
+
+   RECOVER USING oError
+
+      msgStop( "Imposible abrir todas las bases de datos " + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+   end
+
+   ErrorBlock( oBlock )
+
+   ( dbfTiket )->( dbCloseArea() )
+
+RETURN ( cNumDoc )
+
+
+
+FUNCTION msgDbfInfo( dbfAlias, cTitle )
+
+   local oDlg
+   local oTreeInfo
+
+   if empty( dbfAlias )
+      RETURN ( nil )
+   end
+
+   oDlg = TDialog():New(,,,, ( cTitle ), "dbInfo",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+      oTreeInfo   := TTreeView():Redefine( 100, oDlg )
+
+   TButton():ReDefine( ( 2 ), {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+   oDlg:bStart    := {|| StartDbfInfo( dbfAlias, oTreeInfo ) }
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+RETURN ( nil )
+
+
+
+
+FUNCTION MsgCombo( cTitle, cText, aItems, uVar, cBmpFile, cResName )
+
+   local oDlg, oBmp, oCbx
+   local lOk      := .F.
+   local cItem
+   local nPos     := 0
+
+   If( cTitle == nil, cTitle := "Title", ) ;
+   If( cText == nil, cText := "Valor", ) ;
+   If( aItems == nil, aItems := { "One", "Two", "Three" }, ) ;
+
+   if !Empty( uVar )
+
+      nPos        := AScan( aItems, {|c| c == AllTrim( uVar ) } )
+
+      if nPos == 0
+         cItem    := aItems[1]
+      else
+         cItem    := aItems[nPos]
+      end
+
+   else
+
+      cItem          := aItems[1]
+
+   end
+
+   oDlg = TDialog():New( 10, 20, 18, 59.5, cTitle,,, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+   if ! empty( cBmpFile ) .OR. ! empty( cResName )
+
+      if ! empty( cBmpFile )
+         oBmp := TBitmap():New( 1, 1, 20, 20,, cBmpFile, .T., oDlg,,, .F., .F.,,, .F.,, .F.,, .F. )
+      endif
+
+      if ! empty( cResName )
+         oBmp := TBitmap():New( 1, 1, 20, 20, cResName,, .T., oDlg,,, .F., .F.,,, .F.,, .F.,, .F. )
+      endif
+
+      TSay():New( 0.5, 6, {|| cText}, oDlg,,, .F., .F., .F., .F.,,, 250, 10, .F., .F., .F., .F., .F., .F., .F.,,, .F. )
+
+
+
+
+      oCbx := TComboBox():New( 1.6, 4, { | u | If( PCount()==0, cItem, cItem:= u ) }, aItems, 120, 12,,,,,,, .F.,,, .F.,, .F.,,,,,, "oCbx",,,,,,, )
+   else
+
+      TSay():New( 0.5, 3.3, {|| cText}, oDlg,,, .F., .F., .F., .F.,,, 250, 10, .F., .F., .F., .F., .F., .F., .F.,,, .F. )
+
+
+
+
+      oCbx := TComboBox():New( 1.6, 2.3, { | u | If( PCount()==0, cItem, cItem:= u ) }, aItems, 120, 12,,,,,,, .F.,,, .F.,, .F.,,,,,, "oCbx",,,,,,, )
+   endif
+
+
+   TButton():New( 2.25, 7.5 - If( oBmp == nil, 2, 0 ), "&Ok", oDlg, {|| ( oDlg:End(), lOk := .T. )}, 35, 12,,, .T., .F., .F.,, .F.,,, .F.,, .F. )
+
+
+   TButton():New( 2.25, 16.5 - If( oBmp == nil, 2, 0 ), "&Cancel", oDlg, {|| ( oDlg:End(), lOk := .F. )}, 35, 12,,, .F., .F., .F.,, .F.,,, .F.,, .F. )
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   if lOk
+      uVar := cItem
+   endif
+
+RETURN lOk
+
+
+
+Static FUNCTION StartDbfInfo( dbfAlias, oTreeInfo )
+
+   local n := 0
+
+   dbSelectArea( ( dbfAlias ) )
+
+   oTreeInfo:Add( "RDDI_ISDBF       : "  + cValToChar( dbInfo( 1       ) ) )
+   oTreeInfo:Add( "RDDI_CANPUTREC   : "  + cValToChar( dbInfo( 2   ) ) )
+   oTreeInfo:Add( "RDDI_DELIMITER   : "  + cValToChar( dbInfo( 3   ) ) )
+   oTreeInfo:Add( "RDDI_SEPARATOR   : "  + cValToChar( dbInfo( 4   ) ) )
+   oTreeInfo:Add( "RDDI_TABLEEXT    : "  + cValToChar( dbInfo( 5    ) ) )
+   oTreeInfo:Add( "RDDI_MEMOEXT     : "  + cValToChar( dbInfo( 6     ) ) )
+   oTreeInfo:Add( "RDDI_ORDBAGEXT   : "  + cValToChar( dbInfo( 7   ) ) )
+   oTreeInfo:Add( "RDDI_ORDEREXT    : "  + cValToChar( dbInfo( 8    ) ) )
+   oTreeInfo:Add( "RDDI_ORDSTRUCTEXT: "  + cValToChar( dbInfo( 9) ) )
+   oTreeInfo:Add( "RDDI_LOCAL       : "  + cValToChar( dbInfo( 10       ) ) )
+   oTreeInfo:Add( "RDDI_REMOTE      : "  + cValToChar( dbInfo( 11      ) ) )
+   oTreeInfo:Add( "RDDI_CONNECTION  : "  + cValToChar( dbInfo( 12  ) ) )
+   oTreeInfo:Add( "RDDI_TABLETYPE   : "  + cValToChar( dbInfo( 13   ) ) )
+   oTreeInfo:Add( "RDDI_MEMOTYPE    : "  + cValToChar( dbInfo( 14    ) ) )
+   oTreeInfo:Add( "RDDI_LARGEFILE   : "  + cValToChar( dbInfo( 15   ) ) )
+   oTreeInfo:Add( "RDDI_LOCKSCHEME  : "  + cValToChar( dbInfo( 16  ) ) )
+   oTreeInfo:Add( "RDDI_RECORDMAP   : "  + cValToChar( dbInfo( 17   ) ) )
+   oTreeInfo:Add( "RDDI_ENCRYPTION  : "  + cValToChar( dbInfo( 18  ) ) )
+   oTreeInfo:Add( "RDDI_AUTOLOCK    : "  + cValToChar( dbInfo( 20    ) ) )
+   oTreeInfo:Add( "DBI_DBFILTER     : "  + cValToChar( dbInfo( 28     ) ) )
+
+   oTreeInfo:Add( "Index parameters" )
+   oTreeInfo:Add( "RDDI_STRUCTORD   : "  + cValToChar( dbInfo( 21   ) ) )
+   oTreeInfo:Add( "RDDI_STRICTREAD  : "  + cValToChar( dbInfo( 22  ) ) )
+   oTreeInfo:Add( "RDDI_STRICTSTRUCT: "  + cValToChar( dbInfo( 23) ) )
+   oTreeInfo:Add( "RDDI_OPTIMIZE    : "  + cValToChar( dbInfo( 24    ) ) )
+   oTreeInfo:Add( "RDDI_FORCEOPT    : "  + cValToChar( dbInfo( 25    ) ) )
+   oTreeInfo:Add( "RDDI_AUTOOPEN    : "  + cValToChar( dbInfo( 26    ) ) )
+   oTreeInfo:Add( "RDDI_AUTOORDER   : "  + cValToChar( dbInfo( 27   ) ) )
+   oTreeInfo:Add( "RDDI_AUTOSHARE   : "  + cValToChar( dbInfo( 28   ) ) )
+   oTreeInfo:Add( "RDDI_MULTITAG    : "  + cValToChar( dbInfo( 29    ) ) )
+   oTreeInfo:Add( "RDDI_SORTRECNO   : "  + cValToChar( dbInfo( 30   ) ) )
+   oTreeInfo:Add( "RDDI_MULTIKEY    : "  + cValToChar( dbInfo( 31    ) ) )
+
+   oTreeInfo:Add( "Memo parameters" )
+   oTreeInfo:Add( "RDDI_MEMOBLOCKSIZE: "  + cValToChar( dbInfo( 32  ) ) )
+   oTreeInfo:Add( "RDDI_MEMOVERSION  : "  + cValToChar( dbInfo( 33    ) ) )
+   oTreeInfo:Add( "RDDI_MEMOGCTYPE   : "  + cValToChar( dbInfo( 34     ) ) )
+   oTreeInfo:Add( "RDDI_MEMOREADLOCK : "  + cValToChar( dbInfo( 35   ) ) )
+   oTreeInfo:Add( "RDDI_MEMOREUSE    : "  + cValToChar( dbInfo( 36      ) ) )
+   oTreeInfo:Add( "RDDI_BLOB_SUPPORT : "  + cValToChar( dbInfo( 37   ) ) )
+
+   oTreeInfo:Add( "OrderInfo" )
+   oTreeInfo:Add( "DBOI_CONDITION    : "  + cValToChar( dbOrderInfo( 1       ) ) )
+   oTreeInfo:Add( "DBOI_EXPRESSION   : "  + cValToChar( dbOrderInfo( 2      ) ) )
+   oTreeInfo:Add( "DBOI_POSITION     : "  + cValToChar( dbOrderInfo( 3        ) ) )
+
+   oTreeInfo:Add( "DBOI_NAME         : "  + cValToChar( dbOrderInfo( 5            ) ) )
+   oTreeInfo:Add( "DBOI_NUMBER       : "  + cValToChar( dbOrderInfo( 6          ) ) )
+   oTreeInfo:Add( "DBOI_BAGNAME      : "  + cValToChar( dbOrderInfo( 7         ) ) )
+   oTreeInfo:Add( "DBOI_BAGEXT       : "  + cValToChar( dbOrderInfo( 8          ) ) )
+   oTreeInfo:Add( "DBOI_INDEXEXT     : "  + cValToChar( dbOrderInfo( 8        ) ) )
+   oTreeInfo:Add( "DBOI_INDEXNAME    : "  + cValToChar( dbOrderInfo( 7       ) ) )
+   oTreeInfo:Add( "DBOI_ORDERCOUNT   : "  + cValToChar( dbOrderInfo( 9      ) ) )
+   oTreeInfo:Add( "DBOI_FILEHANDLE   : "  + cValToChar( dbOrderInfo( 10      ) ) )
+   oTreeInfo:Add( "DBOI_ISCOND       : "  + cValToChar( dbOrderInfo( 11          ) ) )
+   oTreeInfo:Add( "DBOI_ISDESC       : "  + cValToChar( dbOrderInfo( 12          ) ) )
+   oTreeInfo:Add( "DBOI_UNIQUE       : "  + cValToChar( dbOrderInfo( 13          ) ) )
+   oTreeInfo:Add( "DBOI_FULLPATH     : "  + cValToChar( dbOrderInfo( 20        ) ) )
+   oTreeInfo:Add( "DBOI_KEYTYPE      : "  + cValToChar( dbOrderInfo( 24         ) ) )
+   oTreeInfo:Add( "DBOI_KEYSIZE      : "  + cValToChar( dbOrderInfo( 25         ) ) )
+   oTreeInfo:Add( "DBOI_KEYCOUNT     : "  + cValToChar( dbOrderInfo( 26        ) ) )
+   oTreeInfo:Add( "DBOI_HPLOCKING    : "  + cValToChar( dbOrderInfo( 29       ) ) )
+   oTreeInfo:Add( "DBOI_LOCKOFFSET   : "  + cValToChar( dbOrderInfo( 35      ) ) )
+   oTreeInfo:Add( "DBOI_KEYVAL       : "  + cValToChar( dbOrderInfo( 38          ) ) )
+   oTreeInfo:Add( "DBOI_SCOPETOP     : "  + cValToChar( dbOrderInfo( 39        ) ) )
+   oTreeInfo:Add( "DBOI_SCOPEBOTTOM  : "  + cValToChar( dbOrderInfo( 40     ) ) )
+   oTreeInfo:Add( "DBOI_SCOPETOPCLEAR: "  + cValToChar( dbOrderInfo( 41   ) ) )
+   oTreeInfo:Add( "DBOI_SCOPEBOTTOMCLEAR:"+ cValToChar( dbOrderInfo( 42) ) )
+   oTreeInfo:Add( "DBOI_CUSTOM       : "  + cValToChar( dbOrderInfo( 45          ) ) )
+
+   oTreeInfo:Add( "DBOI_KEYSINCLUDED : "  + cValToChar( dbOrderInfo( 50    ) ) )
+   oTreeInfo:Add( "DBOI_KEYGOTO      : "  + cValToChar( dbOrderInfo( 3         ) ) )
+   oTreeInfo:Add( "DBOI_KEYGOTORAW   : "  + cValToChar( dbOrderInfo( 51      ) ) )
+   oTreeInfo:Add( "DBOI_KEYNO        : "  + cValToChar( dbOrderInfo( 3           ) ) )
+   oTreeInfo:Add( "DBOI_KEYNORAW     : "  + cValToChar( dbOrderInfo( 51        ) ) )
+   oTreeInfo:Add( "DBOI_KEYCOUNTRAW  : "  + cValToChar( dbOrderInfo( 52     ) ) )
+
+RETURN ( nil )
+
+
+
+
+
+
+
+FUNCTION cNoPath( cFileName )
+
+   local nAt     := Rat( "\", cFileName )
+
+   if nAT == 0
+      nAt        := Rat( "/", cFileName )
+   end
+
+RETURN Alltrim( SubStr( cFileName, nAt + 1 ) )
+
+
+
+FUNCTION cNoPathLeft( cFileName )
+
+   local nAt     := At( "\", cFileName )
+
+   if nAT == 0
+      nAt        := At( "/", cFileName )
+   end
+
+RETURN Alltrim( SubStr( cFileName, nAt + 1 ) )
+
+
+
+
+
+
+
+FUNCTION cCheckArea( cDbfName, cAlias )
+
+   local n     := 2
+
+   cAlias      := cDbfName
+
+    while select( cAlias ) <> 0
+      cAlias   := cDbfName + alltrim( str( n++ ) )
+    end
+
+RETURN cAlias
+
+
+
+FUNCTION dbSeekArticuloUpperLower( uVal, nView )
+
+   if dbSeekInOrd( uVal, "Codigo", D():Articulos( nView ) )
+      RETURN .T.
+   end
+
+   if dbSeekInOrd( upper( uVal ), "Codigo", D():Articulos( nView ) )
+      RETURN .T.
+   end
+
+   if dbSeekInOrd( lower( uVal ), "Codigo", D():Articulos( nView ) )
+      RETURN .T.
+   end
+
+RETURN ( .F. )
+
+
+
+
+FUNCTION dbSeekUpperLower( uVal, nView )
+
+   local lRETURN
+
+
+
+   lRETURN     := ( ( D():Articulos( nView ) )->( dbSeek( uVal ) ) )           .OR. ( ( D():Articulos( nView ) )->( dbSeek( Lower( uVal ) ) ) )  .OR. ( ( D():Articulos( nView ) )->( dbSeek( Upper( uVal ) ) ) )
+
+RETURN ( lRETURN )
+
+
+
+FUNCTION dbSeekInOrd( uVal, cOrd, cAlias, lSoft, lLast )
+
+   local nOrd
+   local lRet        := .F.
+
+   If( cAlias == nil, cAlias := select(), ) ;
+
+   if ( cAlias )->( used() )
+      nOrd           := ( cAlias )->( ordsetfocus( cOrd ) )
+      lRet           := ( cAlias )->( dbseek( uVal, lSoft, lLast ) )
+      ( cAlias )->( ordsetfocus( nOrd ) )
+   end
+
+RETURN ( lRet )
+
+
+
+FUNCTION hSeekInOrd( hHash )
+
+   local h
+   local nOrd
+   local lRet
+   local lSoft
+   local lLast
+   local uValue
+   local uOrder
+   local cAlias
+
+   lRet                 := .F.
+
+   if IsHash( hHash )
+
+      if HHasKey( hHash, "Value" )
+         uValue         := HGet( hHash, "Value" )
+      end
+
+      if HHasKey( hHash, "Order" )
+         uOrder         := HGet( hHash, "Order" )
+      end
+
+      if HHasKey( hHash, "Alias" )
+         cAlias         := HGet( hHash, "Alias" )
+      end
+
+      if HHasKey( hHash, "Soft" )
+         lSoft          := HGet( hHash, "Soft" )
+      end
+
+      if HHasKey( hHash, "Last" )
+         lLast          := HGet( hHash, "Last" )
+      end
+
+      if !empty( uValue ) .AND. !empty( uOrder ) .AND. !empty( cAlias )
+
+         if ( cAlias )->( Used() )
+            uOrder      := ( cAlias )->( OrdSetFocus( uOrder ) )
+            lRet        := ( cAlias )->( dbSeek( uValue, lSoft, lLast ) )
+            ( cAlias )->( OrdSetFocus( uOrder ) )
+         end
+
+      end
+
+   end
+
+RETURN ( lRet )
+
+
+
+FUNCTION aSqlStruct( aStruct )
+
+   local a
+   local aSqlStruct  := {}
+
+   for each a in aStruct
+      aAdd( aSqlStruct, { a[1], a[2], a[3], a[4] } )
+   next
+
+RETURN ( aSqlStruct )
+
+
+
+FUNCTION lExistTable( cTable, cVia )
+
+   If( cVia == nil, cVia := cDriver(), ) ;
+
+   if cVia == "ADS"
+      RETURN .T.
+   end
+
+RETURN ( file( cTable ) )
+
+
+
+FUNCTION lExistIndex( cIndex, cVia )
+
+   If( cVia == nil, cVia := cDriver(), ) ;
+
+   if cVia == "ADS"
+      RETURN .T.
+   end
+
+RETURN ( file( cIndex ) )
+
+
+
+FUNCTION fEraseTable( cTable, cVia )
+
+   local lErase   := .T.
+
+   if !lExistTable( cTable )
+      RETURN ( lErase )
+   end
+
+   lErase         := ( fErase( cTable ) == 0 )
+   if !lErase
+      MsgStop( "Imposible eliminar el fichero " + cTable + ". Código de error " + Str( fError() ) )
+   end
+
+RETURN ( lErase )
+
+
+
+FUNCTION fRenameTable( cTableOld, cTableNew )
+
+RETURN ( fRename( cTableOld, cTableNew ) )
+
+
+
+FUNCTION dbSafeUnlock( cAlias )
+
+   if ( cAlias )->( Used() )
+      ( cAlias )->( dbUnLock() )
+   end
+
+RETURN nil
+
+
+
+FUNCTION dbSafeLock( cAlias )
+
+   if !( cAlias )->( Used() )
+      RETURN .F.
+   end
+
+   if dbLock( cAlias )
+      RETURN .T.
+   end
+
+RETURN .F.
+
+
+
+FUNCTION dbAppendDefault( cAliOrigen, cAliDestino, aStruct )
+
+    local i
+   local cNom
+    local    xVal
+   local nPos
+   local lPass    := .F.
+   local nField   := ( cAliDestino )->( fCount() )
+
+   ( cAliDestino )->( dbAppend() )
+
+   if ( cAliDestino )->( !NetErr() )
+
+      for i := 1 to nField
+
+         if ( len( aStruct[ i ] ) >= 9 ) .AND. ( !empty( aStruct[ i, 9 ] ) )
+            ( cAliDestino )->( FieldPut( i, aStruct[ i, 9 ] ) )
+         end
+
+      next
+
+      for i := 1 to nField
+
+         cNom     := ( cAliDestino )->( FieldName( i ) )
+         nPos     := ( cAliOrigen  )->( FieldPos( cNom ) )
+
+         if nPos <> 0
+            xVal  := ( cAliOrigen )->( FieldGet( nPos ) )
+            ( cAliDestino )->( FieldPut( i, xVal ) )
+         end
+
+      next
+
+      dbSafeUnLock( cAliDestino )
+
+      lPass    := .T.
+
+   end
+
+RETURN ( lPass )
+
+
+
+FUNCTION fEraseIndex( cTable, cVia )
+
+   If( cVia == nil, cVia := cDriver(), ) ;
+
+   if cVia == "ADS"
+      RETURN .T.
+   end
+
+RETURN ( fErase( cTable ) )
+
+
+
+FUNCTION buildIndex( cDataBase, cDriver, aIndex )
+
+   local cAlias
+   local aCurrent
+
+   dbUseArea( .T., cDriver, databaseFileName( cDataBase ), cCheckArea( "Alias", @cAlias ), .F. )
+
+   if !( cAlias )->( neterr() )
+      ( cAlias)->( __dbPack() )
+
+      for each aCurrent in aIndex
+         ( cAlias )->( ordCondSet( "!Deleted()", {|| !Deleted() }, , , , , , , , , aCurrent[ 5 ] ) )
+         ( cAlias )->( ordCreate( databaseFileIndex( cDataBase ), aCurrent[ 2 ], aCurrent[ 3 ], aCurrent[ 4 ] ) )
+      next
+
+      ( cAlias )->( dbCloseArea() )
+   else
+      msgStop( "Imposible abrir en modo exclusivo la tabla : " + cDataBase )
+   end
+
+RETURN ( nil )
+
+
+
+FUNCTION bCheck2Block( cChar, lMessage )
+
+   local cType
+    local bBlock
+   local oBlock
+   local oError
+   local lError      := .F.
+
+   If( lMessage == nil, lMessage := .T., ) ;
+
+   if empty( cChar )
+      RETURN ( bBlock )
+   end
+
+   oBlock            := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      cType          := Type( cChar )
+
+      if cType <> "UE"
+
+         cChar       := Rtrim( cChar )
+         bBlock      := &( "{||" + cChar + "}" )
+
+      else
+
+         lError      := .T.
+
+      end
+
+   RECOVER USING oError
+
+      lError         := .T.
+
+   end
+
+   ErrorBlock( oBlock )
+
+   if lError
+
+      if lMessage
+         msgStop( "Expresión incorrecta " + cChar, "Tipo de expresión " + Type( cChar ) )
+      end
+
+      bBlock         := nil
+
+   end
+
+RETURN ( bBlock )
+
+
+
+FUNCTION setScriptSystem( cScriptSystem )
+
+   scriptSystem   := cScriptSystem
+
+RETURN ( nil )
+
+
+
+FUNCTION runScriptBeforeAppend()
+
+   if !empty(scriptSystem)
+      runEventScript( scriptSystem + "\beforeAppend" )
+   end
+
+RETURN ( nil )
+
+
+
+FUNCTION runScriptAfterAppend()
+
+   if !empty(scriptSystem)
+      runEventScript( scriptSystem + "\afterAppend" )
+   end
+
+RETURN ( nil )
+
+
+
+FUNCTION runScriptBeforeEdit()
+
+   if !empty(scriptSystem)
+      runEventScript( scriptSystem + "\beforeEdit" )
+   end
+
+RETURN ( nil )
+
+
+
+FUNCTION runScriptAfterEdit()
+
+   if !empty(scriptSystem)
+      runEventScript( scriptSystem + "\afterEdit" )
+   end
+
+RETURN ( nil )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FUNCTION WinAppRec( oBrw, bEdit, cAlias, bWhen, bValid, xOthers )
+
+   local aTmp
+   local aGet
+   local lRETURN     := .F.
+   local nOrd        := 0
+
+   If( cAlias == nil, cAlias := Alias(), ) ;
+   If( bWhen == nil, bWhen := "", ) ;
+   If( bValid == nil, bValid := "", ) ;
+
+   if select( cAlias ) == 0
+      RETURN .F.
+   end
+
+   if lDemoMode() .AND. ( cAlias )->( lastRec() ) >= 50
+      msgStop( "Esta usted utilizando una versión demo.", "El programa se abortará" )
+      RETURN .F.
+   end
+
+
+
+   runScriptBeforeAppend()
+
+
+
+   if empty( ( cAlias )->( OrdSetFocus() ) )
+      nOrd        := ( cAlias )->( OrdSetFocus( 1 ) )
+   end
+
+   aTmp           := dbBlankRec( cAlias )
+
+   aGet           := Array( ( cAlias )->( fCount() ) )
+
+
+
+   lRETURN        := Eval( bEdit, aTmp, aGet, cAlias, oBrw, bWhen, bValid, 1, xOthers )
+
+   if lRETURN
+      dbSafeUnLock( cAlias )
+   end
+
+   if IsNum( nOrd ) .AND. ( nOrd <> 0 )
+      ( cAlias )->( OrdSetFocus ( nOrd ) )
+   end
+
+
+
+   runScriptAfterAppend()
+
+   runScriptAfterEdit()
+
+
+
+   if !empty( oBrw ) .AND. ( oBrw:lActive )
+
+      if oBrw:lFooter .AND. !empty( oBrw:nFooterHeight )
+         oBrw:MakeTotals()
+      end
+
+      oBrw:select( 0 )
+      oBrw:select( 1 )
+      oBrw:Refresh()
+
+   end
+
+RETURN lRETURN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FUNCTION WinDupRec( oBrw, bEdit, cAlias, bWhen, bValid, xOthers )
+
+   local aTmp
+   local aGet
+   local nRec
+   local lResult  := .F.
+   local nOrd     := 0
+
+   if select( cAlias ) == 0
+      RETURN .F.
+   end
+
+   if lDemoMode() .AND. ( cAlias )->( lastRec() ) >= 50
+      msgStop( "Esta usted utilizando una versión demo.", "El programa se abortará" )
+      RETURN .F.
+   end
+
+
+
+   runScriptBeforeAppend()
+
+
+
+   nRec           := ( cAlias )->( Recno() )
+
+   if empty( ( cAlias )->( OrdSetFocus() ) )
+      nOrd        := ( cAlias )->( OrdSetFocus( 1 ) )
+   end
+
+
+
+
+
+
+
+   if !( cAlias )->( eof() )
+
+      aTmp        := dbScatter( cAlias )
+
+      aGet        := Array( ( cAlias )->( fCount() ) )
+
+      lResult     := Eval( bEdit, aTmp, aGet, cAlias, oBrw, bWhen, bValid, 4, xOthers )
+
+      if lResult
+         dbSafeUnLock( cAlias )
+      end
+
+   end
+
+   if IsNum( nOrd ) .AND. nOrd <> 0
+      ( cAlias )->( OrdSetFocus( nOrd ) )
+   end
+
+   if !lResult
+      ( cAlias )->( dbGoTo( nRec ) )
+   end
+
+
+
+   runScriptAfterAppend()
+
+   runScriptAfterEdit()
+
+
+
+   if lResult .AND. !empty( oBrw ) .AND. ( oBrw:lActive )
+
+      oBrw:select( 0 )
+      oBrw:select( 1 )
+
+        if oBrw:lFooter .AND. !empty( oBrw:nFooterHeight )
+            oBrw:MakeTotals()
+        end
+
+      oBrw:Refresh()
+
+   end
+
+RETURN lResult
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FUNCTION WinEdtRec( oBrw, bEdit, cAlias, bWhen, bValid, xOthers )
+
+   local aTmp
+   local aGet
+   local lResult     := .F.
+   local nOrd        := 0
+   local nRec
+
+   If( cAlias == nil, cAlias := Alias(), ) ;
+   If( bWhen == nil, bWhen := "", ) ;
+   If( bValid == nil, bValid := "", ) ;
+
+   if select( cAlias ) == 0 .OR. ( ( cAlias )->( LastRec() ) == 0 )
+      RETURN .F.
+   end
+
+
+
+   runScriptBeforeEdit()
+
+
+
+   if empty( ( cAlias )->( OrdSetFocus() ) )
+      nOrd           := ( cAlias )->( OrdSetFocus( 1 ) )
+   end
+
+   nRec              := ( cAlias )->( Recno() )
+
+   if !( cAlias )->( eof() )
+      if dbDialogLock( cAlias )
+         aTmp        := dbScatter( cAlias )
+         aGet        := array( ( cAlias )->( fCount() ) )
+         lResult     := Eval( bEdit, aTmp, aGet, cAlias, oBrw, bWhen, bValid, 2, xOthers )
+         dbSafeUnLock( cAlias )
+      end
+   end
+
+   if isNum( nOrd ) .AND. nOrd <> 0
+      ( cAlias )->( OrdSetFocus( nOrd ) )
+   end
+
+
+
+   runScriptAfterEdit()
+
+
+
+   if lResult .AND. oBrw <> nil
+
+      oBrw:select( 0 )
+      oBrw:select( 1 )
+
+        if oBrw:lFooter .AND. !empty( oBrw:nFooterHeight )
+            oBrw:MakeTotals()
+        end
+
+      oBrw:Refresh()
+
+   end
+
+   if isNum( nRec )
+      ( cAlias )->( dbGoto( nRec ) )
+   end
+
+RETURN lResult
+
+
+
+
+
+
+
+
+
+
+
+
+
+FUNCTION WinZooRec( oBrw, bEdit, cAlias, bWhen, bValid, xOthers )
+
+   local aTmp
+   local aGet
+   local lResult     := .F.
+   local nOrd        := 0
+
+   If( cAlias == nil, cAlias := Alias(), ) ;
+   If( bWhen == nil, bWhen := "", ) ;
+   If( bValid == nil, bValid := "", ) ;
+
+    IF select( cAlias ) == 0
+        RETURN .F.
+    end
+
+   if empty( ( cAlias )->( OrdSetFocus() ) )
+      nOrd        := ( cAlias )->( OrdSetFocus( 1 ) )
+   end
+
+   IF !( cAlias )->( eof() )
+      aTmp        := DBScatter( cAlias )
+      aGet        := Array( (cAlias)->(fCount()) )
+      lResult     := Eval( bEdit, aTmp, aGet, cAlias, oBrw, bWhen, bValid, 3, xOthers )
+    end
+
+   if ValType( nOrd ) == "N" .AND. nOrd <> 0
+      ( cAlias )->( OrdSetFocus( nOrd ) )
+   end
+
+RETURN lResult
+
+
+
+
+
+
+FUNCTION dbScatter( cAlias )
+
+   local i
+   local aField := {}
+   local nField := ( cAlias )->( fCount() )
+
+
+
+   for i := 1 to nField
+      aAdd( aField, ( cAlias )->( FieldGet( i ) ) )
+    next
+
+RETURN aField
+
+
+
+
+
+
+
+FUNCTION aScatter( cAlias, aTmp )
+
+   aEval( aTmp, {|x,n| aTmp[ n ] := ( cAlias )->( FieldGet( n ) ) } )
+
+RETURN aTmp
+
+
+
+
+
+
+
+FUNCTION dbDialogLock( cAlias, lAppend )
+
+   If( lAppend == nil, lAppend := .F., ) ;
+
+   if DBLock( cAlias, if( lAppend, 3, 2 ) )
+      RETURN .T.
+    endif
+
+   while ApoloMsgNoYes( "Registro bloqueado," + Chr(13)+Chr(10) + "¿ Reintentar ?" )
+
+        if DBLock( cAlias, if( lAppend, 3, 2 ) )
+         RETURN .T.
+        else
+            loop
+        endif
+
+   enddo
+
+RETURN .F.
+
+
+
+
+
+
+FUNCTION dbBlankRec( cAlias )
+
+   local i
+   local aBlank   := {}
+   local aStruct  := ( cAlias )->( dbStruct() )
+
+   for i = 1 to ( cAlias )->( fCount() )
+
+      do case
+         case aStruct[ i, 2 ] == "C"
+            AAdd( aBlank, Space( aStruct[ i, 3 ] ) )
+         case aStruct[ i, 2 ] == "M"
+            AAdd( aBlank, "" )
+         case aStruct[ i, 2 ] == "N"
+            AAdd( aBlank, Val( "0." + Replicate( "0", aStruct[ i, 4 ] ) ) )
+         case aStruct[ i, 2 ] == "L"
+            AAdd( aBlank, .F. )
+         case aStruct[ i, 2 ] == "D"
+            AAdd( aBlank, GetSysDate() )
+         case aStruct[ i, 2 ] == "@"
+            AAdd( aBlank, DateTime() )
+      end
+
+   next
+
+RETURN aBlank
+
+
+
+FUNCTION dbHash( cAlias )
+
+   local i
+   local hHash       := {=>}
+
+   If( cAlias == nil, cAlias := Alias(), ) ;
+
+   for i = 1 to ( cAlias )->( fCount() )
+      hSet( hHash, ( cAlias )->( fieldname(i) ), ( cAlias )->( fieldget( i ) ) )
+   next
+
+RETURN ( hHash )
+
+
+
+FUNCTION DBHScatter( cAlias )
+
+   local aAlias   := {}
+
+   if Empty( cAlias )
+      return ( aAlias )
+   end
+
+   ( cAlias )->( dbGoTop() )
+
+   while !( cAlias )->( Eof() )
+
+      aAdd( aAlias, dbHash( cAlias ) )
+
+      ( cAlias )->( dbSkip() )
+
+   end
+
+return ( aAlias )
+
+
+
+
+
+
+
+FUNCTION dbLock( cAlias, nMode )
+
+   local i
+
+   If( nMode == nil, nMode := 2, ) ;
+
+    for i = 1 to 10
+
+      if nMode == 3
+
+         ( cAlias )->( dbAppend() )
+         if !NetErr()
+            RETURN .T.
+            endif
+
+        else
+
+         if ( cAlias )->( dbRLock() )
+                RETURN .T.
+            end
+
+        endif
+
+    next
+
+RETURN .F.
+
+
+
+FUNCTION WinDelRec( oBrw, cAlias, bPreBlock, bPostBlock, lNoConfirm, lTactil )
+
+   local nRec        := 0
+   local cTxt        := "¿Desea eliminar el registro en curso?"
+   local nMarked     := 0
+   local lRETURN     := .F.
+   local lTrigger    := .T.
+   local oWaitMeter
+
+   If( cAlias == nil, cAlias := Alias(), ) ;
+   If( lNoConfirm == nil, lNoConfirm := .F., ) ;
+   If( lTactil == nil, lTactil := .F., ) ;
+
+   if select( cAlias ) == 0 .OR. ( cAlias )->( lastrec() ) == 0
+      RETURN ( .F. )
+   end
+
+
+
+   if !empty( oBrw ) .AND. ( "XBROWSE" $ oBrw:ClassName() )
+
+      nMarked        := len( oBrw:aselected )
+      if nMarked > 1
+         cTxt        := "¿ Desea eliminar definitivamente " + alltrim( Trans( nMarked, "999999" ) ) + " registros ?"
+      end
+
+      if RolesModel():getRolNoConfirmacionEliminacion( Auth():rolUuid() ) .OR. apoloMsgNoYes( cTxt, "Confirme supresión", lTactil )
+
+         oWaitMeter        := TWaitMeter():New( "Eliminando registros", "Espere por favor..." )
+         oWaitMeter:run()
+         oWaitMeter:setTotal( len( oBrw:aselected ) )
+
+         for each nRec in ( oBrw:aselected )
+
+            ( cAlias )->( dbGoTo( nRec ) )
+
+            if !empty( bPreBlock )
+               CheckEval( bPreBlock )
+            end
+
+            dbDel( cAlias )
+
+            if !empty( bPostBlock )
+               checkEval( bPostBlock )
+            end
+
+            oWaitMeter:autoInc()
+
+         next
+
+         oWaitMeter:end()
+
+      end
+
+   else
+
+      if lNoConfirm .OR. RolesModel():getRolNoConfirmacionEliminacion( Auth():rolUuid() ) .OR. ApoloMsgNoYes( cTxt, "Confirme supersión", lTactil )
+
+         if !empty( bPreBlock )
+            lTrigger    := CheckEval( bPreBlock )
+         end
+
+         if !isLogic( lTrigger ) .OR. lTrigger
+
+            dbDel( cAlias )
+
+            if !empty( bPostBlock )
+               lTrigger := CheckEval( bPostBlock )
+            end
+
+            lRETURN     := .T.
+
+         end
+
+      end
+
+   end
+
+   if !empty( oBrw )
+      oBrw:select( 0 )
+      oBrw:select( 1 )
+      oBrw:Refresh()
+      oBrw:SetFocus()
+   end
+
+RETURN ( lRETURN )
+
+
+
+FUNCTION DeleteRegister( oBrw, cAlias, bAction, bPreBlock, bPostBlock, lNoConfirm, lTactil )
+
+   local nRec        := 0
+   local cTxt        := "¿Desea eliminar el registro en curso?"
+   local nMarked     := 0
+   local lRETURN     := .F.
+   local lTrigger    := .T.
+   local oWaitMeter
+
+   If( cAlias == nil, cAlias := Alias(), ) ;
+   If( lNoConfirm == nil, lNoConfirm := .F., ) ;
+   If( lTactil == nil, lTactil := .F., ) ;
+
+   if select( cAlias ) == 0 .OR. ( cAlias )->( lastrec() ) == 0
+      RETURN ( .F. )
+   end
+
+
+
+   if !empty( oBrw ) .AND. ( "XBROWSE" $ oBrw:ClassName() )
+
+      nMarked        := len( oBrw:aselected )
+      if nMarked > 1
+         cTxt        := "¿ Desea eliminar definitivamente " + alltrim( Trans( nMarked, "999999" ) ) + " registros ?"
+      end
+
+      if RolesModel():getRolNoConfirmacionEliminacion( Auth():rolUuid() ) .OR. apoloMsgNoYes( cTxt, "Confirme supresión", lTactil )
+
+         oWaitMeter        := TWaitMeter():New( "Eliminando registros", "Espere por favor..." )
+         oWaitMeter:run()
+         oWaitMeter:setTotal( len( oBrw:aselected ) )
+
+         for each nRec in ( oBrw:aselected )
+
+            ( cAlias )->( dbGoTo( nRec ) )
+
+            if !empty( bPreBlock )
+               lTrigger    := CheckEval( bPreBlock )
+            end
+
+            if !isLogic( lTrigger ) .OR. lTrigger
+
+               checkEval( bAction )
+
+               if !empty( bPostBlock )
+                  checkEval( bPostBlock )
+               end
+
+            end
+
+            oWaitMeter:autoInc()
+
+         next
+
+         oWaitMeter:end()
+
+      end
+
+   else
+
+      if lNoConfirm .OR. RolesModel():getRolNoConfirmacionEliminacion( Auth():rolUuid() ) .OR. ApoloMsgNoYes( cTxt, "Confirme supersión", lTactil )
+
+         if !empty( bPreBlock )
+            lTrigger    := CheckEval( bPreBlock )
+         end
+
+         if !isLogic( lTrigger ) .OR. lTrigger
+
+            checkEval( bAction )
+
+            if !empty( bPostBlock )
+               lTrigger := CheckEval( bPostBlock )
+            end
+
+            lRETURN     := .T.
+
+         end
+
+      end
+
+   end
+
+   if !empty( oBrw )
+      oBrw:select( 0 )
+      oBrw:select( 1 )
+      oBrw:Refresh()
+      oBrw:SetFocus()
+   end
+
+RETURN ( lRETURN )
+
+
+
+
+
+
+
+FUNCTION dbDelRec( oBrw, cAlias, bPreBlock, bPostBlock, lDelMarked, lBig )
+
+   local nRec           := 0
+   local cTxt           := "¿Desea eliminar el registro en curso?"
+   local nMarked        := 0
+   local lRETURN        := .F.
+
+   If( cAlias == nil, cAlias := Alias(), ) ;
+   If( lDelMarked == nil, lDelMarked := .F., ) ;
+   If( lBig == nil, lBig := .F., ) ;
+
+   if select( cAlias ) == 0 .OR. ( cAlias )->( LastRec() ) == 0
+      RETURN ( .F. )
+   end
+
+
+
+
+
+   if ( lDelMarked ) .AND. ( "TXBROWSE" $ oBrw:ClassName() )
+      nMarked           := len( oBrw:aselected )
+      if nMarked > 1
+         cTxt           := "¿ Desea eliminar definitivamente " + AllTrim( Str( nMarked, 3 ) ) + " registros ?"
+      end
+
+      if RolesModel():getRolNoConfirmacionEliminacion( Auth():rolUuid() ) .OR. ApoloMsgNoYes( cTxt, "Confirme supersión", lBig )
+         for each nRec in oBrw:aselected
+
+            ( cAlias )->( dbGoTo( nRec ) )
+
+            CheckEval( bPreBlock )
+            dbDel( cAlias )
+            CheckEval( bPostBlock )
+
+            if( !( cAlias )->( eof() ), oBrw:GoUp(), )
+            oBrw:Refresh()
+            oBrw:SetFocus()
+
+         next
+
+      end
+
+   else
+      if RolesModel():getRolNoConfirmacionEliminacion( Auth():rolUuid() ) .OR. ApoloMsgNoYes( cTxt, "Confirme supersión" )
+
+         CheckEval( bPreBlock )
+
+         DelRecno( cAlias, oBrw )
+
+         CheckEval( bPostBlock )
+
+         if !empty( oBrw )
+            oBrw:Refresh()
+         end
+
+         lRETURN        := .T.
+
+      end
+
+   end
+
+RETURN ( lRETURN )
+
+
+
+FUNCTION DelRecno( cAlias, oBrw, lDelMarked )
+
+   local nRec
+   local nNtx
+
+   If( lDelMarked == nil, lDelMarked := .F., ) ;
+
+   if lDelMarked
+
+      ( cAlias )->( dbGoTop() )
+      while !( cAlias )->( eof() )
+         if ( cAlias )->( lMarked() ) .AND.  dbLock( cAlias, .F. )
+            ( cAlias )->( dbDelete() )
+            dbSafeUnLock( cAlias )
+         end
+      end
+
+   else
+
+      dbDel( cAlias )
+
+   end
+
+   if oBrw <> nil
+      oBrw:select( 0 )
+      oBrw:select( 1 )
+      oBrw:SetFocus()
+   end
+
+RETURN nil
+
+
+
+FUNCTION CheckEval( bCodeBlock )
+
+   local oBlock
+   local oError
+   local lCheckEval  := .T.
+
+   oBlock            := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      if !empty( bCodeBlock ) .AND. Valtype( bCodeBlock ) == "B"
+         lCheckEval  := Eval( bCodeBlock )
+      end
+
+   RECOVER USING oError
+
+      lCheckEval     := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lCheckEval )
+
+
+
+FUNCTION nGetAllMark( cMark, cAlias )
+
+   local nNum     := 0
+   local nRecNo   := ( cAlias )->( RecNo() )
+
+   cMark          := if( ValType( cMark ) <> "C", "#", cMark )
+
+   ( cAlias )->( dbGoTop() )
+   while !( cAlias )->( eof() )
+
+      if ( cAlias )->( lMarked( cMark ) )
+         ++nNum
+      end
+      ( cAlias )->( dbSkip() )
+
+   end
+
+   ( cAlias )->( dbGoTo( nRecNo ) )
+
+RETURN ( nNum )
+
+
+
+FUNCTION dbDel( cAlias )
+
+   if ( cAlias )->( dbRLock() )
+      ( cAlias )->( dbDelete() )
+      ( cAlias )->( dbUnLock() )
+   else
+      msgStop( "No he podido bloquear.")
+   end
+
+   ( cAlias )->( dbSkip( 0 ) )
+
+RETURN nil
+
+
+
+FUNCTION dbLockDelete( cAlias )
+
+   if dbLock( cAlias )
+      ( cAlias )->( dbDelete() )
+      ( cAlias )->( dbUnLock() )
+   else
+      RETURN .F.
+   end
+
+RETURN .T.
+
+
+
+
+
+FUNCTION lMarked( cMark, nRec )
+
+    cMark := if( ValType( cMark ) == "C", cMark, "#" )
+
+RETURN( GetMarkRec( cMark, nRec ) == cMark )
+
+
+
+
+FUNCTION GetMarkRec( nRec )
+
+   local nRecNo   := RecNo()
+   local nHdl     := DbfHdl()
+   local nOffSet  := 0
+   local cMark    := " "
+
+   nRec           := if( ValType( nRec )  <> "N", RecNo(), nRec  )
+   nOffSet        := ( RecSize() * ( nRec - 1 ) ) + Header()
+
+   FSeek( nHdl, nOffSet, 0 )
+   FRead( nHdl, @cMark, 1  )
+
+   DbGoTo( nRecNo )
+
+RETURN( cMark )
+
+
+
+FUNCTION WinGather( aTmp, aGet, cAlias, oBrw, nMode, bPostAction, lempty )
+
+   local lAdd     := ( nMode == 1 .OR. nMode == 4 )
+
+    If( lempty == nil, lempty := .T., ) ;
+
+    CursorWait()
+
+   if dbDialogLock( cAlias, lAdd )
+      aEval( aTmp, { | uTmp, n | ( cAlias )->( fieldPut( n, uTmp ) ) } )
+      dbSafeUnLock( cAlias )
+   end
+
+   ( cAlias )->( dbCommit() )
+
+   if lempty
+      aCopy( dbBlankRec( cAlias ), aTmp )
+      if !empty( aGet )
+         aEval( aGet, {| o, i | if( "GET" $ o:ClassName(), o:cText( aTmp[ i ] ), ) } )
+      end
+   end
+
+   if bPostAction <> nil
+        Eval( bPostAction )
+   end
+
+   if oBrw <> nil
+      oBrw:Refresh()
+   end
+
+   CursorWe()
+
+RETURN ( nil )
+
+
+
+FUNCTION dbCopy( cAliOrigen, cAliDestino, lApp )
+
+    local i
+    local nField     := (cAliOrigen)->( Fcount() )
+
+    If( lApp == nil, lApp := .F., ) ;
+
+    IF lApp
+        (cAliDestino)->( dbAppend() )
+   ELSE
+      (cAliDestino)->( dbRLock() )
+    end
+
+    for i = 1 to nField
+        (cAliDestino)->( FieldPut( i, (cAliOrigen)->( FieldGet( i ) ) ) )
+    next
+
+   IF !lApp
+      dbSafeUnLock( cAliDestino )
+    end
+
+RETURN NIL
+
+
+
+FUNCTION NotCero( nUnits )
+
+RETURN ( if( nUnits <> 0, nUnits, 1 ) )
+
+
+
+FUNCTION NotCaja( nUnits )
+
+   if !lCalCaj()
+      nUnits   := 1
+   end
+
+RETURN ( if( nUnits == 0, 1, nUnits ) )
+
+
+
+FUNCTION NotBulto( nUnits )
+
+   if !lCalBul()
+      nUnits   := 1
+   end
+
+RETURN ( if( nUnits == 0, 1, nUnits ) )
+
+
+
+FUNCTION SetStatus( cAlias, aStatus )
+
+   ( cAlias )->( OrdSetFocus( aStatus[ 2 ] ) )
+   ( cAlias )->( dbGoTo( aStatus[ 1 ] ) )
+
+RETURN nil
+
+
+
+FUNCTION aGetStatus( cAlias, lInit )
+
+   local aStatus  := { ( cAlias )->( Recno() ), ( cAlias )->( ordsetfocus() ) }
+
+   If( lInit == nil, lInit := .F., ) ;
+
+   if lInit
+      ( cAlias )->( OrdSetFocus( 1 ) )
+      ( cAlias )->( dbGoTop() )
+   end
+
+RETURN ( aStatus )
+
+
+
+FUNCTION hGetStatus( cAlias, uOrder )
+
+
+
+
+   local hStatus  := {  "Alias" => cAlias, "Recno" => ( cAlias )->( Recno() ), "Order" => ( cAlias )->( OrdSetFocus() ), "Aof" => ( cAlias )->( adsGetAof() ) }
+
+   if !isNil( uOrder )
+      ( cAlias )->( OrdSetFocus( uOrder ) )
+      ( cAlias )->( dbGoTop() )
+   end
+
+   if !empty( hget( hStatus, "Aof" ) )
+      ( cAlias )->( adsClearAof() )
+   end
+
+RETURN ( hStatus )
+
+
+
+FUNCTION hSetStatus( hStatus )
+
+   ( hget( hStatus, "Alias" ) )->( ordsetfocus( hget( hStatus, "Order" ) ) )
+   ( hget( hStatus, "Alias" ) )->( dbgoto(      hget( hStatus, "Recno" ) ) )
+
+   if !empty( hget( hStatus, "Aof" ) )
+      ( hget( hStatus, "Alias" ) )->( adssetaof( hget( hStatus, "Aof" ) ) )
+   end
+
+RETURN nil
+
+
+
+
+
+
+FUNCTION notValid( oGet, uAlias, lRjust, cChar, nTag, nLen )
+
+   local lRETURN  := .T.
+
+   if !validKey( oGet, uAlias, lRjust, cChar, nTag, nLen )
+      msgStop( "Clave existente", "Aviso del sistema" )
+      lRETURN     := .F.
+   end
+
+RETURN lRETURN
+
+
+
+FUNCTION validKey( oGet, uAlias, lRjust, cChar, nTag, nLen )
+
+   local nOldTag
+   local cAlias
+   local cFilter
+   local lRETURN  := .T.
+   local xClave   := oGet:VarGet()
+
+   If( uAlias == nil, uAlias := Alias(), ) ;
+   If( lRjust == nil, lRjust := .F., ) ;
+    If( cChar == nil, cChar := "0", ) ;
+    If( nTag == nil, nTag := 1, ) ;
+
+   if isObject( uAlias )
+      cAlias      := uAlias:cAlias
+   else
+      cAlias      := uAlias
+   end
+
+   cFilter        := ( cAlias )->( dbFilter() )
+   ( cAlias )->( dbClearFilter() )
+
+   nOldTag        := ( cAlias )->( OrdSetFocus( nTag ) )
+
+
+
+
+
+   if empty( ( cAlias )->( OrdSetFocus() ) )
+      MsgInfo( "Indice no disponible, comprobación imposible" )
+      RETURN .T.
+   end
+
+   if lRjust
+      if ischar( xClave ) .AND. at( ".", xClave ) <> 0
+         PntReplace( oGet, cChar, nLen )
+      else
+         RJustObj( oGet, cChar, nLen )
+      end
+   end
+
+   xClave         := oGet:VarGet()
+
+   if Existe( xClave, cAlias )
+      lRETURN     := .F.
+   end
+
+    ( cAlias )->( OrdSetFocus( nOldTag ) )
+
+   if !empty( cFilter )
+      ( cAlias )->( dbSetFilter( {|| &cFilter }, cFilter ) )
+   end
+
+RETURN lRETURN
+
+
+
+
+
+
+
+FUNCTION Existe( xClave, cAlias, nOrd )
+
+   local nRec
+   local lFound
+
+    If( cAlias == nil, cAlias := Alias(), ) ;
+   If( nOrd == nil, nOrd := ( cAlias )->( OrdSetFocus() ), ) ;
+
+   nRec           := ( cAlias )->( Recno() )
+   nOrd           := ( cAlias )->( OrdSetFocus( nOrd ) )
+
+   lFound         := ( cAlias )->( dbSeek( xClave ) )
+
+   ( cAlias )->( OrdSetFocus( nOrd ) )
+   ( cAlias )->( dbGoTo( nRec ) )
+
+RETURN ( lFound )
+
+
+
+FUNCTION LblTitle( nMode )
+
+   local cTitle   := ""
+
+   do case
+      case nMode  == 1
+         cTitle   := "Añadiendo "
+      case nMode  == 2
+         cTitle   := "Modificando "
+      case nMode  == 3
+         cTitle   := "Visualizando "
+      case nMode  == 4
+         cTitle   := "Duplicando "
+   end
+
+RETURN ( cTitle )
+
+
+
+FUNCTION dbAppe( cAlias )
+
+   ( cAlias )->( dbAppend() )
+   if !( cAlias )->( NetErr() )
+      RETURN .T.
+   endif
+
+RETURN .F.
+
+
+
+FUNCTION databaseFileName( cFile )
+
+RETURN ( cFile + ".Dbf" )
+
+
+
+FUNCTION databaseFileIndex( cFile )
+
+RETURN ( cFile + ".Cdx" )
+
+
+
+FUNCTION databaseFileMemo( cFile )
+
+RETURN ( cFile + ".Fpt" )
+
+
+
+FUNCTION dbfErase( cFileName )
+
+   if empty( cFileName )
+      RETURN .T.
+   end
+
+   if dbExists( cFileName )
+      dbDrop( cFileName )
+   end
+
+   if file( databaseFileName( cFileName ) )
+      if ferase( databaseFileName( cFileName ) ) == ( -1 )
+         RETURN .F.
+      end
+   end
+
+   if file( databaseFileIndex( cFileName ) )
+      if fErase( databaseFileIndex( cFileName ) ) == ( -1 )
+         RETURN .F.
+      end
+   end
+
+   if file( databaseFileMemo( cFileName ) )
+      if fErase( databaseFileMemo( cFileName ) ) == ( -1 )
+         RETURN .F.
+      end
+   end
+
+RETURN .T.
+
+
+
+FUNCTION dbfRename( cFileNameOld, cFileNameNew )
+
+   if file( cFileNameOld + ".Dbf" )
+      if fRename( cFileNameOld + ".Dbf", cFileNameNew + ".Dbf" ) == ( -1 )
+
+         RETURN .F.
+      end
+   end
+
+   if file( cFileNameOld + ".Cdx" )
+      if fRename( cFileNameOld + ".Cdx", cFileNameNew + ".Cdx" ) == ( -1 )
+
+         RETURN .F.
+      end
+   end
+
+   if file( cFileNameOld + ".Fpt" )
+      if fRename( cFileNameOld + ".Fpt", cFileNameNew + ".Fpt" ) == ( -1 )
+         MsgStop( "No se pudo renombrar el fichero " + cFileNameOld + ".Fpt" )
+         RETURN .F.
+      end
+   end
+
+RETURN .T.
+
+
+
+FUNCTION dbDelKit( oBrw, dbfTmp, nNumLin )
+
+   local nRec  := ( dbfTmp )->( Recno() )
+   local nOrd  := ( dbfTmp )->( OrdSetFocus( "nNumLin" ) )
+   local cFlt  := ( dbfTmp )->( dbFilter() )
+   local nNum  := Str( nNumLin, 4 )
+
+   if !empty( cFlt )
+      ( dbfTmp )->( dbSetFilter() )
+   end
+
+   if ( dbfTmp )->( dbSeek( nNum ) )
+      while Str( ( dbfTmp )->nNumLin, 4 ) == nNum .AND. ( !( dbfTmp )->( Eof() ) )
+         if ( dbfTmp )->lKitChl
+            ( dbfTmp )->( dbDelete() )
+         end
+         ( dbfTmp )->( dbSkip() )
+         SysRefresh()
+      end
+   end
+
+   if !empty( cFlt )
+      ( dbfTmp )->( dbSetFilter( c2Block( cFlt ), cFlt ) )
+   end
+
+   ( dbfTmp )->( OrdSetFocus( nOrd ) )
+   ( dbfTmp )->( dbGoTo( nRec ) )
+
+   if !empty( oBrw )
+      oBrw:Refresh()
+   end
+
+RETURN nil
+
+
+
+FUNCTION cGetNewFileName( cName, cExt, lExt, cPath )
+
+   local cTemp
+   local nId      := Val( Auth():Codigo() )
+
+   If( cExt == nil, cExt := { "Dbf", "Cdx", "Fpt" }, ) ;
+   If( lExt == nil, lExt := .F., ) ;
+   If( cPath == nil, cPath := "", ) ;
+
+   cTemp          := cName + Auth():Codigo()
+
+   if Valtype( cExt ) == "A"
+
+      while File( cPath + cTemp + "." + cExt[ 1 ] ) .OR. File( cPath + cTemp + "." + cExt[ 2 ] ) .OR. File( cPath + cTemp + "." + cExt[ 3 ] )
+         cTemp    := cName + StrZero( ++nId, 3 )
+      end
+
+   else
+
+      while File( cPath + cTemp + "." + cExt )
+         cTemp    := cName + StrZero( ++nId, 3 )
+      end
+
+   end
+
+   if lExt
+      cTemp       += "." + cExt
+   end
+
+RETURN cTemp
+
+
+
+FUNCTION CommitTransaction()
+
+
+
+
+
+   dbCommitAll()
+
+RETURN ( .T. )
+
+
+
+FUNCTION BeginTransaction()
+
+
+
+
+
+RETURN ( .T. )
+
+
+
+FUNCTION RollBackTransaction()
+
+
+
+
+
+RETURN ( .T. )
+
+
+
+FUNCTION Div( nDividend, nDivisor )
+
+RETURN( if( nDivisor <> 0, ( nDividend / nDivisor ), 0 ) )
+
+
+
+FUNCTION cFileBitmap( cPath, cFileName )
+
+   local cFileBitmap
+
+   if At( ":", cFileName ) <> 0
+      cFileBitmap       := Rtrim( cFileName )
+   else
+      cFileBitmap       := Rtrim( cPath ) + Rtrim( cFileName )
+   end
+
+RETURN ( cFileBitmap )
+
+
+
+
+
+
+
+FUNCTION dbLast( cAlias, nField, oGet, xHasta, nOrd )
+
+   local xValRet
+   local nPosAct
+   local nOrdAct
+
+   If( cAlias == nil, cAlias := Alias(), ) ;
+    If( nField == nil, nField := 1, ) ;
+
+
+
+
+
+   if IsObject( cAlias )
+      cAlias      := cAlias:cAlias
+   end
+
+   nPosAct        := ( cAlias )->( Recno() )
+
+
+
+
+
+   if nOrd <> nil
+      nOrdAct     := ( cAlias )->( OrdSetFocus( nOrd ) )
+   end
+
+   if empty( xHasta )
+      ( cAlias )->( dbGoBottom() )
+   else
+      ( cAlias )->( dbSeek( xHasta, .T., .T. ) )
+      if ( cAlias )->( eof() )
+         ( cAlias )->( dbGoBottom() )
+      end
+   end
+
+   if IsChar( nField )
+      nField      := ( cAlias )->( FieldPos( nField ) )
+   end
+   xValRet        := ( cAlias )->( FieldGet( nField ) )
+
+
+
+
+
+   ( cAlias )->( dbGoTo( nPosAct ) )
+
+   if !empty( nOrd )
+      ( cAlias )->( OrdSetFocus( nOrdAct ) )
+   end
+
+   if !empty( oGet )
+        oGet:cText( xValRet )
+      RETURN .T.
+   end
+
+RETURN ( xValRet )
+
+
+
+FUNCTION IsNil( u )
+
+RETURN ( u == nil )
+
+
+
+FUNCTION WinMulRec( oBrw, bEdit, cAlias, bWhen, bValid, xOthers )
+
+   local aTmp
+   local aGet
+   local lRETURN     := .F.
+   local nOrd        := 0
+
+   If( cAlias == nil, cAlias := Alias(), ) ;
+   If( bWhen == nil, bWhen := "", ) ;
+   If( bValid == nil, bValid := "", ) ;
+
+    IF select( cAlias ) == 0
+        RETURN .F.
+    end
+
+   if empty( ( cAlias )->( OrdSetFocus() ) )
+      nOrd        := ( cAlias )->( OrdSetFocus( 1 ) )
+   end
+
+   aTmp           := dbBlankRec( cAlias )
+   aGet           := Array( ( cAlias)->( fCount() ) )
+
+
+
+
+
+   lRETURN        := Eval( bEdit, aTmp, aGet, cAlias, oBrw, bWhen, bValid, 5, xOthers )
+   if lRETURN
+      dbSafeUnLock( cAlias )
+   end
+
+   if ValType( nOrd ) == "N" .AND. nOrd <> 0
+      ( cAlias )->( OrdSetFocus( nOrd ) )
+   end
+
+RETURN ( lRETURN )
+
+
+
+FUNCTION lMayorIgual( nTotal, nCobrado, nDiferencia )
+
+   If( nDiferencia == nil, nDiferencia := 0, ) ;
+
+   nTotal               := Abs( nTotal )
+   nCobrado             := Abs( nCobrado )
+
+RETURN ( ( nTotal >= nCobrado ) .AND. ( ( nTotal - nCobrado ) >= nDiferencia ) )
+
+
+
+FUNCTION lDiferencia( nTotal, nCobrado, nDiferencia )
+
+   If( nDiferencia == nil, nDiferencia := 0, ) ;
+
+RETURN ( abs( nTotal - nCobrado ) >= nDiferencia )
+
+
+
+FUNCTION dbPass( cAliOrigen, cAliDestino, lApp, xField1, xField2, xField3, xField4, xField5 )
+
+    local i
+   local cNom
+    local    xVal
+   local nPos
+   local lPass    := .F.
+   local nField   := ( cAliDestino )->( fCount() )
+
+    If( lApp == nil, lApp := .F., ) ;
+
+   if lApp
+
+      ( cAliDestino )->( dbAppend() )
+
+      if ( cAliDestino )->( !NetErr() )
+
+         for i = 1 to nField
+
+            cNom     := ( cAliDestino )->( FieldName( i ) )
+            nPos     := ( cAliOrigen  )->( FieldPos( cNom ) )
+
+            if nPos <> 0
+               xVal  := ( cAliOrigen )->( FieldGet( nPos ) )
+               ( cAliDestino )->( FieldPut( i, xVal ) )
+            end
+
+         next
+
+         if !empty( xField1 )
+            ( cAliDestino )->( FieldPut( 1, xField1 ) )
+         end
+
+         if !empty( xField2 )
+            ( cAliDestino )->( FieldPut( 2, xField2 ) )
+         end
+
+         if !empty( xField3 )
+            ( cAliDestino )->( FieldPut( 3, xField3 ) )
+         end
+
+         if !empty( xField4 )
+            ( cAliDestino )->( FieldPut( 4, xField4 ) )
+         end
+
+         if !empty( xField5 )
+            ( cAliDestino )->( FieldPut( 5, xField5 ) )
+         end
+
+         dbSafeUnlock( cAliDestino )
+
+         lPass       := .T.
+
+      end
+
+   else
+
+      if ( cAliDestino )->( dbRLock() )
+
+         for i = 1 to nField
+
+            cNom     := ( cAliDestino )->( FieldName( i ) )
+            nPos     := ( cAliOrigen  )->( FieldPos( cNom ) )
+
+            if nPos <> 0
+               xVal  := ( cAliOrigen )->( FieldGet( nPos ) )
+               ( cAliDestino )->( FieldPut( i, xVal ) )
+            end
+
+         next
+
+         if !empty( xField1 )
+            ( cAliDestino )->( FieldPut( 1, xField1 ) )
+         end
+
+         if !empty( xField2 )
+            ( cAliDestino )->( FieldPut( 2, xField2 ) )
+         end
+
+         if !empty( xField3 )
+            ( cAliDestino )->( FieldPut( 3, xField3 ) )
+         end
+
+         if !empty( xField4 )
+            ( cAliDestino )->( FieldPut( 4, xField4 ) )
+         end
+
+         if !empty( xField5 )
+            ( cAliDestino )->( FieldPut( 5, xField5 ) )
+         end
+
+         dbSafeUnLock( cAliDestino )
+
+         lPass       := .T.
+
+      end
+
+   end
+
+RETURN ( lPass )
+
+
+
+FUNCTION appendRegisterByHash( cAliOrigen, cAliDestino, hHash )
+
+   local lPass    := .F.
+
+   ( cAliDestino )->( dbAppend(.T.) )
+
+   if !( cAliDestino )->( NetErr() )
+
+      passField( cAliOrigen, cAliDestino )
+
+      passHash( cAliDestino, hHash )
+
+      ( cAliDestino )->( dbUnLock() )
+
+      lPass       := .T.
+
+   end
+
+RETURN ( lPass )
+
+
+
+FUNCTION EditPass( cAliOrigen, cAliDestino, hHash )
+
+   if ( cAliDestino )->( dbRLock() )
+
+      PassField( cAliOrigen, cAliDestino )
+
+      PassHash( cAliDestino, hHash )
+
+      dbSafeUnLock( cAliDestino )
+
+   end
+
+RETURN ( .T. )
+
+
+
+FUNCTION PassField( cAliOrigen, cAliDestino )
+
+   local i
+   local uValue
+   local cFieldName
+   local nFieldPosition
+   local nFieldTotal    := ( cAliDestino )->( fcount() )
+
+   for i := 1 to nFieldTotal
+
+      cFieldName        := ( cAliDestino )->( fieldname( i ) )
+      nFieldPosition    := ( cAliOrigen  )->( fieldpos( cFieldName ) )
+
+      if nFieldPosition <> 0
+         uValue         := ( cAliOrigen )->( fieldget( nFieldPosition ) )
+         ( cAliDestino )->( fieldput( i, uValue ) )
+      end
+
+   next
+
+RETURN ( .T. )
+
+
+
+FUNCTION PassHash( cAliDestino, hHash )
+
+   local h
+   local nPos
+
+   if empty(hHash)
+      RETURN ( .T. )
+   end
+
+   for each h in hHash
+      nPos     := ( cAliDestino )->( fieldpos( h:__enumKey() ) )
+      if nPos <> 0
+         ( cAliDestino )->( fieldput( nPos, h:__enumValue() ) )
+      end
+   next
+
+RETURN ( .T. )
+
+
+
+FUNCTION IsTrue( u )
+
+RETURN ( Valtype( u ) == "L" .AND. u )
+
+
+
+FUNCTION isFalse( u )
+
+RETURN ( hb_islogical( u ) .AND. !( u ) )
+
+
+
+FUNCTION ValidEmailAddress( cMail, lMessage )
+
+   local lValid      := .T.
+
+   If( lMessage == nil, lMessage := .F., ) ;
+
+   lValid            := empty( cMail ) .OR. HB_RegExMatch( "[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}", cMail, .F. )
+
+   if !lValid .AND. lMessage
+      MsgStop( "La dirección de mail introducida no es correcta" )
+   end
+
+RETURN ( lValid )
+
+
+
+FUNCTION IsChar( u )
+
+RETURN ( Valtype( u ) == "C" )
+
+
+
+FUNCTION IsNum( u )
+
+RETURN ( Valtype( u ) == "N" )
+
+
+
+FUNCTION IsLogic( u )
+
+RETURN ( Valtype( u ) == "L" )
+
+
+
+FUNCTION IsObject( u )
+
+RETURN ( Valtype( u ) == "O" )
+
+
+
+FUNCTION IsDate( u )
+
+RETURN ( Valtype( u ) == "D" )
+
+
+
+FUNCTION IsBlock( u )
+
+RETURN ( Valtype( u ) == "B" )
+
+
+
+FUNCTION IsInteger( u )
+
+RETURN ( u - int( u ) == 0 )
+
+
+
+
+
+
+FUNCTION dbGather( aField, cAlias, lAppend )
+
+   local i
+
+   If( lAppend == nil, lAppend := .F., ) ;
+
+   if dbLock( cAlias, If( lAppend, 3, 2 ) )
+      for i := 1 to Len( aField )
+         ( cAlias )->( FieldPut( i, aField[ i ] ) )
+      next
+      dbSafeUnlock( cAlias )
+   end
+
+
+
+RETURN Nil
+
+
+
+FUNCTION DisableMainWnd( oWnd )
+
+   local oBlock
+
+   If( oWnd == nil, oWnd := oWnd(), ) ;
+
+   oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   if !empty( oWnd:oMenu )
+      oWnd:oMenu:Disable()
+   end
+
+   if !empty( oWnd:oTop:oTop )
+      oWnd:oTop:oTop:Disable()
+   end
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( nil )
+
+
+
+FUNCTION EnableMainWnd( oWnd )
+
+   local oBlock
+
+   If( oWnd == nil, oWnd := oWnd(), ) ;
+
+   oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   if !empty( oWnd:oMenu )
+      oWnd:oMenu:Enable()
+   end
+
+   if !empty( oWnd:oTop:oTop )
+      oWnd:oTop:oTop:Enable()
+   end
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( nil )
+
+
+
+FUNCTION IsLock( cAlias )
+
+   local n
+   local a  := ( cAlias )->( dbRLockList() )
+
+   for each n in a
+
+      if ( n == ( cAlias )->( Recno() ) )
+         RETURN .T.
+      end
+   end
+
+RETURN .F.
+
+
+
+FUNCTION pdaLockSemaphore( cAlias )
+
+   local h
+   local cFile := cPatLog() + Alltrim( Str( ( cAlias )->( Recno() ) ) ) + ".txt"
+
+   if !file( cFile )
+      h        := fCreate( cFile, 0 )
+      if h <> -1
+         fClose( h )
+      end
+   end
+
+RETURN .T.
+
+
+
+FUNCTION pdaUnLockSemaphore( cAlias )
+
+   local cFile := cPatLog() + Alltrim( Str( ( cAlias )->( Recno() ) ) ) + ".txt"
+
+   if file( cFile )
+      fErase( cFile )
+   end
+
+RETURN .T.
+
+
+
+FUNCTION pdaIsLockSemaphore( cAlias )
+
+RETURN ( file( cPatLog() + Alltrim( Str( ( cAlias )->( Recno() ) ) ) + ".txt" ) )
+
+
+
+FUNCTION AdsFile( cFile )
+
+   local cAdsFile
+
+   if empty( aAdsDirectory )
+      aAdsDirectory  := AdsDirectory()
+   end
+
+   for each cAdsFile in aAdsDirectory
+
+      if ( cAdsFile == cFile )
+         RETURN .T.
+      end
+
+   next
+
+RETURN .F.
+
+
+
+FUNCTION ApoloBreak( oError )
+
+RETURN ( if( oError:GenCode == 5, 0, Break( oError ) ) )
+
+
+
+FUNCTION Quoted( uValue )
+
+   if ( hb_isnumeric( uValue ) )
+      RETURN ( alltrim( str( uValue ) ) )
+   end
+
+   if ( hb_ischar( uValue ) .OR. hb_ismemo( uValue ) )
+      RETURN ( "'" + alltrim( uValue ) + "'" )
+   end
+
+RETURN ( "''" )
+
+
+
+FUNCTION AdsQuoted( uValue )
+
+   if ( hb_isnumeric( uValue ) )
+      RETURN ( str( uValue ) )
+   end
+
+   if ( hb_ischar( uValue ) .OR. hb_ismemo( uValue ) )
+      RETURN ( "'" + uValue + "'" )
+   end
+
+RETURN ( "''" )
+
+
+
+FUNCTION toSQLString( value )
+
+   do case
+      case hb_isnil( value ) ;      RETURN ( "null" )
+      case hb_isnumeric( value ) ;  RETURN ( alltrim( str( value ) ) )
+      case hb_ischar( value ) ;     RETURN ( quoted( rtrim( value ) ) )
+      case hb_islogical( value ) ;  RETURN ( if( value, "1", "0" ) )
+      case hb_isdate( value ) ;     RETURN ( if( empty( value ), "null", quoted( hb_dtoc( value, "yyyy-mm-dd" ) ) ) )
+      case hb_isdatetime( value ) ; RETURN ( quoted( hb_tstostr( value ) ) )
+      case hb_ismemo( value ) ;     RETURN ( quoted( rtrim( value ) ) )
+   end
+
+RETURN ( value )
+
+
+
+FUNCTION toAdsSQLString( value )
+
+   do case
+      case hb_isnil( value ) ;      RETURN ( "null" )
+      case hb_isnumeric( value ) ;  RETURN ( alltrim( str( value ) ) )
+      case hb_ischar( value ) ;     RETURN ( AdsQuoted( value ) )
+      case hb_islogical( value ) ;  RETURN ( if( value, "1", "0" ) )
+      case hb_isdate( value ) ;     RETURN ( if( empty( value ), "null", AdsQuoted( hb_dtoc( value, "yyyy-mm-dd" ) ) ) )
+      case hb_isdatetime( value ) ; RETURN ( AdsQuoted( hb_tstostr( value ) ) )
+      case hb_ismemo( value ) ;     RETURN ( AdsQuoted( value ) )
+   end
+
+RETURN ( value )
+
+
+
+FUNCTION Chiled( cString )
+
+RETURN ( Space( 3 ) + "<" + Alltrim( cString ) + ">" )
+
+
+
+FUNCTION lChangeStruct( cAlias, aStruct )
+
+   local i
+   local aAliasStruct
+
+   if ( cAlias )->( fCount() ) <> len( aStruct )
+      RETURN .T.
+   end
+
+   aAliasStruct         := ( cAlias )->( dbStruct() )
+
+   for i := 1 to ( cAlias )->( fCount() )
+
+
+
+
+      if Upper( aAliasStruct[ i, 1 ] ) <> Upper( aStruct[ i, 1 ] ) .OR.  aAliasStruct[ i, 2 ] <> aStruct[ i, 2 ] .OR.  aAliasStruct[ i, 3  ] <> aStruct[ i, 3  ] .OR.  aAliasStruct[ i, 4  ] <> aStruct[ i, 4  ]
+
+         RETURN .T.
+
+      end
+
+   next
+
+RETURN .F.
+
+
+
+FUNCTION dbDialog( cTitle )
+
+   local j
+   local n
+   local oDlg
+   local oGet
+   local oFont
+   local oError
+   local oBlock
+   local nTarget
+   local nAreas      := 0
+   local cErrorLog
+
+   If( cTitle == nil, cTitle := "Bases de datos abiertas", ) ;
+
+   oBlock            := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   if lAis()
+      msgStop( TDataCenter():GetAllLocksTablesUsers() )
+   end
+
+   for n = 1 to 255
+      if !empty( alias( n ) )
+         nAreas++
+      end
+   next
+
+   oFont             := TFont():New( "Ms Sans Serif", 0, -10, .F., .F. )
+
+
+
+
+   oDlg = TDialog():New(,,,, cTitle + ":" + str( nAreas),,, .F.,,,,,, .F.,, oFont,, 300, 200 + If( IsWinNT(), 50, 0 ), .F.,, "oDlg", nil, )
+
+   cErrorLog         := Chr(13)+Chr(10) + "DataBases in use" + Chr(13)+Chr(10) + "================" + Chr(13)+Chr(10)
+
+   for n = 1 to nAreas
+
+      if ! empty( Alias( n ) )
+
+
+
+         cErrorLog   += Chr(13)+Chr(10) + Str( n, 3 ) + ": " + If( select() == n,"=> ", "   " ) +  PadR( Alias( n ), 15 ) + Space( 20 ) + "RddName: " +  ( Alias( n ) )->( RddName() ) + Chr(13)+Chr(10)
+         cErrorLog   += "     ==============================" + Chr(13)+Chr(10)
+         cErrorLog   += "     RecNo    RecCount    BOF   EOF" + Chr(13)+Chr(10)
+
+
+
+         cErrorLog   += "    " + Transform( ( Alias( n ) )->( RecNo() ), "99999" ) +  "      " + Transform( ( Alias( n ) )->( RecCount() ), "99999" ) +  "      " + cValToChar( ( Alias( n ) )->( BoF() ) ) +  "   " + cValToChar( ( Alias( n ) )->( EoF() ) ) + Chr(13)+Chr(10) + Chr(13)+Chr(10)
+         cErrorLog   += "     Indexes in use " + Space( 23 ) + "TagName" + Chr(13)+Chr(10)
+
+         for j = 1 to 15
+
+            if ! empty( ( Alias( n ) )->( IndexKey( j ) ) )
+
+
+
+
+
+               cErrorLog   += Space( 8 ) +  If( ( Alias( n ) )->( OrdNumber() ) == j, "=> ", "   " ) +  PadR( ( Alias( n ) )->( IndexKey( j ) ), 35 ) +  ( Alias( n ) )->( OrdName( j ) ) +  Chr(13)+Chr(10)
+            endif
+
+         next
+
+         cErrorLog   += Chr(13)+Chr(10) + "     Relations in use" + Chr(13)+Chr(10)
+
+         for j = 1 to 8
+
+            if ! empty( ( nTarget := ( Alias( n ) )->( DbRselect( j ) ) ) )
+
+
+
+               cErrorLog += Space( 8 ) + Str( j ) + ": " +  "TO " + ( Alias( n ) )->( DbRelation( j ) ) +  " INTO " + Alias( nTarget ) + Chr(13)+Chr(10)
+
+
+
+            endif
+
+         next
+
+      endif
+
+   next
+
+   memoWritex( "dbDialog.log", cErrorLog )
+
+
+
+
+
+   oGet := TMultiGet():New( 0, 0, { | u | If( PCount()==0, cErrorLog, cErrorLog:= u ) }, oDlg, 149, 100, oFont, .F.,,,, .F.,, .F.,, .F., .F., .F.,,, .F.,, )
+
+
+
+
+
+
+
+   TButton():New( 87 + If( IsWinNT(), 24, 0 ), 60, "&Quit", oDlg, {||   ( oDlg:End() )}, 30, 12,, oFont, .T., .T., .F.,, .F.,,, .F.,, .F. )
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   oFont:End()
+
+   RECOVER USING oError
+
+      msgStop( cErrorLog, ErrorMessage( oError ) )
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN NIL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FUNCTION ValToMoney( cMoney )
+
+RETURN ( Val( StrTran( cMoney, ",", "." ) ) )
+
+
+
+FUNCTION LineDown( cAlias, oBrw )
+
+RETURN ( lineReposition( cAlias, oBrw, .F. ) )
+
+
+
+FUNCTION LineDownOld( cAlias, oBrw )
+
+RETURN ( lineRepositionOld( cAlias, oBrw, .F. ) )
+
+
+
+FUNCTION LineUp( cAlias, oBrw )
+
+RETURN ( lineReposition( cAlias, oBrw, .T. ) )
+
+
+
+FUNCTION LineUpOld( cAlias, oBrw )
+
+RETURN ( lineRepositionOld( cAlias, oBrw, .T. ) )
+
+
+
+FUNCTION lineReposition( cAlias, oBrw, lUp )
+
+   local nOrdNum
+   local nRecNum
+   local nOldNum
+   local nNewNum
+   local currentAlias
+
+   If( lUp == nil, lUp := .T., ) ;
+
+   if ( cAlias )->( fieldpos( "nPosPrint" ) ) == 0
+      RETURN .F.
+   end
+
+   nOrdNum        := ( cAlias )->( OrdSetFocus( "nPosPrint" ) )
+
+   if ( lUp .AND. ( cAlias )->( OrdKeyNo() ) == 1 )
+      ( cAlias )->( OrdSetFocus( nOrdNum ) )
+      RETURN .F.
+   end
+
+   if ( !lUp .AND. ( cAlias )->( OrdKeyNo() ) == ( cAlias )->( OrdKeyCount() ) )
+      ( cAlias )->( OrdSetFocus( nOrdNum ) )
+      RETURN .F.
+   end
+
+   CursorWait()
+
+   nRecNum        := ( cAlias )->( RecNo() )
+   nOldNum        := ( cAlias )->nPosPrint
+
+   if lUp
+      ( cAlias )->( dbSkip(-1) )
+   else
+      ( cAlias )->( dbSkip() )
+   end
+
+   nNewNum        := ( cAlias )->nPosPrint
+
+
+
+   swapLines( nOldNum, nNewNum, cAlias )
+
+
+
+   ( cAlias )->( OrdSetFocus( nOrdNum ) )
+   ( cAlias )->( dbGoTo( nRecNum ) )
+
+   CursorWE()
+
+   if !empty( oBrw )
+      oBrw:Refresh()
+      oBrw:select( 0 )
+      oBrw:select( 1 )
+      oBrw:SetFocus()
+   end
+
+RETURN ( nil )
+
+
+
+FUNCTION lineRepositionOld( cAlias, oBrw, lUp )
+
+   local nOrdNum
+   local nRecNum
+   local nOldNum
+   local nNewNum
+   local currentAlias
+
+   If( lUp == nil, lUp := .T., ) ;
+
+   if ( cAlias )->( fieldpos( "nNumLin" ) ) == 0
+      RETURN .F.
+   end
+
+   nOrdNum        := ( cAlias )->( OrdSetFocus( "nNumLin" ) )
+
+   if ( lUp .AND. ( cAlias )->( OrdKeyNo() ) == 1 )
+      ( cAlias )->( OrdSetFocus( nOrdNum ) )
+      RETURN .F.
+   end
+
+   if ( !lUp .AND. ( cAlias )->( OrdKeyNo() ) == ( cAlias )->( OrdKeyCount() ) )
+      ( cAlias )->( OrdSetFocus( nOrdNum ) )
+      RETURN .F.
+   end
+
+   CursorWait()
+
+   nRecNum        := ( cAlias )->( RecNo() )
+   nOldNum        := ( cAlias )->nNumLin
+
+   if lUp
+      ( cAlias )->( dbSkip(-1) )
+   else
+      ( cAlias )->( dbSkip() )
+   end
+
+   nNewNum        := ( cAlias )->nNumLin
+
+
+
+   swapLines( nOldNum, nNewNum, cAlias )
+
+
+
+   ( cAlias )->( OrdSetFocus( nOrdNum ) )
+   ( cAlias )->( dbGoTo( nRecNum ) )
+
+   CursorWE()
+
+   if !empty( oBrw )
+      oBrw:Refresh()
+      oBrw:select( 0 )
+      oBrw:select( 1 )
+      oBrw:SetFocus()
+   end
+
+RETURN ( nil )
+
+
+
+Static FUNCTION swapLines( nOldNum, nNewNum, cAlias )
+
+   lineMove( nOldNum, -1, cAlias )
+   lineMove( nNewNum, nOldNum, cAlias )
+   lineMove( -1, nNewNum, cAlias )
+
+RETURN ( nil )
+
+
+
+Static FUNCTION swapLinesOld( nOldNum, nNewNum, cAlias )
+
+   lineMoveOld( nOldNum, -1, cAlias )
+   lineMoveOld( nNewNum, nOldNum, cAlias )
+   lineMoveOld( -1, nNewNum, cAlias )
+
+RETURN ( nil )
+
+
+
+Static FUNCTION LineMove( nOldNum, nNewNum, cAlias )
+
+   local ordenAnterior  := ( cAlias )->( ordsetfocus( 0 ) )
+
+   ( cAlias )->( dbgotop() )
+   while !( cAlias )->( eof() )
+
+      if ( cAlias )->nPosPrint == nOldNum
+         ( cAlias )->nPosPrint := nNewNum
+      end
+
+      ( cAlias )->( dbSkip() )
+
+   end
+
+   ( cAlias )->( ordsetfocus( ordenAnterior ) )
+
+RETURN nil
+
+
+
+Static FUNCTION LineMoveOld( nOldNum, nNewNum, cAlias )
+
+   local ordenAnterior  := ( cAlias )->( ordsetfocus( 0 ) )
+
+   ( cAlias )->( dbgotop() )
+   while !( cAlias )->( eof() )
+
+      if ( cAlias )->nNumLin == nOldNum
+         ( cAlias )->nNumLin := nNewNum
+      end
+
+      ( cAlias )->( dbSkip() )
+
+   end
+
+   ( cAlias )->( ordsetfocus( ordenAnterior ) )
+
+RETURN nil
+
+
+
+FUNCTION DeleteFilesToDirectory( cPath )
+
+   local cDirectory
+   local aDirectory     := Directory( cPath + "/*.*" )
+
+   for each cDirectory in aDirectory
+      FErase( ( cPath + "/" + cDirectory[ 1 ] ) )
+   next
+
+RETURN .T.
+
+
+
+FUNCTION PutBrackets( cText )
+
+RETURN ( "[" + QuitBrackets( cText ) + "]" )
+
+
+
+FUNCTION QuitBrackets( cText )
+
+   cText    := strtran( cText, "[", "" )
+   cText    := strtran( cText, "]", "" )
+
+RETURN ( alltrim( cText ) )
+
+
+
+FUNCTION DateToString( dDate )
+
+   local cDateFormat    := set( 4, "yyyy/mm/dd" )
+   local strDate        := if( dDate <> nil, dtos( dDate ), dtos( date() ) )
+   set( 4, cDateFormat )
+
+RETURN( strDate )
+
+
+
+FUNCTION DateToSQLString( dDate )
+
+   local cDateFormat    := set( 4, "yyyy-mm-dd" )
+   local strDate        := if( dDate <> nil, dtoc( dDate ), dtoc( date() ) )
+   set( 4, cDateFormat )
+
+RETURN( strDate )
+
+
+
+
+FUNCTION DlgWait( nRetardo )
+
+   local nSeconds
+
+   If( nRetardo == nil, nRetardo := 0.1, ) ;
+
+   nSeconds          := Seconds() + nRetardo
+
+   while nSeconds >= Seconds()
+   end
+
+RETURN ( nil )
+
+
+
+FUNCTION nRedondeaVenta( nValor )
+
+RETURN ( Round( nValor, nRouDiv() ) )
+
+
+
+FUNCTION nCalculaDescuentoVenta( nValor, nDescuento )
+
+   local nTotalDescuento   := 0
+
+   if nDescuento <> 0
+      nValor               := nRedondeaVenta( nValor )
+      nTotalDescuento      := nValor * nDescuento / 100
+      nTotalDescuento      := nRedondeaVenta( nTotalDescuento )
+   end
+
+RETURN ( nTotalDescuento )
+
+
+
+FUNCTION nRestaDescuentoVenta( nValor, nDescuento )
+
+   nValor -= nCalculaDescuentoVenta( nValor, nDescuento )
+
+RETURN ( nValor )
+
+
+
+FUNCTION setLenguajeSegundario( cLenguaje )
+
+   if !empty( cLenguaje )
+      cLenguajeSegundario  := cLenguaje
+   end
+
+RETURN( .T. )
+
+
+
+FUNCTION getLenguajeSegundario()
+
+RETURN cLenguajeSegundario
+
+
+
+FUNCTION fieldGetByName( cFieldName )
+
+   if empty( alias() )
+      RETURN ""
+   end
+
+RETURN ( ( alias() )->( fieldget( fieldpos( cFieldName ) ) ) )
+
+
+
+FUNCTION hGetDefault( hash, key, default )
+
+   if hhaskey( hash, key )
+      RETURN ( hGet( hash, key ) )
+   end
+
+RETURN ( default )
+
+
+
+_HB_CLASS excluyentArray ; function excluyentArray ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "excluyentArray", iif( .F., { }, { @HBObject() } ), @excluyentArray() ) ) ;
+
+   _HB_MEMBER { aArray } ; oClass:AddMultiClsData(, {}, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aArray"}, .F. )
+
+   _HB_MEMBER Init(); oClass:AddInline( "Init", {|Self | ( ( Self ) ), ( ::aArray := {} ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Add(); oClass:AddInline( "Add", {|Self, uValue | ( ( Self ) ), ( if( aScan( ::aArray, uValue ) == 0, aAdd( ::aArray, uValue ), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Get(); oClass:AddInline( "Get", {|Self, n | ( ( Self ) ), ( if( empty(n), ::aArray, ::aArray[ n ] ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER empty(); oClass:AddInline( "empty", {|Self | ( ( Self ) ), ( empty( ::aArray ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS excluyentArray ;
+
+
+
+FUNCTION CaptureSignature( cFile )
+
+   local oDlg
+   local lSig        := .F.
+   local oSig
+   local lPaint      := .F.
+   local hDC
+   local lReset      := .F.
+   local oBrush
+   local nPenWidth   := 4
+   local oPenSig
+   local nTop        := 2
+   local nBottom     := 0
+   local aCoord
+   local nColor      := 16777215
+   local oRichEdit
+   local cConditions := "Por favor cumplimente el fichero Conditions.txt, en el directorio Config de su empresa"
+
+   oBrush            := TBrush():New( , nColor )
+
+   if file( cPatConfig() + cCodEmp() + "\conditions.txt" )
+      cConditions    := memoread( cPatConfig() + cCodEmp() + "\conditions.txt" )
+   end
+
+   oDlg = TDialog():New(,,,, "Firma", "DLG_SIGNATURE",, .F.,,,,,, .T.,,,,,, .F.,, "oDlg", nil, )
+
+   oPenSig := TPen():New(, nPenWidth, 0, )
+
+   oRichEdit         := GetRichEdit():ReDefine( 600, oDlg )
+
+   oRichEdit:oRTF:setText( cConditions )
+
+
+
+
+
+
+
+
+
+
+   TCheckBox():ReDefine( 210, { | u | If( PCount()==0, lSig, lSig:= u ) }, oDlg,,,,,,, .F.,, .F. )
+
+
+
+
+   oSig := TSay():ReDefine( 200, {||         ""}, oDlg,,,, .F.,, .F., .F., )
+
+   oSig:nClrPane     := nRgb( 255,255,255 )
+   oSig:oBrush       := oBrush
+
+
+
+
+
+
+   TButton():ReDefine( 100, {||( oSig:SaveToBmp( cFile ), oDlg:End( 1 ) )}, oDlg,,, .T., {||           ( lSig )},,, .F. )
+
+
+
+
+   TButton():ReDefine( 101, {||( oDlg:End() )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+
+
+   TButton():ReDefine( 102, {||(  lPaint := .F.,  fillRect( hDC, GetClientRect( oSig:hWnd ), oBrush:hBrush ),  oSig:refresh( .T. ) )}, oDlg,,, .F.,,,, .F. )
+
+   oSig:lWantClick   := .T.
+
+
+
+   oSig:bLButtonUp   := { | y, x, z | DoDraw( hDC, x, y, lPaint := .F.,, oPenSig ) }
+
+
+
+   oSig:bMMoved      := { | y, x, z | lReset := ( y >= nBottom .OR. y <= nTop ), DoDraw( hDC, x, y , lPaint, lReset, oPenSig ) }
+   oSig:bLClicked    := { | y, x, z | DoDraw( hDC, x, y, lPaint := .T., .T., oPenSig  ) }
+
+
+
+   oDlg:bLButtonUp   := { || lPaint := .F. }
+
+
+
+
+
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T., {|Self|( releaseDC( oSig:hWnd, hDC ), .T. )},, {|Self|(  aCoord         := GetCoors( oSig:hWnd ),  nBottom        := aCoord[3] - aCoord[1] - 2,  hDC            := GetDC( oSig:hWnd ), oSig:nClrPane  := nColor )}, oDlg:bRClicked,,, )
+
+   oPenSig:End() ; oPenSig := nil
+
+RETURN ( oDlg:nResult == 1 )
+
+Static FUNCTION DoDraw( hDc, x, y, lPaint, lReset, oPen )
+
+   if ! lPaint .OR. ( lReset <> nil .AND. lReset )
+      MoveTo( hDC, x, y )
+   else
+      LineTo( hDc, x, y, oPen:hPen )
+   endif
+
+   sysRefresh()
+
+RETURN nil
+
+FUNCTION signatureToMemo()
+
+   local hBmp
+   local cMemo
+   local cFile    := cPatTmp() + "signature.bmp"
+
+   if captureSignature( cFile ) .AND. file( cFile )
+
+      hBmp        := readBitMap( 0, cFile )
+      if !empty( hBmp )
+         cMemo    := bmpToStr( hBmp )
+      end
+
+      deleteObject( hBmp )
+
+   end
+
+RETURN ( cMemo )
+
+
+
+
+
+FUNCTION assertUserActive( uuidUsuario )
+
+   local nHandle
+
+   uuidUsuario    := alltrim( uuidUsuario )
+
+   if file( cPatUsr() + uuidUsuario + ".usr" )
+      RETURN ( .T. )
+   end
+
+   nHandle        := fcreate( cPatUsr() + uuidUsuario + ".usr", 0 )
+   if ( nHandle <> ( -1 ) )
+      fClose( nHandle )
+   end
+
+RETURN ( .T. )
+
+
+
+FUNCTION isUserActive( uuidUsuario, lClose )
+
+   local nHandle
+
+   If( lClose == nil, lClose := .T., ) ;
+
+   uuidUsuario    := alltrim( uuidUsuario )
+
+   assertUserActive( uuidUsuario )
+
+   nHandle        := fopen( cPatUsr() + uuidUsuario + ".usr", 16 )
+
+   if ( nHandle == ( -1 ) )
+      RETURN ( .T. )
+   end
+
+   if lClose
+      fClose( nHandle )
+   end
+
+RETURN ( .F. )
+
+
+
+FUNCTION setUserActive( uuidUsuario )
+
+RETURN ( isUserActive( uuidUsuario, .F. ) )
+
+
+
+FUNCTION debug( uValue, cTitle )
+
+RETURN ( msgAlert( hb_valtoexp( uValue ), cTitle ) )
+
+
+
+FUNCTION setCustomFilter( cExpresionFilter )
+
+   if lAIS()
+      ( select() )->( adsSetAOF( cExpresionFilter ) )
+   else
+      ( select() )->( dbSetFilter( bCheck2Block( cExpresionFilter ), cExpresionFilter ) )
+   end
+
+RETURN ( nil )
+
+
+
+FUNCTION quitCustomFilter()
+
+   if lAIS()
+      ( select() )->( adsClearAOF() )
+   else
+      ( select() )->( dbSetFilter() )
+   end
+
+RETURN ( nil )
+
+
+
+FUNCTION dbCustomKeyCount()
+
+   if lAIS()
+      RETURN ( ( select() )->( adsKeyCount( , , 1 ) ) )
+   end
+
+RETURN ( ( select() )->( ordkeycount() ) )
+
+
+
+FUNCTION isAppendOrDuplicateMode( nMode )
+
+RETURN ( nMode == 1 .OR. nMode == 4 )
+
+
+
+FUNCTION isAppendMode( nMode )
+
+RETURN ( nMode == 1 )
+
+
+
+FUNCTION isEditMode( nMode )
+
+RETURN ( nMode == 2 )
+
+
+
+FUNCTION priorSecond( time )
+
+   time  := ( substr( time, 1, 2 ) + ":" + substr( time, 3, 2 ) + ":" + substr( time, 5, 2 ) )
+   time  := secToTime( timeToSec( time ) - 1 )
+   time  := strtran( time, ":", "" )
+
+RETURN ( time )
+
+
+
+FUNCTION dialogArticulosScaner()
+
+   local oDlg
+   local memoArticulos
+
+   oDlg = TDialog():New(,,,,, "IMPORTAR_INVENTARIO",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+      TMultiGet():ReDefine( 110, { | u | If( PCount()==0, memoArticulos, memoArticulos:= u ) }, oDlg,,,,,,, .F.,, .F.,, )
+
+
+
+
+      TButton():ReDefine( 1, {||( oDlg:end( 1 ) )}, oDlg,,, .F.,,,, .F. )
+
+
+
+
+
+      TButton():ReDefine( 2, {||( oDlg:end() )}, oDlg,,, .F.,,,, .T. )
+
+   oDlg:AddFastKey( 116, {|| oDlg:end( 1 ) } )
+
+   oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   if oDlg:nResult == 1
+      RETURN ( alltrim( memoArticulos ) )
+   end
+
+RETURN ( nil )
+
+
+
+FUNCTION transIdDocument( id )
+
+RETURN ( strtran( trans( id, "@R X/XXXXXXXXX/XX" ), " ", "" ) )
+
+
+
+FUNCTION cNoBrackets( cFileName )
+
+   local n           := rat( "[", cFileName )
+
+   if ( n <> 0 )
+      cFileName      := substr( cFileName, 1, n - 1 )
+   end
+
+RETURN ( cFileName )
+
+
+
+FUNCTION trimedSeconds()
+
+RETURN ( alltrim( strtran( str( seconds() ), ".", "" ) ) )
+
+
+
+FUNCTION serializeArray( aArray )
+
+   local cSerialized    := ""
+
+   if empty( aArray )
+      RETURN ( cSerialized )
+   end
+
+   aeval( aArray, {|elem| cSerialized += alltrim( elem ) + "," } )
+
+   cSerialized          := left( cSerialized, len( cSerialized ) - 1 )
+
+RETURN ( cSerialized )
+
+
+
+FUNCTION aFirst( aArray )
+
+   if !hb_isarray( aArray ) .OR. len( aArray ) = 0
+      RETURN ( nil )
+   end
+
+RETURN ( aArray[ 1 ] )
+
+
+
+FUNCTION getHashFromWorkArea( cAlias )
+
+   local n
+   local hash        := {=>}
+
+   if empty( cAlias )
+      RETURN ( hash )
+   end
+
+   for n := 1 to ( cAlias )->( fcount() )
+      hSet( hash, lower( ( cAlias )->( fieldname( n ) ) ), ( cAlias )->( fieldget( n ) ) )
+   next
+
+RETURN ( hash )
+
+
+
+FUNCTION fetchHashFromWorkArea( cAlias )
+
+   local aFetch   := {}
+
+   ( cAlias )->( dbeval( {|| aadd( aFetch, getHashFromWorkArea( cAlias ) ) } ) )
+
+RETURN ( aFetch )
+
+
+
+FUNCTION externalObjectSender( cMsg, u1, u2, u3, u4, u5, u6, u7, u8, u9, u10 )
+
+   local nPos
+   local uRETURN
+   local cObject
+
+   if empty( cMsg )
+      RETURN ( "" )
+   end
+
+   nPos        := at( ":", cMsg )
+   if nPos == 0
+      RETURN ( "" )
+   end
+
+   cObject     := substr( cMsg, 1, nPos - 1 )
+
+   cMsg        := strtran( cMsg, cObject, "" )
+   cMsg        := strtran( cMsg, ":", "" )
+
+   BEGIN SEQUENCE WITH {| oErr | Break( oErr ) }
+
+      uRETURN  := apoloSender( &( cObject ), cMsg, u1, u2, u3, u4, u5, u6, u7, u8, u9, u10 )
+
+   RECOVER
+
+      msgStop( "Error en la expresión : " + cMsg )
+
+   end
+
+RETURN ( uRETURN )
+
+
+
+FUNCTION ApoloSender( oObject, cMsg, u1, u2, u3, u4, u5, u6, u7, u8, u9, u10 )
+
+   cMsg           := StrTran( cMsg, "()", "" )
+
+   do case
+      case IsNil( u1 )
+         RETURN ( oObject:&( cMsg )() )
+
+      case IsNil( u2 )
+         RETURN ( oObject:&( cMsg )( u1 ) )
+
+      case IsNil( u3 )
+         RETURN ( oObject:&( cMsg )( u1, u2 ) )
+
+      case IsNil( u4 )
+         RETURN ( oObject:&( cMsg )( u1, u2, u3 ) )
+
+      case IsNil( u5 )
+         RETURN ( oObject:&( cMsg )( u1, u2, u3, u4 ) )
+
+      case IsNil( u6 )
+         RETURN ( oObject:&( cMsg )( u1, u2, u3, u4, u5 ) )
+
+      case IsNil( u7 )
+         RETURN ( oObject:&( cMsg )( u1, u2, u3, u4, u5, u6 ) )
+
+      case IsNil( u8 )
+         RETURN ( oObject:&( cMsg )( u1, u2, u3, u4, u5, u6, u7 ) )
+
+      case IsNil( u9 )
+         RETURN ( oObject:&( cMsg )( u1, u2, u3, u4, u5, u6, u7, u8 ) )
+
+      case IsNil( u10 )
+         RETURN ( oObject:&( cMsg )( u1, u2, u3, u4, u5, u6, u7, u8, u9 ) )
+
+      otherwise
+         RETURN ( oObject:&( cMsg )( u1, u2, u3, u4, u5, u6, u7, u8, u9, u10 ) )
+
+   end
+
+RETURN ( nil )
+
+
+
+FUNCTION dialogSayNo( oDlg )
+
+   oDlg:coorsUpdate()
+   oDlg:Move( oDlg:nTop, oDlg:nLeft - 100 )  ; SysWait(.05)
+   oDlg:Move( oDlg:nTop, oDlg:nLeft )        ; SysWait(.05)
+   oDlg:Move( oDlg:nTop, oDlg:nLeft + 100 )  ; SysWait(.05)
+   oDlg:Move( oDlg:nTop, oDlg:nLeft )        ; SysWait(.05)
+   oDlg:Move( oDlg:nTop, oDlg:nLeft - 50 )   ; SysWait(.1)
+   oDlg:Move( oDlg:nTop, oDlg:nLeft  )       ; SysWait(.1)
+   oDlg:Move( oDlg:nTop, oDlg:nLeft + 50 )   ; SysWait(.1)
+   oDlg:Move( oDlg:nTop, oDlg:nLeft )
+
+RETURN ( .F. )
+
+
+
+
+
+
+
+FUNCTION GetBmp( aGet, cMask, cPath )
+
+   local cFile
+
+   If( cMask == nil, cMask := "Imagenes (*.bmp,jpg,png,gif)|*.bmp;*.jpg;*.png;*.gif|", ) ;
+   If( cPath == nil, cPath := rtrim( cPatImg() ), ) ;
+
+   cFile          := upper( cGetFile( cMask, "Seleccione el fichero", 1, cPath ) )
+
+   if aGet <> nil .AND. !empty( cFile )
+
+      aGet:cText( padr( cFile, 254 ) )
+
+      if !empty( aGet:bChange )
+         eval( aGet:bChange )
+      end
+
+   end
+
+RETURN ( cFile )
+
+
+
+FUNCTION GetDocumento( aGet )
+
+RETURN ( GetBmp( aGet, "Documento (*.*)|*.*|" ) )
+
+
+
+FUNCTION ChgBmp( aGet, bmpFile )
+
+   local cFile    := ""
+
+   do case
+      case hb_isobject( aGet )
+         cFile    := cFileBmpName( Rtrim( aGet:VarGet() ) )
+      case hb_ischar( aGet )
+         cFile    := Rtrim( aGet )
+   end
+
+   if empty( bmpFile )
+      RETURN ( .T. )
+   end
+
+   if !file( cFile )
+      bmpFile:Hide()
+      RETURN ( .T. )
+   end
+
+   bmpFile:LoadBmp( cFile )
+   bmpFile:Show()
+
+RETURN ( .T. )
+
+
+
+FUNCTION ChgDoc( aGet, docFile )
+
+   local cFile    := ""
+
+   do case
+      case hb_isobject( aGet )
+         cFile    := cFileBmpName( Rtrim( aGet:VarGet() ) )
+      case hb_ischar( aGet )
+         cFile    := Rtrim( aGet )
+   end
+
+   if empty( docFile )
+      RETURN ( .T. )
+   end
+
+   if !file( cFile )
+      docFile:Hide()
+      RETURN ( .T. )
+   end
+
+   docFile:LoadBmp( cFile )
+   docFile:Show()
+
+RETURN ( .T. )
+
+
+
+FUNCTION cFileBmpName( cFile, lEmptyImage )
+
+   If( lEmptyImage == nil, lEmptyImage := .F., ) ;
+
+   if File( cFile )
+      RETURN ( cFile )
+   end
+
+   if At( ":", cFile ) == 0 .AND. !Empty( cPatImg() )
+      cFile    := Rtrim( cPatImg() ) + Rtrim( cFile )
+   else
+      cFile    := Rtrim( cFile )
+   end
+
+   if lEmptyImage .AND. !File( cFile )
+      cFile    := "Bmp\NoImage.bmp"
+   end
+
+RETURN ( cFile )
+
+
+
+FUNCTION isImageInApplicationStorage( cFile )
+
+   if empty( cFile )
+      RETURN ( .F. )
+   end
+
+   if empty( cPatImg() )
+      RETURN ( .F. )
+   end
+
+   cFile       := rtrim( cPatImg() ) + rtrim( cFile )
+
+RETURN ( file( cFile ) )
+
+
+
+FUNCTION isDocumentInApplicationStorage( cFile  )
+
+   if empty( cFile )
+      RETURN ( .F. )
+   end
+
+   if empty( cPatDoc() )
+      RETURN ( .F. )
+   end
+
+   cFile       := rtrim( cPatDoc() ) + rtrim( cFile )
+
+RETURN ( file( cFile ) )
+
+
+
+FUNCTION ShowImage( oBmpImage )
+
+   local oDlg
+   local oBmp
+   local nHeight
+   local nWidth
+
+   if !Empty( oBmpImage )
+
+      nHeight     := oBmpImage:nHeight()
+      nWidth      := oBmpImage:nWidth()
+
+      if !Empty( nHeight ) .AND. !Empty( nWidth )
+
+         oDlg = TDialog():New( 0, 0, nHeight, nWidth, "Imagen",,, .F.,,,,,, .T.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+            oBmp := TImage():New( 0, 0,,,, Rtrim( oBmpImage:cBmpFile ), .F., oDlg,,, .F., .F.,,, .F.,, .F.,, .F., "oBmp" )
+
+         oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+      end
+
+   end
+
+RETURN nil
+
+
+
+FUNCTION ShowImageFile( cImageFile )
+
+   local oDlg
+   local oBmp
+
+   if File( Rtrim( cImageFile ) )
+
+      oDlg = TDialog():New( 0, 0, 800, 800, "Imagen",,, .F.,,,,,, .T.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+         oBmp := TImage():New( 0, 0,,,, Rtrim( cImageFile ), .F., oDlg,,, .F., .F.,,, .F.,, .F.,, .F., "oBmp" )
+
+      oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted, .T.,,,, oDlg:bRClicked,,, )
+
+   else
+
+      MsgStop( "Fichero " + Rtrim( cImageFile ) + " no encontrado." )
+
+   end
+
+RETURN nil
+
+
+
+FUNCTION hClone( hHash )
+
+RETURN hb_hclone( hHash )
+
+
+
+
+
+
+
+
+Function CreateQrCode( cText, cNameFile, nSize )
+
+   If( cNameFile == nil, cNameFile := "QR", ) ;
+   If( nSize == nil, nSize := 3, ) ;
+
+   QrCodeToHBmp( nSize, nSize, AllTrim( cText ), FullQrDir() + AllTrim( cNameFile ) + ".bmp" )
+
+RETURN nil
+
+
+
+FUNCTION QrCodeToHBmp( nLineWidth, nLineHeight, cVar, cFileName, cFlags, nColor, nColorBack  )
+
+   local oBmp
+   local hBmp
+   local hGraf
+   local hBrush
+   LOCAL hZebra
+   LOCAL nFlags
+   local nWidth
+   local nHeight
+   local hBrush2
+   local hBitmap
+
+   If( cFlags == nil, cFlags := "", ) ;
+   If( nColor == nil, nColor := 0, ) ;
+   If( nColorBack == nil, nColorBack := 16777215, ) ;
+
+   hBrush               := GdiPlusNewSolidBrush( 255, nRGBRed( nColorBack ), nRGBGreen( nColorBack ), nRGBBlue( nColorBack ) )
+   hBrush2              := GdiPlusNewSolidBrush( 255, nRGBRed( nColor ), nRGBGreen( nColor ), nRGBBlue( nColor ) )
+
+   oBmp                 := GdiBmp():new()
+   hZebra               := hb_zebra_create_qrcode( cVar, nFlags )
+
+   nWidth               := hb_Zebra_GetHeight( hZebra, nLineWidth, nLineHeight, nFlags )
+   nHeight              := hb_Zebra_GetHeight( hZebra, nLineWidth, nLineHeight, nFlags )
+
+   hBmp                 := GdiPlusBmpFromBrush( nWidth + 2, nHeight+2, hBrush )
+   hGraf                := GdiPlushGrafFromHbmp( hBmp )
+
+   hb_zebra_draw_gdip( hZebra, hGraf, hBrush2, 1, 1, nLineWidth, nLineHeight )
+
+   oBmp:hBmp            := hBmp
+
+   GdiPlusDeleteGraphics( hGraf )
+   GdiPlusDeleteBrush( hBrush )
+   GdiPlusDeleteBrush( hBrush2 )
+
+   hb_zebra_destroy( hZebra )
+
+   if !empty( cFileName )
+      oBmp:Save( cFileName )
+   endif
+
+   hBitmap              := oBmp:GetGDIhBitmap()
+
+   oBmp:End()
+
+RETURN ( hBitmap )
+
+
+
+FUNCTION hb_zebra_draw_gdip( hZebra, hGraf, hBrush, ... )
+
+   hb_zebra_draw( hZebra, {| x, y, w, h |  GdiPlusDrawRect( hGraf,,hbrush,x, y, w, h ) }, ... )
+
+RETURN 0
+
+
+
+FUNCTION hb_Zebra_GetWidth ( hZebra, nLineWidth, nLineHeight, iFlags)
+
+   local x1          := 0
+   local y1          := 0
+   local nBarWidth   := 0
+   local nBarHeight  := 0
+
+   if hb_zebra_GetError( hZebra ) <> 0
+      RETURN 101
+   endif
+
+   hb_zebra_draw( hZebra, {| x, y, w, h | nBarWidth := x + w - x1, nBarHeight := y + h - y1 }, x1, y1, nLineWidth, nLineHeight, iFlags )
+
+RETURN nBarWidth
+
+
+
+FUNCTION hb_Zebra_GetHeight ( hZebra, nLineWidth, nLineHeight, iFlags)
+
+   local x1          := 0
+   local y1          := 0
+   local nBarWidth   := 0
+   local nBarHeight  := 0
+
+   if hb_zebra_GetError( hZebra ) <> 0
+      RETURN 101
+   endif
+
+   hb_zebra_draw( hZebra, {| x, y, w, h | nBarWidth := x + w - x1, nBarHeight := y + h - y1 }, x1, y1, nLineWidth, nLineHeight, iFlags )
+
+RETURN nBarHeight

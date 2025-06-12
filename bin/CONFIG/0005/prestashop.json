@@ -1,0 +1,35 @@
+{
+  "HideExportButton" : false,
+  "RealTimeConexion" : true,
+  "InvertedNameFormat" : false,
+  "Webs" : 
+  {
+    "dasilva" : 
+    {
+      "Active" : true,
+      "MySqlServer" : "31.193.225.15",
+      "MySqlPort" : 3306,
+      "MySqlDatabase" : "yguxbbuf_pres498",
+      "MySqlUser" : "yguxbbuf_mcalero",
+      "MySqlPassword" : "Gestool16",
+      "MySqlTimeOut" : 60,
+      "CookieKey" : "",
+      "PrefixDatabase" : "psfc_",
+      "OrderSerie" : "A",
+      "BudgetSerie" : "A",
+      "DateStart" : "2016-01-01",
+      "FtpService" : "Curl",
+      "FtpServer" : "ftp.motosdasilva.com",
+      "FtpPort" : 21,
+      "FtpUser" : "gestool@motosdasilva.com",
+      "FtpPassword" : "Gestool16",
+      "FtpPassive" : false,
+      "ImagesDirectory" : "img/",
+      "Store" : "000",
+      "SyncronizeManufacturers" : false,
+      "ProcessWithoutStock" : true,
+      "ProcessWithoutImage" : false,
+      "IdProduct" : ""
+    }
+  }
+}

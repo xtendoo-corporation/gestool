@@ -1,0 +1,2435 @@
+#line 91 "\fwh1801\include\fivewin.ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 6 ".\Prg\Models\MovimientosAlmacenLineasModel.prg"
+_HB_CLASS MovimientosAlmacenLineasModel ; function MovimientosAlmacenLineasModel ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "MovimientosAlmacenLineasModel", iif( .T., { @TransaccionesComercialesLineasModel() }, { @HBObject() } ), @MovimientosAlmacenLineasModel() ) ) ;
+
+   _HB_MEMBER getTableName(); oClass:AddInline( "getTableName", {|Self | ( ( Self ) ), ::getEmpresaTableName( "HisMov" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER updateGUID(); oClass:AddMethod( "updateGUID", @MovimientosAlmacenLineasModel_updateGUID(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getExtraWhere(); oClass:AddInline( "getExtraWhere", {|Self | ( ( Self ) ), ( " " ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getFechaFieldName(); oClass:AddInline( "getFechaFieldName", {|Self | ( ( Self ) ), ( "dFecMov" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getHoraFieldName(); oClass:AddInline( "getHoraFieldName", {|Self | ( ( Self ) ), ( "cTimMov" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getSerieFieldName(); oClass:AddInline( "getSerieFieldName", {|Self | ( ( Self ) ), ( "''" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getNumeroFieldName(); oClass:AddInline( "getNumeroFieldName", {|Self | ( ( Self ) ), ( "nNumRem" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getSufijoFieldName(); oClass:AddInline( "getSufijoFieldName", {|Self | ( ( Self ) ), ( "cSufRem" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getArticuloFieldName(); oClass:AddInline( "getArticuloFieldName", {|Self | ( ( Self ) ), ( "cRefMov" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getBultosFieldName(); oClass:AddInline( "getBultosFieldName", {|Self | ( ( Self ) ), ( "0" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getCajasFieldName(); oClass:AddInline( "getCajasFieldName", {|Self | ( ( Self ) ), ( "nCajMov" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getUnidadesFieldName(); oClass:AddInline( "getUnidadesFieldName", {|Self | ( ( Self ) ), ( "nUndMov" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getTipoDocumento(); oClass:AddInline( "getTipoDocumento", {|Self | ( ( Self ) ), ( "05" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getFechaHoraConsolidacion( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote); oClass:AddMethod( "getFechaHoraConsolidacion", @MovimientosAlmacenLineasModel_getFechaHoraConsolidacion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getSentenceConsolidacion( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote); oClass:AddMethod( "getSentenceConsolidacion", @MovimientosAlmacenLineasModel_getSentenceConsolidacion(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getSQLSentenceTotalUnidadesEntradasStock( cCodigoArticulo, dConsolidacion, tConsolidacion, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote); oClass:AddMethod( "getSQLSentenceTotalUnidadesEntradasStock", @MovimientosAlmacenLineasModel_getSQLSentenceTotalUnidadesEntradasStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getSQLSentenceTotalUnidadesSalidasStock( cCodigoArticulo, dConsolidacion, tConsolidacion, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote); oClass:AddMethod( "getSQLSentenceTotalUnidadesSalidasStock", @MovimientosAlmacenLineasModel_getSQLSentenceTotalUnidadesSalidasStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getSQLSentenceLineasEntradasAgrupadas( cCodigoArticulo, cCodigoAlmacen); oClass:AddMethod( "getSQLSentenceLineasEntradasAgrupadas", @MovimientosAlmacenLineasModel_getSQLSentenceLineasEntradasAgrupadas(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getSQLSentenceLineasSalidasAgrupadas( cCodigoArticulo, cCodigoAlmacen); oClass:AddMethod( "getSQLSentenceLineasSalidasAgrupadas", @MovimientosAlmacenLineasModel_getSQLSentenceLineasSalidasAgrupadas(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getInfoSqlStock( cCodigoArticulo, cCodigoAlmacen, lSalida); oClass:AddMethod( "getInfoSqlStock", @MovimientosAlmacenLineasModel_getInfoSqlStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen); oClass:AddMethod( "getInfoSqlStockEntrada", @MovimientosAlmacenLineasModel_getInfoSqlStockEntrada(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen); oClass:AddMethod( "getInfoSqlStockSalida", @MovimientosAlmacenLineasModel_getInfoSqlStockSalida(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getRowSetMovimientosForArticulo( cCodigoArticulo, nYear); oClass:AddMethod( "getRowSetMovimientosForArticulo", @MovimientosAlmacenLineasModel_getRowSetMovimientosForArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getSQLSentenceFechaCaducidad( cCodigoArticulo, cCodigoPrimeraPropiedad, cCodigoSegundaPropiedad, cValorPrimeraPropiedad, cValorSegundaPropiedad, cLote); oClass:AddMethod( "getSQLSentenceFechaCaducidad", @MovimientosAlmacenLineasModel_getSQLSentenceFechaCaducidad(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getInfoForReport( oReporting); oClass:AddMethod( "getInfoForReport", @MovimientosAlmacenLineasModel_getInfoForReport(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER InsertFromHashSql(); oClass:AddMethod( "InsertFromHashSql", @MovimientosAlmacenLineasModel_InsertFromHashSql(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lExisteUuid( uuid); oClass:AddMethod( "lExisteUuid", @MovimientosAlmacenLineasModel_lExisteUuid(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getSntSalidaStock( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote); oClass:AddMethod( "getSntSalidaStock", @MovimientosAlmacenLineasModel_getSntSalidaStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getSntEntradaStock( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote); oClass:AddMethod( "getSntEntradaStock", @MovimientosAlmacenLineasModel_getSntEntradaStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS MovimientosAlmacenLineasModel ;
+
+
+
+static FUNCTION MovimientosAlmacenLineasModel_updateGUID( ) ; local Self AS CLASS MovimientosAlmacenLineasModel := QSelf() AS CLASS MovimientosAlmacenLineasModel
+
+   local cStm
+
+
+   local cSql  := "UPDATE " + ::getHeaderTableName() +  " SET cGuid = " + quoted( win_uuidcreatestring() ) +  " WHERE cGuid = ''"
+
+Return ( ::ExecuteSqlStatement( cSql, @cStm ) )
+
+
+
+static FUNCTION MovimientosAlmacenLineasModel_getSQLSentenceTotalUnidadesEntradasStock( cCodigoArticulo, dConsolidacion, tConsolidacion, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote ) ; local Self AS CLASS MovimientosAlmacenLineasModel := QSelf() AS CLASS MovimientosAlmacenLineasModel
+
+
+
+       local cSql  := "SELECT SUM( IIF( nCajMov = 0, 1, nCajMov ) * nUndMov ) as [totalUnidadesStock], " + quoted( ::getTableName() ) + " AS Document " +     "FROM " + ::getTableName() + " " +     "WHERE cRefMov = " + quoted( cCodigoArticulo ) + " "
+
+       if !empty( dConsolidacion )
+          if !empty( tConsolidacion )
+             cSql      +=    "AND CAST( " + ::getFechaFieldName() + " AS SQL_CHAR ) + " + ::getHoraFieldName() + " >= " + quoted( dateToSQLString( dConsolidacion ) + tConsolidacion ) + " "
+          else
+             cSql      +=    "AND CAST( " + ::getFechaFieldName() + " AS SQL_CHAR ) >= " + quoted( dateToSQLString( dConsolidacion ) ) + " "
+          end
+       end
+
+    cSql             +=    "AND cAliMov = " + quoted( cCodigoAlmacen ) + " "
+       cSql            +=    "AND cCodPr1 = " + quoted( cCodigoPropiedad1 ) + " "
+       cSql            +=    "AND cCodPr1 = " + quoted( cCodigoPropiedad2 ) + " "
+       cSql            +=    "AND cValPr1 = " + quoted( cValorPropiedad1 ) + " "
+       cSql            +=    "AND cValPr2 = " + quoted( cValorPropiedad2 ) + " "
+       cSql            +=    "AND cLote = " + quoted( cLote ) + " "
+
+RETURN ( cSql )
+
+
+
+static FUNCTION MovimientosAlmacenLineasModel_getSntSalidaStock( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote ) ; local Self AS CLASS MovimientosAlmacenLineasModel := QSelf() AS CLASS MovimientosAlmacenLineasModel
+
+   local cSql        := ""
+
+   cSql              := "SELECT "
+   cSql              += "( SUM( IIF( nCajMov = 0, 1, nCajMov ) * nUndMov ) * -1 ) as [totalUnidadesStock], "
+   cSql              += quoted( ::getTableName() ) + " AS Document "
+   cSql              += "FROM " + ::getTableName() + " AS cTable "
+   cSql              += "WHERE cRefMov = " + quoted( cCodigoArticulo ) + " "
+   cSql              += "AND cAloMov = " + quoted( cCodigoAlmacen ) + " "
+
+
+
+
+
+
+
+   if !hb_isnil( cCodigoPropiedad1 )
+      cSql           += "AND cCodPr1 = " + quoted( cCodigoPropiedad1 ) + " "
+   end
+
+   if !hb_isnil( cCodigoPropiedad2 )
+      cSql           += "AND cCodPr2 = " + quoted( cCodigoPropiedad2 ) + " "
+   end
+
+   if !hb_isnil( cValorPropiedad1 )
+      cSql           += "AND cValPr1 = " + quoted( cValorPropiedad1 ) + " "
+   end
+
+   if !hb_isnil( cValorPropiedad2 )
+      cSql           += "AND cValPr2 = " + quoted( cValorPropiedad2 ) + " "
+   end
+
+   if !hb_isnil( cLote )
+      cSql           += "AND cLote = " + quoted( cLote ) + " "
+   end
+
+
+
+   cSql              += "AND iif( ( SELECT TOP 1 CAST( dFecMov AS SQL_CHAR ) + cTimMov FROM " + ::getEmpresaTableName( "HisMov" ) + " WHERE nTipMov = 4 AND cRefMov = cTable.cRefMov"
+   cSql              += " AND cAliMov = cTable.cAloMov"
+   cSql              += " AND cCodPr1 = cTable.cCodPr1 AND cCodPr2 = cTable.cCodPr2 AND cValPr1 = cTable.cValPr1 AND cValPr2 = cTable.cValPr2 AND cLote = cTable.cLote ORDER BY dFecMov DESC, cTimMov DESC ) IS NOT NULL, "
+   cSql              += "( CAST( " + ::getFechaFieldName() + " AS SQL_CHAR ) + " + ::getHoraFieldName() + " >= "
+   cSql              += "( SELECT TOP 1 CAST( dFecMov AS SQL_CHAR ) + cTimMov FROM " + ::getEmpresaTableName( "HisMov" ) + " WHERE nTipMov = 4 AND cRefMov = cTable.cRefMov"
+   cSql              += " AND cAliMov = cTable.cAloMov"
+   cSql              += " AND cCodPr1 = cTable.cCodPr1 AND cCodPr2 = cTable.cCodPr2 AND cValPr1 = cTable.cValPr1 AND cValPr2 = cTable.cValPr2 AND cLote = cTable.cLote ORDER BY dFecMov DESC, cTimMov DESC ) ), TRUE )"
+   cSql              += ::getExtraWhere() + " "
+
+RETURN ( cSql )
+
+
+
+static FUNCTION MovimientosAlmacenLineasModel_getSntEntradaStock( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote ) ; local Self AS CLASS MovimientosAlmacenLineasModel := QSelf() AS CLASS MovimientosAlmacenLineasModel
+
+   local cSql        := ""
+
+   cSql              := "SELECT "
+
+   do case
+      case lCalCaj() .AND. lCalBul()
+         cSql         += "( SUM( IIF( nBultos = 0, 1, nBultos ) * IIF( nCajMov = 0, 1, nCajMov ) * nUndMov ) ) as [totalUnidadesStock], "
+
+      case lCalCaj() .AND. !lCalBul()
+         cSql         += "( SUM( IIF( nCajMov = 0, 1, nCajMov ) * nUndMov ) ) as [totalUnidadesStock], "
+
+      case !lCalCaj() .AND. lCalBul()
+         cSql         += "( SUM( IIF( nBultos = 0, 1, nBultos ) * nUndMov ) ) as [totalUnidadesStock], "
+
+      case !lCalCaj() .AND. !lCalBul()
+         cSql            += "( SUM( nUndMov ) ) as [totalUnidadesStock], "
+
+    end
+
+   cSql              += quoted( ::getTableName() ) + " AS Document "
+   cSql              += "FROM " + ::getTableName() + " AS cTable "
+   cSql              += "WHERE cRefMov = " + quoted( cCodigoArticulo ) + " "
+   cSql              += "AND cAliMov = " + quoted( cCodigoAlmacen ) + " "
+   cSql              += "AND cCodPr1 = " + quoted( cCodigoPropiedad1 ) + " "
+   cSql              += "AND cCodPr2 = " + quoted( cCodigoPropiedad2 ) + " "
+   cSql              += "AND cValPr1 = " + quoted( cValorPropiedad1 ) + " "
+   cSql              += "AND cValPr2 = " + quoted( cValorPropiedad2 ) + " "
+   cSql              += "AND cLote = " + quoted( cLote ) + " "
+   cSql              += "AND iif( (" + MovimientosAlmacenLineasModel():getSentenceConsolidacion( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote ) + ") IS NOT NULL, "
+   cSql              += "( CAST( " + ::getFechaFieldName() + " AS SQL_CHAR ) + " + ::getHoraFieldName() + " >= (" + MovimientosAlmacenLineasModel():getSentenceConsolidacion( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote ) + ") ), TRUE )"
+
+   cSql              += ::getExtraWhere() + " "
+
+RETURN ( cSql )
+
+
+
+static FUNCTION MovimientosAlmacenLineasModel_getSQLSentenceTotalUnidadesSalidasStock( cCodigoArticulo, dConsolidacion, tConsolidacion, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote ) ; local Self AS CLASS MovimientosAlmacenLineasModel := QSelf() AS CLASS MovimientosAlmacenLineasModel
+
+
+
+       local cSql  := "SELECT SUM( IIF( nCajMov = 0, 1, nCajMov ) * nUndMov ) as [totalUnidadesStock], " + quoted( ::getTableName() ) + " AS Document " +     "FROM " + ::getTableName() + " " +     "WHERE cRefMov = " + quoted( cCodigoArticulo ) + " "
+
+       if !empty( dConsolidacion )
+          if !empty( tConsolidacion )
+             cSql      +=    "AND CAST( " + ::getFechaFieldName() + " AS SQL_CHAR ) + " + ::getHoraFieldName() + " >= " + quoted( dateToSQLString( dConsolidacion ) + tConsolidacion ) + " "
+          else
+             cSql      +=    "AND CAST( " + ::getFechaFieldName() + " AS SQL_CHAR ) >= " + quoted( dateToSQLString( dConsolidacion ) ) + " "
+          end
+       end
+
+   cSql             +=    "AND cAloMov = " + quoted( cCodigoAlmacen ) + " "
+       cSql            +=    "AND cCodPr1 = " + quoted( cCodigoPropiedad1 ) + " "
+       cSql            +=    "AND cCodPr1 = " + quoted( cCodigoPropiedad2 ) + " "
+       cSql            +=    "AND cValPr1 = " + quoted( cValorPropiedad1 ) + " "
+       cSql            +=    "AND cValPr2 = " + quoted( cValorPropiedad2 ) + " "
+       cSql            +=    "AND cLote = " + quoted( cLote ) + " "
+
+RETURN ( cSql )
+
+
+
+static FUNCTION MovimientosAlmacenLineasModel_getFechaHoraConsolidacion( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote ) ; local Self AS CLASS MovimientosAlmacenLineasModel := QSelf() AS CLASS MovimientosAlmacenLineasModel
+
+   local cStm
+
+
+
+   local cSql      :=     "SELECT TOP 1 dFecMov, cTimMov FROM " + ::getTableName()    +     "  WHERE nTipMov = 4"                                       +  " AND cRefMov = " + quoted( cCodigoArticulo )             +  " AND cAliMov = " + quoted( cCodigoAlmacen )
+
+    cSql          +=  " AND cCodPr1 = " + quoted( cCodigoPropiedad1 )
+    cSql          +=  " AND cCodPr2 = " + quoted( cCodigoPropiedad2 )
+    cSql          +=  " AND cValPr1 = " + quoted( cValorPropiedad1 )
+    cSql          +=  " AND cValPr2 = " + quoted( cValorPropiedad2 )
+    cSql          +=  " AND cLote = " + quoted( cLote )
+       cSql           +=  " ORDER BY dFecMov DESC, cTimMov DESC"
+
+       if ::ExecuteSqlStatement( cSql, @cStm )
+          if !empty( ( cStm )->dFecMov )
+             RETURN ( { "fecha" => ( cStm )->dFecMov, "hora" => ( cStm )->cTimMov } )
+          end
+       end
+
+RETURN ( nil )
+
+
+
+static FUNCTION MovimientosAlmacenLineasModel_getSentenceConsolidacion( cCodigoArticulo, cCodigoAlmacen, cCodigoPropiedad1, cCodigoPropiedad2, cValorPropiedad1, cValorPropiedad2, cLote ) ; local Self AS CLASS MovimientosAlmacenLineasModel := QSelf() AS CLASS MovimientosAlmacenLineasModel
+
+   local cSql  := ""
+
+   cSql  := "SELECT TOP 1 CAST( dFecMov AS SQL_CHAR ) + cTimMov FROM " + ::getTableName()
+   cSql  += " WHERE nTipMov = 4"
+   cSql  += " AND cRefMov = " + quoted( cCodigoArticulo )
+   cSql  += " AND cAliMov = " + quoted( cCodigoAlmacen )
+   cSql  += " AND cCodPr1 = " + quoted( cCodigoPropiedad1 )
+   cSql  += " AND cCodPr2 = " + quoted( cCodigoPropiedad2 )
+   cSql  += " AND cValPr1 = " + quoted( cValorPropiedad1 )
+   cSql  += " AND cValPr2 = " + quoted( cValorPropiedad2 )
+   cSql  += " AND cLote = " + quoted( cLote )
+   cSql  += " ORDER BY dFecMov DESC, cTimMov DESC"
+
+RETURN ( cSql )
+
+
+
+static FUNCTION MovimientosAlmacenLineasModel_getSQLSentenceLineasEntradasAgrupadas( cCodigoArticulo, cCodigoAlmacen ) ; local Self AS CLASS MovimientosAlmacenLineasModel := QSelf() AS CLASS MovimientosAlmacenLineasModel
+
+
+
+
+
+
+
+
+
+
+   local cSql  := "SELECT "                                                +  "cRefMov as cCodArt, "                                +  "cAliMov as cCodAlm, "                                +  "cCodPr1 as cCodPr1, "                                +  "cCodPr2 as cCodPr2, "                                +  "cValPr1 as cValPr1, "                                +  "cValPr2 as cValPr2, "                                +  "cLote as cLote "                                     +  "FROM " + ::getTableName() + " "                         +  "WHERE cRefMov = " + quoted( cCodigoArticulo ) + " "
+
+   if !Empty( cCodigoAlmacen )
+        cSql    +=     "AND cAliMov = " + quoted( cCodigoAlmacen ) + " "
+   end
+
+   cSql         +=    "GROUP BY cRefMov, cAliMov, cCodPr1, cCodPr2, cValPr1, cValPr2, cLote "
+
+Return ( cSql )
+
+
+
+static FUNCTION MovimientosAlmacenLineasModel_getSQLSentenceLineasSalidasAgrupadas( cCodigoArticulo, cCodigoAlmacen ) ; local Self AS CLASS MovimientosAlmacenLineasModel := QSelf() AS CLASS MovimientosAlmacenLineasModel
+
+
+
+
+
+
+
+
+
+
+   local cSql  := "SELECT "                                                +  "cRefMov as cCodArt, "                                +  "cAloMov as cCodAlm, "                                +  "cCodPr1 as cCodPr1, "                                +  "cCodPr2 as cCodPr2, "                                +  "cValPr1 as cValPr1, "                                +  "cValPr2 as cValPr2, "                                +  "cLote as cLote "                                     +  "FROM " + ::getTableName() + " "                         +  "WHERE cRefMov = " + quoted( cCodigoArticulo ) + " "
+
+    if !Empty( cCodigoAlmacen )
+          cSql    +=     "AND cAloMov = " + quoted( cCodigoAlmacen ) + " "
+       end
+
+      cSql         +=    "GROUP BY cRefMov, cAloMov, cCodPr1, cCodPr2, cValPr1, cValPr2, cLote "
+
+Return ( cSql )
+
+
+
+static FUNCTION MovimientosAlmacenLineasModel_getInfoSqlStockEntrada( cCodigoArticulo, cCodigoAlmacen, dFechaHasta ) ; local Self AS CLASS MovimientosAlmacenLineasModel := QSelf() AS CLASS MovimientosAlmacenLineasModel
+
+    ::cAlmacenFieldName   := "cAliMov"
+
+Return ( ::getInfoSqlStock( cCodigoArticulo, cCodigoAlmacen, .F., dFechaHasta ) )
+
+
+
+static FUNCTION MovimientosAlmacenLineasModel_getInfoSqlStockSalida( cCodigoArticulo, cCodigoAlmacen, dFechaHasta ) ; local Self AS CLASS MovimientosAlmacenLineasModel := QSelf() AS CLASS MovimientosAlmacenLineasModel
+
+    ::cAlmacenFieldName   := "cAloMov"
+
+Return ( ::getInfoSqlStock( cCodigoArticulo, cCodigoAlmacen, .T., dFechaHasta ) )
+
+
+
+static FUNCTION MovimientosAlmacenLineasModel_getInfoSqlStock( cCodigoArticulo, cCodigoAlmacen, lSalida, dFechaHasta ) ; local Self AS CLASS MovimientosAlmacenLineasModel := QSelf() AS CLASS MovimientosAlmacenLineasModel
+
+   local cStm
+   local cSql        := ""
+
+   If( lSalida == nil, lSalida := .F., ) ;
+
+
+
+
+
+   if Empty( ::cAlmacenFieldName )
+      ::setAlmacenFieldName()
+   end
+
+   cSql              := "SELECT "
+   cSql              += ::getTotalBultosStatement( lSalida )
+   cSql              += ::getTotalCajasStatement( lSalida )
+   cSql              += ::getTotalUnidadesStatement( lSalida )
+   cSql              += ::getTotalPdtRecibirStatement()
+   cSql              += ::getTotalPdtEntregarStatement()
+   cSql              += quoted( ::getTipoDocumento() ) + " + CAST( nTipMov AS SQL_CHAR ) AS Document, "
+   cSql              += ::getFechaFieldName() + " AS Fecha, "
+   cSql              += ::getHoraFieldName() + " AS Hora, "
+   cSql              += ::getSerieFieldName() + " AS Serie, "
+   cSql              += "CAST( " + ::getNumeroFieldName() + " AS SQL_INTEGER ) AS Numero, "
+   cSql              += ::getSufijoFieldName() + " AS Sufijo, "
+   cSql              += "CAST( nNumLin AS SQL_INTEGER ) AS Numero, "
+   cSql              += ::getArticuloFieldName() + " AS Articulo, "
+   cSql              += "cLote AS Lote, "
+   cSql              += "cCodPr1 AS propiedad1, "
+   cSql              += "cCodPr2 AS propiedad2, "
+   cSql              += "cValPr1 AS valor1, "
+   cSql              += "cValPr2 AS valor2, "
+   cSql              += ::getAlmacenFieldName() + " AS Almacen  "
+   cSql              += "FROM " + ::getTableName() + " TablaLineas "
+   cSql              += "WHERE " + ::getArticuloFieldName() + " = " + quoted( cCodigoArticulo ) + " "
+
+   if !empty( cCodigoAlmacen )
+      cSql           += "AND " + ::getAlmacenFieldName() + " = " + quoted( cCodigoAlmacen ) + " "
+   else
+      cSql           += "AND " + ::getAlmacenFieldName() + " is not null "
+   end
+
+   if hb_isdate( dFechaHasta )
+      cSql           += "AND CAST( " + ::getFechaFieldName() + " AS SQL_CHAR ) <= " + formatoFechaSql( dFechaHasta ) + " "
+   end
+
+   if !Empty( ::getExtraWhere() )
+      cSql           += ::getExtraWhere() + " "
+   end
+
+
+
+
+
+   cSql              += " AND CAST( " + ::getFechaFieldName() + " AS SQL_CHAR ) + " + ::getHoraFieldName() + " >= "
+   cSql              += "COALESCE( "
+   cSql              += "( SELECT TOP 1 CAST( HisMov.dFecMov AS SQL_CHAR ) + HisMov.cTimMov "
+   cSql              += "FROM " + ::getEmpresaTableName( "HisMov" ) + " HisMov "
+   cSql              += "WHERE HisMov.nTipMov = 4 "
+
+   if hb_isdate( dFechaHasta )
+   cSql              += "AND CAST( HisMov.dFecMov AS SQL_CHAR ) <= " + formatoFechaSql( dFechaHasta ) + " "
+   end
+
+   cSql              += "AND HisMov.cRefMov = TablaLineas." + ::getArticuloFieldName() + " "
+   cSql              += "AND HisMov.cAliMov = TablaLineas." + ::getAlmacenFieldName() + " "
+   cSql              += "AND HisMov.cLote = TablaLineas.cLote "
+   cSql              += "ORDER BY HisMov.dFecMov DESC, HisMov.cTimMov DESC ), "
+   cSql              += "'' ) "
+
+RETURN ( cSql )
+
+
+
+static FUNCTION MovimientosAlmacenLineasModel_getRowSetMovimientosForArticulo( cCodigoArticulo, nYear ) ; local Self AS CLASS MovimientosAlmacenLineasModel := QSelf() AS CLASS MovimientosAlmacenLineasModel
+
+   local cStm  := "getRowSetMovimientosForArticulo"
+
+   local cSql  := "SELECT * FROM " + ::getTableName()    +  "  WHERE cRefMov = " + quoted( cCodigoArticulo )
+
+   if !Empty( nYear )
+      cSql     += " AND YEAR( dFecMov ) = " + quoted( nYear )
+   end
+
+   cSql        += " ORDER BY dFecMov ASC"
+
+   if ::ExecuteSqlStatement( cSql, @cStm )
+      RETURN ( cStm )
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION MovimientosAlmacenLineasModel_getSQLSentenceFechaCaducidad( cCodigoArticulo, cCodigoPrimeraPropiedad, cCodigoSegundaPropiedad, cValorPrimeraPropiedad, cValorSegundaPropiedad, cLote ) ; local Self AS CLASS MovimientosAlmacenLineasModel := QSelf() AS CLASS MovimientosAlmacenLineasModel
+
+
+
+
+
+
+
+
+
+
+
+
+   local cSql  := "SELECT "                                             +  "cRefMov as cCodigoArticulo, "                     +  "cCodPr1 as cCodigoPrimeraPropiedad, "             +  "cCodPr2 as cCodigoSegundaPropiedad, "             +  "cValPr1 as cValorPrimeraPropiedad, "              +  "cValPr2 as cValorSegundaPropiedad, "              +  "cLote as cLote, "                                 +  "dFecMov as dFecDoc, "                             +  "dFecCad as dFecCad "                              +  "FROM " + ::getTableName() + " "                      +  "WHERE cRefMov = " + quoted( cCodigoArticulo ) + " "  +  "AND dFecCad IS NOT NULL "
+
+   cSql        += ::getExtraWhere()
+   cSql        += "AND cCodPr1 = " + quoted( cCodigoPrimeraPropiedad ) + " "
+   cSql        += "AND cCodPr2 = " + quoted( cCodigoSegundaPropiedad ) + " "
+   cSql        += "AND cValPr1 = " + quoted( cValorPrimeraPropiedad ) + " "
+   cSql        += "AND cValPr2 = " + quoted( cValorSegundaPropiedad ) + " "
+   cSql        += "AND cLote = " + quoted( cLote ) + " "
+
+RETURN ( cSql )
+
+
+
+static FUNCTION MovimientosAlmacenLineasModel_getInfoForReport( oReporting ) ; local Self AS CLASS MovimientosAlmacenLineasModel := QSelf() AS CLASS MovimientosAlmacenLineasModel
+
+   local cStm        := "reporting_mov_alm"
+
+
+   local cSentence  :=  "SELECT * FROM " + ::getTableName()                                                          +  " WHERE CAST( dFecMov AS SQL_CHAR ) >= " + quoted( dateToSQLString( oReporting:dIniInf ) )   +  " AND CAST( dFecMov AS SQL_CHAR ) <= " + quoted( dateToSQLString( oReporting:dFinInf ) )
+
+   if ::ExecuteSqlStatement( cSentence, @cStm )
+      RETURN ( cStm )
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION MovimientosAlmacenLineasModel_InsertFromHashSql( hHashHead, hHashLine ) ; local Self AS CLASS MovimientosAlmacenLineasModel := QSelf() AS CLASS MovimientosAlmacenLineasModel
+
+   local cStm     := "InsertFromHashSqlLin"
+   local cSql     := ""
+
+   if !Empty( hHashHead ) .AND. !Empty( hHashLine ) .AND. !::lExisteUuid( hGet( hHashLine, "uuid" ) )
+
+      cSql         := "INSERT INTO " + ::getTableName()
+      cSql         += " ( dFecMov, cTimMov, nTipMov, cAliMov, cAloMov, cRefMov, cNomMov, cCodPr1, cCodPr2, cValPr1, cValPr2,"
+
+      if !Empty( hGet( hHashLine, "fecha_caducidad" ) )
+         cSql      += " dFecCad,"
+      end
+
+      cSql         += " cCodUsr, cCodDlg, lLote, cLote, nCajMov, nUndMov, nPreDiv, lSndDoc, nNumRem,"
+      cSql         += " cSufRem, lSelDoc, nBultos, cGuid, cGuidPar ) VALUES "
+      cSql         += "( " + quoted( dToc( hb_ttod( hGet( hHashHead, "fecha_hora" ) ) ) )
+      cSql         += ", " + quoted( StrTran( substr( hb_tstostr( hGet( hHashHead, "fecha_hora" ) ), 12, 8 ), ":", "" ) )
+      cSql         += ", " + AllTrim( Str( hGet( hHashHead, "tipo_movimiento" ) ) )
+      cSql         += ", " + quoted( hGet( hHashHead, "almacen_destino" ) )
+      cSql         += ", " + quoted( hGet( hHashHead, "almacen_origen" ) )
+      cSql         += ", " + quoted( hGet( hHashLine, "codigo_articulo" ) )
+      cSql         += ", " + quoted( Left( StrTran( hGet( hHashLine, "nombre_articulo" ), "'", "" ), 50 ) )
+      cSql         += ", " + quoted( hGet( hHashLine, "codigo_primera_propiedad" ) )
+      cSql         += ", " + quoted( hGet( hHashLine, "codigo_segunda_propiedad" ) )
+      cSql         += ", " + quoted( hGet( hHashLine, "valor_primera_propiedad" ) )
+      cSql         += ", " + quoted( hGet( hHashLine, "valor_segunda_propiedad" ) )
+
+      if !Empty( hGet( hHashLine, "fecha_caducidad" ) )
+         cSql      += ", " + quoted( dToc( hb_ttod( hGet( hHashLine, "fecha_caducidad" ) ) ) )
+      end
+
+      cSql         += ", " + quoted( Auth():Codigo() )
+      cSql         += ", " + quoted( RetSufEmp() )
+      cSql         += ", " + if( !Empty( quoted( hGet( hHashLine, "lote" ) ) ), ".t. ", ".f. " )
+      cSql         += ", " + quoted( Left( strTran( hGet( hHashLine, "lote" ),"'", "" ), 14 ) )
+      cSql         += ", " + AllTrim( Str( hGet( hHashLine, "cajas_articulo" ) ) )
+      cSql         += ", " + AllTrim( Str( hGet( hHashLine, "unidades_articulo" ) ) )
+      cSql         += ", " + AllTrim( Str( hGet( hHashLine, "precio_articulo" ) ) )
+      cSql         += ", .t. "
+      cSql         += ", " + AllTrim( hGet( hHashHead, "numero" ) )
+      cSql         += ", " + quoted( RetSufEmp() )
+      cSql         += ", .t. "
+      cSql         += ", " + AllTrim( Str( hGet( hHashLine, "bultos_articulo" ) ) )
+      cSql         += ", " + quoted( hGet( hHashLine, "uuid" ) )
+      cSql         += ", " + quoted( hGet( hHashLine, "parent_uuid" ) ) + " )"
+
+      ::ExecuteSqlStatement( cSql, @cStm )
+
+   end
+
+Return ( nil )
+
+
+
+static FUNCTION MovimientosAlmacenLineasModel_lExisteUuid( uuid ) ; local Self AS CLASS MovimientosAlmacenLineasModel := QSelf() AS CLASS MovimientosAlmacenLineasModel
+
+   local cStm     := "lExisteUuid"
+   local cSql     := ""
+
+   cSql     := "SELECT * FROM " + ::getTableName() + " WHERE cGuid = " + quoted( uuid )
+
+      if ::ExecuteSqlStatement( cSql, @cStm )
+
+         if ( cStm )->( RecCount() ) > 0
+            Return ( .T. )
+         end
+
+      end
+
+Return ( .F. )

@@ -1,0 +1,114 @@
+#line 14 ".\.\Prg\Tarray.prg"
+STATIC aTArray
+
+
+
+Function __StructNew( aInit )
+
+ LOCAL oTArray, oTArrayPrevio
+    oTArray:= TArray():New()
+    If aInit <> Nil
+       oTArray:aData:= aInit
+    EndIf
+
+    If aTArray == Nil
+       aTArray:= { oTArray }
+    Else
+       oTArrayPrevio:= ATail( aTArray )
+       oTArrayPrevio:aBuffer[ Len(oTArrayPrevio:aBuffer) ]:= oTArray
+       Aadd( oTArrayPrevio:aFieldsObj, oTArray )
+       Aadd( aTArray, oTArray )
+    EndIf
+
+return oTArray
+
+
+
+Function __StructField( cName, uInit )
+
+ LOCAL oTArray:= ATail( aTArray )
+    oTArray:AddField( PadR( cName, 8 ), uInit )
+
+return .T.
+
+
+
+Function __StructEnd()
+
+ LOCAL nLen:= Len( aTArray )
+    If nLen == 1
+       aTArray:= Nil
+    Else
+       ASize( aTArray, nLen - 1 )
+    EndIf
+return .T.
+
+
+_HB_CLASS TArray ; function TArray ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TArray", iif( .F., { }, { @HBObject() } ), @TArray() ) ) ;
+
+   _HB_MEMBER { aData } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aData"}, .F. )
+   _HB_MEMBER { aFields } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aFields"}, .F. )
+   _HB_MEMBER { aBuffer } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aBuffer"}, .F. )
+   _HB_MEMBER { lCheckUpper } ; oClass:AddMultiData(, .T., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lCheckUpper"}, .F. )
+   _HB_MEMBER { aFieldsObj } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aFieldsObj"}, .F. )
+
+   _HB_MEMBER New() AS CLASS TArray; oClass:AddMethod( "New", @TArray_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddField(); oClass:AddMethod( "AddField", @TArray_AddField(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ArrayErrorHand(); oClass:SetOnError( @TArray_ArrayErrorHand() )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TArray ;
+
+
+
+
+static FUNCTION TArray_New( ) ; local Self AS CLASS TArray := QSelf() AS CLASS TArray
+
+    ::aData       := {}
+    ::aFields     := {}
+    ::aBuffer     := {}
+    ::aFieldsObj  := {}
+
+return self
+
+
+
+static FUNCTION TArray_AddField( cName, uInit ) ; local Self AS CLASS TArray := QSelf() AS CLASS TArray
+    aAdd( ::aFields, Upper( cName ) )
+    aAdd( ::aBuffer, uInit )
+return .T.
+
+
+
+static FUNCTION TArray_ArrayErrorHand( cMethod, nError ) ; local Self AS CLASS TArray := QSelf() AS CLASS TArray
+
+ LOCAL lAssign:= .F.
+ LOCAL nId
+ LOCAL lExact:= Set( 1, .T. )
+ LOCAL uDev
+
+    If SubStr( cMethod, 1, 1 ) == "_"
+       lAssign:= .T.
+       cMethod:= SubStr( cMethod, 2 )
+    EndIf
+
+    If ::lCheckUpper
+       AEval( ::aFields, {|cVal,nId| ::aFields[nId]:= Upper(cVal) } )
+       ::lCheckUpper:= .F.
+    EndIf
+
+    If ( nId:= AScan( ::aFields, cMethod ) ) > 0
+       If lAssign
+          uDev:= GetParam( 1, 1 )
+          ::aBuffer[ nId ]:= uDev
+       Else
+          uDev:= ::aBuffer[ nId ]
+       EndIf
+    Else
+       uDev:= _ClsSetError( _GenError( nError, ::ClassName, cMethod ) )
+    EndIf
+
+    Set( 1, lExact )
+
+return uDev

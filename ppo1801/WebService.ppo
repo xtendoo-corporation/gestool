@@ -1,0 +1,3779 @@
+#line 91 "\fwh1801\include\fiveWin.ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 6 ".\Prg\Services\WebService.prg"
+FUNCTION testWebServiceGet()
+
+   local oXml
+   local cXml
+   local oXmlId
+   local oXmlIdData
+   local oWebService
+
+   MsgInfo( "testWebServiceGet" )
+
+   oWebService    := WebService():New()
+   oWebService:setService( "products/" )
+   oWebService:setUrl( "https://www.p-escamas.es/api/" )
+   oWebService:setParams( "ws_key", "5XV4KE42BBX631RW9GW1DLG8K4JCDVAM" )
+
+
+
+
+   oWebService:setMethod( "GET" )
+   oWebService:Open()
+   oWebService:Send()
+
+   MsgInfo( oWebService:getStatus(), "status" )
+   Msginfo( oWebService:getResponseText(), "getresponsetext" )
+
+   oWebService:End()
+
+RETURN ( nil )
+
+
+
+FUNCTION testWebServicePost()
+
+   local oXml
+   local cXml
+   local oXmlId
+   local oXmlIdData
+   local oWebService
+
+   MsgInfo( "testWebServicePost" )
+
+   cXml           := getXML()
+
+   oWebService    := WebService():New()
+   oWebService:setService( "products/" )
+   oWebService:setUrl( "https://www.p-escamas.es/api/" )
+   oWebService:setParams( "ws_key", "5XV4KE42BBX631RW9GW1DLG8K4JCDVAM" )
+
+
+
+
+   oWebService:setMethod( "POST" )
+   oWebService:Open()
+   oWebService:SetRequestHeader( "Content-Type", "application/x-www-form-urlencoded" )
+   oWebService:SetRequestHeader( "Content-Length", len( cXml ) )
+   oWebService:Send( cXml )
+
+   MsgInfo( oWebService:getStatus(), "status" )
+   Msginfo( oWebService:getResponseText(), "getresponsetext" )
+   Msginfo( oWebService:getResponseId(), "getResponseId" )
+
+   oWebService:End()
+
+RETURN ( nil )
+
+
+
+STATIC FUNCTION getXML()
+
+   local cXml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cXml:=e"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<prestashop xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n<product>\n<id_category_default>8</id_category_default>\n<id_shop_default>1</id_shop_default>\n<id_tax_rules_group>1</id_tax_rules_group>\n<reference>999999999</reference>\n<state>1</state>\n<additional_delivery_times>1</additional_delivery_times>\n<minimal_quantity>1</minimal_quantity>\n<low_stock_alert>0</low_stock_alert>\n<active>1</active>\n<price>5.37190100</price>\n<available_for_order>1</available_for_order>\n<show_condition>1</show_condition>\n<condition>new</condition>\n<show_price>1</show_price>\n<visibility>both</visibility>\n<pack_stock_type>3</pack_stock_type>\n<meta_description>\n<language id=\"1\"></language>\n</meta_description>\n<meta_keywords>\n<language id=\"1\"></language>\n</meta_keywords>\n<meta_title>\n<language id=\"1\"></language>\n</meta_title>\n<link_rewrite>\n<language id=\"1\">articulo-dario</language>\n</link_rewrite>\n<name>\n<language id=\"1\">Artículo Darío</language>\n</name>\n<description>\n<language id=\"1\">Este bajo de línea cónico.</language>\n</description>\n<description_short>\n<language id=\"1\">Artículo Darío</language>\n</description_short>\n<associations>\n<categories>\n<category>\n<id>8</id>\n</category>\n</categories>\n</associations>\n</product>\n</prestashop>\n"
+
+MsgInfo( cXml )
+
+RETURN ( cXml )
+
+
+
+_HB_CLASS WebService ; function WebService ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "WebService", iif( .F., { }, { @HBObject() } ), @WebService() ) ) ;
+
+   _HB_MEMBER { oParent } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oParent"}, .F. )
+
+   _HB_MEMBER { oService } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oService"}, .F. )
+
+   _HB_MEMBER { cKey } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cKey"}, .F. )
+
+   _HB_MEMBER { cMethod } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cMethod"}, .F. )
+
+   _HB_MEMBER { cSource } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSource"}, .F. )
+
+   _HB_MEMBER { cUrl } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cUrl"}, .F. )
+
+   _HB_MEMBER { cPost } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPost"}, .F. )
+
+   _HB_MEMBER { lErrors } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lErrors"}, .F. )
+
+   _HB_MEMBER { hParams } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hParams"}, .F. )
+
+   _HB_MEMBER { nIdToGet } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nIdToGet"}, .F. )
+
+   _HB_MEMBER { cXml } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cXml"}, .F. )
+
+   _HB_MEMBER { cUser } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cUser"}, .F. )
+
+   _HB_MEMBER { cPassword } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cPassword"}, .F. )
+
+   _HB_MEMBER New() AS CLASS WebService; oClass:AddMethod( "New", @WebService_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER End(); oClass:AddMethod( "End", @WebService_End(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER createService(); oClass:AddMethod( "createService", @WebService_createService(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Open(); oClass:AddMethod( "Open", @WebService_Open(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER hasErrors(); oClass:AddInline( "hasErrors", {|Self | ( ( Self ) ), ( ::lErrors ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setKey(); oClass:AddInline( "setKey", {|Self, cKey | ( ( Self ) ), ( ::cKey := cKey ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getKey(); oClass:AddInline( "getKey", {|Self | ( ( Self ) ), ( ::cKey ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setService(); oClass:AddInline( "setService", {|Self, cSource | ( ( Self ) ), ( ::cSource := cSource ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getService(); oClass:AddInline( "getService", {|Self | ( ( Self ) ), ( ::cSource ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setMethod(); oClass:AddInline( "setMethod", {|Self, cMethod | ( ( Self ) ), ( ::cMethod := cMethod ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getMethod(); oClass:AddInline( "getMethod", {|Self | ( ( Self ) ), ( ::cMethod ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setIdToGet(); oClass:AddInline( "setIdToGet", {|Self, nIdToGet | ( ( Self ) ), ( ::nIdToGet := "/" + AllTrim( Str( nIdToGet ) ) + "/" ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getIdToGet(); oClass:AddInline( "getIdToGet", {|Self | ( ( Self ) ), ( ::nIdToGet ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setUrl(); oClass:AddInline( "setUrl", {|Self, cUrl | ( ( Self ) ), ( ::cUrl := cUrl + ::cSource + if( !Empty( ::getIdToGet() ), ::getIdToGet(), "" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getUrl(); oClass:AddMethod( "getUrl", @WebService_getUrl(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setUser(); oClass:AddInline( "setUser", {|Self, cUser | ( ( Self ) ), ( ::cUser := cUser ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getUser(); oClass:AddInline( "getUser", {|Self | ( ( Self ) ), ( ::cUser ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setPassword(); oClass:AddInline( "setPassword", {|Self, cPassword | ( ( Self ) ), ( ::cPassword := cPassword ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getPassword(); oClass:AddInline( "getPassword", {|Self | ( ( Self ) ), ( ::cPassword ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER createPostXml() ; oClass:AddVirtual( "createPostXml" )
+   _HB_MEMBER createPutXml() ; oClass:AddVirtual( "createPutXml" )
+   _HB_MEMBER createGetXml() ; oClass:AddVirtual( "createGetXml" )
+
+   _HB_MEMBER setMethodPost(); oClass:AddInline( "setMethodPost", {|Self | ( ( Self ) ), ( ::setMethod( "POST" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setMethodPut(); oClass:AddInline( "setMethodPut", {|Self | ( ( Self ) ), ( ::setMethod( "PUT" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setMethodGet(); oClass:AddInline( "setMethodGet", {|Self | ( ( Self ) ), ( ::setMethod( "GET" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setMethodDelete(); oClass:AddInline( "setMethodDelete", {|Self | ( ( Self ) ), ( ::setMethod( "DELETE" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setMethodHead(); oClass:AddInline( "setMethodHead", {|Self | ( ( Self ) ), ( ::setMethod( "HEAD" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER runPost(); oClass:AddMethod( "runPost", @WebService_runPost(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER runGetJSon(); oClass:AddMethod( "runGetJSon", @WebService_runGetJSon(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER runGetXml(); oClass:AddMethod( "runGetXml", @WebService_runGetXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER runPut(); oClass:AddMethod( "runPut", @WebService_runPut(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER runDelete(); oClass:AddInline( "runDelete", {|Self | ( ( Self ) ), ( nil ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER runHead(); oClass:AddInline( "runHead", {|Self | ( ( Self ) ), ( nil ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setXml(); oClass:AddInline( "setXml", {|Self, cXml | ( ( Self ) ), ( ::cXml := cXml ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getXml(); oClass:AddInline( "getXml", {|Self | ( ( Self ) ), ( ::cXml ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetRequestHeader( cHeader, uValue); oClass:AddMethod( "SetRequestHeader", @WebService_SetRequestHeader(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Send( uBody); oClass:AddMethod( "Send", @WebService_Send(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getStatus(); oClass:AddInline( "getStatus", {|Self | ( ( Self ) ), ( ::oService:Status ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getResponseText(); oClass:AddInline( "getResponseText", {|Self | ( ( Self ) ), ( ::oService:ResponseText ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getResponseTextAsXml(); oClass:AddInline( "getResponseTextAsXml", {|Self | ( ( Self ) ), ( TXmlDocument():new( ::oService:ResponseText ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getResponseId(); oClass:AddMethod( "getResponseId", @WebService_getResponseId(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setParams( cKey, uValue); oClass:AddMethod( "setParams", @WebService_setParams(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS WebService ;
+
+
+
+static FUNCTION WebService_New( oParent ) ; local Self AS CLASS WebService := QSelf() AS CLASS WebService
+
+   ::oParent      := oParent
+
+   ::lErrors      := .F.
+
+   ::hParams      := {=>}
+
+   ::createService()
+
+RETURN ( self )
+
+
+
+static FUNCTION WebService_End( ) ; local Self AS CLASS WebService := QSelf() AS CLASS WebService
+
+   ::oService  := nil
+
+RETURN ( nil )
+
+
+
+static FUNCTION WebService_createService( ) ; local Self AS CLASS WebService := QSelf() AS CLASS WebService
+
+   local oError
+
+   BEGIN SEQUENCE WITH {| oErr | Break( oErr ) }
+     ::oService   := CreateObject( "MSXML2.ServerXMLHTTP.6.0" )
+   RECOVER USING oError
+     ::lErrors    := .T.
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION WebService_Open( cMethod, cUrl, lAsync, cUser, cPassword ) ; local Self AS CLASS WebService := QSelf() AS CLASS WebService
+
+   If( cMethod == nil, cMethod := ::getMethod(), ) ;
+   If( cUrl == nil, cUrl := ::getUrl(), ) ;
+   If( lAsync == nil, lAsync := .F., ) ;
+   If( cUser == nil, cUser := ::getUser(), ) ;
+   If( cPassword == nil, cPassword := ::getPassword(), ) ;
+
+RETURN ( ::oService:Open( cMethod, cUrl, lAsync, cUser, cPassword ) )
+
+
+
+static FUNCTION WebService_getUrl( ) ; local Self AS CLASS WebService := QSelf() AS CLASS WebService
+
+   if Len( ::hParams ) > 0
+      ::cUrl  += "?"
+      hEval( ::hParams, {| k, v, n | ::cUrl  += if( n > 1, "&", "" ) + k + "=" + v } )
+   end
+
+RETURN ( ::cUrl )
+
+
+
+static FUNCTION WebService_SetRequestHeader( cHeader, uValue ) ; local Self AS CLASS WebService := QSelf() AS CLASS WebService
+
+RETURN ( ::oService:SetRequestHeader( cHeader, uValue ) )
+
+
+
+static FUNCTION WebService_Send( uBody ) ; local Self AS CLASS WebService := QSelf() AS CLASS WebService
+
+RETURN ( ::oService:Send( uBody ) )
+
+
+
+static FUNCTION WebService_setParams( cKey, uValue ) ; local Self AS CLASS WebService := QSelf() AS CLASS WebService
+
+RETURN ( hset( ::hParams, cKey, uValue ) )
+
+
+
+static FUNCTION WebService_getResponseId( ) ; local Self AS CLASS WebService := QSelf() AS CLASS WebService
+
+   local oXml
+   local oNodeId
+   local oNodeData
+
+   if ::getStatus() <> 201
+      RETURN ( nil )
+   end
+
+   oNodeId     := ::getResponseTextAsXml():findFirst( "id" )
+   if empty( oNodeId )
+      RETURN ( nil )
+   end
+
+   oNodeData   :=  oNodeId:NextInTree()
+   if !empty( oNodeData )
+      RETURN ( oNodeData:cData )
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION WebService_runPost( idParent ) ; local Self AS CLASS WebService := QSelf() AS CLASS WebService
+
+   ::createPostXml( idParent )
+   ::setParams( "ws_key", ::getKey() )
+   ::Open()
+   ::SetRequestHeader( "Content-Type", "application/x-www-form-urlencoded" )
+   ::SetRequestHeader( "Content-Length", len( ::getXml() ) )
+   ::Send( ::getXml() )
+
+RETURN ( nil )
+
+
+
+static FUNCTION WebService_runGetXml( ) ; local Self AS CLASS WebService := QSelf() AS CLASS WebService
+
+   ::setParams( "ws_key", ::getKey() )
+   ::Open()
+   ::Send()
+
+RETURN ( nil )
+
+
+
+static FUNCTION WebService_runGetJSon( ) ; local Self AS CLASS WebService := QSelf() AS CLASS WebService
+
+   ::setParams( "ws_key", ::getKey() )
+   ::Open()
+   ::oService:SetRequestHeader( "Output-Format", "JSON" )
+   ::Send()
+
+RETURN ( nil )
+
+
+
+static FUNCTION WebService_runPut( nId, idParent ) ; local Self AS CLASS WebService := QSelf() AS CLASS WebService
+
+   ::createPutXml( nId, idParent )
+   ::setParams( "ws_key", ::getKey() )
+   ::Open()
+   ::SetRequestHeader( "Content-Type", "application/x-www-form-urlencoded" )
+   ::SetRequestHeader( "Content-Length", len( ::getXml() ) )
+   ::Send( ::getXml() )
+
+RETURN ( nil )
+
+
+
+
+
+
+
+_HB_CLASS LanguagesWebService ; function LanguagesWebService ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "LanguagesWebService", iif( .T., { @WebService() }, { @HBObject() } ), @LanguagesWebService() ) ) ;
+
+   _HB_MEMBER { cSource } ; oClass:AddMultiData(, "languages", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSource"}, .F. )
+
+   _HB_MEMBER getListIdsLenguages(); oClass:AddMethod( "getListIdsLenguages", @LanguagesWebService_getListIdsLenguages(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS LanguagesWebService ;
+
+
+
+static FUNCTION LanguagesWebService_getListIdsLenguages( ) ; local Self AS CLASS LanguagesWebService := QSelf() AS CLASS LanguagesWebService
+
+   local hJson
+   local aJson
+   local aIdsLanguages  := {}
+
+   if ::getStatus() <> 200
+      RETURN ( nil )
+   end
+
+   hb_jsonDecode( ::getResponseText(), @hJson )
+
+   aJson    := hGet( hJson, "languages" )
+
+   aEval( aJson, { |a| aAdd( aIdsLanguages, hGet( a, "id" ) ) } )
+
+RETURN ( aIdsLanguages )
+
+
+
+
+
+
+
+_HB_CLASS ImagesTypesWebService ; function ImagesTypesWebService ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "ImagesTypesWebService", iif( .T., { @WebService() }, { @HBObject() } ), @ImagesTypesWebService() ) ) ;
+
+   _HB_MEMBER { cSource } ; oClass:AddMultiData(, "image_types", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSource"}, .F. )
+
+   _HB_MEMBER getListImageTypes(); oClass:AddMethod( "getListImageTypes", @ImagesTypesWebService_getListImageTypes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getArrayImageTypes(); oClass:AddMethod( "getArrayImageTypes", @ImagesTypesWebService_getArrayImageTypes(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS ImagesTypesWebService ;
+
+
+
+static FUNCTION ImagesTypesWebService_getListImageTypes( ) ; local Self AS CLASS ImagesTypesWebService := QSelf() AS CLASS ImagesTypesWebService
+
+   local hJson
+   local aJson
+   local aIdsImageTypes  := {}
+
+   if ::getStatus() <> 200
+      RETURN ( nil )
+   end
+
+   hb_jsonDecode( ::getResponseText(), @hJson )
+
+   aJson    := hGet( hJson, "image_types" )
+
+   aEval( aJson, { |a| aAdd( aIdsImageTypes, hGet( a, "id" ) ) } )
+
+RETURN ( aIdsImageTypes )
+
+
+
+static FUNCTION ImagesTypesWebService_getArrayImageTypes( ) ; local Self AS CLASS ImagesTypesWebService := QSelf() AS CLASS ImagesTypesWebService
+
+   local hJson
+
+   if ::getStatus() <> 200
+      RETURN ( nil )
+   end
+
+   hb_jsonDecode( ::getResponseText(), @hJson )
+
+RETURN ( hGet( hJson, "image_type" ) )
+
+
+
+
+
+
+
+_HB_CLASS categoriesWebService ; function categoriesWebService ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "categoriesWebService", iif( .T., { @WebService() }, { @HBObject() } ), @categoriesWebService() ) ) ;
+
+   _HB_MEMBER { cSource } ; oClass:AddMultiData(, "categories", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSource"}, .F. )
+
+   _HB_MEMBER { hName } ; oClass:AddMultiData(, {=>}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hName"}, .F. )
+
+   _HB_MEMBER createPostXml(); oClass:AddMethod( "createPostXml", @categoriesWebService_createPostXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER createPutXml(); oClass:AddMethod( "createPutXml", @categoriesWebService_createPutXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setHName(); oClass:AddInline( "setHName", {|Self, hName | ( ( Self ) ), ( ::hName  := hName ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS categoriesWebService ;
+
+
+
+static FUNCTION categoriesWebService_createPostXml( idParent ) ; local Self AS CLASS categoriesWebService := QSelf() AS CLASS categoriesWebService
+
+   local oXmlHead
+   local oXmlPrincipal
+   local oXmlxlink
+   local oXmlNode
+
+   ::cXml     := TXmlDocument():new( '<?xml version="1.0" encoding="UTF-8"?>' )
+
+   oXmlxlink  := TXmlNode():new( , "prestashop", { "xmlns:xlink" => "http://www.w3.org/1999/xlink" } )
+
+   oXmlHead   := TXmlNode():new( , "category" )
+
+   oXmlxlink:addBelow( oXmlHead )
+
+
+
+   oXmlNode   := TXmlNode():new( , "id_shop_default", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+
+   oXmlNode   := TXmlNode():new( , "id_parent", , hb_ntos( idParent ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+
+   oXmlNode   := TXmlNode():new( , "active", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+
+   oXmlNode   := TXmlNode():new( , "name" )
+
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, v ) ) } )
+
+   oXmlHead:addBelow( oXmlNode )
+
+
+
+   oXmlNode   := TXmlNode():new( , "description" )
+
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, v ) ) } )
+
+   oXmlHead:addBelow( oXmlNode )
+
+
+
+   oXmlNode   := TXmlNode():new( , "link_rewrite" )
+
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, StrTran( v, " ", "_" ) ) ) } )
+
+   oXmlHead:addBelow( oXmlNode )
+
+   ::cXml:oRoot:addBelow( oXmlxlink )
+
+   ::cXml   := ::cXml:ToString()
+
+RETURN ( nil )
+
+
+
+static FUNCTION categoriesWebService_createPutXml( idCategory, idParent ) ; local Self AS CLASS categoriesWebService := QSelf() AS CLASS categoriesWebService
+
+   local oXmlHead
+   local oXmlPrincipal
+   local oXmlxlink
+   local oXmlNode
+
+   ::cXml     := TXmlDocument():new( '<?xml version="1.0" encoding="UTF-8"?>' )
+
+   oXmlxlink  := TXmlNode():new( , "prestashop", { "xmlns:xlink" => "http://www.w3.org/1999/xlink" } )
+
+   oXmlHead   := TXmlNode():new( , "category" )
+
+   oXmlxlink:addBelow( oXmlHead )
+
+
+
+   oXmlNode   := TXmlNode():new( , "id", , hb_ntos( idCategory ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+
+   oXmlNode   := TXmlNode():new( , "id_shop_default", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+
+   oXmlNode   := TXmlNode():new( , "id_parent", , hb_ntos( idParent ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+
+   oXmlNode   := TXmlNode():new( , "active", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+
+   oXmlNode   := TXmlNode():new( , "name" )
+
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, v ) ) } )
+
+   oXmlHead:addBelow( oXmlNode )
+
+
+
+   oXmlNode   := TXmlNode():new( , "description" )
+
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, v ) ) } )
+
+   oXmlHead:addBelow( oXmlNode )
+
+
+
+   oXmlNode   := TXmlNode():new( , "link_rewrite" )
+
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, StrTran( v, " ", "_" ) ) ) } )
+
+   oXmlHead:addBelow( oXmlNode )
+
+   ::cXml:oRoot:addBelow( oXmlxlink )
+
+   ::cXml   := ::cXml:ToString()
+
+RETURN ( nil )
+
+
+
+
+
+
+
+_HB_CLASS manufacturerWebService ; function manufacturerWebService ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "manufacturerWebService", iif( .T., { @WebService() }, { @HBObject() } ), @manufacturerWebService() ) ) ;
+
+   _HB_MEMBER { cSource } ; oClass:AddMultiData(, "manufacturers", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSource"}, .F. )
+
+   _HB_MEMBER { hName } ; oClass:AddMultiData(, {=>}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hName"}, .F. )
+   _HB_MEMBER { cName } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cName"}, .F. )
+
+   _HB_MEMBER createPostXml(); oClass:AddMethod( "createPostXml", @manufacturerWebService_createPostXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER createPutXml(); oClass:AddMethod( "createPutXml", @manufacturerWebService_createPutXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setHName(); oClass:AddInline( "setHName", {|Self, hName | ( ( Self ) ), ( ::hName  := hName ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS manufacturerWebService ;
+
+
+
+static FUNCTION manufacturerWebService_createPostXml( ) ; local Self AS CLASS manufacturerWebService := QSelf() AS CLASS manufacturerWebService
+
+   local oXmlHead
+   local oXmlxlink
+   local oXmlNode
+
+   ::cXml     := TXmlDocument():new( '<?xml version="1.0" encoding="UTF-8"?>' )
+
+   oXmlxlink  := TXmlNode():new( , "prestashop", { "xmlns:xlink" => "http://www.w3.org/1999/xlink" } )
+
+   oXmlHead   := TXmlNode():new( , "manufacturer" )
+
+   oXmlxlink:addBelow( oXmlHead )
+
+
+
+   oXmlNode   := TXmlNode():new( , "active", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+
+   oXmlNode   := TXmlNode():new( , "name", , AllTrim( ::cName ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+
+   oXmlNode   := TXmlNode():new( , "description" )
+
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, v ) ) } )
+
+   oXmlHead:addBelow( oXmlNode )
+
+   ::cXml:oRoot:addBelow( oXmlxlink )
+
+   ::cXml   := ::cXml:ToString()
+
+RETURN ( nil )
+
+
+
+static FUNCTION manufacturerWebService_createPutXml( idFab ) ; local Self AS CLASS manufacturerWebService := QSelf() AS CLASS manufacturerWebService
+
+   local oXmlHead
+   local oXmlxlink
+   local oXmlNode
+
+   ::cXml     := TXmlDocument():new( '<?xml version="1.0" encoding="UTF-8"?>' )
+
+   oXmlxlink  := TXmlNode():new( , "prestashop", { "xmlns:xlink" => "http://www.w3.org/1999/xlink" } )
+
+   oXmlHead   := TXmlNode():new( , "manufacturer" )
+
+   oXmlxlink:addBelow( oXmlHead )
+
+
+
+   oXmlNode   := TXmlNode():new( , "id", , hb_ntos( idFab ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+
+   oXmlNode   := TXmlNode():new( , "active", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+
+   oXmlNode   := TXmlNode():new( , "name", , AllTrim( ::cName ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+
+   oXmlNode   := TXmlNode():new( , "description" )
+
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, v ) ) } )
+
+   oXmlHead:addBelow( oXmlNode )
+
+   ::cXml:oRoot:addBelow( oXmlxlink )
+
+   ::cXml   := ::cXml:ToString()
+
+RETURN ( nil )
+
+
+
+
+
+
+
+_HB_CLASS productWebService ; function productWebService ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "productWebService", iif( .T., { @WebService() }, { @HBObject() } ), @productWebService() ) ) ;
+
+   _HB_MEMBER { cSource } ; oClass:AddMultiData(, "products", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSource"}, .F. )
+
+   _HB_MEMBER { hName } ; oClass:AddMultiData(, {=>}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hName"}, .F. )
+
+   _HB_MEMBER createPostXml( hProduct); oClass:AddMethod( "createPostXml", @productWebService_createPostXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER createPutXml( idProduct, hProduct); oClass:AddMethod( "createPutXml", @productWebService_createPutXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER createStockPutXml( idProduct, hProduct, nIdStock, nidproductattribute); oClass:AddMethod( "createStockPutXml", @productWebService_createStockPutXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setHName(); oClass:AddInline( "setHName", {|Self, hName | ( ( Self ) ), ( ::hName  := hName ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER runPut( idProduct, hProduct, nIdStock, nidproductattribute); oClass:AddMethod( "runPut", @productWebService_runPut(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS productWebService ;
+
+
+
+static FUNCTION productWebService_runPut( idProduct, hProduct, nIdStock, nidproductattribute ) ; local Self AS CLASS productWebService := QSelf() AS CLASS productWebService
+
+   if hb_isnil( nIdStock )
+      ::createPutXml( idProduct, hProduct )
+   else
+      ::createStockPutXml( idProduct, hProduct, nIdStock, nidproductattribute )
+   end
+
+   ::setParams( "ws_key", ::getKey() )
+   ::Open()
+   ::SetRequestHeader( "Content-Type", "application/x-www-form-urlencoded" )
+   ::SetRequestHeader( "Content-Length", len( ::getXml() ) )
+   ::Send( ::getXml() )
+
+RETURN ( nil )
+
+
+
+static FUNCTION productWebService_createPostXml( hProduct ) ; local Self AS CLASS productWebService := QSelf() AS CLASS productWebService
+
+   local oXmlHead
+   local oXmlxlink
+   local oXmlNode
+   local oXmlAsociation
+   local oXmlAsociationNode
+   local oXmlAsociationNodeName
+   local idManufacturer
+
+   if !Empty( hGet( hProduct, "id_manufacturer" ) )
+      idManufacturer    := ::oParent:getPrestashopIdInstance():getValueManufacturer( hGet( hProduct, "id_manufacturer" ), ::oParent:oController:getWeb() )
+   end
+
+   ::cXml     := TXmlDocument():new( '<?xml version="1.0" encoding="UTF-8"?>' )
+
+   oXmlxlink  := TXmlNode():new( , "prestashop", { "xmlns:xlink" => "http://www.w3.org/1999/xlink" } )
+
+   oXmlHead   := TXmlNode():new( , "product" )
+
+   oXmlxlink:addBelow( oXmlHead )
+
+
+
+   if !Empty( hGet( hProduct, "id_manufacturer" ) ) .AND. !Empty( idManufacturer )
+      oXmlNode   := TXmlNode():new( , "id_manufacturer", , hb_ntos( idManufacturer ) )
+      oXmlHead:addBelow( oXmlNode )
+   end
+
+
+   oXmlNode   := TXmlNode():new( , "id_category_default", , hb_ntos( ::oParent:getPrestashopIdInstance():getValueCategory( hGet( hProduct, "id_category_default" ), ::oParent:oController:getWeb() ) ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "id_shop_default", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "id_tax_rules_group", , hb_ntos( ::oParent:getPrestashopIdInstance():getValueTaxRuleGroup( hGet( hProduct, "id_tax_rules_group" ), ::oParent:oController:getWeb() ) ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "reference", , AllTrim( hGet( hProduct, "id" ) ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "state", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "additional_delivery_times", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "minimal_quantity", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "low_stock_alert", , hb_ntos( 0 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "active", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "price", , hb_ntos( hGet( hProduct, "price" ) ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "available_for_order", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "show_condition", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "condition", , "new" )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "show_price", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "visibility", , "both" )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "pack_stock_type", , hb_ntos( 3 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "meta_description" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, hGet( hProduct, "meta_description" ) ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "meta_keywords" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, hGet( hProduct, "meta_keywords" ) ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "meta_title" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, hGet( hProduct, "meta_title" ) ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "link_rewrite" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, hGet( hProduct, "link_rewrite" ) ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "name" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, hGet( hProduct, "name" ) ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "description" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, hGet( hProduct, "description" ) ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "description_short" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, v ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlAsociation   := TXmlNode():new( , "associations" )
+
+
+      oXmlAsociationNode := TXmlNode():new( , "categories" )
+
+         oXmlAsociationNodeName  := TXmlNode():new( , "category" )
+
+            oXmlNode   := TXmlNode():new( , "id", , hb_ntos( ::oParent:getPrestashopIdInstance():getValueCategory( hGet( hProduct, "id_category_default" ), ::oParent:oController:getWeb() ) ) )
+            oXmlAsociationNodeName:addBelow( oXmlNode )
+
+         oXmlAsociationNode:addBelow( oXmlAsociationNodeName )
+
+      oXmlAsociation:addBelow( oXmlAsociationNode )
+
+   oXmlHead:addBelow( oXmlAsociation )
+
+   ::cXml:oRoot:addBelow( oXmlxlink )
+
+   ::cXml   := ::cXml:ToString()
+
+RETURN ( nil )
+
+
+
+static FUNCTION productWebService_createPutXml( idProduct, hProduct ) ; local Self AS CLASS productWebService := QSelf() AS CLASS productWebService
+
+   local oXmlHead
+   local oXmlxlink
+   local oXmlNode
+   local oXmlAsociation
+   local oXmlAsociationNode
+   local oXmlAsociationNodeName
+   local idManufacturer
+
+   if !Empty( hGet( hProduct, "id_manufacturer" ) )
+      idManufacturer    := ::oParent:getPrestashopIdInstance():getValueManufacturer( hGet( hProduct, "id_manufacturer" ), ::oParent:oController:getWeb() )
+   end
+
+   ::cXml     := TXmlDocument():new( '<?xml version="1.0" encoding="UTF-8"?>' )
+
+   oXmlxlink  := TXmlNode():new( , "prestashop", { "xmlns:xlink" => "http://www.w3.org/1999/xlink" } )
+
+   oXmlHead   := TXmlNode():new( , "product" )
+
+   oXmlxlink:addBelow( oXmlHead )
+
+
+   oXmlNode   := TXmlNode():new( , "id", , hb_ntos( idProduct ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   if !Empty( hGet( hProduct, "id_manufacturer" ) ) .AND. !Empty( idManufacturer )
+      oXmlNode   := TXmlNode():new( , "id_manufacturer", , hb_ntos( idManufacturer ) )
+      oXmlHead:addBelow( oXmlNode )
+   end
+
+
+   oXmlNode   := TXmlNode():new( , "id_category_default", , hb_ntos( ::oParent:getPrestashopIdInstance():getValueCategory( hGet( hProduct, "id_category_default" ), ::oParent:oController:getWeb() ) ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "id_shop_default", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "id_tax_rules_group", , hb_ntos( ::oParent:getPrestashopIdInstance():getValueTaxRuleGroup( hGet( hProduct, "id_tax_rules_group" ), ::oParent:oController:getWeb() ) ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "reference", , AllTrim( hGet( hProduct, "id" ) ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "state", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "additional_delivery_times", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "minimal_quantity", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "low_stock_alert", , hb_ntos( 0 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "active", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "price", , hb_ntos( hGet( hProduct, "price" ) ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "available_for_order", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "show_condition", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "condition", , "new" )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "show_price", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "visibility", , "both" )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "pack_stock_type", , hb_ntos( 3 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "meta_description" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, hGet( hProduct, "meta_description" ) ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "meta_keywords" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, hGet( hProduct, "meta_keywords" ) ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "meta_title" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, hGet( hProduct, "meta_title" ) ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "link_rewrite" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, hGet( hProduct, "link_rewrite" ) ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "name" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, hGet( hProduct, "name" ) ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "description" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, hGet( hProduct, "description" ) ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "description_short" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, v ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlAsociation   := TXmlNode():new( , "associations" )
+
+      oXmlAsociationNode := TXmlNode():new( , "categories" )
+
+         oXmlAsociationNodeName  := TXmlNode():new( , "category" )
+
+            oXmlNode   := TXmlNode():new( , "id", , hb_ntos( ::oParent:getPrestashopIdInstance():getValueCategory( hGet( hProduct, "id_category_default" ), ::oParent:oController:getWeb() ) ) )
+            oXmlAsociationNodeName:addBelow( oXmlNode )
+
+         oXmlAsociationNode:addBelow( oXmlAsociationNodeName )
+
+      oXmlAsociation:addBelow( oXmlAsociationNode )
+
+   oXmlHead:addBelow( oXmlAsociation )
+
+   ::cXml:oRoot:addBelow( oXmlxlink )
+
+   ::cXml   := ::cXml:ToString()
+
+RETURN ( nil )
+
+
+
+static FUNCTION productWebService_createStockPutXml( idProduct, hProduct, nIdStock, nidproductattribute ) ; local Self AS CLASS productWebService := QSelf() AS CLASS productWebService
+
+   local oXmlHead
+   local oXmlxlink
+   local oXmlNode
+   local oXmlAsociation
+   local oXmlAsociationNode
+   local oXmlAsociationNodeName
+   local idManufacturer
+
+   if !Empty( hGet( hProduct, "id_manufacturer" ) )
+      idmanufacturer   := ::oParent:getPrestashopIdInstance():getValueManufacturer( hGet( hProduct, "id_manufacturer" ), ::oParent:oController:getWeb() )
+   end
+
+   ::cXml     := TXmlDocument():new( '<?xml version="1.0" encoding="UTF-8"?>' )
+
+   oXmlxlink  := TXmlNode():new( , "prestashop", { "xmlns:xlink" => "http://www.w3.org/1999/xlink" } )
+
+   oXmlHead   := TXmlNode():new( , "product" )
+
+   oXmlxlink:addBelow( oXmlHead )
+
+
+   oXmlNode   := TXmlNode():new( , "id", , hb_ntos( idProduct ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   if !Empty( hGet( hProduct, "id_manufacturer" ) ) .AND. !Empty( idManufacturer )
+      oXmlNode   := TXmlNode():new( , "id_manufacturer", , hb_ntos( idManufacturer ) )
+      oXmlHead:addBelow( oXmlNode )
+   end
+
+
+   oXmlNode   := TXmlNode():new( , "id_category_default", , hb_ntos( ::oParent:getPrestashopIdInstance():getValueCategory( hGet( hProduct, "id_category_default" ), ::oParent:oController:getWeb() ) ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "id_shop_default", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "id_tax_rules_group", , hb_ntos( ::oParent:getPrestashopIdInstance():getValueTaxRuleGroup( hGet( hProduct, "id_tax_rules_group" ), ::oParent:oController:getWeb() ) ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "reference", , AllTrim( hGet( hProduct, "id" ) ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "state", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "additional_delivery_times", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "minimal_quantity", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "low_stock_alert", , hb_ntos( 0 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "active", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "price", , hb_ntos( hGet( hProduct, "price" ) ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "available_for_order", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "show_condition", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "condition", , "new" )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "show_price", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "visibility", , "both" )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "pack_stock_type", , hb_ntos( 3 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "meta_description" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, hGet( hProduct, "meta_description" ) ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "meta_keywords" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, hGet( hProduct, "meta_keywords" ) ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "meta_title" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, hGet( hProduct, "meta_title" ) ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "link_rewrite" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, hGet( hProduct, "link_rewrite" ) ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "name" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, hGet( hProduct, "name" ) ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "description" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, hGet( hProduct, "description" ) ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "description_short" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, v ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlAsociation   := TXmlNode():new( , "associations" )
+
+
+
+      oXmlAsociationNode := TXmlNode():new( , "stock_availables" )
+
+         oXmlAsociationNodeName  := TXmlNode():new( , "stock_available" )
+
+            oXmlAsociationNodeName:addBelow( TXmlNode():new( , "id", , hb_ntos( nIdStock ) ) )
+            oXmlAsociationNodeName:addBelow( TXmlNode():new( , "id_product_attribute", , hb_ntos( nidproductattribute ) ) )
+
+         oXmlAsociationNode:addBelow( oXmlAsociationNodeName )
+
+      oXmlAsociation:addBelow( oXmlAsociationNode )
+
+   oXmlHead:addBelow( oXmlAsociation )
+
+   ::cXml:oRoot:addBelow( oXmlxlink )
+
+   ::cXml   := ::cXml:ToString()
+
+RETURN ( nil )
+
+
+
+
+
+
+
+_HB_CLASS stockProductWebService ; function stockProductWebService ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "stockProductWebService", iif( .T., { @WebService() }, { @HBObject() } ), @stockProductWebService() ) ) ;
+
+   _HB_MEMBER { cSource } ; oClass:AddMultiData(, "stock_availables", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSource"}, .F. )
+
+   _HB_MEMBER { hName } ; oClass:AddMultiData(, {=>}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hName"}, .F. )
+
+   _HB_MEMBER createPostXml( hStock, idProduct, idproductattribute); oClass:AddMethod( "createPostXml", @stockProductWebService_createPostXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER createPutXml( hStock, idProduct, idproductattribute, idStock); oClass:AddMethod( "createPutXml", @stockProductWebService_createPutXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER runPost( hStock, idProduct, idproductattribute); oClass:AddMethod( "runPost", @stockProductWebService_runPost(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER runPut( hStock, idProduct, idproductattribute, idStock); oClass:AddMethod( "runPut", @stockProductWebService_runPut(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setHName(); oClass:AddInline( "setHName", {|Self, hName | ( ( Self ) ), ( ::hName  := hName ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getListIdsStocks(); oClass:AddMethod( "getListIdsStocks", @stockProductWebService_getListIdsStocks(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getArrayStocks(); oClass:AddMethod( "getArrayStocks", @stockProductWebService_getArrayStocks(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS stockProductWebService ;
+
+
+
+static FUNCTION stockProductWebService_runPost( hStock, idProduct, idproductattribute ) ; local Self AS CLASS stockProductWebService := QSelf() AS CLASS stockProductWebService
+
+   ::createPostXml( hStock, idProduct, idproductattribute )
+   ::setParams( "ws_key", ::getKey() )
+   ::Open()
+   ::SetRequestHeader( "Content-Type", "application/x-www-form-urlencoded" )
+   ::SetRequestHeader( "Content-Length", len( ::getXml() ) )
+   ::Send( ::getXml() )
+
+RETURN ( nil )
+
+
+
+static FUNCTION stockProductWebService_runPut( hStock, idProduct, idproductattribute, idStock ) ; local Self AS CLASS stockProductWebService := QSelf() AS CLASS stockProductWebService
+
+   ::createPutXml( hStock, idProduct, idproductattribute, idStock )
+   ::setParams( "ws_key", ::getKey() )
+   ::Open()
+   ::SetRequestHeader( "Content-Type", "application/x-www-form-urlencoded" )
+   ::SetRequestHeader( "Content-Length", len( ::getXml() ) )
+   ::Send( ::getXml() )
+
+RETURN ( nil )
+
+
+
+static FUNCTION stockProductWebService_createPutXml( hStock, idProduct, idproductattribute, idStock ) ; local Self AS CLASS stockProductWebService := QSelf() AS CLASS stockProductWebService
+
+   local oXmlHead
+   local oXmlxlink
+   local oXmlNode
+   local oXmlAsociation
+   local oXmlAsociationNode
+   local oXmlAsociationNodeName
+
+   ::cXml     := TXmlDocument():new( '<?xml version="1.0" encoding="UTF-8"?>' )
+
+   oXmlxlink  := TXmlNode():new( , "prestashop", { "xmlns:xlink" => "http://www.w3.org/1999/xlink" } )
+
+   oXmlHead   := TXmlNode():new( , "stock_available" )
+
+   oXmlxlink:addBelow( oXmlHead )
+
+
+   oXmlNode   := TXmlNode():new( , "id", , hb_ntos( idStock ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "id_product", , hb_ntos( idProduct ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "id_product_attribute", , hb_ntos( idproductattribute ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "id_shop", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "quantity", , hb_ntos( int( hget( hStock, "unidades" ) ) ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "depends_on_stock", , hb_ntos( 0 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "out_of_stock", , hb_ntos( 2 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+   ::cXml:oRoot:addBelow( oXmlxlink )
+
+   ::cXml   := ::cXml:ToString()
+
+RETURN ( nil )
+
+
+
+static FUNCTION stockProductWebService_createPostXml( hStock, idProduct, idproductattribute ) ; local Self AS CLASS stockProductWebService := QSelf() AS CLASS stockProductWebService
+
+   local oXmlHead
+   local oXmlxlink
+   local oXmlNode
+   local oXmlAsociation
+   local oXmlAsociationNode
+   local oXmlAsociationNodeName
+
+   ::cXml     := TXmlDocument():new( '<?xml version="1.0" encoding="UTF-8"?>' )
+
+   oXmlxlink  := TXmlNode():new( , "prestashop", { "xmlns:xlink" => "http://www.w3.org/1999/xlink" } )
+
+   oXmlHead   := TXmlNode():new( , "stock_available" )
+
+   oXmlxlink:addBelow( oXmlHead )
+
+
+   oXmlNode   := TXmlNode():new( , "id_product", , hb_ntos( idProduct ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "id_product_attribute", , hb_ntos( idproductattribute ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "id_shop", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "quantity", , hb_ntos( Int( hget( hStock, "unidades" ) ) ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "depends_on_stock", , hb_ntos( 0 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "out_of_stock", , hb_ntos( 2 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+   ::cXml:oRoot:addBelow( oXmlxlink )
+
+   ::cXml   := ::cXml:ToString()
+
+RETURN ( nil )
+
+
+
+static FUNCTION stockProductWebService_getListIdsStocks( ) ; local Self AS CLASS stockProductWebService := QSelf() AS CLASS stockProductWebService
+
+   local hJson
+   local aJson
+   local aIdsStocks  := {}
+
+   if ::getStatus() <> 200
+      RETURN ( nil )
+   end
+
+   hb_jsonDecode( ::getResponseText(), @hJson )
+
+   aJson    := hGet( hJson, "stock_availables" )
+
+   aEval( aJson, { |a| aAdd( aIdsStocks, hGet( a, "id" ) ) } )
+
+RETURN ( aIdsStocks )
+
+
+
+static FUNCTION stockProductWebService_getArrayStocks( ) ; local Self AS CLASS stockProductWebService := QSelf() AS CLASS stockProductWebService
+
+   local hJson
+
+   if ::getStatus() <> 200
+      RETURN ( nil )
+   end
+
+   hb_jsonDecode( ::getResponseText(), @hJson )
+
+RETURN ( hGet( hJson, "stock_available" ) )
+
+
+
+
+
+
+
+_HB_CLASS propiedadesWebService ; function propiedadesWebService ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "propiedadesWebService", iif( .T., { @WebService() }, { @HBObject() } ), @propiedadesWebService() ) ) ;
+
+   _HB_MEMBER { cSource } ; oClass:AddMultiData(, "product_options", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSource"}, .F. )
+
+   _HB_MEMBER { hName } ; oClass:AddMultiData(, {=>}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hName"}, .F. )
+   _HB_MEMBER { cName } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cName"}, .F. )
+
+   _HB_MEMBER createPostXml(); oClass:AddMethod( "createPostXml", @propiedadesWebService_createPostXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER createPutXml(); oClass:AddMethod( "createPutXml", @propiedadesWebService_createPutXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setHName(); oClass:AddInline( "setHName", {|Self, hName | ( ( Self ) ), ( ::hName  := hName ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS propiedadesWebService ;
+
+
+
+static FUNCTION propiedadesWebService_createPostXml( hPropertie ) ; local Self AS CLASS propiedadesWebService := QSelf() AS CLASS propiedadesWebService
+
+   local oXmlHead
+   local oXmlxlink
+   local oXmlNode
+
+   ::cXml     := TXmlDocument():new( '<?xml version="1.0" encoding="UTF-8"?>' )
+
+   oXmlxlink  := TXmlNode():new( , "prestashop", { "xmlns:xlink" => "http://www.w3.org/1999/xlink" } )
+
+   oXmlHead   := TXmlNode():new( , "product_option" )
+
+   oXmlxlink:addBelow( oXmlHead )
+
+
+   oXmlNode   := TXmlNode():new( , "is_color_group", , if( hGet( hPropertie, "lColor" ), hb_ntos( 1 ), hb_ntos( 0 ) ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "group_type", , if( hGet( hPropertie, "lColor" ), "color", "select" ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "name" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, v ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "public_name" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, v ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+   ::cXml:oRoot:addBelow( oXmlxlink )
+
+   ::cXml   := ::cXml:ToString()
+
+RETURN ( nil )
+
+
+
+static FUNCTION propiedadesWebService_createPutXml( idPro, hPropertie ) ; local Self AS CLASS propiedadesWebService := QSelf() AS CLASS propiedadesWebService
+
+   local oXmlHead
+   local oXmlxlink
+   local oXmlNode
+
+   ::cXml     := TXmlDocument():new( '<?xml version="1.0" encoding="UTF-8"?>' )
+
+   oXmlxlink  := TXmlNode():new( , "prestashop", { "xmlns:xlink" => "http://www.w3.org/1999/xlink" } )
+
+   oXmlHead   := TXmlNode():new( , "product_option" )
+
+   oXmlxlink:addBelow( oXmlHead )
+
+
+   oXmlNode   := TXmlNode():new( , "id", , hb_ntos( idPro ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "is_color_group", , if( hGet( hPropertie, "lColor" ), hb_ntos( 1 ), hb_ntos( 0 ) ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "group_type", , if( hGet( hPropertie, "lColor" ), "color", "select" ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "name" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, v ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "public_name" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, v ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+   ::cXml:oRoot:addBelow( oXmlxlink )
+
+   ::cXml   := ::cXml:ToString()
+
+RETURN ( nil )
+
+
+
+
+
+
+
+_HB_CLASS valoresPropiedadesWebService ; function valoresPropiedadesWebService ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "valoresPropiedadesWebService", iif( .T., { @WebService() }, { @HBObject() } ), @valoresPropiedadesWebService() ) ) ;
+
+   _HB_MEMBER { cSource } ; oClass:AddMultiData(, "product_option_values", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSource"}, .F. )
+
+   _HB_MEMBER { hName } ; oClass:AddMultiData(, {=>}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hName"}, .F. )
+   _HB_MEMBER { cName } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cName"}, .F. )
+
+   _HB_MEMBER runPost( hValue, idProp); oClass:AddMethod( "runPost", @valoresPropiedadesWebService_runPost(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER runPut( nId, hValue, idProp); oClass:AddMethod( "runPut", @valoresPropiedadesWebService_runPut(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER createPostXml(); oClass:AddMethod( "createPostXml", @valoresPropiedadesWebService_createPostXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER createPutXml(); oClass:AddMethod( "createPutXml", @valoresPropiedadesWebService_createPutXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setHName(); oClass:AddInline( "setHName", {|Self, hName | ( ( Self ) ), ( ::hName  := hName ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS valoresPropiedadesWebService ;
+
+
+
+static FUNCTION valoresPropiedadesWebService_runPost( hValue, idProp ) ; local Self AS CLASS valoresPropiedadesWebService := QSelf() AS CLASS valoresPropiedadesWebService
+
+   ::createPostXml( hValue, idProp )
+   ::setParams( "ws_key", ::getKey() )
+   ::Open()
+   ::SetRequestHeader( "Content-Type", "application/x-www-form-urlencoded" )
+   ::SetRequestHeader( "Content-Length", len( ::getXml() ) )
+   ::Send( ::getXml() )
+
+RETURN ( nil )
+
+
+
+static FUNCTION valoresPropiedadesWebService_runPut( nId, hValue, idProp ) ; local Self AS CLASS valoresPropiedadesWebService := QSelf() AS CLASS valoresPropiedadesWebService
+
+   ::createPutXml( nId, hValue, idProp )
+   ::setParams( "ws_key", ::getKey() )
+   ::Open()
+   ::SetRequestHeader( "Content-Type", "application/x-www-form-urlencoded" )
+   ::SetRequestHeader( "Content-Length", len( ::getXml() ) )
+   ::Send( ::getXml() )
+
+RETURN ( nil )
+
+
+
+static FUNCTION valoresPropiedadesWebService_createPostXml( hValue, idProp ) ; local Self AS CLASS valoresPropiedadesWebService := QSelf() AS CLASS valoresPropiedadesWebService
+
+   local oXmlHead
+   local oXmlxlink
+   local oXmlNode
+
+   ::cXml     := TXmlDocument():new( '<?xml version="1.0" encoding="UTF-8"?>' )
+
+   oXmlxlink  := TXmlNode():new( , "prestashop", { "xmlns:xlink" => "http://www.w3.org/1999/xlink" } )
+
+   oXmlHead   := TXmlNode():new( , "product_option_value" )
+
+   oXmlxlink:addBelow( oXmlHead )
+
+
+   oXmlNode   := TXmlNode():new( , "id_attribute_group", , hb_ntos( idProp ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "color", , hGet( hValue, "color" ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "name" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, v ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+   ::cXml:oRoot:addBelow( oXmlxlink )
+
+   ::cXml   := ::cXml:ToString()
+
+RETURN ( nil )
+
+
+
+static FUNCTION valoresPropiedadesWebService_createPutXml( nId, hValue, idProp ) ; local Self AS CLASS valoresPropiedadesWebService := QSelf() AS CLASS valoresPropiedadesWebService
+
+   local oXmlHead
+   local oXmlxlink
+   local oXmlNode
+
+   ::cXml     := TXmlDocument():new( '<?xml version="1.0" encoding="UTF-8"?>' )
+
+   oXmlxlink  := TXmlNode():new( , "prestashop", { "xmlns:xlink" => "http://www.w3.org/1999/xlink" } )
+
+   oXmlHead   := TXmlNode():new( , "product_option_value" )
+
+   oXmlxlink:addBelow( oXmlHead )
+
+
+   oXmlNode   := TXmlNode():new( , "id", , hb_ntos( nId ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "id_attribute_group", , hb_ntos( idProp ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "color", , hGet( hValue, "color" ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "name" )
+      heval( ::hName, {|k,v| oXmlNode:addBelow( TXmlNode():new( , "language", { "id" => k }, v ) ) } )
+   oXmlHead:addBelow( oXmlNode )
+
+   ::cXml:oRoot:addBelow( oXmlxlink )
+
+   ::cXml   := ::cXml:ToString()
+
+RETURN ( nil )
+
+
+
+
+
+
+
+_HB_CLASS combinationsWebService ; function combinationsWebService ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "combinationsWebService", iif( .T., { @WebService() }, { @HBObject() } ), @combinationsWebService() ) ) ;
+
+   _HB_MEMBER { cSource } ; oClass:AddMultiData(, "combinations", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSource"}, .F. )
+
+   _HB_MEMBER { hName } ; oClass:AddMultiData(, {=>}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hName"}, .F. )
+   _HB_MEMBER { cName } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cName"}, .F. )
+
+   _HB_MEMBER runPost( hCombination); oClass:AddMethod( "runPost", @combinationsWebService_runPost(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER runPut( nId, hCombination); oClass:AddMethod( "runPut", @combinationsWebService_runPut(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER createPostXml(); oClass:AddMethod( "createPostXml", @combinationsWebService_createPostXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER createPutXml(); oClass:AddMethod( "createPutXml", @combinationsWebService_createPutXml(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setHName(); oClass:AddInline( "setHName", {|Self, hName | ( ( Self ) ), ( ::hName  := hName ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS combinationsWebService ;
+
+
+
+static FUNCTION combinationsWebService_runPost( hCombination ) ; local Self AS CLASS combinationsWebService := QSelf() AS CLASS combinationsWebService
+
+   ::createPostXml( hCombination )
+   ::setParams( "ws_key", ::getKey() )
+   ::Open()
+   ::SetRequestHeader( "Content-Type", "application/x-www-form-urlencoded" )
+   ::SetRequestHeader( "Content-Length", len( ::getXml() ) )
+   ::Send( ::getXml() )
+
+RETURN ( nil )
+
+
+
+static FUNCTION combinationsWebService_runPut( nId, hCombination ) ; local Self AS CLASS combinationsWebService := QSelf() AS CLASS combinationsWebService
+
+   ::createPutXml( nId, hCombination )
+   ::setParams( "ws_key", ::getKey() )
+   ::Open()
+   ::SetRequestHeader( "Content-Type", "application/x-www-form-urlencoded" )
+   ::SetRequestHeader( "Content-Length", len( ::getXml() ) )
+   ::Send( ::getXml() )
+
+RETURN ( nil )
+
+
+
+static FUNCTION combinationsWebService_createPostXml( hCombination ) ; local Self AS CLASS combinationsWebService := QSelf() AS CLASS combinationsWebService
+
+   local oXmlHead
+   local oXmlxlink
+   local oXmlNode
+   local oXmlAsociation
+   local oXmlAsociationNode
+   local oXmlAsociationNodeName
+   local nIdProduct
+   local nIdVal1
+   local nIdVal2
+   local nIdImg
+
+   nIdProduct     := ::oParent:getPrestashopIdInstance():getValueProduct( hGet( hCombination, "CCODART" ), ::oParent:oController:getWeb() )
+   nIdVal1        := ::oParent:getPrestashopIdInstance():getValueAttribute( hGet( hCombination, "CCODPR1" ) + hGet( hCombination, "CVALPR1" ), ::oParent:oController:getWeb() )
+   nIdVal2        := ::oParent:getPrestashopIdInstance():getValueAttribute( hGet( hCombination, "CCODPR2" ) + hGet( hCombination, "CVALPR2" ), ::oParent:oController:getWeb() )
+   nIdImg         := ::oParent:getPrestashopIdInstance():getValueImage( hGet( hCombination, "CCODART" ) + Str( ArticulosImagenesModel():idImagenArticulo( hGet( hCombination, "CCODART" ), StrTran( hGet( hCombination, "MIMGWEB" ), ",", "" ) ), 10 ), ::oParent:oController:getWeb() )
+
+   ::cXml     := TXmlDocument():new( '<?xml version="1.0" encoding="UTF-8"?>' )
+
+   oXmlxlink  := TXmlNode():new( , "prestashop", { "xmlns:xlink" => "http://www.w3.org/1999/xlink" } )
+
+   oXmlHead   := TXmlNode():new( , "combination" )
+
+   oXmlxlink:addBelow( oXmlHead )
+
+
+   oXmlNode   := TXmlNode():new( , "id_product", , hb_ntos( nIdProduct ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "quantity", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "price", , hb_ntos( hGet( hCombination, "NPREVTA1" ) ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "minimal_quantity", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlAsociation   := TXmlNode():new( , "associations" )
+
+
+      oXmlAsociationNode := TXmlNode():new( , "product_option_values" )
+
+         oXmlAsociationNodeName  := TXmlNode():new( , "product_option_value" )
+
+            oXmlNode   := TXmlNode():new( , "id", , hb_ntos( nIdVal1 ) )
+            oXmlAsociationNodeName:addBelow( oXmlNode )
+
+         oXmlAsociationNode:addBelow( oXmlAsociationNodeName )
+
+         oXmlAsociationNodeName  := TXmlNode():new( , "product_option_value" )
+
+            oXmlNode   := TXmlNode():new( , "id", , hb_ntos( nIdVal2 ) )
+            oXmlAsociationNodeName:addBelow( oXmlNode )
+
+         oXmlAsociationNode:addBelow( oXmlAsociationNodeName )
+
+      oXmlAsociation:addBelow( oXmlAsociationNode )
+
+      if nIdImg <> 0
+
+
+         oXmlAsociationNode := TXmlNode():new( , "images" )
+
+            oXmlAsociationNodeName  := TXmlNode():new( , "image" )
+
+               oXmlNode   := TXmlNode():new( , "id", , hb_ntos( nIdImg ) )
+               oXmlAsociationNodeName:addBelow( oXmlNode )
+
+            oXmlAsociationNode:addBelow( oXmlAsociationNodeName )
+
+         oXmlAsociation:addBelow( oXmlAsociationNode )
+
+      end
+
+   oXmlHead:addBelow( oXmlAsociation )
+
+   ::cXml:oRoot:addBelow( oXmlxlink )
+
+   ::cXml   := ::cXml:ToString()
+
+RETURN ( nil )
+
+
+
+static FUNCTION combinationsWebService_createPutXml( nId, hCombination ) ; local Self AS CLASS combinationsWebService := QSelf() AS CLASS combinationsWebService
+
+   local oXmlHead
+   local oXmlxlink
+   local oXmlNode
+   local oXmlAsociation
+   local oXmlAsociationNode
+   local oXmlAsociationNodeName
+   local nIdProduct
+   local nIdVal1
+   local nIdVal2
+   local nPrice
+   local nIdImg
+
+   nIdProduct     := ::oParent:getPrestashopIdInstance():getValueProduct( hGet( hCombination, "CCODART" ), ::oParent:oController:getWeb() )
+   nIdVal1        := ::oParent:getPrestashopIdInstance():getValueAttribute( hGet( hCombination, "CCODPR1" ) + hGet( hCombination, "CVALPR1" ), ::oParent:oController:getWeb() )
+   nIdVal2        := ::oParent:getPrestashopIdInstance():getValueAttribute( hGet( hCombination, "CCODPR2" ) + hGet( hCombination, "CVALPR2" ), ::oParent:oController:getWeb() )
+   nPrice         := if( hGet( hCombination, "NPREVTA1" ) == 0, hGet( hCombination, "NPREVTA1" ), hGet( hCombination, "NPREVTA1" ) - ArticulosModel():getField( "pVtaWeb", "Codigo", hGet( hCombination, "CCODART" ) ) )
+   nIdImg         := ::oParent:getPrestashopIdInstance():getValueImage( hGet( hCombination, "CCODART" ) + Str( ArticulosImagenesModel():idImagenArticulo( hGet( hCombination, "CCODART" ), StrTran( hGet( hCombination, "MIMGWEB" ), ",", "" ) ), 10 ), ::oParent:oController:getWeb() )
+
+   ::cXml     := TXmlDocument():new( '<?xml version="1.0" encoding="UTF-8"?>' )
+
+   oXmlxlink  := TXmlNode():new( , "prestashop", { "xmlns:xlink" => "http://www.w3.org/1999/xlink" } )
+
+   oXmlHead   := TXmlNode():new( , "combination" )
+
+   oXmlxlink:addBelow( oXmlHead )
+
+
+   oXmlNode   := TXmlNode():new( , "id", , hb_ntos( nId ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "id_product", , hb_ntos( nIdProduct ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "quantity", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "price", , hb_ntos( nPrice ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlNode   := TXmlNode():new( , "minimal_quantity", , hb_ntos( 1 ) )
+   oXmlHead:addBelow( oXmlNode )
+
+
+   oXmlAsociation   := TXmlNode():new( , "associations" )
+
+
+      oXmlAsociationNode := TXmlNode():new( , "product_option_values" )
+
+         oXmlAsociationNodeName  := TXmlNode():new( , "product_option_value" )
+
+            oXmlNode   := TXmlNode():new( , "id", , hb_ntos( nIdVal1 ) )
+            oXmlAsociationNodeName:addBelow( oXmlNode )
+
+         oXmlAsociationNode:addBelow( oXmlAsociationNodeName )
+
+         oXmlAsociationNodeName  := TXmlNode():new( , "product_option_value" )
+
+            oXmlNode   := TXmlNode():new( , "id", , hb_ntos( nIdVal2 ) )
+            oXmlAsociationNodeName:addBelow( oXmlNode )
+
+         oXmlAsociationNode:addBelow( oXmlAsociationNodeName )
+
+      oXmlAsociation:addBelow( oXmlAsociationNode )
+
+      if nIdImg <> 0
+
+
+         oXmlAsociationNode := TXmlNode():new( , "images" )
+
+            oXmlAsociationNodeName  := TXmlNode():new( , "image" )
+
+               oXmlNode   := TXmlNode():new( , "id", , hb_ntos( nIdImg ) )
+               oXmlAsociationNodeName:addBelow( oXmlNode )
+
+            oXmlAsociationNode:addBelow( oXmlAsociationNodeName )
+
+         oXmlAsociation:addBelow( oXmlAsociationNode )
+
+      end
+
+   oXmlHead:addBelow( oXmlAsociation )
+
+   ::cXml:oRoot:addBelow( oXmlxlink )
+
+   ::cXml   := ::cXml:ToString()
+
+RETURN ( nil )

@@ -1,0 +1,484 @@
+#line 8 "C:\fwh1801\Gestool\bin\Script\Articulos\Export_Chineret.prg"
+static nView
+static cTextoArticulo
+static cSeparator
+static cNameFile
+static lOpenFiles
+static oMeter
+
+
+
+function InicioHRB()
+
+   lOpenFiles  := .F.
+
+   cNameFile   := "C:\WDGES32\EXPWOO\export_woo.csv"
+
+   cSeparator  := ","
+
+
+
+
+
+   if !OpenFiles( .F. )
+      return .F.
+   end
+
+
+
+
+
+   CursorWait()
+
+   InitProcess()
+
+   uploadImages()
+
+
+
+
+
+   Exportacion()
+
+   CursorWe()
+
+
+
+
+
+   CloseFiles()
+
+return .T.
+
+
+
+static function OpenFiles()
+
+   local oError
+   local oBlock
+
+   if lOpenFiles
+      MsgStop( "Imposible abrir ficheros" )
+      Return ( .F. )
+   end
+
+   CursorWait()
+
+   oBlock         := ErrorBlock( { | oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      lOpenFiles  := .T.
+
+      nView    := D():CreateView()
+
+   RECOVER USING oError
+
+      lOpenFiles           := .F.
+
+      msgStop( ErrorMessage( oError ), "Imposible abrir las bases de datos" )
+
+   end
+
+   ErrorBlock( oBlock )
+
+   if !lOpenFiles
+      CloseFiles()
+   end
+
+   CursorWE()
+
+return ( lOpenFiles )
+
+
+
+static function CloseFiles()
+
+   D():DeleteView( nView )
+
+   lOpenFiles     := .F.
+
+RETURN ( .T. )
+
+
+
+static function InitProcess()
+
+   cTextoArticulo  := "ID"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Tipo"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "SKU"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Nombre"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Publicado"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "¿Está destacado?"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Visibilidad en el catálogo"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Descripción corta"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Descripción"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Día en que empieza el precio rebajado"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Día en que termina el precio rebajado"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Estado del impuesto"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Clase de impuesto"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "¿Existencias?"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Inventario"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Cantidad de bajo inventario"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "¿Permitir reservas de productos agotados?"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "¿Vendido individualmente?"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Peso (kg)"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Longitud (cm)"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Anchura (cm)"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Altura (cm)"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "¿Permitir valoraciones de clientes?"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Nota de compra"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Precio rebajado"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Precio normal"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Categorías"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Etiquetas"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Clase de envío"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Imágenes"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Límite de descargas"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Días de caducidad de la descarga"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Superior"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Productos agrupados"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Ventas dirigidas"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Ventas cruzadas"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "URL externa"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Texto del botón"
+   cTextoArticulo  += cSeparator
+   cTextoArticulo  += "Posición"
+   cTextoArticulo  += chr( 13 ) + chr( 10 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RETURN ( .T. )
+
+
+
+static function uploadImages()
+
+   local n
+   local aImages
+
+   CursorWait()
+
+   oMeter               := TWaitMeter():New( , , ( D():Articulos( nView ) )->( LastRec() ) )
+
+
+
+
+
+   ( D():Articulos( nView ) )->( dbGoTop() )
+
+   while !( D():Articulos( nView ) )->( Eof() )
+
+      if ( D():Articulos( nView ) )->lPubInt
+
+         aImages        := ArticulosImagenesModel():getList( ( D():Articulos( nView ) )->Codigo )
+
+         if Len( aImages ) > 0
+
+            aEval( aImages, {|hImage| upImageToFtp( hImage ) } )
+
+         end
+
+      end
+
+      ( D():Articulos( nView ) )->( dbSkip() )
+
+      oMeter:oProgress:AutoInc()
+
+   end
+
+   CursorWE()
+
+RETURN ( .T. )
+
+
+
+static function upImageToFtp( hImage )
+
+   local oFtp
+   local ftpSit            := "ftp.cluster030.hosting.ovh.net"
+   local ftpDir            := cNoPathLeft( Rtrim( ftpSit ) )
+   local nbrUsr            := "gestooc"
+   local accUsr            := "Xtend000"
+   local pasInt            := .F.
+   local nPuerto           := 21
+   local cCarpeta          := "www/imageneschineret/"
+
+   cFile                   := hGet( hImage, "CIMGART" )
+
+   if !file( cFile )
+      Return ( Self )
+   end
+
+   oFtp               := TFtpCurl():New( nbrUsr, accUsr, ftpSit, nPuerto )
+   oFtp:setPassive( pasInt )
+
+   if oFtp:CreateConexion()
+
+      oFtp:createFile( cFile, cCarpeta )
+
+      oFtp:EndConexion()
+
+   else
+      msgStop( "Imposible conectar al sitio ftp" )
+   end
+
+   cDirImage   := "https://gestool.es/imageneschineret/" + cNoPath( hGet( hImage, "CIMGART" ) )
+
+   ArticulosImagenesModel():setDirImage( hGet( hImage, "CCODART" ), hGet( hImage, "NID" ), cDirImage )
+
+RETURN ( .T. )
+
+
+
+static function Exportacion()
+
+   local n
+   local aImages
+   local cImage         := ""
+   local hImage
+
+   CursorWait()
+
+   oMeter               := TWaitMeter():New( , , ( D():Articulos( nView ) )->( LastRec() ) )
+
+
+
+
+
+   ( D():Articulos( nView ) )->( dbGoTop() )
+
+   while !( D():Articulos( nView ) )->( Eof() )
+
+      if ( D():Articulos( nView ) )->lPubInt
+
+         aImages           := ArticulosImagenesModel():getList( ( D():Articulos( nView ) )->Codigo )
+
+         if Len( aImages ) > 0
+
+            for each hImage in aImages
+               cImage      += AllTrim( hGet( hImage, "CRMTART" ) ) + ","
+            next
+
+            cImage         := substr( cImage, 1, len( cImage ) - 1 )
+
+            cImage         := '"' + cImage + '"'
+
+         end
+
+         cTextoArticulo  += AllTrim( ( D():Articulos( nView ) )->Codigo )
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += "Simple"
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += AllTrim( ( D():Articulos( nView ) )->Codigo )
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += AllTrim( ( D():Articulos( nView ) )->Nombre )
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += "1"
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += "1"
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += "visible"
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += AllTrim( ( D():Articulos( nView ) )->Nombre )
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += AllTrim( ( D():Articulos( nView ) )->Descrip )
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += ""
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += ""
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += "taxable"
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += "standard"
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += "1"
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += AllTrim( Trans( StocksModel():nStockArticulo( ( D():Articulos( nView ) )->Codigo, "002" ), "@ 999,999.99" ) )
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += "0"
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += "0"
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += ""
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += "0"
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += "0"
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += "0"
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += "0"
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += "0"
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += ""
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += AllTrim( Trans( ( D():Articulos( nView ) )->pVtaIva1, "@ 999,999.99" ) )
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += AllTrim( Trans( ( D():Articulos( nView ) )->pVtaIva1, "@ 999,999.99" ) )
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += AllTrim( FamiliasModel():getNombre( ( D():Articulos( nView ) )->Familia ) )
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += ""
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += "local"
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += cImage
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += ""
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += ""
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += ""
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += ""
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += ""
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += ""
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += ""
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += ""
+         cTextoArticulo  += cSeparator
+         cTextoArticulo  += ""
+         cTextoArticulo  += chr( 13 ) + chr( 10 )
+
+      end
+
+      ( D():Articulos( nView ) )->( dbSkip() )
+
+      cImage            := ""
+
+      oMeter:oProgress:AutoInc()
+
+   end
+
+   if !Empty( cTextoArticulo )
+
+      fErase( cNameFile )
+      nHand       := fCreate( cNameFile )
+      fWrite( nHand, cTextoArticulo )
+      fClose( nHand )
+
+      MsgInfo( "Fichero exportado correctamente en " + cNameFile )
+
+   end
+
+   CursorWE()
+
+Return .T.

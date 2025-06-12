@@ -1,0 +1,2566 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 6 ".\Prg\Controllers\MovimientosAlmacenLineasController.prg"
+_HB_CLASS MovimientosAlmacenLineasController ; function MovimientosAlmacenLineasController ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "MovimientosAlmacenLineasController", iif( .T., { @SQLBrowseController() }, { @HBObject() } ), @MovimientosAlmacenLineasController() ) ) ;
+
+   _HB_MEMBER { hArticulo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"hArticulo"}, .F. )
+
+   _HB_MEMBER { oSeriesControler } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSeriesControler"}, .F. )
+
+   _HB_MEMBER { oSearchView } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSearchView"}, .F. )
+
+   _HB_MEMBER { aProperties } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aProperties"}, .F. )
+
+   _HB_MEMBER { aSelectDelete } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aSelectDelete"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @MovimientosAlmacenLineasController_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER loadedBlankBuffer(); oClass:AddMethod( "loadedBlankBuffer", @MovimientosAlmacenLineasController_loadedBlankBuffer(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER gettingSelectSentence(); oClass:AddMethod( "gettingSelectSentence", @MovimientosAlmacenLineasController_gettingSelectSentence(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER validateCodigoArticulo(); oClass:AddMethod( "validateCodigoArticulo", @MovimientosAlmacenLineasController_validateCodigoArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER validateLote(); oClass:AddMethod( "validateLote", @MovimientosAlmacenLineasController_validateLote(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER validatePrimeraPropiedad(); oClass:AddInline( "validatePrimeraPropiedad", {|Self | ( ( Self ) ), ( iif(  ::validate( "valor_primera_propiedad" ), ::stampPropertyName( "codigo_primera_propiedad" , "valor_primera_propiedad", ::oDialogView:oGetValorPrimeraPropiedad ), .F. ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER validateSegundaPropiedad(); oClass:AddInline( "validateSegundaPropiedad", {|Self | ( ( Self ) ), ( iif(  ::validate( "valor_segunda_propiedad" ), ::stampPropertyName( "codigo_segunda_propiedad" , "valor_segunda_propiedad", ::oDialogView:oGetValorSegundaPropiedad ), .F. ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER stampArticulo(); oClass:AddInline( "stampArticulo", {|Self | ( ( Self ) ), ( ::oDialogView:oGetNombreArticulo:cText( hget( ::hArticulo, "nombre" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER stampCajas(); oClass:AddInline( "stampCajas", {|Self | ( ( Self ) ), ( ::oDialogView:oGetCajasArticulo:cText( hget( ::hArticulo, "ncajent" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER stampUnidades(); oClass:AddInline( "stampUnidades", {|Self | ( ( Self ) ), ( ::oDialogView:oGetUnidadesArticulo:cText( max( hget( ::hArticulo, "nunicaja" ), 1 ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER stampPrecio(); oClass:AddInline( "stampPrecio", {|Self | ( ( Self ) ), ( ::oDialogView:oGetPrecioArticulo:cText( hget( ::hArticulo, "pcosto" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER stampPrecioVenta(); oClass:AddInline( "stampPrecioVenta", {|Self | ( ( Self ) ), ( ::oDialogView:oGetPrecioVenta:cText( hget( ::hArticulo, "pvtaiva1" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER stampTipoIva(); oClass:AddInline( "stampTipoIva", {|Self | ( ( Self ) ), ( ::oDialogView:oGetTipoIva:cText( nIva( , hget( ::hArticulo, "tipoiva" ) ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER stampLoteCaducidad(); oClass:AddMethod( "stampLoteCaducidad", @MovimientosAlmacenLineasController_stampLoteCaducidad(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER stampProperties(); oClass:AddMethod( "stampProperties", @MovimientosAlmacenLineasController_stampProperties(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER stampPropertyName( cFieldCodigo, cFieldValor, oControl); oClass:AddMethod( "stampPropertyName", @MovimientosAlmacenLineasController_stampPropertyName(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER showLoteCaducidad(); oClass:AddMethod( "showLoteCaducidad", @MovimientosAlmacenLineasController_showLoteCaducidad(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER showProperties(); oClass:AddMethod( "showProperties", @MovimientosAlmacenLineasController_showProperties(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER hideProperty(); oClass:AddInline( "hideProperty", {|Self | ( ( Self ) ), ( ::oDialogView:hidePropertyControls() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER getFirstProperty( cCodigoArticulo, cCodigoPropiedad); oClass:AddMethod( "getFirstProperty", @MovimientosAlmacenLineasController_getFirstProperty(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getSecondProperty( cCodigoArticulo, cCodigoPropiedad); oClass:AddMethod( "getSecondProperty", @MovimientosAlmacenLineasController_getSecondProperty(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lBrowseProperty(); oClass:AddInline( "lBrowseProperty", {|Self | ( ( Self ) ), ( uFieldEmpresa( "lUseTbl" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER buildPropertyBrowse(); oClass:AddInline( "buildPropertyBrowse", {|Self | ( ( Self ) ), ( iif(  uFieldEmpresa( "lUseTbl" ), ::oDialogView:oBrowsePropertyView:build(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER loadValuesBrowseProperty(); oClass:AddMethod( "loadValuesBrowseProperty", @MovimientosAlmacenLineasController_loadValuesBrowseProperty(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER isProductProperty(); oClass:AddInline( "isProductProperty", {|Self | ( ( Self ) ), ( !empty( hget( ::oModel:hBuffer, "codigo_primera_propiedad" ) ) .OR. !empty( hget( ::oModel:hBuffer, "codigo_segunda_propiedad" ) ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER isChangeArticulo(); oClass:AddMethod( "isChangeArticulo", @MovimientosAlmacenLineasController_isChangeArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getHashArticulo(); oClass:AddMethod( "getHashArticulo", @MovimientosAlmacenLineasController_getHashArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER runDialogSeries(); oClass:AddMethod( "runDialogSeries", @MovimientosAlmacenLineasController_runDialogSeries(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER onActivateDialog(); oClass:AddMethod( "onActivateDialog", @MovimientosAlmacenLineasController_onActivateDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER closedDialog(); oClass:AddMethod( "closedDialog", @MovimientosAlmacenLineasController_closedDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Search(); oClass:AddMethod( "Search", @MovimientosAlmacenLineasController_Search(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER deleteLines( cId); oClass:AddMethod( "deleteLines", @MovimientosAlmacenLineasController_deleteLines(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+   _HB_MEMBER getUuid(); oClass:AddInline( "getUuid", {|Self | ( ( Self ) ), ( iif(  !empty( ::oModel ) .AND. !empty( ::oModel:hBuffer ), hget( ::oModel:hBuffer, "uuid" ), nil ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER refreshBrowse(); oClass:AddInline( "refreshBrowse", {|Self | ( ( Self ) ), ( iif(  !empty( ::oBrowseView ), ::oBrowseView:Refresh(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER insertingBuffer(); oClass:AddMethod( "insertingBuffer", @MovimientosAlmacenLineasController_insertingBuffer(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER updatingBuffer(); oClass:AddMethod( "updatingBuffer", @MovimientosAlmacenLineasController_updatingBuffer(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER loadRollbackStock(); oClass:AddMethod( "loadRollbackStock", @MovimientosAlmacenLineasController_loadRollbackStock(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS MovimientosAlmacenLineasController ;
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_New( oController ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   ::Super:New( oController )
+
+   ::lTransactional                    := .T.
+
+   ::cTitle                            := "Movimientos de almacén líneas"
+
+   ::setName( "lineas_movimientos_almacen" )
+
+   ::oModel                            := SQLMovimientosAlmacenLineasModel():New( self )
+
+   ::oModel:setEvent( "loadedBlankBuffer",      {|| ::loadedBlankBuffer() } )
+   ::oModel:setEvent( "gettingSelectSentence",  {|| ::gettingSelectSentence() } )
+   ::oModel:setEvent( "insertingBuffer",        {|| ::insertingBuffer() } )
+   ::oModel:setEvent( "updatingBuffer",         {|| ::updatingBuffer() } )
+
+   ::oBrowseView                       := MovimientosAlmacenLineasBrowseView():New( self )
+   ::oBrowseView:lFooter               := .T.
+
+   ::oDialogView                       := MovimientosAlmacenLineasView():New( self )
+
+   ::oValidator                        := MovimientosAlmacenLineasValidator():New( self )
+
+   ::oSearchView                       := SQLSearchView():New( self )
+
+   ::oSeriesControler                  := NumerosSeriesController():New( self )
+
+   ::setEvent( "activating",           {|| ::oModel:setOrderBy( "id" ), ::oModel:setOrientation( "D" ) } )
+   ::setEvent( "activated",            {|| ::loadRollbackStock() } )
+
+   ::setEvent( "closedDialog",         {|| ::closedDialog() } )
+
+   ::setEvent( "appended",             {|| ::oBrowseView:Refresh() } )
+   ::setEvent( "edited",               {|| ::oBrowseView:Refresh() } )
+   ::setEvent( "deletedSelection",     {|| ::oBrowseView:Refresh() } )
+
+   ::setEvent( "deletingLines",        {|| ::oSeriesControler:deletedSelected( ::aSelectDelete ) } )
+
+RETURN ( Self )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_loadedBlankBuffer( ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   local uuid        := ::getSenderController():getUuid()
+
+   if !empty( uuid )
+      hset( ::oModel:hBuffer, "parent_uuid", uuid )
+   end
+
+   hset( ::oModel:hBuffer, "codigo_articulo", space( 200 ) )
+
+RETURN ( Self )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_gettingSelectSentence( ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   local uuid        := ::getSenderController():getUuid()
+
+   if !empty( uuid )
+      ::oModel:setGeneralWhere( "parent_uuid = " + quoted( uuid ) )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_validateCodigoArticulo( ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   if !( ::validate( "codigo_articulo" ) )
+      RETURN .F.
+   end
+
+   if !( ::isChangeArticulo() )
+      RETURN .T.
+   end
+
+   if !( ::getHashArticulo() )
+      RETURN .F.
+   end
+
+   ::stampArticulo()
+
+   ::stampCajas()
+
+   ::stampUnidades()
+
+   ::stampPrecio()
+
+   ::stampTipoIva()
+
+   ::stampPrecioVenta()
+
+   ::stampLoteCaducidad()
+
+   ::stampProperties()
+
+   ::showLoteCaducidad()
+
+   ::showProperties()
+
+   ::oDialogView:oSayTotalUnidades:Refresh()
+
+   ::oDialogView:oSayTotalImporte:Refresh()
+
+   ::oDialogView:oSayTotalVenta:Refresh()
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_isChangeArticulo( ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   local cCodigoArticulo
+
+   cCodigoArticulo   := ::getModelBuffer( "codigo_articulo" )
+   if empty( cCodigoArticulo )
+      RETURN ( .F. )
+   end
+
+   if !( ::oDialogView:oGetCodigoArticulo:isOriginalChanged( cCodigoArticulo ) )
+      RETURN ( .F. )
+   end
+
+   ::oDialogView:oGetCodigoArticulo:setOriginal( cCodigoArticulo )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_getHashArticulo( ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   ::hArticulo       := ArticulosModel():getHash( ::getModelBuffer( "codigo_articulo" ) )
+
+   if empty( ::hArticulo )
+      RETURN ( .F. )
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_showLoteCaducidad( ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   if empty( ::hArticulo )
+      RETURN ( .T. )
+   end
+
+   if hget( ::hArticulo, "llote" )
+      ::oDialogView:showLoteCaducidadControls()
+      RETURN ( .T. )
+   end
+
+   ::oDialogView:hideLoteCaducidadControls()
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_showProperties( ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   if empty( hget( ::hArticulo, "ccodprp1" ) )
+
+      ::oDialogView:hidePrimeraPropiedad()
+
+      ::oDialogView:hideSegundaPropiedad()
+
+      ::oDialogView:hidePropertyBrowseView()
+
+      ::oDialogView:showUnitsControls()
+
+      RETURN ( .T. )
+
+   end
+
+   if ::lBrowseProperty()
+
+      ::oDialogView:hidePrimeraPropiedad()
+
+      ::oDialogView:hideSegundaPropiedad()
+
+      ::oDialogView:setPropertyOneBrowseView( ::getFirstProperty( hget( ::hArticulo, "codigo" ), hget( ::hArticulo, "ccodprp1" ) ) )
+
+      ::oDialogView:setPropertyTwoBrowseView( ::getSecondProperty( hget( ::hArticulo, "codigo" ), hget( ::hArticulo, "ccodprp2" ) ) )
+
+      ::oDialogView:buildPropertyBrowseView()
+
+      ::oDialogView:showPropertyBrowseView()
+
+      ::oDialogView:hideUnitsControls()
+
+   else
+
+      ::oDialogView:hidePropertyBrowseView()
+
+      ::oDialogView:showPrimeraPropiedad()
+
+      if !empty( hget( ::hArticulo, "ccodprp2" ) )
+         ::oDialogView:showSegundaPropiedad()
+      end
+
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_stampProperties( ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   hset( ::oModel:hBuffer, "codigo_primera_propiedad", hget( ::hArticulo, "ccodprp1" ) )
+
+   hset( ::oModel:hBuffer, "codigo_segunda_propiedad", hget( ::hArticulo, "ccodprp2" ) )
+
+   if ::lBrowseProperty()
+
+      ::loadValuesBrowseProperty( hget( ::hArticulo, "codigo" ) )
+
+   else
+
+      if !empty( hget( ::hArticulo, "ccodprp1" ) )
+
+         ::oDialogView:oGetValorPrimeraPropiedad:setText( PropiedadesModel():getNombre( hget( ::hArticulo, "ccodprp1" ) ) )
+
+      end
+
+      if !empty( hget( ::hArticulo, "ccodprp2" ) )
+
+         ::oDialogView:oGetValorSegundaPropiedad:setText( PropiedadesModel():getNombre( hget( ::hArticulo, "ccodprp2" ) ) )
+
+      end
+
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_stampPropertyName( cFieldCodigo, cFieldValor, oControl ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   local cNombrePropiedad
+
+   if empty( hget( ::oModel:hBuffer, cFieldCodigo ) )
+      RETURN ( .T. )
+   end
+
+   if empty( hget( ::oModel:hBuffer, cFieldValor ) )
+      RETURN ( .T. )
+   end
+
+   if empty( oControl )
+      RETURN ( .T. )
+   end
+
+   cNombrePropiedad  := PropiedadesLineasModel():getNombre( hget( ::oModel:hBuffer, cFieldCodigo ), hget( ::oModel:hBuffer, cFieldValor ) )
+
+   oControl:oHelpText:cText( cNombrePropiedad )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_stampLoteCaducidad( ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   local cLote
+   local dCaducidad
+
+   if !( hget( ::hArticulo, "llote" ) )
+      RETURN ( .T. )
+   end
+
+   if !empty( ::oDialogView:oGetLote ) .AND. empty( ::oDialogView:oGetLote:varGet() )
+
+      cLote       := hget( ::hArticulo, "clote" )
+
+      if !empty( cLote ) .AND. uFieldempresa( "lLoaUltLot" )
+         ::oDialogView:oGetLote:cText( cLote )
+      end
+
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_getFirstProperty( cCodigoArticulo, cCodigoPropiedad ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   local aProperty   := ArticulosPrecios():getFirstProperty( cCodigoArticulo, cCodigoPropiedad )
+
+   if empty( aProperty )
+      aProperty      := PropiedadesLineasModel():getPropiedadesGeneral( cCodigoArticulo, cCodigoPropiedad )
+   end
+
+RETURN ( aProperty )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_getSecondProperty( cCodigoArticulo, cCodigoPropiedad ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   local aProperty   := ArticulosPrecios():getSecondProperty( cCodigoArticulo, cCodigoPropiedad )
+
+   if empty( aProperty )
+      aProperty      := PropiedadesLineasModel():getPropiedadesGeneral( cCodigoArticulo, cCodigoPropiedad )
+   end
+
+RETURN ( aProperty )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_validateLote( ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   local cLote
+
+   cLote       := ::getModelBuffer( "lote" )
+   if empty( cLote )
+      RETURN ( .T. )
+   end
+
+   if !( ::oDialogView:oGetLote:isOriginalChanged( cLote ) )
+      RETURN ( .T. )
+   end
+
+   ::oDialogView:oGetLote:setOriginal( cLote )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_onActivateDialog( ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   if ::isAppendMode()
+
+      ::setModelBuffer( "codigo_articulo", space( 200 ) )
+
+      ::oDialogView:oGetCodigoArticulo:Refresh()
+
+      ::oDialogView:hideLoteCaducidadControls()
+
+      ::oDialogView:hidePrimeraPropiedad()
+
+      ::oDialogView:hideSegundaPropiedad()
+
+      ::oDialogView:hidePropertyBrowseView()
+
+   end
+
+   if ::isNotAppendMode()
+
+      if !( ::getHashArticulo() )
+         RETURN .F.
+      end
+
+      ::showLoteCaducidad()
+
+      ::showProperties()
+
+      ::stampProperties()
+
+   end
+
+   ::oDialogView:hideBultos()
+
+   ::oDialogView:hideCajas()
+
+   ::oDialogView:hidePrecios()
+
+   ::oDialogView:oSayTotalUnidades:Refresh()
+
+   ::oDialogView:oSayTotalImporte:Refresh()
+
+   ::oDialogView:oSayTotalVenta:Refresh()
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_closedDialog( ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   ::aProperties     := {}
+
+   if !( ::oDialogView:oBrowsePropertyView:lVisible() )
+      RETURN ( .T. )
+   end
+
+   ::aProperties     := ::oDialogView:oBrowsePropertyView:getProperties()
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_runDialogSeries( ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   if Empty( ::oDialogView:nTotalUnidadesArticulo() )
+      msgStop( "El número de unidades no puede ser 0 para editar números de serie" )
+      RETURN ( .F. )
+   end
+
+   ::oSeriesControler:SetTotalUnidades( ::oDialogView:nTotalUnidadesArticulo() )
+
+   ::oSeriesControler:Edit( hget( ::oModel:hBuffer, "id" ) )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_loadValuesBrowseProperty( cCodigoArticulo ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   local uuid
+   local aArticulos
+
+   if !( uFieldEmpresa( "lUseTbl" ) )
+      RETURN ( Self )
+   end
+
+   if ::isNotEditMode()
+      RETURN ( Self )
+   end
+
+   uuid           := ::getSenderController():getUuid()
+   if empty( uuid )
+      RETURN ( Self )
+   end
+
+   aArticulos     := MovimientosAlmacenLineasRepository():getHashArticuloUuid( cCodigoArticulo, uuid )
+   if empty( aArticulos )
+      RETURN ( Self )
+   end
+
+   aeval( aArticulos, {|elem| ::oDialogView:oBrowsePropertyView:setValueAndUuidToPropertiesTable( elem ) } )
+
+   ::oDialogView:oBrowsePropertyView:Refresh()
+
+RETURN ( Self )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_Search( ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   ::oSearchView:Activate()
+
+RETURN ( Self )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_deleteLines( uuid ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   ::aSelectDelete  := ::oModel:aRowsDeleted( uuid )
+
+   ::fireEvent( "deletingLines" )
+
+   ::oModel:deleteWhereUuid( uuid )
+
+   ::fireEvent( "deletedLines" )
+
+RETURN ( Self )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_insertingBuffer( ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   local aSQLInsert    := {}
+
+   if !empty( ::aProperties )
+      RETURN ( self )
+   end
+
+   aeval( ::aProperties, {|oProperty| ::oModel:addInsertSentence( aSQLInsert, oProperty ) } )
+
+   if !empty( aSQLInsert )
+      ::oModel:setSQLInsert( aSQLInsert )
+      RETURN ( self )
+   end
+
+RETURN ( self )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_updatingBuffer( ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   local oProperty
+   local aSQLUpdate     := {}
+
+   if empty( ::aProperties )
+      RETURN ( nil )
+   end
+
+   for each oProperty in ::aProperties
+
+      do case
+         case !empty( oProperty:Uuid ) .AND. empty( oProperty:Value )
+
+            ::oModel:addDeleteSentence( aSQLUpdate, oProperty )
+
+         case !empty( oProperty:Uuid ) .AND. !empty( oProperty:Value )
+
+            ::oModel:addUpdateSentence( aSQLUpdate, oProperty )
+
+         case empty( oProperty:Uuid )
+
+            ::oModel:addInsertSentence( aSQLUpdate, oProperty )
+
+      end
+
+   next
+
+   ::oModel:cSQLUpdate  := aSQLUpdate
+
+RETURN ( self )
+
+
+
+static FUNCTION MovimientosAlmacenLineasController_loadRollbackStock( ) ; local Self AS CLASS MovimientosAlmacenLineasController := QSelf() AS CLASS MovimientosAlmacenLineasController
+
+   local hRollbackStock := {=>}
+
+   ::oSenderController:aRollBackStock     := {}
+
+   ::oRowSet:goTop()
+
+   while !( ::oRowSet:Eof() )
+
+      hset( hRollbackStock, "codigo_articulo", AllTrim( ::oRowSet:fieldget( "codigo_articulo" ) ) )
+      hset( hRollbackStock, "codigo_almacen_entrada", AllTrim( ::oSenderController:oModel:hBuffer[ "almacen_destino" ] ) )
+      hset( hRollbackStock, "codigo_almacen_salida", AllTrim( ::oSenderController:oModel:hBuffer[ "almacen_origen" ] ) )
+      hset( hRollbackStock, "codigo_primera_propiedad", AllTrim( ::oRowSet:fieldget( "codigo_primera_propiedad" ) ) )
+      hset( hRollbackStock, "valor_primera_propiedad", AllTrim( ::oRowSet:fieldget( "valor_primera_propiedad" ) ) )
+      hset( hRollbackStock, "codigo_segunda_propiedad", AllTrim( ::oRowSet:fieldget( "codigo_segunda_propiedad" ) ) )
+      hset( hRollbackStock, "valor_segunda_propiedad", AllTrim( ::oRowSet:fieldget( "valor_segunda_propiedad" ) ) )
+      hset( hRollbackStock, "lote", AllTrim( ::oRowSet:fieldget( "lote" ) ) )
+      hset( hRollbackStock, "bultos_articulo", ::oRowSet:fieldget( "bultos_articulo" ) )
+      hset( hRollbackStock, "cajas_articulo", ::oRowSet:fieldget( "cajas_articulo" ) )
+      hset( hRollbackStock, "unidades_articulo", ( NotCaja( ::oRowSet:fieldget( "cajas_articulo" ) ) * ::oRowSet:fieldget( "unidades_articulo" ) ) )
+      hset( hRollbackStock, "fecha", hb_ttod( ::oSenderController:oModel:hBuffer[ "fecha_hora" ] ) )
+      hset( hRollbackStock, "hora", substr( hb_tstostr( ::oSenderController:oModel:hBuffer[ "fecha_hora" ] ), 12, 8 ) )
+      hset( hRollbackStock, "tipo_movimiento", ::oSenderController:oModel:hBuffer[ "tipo_movimiento" ] )
+
+      aAdd( ::oSenderController:aRollBackStock, hRollbackStock )
+
+      hRollbackStock    := {=>}
+
+      ::oRowSet:skip()
+
+   end
+
+RETURN ( self )

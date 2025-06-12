@@ -1,0 +1,27 @@
+[
+  {
+    "id": "000",
+    "nombre": "ADMINISTRADOR"
+  },
+  {
+    "id": "001",
+    "nombre": "TABLET"
+  },
+  {
+    "id": "002",
+    "nombre": "USUARIO CAJA 2"
+  },
+  {
+    "id": "003",
+    "nombre": "USUARIO CAJA 3"
+  },
+  {
+    "id": "004",
+    "nombre": "ADMINISTRADOR 2"
+  },
+  {
+    "id": "999",
+    "nombre": "Super administrador"
+  }
+]
+

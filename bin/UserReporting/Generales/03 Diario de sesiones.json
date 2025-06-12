@@ -1,0 +1,82 @@
+{
+   "fields" : 
+   {
+      "Turno" : 
+      {
+         "name" : "cNumTur",
+         "description" : "Número de turno",
+         "type" : "C",
+         "size" : 6,
+         "decimal" : 0,
+         "picture" : ""
+      },
+      "Delegacion" : 
+      {
+         "name" : "cDelega",
+         "description" : "Código delegación",
+         "type" : "C",
+         "size" : 2,
+         "decimal" : 0,
+         "picture" : ""
+      },
+      "Fecha apertura" :
+      {
+         "name" : "dFecOpe",
+         "description" : "Fecha apertura",
+         "type" : "D",
+         "size" : 8,
+         "decimal" : 0, 
+         "picture" : ""
+      },
+      "Hora apertura" :
+      {
+         "name" : "cHorOpe",
+         "description" : "Hora apertura",
+         "type" : "C",
+         "size" : 5,
+         "decimal" : 0, 
+         "picture" : ""
+      },
+      "Fecha cierre" :
+      {
+         "name" : "dFecClo",
+         "description" : "Fecha cierre",
+         "type" : "D",
+         "size" : 8,
+         "decimal" : 0, 
+         "picture" : ""
+      },
+      "Hora cierre" :
+      {
+         "name" : "cHorClo",
+         "description" : "Hora cierre",
+         "type" : "C",
+         "size" : 5,
+         "decimal" : 0, 
+         "picture" : ""
+      },
+      "Total efectivo" :
+      {
+         "name" : "nTotEfe",
+         "description" : "Total efectivo",
+         "type" : "N",
+         "size" : 16,
+         "decimal" : 6, 
+         "picture" : "@E 999,999,999.999"
+      },
+      "Total unidades" :
+      {
+         "name" : "nTotTar",
+         "description" : "Total tarjeta",
+         "type" : "N",
+         "size" : 16,
+         "decimal" : 6, 
+         "picture" : "@E 999,999,999.999"
+      }
+   },
+   "sql" : "SELECT turno.cNumTur AS cNumTur, turno.cSufTur AS cDelega, turno.dFecOpe AS dFecOpe, turno.cHorOpe AS cHorOpe, turno.dFecClo AS dFecClo, turno.cHorClo AS cHorClo, turno.nCanEfe AS nTotEfe, turno.nCanTar AS nTotTar FROM {{empresa}}TURNOC AS turno WHERE lCajClo AND ( turno.dFecOpe >= {{dIniInf}} AND turno.dFecOpe <= {{dFinInf}} )",
+   "group" : "",
+   "order" : "turno.cSufTur, turno.cNumTur",
+
+
+}

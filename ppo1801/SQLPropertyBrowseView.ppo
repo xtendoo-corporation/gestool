@@ -1,0 +1,2342 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 7 ".\Prg\Views\SQLPropertyBrowseView.prg"
+_HB_CLASS SQLPropertyBrowseView ; function SQLPropertyBrowseView ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "SQLPropertyBrowseView", iif( .F., { }, { @HBObject() } ), @SQLPropertyBrowseView() ) ) ;
+
+   _HB_MEMBER { oController } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oController"}, .F. )
+
+   _HB_MEMBER { oBrowse } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrowse"}, .F. )
+
+   _HB_MEMBER { onPostEdit } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"onPostEdit"}, .F. )
+
+   _HB_MEMBER { aPropertyOne } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aPropertyOne"}, .F. )
+   _HB_MEMBER { aPropertyTwo } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aPropertyTwo"}, .F. )
+
+   _HB_MEMBER { aProperties } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aProperties"}, .F. )
+
+   _HB_MEMBER { aPropertiesTable } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aPropertiesTable"}, .F. )
+
+   _HB_MEMBER { nTotalRow } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalRow"}, .F. )
+   _HB_MEMBER { nTotalColumn } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTotalColumn"}, .F. )
+
+   _HB_MEMBER New(); oClass:AddMethod( "New", @SQLPropertyBrowseView_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CreateControl(); oClass:AddMethod( "CreateControl", @SQLPropertyBrowseView_CreateControl(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getBrowse(); oClass:AddInline( "getBrowse", {|Self | ( ( Self ) ), ( ::oBrowse ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Refresh(); oClass:AddInline( "Refresh", {|Self | ( ( Self ) ), ( ::oBrowse:MakeTotals(), ::oBrowse:Refresh() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER lVisible(); oClass:AddInline( "lVisible", {|Self | ( ( Self ) ), ( ::oBrowse:lVisible ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setPropertyOne( aPropiedadesArticulo); oClass:AddMethod( "setPropertyOne", @SQLPropertyBrowseView_setPropertyOne(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setPropertyTwo( aPropiedadesArticulo); oClass:AddMethod( "setPropertyTwo", @SQLPropertyBrowseView_setPropertyTwo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setOnPostEdit(); oClass:AddInline( "setOnPostEdit", {|Self, onPostEdit | ( ( Self ) ), ( ::onPostEdit := onPostEdit  ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER build(); oClass:AddMethod( "build", @SQLPropertyBrowseView_build(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER buildPropertyTable(); oClass:AddMethod( "buildPropertyTable", @SQLPropertyBrowseView_buildPropertyTable(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setBrowsePropertyTable(); oClass:AddMethod( "setBrowsePropertyTable", @SQLPropertyBrowseView_setBrowsePropertyTable(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER createColumnBrowseProperty(); oClass:AddMethod( "createColumnBrowseProperty", @SQLPropertyBrowseView_createColumnBrowseProperty(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Adjust(); oClass:AddMethod( "Adjust", @SQLPropertyBrowseView_Adjust(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getProperties(); oClass:AddMethod( "getProperties", @SQLPropertyBrowseView_getProperties(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER addProperty(); oClass:AddMethod( "addProperty", @SQLPropertyBrowseView_addProperty(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setValueAndUuidToPropertiesTable(); oClass:AddMethod( "setValueAndUuidToPropertiesTable", @SQLPropertyBrowseView_setValueAndUuidToPropertiesTable(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER scanProperty( oProperty); oClass:AddMethod( "scanProperty", @SQLPropertyBrowseView_scanProperty(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER addColumnTitleProperty( n); oClass:AddMethod( "addColumnTitleProperty", @SQLPropertyBrowseView_addColumnTitleProperty(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER addColumnColorProperty( n); oClass:AddMethod( "addColumnColorProperty", @SQLPropertyBrowseView_addColumnColorProperty(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER addColumnValueProperty( n); oClass:AddMethod( "addColumnValueProperty", @SQLPropertyBrowseView_addColumnValueProperty(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER postEditProperties( oCol, xVal, nKey); oClass:AddMethod( "postEditProperties", @SQLPropertyBrowseView_postEditProperties(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER bGenEditText( n); oClass:AddMethod( "bGenEditText", @SQLPropertyBrowseView_bGenEditText(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER bGenEditValue( n); oClass:AddMethod( "bGenEditValue", @SQLPropertyBrowseView_bGenEditValue(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER bGenRGBValue( n); oClass:AddMethod( "bGenRGBValue", @SQLPropertyBrowseView_bGenRGBValue(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nTotalUnits(); oClass:AddMethod( "nTotalUnits", @SQLPropertyBrowseView_nTotalUnits(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS SQLPropertyBrowseView ;
+
+
+
+static FUNCTION SQLPropertyBrowseView_New( oController ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+   ::oController  := oController
+
+RETURN ( Self )
+
+
+
+static FUNCTION SQLPropertyBrowseView_CreateControl( nId, oDialog ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+   local oError
+
+   if empty( nId ) .OR. empty( oDialog )
+      RETURN ( Self )
+   end
+
+   BEGIN SEQUENCE WITH {| oErr | Break( oErr ) }
+
+   ::oBrowse                  := IXBrowse():New( oDialog )
+
+   ::oBrowse:nDataType        := 2
+
+   ::oBrowse:bClrSel          := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+   ::oBrowse:bClrSelFocus     := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+   ::oBrowse:lVisible         := .T.
+
+   ::oBrowse:lHScroll         := .T.
+   ::oBrowse:lVScroll         := .T.
+
+   ::oBrowse:nMarqueeStyle    := 3
+   ::oBrowse:nFreeze          := 1
+
+   ::oBrowse:lRecordSelector  := .F.
+   ::oBrowse:lFastEdit        := .T.
+   ::oBrowse:lFooter          := .T.
+
+   ::oBrowse:SetArray( {}, .F., 0, .F. )
+
+   ::oBrowse:MakeTotals()
+
+   ::oBrowse:CreateFromResource( nId )
+
+   RECOVER USING oError
+
+      msgStop( "Imposible crear el control browse de propiedades." + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION SQLPropertyBrowseView_setPropertyOne( aPropiedadesArticulo ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+   ::nTotalRow       := len( aPropiedadesArticulo )
+
+   ::aPropertyOne    := aPropiedadesArticulo
+
+RETURN ( self )
+
+
+
+static FUNCTION SQLPropertyBrowseView_setPropertyTwo( aPropiedadesArticulo ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+   if len( aPropiedadesArticulo ) == 0
+      ::nTotalColumn := 2
+   else
+      ::nTotalColumn := len( aPropiedadesArticulo ) + 1
+   end
+
+   ::aPropertyTwo    := aPropiedadesArticulo
+
+RETURN ( self )
+
+
+
+static FUNCTION SQLPropertyBrowseView_build( ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+   ::buildPropertyTable()
+
+   ::setBrowsePropertyTable()
+
+   ::createColumnBrowseProperty()
+
+   ::Adjust()
+
+RETURN ( self )
+
+
+
+static FUNCTION SQLPropertyBrowseView_buildPropertyTable( ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+   local n
+   local nRow           := 1
+   local nCol           := 1
+   local hPropiedad
+
+   ::aPropertiesTable   := array( ::nTotalRow, ::nTotalColumn )
+
+   aeval( ::aPropertyOne, {| h, n | ::aPropertiesTable[ n, nCol ] := TPropertiesItems():buildOne( h ) } )
+
+   if !empty( ::aPropertyTwo )
+
+      for each hPropiedad in ::aPropertyTwo
+
+         nCol++
+
+         for n := 1 to ::nTotalRow
+            ::aPropertiesTable[ n, nCol ] := TPropertiesItems():buildTwo( hPropiedad, ::aPropertiesTable[ n, 1 ] )
+         next
+
+      next
+
+   else
+
+      nCol++
+
+      for n := 1 to ::nTotalRow
+         ::aPropertiesTable[ n, nCol ]    := TPropertiesItems():buildUnits( hPropiedad, ::aPropertiesTable[ n, 1 ] )
+      next
+
+   end
+
+RETURN ( self )
+
+
+
+static FUNCTION SQLPropertyBrowseView_setBrowsePropertyTable( ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+   ::oBrowse:aCols            := {}
+   ::oBrowse:Cargo            := ::aPropertiesTable
+   ::oBrowse:nFreeze          := 1
+
+   ::oBrowse:SetArray( ::aPropertiesTable, .F., 0, .F. )
+
+RETURN ( self )
+
+
+
+static FUNCTION SQLPropertyBrowseView_createColumnBrowseProperty( ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+   local n
+
+   if !hb_isarray( ::aPropertiesTable ) .OR. len( ::aPropertiesTable ) == 0
+      RETURN ( self )
+   end
+
+   for n := 1 to len( ::aPropertiesTable[ 1 ] )
+
+      if hb_isnil( ::aPropertiesTable[ ::oBrowse:nArrayAt, n ]:Value )
+
+         ::addColumnTitleProperty( n )
+
+         ::addColumnColorProperty( n )
+
+      else
+
+         ::addColumnValueProperty( n )
+
+      end
+
+   next
+
+RETURN ( self )
+
+
+
+static FUNCTION SQLPropertyBrowseView_Adjust( ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+   ::oBrowse:aCols[ 1 ]:Hide()
+
+   ::oBrowse:nColSel          := ::oBrowse:nFreeze + 1
+
+   ::oBrowse:nRowHeight       := 20
+   ::oBrowse:nHeaderHeight    := 20
+   ::oBrowse:nFooterHeight    := 20
+
+   ::oBrowse:Adjust()
+
+RETURN ( self )
+
+
+
+static FUNCTION SQLPropertyBrowseView_addColumnTitleProperty( n ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+   with object ( ::oBrowse:AddCol() )
+      :Adjust()
+      :cHeader       := ::aPropertiesTable[ ::oBrowse:nArrayAt, n ]:cHead
+      :bEditValue    := ::bGenEditText( n )
+      :nWidth        := 100
+      :bFooter       := {|| "Total" }
+   end
+
+RETURN ( self )
+
+
+
+static FUNCTION SQLPropertyBrowseView_addColumnColorProperty( n ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+   if !( ::aPropertiesTable[ ::oBrowse:nArrayAt, n ]:lColor )
+      RETURN ( Self )
+   end
+
+   with object ( ::oBrowse:AddCol() )
+      :Adjust()
+      :cHeader       := ""
+      :nWidth        := 40
+      :bFooter       := {|| "" }
+      :bStrData      := {|| "" }
+      :nWidth        := 16
+      :bClrStd       := ::bGenRGBValue( n )
+      :bClrSel       := ::bGenRGBValue( n )
+      :bClrSelFocus  := ::bGenRGBValue( n )
+   end
+
+   ::oBrowse:nFreeze++
+   ::oBrowse:nColOffset++
+
+RETURN ( self )
+
+
+
+static FUNCTION SQLPropertyBrowseView_addColumnValueProperty( n ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+   local oGetUnidades
+
+   with object ( ::oBrowse:AddCol() )
+      :Adjust()
+      :cHeader          := ::aPropertiesTable[ ::oBrowse:nArrayAt, n ]:cHead
+      :bEditValue       := ::bGenEditValue( n )
+      :cEditPicture     := masUnd()
+      :nWidth           := 50
+      :setAlign( 1 )
+      :nHeadStrAlign    := 1
+      :nEditType        := 1
+      :bOnPostEdit      := {| oCol, xVal, nKey | ::postEditProperties( oCol, xVal, nKey ) }
+      :nFootStyle       := :defStyle( 1, .T. )
+      :nFooterType      := 1
+      :cFooterPicture   := masUnd()
+      :cDataType        := "N"
+      :Cargo            := n
+   end
+
+RETURN ( self )
+
+
+
+static FUNCTION SQLPropertyBrowseView_postEditProperties( oCol, xVal, nKey ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+   ::oBrowse:Cargo[ ::oBrowse:nArrayAt, oCol:Cargo ]:Value := xVal
+
+   if hb_isblock( ::onPostEdit )
+      eval( ::onPostEdit )
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION SQLPropertyBrowseView_getProperties( ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+   ::aProperties        := {}
+
+   if empty( ::aPropertiesTable )
+      RETURN ( ::aProperties )
+   end
+
+
+
+   aeval( ::aPropertiesTable, {| aProperty | aeval( aProperty, {| oProperty | ::addProperty( oProperty ) } ) } )
+
+RETURN ( ::aProperties )
+
+
+
+static FUNCTION SQLPropertyBrowseView_addProperty( oProperty ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+   if hb_isnumeric( oProperty:Value )
+      aadd( ::aProperties, oProperty )
+   end
+
+RETURN ( self )
+
+
+
+static FUNCTION SQLPropertyBrowseView_setValueAndUuidToPropertiesTable( hLine ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+   local oProperty
+
+   if empty( hget( hLine, "uuid" ) )
+      RETURN ( nil )
+   end
+
+   if empty( hget( hLine, "unidades_articulo" ) )
+      RETURN ( nil )
+   end
+
+   if empty( hget( hLine, "codigo_primera_propiedad" ) )
+      RETURN ( nil )
+   end
+
+   if empty( hget( hLine, "valor_primera_propiedad" ) )
+      RETURN ( nil )
+   end
+
+   if empty( ::aPropertiesTable )
+      RETURN ( nil )
+   end
+
+
+
+   aeval( ::aPropertiesTable, {| aProperty | aeval( aProperty, {| oProperty | ::scanProperty( hLine, oProperty ) } ) } )
+
+RETURN ( nil )
+
+
+
+static FUNCTION SQLPropertyBrowseView_scanProperty( hLine, oProperty ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+
+
+
+   if alltrim( hget( hLine, "codigo_primera_propiedad" ) )  == alltrim( oProperty:cCodigoPropiedad1 ) .AND.  alltrim( hget( hLine, "valor_primera_propiedad" ) )   == alltrim( oProperty:cValorPropiedad1 )  .AND.  alltrim( hget( hLine, "codigo_segunda_propiedad" ) )  == alltrim( oProperty:cCodigoPropiedad2 ) .AND.  alltrim( hget( hLine, "valor_segunda_propiedad" ) )   == alltrim( oProperty:cValorPropiedad2 )
+
+      oProperty:Uuid    := hget( hLine, "uuid" )
+      oProperty:Value   := hget( hLine, "unidades_articulo" )
+
+   end
+
+RETURN ( nil )
+
+
+
+static FUNCTION SQLPropertyBrowseView_bGenEditText( n ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+RETURN ( {|| ::aPropertiesTable[ ::oBrowse:nArrayAt, n ]:cText } )
+
+
+
+static FUNCTION SQLPropertyBrowseView_bGenEditValue( n ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+RETURN ( {|| ::aPropertiesTable[ ::oBrowse:nArrayAt, n ]:Value } )
+
+
+
+static FUNCTION SQLPropertyBrowseView_bGenRGBValue( n ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+RETURN ( {|| { nRGB( 0, 0, 0), ::aPropertiesTable[ ::oBrowse:nArrayAt, n ]:nRgb } } )
+
+
+
+static FUNCTION SQLPropertyBrowseView_nTotalUnits( ) ; local Self AS CLASS SQLPropertyBrowseView := QSelf() AS CLASS SQLPropertyBrowseView
+
+   local nTotalUnits    := 0
+
+   if empty( ::oBrowse:Cargo )
+      RETURN ( nTotalUnits )
+   end
+
+
+
+   aeval( ::oBrowse:Cargo, {| aRow | aeval( aRow, {| oCol | if( hb_isnumeric( oCol:Value ), nTotalUnits += oCol:Value, ) } ) } )
+
+RETURN ( nTotalUnits )

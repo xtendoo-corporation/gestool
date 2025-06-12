@@ -1,0 +1,1084 @@
+#include 'FiveWin.Ch'
+
+#include 'Hbxml.ch'
+#include 'Hbclass.ch'
+#include 'Fileio.ch'
+#include 'Factu.ch' 
+      
+//---------------------------------------------------------------------------//
+
+Function ImportarContraplus()                	 
+	      
+   local oImportarContaplus    := TImportarContraplus():New()
+
+Return nil
+
+//---------------------------------------------------------------------------//  
+
+CLASS TImportarContraplus
+
+   DATA dbfDiario
+   DATA dbfSubCta
+
+   DATA aDiario
+
+   DATA aNombreCuentaOdoo
+
+   DATA aSerializado
+   DATA cSeparador
+
+   METHOD New()
+
+   METHOD OpenFiles()
+   METHOD CloseFiles()
+
+   METHOD Validate()
+   METHOD Run()
+
+   METHOD InsertCabecera()
+   METHOD InsertCabeceraVacia()
+   METHOD InsertarLinea()
+
+   METHOD getNombreCuentaOdoo()
+
+   METHOD getCuenta( SubCta )
+
+   METHOD getNombreCuenta()
+
+   METHOD getCuentaIVA( nIva )
+
+   METHOD proccessDiario()
+
+   METHOD createCSV()
+   METHOD Serializar()
+
+   METHOD toString( uValue )
+
+END CLASS
+
+//----------------------------------------------------------------------------//
+
+METHOD New( nView ) CLASS TImportarContraplus
+
+   ::aDiario   := {}
+
+   ::aNombreCuentaOdoo  := ::getNombreCuentaOdoo()
+   ::aSerializado       := {}
+   ::cSeparador         := ";"
+
+   ::OpenFiles()
+   
+   if ::Validate()
+      msgrun( "Procesando...", "Espere por favor...",  {|| ::Run() } )
+   end if 
+
+   ::CloseFiles()
+
+Return ( Self )
+
+//----------------------------------------------------------------------------//
+
+METHOD OpenFiles() CLASS TImportarContraplus
+
+   local oError
+   local oBlock
+
+   CursorWait()
+
+   oBlock         := ErrorBlock( { | oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   USE ( 'c:/ficheros/diario.Dbf' ) NEW VIA ( 'DBFCDX' ) SHARED ALIAS ( cCheckArea( 'DIARIO', @::dbfDiario ) )
+   SET INDEX TO ( 'c:/ficheros/diario.Cdx' ) ADDITIVE
+
+   USE ( 'c:/ficheros/subcta.Dbf' ) NEW VIA ( 'DBFCDX' ) SHARED ALIAS ( cCheckArea( 'SUBCTA', @::dbfSubCta ) )
+   SET INDEX TO ( 'c:/ficheros/subcta.Cdx' ) ADDITIVE
+
+   RECOVER USING oError
+
+      msgStop( ErrorMessage( oError ), 'Imposible abrir las bases de datos de contaplus' )
+      Return ( .f. )
+
+   END SEQUENCE
+
+   ErrorBlock( oBlock )
+
+   CursorWE()
+
+Return ( .t. )
+
+//----------------------------------------------------------------------------//
+
+METHOD CloseFiles() CLASS TImportarContraplus
+   
+   if ::dbfDiario != nil
+      ( ::dbfDiario )->( dbCloseArea() )
+   end if
+
+   if ::dbfSubCta != nil
+      ( ::dbfSubCta )->( dbCloseArea() )
+   end if
+
+   ::dbfDiario    := nil
+   ::dbfSubCta    := nil
+
+Return ( .t. )
+
+//----------------------------------------------------------------------------//
+
+METHOD Validate() CLASS TImportarContraplus
+
+   local aIncidencias := {}
+
+   ( ::dbfDiario )->( dbGoTop() )
+
+   while ( ::dbfDiario )->( !Eof() )
+
+      if !hhaskey( ::aNombreCuentaOdoo, ::getCuenta( ( ::dbfDiario )->SubCta ) )
+         aAdd( aIncidencias, ( ::dbfDiario )->SubCta )
+      end if
+
+      ( ::dbfDiario )->( dbskip() )      
+
+   end while
+
+   if len(aIncidencias) > 0
+      MsgInfo( hb_valToExp( aIncidencias ) )
+      Return ( .f. )
+   end if
+
+Return ( .t. )
+
+//---------------------------------------------------------------------------//
+
+METHOD Run() CLASS TImportarContraplus
+
+   local nAsiento    := 0
+   local hApunte     := {=>}
+
+   ( ::dbfDiario )->( dbGoTop() )
+
+   while ( ::dbfDiario )->( !Eof() )
+
+      hApunte        := {=>}
+
+      if ( ::dbfDiario )->asien != nAsiento
+         ::InsertCabecera( hApunte )
+      else
+         ::InsertCabeceraVacia( hApunte )
+      end if
+
+      ::InsertarLinea( hApunte )
+
+      aAdd( ::aDiario, hApunte )
+
+      nAsiento := ( ::dbfDiario )->asien
+
+      ( ::dbfDiario )->( dbskip() )      
+
+   end while
+
+   ::proccessDiario()
+
+   ::Serializar()
+   
+   ::createCSV()
+
+   msginfo( 'Proceso finalizado' )
+
+Return ( .t. )
+
+//----------------------------------------------------------------------------//
+
+METHOD proccessDiario() CLASS TImportarContraplus
+
+   local hapunte
+   local aAsiento    := {}
+   local npos        := 0
+   local cNombreCta  := ""
+   local nOrdAnt     := ( ::dbfSubCta )->( ordSetFocus( "CODS" ) )
+
+   for each hapunte in ::aDiario
+
+      if AllTrim( hget( hapunte, "Apuntes contables / Etiqueta" ) ) == 'Asiento de Apertura'
+
+         if SubStr( hget( hapunte, "Cuenta contaplus" ), 1, 3 ) == "400" .or.;
+            SubStr( hget( hapunte, "Cuenta contaplus" ), 1, 3 ) == "410" .or.;
+            SubStr( hget( hapunte, "Cuenta contaplus" ), 1, 3 ) == "430" .or.;
+            SubStr( hget( hapunte, "Cuenta contaplus" ), 1, 3 ) == "440"
+
+            if ( ::dbfSubCta )->( dbSeek( hget( hapunte, "Cuenta contaplus" ) ) )
+               cNombreCta  := AllTrim( ( ::dbfSubCta )->Titulo )
+               hSet( hapunte, 'Apuntes contables/Partner', AllTrim( ( ::dbfSubCta )->Titulo ) )
+               hSet( hapunte, 'Apuntes contables/Partner/Nombre', AllTrim( ( ::dbfSubCta )->Titulo ) )
+            else
+               cNombreCta  := ""
+               hSet( hapunte, 'Apuntes contables/Partner', "" )
+               hSet( hapunte, 'Apuntes contables/Partner/Nombre', "" )
+            end if
+
+         end if
+
+      else
+
+         if SubStr( hget( hapunte, "Cuenta contaplus" ), 1, 3 ) == "400" .or.;
+            SubStr( hget( hapunte, "Cuenta contaplus" ), 1, 3 ) == "410" .or.;
+            SubStr( hget( hapunte, "Cuenta contaplus" ), 1, 3 ) == "430"
+
+            if ( ::dbfSubCta )->( dbSeek( hget( hapunte, "Cuenta contaplus" ) ) )
+               cNombreCta  := AllTrim( ( ::dbfSubCta )->Titulo )
+            else
+               cNombreCta  := ""
+            end if
+
+            aAdd( aAsiento, { "Numero Asiento" => hget( hapunte, "Numero Asiento" ), "Nombre Tercero" => cNombreCta } )
+
+         end if
+
+      end if
+
+   next
+
+   for each hapunte in ::aDiario
+
+      if AllTrim( hget( hapunte, "Apuntes contables / Etiqueta" ) ) != 'Asiento de Apertura'
+
+         nPos := aScan( aAsiento, {|h| hGet( h, "Numero Asiento" ) == hget( hapunte, "Numero Asiento" ) } )
+
+         if nPos != 0
+            hSet( hapunte, 'Apuntes contables/Partner', hGet( aAsiento[ nPos ], "Nombre Tercero" ) )
+            hSet( hapunte, 'Apuntes contables/Partner/Nombre', hGet( aAsiento[ nPos ], "Nombre Tercero" ) )
+         end if
+
+      end if
+
+   next
+
+   ( ::dbfSubCta )->( ordSetFocus( nOrdAnt ) )
+
+Return ( .t. )
+
+//----------------------------------------------------------------------------//
+
+METHOD InsertCabecera( hApunte ) CLASS TImportarContraplus
+
+   local cMes  := AllTrim( Str( Month( ( ::dbfDiario )->Fecha ) ) )
+
+   if Month( ( ::dbfDiario )->Fecha ) < 10
+      cMes     := '0' + cMes
+   end if
+
+   hSet( hApunte, 'Fecha', AllTrim( Str( Year( ( ::dbfDiario )->Fecha ) ) ) + "-" + AllTrim( Str( Month( ( ::dbfDiario )->Fecha ) ) ) + "-" + AllTrim( Str( Day( ( ::dbfDiario )->Fecha ) ) ) )
+   hSet( hApunte, 'Numero', 'MISC/' + AllTrim( Str( Year( ( ::dbfDiario )->Fecha ) ) ) + '/' + cMes + '/' + RJust( Str( ( ::dbfDiario )->Asien ), '0', 4 ) )
+   hSet( hApunte, 'Partner', '' )
+   hSet( hApunte, 'Referencia', 'Asiento Apertura 2022' )
+   hSet( hApunte, 'Diario', 'Otras Operaciones' )
+
+Return ( .t. )
+
+//----------------------------------------------------------------------------//
+
+METHOD InsertCabeceraVacia( hApunte ) CLASS TImportarContraplus
+
+   hSet( hApunte, 'Fecha', "" )
+   hSet( hApunte, 'Numero', "" )
+   hSet( hApunte, 'Partner', "" )
+   hSet( hApunte, 'Referencia', "" )
+   hSet( hApunte, 'Diario', "" )
+
+Return ( .t. )
+
+//----------------------------------------------------------------------------//
+
+METHOD InsertarLinea( hApunte ) CLASS TImportarContraplus
+
+   hSet( hApunte, 'Apuntes contables / Etiqueta', AllTrim( ( ::dbfDiario )->Concepto ) )
+   hSet( hApunte, 'Apuntes contables/Partner', '' )
+   hSet( hApunte, 'Apuntes contables/Partner/Nombre', '' )
+   hSet( hApunte, 'Apuntes contables/Cuenta', ::getCuenta( ( ::dbfDiario )->SubCta ) + " " + ::getNombreCuenta( ( ::dbfDiario )->SubCta ) )
+   hSet( hApunte, 'Apuntes contables/Cuenta/Nombre de la cuenta', ::getNombreCuenta( ( ::dbfDiario )->SubCta ) )
+   hSet( hApunte, 'Apuntes contables/Débito', ( ::dbfDiario )->EuroDebe )
+   hSet( hApunte, 'Apuntes contables/Crédito', ( ::dbfDiario )->EuroHaber )
+   hSet( hApunte, 'Apuntes contables/Impuesto (cuota)', ::getCuentaIVA( ( ::dbfDiario )->Iva ) )
+   hSet( hApunte, 'Numero Asiento', ( ::dbfDiario )->Asien )
+   hSet( hApunte, 'Cuenta contaplus', ( ::dbfDiario )->SubCta )
+
+Return ( .t. )
+
+//----------------------------------------------------------------------------//
+
+METHOD Serializar() CLASS TImportarContraplus
+
+   local hapunte
+   local cBuffer      := ""
+
+   aAdd( ::aSerializado, "Fecha;Numero;Partner;Referencia;Diario;Apuntes contables / Etiqueta;Apuntes contables/Partner;Apuntes contables/Partner/Nombre;Apuntes contables/Cuenta;Apuntes contables/Cuenta/Nombre de la cuenta;Apuntes contables/Débito;Apuntes contables/Crédito;Apuntes contables/Impuesto (cuota)" + CRLF )
+
+   for each hapunte in ::aDiario 
+
+      cBuffer         := ::toString( hGet( hApunte, 'Fecha' ) )                                         + ::cSeparador()
+      cBuffer         += ::toString( hGet( hApunte, 'Numero' ) )                                        + ::cSeparador()
+      cBuffer         += ::toString( hGet( hApunte, 'Partner' ) )                                       + ::cSeparador()
+      cBuffer         += ::toString( hGet( hApunte, 'Referencia' ) )                                    + ::cSeparador()
+      cBuffer         += ::toString( hGet( hApunte, 'Diario' ) )                                        + ::cSeparador()
+      cBuffer         += ::toString( hGet( hApunte, 'Apuntes contables / Etiqueta' ) )                  + ::cSeparador()
+      cBuffer         += ::toString( hGet( hApunte, 'Apuntes contables/Partner' ) )                     + ::cSeparador()
+      cBuffer         += ::toString( hGet( hApunte, 'Apuntes contables/Partner/Nombre' ) )              + ::cSeparador()
+      cBuffer         += ::toString( hGet( hApunte, 'Apuntes contables/Cuenta' ) )                      + ::cSeparador()
+      cBuffer         += ::toString( hGet( hApunte, 'Apuntes contables/Cuenta/Nombre de la cuenta' ) )  + ::cSeparador()
+      cBuffer         += ::toString( hGet( hApunte, 'Apuntes contables/Débito' ) )                      + ::cSeparador()
+      cBuffer         += ::toString( hGet( hApunte, 'Apuntes contables/Crédito' ) )                     + ::cSeparador()
+      cBuffer         += ::toString( hGet( hApunte, 'Apuntes contables/Impuesto (cuota)' ) )            + ::cSeparador()
+      cBuffer         += CRLF
+
+      aAdd( ::aSerializado, cBuffer )
+
+   next
+
+Return ( .t. )
+
+//----------------------------------------------------------------------------//
+
+METHOD createCSV() CLASS TImportarContraplus
+
+   local cLinea
+   local cFile        := 'c:/Ficheros/Cecotrans.csv'
+   local hFile
+
+   if empty( ::aSerializado )
+      msgAlert( "Fichero no creado." )
+      Return ( .f. )
+   end if
+
+   hFile        := fCreate( cFile )
+
+   if !empty( hFile )
+      for each cLinea in ::aSerializado
+         fWrite( hFile, cLinea )
+      next
+      fClose( hFile )
+   end if
+
+Return ( .t. )
+
+//----------------------------------------------------------------------------//
+
+METHOD toString( uValue ) CLASS TImportarContraplus
+
+   do case
+      case Valtype( uValue ) == "C"
+         Return ( AllTrim( uValue ) )
+      case Valtype( uValue ) == "N"
+         Return ( AllTrim( Str( uValue ) ) )
+   end case
+
+Return ( "" )
+
+//----------------------------------------------------------------------------//
+
+METHOD getCuenta( SubCta ) CLASS TImportarContraplus
+
+   if substr( SubCta, 1, 2 ) == "28"
+      Return ( substr( SubCta, 1, 4 ) + right( AllTrim( SubCta ), 2 ) )
+   end if
+
+   if substr( SubCta, 1, 3 ) == "218"
+      Return ( substr( SubCta, 1, 4 ) + right( AllTrim( SubCta ), 2 ) )  
+   end if
+
+   if substr( SubCta, 1, 3 ) == "572"
+      Return ( substr( SubCta, 1, 3 ) + right( AllTrim( SubCta ), 3 ) )
+   end if
+   
+Return ( substr( SubCta, 1, 3 )  + '000' )
+
+//----------------------------------------------------------------------------//
+
+METHOD getNombreCuenta( SubCta ) CLASS TImportarContraplus
+
+Return ( AllTrim( hGet( ::aNombreCuentaOdoo, ::getCuenta( SubCta ) ) ) )
+
+//----------------------------------------------------------------------------//
+
+METHOD getCuentaIVA( nIva ) CLASS TImportarContraplus
+
+   local cNombreIva := ""
+
+   do case
+      case nIva == 21
+         cNombreIva := "IVA 21% (Bienes)"
+      case nIva == 10
+         cNombreIva := "IVA 10% (Bienes)"
+      otherwise
+         cNombreIva := ""
+   endcase
+
+Return ( cNombreIva )
+
+//----------------------------------------------------------------------------//
+
+METHOD getNombreCuentaOdoo() CLASS TImportarContraplus
+
+return ( {'100000' => 'Capital social',;
+'101000' => 'Fondo social',;
+'102000' => 'Capital',;
+'103000' => 'Socios por desembolsos no exigidos, capital social',;
+'103400' => 'Socios por desembolsos no exigidos, capital pendiente de inscripción',;
+'104000' => 'Socios por aportaciones no dinerarias pendientes, capital social',;
+'104400' => 'Socios por aportaciones no dinerarias pendientes, capital pendiente de inscripción',;
+'108000' => 'Acciones o participaciones propias en situaciones especiales',;
+'109000' => 'Acciones o participaciones propias para reducción de capital',;
+'110000' => 'Prima de emisión o asunción',;
+'112000' => 'Reserva legal',;
+'113000' => 'Reservas voluntarias',;
+'114000' => 'Reservas para acciones o participaciones de la sociedad dominante',;
+'114100' => 'Reservas estatutarias',;
+'114200' => 'Reserva por capital amortizado',;
+'114400' => 'Reservas por acciones propias aceptadas en garantía',;
+'118000' => 'Aportaciones de socios o propietarios',;
+'119000' => 'Diferencias por ajuste del capital a euros',;
+'120000' => 'Remanente',;
+'121000' => 'Resultados negativos de ejercicios anteriores',;
+'129000' => 'Resultado del ejercicio',;
+'130000' => 'Subvenciones oficiales de capital',;
+'131000' => 'Donaciones y legados de capital',;
+'132000' => 'Otras subvenciones, donaciones y legados',;
+'137000' => 'Ingresos fiscales por diferencias permanentes a distribuir en varios ejercicios',;
+'137100' => 'Ingresos fiscales por deducciones y bonificaciones a distribuir en varios ejercicios',;
+'141000' => 'Provisión para impuestos',;
+'142000' => 'Provisión para otras responsabilidades',;
+'143000' => 'Provisión por desmantelamiento, retiro o rehabilitación del inmovilizado',;
+'145000' => 'Provisión para actuaciones medioambientales',;
+'150000' => 'Acciones o participaciones consideradas como pasivos financieros',;
+'153300' => 'Desembolsos no exigidos, empresas del grupo',;
+'153400' => 'Desembolsos no exigidos, empresas asociadas',;
+'153500' => 'Desembolsos no exigidos, otras partes vinculadas',;
+'153600' => 'Otros desembolsos no exigidos',;
+'154300' => 'Aportaciones no dinerarias pendientes, empresas del grupo',;
+'154400' => 'Aportaciones no dinerarias pendientes, empresas asociadas',;
+'154500' => 'Aportaciones no dinerarias pendientes, otras partes vinculadas',;
+'154600' => 'Otras aportaciones no dinerarias pendientes',;
+'160300' => 'Deudas con entidades de crédito vinculadas, empresas del grupo',;
+'160400' => 'Deudas con entidades de crédito vinculadas, empresas asociadas',;
+'160500' => 'Deudas con otras entidades de crédito vinculadas',;
+'161300' => 'Proveedores de inmovilizado, empresas del grupo',;
+'161400' => 'Proveedores de inmovilizado, empresas asociadas',;
+'161500' => 'Proveedores de inmovilizado, otras partes vinculadas',;
+'162300' => 'Acreedores por arrendamiento financiero, empresas de grupo',;
+'162400' => 'Acreedores por arrendamiento financiero, empresas asociadas',;
+'162500' => 'Acreedores por arrendamiento financiero, otras partes vinculadas',;
+'163300' => 'Otras deudas, empresas del grupo',;
+'163400' => 'Otras deudas, empresas asociadas',;
+'163500' => 'Otras deudas, con otras partes vinculadas',;
+'170000' => 'Deudas con entidades de crédito',;
+'171000' => 'Deudas',;
+'172000' => 'Deudas transformables en subvenciones, donaciones y legados',;
+'173000' => 'Proveedores de inmovilizado',;
+'174000' => 'Acreedores por arrendamiento financiero',;
+'175000' => 'Efectos a pagar',;
+'176000' => 'Pasivos por derivados financieros',;
+'177000' => 'Obligaciones y bonos',;
+'179000' => 'Deudas representadas en otros valores negociables',;
+'180000' => 'Fianzas recibidas',;
+'181000' => 'Anticipos recibidos por ventas o prestaciones de servicios',;
+'185000' => 'Depósitos recibidos',;
+'190000' => 'Acciones o participaciones emitidas',;
+'192000' => 'Suscriptores de acciones',;
+'194000' => 'Capital emitido pendiente de inscripción',;
+'195000' => 'Acciones o participaciones emitidas consideradas como pasivos financieros',;
+'197000' => 'Suscriptores de acciones consideradas como pasivos financieros',;
+'199000' => 'Acciones o participaciones emitidas consideradas como pasivos financieros pendientes de inscripción',;
+'200000' => 'Investigación',;
+'201000' => 'Desarrollo',;
+'202000' => 'Concesiones administrativas',;
+'203000' => 'Propiedad industrial',;
+'204000' => 'Fondo de comercio',;
+'205000' => 'Derechos de traspaso',;
+'206000' => 'Aplicaciones informáticas',;
+'209000' => 'Anticipos para inmovilizaciones intangibles',;
+'210000' => 'Terrenos y bienes naturales',;
+'211000' => 'Construcciones',;
+'212000' => 'Instalaciones técnicas',;
+'213000' => 'Maquinaria',;
+'214000' => 'Utillaje',;
+'215000' => 'Otras instalaciones',;
+'216000' => 'Mobiliario',;
+'217000' => 'Equipos para proceso de información',;
+'218000' => 'Elementos de transporte',;
+'218001' => 'Ford Transit 0006',;
+'218002' => 'Ford Transit 0007',;
+'218003' => 'Ford Transit Madrid Leasing 2428',;
+'218004' => 'Camion Hispamer',;
+'218005' => 'Vehiculos sin Leasing(3468-BYB)',;
+'218008' => 'Fialba Aljarafe SLU',;
+'218009' => 'FIAT DUCATO 8472-HWF',;
+'218010' => 'Moto Peugeot',;
+'218011' => 'Furg Citroen(Cadiz)',;
+'218012' => 'ELEMENTOS DE TRANSPORTE(SONDA)',;
+'218013' => 'FORD TRANSIT 3120-HFZ',;
+'218014' => 'COMPRA FURG JAEN',;
+'218015' => 'COMPRA FURG LIDIA',;
+'218016' => 'FURGONETA NORTHGATE 1',;
+'218017' => 'COMPRA FURGONETA NORTHGATE 2',;
+'218018' => 'FURGONETA JAVIER FRIA',;
+'219000' => 'Otro inmovilizado material',;
+'220000' => 'Inversiones en terrenos y bienes naturales',;
+'221000' => 'Inversiones en construcciones',;
+'230000' => 'Adaptación de terrenos y bienes naturales',;
+'231000' => 'Construcciones en curso',;
+'232000' => 'Instalaciones técnicas en montaje',;
+'233000' => 'Maquinaria en montaje',;
+'237000' => 'Equipos para procesos de información en montaje',;
+'239000' => 'Anticipos para inmovilizaciones materiales',;
+'240300' => 'Participaciones en empresas del grupo',;
+'240400' => 'Participaciones en empresas asociadas',;
+'240500' => 'Participaciones en otras partes vinculadas',;
+'241300' => 'Valores representativos de deuda de empresas del grupo',;
+'241400' => 'Valores representativos de deuda de empresas asociadas',;
+'241500' => 'Valores representativos de deuda de otras partes vinculadas',;
+'242300' => 'Créditos a empresas del grupo',;
+'242400' => 'Créditos a empresas asociadas',;
+'242500' => 'Créditos a otras partes vinculadas',;
+'249300' => 'Desembolsos pendientes sobre participaciones en empresas del grupo',;
+'249400' => 'Desembolsos pendientes sobre participaciones en empresas asociadas',;
+'249500' => 'Desembolsos pendientes sobre participaciones en otras partes vinculadas',;
+'250000' => 'Inversiones financieras en instrumentos de patrimonio',;
+'251000' => 'Valores representativos de deuda',;
+'252000' => 'Créditos',;
+'253000' => 'Créditos por enajenación de inmovilizado',;
+'254000' => 'Créditos al personal',;
+'255000' => 'Activos por derivados financieros',;
+'258000' => 'Imposiciones',;
+'259000' => 'Desembolsos pendientes sobre participaciones en el patrimonio neto',;
+'260000' => 'Fianzas constituidas',;
+'265000' => 'Depósitos constituidos',;
+'280000' => 'Amortización acumulada de investigación',;
+'280100' => 'Amortización acumulada de desarrollo',;
+'280200' => 'Amortización acumulada de concesiones administrativas',;
+'280300' => 'Amortización acumulada de propiedad industrial',;
+'280500' => 'Amortización acumulada de derechos de traspaso',;
+'280600' => 'Amortización acumulada de aplicaciones informáticas',;
+'281004' => 'FIAT 8472-HWF',;
+'281005' => 'FIAT 8229-HVS',;
+'281006' => 'MOTO',;
+'281007' => 'FURGONETA CADIZ',;
+'281012' => 'AMORTIZACION ACUMULADA(CARRETILLA)',;
+'281100' => 'Amortización acumulada de construcciones',;
+'281200' => 'Amortización acumulada de instalaciones técnicas',;
+'281300' => 'Amortización acumulada de maquinaria',;
+'281400' => 'Amortización acumulada de utillaje',;
+'281500' => 'Amortización acumulada de otras instalaciones',;
+'281600' => 'Amortización acumulada de mobiliario',;
+'281700' => 'Amortización acumulada de equipos para proceso de información',;
+'281800' => 'Amortización acumulada de elementos de transporte',;
+'281801' => 'A.A ELEMENTOS DE TRANSPORTES LEASING',;
+'281900' => 'Amortización acumulada de otro inmovilizado material',;
+'282000' => 'Amortización acumulada de las inversiones inmobiliarias',;
+'290000' => 'Deterioro del valor de investigación',;
+'290100' => 'Deterioro del valor de desarrollo',;
+'290200' => 'Deterioro del valor de concesiones administrativas',;
+'290300' => 'Deterioro del valor de propiedad industrial',;
+'290500' => 'Deterioro del valor de derechos de traspaso',;
+'290600' => 'Deterioro del valor de aplicaciones informáticas',;
+'291000' => 'Deterioro de valor de terrenos y bienes naturales',;
+'291100' => 'Deterioro de valor de construcciones',;
+'291200' => 'Deterioro de valor de instalaciones técnicas',;
+'291300' => 'Deterioro de valor de maquinaria',;
+'291400' => 'Deterioro de valor de utillaje',;
+'291500' => 'Deterioro de valor de otras instalaciones',;
+'291600' => 'Deterioro de valor de mobiliario',;
+'291700' => 'Deterioro de valor de equipos para proceso de información',;
+'291800' => 'Deterioro de valor de elementos de transporte',;
+'291900' => 'Deterioro de valor de otro inmovilizado material',;
+'292000' => 'Deterioro de valor de los terrenos y bienes naturales',;
+'292100' => 'Deterioro de valor de construcciones',;
+'293300' => 'Deterioro de valor de participaciones en empresas del grupo',;
+'293400' => 'Deterioro de valor de participaciones en empresas asociadas',;
+'293500' => 'Deterioro de valor de participaciones a largo plazo en otras partes vinculadas',;
+'294300' => 'Deterioro de valor de valores representativos de deuda de empresas del grupo',;
+'294400' => 'Deterioro de valor de valores representativos de deuda de empresas asociadas',;
+'294500' => 'Deterioro de valor de valores representativos de deuda de otras partes vinculadas',;
+'295300' => 'Deterioro de valor de créditos a empresas del grupo',;
+'295400' => 'Deterioro de valor de créditos a empresas asociadas',;
+'295500' => 'Deterioro de valor de créditos a otras partes vinculadas',;
+'296000' => 'Deterioro de  valor de participaciones en el patrimonio neto a largo plazo',;
+'297000' => 'Deterioro de valor de valores representativos de deuda',;
+'298000' => 'Deterioro de valor de créditos',;
+'300000' => 'Mercaderías A',;
+'301000' => 'Mercaderías B',;
+'310000' => 'Materias primas A',;
+'311000' => 'Materias primas B',;
+'320000' => 'Elementos y conjuntos incorporables',;
+'321000' => 'Combustibles',;
+'322000' => 'Repuestos',;
+'325000' => 'Materiales diversos',;
+'326000' => 'Embalajes',;
+'327000' => 'Envases',;
+'328000' => 'Material de oficina',;
+'330000' => 'Productos en curso A',;
+'331000' => 'Productos en curso B',;
+'340000' => 'Productos semiterminados A',;
+'341000' => 'Productos semiterminados B',;
+'350000' => 'Productos terminados A',;
+'351000' => 'Productos terminados B',;
+'360000' => 'Subproductos A',;
+'361000' => 'Subproductos B',;
+'365000' => 'Residuos A',;
+'366000' => 'Residuos B',;
+'368000' => 'Materiales recuperados A',;
+'369000' => 'Materiales recuperados B',;
+'390000' => 'Deterioro de valor de las mercaderías',;
+'391000' => 'Deterioro de valor de las materias primas',;
+'392000' => 'Deterioro de valor de otros aprovisionamientos',;
+'393000' => 'Deterioro de valor de los productos en curso',;
+'394000' => 'Deterioro de valor de los productos semiterminados',;
+'395000' => 'Deterioro de valor de los productos terminados',;
+'396000' => 'Deterioro de valor de los subproductos, residuos y materiales recuperados',;
+'400000' => 'Proveedores (euros)',;
+'400400' => 'Proveedores (moneda extranjera)',;
+'400900' => 'Proveedores, facturas pendientes de recibir o de formalizar',;
+'401000' => 'Proveedores, efectos comerciales a pagar',;
+'403000' => 'Proveedores, empresas del grupo (euros)',;
+'403100' => 'Efectos comerciales a pagar, empresas del grupo',;
+'403400' => 'Proveedores, empresas del grupo (moneda extranjera)',;
+'403600' => 'Envases y embalajes a devolver a proveedores, empresas del grupo',;
+'403900' => 'Proveedores, empresas del grupo, facturas pendientes de recibir o de formalizar',;
+'404000' => 'Proveedores, empresas asociadas',;
+'405000' => 'Proveedores, otras partes vinculadas',;
+'406000' => 'Envases y embalajes a devolver a proveedores',;
+'407000' => 'Anticipos a proveedores',;
+'410000' => 'Acreedores por prestaciones de servicios (euros)',;
+'410400' => 'Acreedores por prestaciones de servicios (moneda extranjera)',;
+'410900' => 'Acreedores por prestaciones de servicios, facturas pendientes de recibir o de formalizar',;
+'411000' => 'Acreedores, efectos comerciales a pagar',;
+'419000' => 'Acreedores por operaciones en común',;
+'430000' => 'Clientes (euros)',;
+'430100' => 'Clientes (euros) (PoS)',;
+'430400' => 'Clientes (moneda extranjera)',;
+'430900' => 'Clientes, facturas pendientes de recibir o de formalizar',;
+'431000' => 'Efectos comerciales en cartera',;
+'431100' => 'Efectos comerciales descontados',;
+'431200' => 'Efectos comerciales en gestión de cobro',;
+'431500' => 'Efectos comerciales impagados',;
+'432000' => 'Clientes, operaciones de factoring',;
+'433000' => 'Clientes empresas del grupo (euros)',;
+'433100' => 'Efectos comerciales a cobrar, empresas del grupo',;
+'433200' => 'Clientes empresas del grupo, operaciones de factoring',;
+'433400' => 'Clientes empresas del grupo (moneda extranjera)',;
+'433600' => 'Clientes empresas del grupo de dudoso cobro',;
+'433700' => 'Envases y embalajes a devolver a clientes, empresas del grupo',;
+'433900' => 'Clientes empresas del grupo, facturas pendientes de formalizar',;
+'434000' => 'Clientes, empresas asociadas',;
+'435000' => 'Clientes, otras partes vinculadas',;
+'436000' => 'Clientes de dudoso cobro',;
+'437000' => 'Envases y embalajes a devolver por clientes',;
+'438000' => 'Anticipos de clientes',;
+'440000' => 'Deudores (euros)',;
+'440400' => 'Deudores (moneda extranjera)',;
+'440900' => 'Deudores, facturas pendientes de formalizar',;
+'441000' => 'Deudores, efectos comerciales en cartera',;
+'441100' => 'Deudores, efectos comerciales descontados',;
+'441200' => 'Deudores, efectos comerciales en gestión de cobro',;
+'441500' => 'Deudores, efectos comerciales impagados',;
+'446000' => 'Deudores de dudoso cobro',;
+'449000' => 'Deudores por operaciones en común',;
+'460000' => 'Anticipos de remuneraciones',;
+'465000' => 'Remuneraciones pendientes de pago',;
+'470000' => 'Hacienda Pública, deudora por IVA',;
+'470800' => 'Hacienda Pública, deudora por subvenciones concedidas',;
+'470900' => 'Hacienda Pública, deudora por devolución de impuestos',;
+'471000' => 'Organismos de la Seguridad Social, deudores',;
+'472000' => 'Hacienda Pública. IVA soportado',;
+'473000' => 'Hacienda Pública, retenciones y pagos a cuenta',;
+'474000' => 'Activos por diferencias temporarias deducibles',;
+'474200' => 'Derechos por deducciones y bonificaciones pendientes de aplicar',;
+'474500' => 'Crédito por pérdidas a compensar del ejercicio',;
+'475000' => 'Hacienda Pública, acreedora por IVA',;
+'475100' => 'Hacienda Pública, acreedora por retenciones practicadas',;
+'475200' => 'Hacienda Pública, acreedora por impuesto sobre sociedades',;
+'475800' => 'Hacienda Pública, acreedora por subvenciones a reintegrar',;
+'475900' => 'Hacienda Pública, acreedora por otros conceptos',;
+'476000' => 'Organismos de la Seguridad Social, acreedores',;
+'477000' => 'Hacienda Pública. IVA repercutido',;
+'479000' => 'Pasivos por diferencias temporarias imponibles',;
+'480000' => 'Gastos anticipados',;
+'485000' => 'Ingresos anticipados',;
+'490000' => 'Deterioro de valor de créditos por operaciones comerciales',;
+'493300' => 'Deterioro de valor de créditos por operaciones comerciales con empresas del grupo',;
+'493400' => 'Deterioro de valor de créditos por operaciones comerciales con empresas asociadas',;
+'493500' => 'Deterioro de valor de créditos por operaciones comerciales con otras partes vinculadas',;
+'499400' => 'Provisión por contratos onerosos',;
+'499900' => 'Provisión para otras operaciones comerciales',;
+'500000' => 'Obligaciones y bonos a corto plazo',;
+'502000' => 'Acciones o participaciones a corto plazo consideradas como pasivos financieros',;
+'505000' => 'Deudas representadas en otros valores negociables a corto plazo',;
+'506000' => 'Intereses a corto plazo de empréstitos y otras emisiones análogas',;
+'507000' => 'Dividendos de acciones o participaciones consideradas como pasivos financieros',;
+'509000' => 'Obligaciones y bonos amortizados',;
+'509500' => 'Otros valores negociables amortizados',;
+'510300' => 'Deudas a corto plazo con entidades de crédito, empresas del grupo',;
+'510400' => 'Deudas a corto plazo con entidades de crédito, empresas asociadas',;
+'510500' => 'Deudas a corto plazo con otras entidades de crédito vinculadas',;
+'511300' => 'Proveedores de inmovilizado a corto plazo, empresas del grupo',;
+'511400' => 'Proveedores de inmovilizado a corto plazo, empresas asociadas',;
+'511500' => 'Proveedores de inmovilizado a corto plazo, otras partes vinculadas',;
+'512300' => 'Acreedores por arrendamiento financiero a corto plazo, empresas del grupo',;
+'512400' => 'Acreedores por arrendamiento financiero a corto plazo, empresas asociadas',;
+'512500' => 'Acreedores por arrendamiento financiero a corto plazo, otras partes vinculadas',;
+'513300' => 'Otras deudas a corto plazo con empresas del grupo',;
+'513400' => 'Otras deudas a corto plazo con empresas asociadas',;
+'513500' => 'Otras deudas a corto plazo con otras partes vinculadas',;
+'514300' => 'Intereses a corto plazo de deudas con empresas del grupo',;
+'514400' => 'Intereses a corto plazo de deudas con empresas asociadas',;
+'514500' => 'Intereses a corto plazo de deudas con otras partes vinculadas',;
+'520000' => 'Préstamos a corto plazo de entidades de crédito',;
+'520100' => 'Deudas a corto plazo por crédito dispuesto',;
+'520800' => 'Deudas por efectos descontados',;
+'520900' => 'Deudas por operaciones de “factoring”',;
+'521000' => 'Deudas a corto plazo',;
+'522000' => 'Deudas a corto plazo transformables en subvenciones, donaciones y legados',;
+'523000' => 'Proveedores de inmovilizado a corto plazo',;
+'524000' => 'Acreedores por arrendamiento financiero a corto plazo',;
+'525000' => 'Efectos a pagar a corto plazo',;
+'526000' => 'Dividendo activo a pagar',;
+'527000' => 'Intereses a corto plazo de deudas con entidades de crédito',;
+'528000' => 'Intereses a corto plazo de deudas',;
+'529000' => 'Provisión a corto plazo por retribuciones al personal',;
+'529100' => 'Provisión a corto plazo para impuestos',;
+'529200' => 'Provisión a corto plazo para otras responsabilidades',;
+'529300' => 'Provisión a corto plazo por desmantelamiento, retiro o rehabilitación del inmovilizado',;
+'529500' => 'Provisión a corto plazo para actuaciones medioambientales',;
+'530300' => 'Participaciones a corto plazo en empresas del grupo',;
+'530400' => 'Participaciones a corto plazo en empresas asociadas',;
+'530500' => 'Participaciones a corto plazo en otras partes vinculadas',;
+'531300' => 'Valores representativos de deuda a corto plazo de empresas del grupo',;
+'531400' => 'Valores representativos de deuda a corto plazo de empresas asociadas',;
+'531500' => 'Valores representativos de deuda a corto plazo de otras partes vinculadas',;
+'532300' => 'Créditos a corto plazo a empresas del grupo',;
+'532400' => 'Créditos a corto plazo a empresas asociadas',;
+'532500' => 'Créditos a corto plazo a otras partes vinculadas',;
+'533300' => 'Intereses a corto plazo de valores representativos de deuda de empresas del grupo',;
+'533400' => 'Intereses a corto plazo de valores representativos de deuda de empresas asociadas',;
+'533500' => 'Intereses a corto plazo de valores representativos de deuda de otras partes vinculadas',;
+'534300' => 'Intereses a corto plazo de créditos a empresas del grupo',;
+'534400' => 'Intereses a corto plazo de créditos a empresas asociadas',;
+'534500' => 'Intereses a corto plazo de créditos a otras partes vinculadas',;
+'535300' => 'Dividendo a cobrar de inversiones financieras en empresas del grupo',;
+'535400' => 'Dividendo a cobrar de inversiones financieras en empresas asociadas',;
+'535500' => 'Dividendo a cobrar de inversiones financieras en otras partes vinculadas',;
+'539300' => 'Desembolsos pendientes sobre participaciones a corto plazo en empresas del grupo',;
+'539400' => 'Desembolsos pendientes sobre participaciones a corto plazo en empresas asociadas',;
+'539500' => 'Desembolsos pendientes sobre participaciones a corto plazo en otras partes vinculadas',;
+'540000' => 'Inversiones financieras a corto plazo en instrumentos de patrimonio',;
+'541000' => 'Valores representativos de deuda a corto plazo',;
+'542000' => 'Créditos a corto plazo',;
+'543000' => 'Créditos a corto plazo por enajenación de inmovilizado',;
+'544000' => 'Créditos a corto plazo al personal',;
+'545000' => 'Dividendo a cobrar',;
+'546000' => 'Intereses a corto plazo de valores representativos de deudas',;
+'547000' => 'Intereses a corto plazo de créditos',;
+'548000' => 'Imposiciones a corto plazo',;
+'549000' => 'Desembolsos pendientes sobre participaciones en el patrimonio neto a corto plazo',;
+'550000' => 'Titular de la explotación',;
+'551000' => 'Cuenta corriente con socios y administradores',;
+'552300' => 'Cuenta corriente con empresas del grupo',;
+'552400' => 'Cuenta corriente con empresas asociadas',;
+'552500' => 'Cuenta corriente con otras partes vinculadas',;
+'554000' => 'Cuenta corriente con uniones temporales de empresas y comunidades de bienes',;
+'555000' => 'Partidas pendientes de aplicación',;
+'556300' => 'Desembolsos exigidos sobre participaciones, empresas del grupo',;
+'556400' => 'Desembolsos exigidos sobre participaciones, empresas asociadas',;
+'556500' => 'Desembolsos exigidos sobre participaciones, otras partes vinculadas',;
+'556600' => 'Desembolsos exigidos sobre participaciones de otras empresas',;
+'557000' => 'Dividendo activo a cuenta',;
+'558000' => 'Socios por desembolsos exigidos sobre acciones o participaciones ordinarias',;
+'558500' => 'Socios por desembolsos exigidos sobre acciones o participaciones consideradas como pasivos financieros',;
+'559000' => 'Activos por derivados financieros a corto plazo, cartera de negociación',;
+'559500' => 'Pasivos por derivados financieros a corto plazo, cartera de negociación',;
+'560000' => 'Fianzas recibidas a corto plazo',;
+'561000' => 'Depósitos recibidos a corto plazo',;
+'565000' => 'Fianzas constituidas a corto plazo',;
+'566000' => 'Depósitos constituidos a corto plazo',;
+'567000' => 'Intereses pagados por anticipado',;
+'568000' => 'Intereses cobrados por anticipado',;
+'570000' => 'Caja, euros',;
+'570001' => 'Cash',;
+'571000' => 'Caja, moneda extranjera',;
+'572000' => 'Bancos e instituciones de crédito c/c vista, euros',;
+'572001' => 'Bank Suspense Account',;
+'572002' => 'BANKINTER 6797',;
+'572003' => 'BANKINTER B',;
+'572004' => 'BANKINTER(CON)',;
+'572005' => 'POLIZA DE CREDITO',;
+'572999' => 'Transferencia de liquidez',;
+'573000' => 'Bancos e instituciones de crédito c/c vista, moneda extranjera',;
+'574000' => 'Bancos e instituciones de crédito, cuentas de ahorro, euros',;
+'575000' => 'Bancos e instituciones de crédito, cuentas de ahorro, moneda extranjera',;
+'576000' => 'Inversiones a corto plazo de gran liquidez',;
+'593300' => 'Deterioro de valor de participaciones a corto plazo en empresas del grupo',;
+'593400' => 'Deterioro de valor de participaciones a corto plazo en empresas asociadas',;
+'593500' => 'Deterioro de valor de participaciones a corto plazo en otras partes vinculadas',;
+'594300' => 'Deterioro de valor de valores representativos de deuda a corto plazo de empresas del grupo',;
+'594400' => 'Deterioro de valor de valores representativos de deuda a corto plazo de empresas asociadas',;
+'594500' => 'Deterioro de valor de valores representativos de deuda a corto plazo de otras partes vinculadas',;
+'595300' => 'Deterioro de valor de créditos a corto plazo a empresas del grupo',;
+'595400' => 'Deterioro de valor de créditos a corto plazo a empresas asociadas',;
+'595500' => 'Deterioro de valor de créditos a corto plazo a otras partes vinculadas',;
+'596000' => 'Deterioro de valor de participaciones a corto plazo',;
+'597000' => 'Deterioro de valor de valores representativos de deuda a corto plazo',;
+'598000' => 'Deterioro de valor de créditos a corto plazo',;
+'600000' => 'Compras de mercaderías',;
+'601000' => 'Compras de materias primas',;
+'602000' => 'Compras de otros aprovisionamientos',;
+'606000' => 'Descuentos sobre compras por pronto pago de mercaderías',;
+'606100' => 'Descuentos sobre compras por pronto pago de materias primas',;
+'606200' => 'Descuentos sobre compras por pronto pago de otros aprovisionamientos',;
+'607000' => 'Trabajos realizados por otras empresas',;
+'608000' => 'Devoluciones de compras de mercaderías',;
+'608100' => 'Devoluciones de compras de materias primas',;
+'608200' => 'Devoluciones de compras de otros aprovisionamientos',;
+'609000' => '"Rappels" por compras de mercaderías',;
+'609100' => '"Rappels" por compras de materias primas',;
+'609200' => '"Rappels" por compras de otros aprovisionamientos',;
+'610000' => 'Variación de existencias de mercaderías',;
+'611000' => 'Variación de existencias de materias primas',;
+'612000' => 'Variación de existencias de otros aprovisionamientos',;
+'620000' => 'Gastos en investigación y desarrollo del ejercicio',;
+'621000' => 'Arrendamientos y cánones',;
+'622000' => 'Reparaciones y conservación',;
+'623000' => 'Servicios de profesionales independientes',;
+'624000' => 'Transportes',;
+'625000' => 'Primas de seguros',;
+'626000' => 'Servicios bancarios y similares',;
+'627000' => 'Publicidad, propaganda y relaciones públicas',;
+'628000' => 'Suministros',;
+'629000' => 'Otros servicios',;
+'630000' => 'Impuesto corriente',;
+'630100' => 'Impuesto diferido',;
+'631000' => 'Otros tributos',;
+'633000' => 'Ajustes negativos en la imposición sobre beneficios',;
+'634100' => 'Ajustes negativos en IVA de activo corriente',;
+'634200' => 'Ajustes negativos en IVA de inversiones',;
+'636000' => 'Devolución de impuestos',;
+'638000' => 'Ajustes positivos en la imposición sobre beneficios',;
+'639100' => 'Ajustes positivos en IVA de activo corriente',;
+'639200' => 'Ajustes positivos en IVA de inversiones',;
+'640000' => 'Sueldos y salarios',;
+'641000' => 'Indemnizaciones',;
+'642000' => 'Seguridad Social a cargo de la empresa',;
+'649000' => 'Otros gastos sociales',;
+'650000' => 'Pérdidas de créditos comerciales incobrables',;
+'651000' => 'Beneficio transferido (gestor)',;
+'651100' => 'Pérdida soportada (partícipe o asociado no gestor)',;
+'659000' => 'Otras pérdidas en gestión corriente',;
+'660000' => 'Gastos financieros por actualización de provisiones',;
+'661000' => 'Intereses de obligaciones y bonos, empresas del grupo',;
+'661100' => 'Intereses de obligaciones y bonos, empresas asociadas',;
+'661200' => 'Intereses de obligaciones y bonos, otras partes vinculadas',;
+'661300' => 'Intereses de obligaciones y bonos, otras empresas',;
+'661500' => 'Intereses de obligaciones y bonos a corto plazo, empresas del grupo',;
+'661600' => 'Intereses de obligaciones y bonos a corto plazo, empresas asociadas',;
+'661700' => 'Intereses de obligaciones y bonos a corto plazo, otras partes vinculadas',;
+'661800' => 'Intereses de obligaciones y bonos a corto plazo, otras empresas',;
+'662000' => 'Intereses de deudas, empresas del grupo',;
+'662100' => 'Intereses de deudas, empresas asociadas',;
+'662200' => 'Intereses de deudas, otras partes vinculadas',;
+'662300' => 'Intereses de deudas con entidades de crédito',;
+'662400' => 'Intereses de deudas, otras empresas',;
+'663000' => 'Pérdidas por valoración de instrumentos financieros por su valor razonable',;
+'664000' => 'Dividendos de pasivos, empresas del grupo',;
+'664100' => 'Dividendos de pasivos, empresas asociadas',;
+'664200' => 'Dividendos de pasivos, otras partes vinculadas',;
+'664300' => 'Dividendos de pasivos, otras empresas',;
+'665000' => 'Intereses por descuento de efectos en entidades de crédito del grupo',;
+'665100' => 'Intereses por descuento de efectos en entidades de crédito asociadas',;
+'665200' => 'Intereses por descuento de efectos en entidades de crédito vinculadas',;
+'665300' => 'Intereses por descuento de efectos en otras entidades de crédito',;
+'665400' => 'Intereses por operaciones de "factoring" con entidades de crédito del grupo',;
+'665500' => 'Intereses por operaciones de "factoring" con entidades de crédito asociadas',;
+'665600' => 'Intereses por operaciones de "factoring" con entidades de crédito vinculadas',;
+'665700' => 'Intereses por operaciones de "factoring" con otras entidades de crédito',;
+'666000' => 'Pérdidas en valores representativos de deuda, empresas del grupo',;
+'666100' => 'Pérdidas en valores representativos de deuda, empresas asociadas',;
+'666200' => 'Pérdidas en valores representativos de deuda, otras partes vinculadas',;
+'666300' => 'Pérdidas en valores representativos de deuda, otras empresas',;
+'666500' => 'Pérdidas en valores representativos de deuda a corto plazo, empresas del grupo',;
+'666600' => 'Pérdidas en valores representativos de deuda a corto plazo, empresas asociadas',;
+'666700' => 'Pérdidas en valores representativos de deuda a corto plazo, otras partes vinculadas',;
+'666800' => 'Pérdidas en valores representativos de deuda a corto plazo, otras empresas',;
+'667000' => 'Pérdidas de créditos, empresas del grupo',;
+'667100' => 'Pérdidas de créditos, empresas asociadas',;
+'667200' => 'Pérdidas de créditos, otras partes vinculadas',;
+'667300' => 'Pérdidas de créditos, otras empresas',;
+'667500' => 'Pérdidas de créditos a corto plazo, empresas del grupo',;
+'667600' => 'Pérdidas de créditos a corto plazo, empresas asociadas',;
+'667700' => 'Pérdidas de créditos a corto plazo, otras partes vinculadas',;
+'667800' => 'Pérdidas de créditos a corto plazo, otras empresas',;
+'668000' => 'Diferencias negativas de cambio',;
+'669000' => 'Otros gastos financieros',;
+'670000' => 'Pérdidas procedentes del inmovilizado intangible',;
+'671000' => 'Pérdidas procedentes del inmovilizado material',;
+'672000' => 'Pérdidas procedentes de las inversiones inmobiliarias',;
+'673300' => 'Pérdidas procedentes de participaciones en, empresas del grupo',;
+'673400' => 'Pérdidas procedentes de participaciones, empresas asociadas',;
+'673500' => 'Pérdidas procedentes de participaciones, otras partes vinculadas',;
+'675000' => 'Pérdidas por operaciones con obligaciones propias',;
+'678000' => 'Gastos excepcionales',;
+'680000' => 'Amortización del inmovilizado intangible',;
+'681000' => 'Amortización del inmovilizado material',;
+'682000' => 'Amortización de las inversiones inmobiliarias',;
+'690000' => 'Pérdidas por deterioro del inmovilizado intangible',;
+'691000' => 'Pérdidas por deterioro del inmovilizado material',;
+'692000' => 'Pérdidas por deterioro de las inversiones inmobiliarias',;
+'693000' => 'Pérdidas por deterioro de productos terminados y en curso de fabricación',;
+'693100' => 'Pérdidas por deterioro de mercaderías',;
+'693200' => 'Pérdidas por deterioro de materias primas',;
+'693300' => 'Pérdidas por deterioro de otros aprovisionamientos',;
+'694000' => 'Pérdidas por deterioro de créditos por operaciones comerciales',;
+'695400' => 'Dotación a la provisión por contratos onerosos',;
+'695900' => 'Dotación a la provisión para otras operaciones comerciales',;
+'696000' => 'Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto, empresas del grupo',;
+'696100' => 'Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto, empresas asociadas',;
+'696200' => 'Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto, otras partes vinculadas',;
+'696300' => 'Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto, otras empresas',;
+'696500' => 'Pérdidas por deterioro en valores representativos de deuda, empresas del grupo',;
+'696600' => 'Pérdidas por deterioro en valores representativos de deuda, empresas asociadas',;
+'696700' => 'Pérdidas por deterioro en valores representativos de deuda, otras partes vinculadas',;
+'696800' => 'Pérdidas por deterioro en valores representativos de deuda, otras empresas',;
+'697000' => 'Pérdidas por deterioro de créditos, empresas del grupo',;
+'697100' => 'Pérdidas por deterioro de créditos, empresas asociadas',;
+'697200' => 'Pérdidas por deterioro de créditos, otras partes vinculadas',;
+'697300' => 'Pérdidas por deterioro de créditos, otras empresas',;
+'698000' => 'Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto a corto plazo, empresas del grupo',;
+'698100' => 'Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto a corto plazo, empresas asociadas',;
+'698500' => 'Pérdidas por deterioro en valores representativos de deuda a corto plazo, empresas del grupo',;
+'698600' => 'Pérdidas por deterioro en valores representativos de deuda a corto plazo, empresas asociadas',;
+'698700' => 'Pérdidas por deterioro en valores representativos de deuda a corto plazo, otras partes vinculadas',;
+'698800' => 'Pérdidas por deterioro en valores representativos de deuda a corto plazo, otras empresas',;
+'699000' => 'Pérdidas por deterioro de créditos a corto plazo, empresas del grupo',;
+'699100' => 'Pérdidas por deterioro de créditos a corto plazo, empresas asociadas',;
+'699200' => 'Pérdidas por deterioro de créditos a corto plazo, otras partes vinculadas',;
+'699300' => 'Pérdidas por deterioro de créditos a corto plazo, otras empresas',;
+'700000' => 'Ventas de mercaderías en España',;
+'700100' => 'Ventas de mercaderías Intracomunitarias',;
+'700200' => 'Ventas de mercaderías Exportación',;
+'701000' => 'Ventas de productos terminados en España',;
+'701100' => 'Ventas de productos terminados Intracomunitarias',;
+'701200' => 'Ventas de productos terminados Exportación',;
+'702000' => 'Ventas de productos semiterminados en España',;
+'702100' => 'Ventas de productos semiterminados Intracomunitarias',;
+'702200' => 'Ventas de productos semiterminados Exportación',;
+'703000' => 'Ventas de subproductos y residuos en España',;
+'703100' => 'Ventas de subproductos y residuos Intracomunitarias',;
+'703200' => 'Ventas de subproductos y residuos Exportación',;
+'704000' => 'Ventas de envases y embalajes en España',;
+'704100' => 'Ventas de envases y embalajes Intracomunitarias',;
+'704200' => 'Ventas de envases y embalajes Exportación',;
+'705000' => 'Prestaciones de servicios en España',;
+'705100' => 'Prestaciones de servicios Intracomunitarias',;
+'705200' => 'Prestaciones de servicios fuera de la UE',;
+'706000' => 'Descuentos sobre ventas por pronto pago de mercaderías',;
+'706100' => 'Descuentos sobre ventas por pronto pago de productos terminados',;
+'706200' => 'Descuentos sobre ventas por pronto pago de productos semiterminados',;
+'706300' => 'Descuentos sobre ventas por pronto pago de subproductos y residuos',;
+'708000' => 'Devoluciones de ventas de mercaderías',;
+'708100' => 'Devoluciones de ventas de productos terminados',;
+'708200' => 'Devoluciones de ventas de productos semiterminados',;
+'708300' => 'Devoluciones de ventas de subproductos y residuos',;
+'708400' => 'Devoluciones de ventas de envases y embalajes',;
+'709000' => '"Rappels" sobre ventas de mercaderías',;
+'709100' => '"Rappels" sobre ventas de productos terminados',;
+'709200' => '"Rappels" sobre ventas de productos semiterminados',;
+'709300' => '"Rappels" sobre ventas de subproductos y residuos',;
+'709400' => '"Rappels" sobre ventas de envases y embalajes',;
+'710000' => 'Variación de existencias de productos en curso',;
+'711000' => 'Variación de existencias de productos semiterminados',;
+'712000' => 'Variación de existencias de productos terminados',;
+'713000' => 'Variación de existencias de subproductos, residuos y materiales recuperados',;
+'730000' => 'Trabajos realizados para el inmovilizado intangible',;
+'731000' => 'Trabajos realizados para el inmovilizado material',;
+'732000' => 'Trabajos realizados en inversiones inmobiliarias',;
+'733000' => 'Trabajos realizados para el inmovilizado material en curso',;
+'740000' => 'Subvenciones, donaciones y legados a la explotación',;
+'746000' => 'Subvenciones, donaciones y legados de capital transferidos al resultado del ejercicio de carácter no financiero',;
+'746100' => 'Subvenciones, donaciones y legados de capital transferidos al resultado del ejercicio de carácter financiero',;
+'747000' => 'Otras subvenciones, donaciones y legados transferidos al resultado del ejercicio',;
+'751000' => 'Pérdida transferido (gestor)',;
+'751100' => 'Beneficio atribuido (partícipe o asociado no gestor)',;
+'752000' => 'Ingresos por arrendamientos',;
+'753000' => 'Ingresos de propiedad industrial cedida en explotación',;
+'754000' => 'Ingresos por comisiones',;
+'755000' => 'Ingresos por servicios al personal',;
+'759000' => 'Ingresos por servicios diversos',;
+'760000' => 'Ingresos de participaciones en instrumentos de patrimonio, empresas del grupo',;
+'760100' => 'Ingresos de participaciones en instrumentos de patrimonio, empresas asociadas',;
+'760200' => 'Ingresos de participaciones en instrumentos de patrimonio, otras partes vinculadas',;
+'760300' => 'Ingresos de participaciones en instrumentos de patrimonio, otras empresas',;
+'761000' => 'Ingresos de valores representativos de deuda, empresas del grupo',;
+'761100' => 'Ingresos de valores representativos de deuda, empresas asociadas',;
+'761200' => 'Ingresos de valores representativos de deuda, otras partes vinculadas',;
+'761300' => 'Ingresos de valores representativos de deuda, otras empresas',;
+'762000' => 'Ingresos de créditos a largo plazo, empresas del grupo',;
+'762010' => 'Ingresos de créditos a largo plazo, empresas asociadas',;
+'762020' => 'Ingresos de créditos a largo plazo, otras partes vinculadas',;
+'762030' => 'Ingresos de créditos a largo plazo, otras empresas',;
+'762100' => 'Ingresos de créditos a corto plazo, empresas del grupo',;
+'762110' => 'Ingresos de créditos a corto plazo, empresas asociadas',;
+'762120' => 'Ingresos de créditos a corto plazo, otras partes vinculadas',;
+'762130' => 'Ingresos de créditos a corto plazo, otras empresas',;
+'763000' => 'Beneficios por valoración de instrumentos financieros por su valor razonable',;
+'766000' => 'Beneficios en valores representativos de deuda a largo plazo, empresas del grupo',;
+'766100' => 'Beneficios en valores representativos de deuda a largo plazo, empresas asociadas',;
+'766200' => 'Beneficios en valores representativos de deuda a largo plazo, otras partes vinculadas',;
+'766300' => 'Beneficios en valores representativos de deuda a largo plazo, otras empresas',;
+'766500' => 'Beneficios en valores representativos de deuda a corto plazo, empresas del grupo',;
+'766600' => 'Beneficios en valores representativos de deuda a corto plazo, empresas asociadas',;
+'766700' => 'Beneficios en valores representativos de deuda a corto plazo, otras partes vinculadas',;
+'766800' => 'Beneficios en valores representativos de deuda a corto plazo, otras empresas',;
+'768000' => 'Diferencias positivas de cambio',;
+'769000' => 'Otros ingresos financieros',;
+'770000' => 'Beneficios procedentes del inmovilizado intangible',;
+'771000' => 'Beneficios procedentes del inmovilizado material',;
+'772000' => 'Beneficios procedentes de las inversiones inmobiliarias',;
+'773300' => 'Beneficios procedentes de participaciones a largo plazo, empresas del grupo',;
+'773400' => 'Beneficios procedentes de participaciones a largo plazo, empresas asociadas',;
+'773500' => 'Beneficios procedentes de participaciones a largo plazo, otras partes vinculadas',;
+'775000' => 'Beneficos por operaciones con obligaciones propias',;
+'778000' => 'Ingresos excepcionales',;
+'790000' => 'Reversión del deterioro del inmovilizado intangible',;
+'791000' => 'Reversión del deterioro del inmovilizado material',;
+'792000' => 'Reversión del deterioro de las inversiones inmobiliarias',;
+'793000' => 'Reversión del deterioro de productos terminados y en curso de fabricación',;
+'793100' => 'Reversión del deterioro de mercaderías',;
+'793200' => 'Reversión del deterioro de materias primas',;
+'793300' => 'Reversión del deterioro de otros aprovisionamientos',;
+'794000' => 'Reversión del deterioro de créditos por operaciones comerciales',;
+'795100' => 'Exceso de provisión para impuestos',;
+'795200' => 'Exceso de provisión para otras responsabilidades',;
+'795440' => 'Exceso de provisión por contratos onerosos',;
+'795490' => 'Exceso de provisión para otras operaciones comerciales',;
+'795500' => 'Exceso de provisión para actuaciones medioambientales',;
+'796000' => 'Reversión del deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, empresas del grupo',;
+'796100' => 'Reversión del deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, empresas asociadas',;
+'796200' => 'Reversión del deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, otras partes vinculadas',;
+'796300' => 'Reversión del deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, otras empresas',;
+'796500' => 'Reversión del deterioro de valores representativos de deuda a largo plazo, empresas del grupo',;
+'796600' => 'Reversión del deterioro de valores representativos de deuda a largo plazo, empresas asociadas',;
+'796700' => 'Reversión del deterioro de valores representativos de deuda a largo plazo, otras partes vinculadas',;
+'796800' => 'Reversión del deterioro de valores representativos de deuda a largo plazo, otras empresas',;
+'797000' => 'Reversión del deterioro de créditos a largo plazo, empresas del grupo',;
+'797100' => 'Reversión del deterioro de créditos a largo plazo, empresas asociadas',;
+'797200' => 'Reversión del deterioro de créditos a largo plazo, otras partes vinculadas',;
+'797300' => 'Reversión del deterioro de créditos a largo plazo, otras empresas',;
+'798000' => 'Reversión del deterioro de participaciones en instrumentos de patrimonio neto a corto plazo, empresas del grupo',;
+'798100' => 'Reversión del deterioro de participaciones en instrumentos de patrimonio neto a corto plazo, empresas asociadas',;
+'798500' => 'Reversión del deterioro de valores representativos de deuda a corto plazo, empresas del grupo',;
+'798600' => 'Reversión del deterioro de valores representativos de deuda a corto plazo, empresas asociadas',;
+'798700' => 'Reversión del deterioro de valores representativos de deuda a corto plazo, otras partes vinculadas',;
+'798800' => 'Reversión del deterioro de valores representativos de deuda a corto plazo, otras empresas',;
+'799000' => 'Reversión del deterioro de créditos a corto plazo, empresas del grupo',;
+'799100' => 'Reversión del deterioro de créditos a corto plazo, empresas asociadas',;
+'799200' => 'Reversión del deterioro de créditos a corto plazo, otras partes vinculadas',;
+'799300' => 'Reversión del deterioro de créditos a corto plazo, otras empresas',;
+'999001' => 'Cash Difference Loss',;
+'999002' => 'Cash Difference Gain' } )

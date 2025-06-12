@@ -1,0 +1,2523 @@
+#line 91 "\fwh1801\include\FiveWin.ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 7 ".\.\Prg\TFastReportGeneral.prg"
+memvar dFechaInicio
+memvar dFechaFin
+memvar cGrupoArticuloDesde
+memvar cGrupoArticuloHasta
+
+
+
+_HB_CLASS TFastReportGeneral ; function TFastReportGeneral ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TFastReportGeneral", iif( .T., { @TFastReportInfGen() }, { @HBObject() } ), @TFastReportGeneral() ) ) ;
+
+   _HB_MEMBER { cType } ; oClass:AddMultiData(, "Generales", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cType"}, .F. )
+
+   _HB_MEMBER { cJson } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cJson"}, .F. )
+   _HB_MEMBER { aJson } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aJson"}, .F. )
+
+   _HB_MEMBER { aFlds } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aFlds"}, .F. )
+   _HB_MEMBER { cSql } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSql"}, .F. )
+   _HB_MEMBER { cGroup } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cGroup"}, .F. )
+   _HB_MEMBER { cOrder } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cOrder"}, .F. )
+
+   _HB_MEMBER lResource( cFld); oClass:AddMethod( "lResource", @TFastReportGeneral_lResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Play( uParam); oClass:AddMethod( "Play", @TFastReportGeneral_Play(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER DesignReport( cNombre); oClass:AddMethod( "DesignReport", @TFastReportGeneral_DesignReport(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER GenReport( nOption); oClass:AddMethod( "GenReport", @TFastReportGeneral_GenReport(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Create(); oClass:AddMethod( "Create", @TFastReportGeneral_Create(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER loadJson(); oClass:AddMethod( "loadJson", @TFastReportGeneral_loadJson(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles(); oClass:AddMethod( "OpenFiles", @TFastReportGeneral_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @TFastReportGeneral_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DataReport(); oClass:AddMethod( "DataReport", @TFastReportGeneral_DataReport(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AddVariable(); oClass:AddMethod( "AddVariable", @TFastReportGeneral_AddVariable(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER StartDialog(); oClass:AddMethod( "StartDialog", @TFastReportGeneral_StartDialog(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER BuildTree(); oClass:AddMethod( "BuildTree", @TFastReportGeneral_BuildTree(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER BuildReportCorrespondences(); oClass:AddMethod( "BuildReportCorrespondences", @TFastReportGeneral_BuildReportCorrespondences(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ExecSql(); oClass:AddMethod( "ExecSql", @TFastReportGeneral_ExecSql(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER prepareSentenceSql(); oClass:AddMethod( "prepareSentenceSql", @TFastReportGeneral_prepareSentenceSql(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER execMacro(); oClass:AddMethod( "execMacro", @TFastReportGeneral_execMacro(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER addGroup(); oClass:AddMethod( "addGroup", @TFastReportGeneral_addGroup(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER addOrder(); oClass:AddMethod( "addOrder", @TFastReportGeneral_addOrder(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER lCompruebaArticulo(); oClass:AddMethod( "lCompruebaArticulo", @TFastReportGeneral_lCompruebaArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TFastReportGeneral ;
+
+
+
+static FUNCTION TFastReportGeneral_lResource( cFld ) ; local Self AS CLASS TFastReportGeneral := QSelf() AS CLASS TFastReportGeneral
+
+   ::lNewInforme     := .T.
+   ::lDefCondiciones := .F.
+
+   ::cSubTitle       := "Informes generales"
+
+   ::cTipoInforme    := "Generales"
+   ::cBmpInforme     := "gc_cabinet_open_64"
+
+   if !::lTabletVersion .AND. !::NewResource()
+      return .F.
+   end
+
+
+
+
+
+   if !::lGrupoArticulo( .T. )
+      return .F.
+   end
+
+   if !::lGrupoSufijo( .T. )
+      return .F.
+   end
+
+RETURN .T.
+
+
+
+static FUNCTION TFastReportGeneral_OpenFiles( ) ; local Self AS CLASS TFastReportGeneral := QSelf() AS CLASS TFastReportGeneral
+
+   local lOpen          := .T.
+   local oError
+   local oBlock
+
+   oBlock               := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      ::cDriver         := cDriver()
+
+      ::nView           := D():CreateView( ::cDriver )
+
+   RECOVER USING oError
+
+      msgStop( ErrorMessage( oError ), "Imposible abrir las bases de datos de artículos" )
+
+      ::CloseFiles()
+
+      lOpen       := .F.
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TFastReportGeneral_CloseFiles( ) ; local Self AS CLASS TFastReportGeneral := QSelf() AS CLASS TFastReportGeneral
+
+   local oBlock
+
+   oBlock         := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      if !Empty( ::nView )
+         D():DeleteView( ::nView )
+      end
+
+      ::nView     := nil
+
+   RECOVER
+
+      msgStop( "Imposible cerrar todas las bases de datos" )
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN .T.
+
+
+
+static FUNCTION TFastReportGeneral_Play( ) ; local Self AS CLASS TFastReportGeneral := QSelf() AS CLASS TFastReportGeneral
+
+   if ::lOpenFiles
+
+      if ::lResource()
+         ::Activate()
+      end
+
+   end
+
+   ::End()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportGeneral_Create( ) ; local Self AS CLASS TFastReportGeneral := QSelf() AS CLASS TFastReportGeneral
+
+   local h
+
+   if !::loadJson()
+      Return .F.
+   end
+
+   if hb_isnil( ::oDbf )
+      ::oDbf                  := TDbf():New( ::cFileName, "InfMov", ( cLocalDriver() ), , ( cPatTmp() ) )
+   end
+
+   for each h in ::aFlds
+      ::AddField( hGet( h, "name" ),hGet( h, "type" ), hGet( h, "size" ), hGet( h, "decimal" ), {|| hGet( h, "picture" ) }, hGet( h, "description" ) )
+   next
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TFastReportGeneral_loadJson( ) ; local Self AS CLASS TFastReportGeneral := QSelf() AS CLASS TFastReportGeneral
+
+   local uSql
+
+   ::cSql         := ""
+   ::cGroup       := ""
+   ::cOrder       := ""
+
+   ::cReportJson  := ::cReportDirectory + "\" + ::cReportName + ".json"
+
+   if !file( ::cReportJson )
+      Return .F.
+   end
+
+   ::cJson                      := memoread( ::cReportJson )
+
+   if Empty( ::cJson )
+      Return .F.
+   end
+
+   hb_jsondecode( ::cJson, @::aJson )
+
+   ::aFlds     := hGet( ::aJson, "fields" )
+   uSql        := hGet( ::aJson, "sql" )
+   ::cGroup    := hGet( ::aJson, "group" )
+   ::cOrder    := hGet( ::aJson, "order" )
+
+   if hb_isArray( uSql )
+      aEval( uSql, {|c| ::cSql += c } )
+   else
+      ::cSql      := uSql
+   end
+
+   if !hb_ishash( ::aFlds ) .OR. len( ::aFlds ) == 0
+      MsgInfo( "Errores en la configuración de campos del Json" )
+      Return .F.
+   end
+
+   if Empty( ::cSql )
+      MsgInfo( "Errores en la configuración de SQL del Json" )
+      Return .F.
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TFastReportGeneral_DesignReport( cNombre ) ; local Self AS CLASS TFastReportGeneral := QSelf() AS CLASS TFastReportGeneral
+
+   if !::lInformesPersonalizados
+      MsgStop( "No se puede diseñar un informe básico" )
+      Return ( self )
+   end
+
+
+
+
+
+   if !::lLoadInfo()
+      msgStop( "No se ha podido cargar el informe." )
+      Return ( Self )
+   end
+
+
+
+
+
+   if !::lLoadReport()
+      MsgStop( "No se ha podido cargar un diseño de informe valido." + Chr(13)+Chr(10) + ::cReportFile )
+      Return ( Self )
+   end
+
+   if !Empty( cNombre )
+      ::lPersonalizado  := .T.
+      ::cReportName     := cNombre
+   end
+
+   if !::create()
+      MsgStop( "No de ha podido cargar el json con la configuración del informe." )
+      Return ( self )
+   end
+
+   if ::OpenTemporal()
+
+
+
+
+
+      ::oFastReport                    := frReportManager():new()
+
+      ::oFastReport:LoadLangRes(       "Spanish.Xml" )
+      ::oFastReport:SetIcon( 1 )
+
+      ::oFastReport:SetEventHandler(   "Designer", "OnSaveReport", {|lSaveAs| ::SaveReport( lSaveAs ) } )
+
+      ::oFastReport:ClearDataSets()
+
+      ::DataReport()
+
+      if !Empty( ::cInformeFastReport )
+
+         ::oFastReport:LoadFromString( ::cInformeFastReport )
+
+      else
+
+         ::oFastReport:AddPage(        "MainPage" )
+
+         ::oFastReport:AddBand(        "CabeceraDocumento", "MainPage", 2 )
+         ::oFastReport:SetProperty(    "CabeceraDocumento", "Top", 0 )
+         ::oFastReport:SetProperty(    "CabeceraDocumento", "Height", 200 )
+
+         ::oFastReport:AddBand(        "MasterData",  "MainPage", 6 )
+         ::oFastReport:SetProperty(    "MasterData",  "Top", 200 )
+         ::oFastReport:SetProperty(    "MasterData",  "Height", 100 )
+         ::oFastReport:SetProperty(    "MasterData",  "StartNewPage", .T. )
+         ::oFastReport:SetObjProperty( "MasterData",  "DataSet", "Informe" )
+
+         ::oFastReport:AddBand(        "DetalleColumnas",   "MainPage", 7  )
+         ::oFastReport:SetProperty(    "DetalleColumnas",   "Top", 230 )
+         ::oFastReport:SetProperty(    "DetalleColumnas",   "Height", 28 )
+         ::oFastReport:SetObjProperty( "DetalleColumnas",   "DataSet", "Informe" )
+
+      end
+
+      ::AddVariable()
+
+      ::oFastReport:SetTitle(                "Diseñando : " + ::cReportType )
+      ::oFastReport:ReportOptions:SetName(   "Diseñando : " + ::cReportType )
+
+      ::oFastReport:PreviewOptions:SetMaximized( .T. )
+
+      ::oFastReport:SetTabTreeExpanded( 16, .F. )
+
+      ::oFastReport:DesignReport()
+
+      if !Empty( ::oFastReport )
+         ::oFastReport:DestroyFR()
+      end
+
+      if !Empty( cNombre )
+         ::LoadPersonalizado()
+      end
+
+      ::CloseTemporal()
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportGeneral_GenReport( nOption ) ; local Self AS CLASS TFastReportGeneral := QSelf() AS CLASS TFastReportGeneral
+
+   local oDlg
+
+
+
+
+
+   if !::lLoadInfo()
+      msgStop( "No se ha podido cargar el nombre del informe." )
+      Return ( Self )
+   end
+
+
+
+
+
+   if !::lLoadReport()
+      MsgStop( "No se ha podido cargar un diseño de informe valido." + Chr(13)+Chr(10) + ::cReportFile )
+      Return ( Self )
+   end
+
+   if !::create()
+      MsgStop( "No de ha podido cargar el json con la configuración del informe." )
+      Return ( self )
+   end
+
+   if ::OpenTemporal()
+
+
+
+
+
+      ::SetDialog( .F. )
+
+      ::lBreak             := .F.
+      ::oBtnCancel:bAction := {|| ::lBreak := .T. }
+
+
+
+
+
+      ::ExtractOrder()
+
+
+
+
+
+      if hb_isBlock( ::bPreGenerate )
+         Eval( ::bPreGenerate )
+      end
+
+      if ::lGenerate()
+
+         if !::lBreak
+
+
+
+
+
+            oDlg = TDialog():New( 0, 0, 4, 30, "Generando informe",,, .F., 128,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+            oDlg:bStart    := { || ::FastReport( nOption ), oDlg:End(), SysRefresh() }
+            oDlg:cMsg      := "Por favor espere..."
+
+
+
+            oDlg:Activate( oDlg:bLClicked, oDlg:bMoved, oDlg:bPainted := {|hDC,cPS|oDlg:Say( 11, 0, xPadC( oDlg:cMsg, ( oDlg:nRight - oDlg:nLeft ) ), , , , .T. )}, .T.,,,, oDlg:bRClicked,,, )
+
+         end
+
+      else
+
+         if !::lBreak
+            msgStop( "No hay registros en las condiciones solictadas" )
+         end
+
+      end
+
+      if hb_isBlock( ::bPostGenerate )
+         Eval( ::bPostGenerate )
+      end
+
+      ::oMtrInf:cText         := ""
+      ::oMtrInf:Set( 0 )
+
+      ::oBtnCancel:bAction    := {|| ::lBreak := .T., ::End() }
+
+      ::SetDialog( .T. )
+
+      ::CloseTemporal()
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportGeneral_AddVariable( ) ; local Self AS CLASS TFastReportGeneral := QSelf() AS CLASS TFastReportGeneral
+
+   public dFechaInicio                 := Dtos( ::dIniInf )
+   public dFechaFin                    := Dtos( ::dFinInf )
+
+   ::oFastReport:AddVariable(          "Informe",  "Desde fecha",                   "GetHbVar('dFechaInicio')" )
+   ::oFastReport:AddVariable(          "Informe",  "Hasta fecha",                   "GetHbVar('dFechaFin')" )
+
+   if !Empty( ::oGrupoArticulo )
+      public cGrupoArticuloDesde       := ::oGrupoArticulo:Cargo:Desde
+      public cGrupoArticuloHasta       := ::oGrupoArticulo:Cargo:Hasta
+
+      ::oFastReport:AddVariable(       "Informe", "Desde código de artículo",       "GetHbVar('cGrupoArticuloDesde')" )
+      ::oFastReport:AddVariable(       "Informe", "Hasta código de artículo",       "GetHbVar('cGrupoArticuloHasta')" )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportGeneral_BuildReportCorrespondences( ) ; local Self AS CLASS TFastReportGeneral := QSelf() AS CLASS TFastReportGeneral
+
+
+
+
+   ::hReport   := {  "Generales" =>  {  "Generate" =>  {|| ::ExecSql() }, "Variable" =>  {|| nil }, "Data" =>      {|| nil } } }
+
+Return ( Self )
+
+
+
+static FUNCTION TFastReportGeneral_BuildTree( oTree, lLoadFile ) ; local Self AS CLASS TFastReportGeneral := QSelf() AS CLASS TFastReportGeneral
+
+   local aReports
+
+   If( oTree == nil, oTree := ::oTreeReporting, ) ;
+   If( lLoadFile == nil, lLoadFile := .T., ) ;
+
+
+
+
+
+   aReports    := {  {  "Title"     => "Generales", "Image"     => 22, "Type"      => "Generales", "Directory" => "Generales", "File"      => "Generales.fr3"  } }
+
+   ::BuildNode( aReports, oTree, lLoadFile )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportGeneral_DataReport( ) ; local Self AS CLASS TFastReportGeneral := QSelf() AS CLASS TFastReportGeneral
+
+   ::oFastReport:ClearDataSets()
+
+   ::oFastReport:SetWorkArea(       "Informe",                    ::oDbf:nArea )
+   ::oFastReport:SetFieldAliases(   "Informe",                    cObjectsToReport( ::oDbf ) )
+
+   ::SetDataReport()
+
+Return ( Self )
+
+
+
+static FUNCTION TFastReportGeneral_StartDialog( ) ; local Self AS CLASS TFastReportGeneral := QSelf() AS CLASS TFastReportGeneral
+
+   ::CreateTreeImageList()
+
+   ::BuildTree()
+
+   ::BuildReportCorrespondences()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportGeneral_ExecSql( ) ; local Self AS CLASS TFastReportGeneral := QSelf() AS CLASS TFastReportGeneral
+
+   if Empty( ::cSql )
+      Return ( Self )
+   end
+
+   ::prepareSentenceSql()
+
+   ADSBaseModel():ExecuteSqlStatement( ::cSql, @::oDbf:cAlias )
+
+   if ::lCompruebaArticulo()
+
+
+      ( ::oDbf:cAlias )->( dbSetFilter( {|| ( Field->cCodArt >= ::oGrupoArticulo:Cargo:getDesde() .AND. Field->cCodArt <= ::oGrupoArticulo:Cargo:getHasta() ) .AND. ( Field->cDelega >= ::oGrupoSufijo:Cargo:getDesde() .AND. Field->cDelega <= ::oGrupoSufijo:Cargo:getHasta() ) }, "( cCodArt >= " + ::oGrupoArticulo:Cargo:getDesde() + " .and. cCodArt <= " + ::oGrupoArticulo:Cargo:getHasta() + ") .and. ( cDelega >= " + ::oGrupoSufijo:Cargo:getDesde() + " .and. cDelega <= " + ::oGrupoSufijo:Cargo:getHasta() + " )" ) )
+
+   else
+
+
+      ( ::oDbf:cAlias )->( dbSetFilter( {|| Field->cDelega >= ::oGrupoSufijo:Cargo:getDesde() .AND. Field->cDelega <= ::oGrupoSufijo:Cargo:getHasta() }, "cDelega >= " + ::oGrupoSufijo:Cargo:getDesde() + " .and. cDelega <= " + ::oGrupoSufijo:Cargo:getHasta() ) )
+
+   end
+
+   ::oDbf:GoTop()
+
+RETURN ( Self )
+
+
+
+
+static FUNCTION TFastReportGeneral_prepareSentenceSql( ) ; local Self AS CLASS TFastReportGeneral := QSelf() AS CLASS TFastReportGeneral
+
+   ::execMacro()
+   ::addGroup()
+   ::addOrder()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportGeneral_execMacro( ) ; local Self AS CLASS TFastReportGeneral := QSelf() AS CLASS TFastReportGeneral
+
+
+
+
+
+   ::cSql   := StrTran( ::cSql, "{{empresa}}", AllTrim( cPatEmp() ) )
+
+
+
+
+
+   ::cSql   := StrTran( ::cSql, "{{datos}}", AllTrim( cPatDat() ) )
+
+
+
+
+
+   ::cSql   := StrTran( ::cSql, "{{dIniInf}}", quoted( dToc( ::dIniInf ) ) )
+
+
+
+
+
+   ::cSql   := StrTran( ::cSql, "{{dFinInf}}", quoted( dToc( ::dFinInf ) ) )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportGeneral_addGroup( ) ; local Self AS CLASS TFastReportGeneral := QSelf() AS CLASS TFastReportGeneral
+
+   if Empty( ::cGroup )
+      Return ( self )
+   end
+
+   ::cSql   += " GROUP BY "
+   ::cSql   += AllTrim( ::cGroup )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportGeneral_addOrder( ) ; local Self AS CLASS TFastReportGeneral := QSelf() AS CLASS TFastReportGeneral
+
+   if Empty( ::cOrder )
+      Return ( self )
+   end
+
+   ::cSql   += " ORDER BY "
+   ::cSql   += AllTrim( ::cOrder )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TFastReportGeneral_lCompruebaArticulo( ) ; local Self AS CLASS TFastReportGeneral := QSelf() AS CLASS TFastReportGeneral
+
+   local h
+   local lExist   := .F.
+
+    for each h in ::aFlds
+
+      if hGet( h, "name" ) == "cCodArt"
+         lExist := .T.
+      end
+
+   next
+
+RETURN ( lExist )

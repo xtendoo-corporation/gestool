@@ -1,0 +1,135 @@
+#line 14 ".\.\Prg\MsError.prg"
+_HB_CLASS TMSError ; function TMSError ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TMSError", iif( .T., { @TSQLVirtual() }, { @HBObject() } ), @TMSError() ) ) ;
+
+    _HB_MEMBER { nHandle } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nHandle"}, .F. )
+    _HB_MEMBER { lAutoError } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lAutoError"}, .F. )
+
+    _HB_MEMBER New( nHandle, lAutoError) AS CLASS TMSError; oClass:AddMethod( "New", @TMSError_New(), nScope + iif( .T., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER Init(); oClass:AddMethod( "Init", @TMSError_Init(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER Say( cError, lAuto); oClass:AddMethod( "Say", @TMSError_Say(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER Show( lAllways, cDefault); oClass:AddMethod( "Show", @TMSError_Show(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER IsError(); oClass:AddMethod( "IsError", @TMSError_IsError(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GetError(); oClass:AddMethod( "GetError", @TMSError_GetError(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GetErrNo(); oClass:AddMethod( "GetErrNo", @TMSError_GetErrNo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER GetState(); oClass:AddMethod( "GetState", @TMSError_GetState(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+    _HB_MEMBER SetAutoError( lOnOff); oClass:AddMethod( "SetAutoError", @TMSError_SetAutoError(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+    _HB_MEMBER SetHandler( nHandle); oClass:AddMethod( "SetHandler", @TMSError_SetHandler(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TMSError ;
+
+
+
+
+static FUNCTION TMSError_New( nHandle, lAutoError ) ; local Self AS CLASS TMSError := QSelf() AS CLASS TMSError
+
+    ::Init()
+
+    ::SetHandler( nHandle )
+    ::SetAutoError( lAutoError )
+
+return( Self )
+
+
+
+
+static FUNCTION TMSError_Init( ) ; local Self AS CLASS TMSError := QSelf() AS CLASS TMSError
+
+    ::nHandle := 0
+    ::lAutoError := .T.
+    ::SetIName( "TERROR" )
+
+return( Self )
+
+
+
+
+
+
+
+
+static FUNCTION TMSError_Say( cMsg, lAuto ) ; local Self AS CLASS TMSError := QSelf() AS CLASS TMSError
+
+    if ValType(lAuto) <> "L"; lAuto := .F.; endif
+
+    if !lAuto .OR. ( lAuto .AND. ::lAutoError )
+        msgStop( cMsg, "Eagle1 - Atención", 1 )
+    endif
+
+return( Self )
+
+
+
+
+
+static FUNCTION TMSError_Show( lAllways, cDefault ) ; local Self AS CLASS TMSError := QSelf() AS CLASS TMSError
+
+    local lDisp, cError
+
+    if ::lAutoError
+
+        if ValType(lAllways) <> "L"; lAllways := .F.; endif
+
+        if lDisp := ::IsError()
+            cError := ::GetError()
+            if empty( cError ) .AND. ValType( cDefault ) == "C"
+                cError := cDefault
+            endif
+        else
+            cError := "No error"
+        endif
+
+        if ( lAllways .OR. lDisp )
+            msgStop( cError, "Eagle1 Class - ERROR " + LTrim( str( ::GetErrNo() ) ), 1 )
+        endif
+    endif
+
+return( Self )
+
+
+
+
+static FUNCTION TMSError_IsError( ) ; local Self AS CLASS TMSError := QSelf() AS CLASS TMSError
+return( E1IsError( ::nHandle ) )
+
+
+
+
+static FUNCTION TMSError_GetError( ) ; local Self AS CLASS TMSError := QSelf() AS CLASS TMSError
+return( E1Error( ::nHandle ) )
+
+
+
+
+static FUNCTION TMSError_GetErrNo( ) ; local Self AS CLASS TMSError := QSelf() AS CLASS TMSError
+return( E1ErrNo( ::nHandle ) )
+
+
+
+
+static FUNCTION TMSError_GetState( ) ; local Self AS CLASS TMSError := QSelf() AS CLASS TMSError
+return( E1State( ::nHandle ) )
+
+
+
+
+static FUNCTION TMSError_SetAutoError( lAutoError ) ; local Self AS CLASS TMSError := QSelf() AS CLASS TMSError
+
+    local lActiveOld := ::lAutoError
+
+    if ValType( lAutoError ) == "L"; ::lAutoError := lAutoError; endif
+
+return( lActiveOld )
+
+
+
+
+static FUNCTION TMSError_SetHandler( nHandle ) ; local Self AS CLASS TMSError := QSelf() AS CLASS TMSError
+
+    local nHandleOld := ::nHandle
+
+    if ValType( nHandle ) == "N"; ::nHandle := nHandle; endif
+
+return( nHandleOld )

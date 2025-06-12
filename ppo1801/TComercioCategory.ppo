@@ -1,0 +1,2659 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 12 ".\Prg\Comercio\TComercioCategory.prg"
+_HB_CLASS TComercioCategory ; function TComercioCategory ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TComercioCategory", iif( .T., { @TComercioConector() }, { @HBObject() } ), @TComercioCategory() ) ) ;
+
+   _HB_MEMBER { idCategoryDefault } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"idCategoryDefault"}, .F. )
+
+   _HB_MEMBER { aCategoriesProduct } ; oClass:AddMultiData(, {}, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aCategoriesProduct"}, .F. )
+
+   _HB_MEMBER buildCategory( id, rootCategory); oClass:AddMethod( "buildCategory", @TComercioCategory_buildCategory(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getOrBuildCategory( id, rootCategory); oClass:AddMethod( "getOrBuildCategory", @TComercioCategory_getOrBuildCategory(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER insertCategories(); oClass:AddMethod( "insertCategories", @TComercioCategory_insertCategories(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER insertCategory(); oClass:AddMethod( "insertCategory", @TComercioCategory_insertCategory(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getCategoryLangs(); oClass:AddMethod( "getCategoryLangs", @TComercioCategory_getCategoryLangs(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+         _HB_MEMBER insertCategoryLang(); oClass:AddMethod( "insertCategoryLang", @TComercioCategory_insertCategoryLang(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER insertCategoryShop(); oClass:AddMethod( "insertCategoryShop", @TComercioCategory_insertCategoryShop(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER insertCategoryGroup( hCategory, idCategory); oClass:AddMethod( "insertCategoryGroup", @TComercioCategory_insertCategoryGroup(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER buildRootCategoryInformation(); oClass:AddMethod( "buildRootCategoryInformation", @TComercioCategory_buildRootCategoryInformation(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER buildRootCategoryLangs(); oClass:AddMethod( "buildRootCategoryLangs", @TComercioCategory_buildRootCategoryLangs(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER getParentCategory( idCategory); oClass:AddMethod( "getParentCategory", @TComercioCategory_getParentCategory(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER getNodeParentCategory( idCategory); oClass:AddMethod( "getNodeParentCategory", @TComercioCategory_getNodeParentCategory(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER updateCategoriesParent(); oClass:AddMethod( "updateCategoriesParent", @TComercioCategory_updateCategoriesParent(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER updateCategoryParent( hCategory); oClass:AddMethod( "updateCategoryParent", @TComercioCategory_updateCategoryParent(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER recalculatePositionsCategory(); oClass:AddMethod( "recalculatePositionsCategory", @TComercioCategory_recalculatePositionsCategory(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER truncateAllTables(); oClass:AddMethod( "truncateAllTables", @TComercioCategory_truncateAllTables(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cleangestoolReferences(); oClass:AddMethod( "cleangestoolReferences", @TComercioCategory_cleangestoolReferences(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER buildImageCategory( hCategoryProduct); oClass:AddMethod( "buildImageCategory", @TComercioCategory_buildImageCategory(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+   _HB_MEMBER uploadImageCategory(); oClass:AddInline( "uploadImageCategory", {|Self, cImage | ( ( Self ) ), ( ::oFtp():CreateFile( cImage, ::cDirectoryCategories() + "/" ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER insertTopMenuPs(); oClass:AddMethod( "insertTopMenuPs", @TComercioCategory_insertTopMenuPs(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER cleanCategoriesProduct(); oClass:AddInline( "cleanCategoriesProduct", {|Self | ( ( Self ) ), ( ::aCategoriesProduct := {} ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TComercioCategory ;
+
+
+
+static FUNCTION TComercioCategory_buildCategory( id, rootCategory ) ; local Self AS CLASS TComercioCategory := QSelf() AS CLASS TComercioCategory
+
+   local idLang
+   local aLangs            := {}
+   local categoryName
+   local statusFamilias
+   local categoryLongName
+
+   if hb_isnil( rootCategory )
+      rootCategory         := 2
+   end
+
+   ::writeText( "Construyendo categoría : " + cvaltostr( id ) )
+
+   if ascan( ::aCategoriesProduct, {|h| hGet( h, "id" ) == id } ) <> 0
+      RETURN .F.
+   end
+
+   statusFamilias          := aGetStatus( D():Familias( ::getView() ) )
+
+   if ( D():Familias( ::getView() ) )->( dbseekinord( id, "cCodFam" ) )
+
+      if !empty( ( D():Familias( ::getView() ) )->cFamCmb ) .AND. empty( ::TPrestashopId():getValueCategory( ( D():Familias( ::getView() ) )->cFamCmb, ::getCurrentWebName() ) )
+
+         ::buildCategory( ( D():Familias( ::getView() ) )->cFamCmb, rootCategory )
+
+      end
+
+      categoryName         := alltrim( ( D():Familias( ::getView() ) )->cNomFam )
+
+      if !empty( ( D():Familias( ::getView() ) )->cDesWeb )
+         categoryName      := alltrim( ( D():Familias( ::getView() ) )->cDesWeb )
+      end
+
+      if !empty( ( D():Familias( ::getView() ) )->mLngDes )
+         categoryLongName  := alltrim( ( D():Familias( ::getView() ) )->mLngDes )
+      else
+         categoryLongName  := categoryName
+      end
+
+      aLangs               := ::getCategoryLangs( id, categoryName, categoryLongName, alltrim( ( D():Familias( ::getView() ) )->cTitSeo ), alltrim( ( D():Familias( ::getView() ) )->cDesSeo ), alltrim( ( D():Familias( ::getView() ) )->cKeySeo ) )
+
+
+
+
+
+
+
+
+
+
+
+      aAdd( ::aCategoriesProduct,   {  "id"                 => id, "id_parent"          => alltrim( ( D():Familias( ::getView() ) )->cFamCmb ), "name"               => categoryName, "description"        => categoryName, "link_rewrite"       => cLinkRewrite( categoryName ), "root_category"      => rootCategory, "image"              => cFileBmpName( alltrim( ( D():Familias( ::getView() ) )->cImgBtn ) ), "cPrefijoNombre"     => "", "aTypeImages"        => {}, "langs"              => aLangs, "cType"              => alltrim( ( D():Familias( ::getView() ) )->cType ) } )
+
+   end
+
+   setStatus( D():Familias( ::getView() ), statusFamilias )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TComercioCategory_getOrBuildCategory( id, rootCategory ) ; local Self AS CLASS TComercioCategory := QSelf() AS CLASS TComercioCategory
+
+   local idCategory
+
+
+
+
+
+
+      ::cleanCategoriesProduct()
+
+      ::buildCategory( id, rootCategory )
+
+
+
+
+      ::updateCategoriesParent()
+
+
+
+RETURN ( idCategory )
+
+
+
+static FUNCTION TComercioCategory_truncateAllTables( ) ; local Self AS CLASS TComercioCategory := QSelf() AS CLASS TComercioCategory
+
+   local tableToDelete
+
+
+
+
+   local tablesToDelete := {  "category", "category_lang", "category_product", "category_group", "category_shop" }
+
+   for each tableToDelete in tablesToDelete
+      ::truncateTable( tableToDelete )
+   next
+
+RETURN ( self )
+
+
+
+
+
+
+static FUNCTION TComercioCategory_cleangestoolReferences( ) ; local Self AS CLASS TComercioCategory := QSelf() AS CLASS TComercioCategory
+
+   ::writeText( "Limpiamos las referencias de las tablas de familias" )
+
+   MsgInfo( "Limpiamos las referencias de las tablas de familias" )
+
+   MsgInfo( ::getCurrentWebName() )
+
+   ::TPrestashopId():deleteDocumentValuesCategory( ::getCurrentWebName() )
+
+RETURN ( Self )
+
+
+
+static FUNCTION TComercioCategory_buildRootCategoryInformation( ) ; local Self AS CLASS TComercioCategory := QSelf() AS CLASS TComercioCategory
+
+   local statusFamilias
+
+   if ( D():Familias( ::getView() ) )->( dbseekinord( "Root", "cType" ) )
+      ::buildCategory( ( D():Familias( ::getView() ) )->cCodFam, 0 )
+   else
+      RETURN ( .F. )
+   end
+
+   if ( D():Familias( ::getView() ) )->( dbseekinord( "Start", "cType" ) )
+      ::buildCategory( ( D():Familias( ::getView() ) )->cCodFam, 1 )
+   else
+      RETURN ( .F. )
+   end
+
+   SysRefresh()
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TComercioCategory_insertCategories( ) ; local Self AS CLASS TComercioCategory := QSelf() AS CLASS TComercioCategory
+
+   local idCategory
+   local hCategoryProduct
+
+   for each hCategoryProduct in ::aCategoriesProduct
+
+      idCategory     := ::insertCategory( hCategoryProduct )
+
+      if !empty( idCategory )
+
+         ::insertCategoryLang( hCategoryProduct, idCategory )
+
+         ::insertCategoryShop( hCategoryProduct, idCategory )
+
+         ::insertCategoryGroup( hCategoryProduct, idCategory )
+
+         ::buildImageCategory( hCategoryProduct )
+
+
+
+      end
+
+      ::updateCategoryParent( hCategoryProduct )
+
+   next
+
+   sysrefresh()
+
+RETURN ( idCategory )
+
+
+
+static FUNCTION TComercioCategory_updateCategoriesParent( ) ; local Self AS CLASS TComercioCategory := QSelf() AS CLASS TComercioCategory
+
+   local hCategoryProduct
+
+   if hb_isnil( ::aCategoriesProduct )
+      return ( nil )
+   end
+
+   for each hCategoryProduct in ::aCategoriesProduct
+
+      if !Empty( ::TComercio:TPrestashopWebService:getcategoriesWebService():getComercioInstance():getFromCurrentWebServices( "categories" ) )
+         ::TComercio:TPrestashopWebService:getCategoriesWebService():InsertOrUpdateCategorie( hget( hCategoryProduct, "id" ), hget( hCategoryProduct, "id_parent" ) )
+      end
+
+
+
+   next
+
+RETURN ( Self )
+
+
+
+static FUNCTION TComercioCategory_updateCategoryParent( hCategoryProduct ) ; local Self AS CLASS TComercioCategory := QSelf() AS CLASS TComercioCategory
+
+   local nParent
+   local cCommand
+   local nCategory
+
+   sysRefresh()
+
+   nParent           := ::TPrestashopId():getValueCategory( hGet( hCategoryProduct, "id_parent" ), ::getCurrentWebName(), 0 )
+   nCategory         := ::TPrestashopId():getValueCategory( hGet( hCategoryProduct, "id" ), ::getCurrentWebName() )
+
+   ::writeText( "Actualizando categoría padre : " + cvaltostr( nParent ) )
+   ::writeText( "Actualizando categoría : " + cvaltostr( nCategory ) )
+
+   sysRefresh()
+
+   if !empty( nParent ) .AND. !empty( nCategory )
+
+
+
+      cCommand       := "UPDATE " + ::cPrefixTable( "category" )              + " " +  "SET id_parent = '" + alltrim( str( nParent ) )    + "' " +  "WHERE id_category = " + alltrim( str( nCategory ) )
+
+      if ::commandExecDirect( cCommand )
+         ::writeText( "He relacionado la familia " + hGet( hCategoryProduct, "name" ) + " correctamente en la tabla " + ::cPrefixTable( "category" ) )
+      else
+         ::writeText( "Error al relacionar la familia " + hGet( hCategoryProduct, "name" ) + " en la tabla " + ::cPrefixTable( "category" ) )
+      end
+
+   end
+
+   SysRefresh()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TComercioCategory_insertCategory( hCategory ) ; local Self AS CLASS TComercioCategory := QSelf() AS CLASS TComercioCategory
+
+   local oImagen
+   local cCommand       := ""
+   local idCategory     := 0
+   local nLevelDepth
+   local isRootCategory
+   local nPosition
+
+
+
+   nLevelDepth          := nLevelInTree( Padr( hget( hCategory, "id" ), 16 ) )
+   isRootCategory       := if( !Empty( hget( hCategory, "cType" ) ), 1, 0 )
+
+   nPosition            := if( Empty( hGet( hCategory, "id_parent" ) ), "0", if( hGet( hCategory, "id_parent" ) == "1", "1", "0" ) )
+
+   ::writeText( "Añadiendo categoría : " + hGet( hCategory, "name" ) )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   cCommand             := "INSERT IGNORE INTO " + ::cPrefixTable( "category" ) + "( "  +  "level_depth, "                                    +  "nleft, "                                          +  "nright, "                                         +  "active, "                                         +  "date_add,  "                                      +  "date_upd, "                                       +  "position, "                                       +  "is_root_category ) "                              +  "VALUES ( "                                           +  str( nLevelDepth ) + ", "                          +  "0, "                                              +  "0, "                                              +  "1, "                                              +  "'" + dtos( GetSysDate() ) + "', "                 +  "'" + dtos( GetSysDate() ) + "', "                 +  "'" + nPosition + "', "                            +  quoted( isRootCategory )                           + " ) "
+
+   if ::commandExecDirect( cCommand )
+      idCategory        := ::oConexionMySQLDatabase():GetInsertId()
+      ::writeText( "He insertado la familia " + hGet( hCategory, "name" ) + " correctamente en la tabla " + ::cPrefixTable( "category" ), 3 )
+   else
+      ::writeText( "Error al insertar la familia " + hGet( hCategory, "name" ) + " en la tabla " + ::cPrefixTable( "category" ), 3 )
+   end
+
+   SysRefresh()
+
+
+
+   if !empty( hGet( hCategory, "image" ) )
+      hset( hCategory, "cPrefijoNombre", alltrim( str( idCategory ) ) )
+   end
+
+
+
+   if !empty( idCategory )
+      ::TPrestashopId:setValueCategory( hget( hCategory, "id" ), ::getCurrentWebName(), idCategory )
+   end
+
+RETURN ( idCategory )
+
+
+
+static FUNCTION TComercioCategory_buildRootCategoryLangs( ) ; local Self AS CLASS TComercioCategory := QSelf() AS CLASS TComercioCategory
+
+   ::insertCategoryLang( ::getLanguage() )
+
+   if !empty( ::TComercioConfig():getLangs() )
+      heval( ::TComercioConfig():getLangs(), {|k,v| ::insertCategoryLang( v ) } )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TComercioCategory_getCategoryLangs( id, categoryName, categoryLongName, meta_title, meta_description, meta_keywords ) ; local Self AS CLASS TComercioCategory := QSelf() AS CLASS TComercioCategory
+
+   local cName
+   local hLang
+   local aLangs         := {}
+   local cLongName
+
+
+
+
+
+
+
+   aadd( aLangs,        {  "lang"               => {|| ::getLanguage() }, "name"               => categoryName, "description"        => categoryLongName, "link_rewrite"       => cLinkRewrite( categoryName ), "meta_title"         => meta_title, "meta_description"   => meta_description, "meta_keywords"      => meta_keywords } )
+
+   for each hLang in ( ::TComercioConfig():getLangs() )
+
+      if ( D():FamiliasLenguajes( ::getView() ) )->( dbseekinord( id + hLang:__enumKey, "cCodLen" ) )
+         cName          := alltrim( ( D():FamiliasLenguajes( ::getView() ) )->cDesFam )
+      else
+         cName          := categoryName
+      end
+
+      if ( D():FamiliasLenguajes( ::getView() ) )->( dbseekinord( id + hLang:__enumKey, "cCodLen" ) )
+         cLongName      := alltrim( ( D():FamiliasLenguajes( ::getView() ) )->mLngDes )
+      else
+         cLongName      := categoryLongName
+      end
+
+
+
+
+
+
+
+      aadd( aLangs,     {  "lang"               => hLang:__enumValue, "name"               => cName, "description"        => cLongName, "link_rewrite"       => cLinkRewrite( cName ), "meta_title"         => meta_title, "meta_description"   => meta_description, "meta_keywords"      => meta_keywords } )
+
+   next
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RETURN ( aLangs )
+
+
+
+static FUNCTION TComercioCategory_insertCategoryLang( hCategoryProduct, idCategory ) ; local Self AS CLASS TComercioCategory := QSelf() AS CLASS TComercioCategory
+
+   local hLang
+   local idLang
+   local cCommand
+
+   for each hLang in ( hget( hCategoryProduct, "langs" ) )
+
+      if hb_isblock( hget( hLang, "lang") )
+         idLang         := eval( hget( hLang, "lang") )
+      else
+         idLang         := hget( hLang, "lang")
+      end
+
+      idLang            := cvaltostr( idLang )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      cCommand          := "INSERT IGNORE INTO " + ::cPrefixTable( "category_lang" ) + " ( "  +  "id_category, "                                          +  "id_lang, "                                              +  "name, "                                                 +  "description, "                                          +  "link_rewrite, "                                         +  "meta_title, "                                           +  "meta_keywords, "                                        +  "meta_description ) "                                    +  "VALUES ( "                                                 +  alltrim( str( idCategory ) ) + ", "                      +  alltrim( idLang ) + ", "                                 +  quoted( ::oConexionMySQLDatabase():escapeStr( hget( hLang, "name" ) ) ) + ", "                   +  quoted( ::oConexionMySQLDatabase():escapeStr( hget( hLang, "description" ) ) ) + ", "            +  quoted( hget( hLang, "link_rewrite" ) ) + ", "           +  quoted( hget( hLang, "meta_title" ) ) + ", "             +  quoted( hget( hLang, "meta_keywords" ) ) + ", "          +  quoted( hget( hLang, "meta_description" ) ) + " ) "
+
+      if ::commandExecDirect( cCommand )
+         ::writeText( "He insertado correctamente en la tabla categorias lenguajes la categoría raiz", 3 )
+      else
+         ::writeText( "Error al insertar la categoría raiz", 3 )
+      end
+
+   next
+
+RETURN ( Self )
+
+
+
+static FUNCTION TComercioCategory_insertCategoryShop( hCategory, idCategory ) ; local Self AS CLASS TComercioCategory := QSelf() AS CLASS TComercioCategory
+
+   local cCommand
+   local nPosition      := if( Empty( hGet( hCategory, "id_parent" ) ), "0", if( hGet( hCategory, "id_parent" ) == "1", "1", "0" ) )
+
+
+
+
+
+
+
+
+   cCommand             := "INSERT IGNORE INTO " + ::cPrefixTable( "category_shop" ) + "( "   +  "id_category, "                                          +  "id_shop, "                                              +  "position ) "                                            +  "VALUES ( "                                                 +  "'" + alltrim( str( idCategory ) ) + "', "               +  "'1', "                                                  +  "'" + nPosition + "' )"
+
+   if !::commandExecDirect( cCommand )
+      ::writeText( "Error al insertar la categoría inicio en " + ::cPrefixTable( "category_shop" ), 3 )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TComercioCategory_insertCategoryGroup( hCategory, idCategory ) ; local Self AS CLASS TComercioCategory := QSelf() AS CLASS TComercioCategory
+
+   local cCommand
+
+
+
+
+
+
+   cCommand             := "INSERT IGNORE INTO " + ::cPrefixTable( "category_group" ) + " "   +  "( id_category, id_group ) "                             +  "VALUES "                                                   +  "( " + alltrim( str( idCategory ) ) + ", 1 ), "          +  "( " + alltrim( str( idCategory ) ) + ", 2 ), "          +  "( " + alltrim( str( idCategory ) ) + ", 3 ) "
+
+   if !::commandExecDirect( cCommand )
+      ::writeText( "Error al insertar la familia " + hGet( hCategory, "name" ) + " en la tabla " + ::cPrefixTable( "category_group" ), 3 )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TComercioCategory_getParentCategory( idCategory ) ; local Self AS CLASS TComercioCategory := QSelf() AS CLASS TComercioCategory
+
+   local idParentCategory    := 2
+
+   if D():gotoFamilias( idCategory, ::getView() )
+      idParentCategory       := ::TPrestashopId():getValueCategory( idCategory, ::getCurrentWebName() )
+   end
+
+RETURN ( idParentCategory )
+
+
+
+static FUNCTION TComercioCategory_getNodeParentCategory( idCategory ) ; local Self AS CLASS TComercioCategory := QSelf() AS CLASS TComercioCategory
+
+   local idNode            := ""
+
+   if !empty( idCategory ) .AND. D():gotoFamilias( idCategory, ::getView() )
+      idNode               := ( D():Familias( ::getView() ) )->cFamCmb
+   end
+
+RETURN ( idNode )
+
+
+
+static FUNCTION TComercioCategory_recalculatePositionsCategory( ) ; local Self AS CLASS TComercioCategory := QSelf() AS CLASS TComercioCategory
+
+   local nPos              := 0
+   local nContador         := 2
+   local cQuery
+   local oQuery
+   local cCommand          := ""
+   local nTotalCategory
+   local nLeft             := 0
+   local nRight            := 0
+
+
+
+
+
+   cQuery                  := "SELECT * FROM " + ::cPrefixTable( "category" )
+   oQuery                  := ::queryExecDirect( cQuery )
+   if !( oQuery:Open() )
+      ::meterProcesoText( "Error al ejecutar " + "SELECT * FROM " + ::cPrefixTable( "category" ) )
+      RETURN ( .F. )
+   end
+
+   nTotalCategory          := oQuery:RecCount()
+
+   if nTotalCategory == 0
+      ::writeText( "No hay elementos en la categoría" )
+      RETURN ( .F. )
+   end
+
+   nLeft             := 1
+   nRight            := nTotalCategory * 2
+
+   oQuery:GoTop()
+   while !oQuery:Eof()
+
+      do case
+         case oQuery:FieldGet( 1 ) == 1
+
+            cCommand       := "UPDATE " + ::cPrefixTable( "category" ) + " SET nLeft = '1', nRight='" + alltrim( str( nTotalCategory * 2 ) ) + "' WHERE id_category = 1"
+            if !::commandExecDirect( cCommand )
+               ::writeText( "Error al actualizar el grupo de familia en la tabla category", 3 )
+            end
+
+         case oQuery:FieldGet( 1 ) == 2
+
+            cCommand       := "UPDATE " + ::cPrefixTable( "category" ) + " SET nLeft = '2', nRight='" + alltrim( str( ( nTotalCategory * 2 ) -1 ) ) + "' WHERE id_category = 2"
+            if !::commandExecDirect( cCommand )
+               ::writeText( "Error al actualizar el grupo de familia en la tabla category", 3 )
+            end
+
+         otherwise
+
+
+
+
+            cCommand    := "UPDATE " + ::cPrefixTable( "category" ) + " SET nLeft = '" + alltrim( str( nLeft ) ) + "', nRight='" + alltrim( str( nRight ) ) + "' WHERE id_category = " + alltrim( str( oQuery:FieldGet( 1 ) ) )
+            if !::commandExecDirect( cCommand )
+               ::writeText( "Error al actualizar el grupo de familia en la tabla category", 3 )
+            end
+
+      end
+
+      nLeft             := nLeft + 1
+      nRight            := nRight - 1
+
+      oQuery:Skip()
+
+   end
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TComercioCategory_buildImageCategory( hCategoryProduct ) ; local Self AS CLASS TComercioCategory := QSelf() AS CLASS TComercioCategory
+
+   local oTipoImage
+   local fileImage
+   local cTmpFile
+
+   fileImage   := hget( hCategoryProduct, "image" )
+
+   if !File( fileImage )
+      RETURN nil
+   end
+
+   cTmpFile    := cPatOut() + hget( hCategoryProduct, "cPrefijoNombre" ) + ".jpg"
+
+   saveImage( fileImage, cTmpFile )
+
+   aadd( hget( hCategoryProduct, "aTypeImages" ), cTmpFile )
+
+   for each oTipoImage in ::aTypeImagesPrestashop()
+
+      if !Empty( hget( hCategoryProduct, "image" ) ) .AND. oTipoImage:lCategories
+
+         if File( fileImage )
+
+            cTmpFile    := cPatOut() + hget( hCategoryProduct, "cPrefijoNombre" ) + "-" + oTipoImage:cNombreTipo + ".jpg"
+
+            saveImage( fileImage, cTmpFile, oTipoImage:nAnchoTipo, oTipoImage:nAltoTipo )
+
+            aadd( hget( hCategoryProduct, "aTypeImages" ), cTmpFile )
+
+         end
+
+         SysRefresh()
+
+      end
+
+   next
+
+RETURN ( .T. )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static FUNCTION TComercioCategory_insertTopMenuPs( ) ; local Self AS CLASS TComercioCategory := QSelf() AS CLASS TComercioCategory
+
+   local cQuery
+   local oQuery
+   local aConfig
+   local cConfig           := ""
+   local cResult           := ""
+   local aCategories       := {}
+   local cCategory         := ""
+
+
+
+
+
+   cQuery                  := "SELECT * FROM " + ::cPrefixTable( "configuration" ) + " WHERE name = 'MOD_BLOCKTOPMENU_ITEMS'"
+   oQuery                  := ::queryExecDirect( cQuery )
+
+   if !( oQuery:Open() )
+      ::meterProcesoText( "Error al ejecutar " + "SELECT * FROM " + ::cPrefixTable( "configuration" ) + " WHERE name = 'MOD_BLOCKTOPMENU_ITEMS'" )
+      RETURN ( .F. )
+   end
+
+   aConfig                 := hb_atokens( oQuery:FieldGetByName( "value" ), "," )
+
+
+
+
+
+   cQuery                  := "SELECT * FROM " + ::cPrefixTable( "category" ) + " WHERE id_parent=2"
+   oQuery                  := ::queryExecDirect( cQuery )
+
+   if !( oQuery:Open() )
+      ::meterProcesoText( "Error al ejecutar " + "SELECT * FROM " + ::cPrefixTable( "category" ) )
+   end
+
+   if oQuery:RecCount() > 0
+
+      oQuery:GoTop()
+
+      while !oQuery:Eof()
+
+         aAdd( aCategories, "CAT" + AllTrim( Str( oQuery:FieldGet( 1 ) ) ) )
+
+         oQuery:Skip()
+
+      end
+
+   end
+
+
+
+
+
+   for each cCategory in aCategories
+      cResult  += cCategory + ","
+   next
+
+   for each cConfig in aConfig
+      if substr( cConfig, 1, 3 ) <> "CAT"
+         cResult  += cConfig + ","
+      end
+   next
+
+
+
+
+
+   cQuery    := "UPDATE " + ::cPrefixTable( "configuration" ) + " SET value = '" + cResult + "' WHERE name = 'MOD_BLOCKTOPMENU_ITEMS'"
+   if !::commandExecDirect( cQuery )
+      ::meterProcesoText( "Error al actualizar top menu" )
+   end
+
+RETURN ( .T. )

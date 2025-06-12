@@ -1,0 +1,35 @@
+{
+  "HideExportButton" : false,
+  "RealTimeConexion" : true,
+  "InvertedNameFormat" : false,
+  "Webs" : 
+  {
+    "MundoNativa" : 
+    {
+      "Active" : true,
+      "MySqlServer" : "31.220.20.208",
+      "MySqlPort" : 3306,
+      "MySqlDatabase" : "u320210880_mn",
+      "MySqlUser" : "u320210880_mn",
+      "MySqlPassword" : "MunNat0311#",
+      "MySqlTimeOut" : 60,
+      "CookieKey" : "",
+      "PrefixDatabase" : "ps_",
+      "OrderSerie" : "A",
+      "BudgetSerie" : "A",
+      "DateStart" : "2016-01-01",
+      "FtpService" : "Curl",
+      "FtpServer" : "31.220.20.229",
+      "FtpPort" : 21,
+      "FtpUser" : "u320210880.gestool",
+      "FtpPassword" : "GesTool0311#",
+      "FtpPassive" : false,
+      "ImagesDirectory" : "img/",
+      "Store" : "000",
+      "SyncronizeManufacturers" : false,
+      "ProcessWithoutStock" : true,
+      "ProcessWithoutImage" : false,
+      "IdProduct" : ""
+    }
+  }
+}

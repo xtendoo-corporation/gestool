@@ -1,0 +1,2618 @@
+#line 91 "\fwh1801\include\FiveWin.ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 16 ".\.\Prg\IXBrowse.prg"
+_HB_CLASS IXBrowse ; function IXBrowse ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "IXBrowse", iif( .T., { @TXBrowse() }, { @HBObject() } ), @IXBrowse() ) ) ;
+
+   _HB_MEMBER { AS LOGICAL lRegistered } ; oClass:AddMultiClsData( "LOGICAL",, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lRegistered"}, .F. )
+
+   _HB_MEMBER { dbfUsr } ; oClass:AddMultiClsData(,, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dbfUsr"}, .F. )
+   _HB_MEMBER { AS LOGIC lOpenData } ; oClass:AddMultiClsData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lOpenData"}, .F. )
+
+   _HB_MEMBER { AS CHARACTER cOriginal } ; oClass:AddMultiData( "CHARACTER", "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cOriginal"}, .F. )
+   _HB_MEMBER { AS CHARACTER cName } ; oClass:AddMultiData( "CHARACTER", "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cName"}, .F. )
+
+   _HB_MEMBER { bToolTip } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bToolTip"}, .F. )
+   _HB_MEMBER { oToolTip } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oToolTip"}, .F. )
+   _HB_MEMBER { oTimer } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTimer"}, .F. )
+
+   _HB_MEMBER { AS LOGIC lOnProcess } ; oClass:AddMultiData( "LOGIC", .F., nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lOnProcess"}, .F. )
+
+   _HB_MEMBER { nVScrollPos } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nVScrollPos"}, .F. )
+
+   _HB_MEMBER { AS NUMERIC nToolTip } ; oClass:AddMultiClsData( "NUMERIC", 900, nScope + iif( .F., 16, 0 ) + iif( .T., 32, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nToolTip"}, .F. )
+
+   _HB_MEMBER { bExportLector } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"bExportLector"}, .F. )
+
+   _HB_MEMBER BookMark(); oClass:AddInline( "BookMark", {|Self| ( ( Self ) ), Eval( ::bBookMark )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER _BookMark( u); oClass:AddInline( "_BookMark", {|Self , u| ( ( Self ) ), Eval( ::bBookMark, u )}, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER New( oWnd); oClass:AddMethod( "New", @IXBrowse_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER setAlias(); oClass:AddInline( "setAlias", {|Self, cAlias | ( ( Self ) ), ( ::cAlias := cAlias, ::SetRDD() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER GetOriginal(); oClass:AddInline( "GetOriginal", {|Self | ( ( Self ) ), ( ::cOriginal := ::SaveState() ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER SetOriginal(); oClass:AddInline( "SetOriginal", {|Self | ( ( Self ) ), ( ::RestoreState( ::cOriginal ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Load(); oClass:AddMethod( "Load", @IXBrowse_Load(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER LoadRecnoAndOrder(); oClass:AddMethod( "LoadRecnoAndOrder", @IXBrowse_LoadRecnoAndOrder(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Save( lMessage, nBrowseRecno, nBrowseOrder); oClass:AddMethod( "Save", @IXBrowse_Save(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+      _HB_MEMBER SaveRecnoAndOrder(); oClass:AddInline( "SaveRecnoAndOrder", {|Self, nBrowseRecno, nBrowseOrder | ( ( Self ) ), ( ColumnasUsuariosModel():set( ::cName, nil, nBrowseRecno, nBrowseOrder ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SelectCurrent(); oClass:AddInline( "SelectCurrent", {|Self | ( ( Self ) ), ( ::Select( 0 ), ::Select( 1 ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CreateData( cPath); oClass:AddMethod( "CreateData", @IXBrowse_CreateData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ReindexData( cPath); oClass:AddMethod( "ReindexData", @IXBrowse_ReindexData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CleanData(); oClass:AddMethod( "CleanData", @IXBrowse_CleanData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER DeleteData(); oClass:AddMethod( "DeleteData", @IXBrowse_DeleteData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CloseData(); oClass:AddMethod( "CloseData", @IXBrowse_CloseData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenData( cPath); oClass:AddMethod( "OpenData", @IXBrowse_OpenData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER RButtonDown( nRow, nCol, nFlags); oClass:AddMethod( "RButtonDown", @IXBrowse_RButtonDown(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER CheckExtendInfo(); oClass:AddMethod( "CheckExtendInfo", @IXBrowse_CheckExtendInfo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ShowExtendInfo(); oClass:AddMethod( "ShowExtendInfo", @IXBrowse_ShowExtendInfo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetRDD( lAddColumns, lAutoOrder, aFldNames); oClass:AddMethod( "SetRDD", @IXBrowse_SetRDD(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ExportToExcel(); oClass:AddMethod( "ExportToExcel", @IXBrowse_ExportToExcel(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ExportLector(); oClass:AddMethod( "ExportLector", @IXBrowse_ExportLector(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER MakeTotals( aCols); oClass:AddMethod( "MakeTotals", @IXBrowse_MakeTotals(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER ArrayIncrSeek(); oClass:AddMethod( "ArrayIncrSeek", @IXBrowse_ArrayIncrSeek(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+
+
+
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS IXBrowse ;
+
+
+
+static FUNCTION IXBrowse_New( oWnd ) ; local Self AS CLASS IXBrowse := QSelf() AS CLASS IXBrowse
+
+   ::Super:New( oWnd )
+
+   ::lAutoSort       := .T.
+   ::l2007           := .F.
+   ::bClrSel         := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+   ::bClrSelFocus    := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+   ::lSortDescend    := .F.
+
+RETURN ( Self )
+
+
+
+static FUNCTION IXBrowse_CreateData( cPath ) ; local Self AS CLASS IXBrowse := QSelf() AS CLASS IXBrowse
+
+RETURN ( Self )
+
+
+
+static FUNCTION IXBrowse_ReindexData( cPath ) ; local Self AS CLASS IXBrowse := QSelf() AS CLASS IXBrowse
+
+RETURN ( Self )
+
+
+
+static FUNCTION IXBrowse_Load( ) ; local Self AS CLASS IXBrowse := QSelf() AS CLASS IXBrowse
+
+   local cBrowseState
+
+   ::getOriginal()
+
+   cBrowseState         := ColumnasUsuariosModel():getState( ::cName )
+
+   if !empty( cBrowseState )
+      ::restoreState( cBrowseState )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION IXBrowse_LoadRecnoAndOrder( oWndBar ) ; local Self AS CLASS IXBrowse := QSelf() AS CLASS IXBrowse
+
+   local nRecno
+   local nOrder
+   local hBrowseInformation
+
+   ::Load()
+
+   hBrowseInformation   := ColumnasUsuariosModel():get( ::cName )
+
+   if empty( hBrowseInformation )
+      RETURN ( Self )
+   end
+
+   nRecno               := max( hget( hBrowseInformation, "Recno" ), 1 )
+   nOrder               := max( hget( hBrowseInformation, "Order" ), 1 )
+
+   if ( ::cAlias )->( used() )
+
+      ( ::cAlias )->( dbgoto( nRecno ) )
+
+      if ( ::cAlias )->( recno() ) <> nRecno .OR. nRecno > ( ::cAlias )->( lastrec() )
+         ( ::cAlias )->( dbgotop() )
+      end
+
+      if !empty( oWndBar )
+         oWndBar:SelectComboBoxAt( nOrder )
+      end
+
+      ( ::cAlias )->( ordsetfocus( nOrder ) )
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION IXBrowse_Save( lMessage, nBrowseRecno, nBrowseOrder ) ; local Self AS CLASS IXBrowse := QSelf() AS CLASS IXBrowse
+
+   local oError
+   local oBlock
+
+   If( lMessage == nil, lMessage := .T., ) ;
+
+   oBlock                   := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      ColumnasUsuariosModel():set( ::cName, ::saveState(), nBrowseRecno, nBrowseOrder )
+
+      if lMessage
+         msgInfo( "Configuración de columnas guardadas.", "Información" )
+      end
+
+   RECOVER USING oError
+
+      msgStop( "Imposible salvar las configuraciones de columnas" + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+   end
+
+   ErrorBlock( oBlock )
+
+RETURN ( Self )
+
+
+
+static FUNCTION IXBrowse_CleanData( lMessage ) ; local Self AS CLASS IXBrowse := QSelf() AS CLASS IXBrowse
+
+   If( lMessage == nil, lMessage := .T., ) ;
+
+
+
+   if lMessage
+      msgInfo( "Configuración de columnas eliminada", "Información" )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION IXBrowse_DeleteData( ) ; local Self AS CLASS IXBrowse := QSelf() AS CLASS IXBrowse
+
+RETURN ( Self )
+
+
+
+static FUNCTION IXBrowse_CloseData( ) ; local Self AS CLASS IXBrowse := QSelf() AS CLASS IXBrowse
+
+RETURN ( Self )
+
+
+
+static FUNCTION IXBrowse_OpenData( cPath ) ; local Self AS CLASS IXBrowse := QSelf() AS CLASS IXBrowse
+
+RETURN ( Self )
+
+
+
+static FUNCTION IXBrowse_RButtonDown( nRow, nCol, nFlags ) ; local Self AS CLASS IXBrowse := QSelf() AS CLASS IXBrowse
+
+   local oCol
+   local oMenu
+   local bMenuSelect
+
+
+
+
+
+   oMenu             := MenuBegin( .T. )
+   bMenuSelect       := ::bMenuSelect
+
+   ::bMenuSelect     := nil
+
+   MenuAddItem( "Columnas", "Columnas de la rejilla de datos", .F., .T., , , "gc_table_selection_column_16", oMenu )
+
+   MenuBegin( .F., , , .F., .F., , , , , , , , , , , , .F., .T., .F., .T. )
+
+      for each oCol in ::aCols
+         MenuAddItem( oCol:cHeader, , !oCol:lHide, ( Len( ::aDisplay ) <> 1 .OR. oCol:nPos <> 1 ), GenMenuBlock( oCol ) )
+      next
+
+      MenuEnd()
+
+      if !Empty( ::cName )
+
+         MenuAddItem( "Guardar vista actual", "Guarda la vista actual de la rejilla de datos", .F., .T., {|| ::Save( .T. ) }, , "gc_table_selection_column_disk_16", oMenu )
+
+         MenuAddItem( "Cargar vista por defecto", "Carga la vista por defecto de la rejilla de datos", .F., .T., {|| ::SetOriginal() }, , "gc_table_selection_column_refresh_16", oMenu )
+
+      end
+
+      MenuAddItem( "Seleccionar &todo", "Selecciona todas las filas de la rejilla", .F., .T., {|| ::SelectAll() }, , "gc_table_selection_all_16", oMenu )
+
+      MenuAddItem( "&Quitar selección", "Quita la selección de todas las filas de la rejilla", .F., .T., {|| ::SelectNone() }, , "gc_table_16", oMenu )
+
+      MenuAddItem()
+
+      MenuAddItem( "Exportar a E&xcel", "Exportar rejilla de datos a Excel", .F., .T., {|| ::ExportToExcel() }, , "gc_spreadsheet_sum_16", oMenu )
+
+      if !empty( ::bExportLector )
+         MenuAddItem( "Exportar códigos y unidades", "Exportar códigos y unidades", .F., .T., {|| ::ExportLector() }, , "gc_spreadsheet_sum_16", oMenu )
+      end
+
+   MenuEnd()
+
+   oMenu:Activate( nRow, nCol, Self )
+
+   ::bMenuSelect     := bMenuSelect
+
+   oMenu:end()
+
+   ::SetFocus()
+
+RETURN ( Self )
+
+
+
+static function GenMenuBlock( oCol )
+
+RETURN {|| iif( oCol:lHide, oCol:Show(), oCol:Hide() ) }
+
+
+
+static FUNCTION IXBrowse_CheckExtendInfo( ) ; local Self AS CLASS IXBrowse := QSelf() AS CLASS IXBrowse
+
+   if Empty( ::bToolTip )
+      RETURN ( Self )
+   endif
+
+   if !Empty( ::oToolTip )
+      ::oToolTip:End()
+      ::oToolTip  := nil
+   endif
+
+   if !Empty( ::oTimer )
+      ::oTimer:End()
+      ::oTimer    := nil
+   endif
+
+   if !::lOnProcess
+      ::oTimer             := TTimer():New( ::nToolTip, {|| ::ShowExtendInfo(), if( ::oTimer <> nil, ::oTimer:End(), nil ), ::oTimer := nil }, )
+      ::oTimer:hWndOwner   := GetActiveWindow()
+      ::oTimer:Activate()
+   end
+
+
+
+
+
+   if !Empty( ::oToolTip )
+      ::oToolTip:End()
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION IXBrowse_ShowExtendInfo( ) ; local Self AS CLASS IXBrowse := QSelf() AS CLASS IXBrowse
+
+   local nRow
+   local oBlock
+
+   ::lOnProcess      := .T.
+
+   oBlock            := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+   if ::oToolTip == nil
+
+      ::oToolTip     := CheckEval( ::bToolTip )
+
+      if Valtype( ::oToolTip ) == "O"
+
+         nRow           := ( ::nRowSel * ::DataHeight ) + ::HeaderHeight()
+
+         if ( nRow + ::oToolTip:nHeight() ) >= ( ::BrwHeight() - 100 )
+            nRow     -= ( ::oToolTip:nHeight() + ::DataHeight + 108 )
+         else
+            nRow     += 4
+         end
+
+         ::oToolTip:Activate( , , , .F., , .F., {|o| o:Move( nRow, ( ::BrwWidth() - ::oToolTip:nWidth() - 4 ), ::oToolTip:nWidth(), ::oToolTip:nHeight() ) } )
+
+         ::SetFocus()
+
+         if !Empty( ::oTimer )
+            ::oTimer:End()
+            ::oTimer := nil
+         endif
+
+      end
+
+   end
+
+   end
+
+   ErrorBlock( oBlock )
+
+   ::lOnProcess      := .F.
+
+RETURN ( Self )
+
+
+
+
+
+
+
+
+
+
+
+
+
+static FUNCTION IXBrowse_SetRDD( lAddColumns, lAutoOrder, aFldNames ) ; local Self AS CLASS IXBrowse := QSelf() AS CLASS IXBrowse
+
+   local oCol, aStruct
+   local cAlias
+   local nFields, nFor
+   local bOnSkip
+
+   if Empty( ::cAlias )
+      ::cAlias                   := Alias()
+      if Empty( ::cAlias )
+         RETURN nil
+      endif
+   endif
+
+   cAlias                      := ::cAlias
+   ::nDataType                 := 1
+
+   If( lAddColumns == nil, lAddColumns := .F., ) ;
+   If( lAutoOrder == nil, lAutoOrder := .F., ) ;
+
+   ::bGoTop                := {|| if( ( cAlias )->( Used() ), ( cAlias )->( DbGoTop() ), ) }
+   ::bGoBottom             := {|| if( ( cAlias )->( Used() ), ( cAlias )->( DbGoBottom() ), ) }
+
+
+
+   ::bSkip                 := {| n | iif( n == nil, n := 1, ), iif( ( cAlias )->( Used() ), ( cAlias )->( __DbSkipper( n ) ), 0 ) }
+   ::bBof                  := {|| if( ( cAlias )->( Used() ), ( cAlias )->( Bof() ), .T. ) }
+   ::bEof                  := {|| if( ( cAlias )->( Used() ), ( cAlias )->( Eof() ), .T. ) }
+
+
+
+   ::bBookMark             := {| n | iif( ( cAlias )->( Used() ), iif( n == nil, ( cAlias )->( RecNo() ), ( cAlias )->( DbGoto( n ) ) ), ) }
+
+
+
+   ::bKeyNo                := {| n | iif( ( cAlias )->( Used() ), iif( n == nil, ( cAlias )->( OrdKeyNo() ), ( cAlias )->( OrdKeyGoto( n ) ) ), ) }
+   ::bKeyCount             := {|| if( ( cAlias )->( Used() ), ( cAlias )->( OrdKeyCount() ), 0 ) }
+   ::bLock                 := {|| if( ( cAlias )->( Used() ), ( cAlias )->( DbrLock() ), .F. ) }
+   ::bUnlock               := {|| if( ( cAlias )->( Used() ), ( cAlias )->( DbrUnlock() ), .F. ) }
+
+   if lAutoOrder
+      for nFor := 1 to Len( ::aCols )
+         if ( ::cAlias )->( OrdNumber( ::aCols[ nFor ]:cHeader ) ) > 0
+            ::aCols[nFor]:cSortOrder := ::aCols[ nFor ]:cHeader
+         else
+            ::aCols[nFor]:cSortOrder := ( cAlias )->( FindTag( ::aCols[ nFor ]:cHeader ) )
+         endif
+      next
+   endif
+
+   if ::lCreated
+      ::Adjust()
+      ::Refresh()
+   endif
+
+RETURN nil
+
+
+
+static FUNCTION IXBrowse_ExportToExcel( ) ; local Self AS CLASS IXBrowse := QSelf() AS CLASS IXBrowse
+
+   local oError
+   local oBlock
+   local oWaitMeter
+
+   oBlock            := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      CursorWait()
+
+      oWaitMeter     := TWaitMeter():New( "Exportando a excel", "Espere por favor..." )
+      oWaitMeter:run()
+      oWaitMeter:setTotal( eval( ::bKeyCount ) )
+
+      ::ToExcel( {|| oWaitMeter:autoInc() } )
+
+      CursorWe()
+
+   RECOVER USING oError
+
+      msgStop( "Error exportando a excel." + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+
+   end
+
+   ErrorBlock( oBlock )
+
+   oWaitMeter:end()
+
+RETURN nil
+
+
+
+static FUNCTION IXBrowse_ExportLector( ) ; local Self AS CLASS IXBrowse := QSelf() AS CLASS IXBrowse
+
+   local nRow
+   local nRows
+   local oClip
+   local cText
+   local oError
+   local oBlock
+
+   nRows             := eval( ::bKeyCount )
+   if ( nRows == 0 )
+      RETURN ( Self )
+   endif
+
+   oBlock            := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      CursorWait()
+
+      nRow           := 1
+      cText          := ""
+
+      eval( ::bGoTop )
+      while ( nRow <= nRows )
+
+         cText       += eval( ::bExportLector )
+
+         ::skip( 1 ); ( nRow++ )
+
+      end
+      eval( ::bGoTop )
+
+      oClip          := TClipBoard():New( 1, ::oWnd )
+      if oClip:Open()
+         oClip:SetText( cText )
+      end
+      oClip:Close()
+
+      msgInfo( "Contenido exportado al portapapeles" )
+
+      CursorWe()
+
+   RECOVER USING oError
+      msgStop( "Error exportando a excel." + Chr(13)+Chr(10) + ErrorMessage( oError ) )
+   end
+   ErrorBlock( oBlock )
+
+RETURN ( Self )
+
+
+
+static FUNCTION IXBrowse_MakeTotals( aCols ) ; local Self AS CLASS IXBrowse := QSelf() AS CLASS IXBrowse
+
+   local uBm, n, nCols, oCol, nValue
+   local bCond    := { |u,o| u <> nil }
+
+   if aCols == nil
+      aCols    := {}
+      for each oCol in ::aCols
+         WITH OBJECT oCol
+            if ValType( :nTotal ) == "N" .OR. ! Empty( :nFooterType )
+               AAdd( aCols, oCol )
+            endif
+         END
+      next
+   else
+      if ValType( aCols ) == "O"
+         aCols := { aCols }
+      endif
+      for n := 1 to Len( aCols )
+         if Empty( aCols[ n ]:nFooterType )
+            ADel( aCols, n )
+            ASize( aCols, Len( aCols ) - 1 )
+         endif
+      next
+   endif
+
+   if ! Empty( aCols )
+
+      for each oCol in aCols
+         WITH OBJECT oCol
+            If( :nFooterType == nil, :nFooterType := 1, ) ;
+            :nTotal := :nTotalSq := 0.0
+            :nCount := 0
+            if :nFooterType == 2 .OR. :nFooterType == 4
+               :nTotal := nil
+            endif
+         END
+      next
+
+      nCols    := Len( aCols )
+
+      uBm      := (::cAlias)->(Recno())
+
+      Eval( ::bGoTop )
+      while .T.
+         for each oCol in aCols
+            WITH OBJECT oCol
+               nValue   := :Value
+               if Eval( IfNil( :bSumCondition, bCond ), nValue, oCol )
+                  if :nFooterType == 8
+                     :nCount++
+                  elseif ValType( nValue ) == "N"
+                     if :nFooterType == 2
+                        :nTotal  := If( :nTotal == nil, nValue, Min( nValue, :nTotal ) )
+                     elseif :nFooterType == 4
+                        :nTotal  := If( :nTotal == nil, nvalue, Max( nValue, :nTotal ) )
+                     else
+                        :nTotal  += nValue
+                        :nCount++
+                        if lAnd( :nFooterType, 1 + 8 + 16 )
+                           :nTotalSq   += ( nValue * nValue )
+                        endif
+                     endif
+                  endif
+               endif
+            END
+         next
+      if ( ::Skip( 1 ) < 1 ); exit; end; end
+
+      if !Empty( ::cAlias )
+         (::cAlias)->(dbGoTo( uBm ))
+      end
+
+   endif
+
+RETURN Self
+
+
+
+static FUNCTION IXBrowse_ArrayIncrSeek( cSeek, nGoTo ) ; local Self AS CLASS IXBrowse := QSelf() AS CLASS IXBrowse
+
+   local nAt, nBrwCol, nSortCol, nRow, uVal
+   local lExact
+
+   if ::lIncrFilter
+      RETURN ::ArrayIncrFilter( cSeek, @nGoTo )
+   endif
+
+   if ( nBrwCol := AScan( ::aCols, { |o| !Empty( o:cOrder ) } ) ) > 0
+
+      nSortCol := ::aCols[ nBrwCol ]:cSortOrder
+
+      if !empty( nSortCol := ::aCols[ nBrwCol ]:cSortOrder ) .AND. valtype( nSortCol ) == "N"
+         if ! ::aCols[ nBrwCol ]:lCaseSensitive
+            cSeek    := Upper( cSeek )
+         endif
+         for nRow := 1 to ::nLen
+            uVal  := ::ArrCell( nRow, nSortCol )
+            if ValType( uVal ) $ "CDLN"
+               uVal     := cValToChar( uVal )
+               if ! ::aCols[ nBrwCol ]:lCaseSensitive
+                  uVal  := Upper( uVal )
+               endif
+               if ::lSeekWild
+                  if hb_WildMatch( "*" + cSeek, uVal )
+                     nAt   := nRow
+                  endif
+               else
+                  lExact := Set( 1, .F. )
+                  if uVal = cSeek
+                     nAt   := nRow
+                  endif
+                  Set( 1, lExact )
+               endif
+               if ! Empty( nAt )
+                  ::nArrayAt  := nAt
+                  RETURN .T.
+               endif
+            endif
+         next
+      endif
+   endif
+
+RETURN .F.
+
+
+
+static function FindTag( cFld, nOrder )
+
+   local nOrders  := OrdCount()
+   local cTag, nAt, cKey, n, nLen, aOrders := {}
+
+   cFld     := Upper( Trim( cFld ) )
+   nLen     := Len( cFld )
+
+   for n := 1 to nOrders
+      cKey  := OrdKey( n )
+      cKey  := Upper( StrTran( cKey, " ","" ) )
+      if Left( cKey, nLen ) == cFld
+         nOrder   := n
+         cTag     := OrdName( n )
+         exit
+      endif
+   next
+   if Empty( cTag )
+      for n := 1 to nOrders
+         cKey  := OrdKey( n )
+         cKey  := Upper( StrTran( cKey, " ","" ) )
+         if ( nAt := At( "(", cKey ) ) > 0
+            cKey  := SubStr( cKey, nAt + 1 )
+            if Left( cKey, nLen ) == cFld
+               nOrder   := n
+               cTag     := OrdName( n )
+               exit
+            endif
+         endif
+      next
+   endif
+
+RETURN cTag
+
+
+
+_HB_CLASS TOkButton ; function TOkButton ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TOkButton", iif( .T., { @TBtnBmp() }, { @HBObject() } ), @TOkButton() ) ) ;
+
+   _HB_MEMBER ReDefine( nId, cResName1, cResName2, cBmpFile1, cBmpFile2, cMsg, bAction, oBar, lAdjust, bWhen, lUpdate, cToolTip, cPrompt, oFont, cResName3, cBmpFile3, lBorder, cLayout, l2007, cResName4, cBmpFile4, lTransparent, lRound, bGradColors); oClass:AddMethod( "ReDefine", @TOkButton_ReDefine(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TOkButton ;
+
+
+
+static FUNCTION TOkButton_ReDefine( nId, cResName1, cResName2, cBmpFile1, cBmpFile2, cMsg, bAction, oBar, lAdjust, bWhen, lUpdate, cToolTip, cPrompt, oFont, cResName3, cBmpFile3, lBorder, cLayout, l2007, cResName4, cBmpFile4, lTransparent, lRound, bGradColors ) ; local Self AS CLASS TOkButton := QSelf() AS CLASS TOkButton
+
+
+
+
+
+
+
+   bGradColors    := { | lInvert | if( lInvert,  { { 1/3, nRGB( 0, 0, 0 ), nRGB( 255, 231, 151 ) },  { 2/3, nRGB( 255, 215,  84 ), nRGB( 255, 233, 162 ) }   },  { { 1/2, nRGB( 219, 230, 244 ), nRGB( 207-50, 221-25, 255 ) },  { 1/2, nRGB( 201-50, 217-25, 255 ), nRGB( 231, 242, 255 ) }   } ) }
+
+   ::Super:ReDefine( nId, cResName1, cResName2, cBmpFile1, cBmpFile2, cMsg, bAction, oBar, lAdjust, bWhen, lUpdate, cToolTip, cPrompt, oFont, cResName3, cBmpFile3, lBorder, cLayout, l2007, cResName4, cBmpFile4, lTransparent, lRound, bGradColors )
+
+
+
+RETURN ( Self )

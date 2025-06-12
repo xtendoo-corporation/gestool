@@ -1,0 +1,3848 @@
+#line 91 "\fwh1801\include\FiveWin.Ch"
+         EXTERNAL FW_GT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern errorsys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static aFwStack      := {}
+#line 21 ".\.\Prg\TDetMovimientosAlmacen.prg"
+_HB_CLASS TDetMovimientos ; function TDetMovimientos ( ... ) ; STATIC s_oClass ; LOCAL nScope, oClass, oInstance ; IF s_oClass == NIL .AND. __clsLockDef( @s_oClass ) ; BEGIN SEQUENCE ; nScope := 1 ; ( ( nScope ) ) ; oClass := iif( .F.,, HBClass():new( "TDetMovimientos", iif( .T., { @TDet() }, { @HBObject() } ), @TDetMovimientos() ) ) ;
+
+   _HB_MEMBER { cOldCodArt } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cOldCodArt"}, .F. )
+   _HB_MEMBER { cOldLote } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cOldLote"}, .F. )
+   _HB_MEMBER { cOldValPr1 } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cOldValPr1"}, .F. )
+   _HB_MEMBER { cOldValPr2 } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cOldValPr2"}, .F. )
+   _HB_MEMBER { cOldAliMov } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cOldAliMov"}, .F. )
+
+   _HB_MEMBER { oRefMov } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oRefMov"}, .F. )
+   _HB_MEMBER { oValPr1 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oValPr1"}, .F. )
+   _HB_MEMBER { oValPr2 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oValPr2"}, .F. )
+   _HB_MEMBER { oSayVp1 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayVp1"}, .F. )
+   _HB_MEMBER { cSayVp1 } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSayVp1"}, .F. )
+   _HB_MEMBER { oSayVp2 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayVp2"}, .F. )
+   _HB_MEMBER { cSayVp2 } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSayVp2"}, .F. )
+   _HB_MEMBER { oSayPr1 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayPr1"}, .F. )
+   _HB_MEMBER { cSayPr1 } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSayPr1"}, .F. )
+   _HB_MEMBER { oSayPr2 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayPr2"}, .F. )
+   _HB_MEMBER { cSayPr2 } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSayPr2"}, .F. )
+   _HB_MEMBER { oSayCaj } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayCaj"}, .F. )
+   _HB_MEMBER { cSayCaj } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSayCaj"}, .F. )
+   _HB_MEMBER { oSayUnd } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayUnd"}, .F. )
+   _HB_MEMBER { cSayUnd } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cSayUnd"}, .F. )
+   _HB_MEMBER { cAliMov } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cAliMov"}, .F. )
+   _HB_MEMBER { oSayLote } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayLote"}, .F. )
+   _HB_MEMBER { oGetLote } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetLote"}, .F. )
+   _HB_MEMBER { oGetDetalle } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetDetalle"}, .F. )
+   _HB_MEMBER { cGetDetalle } ; oClass:AddMultiData(, "", nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cGetDetalle"}, .F. )
+   _HB_MEMBER { oFechaCaducidad } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oFechaCaducidad"}, .F. )
+
+   _HB_MEMBER { cRefMov } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cRefMov"}, .F. )
+   _HB_MEMBER { cNomMov } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cNomMov"}, .F. )
+   _HB_MEMBER { dFecMov } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dFecMov"}, .F. )
+   _HB_MEMBER { cTimMov } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTimMov"}, .F. )
+   _HB_MEMBER { nTipMov } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nTipMov"}, .F. )
+   _HB_MEMBER { cCodMov } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cCodMov"}, .F. )
+   _HB_MEMBER { nPreDiv } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nPreDiv"}, .F. )
+   _HB_MEMBER { nCajMov } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"nCajMov"}, .F. )
+
+   _HB_MEMBER { oCajMov } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oCajMov"}, .F. )
+   _HB_MEMBER { oUndMov } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oUndMov"}, .F. )
+
+   _HB_MEMBER { oGetBultos } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetBultos"}, .F. )
+   _HB_MEMBER { oSayBultos } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oSayBultos"}, .F. )
+   _HB_MEMBER { oGetFormato } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetFormato"}, .F. )
+
+   _HB_MEMBER { oGetStockOrigen } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetStockOrigen"}, .F. )
+   _HB_MEMBER { oGetStockDestino } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetStockDestino"}, .F. )
+
+   _HB_MEMBER { oGetAlmacenOrigen } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetAlmacenOrigen"}, .F. )
+   _HB_MEMBER { oGetAlmacenDestino } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oGetAlmacenDestino"}, .F. )
+
+   _HB_MEMBER { oTxtAlmacenOrigen } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTxtAlmacenOrigen"}, .F. )
+   _HB_MEMBER { oTxtAlmacenDestino } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oTxtAlmacenDestino"}, .F. )
+
+   _HB_MEMBER { cTxtAlmacenOrigen } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTxtAlmacenOrigen"}, .F. )
+   _HB_MEMBER { cTxtAlmacenDestino } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTxtAlmacenDestino"}, .F. )
+
+   _HB_MEMBER { oPreDiv } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oPreDiv"}, .F. )
+
+   _HB_MEMBER { oBrwPrp } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwPrp"}, .F. )
+   _HB_MEMBER { oBrwStock } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrwStock"}, .F. )
+
+   _HB_MEMBER { oBtnSerie } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBtnSerie"}, .F. )
+
+   _HB_MEMBER { oMenu } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oMenu"}, .F. )
+
+   _HB_MEMBER { lNumeroSerieIntroducido } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lNumeroSerieIntroducido"}, .F. )
+   _HB_MEMBER { lNumeroSerieNecesario } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lNumeroSerieNecesario"}, .F. )
+
+   _HB_MEMBER { lBefore } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"lBefore"}, .F. )
+
+   _HB_MEMBER DefineFiles(); oClass:AddMethod( "DefineFiles", @TDetMovimientos_DefineFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenFiles( lExclusive); oClass:AddMethod( "OpenFiles", @TDetMovimientos_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER CloseFiles(); oClass:AddMethod( "CloseFiles", @TDetMovimientos_CloseFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER OpenService( lExclusive); oClass:AddMethod( "OpenService", @TDetMovimientos_OpenFiles(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Reindexa(); oClass:AddMethod( "Reindexa", @TDetMovimientos_Reindexa(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AppendDetail(); oClass:AddMethod( "AppendDetail", @TDetMovimientos_AppendDetail(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Resource( nMode, lLiteral); oClass:AddMethod( "Resource", @TDetMovimientos_Resource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER ValidResource( nMode, oDlg, oBtn); oClass:AddMethod( "ValidResource", @TDetMovimientos_ValidResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER MenuResource( oDlg); oClass:AddMethod( "MenuResource", @TDetMovimientos_MenuResource(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER RollBack(); oClass:AddMethod( "RollBack", @TDetMovimientos_RollBack(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER loadArticulo( lValidDetalle, nMode); oClass:AddMethod( "loadArticulo", @TDetMovimientos_loadArticulo(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER getPrecioCosto(); oClass:AddMethod( "getPrecioCosto", @TDetMovimientos_getPrecioCosto(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+      _HB_MEMBER AfterLoaArt(); oClass:AddMethod( "AfterLoaArt", @TDetMovimientos_AfterLoaArt(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER Save(); oClass:AddMethod( "Save", @TDetMovimientos_Save(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER Asigna(); oClass:AddMethod( "Asigna", @TDetMovimientos_Asigna(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER AppendKit(); oClass:AddMethod( "AppendKit", @TDetMovimientos_AppendKit(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ActualizaKit( nMode); oClass:AddMethod( "ActualizaKit", @TDetMovimientos_ActualizaKit(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER SetDlgMode( nMode); oClass:AddMethod( "SetDlgMode", @TDetMovimientos_SetDlgMode(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER nTotRemVir( lPic); oClass:AddMethod( "nTotRemVir", @TDetMovimientos_nTotRemVir(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotUnidadesVir( lPic); oClass:AddMethod( "nTotUnidadesVir", @TDetMovimientos_nTotUnidadesVir(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotVolumenVir( lPic); oClass:AddMethod( "nTotVolumenVir", @TDetMovimientos_nTotVolumenVir(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER nTotPesoVir( lPic); oClass:AddMethod( "nTotPesoVir", @TDetMovimientos_nTotPesoVir(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER recalcularPrecios(); oClass:AddMethod( "recalcularPrecios", @TDetMovimientos_recalcularPrecios(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER putFieldValues(); oClass:AddMethod( "putFieldValues", @TDetMovimientos_putFieldValues(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER isKeyFieldValues(); oClass:AddMethod( "isKeyFieldValues", @TDetMovimientos_isKeyFieldValues(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER accumulatesFieldValues(); oClass:AddMethod( "accumulatesFieldValues", @TDetMovimientos_accumulatesFieldValues(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER isNumeroSerieNecesario(); oClass:AddMethod( "isNumeroSerieNecesario", @TDetMovimientos_isNumeroSerieNecesario(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER accumulatesStoreMovement(); oClass:AddMethod( "accumulatesStoreMovement", @TDetMovimientos_accumulatesStoreMovement(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER alertControlStockUnderMin(); oClass:AddMethod( "alertControlStockUnderMin", @TDetMovimientos_alertControlStockUnderMin(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER setPropertiesData(); oClass:AddMethod( "setPropertiesData", @TDetMovimientos_setPropertiesData(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER processPropertiesGrid(); oClass:AddMethod( "processPropertiesGrid", @TDetMovimientos_processPropertiesGrid(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+   _HB_MEMBER refreshDetail(); oClass:AddInline( "refreshDetail", {|Self | ( ( Self ) ), ( if( !empty( ::oParent:oBrwDet ), ::oParent:oBrwDet:Refresh(), ) ) }, nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
+oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TDetMovimientos ;
+
+
+
+static FUNCTION TDetMovimientos_DefineFiles( cPath, cDriver, lUniqueName, cFileName ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   local oDbf
+
+   If( cPath == nil, cPath := ::cPath, ) ;
+   If( cDriver == nil, cDriver := ::cDriver, ) ;
+   If( lUniqueName == nil, lUniqueName := .F., ) ;
+   If( cFileName == nil, cFileName := "HisMov", ) ;
+
+   if lUniqueName
+      cFileName         := cGetNewFileName( cFileName, , , cPatTmp() )
+   end
+
+   oDbf := DbfServer( ( cFileName ), "HisMov" ):New( ( cFileName ), ( cFileName ), ( cDriver ),, ( cPath ) )
+
+      oDbf:AddField( "dFecMov", "D", 8, 0,,,,, "Fecha movimiento", .F.,, .F., {} )
+      oDbf:AddField( "cTimMov", "C", 6, 0,,,,, "Hora movimiento", .F.,, .F., {} )
+      oDbf:AddField( "nTipMov", "N", 1, 0,,,,, "Tipo movimiento", .F.,, .F., {} )
+      oDbf:AddField( "cAliMov", "C", 16, 0,,,,, "Alm. ent.", .F.,, .F., {} )
+      oDbf:AddField( "cAloMov", "C", 16, 0,,,,, "Alm. sal.", .F.,, .F., {} )
+      oDbf:AddField( "cRefMov", "C", 18, 0,,,,, "Código", .F.,, .F., {} )
+      oDbf:AddField( "cNomMov", "C", 50, 0,,,,, "Nombre", .F.,, .F., {} )
+      oDbf:AddField( "cCodMov", "C", 2, 0,,,,, "TM", .F.,, .F., {} )
+      oDbf:AddField( "cCodPr1", "C", 20, 0,,,,, "Código propiedad 1", .F.,, .F., {} )
+      oDbf:AddField( "cCodPr2", "C", 20, 0,,,,, "Código propiedad 2", .F.,, .F., {} )
+      oDbf:AddField( "cValPr1", "C", 20, 0,,,,, "Valor propiedad 1", .F.,, .F., {} )
+      oDbf:AddField( "cValPr2", "C", 20, 0,,,,, "Valor propiedad 2", .F.,, .F., {} )
+      oDbf:AddField( "dFecCad", "D", 8, 0,,,,, "Fecha caducidad", .F.,, .F., {} )
+      oDbf:AddField( "cCodUsr", "C", 3, 0,,,,, "Código usuario", .F.,, .F., {} )
+      oDbf:AddField( "cCodDlg", "C", 2, 0,,,,, "Código delegación", .F.,, .F., {} )
+      oDbf:AddField( "lLote", "L", 1, 0,,,,, "Lógico lote", .F.,, .F., {} )
+      oDbf:AddField( "nLote", "N", 9, 0,,,,, "Número de lote", .F.,, .F., {} )
+      oDbf:AddField( "cLote", "C", 64, 0,,,,, "Lote", .F.,, .F., {} )
+      oDbf:AddField( "nCajMov", "N", 19, 6, {|| MasUnd() },,,, "Caj.", .F.,, .F., {} )
+      oDbf:AddField( "nUndMov", "N", 19, 6, {|| MasUnd() },,,, "Und.", .F.,, .F., {} )
+      oDbf:AddField( "nCajAnt", "N", 19, 6,,,,, "Caj. ant.", .F.,, .F., {} )
+      oDbf:AddField( "nUndAnt", "N", 19, 6,,,,, "Und. ant.", .F.,, .F., {} )
+      oDbf:AddField( "nPreDiv", "N", 19, 6, {|| PicOut() },,,, "Precio", .F.,, .F., {} )
+      oDbf:AddField( "lSndDoc", "L", 1, 0,,,,, "Lógico enviar", .F.,, .F., {} )
+      oDbf:AddField( "nNumRem", "N", 9, 0,,,,, "Número remesa", .F.,, .F., {} )
+      oDbf:AddField( "cSufRem", "C", 2, 0,,,,, "Sufijo remesa", .F.,, .F., {} )
+      oDbf:AddField( "lSelDoc", "L", 1, 0,,,,, "Lógico selecionar", .F.,, .F., {} )
+      oDbf:AddField( "lNoStk", "L", 1, 0,,,,, "Lógico no stock", .F.,, .F., {} )
+      oDbf:AddField( "lKitArt", "L", 1, 0,,,,, "Línea con escandallo", .F.,, .F., {} )
+      oDbf:AddField( "lKitEsc", "L", 1, 0,,,,, "Línea perteneciente a escandallo", .F.,, .F., {} )
+      oDbf:AddField( "lImpLin", "L", 1, 0,,,,, "Lógico imprimir linea", .F.,, .F., {} )
+      oDbf:AddField( "lKitPrc", "L", 1, 0,,,,, "Lógico precio escandallo", .F.,, .F., {} )
+      oDbf:AddField( "nNumLin", "N", 9, 0,,,,, "Número de linea", .F.,, .F., {} )
+      oDbf:AddField( "mNumSer", "M", 10, 0,,,,, "Numeros de serie", .F.,, .F., {} )
+      oDbf:AddField( "nVolumen", "N", 16, 6,,,,, "Volumen del producto", .F.,, .F., {} )
+      oDbf:AddField( "cVolumen", "C", 2, 0,,,,, "Unidad del volumen", .F.,, .F., {} )
+      oDbf:AddField( "nPesoKg", "N", 16, 6,,,,, "Peso del producto", .F.,, .F., {} )
+      oDbf:AddField( "cPesoKg", "C", 2, 0,,,,, "Unidad de peso del producto", .F.,, .F., {} )
+      oDbf:AddField( "nBultos", "N", 16, 0,,,,, "Número de bultos en líneas", .F.,, .F., {} )
+      oDbf:AddField( "cFormato", "C", 100, 0,,,,, "Formato de compra/venta", .F.,, .F., {} )
+      oDbf:AddField( "lLabel", "L", 1, 0,,,,, "Lógico para imprimir etiqueta", .F.,, .F., {} )
+      oDbf:AddField( "nLabel", "N", 16, 6,,,,, "Número de etiquetas a imprimir", .F.,, .F., {} )
+      oDbf:AddField( "lWait", "L", 1, 0,,,,, "Lógico para documento no finalizado", .F.,, .F., {} )
+      oDbf:AddField( "cGuid", "C", 40, 0,,,,, "cGuid de las lineas", .F.,, .F., {} )
+      oDbf:AddField( "cGuidPar", "C", 40, 0,,,,, "cGuid de la cabecera", .F.,, .F., {} )
+
+      oDbf:AddIndex( "nNumRem", ( cFileName ), "str( nNumRem ) + cSufRem",,, .F., .F.,,,, .T., .F. )
+      oDbf:AddIndex( "cRefMov", ( cFileName ), "UPPER( cRefMov ) + cValPr1 + cValPr2 + cLote",,, .F., .F.,,,, .T., .F. )
+      oDbf:AddIndex( "nNumLin", ( cFileName ), "str( nNumLin )",,, .F., .F.,,,, .T., .F. )
+
+
+
+RETURN ( oDbf )
+
+
+
+static FUNCTION TDetMovimientos_OpenFiles( lExclusive ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   local lOpen             := .T.
+   local oBlock
+
+   If( lExclusive == nil, lExclusive := .F., ) ;
+
+   oBlock                  := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE
+
+      if empty( ::oDbf )
+         ::oDbf            := ::defineFiles()
+      end
+
+      ::oDbf:Activate( .F., !lExclusive )
+
+  RECOVER
+
+     msgstop( "Imposible abrir todas las bases de datos movimientos de almacen" )
+     lOpen                := .F.
+
+  end
+
+  ErrorBlock( oBlock )
+
+   if !lOpen
+      ::CloseFiles()
+   end
+
+RETURN ( lOpen )
+
+
+
+static FUNCTION TDetMovimientos_CloseFiles( ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   if ::oDbf <> nil .AND. ::oDbf:Used()
+      ::oDbf:End()
+   end
+
+   ::oDbf         := nil
+
+RETURN .T.
+
+
+
+static FUNCTION TDetMovimientos_Reindexa( ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   if empty( ::oDbf )
+      ::oDbf   := ::DefineFiles()
+   end
+
+   ::oDbf:IdxFDel()
+
+   if ::OpenService( .T. )
+      ::oDbf:IdxFCheck()
+      ::oDbf:Pack()
+   end
+
+   ::CloseFiles()
+
+RETURN ( Self )
+
+
+
+
+
+
+static FUNCTION TDetMovimientos_AppendDetail( ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   local nResult
+
+   while .T.
+
+      ::oDbfVir:Blank()
+
+      nResult        := ::Resource( 1 )
+
+      if nResult == 1
+
+         if empty( ::oBrwPrp:Cargo )
+
+
+
+
+               ::oDbfVir:Insert()
+               ::appendKit()
+
+
+         else
+
+            ::setPropertiesData()
+
+            ::oDbfVir:Cancel()
+
+            ::processPropertiesGrid()
+
+         end
+
+         ::refreshDetail()
+
+
+
+
+         if lEntCon()
+            loop
+         else
+            exit
+         end
+
+      else
+
+         ::oDbfVir:Cancel()
+
+         exit
+
+      end
+
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TDetMovimientos_Resource( nMode ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   local oDlg
+   local oBtn
+   local oSayPre
+   local nStockOrigen      := 0
+   local nStockDestino     := 0
+   local oTotUnd
+   local cSayLote          := "Lote"
+   local oBtnSer
+   local oSayTotal
+   local cCodArt
+
+   if nMode == 1
+      ::oDbfVir:nNumLin    := nLastNum( ::oDbfVir:cAlias )
+   end
+
+   ::cOldCodArt            := ::oDbfVir:cRefMov
+   ::cOldValPr1            := ::oDbfVir:cValPr1
+   ::cOldValPr2            := ::oDbfVir:cValPr2
+   ::cOldLote              := ::oDbfVir:cLote
+
+   cCodArt                 := Padr( ::oDbfVir:cRefMov, 128 )
+
+   ::cGetDetalle           := oRetFld( ::oDbfVir:cRefMov, ::oParent:oArt, "Nombre" )
+
+   ::cTxtAlmacenOrigen     := oRetFld( ::oParent:oDbf:cAlmOrg, ::oParent:oAlmacenOrigen )
+   ::cTxtAlmacenDestino    := oRetFld( ::oParent:oDbf:cAlmDes, ::oParent:oAlmacenDestino )
+
+   oDlg = TDialog():New(,,,, lblTitle( nMode ) + "lineas de movimientos de almacén", "LMovAlm",, .F.,,,,,, .F.,,,,,, .F.,, "oDlg", nil, )
+
+
+
+
+
+      ::oRefMov := TGetHlp():ReDefine( 100, { | u | If( PCount()==0, cCodArt, cCodArt:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil, "LUPA",, )
+
+      ::oRefMov:bValid     := {|| if( !empty( cCodArt ), ::loadArticulo( cCodArt, nMode ), .T. ) }
+      ::oRefMov:bHelp      := {|| BrwArticulo( ::oRefMov, ::oGetDetalle , , , , ::oGetLote, ::oDbfVir:cCodPr1, ::oDbfVir:cCodPr2, ::oValPr1, ::oValPr2  ) }
+
+
+
+
+      ::oGetDetalle := TGetHlp():ReDefine( 110, { | u | If( PCount()==0, ::oDbfVir:cNomMov, ::oDbfVir:cNomMov:= u ) }, oDlg,,,,,,,,, .F., {||     ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      ::oSayLote := TSay():ReDefine( 154, {|| cSayLote}, oDlg,,,, .F.,, .F., .F., )
+
+
+
+
+      ::oGetLote := TGetHlp():ReDefine( 155, { | u | If( PCount()==0, ::oDbfVir:cLote, ::oDbfVir:cLote:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil,,, )
+
+      ::oGetLote:bValid          := {|| if( !empty( ::oDbfVir:cLote ), ::loadArticulo( cCodArt, nMode ), .T. ) }
+
+
+
+      ::oBrwPrp                  := IXBrowse():New( oDlg )
+
+      ::oBrwPrp:nDataType        := 2
+
+      ::oBrwPrp:bClrSel          := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
+      ::oBrwPrp:bClrSelFocus     := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
+
+      ::oBrwPrp:lHScroll         := .T.
+      ::oBrwPrp:lVScroll         := .T.
+
+      ::oBrwPrp:nMarqueeStyle    := 3
+      ::oBrwPrp:nFreeze          := 1
+
+      ::oBrwPrp:lRecordSelector  := .F.
+      ::oBrwPrp:lFastEdit        := .T.
+      ::oBrwPrp:lFooter          := .T.
+
+      ::oBrwPrp:SetArray( {}, .F., 0, .F. )
+
+      ::oBrwPrp:MakeTotals()
+
+      ::oBrwPrp:CreateFromResource( 600 )
+
+
+
+
+
+
+
+      ::oValPr1 := TGetHlp():ReDefine( 120, { | u | If( PCount()==0, ::oDbfVir:cValPr1, ::oDbfVir:cValPr1:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil, "LUPA",, )
+
+      ::oValPr1:bValid     := {|| if( lPrpAct( ::oValPr1, ::oSayVp1, ::oDbfVir:cCodPr1, ::oParent:oTblPro:cAlias ), ::loadArticulo( cCodArt, nMode ), .F. ) }
+      ::oValPr1:bHelp      := {|| brwPropiedadActual( ::oValPr1, ::oSayVp1, ::oDbfVir:cCodPr1 ) }
+
+
+
+
+      ::oSayVp1 := TGetHlp():ReDefine( 121, { | u | If( PCount()==0, ::cSayVp1, ::cSayVp1:= u ) }, oDlg,,,,,,,,, .F., {||     .F.},, .F., .F.,,,,,, nil,,, )
+
+
+
+      ::oSayPr1 := TSay():ReDefine( 122, {|| "Propiedad 1"}, oDlg,,,, .F.,, .F., .F., )
+
+
+
+
+
+
+
+      ::oValPr2 := TGetHlp():ReDefine( 130, { | u | If( PCount()==0, ::oDbfVir:cValPr2, ::oDbfVir:cValPr2:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .F.,,,,,, nil, "LUPA",, )
+
+      ::oValPr2:bValid     := {|| if( lPrpAct( ::oValPr2, ::oSayVp2, ::oDbfVir:cCodPr2, ::oParent:oTblPro:cAlias ), ::loadArticulo( cCodArt, nMode ), .F. ) }
+      ::oValPr2:bHelp      := {|| brwPropiedadActual( ::oValPr2, ::oSayVp2, ::oDbfVir:cCodPr2 ) }
+
+
+
+
+      ::oSayVp2 := TGetHlp():ReDefine( 131, { | u | If( PCount()==0, ::cSayVp2, ::cSayVp2:= u ) }, oDlg,,,,,,,,, .F., {||     .F.},, .F., .F.,,,,,, nil,,, )
+
+
+
+      ::oSayPr2 := TSay():ReDefine( 132, {|| "Propiedad 2"}, oDlg,,,, .F.,, .F., .F., )
+
+
+
+
+
+
+      ::oFechaCaducidad := TGetHlp():ReDefine( 340, { | u | If( PCount()==0, ::oDbfVir:dFecCad, ::oDbfVir:dFecCad:= u ) }, oDlg,,,,,,,,, .F., {||     ( nMode <> 3 )},, .F., .T.,,,,,, nil,, 341, )
+
+
+
+
+
+
+      ::oGetBultos := TGetHlp():ReDefine( 430, { | u | If( PCount()==0, ::oDbfVir:nBultos, ::oDbfVir:nBultos:= u ) }, oDlg,, ::oParent:cPicUnd,,,,,,, .F., {||     ( uFieldEmpresa( "lUseBultos" ) .AND. nMode <> 3 )},, .F., .T.,,,,,, nil,,, )
+
+
+
+      ::oSayBultos := TSay():ReDefine( 431, {|| uFieldempresa( "cNbrBultos" )}, oDlg,,,, .F.,, .F., .F., )
+
+
+
+
+
+
+
+
+      ::oCajMov := TGetHlp():ReDefine( 140, { | u | If( PCount()==0, ::oDbfVir:nCajMov, ::oDbfVir:nCajMov:= u ) }, oDlg,, ::oParent:cPicUnd, {||    ( oTotUnd:Refresh(), oSayPre:Refresh(), .T. )},,,,,, .F., {||     ( lUseCaj() .AND. nMode <> 3 )}, {|nKey,nFlags,Self| ( oTotUnd:Refresh(), oSayPre:Refresh() ) }, .F., .T.,,,,,, nil,,, )
+
+
+
+      ::oSayCaj := TSay():ReDefine( 142, {|| cNombreCajas()}, oDlg,,,, .F.,, .F., .F., )
+
+
+
+
+
+
+
+
+      ::oUndMov := TGetHlp():ReDefine( 150, { | u | If( PCount()==0, ::oDbfVir:nUndMov, ::oDbfVir:nUndMov:= u ) }, oDlg,, ::oParent:cPicUnd, {||    ( oTotUnd:Refresh(), oSayPre:Refresh(), .T. )},,,,,, .F., {||     ( nMode <> 3 )}, {|nKey,nFlags,Self| ( oTotUnd:Refresh(), oSayPre:Refresh() ) }, .F., .T.,,,,,, nil,,, )
+
+
+
+      ::oSayUnd := TSay():ReDefine( 152, {|| cNombreUnidades()}, oDlg,,,, .F.,, .F., .F., )
+
+
+
+
+      oTotUnd := TSay():ReDefine( 160, {|| nTotNMovAlm( ::oDbfVir )}, oDlg, ::oParent:cPicUnd,,, .F.,, .F., .F., )
+
+
+
+
+
+
+
+
+
+
+      ::oPreDiv := TGetHlp():ReDefine( 180, { | u | If( PCount()==0, ::oDbfVir:nPreDiv, ::oDbfVir:nPreDiv:= u ) }, oDlg,, ::oParent:cPinDiv, {||    ( oSayPre:Refresh(), .T. )},,,,,, .F., {||     ( nMode <> 3 )}, {|nKey,nFlags,Self| ( oSayPre:Refresh() ) }, .F., .T.,,,,,, nil,, 181, )
+
+
+
+      oSayTotal := TSay():ReDefine( 191,, oDlg,,,, .F.,, .F., .F., )
+
+
+
+
+      oSayPre := TSay():ReDefine( 190, {|| nTotLMovAlm( ::oDbfVir )}, oDlg, ::oParent:cPirDiv,,, .F.,, .F., .F., )
+
+
+
+
+
+
+
+
+
+
+      ::oGetAlmacenOrigen := TGetHlp():ReDefine( 400, { | u | If( PCount()==0, ::oParent:oDbf:cAlmOrg, ::oParent:oDbf:cAlmOrg:= u ) }, oDlg,,,,,,,,, .F., {||     ( .F. )},, .F., .F.,,,,,, nil, "Lupa", 403, )
+
+
+
+
+      ::oTxtAlmacenOrigen := TGetHlp():ReDefine( 401, { | u | If( PCount()==0, ::cTxtAlmacenOrigen, ::cTxtAlmacenOrigen:= u ) }, oDlg,,,,,,,,, .F., {||     ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      ::oGetStockOrigen := TGetHlp():ReDefine( 402, { | u | If( PCount()==0, nStockOrigen, nStockOrigen:= u ) }, oDlg,, ::oParent:cPicUnd,,,,,,, .F., {||     ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+
+
+
+      ::oGetAlmacenDestino := TGetHlp():ReDefine( 410, { | u | If( PCount()==0, ::oParent:oDbf:cAlmDes, ::oParent:oDbf:cAlmDes:= u ) }, oDlg,,,,,,,,, .F., {||     ( .F. )},, .F., .F.,,,,,, nil, "Lupa",, )
+
+
+
+
+      ::oTxtAlmacenDestino := TGetHlp():ReDefine( 411, { | u | If( PCount()==0, ::cTxtAlmacenDestino, ::cTxtAlmacenDestino:= u ) }, oDlg,,,,,,,,, .F., {||     ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      ::oGetStockDestino := TGetHlp():ReDefine( 412, { | u | If( PCount()==0, nStockDestino, nStockDestino:= u ) }, oDlg,, ::oParent:cPicUnd,,,,,,, .F., {||     ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+
+
+
+
+      TGetHlp():ReDefine( 200, { | u | If( PCount()==0, ::oDbfVir:nPesoKg, ::oDbfVir:nPesoKg:= u ) }, oDlg,, "@E 999.99",,,,,,, .F., {||     ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 210, { | u | If( PCount()==0, ::oDbfVir:cPesoKg, ::oDbfVir:cPesoKg:= u ) }, oDlg,,,,,,,,, .F., {||     ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+
+      TGetHlp():ReDefine( 220, { | u | If( PCount()==0, ::oDbfVir:nVolumen, ::oDbfVir:nVolumen:= u ) }, oDlg,, "@E 999.99",,,,,,, .F., {||     ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      TGetHlp():ReDefine( 230, { | u | If( PCount()==0, ::oDbfVir:cVolumen, ::oDbfVir:cVolumen:= u ) }, oDlg,,,,,,,,, .F., {||     ( .F. )},, .F., .F.,,,,,, nil,,, )
+
+
+
+      ::oGetFormato := TGetHlp():ReDefine( 440, { | u | If( PCount()==0, ::oDbfVir:cFormato, ::oDbfVir:cFormato:= u ) }, oDlg,,,,,,,,, .F.,,, .F., .F.,,,,,, nil,,, )
+
+
+
+
+      ::oBtnSerie := TButton():ReDefine( 500, {||( nil )}, oDlg,,, .F.,,,, .F. )
+
+      ::oBtnSerie:bAction     := {|| ::oParent:oDetSeriesMovimientos:Resource( nMode ) }
+
+
+
+
+
+      oBtn := TButton():ReDefine( 510, {||( ::ValidResource( nMode, oDlg, oBtn ) )}, oDlg,,, .F., {||     ( nMode <> 3 )},,, .F. )
+
+
+
+
+      TButton():ReDefine( 520, {||( oDlg:end() )}, oDlg,,, .F.,,,, .F. )
+
+      if nMode <> 3
+
+         if uFieldEmpresa( "lGetLot")
+            oDlg:AddFastKey( 13, {|| ::oRefMov:lValid(), oBtn:SetFocus(), oBtn:Click() } )
+         end
+
+         oDlg:AddFastKey( 116, {|| oBtn:Click() } )
+
+         oDlg:AddFastKey( 117, {|| ::oBtnSerie:Click() } )
+
+      end
+
+      oDlg:bStart             := {|| ::SetDlgMode( nMode, oSayTotal, oSayPre ) }
+
+   oDlg:Activate( , , , .T., , , {|| ::MenuResource( oDlg ) } )
+
+
+
+   ::oMenu:end()
+
+
+   ::cOldValPr1            := ""
+   ::cOldValPr2            := ""
+   ::cOldLote              := ""
+
+RETURN ( oDlg:nResult )
+
+
+
+static FUNCTION TDetMovimientos_MenuResource( oDlg ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   ::oMenu := MenuBegin( .F.,,, .F., .F.,,,,,,,,,, .F.,, .F., .F., .F., .F.,, ,,,,,, .F.,, .F., .F.,,,,,,,,,, .F.,,,,,, )
+
+      MenuAddItem( "&1. Rotor",, .F.,,,,,,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+
+         MenuBegin( .F.,,, .F., .F.,,,,,,,,,, .F.,, .F., .F., .F., .F.,, ,,,,,, .F.,, .F., .F.,,,,,,,,,, .F.,,,,,, )
+
+
+
+
+
+            MenuAddItem( "&1. Modificar de artículo", "Modificar la ficha del artículo", .F.,, {|oMenuItem|( EdtArticulo( ::oRefMov:VarGet() ) )},, "gc_object_cube_16",,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+
+
+
+
+            MenuAddItem( "&2. Informe de artículo", "Abrir el informe del artículo", .F.,, {|oMenuItem|( InfArticulo( ::oRefMov:VarGet() ) )},, "Info16",,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+
+
+
+
+            MenuAddItem( "&3. Informe de stock", "Abrir el informe del stock", .F.,, {|oMenuItem|( InfStock( ::oRefMov:VarGet() ) )},, "Info16",,,,, .F.,,, .F., ,.F., .F.,,,,,,,,,, .F., .F.,,,,,,, ,, .F., .F., .F.,,,,, .F., .F., .F. )
+         MenuEnd()
+
+   MenuEnd()
+
+   oDlg:SetMenu( ::oMenu )
+
+Return ( ::oMenu )
+
+
+
+static FUNCTION TDetMovimientos_ValidResource( nMode, oDlg, oBtn ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   oBtn:SetFocus()
+
+   if empty( ::oDbfVir:cRefMov )
+      msgstop( "Código de artículo vacío." )
+      ::oRefMov:SetFocus()
+      Return .F.
+   end
+
+   if empty( ::oBrwPrp:Cargo )
+      if !::alertControlStockUnderMin()
+         ::oRefMov:SetFocus()
+         Return .F.
+      end
+   end
+
+
+
+   if ( ::isNumeroSerieNecesario( nMode ) )
+      Return .F.
+   end
+
+   oDlg:end( 1 )
+
+RETURN ( .T. )
+
+
+
+static FUNCTION TDetMovimientos_RollBack( ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   local cStm
+
+   ::oParent:GetFirstKey()
+   if ::oParent:cFirstKey <> nil
+
+      if lAIS()
+
+         cStm        := "DELETE FROM " + cPatEmp() + "HisMov" + " WHERE nNumRem = " + alltrim( str( ::oParent:oDbf:nNumRem ) ) + " AND cSufRem = '" + ::oParent:oDbf:cSufRem + "'"
+         TDataCenter():ExecuteSqlStatement( cStm, "RollBackDetMovimientos" )
+
+      else
+
+         while ::oDbf:Seek( ::oParent:cFirstKey )
+            ::oDbf:Delete()
+            if !empty( ::oParent ) .AND. !empty( ::oParent:oMeter )
+               ::oParent:oMeter:AutoInc()
+            end
+         end
+
+      end
+
+   end
+
+Return .T.
+
+
+
+static FUNCTION TDetMovimientos_AfterLoaArt( ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   local nUnidades         := 0
+
+   nUnidades               := runScript( "MovimientosAlmacen\Lineas\beforeAppend.prg", ::oParent:oArt:Codigo )
+
+   if Valtype( nUnidades ) == "N" .AND. nUnidades <> 0
+      ::oDbfVir:nUndMov    := nUnidades
+      ::oUndMov:Refresh()
+   end
+
+Return .T.
+
+
+
+static FUNCTION TDetMovimientos_loadArticulo( cCodArt, nMode, lSilenceMode ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   local a
+   local nPos
+   local nPreMed
+   local cValPr1           := ""
+   local cValPr2           := ""
+   local lChgCodArt        := .F.
+   local hHas128
+   local cLote
+   local dFechaCaducidad
+   local nUnidades         := 0
+   local cArtLotCad
+
+   If( lSilenceMode == nil, lSilenceMode := .F., ) ;
+
+   ::lBefore               := .F.
+
+   if empty( cCodArt )
+      if !empty( ::oBrwPrp )
+         ::oBrwPrp:Hide()
+      end
+      Return .T.
+   end
+
+
+
+   lChgCodArt              := ( rtrim( ::cOldCodArt ) <> rtrim( cCodArt ) )
+
+
+
+
+
+   if Len( Alltrim( cCodArt ) ) > 18
+
+      if At( ";", cCodArt ) <> 0
+
+         cArtLotCad           := cCodArt
+         cCodArt              := Padr( SubStr( cArtLotCad, 1, ( At( ";", cArtLotCad ) - 1 ) ), 18 )
+         cArtLotCad           := SubStr( cArtLotCad, At( ";", cArtLotCad ) + 1 )
+         cLote                := Padr( SubStr( cArtLotCad, 1, ( At( ";", cArtLotCad ) - 1 ) ), 64 )
+         dFechaCaducidad      := Stod( SubStr( cArtLotCad, At( ";", cArtLotCad ) ) )
+
+      else
+
+         hHas128              := GetHashGs128( cCodArt )
+
+         if !empty( hHas128 )
+
+            cCodArt           := uGetCodigo( hHas128, "00" )
+
+            if Empty( cCodArt )
+               cCodArt        := uGetCodigo( hHas128, "01" )
+            end
+
+            cLote             := Upper( uGetCodigo( hHas128, "10" ) )
+
+            dFechaCaducidad   := uGetCodigo( hHas128, "15" )
+
+            if Empty( dFechaCaducidad )
+               dFechaCaducidad   := uGetCodigo( hHas128, "17" )
+            end
+
+         end
+
+      end
+
+   end
+
+
+
+   cCodArt                 := cSeekCodebar( cCodArt, ::oParent:oDbfBar:cAlias, ::oParent:oArt:cAlias )
+
+
+
+   if ( ::oParent:oDbf:nTipMov == 3 ) .AND. ( retFld( cCodArt, ::oParent:oArt:cAlias, "lNumSer" ) )
+      msgstop( "Artículos con números de serie no pueden incluirse regularizaciones por objetivo." )
+      Return .F.
+   end
+
+
+
+   if aSeekProp( @cCodArt, @cValPr1, @cValPr2, ::oParent:oArt:cAlias, ::oParent:oTblPro:cAlias )
+
+      CursorWait()
+
+      if ( lChgCodArt )
+
+         if !empty(::oRefMov )
+            ::oRefMov:cText( ::oParent:oArt:Codigo )
+         end
+
+         ::oDbfVir:cRefMov    := ::oParent:oArt:Codigo
+
+
+
+
+
+
+
+         if !empty(::oGetDetalle)
+            ::oGetDetalle:cText( ::oParent:oArt:Nombre )
+         else
+            ::oDbfVir:cNomMov    := ::oParent:oArt:Nombre
+         end
+
+
+
+         if !empty( cValPr1 )
+            if !empty( ::oValPr1 )
+               ::oValPr1:cText( cValPr1 )
+            else
+               ::oDbfVir:cValPr1    := cValPr1
+            end
+         end
+
+         if !empty( cValPr2 )
+            if !empty( ::oValPr2 )
+               ::oValPr2:cText( cValPr2 )
+            else
+               ::oDbfVir:cValPr2    := cValPr2
+            end
+         end
+
+
+
+         if ::oParent:oArt:lKitArt
+            ::oDbfVir:lNoStk     := !lStockCompuestos( ::oParent:oArt:Codigo, ::oParent:oArt:cAlias )
+            ::oDbfVir:lKitArt    := .T.
+            ::oDbfVir:lKitEsc    := .F.
+            ::oDbfVir:lImpLin    := lImprimirCompuesto( ::oParent:oArt:Codigo, ::oParent:oArt:cAlias )
+            ::oDbfVir:lKitPrc    := !lPreciosCompuestos( ::oParent:oArt:Codigo, ::oParent:oArt:cAlias )
+         else
+            ::oDbfVir:lNoStk     := ( ::oParent:oArt:nCtlStock > 1 )
+            ::oDbfVir:lKitArt    := .F.
+            ::oDbfVir:lKitEsc    := .F.
+            ::oDbfVir:lImpLin    := .F.
+            ::oDbfVir:lKitPrc    := .F.
+         end
+
+         if ::oParent:oArt:nCajEnt <> 0 .AND. ::oDbfVir:nCajMov == 0
+            if !empty(::oCajMov)
+               ::oCajMov:cText( ::oParent:oArt:nCajEnt )
+            else
+               ::oDbfVir:nCajMov := ::oParent:oArt:nCajEnt
+            end
+         end
+
+         if ::oDbfVir:nUndMov == 0
+            if !empty(::oUndMov)
+               ::oUndMov:cText( max( ::oParent:oArt:nUniCaja, 1 ) )
+            else
+               ::oDbfVir:nUndMov := max( ::oParent:oArt:nUniCaja, 1 )
+            end
+         end
+
+
+
+         ::oDbfVir:nVolumen      := ::oParent:oArt:nVolumen
+         ::oDbfVir:cVolumen      := ::oParent:oArt:cVolumen
+         ::oDbfVir:nPesoKg       := ::oParent:oArt:nPesoKg
+         ::oDbfVir:cPesoKg       := ::oParent:oArt:cUndDim
+
+
+
+         ::oDbfVir:lLote         := ::oParent:oArt:lLote
+
+         if Empty( ::oDbfVir:cLote )
+            if Empty( cLote )
+               ::oDbfVir:cLote         := ::oParent:oArt:cLote
+            else
+               ::oDbfVir:cLote         := cLote
+            end
+         end
+
+         if ::oParent:oArt:lLote
+            if !empty(::oSayLote)
+               ::oSayLote:Show()
+            end
+            if !empty(::oGetLote)
+               ::oGetLote:Show()
+            end
+            if !empty(::oFechaCaducidad)
+               ::oFechaCaducidad:Show()
+            end
+         else
+            if !empty(::oSayLote)
+               ::oSayLote:Hide()
+            end
+            if !empty(::oGetLote)
+               ::oGetLote:Hide()
+            end
+            if !empty(::oFechaCaducidad)
+               ::oFechaCaducidad:Hide()
+            end
+         end
+
+
+
+         ::oDbfVir:cCodPr1       := ::oParent:oArt:cCodPrp1
+         ::oDbfVir:cCodPr2       := ::oParent:oArt:cCodPrp2
+
+
+
+
+
+         if ( !empty( ::oDbfVir:cCodPr1 ) .OR. !empty( ::oDbfVir:cCodPr2 ) )     .AND. ( !lemptyProp( ::oDbfVir:cCodPr1, ::oParent:oTblPro:cAlias ) .OR. !lemptyProp( ::oDbfVir:cCodPr2, ::oParent:oTblPro:cAlias ) ) .AND. ( empty( ::oDbfVir:cValPr1 ) .OR. empty( ::oDbfVir:cValPr2 ) )       .AND. ( uFieldEmpresa( "lUseTbl" )                                         .AND. ( nMode == 1 ) )
+
+            if( !empty(::oValPr1),  ::oValPr1:Hide(),    )
+            if( !empty(::oSayPr1),  ::oSayPr1:Hide(),    )
+            if( !empty(::oSayVp1),  ::oSayVp1:Hide(),    )
+            if( !empty(::oValPr2),  ::oValPr2:Hide(),    )
+            if( !empty(::oSayPr2),  ::oSayPr2:Hide(),    )
+            if( !empty(::oSayVp2),  ::oSayVp2:Hide(),    )
+            if( !empty(::oSayLote), ::oSayLote:Hide(),   )
+            if( !empty(::oGetLote), ::oGetLote:Hide(),   )
+            if( !empty(::oFechaCaducidad), ::oFechaCaducidad:Hide(), )
+
+            setPropertiesTable( ::oParent:oArt:Codigo, ::oDbfVir:cCodPr1, ::oDbfVir:cCodPr2, 0, ::oUndMov, ::oBrwPrp, ::oParent:nView )
+
+         else
+
+            hidePropertiesTable( ::oBrwPrp )
+
+            if !empty( ::oDbfVir:cCodPr1 )
+               if( !empty(::oValPr1), ::oValPr1:show(), )
+               if( !empty(::oSayPr1), ::oSayPr1:show(), )
+               if( !empty(::oSayPr1), ::oSayPr1:setText( retProp( ::oDbfVir:cCodPr1 ) ), )
+               if( !empty(::oSayVp1), ::oSayVp1:show(), )
+            else
+               if( !empty(::oValPr1), ::oValPr1:Hide(), )
+               if( !empty(::oSayPr1), ::oSayPr1:Hide(), )
+               if( !empty(::oSayVp1), ::oSayVp1:Hide(), )
+            end
+
+            if !empty( ::oDbfVir:cCodPr2 )
+               if( !empty(::oValPr2), ::oValPr2:show(), )
+               if( !empty(::oSayPr2), ::oSayPr2:show(), )
+               if( !empty(::oSayPr2), ::oSayPr2:setText( retProp( ::oDbfVir:cCodPr2 ) ), )
+               if( !empty(::oSayVp2), ::oSayVp2:show(), )
+            else
+               if( !empty(::oValPr2), ::oValPr2:Hide(), )
+               if( !empty(::oSayPr2), ::oSayPr2:Hide(), )
+               if( !empty(::oSayVp2), ::oSayVp2:Hide(), )
+            end
+
+
+
+            do case
+               case !empty( ::oDbfVir:cCodPr1 ) .AND. empty( ::oDbfVir:cValPr1 )
+                  if( !empty(::oValPr1), ::oValPr1:SetFocus(), )
+
+               case !empty( ::oDbfVir:cCodPr2 ) .AND. empty( ::oDbfVir:cValPr2 )
+                  if( !empty(::oValPr2), ::oValPr2:SetFocus(), )
+
+               case ::oDbfVir:lLote
+                  if( !empty(::oGetLote), ::oGetLote:SetFocus(), )
+
+               otherwise
+                  if( !empty(::oUndMov), ::oUndMov:SetFocus(), )
+
+            end
+
+         end
+
+
+
+         if Empty( dFechaCaducidad )
+
+            if !empty( ::oFechaCaducidad )
+               ::oFechaCaducidad:cText( StocksModel():getFechaCaducidad( ::oDbfVir:cRefMov, ::oDbfVir:cCodPr1, ::oDbfVir:cCodPr2, ::oDbfVir:cValPr1, ::oDbfVir:cValPr2, ::oDbfVir:cLote ) )
+            else
+               ::oDbfVir:dFecCad    := StocksModel():getFechaCaducidad( ::oDbfVir:cRefMov, ::oDbfVir:cCodPr1, ::oDbfVir:cCodPr2, ::oDbfVir:cValPr1, ::oDbfVir:cValPr2, ::oDbfVir:cLote )
+            end
+
+         else
+
+            if !empty( ::oFechaCaducidad )
+               ::oFechaCaducidad:cText( dFechaCaducidad )
+            else
+               ::oDbfVir:dFecCad    := dFechaCaducidad
+            end
+
+         end
+
+
+
+         if !empty( ::oPreDiv )
+            ::oPreDiv:cText( ::getPrecioCosto() )
+         else
+            ::oDbfVir:nPreDiv    := ::getPrecioCosto()
+         end
+
+
+
+
+
+
+
+
+
+
+
+
+
+         SysRefresh()
+
+      end
+
+
+
+      ::cOldLote              := ::oDbfVir:cLote
+      ::cOldCodArt            := ::oDbfVir:cRefMov
+      ::cOldValPr1            := ::oDbfVir:cValPr1
+      ::cOldValPr2            := ::oDbfVir:cValPr2
+
+      CursorWE()
+
+   else
+
+      if !lSilenceMode
+         msgstop( "Artículo no encontrado." )
+      end
+
+      Return .F.
+
+   end
+
+   ::lBefore                  := .F.
+
+Return .T.
+
+
+
+static FUNCTION TDetMovimientos_getPrecioCosto( ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+
+   local nPrecioCosto   := 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   if ( nPrecioCosto == 0 )
+      nPrecioCosto      := nCosto( ::oDbfVir:cRefMov, ::oParent:oArt:cAlias, ::oParent:oArtKit:cAlias )
+   end
+
+Return ( nPrecioCosto )
+
+
+
+static FUNCTION TDetMovimientos_SetDlgMode( nMode, oSayTotal, oSayPre ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   ::oBrwPrp:Hide()
+
+   if ( ::oParent:oDbf:nTipMov == 3 )
+      ::oBtnSerie:Hide()
+   end
+
+   if nMode == 1
+
+      ::oSayLote:Hide()
+      ::oGetLote:Hide()
+
+      ::oFechaCaducidad:Hide()
+
+      ::oValPr1:Hide()
+      ::oSayPr1:Hide()
+      ::oSayVp1:Hide()
+
+      ::oValPr2:Hide()
+      ::oSayPr2:Hide()
+      ::oSayVp2:Hide()
+
+      if !uFieldEmpresa( "lUseBultos" )
+         ::oGetBultos:Hide()
+         ::oSayBultos:Hide()
+      end
+
+      if !lUseCaj()
+         ::oCajMov:Hide()
+         ::oSayCaj:Hide()
+      end
+
+   else
+
+      if ::oDbfVir:lLote
+         ::oGetLote:Show()
+         ::oSayLote:Show()
+         ::oFechaCaducidad:Show()
+      else
+         ::oGetLote:Hide()
+         ::oSayLote:Hide()
+         ::oFechaCaducidad:Hide()
+      end
+
+      if !empty( ::oDbfVir:cValPr1 )
+         ::oSayPr1:Show()
+         ::oSayVp1:Show()
+         ::oValPr1:Show()
+         ::oSayPr1:SetText( retProp( ::oDbfVir:cCodPr1 ) )
+         lPrpAct( ::oDbfVir:cValPr1, ::oSayVp1, ::oDbfVir:cCodPr1, ::oParent:oTblPro:cAlias )
+      else
+         ::oValPr1:Hide()
+         ::oSayPr1:Hide()
+         ::oSayVp1:Hide()
+      end
+
+      if !empty( ::oDbfVir:cValPr2 )
+         ::oSayPr2:Show()
+         ::oSayVp2:Show()
+         ::oValPr2:Show()
+         ::oSayPr2:SetText( retProp( ::oDbfVir:cCodPr2 ) )
+         lPrpAct( ::oDbfVir:cValPr2, ::oSayVp2, ::oDbfVir:cCodPr2, ::oParent:oTblPro:cAlias )
+      else
+         ::oValPr2:Hide()
+         ::oSayPr2:Hide()
+         ::oSayVp2:Hide()
+      end
+
+      if !uFieldempresa( "lUseBultos" )
+         ::oGetBultos:Hide()
+         ::oSayBultos:Hide()
+      end
+
+      if !lUseCaj()
+         ::oCajMov:Hide()
+         ::oSayCaj:Hide()
+         ::oSayUnd:SetText( "Unidades" )
+      end
+
+   end
+
+
+
+
+
+   if !empty( ::oPreDiv ) .AND. RolesModel():getRolNoVerPreciosCosto( Auth():rolUuid() )
+      ::oPreDiv:Hide()
+   end
+
+   if !empty( oSayTotal ) .AND. RolesModel():getRolNoVerPreciosCosto( Auth():rolUuid() )
+      oSayTotal:Hide()
+   end
+
+   if !empty( oSayPre ) .AND. RolesModel():getRolNoVerPreciosCosto( Auth():rolUuid() )
+      oSayPre:Hide()
+   end
+
+
+
+
+
+   if empty( ::oParent:oDbf:cAlmOrg )
+      ::oGetAlmacenOrigen:Hide()
+      ::oTxtAlmacenOrigen:Hide()
+      ::oGetStockOrigen:Hide()
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TDetMovimientos_AppendKit( ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   local nRec     := ::oDbfVir:Recno()
+   local nNumLin  := ::oDbfVir:nNumLin
+   local cCodArt  := ::oDbfVir:cRefMov
+   local nTipMov  := ::oDbfVir:nTipMov
+   local cCodMov  := ::oDbfVir:cCodMov
+   local nCajMov  := ::oDbfVir:nCajMov
+   local nUndMov  := ::oDbfVir:nUndMov
+   local nNumRem  := ::oDbfVir:nNumRem
+   local cSufRem  := ::oDbfVir:cSufRem
+   local cCodUsr  := ::oDbfVir:cCodUsr
+   local cCodDlg  := ::oDbfVir:cCodDlg
+   local nTotUnd  := 0
+   local nStkAct  := 0
+   local nMinimo  := 0
+   local cAliMov  := ::oParent:oDbf:cAlmDes
+   local cAloMov  := ::oParent:oDbf:cAlmOrg
+
+   if ::oParent:oArtKit:SeekInOrd( cCodArt, "cCodKit" )
+
+      while ( ::oParent:oArtKit:cCodKit == cCodArt ) .AND. !( ::oParent:oArtKit:Eof() )
+
+         if ::oParent:oArt:SeekInOrd( ::oParent:oArtKit:cRefKit, "Codigo" ) .AND. lStockComponentes( cCodArt, ::oParent:oArt:cAlias )
+
+            nStkAct              := StocksModel():nGlobalStockArticulo( ::oParent:oArtKit:cRefKit, cAloMov )
+
+            ::oDbfVir:Append()
+
+            ::oDbfVir:dFecMov    := getSysDate()
+            ::oDbfVir:cTimMov    := getSysTime()
+            ::oDbfVir:nTipMov    := nTipMov
+            ::oDbfVir:cAliMov    := cAliMov
+            ::oDbfVir:cAloMov    := cAloMov
+            ::oDbfVir:cRefMov    := ::oParent:oArtKit:cRefKit
+            ::oDbfVir:cNomMov    := ::oParent:oArtKit:cDesKit
+            ::oDbfVir:cCodMov    := cCodMov
+            ::oDbfVir:cCodPr1    := Space( 20 )
+            ::oDbfVir:cCodPr2    := Space( 20 )
+            ::oDbfVir:cValPr1    := Space( 20 )
+            ::oDbfVir:cValPr2    := Space( 20 )
+            ::oDbfVir:cCodUsr    := cCodUsr
+            ::oDbfVir:cCodDlg    := cCodDlg
+            ::oDbfVir:lLote      := ::oParent:oArt:lLote
+            ::oDbfVir:nLote      := ::oParent:oArt:nLote
+            ::oDbfVir:cLote      := ::oParent:oArt:cLote
+            ::oDbfVir:nCajMov    := nCajMov
+            ::oDbfVir:nUndMov    := ::oParent:oArtKit:nUndKit * nUndMov
+
+            if nTipMov == 3
+               ::oDbfVir:nCajAnt := 0
+               ::oDbfVir:nUndAnt := nStkAct
+            end
+
+            ::oDbfVir:nPreDiv    := ::oParent:oArt:pCosto
+            ::oDbfVir:lSndDoc    := .T.
+            ::oDbfVir:nNumRem    := nNumRem
+            ::oDbfVir:cSufRem    := cSufRem
+            ::oDbfVir:lSelDoc    := .T.
+
+            ::oDbfVir:lKitArt    := .F.
+            ::oDbfVir:lNoStk     := .F.
+            ::oDbfVir:lImpLin    := lImprimirComponente( cCodArt, ::oParent:oArt:cAlias )
+            ::oDbfVir:lKitPrc    := !lPreciosComponentes( cCodArt, ::oParent:oArt:cAlias )
+
+            ::oDbfVir:nNumLin := nNumLin
+            ::oDbfVir:lKitEsc := .T.
+
+
+
+
+
+            nTotUnd              := NotCaja( ::oDbfVir:nCajMov ) * ::oDbfVir:nUndMov
+            nMinimo              := oRetFld( ::oDbfVir:cRefMov, ::oParent:oArt, "nMinimo" )
+
+            if nTotUnd <> 0 .AND. oRetFld( ::oDbfVir:cRefMov, ::oParent:oArt, "lMsgMov" )
+
+               if ( ( nStkAct - nTotUnd ) < nMinimo )
+
+
+
+
+
+
+                  msgstop( "El stock del componente " + AllTrim( ::oDbfVir:cRefMov ) + " - " + AllTrim( oRetFld( ::oDbfVir:cRefMov, ::oParent:oArt, "Nombre" ) ) + Chr(13)+Chr(10) +  "está bajo minimo." + Chr(13)+Chr(10) +  "Unidades a vender : " + AllTrim( Trans( nTotUnd, MasUnd() ) ) + Chr(13)+Chr(10) +  "Stock actual : " + AllTrim( Trans( nStkAct, MasUnd() ) )      + Chr(13)+Chr(10) +  "Stock minimo : " + AllTrim( Trans( nMinimo, MasUnd() ) ), "¡Atención!" )
+
+               end
+
+            end
+
+            ::oDbfVir:Save()
+
+         end
+
+         ::oParent:oArtKit:Skip()
+
+      end
+
+   end
+
+
+
+
+
+   ::oDbfVir:GoTo( nRec )
+
+   ::refreshDetail()
+
+RETURN ( Self )
+
+
+
+static FUNCTION TDetMovimientos_ActualizaKit( nMode ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   local nRec     := ::oDbfVir:Recno()
+   local nOrdAnt  := ::oDbfVir:OrdSetFocus( "nNumLin" )
+   local cRefMov  := ::oDbfVir:cRefMov
+   local nNumLin  := ::oDbfVir:FieldGetName( "nNumLin" )
+   local nCajMov
+   local nUndMov
+
+   do case
+      case nMode == 1
+         nCajMov  := ::oDbfVir:FieldGetName( "nCajMov" )
+         nUndMov  := ::oDbfVir:FieldGetName( "nUndMov" )
+
+      case nMode == 2
+         nCajMov  := ::oDbfVir:nCajMov
+         nUndMov  := ::oDbfVir:nUndMov
+
+   end
+
+   ::oDbfVir:GoTop()
+
+   while !::oDbfVir:Eof()
+
+
+
+      if ::oDbfVir:FieldGetName( "nNumLin" ) == nNumLin        .AND. ::oDbfVir:FieldGetName( "lKitEsc" )                   .AND. ::oParent:oArtKit:SeekInOrd( cRefMov + ::oDbfVir:FieldGetName( "cRefMov" ), "cCodRef" )
+
+         ::oDbfVir:FieldPutByName( "nCajMov", nCajMov )
+         ::oDbfVir:FieldPutByName( "nUndMov", ( nUndMov * ::oParent:oArtKit:nUndKit ) )
+
+      end
+
+      ::oDbfVir:Skip()
+
+   end
+
+   ::oDbfVir:OrdSetFocus( nOrdAnt )
+
+   ::oDbfVir:GoTo( nRec )
+
+RETURN ( Self )
+
+
+
+
+
+
+static FUNCTION TDetMovimientos_Save( ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   local nSec
+   local oWaitMeter
+   local nKeyCount   := ::oDbfVir:ordKeyCount()
+
+   oWaitMeter        := TWaitMeter():New( "Guardando movimientos de almacén", "Espere por favor..." )
+   oWaitMeter:Run()
+   oWaitMeter:setTotal( nKeyCount )
+
+   cursorWait()
+
+   ::oDbfVir:KillFilter()
+
+   ::oDbfVir:GetStatus()
+   ::oDbfVir:OrdSetFocus( 0 )
+
+   do case
+   case ::oParent:oDbf:nTipMov == 1
+
+      ::oDbfVir:GoTop()
+      while !::oDbfVir:Eof()
+
+         ::Asigna()
+
+         ::oDbf:AppendFromObject( ::oDbfVir )
+
+         ::oDbfVir:Skip()
+
+         oWaitMeter:setMessage( "Guardando movimiento " + alltrim( str( ::oDbfVir:OrdKeyNo() ) ) + " de " + alltrim( str( nKeyCount ) ) )
+         oWaitMeter:AutoInc()
+
+      end
+
+   case ::oParent:oDbf:nTipMov == 2
+
+      ::oDbfVir:GoTop()
+      while !::oDbfVir:Eof()
+
+         ::Asigna()
+
+         ::oDbf:AppendFromObject( ::oDbfVir )
+
+         ::oDbfVir:Skip()
+
+         oWaitMeter:setMessage( "Guardando movimiento " + alltrim( str( ::oDbfVir:OrdKeyNo() ) ) + " de " + alltrim( str( nKeyCount ) ) )
+         oWaitMeter:AutoInc()
+
+      end
+
+   case ::oParent:oDbf:nTipMov == 3
+
+      ::oDbfVir:GoTop()
+      while !::oDbfVir:Eof()
+
+
+
+
+
+
+
+
+
+
+
+
+            ::Asigna()
+
+            ::oDbf:AppendFromObject( ::oDbfVir )
+
+
+
+         ::oDbfVir:Skip()
+
+         oWaitMeter:setMessage( "Guardando movimiento " + alltrim( str( ::oDbfVir:OrdKeyNo() ) ) + " de " + alltrim( str( nKeyCount ) ) )
+         oWaitMeter:AutoInc()
+
+      end
+
+   case ::oParent:oDbf:nTipMov == 4
+
+      ::oDbfVir:GoTop()
+      while !::oDbfVir:Eof()
+
+         ::Asigna()
+
+         ::oDbf:AppendFromObject( ::oDbfVir )
+
+         ::oDbfVir:Skip()
+
+         oWaitMeter:setMessage( "Guardando movimiento " + alltrim( str( ::oDbfVir:OrdKeyNo() ) ) + " de " + alltrim( str( nKeyCount ) ) )
+         oWaitMeter:AutoInc()
+
+      end
+
+   end
+
+   ::oDbfVir:SetStatus()
+
+   oWaitMeter:end()
+
+   cursorWE()
+
+Return .T.
+
+
+
+static FUNCTION TDetMovimientos_Asigna( ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   ::oDbfVir:fieldPutByName( "nNumRem",   ::oParent:oDbf:nNumRem )
+   ::oDbfVir:fieldPutByName( "cSufRem",   ::oParent:oDbf:cSufRem )
+   ::oDbfVir:fieldPutByName( "dFecMov",   ::oParent:oDbf:dFecRem )
+   ::oDbfVir:fieldPutByName( "cTimMov",   ::oParent:oDbf:cTimRem )
+   ::oDbfVir:fieldPutByName( "nTipMov",   ::oParent:oDbf:nTipMov )
+   ::oDbfVir:fieldPutByName( "cCodMov",   ::oParent:oDbf:cCodMov )
+   ::oDbfVir:fieldPutByName( "cAliMov",   ::oParent:oDbf:cAlmDes )
+   ::oDbfVir:fieldPutByName( "cAloMov",   ::oParent:oDbf:cAlmOrg )
+   ::oDbfVir:fieldPutByName( "cCodUsr",   ::oParent:oDbf:cCodUsr )
+   ::oDbfVir:fieldPutByName( "cCodDlg",   ::oParent:oDbf:cCodDlg )
+   ::oDbfVir:fieldPutByName( "lWait",     ::oParent:oDbf:lWait   )
+   ::oDbfVir:fieldPutByName( "cGuidPar",  ::oParent:oDbf:cGuid   )
+   ::oDbfVir:fieldPutByName( "lSndDoc",   .T. )
+
+   if Empty( ::oDbfVir:FieldGetByName( "cGuid" ) )
+      ::oDbfVir:fieldPutByName( "cGuid",  win_uuidcreatestring() )
+   end
+
+RETURN ( Self )
+
+
+
+static FUNCTION TDetMovimientos_nTotRemVir( lPic ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   local nTot     := 0
+
+   If( lPic == nil, lPic := .F., ) ;
+
+   if ::oDbfVir <> nil .AND. ::oDbfVir:Used()
+
+      ::oDbfVir:GetStatus()
+      ::oDbfVir:GoTop()
+
+      while !::oDbfVir:eof()
+         nTot     += nTotLMovAlm( ::oDbfVir )
+         ::oDbfVir:Skip()
+      end
+
+      ::oDbfVir:SetStatus()
+
+   end
+
+RETURN ( if( lPic, Trans( nTot, ::oParent:cPirDiv ), nTot ) )
+
+
+
+static FUNCTION TDetMovimientos_nTotUnidadesVir( lPic ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   local nTot     := 0
+
+   If( lPic == nil, lPic := .F., ) ;
+
+   if ::oDbfVir <> nil .AND. ::oDbfVir:Used()
+
+      ::oDbfVir:GetStatus()
+      ::oDbfVir:GoTop()
+
+      while !::oDbfVir:eof()
+         nTot     += nTotNMovAlm( ::oDbfVir )
+         ::oDbfVir:Skip()
+      end
+
+      ::oDbfVir:SetStatus()
+
+   end
+
+RETURN ( if( lPic, Trans( nTot, ::oParent:cPicUnd ), nTot ) )
+
+
+
+static FUNCTION TDetMovimientos_nTotPesoVir( lPic ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   local nPeso    := 0
+
+   If( lPic == nil, lPic := .F., ) ;
+
+   if ::oDbfVir <> nil .AND. ::oDbfVir:Used()
+
+      ::oDbfVir:GetStatus()
+      ::oDbfVir:GoTop()
+
+      while !::oDbfVir:Eof()
+         nPeso    += ( NotCaja( ::oDbfVir:nCajMov ) * ::oDbfVir:nUndMov ) * ::oDbfVir:nPesoKg
+         ::oDbfVir:Skip()
+      end
+
+      ::oDbfVir:SetStatus()
+
+   end
+
+RETURN ( if( lPic, Trans( nPeso, MasUnd() ), nPeso ) )
+
+
+
+static FUNCTION TDetMovimientos_nTotVolumenVir( lPic ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   local nVolumen    := 0
+
+   If( lPic == nil, lPic := .F., ) ;
+
+   if ::oDbfVir <> nil .AND. ::oDbfVir:Used()
+
+      ::oDbfVir:GetStatus()
+      ::oDbfVir:GoTop()
+
+      while !::oDbfVir:Eof()
+         nVolumen    += ( NotCaja( ::oDbfVir:nCajMov ) * ::oDbfVir:nUndMov ) * ::oDbfVir:nVolumen
+         ::oDbfVir:Skip()
+      end
+
+      ::oDbfVir:SetStatus()
+
+   end
+
+RETURN ( if( lPic, Trans( nVolumen, MasUnd() ), nVolumen ) )
+
+
+
+static FUNCTION TDetMovimientos_recalcularPrecios( ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   local nKeyCount
+   local oWaitMeter
+
+   if !msgYesNo( "¿Desea recalcular los precios de costo y el stock actual?", "Confirme")
+      Return .F.
+   end
+
+   ::cOldCodArt      := ""
+   ::cOldAliMov      := ""
+   ::cOldValPr1      := ""
+   ::cOldValPr2      := ""
+
+   ::oDbfVir:getStatus()
+   ::oDbfVir:ordsetfocus( "cRefAlm" )
+
+   nKeyCount         := ::oDbfVir:ordKeyCount()
+
+   oWaitMeter        := TWaitMeter():New( "Recalculando precios y stock", "Espere por favor..." )
+   oWaitMeter:Run()
+   oWaitMeter:setTotal( nKeyCount )
+
+   CursorWait()
+
+
+
+   ::oDbfVir:GoTop()
+   while !( ::oDbfVir:eof() )
+
+      if ::isKeyFieldValues()
+         ::accumulatesFieldValues()
+      end
+
+      ::putFieldValues()
+
+      ::oDbfVir:Skip()
+
+   end
+
+
+
+   ::oDbfVir:GoTop()
+   while !( ::oDbfVir:eof() )
+
+      ::oDbfVir:FieldPutByName( "nPreDiv", ::getPrecioCosto() )
+
+      oWaitMeter:setMessage( "Recalculando precios y stock " + alltrim( str( ::oDbfVir:OrdKeyNo() ) ) + " de " + alltrim( str( nKeyCount ) ) )
+      oWaitMeter:AutoInc()
+
+      ::oDbfVir:Skip()
+
+   end
+
+   ::oDbfVir:getStatus()
+
+   oWaitMeter:end()
+
+   CursorWE()
+
+Return ( .T. )
+
+
+
+static FUNCTION TDetMovimientos_putFieldValues( ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   ::cOldCodArt        := ::oDbfVir:fieldGetByName( "cRefMov" )
+   ::cOldAliMov        := ::oDbfVir:fieldGetByName( "cAliMov" )
+   ::cOldValPr1        := ::oDbfVir:fieldGetByName( "cValPr1" )
+   ::cOldValPr2        := ::oDbfVir:fieldGetByName( "cValPr2" )
+
+Return ( self )
+
+
+
+static FUNCTION TDetMovimientos_isKeyFieldValues( ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+
+
+
+Return ( ::oDbfVir:fieldGetByName( "cRefMov" ) == ::cOldCodArt .AND.  ::oDbfVir:fieldGetByName( "cAliMov" ) == ::cOldAliMov .AND.  ::oDbfVir:fieldGetByName( "cValPr1" ) == ::cOldValPr1 .AND.  ::oDbfVir:fieldGetByName( "cValPr2" ) == ::cOldValPr2 )
+
+
+
+static FUNCTION TDetMovimientos_accumulatesFieldValues( ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   local recno                := ::oDbfVir:recno()
+   local cajasMovimiento      := ::oDbfVir:fieldGetByName( "nCajMov" )
+   local unidadesMovimiento   := ::oDbfVir:fieldGetByName( "nUndMov" )
+
+   ::oDbfVir:skip( -1 )
+
+   cajasMovimiento            += ::oDbfVir:fieldGetByName( "nCajMov" )
+   unidadesMovimiento         += ::oDbfVir:fieldGetByName( "nUndMov" )
+
+   ::oDbfVir:fieldPutByName( "nCajMov", cajasMovimiento )
+   ::oDbfVir:fieldPutByName( "nUndMov", unidadesMovimiento )
+
+   ::oDbfVir:skip( 1 )
+
+   ::oDbfVir:delete()
+
+   ::oDbfVir:goto( recno )
+
+Return ( self )
+
+
+
+static FUNCTION TDetMovimientos_isNumeroSerieNecesario( nMode, lMessage ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   if ( nMode <> 1 )
+      Return .F.
+   end
+
+   if ( ::oParent:oDbf:nTipMov == 3 )
+      Return .F.
+   end
+
+   If( lMessage == nil, lMessage := .T., ) ;
+
+   ::lNumeroSerieNecesario          := retfld( ::oDbfVir:cRefMov, ::oParent:oArt:cAlias, "lNumSer" )
+   ::lNumeroSerieIntroducido        := ::oParent:oDetSeriesMovimientos:oDbfVir:SeekInOrd( Str( ::oDbfVir:nNumLin, 4 ) + ::oDbfVir:cRefMov, "nNumLin" )
+
+   if ( ::lNumeroSerieNecesario ) .AND. ( !::lNumeroSerieIntroducido )
+
+      if lMessage
+         msgstop( "Tiene que introducir números de serie para este artículo." )
+      end
+
+      if !empty( ::oBtnSerie )
+         ::oBtnSerie:Click()
+      end
+
+      Return .T.
+
+   end
+
+Return ( .F. )
+
+
+
+static FUNCTION TDetMovimientos_alertControlStockUnderMin( nStock ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   local nTotUnd
+   local nStkAct
+   local lReturn     := .T.
+   local cText       := ""
+
+   if ( ::oDbf:nTipMov > 1 )
+      Return ( lReturn )
+   end
+
+   if empty( ::oDbfVir )
+      Return ( lReturn )
+   end
+
+   if !empty( nStock )
+      nStkAct        := nStock
+   else
+      nStkAct        := ::oGetStockOrigen:VarGet()
+   end
+
+   nTotUnd           := nTotNRemMov( ::oDbfVir )
+
+   if nTotUnd <> 0 .AND. oRetFld( ::oDbfVir:cRefMov, ::oParent:oArt, "lMsgMov" )
+
+      if ( nStkAct - nTotUnd ) < oRetFld( ::oDbfVir:cRefMov, ::oParent:oArt, "nMinimo" )
+
+         cText       := " ( propiedad 1: " + AllTrim( ::oDbfVir:cValPr1 )
+         cText       += " propiedad 2: " + AllTrim( ::oDbfVir:cValPr2 ) + " )" + Chr(13)+Chr(10)
+         cText       += " Stock actual: " + AllTrim( Trans( nStkAct, MasUnd() ) ) + Chr(13)+Chr(10)
+         cText       += " Unidades a mover: " + AllTrim( Trans( nTotUnd, MasUnd() ) )
+
+         if !ApoloMsgNoYes( "El stock está por debajo del minimo." + Chr(13)+Chr(10) + cText, "¿Desea continuar?" )
+
+            lReturn  := .F.
+
+         end
+
+      end
+
+   end
+
+Return ( lReturn )
+
+
+
+static FUNCTION TDetMovimientos_setPropertiesData( ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   ::cRefMov   := ::oDbfVir:cRefMov
+   ::cNomMov   := ::oDbfVir:cNomMov
+   ::dFecMov   := ::oDbfVir:dFecMov
+   ::cTimMov   := ::oDbfVir:cTimMov
+   ::nTipMov   := ::oDbfVir:nTipMov
+   ::cCodMov   := ::oDbfVir:cCodMov
+   ::nPreDiv   := ::oDbfVir:nPreDiv
+   ::nCajMov   := ::oDbfVir:nCajMov
+
+Return ( .F. )
+
+
+
+static FUNCTION TDetMovimientos_processPropertiesGrid( ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   local n
+   local i
+   local cAliMov
+   local cAloMov
+
+   if empty( ::oDbfVir )
+      Return nil
+   end
+
+   if empty( ::oParent )
+      Return nil
+   end
+
+   cAliMov                       := ::oParent:oDbf:cAlmDes
+   cAloMov                       := ::oParent:oDbf:cAlmOrg
+
+
+
+   for n := 1 to len( ::oBrwPrp:Cargo )
+
+      for i := 1 to len( ::oBrwPrp:Cargo[ n ] )
+
+         if isNum( ::oBrwPrp:Cargo[ n, i ]:Value ) .AND. ( ::oBrwPrp:Cargo[ n, i ]:Value <> 0 )
+
+            ::oDbfVir:Blank()
+
+            ::oDbfVir:cRefMov    := ::cRefMov
+            ::oDbfVir:cNomMov    := ::cNomMov
+            ::oDbfVir:dFecMov    := ::dFecMov
+            ::oDbfVir:cTimMov    := ::cTimMov
+            ::oDbfVir:nTipMov    := ::nTipMov
+            ::oDbfVir:cCodMov    := ::cCodMov
+            ::oDbfVir:nCajMov    := ::nCajMov
+
+            ::oDbfVir:cAliMov    := cAliMov
+            ::oDbfVir:cAloMov    := cAloMov
+
+            ::oDbfVir:cCodPr1    := ::oBrwPrp:Cargo[ n, i ]:cCodigoPropiedad1
+            ::oDbfVir:cCodPr2    := ::oBrwPrp:Cargo[ n, i ]:cCodigoPropiedad2
+            ::oDbfVir:cValPr1    := ::oBrwPrp:Cargo[ n, i ]:cValorPropiedad1
+            ::oDbfVir:cValPr2    := ::oBrwPrp:Cargo[ n, i ]:cValorPropiedad2
+            ::oDbfVir:nUndMov    := ::oBrwPrp:Cargo[ n, i ]:Value
+            ::oDbfVir:cCodUsr    := Auth():Codigo()
+            ::oDbfVir:cCodDlg    := Application():CodigoDelegacion()
+            ::oDbfVir:lSelDoc    := .T.
+            ::oDbfVir:lSndDoc    := .T.
+            ::oDbfVir:nNumLin    := nLastNum( ::oDbfVir:cAlias )
+            ::oDbfVir:nVolumen   := oRetFld( ::cRefMov, ::oParent:oArt, "" )
+            ::oDbfVir:cVolumen   := oRetFld( ::cRefMov, ::oParent:oArt, "" )
+            ::oDbfVir:nPesoKg    := oRetFld( ::cRefMov, ::oParent:oArt, "" )
+            ::oDbfVir:cPesoKg    := oRetFld( ::cRefMov, ::oParent:oArt, "" )
+
+            if ( ::oBrwPrp:Cargo[ n, i ]:nPrecioCompra <> 0 )
+               ::oDbfVir:nPreDiv := ::oBrwPrp:Cargo[ n, i ]:nPrecioCompra
+            else
+               ::oDbfVir:nPreDiv := ::nPreDiv
+            end
+
+            ::oDbfVir:Insert()
+
+         end
+
+      next
+
+   next
+
+Return ( nil )
+
+
+
+static FUNCTION TDetMovimientos_accumulatesStoreMovement( ) ; local Self AS CLASS TDetMovimientos := QSelf() AS CLASS TDetMovimientos
+
+   local lFound         := .F.
+
+   if empty( ::oDbfVir )
+      Return ( lFound )
+   end
+
+   if !( ::oDbfVir:getBuffer() )
+      Return ( lFound )
+   end
+
+   ::oDbfVir:GetStatus()
+
+   ::oDbfVir:GoTop()
+   while !( ::oDbfVir:eof() )
+
+
+
+
+
+
+
+
+      if alltrim( ::oDbfVir:fieldGetName( "cRefMov" ) ) == alltrim( ::oDbfVir:fieldGetBuffer( "cRefMov" ) ) .AND.  alltrim( ::oDbfVir:fieldGetName( "cLote"   ) ) == alltrim( ::oDbfVir:fieldGetBuffer( "cLote"   ) ) .AND.  alltrim( ::oDbfVir:fieldGetName( "cCodPr1" ) ) == alltrim( ::oDbfVir:fieldGetBuffer( "cCodPr1" ) ) .AND.  alltrim( ::oDbfVir:fieldGetName( "cCodPr2" ) ) == alltrim( ::oDbfVir:fieldGetBuffer( "cCodPr2" ) ) .AND.  alltrim( ::oDbfVir:fieldGetName( "cValPr1" ) ) == alltrim( ::oDbfVir:fieldGetBuffer( "cValPr1" ) ) .AND.  alltrim( ::oDbfVir:fieldGetName( "cValPr2" ) ) == alltrim( ::oDbfVir:fieldGetBuffer( "cValPr2" ) ) .AND.  ::oDbfVir:fieldGetName( "nCajMov" ) == ::oDbfVir:fieldGetBuffer( "nCajMov" )                       .AND.  ::oDbfVir:fieldGetName( "nPrediv" ) == ::oDbfVir:fieldGetBuffer( "nPreDiv" )
+
+         ::oDbfVir:fieldPutByName( "nCajMov", ( ::oDbfVir:fieldGetName( "nCajMov" ) + ::oDbfVir:fieldGetBuffer( "nCajMov" ) ) )
+         ::oDbfVir:fieldPutByName( "nUndMov", ( ::oDbfVir:fieldGetName( "nUndMov" ) + ::oDbfVir:fieldGetBuffer( "nUndMov" ) ) )
+         ::oDbfVir:fieldPutByName( "lSelDoc", .T. )
+
+         if ::oDbfVir:fieldGetName( "lKitArt" )
+            ::actualizaKit( 1 )
+         end
+
+         lFound         := .T.
+
+         exit
+
+      end
+
+      ::oDbfVir:Skip()
+
+   end
+
+   ::oDbfVir:SetStatus()
+
+Return ( lFound )
