@@ -3888,3 +3888,9 @@
 23/01/2025 14:01:00: EXCESS RELEASE OF FONT Segoe UI[ hFont : 0] ( nCount : -1 )
 	 <-TFONT:END(285) <-TWINDOW:DESTROY(2166) <-TWINDOW:HANDLEEVENT(0) <-_FWH(3368) <-WINRUN(0) <-TWINDOW:ACTIVATE(1043) <-REPORTBAR(1723) <-MAIN(121)
 	------------------------------------------------------------	
+07/08/2025 11:38:49: EXCESS RELEASE OF FONT Segoe UI[ hFont : 0] ( nCount : 0 )
+	 <-TFONT:END(285) <-TBUTTON:DESTROY(2166) <-TWINDOW:HANDLEEVENT(0) <-TBUTTON:HANDLEEVENT(1731) <-_FWH(3368) <-DIALOGBOX(0) <-TDIALOG:ACTIVATE(318) <-TDIACREC:ACTIVATE(1349) <-TDIACREC:PLAY(5725)
+	------------------------------------------------------------	
+07/08/2025 11:39:04: EXCESS RELEASE OF FONT Segoe UI[ hFont : 0] ( nCount : -1 )
+	 <-TFONT:END(285) <-TWINDOW:DESTROY(2166) <-TWINDOW:HANDLEEVENT(0) <-_FWH(3368) <-WINRUN(0) <-TWINDOW:ACTIVATE(1043) <-REPORTBAR(1723) <-MAIN(121)
+	------------------------------------------------------------	

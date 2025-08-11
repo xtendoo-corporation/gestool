@@ -1983,6 +1983,7 @@ function aItmTarifaLineas()
    aAdd( aItmTar, { "CVALPR1",   "C",   20,    0, "Valor de primera propiedad" }     )
    aAdd( aItmTar, { "CVALPR2",   "C",   20,    0, "Valor de segunda propiedad" }     )
    aAdd( aItmTar, { "LSEL",      "L",    1,    0, "Lógico seleccionado" }     )
+   aAdd( aItmTar, { "NPOSPRINT", "N",   16,    6, "Posición" }     )
 
 Return ( aItmTar )
 

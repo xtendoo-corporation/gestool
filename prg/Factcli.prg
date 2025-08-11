@@ -14408,8 +14408,8 @@ STATIC FUNCTION EndTrans( aTmp, aGet, oBrw, oBrwDet, oBrwPgo, aNumAlb, nMode, oD
 
    TComercio:resetProductsToUpdateStocks()
 
-   oBlock      := ErrorBlock( { | oError | ApoloBreak( oError ) } )
-   BEGIN SEQUENCE
+   /*oBlock      := ErrorBlock( { | oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE*/
 
       oMsgText( "Archivando" )
       
@@ -14433,8 +14433,8 @@ STATIC FUNCTION EndTrans( aTmp, aGet, oBrw, oBrwDet, oBrwPgo, aNumAlb, nMode, oD
 
          // Obtenemos el nuevo numero de la factura----------------------------------
 
-         //nNumFac              := nNewDoc( cSerFac, D():FacturasClientes( nView ), "NFACCLI", , D():Contadores( nView ) )
-         //aTmp[ _NNUMFAC ]     := nNumFac
+         nNumFac              := nNewDoc( cSerFac, D():FacturasClientes( nView ), "NFACCLI", , D():Contadores( nView ) )
+         aTmp[ _NNUMFAC ]     := nNumFac
          cSufFac              := retSufEmp()
          aTmp[ _CSUFFAC ]     := cSufFac
          aTmp[ _LIMPALB ]     := !empty( aNumAlb )
@@ -14634,14 +14634,14 @@ STATIC FUNCTION EndTrans( aTmp, aGet, oBrw, oBrwDet, oBrwPgo, aNumAlb, nMode, oD
 
       ChkLqdFacCli( nil, D():FacturasClientes( nView ), D():FacturasClientesLineas( nView ), D():FacturasClientesCobros( nView ), , dbfIva, dbfDiv )
 
-   RECOVER USING oError
+   /*RECOVER USING oError
 
       RollBackTransaction()
 
       msgStop( "Imposible almacenar documento" + CRLF + ErrorMessage( oError ) )
 
    END SEQUENCE
-   ErrorBlock( oBlock )
+   ErrorBlock( oBlock )*/
 
    /*
    Cerramos el dialogo---------------------------------------------------------
@@ -23665,8 +23665,12 @@ Return ( FullQrDir() + ( D():FacturasClientes( nView ) )->cSerie + AllTrim( Str(
 
 Static Function PublicarFactura()
 
+	local nNumFac
 
 	if !( D():FacturasClientes( nView ) )->lValida
+
+		//nNumFac              := nNewDoc( cSerFac, D():FacturasClientes( nView ), "NFACCLI", , D():Contadores( nView ) )
+        //aTmp[ _NNUMFAC ]     := nNumFac
 
 		if dbLock( D():FacturasClientes( nView ) )
 	    	( D():FacturasClientes( nView ) )->lValida := .t.

@@ -2116,7 +2116,7 @@ static FUNCTION TFabricantes_DefineFiles( cPath, cDriver ) ; local Self AS CLASS
       ::oDbf:AddField( "bSndDoc", "B", 14, 0,,,, {|| ::oDbf:lSndDoc }, { "Envio", "gc_mail2_16", 3 }, .F., 20, .F., {"gc_mail2_12", "Nil16"} )
       ::oDbf:AddField( "bPubInt", "B", 14, 0,,,, {|| ::oDbf:lPubInt}, { "Publicar", "gc_earth_16", 3 }, .F., 20, .F., {"gc_earth_12", "Nil16"} )
       ::oDbf:AddField( "cCodFab", "C", 3, 0, "@!",,,, "Código", .F., 60, .F., {} )
-      ::oDbf:AddField( "cNomFab", "C", 35, 0,,,,, "Nombre", .F., 200, .F., {} )
+      ::oDbf:AddField( "cNomFab", "C", 150, 0,,,,, "Nombre", .F., 250, .F., {} )
       ::oDbf:AddField( "lPubInt", "L", 1, 0,,,,, "Publicar", .F.,, .T., {} )
       ::oDbf:AddField( "cImgLogo", "C", 254, 0,,,,, "Imagen logo", .F.,, .T., {} )
       ::oDbf:AddField( "cCodWeb", "N", 11, 0,,,,, "Código Web", .F.,, .T., {} )

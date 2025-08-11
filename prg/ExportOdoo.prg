@@ -41,6 +41,12 @@ CLASS ExportOdoo
 
    METHOD ExportaArticulos()
 
+   METHOD ExportaArticulos2()
+   METHOD ExportaArticulos3()
+   METHOD ExportaArticulos4()
+   METHOD ExportaArticulos5()
+   METHOD ExportaArticulos6()
+
    METHOD ExportaAtipicas()
 
    METHOD ExportaTickets()
@@ -87,7 +93,7 @@ METHOD New() CLASS ExportOdoo
    ::aMtrIndices  := Array( 10 )
    ::aNumIndices  := Afill( Array( 10 ), 0 )
 
-   ::cConector    := ","
+   ::cConector    := ";"
 
    ::cIncidencia  := ""
 
@@ -251,6 +257,11 @@ METHOD Exportar() CLASS ExportOdoo
 
    if ::aLgcIndices[ 2 ]
       ::ExportaArticulos()
+      ::ExportaArticulos2()
+      ::ExportaArticulos3()
+      ::ExportaArticulos4()
+      ::ExportaArticulos5()
+      ::ExportaArticulos6()
    end if
 
    if ::aLgcIndices[ 3 ]
@@ -359,8 +370,8 @@ METHOD ExportaClientes() CLASS ExportOdoo
          cMemo                   += ::cConector
          cMemo                   += ::cClearStr( PaisModel():getNombre( allTrim( ( cSqlCli )->cCodPai ) ) ) //"España"                                                                //country_id España
          cMemo                   += ::cConector
-         cMemo                   += ::cClearStr( StrTran( ( cSqlCli )->mComent, CRLF , " " ) )              //comment
-         cMemo                   += ::cConector
+         //cMemo                   += ::cClearStr( StrTran( ( cSqlCli )->mComent, CRLF , " " ) )              //comment
+         //cMemo                   += ::cConector
          cMemo                   += ::cClearStr( GrupoClientesModel():getName( ( cSqlCli )->cCodGrp ) )     //grupo
          cMemo                   += ::cConector
          cMemo                   += "1"                                                                     //customer_rank
@@ -443,8 +454,8 @@ METHOD ExportaClientes() CLASS ExportOdoo
       cMemo                   += ::cConector
       cMemo                   += ::cClearStr( PaisModel():getNombre( allTrim( ( cSqlPrv )->cCodPai ) ) )    //"España"                                                                   //country_id España
       cMemo                   += ::cConector
-      cMemo                   += ::cClearStr( StrTran( ( cSqlPrv )->mComent, CRLF, " " ) )                  //comment
-      cMemo                   += ::cConector
+      //cMemo                   += ::cClearStr( StrTran( ( cSqlPrv )->mComent, CRLF, " " ) )                  //comment
+      //cMemo                   += ::cConector
       cMemo                   += ""                                                                         //grupo
       cMemo                   += ::cConector
       cMemo                   += "0"                                                                        //customer_rank
@@ -927,6 +938,191 @@ Return ( .t. )
 
 //---------------------------------------------------------------------------//
 
+METHOD ExportaArticulos2() CLASS ExportOdoo
+
+   local cSql                 := "articulos"
+   local cMemo                := ""
+   local cNameFile
+
+   ::oSayProcess:setText( "Exportando artículos" )
+
+   ArticulosModel():getToOdoo( @cSql )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 2 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      cMemo                   += "AAAAAA"
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( strtran( ( cSql )->Codigo, ",", "." ) )            //default_code
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( ( cSql )->pVenta2 )                        //list_price
+      cMemo                   += CRLF
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 2 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end while
+
+   ::aMtrIndices[ 2 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "Product2" )
+
+Return ( .t. )
+
+//---------------------------------------------------------------------------//
+
+METHOD ExportaArticulos3() CLASS ExportOdoo
+
+   local cSql                 := "articulos"
+   local cMemo                := ""
+   local cNameFile
+
+   ::oSayProcess:setText( "Exportando artículos" )
+
+   ArticulosModel():getToOdoo( @cSql )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 2 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      cMemo                   += "AAAAAA"
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( strtran( ( cSql )->Codigo, ",", "." ) )            //default_code
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( ( cSql )->pVenta3 )                        //list_price
+      cMemo                   += CRLF
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 2 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end while
+
+   ::aMtrIndices[ 2 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "Product3" )
+
+Return ( .t. )
+
+//---------------------------------------------------------------------------//
+
+METHOD ExportaArticulos4() CLASS ExportOdoo
+
+   local cSql                 := "articulos"
+   local cMemo                := ""
+   local cNameFile
+
+   ::oSayProcess:setText( "Exportando artículos" )
+
+   ArticulosModel():getToOdoo( @cSql )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 2 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      cMemo                   += "AAAAAA"
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( strtran( ( cSql )->Codigo, ",", "." ) )            //default_code
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( ( cSql )->pVenta4 )                        //list_price
+      cMemo                   += CRLF
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 2 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end while
+
+   ::aMtrIndices[ 2 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "Product4" )
+
+Return ( .t. )
+
+//---------------------------------------------------------------------------//
+
+METHOD ExportaArticulos5() CLASS ExportOdoo
+
+   local cSql                 := "articulos"
+   local cMemo                := ""
+   local cNameFile
+
+   ::oSayProcess:setText( "Exportando artículos" )
+
+   ArticulosModel():getToOdoo( @cSql )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 2 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      cMemo                   += "AAAAAA"
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( strtran( ( cSql )->Codigo, ",", "." ) )            //default_code
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( ( cSql )->pVenta5 )                        //list_price
+      cMemo                   += CRLF
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 2 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end while
+
+   ::aMtrIndices[ 2 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "Product5" )
+
+Return ( .t. )
+
+//---------------------------------------------------------------------------//
+
+METHOD ExportaArticulos6() CLASS ExportOdoo
+
+   local cSql                 := "articulos"
+   local cMemo                := ""
+   local cNameFile
+
+   ::oSayProcess:setText( "Exportando artículos" )
+
+   ArticulosModel():getToOdoo( @cSql )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 2 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      cMemo                   += "AAAAAA"
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( strtran( ( cSql )->Codigo, ",", "." ) )            //default_code
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( ( cSql )->pVenta6 )                        //list_price
+      cMemo                   += CRLF
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 2 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end while
+
+   ::aMtrIndices[ 2 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "Product6" )
+
+Return ( .t. )
+
+//---------------------------------------------------------------------------//
+
 METHOD ExportaFamilias()
 
    local cSql                 := "familias"
@@ -992,7 +1188,7 @@ METHOD ExportaAtipicas()
 
          ::oSayProcess:setText( AllTrim( cCodCli ) + "-" + AllTrim( ( cSql )->cCodArt ) +  "-" + retArticulo( ( cSql )->cCodArt ) )
 
-         cMemo                   += AllTrim( cCodCli )                        //pricelist_id
+         cMemo                   += "C" + AllTrim( ( cSql )->cCodCli )                  //pricelist_id
          cMemo                   += ::cConector
          cMemo                   += AllTrim( ( cSql )->cCodArt )              //product_tmpl_id
          cMemo                   += ::cConector
@@ -1438,7 +1634,7 @@ METHOD formatNumeric( uVal )
    local cFormat  := "0.000"
 
    if hb_isnumeric( uVal )
-      cFormat     := AllTrim( Trans( uVal, "@E 999999.999999" ) )
+      cFormat     := AllTrim( Trans( uVal, "@E 999999.99" ) )
    end if
 
    //cFormat        := strtran( cFormat, ".", "" )

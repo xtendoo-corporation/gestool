@@ -389,13 +389,14 @@ END CLASS
 
 //---------------------------------------------------------------------------//
 
-METHOD SaveSelTar( cCodTar, cCodArt, lSel ) CLASS TarifasLineasModel
+METHOD SaveSelTar( cCodTar, cCodArt, lSel, nPosprint ) CLASS TarifasLineasModel
 
    local cStm     := "UpdateTarifa"
    local cSql     := ""
 
    cSql           := "UPDATE " + ::getTableName() + " SET"
    cSql           += " lSel = " + if( lSel, ".T.", ".F." )
+   cSql           += ", nPosPrint = " + quoted( nPosPrint )
    cSql           += " WHERE CCODTAR = " + quoted( cCodTar )
    cSql           += " AND CCODART = " + quoted( cCodArt )
 

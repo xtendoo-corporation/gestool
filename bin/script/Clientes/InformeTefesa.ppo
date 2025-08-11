@@ -57,6 +57,9 @@ _HB_CLASS TInformeTefesa ; function TInformeTefesa ( ... ) ; STATIC s_oClass ; L
 ; _HB_MEMBER { oBrowseArticulos } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"oBrowseArticulos"}, .F. )
 ; _HB_MEMBER { aArticulos } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"aArticulos"}, .F. )
 
+; _HB_MEMBER { cTmpLin } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"cTmpLin"}, .F. )
+; _HB_MEMBER { dbfTmpLin } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"dbfTmpLin"}, .F. )
+
    _HB_MEMBER New(); oClass:AddMethod( "New", @TInformeTefesa_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
 
    _HB_MEMBER Run(); oClass:AddMethod( "Run", @TInformeTefesa_Run(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
@@ -77,13 +80,11 @@ _HB_CLASS TInformeTefesa ; function TInformeTefesa ( ... ) ; STATIC s_oClass ; L
       _HB_MEMBER DataReport(); oClass:AddMethod( "DataReport", @TInformeTefesa_DataReport(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
       _HB_MEMBER VariableReport(); oClass:AddMethod( "VariableReport", @TInformeTefesa_VariableReport(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
 
+   _HB_MEMBER Sel(); oClass:AddMethod( "Sel", @TInformeTefesa_Sel(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
    _HB_MEMBER SelAll( lSel); oClass:AddMethod( "SelAll", @TInformeTefesa_SelAll(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
 
    _HB_MEMBER SaveConfig(); oClass:AddMethod( "SaveConfig", @TInformeTefesa_SaveConfig(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
-
-   _HB_MEMBER upElement(); oClass:AddMethod( "upElement", @TInformeTefesa_upElement(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
-
-   _HB_MEMBER downElement(); oClass:AddMethod( "downElement", @TInformeTefesa_downElement(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
 
 oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstance := oClass:Instance() ; IF __objHasMsg( oInstance, "InitClass" ) ; oInstance:InitClass( ... ) ; END ; RETURN oInstance ; END ; RETURN s_oClass:Instance() AS CLASS TInformeTefesa ;
 
@@ -112,6 +113,8 @@ Return ( Self )
 
 static FUNCTION TInformeTefesa_Run( ) ; local Self AS CLASS TInformeTefesa := QSelf() AS CLASS TInformeTefesa
 
+   local cDbfLin  := "TemporalScript"
+
    if Empty( ::cCodCliente )
       MsgStop( "Tiene que seleccionar un cliente." )
       Return .T.
@@ -122,11 +125,21 @@ static FUNCTION TInformeTefesa_Run( ) ; local Self AS CLASS TInformeTefesa := QS
       Return .T.
    end
 
+
+
+   ::cTmpLin        := cGetNewFileName( cPatTmp() + cDbfLin )
+
+   dbCreate( ::cTmpLin, aSqlStruct( aItmTemporal() ), cLocalDriver() )
+   dbUseArea( .T., cLocalDriver(), ::cTmpLin, cCheckArea( cDbfLin, @::dbfTmpLin ), .F. )
+
+   if !NetErr() .AND. ( ::dbfTmpLin )->( Used() )
+      ( ::dbfTmpLin )->( OrdCondSet( "!Deleted()", {|| !Deleted() } ) )
+      ( ::dbfTmpLin )->( OrdCreate( ::cTmpLin, "nPosPrint", "nPosPrint", {|| Field->nPosPrint } ) )
+   end
+
    ::LoadArticulos()
 
-   MsgInfo( hb_valToexp( ::aArticulos ) )
-
-   if Len( ::aArticulos ) < 1
+   if ( ::dbfTmpLin )->( RecCount() ) <= 0
       MsgStop( "La tarifa seleccionada no tiene articulos incluidos." )
       Return .T.
    end
@@ -136,6 +149,16 @@ static FUNCTION TInformeTefesa_Run( ) ; local Self AS CLASS TInformeTefesa := QS
    ::Resource()
 
    ::FreeResources()
+
+
+
+   if !empty( ::dbfTmpLin ) .AND. ( ::dbfTmpLin )->( Used() )
+      ( ::dbfTmpLin )->( dbCloseArea() )
+   end
+
+   ::dbfTmpLin      := nil
+
+   dbfErase( ::cTmpLin )
 
 Return ( .T. )
 
@@ -151,6 +174,7 @@ static FUNCTION TInformeTefesa_LoadArticulos( ) ; local Self AS CLASS TInformeTe
    local cImagen4 := ""
    local cImagen5 := ""
    local nDtoAtp  := 0
+   local nCount   := 1
 
    ::aArticulos   := {}
 
@@ -191,31 +215,46 @@ static FUNCTION TInformeTefesa_LoadArticulos( ) ; local Self AS CLASS TInformeTe
 
 
 
+         if ( ::dbfTmpLin )->( Used() )
 
+            ( ::dbfTmpLin )->( dbAppend() )
 
+            if ( D():TarifaPreciosLineas( ::nView ) )->nPosPrint == 0
+               ( ::dbfTmpLin )->nPosPrint := nCount
+            else
+               ( ::dbfTmpLin )->nPosPrint := ( D():TarifaPreciosLineas( ::nView ) )->nPosPrint
+            end
 
+            ( ::dbfTmpLin )->lSel      := ( D():TarifaPreciosLineas( ::nView ) )->lSel
+            ( ::dbfTmpLin )->cCodArt   := ( D():TarifaPreciosLineas( ::nView ) )->cCodArt
+            ( ::dbfTmpLin )->cNomArt   := ( D():TarifaPreciosLineas( ::nView ) )->cNomArt
+            ( ::dbfTmpLin )->nPrcTar1  := ( D():TarifaPreciosLineas( ::nView ) )->nPrcTar1
+            ( ::dbfTmpLin )->nPrcTar2  := ( D():TarifaPreciosLineas( ::nView ) )->nPrcTar2
+            ( ::dbfTmpLin )->cCodFam   := ArticulosModel():getField( "Familia", "Codigo", ( D():TarifaPreciosLineas( ::nView ) )->cCodArt )
+            ( ::dbfTmpLin )->cNomFam   := FamiliasModel():getField( "cNomFam", "cCodFam", ArticulosModel():getField( "Familia", "Codigo", ( D():TarifaPreciosLineas( ::nView ) )->cCodArt ) )
+            ( ::dbfTmpLin )->cCodFab   := ArticulosModel():getField( "cCodFab", "Codigo", ( D():TarifaPreciosLineas( ::nView ) )->cCodArt )
+            ( ::dbfTmpLin )->cNomFab   := FabricantesModel():getField( "cNomFab", "cCodFab", ArticulosModel():getField( "cCodFab", "Codigo", ( D():TarifaPreciosLineas( ::nView ) )->cCodArt ) )
+            ( ::dbfTmpLin )->nPesoKg   := ArticulosModel():getField( "nPesoKg", "Codigo", ( D():TarifaPreciosLineas( ::nView ) )->cCodArt )
+            ( ::dbfTmpLin )->cUnidad   := ArticulosModel():getField( "cUnidad", "Codigo", ( D():TarifaPreciosLineas( ::nView ) )->cCodArt )
+            ( ::dbfTmpLin )->nIncPrc1  := ArticulosModel():getField( "nIncPrc1", "Codigo", ( D():TarifaPreciosLineas( ::nView ) )->cCodArt )
+            ( ::dbfTmpLin )->nIncPrc2  := ArticulosModel():getField( "nIncPrc2", "Codigo", ( D():TarifaPreciosLineas( ::nView ) )->cCodArt )
+            ( ::dbfTmpLin )->nIncPrc3  := ArticulosModel():getField( "nIncPrc3", "Codigo", ( D():TarifaPreciosLineas( ::nView ) )->cCodArt )
+            ( ::dbfTmpLin )->nUndPal   := ArticulosModel():getField( "nUndPal", "Codigo", ( D():TarifaPreciosLineas( ::nView ) )->cCodArt )
+            ( ::dbfTmpLin )->cImagen1  := cImagen1
+            ( ::dbfTmpLin )->cImagen2  := cImagen2
+            ( ::dbfTmpLin )->cImagen3  := cImagen3
+            ( ::dbfTmpLin )->cImagen4  := cImagen4
+            ( ::dbfTmpLin )->cImagen5  := cImagen5
+            ( ::dbfTmpLin )->nDtoAtp   := nDtoAtp
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         aAdd( ::aArticulos, {   "lSel" => ( D():TarifaPreciosLineas( ::nView ) )->lSel, "cCodArt" => ( D():TarifaPreciosLineas( ::nView ) )->cCodArt, "cNomArt" => ( D():TarifaPreciosLineas( ::nView ) )->cNomArt, "nPrcTar1" => ( D():TarifaPreciosLineas( ::nView ) )->nPrcTar1, "nPrcTar2" => ( D():TarifaPreciosLineas( ::nView ) )->nPrcTar2, "cCodFam" => ArticulosModel():getField( "Familia", "Codigo", ( D():TarifaPreciosLineas( ::nView ) )->cCodArt ), "cNomFam" => FamiliasModel():getField( "cNomFam", "cCodFam", ArticulosModel():getField( "Familia", "Codigo", ( D():TarifaPreciosLineas( ::nView ) )->cCodArt ) ), "nPesoKg" => ArticulosModel():getField( "nPesoKg", "Codigo", ( D():TarifaPreciosLineas( ::nView ) )->cCodArt ), "cUnidad" => ArticulosModel():getField( "cUnidad", "Codigo", ( D():TarifaPreciosLineas( ::nView ) )->cCodArt ), "nIncPrc1" => ArticulosModel():getField( "nIncPrc1", "Codigo", ( D():TarifaPreciosLineas( ::nView ) )->cCodArt ), "nIncPrc2" => ArticulosModel():getField( "nIncPrc2", "Codigo", ( D():TarifaPreciosLineas( ::nView ) )->cCodArt ), "nIncPrc3" => ArticulosModel():getField( "nIncPrc3", "Codigo", ( D():TarifaPreciosLineas( ::nView ) )->cCodArt ), "nUndPal" => ArticulosModel():getField( "nUndPal", "Codigo", ( D():TarifaPreciosLineas( ::nView ) )->cCodArt ), "cImagen1" => cImagen1 , "cImagen2" => cImagen2 , "cImagen3" => cImagen3 , "cImagen4" => cImagen4 , "cImagen5" => cImagen5 , "nDtoAtp" => nDtoAtp } )
+         end
 
          cImagen1 := ""
          cImagen2 := ""
          cImagen3 := ""
          cImagen4 := ""
          cImagen5 := ""
+         nCount++
 
          ( D():TarifaPreciosLineas( ::nView ) )->( dbSkip() )
 
@@ -225,7 +264,7 @@ static FUNCTION TInformeTefesa_LoadArticulos( ) ; local Self AS CLASS TInformeTe
 
    ( D():TarifaPreciosLineas( ::nView ) )->( OrdSetFocus( nOrdAnt ) )
 
-   aSort( ::aArticulos,,, {|x,y| hGet( x, "cNomArt" ) < hGet( y, "cNomArt" ) } )
+   ( ::dbfTmpLin )->( dbGoTop() )
 
 Return ( .T. )
 
@@ -255,45 +294,53 @@ static FUNCTION TInformeTefesa_Resource( ) ; local Self AS CLASS TInformeTefesa 
    ::oBrowseArticulos:bClrSel                := {|| { 0, ( 229 + ( 229 * 256 ) + ( 229 * 65536 ) ) } }
    ::oBrowseArticulos:bClrSelFocus           := {|| { 0, ( 167 + ( 205 * 256 ) + ( 240 * 65536 ) ) } }
 
-   ::oBrowseArticulos:SetArray( ::aArticulos, , , .F. )
+
+
+   ::oBrowseArticulos:cAlias                 := ::dbfTmpLin
 
    ::oBrowseArticulos:nMarqueeStyle          := 5
    ::oBrowseArticulos:lRecordSelector        := .F.
    ::oBrowseArticulos:lHScroll               := .F.
 
-   ::oBrowseArticulos:bLDblClick             := {|| hSet( ::aArticulos[ ::oBrowseArticulos:nArrayAt ], "lSel", !hGet( ::aArticulos[ ::oBrowseArticulos:nArrayAt ], "lSel" ) ), ::oBrowseArticulos:Refresh() }
+   ::oBrowseArticulos:bLDblClick             := {|| ::Sel() }
 
    ::oBrowseArticulos:CreateFromResource( 200 )
 
    with object ( ::oBrowseArticulos:AddCol() )
       :cHeader          := "S."
-      :bEditValue       := {|| if( hhaskey( ::aArticulos[ ::oBrowseArticulos:nArrayAt ], "lSel" ), hGet( ::aArticulos[ ::oBrowseArticulos:nArrayAt ], "lSel" ), "" ) }
+      :bEditValue       := {|| ( ::dbfTmpLin )->lSel }
       :nWidth           := 20
       :SetCheck( { "Sel16", "Nil16" } )
    end
 
    with object ( ::oBrowseArticulos:AddCol() )
-      :cHeader          := "C digo"
-      :bEditValue       := {|| if( hhaskey( ::aArticulos[ ::oBrowseArticulos:nArrayAt ], "cCodArt" ), hGet( ::aArticulos[ ::oBrowseArticulos:nArrayAt ], "cCodArt" ), "" ) }
+      :cHeader          := "Pos"
+      :bEditValue       := {|| ( ::dbfTmpLin )->nPosPrint }
+      :nWidth           := 40
+   end
+
+   with object ( ::oBrowseArticulos:AddCol() )
+      :cHeader          := "Codigo"
+      :bEditValue       := {|| ( ::dbfTmpLin )->cCodArt }
       :nWidth           := 150
    end
 
    with object ( ::oBrowseArticulos:AddCol() )
-      :cHeader          := "Art culo"
-      :bEditValue       := {|| if( hhaskey( ::aArticulos[ ::oBrowseArticulos:nArrayAt ], "cNomArt" ), hGet( ::aArticulos[ ::oBrowseArticulos:nArrayAt ], "cNomArt" ), "" ) }
+      :cHeader          := "Articulo"
+      :bEditValue       := {|| ( ::dbfTmpLin )->cNomArt }
       :nWidth           := 250
    end
 
    with object ( ::oBrowseArticulos:AddCol() )
-      :cHeader          := "F brica"
-      :bEditValue       := {|| if( hhaskey( ::aArticulos[ ::oBrowseArticulos:nArrayAt ], "nPrcTar1" ), hGet( ::aArticulos[ ::oBrowseArticulos:nArrayAt ], "nPrcTar1" ), "" ) }
+      :cHeader          := "Fabrica"
+      :bEditValue       := {|| ( ::dbfTmpLin )->nPrcTar1 }
       :cEditPicture     := cPouDiv()
       :nWidth           := 80
    end
 
    with object ( ::oBrowseArticulos:AddCol() )
       :cHeader          := "Destino"
-      :bEditValue       := {|| if( hhaskey( ::aArticulos[ ::oBrowseArticulos:nArrayAt ], "nPrcTar2" ), hGet( ::aArticulos[ ::oBrowseArticulos:nArrayAt ], "nPrcTar2" ), "" ) }
+      :bEditValue       := {|| ( ::dbfTmpLin )->nPrcTar2 }
       :cEditPicture     := cPouDiv()
       :nWidth           := 80
    end
@@ -316,17 +363,17 @@ static FUNCTION TInformeTefesa_Resource( ) ; local Self AS CLASS TInformeTefesa 
 
 
 
-   TButton():ReDefine( 530, {||( ::SaveConfig(), MsgInfo( "Configuraci n guardada con  xito" ) )}, ::oDialog,,, .F.,,,, .F. )
+   TButton():ReDefine( 530, {||( ::SaveConfig(), MsgInfo( "Configuracion guardada con exito" ) )}, ::oDialog,,, .F.,,,, .F. )
 
 
 
 
-   TButton():ReDefine( 540, {||( ::upElement(), ::oBrowseArticulos:Refresh() )}, ::oDialog,,, .F.,,,, .F. )
+   TButton():ReDefine( 540, {||( lineUp( ::dbfTmpLin, ::oBrowseArticulos ) )}, ::oDialog,,, .F.,,,, .F. )
 
 
 
 
-   TButton():ReDefine( 550, {||( ::downElement(), ::oBrowseArticulos:Refresh() )}, ::oDialog,,, .F.,,,, .F. )
+   TButton():ReDefine( 550, {||( LineDown( ::dbfTmpLin, ::oBrowseArticulos ) )}, ::oDialog,,, .F.,,,, .F. )
 
 
 
@@ -346,27 +393,16 @@ Return ( .T. )
 
 
 
-static FUNCTION TInformeTefesa_upElement( ) ; local Self AS CLASS TInformeTefesa := QSelf() AS CLASS TInformeTefesa
+static FUNCTION TInformeTefesa_Sel( ) ; local Self AS CLASS TInformeTefesa := QSelf() AS CLASS TInformeTefesa
 
-   local xElement := ::aArticulos[ ::oBrowseArticulos:nArrayAt ]
+   if dbLock( ::dbfTmpLin )
+      ( ::dbfTmpLin )->lSel := !( ::dbfTmpLin )->lSel
+      ( ::dbfTmpLin )->( dbUnLock() )
+   end
 
-   hb_ADel( ::aArticulos, ::oBrowseArticulos:nArrayAt, .T. )
+   ::oBrowseArticulos:Refresh()
 
-   hb_AIns( ::aArticulos, ::oBrowseArticulos:nArrayAt - 1, xElement, .T. )
-
-RETURN ( ::oBrowseArticulos:SetArray( ::aArticulos ), ::oBrowseArticulos:Select(0), ::oBrowseArticulos:Select(1) )
-
-
-
-static FUNCTION TInformeTefesa_downElement( ) ; local Self AS CLASS TInformeTefesa := QSelf() AS CLASS TInformeTefesa
-
-   local xElement := ::aArticulos[ ::oBrowseArticulos:nArrayAt ]
-
-   hb_ADel( ::aArticulos, ::oBrowseArticulos:nArrayAt, .T. )
-
-   hb_AIns( ::aArticulos, ::oBrowseArticulos:nArrayAt + 1, xElement, .T. )
-
-RETURN ( ::oBrowseArticulos:SetArray( ::aArticulos ), ::oBrowseArticulos:Select(0), ::oBrowseArticulos:Select(1) )
+Return ( .T. )
 
 
 
@@ -374,7 +410,22 @@ static FUNCTION TInformeTefesa_SelAll( lSel ) ; local Self AS CLASS TInformeTefe
 
    If( lSel == nil, lSel := .T., ) ;
 
-   aEval( ::aArticulos, {|h| hSet( h, "lSel", lSel ) } )
+   nRec           := ( ::dbfTmpLin )->( Recno() )
+
+   ( ::dbfTmpLin )->( dbGoTop() )
+
+   while !( ::dbfTmpLin )->( Eof() )
+
+      if dbLock( ::dbfTmpLin )
+         ( ::dbfTmpLin )->lSel := lSel
+         ( ::dbfTmpLin )->( dbUnLock() )
+      end
+
+      ( ::dbfTmpLin )->( dbSkip() )
+
+   end
+
+   ( ::dbfTmpLin )->( dbGoTo( nRec ) )
 
    ::oBrowseArticulos:Refresh()
 
@@ -396,8 +447,6 @@ Return ( .T. )
 
 static FUNCTION TInformeTefesa_printReport( ) ; local Self AS CLASS TInformeTefesa := QSelf() AS CLASS TInformeTefesa
 
-   MsgInfo( hb_valToexp( ::aArticulos ) )
-
    ::oFastReport := frReportManager():New()
 
    ::oFastReport:ClearDataSets()
@@ -412,7 +461,7 @@ static FUNCTION TInformeTefesa_printReport( ) ; local Self AS CLASS TInformeTefe
 
    ::VariableReport()
 
-   ::oFastReport:SetTitle( "Dise ador de documentos" )
+   ::oFastReport:SetTitle( "Diseñador de documentos" )
 
    ::DataReport()
 
@@ -455,7 +504,7 @@ static FUNCTION TInformeTefesa_designReport( ) ; local Self AS CLASS TInformeTef
 
    ::VariableReport()
 
-   ::oFastReport:SetTitle( "Dise ador de documentos" )
+   ::oFastReport:SetTitle( "Diseñador de documentos" )
 
    ::DataReport()
 
@@ -485,7 +534,7 @@ static FUNCTION TInformeTefesa_createReport( ) ; local Self AS CLASS TInformeTef
 
    ::oFastReport:SetIcon( 1 )
 
-   ::oFastReport:SetTitle( "Dise ador de documentos" )
+   ::oFastReport:SetTitle( "Diseñador de documentos" )
 
    ::oFastReport:SetProperty(     "Report",            "ScriptLanguage",   "PascalScript" )
 
@@ -523,13 +572,16 @@ static FUNCTION TInformeTefesa_DataReport( ) ; local Self AS CLASS TInformeTefes
 
    local np
 
+   ::oFastReport:SetWorkArea(     "Informe", ( ::dbfTmpLin )->( Select() ) )
+   ::oFastReport:SetFieldAliases( "Informe", cItemsToReport( aItmTemporal() ) )
 
 
 
 
 
 
-   ::oFastReport:setUserDataSet( "Informe", "lSel;cCodArt;cNomArt;nPrcTar1;nPrcTar2;cCodFam;cNomFam;nPesoKg;cUnidad;nIncPrc1;nIncPrc2;nIncPrc3;nUndPal;cImagen1;cImagen2;cImagen3;cImagen4;cImagen5;nDtoAtp", {||np := 1}, {||np := np + 1}, {||np := np - 1}, {||np > Len( ::aArticulos )}, {|key| hGet( ::aArticulos[np], key ) } )
+
+
 
 Return ( .T. )
 
@@ -549,6 +601,50 @@ Return ( .T. )
 
 static FUNCTION TInformeTefesa_SaveConfig( ) ; local Self AS CLASS TInformeTefesa := QSelf() AS CLASS TInformeTefesa
 
-   aEval( ::aArticulos, {|h| TarifasLineasModel():SaveSelTar( ::cCodTarifa, hGet( h, "cCodArt" ), hGet( h, "lSel") ) } )
+   local nRec           := ( ::dbfTmpLin )->( Recno() )
+
+   ( ::dbfTmpLin )->( dbGoTop() )
+
+   while !( ::dbfTmpLin )->( Eof() )
+
+      TarifasLineasModel():SaveSelTar( ::cCodTarifa, ( ::dbfTmpLin )->cCodArt, ( ::dbfTmpLin )->lSel, ( ::dbfTmpLin )->nPosPrint )
+
+      ( ::dbfTmpLin )->( dbSkip() )
+
+   end
+
+   ( ::dbfTmpLin )->( dbGoTo( nRec ) )
+
 
 Return ( .T. )
+
+
+
+function aItmTemporal()
+
+   local aItmTemporal  := {}
+
+   aAdd( aItmTemporal, {"nPosPrint"    ,"N", 16, 6, "Posición impresion" ,    "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"lSel"         ,"L",  1, 0, "Selecionado" ,           "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"cCodArt"      ,"C", 18, 0, "Código articulo" ,       "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"cNomArt"      ,"C",150, 0, "Nombre articulo" ,       "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"nPrcTar1"     ,"N", 16, 6, "Precio 1" ,              "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"nPrcTar2"     ,"N", 16, 6, "Precio 2" ,              "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"cCodFam"      ,"C", 10, 0, "Codigo familia" ,        "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"cNomFam"      ,"C",150, 0, "Nombre familia" ,        "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"cCodFab"      ,"C", 10, 0, "Codigo fabricante" ,     "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"cNomFab"      ,"C",150, 0, "Nombre fabricante" ,     "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"nPesoKg"      ,"N", 16, 6, "Peso" ,                  "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"cUnidad"      ,"C",  1, 0, "Unidad" ,                "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"nIncPrc1"     ,"N", 16, 6, "Incremento 1" ,          "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"nIncPrc2"     ,"N", 16, 6, "Incremento 2" ,          "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"nIncPrc3"     ,"N", 16, 6, "Incremento 3" ,          "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"nUndPal"      ,"N", 16, 6, "Unidad palet" ,          "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"cImagen1"     ,"C",200, 0, "Imagen 1" ,              "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"cImagen2"     ,"C",200, 0, "Imagen 2" ,              "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"cImagen3"     ,"C",200, 0, "Imagen 3" ,              "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"cImagen4"     ,"C",200, 0, "Imagen 4" ,              "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"cImagen5"     ,"C",200, 0, "Imagen 5" ,              "", "( cDbf )" } )
+   aAdd( aItmTemporal, {"nDtoAtp"      ,"N", 16, 6, "Descuento" ,             "", "( cDbf )" } )
+
+RETURN ( aItmTemporal )

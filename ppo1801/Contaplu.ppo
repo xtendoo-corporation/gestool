@@ -5390,6 +5390,12 @@ _HB_CLASS EnlaceSage ; function EnlaceSage ( ... ) ; STATIC s_oClass ; LOCAL nSc
    _HB_MEMBER { SubCtaVtaIvaRe10 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"SubCtaVtaIvaRe10"}, .F. )
    _HB_MEMBER { SubCtaVtaIvaRe4 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"SubCtaVtaIvaRe4"}, .F. )
    _HB_MEMBER { SubCtaVtaIvaRe0 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"SubCtaVtaIvaRe0"}, .F. )
+   _HB_MEMBER { SubCtaVtaIva2 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"SubCtaVtaIva2"}, .F. )
+   _HB_MEMBER { SubCtaVtaIvaRe2 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"SubCtaVtaIvaRe2"}, .F. )
+   _HB_MEMBER { SubCtaVtaIva75 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"SubCtaVtaIva75"}, .F. )
+   _HB_MEMBER { SubCtaVtaIvaRe75 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"SubCtaVtaIvaRe75"}, .F. )
+   _HB_MEMBER { SubCtaVtaIva5 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"SubCtaVtaIva5"}, .F. )
+   _HB_MEMBER { SubCtaVtaIvaRe5 } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"SubCtaVtaIvaRe5"}, .F. )
    _HB_MEMBER { SubCtaCaja } ; oClass:AddMultiData(,, nScope + iif( .F., 16, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ), {"SubCtaCaja"}, .F. )
 
    _HB_MEMBER New(); oClass:AddMethod( "New", @EnlaceSage_New(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
@@ -5438,15 +5444,20 @@ static FUNCTION EnlaceSage_New( ) ; local Self AS CLASS EnlaceSage := QSelf() AS
    ::cFile              := "FacturasClientes.csv"
 
    ::SubCtaVtaIva21     := "4770021"
+   ::SubCtaVtaIvaRe21   := "4775221"
    ::SubCtaVtaIva10     := "4770010"
+   ::SubCtaVtaIvaRe10   := "4771410"
    ::SubCtaVtaIva4      := "4770004"
+   ::SubCtaVtaIvaRe4    := "4770504"
    ::SubCtaVtaIva0      := "4770000"
-   ::SubCtaVtaIvaRe21   := "4755421"
-   ::SubCtaVtaIvaRe10   := "4751410"
-   ::SubCtaVtaIvaRe4    := "4750504"
-   ::SubCtaVtaIvaRe0    := "4750000"
+   ::SubCtaVtaIvaRe0    := "4770099"
+   ::SubCtaVtaIva2      := "4770002"
+   ::SubCtaVtaIvaRe2    := "4770226"
+   ::SubCtaVtaIva75     := "4770075"
+   ::SubCtaVtaIvaRe75   := "4770750"
+   ::SubCtaVtaIva5      := "4770005"
+   ::SubCtaVtaIvaRe5    := "4770562"
    ::SubCtaCaja         := "4310000"
-
    ::cBuffer            := ""
 
    ::nContadorAsiento  := 1
@@ -5870,7 +5881,7 @@ RETURN ( Self )
 
 static FUNCTION EnlaceSage_CuentaIva( nIva ) ; local Self AS CLASS EnlaceSage := QSelf() AS CLASS EnlaceSage
 
-   local cSubCta
+   local cSubCta := ""
 
       do case
          case nIva == 21
@@ -5904,6 +5915,30 @@ static FUNCTION EnlaceSage_CuentaIva( nIva ) ; local Self AS CLASS EnlaceSage :=
                cSubCta  := ::SubCtaVtaIvaRe0
             end
 
+         case nIva == 2
+
+            if !( D():FacturasClientes( ::nView ) )->lRecargo
+               cSubCta  := ::SubCtaVtaIva2
+            else
+               cSubCta  := ::SubCtaVtaIvaRe2
+            end
+
+         case nIva == 7.5
+
+            if !( D():FacturasClientes( ::nView ) )->lRecargo
+               cSubCta  := ::SubCtaVtaIva75
+            else
+               cSubCta  := ::SubCtaVtaIvaRe75
+            end
+
+         case nIva == 5
+
+            if !( D():FacturasClientes( ::nView ) )->lRecargo
+               cSubCta  := ::SubCtaVtaIva5
+            else
+               cSubCta  := ::SubCtaVtaIvaRe5
+            end
+
       end
 
 RETURN ( cSubCta )
@@ -5912,15 +5947,29 @@ RETURN ( cSubCta )
 
 static FUNCTION EnlaceSage_CuentaRe( nIva ) ; local Self AS CLASS EnlaceSage := QSelf() AS CLASS EnlaceSage
 
-   local cSubCta
+   local cSubCta := ""
 
       do case
          case nIva == 21
-               cSubCta  := "4750014"
+               cSubCta  := "4750052"
 
          case nIva == 10
-
                cSubCta  := "4750014"
+
+         case nIva == 4
+               cSubCta  := "4750050"
+
+         case nIva == 0
+               cSubCta  := "4750099"
+
+         case nIva == 2
+               cSubCta  := "4750026"
+
+         case nIva == 7.5
+               cSubCta  := "4750751"
+
+         case nIva == 5
+               cSubCta  := "4750062"
 
       end
 

@@ -3512,6 +3512,12 @@ CLASS EnlaceSage
    DATA SubCtaVtaIvaRe10
    DATA SubCtaVtaIvaRe4
    DATA SubCtaVtaIvaRe0
+   DATA SubCtaVtaIva2
+   DATA SubCtaVtaIvaRe2
+   DATA SubCtaVtaIva75
+   DATA SubCtaVtaIvaRe75
+   DATA SubCtaVtaIva5
+   DATA SubCtaVtaIvaRe5
    DATA SubCtaCaja
 
    METHOD New()
@@ -3560,15 +3566,20 @@ METHOD New() CLASS EnlaceSage
    ::cFile              := "FacturasClientes.csv"
 
    ::SubCtaVtaIva21     := "4770021"
+   ::SubCtaVtaIvaRe21   := "4775221"
    ::SubCtaVtaIva10     := "4770010"
+   ::SubCtaVtaIvaRe10   := "4771410"
    ::SubCtaVtaIva4      := "4770004"
+   ::SubCtaVtaIvaRe4    := "4770504"
    ::SubCtaVtaIva0      := "4770000"
-   ::SubCtaVtaIvaRe21   := "4755421"
-   ::SubCtaVtaIvaRe10   := "4751410"
-   ::SubCtaVtaIvaRe4    := "4750504"
-   ::SubCtaVtaIvaRe0    := "4750000"
+   ::SubCtaVtaIvaRe0    := "4770099"
+   ::SubCtaVtaIva2      := "4770002"
+   ::SubCtaVtaIvaRe2    := "4770226"
+   ::SubCtaVtaIva75     := "4770075"
+   ::SubCtaVtaIvaRe75   := "4770750"
+   ::SubCtaVtaIva5      := "4770005"
+   ::SubCtaVtaIvaRe5    := "4770562"
    ::SubCtaCaja         := "4310000"
-
    ::cBuffer            := ""
 
    ::nContadorAsiento  := 1
@@ -3992,7 +4003,7 @@ RETURN ( Self )
 
 METHOD CuentaIva( nIva ) CLASS EnlaceSage
 
-   local cSubCta
+   local cSubCta := ""
 
       do case
          case nIva == 21
@@ -4026,6 +4037,30 @@ METHOD CuentaIva( nIva ) CLASS EnlaceSage
                cSubCta  := ::SubCtaVtaIvaRe0
             end if
 
+         case nIva == 2
+
+            if !( D():FacturasClientes( ::nView ) )->lRecargo
+               cSubCta  := ::SubCtaVtaIva2
+            else
+               cSubCta  := ::SubCtaVtaIvaRe2
+            end if
+
+         case nIva == 7.5
+
+            if !( D():FacturasClientes( ::nView ) )->lRecargo
+               cSubCta  := ::SubCtaVtaIva75
+            else
+               cSubCta  := ::SubCtaVtaIvaRe75
+            end if
+
+         case nIva == 5
+
+            if !( D():FacturasClientes( ::nView ) )->lRecargo
+               cSubCta  := ::SubCtaVtaIva5
+            else
+               cSubCta  := ::SubCtaVtaIvaRe5
+            end if
+
       end case
 
 RETURN ( cSubCta )
@@ -4034,15 +4069,29 @@ RETURN ( cSubCta )
 
 METHOD CuentaRe( nIva ) CLASS EnlaceSage
 
-   local cSubCta
+   local cSubCta := ""
 
       do case
          case nIva == 21
-               cSubCta  := "4750014"
+               cSubCta  := "4750052"
 
          case nIva == 10
-
                cSubCta  := "4750014"
+
+         case nIva == 4
+               cSubCta  := "4750050"
+
+         case nIva == 0
+               cSubCta  := "4750099"
+
+         case nIva == 2
+               cSubCta  := "4750026"
+
+         case nIva == 7.5
+               cSubCta  := "4750751"
+
+         case nIva == 5
+               cSubCta  := "4750062"
 
       end case
 

@@ -1955,6 +1955,12 @@ _HB_CLASS ExportOdoo ; function ExportOdoo ( ... ) ; STATIC s_oClass ; LOCAL nSc
 
    _HB_MEMBER ExportaArticulos(); oClass:AddMethod( "ExportaArticulos", @ExportOdoo_ExportaArticulos(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
 
+   _HB_MEMBER ExportaArticulos2(); oClass:AddMethod( "ExportaArticulos2", @ExportOdoo_ExportaArticulos2(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ExportaArticulos3(); oClass:AddMethod( "ExportaArticulos3", @ExportOdoo_ExportaArticulos3(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ExportaArticulos4(); oClass:AddMethod( "ExportaArticulos4", @ExportOdoo_ExportaArticulos4(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ExportaArticulos5(); oClass:AddMethod( "ExportaArticulos5", @ExportOdoo_ExportaArticulos5(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+   _HB_MEMBER ExportaArticulos6(); oClass:AddMethod( "ExportaArticulos6", @ExportOdoo_ExportaArticulos6(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
+
    _HB_MEMBER ExportaAtipicas(); oClass:AddMethod( "ExportaAtipicas", @ExportOdoo_ExportaAtipicas(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
 
    _HB_MEMBER ExportaTickets(); oClass:AddMethod( "ExportaTickets", @ExportOdoo_ExportaTickets(), nScope + iif( .F., 8, 0 ) + iif( .F., 256, 0 ) + iif( .F., 2048, 0 ) )
@@ -2001,7 +2007,7 @@ static FUNCTION ExportOdoo_New( ) ; local Self AS CLASS ExportOdoo := QSelf() AS
    ::aMtrIndices  := Array( 10 )
    ::aNumIndices  := Afill( Array( 10 ), 0 )
 
-   ::cConector    := ","
+   ::cConector    := ";"
 
    ::cIncidencia  := ""
 
@@ -2165,6 +2171,11 @@ static FUNCTION ExportOdoo_Exportar( ) ; local Self AS CLASS ExportOdoo := QSelf
 
    if ::aLgcIndices[ 2 ]
       ::ExportaArticulos()
+      ::ExportaArticulos2()
+      ::ExportaArticulos3()
+      ::ExportaArticulos4()
+      ::ExportaArticulos5()
+      ::ExportaArticulos6()
    end
 
    if ::aLgcIndices[ 3 ]
@@ -2273,8 +2284,8 @@ static FUNCTION ExportOdoo_ExportaClientes( ) ; local Self AS CLASS ExportOdoo :
          cMemo                   += ::cConector
          cMemo                   += ::cClearStr( PaisModel():getNombre( allTrim( ( cSqlCli )->cCodPai ) ) )
          cMemo                   += ::cConector
-         cMemo                   += ::cClearStr( StrTran( ( cSqlCli )->mComent, Chr(13)+Chr(10) , " " ) )
-         cMemo                   += ::cConector
+
+
          cMemo                   += ::cClearStr( GrupoClientesModel():getName( ( cSqlCli )->cCodGrp ) )
          cMemo                   += ::cConector
          cMemo                   += "1"
@@ -2357,8 +2368,8 @@ static FUNCTION ExportOdoo_ExportaClientes( ) ; local Self AS CLASS ExportOdoo :
       cMemo                   += ::cConector
       cMemo                   += ::cClearStr( PaisModel():getNombre( allTrim( ( cSqlPrv )->cCodPai ) ) )
       cMemo                   += ::cConector
-      cMemo                   += ::cClearStr( StrTran( ( cSqlPrv )->mComent, Chr(13)+Chr(10), " " ) )
-      cMemo                   += ::cConector
+
+
       cMemo                   += ""
       cMemo                   += ::cConector
       cMemo                   += "0"
@@ -2841,6 +2852,191 @@ Return ( .T. )
 
 
 
+static FUNCTION ExportOdoo_ExportaArticulos2( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cSql                 := "articulos"
+   local cMemo                := ""
+   local cNameFile
+
+   ::oSayProcess:setText( "Exportando artículos" )
+
+   ArticulosModel():getToOdoo( @cSql )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 2 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      cMemo                   += "AAAAAA"
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( strtran( ( cSql )->Codigo, ",", "." ) )
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( ( cSql )->pVenta2 )
+      cMemo                   += Chr(13)+Chr(10)
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 2 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 2 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "Product2" )
+
+Return ( .T. )
+
+
+
+static FUNCTION ExportOdoo_ExportaArticulos3( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cSql                 := "articulos"
+   local cMemo                := ""
+   local cNameFile
+
+   ::oSayProcess:setText( "Exportando artículos" )
+
+   ArticulosModel():getToOdoo( @cSql )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 2 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      cMemo                   += "AAAAAA"
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( strtran( ( cSql )->Codigo, ",", "." ) )
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( ( cSql )->pVenta3 )
+      cMemo                   += Chr(13)+Chr(10)
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 2 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 2 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "Product3" )
+
+Return ( .T. )
+
+
+
+static FUNCTION ExportOdoo_ExportaArticulos4( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cSql                 := "articulos"
+   local cMemo                := ""
+   local cNameFile
+
+   ::oSayProcess:setText( "Exportando artículos" )
+
+   ArticulosModel():getToOdoo( @cSql )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 2 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      cMemo                   += "AAAAAA"
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( strtran( ( cSql )->Codigo, ",", "." ) )
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( ( cSql )->pVenta4 )
+      cMemo                   += Chr(13)+Chr(10)
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 2 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 2 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "Product4" )
+
+Return ( .T. )
+
+
+
+static FUNCTION ExportOdoo_ExportaArticulos5( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cSql                 := "articulos"
+   local cMemo                := ""
+   local cNameFile
+
+   ::oSayProcess:setText( "Exportando artículos" )
+
+   ArticulosModel():getToOdoo( @cSql )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 2 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      cMemo                   += "AAAAAA"
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( strtran( ( cSql )->Codigo, ",", "." ) )
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( ( cSql )->pVenta5 )
+      cMemo                   += Chr(13)+Chr(10)
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 2 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 2 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "Product5" )
+
+Return ( .T. )
+
+
+
+static FUNCTION ExportOdoo_ExportaArticulos6( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
+
+   local cSql                 := "articulos"
+   local cMemo                := ""
+   local cNameFile
+
+   ::oSayProcess:setText( "Exportando artículos" )
+
+   ArticulosModel():getToOdoo( @cSql )
+
+   ( cSql )->( dbGoTop() )
+
+   ::aMtrIndices[ 2 ]:SetTotal( ( cSql )->( OrdKeyCount() ) )
+
+   while !( cSql )->( Eof() )
+
+      cMemo                   += "AAAAAA"
+      cMemo                   += ::cConector
+      cMemo                   += AllTrim( strtran( ( cSql )->Codigo, ",", "." ) )
+      cMemo                   += ::cConector
+      cMemo                   += ::formatNumeric( ( cSql )->pVenta6 )
+      cMemo                   += Chr(13)+Chr(10)
+
+      ( cSql )->( dbSkip() )
+
+      ::aMtrIndices[ 2 ]:Set( ( cSql )->( OrdKeyNo() ) )
+
+   end
+
+   ::aMtrIndices[ 2 ]:Set( ( cSql )->( 100 ) )
+
+   ::createFile( cMemo, "Product6" )
+
+Return ( .T. )
+
+
+
 static FUNCTION ExportOdoo_ExportaFamilias( ) ; local Self AS CLASS ExportOdoo := QSelf() AS CLASS ExportOdoo
 
    local cSql                 := "familias"
@@ -2906,7 +3102,7 @@ static FUNCTION ExportOdoo_ExportaAtipicas( ) ; local Self AS CLASS ExportOdoo :
 
          ::oSayProcess:setText( AllTrim( cCodCli ) + "-" + AllTrim( ( cSql )->cCodArt ) +  "-" + retArticulo( ( cSql )->cCodArt ) )
 
-         cMemo                   += AllTrim( cCodCli )
+         cMemo                   += "C" + AllTrim( ( cSql )->cCodCli )
          cMemo                   += ::cConector
          cMemo                   += AllTrim( ( cSql )->cCodArt )
          cMemo                   += ::cConector
@@ -3352,7 +3548,7 @@ static FUNCTION ExportOdoo_formatNumeric( uVal ) ; local Self AS CLASS ExportOdo
    local cFormat  := "0.000"
 
    if hb_isnumeric( uVal )
-      cFormat     := AllTrim( Trans( uVal, "@E 999999.999999" ) )
+      cFormat     := AllTrim( Trans( uVal, "@E 999999.99" ) )
    end
 
 

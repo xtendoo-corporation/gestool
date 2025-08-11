@@ -204,7 +204,7 @@ METHOD DefineFiles( cPath, cDriver )
       FIELD CALCULATE NAME "bSndDoc"            LEN  14  DEC 0 COMMENT { "Envio", "gc_mail2_16", 3 }     VAL {|| ::oDbf:lSndDoc }   BITMAPS "gc_mail2_12", "Nil16" COLSIZE 20 OF ::oDbf
       FIELD CALCULATE NAME "bPubInt"            LEN  14  DEC 0 COMMENT { "Publicar", "gc_earth_16", 3 }  VAL {|| ::oDbf:lPubInt}    BITMAPS "gc_earth_12", "Nil16" COLSIZE 20 OF ::oDbf
       FIELD NAME "cCodFab"             TYPE "C" LEN   3  DEC 0 COMMENT "Código"         PICTURE "@!"  COLSIZE 60   OF ::oDbf
-      FIELD NAME "cNomFab"             TYPE "C" LEN  35  DEC 0 COMMENT "Nombre"                       COLSIZE 200  OF ::oDbf
+      FIELD NAME "cNomFab"             TYPE "C" LEN 150  DEC 0 COMMENT "Nombre"                       COLSIZE 250  OF ::oDbf
       FIELD NAME "lPubInt"             TYPE "L" LEN   1  DEC 0 COMMENT "Publicar"                     HIDE         OF ::oDbf
       FIELD NAME "cImgLogo"            TYPE "C" LEN 254  DEC 0 COMMENT "Imagen logo"                  HIDE         OF ::oDbf
       FIELD NAME "cCodWeb"             TYPE "N" LEN  11  DEC 0 COMMENT "Código Web"                   HIDE         OF ::oDbf

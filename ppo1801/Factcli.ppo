@@ -16044,8 +16044,8 @@ STATIC FUNCTION EndTrans( aTmp, aGet, oBrw, oBrwDet, oBrwPgo, aNumAlb, nMode, oD
 
    TComercio:resetProductsToUpdateStocks()
 
-   oBlock      := ErrorBlock( { | oError | ApoloBreak( oError ) } )
-   BEGIN SEQUENCE
+
+
 
       oMsgText( "Archivando" )
 
@@ -16069,8 +16069,8 @@ STATIC FUNCTION EndTrans( aTmp, aGet, oBrw, oBrwDet, oBrwPgo, aNumAlb, nMode, oD
 
 
 
-
-
+         nNumFac              := nNewDoc( cSerFac, D():FacturasClientes( nView ), "NFACCLI", , D():Contadores( nView ) )
+         aTmp[ 2 ]     := nNumFac
          cSufFac              := retSufEmp()
          aTmp[ 3 ]     := cSufFac
          aTmp[ 30 ]     := !empty( aNumAlb )
@@ -16270,14 +16270,14 @@ STATIC FUNCTION EndTrans( aTmp, aGet, oBrw, oBrwDet, oBrwPgo, aNumAlb, nMode, oD
 
       ChkLqdFacCli( nil, D():FacturasClientes( nView ), D():FacturasClientesLineas( nView ), D():FacturasClientesCobros( nView ), , dbfIva, dbfDiv )
 
-   RECOVER USING oError
 
-      RollBackTransaction()
 
-      msgStop( "Imposible almacenar documento" + Chr(13)+Chr(10) + ErrorMessage( oError ) )
 
-   end
-   ErrorBlock( oBlock )
+
+
+
+
+
 
 
 
@@ -25301,8 +25301,12 @@ Return ( FullQrDir() + ( D():FacturasClientes( nView ) )->cSerie + AllTrim( Str(
 
 Static Function PublicarFactura()
 
+    local nNumFac
 
     if !( D():FacturasClientes( nView ) )->lValida
+
+
+
 
         if dbLock( D():FacturasClientes( nView ) )
             ( D():FacturasClientes( nView ) )->lValida := .T.

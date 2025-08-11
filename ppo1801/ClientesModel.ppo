@@ -2302,13 +2302,14 @@ oClass:Create() ; ; ALWAYS ; __clsUnlockDef( @s_oClass, oClass ) ; end ; oInstan
 
 
 
-static FUNCTION TarifasLineasModel_SaveSelTar( cCodTar, cCodArt, lSel ) ; local Self AS CLASS TarifasLineasModel := QSelf() AS CLASS TarifasLineasModel
+static FUNCTION TarifasLineasModel_SaveSelTar( cCodTar, cCodArt, lSel, nPosprint ) ; local Self AS CLASS TarifasLineasModel := QSelf() AS CLASS TarifasLineasModel
 
    local cStm     := "UpdateTarifa"
    local cSql     := ""
 
    cSql           := "UPDATE " + ::getTableName() + " SET"
    cSql           += " lSel = " + if( lSel, ".T.", ".F." )
+   cSql           += ", nPosPrint = " + quoted( nPosPrint )
    cSql           += " WHERE CCODTAR = " + quoted( cCodTar )
    cSql           += " AND CCODART = " + quoted( cCodArt )
 

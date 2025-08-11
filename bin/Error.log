@@ -1,270 +1,62 @@
-Error BASE/1003  No existe la variable: LREQ
+Error BASE/1132  Error de rango: acceso al array
 Llamado desde DEFERROR(54)
 Llamado desde (b)ERRORSYS(10)
-Llamado desde ENLACESAGE:ADDASIENTOS(3628)
-Llamado desde ENLACESAGE:CONTABILIZAFACTURACLIENTE(3602)
-Llamado desde ACTIONCONTABILIDAD(7403)
-Llamado desde (b)EVAL(1238)
-Llamado desde MAKSELREC(7762)
-Llamado desde (b)AGETSELREC(7601)
-Llamado desde TBUTTON:CLICK(179)
-Llamado desde TBUTTON:HANDLEEVENT(1685)
-Llamado desde _FWH(3368)
-Llamado desde SENDMESSAGE(0)
-Llamado desde TDIALOG:COMMAND(438)
-Llamado desde TWINDOW:HANDLEEVENT(0)
-Llamado desde TDIALOG:HANDLEEVENT(941)
-Llamado desde DIALOGBOX(0)
-Llamado desde TDIALOG:ACTIVATE(318)
-Llamado desde AGETSELREC(7615)
-Llamado desde (b)FACTCLI(1238)
-Llamado desde TSHELL:CLICKTREE(2024)
-Llamado desde (b)TSHELL_NEW(471)
-Llamado desde TWINDOW:LBUTTONUP(1995)
-Llamado desde TTREEVIEW:LBUTTONUP(675)
-Llamado desde TCONTROL:HANDLEEVENT(1721)
-Llamado desde TTREEVIEW:HANDLEEVENT(407)
-Llamado desde _FWH(3368)
-Llamado desde WINRUN(0)
-Llamado desde TMDIFRAME:ACTIVATE(1043)
-Llamado desde CREATEMAINWINDOW(303)
+Llamado desde CCODEMP(702)
+Llamado desde TCONFIG:NEW(71)
+Llamado desde TCONFIG:GETINSTANCE(84)
+Llamado desde GETCONFIGTRASLATION(11)
+Llamado desde CREATEACCESO(1501)
+Llamado desde CREATEMAINWINDOW(265)
 Llamado desde MAIN(215)
 - Llamado desde (b)ERRORSYS(10)
      Param   1:O Class: ERROR
      Local   1:U 
-     Local   2:C Error BASE/1003  No existe la variable: LREQ
+     Local   2:C Error BASE/1132  Error de rango: acceso al array
 Llamado desde DEFERROR(54)
 Llamado desde (b)ERRORSYS(10)
-Llamado desde ENLACESAGE:ADDASIENTOS(3628)
-Llamado desde ENLACESAGE:CONTABILIZAFACTURACLIENTE(3602)
-Llamado desde ACTIONCONTABILIDAD(7403)
-Llamado desde (b)EVAL(1238)
-Llamado desde MAKSELREC(7762)
-Llamado desde (b)AGETSELREC(7601)
-Llamado desde TBUTTON:CLICK(179)
-Llamado desde TBUTTON:HANDLEEVENT(1685)
-Llamado desde _FWH(3368)
-Llamado desde SENDMESSAGE(0)
-Llamado desde TDIALOG:COMMAND(438)
-Llamado desde TWINDOW:HANDLEEVENT(0)
-Llamado desde TDIALOG:HANDLEEVENT(941)
-Llamado desde DIALOGBOX(0)
-Llamado desde TDIALOG:ACTIVATE(318)
-Llamado desde AGETSELREC(7615)
-Llamado desde (b)FACTCLI(1238)
-Llamado desde TSHELL:CLICKTREE(2024)
-Llamado desde (b)TSHELL_NEW(471)
-Llamado desde TWINDOW:LBUTTONUP(1995)
-Llamado desde TTREEVIEW:LBUTTONUP(675)
-Llamado desde TCONTROL:HANDLEEVENT(1721)
-Llamado desde TTREEVIEW:HANDLEEVENT(407)
-Llamado desde _FWH(3368)
-Llamado desde WINRUN(0)
-Llamado desde TMDIFRAME:ACTIVATE(1043)
-Llamado desde CREATEMAINWINDOW(303)
+Llamado desde CCODEMP(702)
+Llamado desde TCONFIG:NEW(71)
+Llamado desde TCONFIG:GETINSTANCE(84)
+Llamado desde GETCONFIGTRASLATION(11)
+Llamado desde CREATEACCESO(1501)
+Llamado desde CREATEMAINWINDOW(265)
 Llamado desde MAIN(215)
      Local   3:A Len:    4
      Local   4:N 4
      Local   5:N 1
      Local   6:S 
-- Llamado desde ENLACESAGE:ADDASIENTOS(3628)
+- Llamado desde CCODEMP(702)
      Param   1:O Class: ERROR
-- Llamado desde ENLACESAGE:CONTABILIZAFACTURACLIENTE(3602)
-     Local   1:U 
-     Local   2:U 
+- Llamado desde TCONFIG:NEW(71)
+     Local   1:A Len:    0
+     Local   2:N 1
      Local   3:U 
-- Llamado desde ACTIONCONTABILIDAD(7403)
-     Param   1:N 3
-     Param   2:O Class: TTREEVIEW
-- Llamado desde (b)EVAL(1238)
-     Param   1:L .F.
-     Param   2:L .F.
-     Param   3:O Class: TTREEVIEW
-- Llamado desde MAKSELREC(7762)
-     Param   1:L .F.
-     Param   2:L .F.
-     Param   3:O Class: TTREEVIEW
-     Param   4:C FacCliT
-     Param   5:C FacCliL
-- Llamado desde (b)AGETSELREC(7601)
-     Param   1:B {|| ... }
-     Param   2:U 
-     Param   3:B {|| ... }
-     Param   4:C A 2320215700
-     Param   5:C A 2320215700
-     Param   6:N 2
-     Param   7:L .F.
-     Param   8:L .F.
-     Param   9:L .T.
-     Param  10:D 01/01/2025
-     Param  11:D 12/06/2025
-     Param  12:O Class: TDIALOG
-     Param  13:O Class: TBUTTON
-     Param  14:O Class: TTREEVIEW
-     Param  15:O Class: TSHELL
-     Param  16:O Class: TAPOLOMETER
-     Local   1:N 0
-     Local   2:N 0
-     Local   3:N 8032
      Local   4:U 
+- Llamado desde TCONFIG:GETINSTANCE(84)
+     Local   1:U 
+- Llamado desde GETCONFIGTRASLATION(11)
+     Local   1:S 
+     Local   2:O Class: TCONFIG
+- Llamado desde CREATEACCESO(1501)
+     Param   1:C Temporadas
+     Local   1:U 
+     Local   2:S 
+- Llamado desde CREATEMAINWINDOW(265)
+     Param   1:O Class: TMDIFRAME
+     Local   1:O Class: TACCESO
+     Local   2:O Class: TGRUPOACCESO
+     Local   3:O Class: TITEMACCESO
+     Local   4:O Class: TITEMACCESO
      Local   5:U 
      Local   6:U 
-     Local   7:L .T.
-- Llamado desde TBUTTON:CLICK(179)
-     Param   1:O Class: TBUTTON
-- Llamado desde TBUTTON:HANDLEEVENT(1685)
-- Llamado desde _FWH(3368)
-     Param   1:N 2048
-     Param   2:N 0
-     Param   3:N 0
-     Local   1:U 
-- Llamado desde SENDMESSAGE(0)
-     Param   1:N 0
-     Param   2:N 2048
-     Param   3:N 0
-     Param   4:N 0
-     Param   5:N 129
-     Local   1:O Class: TBUTTON
-- Llamado desde TDIALOG:COMMAND(438)
-     Param   1:N 854272
-     Param   2:N 2048
-     Param   3:N 0
-     Param   4:N 0
-- Llamado desde TWINDOW:HANDLEEVENT(0)
-     Param   1:N 1
-     Param   2:N 854272
-     Local   1:O Class: TBUTTON
-     Local   2:N 0
-     Local   3:N 1
-     Local   4:N 854272
-     Local   5:U 
-- Llamado desde TDIALOG:HANDLEEVENT(941)
-     Param   1:N 273
-     Param   2:N 1
-     Param   3:N 854272
-- Llamado desde DIALOGBOX(0)
-     Param   1:N 273
-     Param   2:N 1
-     Param   3:N 854272
-- Llamado desde TDIALOG:ACTIVATE(318)
-     Param   1:N 4194304
-     Param   2:C SelectRango
-     Param   3:N 1116502
-     Param   4:O Class: TDIALOG
-- Llamado desde AGETSELREC(7615)
-     Param   1:U 
-     Param   2:U 
-     Param   3:U 
-     Param   4:L .T.
-     Param   5:U 
-     Param   6:L .T.
-     Param   7:B {|| ... }
-     Param   8:U 
-     Param   9:U 
-     Param  10:U 
-     Param  11:U 
-     Local   1:N 1116502
-     Local   2:S 
-     Local   3:O Class: TDIALOG
-- Llamado desde (b)FACTCLI(1238)
-     Param   1:O Class: TSHELL
-     Param   2:B {|| ... }
-     Param   3:C Contabilizar facturas
-     Param   4:L .T.
-     Param   5:C Simular resultados
-     Param   6:L .T.
-     Param   7:C Contabilizar recibos
-     Param   8:U 
-     Param   9:B {|| ... }
-     Local   1:O Class: TDIALOG
-     Local   2:O Class: TBUTTON
-     Local   3:O Class: TBUTTON
-     Local   4:O Class: TRADMENU
-     Local   5:N 2
-     Local   6:A Len:    0
-     Local   7:O Class: TTREEVIEW
-     Local   8:O Class: TCHECKBOX
-     Local   9:O Class: TCHECKBOX
-     Local  10:L .F.
-     Local  11:L .F.
-     Local  12:N 8032
-     Local  13:C DFECDES
-     Local  14:O Class: TGETHLP
-     Local  15:O Class: TGETHLP
-     Local  16:C A
-     Local  17:C A
-     Local  18:O Class: TGETHLP
-     Local  19:O Class: TGETHLP
-     Local  20:N 23202157
-     Local  21:N 23202157
-     Local  22:O Class: TGETHLP
-     Local  23:O Class: TGETHLP
-     Local  24:C 00
-     Local  25:C 00
-     Local  26:O Class: TAPOLOMETER
-     Local  27:N 0
-     Local  28:L .T.
-     Local  29:D 01/01/2025
-     Local  30:D 12/06/2025
-     Local  31:O Class: TIMAGELIST
-- Llamado desde TSHELL:CLICKTREE(2024)
-- Llamado desde (b)TSHELL_NEW(471)
-     Local   1:O Class: TTVITEM
-- Llamado desde TWINDOW:LBUTTONUP(1995)
-     Param   1:N 329
-     Param   2:N 87
-     Param   3:N 0
-- Llamado desde TTREEVIEW:LBUTTONUP(675)
-     Param   1:N 329
-     Param   2:N 87
-     Param   3:N 0
-- Llamado desde TCONTROL:HANDLEEVENT(1721)
-     Param   1:N 329
-     Param   2:N 87
-     Param   3:N 0
-     Local   1:A Len:    2
-     Local   2:L .F.
-- Llamado desde TTREEVIEW:HANDLEEVENT(407)
-     Param   1:N 514
-     Param   2:N 0
-     Param   3:N 21561431
-     Local   1:U 
-- Llamado desde _FWH(3368)
-     Param   1:N 514
-     Param   2:N 0
-     Param   3:N 21561431
-- Llamado desde WINRUN(0)
-     Param   1:N 21561431
-     Param   2:N 514
-     Param   3:N 0
-     Param   4:N 21561431
-     Param   5:N 19
-     Local   1:O Class: TTREEVIEW
-- Llamado desde TMDIFRAME:ACTIVATE(1043)
-     Param   1:N 1116502
-- Llamado desde CREATEMAINWINDOW(303)
-     Param   1:C MAXIMIZED
-     Param   2:U 
-     Param   3:U 
-     Param   4:U 
-     Param   5:B {|| ... }
-     Param   6:B {|| ... }
-     Param   7:B {|| ... }
-     Param   8:B {|| ... }
-     Param   9:U 
-     Param  10:U 
-     Param  11:U 
-     Param  12:U 
-     Param  13:U 
-     Param  14:U 
-     Param  15:U 
-     Param  16:U 
-     Param  17:B {|| ... }
-     Param  18:U 
-     Param  19:U 
-     Param  20:L .F.
-     Local   1:O Class: TMDIFRAME
-     Local   2:U 
-     Local   3:U 
+     Local   7:U 
+     Local   8:U 
+     Local   9:U 
+     Local  10:U 
+     Local  11:U 
+     Local  12:U 
+     Local  13:U 
+     Local  14:S 
+     Local  15:O Class: TITEMACCESO
 - Llamado desde MAIN(215)
      Param   1:O Class: TICON

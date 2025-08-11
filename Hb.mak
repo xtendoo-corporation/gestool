@@ -465,6 +465,7 @@ Colaboradores.prg       													\
 Actuaciones.prg         													\
 TDetActuacion.prg       													\
 Fabricantes.prg         													\
+FabricantesModel.prg      													\
 ExportaTarifas.prg      													\
 TComentarios.prg        													\
 TDetComentarios.prg     													\
@@ -1172,6 +1173,7 @@ Colaboradores.obj       													\
 Actuaciones.obj         													\
 TDetActuacion.obj       													\
 Fabricantes.obj         													\
+FabricantesModel.obj     													\
 ExportaTarifas.obj      													\
 TComentarios.obj        													\
 TDetComentarios.obj     													\
@@ -1874,6 +1876,7 @@ $(OBJ)\Colaboradores.obj        											+
 $(OBJ)\Actuaciones.obj          											+
 $(OBJ)\TDetActuacion.obj        											+
 $(OBJ)\Fabricantes.obj          											+
+$(OBJ)\FabricantesModel.obj          										+
 $(OBJ)\ExportaTarifas.obj       											+
 $(OBJ)\TComentarios.obj         											+
 $(OBJ)\TDetComentarios.obj      											+
