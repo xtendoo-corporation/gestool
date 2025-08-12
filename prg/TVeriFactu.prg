@@ -18,6 +18,8 @@
 #include "Factu.ch" 
 #include "MesDbf.ch"
 
+//*PRUEBAS
+
 //---------------------------------------------------------------------------//
 
 #define _CSERIE              1
