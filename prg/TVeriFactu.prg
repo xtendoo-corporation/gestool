@@ -3,6 +3,8 @@
 #include "Factu.ch" 
 #include "MesDbf.ch"
 
+//*PRUEBAS
+
 //---------------------------------------------------------------------------//
 
 CLASS TVeriFactu
