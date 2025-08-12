@@ -13,7 +13,7 @@
 //
 //---------------------------------------------------------------------------//
 
-#include "FiveWin.Ch"
+/*#include "FiveWin.Ch"
 #include "Font.ch"
 #include "Factu.ch" 
 #include "MesDbf.ch"
@@ -265,7 +265,7 @@ METHOD ValidarCertificado() CLASS TVeriFactu
          oWinHttp:SetClientCertificate( ::cRutaCertificado, ::cPasswordCert )
          lValido := .t.
       end if
-      */
+      
       
       lValido := .t. // Temporal para desarrollo
       
@@ -925,7 +925,7 @@ RETURN cResult
 //
 // Constantes para compatibilidad
 //
-//---------------------------------------------------------------------------//
+//---------------------------------------------------------------------------//*/
 
 
 

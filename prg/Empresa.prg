@@ -15,6 +15,7 @@
 #define fldContabilidad       oFld:aDialogs[ 6 ]
 #define fldEnvios             oFld:aDialogs[ 7 ]
 #define fldComunicaciones     oFld:aDialogs[ 8 ]
+#define fldVeryfactu     oFld:aDialogs[ 9 ]
 
 static oWndBrw
 static dbfEmp
@@ -122,6 +123,9 @@ static pdaPassword
 static pdaPasivo
 static pdaRuta
 static pdaRecogerVentas
+
+static cCertRuta
+static cCertPass
 
 static cCtaDescuentoEspecial
 
@@ -1143,6 +1147,9 @@ STATIC FUNCTION EditConfig( aTmp, aGet, dbfEmp, oBrw, nSelFolder, bValid, nMode 
    local oError
    local oBlock
    local oPdaRuta
+   
+   local oCertRuta
+   local oCertPass
 
    local oBrwEmp
    local oBrwCon
@@ -1155,10 +1162,11 @@ STATIC FUNCTION EditConfig( aTmp, aGet, dbfEmp, oBrw, nSelFolder, bValid, nMode 
    local oBmpEnvios
    local oBmpComunicacion
    local oBmpTPV
-
-   local aBnfSobre               := { "Costo", "Venta" }
+   local oBmpVeryfactu
+      
+   local aBnfSobre            := { "Costo", "Venta" }
    local aCifRut                 := { "Cálculo de C.I.F.", "Cálculo de R.U.T." }
-   local aPrinters               := GetPrinters()
+   local aPrinters              := GetPrinters()
    local oSayFmt
    local cSayFmt                 := ""
    local oGroupNFC
@@ -1296,6 +1304,9 @@ STATIC FUNCTION EditConfig( aTmp, aGet, dbfEmp, oBrw, nSelFolder, bValid, nMode 
    cUsuarioFtpImagenes     := padr( ConfiguracionesEmpresaModel():getValue( 'Usuario_Ftp_Img', '' ), 200 )   
    cClaveFtpImagenes       := padr( ConfiguracionesEmpresaModel():getValue( 'Clave_Ftp_Img', '' ), 200 )
 
+   cCertRuta                  := padr( ConfiguracionesEmpresaModel():getValue( 'cert_ruta', '' ), 200 )
+   cCertPass                   := padr( ConfiguracionesEmpresaModel():getValue( 'cert_pass', '' ), 50 )
+
    nLenSubcta              := ConfiguracionesEmpresaModel():getNumeric( 'lenSubCta', 1 )
 
    lDesFacExt              := ConfiguracionesEmpresaModel():getLogic( 'lDesFacExt', .f. )
@@ -1323,7 +1334,8 @@ STATIC FUNCTION EditConfig( aTmp, aGet, dbfEmp, oBrw, nSelFolder, bValid, nMode 
                   "EMPRESA_10",;
                   "EMPRESA_CONTABILIDAD",;
                   "EMPRESA_ENVIOS",;
-                  "EMPRESA_COMUNICACIONES"
+                  "EMPRESA_COMUNICACIONES",;
+                  "EMPRESA_VERYFACTU"
 
       // Page 1 Comportamientos---------------------------------------------------
  
@@ -2688,6 +2700,25 @@ STATIC FUNCTION EditConfig( aTmp, aGet, dbfEmp, oBrw, nSelFolder, bValid, nMode 
          ID       430 ;
          OF       fldComunicaciones
 
+      //VERYFACTU-------------------------------------------------------
+
+      REDEFINE BITMAP oBmpVeryfactu ;
+         ID       500 ;
+         RESOURCE "gc_veryfactu_48" ;
+         TRANSPARENT ;
+         OF       fldVeryfactu
+
+      REDEFINE GET oCertRuta VAR cCertRuta ;
+         ID       100;
+         PICTURE  "@!" ;
+         BITMAP   "FOLDER" ;
+         ON HELP  ( oCertRuta:cText( cGetFile( 'Certificados digitales (*.p12;*.pfx;*.cer;*.crt)|*.p12;*.pfx;*.cer;*.crt|', 'Seleccione el certificado digital' ) ) );
+         OF       fldVeryfactu
+
+      REDEFINE GET oCertPass VAR cCertPass ;
+         ID       110 ;
+         OF       fldVeryfactu
+
       // Botones --------------------------------------------------------------------
 
       fldContadores:AddFastKey( VK_F3, {|| EdtCon( oBrwCon ) } )
@@ -2763,6 +2794,10 @@ STATIC FUNCTION EditConfig( aTmp, aGet, dbfEmp, oBrw, nSelFolder, bValid, nMode 
       oBmpTPV:End()
    end if 
 
+   if !empty( oBmpVeryfactu )
+      oBmpVeryfactu:End()
+   end if 
+
    if !empty( oFnt )
       oFnt:End()
    end if
@@ -2794,15 +2829,16 @@ STATIC FUNCTION StartEditConfig( aTmp, oSay, oBrw, oDlg, oFld, nMode )
 
    oCarpeta          := TCarpeta():New( oOfficeBar, "Configurar empresa." )
 
-   oGrupo            := TDotNetGroup():New( oCarpeta, 488, "Opciones", .f. ) 
+   oGrupo            := TDotNetGroup():New( oCarpeta, 550, "Opciones", .f. ) 
       oBoton         := TDotNetButton():New( 60, oGrupo, "gc_wrench_32",               "General",           1, {| oBtn | oFld:SetOption( oBtn:nColumna ) }, , , .f., .f., .f. )
       oBoton         := TDotNetButton():New( 60, oGrupo, "gc_clipboard_pencil_32",     "Valores",           2, {| oBtn | oFld:SetOption( oBtn:nColumna ) }, , , .f., .f., .f. )
       oBoton         := TDotNetButton():New( 60, oGrupo, "gc_object_cube_32",          "Artículos",         3, {| oBtn | oFld:SetOption( oBtn:nColumna ) }, , , .f., .f., .f. )
       oBoton         := TDotNetButton():New( 60, oGrupo, "gc_cash_register_32",        "T.P.V.",            4, {| oBtn | oFld:SetOption( oBtn:nColumna ) }, , , .f., .f., .f. )
       oBoton         := TDotNetButton():New( 60, oGrupo, "gc_document_text_pencil_32", "Contadores",        5, {| oBtn | oFld:SetOption( oBtn:nColumna ) }, , , .f., .f., .f. )
       oBoton         := TDotNetButton():New( 60, oGrupo, "gc_folders2_32",             "Contabilidad",      6, {| oBtn | oFld:SetOption( oBtn:nColumna ) }, , , .f., .f., .f. )
-      oBoton         := TDotNetButton():New( 60, oGrupo, "gc_satellite_dish2_32",      "Envios",            7, {| oBtn | oFld:SetOption( oBtn:nColumna ) }, , , .f., .f., .f. )
+      oBoton         := TDotNetButton():New( 60, oGrupo, "gc_satellite_dish2_32",    "Envios",            7, {| oBtn | oFld:SetOption( oBtn:nColumna ) }, , , .f., .f., .f. )
       oBoton         := TDotNetButton():New( 60, oGrupo, "gc_earth_32",                "Comunicaciones",    8, {| oBtn | oFld:SetOption( oBtn:nColumna ) }, , , .f., .f., .f. )
+      oBoton         := TDotNetButton():New( 60, oGrupo, "gc_veryfactu_32",           "Veryfactu",    9, {| oBtn | oFld:SetOption( oBtn:nColumna ) }, , , .f., .f., .f. )
 
    oGrupo            := TDotNetGroup():New( oCarpeta, 122, "Guardar", .f. )
       oBoton         := TDotNetButton():New( 60, oGrupo, "gc_floppy_disk_32",          "Guardar",           1, {|| SaveEditConfig( aTmp, oSay, oBrw, oDlg, nMode ) }, , , .f., .f., .f. )
@@ -5805,6 +5841,9 @@ STATIC FUNCTION SaveEditConfig( aTmp, oSay, oBrw, oDlg, nMode )
    ConfiguracionesEmpresaModel():setValue( 'pda_ftp',                      alltrim( pdaFtp ) ) 
    ConfiguracionesEmpresaModel():setValue( 'pda_user',                     alltrim( pdaUsuario ) ) 
    ConfiguracionesEmpresaModel():setValue( 'pda_password',                 alltrim( pdaPassword ) ) 
+
+   ConfiguracionesEmpresaModel():setValue( 'cert_ruta',                 alltrim( cCertRuta ) ) 
+   ConfiguracionesEmpresaModel():setValue( 'cert_pass',                 alltrim( cCertPass ) ) 
 
    ConfiguracionesEmpresaModel():setValue( 'cuenta_descuento_especial',    alltrim( cCtaDescuentoEspecial ) ) 
 
