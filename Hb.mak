@@ -724,6 +724,7 @@ ImportLatress.prg 															\
 DuplicaTarifa.prg 														 	\
 VerificaProduct.prg 														\
 HistoricoVentas.prg 														\
+TVeriFactu.prg
 
 C               =       	            									\
 Img2pdf.c               	            									\
@@ -1436,6 +1437,7 @@ ImportLatress.obj 															\
 DuplicaTarifa.obj 														 	\
 VerificaProduct.obj 														\
 HistoricoVentas.obj 														\
+TVeriFactu.obj 																\
 
 .PRG.OBJ:
   	$(HB)\Bin\Harbour $? /n /p$(PPO)\$&.ppo /w /es2 /i$(FWINCLUDE) /gc0 /i$(HBINCLUDE) /i$(GTINCLUDE) /o$(OBJ)\$&.c
@@ -2136,6 +2138,7 @@ $(OBJ)\ImportLatress.obj 													+
 $(OBJ)\DuplicaTarifa.obj 													+
 $(OBJ)\VerificaProduct.obj 													+
 $(OBJ)\HistoricoVentas.obj 													+
+$(OBJ)\TVeriFactu.obj 														+
 $(OBJ)\Events.obj              		
 $<,$*
 $(FWLIB)\FiveH.lib               											+
