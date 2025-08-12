@@ -1,0 +1,254 @@
+#include "FiveWin.Ch"
+#include "Factu.ch" 
+
+//---------------------------------------------------------------------------//
+
+CLASS ArticulosController FROM SQLNavigatorController
+
+   DATA oArticulosTipoController
+
+   DATA oArticulosCategoriasController
+
+   DATA oArticulosFamiliasController
+
+   DATA oArticulosFabricantesController
+
+   DATA oArticulosPreciosController
+
+   DATA oTipoIvaController
+
+   DATA oImpuestosEspecialesController
+
+   DATA oCamposExtraValoresController
+
+   DATA oArticulosUnidadesMedicionController
+
+   DATA oPrimeraPropiedadController
+
+   DATA oSegundaPropiedadController
+
+   DATA oTraduccionesController
+
+   DATA oImagenesController
+
+   DATA oArticulosTemporadasController
+
+   METHOD New()
+
+   METHOD End()
+
+   METHOD insertPreciosWhereArticulo()
+
+   METHOD getPrecioCosto()        
+
+   METHOD getPorcentajeIVA()
+
+   METHOD validColumnArticulosFamiliaBrowse( oCol, uValue, nKey ) ;
+         INLINE ( ::validColumnBrowse( oCol, uValue, nKey, ::oArticulosFamiliasController:oModel, "articulo_familia_codigo" ) )
+
+   METHOD validColumnArticulosTipoBrowse( oCol, uValue, nKey ) ;
+         INLINE ( ::validColumnBrowse( oCol, uValue, nKey, ::oArticulosTipoController:oModel, "articulo_tipo_codigo" ) )
+
+   METHOD validColumnArticulosCategoriasBrowse( oCol, uValue, nKey ) ;
+         INLINE ( ::validColumnBrowse( oCol, uValue, nKey, ::oArticulosCategoriasController:oModel, "articulo_categoria_codigo" ) )
+
+   METHOD validColumnArticulosFabricantesBrowse( oCol, uValue, nKey ) ;
+         INLINE ( ::validColumnBrowse( oCol, uValue, nKey, ::oArticulosFabricantesController:oModel, "articulo_fabricante_codigo" ) )
+
+   METHOD validColumnArticulosTemporadasBrowse( oCol, uValue, nKey ) ;
+         INLINE ( ::validColumnBrowse( oCol, uValue, nKey, ::oArticulosTemporadasController:oModel, "articulo_temporada_codigo" ) )
+
+   METHOD validColumnTiposIvaBrowse( oCol, uValue, nKey ) ;
+         INLINE ( ::validColumnBrowse( oCol, uValue, nKey, ::oTipoIvaController:oModel, "tipo_iva_codigo" ) )
+
+   METHOD validColumnImpuestosEspecialesBrowse( oCol, uValue, nKey ) ;
+         INLINE ( ::validColumnBrowse( oCol, uValue, nKey, ::oImpuestosEspecialesController:oModel, "impuesto_especial_codigo" ) )
+
+   METHOD validPrimeraPropiedadBrowse( oCol, uValue, nKey ) ;
+         INLINE ( ::validColumnBrowse( oCol, uValue, nKey, ::oPrimeraPropiedadController:oModel, "primera_propiedad_codigo" ) )
+
+   METHOD validSegundaPropiedadBrowse( oCol, uValue, nKey ) ;
+         INLINE ( ::validColumnBrowse( oCol, uValue, nKey, ::oSegundaPropiedadController:oModel, "segunda_propiedad_codigo" ) )
+
+END CLASS
+
+//---------------------------------------------------------------------------//
+
+METHOD New() CLASS ArticulosController
+
+   ::Super:New()
+
+   ::cTitle                                  := "Artículos"
+
+   ::cName                                   := "articulos"
+
+   ::hImage                                  := {  "16" => "gc_object_cube_16",;
+                                                   "32" => "gc_object_cube_32",;
+                                                   "48" => "gc_object_cube_48" }
+
+   ::lTransactional                          := .t.
+
+   ::nLevel                                  := Auth():Level( ::cName )
+
+   ::oModel                                  := SQLArticulosModel():New( self )
+
+   ::oBrowseView                             := ArticulosBrowseView():New( self )
+
+   ::oDialogView                             := ArticulosView():New( self )
+
+   ::oValidator                              := ArticulosValidator():New( self, ::oDialogView )
+
+   ::oRepository                             := ArticulosRepository():New( self )
+
+   ::oCamposExtraValoresController           := CamposExtraValoresController():New( self, 'clientes' )
+
+   ::oImagenesController                     := ImagenesController():New( self )
+
+   ::oTraduccionesController                 := TraduccionesController():New( self )
+
+   ::oArticulosFamiliasController            := ArticulosFamiliasController():New( self )
+   ::oArticulosFamiliasController:setView( ::oDialogView )
+
+   ::oArticulosTipoController                := ArticulosTipoController():New( self )
+   ::oArticulosTipoController:setView( ::oDialogView )
+
+   ::oArticulosCategoriasController          := ArticulosCategoriasController():New( self )
+   ::oArticulosCategoriasController:setView( ::oDialogView )
+
+   ::oArticulosFabricantesController         := ArticulosFabricantesController():New( self )
+   ::oArticulosFabricantesController:setView( ::oDialogView )
+
+   ::oTipoIvaController                      := TipoIvaController():New( self )
+   ::oTipoIvaController:setView( ::oDialogView )
+
+   ::oImpuestosEspecialesController          := ImpuestosEspecialesController():New( self )
+   ::oImpuestosEspecialesController:setView( ::oDialogView )
+
+   ::oArticulosPreciosController             := ArticulosPreciosController():New( self )
+   ::oArticulosPreciosController:setView( ::oDialogView )
+
+   ::oPrimeraPropiedadController             := PropiedadesController():New( self )
+   ::oPrimeraPropiedadController:setView( ::oDialogView )
+
+   ::oSegundaPropiedadController             := PropiedadesController():New( self )
+   ::oSegundaPropiedadController:setView( ::oDialogView )
+   
+   ::oArticulosUnidadesMedicionController    := ArticulosUnidadesMedicionController():New( self )
+   ::oArticulosUnidadesMedicionController:setView( ::oDialogView )
+
+   ::oArticulosTemporadasController          := ArticulosTemporadasController():New( self )
+   ::oArticulosTemporadasController:setView( ::oDialogView )
+
+   ::oFilterController:setTableToFilter( ::oModel:cTableName )
+
+   ::oModel:setEvents( { 'loadedBlankBuffer', 'loadedCurrentBuffer' }, {|| ::insertPreciosWhereArticulo() } )
+
+RETURN ( Self )
+
+//---------------------------------------------------------------------------//
+
+METHOD End() CLASS ArticulosController
+
+   ::oModel:End()
+
+   ::oBrowseView:End()
+
+   ::oDialogView:End()
+
+   ::oValidator:End()
+
+   ::oRepository:End()
+
+   ::oCamposExtraValoresController:End()
+
+   ::oArticulosFamiliasController:End()
+
+   ::oArticulosTipoController:End()
+
+   ::oArticulosCategoriasController:End()
+
+   ::oArticulosFabricantesController:End()
+
+   ::oArticulosPreciosController:End()
+
+   ::oTipoIvaController:End()
+
+   ::oImpuestosEspecialesController:End()
+
+   ::oPrimeraPropiedadController:End()
+
+   ::oSegundaPropiedadController:End()
+
+   ::oArticulosUnidadesMedicionController:End()
+
+   ::oImagenesController:End()
+
+   ::oTraduccionesController:End()
+
+   ::oArticulosTemporadasController:End()
+
+   ::Super:End()
+
+RETURN ( Self )
+
+//---------------------------------------------------------------------------//
+
+METHOD getPrecioCosto() CLASS ArticulosController
+
+   if empty(::oModel)
+      RETURN ( 0 )
+   end if 
+
+   if empty(::oModel:hBuffer)
+      RETURN ( 0 )
+   end if 
+
+RETURN ( ::oModel:hBuffer[ "precio_costo" ] )
+
+//---------------------------------------------------------------------------//
+
+METHOD getPorcentajeIVA() CLASS ArticulosController
+
+   if empty(::oModel)
+      RETURN ( 0 )
+   end if 
+
+   if empty(::oModel:hBuffer)
+      RETURN ( 0 )
+   end if 
+
+RETURN ( ::oTipoIvaController:oModel:getPorcentajeWhereCodigo( ::oModel:hBuffer[ "tipo_iva_codigo" ] ) )
+
+//---------------------------------------------------------------------------//
+
+METHOD insertPreciosWhereArticulo() CLASS ArticulosController
+
+   local uuidArticulo   := hget( ::oModel:hBuffer, "uuid" )
+
+   if empty( uuidArticulo )
+      RETURN ( Self )
+   end if 
+
+   SQLArticulosPreciosModel():insertPreciosWhereArticulo( uuidArticulo )   
+
+RETURN ( Self )
+
+//---------------------------------------------------------------------------//
+//---------------------------------------------------------------------------//
+//---------------------------------------------------------------------------//
+//---------------------------------------------------------------------------//
+//---------------------------------------------------------------------------//
+//---------------------------------------------------------------------------//
+
+CLASS ArticulosRepository FROM SQLBaseRepository
+
+   METHOD getTableName()                  INLINE ( SQLArticulosModel():getTableName() ) 
+
+END CLASS
+
+//---------------------------------------------------------------------------//
+//---------------------------------------------------------------------------//
+//---------------------------------------------------------------------------//
+//---------------------------------------------------------------------------//
+//---------------------------------------------------------------------------//
+

@@ -1,0 +1,233 @@
+#include "FiveWin.Ch"
+#include "Factu.ch" 
+#include "MesDbf.ch"
+
+//---------------------------------------------------------------------------//
+
+CLASS MovimientosAlmacenView FROM SQLBaseView
+
+   DATA oOfficeBar
+
+   DATA oMeter
+   DATA nMeter
+
+   DATA oSQLBrowseView
+
+   DATA oGetNumero
+   DATA oGetDivisa
+   DATA oGetAlmacenOrigen
+   DATA oGetAlmacenDestino
+
+   DATA oRadioTipoMovimento
+
+   DATA idGoTo                      INIT     0
+
+   METHOD Activate()
+      METHOD startActivate()
+      METHOD initActivate()
+
+   METHOD changeTipoMovimiento()
+
+   METHOD getUsuario()              INLINE   (  UsuariosModel():getNombreWhereCodigo( ::oController:oModel:hBuffer[ "usuario_codigo" ] ) )
+
+   METHOD validateAndGoTo()         
+   METHOD validateAndGoDown()       INLINE   (  iif( validateDialog( ::oDialog ), ::oDialog:end( IDOKANDDOWN ), ) )
+   METHOD validateAndGoUp()         INLINE   (  iif( validateDialog( ::oDialog ), ::oDialog:end( IDOKANDUP ), ) )
+
+END CLASS
+
+//---------------------------------------------------------------------------//
+
+METHOD Activate()
+
+   DEFINE DIALOG     ::oDialog ;
+      RESOURCE       "MOVIMIENTOS_ALMACEN" ;
+      TITLE          ::lblTitle() + ::oController:getTitle() 
+
+      REDEFINE SAY   ;
+         PROMPT      alltrim( str( ::oController:oModel:hBuffer[ "id" ] ) );
+         ID          200 ;
+         OF          ::oDialog
+
+      ::oController:oNumeroDocumentoComponent:BindValue( bSETGET( ::oController:oModel:hBuffer[ "numero" ] ) )
+      ::oController:oNumeroDocumentoComponent:Activate( 100, ::oDialog )
+
+      REDEFINE GET   ::oController:oModel:hBuffer[ "fecha_hora" ] ;
+         ID          120 ;
+         PICTURE     "@DT" ;
+         SPINNER ;
+         WHEN        ( ::oController:isNotZoomMode() ) ;
+         OF          ::oDialog
+
+      REDEFINE SAY   ;
+         PROMPT      ::getUsuario() ;
+         ID          220 ;
+         OF          ::oDialog
+
+      REDEFINE RADIO ::oRadioTipoMovimento ;
+         VAR         ::oController:oModel:hBuffer[ "tipo_movimiento" ] ;
+         ID          130, 131, 132, 133 ;
+         WHEN        ( ::oController:isNotZoomMode() ) ;
+         ON CHANGE   ( ::changeTipoMovimiento() ) ;
+         OF          ::oDialog
+
+      REDEFINE GET   ::oGetAlmacenOrigen ;
+         VAR         ::oController:oModel:hBuffer[ "almacen_origen" ] ;
+         ID          150 ;
+         IDHELP      151 ;
+         IDSAY       152 ;
+         WHEN        ( ::oController:isNotZoomMode() ) ;
+         PICTURE     "@!" ;
+         BITMAP      "Lupa" ;
+         OF          ::oDialog
+
+      ::oGetAlmacenOrigen:bValid   := {|| ::oController:validateAlmacenOrigen() }
+      ::oGetAlmacenOrigen:bHelp    := {|| brwAlmacen( ::oGetAlmacenOrigen, ::oGetAlmacenOrigen:oHelpText ) }
+
+      REDEFINE GET   ::oGetAlmacenDestino ;
+         VAR         ::oController:oModel:hBuffer[ "almacen_destino" ] ;
+         ID          160 ;
+         IDHELP      161 ;
+         IDSAY       162 ;
+         WHEN        ( ::oController:isNotZoomMode() ) ;
+         PICTURE     "@!" ;
+         BITMAP      "Lupa" ;
+         OF          ::oDialog
+
+      ::oGetAlmacenDestino:bValid   := {|| ::oController:validateAlmacenDestino() }
+      ::oGetAlmacenDestino:bHelp    := {|| brwAlmacen( ::oGetAlmacenDestino, ::oGetAlmacenDestino:oHelpText ) }
+
+      // Marcadores---------------------------------------------------------------
+
+      // Divisas---------------------------------------------------------------
+
+      /*DivisasView();
+         :New( ::oController );
+         :CreateEditControl( { "idGet" => 190, "idBmp" => 191, "idValue" => 192, "dialog" => ::oDialog } )*/
+
+      // Comentarios-----------------------------------------------------------
+
+      REDEFINE GET   ::oController:oModel:hBuffer[ "comentarios" ] ;
+         ID          170 ;
+         MEMO ;
+         WHEN        ( ::oController:isNotZoomMode() ) ;
+         OF          ::oDialog
+
+      // Buttons lineas--------------------------------------------------------
+
+      ::oController:oLineasController:Activate( 180, ::oDialog )
+
+      // Meter de proceso------------------------------------------------------
+
+      REDEFINE APOLOMETER ::oMeter ;
+         VAR      ::nMeter ;
+         ID       210;
+         TOTAL    100 ;
+         OF       ::oDialog
+
+      ::oMeter:nClrText   := rgb( 128,255,0 )
+      ::oMeter:nClrBar    := rgb( 128,255,0 )
+      ::oMeter:nClrBText  := rgb( 128,255,0 )
+
+      // Dialog activate-------------------------------------------------------
+
+      if ::oController:isNotZoomMode()
+         ::oDialog:AddFastKey( VK_F9, {|| ::oController:Recalcular() } )
+      end if
+
+      ::oDialog:bStart    := {|| ::oMeter:Hide(), ::startActivate() }
+
+   ::oDialog:Activate( , , , .t., , , {|| ::initActivate() } ) 
+
+   ::oOfficeBar:End()
+
+RETURN ( ::oDialog:nResult )
+
+//---------------------------------------------------------------------------//
+
+METHOD startActivate()
+   
+   ::changeTipoMovimiento()
+
+   ::oController:stampAlmacenNombre( ::oGetAlmacenOrigen )
+
+   ::oController:stampAlmacenNombre( ::oGetAlmacenDestino )
+
+   ::oController:oLineasController:oBrowseView:getBrowse():makeTotals()
+   ::oController:oLineasController:oBrowseView:getBrowse():goTop()
+
+RETURN ( Self )
+
+//---------------------------------------------------------------------------//
+
+METHOD initActivate()
+
+   local oGrupo
+   
+   ::oOfficeBar   := OfficeBarView():New( Self )
+
+   ::oOfficeBar:createButtonImage()
+
+   ::oOfficeBar:createButtonsLine( ::oController:oLineasController, ::oSQLBrowseView )
+
+   if ::oController:isNotZoomMode()
+
+      oGrupo      := TDotNetGroup():New( ::oOfficeBar:oOfficeBarFolder, 66, "", .f. )
+                     TDotNetButton():New( 60, oGrupo, "gc_form_plus2_32", "Campos extra",             1, {|| CamposExtraValoresController():New( 'movimientos_almacen', ::oController:getUuid() ):Edit() }, , , .f., .f., .f. )
+
+      oGrupo      := TDotNetGroup():New( ::oOfficeBar:oOfficeBarFolder, 126,  "Otros", .f. )
+                     TDotNetButton():New( 60, oGrupo, "gc_hand_truck_box_32", "Importar almacén",     1, {|| ::oController:oImportadorController:Activate() }, , , .f., .f., .f. )
+                     TDotNetButton():New( 60, oGrupo, "gc_pda_32",            "Importar inventario",  2, {|| ::oController:oCapturadorController:Activate() }, , , .f., .f., .f. )
+                     
+   end if 
+
+   if ::oController:isEditMode()
+      oGrupo      := TDotNetGroup():New( ::oOfficeBar:oOfficeBarFolder, 66,   "Validación", .f., , "gc_user_32" )
+                     TDotNetButton():New( 60, oGrupo, "package_check_32",     "Validar",              1, {|| ::oController:lValidaDocumento(), ::oDialog:End( IDOK ) }, , , .f., .f., .f. )
+   end if
+
+   ::oOfficeBar:createButtonsDialog()
+
+   if ::oController:isEditMode()
+
+      oGrupo      := TDotNetGroup():New( ::oOfficeBar:oOfficeBarFolder, 126,     "Navegación", .f., , "gc_user_32" )
+                     TDotNetButton():New( 120, oGrupo, "gc_map_location_16",     "Ir a" ,       1, {|| ::validateAndGoTo() }, , , .f., .f., .f. )
+                     TDotNetButton():New( 120, oGrupo, "gc_navigate_right_16",   "Siguiente",   1, {|| ::validateAndGoDown() }, , , .f., .f., .f. )
+                     TDotNetButton():New( 120, oGrupo, "gc_navigate_left_16",    "Anterior",    1, {|| ::validateAndGoUp() }, , , .f., .f., .f. )
+   end if
+
+   ::oController:oLineasController:oBrowseView:getBrowse():restoreStateFromModel() 
+
+RETURN ( Self )
+
+//---------------------------------------------------------------------------//
+
+METHOD validateAndGoTo()
+
+   if !( validateDialog( ::oDialog ) )
+      RETURN .f.
+   end if 
+
+   ::idGoTo       := IdentificadorRegistroView():Activate( ::oController:oModel:hBuffer[ "id" ] )
+
+   if !empty( ::idGoTo )
+      ::oDialog:end( IDOKANDGOTO )
+   end if 
+
+RETURN ( .t. )
+
+//---------------------------------------------------------------------------//
+
+METHOD changeTipoMovimiento()    
+
+   if ::oRadioTipoMovimento:nOption() == __tipo_movimiento_entre_almacenes__
+      ::oGetAlmacenOrigen:Show()
+   else  
+      ::oGetAlmacenOrigen:cText( Space( 16 ) )
+      ::oGetAlmacenOrigen:oHelpText:cText( Space( 200 ) )
+      ::oGetAlmacenOrigen:Hide()
+   end if
+
+RETURN ( .t. )
+
+//---------------------------------------------------------------------------//
