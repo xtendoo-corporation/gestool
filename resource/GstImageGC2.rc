@@ -466,3 +466,8 @@ WORDPRESS_64 BITMAP "..\\bmp\\WordPress_64.bmp"
 
 SERVER_ID_CARD_16  BITMAP "..\\bmp\\server_id_card_16 .bmp"
 SERVER_ID_CARD_32 BITMAP "..\\bmp\\server_id_card_32.bmp"
+
+GC_VERYFACTU_16 BITMAP "..\\bmp\\gc_veryfactu_16.bmp"
+GC_VERYFACTU_32 BITMAP "..\\bmp\\gc_veryfactu_32.bmp"
+GC_VERYFACTU_48 BITMAP "..\\bmp\\gc_veryfactu_48.bmp"
+GC_VERYFACTU_64 BITMAP "..\\bmp\\gc_veryfactu_64.bmp"

@@ -2746,7 +2746,7 @@ STATIC FUNCTION EditConfig( aTmp, aGet, dbfEmp, oBrw, nSelFolder, bValid, nMode 
 
    if oDlg:nResult == IDOK
 
-      setEmpresa( ( dbfEmp )->CodEmp, oBrw )
+      setEmpresa( ( dbfEmp )->CodEmp, oBrw ) 
    
       ApplicationLoad()
       
@@ -2820,8 +2820,8 @@ STATIC FUNCTION StartEditConfig( aTmp, oSay, oBrw, oDlg, oFld, nMode )
    local oGrupo
    local oCarpeta
 
-   oOfficeBar              := TDotNetBar():New( 0, 0, 2020, 128, oDlg, 1 )
-   oOfficeBar:lPaintAll    := .f.
+   oOfficeBar              := TDotNetBar():New( 0, 0, 2020, 128, oDlg, 1 )   
+   oOfficeBar:lPaintAll    := .f.  
    oOfficeBar:lDisenio     := .f.
    oOfficeBar:SetStyle( 1 )
 
