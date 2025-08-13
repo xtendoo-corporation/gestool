@@ -6841,7 +6841,7 @@ STATIC FUNCTION aItmCfg()
 
    aAdd( aItmCfg, { "cCodEmp",   "C",  4, 0, "Código de empresa"    } )
    aAdd( aItmCfg, { "cName",     "C", 50, 0, "Nombre de la configuración" } )
-   aAdd( aItmCfg, { "cValue",    "C", 50, 0, "Valos de la configuración" } )
+   aAdd( aItmCfg, { "cValue",    "C", 250, 0, "Valor de la configuración" } )
    aAdd( aItmCfg, { "Uuid",      "C", 40, 0, "Uuid" } )
 
 RETURN ( aItmCfg )
