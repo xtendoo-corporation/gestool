@@ -13,23 +13,14 @@
 //
 //---------------------------------------------------------------------------//
 
-/*#include "FiveWin.Ch"
+#include "FiveWin.Ch"
 #include "Font.ch"
 #include "Factu.ch" 
 #include "MesDbf.ch"
 
-//*PRUEBAS
-
-//---------------------------------------------------------------------------//
-
-#define _CSERIE              1
-#define _NNUMFAC             2  
-#define _CSUFFAC             3
-#define _DFECFAC             6
-
 //---------------------------------------------------------------------------//
 //
-// Clase principal VeriFactu - Cumplimiento normativa AEAT
+// Clase principal VeriFactu - Cumplimiento normativa AEATfactcli
 //
 //---------------------------------------------------------------------------//
 
@@ -98,7 +89,7 @@ CLASS TVeriFactu
    METHOD SetDatosFactura( aTmp )
    METHOD SetDatosEmisor( cNif, cNombre )
    METHOD SetDatosReceptor( cNif, cNombre, cTipoId )
-   METHOD ConfigurarCertificado( cRuta, cPassword, cTipo )
+   /*METHOD ConfigurarCertificado( cRuta, cPassword, cTipo )
    METHOD ConfigurarProxy( cServer, nPort, cUser, cPass )
    METHOD GenerarVeriFactu()
    METHOD GenerarJSON()
@@ -121,26 +112,24 @@ CLASS TVeriFactu
    
    // Métodos de utilidad
    METHOD FormatearFecha( dFecha )
-   METHOD FormatearImporte( nImporte )
+   METHOD FormatearImporte( nImporte )*/
    METHOD LimpiarString( cTexto )
 
 END CLASS
 
 //---------------------------------------------------------------------------//
 
-METHOD New( aTmp, cNifEmisor, cNomEmisor ) CLASS TVeriFactu
+METHOD New( aTmp ) CLASS TVeriFactu
 
    ::aErrores := {}
    
-   if aTmp != nil
+   /*if aTmp != nil
       ::SetDatosFactura( aTmp )
-   end if
+   end if*/
    
-   if !Empty( cNifEmisor )
-      ::SetDatosEmisor( cNifEmisor, cNomEmisor )
-   end if
+   ::SetDatosEmisor()
    
-   ::GenerarIdVeriFactu()
+   //::GenerarIdVeriFactu()
 
 RETURN Self
 
@@ -148,7 +137,7 @@ RETURN Self
 
 METHOD SetDatosFactura( aTmp ) CLASS TVeriFactu
 
-   try
+   /*try
       // Datos básicos de la factura
       ::cSerieFactura  := AllTrim( aTmp[ _CSERIE ] )
       ::nNumeroFactura := aTmp[ _NNUMFAC ]
@@ -170,16 +159,16 @@ METHOD SetDatosFactura( aTmp ) CLASS TVeriFactu
    catch oError
       ::lError := .t.
       AAdd( ::aErrores, "Error al procesar datos de factura: " + oError:Description )
-   end try
+   end try*/
 
 RETURN Self
 
 //---------------------------------------------------------------------------//
 
-METHOD SetDatosEmisor( cNif, cNombre ) CLASS TVeriFactu
+METHOD SetDatosEmisor() CLASS TVeriFactu
 
-   ::cNIFEmisor   := ::LimpiarString( cNif )
-   ::cNombreEmisor := ::LimpiarString( cNombre )
+   ::cNIFEmisor   := ::LimpiarString( uFieldempresa( 'cNif' ) )
+   ::cNombreEmisor := ::LimpiarString( uFieldempresa( 'cNombre' ) )
 
 RETURN Self
 
@@ -195,7 +184,12 @@ RETURN Self
 
 //---------------------------------------------------------------------------//
 
-METHOD ConfigurarCertificado( cRuta, cPassword, cTipo ) CLASS TVeriFactu
+METHOD LimpiarString( cTexto ) CLASS TVeriFactu
+RETURN AllTrim( StrTran( StrTran( cTexto, Chr(13), "" ), Chr(10), "" ) )
+
+//---------------------------------------------------------------------------//
+
+/*METHOD ConfigurarCertificado( cRuta, cPassword, cTipo ) CLASS TVeriFactu
 
    DEFAULT cTipo := "P12"
 
@@ -801,11 +795,6 @@ RETURN Transform( dFecha, "@R 9999-99-99" )
 METHOD FormatearImporte( nImporte ) CLASS TVeriFactu
    // Formato: sin separadores de miles, punto decimal
 RETURN AllTrim( Str( nImporte, 12, 2 ) )
-
-//---------------------------------------------------------------------------//
-
-METHOD LimpiarString( cTexto ) CLASS TVeriFactu
-RETURN AllTrim( StrTran( StrTran( cTexto, Chr(13), "" ), Chr(10), "" ) )
 
 //---------------------------------------------------------------------------//
 //

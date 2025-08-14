@@ -124,6 +124,7 @@ static pdaPasivo
 static pdaRuta
 static pdaRecogerVentas
 
+static lVeryFactu
 static cCertRuta
 static cCertPass
 
@@ -1306,6 +1307,8 @@ STATIC FUNCTION EditConfig( aTmp, aGet, dbfEmp, oBrw, nSelFolder, bValid, nMode 
 
    cCertRuta                  := padr( ConfiguracionesEmpresaModel():getValue( 'cert_ruta', '' ), 200 )
    cCertPass                   := padr( ConfiguracionesEmpresaModel():getValue( 'cert_pass', '' ), 50 )
+
+   lVeryFactu                 := ConfiguracionesEmpresaModel():getLogic( 'lVeryFactu', .f. )
 
    nLenSubcta              := ConfiguracionesEmpresaModel():getNumeric( 'lenSubCta', 1 )
 
@@ -2708,6 +2711,10 @@ STATIC FUNCTION EditConfig( aTmp, aGet, dbfEmp, oBrw, nSelFolder, bValid, nMode 
          TRANSPARENT ;
          OF       fldVeryfactu
 
+      REDEFINE ChECKBOX lVeryfactu ;   
+         ID       120 ;
+         OF       fldVeryfactu
+      
       REDEFINE GET oCertRuta VAR cCertRuta ;
          ID       100;
          PICTURE  "@!" ;
@@ -3646,7 +3653,7 @@ FUNCTION mkPathEmp( cCodEmpNew, cNomEmpNew, cCodEmpOld, aImportacion, lDialog, l
 
          oDlgWat:bStart := {|| StartPathEmp( cPath, cPathOld, cCodEmpNew, cNomEmpNew, cCodEmpOld, aImportacion, lDialog, lNewEmp, nGetSemilla, oMsg ), lEnd := .t., oDlgWat:End() }
 
-      ACTIVATE DIALOG oDlgWat CENTER VALID ( lEnd )
+      ACTIVATE DIALOG oDlgWat CENTER VALID ( lEnd ) 
 
       oBmp:End()
 
@@ -5844,6 +5851,8 @@ STATIC FUNCTION SaveEditConfig( aTmp, oSay, oBrw, oDlg, nMode )
 
    ConfiguracionesEmpresaModel():setValue( 'cert_ruta',                 alltrim( cCertRuta ) ) 
    ConfiguracionesEmpresaModel():setValue( 'cert_pass',                 alltrim( cCertPass ) ) 
+
+   ConfiguracionesEmpresaModel():setValue( 'lVeryFactu', lVeryFactu )
 
    ConfiguracionesEmpresaModel():setValue( 'cuenta_descuento_especial',    alltrim( cCtaDescuentoEspecial ) ) 
 
