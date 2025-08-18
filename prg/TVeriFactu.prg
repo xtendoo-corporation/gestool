@@ -18,6 +18,10 @@
 #include "Factu.ch" 
 #include "MesDbf.ch"
 
+// Declaración de variables MEMVAR para evitar ambigüedades
+MEMVAR __cRutaCertVeriFactu, __cPassCertVeriFactu, __cTipoCertVeriFactu, __cEntornoVeriFactu
+MEMVAR nTotNet, nTotIva, nTotFac
+
 //---------------------------------------------------------------------------//
 //
 // Clase principal VeriFactu - Cumplimiento normativa AEATfactcli
@@ -25,6 +29,8 @@
 //---------------------------------------------------------------------------//
 
 CLASS TVeriFactu
+   
+   DATA lEnable            INIT .f.
 
    // Datos básicos de la factura
    DATA cNumeroFactura    INIT ""
@@ -89,21 +95,19 @@ CLASS TVeriFactu
    METHOD SetDatosFactura( aTmp )
    METHOD SetDatosEmisor( cNif, cNombre )
    METHOD SetDatosReceptor( cNif, cNombre, cTipoId )
-   /*METHOD ConfigurarCertificado( cRuta, cPassword, cTipo )
+   METHOD ConfigurarCertificado()
+   METHOD ValidarCertificado()
    METHOD ConfigurarProxy( cServer, nPort, cUser, cPass )
    METHOD GenerarVeriFactu()
    METHOD GenerarJSON()
    METHOD GenerarQR()
    METHOD EnviarAEAT()
    METHOD AutenticarAEAT()
-   METHOD ValidarCertificado()
    
    // Métodos auxiliares
    METHOD CalcularHash()
    METHOD GenerarIdVeriFactu()
    METHOD ValidarDatos()
-   METHOD CrearEstructuraJSON()
-   METHOD ObtenerCodigoQR()
    METHOD CrearNombresArchivos()
    METHOD EscribirArchivos( cJSON, cQR )
    METHOD EnviarHTTPS( cURL, cDatos, cMetodo )
@@ -112,7 +116,7 @@ CLASS TVeriFactu
    
    // Métodos de utilidad
    METHOD FormatearFecha( dFecha )
-   METHOD FormatearImporte( nImporte )*/
+   METHOD FormatearImporte( nImporte )
    METHOD LimpiarString( cTexto )
 
 END CLASS
@@ -121,14 +125,26 @@ END CLASS
 
 METHOD New( aTmp ) CLASS TVeriFactu
 
-   ::aErrores := {}
-   
-   /*if aTmp != nil
-      ::SetDatosFactura( aTmp )
-   end if*/
-   
-   ::SetDatosEmisor()
-   
+   ::aErrores          := {}
+   ::lEnable           := uFieldempresa('lVeryfactu')
+
+   if ::lEnable
+
+      /*if aTmp != nil
+         ::SetDatosFactura( aTmp )
+      end if*/
+
+      ::SetDatosEmisor()
+
+      ::SetDatosReceptor()
+
+      ::ConfigurarCertificado()
+
+   else
+      AAdd( ::aErrores, "VeriFactu no está habilitado en la configuración de la empresa." )
+      RETURN Self
+   end if
+
    //::GenerarIdVeriFactu()
 
 RETURN Self
@@ -137,12 +153,13 @@ RETURN Self
 
 METHOD SetDatosFactura( aTmp ) CLASS TVeriFactu
 
-   /*try
+   local oDataErr
+
       // Datos básicos de la factura
-      ::cSerieFactura  := AllTrim( aTmp[ _CSERIE ] )
-      ::nNumeroFactura := aTmp[ _NNUMFAC ]
-      ::cSufijoFactura := AllTrim( aTmp[ _CSUFFAC ] )
-      ::dFechaFactura  := aTmp[ _DFECFAC ]
+      // ::cSerieFactura  := AllTrim( aTmp[ _CSERIE ] )
+      // ::nNumeroFactura := aTmp[ _NNUMFAC ]
+      // ::cSufijoFactura := AllTrim( aTmp[ _CSUFFAC ] )
+      //::dFechaFactura  := aTmp[ _DFECFAC ]
       ::cHoraFactura   := Time()
       
       // Construir número completo
@@ -156,19 +173,14 @@ METHOD SetDatosFactura( aTmp ) CLASS TVeriFactu
       ::nTotalFactura  := if( Type("nTotFac") == "N", nTotFac, 0 )
       ::nImporteTotal  := ::nBaseImponible + ::nCuotaIVA
 
-   catch oError
-      ::lError := .t.
-      AAdd( ::aErrores, "Error al procesar datos de factura: " + oError:Description )
-   end try*/
-
 RETURN Self
 
 //---------------------------------------------------------------------------//
 
 METHOD SetDatosEmisor() CLASS TVeriFactu
 
-   ::cNIFEmisor   := ::LimpiarString( uFieldempresa( 'cNif' ) )
-   ::cNombreEmisor := ::LimpiarString( uFieldempresa( 'cNombre' ) )
+   ::cNIFEmisor      := ::LimpiarString( uFieldempresa( 'cNif' ) )
+   ::cNombreEmisor   := ::LimpiarString( uFieldempresa( 'cNombre' ) )
 
 RETURN Self
 
@@ -189,33 +201,23 @@ RETURN AllTrim( StrTran( StrTran( cTexto, Chr(13), "" ), Chr(10), "" ) )
 
 //---------------------------------------------------------------------------//
 
-/*METHOD ConfigurarCertificado( cRuta, cPassword, cTipo ) CLASS TVeriFactu
+METHOD ConfigurarCertificado() CLASS TVeriFactu
 
-   DEFAULT cTipo := "P12"
-
-   try
-      ::cRutaCertificado := cRuta
-      ::cPasswordCert    := cPassword  
-      ::cTipoCertificado := Upper( cTipo )
-      
-      // Validar que el archivo existe
-      if !File( ::cRutaCertificado )
-         AAdd( ::aErrores, "No se encuentra el archivo de certificado: " + ::cRutaCertificado )
-         RETURN .f.
-      end if
-      
-      // Configurar URLs según entorno
-      if ::cEntorno == "PRODUCCION"
-         ::cURLAEAT := "https://www2.aeat.es/wlpl/TIKE-CONT/ws/VeriFactu"
-      else
-         ::cURLAEAT := "https://prewww2.aeat.es/wlpl/TIKE-CONT/ws/VeriFactu" 
-      end if
-      
-   catch oError
-      ::lError := .t.
-      AAdd( ::aErrores, "Error al configurar certificado: " + oError:Description )
+   ::cRutaCertificado := ::LimpiarString( uFieldempresa('cCertRuta'))
+   ::cPasswordCert    := ::LimpiarString( uFieldempresa('cCertPass'))
+   
+   // Validar que el archivo existe
+   if !File( ::cRutaCertificado )
+      AAdd( ::aErrores, "No se encuentra el archivo de certificado: " + ::cRutaCertificado )
       RETURN .f.
-   end try
+   end if
+   
+   // Configurar URLs según entorno
+   if ::cEntorno == "PRODUCCION"
+      ::cURLAEAT := "https://www2.aeat.es/wlpl/TIKE-CONT/ws/VeriFactu"
+   else
+      ::cURLAEAT := "https://prewww2.aeat.es/wlpl/TIKE-CONT/ws/VeriFactu" 
+   end if     
 
 RETURN .t.
 
@@ -235,21 +237,21 @@ RETURN Self
 METHOD ValidarCertificado() CLASS TVeriFactu
 
    local lValido := .f.
-   local oWinHttp, oError
+   local oWinHttp, oCertErr
+
+   if Empty( ::cRutaCertificado )
+      AAdd( ::aErrores, "Ruta del certificado no configurada" )
+      RETURN .f.
+   end if
+   
+   if !File( ::cRutaCertificado )
+      AAdd( ::aErrores, "Archivo de certificado no encontrado" )
+      RETURN .f.
+   end if
 
    try
       // Verificar que el certificado es válido y no ha expirado
       // Esto requiere componentes COM de Windows o librerías específicas
-      
-      if Empty( ::cRutaCertificado )
-         AAdd( ::aErrores, "Ruta del certificado no configurada" )
-         RETURN .f.
-      end if
-      
-      if !File( ::cRutaCertificado )
-         AAdd( ::aErrores, "Archivo de certificado no encontrado" )
-         RETURN .f.
-      end if
       
       // TODO: Implementar validación real del certificado
       // Ejemplo con WinHTTP (requiere componente COM):
@@ -259,13 +261,13 @@ METHOD ValidarCertificado() CLASS TVeriFactu
          oWinHttp:SetClientCertificate( ::cRutaCertificado, ::cPasswordCert )
          lValido := .t.
       end if
-      
+      */
       
       lValido := .t. // Temporal para desarrollo
       
-   catch oError
+   catch oCertErr
       ::lError := .t.
-      AAdd( ::aErrores, "Error al validar certificado: " + oError:Description )
+      AAdd( ::aErrores, "Error al validar certificado: " + oCertErr:Description )
       lValido := .f.
    end try
 
@@ -275,10 +277,12 @@ RETURN lValido
 
 METHOD AutenticarAEAT() CLASS TVeriFactu
 
+   local lError := .f.
    local cRespuesta := ""
    local hRespuesta := {=>}
    local cURL := ""
    local cDatos := ""
+   local oErr
 
    try
       // Endpoint de autenticación AEAT
@@ -299,27 +303,28 @@ METHOD AutenticarAEAT() CLASS TVeriFactu
          
          if hb_HHasKey( hRespuesta, "token" )
             ::cTokenSesion := hRespuesta["token"]
-            RETURN .t.
          else
+            lError := .t.
             AAdd( ::aErrores, "Token de sesión no recibido" )
          end if
       else
+         lError := .t.
          AAdd( ::aErrores, "Sin respuesta del servidor AEAT" )
       end if
       
-   catch oError
-      ::lError := .t.
-      AAdd( ::aErrores, "Error en autenticación AEAT: " + oError:Description )
+   catch oErr
+      lError := .t.
+      AAdd( ::aErrores, "Error en autenticación AEAT: " + oErr:Description )
    end try
 
-RETURN .f.
+RETURN lError
 
 //---------------------------------------------------------------------------//
 
 METHOD EnviarHTTPS( cURL, cDatos, cMetodo ) CLASS TVeriFactu
 
    local cRespuesta := ""
-   local oWinHttp, oError
+   local oWinHttp, oHttpErr
    local aCabeceras := {}
    local i
 
@@ -331,57 +336,57 @@ METHOD EnviarHTTPS( cURL, cDatos, cMetodo ) CLASS TVeriFactu
       
       if oWinHttp == nil
          AAdd( ::aErrores, "No se pudo crear objeto WinHTTP" )
-         RETURN ""
-      end if
-      
-      // Configurar timeout
-      oWinHttp:SetTimeOuts( ::nTimeoutHTTPS, ::nTimeoutHTTPS, ::nTimeoutHTTPS, ::nTimeoutHTTPS )
-      
-      // Configurar proxy si está definido
-      if !Empty( ::cProxyServer )
-         oWinHttp:SetProxy( 2, ::cProxyServer + ":" + AllTrim( Str( ::nProxyPort ) ) )
-         if !Empty( ::cProxyUser )
-            oWinHttp:SetCredentials( ::cProxyUser, ::cProxyPass, 1 ) // 1 = HTTPREQUEST_PROXYSETTING_PROXY
+      else
+         // Configurar timeout
+         oWinHttp:SetTimeOuts( ::nTimeoutHTTPS, ::nTimeoutHTTPS, ::nTimeoutHTTPS, ::nTimeoutHTTPS )
+         
+         // Configurar proxy si está definido
+         if !Empty( ::cProxyServer )
+            oWinHttp:SetProxy( 2, ::cProxyServer + ":" + AllTrim( Str( ::nProxyPort ) ) )
+            if !Empty( ::cProxyUser )
+               oWinHttp:SetCredentials( ::cProxyUser, ::cProxyPass, 1 ) // 1 = HTTPREQUEST_PROXYSETTING_PROXY
+            end if
+         end if
+         
+         // Abrir conexión
+         oWinHttp:Open( cMetodo, cURL, .f. ) // .f. = síncrono
+         
+         // Configurar certificado digital
+         if !Empty( ::cRutaCertificado )
+            do case
+               case ::cTipoCertificado == "P12" .or. ::cTipoCertificado == "PFX"
+                  oWinHttp:SetClientCertificate( ::cRutaCertificado )
+               otherwise
+                  AAdd( ::aErrores, "Tipo de certificado no soportado: " + ::cTipoCertificado )
+            endcase
+         end if
+         
+         // Configurar cabeceras HTTP solo si no hay errores de certificado
+         if Len( ::aErrores ) == 0 .or. ATail( ::aErrores ) != "Tipo de certificado no soportado: " + ::cTipoCertificado
+            aCabeceras := ::PrepararCabeceras()
+            for i := 1 to Len( aCabeceras )
+               oWinHttp:SetRequestHeader( aCabeceras[i][1], aCabeceras[i][2] )
+            next
+            
+            // Enviar petición
+            if !Empty( cDatos )
+               oWinHttp:Send( cDatos )
+            else
+               oWinHttp:Send()
+            end if
+            
+            // Obtener respuesta
+            if oWinHttp:Status == 200
+               cRespuesta := oWinHttp:ResponseText
+            else
+               AAdd( ::aErrores, "Error HTTP " + AllTrim( Str( oWinHttp:Status ) ) + ": " + oWinHttp:StatusText )
+            end if
          end if
       end if
       
-      // Abrir conexión
-      oWinHttp:Open( cMetodo, cURL, .f. ) // .f. = síncrono
-      
-      // Configurar certificado digital
-      if !Empty( ::cRutaCertificado )
-         do case
-            case ::cTipoCertificado == "P12" .or. ::cTipoCertificado == "PFX"
-               oWinHttp:SetClientCertificate( ::cRutaCertificado )
-            otherwise
-               AAdd( ::aErrores, "Tipo de certificado no soportado: " + ::cTipoCertificado )
-               RETURN ""
-         endcase
-      end if
-      
-      // Configurar cabeceras HTTP
-      aCabeceras := ::PrepararCabeceras()
-      for i := 1 to Len( aCabeceras )
-         oWinHttp:SetRequestHeader( aCabeceras[i][1], aCabeceras[i][2] )
-      next
-      
-      // Enviar petición
-      if !Empty( cDatos )
-         oWinHttp:Send( cDatos )
-      else
-         oWinHttp:Send()
-      end if
-      
-      // Obtener respuesta
-      if oWinHttp:Status == 200
-         cRespuesta := oWinHttp:ResponseText
-      else
-         AAdd( ::aErrores, "Error HTTP " + AllTrim( Str( oWinHttp:Status ) ) + ": " + oWinHttp:StatusText )
-      end if
-      
-   catch oError
+   catch oHttpErr
       ::lError := .t.
-      AAdd( ::aErrores, "Error en comunicación HTTPS: " + oError:Description )
+      AAdd( ::aErrores, "Error en comunicación HTTPS: " + oHttpErr:Description )
       cRespuesta := ""
    end try
 
@@ -415,6 +420,7 @@ METHOD ProcesarRespuestaAEAT( cRespuesta ) CLASS TVeriFactu
 
    local hRespuesta := {=>}
    local lExito := .f.
+   local oRespErr
 
    try
       if !Empty( cRespuesta )
@@ -445,9 +451,9 @@ METHOD ProcesarRespuestaAEAT( cRespuesta ) CLASS TVeriFactu
          AAdd( ::aErrores, "Respuesta AEAT vacía" )
       end if
       
-   catch oError
+   catch oRespErr
       ::lError := .t.
-      AAdd( ::aErrores, "Error al procesar respuesta AEAT: " + oError:Description )
+      AAdd( ::aErrores, "Error al procesar respuesta AEAT: " + oRespErr:Description )
    end try
 
 RETURN lExito
@@ -459,42 +465,43 @@ METHOD GenerarVeriFactu() CLASS TVeriFactu
    local lExito := .f.
    local cJSON := ""
    local cQR := ""
+   local oGenErr
 
    try
       // Validar datos requeridos
-      if !::ValidarDatos()
-         RETURN .f.
-      end if
-      
-      // Generar hash y código seguro
-      ::CalcularHash()
-      
-      // Crear nombres de archivos
-      ::CrearNombresArchivos()
-      
-      // Generar JSON
-      cJSON := ::GenerarJSON()
-      if Empty( cJSON )
-         AAdd( ::aErrores, "Error al generar JSON" )
-         RETURN .f.
-      end if
-      
-      // Generar código QR si está habilitado
-      if ::lGenerarQR
-         cQR := ::GenerarQR()
-      end if
-      
-      // Escribir archivos
-      lExito := ::EscribirArchivos( cJSON, cQR )
-      
-      // Enviar a AEAT si está configurado
-      if lExito .and. ::lEnviarAEAT
-         ::EnviarAEAT()
+      if ::ValidarDatos()
+         // Generar hash y código seguro
+         ::CalcularHash()
+         
+         // Crear nombres de archivos
+         ::CrearNombresArchivos()
+         
+         // Generar JSON
+         cJSON := ::GenerarJSON()
+         if !Empty( cJSON )
+            // Generar código QR si está habilitado
+            if ::lGenerarQR
+               cQR := ::GenerarQR()
+            end if
+            
+            // Escribir archivos
+            lExito := ::EscribirArchivos( cJSON, cQR )
+            
+            // Enviar a AEAT si está configurado
+            if lExito .and. ::lEnviarAEAT
+               ::EnviarAEAT()
+            end if
+         else
+            AAdd( ::aErrores, "Error al generar JSON" )
+            lExito := .f.
+         end if
+      else
+         lExito := .f.
       end if
 
-   catch oError
+   catch oGenErr
       ::lError := .t.
-      AAdd( ::aErrores, "Error en GenerarVeriFactu: " + oError:Description )
+      AAdd( ::aErrores, "Error en GenerarVeriFactu: " + oGenErr:Description )
       lExito := .f.
    end try
 
@@ -510,6 +517,7 @@ METHOD GenerarJSON() CLASS TVeriFactu
    local hEmisor := {=>}
    local hReceptor := {=>}
    local hDetalles := {=>}
+   local oJsonErr
 
    try
       // Estructura según normativa AEAT VeriFactu
@@ -556,9 +564,9 @@ METHOD GenerarJSON() CLASS TVeriFactu
       // Convertir a JSON
       cJSON := hb_JsonEncode( hFactura, .t. ) // .t. = pretty print
 
-   catch oError
+   catch oJsonErr
       ::lError := .t.
-      AAdd( ::aErrores, "Error al generar JSON: " + oError:Description )
+      AAdd( ::aErrores, "Error al generar JSON: " + oJsonErr:Description )
       cJSON := ""
    end try
 
@@ -571,6 +579,7 @@ METHOD GenerarQR() CLASS TVeriFactu
    local cQR := ""
    local cURL := ""
    local cDatos := ""
+   local oQrErr
 
    try
       // Construir URL según normativa AEAT VeriFactu
@@ -591,9 +600,9 @@ METHOD GenerarQR() CLASS TVeriFactu
       // Aquí se podría integrar una librería de generación de QR
       // Por ahora devolvemos la URL que debe codificarse en QR
       
-   catch oError
+   catch oQrErr
       ::lError := .t.
-      AAdd( ::aErrores, "Error al generar QR: " + oError:Description )
+      AAdd( ::aErrores, "Error al generar QR: " + oQrErr:Description )
       cQR := ""
    end try
 
@@ -605,6 +614,7 @@ METHOD CalcularHash() CLASS TVeriFactu
 
    local cDatos := ""
    local cHash := ""
+   local oHashErr
 
    try
       // Construir cadena para hash según normativa AEAT
@@ -622,9 +632,9 @@ METHOD CalcularHash() CLASS TVeriFactu
       // Generar código seguro (primeros 16 caracteres del hash)
       ::cCodigoSeguro := Left( cHash, 16 )
       
-   catch oError
+   catch oHashErr
       ::lError := .t.
-      AAdd( ::aErrores, "Error al calcular hash: " + oError:Description )
+      AAdd( ::aErrores, "Error al calcular hash: " + oHashErr:Description )
    end try
 
 RETURN Self
@@ -699,6 +709,7 @@ METHOD EscribirArchivos( cJSON, cQR ) CLASS TVeriFactu
 
    local lExito := .t.
    local hArchivo
+   local oFileErr
 
    try
       // Escribir archivo JSON
@@ -722,9 +733,9 @@ METHOD EscribirArchivos( cJSON, cQR ) CLASS TVeriFactu
          end if
       end if
 
-   catch oError
+   catch oFileErr
       ::lError := .t.
-      AAdd( ::aErrores, "Error al escribir archivos: " + oError:Description )
+      AAdd( ::aErrores, "Error al escribir archivos: " + oFileErr:Description )
       lExito := .f.
    end try
 
@@ -738,47 +749,48 @@ METHOD EnviarAEAT() CLASS TVeriFactu
    local cJSON := ""
    local cRespuesta := ""
    local cURL := ""
+   local oAeatErr
 
    try
       // Validar certificado
-      if !::ValidarCertificado()
-         AAdd( ::aErrores, "Certificado digital no válido" )
-         RETURN .f.
-      end if
-      
-      // Autenticar con AEAT
-      if !::AutenticarAEAT()
-         AAdd( ::aErrores, "Error en autenticación con AEAT" )
-         RETURN .f.
-      end if
-      
-      // Preparar datos para envío
-      cJSON := ::GenerarJSON()
-      if Empty( cJSON )
-         AAdd( ::aErrores, "Error al generar JSON para AEAT" )
-         RETURN .f.
-      end if
-      
-      // URL del endpoint de facturas
-      cURL := ::cURLAEAT + "/facturas"
-      
-      // Enviar factura
-      cRespuesta := ::EnviarHTTPS( cURL, cJSON, "POST" )
-      
-      // Procesar respuesta
-      lExito := ::ProcesarRespuestaAEAT( cRespuesta )
-      
-      if lExito
-         // Log de éxito
-         // LogWrite( "VeriFactu enviado correctamente a AEAT: " + ::cNumeroFactura )
+      if ::ValidarCertificado()
+         // Autenticar con AEAT
+         if ::AutenticarAEAT()
+            // Preparar datos para envío
+            cJSON := ::GenerarJSON()
+            if !Empty( cJSON )
+               // URL del endpoint de facturas
+               cURL := ::cURLAEAT + "/facturas"
+               
+               // Enviar factura
+               cRespuesta := ::EnviarHTTPS( cURL, cJSON, "POST" )
+               
+               // Procesar respuesta
+               lExito := ::ProcesarRespuestaAEAT( cRespuesta )
+               
+               if lExito
+                  // Log de éxito
+                  // LogWrite( "VeriFactu enviado correctamente a AEAT: " + ::cNumeroFactura )
+               else
+                  // Log de errores
+                  // LogWrite( "Error enviando VeriFactu a AEAT: " + hb_ValToExp( ::aErrores ) )
+               end if
+            else
+               AAdd( ::aErrores, "Error al generar JSON para AEAT" )
+               lExito := .f.
+            end if
+         else
+            AAdd( ::aErrores, "Error en autenticación con AEAT" )
+            lExito := .f.
+         end if
       else
-         // Log de errores
-         // LogWrite( "Error enviando VeriFactu a AEAT: " + hb_ValToExp( ::aErrores ) )
+         AAdd( ::aErrores, "Certificado digital no válido" )
+         lExito := .f.
       end if
       
-   catch oError
+   catch oAeatErr
       ::lError := .t.
-      AAdd( ::aErrores, "Error general en envío AEAT: " + oError:Description )
+      AAdd( ::aErrores, "Error general en envío AEAT: " + oAeatErr:Description )
       lExito := .f.
    end try
 
@@ -806,6 +818,7 @@ FUNCTION GenerarVeriFactu( aTmp, cNifEmisor, cNomEmisor, cNifCliente, cNomClient
 
    local oVeriFactu
    local lExito := .f.
+   local oMainErr
 
    DEFAULT cNifEmisor  := ""
    DEFAULT cNomEmisor  := ""
@@ -841,9 +854,9 @@ FUNCTION GenerarVeriFactu( aTmp, cNifEmisor, cNomEmisor, cNifCliente, cNomClient
          // LogWrite( "Errores VeriFactu: " + hb_ValToExp( oVeriFactu:aErrores ) )
       end if
 
-   catch oError
+   catch oMainErr
       lExito := .f.
-      // LogWrite( "Error GenerarVeriFactu: " + oError:Description )
+      // LogWrite( "Error GenerarVeriFactu: " + oMainErr:Description )
    end try
 
 RETURN lExito
@@ -914,7 +927,14 @@ RETURN cResult
 //
 // Constantes para compatibilidad
 //
-//---------------------------------------------------------------------------//*/
+//---------------------------------------------------------------------------//
+
+#define _CSERIE              1
+#define _NNUMFAC             2  
+#define _CSUFFAC             3
+#define _DFECFAC             6
+
+//---------------------------------------------------------------------------//
 
 
 
