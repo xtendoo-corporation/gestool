@@ -1147,6 +1147,14 @@ FUNCTION FactCli( oMenuItem, oWnd, hHash )
          MRU;
          LEVEL    ACC_ZOOM
 
+      DEFINE BTNSHELL RESOURCE "ZOOM" OF oWndBrw ;
+         NOBORDER ;
+         ACTION   ( RestablecerBorrador() );
+         TOOLTIP  "(R)establecer a borrador";
+         HOTKEY   "R" ;
+         MRU;
+         LEVEL    ACC_ZOOM
+
       DEFINE BTNSHELL oDel RESOURCE "DEL" OF oWndBrw ;
          NOBORDER ;
          ACTION   ( eliminaFacCli() );
@@ -2370,7 +2378,7 @@ STATIC FUNCTION EdtRec( aTmp, aGet, dbf, oBrw, hHash, bValid, nMode )
    local cGetMasDiv        := ""
    local cGetPctRet
    local cSerie            := cNewSer( "nFacCli", D():Contadores( nView ) )
-   local lWhen             := if( oUser():lAdministrador(), nMode != ZOOM_MODE, if( nMode == EDIT_MODE, !aTmp[ _LCLOFAC ], nMode != ZOOM_MODE ) )
+   local lWhen             := !aTmp[_LVALIDA] .and. if( oUser():lAdministrador(), nMode != ZOOM_MODE, if( nMode == EDIT_MODE, !aTmp[ _LCLOFAC ], nMode != ZOOM_MODE ) )
    local oSayGetRnt
    local cTipFac
    local oSayDias
@@ -4381,6 +4389,18 @@ STATIC FUNCTION EdtRec( aTmp, aGet, dbf, oBrw, hHash, bValid, nMode )
       */
 
       oMeter      := TApoloMeter():ReDefine( 200, { | u | if( pCount() == 0, nMeter, nMeter := u ) }, 10, oDlg, .f., , , .t., Rgb( 255,255,255 ), , Rgb( 128,255,0 ) )
+
+      REDEFINE BUTTON ;
+         ID       600 ;
+         OF       oDlg ;
+         WHEN     ( !aTmp[ _LVALIDA ] .and. nMode != ZOOM_MODE ) ;
+         ACTION   ( PublicarFactura( aTmp ), EndTrans( aTmp, aGet, oBrw, oBrwLin, oBrwPgo, aNumAlb, nMode, oDlg ) )
+
+      REDEFINE BUTTON ;
+         ID       610 ;
+         OF       oDlg ;
+         WHEN     ( aTmp[ _LVALIDA ] .and. nMode != ZOOM_MODE ) ;
+         ACTION   ( RestablecerBorrador( aTmp ), EndTrans( aTmp, aGet, oBrw, oBrwLin, oBrwPgo, aNumAlb, nMode, oDlg ) )
 
       REDEFINE BUTTON ;
          ID       3 ;
@@ -7118,8 +7138,8 @@ return ( bGen )
 
 static function eliminaFacCli()
 
-   if ( D():FacturasClientes( nView ) )->lValida
-      msgStop( "No se puede eliminar una factura publicadas." )
+   if ( ( D():FacturasClientes( nView ) )->lValida ) .or. ( !( D():FacturasClientes( nView ) )->lValida .and. ( D():FacturasClientes( nView ) )->nNumfac != 0 )
+      msgStop( "No se puede eliminar una factura publicadas o con número asignado." )
    else
       WinDelRec( oWndBrw:oBrw, D():FacturasClientes( nView ), {|| QuiFacCli() } )
    end if
@@ -10610,17 +10630,20 @@ STATIC FUNCTION BeginTrans( aTmp, nMode )
    local cDbfEnt  		:= "FCliE"
    local cDbfEst  		:= "FCliC"
    local lStkMinimo 	:= .t.
+   local nOrdAnt
+   local parUuid
 
    CursorWait()
 
-   oBlock         		:= ErrorBlock( { | oError | ApoloBreak( oError ) } )
-   BEGIN SEQUENCE
+   /*oBlock         		:= ErrorBlock( { | oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE*/
 
    /*
    Inicializaci-n de variables-------------------------------------------------
    */
 
    cFac           		:= aTmp[ _CSERIE ] + str( aTmp[ _NNUMFAC ] ) + aTmp[ _CSUFFAC ]
+   parUuid      		:= aTmp[ _CGUID ]
    aNumAlb        		:= {}
 
    do case
@@ -10673,9 +10696,11 @@ STATIC FUNCTION BeginTrans( aTmp, nMode )
 
       oLinDetCamposExtra:initArrayValue()
 
-      if ( D():FacturasClientesLineas( nView ) )->( dbSeek( cFac ) )
+      nOrdAnt := ( D():FacturasClientesLineas( nView ) )->( ordSetFocus( "parUuid" ) ) 
+      
+      if ( D():FacturasClientesLineas( nView ) )->( dbSeek( parUuid ) )
         
-         while ( ( D():FacturasClientesLineas( nView ) )->cSerie + str( ( D():FacturasClientesLineas( nView ) )->nNumFac ) + ( D():FacturasClientesLineas( nView ) )->cSufFac ) == cFac .and. !( D():FacturasClientesLineas( nView ) )->( eof() )
+         while ( D():FacturasClientesLineas( nView ) )->parUuid == parUuid .and. !( D():FacturasClientesLineas( nView ) )->( eof() )
         
             if nMode == DUPL_MODE
                 appendRegisterByHash( D():FacturasClientesLineas( nView ), dbfTmpLin, { "dFecFac" => aTmp[ _DFECFAC ] } )
@@ -10686,13 +10711,15 @@ STATIC FUNCTION BeginTrans( aTmp, nMode )
 	            dbPass( D():FacturasClientesLineas( nView ), dbfTmpLin, .t. )
             end if
 
-            oLinDetCamposExtra:SetTemporalLines( ( dbfTmpLin )->cSerie + str( ( dbfTmpLin )->nNumFac ) + ( dbfTmpLin )->cSufFac + str( ( dbfTmpLin )->nNumLin ) + str( ( dbfTmpLin )->nNumKit ), ( dbfTmpLin )->( OrdKeyNo() ), nMode )
+            //oLinDetCamposExtra:SetTemporalLines( ( dbfTmpLin )->cSerie + str( ( dbfTmpLin )->nNumFac ) + ( dbfTmpLin )->cSufFac + str( ( dbfTmpLin )->nNumLin ) + str( ( dbfTmpLin )->nNumKit ), ( dbfTmpLin )->( OrdKeyNo() ), nMode )
         
             ( D():FacturasClientesLineas( nView ) )->( dbSkip() )
         
          end while
 
       end if
+
+      ( D():FacturasClientesLineas( nView ) )->( ordSetFocus( nOrdAnt ) )
 
       ( dbfTmpLin )->( dbGoTop() )
 
@@ -10714,16 +10741,29 @@ STATIC FUNCTION BeginTrans( aTmp, nMode )
       ( dbfTmpInc )->( ordCondSet( "!Deleted()", {||!Deleted() } ) )
       ( dbfTmpInc )->( ordCreate( cTmpInc, "Recno", "Recno()", {|| Recno() } ) )
 
-      if ( nMode != DUPL_MODE ) .and. ( dbfFacCliI )->( dbSeek( cFac ) )
-         while ( ( dbfFacCliI )->cSerie + str( ( dbfFacCliI )->nNumFac ) + ( dbfFacCliI )->cSufFac == cFac ) .AND. ( dbfFacCliI )->( !eof() )
-            dbPass( dbfFacCliI, dbfTmpInc, .t. )
-            ( dbfFacCliI )->( dbSkip() )
-         end while
+      if ( nMode != DUPL_MODE )
+      
+         nOrdAnt := ( dbfFacCliI )->( ordSetFocus( "parUuid" ) ) 
+         
+         if ( dbfFacCliI )->( dbSeek( parUuid ) )
+         
+            while ( ( dbfFacCliI )->parUuid == parUuid ) .AND. ( dbfFacCliI )->( !eof() )
+               dbPass( dbfFacCliI, dbfTmpInc, .t. )
+               ( dbfFacCliI )->( dbSkip() )
+            end while
+
+         end if
+
+         ( D():FacturasClientesLineas( nView ) )->( ordSetFocus( nOrdAnt ) ) 
+
       end if
 
       ( dbfTmpInc )->( dbGoTop() )
+
    else
+
       lErrors     := .t.
+
    end if
 
    /*
@@ -10736,11 +10776,17 @@ STATIC FUNCTION BeginTrans( aTmp, nMode )
       ( dbfTmpDoc )->( ordCondSet( "!Deleted()", {||!Deleted() } ) )
       ( dbfTmpDoc )->( ordCreate( cTmpDoc, "Recno", "Recno()", {|| Recno() } ) )
 
-      if ( nMode != DUPL_MODE ) .and. ( dbfFacCliD )->( dbSeek( cFac ) )
-         while ( ( dbfFacCliD )->cSerFac + str( ( dbfFacCliD )->nNumFac ) + ( dbfFacCliD )->cSufFac == cFac ) .AND. ( dbfFacCliD )->( !eof() )
-            dbPass( dbfFacCliD, dbfTmpDoc, .t. )
-            ( dbfFacCliD )->( dbSkip() )
-         end while
+      if ( nMode != DUPL_MODE )
+      
+         nOrdAnt := ( dbfFacCliD )->( ordSetFocus( "parUuid" ) ) 
+         
+         if ( dbfFacCliD )->( dbSeek( parUuid ) )
+            while ( ( dbfFacCliD )->parUuid == parUuid ) .AND. ( dbfFacCliD )->( !eof() )
+               dbPass( dbfFacCliD, dbfTmpDoc, .t. )
+               ( dbfFacCliD )->( dbSkip() )
+            end while
+         end if
+
       end if
 
       ( dbfTmpDoc )->( dbGoTop() )
@@ -10769,10 +10815,10 @@ STATIC FUNCTION BeginTrans( aTmp, nMode )
       ( dbfTmpPgo )->( ordCondSet( "!Deleted()", {|| !Deleted() } ) )
       ( dbfTmpPgo )->( ordCreate( cTmpPgo, "cNumMtr", "Field->cNumMtr", {|| Field->cNumMtr } ) )
 
-      nOrd        := ( D():FacturasClientesCobros( nView ) )->( OrdSetFocus( "fNumFac" ) )
+      nOrd        := ( D():FacturasClientesCobros( nView ) )->( OrdSetFocus( "parUuid" ) )
 
-      if ( nMode != DUPL_MODE ) .and. ( D():FacturasClientesCobros( nView ) )->( dbSeek( cFac ) ) 
-         while ( D():FacturasClientesCobros( nView ) )->cSerie + str( ( D():FacturasClientesCobros( nView ) )->nNumFac ) + ( D():FacturasClientesCobros( nView ) )->cSufFac == cFac .and. ( D():FacturasClientesCobros( nView ) )->( !eof() )
+      if ( nMode != DUPL_MODE ) .and. ( D():FacturasClientesCobros( nView ) )->( dbSeek( parUuid ) ) 
+         while ( D():FacturasClientesCobros( nView ) )->parUuid == parUuid .and. ( D():FacturasClientesCobros( nView ) )->( !eof() )
             if empty( ( D():FacturasClientesCobros( nView ) )->cTipRec )
                dbPass( D():FacturasClientesCobros( nView ), dbfTmpPgo, .t. )
             end if
@@ -10780,9 +10826,10 @@ STATIC FUNCTION BeginTrans( aTmp, nMode )
          end while
       end if
 
-      ( dbfTmpPgo  )->( dbGoTop() )
       ( D():FacturasClientesCobros( nView ) )->( OrdSetFocus( nOrd ) )
-
+      
+      ( dbfTmpPgo  )->( dbGoTop() )
+      
    else
 
       lErrors     := .t.
@@ -10889,7 +10936,7 @@ STATIC FUNCTION BeginTrans( aTmp, nMode )
 
    oDetCamposExtra:SetTemporal( aTmp[ _CSERIE ] + Str( aTmp[ _NNUMFAC ] ) + aTmp[ _CSUFFAC ], "", nMode )
 
-   RECOVER USING oError
+ /*  RECOVER USING oError
 
       msgStop( "Imposible crear tablas temporales." + CRLF + ErrorMessage( oError ) )
 
@@ -10899,7 +10946,7 @@ STATIC FUNCTION BeginTrans( aTmp, nMode )
 
    END SEQUENCE
 
-   ErrorBlock( oBlock )
+   ErrorBlock( oBlock )*/
 
    CursorWE()
 
@@ -14473,7 +14520,7 @@ STATIC FUNCTION EndTrans( aTmp, aGet, oBrw, oBrwDet, oBrwPgo, aNumAlb, nMode, oD
       begintransaction()
 
       if isEditMode( nMode )
-         rollBackFacCli( cSerFac + str( nNumFac ) + cSufFac )
+         rollBackFacCli( cSerFac + str( nNumFac ) + cSufFac, cUuid )
       end if
 
       /*
@@ -20402,8 +20449,11 @@ FUNCTION nTotFacCli( cFactura, cFacCliT, cFacCliL, cIva, cDiv, cFacCliP, aTmp, c
       nKgsTrn        := ( cFacCliT )->nKgsTrn
       lPntVer        := ( cFacCliT )->lOperPV
       nRegIva        := ( cFacCliT )->nRegIva
-      bCondition     := {|| ( cFacCliL )->cSerie + str( ( cFacCliL )->nNumFac ) + ( cFacCliL )->cSufFac == cFactura .and. !( cFacCliL )->( eof() ) }
-      ( cFacCliL )->( dbSeek( cFactura ) )
+      //bCondition     := {|| ( cFacCliL )->cSerie + str( ( cFacCliL )->nNumFac ) + ( cFacCliL )->cSufFac == cFactura .and. !( cFacCliL )->( eof() ) }
+      //( cFacCliL )->( dbSeek( cFactura ) )
+
+      bCondition     := {|| ( cFacCliL )->parUuid  == ( cFacCliT )->cGuid .and. !( cFacCliL )->( eof() ) }
+      ( cFacCliL )->( dbSeek( ( cFacCliT )->cGuid ) )
    end if
 
    /*
@@ -23003,7 +23053,7 @@ Return .t.
 
 //---------------------------------------------------------------------------//
 
-Static Function RollBackFacCli( cNumeroDocumento )
+Static Function RollBackFacCli( cNumeroDocumento, cUuid )
 
    local nOrd
 
@@ -23011,9 +23061,11 @@ Static Function RollBackFacCli( cNumeroDocumento )
    Rollback de todos los articulos si la factura no se importo de Facturas----
    */
 
-   while ( D():FacturasClientesLineas( nView ) )->( dbSeek( cNumeroDocumento ) ) .and. !( D():FacturasClientesLineas( nView ) )->( eof() ) 
+   nOrd := ( D():FacturasClientesLineas( nView ) )->( ordSetFocus( "parUuid" ) ) 
 
-      TComercio:appendProductsToUpadateStocks( ( D():FacturasClientesLineas( nView ) )->cRef, nView )
+   while ( D():FacturasClientesLineas( nView ) )->( dbSeek( cUuid ) ) .and. !( D():FacturasClientesLineas( nView ) )->( eof() ) 
+
+      //TComercio:appendProductsToUpadateStocks( ( D():FacturasClientesLineas( nView ) )->cRef, nView )
 
       if dbLock( D():FacturasClientesLineas( nView ) )
          ( D():FacturasClientesLineas( nView ) )->( dbDelete() )
@@ -23023,12 +23075,16 @@ Static Function RollBackFacCli( cNumeroDocumento )
       SysRefresh()
 
    end while
+
+   ( D():FacturasClientesLineas( nView ) )->( ordSetFocus( nOrd ) ) 
    
    /*
    Eliminamos las incidencias anteriores---------------------------------------
    */
 
-   while ( ( dbfFacCliI )->( dbSeek( cNumeroDocumento ) ) .and. !( dbfFacCliI )->( eof() ) )
+   nOrd := ( dbfFacCliI )->( ordSetFocus( "parUuid" ) ) 
+   
+   while ( ( dbfFacCliI )->( dbSeek( cUuid ) ) .and. !( dbfFacCliI )->( eof() ) )
       if dbLock( dbfFacCliI )
          ( dbfFacCliI )->( dbDelete() )
          ( dbfFacCliI )->( dbUnLock() )
@@ -23036,11 +23092,15 @@ Static Function RollBackFacCli( cNumeroDocumento )
       SysRefresh()
    end while
 
+   ( dbfFacCliI )->( ordSetFocus( nOrd ) ) 
+
    /*
    Eliminamos las incidencias anteriores---------------------------------------
    */
 
-   while ( ( dbfFacCliD )->( dbSeek( cNumeroDocumento ) ) .and. !( dbfFacCliD )->( eof() ) )
+   nOrd := ( dbfFacCliI )->( ordSetFocus( "parUuid" ) ) 
+   
+   while ( ( dbfFacCliD )->( dbSeek( cUuid ) ) .and. !( dbfFacCliD )->( eof() ) )
       if dbLock( dbfFacCliD )
          ( dbfFacCliD )->( dbDelete() )
          ( dbfFacCliD )->( dbUnLock() )
@@ -23048,17 +23108,23 @@ Static Function RollBackFacCli( cNumeroDocumento )
       SysRefresh()
    end while
 
+   ( dbfFacCliD )->( ordSetFocus( nOrd ) ) 
+
    /*
    Eliminamos los pagos anteriores---------------------------------------------
    */
 
-   while ( ( D():FacturasClientesCobros( nView ) )->( dbSeek( cNumeroDocumento ) ) .and. !( D():FacturasClientesCobros( nView ) )->( eof() ) )
+   nOrd := ( D():FacturasClientesLineas( nView ) )->( ordSetFocus( "parUuid" ) ) 
+   
+   while ( ( D():FacturasClientesCobros( nView ) )->( dbSeek( cUuid ) ) .and. !( D():FacturasClientesCobros( nView ) )->( eof() ) )
       if dbLock( D():FacturasClientesCobros( nView ) )
          ( D():FacturasClientesCobros( nView ) )->( dbDelete() )
          ( D():FacturasClientesCobros( nView ) )->( dbUnLock() )
       end if
       SysRefresh()
    end while
+
+   ( D():FacturasClientesLineas( nView ) )->( ordSetFocus( nOrd ) ) 
 
    /*
    Eliminamos las series anteriores---------------------------------------------
@@ -23697,13 +23763,34 @@ Return ( FullQrDir() + ( D():FacturasClientes( nView ) )->cSerie + AllTrim( Str(
 
 //---------------------------------------------------------------------------//
 
-Static Function PublicarFactura()
+Static Function PublicarFactura( aTmp )
 
 	local nNumFac
+   local cUuidparent
+   local nOrdAnt
+
+   if !Empty( aTmp )
+
+      aTmp[ _LVALIDA ] := .t.
+
+      if aTmp[ _NNUMFAC ] == 0
+         nNumFac                       := nNewDoc( aTmp[ _CSERIE ], D():FacturasClientes( nView ), "NFACCLI", , D():Contadores( nView ) )
+         aTmp[ _NNUMFAC ]     := nNumFac
+      end if 
+
+      return .t.
+
+   end if
 
 	if !( D():FacturasClientes( nView ) )->lValida
 
-		nNumFac              := nNewDoc( ( D():FacturasClientes( nView ) )->cSerie, D():FacturasClientes( nView ), "NFACCLI", , D():Contadores( nView ) )
+		if ( D():FacturasClientes( nView ) )->nNumFac != 0
+         nNumFac              := ( D():FacturasClientes( nView ) )->nNumFac
+      else
+         nNumFac              := nNewDoc( ( D():FacturasClientes( nView ) )->cSerie, D():FacturasClientes( nView ), "NFACCLI", , D():Contadores( nView ) )
+      end if
+
+      cUuidparent         := ( D():FacturasClientes( nView ) )->cGuid
 
       if dbLock( D():FacturasClientes( nView ) )
          ( D():FacturasClientes( nView ) )->nNumFac := nNumFac
@@ -23715,15 +23802,69 @@ Static Function PublicarFactura()
       Anotamos en las lineas el número de la factura-----------------------
       */
 
+      nOrdAnt := ( D():FacturasClientesLineas( nView ) )->( OrdSetFocus( "parUuid" ) )
+      
+      if  ( D():FacturasClientesLineas( nView ) )->( dbSeek( cUuidparent ) )
+
+         while ( D():FacturasClientesLineas( nView ) )->( !eof() ) .and. ( D():FacturasClientesLineas( nView ) )->parUuid == cUuidparent
+
+            if dbLock( D():FacturasClientesLineas( nView ) )
+               ( D():FacturasClientesLineas( nView ) )->nNumFac := nNumFac
+               ( D():FacturasClientesLineas( nView ) )->( dbUnLock() )
+            end if
+
+            ( D():FacturasClientesLineas( nView ) )->( dbSkip() )
+
+         end while
+
+      end if
+      
+      ( D():FacturasClientesLineas( nView ) )->( OrdSetFocus( nOrdAnt ) )
+         
       /*
       Anotamos en los pagos el número de la factura-----------------------
       */
 
-   //aAdd( aItmFacCli, { "idVeFac"  	,"C", 200,   0, "ID Veryfactu" ,                                         "IdVeryfactu",           	  	  "", "( cDbf )", .f. } )
-   //aAdd( aItmFacCli, { "idAntVF"  	,"C", 200,   0, "ID Veryfactu Anterior" ,                          "IdVeryfactuAnterior",           	  	  "", "( cDbf )", .f. } )
-   //aAdd( aItmFacCli, { "nContador"  	,"N", 9,   0, "Contador oculto" ,                          "Contador oculto",           	  	  "", "( cDbf )", .f. } )
+      nOrdAnt := ( D():FacturasClientesCobros( nView ) )->( OrdSetFocus( "parUuid" ) )
+      
+      if  ( D():FacturasClientesCobros( nView ) )->( dbSeek( cUuidparent ) )
+
+         while ( D():FacturasClientesCobros( nView ) )->( !eof() ) .and. ( D():FacturasClientesCobros( nView ) )->parUuid == cUuidparent
+
+            if dbLock( D():FacturasClientesCobros( nView ) )
+               ( D():FacturasClientesCobros( nView ) )->nNumFac := nNumFac
+               ( D():FacturasClientesCobros( nView ) )->( dbUnLock() )
+            end if
+
+            ( D():FacturasClientesCobros( nView ) )->( dbSkip() )
+
+         end while
+
+      end if
+      
+      ( D():FacturasClientesCobros( nView ) )->( OrdSetFocus( nOrdAnt ) )
 
     end if
+
+Return ( .t. )
+
+//---------------------------------------------------------------------------//
+
+function RestablecerBorrador( aTmp )
+
+   if !Empty( aTmp )
+      aTmp[ _LVALIDA ] := .f.
+      return .t.
+   end if
+
+   if ( D():FacturasClientes( nView ) )->lValida
+
+      if dbLock( D():FacturasClientes( nView ) )
+	    	( D():FacturasClientes( nView ) )->lValida := .f.
+        	( D():FacturasClientes( nView ) )->( dbUnLock() )
+    	end if
+
+   end if
 
 Return ( .t. )
 
