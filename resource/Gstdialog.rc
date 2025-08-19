@@ -24742,15 +24742,16 @@ EMPRESA_VERYFACTU DIALOG DISCARDABLE 68, -86, 437, 353
 STYLE WS_CHILD|DS_3DLOOK
 FONT 8, "Ms Sans Serif"
 {
-  CONTROL "Acogerse a Verifactu", 120, "Button", BS_AUTOCHECKBOX|WS_TABSTOP, 53, 30, 196, 10
-  CONTROL "", 100, "Edit", WS_BORDER|WS_TABSTOP, 127, 58, 300, 11
-  CONTROL "", 110, "Edit", ES_PASSWORD|WS_BORDER|WS_TABSTOP, 127, 71, 300, 11
-  CONTROL "Certificados", -1, "Button", BS_GROUPBOX, 45, 18, 388, 28
-  CONTROL "Ruta", -1, "Static", WS_GROUP, 53, 61, 35, 9
+  CONTROL "Acogerse a Verifactu", 120, "Button", BS_AUTOCHECKBOX|WS_TABSTOP, 53, 30, 80, 10
+  CONTROL "", 100, "Edit", WS_BORDER|WS_TABSTOP, 127, 72, 300, 11
+  CONTROL "", 110, "Edit", ES_PASSWORD|WS_BORDER|WS_TABSTOP, 127, 85, 300, 11
+  CONTROL "", -1, "Button", BS_GROUPBOX, 45, 18, 388, 42
+  CONTROL "Ruta", -1, "Static", WS_GROUP, 53, 75, 35, 9
   CONTROL "", 500, "Static", SS_BITMAP|SS_CENTERIMAGE, 4, 3, 34, 30
   CONTROL "Configuración necesaria para Veryfactu", -1, "Static", SS_LEFTNOWORDWRAP, 44, 3, 384, 8
-  CONTROL "Contraseña", -1, "Static", WS_GROUP, 53, 74, 46, 9
-  CONTROL "Certificados", -1, "Button", BS_GROUPBOX, 45, 48, 388, 42
+  CONTROL "Contraseña", -1, "Static", WS_GROUP, 53, 88, 46, 9
+  CONTROL "Certificados", -1, "Button", BS_GROUPBOX, 45, 62, 388, 42
+  CONTROL "Entorno de pruebas", 130, "Button", BS_AUTOCHECKBOX|WS_TABSTOP, 53, 42, 80, 10
 }
 
 LANGUAGE LANG_SPANISH,SUBLANG_SPANISH_MODERN

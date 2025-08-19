@@ -123,26 +123,31 @@ END CLASS
 
 //---------------------------------------------------------------------------//
 
-METHOD New( aTmp ) CLASS TVeriFactu
+METHOD New() CLASS TVeriFactu
 
    ::aErrores          := {}
-   ::lEnable           := uFieldempresa('lVeryfactu')
+   ::lEnable           := ConfiguracionesEmpresaModel():getLogic( 'lVeryFactu', .f. )
 
    if ::lEnable
 
+      MsgInfo( "Entramos en VeryFactu" )
+
       /*if aTmp != nil
          ::SetDatosFactura( aTmp )
-      end if*/
+      end if
 
       ::SetDatosEmisor()
 
       ::SetDatosReceptor()
 
-      ::ConfigurarCertificado()
+      ::ConfigurarCertificado()*/
 
    else
+
       AAdd( ::aErrores, "VeriFactu no está habilitado en la configuración de la empresa." )
+
       RETURN Self
+
    end if
 
    //::GenerarIdVeriFactu()
@@ -211,12 +216,13 @@ METHOD ConfigurarCertificado() CLASS TVeriFactu
       AAdd( ::aErrores, "No se encuentra el archivo de certificado: " + ::cRutaCertificado )
       RETURN .f.
    end if
-   
-   // Configurar URLs según entorno
-   if ::cEntorno == "PRODUCCION"
-      ::cURLAEAT := "https://www2.aeat.es/wlpl/TIKE-CONT/ws/VeriFactu"
-   else
+
+   // Configurar URLs según entorno PRODUCCION o PRUEBAS
+
+   if ConfiguracionesEmpresaModel():getLogic( 'lEntornoPruebas', .f. )
       ::cURLAEAT := "https://prewww2.aeat.es/wlpl/TIKE-CONT/ws/VeriFactu" 
+   else
+      ::cURLAEAT := "https://www2.aeat.es/wlpl/TIKE-CONT/ws/VeriFactu"
    end if     
 
 RETURN .t.

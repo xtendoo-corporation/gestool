@@ -3043,6 +3043,12 @@ METHOD BuildEmpresa()
    oDataTable:cDescription := "Facturas de clientes"
    ::AddEmpresaTable( oDataTable )
 
+   oDataTable              := TDataTable():New( "FacCliC" )
+   oDataTable:cDataFile    := cPatEmp( , .t. ) + "FacCliC.Dbf"
+   oDataTable:cIndexFile   := cPatEmp( , .t. ) + "FacCliC.Cdx"
+   oDataTable:cDescription := "Situaciones de Facturas de clientes"
+   ::AddEmpresaTable( oDataTable )
+
    oDataTable              := TDataTable():New( "FacRecT" )
    oDataTable:lTrigger     := ::lTriggerAuxiliares   
    oDataTable:cDataFile    := cPatEmp( , .t. ) + "FacRecT.Dbf"
@@ -3126,12 +3132,6 @@ METHOD BuildEmpresa()
    oDataTable:cIndexFile   := cPatEmp( , .t. ) + "FacAutI.Cdx"
    oDataTable:cDescription := "Plantillas automáticas de clientes historico"
    oDataTable:bCreateFile  := {| cPath | THisFacAutomatica():buildfiles(cPath ) }
-   ::AddEmpresaTable( oDataTable )
-
-   oDataTable              := TDataTable():New( "FacCliC" )
-   oDataTable:cDataFile    := cPatEmp( , .t. ) + "FacCliC.Dbf"
-   oDataTable:cIndexFile   := cPatEmp( , .t. ) + "FacCliC.Cdx"
-   oDataTable:cDescription := "Situaciones de Facturas de clientes"
    ::AddEmpresaTable( oDataTable )
 
    /*

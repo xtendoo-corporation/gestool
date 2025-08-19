@@ -1138,22 +1138,28 @@ FUNCTION FactCli( oMenuItem, oWnd, hHash )
          TOOLTIP  "(Z)oom";
          HOTKEY   "Z" ;
          MRU;
+         LEVEL    ACC_ZOOM
 
-      DEFINE BTNSHELL RESOURCE "ZOOM" OF oWndBrw ;
+      DEFINE BTNSHELL RESOURCE "GC_CLIPBOARD_EMPTY_EARTH_" OF oWndBrw ;
          NOBORDER ;
          ACTION   ( PublicarFactura() );
          TOOLTIP  "(P)ublicar";
          HOTKEY   "P" ;
-         MRU;
-         LEVEL    ACC_ZOOM
+         MRU
 
-      DEFINE BTNSHELL RESOURCE "ZOOM" OF oWndBrw ;
+      DEFINE BTNSHELL RESOURCE "gc_clipboard_paste_" OF oWndBrw ;
          NOBORDER ;
          ACTION   ( RestablecerBorrador() );
          TOOLTIP  "(R)establecer a borrador";
          HOTKEY   "R" ;
-         MRU;
-         LEVEL    ACC_ZOOM
+         MRU
+
+      DEFINE BTNSHELL RESOURCE "gc_document_text_delete_" OF oWndBrw ;
+         NOBORDER ;
+         ACTION   ( MsgInfo( "Rectificar" ) );
+         TOOLTIP  "Rectificar factura";
+         HOTKEY   "R" ;
+         MRU
 
       DEFINE BTNSHELL oDel RESOURCE "DEL" OF oWndBrw ;
          NOBORDER ;
@@ -10880,15 +10886,23 @@ STATIC FUNCTION BeginTrans( aTmp, nMode )
       ( dbfTmpEntidades )->( OrdCondSet( "!Deleted()", {||!Deleted() } ) )
       ( dbfTmpEntidades )->( OrdCreate( cTmpEnt, "cRolEnt", "cCodEnt + cRol", {|| Field->cCodEnt + Field->cRol } ) )
 
-      if ( nMode != DUPL_MODE ) .and. D():gotoIdFacturasClientesEntidades( cFac, nView )
+      if ( nMode != DUPL_MODE )
+      
+         nOrdAnt := ( D():FacturasClientesEntidades( nView ) )->( ordSetFocus( "parUuid" ) ) 
          
-         while ( D():FacturasClientesEntidadesId( nView ) == cFac .and. !D():eofFacturasClientesEntidades( nView ) )
-      
-            dbPass( D():FacturasClientesEntidades( nView ), dbfTmpEntidades, .t. )
-      
-            ( D():FacturasClientesEntidades( nView ) )->( dbSkip() )
-      
-         end while
+         if ( D():FacturasClientesEntidades( nView ) )->( dbSeek( parUuid ) )  
+
+            while ( D():FacturasClientesEntidades( nView ) )->parUuid == parUuid .and. !( D():FacturasClientesEntidades( nView ) )->( eof() )
+         
+               dbPass( D():FacturasClientesEntidades( nView ), dbfTmpEntidades, .t. )
+         
+               ( D():FacturasClientesEntidades( nView ) )->( dbSkip() )
+         
+            end while
+
+         end if
+
+         ( D():FacturasClientesEntidades( nView ) )->( OrdSetFocus( nOrdAnt ) )
       
       end if
 
@@ -10900,7 +10914,7 @@ STATIC FUNCTION BeginTrans( aTmp, nMode )
 
    end if
 
-   // A-adimos desde el fichero de situaiones----------------------------------
+   // Añadimos desde el fichero de situaiones----------------------------------
    
    dbCreate( cTmpEst, aSqlStruct( aFacCliEst() ), cLocalDriver() )
    dbUseArea( .t., cLocalDriver(), cTmpEst, cCheckArea( cDbfEst, @dbfTmpEst ), .f. )
@@ -10910,15 +10924,23 @@ STATIC FUNCTION BeginTrans( aTmp, nMode )
       ( dbfTmpEst )->( ordCreate( cTmpEst, "nNumFac", "cSerFac + str( nNumFac ) + cSufFac + dtos( dFecSit )  + tFecSit", {|| Field->cSerFac + str( Field->nNumFac ) + Field->cSufFac + dtos( Field->dFecSit )  + Field->tFecSit } ) )
       ( dbfTmpEst )->( ordListAdd( cTmpEst ) )
 
-      if ( nMode != DUPL_MODE ) .and. ( D():FacturasClientesSituaciones( nView ) )->( dbSeek( cFac ) )
+      if ( nMode != DUPL_MODE )
+      
+         nOrdAnt := ( D():FacturasClientesSituaciones( nView ) )->( ordSetFocus( "parUuid" ) ) 
+         
+         if ( D():FacturasClientesSituaciones( nView ) )->( dbSeek( parUuid ) )  
 
-         while ( ( D():FacturasClientesSituaciones( nView ) )->cSerFac + Str( ( D():FacturasClientesSituaciones( nView ) )->nNumFac ) + ( D():FacturasClientesSituaciones( nView ) )->cSufFac == cFac ) .AND. ( D():FacturasClientesSituaciones( nView ) )->( !eof() ) 
+            while ( ( D():FacturasClientesSituaciones( nView ) )->parUuid == parUuid ) .AND. ( D():FacturasClientesSituaciones( nView ) )->( !eof() ) 
 
-            dbPass( D():FacturasClientesSituaciones( nView ), dbfTmpEst, .t. )
+               dbPass( D():FacturasClientesSituaciones( nView ), dbfTmpEst, .t. )
 
-            ( D():FacturasClientesSituaciones( nView ) )->( dbSkip() )
+               ( D():FacturasClientesSituaciones( nView ) )->( dbSkip() )
 
-         end while
+            end while
+
+         end if
+
+         ( D():FacturasClientesSituaciones( nView ) )->( OrdSetFocus( nOrdAnt ) )
 
       end if
 
@@ -19901,6 +19923,9 @@ FUNCTION rxFacCli( cPath, cDriver )
       ( cFacCliT )->( ordCondSet( "!Deleted()", {||!Deleted()}  ) )
       ( cFacCliT )->( ordCreate( cPath + "FacCliE.Cdx", "nNumFac", "cSerFac + str( nNumFac ) + cSufFac", {|| Field->cSerFac + str( Field->nNumFac ) + Field->cSufFac } ) )
 
+      ( cFacCliT )->( ordCondSet( "!Deleted()", {||!Deleted()}  ) )
+      ( cFacCliT )->( ordCreate( cPath + "FacCliE.Cdx", "parUuid", "parUuid", {|| Field->parUuid } ) )
+
       ( cFacCliT )->( dbCloseArea() )
    else
       msgStop( "Imposible abrir en modo exclusivo la tabla de entidades de facturas de clientes" ) 
@@ -19919,6 +19944,9 @@ FUNCTION rxFacCli( cPath, cDriver )
 
       ( cFacCliT )->( ordCondSet( "!Deleted()", {|| !Deleted() } ) )
       ( cFacCliT )->( ordCreate( cPath + "FacCliC.Cdx", "idPs", "str( idPs )", {|| str( Field->idPs ) } ) )
+
+      ( cFacCliT )->( ordCondSet( "!Deleted()", {||!Deleted()}  ) )
+      ( cFacCliT )->( ordCreate( cPath + "FacCliC.Cdx", "parUuid", "parUuid", {|| Field->parUuid } ) )
 
       ( cFacCliT )->( dbCloseArea() )
    else
@@ -23139,24 +23167,34 @@ Static Function RollBackFacCli( cNumeroDocumento, cUuid )
    end while
 
    /*
-   Eliminamos las series anteriores---------------------------------------------
+   Eliminamos las entidades anteriores---------------------------------------------
    */
 
-   while D():gotoIdFacturasClientesEntidades( cNumeroDocumento, nView ) .and. !D():eofFacturasClientesEntidades( nView )
-      D():deleteFacturasClientesEntidades( nView )
-      SysRefresh()
+   nOrd := ( D():FacturasClientesEntidades( nView ) )->( ordSetFocus( "parUuid" ) ) 
+
+   while ( D():FacturasClientesEntidades( nView ) )->( dbSeek( cUuid ) ) .and. !( D():FacturasClientesEntidades( nView ) )->( eof() )
+       if dbLock( D():FacturasClientesEntidades( nView ) )
+          ( D():FacturasClientesEntidades( nView ) )->( dbDelete() )
+          ( D():FacturasClientesEntidades( nView ) )->( dbUnLock() )
+       end if
    end while
+
+   ( D():FacturasClientesEntidades( nView ) )->( ordSetFocus( nOrd ) ) 
 
    /*
    Eliminamos las situaciones anteriores-----------------------------------------
    */
 
-      while ( D():FacturasClientesSituaciones( nView ) )->( dbSeek( cNumeroDocumento ) ) 
+   nOrd := ( D():FacturasClientesSituaciones( nView ) )->( ordSetFocus( "parUuid" ) ) 
+
+   while ( D():FacturasClientesSituaciones( nView ) )->( dbSeek( cUuid ) )  .and. !( D():FacturasClientesSituaciones( nView ) )->( eof() )
        if dbLock( D():FacturasClientesSituaciones( nView ) )
           ( D():FacturasClientesSituaciones( nView ) )->( dbDelete() )
           ( D():FacturasClientesSituaciones( nView ) )->( dbUnLock() )
        end if
    end while
+
+   ( D():FacturasClientesSituaciones( nView ) )->( ordSetFocus( nOrd ) ) 
 
 Return .t.
 
@@ -23214,7 +23252,7 @@ Static Function GuardaTemporalesFacCli( cSerFac, nNumFac, cSufFac, dFecFac, tFec
    end while
 
    /*
-   Ahora escribimos en el fichero definitivo de inicdencias--------------------
+   Ahora escribimos en el fichero definitivo de incidencias--------------------
    */
 
    ( dbfTmpInc )->( dbGoTop() )
@@ -23844,7 +23882,105 @@ Static Function PublicarFactura( aTmp )
       
       ( D():FacturasClientesCobros( nView ) )->( OrdSetFocus( nOrdAnt ) )
 
-    end if
+      /*
+      Anotamos en las incidencias el número de la factura-----------------------
+      */
+
+      nOrdAnt := ( dbfFacCliI )->( OrdSetFocus( "parUuid" ) )
+      
+      if  ( dbfFacCliI )->( dbSeek( cUuidparent ) )
+
+         while ( dbfFacCliI )->( !eof() ) .and. ( dbfFacCliI )->parUuid == cUuidparent
+
+            if dbLock( dbfFacCliI )
+               ( dbfFacCliI )->nNumFac := nNumFac
+               ( dbfFacCliI )->( dbUnLock() )
+            end if
+
+            ( dbfFacCliI )->( dbSkip() )
+
+         end while
+
+      end if
+      
+      ( dbfFacCliI )->( OrdSetFocus( nOrdAnt ) )
+
+      /*
+      Anotamos en las documentos el número de la factura-----------------------
+      */
+
+      nOrdAnt := ( dbfFacCliD )->( OrdSetFocus( "parUuid" ) )
+      
+      if  ( dbfFacCliD )->( dbSeek( cUuidparent ) )
+
+         while ( dbfFacCliD )->( !eof() ) .and. ( dbfFacCliD )->parUuid == cUuidparent
+
+            if dbLock( dbfFacCliD )
+               ( dbfFacCliD )->nNumFac := nNumFac
+               ( dbfFacCliD )->( dbUnLock() )
+            end if
+
+            ( dbfFacCliD )->( dbSkip() )
+
+         end while
+
+      end if
+      
+      ( dbfFacCliD )->( OrdSetFocus( nOrdAnt ) )
+
+      /*
+      Anotamos en las entidades el número de la factura-----------------------
+      */
+
+      nOrdAnt := ( D():FacturasClientesEntidades( nView ) )->( OrdSetFocus( "parUuid" ) )
+      
+      if  ( D():FacturasClientesEntidades( nView ) )->( dbSeek( cUuidparent ) )
+
+         while ( D():FacturasClientesEntidades( nView ) )->( !eof() ) .and. ( D():FacturasClientesEntidades( nView ) )->parUuid == cUuidparent
+
+            if dbLock( D():FacturasClientesEntidades( nView ) )
+               ( D():FacturasClientesEntidades( nView ) )->nNumFac := nNumFac
+               ( D():FacturasClientesEntidades( nView ) )->( dbUnLock() )
+            end if
+
+            ( D():FacturasClientesEntidades( nView ) )->( dbSkip() )
+
+         end while
+
+      end if
+      
+      ( D():FacturasClientesEntidades( nView ) )->( OrdSetFocus( nOrdAnt ) )
+
+      /*
+      Anotamos en las situaciones el número de la factura-----------------------
+      */
+
+      nOrdAnt := ( D():FacturasClientesSituaciones( nView ) )->( OrdSetFocus( "parUuid" ) )
+      
+      if  ( D():FacturasClientesSituaciones( nView ) )->( dbSeek( cUuidparent ) )
+
+         while ( D():FacturasClientesSituaciones( nView ) )->( !eof() ) .and. ( D():FacturasClientesSituaciones( nView ) )->parUuid == cUuidparent
+
+            if dbLock( D():FacturasClientesSituaciones( nView ) )
+               ( D():FacturasClientesSituaciones( nView ) )->nNumFac := nNumFac
+               ( D():FacturasClientesSituaciones( nView ) )->( dbUnLock() )
+            end if
+
+            ( D():FacturasClientesSituaciones( nView ) )->( dbSkip() )
+
+         end while
+
+      end if
+      
+      ( D():FacturasClientesSituaciones( nView ) )->( OrdSetFocus( nOrdAnt ) )
+
+   end if
+
+   /*
+   Llamada para conectar con VeryFactu-----------------------------------
+   */
+   
+   TVeriFactu():New()
 
 Return ( .t. )
 

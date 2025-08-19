@@ -125,6 +125,7 @@ static pdaRuta
 static pdaRecogerVentas
 
 static lVeryFactu
+static lEntornoPruebas
 static cCertRuta
 static cCertPass
 
@@ -1309,6 +1310,8 @@ STATIC FUNCTION EditConfig( aTmp, aGet, dbfEmp, oBrw, nSelFolder, bValid, nMode 
    cCertPass                   := padr( ConfiguracionesEmpresaModel():getValue( 'cert_pass', '' ), 50 )
 
    lVeryFactu                 := ConfiguracionesEmpresaModel():getLogic( 'lVeryFactu', .f. )
+
+   lEntornoPruebas       := ConfiguracionesEmpresaModel():getLogic( 'lEntornoPruebas', .f. )
 
    nLenSubcta              := ConfiguracionesEmpresaModel():getNumeric( 'lenSubCta', 1 )
 
@@ -2711,8 +2714,12 @@ STATIC FUNCTION EditConfig( aTmp, aGet, dbfEmp, oBrw, nSelFolder, bValid, nMode 
          TRANSPARENT ;
          OF       fldVeryfactu
 
-      REDEFINE ChECKBOX lVeryfactu ;   
+      REDEFINE CHECKBOX lVeryfactu ;   
          ID       120 ;
+         OF       fldVeryfactu
+
+      REDEFINE CHECKBOX lEntornoPruebas ;   
+         ID       130 ;
          OF       fldVeryfactu
       
       REDEFINE GET oCertRuta VAR cCertRuta ;
@@ -5853,6 +5860,8 @@ STATIC FUNCTION SaveEditConfig( aTmp, oSay, oBrw, oDlg, nMode )
    ConfiguracionesEmpresaModel():setValue( 'cert_pass',                 alltrim( cCertPass ) ) 
 
    ConfiguracionesEmpresaModel():setValue( 'lVeryFactu', lVeryFactu )
+
+   ConfiguracionesEmpresaModel():setValue( 'lEntornoPruebas', lEntornoPruebas )
 
    ConfiguracionesEmpresaModel():setValue( 'cuenta_descuento_especial',    alltrim( cCtaDescuentoEspecial ) ) 
 
