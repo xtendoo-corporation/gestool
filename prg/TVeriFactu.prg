@@ -30,20 +30,23 @@ MEMVAR nTotNet, nTotIva, nTotFac
 
 CLASS TVeriFactu
    
-   DATA lEnable            INIT .f.
+   DATA lEnable               INIT .f.
+
+   DATA hDocumento      INIT nil
+   DATA hResultado         INIT nil
 
    // Datos básicos de la factura
-   DATA cNumeroFactura    INIT ""
-   DATA cSerieFactura     INIT ""
-   DATA nNumeroFactura    INIT 0
-   DATA cSufijoFactura    INIT ""
-   DATA dFechaFactura     INIT CToD("")
-   DATA cHoraFactura      INIT ""
+   DATA cNumero    INIT ""
+   DATA cSerie         INIT ""
+   DATA nNumero    INIT 0
+   DATA cSufijo    INIT ""
+   DATA dFecha     INIT CToD("")
+   DATA cHora      INIT ""
    
    // Importes (según normativa AEAT)
    DATA nBaseImponible    INIT 0
    DATA nCuotaIVA         INIT 0
-   DATA nTotalFactura     INIT 0
+   DATA nTotal     INIT 0
    DATA nImporteTotal     INIT 0
    
    // Datos del emisor (empresa)
@@ -92,12 +95,9 @@ CLASS TVeriFactu
 
    // Métodos principales
    METHOD New( aTmp, cNifEmisor, cNomEmisor ) CONSTRUCTOR
-   METHOD SetDatosFactura( aTmp )
-   METHOD SetDatosEmisor( cNif, cNombre )
-   METHOD SetDatosReceptor( cNif, cNombre, cTipoId )
+   METHOD SetDatos()
    METHOD ConfigurarCertificado()
    METHOD ValidarCertificado()
-   METHOD ConfigurarProxy( cServer, nPort, cUser, cPass )
    METHOD GenerarVeriFactu()
    METHOD GenerarJSON()
    METHOD GenerarQR()
@@ -125,78 +125,72 @@ END CLASS
 
 METHOD New() CLASS TVeriFactu
 
+   ::hResultado           := {=>}
+
+RETURN ( self )
+
+//---------------------------------------------------------------------------//
+
+METHOD SetDatos( hDocumento ) CLASS TVeriFactu
+
+   ::hDocumento        := hDocumento
+
+   if Empty( ::hDocumento )
+      AAdd( ::aErrores, "Documento no proporcionado." )
+      RETURN Self
+   end if
+
+   // Inicializar variables
+   
    ::aErrores          := {}
    ::lEnable           := ConfiguracionesEmpresaModel():getLogic( 'lVeryFactu', .f. )
 
    if ::lEnable
 
-      MsgInfo( "Entramos en VeryFactu" )
+      // Datos básicos del documento
+      ::cSerie  := AllTrim( hGet( ::hDocumento, "Serie" ) )
+      ::nNumero := hGet( ::hDocumento, "Numero" )
+      ::cSufijo := AllTrim( hGet( ::hDocumento, "Sufijo" ) )
+      ::dFecha  := hGet( ::hDocumento, "Fecha" )
+      ::cHora   := hGet( ::hDocumento, "Hora" )
+      
+      // Construir número completo
+      ::cNumero := ::cSerie + "/" + AllTrim( Str( ::nNumero ) ) + if( !Empty( ::cSufijo ), "/" + ::cSufijo, "" )
 
-      /*if aTmp != nil
-         ::SetDatosFactura( aTmp )
-      end if
+      // Importes (usar variables globales si están disponibles)
+      ::nBaseImponible := hGet( ::hDocumento, "Neto" )
+      ::nCuotaIVA      := hGet( ::hDocumento, "Impuesto" )
+      ::nTotal  := hGet( ::hDocumento, "Total" )
+      ::nImporteTotal  := ::nBaseImponible + ::nCuotaIVA
 
-      ::SetDatosEmisor()
+      // Datos del emisor
 
-      ::SetDatosReceptor()
+      ::cNIFEmisor      := ::LimpiarString( uFieldempresa( 'cNif' ) )
+      ::cNombreEmisor   := ::LimpiarString( uFieldempresa( 'cNombre' ) )
 
-      ::ConfigurarCertificado()*/
+      // Datos del receptor
 
-   else
+      ::cNIFReceptor     := ::LimpiarString( hGet( ::hDocumento, "CifCliente" ) )
+      ::cNombreReceptor  := ::LimpiarString( hGet( ::hDocumento, "CifCliente" ) )
+      ::cTipoIdReceptor  := "02"  // Tipos de receptores 02=NIF, 03=Pasaporte, etc.
+
+      // ID VeriFactu
+
+      ::GenerarIdVeriFactu()
+
+      //Certificado digital y configuración AEAT
+
+      ::ConfigurarCertificado()
+      ::lEnviarAEAT := ConfiguracionesEmpresaModel():getLogic( 'lVeryFactu', .f. ) // Activar envío a AEAT    //**//
+
+      else
 
       AAdd( ::aErrores, "VeriFactu no está habilitado en la configuración de la empresa." )
 
       RETURN Self
 
    end if
-
-   //::GenerarIdVeriFactu()
-
-RETURN Self
-
-//---------------------------------------------------------------------------//
-
-METHOD SetDatosFactura( aTmp ) CLASS TVeriFactu
-
-   local oDataErr
-
-      // Datos básicos de la factura
-      // ::cSerieFactura  := AllTrim( aTmp[ _CSERIE ] )
-      // ::nNumeroFactura := aTmp[ _NNUMFAC ]
-      // ::cSufijoFactura := AllTrim( aTmp[ _CSUFFAC ] )
-      //::dFechaFactura  := aTmp[ _DFECFAC ]
-      ::cHoraFactura   := Time()
-      
-      // Construir número completo
-      ::cNumeroFactura := ::cSerieFactura + "/" + ;
-                          AllTrim( Str( ::nNumeroFactura ) ) + ;
-                          if( !Empty( ::cSufijoFactura ), "/" + ::cSufijoFactura, "" )
-
-      // Importes (usar variables globales si están disponibles)
-      ::nBaseImponible := if( Type("nTotNet") == "N", nTotNet, 0 )
-      ::nCuotaIVA      := if( Type("nTotIva") == "N", nTotIva, 0 )
-      ::nTotalFactura  := if( Type("nTotFac") == "N", nTotFac, 0 )
-      ::nImporteTotal  := ::nBaseImponible + ::nCuotaIVA
-
-RETURN Self
-
-//---------------------------------------------------------------------------//
-
-METHOD SetDatosEmisor() CLASS TVeriFactu
-
-   ::cNIFEmisor      := ::LimpiarString( uFieldempresa( 'cNif' ) )
-   ::cNombreEmisor   := ::LimpiarString( uFieldempresa( 'cNombre' ) )
-
-RETURN Self
-
-//---------------------------------------------------------------------------//
-
-METHOD SetDatosReceptor( cNif, cNombre, cTipoId ) CLASS TVeriFactu
-
-   ::cNIFReceptor     := ::LimpiarString( cNif )
-   ::cNombreReceptor  := ::LimpiarString( cNombre )
-   ::cTipoIdReceptor  := if( Empty( cTipoId ), "02", cTipoId ) // 02=NIF, 03=Pasaporte, etc.
-
+  
 RETURN Self
 
 //---------------------------------------------------------------------------//
@@ -208,8 +202,9 @@ RETURN AllTrim( StrTran( StrTran( cTexto, Chr(13), "" ), Chr(10), "" ) )
 
 METHOD ConfigurarCertificado() CLASS TVeriFactu
 
-   ::cRutaCertificado := ::LimpiarString( uFieldempresa('cCertRuta'))
-   ::cPasswordCert    := ::LimpiarString( uFieldempresa('cCertPass'))
+   ::cRutaCertificado    := ::LimpiarString( padr( ConfiguracionesEmpresaModel():getValue( 'cert_ruta', '' ), 200 ))
+   ::cPasswordCert       := ::LimpiarString( padr( ConfiguracionesEmpresaModel():getValue( 'cert_pass', '' ), 50 ))
+   ::cTipoCertificado   := "P12" // Por defecto P12, puede ser PFX o CER+KEY
    
    // Validar que el archivo existe
    if !File( ::cRutaCertificado )
@@ -226,17 +221,6 @@ METHOD ConfigurarCertificado() CLASS TVeriFactu
    end if     
 
 RETURN .t.
-
-//---------------------------------------------------------------------------//
-
-METHOD ConfigurarProxy( cServer, nPort, cUser, cPass ) CLASS TVeriFactu
-
-   ::cProxyServer := cServer
-   ::nProxyPort   := nPort
-   ::cProxyUser   := cUser
-   ::cProxyPass   := cPass
-
-RETURN Self
 
 //---------------------------------------------------------------------------//
 
@@ -473,29 +457,38 @@ METHOD GenerarVeriFactu() CLASS TVeriFactu
    local cQR := ""
    local oGenErr
 
+   MsgInfo( "Entro en GenerarVeriFactu" )
+
    try
       // Validar datos requeridos
-      if ::ValidarDatos()
+      if ::ValidarDatos()    //***//
+         msgInfo( "Datos validados correctamente" )
          // Generar hash y código seguro
-         ::CalcularHash()
+         ::CalcularHash()  //**//
+         msgInfo( "Hash y código seguro generados" )
          
          // Crear nombres de archivos
-         ::CrearNombresArchivos()
+         ::CrearNombresArchivos()  //**//
+
+          MsgInfo( ::cNombreArchivoJSON, "::cNombreArchivoJSON" )
+          MsgInfo( ::cNombreArchivoQR, "::cNombreArchivoQR" )
+          MsgInfo( ::cRutaJSON, "::cRutaJSON" )
+          MsgInfo( ::cRutaQR, "::cRutaQR" )
          
          // Generar JSON
-         cJSON := ::GenerarJSON()
+         cJSON := ::GenerarJSON()  //**//
          if !Empty( cJSON )
             // Generar código QR si está habilitado
             if ::lGenerarQR
-               cQR := ::GenerarQR()
+               cQR := ::GenerarQR()  //**//
             end if
             
             // Escribir archivos
-            lExito := ::EscribirArchivos( cJSON, cQR )
+            lExito := ::EscribirArchivos( cJSON, cQR )//**//
             
             // Enviar a AEAT si está configurado
             if lExito .and. ::lEnviarAEAT
-               ::EnviarAEAT()
+               //::EnviarAEAT() 
             end if
          else
             AAdd( ::aErrores, "Error al generar JSON" )
@@ -530,8 +523,8 @@ METHOD GenerarJSON() CLASS TVeriFactu
       
       // Cabecera
       hCabecera["IDVersion"] := "1.0"
-      hCabecera["Ejercicio"] := AllTrim( Str( Year( ::dFechaFactura ) ) )
-      hCabecera["Periodo"] := Right( "0" + AllTrim( Str( Month( ::dFechaFactura ) ) ), 2 )
+      hCabecera["Ejercicio"] := AllTrim( Str( Year( ::dFecha ) ) )
+      hCabecera["Periodo"] := Right( "0" + AllTrim( Str( Month( ::dFecha ) ) ), 2 )
       hCabecera["NombreRazon"] := ::cNombreEmisor
       hCabecera["NIF"] := ::cNIFEmisor
       
@@ -548,8 +541,8 @@ METHOD GenerarJSON() CLASS TVeriFactu
       
       // Detalles de la factura
       hDetalles["TipoFactura"] := "F1" // F1=Factura completa
-      hDetalles["SerieNumFactura"] := ::cNumeroFactura
-      hDetalles["FechaHoraHusoGenFactura"] := ::FormatearFecha( ::dFechaFactura ) + "T" + ::cHoraFactura
+      hDetalles["SerieNumFactura"] := ::cNumero
+      hDetalles["FechaHoraHusoGenFactura"] := ::FormatearFecha( ::dFecha ) + "T" + ::cHora
       hDetalles["ImporteTotalFactura"] := ::FormatearImporte( ::nImporteTotal )
       hDetalles["BaseImponible"] := ::FormatearImporte( ::nBaseImponible )
       hDetalles["CuotaIVA"] := ::FormatearImporte( ::nCuotaIVA )
@@ -596,8 +589,8 @@ METHOD GenerarQR() CLASS TVeriFactu
                   "https://prewww2.aeat.es/wlpl/TIKE-CONT/ValidarQR" )
       
       cDatos := "?nif=" + ::cNIFEmisor + ;
-                "&numserie=" + UrlEncode( ::cNumeroFactura ) + ;
-                "&fecha=" + DToS( ::dFechaFactura ) + ;
+                "&numserie=" + UrlEncode( ::cNumero ) + ;
+                "&fecha=" + DToS( ::dFecha ) + ;
                 "&importe=" + AllTrim( Str( ::nImporteTotal, 12, 2 ) ) + ;
                 "&codigo=" + ::cCodigoSeguro
       
@@ -625,9 +618,9 @@ METHOD CalcularHash() CLASS TVeriFactu
    try
       // Construir cadena para hash según normativa AEAT
       cDatos := ::cNIFEmisor + ;
-                ::cNumeroFactura + ;
-                DToS( ::dFechaFactura ) + ;
-                ::cHoraFactura + ;
+                ::cNumero + ;
+                DToS( ::dFecha ) + ;
+                ::cHora + ;
                 AllTrim( Str( ::nImporteTotal, 12, 2 ) )
       
       // Generar hash SHA-256 (requiere librería externa o función del sistema)
@@ -649,8 +642,7 @@ RETURN Self
 
 METHOD GenerarIdVeriFactu() CLASS TVeriFactu
 
-   ::cIdVeriFactu := "VF" + DToS( Date() ) + StrTran( Time(), ":", "" ) + ;
-                     Right( "000" + AllTrim( Str( hb_Random( 999 ) ) ), 3 )
+   ::cIdVeriFactu := "VF" + DToS( Date() ) + StrTran( Time(), ":", "" ) + Right( "000" + AllTrim( Str( hb_Random( 999 ) ) ), 3 )
 
 RETURN Self
 
@@ -661,6 +653,16 @@ METHOD ValidarDatos() CLASS TVeriFactu
    local lValido := .t.
 
    ::aErrores := {}
+
+   MsgInfo( "Entro a validar" )
+   MsgInfo(  ::cNIFEmisor, "::cNIFEmisor" )
+   MsgInfo(  ::cNombreEmisor, "::cNombreEmisor" )
+   MsgInfo(  ::cNumero, "::cNumero" )
+   MsgInfo(  ::dFecha, "::dFecha" )
+   MsgInfo(  ::nImporteTotal, "::nImporteTotal" )
+   MsgInfo(  ::cHora, "::cHora" )
+   MsgInfo(  ::cIdVeriFactu, "::cIdVeriFactu" )
+
 
    // Validaciones obligatorias según normativa AEAT
    if Empty( ::cNIFEmisor )
@@ -673,13 +675,13 @@ METHOD ValidarDatos() CLASS TVeriFactu
       lValido := .f.
    end if
    
-   if Empty( ::cNumeroFactura )
-      AAdd( ::aErrores, "Número de factura es obligatorio" )
+   if Empty( ::cNumero )
+      AAdd( ::aErrores, "Número es obligatorio" )
       lValido := .f.
    end if
    
-   if Empty( ::dFechaFactura )
-      AAdd( ::aErrores, "Fecha de factura es obligatoria" )
+   if Empty( ::dFecha )
+      AAdd( ::aErrores, "Fecha es obligatoria" )
       lValido := .f.
    end if
    
@@ -694,18 +696,18 @@ RETURN lValido
 
 METHOD CrearNombresArchivos() CLASS TVeriFactu
 
-   local cFecha := DToS( ::dFechaFactura )
-   local cHora := StrTran( ::cHoraFactura, ":", "" )
+   local cFecha := DToS( ::dFecha )
+   local cHora := StrTran( ::cHora, ":", "" )
    local cBase := "VeriFactu_" + ::cNIFEmisor + "_" + ;
-                  StrTran( ::cNumeroFactura, "/", "_" ) + "_" + ;
+                  StrTran( ::cNumero, "/", "_" ) + "_" + ;
                   cFecha + "_" + cHora
 
    ::cNombreArchivoJSON := cBase + ".json"
    ::cNombreArchivoQR   := cBase + "_QR.txt"
    
    // Rutas completas
-   ::cRutaJSON := cPatEmp() + ::cNombreArchivoJSON
-   ::cRutaQR   := cPatEmp() + ::cNombreArchivoQR
+   ::cRutaJSON := FullCurDir() + cPatEmp() + "\" + ::cNombreArchivoJSON
+   ::cRutaQR   := FullCurDir() + cPatEmp() + "\" + ::cNombreArchivoQR
 
 RETURN Self
 
@@ -776,7 +778,7 @@ METHOD EnviarAEAT() CLASS TVeriFactu
                
                if lExito
                   // Log de éxito
-                  // LogWrite( "VeriFactu enviado correctamente a AEAT: " + ::cNumeroFactura )
+                  // LogWrite( "VeriFactu enviado correctamente a AEAT: " + ::cNumero )
                else
                   // Log de errores
                   // LogWrite( "Error enviando VeriFactu a AEAT: " + hb_ValToExp( ::aErrores ) )
@@ -941,6 +943,3 @@ RETURN cResult
 #define _DFECFAC             6
 
 //---------------------------------------------------------------------------//
-
-
-

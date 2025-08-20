@@ -463,6 +463,7 @@ static dbfPedPrvL
 
 static oStock
 static TComercio
+static oVeryFactu
 
 static oTrans
 
@@ -1888,6 +1889,8 @@ STATIC FUNCTION OpenFiles()
 
       Counter                    	:= TCounter():New( nView, "nFacCli" )
 
+      oVeryFactu                    := TVeriFactu():New()      
+
       /*
       Declaramos variables p-blicas--------------------------------------------
       */
@@ -2273,6 +2276,10 @@ STATIC FUNCTION CloseFiles()
 
    if !empty( oMailingFacturasClientes )
       oMailingFacturasClientes:End()
+   end if 
+   
+   if !empty( oVeryfactu )
+      oVeryfactu:End()
    end if 
 
    dbfIva      	:= nil
@@ -23806,6 +23813,9 @@ Static Function PublicarFactura( aTmp )
 	local nNumFac
    local cUuidparent
    local nOrdAnt
+   local hFactura          := {=>}
+   local hResultado     := {=>}
+   local lExito := .f.
 
    if !Empty( aTmp )
 
@@ -23979,9 +23989,38 @@ Static Function PublicarFactura( aTmp )
    /*
    Llamada para conectar con VeryFactu-----------------------------------
    */
-   
-   TVeriFactu():New()
 
+   hFactura          := {=>}
+   
+   hset( hFactura, "TipoDocumento", "factura_cliente" )
+   hset( hFactura, "Serie", ( D():FacturasClientes( nView ) )->cSerie )
+   hset( hFactura, "Numero", ( D():FacturasClientes( nView ) )->nNumFac )
+   hset( hFactura, "Sufijo", ( D():FacturasClientes( nView ) )->cSufFac )
+   hset( hFactura, "Uuid", ( D():FacturasClientes( nView ) )->cGuid )
+   hset( hFactura, "Fecha", ( D():FacturasClientes( nView ) )->dFecFac )
+   hset( hFactura, "Hora", ( D():FacturasClientes( nView ) )->tFecFac )
+   hset( hFactura, "Neto", ( D():FacturasClientes( nView ) )->nTotNet )
+   hset( hFactura, "Impuesto", ( D():FacturasClientes( nView ) )->nTotIva )
+   hset( hFactura, "Recargo", ( D():FacturasClientes( nView ) )->nTotReq )
+   hset( hFactura, "Total", ( D():FacturasClientes( nView ) )->nTotFac )
+   hset( hFactura, "CifCliente", AllTrim( ( D():FacturasClientes( nView ) )->cDniCli ) )
+   hset( hFactura, "NombreCliente", AllTrim( ( D():FacturasClientes( nView ) )->cNomCli ) )
+
+   if !Empty( oVeryfactu )
+      
+      //Pasamos los datos de la factura a oVeryfactu
+      oVeryfactu:SetDatos( hFactura )
+      
+      //Generar oVeryfactu completo
+      lExito := oVeryfactu:GenerarVeriFactu()
+      
+      // Log de errores si los hay
+      if !lExito .and. Len( oVeryfactu:aErrores ) > 0
+         LogWrite( "Errores oVeryfactu: " + hb_ValToExp( oVeryfactu:aErrores ) )
+      end if
+
+   end if   
+   
 Return ( .t. )
 
 //---------------------------------------------------------------------------//
