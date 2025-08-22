@@ -93,8 +93,24 @@ CLASS TVeriFactu
    DATA lEnviarAEAT       INIT .f.
    DATA cEntorno          INIT "PRUEBAS" // PRUEBAS / PRODUCCION
 
+   DATA nBaseImponible21
+   DATA nBaseImponible10
+   DATA nBaseImponible4
+   DATA nBaseImponibleExenta
+
+   DATA nCuotaIVA21
+   DATA nCuotaIVA10
+   DATA nCuotaIVA4
+   
+   // Variables adicionales para VeriFactu
+   DATA cDescripcionOperacion  INIT ""     // Descripción de la operación
+   DATA cNumeroAnterior       INIT ""     // Número de la factura anterior
+   DATA dFechaAnterior        INIT CToD("") // Fecha de la factura anterior
+   DATA nCuotaTotal           INIT 0      // Suma total de las cuotas de IVA
+
    // Métodos principales
    METHOD New( aTmp, cNifEmisor, cNomEmisor ) CONSTRUCTOR
+   METHOD End()                  VIRTUAL
    METHOD SetDatos()
    METHOD ConfigurarCertificado()
    METHOD ValidarCertificado()
@@ -109,7 +125,7 @@ CLASS TVeriFactu
    METHOD GenerarIdVeriFactu()
    METHOD ValidarDatos()
    METHOD CrearNombresArchivos()
-   METHOD EscribirArchivos( cJSON, cQR )
+   METHOD EscribirArchivos( cJSON, cQR ) 
    METHOD EnviarHTTPS( cURL, cDatos, cMetodo )
    METHOD PrepararCabeceras()
    METHOD ProcesarRespuestaAEAT( cRespuesta )
@@ -126,6 +142,21 @@ END CLASS
 METHOD New() CLASS TVeriFactu
 
    ::hResultado           := {=>}
+
+   ::nBaseImponible21   := 5
+   ::nBaseImponible10   := 5
+   ::nBaseImponible4   := 5
+   ::nBaseImponibleExenta   := 5
+
+   ::nCuotaIVA21  := 54
+   ::nCuotaIVA10  := 54
+   ::nCuotaIVA4   := 54
+
+   // Inicializar las nuevas variables
+   ::cDescripcionOperacion := "Bakery Shop/0003"  // Valor por defecto
+   ::cNumeroAnterior      := ""
+   ::dFechaAnterior       := CToD("")
+   ::nCuotaTotal          := ::nCuotaIVA21 + ::nCuotaIVA10 + ::nCuotaIVA4
 
 RETURN ( self )
 
@@ -461,30 +492,23 @@ METHOD GenerarVeriFactu() CLASS TVeriFactu
 
    try
       // Validar datos requeridos
-      if ::ValidarDatos()    //***//
-         msgInfo( "Datos validados correctamente" )
+      if ::ValidarDatos()
          // Generar hash y código seguro
-         ::CalcularHash()  //**//
-         msgInfo( "Hash y código seguro generados" )
-         
-         // Crear nombres de archivos
-         ::CrearNombresArchivos()  //**//
+         ::CalcularHash()
 
-          MsgInfo( ::cNombreArchivoJSON, "::cNombreArchivoJSON" )
-          MsgInfo( ::cNombreArchivoQR, "::cNombreArchivoQR" )
-          MsgInfo( ::cRutaJSON, "::cRutaJSON" )
-          MsgInfo( ::cRutaQR, "::cRutaQR" )
-         
+         // Crear nombres de archivos
+         ::CrearNombresArchivos()
+
          // Generar JSON
-         cJSON := ::GenerarJSON()  //**//
+         cJSON := ::GenerarJSON()
          if !Empty( cJSON )
             // Generar código QR si está habilitado
             if ::lGenerarQR
-               cQR := ::GenerarQR()  //**//
+               cQR := ::GenerarQR()
             end if
             
             // Escribir archivos
-            lExito := ::EscribirArchivos( cJSON, cQR )//**//
+            lExito := ::EscribirArchivos( cJSON, cQR )
             
             // Enviar a AEAT si está configurado
             if lExito .and. ::lEnviarAEAT
@@ -511,62 +535,153 @@ RETURN lExito
 METHOD GenerarJSON() CLASS TVeriFactu
 
    local cJSON := ""
-   local hFactura := {=>}
-   local hCabecera := {=>}
-   local hEmisor := {=>}
-   local hReceptor := {=>}
-   local hDetalles := {=>}
+   local hDocumento := {=>}
+   local hRegistroAlta := {=>}
+   local hIDFactura := {=>}
+   local hDestinatarios := {=>}
+   local aIDDestinatario := {}
+   local hDesglose := {=>}
+   local aDetalleDesglose := {}
+   local hSistemaInformatico := {=>}
+   local hEncadenamiento := {=>}
+   local hRegistroAnterior := {=>}
    local oJsonErr
 
    try
-      // Estructura según normativa AEAT VeriFactu
+      // RegistroAlta - validamos y formateamos los datos
+      hRegistroAlta := {=>}
+      hRegistroAlta["IDVersion"] := "1.0"
+      hRegistroAlta["FechaHoraHusoGenRegistro"] := ::FormatearFecha( ::dFecha ) + "T" + PadL(::cHora, 8, "0") + "+02:00"
+      hRegistroAlta["NombreRazonEmisor"] := AllTrim(::cNombreEmisor)
+
+      // IDFactura - aseguramos el formato correcto
+      hIDFactura := {=>}
+      hIDFactura["IDEmisorFactura"] := AllTrim(::cNIFEmisor)
+      hIDFactura["NumSerieFactura"] := AllTrim(::cNumero)
+      hIDFactura["FechaExpedicionFactura"] := ::FormatearFecha(::dFecha)
+      hRegistroAlta["IDFactura"] := hIDFactura
+
+      // Destinatarios
+      if !Empty(::cNIFReceptor)
+         AAdd(aIDDestinatario, {;
+            "NIF" => ::cNIFReceptor,;
+            "NombreRazon" => ::cNombreReceptor;
+         })
+         hDestinatarios["IDDestinatario"] := aIDDestinatario
+         hRegistroAlta["Destinatarios"] := hDestinatarios
+      endif
+
+      // Datos de la factura
+      hRegistroAlta["TipoFactura"] := "F1"
+      hRegistroAlta["DescripcionOperacion"] := ::cDescripcionOperacion
+      hRegistroAlta["Subsanacion"] := "N"
+
+      // Desglose - Múltiples tipos de IVA
+      if ::nBaseImponible21 > 0
+         AAdd(aDetalleDesglose, {;
+            "Impuesto" => "01",;
+            "ClaveRegimen" => "20",;
+            "CalificacionOperacion" => "S1",;
+            "TipoImpositivo" => "21.00",;
+            "BaseImponibleOimporteNoSujeto" => ::FormatearImporte(::nBaseImponible21),;
+            "CuotaRepercutida" => ::FormatearImporte(::nCuotaIVA21);
+         })
+      endif
+
+      if ::nBaseImponible10 > 0
+         AAdd(aDetalleDesglose, {;
+            "Impuesto" => "01",;
+            "ClaveRegimen" => "20",;
+            "CalificacionOperacion" => "S1",;
+            "TipoImpositivo" => "10.00",;
+            "BaseImponibleOimporteNoSujeto" => ::FormatearImporte(::nBaseImponible10),;
+            "CuotaRepercutida" => ::FormatearImporte(::nCuotaIVA10);
+         })
+      endif
+
+      if ::nBaseImponible4 > 0
+         AAdd(aDetalleDesglose, {;
+            "Impuesto" => "01",;
+            "ClaveRegimen" => "20",;
+            "CalificacionOperacion" => "S1",;
+            "TipoImpositivo" => "4.00",;
+            "BaseImponibleOimporteNoSujeto" => ::FormatearImporte(::nBaseImponible4),;
+            "CuotaRepercutida" => ::FormatearImporte(::nCuotaIVA4);
+         })
+      endif
+
+      if ::nBaseImponibleExenta > 0
+         AAdd(aDetalleDesglose, {;
+            "Impuesto" => "01",;
+            "ClaveRegimen" => "20",;
+            "CalificacionOperacion" => "N2",;
+            "BaseImponibleOimporteNoSujeto" => ::FormatearImporte(::nBaseImponibleExenta);
+         })
+      endif
+
+      hDesglose["DetalleDesglose"] := aDetalleDesglose
+      hRegistroAlta["Desglose"] := hDesglose
+
+      // Totales
+      hRegistroAlta["CuotaTotal"] := ::FormatearImporte(::nCuotaTotal)
+      hRegistroAlta["ImporteTotal"] := ::FormatearImporte(::nImporteTotal)
+
+      // Sistema Informático
+      hSistemaInformatico["NombreRazon"] := "Odoo SA"
+      hSistemaInformatico["IDOtro"] := {;
+         "CodigoPais" => "BE",;
+         "IDType" => "02",;
+         "ID" => "BE0477472701";
+      }
+      hSistemaInformatico["NombreSistemaInformatico"] := "Odoo"
+      hSistemaInformatico["IdSistemaInformatico"] := "00"
+      hSistemaInformatico["Version"] := "18.0"
+      hSistemaInformatico["NumeroInstalacion"] := "2A3F415E9FDEE74DCAF240498A26BF293955A5F8C5F90E347B5CF3C502FE25E7"
+      hSistemaInformatico["TipoUsoPosibleSoloVerifactu"] := "S"
+      hSistemaInformatico["TipoUsoPosibleMultiOT"] := "S"
+      hSistemaInformatico["IndicadorMultiplesOT"] := "S"
+      hRegistroAlta["SistemaInformatico"] := hSistemaInformatico
+
+      // Encadenamiento
+      if !Empty(::cNumeroAnterior)
+         hRegistroAnterior["IDEmisorFactura"] := ::cNIFEmisor
+         hRegistroAnterior["NumSerieFactura"] := ::cNumeroAnterior
+         hRegistroAnterior["FechaExpedicionFactura"] := ::FormatearFecha(::dFechaAnterior)
+         hRegistroAnterior["Huella"] := ::cHashAnterior
+         hEncadenamiento["RegistroAnterior"] := hRegistroAnterior
+         hRegistroAlta["Encadenamiento"] := hEncadenamiento
+      endif
+
+      // Huella
+      hRegistroAlta["TipoHuella"] := "01"
+      hRegistroAlta["Huella"] := ::cHashActual
+
+      // Estructura final
+      hDocumento := {=>}
+      hDocumento["RegistroAlta"] := hRegistroAlta
+
+      MsgInfo( "Estructura JSON generada: " + hb_ValToExp( hDocumento ) )
+
+      // Debug - Verificar estructura antes de codificar
+      if Empty(hDocumento["RegistroAlta"])
+         ::lError := .t.
+         AAdd(::aErrores, "Error: RegistroAlta está vacío")
+      endif
       
-      // Cabecera
-      hCabecera["IDVersion"] := "1.0"
-      hCabecera["Ejercicio"] := AllTrim( Str( Year( ::dFecha ) ) )
-      hCabecera["Periodo"] := Right( "0" + AllTrim( Str( Month( ::dFecha ) ) ), 2 )
-      hCabecera["NombreRazon"] := ::cNombreEmisor
-      hCabecera["NIF"] := ::cNIFEmisor
+      // Convertir a JSON y validar
+      cJSON := hb_JsonEncode(hDocumento, .t.)
       
-      // Emisor
-      hEmisor["NombreRazon"] := ::cNombreEmisor
-      hEmisor["NIF"] := ::cNIFEmisor
+      Msginfo( "JSON generado: " + cJSON )
       
-      // Receptor (si existe)
-      if !Empty( ::cNIFReceptor )
-         hReceptor["NombreRazon"] := ::cNombreReceptor
-         hReceptor["NIF"] := ::cNIFReceptor
-         hReceptor["TipoIdentificacion"] := ::cTipoIdReceptor
-      end if
-      
-      // Detalles de la factura
-      hDetalles["TipoFactura"] := "F1" // F1=Factura completa
-      hDetalles["SerieNumFactura"] := ::cNumero
-      hDetalles["FechaHoraHusoGenFactura"] := ::FormatearFecha( ::dFecha ) + "T" + ::cHora
-      hDetalles["ImporteTotalFactura"] := ::FormatearImporte( ::nImporteTotal )
-      hDetalles["BaseImponible"] := ::FormatearImporte( ::nBaseImponible )
-      hDetalles["CuotaIVA"] := ::FormatearImporte( ::nCuotaIVA )
-      hDetalles["Huella"] := ::cHashActual
-      hDetalles["HuellaAnterior"] := ::cHashAnterior
-      hDetalles["CodigoSeguro"] := ::cCodigoSeguro
-      
-      // Estructura completa
-      hFactura["Cabecera"] := hCabecera
-      hFactura["Emisor"] := hEmisor
-      if !Empty( ::cNIFReceptor )
-         hFactura["Receptor"] := hReceptor
-      end if
-      hFactura["DetallesFactura"] := hDetalles
-      hFactura["FechaHoraGeneracion"] := DToS( Date() ) + "T" + Time()
-      hFactura["VersionNormativa"] := "VeriFactu_1.0"
-      
-      // Convertir a JSON
-      cJSON := hb_JsonEncode( hFactura, .t. ) // .t. = pretty print
+      if Empty(cJSON)
+         ::lError := .t.
+         AAdd(::aErrores, "Error: JSON generado está vacío")
+      endif
 
    catch oJsonErr
       ::lError := .t.
       AAdd( ::aErrores, "Error al generar JSON: " + oJsonErr:Description )
-      cJSON := ""
+      RETURN ("")
    end try
 
 RETURN cJSON
@@ -590,7 +705,9 @@ METHOD GenerarQR() CLASS TVeriFactu
       
       cDatos := "?nif=" + ::cNIFEmisor + ;
                 "&numserie=" + UrlEncode( ::cNumero ) + ;
-                "&fecha=" + DToS( ::dFecha ) + ;
+                "&fecha=" + if( Day( ::dFecha ) < 10, "0" + AllTrim( Str( Day( ::dFecha ) ) ), AllTrim( Str( Day( ::dFecha ) ) ) ) + ;
+                if( Month( ::dFecha ) < 10, "0" + AllTrim( Str( Month( ::dFecha ) ) ), AllTrim( Str( Month( ::dFecha ) ) ) ) + ;
+                AllTrim( Str( Year( ::dFecha ) ) ) + ;
                 "&importe=" + AllTrim( Str( ::nImporteTotal, 12, 2 ) ) + ;
                 "&codigo=" + ::cCodigoSeguro
       
@@ -598,6 +715,8 @@ METHOD GenerarQR() CLASS TVeriFactu
       
       // Aquí se podría integrar una librería de generación de QR
       // Por ahora devolvemos la URL que debe codificarse en QR
+
+      QrCodeToHBmp( 3, 3, AllTrim( cQR ), ::cRutaQR )
       
    catch oQrErr
       ::lError := .t.
@@ -654,16 +773,6 @@ METHOD ValidarDatos() CLASS TVeriFactu
 
    ::aErrores := {}
 
-   MsgInfo( "Entro a validar" )
-   MsgInfo(  ::cNIFEmisor, "::cNIFEmisor" )
-   MsgInfo(  ::cNombreEmisor, "::cNombreEmisor" )
-   MsgInfo(  ::cNumero, "::cNumero" )
-   MsgInfo(  ::dFecha, "::dFecha" )
-   MsgInfo(  ::nImporteTotal, "::nImporteTotal" )
-   MsgInfo(  ::cHora, "::cHora" )
-   MsgInfo(  ::cIdVeriFactu, "::cIdVeriFactu" )
-
-
    // Validaciones obligatorias según normativa AEAT
    if Empty( ::cNIFEmisor )
       AAdd( ::aErrores, "NIF del emisor es obligatorio" )
@@ -696,18 +805,25 @@ RETURN lValido
 
 METHOD CrearNombresArchivos() CLASS TVeriFactu
 
-   local cFecha := DToS( ::dFecha )
-   local cHora := StrTran( ::cHora, ":", "" )
-   local cBase := "VeriFactu_" + ::cNIFEmisor + "_" + ;
-                  StrTran( ::cNumero, "/", "_" ) + "_" + ;
-                  cFecha + "_" + cHora
+   local cFecha := ""
+   local cHora := ""
+   local cBase := ""
+   
+   cFecha := if( Day( ::dFecha ) < 10, "0" + AllTrim(Str( Day( ::dFecha ) ) ), AllTrim( Str( Day( ::dFecha ) ) ) )
+   cFecha +=  if( Month( ::dFecha ) < 10, "0" + AllTrim( Str( Month( ::dFecha ) ) ), AllTrim( Str( Month( ::dFecha ) ) ) )
+   cFecha +=  AllTrim( Str( Year( ::dFecha ) ) )
+
+   cHora := StrTran( ::cHora, ":", "" )
+
+   cBase := "VeriFactu_" + ::cNIFEmisor + "_" + StrTran( ::cNumero, "/", "_" ) + "_" + cFecha + "_" + cHora
 
    ::cNombreArchivoJSON := cBase + ".json"
-   ::cNombreArchivoQR   := cBase + "_QR.txt"
+   //::cNombreArchivoQR   := cBase + "_QR.txt"
+   ::cNombreArchivoQR   := cBase + "_QR.bmp"
    
    // Rutas completas
-   ::cRutaJSON := FullCurDir() + cPatEmp() + "\" + ::cNombreArchivoJSON
-   ::cRutaQR   := FullCurDir() + cPatEmp() + "\" + ::cNombreArchivoQR
+   ::cRutaJSON := FullJsonDir() + ::cNombreArchivoJSON
+   ::cRutaQR   := FullQrDir() + ::cNombreArchivoQR
 
 RETURN Self
 
@@ -719,11 +835,16 @@ METHOD EscribirArchivos( cJSON, cQR ) CLASS TVeriFactu
    local hArchivo
    local oFileErr
 
+   MsgInfo( "Entro en EscribirArchivos" )
+   MsgInfo( "Contenido JSON: " +  ::cRutaJSON )
+   MsgInfo( "Contenido QR: " + ::cRutaQR )
+   MsgInfo(  "Contenido cJSON: " + cJSON  )
+
    try
       // Escribir archivo JSON
       hArchivo := FCreate( ::cRutaJSON )
       if hArchivo != -1
-         FWrite( hArchivo, cJSON )
+         FWrite( hArchivo,  cJSON )
          FClose( hArchivo )
       else
          AAdd( ::aErrores, "Error al crear archivo JSON: " + ::cRutaJSON )
@@ -731,7 +852,7 @@ METHOD EscribirArchivos( cJSON, cQR ) CLASS TVeriFactu
       end if
       
       // Escribir archivo QR si existe
-      if !Empty( cQR )
+      /*if !Empty( cQR )
          hArchivo := FCreate( ::cRutaQR )
          if hArchivo != -1
             FWrite( hArchivo, cQR )
@@ -739,7 +860,7 @@ METHOD EscribirArchivos( cJSON, cQR ) CLASS TVeriFactu
          else
             AAdd( ::aErrores, "Error al crear archivo QR: " + ::cRutaQR )
          end if
-      end if
+      end if*/
 
    catch oFileErr
       ::lError := .t.
@@ -778,10 +899,10 @@ METHOD EnviarAEAT() CLASS TVeriFactu
                
                if lExito
                   // Log de éxito
-                  // LogWrite( "VeriFactu enviado correctamente a AEAT: " + ::cNumero )
+                  //LogWrite( "VeriFactu enviado correctamente a AEAT: " + ::cNumero )
                else
                   // Log de errores
-                  // LogWrite( "Error enviando VeriFactu a AEAT: " + hb_ValToExp( ::aErrores ) )
+                  //LogWrite( "Error enviando VeriFactu a AEAT: " + hb_ValToExp( ::aErrores ) )
                end if
             else
                AAdd( ::aErrores, "Error al generar JSON para AEAT" )
@@ -822,7 +943,7 @@ RETURN AllTrim( Str( nImporte, 12, 2 ) )
 //
 //---------------------------------------------------------------------------//
 
-FUNCTION GenerarVeriFactu( aTmp, cNifEmisor, cNomEmisor, cNifCliente, cNomCliente, cRutaCert, cPassCert )
+/*FUNCTION GenerarVeriFactu( aTmp, cNifEmisor, cNomEmisor, cNifCliente, cNomCliente, cRutaCert, cPassCert )
 
    local oVeriFactu
    local lExito := .f.
@@ -905,7 +1026,7 @@ FUNCTION GenerarVeriFactuConCert( aTmp, cNifEmisor, cNomEmisor, cNifCliente, cNo
       cPassCert := __cPassCertVeriFactu
    end if
 
-RETURN GenerarVeriFactu( aTmp, cNifEmisor, cNomEmisor, cNifCliente, cNomCliente, cRutaCert, cPassCert )
+RETURN GenerarVeriFactu( aTmp, cNifEmisor, cNomEmisor, cNifCliente, cNomCliente, cRutaCert, cPassCert )*/
 
 //---------------------------------------------------------------------------//
 

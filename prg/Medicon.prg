@@ -462,6 +462,18 @@ RETURN ( cCurDir + "\" )
 
 //---------------------------------------------------------------------------//
 
+FUNCTION FullJsonDir()
+
+    local cCurDir   := FullCurDir() + "JSON"
+
+    if !isDirectory( cCurDir )
+       Makedir( cCurDir )
+    end if
+
+RETURN ( cCurDir + "\" )
+
+//---------------------------------------------------------------------------//
+
 FUNCTION EaseQrFiles()
 
     EraseFilesInDirectory( FullQrDir() )

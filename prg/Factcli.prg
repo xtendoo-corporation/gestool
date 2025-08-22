@@ -163,6 +163,10 @@
 #define _DFINPER 		   133
 #define _LFIRMA 		   134
 #define _LVALIDA 		   135
+#define _IDVEFAC 		    136
+#define _IDANTVF 		   137
+#define _CRUTJSON 	  138
+#define _CRUTQR 		   139
 
 /*
 Definici-n de la base de datos de lineas de detalle
@@ -1144,22 +1148,19 @@ FUNCTION FactCli( oMenuItem, oWnd, hHash )
       DEFINE BTNSHELL RESOURCE "GC_CLIPBOARD_EMPTY_EARTH_" OF oWndBrw ;
          NOBORDER ;
          ACTION   ( PublicarFactura() );
-         TOOLTIP  "(P)ublicar";
-         HOTKEY   "P" ;
+         TOOLTIP  "Publicar";
          MRU
 
       DEFINE BTNSHELL RESOURCE "gc_clipboard_paste_" OF oWndBrw ;
          NOBORDER ;
          ACTION   ( RestablecerBorrador() );
-         TOOLTIP  "(R)establecer a borrador";
-         HOTKEY   "R" ;
+         TOOLTIP  "Restablecer a borrador";
          MRU
 
       DEFINE BTNSHELL RESOURCE "gc_document_text_delete_" OF oWndBrw ;
          NOBORDER ;
          ACTION   ( MsgInfo( "Rectificar" ) );
          TOOLTIP  "Rectificar factura";
-         HOTKEY   "R" ;
          MRU
 
       DEFINE BTNSHELL oDel RESOURCE "DEL" OF oWndBrw ;
@@ -4363,15 +4364,6 @@ STATIC FUNCTION EdtRec( aTmp, aGet, dbf, oBrw, hHash, bValid, nMode )
 
          oBrwEst:CreateFromResource( 210 )
 
-   /*
-   Pestaña Veryfactu-----------------------------------------------------------------
-   */
-
-
-
-
-
-
    REDEFINE BUTTON ;
         ID       500 ;
         OF       fldSituaciones ;
@@ -4395,6 +4387,30 @@ STATIC FUNCTION EdtRec( aTmp, aGet, dbf, oBrw, hHash, bValid, nMode )
       ID        503 ;
       OF       fldSituaciones ;
       ACTION   ( WinZooRec( oBrwEst, bEdtEst, dbfTmpEst, nil, nil, aTmp ) )
+
+   /*
+   Pestaña Veryfactu-----------------------------------------------------------------
+   */
+
+   REDEFINE GET aGet[ _IDVEFAC ] VAR aTmp[ _IDVEFAC ] ;
+      ID       100 ;
+      WHEN     (.f.) ;
+      OF       fldVeryfactu
+
+   REDEFINE GET aGet[ _IDANTVF ] VAR aTmp[ _IDANTVF ] ;
+      ID       110 ;
+      WHEN     (.f.) ;
+      OF       fldVeryfactu
+
+   REDEFINE GET aGet[ _CRUTJSON ] VAR aTmp[ _CRUTJSON ] ;
+      ID       120 ;
+      WHEN     (.f.) ;
+      OF       fldVeryfactu
+
+   REDEFINE GET aGet[ _CRUTQR ] VAR aTmp[ _CRUTQR ] ;
+      ID       130 ;
+      WHEN     (.f.) ;
+      OF       fldVeryfactu
 
       /*
       Fin de los Folders
@@ -20277,7 +20293,8 @@ function aItmFacCli()
    aAdd( aItmFacCli, { "lValida"  	,"L", 1,   0, "Factura validada" ,                                         "Validada",           	  	  "", "( cDbf )", .f. } )
    aAdd( aItmFacCli, { "idVeFac"  	,"C", 200,   0, "ID Veryfactu" ,                                         "IdVeryfactu",           	  	  "", "( cDbf )", .f. } )
    aAdd( aItmFacCli, { "idAntVF"  	,"C", 200,   0, "ID Veryfactu Anterior" ,                          "IdVeryfactuAnterior",           	  	  "", "( cDbf )", .f. } )
-   aAdd( aItmFacCli, { "nContador"  	,"N", 9,   0, "Contador oculto" ,                          "Contador oculto",           	  	  "", "( cDbf )", .f. } )
+   aAdd( aItmFacCli, { "cRutJson"  	,"C", 200,   0, "Ruta Json" ,                                              "RutaJSON",           	  	   "", "( cDbf )", .f. } )
+   aAdd( aItmFacCli, { "cRutQr"  	 ,"C", 200,   0, "Ruta QR" ,                                                "RutaQR",           	  	      "", "( cDbf )", .f. } )
 
 RETURN ( aItmFacCli )
 
@@ -24018,6 +24035,12 @@ Static Function PublicarFactura( aTmp )
       if !lExito .and. Len( oVeryfactu:aErrores ) > 0
          LogWrite( "Errores oVeryfactu: " + hb_ValToExp( oVeryfactu:aErrores ) )
       end if
+
+      if dbLock( D():FacturasClientes( nView ) )
+         ( D():FacturasClientes( nView ) )->cRutJson := oVeryfactu:cRutaJSON
+         ( D():FacturasClientes( nView ) )->cRutQr   := oVeryfactu:cRutaQR
+        	( D():FacturasClientes( nView ) )->( dbUnLock() )
+    	end if
 
    end if   
    
