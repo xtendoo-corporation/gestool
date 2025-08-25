@@ -6469,9 +6469,8 @@ FONT 8, "Ms Sans Serif"
   CONTROL "&Aceptar [F5]", IDOK, "Button", WS_TABSTOP, 480, 402, 50, 14
   CONTROL "Aceptar e &imprimir [F6]", IDOKANDDOWN, "Button", WS_TABSTOP, 536, 402, 80, 14
   CONTROL "&Cancelar", IDCANCEL, "Button", WS_TABSTOP, 622, 402, 50, 14
-  CONTROL "&Publicar", 600, "Button", 0x00000000, 290, 402, 50, 14
-  CONTROL "&Restablecer a borrador", 610, "Button", 0x00000000, 342, 402, 77, 14
-  CONTROL "&Recalcular", IDOKANDNEW, "Button", 0x00000000, 423, 402, 50, 14
+  CONTROL "&Publicar", 600, "Button", 0x00000000, 368, 402, 50, 14
+  CONTROL "&Recalcular", IDOKANDNEW, "Button", 0x00000000, 425, 402, 50, 14
   CONTROL "", 200, "msctls_progress32", 0x00000000, 2, 395, 669, 4
 }
 

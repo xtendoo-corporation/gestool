@@ -33,7 +33,6 @@ CLASS TVeriFactu
    DATA lEnable               INIT .f.
 
    DATA hDocumento      INIT nil
-   DATA hResultado         INIT nil
 
    // Datos básicos de la factura
    DATA cNumero    INIT ""
@@ -63,6 +62,7 @@ CLASS TVeriFactu
    DATA cHashAnterior     INIT ""
    DATA cHashActual       INIT ""
    DATA cCodigoSeguro     INIT ""
+   DATA cCifAnterior     INIT ""
    
    // Certificado digital y comunicación AEAT
    DATA cRutaCertificado  INIT ""
@@ -93,20 +93,11 @@ CLASS TVeriFactu
    DATA lEnviarAEAT       INIT .f.
    DATA cEntorno          INIT "PRUEBAS" // PRUEBAS / PRODUCCION
 
-   DATA nBaseImponible21
-   DATA nBaseImponible10
-   DATA nBaseImponible4
-   DATA nBaseImponibleExenta
+   DATA aTotIva
 
-   DATA nCuotaIVA21
-   DATA nCuotaIVA10
-   DATA nCuotaIVA4
-   
    // Variables adicionales para VeriFactu
-   DATA cDescripcionOperacion  INIT ""     // Descripción de la operación
    DATA cNumeroAnterior       INIT ""     // Número de la factura anterior
    DATA dFechaAnterior        INIT CToD("") // Fecha de la factura anterior
-   DATA nCuotaTotal           INIT 0      // Suma total de las cuotas de IVA
 
    // Métodos principales
    METHOD New( aTmp, cNifEmisor, cNomEmisor ) CONSTRUCTOR
@@ -141,23 +132,6 @@ END CLASS
 
 METHOD New() CLASS TVeriFactu
 
-   ::hResultado           := {=>}
-
-   ::nBaseImponible21   := 5
-   ::nBaseImponible10   := 5
-   ::nBaseImponible4   := 5
-   ::nBaseImponibleExenta   := 5
-
-   ::nCuotaIVA21  := 54
-   ::nCuotaIVA10  := 54
-   ::nCuotaIVA4   := 54
-
-   // Inicializar las nuevas variables
-   ::cDescripcionOperacion := "Bakery Shop/0003"  // Valor por defecto
-   ::cNumeroAnterior      := ""
-   ::dFechaAnterior       := CToD("")
-   ::nCuotaTotal          := ::nCuotaIVA21 + ::nCuotaIVA10 + ::nCuotaIVA4
-
 RETURN ( self )
 
 //---------------------------------------------------------------------------//
@@ -188,6 +162,9 @@ METHOD SetDatos( hDocumento ) CLASS TVeriFactu
       // Construir número completo
       ::cNumero := ::cSerie + "/" + AllTrim( Str( ::nNumero ) ) + if( !Empty( ::cSufijo ), "/" + ::cSufijo, "" )
 
+      //atotIva
+      ::aTotIva := hGet( ::hDocumento, "aTotIva" )
+
       // Importes (usar variables globales si están disponibles)
       ::nBaseImponible := hGet( ::hDocumento, "Neto" )
       ::nCuotaIVA      := hGet( ::hDocumento, "Impuesto" )
@@ -208,6 +185,13 @@ METHOD SetDatos( hDocumento ) CLASS TVeriFactu
       // ID VeriFactu
 
       ::GenerarIdVeriFactu()
+
+      //Factura anterior
+
+      ::cCifAnterior             := hget( ::hDocumento, "CifAnterior" )
+      ::cNumeroAnterior      := hget( ::hDocumento, "NumeroAnterior" )
+      ::dFechaAnterior       := hget( ::hDocumento, "FechaAnterior" )
+      ::cHashAnterior        :=  hget( ::hDocumento, "HuellaAnterior" )
 
       //Certificado digital y configuración AEAT
 
@@ -488,8 +472,6 @@ METHOD GenerarVeriFactu() CLASS TVeriFactu
    local cQR := ""
    local oGenErr
 
-   MsgInfo( "Entro en GenerarVeriFactu" )
-
    try
       // Validar datos requeridos
       if ::ValidarDatos()
@@ -509,6 +491,8 @@ METHOD GenerarVeriFactu() CLASS TVeriFactu
             
             // Escribir archivos
             lExito := ::EscribirArchivos( cJSON, cQR )
+
+            MsgInfo( cJSON )
             
             // Enviar a AEAT si está configurado
             if lExito .and. ::lEnviarAEAT
@@ -546,6 +530,7 @@ METHOD GenerarJSON() CLASS TVeriFactu
    local hEncadenamiento := {=>}
    local hRegistroAnterior := {=>}
    local oJsonErr
+   local hTotIva
 
    try
       // RegistroAlta - validamos y formateamos los datos
@@ -573,69 +558,42 @@ METHOD GenerarJSON() CLASS TVeriFactu
 
       // Datos de la factura
       hRegistroAlta["TipoFactura"] := "F1"
-      hRegistroAlta["DescripcionOperacion"] := ::cDescripcionOperacion
+      hRegistroAlta["DescripcionOperacion"] := "Bakery Shop/0003"
       hRegistroAlta["Subsanacion"] := "N"
 
-      // Desglose - Múltiples tipos de IVA
-      if ::nBaseImponible21 > 0
+      /*
+      Tipos de Ivas--------------------------------------------------------------
+      */
+      
+      for each hTotIva in ::aTotIva
+         
          AAdd(aDetalleDesglose, {;
-            "Impuesto" => "01",;
-            "ClaveRegimen" => "20",;
-            "CalificacionOperacion" => "S1",;
-            "TipoImpositivo" => "21.00",;
-            "BaseImponibleOimporteNoSujeto" => ::FormatearImporte(::nBaseImponible21),;
-            "CuotaRepercutida" => ::FormatearImporte(::nCuotaIVA21);
-         })
-      endif
-
-      if ::nBaseImponible10 > 0
-         AAdd(aDetalleDesglose, {;
-            "Impuesto" => "01",;
-            "ClaveRegimen" => "20",;
-            "CalificacionOperacion" => "S1",;
-            "TipoImpositivo" => "10.00",;
-            "BaseImponibleOimporteNoSujeto" => ::FormatearImporte(::nBaseImponible10),;
-            "CuotaRepercutida" => ::FormatearImporte(::nCuotaIVA10);
-         })
-      endif
-
-      if ::nBaseImponible4 > 0
-         AAdd(aDetalleDesglose, {;
-            "Impuesto" => "01",;
-            "ClaveRegimen" => "20",;
-            "CalificacionOperacion" => "S1",;
-            "TipoImpositivo" => "4.00",;
-            "BaseImponibleOimporteNoSujeto" => ::FormatearImporte(::nBaseImponible4),;
-            "CuotaRepercutida" => ::FormatearImporte(::nCuotaIVA4);
-         })
-      endif
-
-      if ::nBaseImponibleExenta > 0
-         AAdd(aDetalleDesglose, {;
-            "Impuesto" => "01",;
-            "ClaveRegimen" => "20",;
-            "CalificacionOperacion" => "N2",;
-            "BaseImponibleOimporteNoSujeto" => ::FormatearImporte(::nBaseImponibleExenta);
-         })
-      endif
+                     "Impuesto" => "01",;
+                     "ClaveRegimen" => "20",;
+                     "CalificacionOperacion" => "S1",;
+                     "TipoImpositivo" => Str( hGet( hTotIva, "porcentajeiva" ) ),;
+                     "BaseImponibleOimporteNoSujeto" => ::FormatearImporte( hGet( hTotIva, "neto" ) ),;
+                     "CuotaRepercutida" => ::FormatearImporte( hGet( hTotIva, "impiva" ) );
+                  })
+      next
 
       hDesglose["DetalleDesglose"] := aDetalleDesglose
       hRegistroAlta["Desglose"] := hDesglose
 
       // Totales
-      hRegistroAlta["CuotaTotal"] := ::FormatearImporte(::nCuotaTotal)
+      hRegistroAlta["CuotaTotal"] := ::FormatearImporte(::nCuotaIVA)
       hRegistroAlta["ImporteTotal"] := ::FormatearImporte(::nImporteTotal)
 
       // Sistema Informático
-      hSistemaInformatico["NombreRazon"] := "Odoo SA"
+      hSistemaInformatico["NombreRazon"] := "Xtendoo Software S.L.U."
       hSistemaInformatico["IDOtro"] := {;
-         "CodigoPais" => "BE",;
+         "CodigoPais" => "ES",;
          "IDType" => "02",;
-         "ID" => "BE0477472701";
+         "ID" => "ESB16890287";
       }
-      hSistemaInformatico["NombreSistemaInformatico"] := "Odoo"
+      hSistemaInformatico["NombreSistemaInformatico"] := __GSTROTOR__
       hSistemaInformatico["IdSistemaInformatico"] := "00"
-      hSistemaInformatico["Version"] := "18.0"
+      hSistemaInformatico["Version"] := __GSTVERSION__
       hSistemaInformatico["NumeroInstalacion"] := "2A3F415E9FDEE74DCAF240498A26BF293955A5F8C5F90E347B5CF3C502FE25E7"
       hSistemaInformatico["TipoUsoPosibleSoloVerifactu"] := "S"
       hSistemaInformatico["TipoUsoPosibleMultiOT"] := "S"
@@ -644,9 +602,9 @@ METHOD GenerarJSON() CLASS TVeriFactu
 
       // Encadenamiento
       if !Empty(::cNumeroAnterior)
-         hRegistroAnterior["IDEmisorFactura"] := ::cNIFEmisor
+         hRegistroAnterior["IDEmisorFactura"] := ::cCifAnterior
          hRegistroAnterior["NumSerieFactura"] := ::cNumeroAnterior
-         hRegistroAnterior["FechaExpedicionFactura"] := ::FormatearFecha(::dFechaAnterior)
+         hRegistroAnterior["FechaExpedicionFactura"] := ::FormatearFecha( ::dFechaAnterior )
          hRegistroAnterior["Huella"] := ::cHashAnterior
          hEncadenamiento["RegistroAnterior"] := hRegistroAnterior
          hRegistroAlta["Encadenamiento"] := hEncadenamiento
@@ -660,8 +618,6 @@ METHOD GenerarJSON() CLASS TVeriFactu
       hDocumento := {=>}
       hDocumento["RegistroAlta"] := hRegistroAlta
 
-      MsgInfo( "Estructura JSON generada: " + hb_ValToExp( hDocumento ) )
-
       // Debug - Verificar estructura antes de codificar
       if Empty(hDocumento["RegistroAlta"])
          ::lError := .t.
@@ -670,8 +626,8 @@ METHOD GenerarJSON() CLASS TVeriFactu
       
       // Convertir a JSON y validar
       cJSON := hb_JsonEncode(hDocumento, .t.)
-      
-      Msginfo( "JSON generado: " + cJSON )
+
+      MsgInfo( cJSON, "cJSON" )
       
       if Empty(cJSON)
          ::lError := .t.
@@ -835,11 +791,6 @@ METHOD EscribirArchivos( cJSON, cQR ) CLASS TVeriFactu
    local hArchivo
    local oFileErr
 
-   MsgInfo( "Entro en EscribirArchivos" )
-   MsgInfo( "Contenido JSON: " +  ::cRutaJSON )
-   MsgInfo( "Contenido QR: " + ::cRutaQR )
-   MsgInfo(  "Contenido cJSON: " + cJSON  )
-
    try
       // Escribir archivo JSON
       hArchivo := FCreate( ::cRutaJSON )
@@ -851,17 +802,6 @@ METHOD EscribirArchivos( cJSON, cQR ) CLASS TVeriFactu
          lExito := .f.
       end if
       
-      // Escribir archivo QR si existe
-      /*if !Empty( cQR )
-         hArchivo := FCreate( ::cRutaQR )
-         if hArchivo != -1
-            FWrite( hArchivo, cQR )
-            FClose( hArchivo )
-         else
-            AAdd( ::aErrores, "Error al crear archivo QR: " + ::cRutaQR )
-         end if
-      end if*/
-
    catch oFileErr
       ::lError := .t.
       AAdd( ::aErrores, "Error al escribir archivos: " + oFileErr:Description )
@@ -928,8 +868,12 @@ RETURN lExito
 //---------------------------------------------------------------------------//
 
 METHOD FormatearFecha( dFecha ) CLASS TVeriFactu
-   // Formato: YYYY-MM-DD
-RETURN Transform( dFecha, "@R 9999-99-99" )
+   
+   local cFecha   := dToc( dFecha )  // Formato: DD/MM/YYYY
+   
+   cFecha   := StrTran( cFecha, "/", "-" ) // Formato: DD-MM-YYYY
+
+RETURN ( cFecha )
 
 //---------------------------------------------------------------------------//
 

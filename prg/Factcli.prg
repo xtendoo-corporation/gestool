@@ -163,8 +163,8 @@
 #define _DFINPER 		   133
 #define _LFIRMA 		   134
 #define _LVALIDA 		   135
-#define _IDVEFAC 		    136
-#define _IDANTVF 		   137
+#define _HUELLA 		    136
+#define _HUELLAANT   137
 #define _CRUTJSON 	  138
 #define _CRUTQR 		   139
 
@@ -4392,12 +4392,12 @@ STATIC FUNCTION EdtRec( aTmp, aGet, dbf, oBrw, hHash, bValid, nMode )
    Pestaña Veryfactu-----------------------------------------------------------------
    */
 
-   REDEFINE GET aGet[ _IDVEFAC ] VAR aTmp[ _IDVEFAC ] ;
+   REDEFINE GET aGet[ _HUELLA ] VAR aTmp[ _HUELLA ] ;
       ID       100 ;
       WHEN     (.f.) ;
       OF       fldVeryfactu
 
-   REDEFINE GET aGet[ _IDANTVF ] VAR aTmp[ _IDANTVF ] ;
+   REDEFINE GET aGet[ _HUELLAANT ] VAR aTmp[ _HUELLAANT ] ;
       ID       110 ;
       WHEN     (.f.) ;
       OF       fldVeryfactu
@@ -4424,12 +4424,6 @@ STATIC FUNCTION EdtRec( aTmp, aGet, dbf, oBrw, hHash, bValid, nMode )
          OF       oDlg ;
          WHEN     ( !aTmp[ _LVALIDA ] .and. nMode != ZOOM_MODE ) ;
          ACTION   ( PublicarFactura( aTmp ), EndTrans( aTmp, aGet, oBrw, oBrwLin, oBrwPgo, aNumAlb, nMode, oDlg ) )
-
-      REDEFINE BUTTON ;
-         ID       610 ;
-         OF       oDlg ;
-         WHEN     ( aTmp[ _LVALIDA ] .and. nMode != ZOOM_MODE ) ;
-         ACTION   ( RestablecerBorrador( aTmp ), EndTrans( aTmp, aGet, oBrw, oBrwLin, oBrwPgo, aNumAlb, nMode, oDlg ) )
 
       REDEFINE BUTTON ;
          ID       3 ;
@@ -20291,10 +20285,10 @@ function aItmFacCli()
    aAdd( aItmFacCli, { "dFinPer"    ,"D", 8,   0, "Fecha fin del periodo" ,                                    "FinPeriodo",                  "", "( cDbf )", nil } )                  
    aAdd( aItmFacCli, { "lFirma"     ,"L", 1,   0, "Confirmación firma" ,                                       "ConfirmaFirma",           	  "", "( cDbf )", nil } )
    aAdd( aItmFacCli, { "lValida"  	,"L", 1,   0, "Factura validada" ,                                         "Validada",           	  	  "", "( cDbf )", .f. } )
-   aAdd( aItmFacCli, { "idVeFac"  	,"C", 200,   0, "ID Veryfactu" ,                                         "IdVeryfactu",           	  	  "", "( cDbf )", .f. } )
-   aAdd( aItmFacCli, { "idAntVF"  	,"C", 200,   0, "ID Veryfactu Anterior" ,                          "IdVeryfactuAnterior",           	  	  "", "( cDbf )", .f. } )
-   aAdd( aItmFacCli, { "cRutJson"  	,"C", 200,   0, "Ruta Json" ,                                              "RutaJSON",           	  	   "", "( cDbf )", .f. } )
-   aAdd( aItmFacCli, { "cRutQr"  	 ,"C", 200,   0, "Ruta QR" ,                                                "RutaQR",           	  	      "", "( cDbf )", .f. } )
+   aAdd( aItmFacCli, { "huella"  	,"C", 200,   0, "Huella Veryfactu" ,                                     "HuellaVeryfactu",           	  	  "", "( cDbf )", nil } )
+   aAdd( aItmFacCli, { "huellaant"	,"C", 200,   0, "Huella Veryfactu Anterior" ,                    "HuellaVeryfactuAnterior",           	  	  "", "( cDbf )", nil  } )
+   aAdd( aItmFacCli, { "cRutJson"  	,"C", 200,   0, "Ruta Json" ,                                              "RutaJSON",           	  	   "", "( cDbf )", nil } )
+   aAdd( aItmFacCli, { "cRutQr"  	 ,"C", 200,   0, "Ruta QR" ,                                                "RutaQR",           	  	      "", "( cDbf )", nil } )
 
 RETURN ( aItmFacCli )
 
@@ -20501,11 +20495,11 @@ FUNCTION nTotFacCli( cFactura, cFacCliT, cFacCliL, cIva, cDiv, cFacCliP, aTmp, c
       nKgsTrn        := ( cFacCliT )->nKgsTrn
       lPntVer        := ( cFacCliT )->lOperPV
       nRegIva        := ( cFacCliT )->nRegIva
-      //bCondition     := {|| ( cFacCliL )->cSerie + str( ( cFacCliL )->nNumFac ) + ( cFacCliL )->cSufFac == cFactura .and. !( cFacCliL )->( eof() ) }
-      //( cFacCliL )->( dbSeek( cFactura ) )
+      bCondition     := {|| ( cFacCliL )->cSerie + str( ( cFacCliL )->nNumFac ) + ( cFacCliL )->cSufFac == cFactura .and. !( cFacCliL )->( eof() ) }
+      ( cFacCliL )->( dbSeek( cFactura ) )
 
-      bCondition     := {|| ( cFacCliL )->parUuid  == ( cFacCliT )->cGuid .and. !( cFacCliL )->( eof() ) }
-      ( cFacCliL )->( dbSeek( ( cFacCliT )->cGuid ) )
+      //bCondition     := {|| ( cFacCliL )->parUuid  == ( cFacCliT )->cGuid .and. !( cFacCliL )->( eof() ) }
+      //( cFacCliL )->( dbSeek( ( cFacCliT )->cGuid ) )
    end if
 
    /*
@@ -23830,9 +23824,15 @@ Static Function PublicarFactura( aTmp )
 	local nNumFac
    local cUuidparent
    local nOrdAnt
+   local nNumRec
    local hFactura          := {=>}
    local hResultado     := {=>}
    local lExito := .f.
+   local aTIva
+   local cCifAnt
+   local cNumAnt
+   local dFecAnt
+   local cHuellaAnt
 
    if !Empty( aTmp )
 
@@ -24007,6 +24007,29 @@ Static Function PublicarFactura( aTmp )
    Llamada para conectar con VeryFactu-----------------------------------
    */
 
+   aTIva          := aTotFacCli( ( D():FacturasClientes( nView ) )->cSerie + Str( ( D():FacturasClientes( nView ) )->nNumFac ) + ( D():FacturasClientes( nView ) )->cSufFac,;
+   											D():FacturasClientes( nView ),;
+   		 									D():FacturasClientesLineas( nView ),; 
+   		 									dbfIva,; 
+   		 									dbfDiv,; 
+   		 									D():FacturasClientesCobros( nView ) )[8]
+
+   // Buscamos las referencias anteriores--------------------------------
+      
+   nNumRec := ( D():FacturasClientes( nView ) )->( Recno() )
+   nOrdAnt := ( D():FacturasClientes( nView ) )->( OrdSetFocus( "nNumFac" ) )
+      
+   ( D():FacturasClientes( nView ) )->( dbSkip( -1 ) )
+   
+   cCifAnt  :=  ( D():FacturasClientes( nView ) )->cDniCli
+   cNumAnt :=  ( D():FacturasClientes( nView ) )->cSerie + Str( ( D():FacturasClientes( nView ) )->nNumFac ) + ( D():FacturasClientes( nView ) )->cSufFac
+   dFecAnt :=  ( D():FacturasClientes( nView ) )->dFecFac
+   cHuellaAnt :=  ( D():FacturasClientes( nView ) )->huella
+
+      
+   ( D():FacturasClientes( nView ) )->( OrdSetFocus( nOrdAnt ) )      
+   ( D():FacturasClientes( nView ) )->( dbGoTo( nNumRec ) )      
+                                 
    hFactura          := {=>}
    
    hset( hFactura, "TipoDocumento", "factura_cliente" )
@@ -24022,6 +24045,11 @@ Static Function PublicarFactura( aTmp )
    hset( hFactura, "Total", ( D():FacturasClientes( nView ) )->nTotFac )
    hset( hFactura, "CifCliente", AllTrim( ( D():FacturasClientes( nView ) )->cDniCli ) )
    hset( hFactura, "NombreCliente", AllTrim( ( D():FacturasClientes( nView ) )->cNomCli ) )
+   hset( hFactura, "aTotIva", aTIva )
+   hset( hFactura, "CifAnterior",  AllTrim( cCifAnt ) )
+   hset( hFactura, "FechaAnterior", dFecAnt )
+   hset( hFactura, "NumeroAnterior",  AllTrim( cNumAnt ) )
+   hset( hFactura, "HuellaAnterior", AllTrim( cHuellaAnt ) )
 
    if !Empty( oVeryfactu )
       
@@ -24039,6 +24067,9 @@ Static Function PublicarFactura( aTmp )
       if dbLock( D():FacturasClientes( nView ) )
          ( D():FacturasClientes( nView ) )->cRutJson := oVeryfactu:cRutaJSON
          ( D():FacturasClientes( nView ) )->cRutQr   := oVeryfactu:cRutaQR
+         ( D():FacturasClientes( nView ) )->huella  := oVeryfactu:cHashActual
+         ( D():FacturasClientes( nView ) )->huellaAnt  := cHuellaAnt
+
         	( D():FacturasClientes( nView ) )->( dbUnLock() )
     	end if
 
