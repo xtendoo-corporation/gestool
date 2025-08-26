@@ -254,27 +254,67 @@ METHOD ValidarCertificado() CLASS TVeriFactu
       RETURN .f.
    end if
 
-   try
+   //try
       // Verificar que el certificado es válido y no ha expirado
       // Esto requiere componentes COM de Windows o librerías específicas
       
       // TODO: Implementar validación real del certificado
       // Ejemplo con WinHTTP (requiere componente COM):
-      /*
+
       oWinHttp := CreateObject( "WinHttp.WinHttpRequest.5.1" )
       if oWinHttp != nil
-         oWinHttp:SetClientCertificate( ::cRutaCertificado, ::cPasswordCert )
-         lValido := .t.
-      end if
-      */
+         //try
+            MsgInfo(  )
+            // Intentamos realizar una conexión de prueba a la AEAT
+            oWinHttp:Open("GET", ::cURLAEAT, .f.)
+
+            // Configurar el certificado según el tipo
+            do case
+               case ::cTipoCertificado == "P12" .or. ::cTipoCertificado == "PFX"
+                  if Empty(::cPasswordCert)
+                     AAdd( ::aErrores, "Se requiere la contraseña para el certificado P12/PFX" )
+                     lValido := .f.
+                  endif
+                  oWinHttp:SetClientCertificate( ::cRutaCertificado, ::cPasswordCert )
+               case ::cTipoCertificado == "CER"
+                  if !Empty(::cRutaKeyPrivada)
+                     // Para certificados .cer necesitamos la clave privada
+                     oWinHttp:SetClientCertificate( ::cRutaCertificado, ::cRutaKeyPrivada )
+                  else
+                     AAdd( ::aErrores, "Se requiere la ruta de la clave privada para certificados .cer" )
+                     lValido := .f.
+                  endif
+            endcase
+
+            // Intentar establecer una conexión segura
+            oWinHttp:Send()
+            
+            MsgInfo( oWinHttp:Status, "Status" )
+
+            // Si llegamos aquí sin errores, el certificado es válido
+            if oWinHttp:Status == 200 .or. oWinHttp:Status == 401  // 401 es aceptable ya que solo validamos el certificado
+               lValido := .t.
+            else
+               AAdd( ::aErrores, "Error al validar el certificado. Estado HTTP: " + AllTrim(Str(oWinHttp:Status)) )
+            endif
+
+         /*catch oCertErr
+            AAdd( ::aErrores, "Error al configurar el certificado: " + oCertErr:Description )
+            lValido := .f.
+         end*/
+      else
+         AAdd( ::aErrores, "No se pudo crear el objeto WinHttp" )
+      endif
       
-      lValido := .t. // Temporal para desarrollo
+      //lValido := .t. // Temporal para desarrollo
       
-   catch oCertErr
+   /*catch oCertErr
       ::lError := .t.
       AAdd( ::aErrores, "Error al validar certificado: " + oCertErr:Description )
       lValido := .f.
-   end try
+   end try*/
+
+   MsgInfo( hb_ValToExp( ::aErrores ), "ValidarCertificado" )
 
 RETURN lValido
 
@@ -302,6 +342,8 @@ METHOD AutenticarAEAT() CLASS TVeriFactu
       
       // Enviar petición de autenticación
       cRespuesta := ::EnviarHTTPS( cURL, cDatos, "POST" )
+
+      Msginfo( cRespuesta, "Respuesta autenticación AEAT" )
       
       if !Empty( cRespuesta )
          hRespuesta := hb_JsonDecode( cRespuesta )
@@ -496,7 +538,7 @@ METHOD GenerarVeriFactu() CLASS TVeriFactu
             
             // Enviar a AEAT si está configurado
             if lExito .and. ::lEnviarAEAT
-               //::EnviarAEAT() 
+               ::EnviarAEAT() 
             end if
          else
             AAdd( ::aErrores, "Error al generar JSON" )
@@ -558,7 +600,7 @@ METHOD GenerarJSON() CLASS TVeriFactu
 
       // Datos de la factura
       hRegistroAlta["TipoFactura"] := "F1"
-      hRegistroAlta["DescripcionOperacion"] := "Bakery Shop/0003"
+      hRegistroAlta["DescripcionOperacion"] := uFieldEmpresa( 'cNombre' )
       hRegistroAlta["Subsanacion"] := "N"
 
       /*
@@ -594,7 +636,7 @@ METHOD GenerarJSON() CLASS TVeriFactu
       hSistemaInformatico["NombreSistemaInformatico"] := __GSTROTOR__
       hSistemaInformatico["IdSistemaInformatico"] := "00"
       hSistemaInformatico["Version"] := __GSTVERSION__
-      hSistemaInformatico["NumeroInstalacion"] := "2A3F415E9FDEE74DCAF240498A26BF293955A5F8C5F90E347B5CF3C502FE25E7"
+      hSistemaInformatico["NumeroInstalacion"] := AllTrim( Str( Abs( nSerialHD() ) ) )
       hSistemaInformatico["TipoUsoPosibleSoloVerifactu"] := "S"
       hSistemaInformatico["TipoUsoPosibleMultiOT"] := "S"
       hSistemaInformatico["IndicadorMultiplesOT"] := "S"
@@ -820,11 +862,15 @@ METHOD EnviarAEAT() CLASS TVeriFactu
    local cURL := ""
    local oAeatErr
 
+   MsgInfo( "Enviar a AEAT" )
+
    try
       // Validar certificado
       if ::ValidarCertificado()
          // Autenticar con AEAT
+         Msginfo( "Certificado valido" )
          if ::AutenticarAEAT()
+            Msginfo( "Autentica AEAT" )
             // Preparar datos para envío
             cJSON := ::GenerarJSON()
             if !Empty( cJSON )
