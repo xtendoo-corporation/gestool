@@ -231,9 +231,20 @@ METHOD ConfigurarCertificado() CLASS TVeriFactu
 
    if ConfiguracionesEmpresaModel():getLogic( 'lEntornoPruebas', .f. )
       ::cURLAEAT := "https://prewww2.aeat.es/wlpl/TIKE-CONT/ws/VeriFactu" 
+      ::cEntorno := "PRUEBAS"
    else
       ::cURLAEAT := "https://www2.aeat.es/wlpl/TIKE-CONT/ws/VeriFactu"
-   end if     
+      ::cEntorno := "PRODUCCION"
+   end if
+   
+   // Validar que la URL se configuró correctamente
+   if Empty( ::cURLAEAT )
+      AAdd( ::aErrores, "Error: URL de AEAT no se pudo configurar" )
+      RETURN .f.
+   end if
+   
+   // Debug: Mostrar configuración
+   MsgInfo( "Entorno: " + ::cEntorno + Chr(13) + "URL: " + ::cURLAEAT, "Configuración AEAT" )     
 
 RETURN .t.
 
@@ -242,6 +253,8 @@ RETURN .t.
 METHOD ValidarCertificado() CLASS TVeriFactu
 
    local lValido := .f.
+   local lOpenResult := .f.
+   local cErrorMsg := ""
    local oWinHttp, oCertErr
 
    if Empty( ::cRutaCertificado )
@@ -261,50 +274,101 @@ METHOD ValidarCertificado() CLASS TVeriFactu
       // TODO: Implementar validación real del certificado
       // Ejemplo con WinHTTP (requiere componente COM):
 
-      oWinHttp := CreateObject( "WinHttp.WinHttpRequest.5.1" )
-      if oWinHttp != nil
-         //try
-            MsgInfo(  )
-            // Intentamos realizar una conexión de prueba a la AEAT
-            oWinHttp:Open("GET", ::cURLAEAT, .f.)
+      //try
+         oWinHttp := CreateObject( "WinHttp.WinHttpRequest.5.1" )
+      /*catch oCertErr
+         AAdd( ::aErrores, "Error al crear objeto WinHTTP: " + oCertErr:Description )
+         RETURN .f.
+      end*/
+      
+      if oWinHttp == nil
+         AAdd( ::aErrores, "No se pudo crear el objeto WinHTTP. Verifique que WinHTTP esté instalado." )
+         RETURN .f.
+      end if
+      
+      MsgInfo( "Objeto WinHTTP creado correctamente", "Debug WinHTTP" )
+      
+      //try
+         // Intentamos realizar una conexión de prueba a la AEAT
 
-            // Configurar el certificado según el tipo
+         MsgInfo("Conectando a AEAT: " + ::cURLAEAT)
+         
+         // Validar URL antes de intentar la conexión
+         if Empty(::cURLAEAT)
+            AAdd( ::aErrores, "URL de AEAT no configurada" )
+            lValido := .f.
+         else
+            // Intentar abrir la conexión
+            lOpenResult := oWinHttp:Open("GET", ::cURLAEAT, .f.)
+            
+            MsgInfo(hb_ValToExp(lOpenResult), "oWinHttp:Open Result")
+            
+            if lOpenResult == nil .or. lOpenResult == .f.
+               // Error al abrir la conexión
+               cErrorMsg := "Error al abrir conexión HTTP. "
+               cErrorMsg += "Posibles causas: URL inválida, problemas de red o permisos."
+               AAdd( ::aErrores, cErrorMsg )
+               lValido := .f.
+            else
+               // Conexión abierta correctamente, intentar enviar
+               //try
+                  oWinHttp:Send()
+                  MsgInfo(hb_ValToExp(oWinHttp:Status), "oWinHttp:Status")
+               /*catch
+                  AAdd( ::aErrores, "Error al enviar petición HTTP" )
+                  lValido := .f.
+               end*/
+            endif
+         endif
+
+         // Configurar el certificado según el tipo
+         if lOpenResult != .f. .and. lOpenResult != nil
             do case
                case ::cTipoCertificado == "P12" .or. ::cTipoCertificado == "PFX"
                   if Empty(::cPasswordCert)
                      AAdd( ::aErrores, "Se requiere la contraseña para el certificado P12/PFX" )
                      lValido := .f.
+                  else
+                     //try
+                        oWinHttp:SetClientCertificate( ::cRutaCertificado, ::cPasswordCert )
+                     /*catch oCertErr
+                        AAdd( ::aErrores, "Error al configurar certificado: " + oCertErr:Description )
+                        lValido := .f.
+                     end*/
                   endif
-                  oWinHttp:SetClientCertificate( ::cRutaCertificado, ::cPasswordCert )
                case ::cTipoCertificado == "CER"
                   if !Empty(::cRutaKeyPrivada)
                      // Para certificados .cer necesitamos la clave privada
-                     oWinHttp:SetClientCertificate( ::cRutaCertificado, ::cRutaKeyPrivada )
+                     //try
+                        oWinHttp:SetClientCertificate( ::cRutaCertificado, ::cRutaKeyPrivada )
+                     /*catch oCertErr
+                        AAdd( ::aErrores, "Error al configurar certificado CER: " + oCertErr:Description )
+                        lValido := .f.
+                     end*/
                   else
                      AAdd( ::aErrores, "Se requiere la ruta de la clave privada para certificados .cer" )
                      lValido := .f.
                   endif
             endcase
 
-            // Intentar establecer una conexión segura
-            oWinHttp:Send()
-            
-            MsgInfo( oWinHttp:Status, "Status" )
+            // Intentar establecer una conexión segura solo si no hay errores previos
+            if Len(::aErrores) == 0 .or. ATail(::aErrores) != "Error al configurar certificado: "
+               //try
+                  oWinHttp:Send()
+                  MsgInfo( hb_ValToExp(oWinHttp:Status), "Status Final" )
 
-            // Si llegamos aquí sin errores, el certificado es válido
-            if oWinHttp:Status == 200 .or. oWinHttp:Status == 401  // 401 es aceptable ya que solo validamos el certificado
-               lValido := .t.
-            else
-               AAdd( ::aErrores, "Error al validar el certificado. Estado HTTP: " + AllTrim(Str(oWinHttp:Status)) )
+                  // Si llegamos aquí sin errores, el certificado es válido
+                  if oWinHttp:Status == 200 .or. oWinHttp:Status == 401  // 401 es aceptable ya que solo validamos el certificado
+                     lValido := .t.
+                  else
+                     AAdd( ::aErrores, "Error al validar el certificado. Estado HTTP: " + AllTrim(Str(oWinHttp:Status)) )
+                  endif
+               /*catch oCertErr
+                  AAdd( ::aErrores, "Error al configurar el certificado: " + oCertErr:Description )
+                  lValido := .f.
+               end*/
             endif
-
-         /*catch oCertErr
-            AAdd( ::aErrores, "Error al configurar el certificado: " + oCertErr:Description )
-            lValido := .f.
-         end*/
-      else
-         AAdd( ::aErrores, "No se pudo crear el objeto WinHttp" )
-      endif
+         endif
       
       //lValido := .t. // Temporal para desarrollo
       
