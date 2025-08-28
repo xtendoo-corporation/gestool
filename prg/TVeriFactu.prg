@@ -18,6 +18,13 @@
 #include "Factu.ch" 
 #include "MesDbf.ch"
 
+// Constantes de WinHTTP para opciones de seguridad
+#define WINHTTP_OPTION_SECURITY_FLAGS                31
+#define SECURITY_FLAG_IGNORE_UNKNOWN_CA             0x00001000
+#define SECURITY_FLAG_IGNORE_CERT_DATE_INVALID      0x00002000
+#define SECURITY_FLAG_IGNORE_CERT_CN_INVALID        0x00001000
+#define SECURITY_FLAG_IGNORE_CERT_WRONG_USAGE       0x00000200
+
 // Declaración de variables MEMVAR para evitar ambigüedades
 MEMVAR __cRutaCertVeriFactu, __cPassCertVeriFactu, __cTipoCertVeriFactu, __cEntornoVeriFactu
 MEMVAR nTotNet, nTotIva, nTotFac
@@ -230,10 +237,10 @@ METHOD ConfigurarCertificado() CLASS TVeriFactu
    // Configurar URLs según entorno PRODUCCION o PRUEBAS
 
    if ConfiguracionesEmpresaModel():getLogic( 'lEntornoPruebas', .f. )
-      ::cURLAEAT := "https://prewww2.aeat.es/wlpl/TIKE-CONT/ws/VeriFactu" 
+      ::cURLAEAT := "https://prewww1.aeat.es/wlpl/TIKE-CONT/ws/SistemaFacturacion/VerifactuSOAP"
       ::cEntorno := "PRUEBAS"
    else
-      ::cURLAEAT := "https://www2.aeat.es/wlpl/TIKE-CONT/ws/VeriFactu"
+      ::cURLAEAT := "https://www1.aeat.es/wlpl/TIKE-CONT/ws/SistemaFacturacion/VerifactuSOAP"
       ::cEntorno := "PRODUCCION"
    end if
    
@@ -255,17 +262,33 @@ METHOD ValidarCertificado() CLASS TVeriFactu
    local lValido := .f.
    local lOpenResult := .f.
    local cErrorMsg := ""
-   local oWinHttp, oCertErr
+   local oWinHttp
+   local oCertErr
+   local oSendErr
+   local oHttpErr
+   local oErr
+   local nSecurityFlags := SECURITY_FLAG_IGNORE_UNKNOWN_CA + ;
+                                     SECURITY_FLAG_IGNORE_CERT_DATE_INVALID + ;
+                                     SECURITY_FLAG_IGNORE_CERT_CN_INVALID + ;
+                                     SECURITY_FLAG_IGNORE_CERT_WRONG_USAGE
+
+   MsgInfo( "Iniciando validación del certificado...", "VeriFactu - Paso 1" )
 
    if Empty( ::cRutaCertificado )
       AAdd( ::aErrores, "Ruta del certificado no configurada" )
+      MsgInfo( "Error: Ruta del certificado no configurada", "VeriFactu - Error" )
       RETURN .f.
    end if
    
+   MsgInfo( "Ruta del certificado: " + ::cRutaCertificado, "VeriFactu - Paso 2" )
+   
    if !File( ::cRutaCertificado )
       AAdd( ::aErrores, "Archivo de certificado no encontrado" )
+      MsgInfo( "Error: Archivo de certificado no encontrado en: " + ::cRutaCertificado, "VeriFactu - Error" )
       RETURN .f.
    end if
+   
+   MsgInfo( "Archivo de certificado encontrado correctamente", "VeriFactu - Paso 3" )
 
    //try
       // Verificar que el certificado es válido y no ha expirado
@@ -274,19 +297,23 @@ METHOD ValidarCertificado() CLASS TVeriFactu
       // TODO: Implementar validación real del certificado
       // Ejemplo con WinHTTP (requiere componente COM):
 
+      MsgInfo( "Intentando crear objeto WinHTTP...", "VeriFactu - Paso 4" )
+      
       //try
          oWinHttp := CreateObject( "WinHttp.WinHttpRequest.5.1" )
       /*catch oCertErr
          AAdd( ::aErrores, "Error al crear objeto WinHTTP: " + oCertErr:Description )
+         MsgInfo( "Error al crear objeto WinHTTP", "VeriFactu - Error" )
          RETURN .f.
       end*/
       
       if oWinHttp == nil
          AAdd( ::aErrores, "No se pudo crear el objeto WinHTTP. Verifique que WinHTTP esté instalado." )
+         MsgInfo( "Error: No se pudo crear el objeto WinHTTP", "VeriFactu - Error" )
          RETURN .f.
       end if
       
-      MsgInfo( "Objeto WinHTTP creado correctamente", "Debug WinHTTP" )
+      MsgInfo( "Objeto WinHTTP creado correctamente", "VeriFactu - Paso 5" )
       
       //try
          // Intentamos realizar una conexión de prueba a la AEAT
@@ -298,27 +325,93 @@ METHOD ValidarCertificado() CLASS TVeriFactu
             AAdd( ::aErrores, "URL de AEAT no configurada" )
             lValido := .f.
          else
-            // Intentar abrir la conexión
-            lOpenResult := oWinHttp:Open("GET", ::cURLAEAT, .f.)
-            
-            MsgInfo(hb_ValToExp(lOpenResult), "oWinHttp:Open Result")
-            
-            if lOpenResult == nil .or. lOpenResult == .f.
-               // Error al abrir la conexión
-               cErrorMsg := "Error al abrir conexión HTTP. "
-               cErrorMsg += "Posibles causas: URL inválida, problemas de red o permisos."
-               AAdd( ::aErrores, cErrorMsg )
-               lValido := .f.
-            else
-               // Conexión abierta correctamente, intentar enviar
-               //try
-                  oWinHttp:Send()
-                  MsgInfo(hb_ValToExp(oWinHttp:Status), "oWinHttp:Status")
-               /*catch
-                  AAdd( ::aErrores, "Error al enviar petición HTTP" )
+
+            MsgInfo( "Configurando opciones de seguridad...", "VeriFactu - Paso 6" )
+            try
+               // Configurar opciones de seguridad usando la sintaxis correcta
+               oWinHttp:Option(6, .t. )    // SECURITY_FLAG_IGNORE_UNKNOWN_CA
+               oWinHttp:Option(18, .t. )   // SECURITY_FLAG_IGNORE_CERT_DATE_INVALID
+               oWinHttp:Option(19, .t. )   // SECURITY_FLAG_IGNORE_CERT_CN_INVALID
+               
+               MsgInfo( "Opciones de seguridad configuradas correctamente", "VeriFactu - Paso 7" )
+            catch oErr
+               AAdd( ::aErrores, "Error al configurar opciones de seguridad: " + oErr:Description )
+               MsgInfo( "Error al configurar opciones de seguridad: " + oErr:Description, "VeriFactu - Error" )
+               RETURN .f.
+            end
+
+               // Configurar opciones adicionales antes de Open
+               ?"1"
+               oWinHttp:Option(4, .f. )     // WINHTTP_OPTION_REDIRECT_POLICY (no seguir redirecciones)
+               ?"2"
+               //oWinHttp:Option(31, 13056 )  // WINHTTP_OPTION_SECURITY_FLAGS (todas las flags)
+               ?"3"
+               //oWinHttp:Option(45, .t. )   // WINHTTP_OPTION_ENABLE_HTTP2 (habilitar HTTP/2)
+               ?"4"
+               
+               // Configurar SSL/TLS
+               //oWinHttp:Option(9 , 0x00000800 + 0x00000200 )  // TLS 1.2 + TLS 1.1
+               ?"5"
+               
+               MsgInfo( "URL AEAT: " + ::cURLAEAT, "VeriFactu - Debug URL" )
+               
+               MsgInfo( "Intentando abrir conexión con AEAT...", "VeriFactu - Paso 8" )
+               
+               try
+                  // Intentar abrir la conexión con parámetros explícitos
+                  lOpenResult := oWinHttp:Open("GET", ::cURLAEAT, .f.)
+                  
+                  if lOpenResult == nil
+                     MsgInfo("Error: Open devolvió NIL - Verificar URL y configuración", "VeriFactu - Error")
+                  endif
+                  
+                  MsgInfo("Resultado de la conexión: " + if(lOpenResult == nil, "NIL", if(lOpenResult, "ÉXITO", "FALLO")), "VeriFactu - Paso 9" )
+               catch oErr
+                  MsgInfo("Error en Open: " + oErr:Description, "VeriFactu - Error")
+                  lOpenResult := nil
+               end
+               
+               if lOpenResult == nil .or. !lOpenResult
+                  // Intentar obtener más información sobre el error
+                  cErrorMsg := "Error al abrir conexión HTTP. "
+                  if HB_ISOBJECT(oWinHttp) .and. oWinHttp:Status != nil
+                     cErrorMsg += "Status: " + AllTrim(Str(oWinHttp:Status))
+                  endif
+                  if HB_ISOBJECT(oWinHttp) .and. !Empty(oWinHttp:StatusText)
+                     cErrorMsg += " - " + oWinHttp:StatusText
+                  endif
+                  AAdd(::aErrores, cErrorMsg)
                   lValido := .f.
-               end*/
-            endif
+               else
+                  // Conexión abierta correctamente, intentar enviar
+                  
+                  //try
+                     MsgInfo( "Enviando petición al servidor AEAT...", "VeriFactu - Paso 10" )
+                     oWinHttp:Send()
+                     MsgInfo("Respuesta del servidor - Código: " + AllTrim(Str(oWinHttp:Status)), "VeriFactu - Paso 11" )
+                     
+                     MsgInfo( "Verificando respuesta del servidor...", "VeriFactu - Paso 12" )
+                     // Verificar si la respuesta indica que el certificado es válido
+                     if oWinHttp:Status >= 200 .and. oWinHttp:Status < 500
+                        lValido := .t.
+                        MsgInfo( "¡Certificado validado correctamente!", "VeriFactu - Éxito" )
+                     else
+                        AAdd(::aErrores, "Error en la respuesta del servidor: " + ;
+                                       AllTrim(Str(oWinHttp:Status)) + " - " + ;
+                                       oWinHttp:StatusText)
+                        lValido := .f.
+                        MsgInfo( "Error en la validación: " + AllTrim(Str(oWinHttp:Status)) + " - " + ;
+                                oWinHttp:StatusText, "VeriFactu - Error" )
+                     endif
+                  /*catch oSendErr
+                     AAdd(::aErrores, "Error al enviar petición: " + oSendErr:Description)
+                     lValido := .f.
+                  end*/
+               endif
+            /*catch oHttpErr
+               AAdd(::aErrores, "Error en la conexión: " + oHttpErr:Description)
+               lValido := .f.
+            end*/
          endif
 
          // Configurar el certificado según el tipo
@@ -764,7 +857,7 @@ METHOD GenerarQR() CLASS TVeriFactu
       cURL := if( ::cEntorno == "PRODUCCION", ;
                   "https://www2.aeat.es/wlpl/TIKE-CONT/ValidarQR", ;
                   "https://prewww2.aeat.es/wlpl/TIKE-CONT/ValidarQR" )
-      
+
       cDatos := "?nif=" + ::cNIFEmisor + ;
                 "&numserie=" + UrlEncode( ::cNumero ) + ;
                 "&fecha=" + if( Day( ::dFecha ) < 10, "0" + AllTrim( Str( Day( ::dFecha ) ) ), AllTrim( Str( Day( ::dFecha ) ) ) ) + ;
