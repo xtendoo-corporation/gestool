@@ -1,1213 +1,1146 @@
-//---------------------------------------------------------------------------//
-//
-// TVeriFactu.prg - Sistema VeriFactu para la AEAT
-//
-// Descripción: Módulo completo para generar archivos JSON y códigos QR
-//              que cumplen con los requisitos de VeriFactu de la AEAT
-//
-// Normativa: Resolución de 1 de febrero de 2024 del Departamento de 
-//           Aduanas e Impuestos Especiales de la AEAT
-//
-// Autor: Sistema Gestool
-// Fecha: Agosto 2025
-//
-//---------------------------------------------------------------------------//
-
-#include "FiveWin.Ch"
-#include "Font.ch"
-#include "Factu.ch" 
-#include "MesDbf.ch"
-
-// Constantes de WinHTTP para opciones de seguridad
-#define WINHTTP_OPTION_SECURITY_FLAGS                31
-#define SECURITY_FLAG_IGNORE_UNKNOWN_CA             0x00001000
-#define SECURITY_FLAG_IGNORE_CERT_DATE_INVALID      0x00002000
-#define SECURITY_FLAG_IGNORE_CERT_CN_INVALID        0x00001000
-#define SECURITY_FLAG_IGNORE_CERT_WRONG_USAGE       0x00000200
-
-// Declaración de variables MEMVAR para evitar ambigüedades
-MEMVAR __cRutaCertVeriFactu, __cPassCertVeriFactu, __cTipoCertVeriFactu, __cEntornoVeriFactu
-MEMVAR nTotNet, nTotIva, nTotFac
-
-//---------------------------------------------------------------------------//
-//
-// Clase principal VeriFactu - Cumplimiento normativa AEATfactcli
-//
-//---------------------------------------------------------------------------//
-
-CLASS TVeriFactu
-   
-   DATA lEnable               INIT .f.
-
-   DATA hDocumento      INIT nil
-
-   // Datos básicos de la factura
-   DATA cNumero    INIT ""
-   DATA cSerie         INIT ""
-   DATA nNumero    INIT 0
-   DATA cSufijo    INIT ""
-   DATA dFecha     INIT CToD("")
-   DATA cHora      INIT ""
-   
-   // Importes (según normativa AEAT)
-   DATA nBaseImponible    INIT 0
-   DATA nCuotaIVA         INIT 0
-   DATA nTotal     INIT 0
-   DATA nImporteTotal     INIT 0
-   
-   // Datos del emisor (empresa)
-   DATA cNIFEmisor        INIT ""
-   DATA cNombreEmisor     INIT ""
-   
-   // Datos del receptor (cliente)  
-   DATA cNIFReceptor      INIT ""
-   DATA cNombreReceptor   INIT ""
-   DATA cTipoIdReceptor   INIT "02" // NIF por defecto
-   
-   // Control VeriFactu
-   DATA cIdVeriFactu      INIT ""
-   DATA cHashAnterior     INIT ""
-   DATA cHashActual       INIT ""
-   DATA cCodigoSeguro     INIT ""
-   DATA cCifAnterior     INIT ""
-   
-   // Certificado digital y comunicación AEAT
-   DATA cRutaCertificado  INIT ""
-   DATA cPasswordCert     INIT ""
-   DATA cTipoCertificado  INIT "P12"  // P12, PFX, CER+KEY
-   DATA cRutaKeyPrivada   INIT ""
-   DATA cURLAEAT          INIT ""
-   DATA cTokenSesion      INIT ""
-   DATA nTimeoutHTTPS     INIT 30000  // 30 segundos
-   DATA cProxyServer      INIT ""
-   DATA nProxyPort        INIT 0
-   DATA cProxyUser        INIT ""
-   DATA cProxyPass        INIT ""
-   
-   // Archivos y rutas
-   DATA cRutaJSON         INIT ""
-   DATA cRutaQR           INIT ""
-   DATA cNombreArchivoJSON INIT ""
-   DATA cNombreArchivoQR  INIT ""
-   
-   // Control de errores
-   DATA lError            INIT .f.
-   DATA cMensajeError     INIT ""
-   DATA aErrores          INIT {}
-   
-   // Configuración
-   DATA lGenerarQR        INIT .t.
-   DATA lEnviarAEAT       INIT .f.
-   DATA cEntorno          INIT "PRUEBAS" // PRUEBAS / PRODUCCION
-
-   DATA aTotIva
-
-   // Variables adicionales para VeriFactu
-   DATA cNumeroAnterior       INIT ""     // Número de la factura anterior
-   DATA dFechaAnterior        INIT CToD("") // Fecha de la factura anterior
+/* CLASS: TVeriFactu 
+    Clase que gestiona los ficheros de facturas de VeriFactu
+*/
+#include 'hbclass.ch'
+#include 'hbcompat.ch'
+#include 'TORM.ch'
+#include 'tchilkat.ch'
+#include 'fivewin.ch'
+#include 'verifactu.inc'
+
+#define RECTIFICATIVA_SUSTITUCION 'S'
+#define RECTIFICATIVA_DIFERENCIAS 'I'
+
+CREATE CLASS TVeriFactu
+
+    EXPORTED:
+        METHOD New(  ) CONSTRUCTOR
+
+        METHOD BuildCabeceraXml()
+        METHOD BuildFacturaXml( oRegFacAl, oRegFacAlAnterior )  
+        METHOD CreateXmlFile()
+        METHOD CreateVeriSend( oRegFacAl)
+        METHOD SendXmlFile()
+        
+
+        DATA oTVF_Verifactu AS OBJECT INIT Nil
+        DATA lEnable AS LOGICAL INIT .T.
+        DATA cXmlFile AS CHARACTER INIT ''
+        DATA cXmlFileResponse AS CHARACTER INIT ''
+
+        DATA oTVF_RegistroFacturacionAltaType AS OBJECT INIT Nil
+    PROTECTED:
+        DATA oDocumento AS OBJECT INIT Nil
+        DATA oQueDoc AS OBJECT INIT Nil
+        DATA oTVF_RegistroFacturacionAnulacionType AS OBJECT INIT Nil
+
+        METHOD Init()
+        METHOD Validate()
+        METHOD CargaCliente( )
+        METHOD RegistroFacturacionAltaType( oRegFacAl, oRegFacAlAnterior )
+        METHOD RegistroFacturacionAnulacionType( oRegFacAl, oRegFacAlAnterior )
+        METHOD SetTipoFactura( oCliente )
+        METHOD SetFacturaSinIdentifDestinatarioArt61d( oCliente )
+        METHOD SetDescripcionOperacion( oRegFacAl )
+        METHOD SetSubsanacion( oRegFacAl )
+        METHOD SetRechazoPrevio( oRegFacAl )
+        METHOD SetMacroDato( )
+        METHOD SetBaseImponibleACoste( oDetalleDesglose )
+        METHOD SetFechaHoraHusoGenRegistro( tAlta, oTVF_RegistroFacturacionType )
+        METHOD SetCalificacionOperacion( oDetalleDesglose ) 
+        METHOD SetOperacionExenta( oDetalleDesglose )
+        METHOD SetNumeroInstalacion( oTVF_RegistroFacturacionType )
+        METHOD SetFacturasRectificadas( oRegFacAl )
+        METHOD SetEncadenamiento( oRegFacAlAnterior, oTVF_RegistroFacturacionType )
+        METHOD SetSistemaInformatico( oTVF_RegistroFacturacionType )
+        METHOD SetIndicadorMultiplesOT( oTVF_RegistroFacturacionType )
+        METHOD RegFacAlSaveHuella( oRegFacAl, cHuella )
+
+ENDCLASS
+
+// Group: EXPORTED METHODS
+
+/* METHOD: New(  )
+    Constructor.  
+
+Devuelve:
+    Self
+*/
+METHOD New( ) CLASS TVeriFactu
+
+    ::Init()
+
+Return ( Self )
+
+// Group: PROTECTED METHODS
+
+/* METHOD: Init(  )
+    Inicializa los valores de la clase
+Devuelve:
+    Objeto
+*/
+METHOD Init(  ) CLASS TVeriFactu
+
+    ::oTVF_Verifactu := TVF_Verifactu():New(  )
+
+Return ( Self )
+
+/* METHOD: BuildCabeceraXml(  )
+    Crea la cabecera del Xml de Verifactu
+
+Devuelve:
+    Objeto
+*/
+METHOD BuildCabeceraXml(  ) CLASS TVeriFactu
+
+    // Cabecera
+    ::oTVF_Verifactu:RegFactuSistemaFacturacion:Cabecera:ObligadoEmision:NombreRazon:Set( cNomEmp )
+    ::oTVF_Verifactu:RegFactuSistemaFacturacion:Cabecera:ObligadoEmision:NIF:Set( cCifEmp )
+    // ::oTVF_Verifactu:RegFactuSistemaFacturacion:Cabecera:FechaFinVeriFactu // No la utilizaremos nunca, es para indicar que el sistema pasa a NO Verifactu
+    ::oTVF_Verifactu:RegFactuSistemaFacturacion:Cabecera:RemisionVoluntaria:Incidencia:Set('N') 
+    // ::oTVF_Verifactu:RegFactuSistemaFacturacion:Cabecera:RemisionRequerimiento:Incidencia:Set('N') TODO: Pendiente de implementar
 
-   // Métodos principales
-   METHOD New( aTmp, cNifEmisor, cNomEmisor ) CONSTRUCTOR
-   METHOD End()                  VIRTUAL
-   METHOD SetDatos()
-   METHOD ConfigurarCertificado()
-   METHOD ValidarCertificado()
-   METHOD GenerarVeriFactu()
-   METHOD GenerarJSON()
-   METHOD GenerarQR()
-   METHOD EnviarAEAT()
-   METHOD AutenticarAEAT()
-   
-   // Métodos auxiliares
-   METHOD CalcularHash()
-   METHOD GenerarIdVeriFactu()
-   METHOD ValidarDatos()
-   METHOD CrearNombresArchivos()
-   METHOD EscribirArchivos( cJSON, cQR ) 
-   METHOD EnviarHTTPS( cURL, cDatos, cMetodo )
-   METHOD PrepararCabeceras()
-   METHOD ProcesarRespuestaAEAT( cRespuesta )
-   
-   // Métodos de utilidad
-   METHOD FormatearFecha( dFecha )
-   METHOD FormatearImporte( nImporte )
-   METHOD LimpiarString( cTexto )
+Return ( Self )
 
-END CLASS
 
-//---------------------------------------------------------------------------//
+/* METHOD: Create(  )
+    Genera y crea el fichero XML
+Devuelve:
+    Objeto
+*/
+/* METHOD Create(  ) CLASS TVeriFactu
 
-METHOD New() CLASS TVeriFactu
+    If ::lEnable
 
-RETURN ( self )
+        ::LoadCliente()
+        ::BuildXml()
+        ::CreateXmlFile()
 
-//---------------------------------------------------------------------------//
+    Endif
 
-METHOD SetDatos( hDocumento ) CLASS TVeriFactu
+Return ( Self ) */
 
-   ::hDocumento        := hDocumento
+/* METHOD: Validate(  )
+    Valida los datos de la clase según los requerimientos de VeriFactu
 
-   if Empty( ::hDocumento )
-      AAdd( ::aErrores, "Documento no proporcionado." )
-      RETURN Self
-   end if
-
-   // Inicializar variables
-   
-   ::aErrores          := {}
-   ::lEnable           := ConfiguracionesEmpresaModel():getLogic( 'lVeryFactu', .f. )
-
-   if ::lEnable
+Devuelve:
+    Objeto
+*/
+METHOD Validate(  ) CLASS TVeriFactu
+Return ( Self )
 
-      // Datos básicos del documento
-      ::cSerie  := AllTrim( hGet( ::hDocumento, "Serie" ) )
-      ::nNumero := hGet( ::hDocumento, "Numero" )
-      ::cSufijo := AllTrim( hGet( ::hDocumento, "Sufijo" ) )
-      ::dFecha  := hGet( ::hDocumento, "Fecha" )
-      ::cHora   := hGet( ::hDocumento, "Hora" )
-      
-      // Construir número completo
-      ::cNumero := ::cSerie + "/" + AllTrim( Str( ::nNumero ) ) + if( !Empty( ::cSufijo ), "/" + ::cSufijo, "" )
-
-      //atotIva
-      ::aTotIva := hGet( ::hDocumento, "aTotIva" )
-
-      // Importes (usar variables globales si están disponibles)
-      ::nBaseImponible := hGet( ::hDocumento, "Neto" )
-      ::nCuotaIVA      := hGet( ::hDocumento, "Impuesto" )
-      ::nTotal  := hGet( ::hDocumento, "Total" )
-      ::nImporteTotal  := ::nBaseImponible + ::nCuotaIVA
-
-      // Datos del emisor
-
-      ::cNIFEmisor      := ::LimpiarString( uFieldempresa( 'cNif' ) )
-      ::cNombreEmisor   := ::LimpiarString( uFieldempresa( 'cNombre' ) )
-
-      // Datos del receptor
-
-      ::cNIFReceptor     := ::LimpiarString( hGet( ::hDocumento, "CifCliente" ) )
-      ::cNombreReceptor  := ::LimpiarString( hGet( ::hDocumento, "CifCliente" ) )
-      ::cTipoIdReceptor  := "02"  // Tipos de receptores 02=NIF, 03=Pasaporte, etc.
-
-      // ID VeriFactu
-
-      ::GenerarIdVeriFactu()
-
-      //Factura anterior
-
-      ::cCifAnterior             := hget( ::hDocumento, "CifAnterior" )
-      ::cNumeroAnterior      := hget( ::hDocumento, "NumeroAnterior" )
-      ::dFechaAnterior       := hget( ::hDocumento, "FechaAnterior" )
-      ::cHashAnterior        :=  hget( ::hDocumento, "HuellaAnterior" )
-
-      //Certificado digital y configuración AEAT
-
-      ::ConfigurarCertificado()
-      ::lEnviarAEAT := ConfiguracionesEmpresaModel():getLogic( 'lVeryFactu', .f. ) // Activar envío a AEAT    //**//
-
-      else
-
-      AAdd( ::aErrores, "VeriFactu no está habilitado en la configuración de la empresa." )
-
-      RETURN Self
-
-   end if
-  
-RETURN Self
-
-//---------------------------------------------------------------------------//
-
-METHOD LimpiarString( cTexto ) CLASS TVeriFactu
-RETURN AllTrim( StrTran( StrTran( cTexto, Chr(13), "" ), Chr(10), "" ) )
-
-//---------------------------------------------------------------------------//
-
-METHOD ConfigurarCertificado() CLASS TVeriFactu
-
-   ::cRutaCertificado    := ::LimpiarString( padr( ConfiguracionesEmpresaModel():getValue( 'cert_ruta', '' ), 200 ))
-   ::cPasswordCert       := ::LimpiarString( padr( ConfiguracionesEmpresaModel():getValue( 'cert_pass', '' ), 50 ))
-   ::cTipoCertificado   := "P12" // Por defecto P12, puede ser PFX o CER+KEY
-   
-   // Validar que el archivo existe
-   if !File( ::cRutaCertificado )
-      AAdd( ::aErrores, "No se encuentra el archivo de certificado: " + ::cRutaCertificado )
-      RETURN .f.
-   end if
-
-   // Configurar URLs según entorno PRODUCCION o PRUEBAS
-
-   if ConfiguracionesEmpresaModel():getLogic( 'lEntornoPruebas', .f. )
-      ::cURLAEAT := "https://prewww1.aeat.es/wlpl/TIKE-CONT/ws/SistemaFacturacion/VerifactuSOAP"
-      ::cEntorno := "PRUEBAS"
-   else
-      ::cURLAEAT := "https://www1.aeat.es/wlpl/TIKE-CONT/ws/SistemaFacturacion/VerifactuSOAP"
-      ::cEntorno := "PRODUCCION"
-   end if
-   
-   // Validar que la URL se configuró correctamente
-   if Empty( ::cURLAEAT )
-      AAdd( ::aErrores, "Error: URL de AEAT no se pudo configurar" )
-      RETURN .f.
-   end if
-   
-   // Debug: Mostrar configuración
-   MsgInfo( "Entorno: " + ::cEntorno + Chr(13) + "URL: " + ::cURLAEAT, "Configuración AEAT" )     
-
-RETURN .t.
-
-//---------------------------------------------------------------------------//
-
-METHOD ValidarCertificado() CLASS TVeriFactu
-
-   local lValido := .f.
-   local lOpenResult := .f.
-   local cErrorMsg := ""
-   local oWinHttp
-   local oCertErr
-   local oSendErr
-   local oHttpErr
-   local oErr
-   local nSecurityFlags := SECURITY_FLAG_IGNORE_UNKNOWN_CA + ;
-                                     SECURITY_FLAG_IGNORE_CERT_DATE_INVALID + ;
-                                     SECURITY_FLAG_IGNORE_CERT_CN_INVALID + ;
-                                     SECURITY_FLAG_IGNORE_CERT_WRONG_USAGE
-
-   MsgInfo( "Iniciando validación del certificado...", "VeriFactu - Paso 1" )
-
-   if Empty( ::cRutaCertificado )
-      AAdd( ::aErrores, "Ruta del certificado no configurada" )
-      MsgInfo( "Error: Ruta del certificado no configurada", "VeriFactu - Error" )
-      RETURN .f.
-   end if
-   
-   MsgInfo( "Ruta del certificado: " + ::cRutaCertificado, "VeriFactu - Paso 2" )
-   
-   if !File( ::cRutaCertificado )
-      AAdd( ::aErrores, "Archivo de certificado no encontrado" )
-      MsgInfo( "Error: Archivo de certificado no encontrado en: " + ::cRutaCertificado, "VeriFactu - Error" )
-      RETURN .f.
-   end if
-   
-   MsgInfo( "Archivo de certificado encontrado correctamente", "VeriFactu - Paso 3" )
-
-   //try
-      // Verificar que el certificado es válido y no ha expirado
-      // Esto requiere componentes COM de Windows o librerías específicas
-      
-      // TODO: Implementar validación real del certificado
-      // Ejemplo con WinHTTP (requiere componente COM):
-
-      MsgInfo( "Intentando crear objeto WinHTTP...", "VeriFactu - Paso 4" )
-      
-      //try
-         oWinHttp := CreateObject( "WinHttp.WinHttpRequest.5.1" )
-      /*catch oCertErr
-         AAdd( ::aErrores, "Error al crear objeto WinHTTP: " + oCertErr:Description )
-         MsgInfo( "Error al crear objeto WinHTTP", "VeriFactu - Error" )
-         RETURN .f.
-      end*/
-      
-      if oWinHttp == nil
-         AAdd( ::aErrores, "No se pudo crear el objeto WinHTTP. Verifique que WinHTTP esté instalado." )
-         MsgInfo( "Error: No se pudo crear el objeto WinHTTP", "VeriFactu - Error" )
-         RETURN .f.
-      end if
-      
-      MsgInfo( "Objeto WinHTTP creado correctamente", "VeriFactu - Paso 5" )
-      
-      //try
-         // Intentamos realizar una conexión de prueba a la AEAT
-
-         MsgInfo("Conectando a AEAT: " + ::cURLAEAT)
-         
-         // Validar URL antes de intentar la conexión
-         if Empty(::cURLAEAT)
-            AAdd( ::aErrores, "URL de AEAT no configurada" )
-            lValido := .f.
-         else
-
-            MsgInfo( "Configurando opciones de seguridad...", "VeriFactu - Paso 6" )
-            try
-               // Configurar opciones de seguridad usando la sintaxis correcta
-               oWinHttp:Option(6, .t. )    // SECURITY_FLAG_IGNORE_UNKNOWN_CA
-               oWinHttp:Option(18, .t. )   // SECURITY_FLAG_IGNORE_CERT_DATE_INVALID
-               oWinHttp:Option(19, .t. )   // SECURITY_FLAG_IGNORE_CERT_CN_INVALID
-               
-               MsgInfo( "Opciones de seguridad configuradas correctamente", "VeriFactu - Paso 7" )
-            catch oErr
-               AAdd( ::aErrores, "Error al configurar opciones de seguridad: " + oErr:Description )
-               MsgInfo( "Error al configurar opciones de seguridad: " + oErr:Description, "VeriFactu - Error" )
-               RETURN .f.
-            end
-
-               // Configurar opciones adicionales antes de Open
-               ?"1"
-               oWinHttp:Option(4, .f. )     // WINHTTP_OPTION_REDIRECT_POLICY (no seguir redirecciones)
-               ?"2"
-               //oWinHttp:Option(31, 13056 )  // WINHTTP_OPTION_SECURITY_FLAGS (todas las flags)
-               ?"3"
-               //oWinHttp:Option(45, .t. )   // WINHTTP_OPTION_ENABLE_HTTP2 (habilitar HTTP/2)
-               ?"4"
-               
-               // Configurar SSL/TLS
-               //oWinHttp:Option(9 , 0x00000800 + 0x00000200 )  // TLS 1.2 + TLS 1.1
-               ?"5"
-               
-               MsgInfo( "URL AEAT: " + ::cURLAEAT, "VeriFactu - Debug URL" )
-               
-               MsgInfo( "Intentando abrir conexión con AEAT...", "VeriFactu - Paso 8" )
-               
-               try
-                  // Intentar abrir la conexión con parámetros explícitos
-                  lOpenResult := oWinHttp:Open("GET", ::cURLAEAT, .f.)
-                  
-                  if lOpenResult == nil
-                     MsgInfo("Error: Open devolvió NIL - Verificar URL y configuración", "VeriFactu - Error")
-                  endif
-                  
-                  MsgInfo("Resultado de la conexión: " + if(lOpenResult == nil, "NIL", if(lOpenResult, "ÉXITO", "FALLO")), "VeriFactu - Paso 9" )
-               catch oErr
-                  MsgInfo("Error en Open: " + oErr:Description, "VeriFactu - Error")
-                  lOpenResult := nil
-               end
-               
-               if lOpenResult == nil .or. !lOpenResult
-                  // Intentar obtener más información sobre el error
-                  cErrorMsg := "Error al abrir conexión HTTP. "
-                  if HB_ISOBJECT(oWinHttp) .and. oWinHttp:Status != nil
-                     cErrorMsg += "Status: " + AllTrim(Str(oWinHttp:Status))
-                  endif
-                  if HB_ISOBJECT(oWinHttp) .and. !Empty(oWinHttp:StatusText)
-                     cErrorMsg += " - " + oWinHttp:StatusText
-                  endif
-                  AAdd(::aErrores, cErrorMsg)
-                  lValido := .f.
-               else
-                  // Conexión abierta correctamente, intentar enviar
-                  
-                  //try
-                     MsgInfo( "Enviando petición al servidor AEAT...", "VeriFactu - Paso 10" )
-                     oWinHttp:Send()
-                     MsgInfo("Respuesta del servidor - Código: " + AllTrim(Str(oWinHttp:Status)), "VeriFactu - Paso 11" )
-                     
-                     MsgInfo( "Verificando respuesta del servidor...", "VeriFactu - Paso 12" )
-                     // Verificar si la respuesta indica que el certificado es válido
-                     if oWinHttp:Status >= 200 .and. oWinHttp:Status < 500
-                        lValido := .t.
-                        MsgInfo( "¡Certificado validado correctamente!", "VeriFactu - Éxito" )
-                     else
-                        AAdd(::aErrores, "Error en la respuesta del servidor: " + ;
-                                       AllTrim(Str(oWinHttp:Status)) + " - " + ;
-                                       oWinHttp:StatusText)
-                        lValido := .f.
-                        MsgInfo( "Error en la validación: " + AllTrim(Str(oWinHttp:Status)) + " - " + ;
-                                oWinHttp:StatusText, "VeriFactu - Error" )
-                     endif
-                  /*catch oSendErr
-                     AAdd(::aErrores, "Error al enviar petición: " + oSendErr:Description)
-                     lValido := .f.
-                  end*/
-               endif
-            /*catch oHttpErr
-               AAdd(::aErrores, "Error en la conexión: " + oHttpErr:Description)
-               lValido := .f.
-            end*/
-         endif
-
-         // Configurar el certificado según el tipo
-         if lOpenResult != .f. .and. lOpenResult != nil
-            do case
-               case ::cTipoCertificado == "P12" .or. ::cTipoCertificado == "PFX"
-                  if Empty(::cPasswordCert)
-                     AAdd( ::aErrores, "Se requiere la contraseña para el certificado P12/PFX" )
-                     lValido := .f.
-                  else
-                     //try
-                        oWinHttp:SetClientCertificate( ::cRutaCertificado, ::cPasswordCert )
-                     /*catch oCertErr
-                        AAdd( ::aErrores, "Error al configurar certificado: " + oCertErr:Description )
-                        lValido := .f.
-                     end*/
-                  endif
-               case ::cTipoCertificado == "CER"
-                  if !Empty(::cRutaKeyPrivada)
-                     // Para certificados .cer necesitamos la clave privada
-                     //try
-                        oWinHttp:SetClientCertificate( ::cRutaCertificado, ::cRutaKeyPrivada )
-                     /*catch oCertErr
-                        AAdd( ::aErrores, "Error al configurar certificado CER: " + oCertErr:Description )
-                        lValido := .f.
-                     end*/
-                  else
-                     AAdd( ::aErrores, "Se requiere la ruta de la clave privada para certificados .cer" )
-                     lValido := .f.
-                  endif
-            endcase
-
-            // Intentar establecer una conexión segura solo si no hay errores previos
-            if Len(::aErrores) == 0 .or. ATail(::aErrores) != "Error al configurar certificado: "
-               //try
-                  oWinHttp:Send()
-                  MsgInfo( hb_ValToExp(oWinHttp:Status), "Status Final" )
-
-                  // Si llegamos aquí sin errores, el certificado es válido
-                  if oWinHttp:Status == 200 .or. oWinHttp:Status == 401  // 401 es aceptable ya que solo validamos el certificado
-                     lValido := .t.
-                  else
-                     AAdd( ::aErrores, "Error al validar el certificado. Estado HTTP: " + AllTrim(Str(oWinHttp:Status)) )
-                  endif
-               /*catch oCertErr
-                  AAdd( ::aErrores, "Error al configurar el certificado: " + oCertErr:Description )
-                  lValido := .f.
-               end*/
-            endif
-         endif
-      
-      //lValido := .t. // Temporal para desarrollo
-      
-   /*catch oCertErr
-      ::lError := .t.
-      AAdd( ::aErrores, "Error al validar certificado: " + oCertErr:Description )
-      lValido := .f.
-   end try*/
-
-   MsgInfo( hb_ValToExp( ::aErrores ), "ValidarCertificado" )
-
-RETURN lValido
-
-//---------------------------------------------------------------------------//
-
-METHOD AutenticarAEAT() CLASS TVeriFactu
-
-   local lError := .f.
-   local cRespuesta := ""
-   local hRespuesta := {=>}
-   local cURL := ""
-   local cDatos := ""
-   local oErr
-
-   try
-      // Endpoint de autenticación AEAT
-      cURL := ::cURLAEAT + "/auth"
-      
-      // Datos de autenticación
-      cDatos := hb_JsonEncode( {;
-         "nif" => ::cNIFEmisor,;
-         "timestamp" => hb_TToC( hb_DateTime() ),;
-         "version" => "1.0";
-      } )
-      
-      // Enviar petición de autenticación
-      cRespuesta := ::EnviarHTTPS( cURL, cDatos, "POST" )
-
-      Msginfo( cRespuesta, "Respuesta autenticación AEAT" )
-      
-      if !Empty( cRespuesta )
-         hRespuesta := hb_JsonDecode( cRespuesta )
-         
-         if hb_HHasKey( hRespuesta, "token" )
-            ::cTokenSesion := hRespuesta["token"]
-         else
-            lError := .t.
-            AAdd( ::aErrores, "Token de sesión no recibido" )
-         end if
-      else
-         lError := .t.
-         AAdd( ::aErrores, "Sin respuesta del servidor AEAT" )
-      end if
-      
-   catch oErr
-      lError := .t.
-      AAdd( ::aErrores, "Error en autenticación AEAT: " + oErr:Description )
-   end try
-
-RETURN lError
-
-//---------------------------------------------------------------------------//
-
-METHOD EnviarHTTPS( cURL, cDatos, cMetodo ) CLASS TVeriFactu
-
-   local cRespuesta := ""
-   local oWinHttp, oHttpErr
-   local aCabeceras := {}
-   local i
-
-   DEFAULT cMetodo := "POST"
-
-   try
-      // Crear objeto WinHTTP para comunicación HTTPS
-      oWinHttp := CreateObject( "WinHttp.WinHttpRequest.5.1" )
-      
-      if oWinHttp == nil
-         AAdd( ::aErrores, "No se pudo crear objeto WinHTTP" )
-      else
-         // Configurar timeout
-         oWinHttp:SetTimeOuts( ::nTimeoutHTTPS, ::nTimeoutHTTPS, ::nTimeoutHTTPS, ::nTimeoutHTTPS )
-         
-         // Configurar proxy si está definido
-         if !Empty( ::cProxyServer )
-            oWinHttp:SetProxy( 2, ::cProxyServer + ":" + AllTrim( Str( ::nProxyPort ) ) )
-            if !Empty( ::cProxyUser )
-               oWinHttp:SetCredentials( ::cProxyUser, ::cProxyPass, 1 ) // 1 = HTTPREQUEST_PROXYSETTING_PROXY
-            end if
-         end if
-         
-         // Abrir conexión
-         oWinHttp:Open( cMetodo, cURL, .f. ) // .f. = síncrono
-         
-         // Configurar certificado digital
-         if !Empty( ::cRutaCertificado )
-            do case
-               case ::cTipoCertificado == "P12" .or. ::cTipoCertificado == "PFX"
-                  oWinHttp:SetClientCertificate( ::cRutaCertificado )
-               otherwise
-                  AAdd( ::aErrores, "Tipo de certificado no soportado: " + ::cTipoCertificado )
-            endcase
-         end if
-         
-         // Configurar cabeceras HTTP solo si no hay errores de certificado
-         if Len( ::aErrores ) == 0 .or. ATail( ::aErrores ) != "Tipo de certificado no soportado: " + ::cTipoCertificado
-            aCabeceras := ::PrepararCabeceras()
-            for i := 1 to Len( aCabeceras )
-               oWinHttp:SetRequestHeader( aCabeceras[i][1], aCabeceras[i][2] )
-            next
+/* METHOD: BuildFacturaXml( oRegFacAl, oRegFacAlAnterior )
+    Añade una factura en el objeto verifactu
+
+    Parámetros:
+        oRegFacAl: Objeto con los datos del registro de alta
+        oRegFacAlAnterior: Objeto con los datos del registro de alta anterior para el encadenamiento
+
+Devuelve:
+    Objeto
+*/
+METHOD BuildFacturaXml( oRegFacAl as Object , oRegFacAlAnterior as Object ) CLASS TVeriFactu
+    
+    If ::oTVF_Verifactu:__oReturn:Fail()
+
+        Return ( Self )
+
+    Endif
+
+    ::oQueDoc := TQueDoc():New( oRegFacAl:DOCUMENTO )
+
+    switch oRegFacAl:TIPO
+
+        case VERIFACTU_TIPO_REGISTRO_ALTA
+
+            ::RegistroFacturacionAltaType( oRegFacAl, oRegFacAlAnterior )
             
-            // Enviar petición
-            if !Empty( cDatos )
-               oWinHttp:Send( cDatos )
-            else
-               oWinHttp:Send()
-            end if
+        exit
+
+        case VERIFACTU_TIPO_REGISTRO_ANULACION
+
+            ::RegistroFacturacionAnulacionType( oRegFacAl, oRegFacAlAnterior )
+
+        exit
+
+    endswitch
+    
+    
+Return ( Self )
+
+/* METHOD: RegistroFacturacionAnulacionType( oRegFacAl, oRegFacAlAnterior )
+    Genera la estructura del registro de anulacion de verifactu
+    
+    Parámetros:
+        oRegFacAl: Objeto con los datos del registro de anulacion
+        oRegFacAlAnterior: Objeto con los datos del registro de alta anterior para el encadenamiento
+
+Devuelve:
+Objeto
+    
+*/
+METHOD RegistroFacturacionAnulacionType( oRegFacAl, oRegFacAlAnterior ) CLASS TVerifactu
+
+    Local cInfoHuella as String := ''
+    Local cHuella as String := ''
+
+    WITH OBJECT ::oTVF_RegistroFacturacionAnulacionType := TVF_RegistroFacturacionAnulacionType():New( ::oTVF_Verifactu, , "RegistroAnulacion", Self )
+
+        :IDVersion:Set( '1.0' )
+        :IDFactura:IDEmisorFacturaAnulada:Set( cCifEmp )
+        :IDFactura:NumSerieFacturaAnulada:Set( TVerifactuDocumento():New( oRegFacAl:SERIE, oRegFacAl:NUMERO, ::oQueDoc ):Str() )
+        :IDFactura:FechaExpedicionFacturaAnulada:Set( oRegFacAl:FECHA )
+        :RefExterna:Set( oRegFacAl:ID:Str():Alltrim() )
+        // :SinRegistroPrevio // Este dato es adicional no hace falta. En principio no pueden haber anulaciones sin registro previo ya que se anula la propia factura que ya existe en el fichero
+        // :RechazoPrevio // Este dato es adicional no hace falta        
+        // :GeneradoPor // se utiliza cuando el generador de la anulación es diferente al de la factura
+        // :Generador // Se utiliza cuando se utiliza GeneradoPor
+
+        ::SetEncadenamiento( oRegFacAlAnterior, ::oTVF_RegistroFacturacionAnulacionType )
+        ::SetSistemaInformatico( ::oTVF_RegistroFacturacionAnulacionType )
+        ::SetFechaHoraHusoGenRegistro( oRegFacAl:ALTA, ::oTVF_RegistroFacturacionAnulacionType )
+        :TipoHuella:Set( '01' )
+        cInfoHuella :=  'IDEmisorFacturaAnulada=' + :IDFactura:IDEmisorFacturaAnulada:Get():Alltrim()+'&'+;
+                        'NumSerieFacturaAnulada=' + :IDFactura:NumSerieFacturaAnulada:Get():Alltrim()+'&'+;
+                        'FechaExpedicionFacturaAnulada=' + :IDFactura:FechaExpedicionFacturaAnulada:Get():Alltrim()+'&'+;
+                        'Huella=' + oRegFacAlAnterior:HUELLA:Alltrim()+'&'+;
+                        'FechaHoraHusoGenRegistro=' + :FechaHoraHusoGenRegistro:Get():Alltrim()
+        cHuella := TChilkatTools():New():HashString('SHA-256', cInfoHuella,'hex')
+        :Huella:Set( cHuella )
+        ::RegFacAlSaveHuella( oRegFacAl, cHuella)
+        
+        /* hb_MemoWrit( 'huella.txt', 'Info para crear la huella: ' + cInfoHuella + CRLF + ;
+                     'Huella: ' + cHuella  ) */
+
+        // :Signature  // No lo vamos a aplicar nunca, ya que es para sistemas NO Verifactu
+                
+    END WITH
+    
+    ::oTVF_Verifactu:RegFactuSistemaFacturacion:RegistroFactura:Set( ::oTVF_RegistroFacturacionAnulacionType )
+
+    If ::oTVF_Verifactu:Fail()
+
+        ::oTVF_Verifactu:__oReturn:Log := 'Fallo en anulación ' + oRegFacAl:SERIE:Str() + '-' + oRegFacAl:NUMERO:Str() 
+
+    Endif
+
+Return ( Self )
+
+/* METHOD: RegistroFacturacionAltaType( oRegFacAl, oRegFacAlAnterior )
+    Genera la estructura del registro de alta de verifactu
+    
+    Parámetros:
+        oRegFacAl: Objeto con los datos del registro de alta
+        oRegFacAlAnterior: Objeto con los datos del registro de alta anterior para el encadenamiento
+        
+
+Devuelve:
+    Objeto
+*/
+METHOD RegistroFacturacionAltaType( oRegFacAl, oRegFacAlAnterior ) CLASS TVerifactu
+
+    Local oCliente as Object := Nil
+    Local oDestinatario as Object := Nil
+    Local oDetalleDesglose as Object := Nil
+    Local nIva as Numeric := 0
+    Local nTotalCuota as Numeric := 0
+    Local cInfoHuella as String := ''
+    Local cHuella as String := ''
+
+    ::oDocumento := oRegFacAl:GetModel()
+
+    If ::oDocumento == Nil .Or.;
+       ::oDocumento:Fail()
+
+       ::oTVF_Verifactu:__oReturn:Success := .F.
+       ::oTVF_Verifactu:__oReturn:Log('Error al cargar el documento ' + ::oQueDoc:NombreHumano() + ' ' + oRegFacAl:SERIE:Str() + '-' + oRegFacAl:NUMERO:Str() + ::oTVF_Verifactu:__oReturn:LogToString())
+
+        Return ( Self )
+
+    Endif
+
+    oApp:oCache:oSeries:Find( ::oDocumento:SERIE )
+    If oApp:oCache:oSeries:Fail()
+
+        ::oTVF_Verifactu:__oReturn:Success := .F.
+        ::oTVF_Verifactu:__oReturn:Log := 'Error al cargar la serie ' + ::oDocumento:SERIE:Str() + ' del documento ' + ::oQueDoc:NombreHumano() + ' ' + oRegFacAl:SERIE:Str() + '-' + oRegFacAl:NUMERO:Str() + ::oTVF_Verifactu:__oReturn:LogToString()
+
+        Return ( Self )
+
+    Endif
+
+    oCliente := ::CargaCliente( )
+
+    WITH OBJECT ::oTVF_RegistroFacturacionAltaType := TVF_RegistroFacturacionAltaType():New( ::oTVF_Verifactu, , "RegistroAlta", Self )
+        :IDVersion:Set( '1.0' )
+        :IDFactura:IDEmisorFactura:Set( cCifEmp )
+        :IDFactura:NumSerieFactura:Set( TVerifactuDocumento():New( ::oDocumento:SERIE, ::oDocumento:NUMERO, ::oQueDoc ):Str() )
+        :IDFactura:FechaExpedicionFactura:Set( ::oDocumento:FECHA )
+        :RefExterna:Set( oRegFacAl:ID:Str():Alltrim() )
+        :NombreRazonEmisor:Set( cNomEmp )
+        ::SetSubsanacion( oRegFacAl )
+        ::SetRechazoPrevio( oRegFacAl )
+
+        If ::oDocumento:RECTISER != 0 .And. ::oDocumento:RECTINUM != 0  // Es rectificativa
+
+            :TipoRectificativa:Set( ::oDocumento:RECTITIP )
+            ::SetFacturasRectificadas( oRegFacAl )
+
+            // :FacturasSustituidas  // Se utilizan cuando la factura anula las anteriores, por ejemplo una factura de un ticket
+
+        Endif
+
+        If  ::oDocumento:FECHAOPE != ::oDocumento:FECHA
+
+            :FechaOperacion:Set( ::oDocumento:FECHAOPE )
+
+        Endif
+
+        ::SetTipoFactura( oCliente )
+        ::SetDescripcionOperacion( oRegFacAl,)
+        ::SetFacturaSinIdentifDestinatarioArt61d( oCliente )
+        ::SetMacroDato( )  
+        
+        // :EmitidaPorTerceroODestinatario:Set( 'D' )  // esto solo se utilizaría si la factura se emite por alguien que no es el obligado tributario, en principio no contemplamos esto.
+        // :Tercero  // Esto sería en el caso de que :EmitidaPorTerceroODestinatario fuese 'S'
+
+
+        If (::oTVF_RegistroFacturacionAltaType:TipoFactura:Get != 'F2' .And.; 
+            ::oTVF_RegistroFacturacionAltaType:TipoFactura:Get != 'R5' ) .And.;
+            ::oTVF_RegistroFacturacionAltaType:FacturaSinIdentifDestinatarioArt61d:Get() == 'S' 
+
+           // Se ha emitido un documento que no es ticket y el cliente no tiene CIF, por lo tanto es incorrecto. No se puede enviar
+            ::oTVF_Verifactu:__oReturn:Success := .F.
+            ::oTVF_Verifactu:__oReturn:Log := 'Se está intentando enviar un documento factura con un cliente sin identificación fiscal. Revise el cliente del documento ' + ::oQueDoc:NombreHumano() + ' ' + oRegFacAl:SERIE:Str() + '-' + oRegFacAl:NUMERO:Str() 
+
+        Endif
+
+        If (::oTVF_RegistroFacturacionAltaType:TipoFactura:Get != 'F2' .And.; 
+            ::oTVF_RegistroFacturacionAltaType:TipoFactura:Get != 'R5' ) .And.;
+            ::oTVF_RegistroFacturacionAltaType:FacturaSinIdentifDestinatarioArt61d:Get() == 'N' 
+
+            WITH OBJECT oDestinatario := TVF_PersonaFisicaJuridicaType():New( ::oTVF_Verifactu, , 'IDDestinatario', Self, NO_NIF_REQUIRED )
+                :NombreRazon:Set( oCliente:NOMBRE )
+
+                If oCliente:TIPOCIF == 1 // NIF/CIF Español
+
+                    :NIF:Set( oCliente:CIF ) 
+
+                Else
+
+                    WITH OBJECT :IDOtro := TVF_IDOtroType():New( ::oTVF_Verifactu, ,'IDOtro', Self )
+                        :cDescripcion := 'Cliente con CIF distinto a NIF/CIF Español'
+                        :cSolucion := 'Revisa los datos del cliente; país, CIF y indentificación CID/DNI'
+                        :CodigoPais:Set( oCliente:PAIS )  
+                        :IDType:Set( oCliente:TIPOCIF:Str():Zeros(2) )
+                        :ID:Set( oCliente:CIF )
+                    END WITH
+
+                Endif
             
-            // Obtener respuesta
-            if oWinHttp:Status == 200
-               cRespuesta := oWinHttp:ResponseText
-            else
-               AAdd( ::aErrores, "Error HTTP " + AllTrim( Str( oWinHttp:Status ) ) + ": " + oWinHttp:StatusText )
-            end if
-         end if
-      end if
-      
-   catch oHttpErr
-      ::lError := .t.
-      AAdd( ::aErrores, "Error en comunicación HTTPS: " + oHttpErr:Description )
-      cRespuesta := ""
-   end try
+            END
 
-RETURN cRespuesta
+            :Destinatarios:Set( oDestinatario )
 
-//---------------------------------------------------------------------------//
+        Endif
+        
+        :Cupon:Set('N')
 
-METHOD PrepararCabeceras() CLASS TVeriFactu
+        For nIva := 1 To oApp:oAppData:nNumeroMaximoIvaenDocumento
 
-   local aCabeceras := {}
+            If ::oDocumento:&('IVACOD'+nIva:Str()) != 0
 
-   // Cabeceras estándar
-   AAdd( aCabeceras, { "Content-Type", "application/json; charset=utf-8" } )
-   AAdd( aCabeceras, { "Accept", "application/json" } )
-   AAdd( aCabeceras, { "User-Agent", "Gestool-VeriFactu/1.0" } )
-   
-   // Token de sesión si existe
-   if !Empty( ::cTokenSesion )
-      AAdd( aCabeceras, { "Authorization", "Bearer " + ::cTokenSesion } )
-   end if
-   
-   // Cabeceras específicas AEAT
-   AAdd( aCabeceras, { "X-AEAT-NIF", ::cNIFEmisor } )
-   AAdd( aCabeceras, { "X-AEAT-Version", "1.0" } )
+                WITH OBJECT oDetalleDesglose := TVF_DetalleType():New( ::oTVF_Verifactu, , 'DetalleDesglose', Self )
+                    :Impuesto:Set( ::oDocumento:VIMPAPLI)  
+                    :ClaveRegimen:Set( ::oDocumento:REGIMENV )  
 
-RETURN aCabeceras
+                    If .Not. ::SetOperacionExenta( oDetalleDesglose )
 
-//---------------------------------------------------------------------------//
+                        ::SetCalificacionOperacion( oDetalleDesglose )
+                        :TipoImpositivo:Set( ::oDocumento:&('IVACOD' + nIva:Str() ) )
+                        :CuotaRepercutida:Set( ::oDocumento:&('IVAIMP' + nIva:Str() ) )
+                        nTotalCuota += ::oDocumento:&('IVAIMP' + nIva:Str() )
 
-METHOD ProcesarRespuestaAEAT( cRespuesta ) CLASS TVeriFactu
+                        If ::oDocumento:EXENTAV == S1_SUJETA_NOEXENTA_SIN_INV_SUJETO_PASIVO
 
-   local hRespuesta := {=>}
-   local lExito := .f.
-   local oRespErr
+                            If ::oDocumento:&('RECPOR' + nIva:Str()):NotEmpty()
 
-   try
-      if !Empty( cRespuesta )
-         hRespuesta := hb_JsonDecode( cRespuesta )
-         
-         if hb_HHasKey( hRespuesta, "estado" )
-            do case
-               case hRespuesta["estado"] == "ACEPTADO"
-                  lExito := .t.
-                  // Guardar datos de respuesta
-                  if hb_HHasKey( hRespuesta, "csv" )
-                     // CSV (Código Seguro de Verificación) de la AEAT
-                  end if
-                  
-               case hRespuesta["estado"] == "RECHAZADO"
-                  if hb_HHasKey( hRespuesta, "errores" )
-                     // Procesar errores
-                     AAdd( ::aErrores, "AEAT rechazó la factura: " + hb_ValToExp( hRespuesta["errores"] ) )
-                  end if
-                  
-               otherwise
-                  AAdd( ::aErrores, "Estado desconocido: " + hRespuesta["estado"] )
-            endcase
-         else
-            AAdd( ::aErrores, "Respuesta AEAT sin campo estado" )
-         end if
-      else
-         AAdd( ::aErrores, "Respuesta AEAT vacía" )
-      end if
-      
-   catch oRespErr
-      ::lError := .t.
-      AAdd( ::aErrores, "Error al procesar respuesta AEAT: " + oRespErr:Description )
-   end try
+                                :TipoRecargoEquivalencia:Set( ::oDocumento:&('RECPOR' + nIva:Str()) )  
+                                :CuotaRecargoEquivalencia:Set( ::oDocumento:&('RECIMP' + nIva:Str() ) )
+                                nTotalCuota+= ::oDocumento:&('RECIMP' + nIva:Str() )
 
-RETURN lExito
+                            Endif
 
-//---------------------------------------------------------------------------//
+                        Endif
 
-METHOD GenerarVeriFactu() CLASS TVeriFactu
+                    Endif
 
-   local lExito := .f.
-   local cJSON := ""
-   local cQR := ""
-   local oGenErr
+                    :BaseImponibleOimporteNoSujeto:Set( ::oDocumento:&('BASE' + nIva:Str() ) )
+                    ::SetBaseImponibleACoste( oDetalleDesglose )
 
-   try
-      // Validar datos requeridos
-      if ::ValidarDatos()
-         // Generar hash y código seguro
-         ::CalcularHash()
+                END
 
-         // Crear nombres de archivos
-         ::CrearNombresArchivos()
+                :Desglose:Set( oDetalleDesglose )
 
-         // Generar JSON
-         cJSON := ::GenerarJSON()
-         if !Empty( cJSON )
-            // Generar código QR si está habilitado
-            if ::lGenerarQR
-               cQR := ::GenerarQR()
-            end if
+            Endif
+
+        Next
+
+        :CuotaTotal:Set( nTotalCuota )
+        :ImporteTotal:Set( ::oDocumento:TOTAL )
+        ::SetEncadenamiento( oRegFacAlAnterior, ::oTVF_RegistroFacturacionAltaType )
+        ::SetSistemaInformatico( ::oTVF_RegistroFacturacionAltaType )
+        ::SetFechaHoraHusoGenRegistro( oRegFacAl:ALTA, ::oTVF_RegistroFacturacionAltaType )
+        :NumRegistroAcuerdoFacturacion:Set(  oApp:oData:oVerifactu:cVeriFNRAF )
+        // :IdAcuerdoSistemaInformatico // Este campo no lo utilizaremos nunca, está pensado para programas que los utilizan varios obligatos tributarios ( sass, nube, etc... )
+
+        :TipoHuella:Set( '01' )
+        cInfoHuella :=  'IDEmisorFactura=' + :IDFactura:IDEmisorFactura:Get():Alltrim()+'&'+;
+                        'NumSerieFactura=' + :IDFactura:NumSerieFactura:Get():Alltrim()+'&'+;
+                        'FechaExpedicionFactura=' + :IDFactura:FechaExpedicionFactura:Get():Alltrim()+'&'+;
+                        'TipoFactura=' + :TipoFactura:Get():Alltrim()+'&'+;
+                        'CuotaTotal=' + :CuotaTotal:Get():Alltrim()+'&'+;
+                        'ImporteTotal=' + :ImporteTotal:Get():Alltrim()+'&'+;
+                        'Huella=' + oRegFacAlAnterior:HUELLA:Alltrim()+'&'+;
+                        'FechaHoraHusoGenRegistro=' + :FechaHoraHusoGenRegistro:Get():Alltrim()
+        cHuella := TChilkatTools():New():HashString('SHA-256', cInfoHuella,'hex')
+        :Huella:Set( cHuella )
+        ::RegFacAlSaveHuella( oRegFacAl, cHuella)
+
+        /* hb_MemoWrit( 'huella.txt', 'Info para crear la huella: ' + cInfoHuella + CRLF + ;
+                     'Huella: ' + cHuella  ) */
+        /*
+            Para comprobar, según https://www.agenciatributaria.es/static_files/AEAT_Desarrolladores/EEDD/IVA/VERI-FACTU/Veri-Factu_especificaciones_huella_hash_registros.pdf
+            Esto: :Huella:Set( TChilkatTools():New():HashString('SHA-256', "IDEmisorFactura=89890001K&NumSerieFactura=12345679/G34&FechaExpedicionFactura=01-01-2024&TipoFactura=F1&CuotaTotal=12.35&ImporteTotal=123.45&Huella=3C464DAF61ACB827C65FDA19F352A4E3BDC2C640E9E9FC4CC058073F38F12F60&FechaHoraHusoGenRegistro=2024-01-01T19:20:35+01:00",'hex') )
+            Ha de devolver esto: F7B94CFD8924EDFF273501B01EE5153E4CE8F259766F88CF6ACB8935802A2B97
+        */
+
+        // :Signature  // No lo vamos a aplicar nunca, ya que es para sistemas NO Verifactu
+                
+    END WITH
+
+    
+    ::oTVF_Verifactu:RegFactuSistemaFacturacion:RegistroFactura:Set( ::oTVF_RegistroFacturacionAltaType )
+
+    If ::oTVF_Verifactu:Fail()
+
+        ::oTVF_Verifactu:__oReturn:Log := hb_Eol() + 'Fallo en factura ' + oRegFacAl:SERIE:Str() + '-' + oRegFacAl:NUMERO:Str() 
+
+    Endif
+
+Return ( Self )
+
+/* METHOD: CreateXmlFile(  )
+    Crea el fichero Xml partiendo del objeto xml verifactu
+
+Devuelve:
+    Objeto
+*/
+METHOD CreateXmlFile(  ) CLASS TVeriFactu
+
+    Local oXml  as Object := Nil
+    Local cMessage as String := ''
+
+    If ::oTVF_Verifactu:__oReturn:Fail()
+
+        Return ( Self )
+
+    Endif
+
+    If .Not. Hb_DirBuild( cDirEmp + '\Verifactu' )
+
+        ::oTVF_Verifactu:__oReturn:Success := .F.
+        ::oTVF_Verifactu:__oReturn:Log := 'Error al crear el directorio de Verifactu : ' + cDirEmp + '\Verifactu'
+        Return ( Self )
+
+    Endif
+    oXml := ::oTVF_Verifactu:GetXmlObject()
+    ::cXmlFile :=  cDirEmp + '\Verifactu\verifactu_' + hb_TToS( hb_DateTime() ) + '.xml'
+    
+    hb_MemoWrit ( ::cXmlFile, oXml:GetXml() )
+
+    If .Not. File ( ::cXmlFile )
+
+        cMessage := 'Error al crear el fichero xml : ' + hb_Eol() + ::cXmlFile
+        ::oTVF_Verifactu:__oReturn:Success := .F.
+        ::oTVF_Verifactu:__oReturn:Log := cMessage
+        TNotification():Danger( cMessage )
+
+    Endif
+
+Return ( Self )
+
+/* METHOD: CreateVeriSend( oRegFacAl )
+    Agrega el envio al registro de envíos de verifactu
+
+    Parámetros:
+        oRegFacAl: Objeto con los datos del registro de alta que se van a enviar en el fichero
+
+Devuelve:
+    Objheto
+*/
+METHOD CreateVeriSend( oRegFacAl ) CLASS TVerifactu
+
+    Local oVeriSend as Object := Nil    
+    Local aRegFacAl as Array := oRegFacAl:GetCollection()
+    Local oItem as Object := Nil
+    Local oRegFacAlRow as Object := Nil
+
+    WITH OBJECT oVeriSend := mVeriSend():New(  )
+
+        :FICHERO := ::cXmlFile
+
+        If :Save():Fail()
+
+            ::oTVF_Verifactu:__oReturn:Success := .F.
+            ::oTVF_Verifactu:__oReturn:Log := 'Error al guardar el registro de envios de fichero verifactu : ' + ::cXmlFile + CRLF + :LogToString()
+
+        Endif
+
+    END
+
+    If ::oTVF_Verifactu:Fail()
+
+        Return ( Self )
+
+    Endif
+
+    for each oItem in aRegFacAl
+        
+        If ::oTVF_Verifactu:Success()
             
-            // Escribir archivos
-            lExito := ::EscribirArchivos( cJSON, cQR )
+            oRegFacAlRow := mRegFacAl():New():Find( oItem:ID, 'ID' )
 
-            MsgInfo( cJSON )
             
-            // Enviar a AEAT si está configurado
-            if lExito .and. ::lEnviarAEAT
-               ::EnviarAEAT() 
-            end if
-         else
-            AAdd( ::aErrores, "Error al generar JSON" )
-            lExito := .f.
-         end if
-      else
-         lExito := .f.
-      end if
-
-   catch oGenErr
-      ::lError := .t.
-      AAdd( ::aErrores, "Error en GenerarVeriFactu: " + oGenErr:Description )
-      lExito := .f.
-   end try
-
-RETURN lExito
-
-//---------------------------------------------------------------------------//
-
-METHOD GenerarJSON() CLASS TVeriFactu
-
-   local cJSON := ""
-   local hDocumento := {=>}
-   local hRegistroAlta := {=>}
-   local hIDFactura := {=>}
-   local hDestinatarios := {=>}
-   local aIDDestinatario := {}
-   local hDesglose := {=>}
-   local aDetalleDesglose := {}
-   local hSistemaInformatico := {=>}
-   local hEncadenamiento := {=>}
-   local hRegistroAnterior := {=>}
-   local oJsonErr
-   local hTotIva
-
-   try
-      // RegistroAlta - validamos y formateamos los datos
-      hRegistroAlta := {=>}
-      hRegistroAlta["IDVersion"] := "1.0"
-      hRegistroAlta["FechaHoraHusoGenRegistro"] := ::FormatearFecha( ::dFecha ) + "T" + PadL(::cHora, 8, "0") + "+02:00"
-      hRegistroAlta["NombreRazonEmisor"] := AllTrim(::cNombreEmisor)
-
-      // IDFactura - aseguramos el formato correcto
-      hIDFactura := {=>}
-      hIDFactura["IDEmisorFactura"] := AllTrim(::cNIFEmisor)
-      hIDFactura["NumSerieFactura"] := AllTrim(::cNumero)
-      hIDFactura["FechaExpedicionFactura"] := ::FormatearFecha(::dFecha)
-      hRegistroAlta["IDFactura"] := hIDFactura
-
-      // Destinatarios
-      if !Empty(::cNIFReceptor)
-         AAdd(aIDDestinatario, {;
-            "NIF" => ::cNIFReceptor,;
-            "NombreRazon" => ::cNombreReceptor;
-         })
-         hDestinatarios["IDDestinatario"] := aIDDestinatario
-         hRegistroAlta["Destinatarios"] := hDestinatarios
-      endif
-
-      // Datos de la factura
-      hRegistroAlta["TipoFactura"] := "F1"
-      hRegistroAlta["DescripcionOperacion"] := uFieldEmpresa( 'cNombre' )
-      hRegistroAlta["Subsanacion"] := "N"
-
-      /*
-      Tipos de Ivas--------------------------------------------------------------
-      */
-      
-      for each hTotIva in ::aTotIva
-         
-         AAdd(aDetalleDesglose, {;
-                     "Impuesto" => "01",;
-                     "ClaveRegimen" => "20",;
-                     "CalificacionOperacion" => "S1",;
-                     "TipoImpositivo" => Str( hGet( hTotIva, "porcentajeiva" ) ),;
-                     "BaseImponibleOimporteNoSujeto" => ::FormatearImporte( hGet( hTotIva, "neto" ) ),;
-                     "CuotaRepercutida" => ::FormatearImporte( hGet( hTotIva, "impiva" ) );
-                  })
-      next
-
-      hDesglose["DetalleDesglose"] := aDetalleDesglose
-      hRegistroAlta["Desglose"] := hDesglose
-
-      // Totales
-      hRegistroAlta["CuotaTotal"] := ::FormatearImporte(::nCuotaIVA)
-      hRegistroAlta["ImporteTotal"] := ::FormatearImporte(::nImporteTotal)
-
-      // Sistema Informático
-      hSistemaInformatico["NombreRazon"] := "Xtendoo Software S.L.U."
-      hSistemaInformatico["IDOtro"] := {;
-         "CodigoPais" => "ES",;
-         "IDType" => "02",;
-         "ID" => "ESB16890287";
-      }
-      hSistemaInformatico["NombreSistemaInformatico"] := __GSTROTOR__
-      hSistemaInformatico["IdSistemaInformatico"] := "00"
-      hSistemaInformatico["Version"] := __GSTVERSION__
-      hSistemaInformatico["NumeroInstalacion"] := AllTrim( Str( Abs( nSerialHD() ) ) )
-      hSistemaInformatico["TipoUsoPosibleSoloVerifactu"] := "S"
-      hSistemaInformatico["TipoUsoPosibleMultiOT"] := "S"
-      hSistemaInformatico["IndicadorMultiplesOT"] := "S"
-      hRegistroAlta["SistemaInformatico"] := hSistemaInformatico
-
-      // Encadenamiento
-      if !Empty(::cNumeroAnterior)
-         hRegistroAnterior["IDEmisorFactura"] := ::cCifAnterior
-         hRegistroAnterior["NumSerieFactura"] := ::cNumeroAnterior
-         hRegistroAnterior["FechaExpedicionFactura"] := ::FormatearFecha( ::dFechaAnterior )
-         hRegistroAnterior["Huella"] := ::cHashAnterior
-         hEncadenamiento["RegistroAnterior"] := hRegistroAnterior
-         hRegistroAlta["Encadenamiento"] := hEncadenamiento
-      endif
-
-      // Huella
-      hRegistroAlta["TipoHuella"] := "01"
-      hRegistroAlta["Huella"] := ::cHashActual
-
-      // Estructura final
-      hDocumento := {=>}
-      hDocumento["RegistroAlta"] := hRegistroAlta
-
-      // Debug - Verificar estructura antes de codificar
-      if Empty(hDocumento["RegistroAlta"])
-         ::lError := .t.
-         AAdd(::aErrores, "Error: RegistroAlta está vacío")
-      endif
-      
-      // Convertir a JSON y validar
-      cJSON := hb_JsonEncode(hDocumento, .t.)
-
-      MsgInfo( cJSON, "cJSON" )
-      
-      if Empty(cJSON)
-         ::lError := .t.
-         AAdd(::aErrores, "Error: JSON generado está vacío")
-      endif
-
-   catch oJsonErr
-      ::lError := .t.
-      AAdd( ::aErrores, "Error al generar JSON: " + oJsonErr:Description )
-      RETURN ("")
-   end try
-
-RETURN cJSON
-
-//---------------------------------------------------------------------------//
-
-METHOD GenerarQR() CLASS TVeriFactu
-
-   local cQR := ""
-   local cURL := ""
-   local cDatos := ""
-   local oQrErr
-
-   try
-      // Construir URL según normativa AEAT VeriFactu
-      // Formato: https://prewww2.aeat.es/wlpl/TIKE-CONT/ValidarQR?nif=...&numserie=...&fecha=...&importe=...
-      
-      cURL := if( ::cEntorno == "PRODUCCION", ;
-                  "https://www2.aeat.es/wlpl/TIKE-CONT/ValidarQR", ;
-                  "https://prewww2.aeat.es/wlpl/TIKE-CONT/ValidarQR" )
-
-      cDatos := "?nif=" + ::cNIFEmisor + ;
-                "&numserie=" + UrlEncode( ::cNumero ) + ;
-                "&fecha=" + if( Day( ::dFecha ) < 10, "0" + AllTrim( Str( Day( ::dFecha ) ) ), AllTrim( Str( Day( ::dFecha ) ) ) ) + ;
-                if( Month( ::dFecha ) < 10, "0" + AllTrim( Str( Month( ::dFecha ) ) ), AllTrim( Str( Month( ::dFecha ) ) ) ) + ;
-                AllTrim( Str( Year( ::dFecha ) ) ) + ;
-                "&importe=" + AllTrim( Str( ::nImporteTotal, 12, 2 ) ) + ;
-                "&codigo=" + ::cCodigoSeguro
-      
-      cQR := cURL + cDatos
-      
-      // Aquí se podría integrar una librería de generación de QR
-      // Por ahora devolvemos la URL que debe codificarse en QR
-
-      QrCodeToHBmp( 3, 3, AllTrim( cQR ), ::cRutaQR )
-      
-   catch oQrErr
-      ::lError := .t.
-      AAdd( ::aErrores, "Error al generar QR: " + oQrErr:Description )
-      cQR := ""
-   end try
-
-RETURN cQR
-
-//---------------------------------------------------------------------------//
-
-METHOD CalcularHash() CLASS TVeriFactu
-
-   local cDatos := ""
-   local cHash := ""
-   local oHashErr
-
-   try
-      // Construir cadena para hash según normativa AEAT
-      cDatos := ::cNIFEmisor + ;
-                ::cNumero + ;
-                DToS( ::dFecha ) + ;
-                ::cHora + ;
-                AllTrim( Str( ::nImporteTotal, 12, 2 ) )
-      
-      // Generar hash SHA-256 (requiere librería externa o función del sistema)
-      cHash := hb_SHA256( cDatos )
-      
-      ::cHashActual := cHash
-      
-      // Generar código seguro (primeros 16 caracteres del hash)
-      ::cCodigoSeguro := Left( cHash, 16 )
-      
-   catch oHashErr
-      ::lError := .t.
-      AAdd( ::aErrores, "Error al calcular hash: " + oHashErr:Description )
-   end try
-
-RETURN Self
-
-//---------------------------------------------------------------------------//
-
-METHOD GenerarIdVeriFactu() CLASS TVeriFactu
-
-   ::cIdVeriFactu := "VF" + DToS( Date() ) + StrTran( Time(), ":", "" ) + Right( "000" + AllTrim( Str( hb_Random( 999 ) ) ), 3 )
-
-RETURN Self
-
-//---------------------------------------------------------------------------//
-
-METHOD ValidarDatos() CLASS TVeriFactu
-
-   local lValido := .t.
-
-   ::aErrores := {}
-
-   // Validaciones obligatorias según normativa AEAT
-   if Empty( ::cNIFEmisor )
-      AAdd( ::aErrores, "NIF del emisor es obligatorio" )
-      lValido := .f.
-   end if
-   
-   if Empty( ::cNombreEmisor )
-      AAdd( ::aErrores, "Nombre del emisor es obligatorio" )
-      lValido := .f.
-   end if
-   
-   if Empty( ::cNumero )
-      AAdd( ::aErrores, "Número es obligatorio" )
-      lValido := .f.
-   end if
-   
-   if Empty( ::dFecha )
-      AAdd( ::aErrores, "Fecha es obligatoria" )
-      lValido := .f.
-   end if
-   
-   if ::nImporteTotal <= 0
-      AAdd( ::aErrores, "El importe total debe ser mayor que cero" )
-      lValido := .f.
-   end if
-
-RETURN lValido
-
-//---------------------------------------------------------------------------//
-
-METHOD CrearNombresArchivos() CLASS TVeriFactu
-
-   local cFecha := ""
-   local cHora := ""
-   local cBase := ""
-   
-   cFecha := if( Day( ::dFecha ) < 10, "0" + AllTrim(Str( Day( ::dFecha ) ) ), AllTrim( Str( Day( ::dFecha ) ) ) )
-   cFecha +=  if( Month( ::dFecha ) < 10, "0" + AllTrim( Str( Month( ::dFecha ) ) ), AllTrim( Str( Month( ::dFecha ) ) ) )
-   cFecha +=  AllTrim( Str( Year( ::dFecha ) ) )
-
-   cHora := StrTran( ::cHora, ":", "" )
-
-   cBase := "VeriFactu_" + ::cNIFEmisor + "_" + StrTran( ::cNumero, "/", "_" ) + "_" + cFecha + "_" + cHora
-
-   ::cNombreArchivoJSON := cBase + ".json"
-   //::cNombreArchivoQR   := cBase + "_QR.txt"
-   ::cNombreArchivoQR   := cBase + "_QR.bmp"
-   
-   // Rutas completas
-   ::cRutaJSON := FullJsonDir() + ::cNombreArchivoJSON
-   ::cRutaQR   := FullQrDir() + ::cNombreArchivoQR
-
-RETURN Self
-
-//---------------------------------------------------------------------------//
-
-METHOD EscribirArchivos( cJSON, cQR ) CLASS TVeriFactu
-
-   local lExito := .t.
-   local hArchivo
-   local oFileErr
-
-   try
-      // Escribir archivo JSON
-      hArchivo := FCreate( ::cRutaJSON )
-      if hArchivo != -1
-         FWrite( hArchivo,  cJSON )
-         FClose( hArchivo )
-      else
-         AAdd( ::aErrores, "Error al crear archivo JSON: " + ::cRutaJSON )
-         lExito := .f.
-      end if
-      
-   catch oFileErr
-      ::lError := .t.
-      AAdd( ::aErrores, "Error al escribir archivos: " + oFileErr:Description )
-      lExito := .f.
-   end try
-
-RETURN lExito
-
-//---------------------------------------------------------------------------//
-
-METHOD EnviarAEAT() CLASS TVeriFactu
-
-   local lExito := .f.
-   local cJSON := ""
-   local cRespuesta := ""
-   local cURL := ""
-   local oAeatErr
-
-   MsgInfo( "Enviar a AEAT" )
-
-   try
-      // Validar certificado
-      if ::ValidarCertificado()
-         // Autenticar con AEAT
-         Msginfo( "Certificado valido" )
-         if ::AutenticarAEAT()
-            Msginfo( "Autentica AEAT" )
-            // Preparar datos para envío
-            cJSON := ::GenerarJSON()
-            if !Empty( cJSON )
-               // URL del endpoint de facturas
-               cURL := ::cURLAEAT + "/facturas"
-               
-               // Enviar factura
-               cRespuesta := ::EnviarHTTPS( cURL, cJSON, "POST" )
-               
-               // Procesar respuesta
-               lExito := ::ProcesarRespuestaAEAT( cRespuesta )
-               
-               if lExito
-                  // Log de éxito
-                  //LogWrite( "VeriFactu enviado correctamente a AEAT: " + ::cNumero )
-               else
-                  // Log de errores
-                  //LogWrite( "Error enviando VeriFactu a AEAT: " + hb_ValToExp( ::aErrores ) )
-               end if
-            else
-               AAdd( ::aErrores, "Error al generar JSON para AEAT" )
-               lExito := .f.
-            end if
-         else
-            AAdd( ::aErrores, "Error en autenticación con AEAT" )
-            lExito := .f.
-         end if
-      else
-         AAdd( ::aErrores, "Certificado digital no válido" )
-         lExito := .f.
-      end if
-      
-   catch oAeatErr
-      ::lError := .t.
-      AAdd( ::aErrores, "Error general en envío AEAT: " + oAeatErr:Description )
-      lExito := .f.
-   end try
-
-RETURN lExito
-
-//---------------------------------------------------------------------------//
-
-METHOD FormatearFecha( dFecha ) CLASS TVeriFactu
-   
-   local cFecha   := dToc( dFecha )  // Formato: DD/MM/YYYY
-   
-   cFecha   := StrTran( cFecha, "/", "-" ) // Formato: DD-MM-YYYY
-
-RETURN ( cFecha )
-
-//---------------------------------------------------------------------------//
-
-METHOD FormatearImporte( nImporte ) CLASS TVeriFactu
-   // Formato: sin separadores de miles, punto decimal
-RETURN AllTrim( Str( nImporte, 12, 2 ) )
-
-//---------------------------------------------------------------------------//
-//
-// Función principal para generar VeriFactu desde facturas
-//
-//---------------------------------------------------------------------------//
-
-/*FUNCTION GenerarVeriFactu( aTmp, cNifEmisor, cNomEmisor, cNifCliente, cNomCliente, cRutaCert, cPassCert )
-
-   local oVeriFactu
-   local lExito := .f.
-   local oMainErr
-
-   DEFAULT cNifEmisor  := ""
-   DEFAULT cNomEmisor  := ""
-   DEFAULT cNifCliente := ""
-   DEFAULT cNomCliente := ""
-   DEFAULT cRutaCert   := ""
-   DEFAULT cPassCert   := ""
-
-   if aTmp == nil
-      RETURN .f.
-   end if
-
-   try
-      // Crear instancia de VeriFactu
-      oVeriFactu := TVeriFactu():New( aTmp, cNifEmisor, cNomEmisor )
-      
-      // Configurar datos del cliente si existen
-      if !Empty( cNifCliente )
-         oVeriFactu:SetDatosReceptor( cNifCliente, cNomCliente )
-      end if
-      
-      // Configurar certificado digital si se proporciona
-      if !Empty( cRutaCert )
-         oVeriFactu:ConfigurarCertificado( cRutaCert, cPassCert, "P12" )
-         oVeriFactu:lEnviarAEAT := .t. // Activar envío a AEAT
-      end if
-      
-      // Generar VeriFactu completo
-      lExito := oVeriFactu:GenerarVeriFactu()
-      
-      // Log de errores si los hay
-      if !lExito .and. Len( oVeriFactu:aErrores ) > 0
-         // LogWrite( "Errores VeriFactu: " + hb_ValToExp( oVeriFactu:aErrores ) )
-      end if
-
-   catch oMainErr
-      lExito := .f.
-      // LogWrite( "Error GenerarVeriFactu: " + oMainErr:Description )
-   end try
-
-RETURN lExito
-
-//---------------------------------------------------------------------------//
-//
-// Función para configurar certificado digital globalmente
-//
-//---------------------------------------------------------------------------//
-
-FUNCTION ConfigurarCertificadoVeriFactu( cRuta, cPassword, cTipo, cEntorno )
-
-   // Variables globales para certificado (definir en el sistema principal)
-   PUBLIC __cRutaCertVeriFactu := cRuta
-   PUBLIC __cPassCertVeriFactu := cPassword  
-   PUBLIC __cTipoCertVeriFactu := if( Empty( cTipo ), "P12", cTipo )
-   PUBLIC __cEntornoVeriFactu  := if( Empty( cEntorno ), "PRUEBAS", cEntorno )
-
-RETURN .t.
-
-//---------------------------------------------------------------------------//
-//
-// Función simplificada con certificado global
-//
-//---------------------------------------------------------------------------//
-
-FUNCTION GenerarVeriFactuConCert( aTmp, cNifEmisor, cNomEmisor, cNifCliente, cNomCliente )
-
-   local cRutaCert := ""
-   local cPassCert := ""
-   
-   // Usar certificado global si está configurado
-   if Type("__cRutaCertVeriFactu") == "C"
-      cRutaCert := __cRutaCertVeriFactu
-   end if
-   
-   if Type("__cPassCertVeriFactu") == "C"
-      cPassCert := __cPassCertVeriFactu
-   end if
-
-RETURN GenerarVeriFactu( aTmp, cNifEmisor, cNomEmisor, cNifCliente, cNomCliente, cRutaCert, cPassCert )*/
-
-//---------------------------------------------------------------------------//
-
-// Función auxiliar para codificar URL
-STATIC FUNCTION UrlEncode( cTexto )
-   local cResult := ""
-   local i, cChar, nAsc
-   
-   for i := 1 to Len( cTexto )
-      cChar := SubStr( cTexto, i, 1 )
-      nAsc := Asc( cChar )
-      
-      do case
-         case ( nAsc >= 48 .and. nAsc <= 57 ) .or. ;  // 0-9
-              ( nAsc >= 65 .and. nAsc <= 90 ) .or. ;  // A-Z
-              ( nAsc >= 97 .and. nAsc <= 122 ) .or. ; // a-z
-              cChar $ "-_.~"
-            cResult += cChar
-         otherwise
-            cResult += "%" + Right( "0" + hb_NumToHex( nAsc ), 2 )
-      endcase
-   next
-
-RETURN cResult
-
-//---------------------------------------------------------------------------//
-//
-// Constantes para compatibilidad
-//
-//---------------------------------------------------------------------------//
-
-#define _CSERIE              1
-#define _NNUMFAC             2  
-#define _CSUFFAC             3
-#define _DFECFAC             6
-
-//---------------------------------------------------------------------------//
+            If oRegFacAlRow:Fail()
+
+                ::oTVF_Verifactu:__oReturn:Success := .F.
+                ::oTVF_Verifactu:__oReturn:Log := 'Error al cargar el registro de alta : ' + oRegFacAlRow:DOCUMENTO:Alltrim() + ' ' + oRegFacAlRow:SERIE:Str() + '-' + oRegFacAlRow:NUMERO:Str() + CRLF + oRegFacAlRow:LogToString()
+
+            Endif
+
+            oRegFacAlRow:IDVERISEND := oVeriSend:ID
+            oRegFacAlRow:SUBSANADO := .F.
+            oRegFacAlRow:Save()
+
+            If oRegFacAlRow:Fail()
+        
+                ::oTVF_Verifactu:__oReturn:Success := .F.
+                ::oTVF_Verifactu:__oReturn:Log := 'Error asignando envio verifactu en registro de alta : ' + oRegFacAlRow:SERIE:Str() + '-' + oRegFacAlRow:NUMERO:Str() + CRLF + oRegFacAlRow:LogToString()
+        
+            Endif
+
+        Endif
+
+    next
+    
+Return ( Self )
+
+
+/* METHOD: SendXmlFile(  )
+    Envía el fichero Xml a Verifactu
+
+Devuelve:
+    Objeto
+*/
+METHOD SendXmlFile(  ) CLASS TVeriFactu
+
+    WITH OBJECT TVerifactuSendXmlFile():New()
+
+        :cXmlFile := ::cXmlFile
+        ::oTVF_Verifactu:__oReturn:LogStatus( :Send(  ) )
+
+    END
+
+Return ( Self )
+
+
+/* METHOD: SetFacturaSinIdentifDestinatarioArt61d( oCliente )
+    Asigna si la factura tiene CIF o no
+
+    Parámetros:
+        oCliente: Objeto con los datos del cliente
+
+Devuelve:
+Objeto
+    
+*/
+METHOD SetFacturaSinIdentifDestinatarioArt61d( oCliente ) CLASS TVeriFactu
+
+    If ::oDocumento:CLIVARIOS 
+
+        If ::oDocumento:CIF:Empty()
+
+            ::oTVF_RegistroFacturacionAltaType:FacturaSinIdentifDestinatarioArt61d:Set( 'S' ) 
+
+        Else
+
+            ::oTVF_RegistroFacturacionAltaType:FacturaSinIdentifDestinatarioArt61d:Set( 'N' ) 
+
+        Endif
+
+    Else
+
+        If oCliente:CIF:Empty()
+
+            ::oTVF_RegistroFacturacionAltaType:FacturaSinIdentifDestinatarioArt61d:Set( 'S' ) 
+                    
+        Else
+
+            ::oTVF_RegistroFacturacionAltaType:FacturaSinIdentifDestinatarioArt61d:Set( 'N' ) 
+
+        Endif
+
+    Endif
+
+Return ( Self )
+
+/* METHOD: SetTipoFactura( oCliente )
+    Asigna el tipo de factura según el tipo de documento
+
+    Parámetros:
+        oCliente: Objeto con los datos del cliente
+    
+Devuelve:
+    Objeto
+*/
+METHOD SetTipoFactura( oCliente ) CLASS TVeriFactu
+
+    If ::oQueDoc:Tiquet()
+
+        If ::oDocumento:EsRectificativa() 
+
+            ::oTVF_RegistroFacturacionAltaType:TipoFactura:Set( ::oDocumento:RECTICOD )  // Factura Rectificativa ( este ha de venir siempre como R5 )
+
+        Else
+
+            If oCliente:CIF:Empty()
+
+                ::oTVF_RegistroFacturacionAltaType:TipoFactura:Set( 'F2' )  // Factura Simplificada
+
+            Else
+
+                ::oTVF_RegistroFacturacionAltaType:TipoFactura:Set( 'F1' )  // Factura Simplificada
+                ::oTVF_RegistroFacturacionAltaType:FacturaSimplificadaArt7273:Set( 'S' ) // Se informa de cliente
+
+            Endif
+
+
+        Endif
+
+    Endif
+
+    If ::oQueDoc:FacCli()
+
+        If ::oDocumento:EsRectificativa() 
+
+            ::oTVF_RegistroFacturacionAltaType:TipoFactura:Set( ::oDocumento:RECTICOD )  // Factura Rectificativa
+
+        ElseIf ::oDocumento:DETIQTOT
+
+            ::oTVF_RegistroFacturacionAltaType:TipoFactura:Set( 'F3' )  // Factura Recapitulativa proveniente de un Tiquet
+
+        Else
+
+            ::oTVF_RegistroFacturacionAltaType:TipoFactura:Set( 'F1' )  // Factura cliente
+
+        Endif
+
+    Endif
+
+Return ( Self )
+
+/* METHOD: SetDescripcionOperacion( oRegFacAl )
+    Asigna en la descripcionoperacion el contenido de las primeras líneas del documento
+
+    Parámetros:
+        oRegFacAl: Objeto con los datos del registro de alta que se van a enviar en el fichero
+
+Devuelve:
+    Objeto
+*/
+METHOD SetDescripcionOperacion( oRegFacAl ) CLASS TVeriFactu
+
+    Local aLineas as Array := Array( 0 )
+    Local oLinea as Object := Nil
+    Local cDescripcionOperacion as String := ''
+
+    aLineas := oRegFacAl:GetModelLines("NOMBRE")
+
+    If aLineas == Nil .Or.;
+        aLineas:Len() == 0
+
+       cDescripcionOperacion := ::oQueDoc:NombreHumano() 
+
+    Endif
+
+    for each oLinea in aLineas
+
+        if .Not. oLinea:NOMBRE:Empty() .And.;
+           .Not. oLinea:NOIMPRIMIR .And.; 
+           cDescripcionOperacion:Len() < 500
+
+            // Sanitize control chars before converting to UTF-8 to avoid stray codes in XML
+            cDescripcionOperacion += hb_StrToUTF8( SanitizeXmlText( oLinea:NOMBRE:Alltrim() ) ) + hb_Eol()
+
+        Endif
+            
+        
+    next
+
+    ::oTVF_RegistroFacturacionAltaType:DescripcionOperacion:Set(cDescripcionOperacion:Substr(1, 499) ) // Le quito 1 por si acaso
+
+Return ( Self )
+
+/* METHOD: SetMacroDato( )
+    Asigna el macrodato según documento e importe
+    
+Devuelve:
+Objeto
+    
+*/
+METHOD SetMacroDato( ) CLASS TVerifactu
+
+    ::oTVF_RegistroFacturacionAltaType:MacroDato:Set( 'N' )   // Tiquet o factura normal es N por defecto
+
+    If ::oQueDoc:FacCli() .And.;
+       ::oDocumento:VERIMACRO .And.;
+       ::oDocumento:TOTAL >= VALOR_MACRODATO
+
+        ::oTVF_RegistroFacturacionAltaType:MacroDato:Set( 'S' )
+
+    Endif
+
+Return ( Self )
+
+
+/* METHOD: CargaCliente( )
+    Carga los datos al modelo del cliente según sea varios o cliente  
+
+Devuelve:
+    Objeto
+*/
+METHOD CargaCliente( ) CLASS TVeriFactu 
+
+    Local oCliente as Object := Nil
+
+    If ::oDocumento:CLIVARIOS 
+
+        WITH OBJECT oCliente := mCliente():New(  )
+
+            :NOMBRE  := ::oDocumento:NOMBRE
+            :PAIS    := ::oDocumento:PAIS
+            :TIPOCIF := ::oDocumento:TIPOCIF
+            :CIF     := ::oDocumento:CIF
+            :__oReturn:Success := .T.
+
+        END
+
+    Elseif ::oDocumento:CODCLI != 0
+
+        oCliente := mCliente():New( ::oDocumento:CODCLI )
+
+    ElseIf ::oQueDoc:Tiquet()
+
+        WITH OBJECT oCliente := mCliente():New(  )
+
+            :NOMBRE  := 'VARIOS'
+            :PAIS    := cPaisDef
+            :TIPOCIF := aTiposCIF[1]
+            :CIF     := ''
+            :__oReturn:Success := .T.
+
+        END
+
+    Else  // En teoría esto no ha de pasar nunca.
+
+        ::oTVF_Verifactu:__oReturn:Success := .F.
+        ::oTVF_verifactu:__oReturn:Log := 'El documento ' + ::oQueDoc:NombreHumano() + ' ' + oDocumento:SERIE:Str() + '-' + oDocumento:NUMERO:Str() + ' no tiene cliente asignado'
+        oCliente := mCliente():New()
+
+    Endif
+    
+    If oCliente:Fail
+
+        ::oTVF_Verifactu:__oReturn:Success := .F.
+        ::oTVF_Verifactu:__oReturn:Log := 'Error al cargar el cliente ' + ::oDocumento:CODCLI:Str()
+
+    Endif
+
+    If oCliente:PAIS:Empty()
+
+        oCliente:PAIS := cPaisDef
+
+    Endif
+
+Return ( oCliente )
+
+/* METHOD: SetBaseImponibleACoste( oDetalleDesglose )
+    Se aplica solo cuando El campo BaseImponibleACoste solo puede estar cumplimentado si la ClaveRegimen es = “06” o Impuesto = “02” (IPSI) o Impuesto = “05” (Otros). 
+    https://www.agenciatributaria.es/static_files/AEAT_Desarrolladores/EEDD/IVA/VERI-FACTU/Validaciones_Errores_Veri-Factu.pdf sección 15.2
+
+    Parámetros:
+        oDetalleDesglose: Objeto con los datos del detalle de desglose de la factura
+
+Devuelve:
+Objeto
+    
+*/
+METHOD SetBaseImponibleACoste( oDetalleDesglose ) CLASS  TVerifactu
+
+    If oDetalleDesglose:ClaveRegimen:Get()=='06' .Or.;
+       oDetalleDesglose:Impuesto:Get() == '02' .Or.;
+       oDetalleDesglose:Impuesto:Get() == '05'
+
+        oDetalleDesglose:BaseImponibleACoste:Set( ::oDocumento:COSTE )
+
+    Endif
+
+Return ( Self )
+
+/* METHOD: SetFechaHoraHusoGenRegistro( tAlta, oTVF_RegistroFacturacionType )
+    
+    Parámetros:
+        tAlta: Timestamp de alta del registro
+
+Devuelve:
+Objeto
+    
+*/
+METHOD SetFechaHoraHusoGenRegistro( tAlta, oTVF_RegistroFacturacionType ) CLASS TVeriFactu
+
+    Local dDate as Date := 0d00000000
+    Local cTime as String := ''
+
+    dDate := HB_tTOd( tAlta, ,@cTime)
+
+    oTVF_RegistroFacturacionType:FechaHoraHusoGenRegistro:Set( TimeStampUTC(dDate, cTime) )  
+
+Return ( Self )
+
+
+/* METHOD: SetCalificacionOperacion( oDetalleDesglose )
+    Asigna la calificación de la operación 
+
+    Parámetros:
+        oDetalleDesglose: Objeto con los datos del detalle de desglose de la factura
+
+Devuelve:
+Objeto
+    
+*/
+METHOD SetCalificacionOperacion( oDetalleDesglose )  
+
+    switch ::oDocumento:EXENTAV
+
+        case S1_SUJETA_NOEXENTA_SIN_INV_SUJETO_PASIVO
+
+            oDetalleDesglose:CalificacionOperacion:Set( 'S1' )
+            
+        exit
+
+        case S2_SUJETA_NOEXENTA_CON_INV_SUJETO_PASIVO
+
+            oDetalleDesglose:CalificacionOperacion:Set( 'S2' )
+            
+        exit
+
+        case N1_NO_SUJETA_ART_7_14_OTROS
+
+            oDetalleDesglose:CalificacionOperacion:Set( 'N1' )
+            
+        exit
+
+        case N2_NO_SUJETA_REGLAS_LOCALIZACION
+
+            oDetalleDesglose:CalificacionOperacion:Set( 'N2' )
+            
+        exit
+
+        otherwise
+
+            oDetalleDesglose:CalificacionOperacion:Set( 'S1' )
+
+        exit
+
+    endswitch
+
+Return ( Self )
+
+/* METHOD: SetOperacionExenta( oDetalleDesglose )
+    Indica el motivo de la operación exenta
+    
+    Parámetros:
+        oDetalleDesglose: Objeto con los datos del detalle de desglose de la factura
+        
+Devuelve:
+    Lógico
+*/
+METHOD SetOperacionExenta( oDetalleDesglose ) CLASS TVerifactu
+
+    Local lEsExenta as Logical := .F.
+
+    If ::oDocumento:EXENCIONV:NotEmpty()
+
+        oDetalleDesglose:OperacionExenta:Set( ::oDocumento:EXENCIONV )
+        lEsExenta := .T.
+
+    Endif
+
+Return ( lEsExenta )
+
+/* METHOD: SetNumeroInstalacion( oTVF_RegistroFacturacionType )
+    Aplica el número de instalación del sistema informático
+
+    Parámetros:
+        oTVF_RegistroFacturacionType: Objeto con los datos del registro de facturación de alta o anulación
+    
+Devuelve:
+Objeto
+*/
+METHOD SetNumeroInstalacion( oTVF_RegistroFacturacionType ) CLASS TVeriFactu
+
+    oTVF_RegistroFacturacionType:SistemaInformatico:NumeroInstalacion:Set( TVerifactuNumeroInstalacion():Get() ) 
+
+Return ( Self )
+
+/* METHOD: SetSubsanacion( oRegFacAl )
+    Aplica si el registro de alta es de subsanación o no
+    
+    Parámetros:
+        oRegFacAl: Objeto con los datos del registro de alta que se van a enviar en el fichero
+
+Devuelve:
+    Objeto
+*/
+METHOD SetSubsanacion( oRegFacAl ) CLASS TVerifactu
+
+    If oRegFacAl:SUBSANADO
+
+        ::oTVF_RegistroFacturacionAltaType:Subsanacion:Set('S')
+        
+    Else
+        
+        ::oTVF_RegistroFacturacionAltaType:Subsanacion:Set('N')
+
+    Endif
+
+Return ( Self )
+
+/* METHOD: SetRechazoPRevio( oRegFacAl )
+    Aplica si el registro subsanado es de un rechazo previo o no
+    
+    Parámetros:
+        oRegFacAl: Objeto con los datos del registro de alta que se van a enviar en el fichero
+    
+Devuelve:
+    Objeto
+*/
+METHOD SetRechazoPRevio( oRegFacAl ) CLASS TVeriFactu
+
+    If oRegFacAl:SUBSANADO .And.;
+       oRegFacAl:VESTADO == VALOR_INDIVIDUAL_INCORRECTO
+
+       ::oTVF_RegistroFacturacionAltaType:RechazoPrevio:Set('X')
+
+    Else
+
+       ::oTVF_RegistroFacturacionAltaType:RechazoPrevio:Set('N')
+
+    Endif
+
+Return ( Self )
+
+/* METHOD: SetFacturasRectificadas( oRegFacAl )
+    Aplica la factura rectificada
+    Parámetros:
+        oRegFacAl: Objeto con los datos del registro de alta que se van a enviar en el fichero
+    
+Devuelve:
+    Objeto
+*/
+METHOD SetFacturasRectificadas( oRegFacAl ) CLASS TVeriFactu
+
+    Local oTVF_IDFacturaARType as Object := Nil
+    Local oDocumentoRectificado as Object := Nil
+
+    oDocumentoRectificado := &(::oQueDoc:ModeloCabecera())():New( {'SERIE'=>::oDocumento:RECTISER,'NUMERO'=>::oDocumento:RECTINUM} ):hCliente('CIF')
+
+    If oDocumentoRectificado == Nil .Or.;
+        oDocumentoRectificado:Fail()
+
+        ::oTVF_Verifactu:__oReturn:Success := .F.
+        ::oTVF_Verifactu:__oReturn:Log('Error al cargar el documento rectificativo por diferencias' + ::oQueDoc:NombreHumano() + ' ' + ::oDocumento:RECTISER:Str() + '-' + ::oDocumento:RECTINUM:Str() + ::oTVF_Verifactu:__oReturn:LogToString())
+
+        Return ( Self )
+
+    Endif
+
+    WITH OBJECT oTVF_IDFacturaARType := TVF_IDFacturaARType():New( ::oTVF_Verifactu, , 'IDFacturaRectificada', Self )
+
+        :IDEmisorFactura:Set( cCifEmp )
+        :NumSerieFactura:Set( TVerifactuDocumento():New( ::oDocumento:RECTISER, ::oDocumento:RECTINUM, ::oQueDoc ):Str() )
+        :FechaExpedicionFactura:Set( oDocumentoRectificado:FECHA )
+
+    END
+
+    ::oTVF_RegistroFacturacionAltaType:FacturasRectificadas:Set( oTVF_IDFacturaARType )
+
+    If ::oTVF_RegistroFacturacionAltaType:TipoRectificativa:Get() == RECTIFICATIVA_SUSTITUCION
+
+        ::oTVF_RegistroFacturacionAltaType:ImporteRectificacion:BaseRectificada:Set( oDocumentoRectificado:Bases() )
+        ::oTVF_RegistroFacturacionAltaType:ImporteRectificacion:CuotaRectificada:Set( oDocumentoRectificado:IVAImps() )
+        ::oTVF_RegistroFacturacionAltaType:ImporteRectificacion:CuotaRecargoRectificado:Set( oDocumentoRectificado:RECImps() )
+
+    Endif
+
+Return ( Self )
+
+/* METHOD: SetEncadenamiento( oRegFacAlAnterior, oTVF_RegistroFacturacionType )
+    Asigna el encadenamiento de la factura según el registro anterior
+    
+    Parámetros:
+        oRegFacAlAnterior: Objeto con los datos del registro de alta anterior para el encadenamiento
+        oTVF_RegistroFacturacionType: Objeto con los datos del registro de facturación de alta o anulación
+
+Devuelve:
+    Objeto
+*/
+METHOD SetEncadenamiento( oRegFacAlAnterior, oTVF_RegistroFacturacionType ) CLASS TVeriFactu
+
+    If oRegFacAlAnterior:Len() == 0  
+
+        oTVF_RegistroFacturacionType:Encadenamiento:PrimerRegistro:Set( 'S' )  
+
+    Else
+
+        oTVF_RegistroFacturacionType:Encadenamiento:RegistroAnterior:IDEmisorFactura:Set( cCifEmp )
+        oTVF_RegistroFacturacionType:Encadenamiento:RegistroAnterior:NumSerieFactura:Set( TVerifactuDocumento():New( oRegFacAlAnterior:SERIE, oRegFacAlAnterior:NUMERO, ::oQueDoc ):Str() )
+        oTVF_RegistroFacturacionType:Encadenamiento:RegistroAnterior:FechaExpedicionFactura:Set( oRegFacAlAnterior:FECHA )
+        oTVF_RegistroFacturacionType:Encadenamiento:RegistroAnterior:Huella:Set( oRegFacAlAnterior:HUELLA )
+
+    Endif
+
+Return ( Self )
+
+/* METHOD: SetSistemaInformatico( oTVF_RegistroFacturacionType )
+    
+    Asigna los datos del sistema informático de verifactu
+    
+    Parámetros:
+        oTVF_RegistroFacturacionType: Objeto con los datos del registro de facturación de alta o anulación
+
+Devuelve:
+Objeto
+*/
+METHOD SetSistemaInformatico( oTVF_RegistroFacturacionType ) CLASS TVeriFactu
+
+    WITH OBJECT oTVF_RegistroFacturacionType:SistemaInformatico
+        :NombreRazon:Set( 'Visionwin Software, S.L.' )
+        :NIF:Set('B12428355')
+        :NombreSistemaInformatico:Set( 'Visionwin Facturacion')
+        :IdSistemaInformatico:Set( 'VG' )
+        :Version:Set( VersionPrograma())
+        ::SetNumeroInstalacion( oTVF_RegistroFacturacionType )
+        
+        :TipoUsoPosibleSoloVerifactu:Set( 'S' )
+        :TipoUsoPosibleMultiOT:Set( 'S' )
+        ::SetIndicadorMultiplesOT( oTVF_RegistroFacturacionType )
+    END
+
+Return ( Self )
+
+/* METHOD: SetIndicadorMultiplesOT( oTVF_RegistroFacturacionType )
+    Asigna el indicador de múltiples OT según la configuración del sistema informático
+
+    Parámetros:
+        oTVF_RegistroFacturacionType: Objeto con los datos del registro de facturación de alta o anulación
+
+Devuelve:
+    Objeto
+*/
+METHOD SetIndicadorMultiplesOT( oTVF_RegistroFacturacionType ) CLASS TVerifactu
+
+    If oApp:oData:oVerifactu:MultiplesOT
+
+        oTVF_RegistroFacturacionType:SistemaInformatico:IndicadorMultiplesOT:Set( 'S' )
+
+    Else
+
+        oTVF_RegistroFacturacionType:SistemaInformatico:IndicadorMultiplesOT:Set( 'N' )
+
+    Endif
+
+Return ( Self )
+
+
+/* METHOD: RegFacAlSaveHuella( oRegFacAl, cHuella )
+   Guarda la huella del registro de alta
+
+   Parámetros:
+       oRegFacAl: Objeto con los datos del registro de alta que se van a enviar en el fichero
+       cHuella: Huella a guardar
+
+Devuelve:
+    Objeto
+*/
+METHOD RegFacAlSaveHuella( oRegFacAl, cHuella ) CLASS TVeriFactu
+
+    Local oRegFacAlUpdate as Object := Nil
+
+    oRegFacAlUpdate := mRegFacAl():New():Find( oRegFacAl:ID, 'ID' )
+
+    If oRegFacAlUpdate:Fail()
+
+        ::oTVF_Verifactu:__oReturn:Success := .F.
+        ::oTVF_Verifactu:__oReturn:Log := 'Error al cargar el registro de alta ID : ' + oRegFacAl:ID:Str() + CRLF + ' ' + oRegFacAl:DOCUMENTO + ' ' + oRegFacAl:SERIE:Str() + '-' + oRegFacAl:NUMERO:Str() + CRLF + oRegFacAl:LogToString()
+
+        Return ( Self )
+
+    Endif
+    
+    oRegFacAlUpdate:HUELLA := cHuella
+    oRegFacAlUpdate:Save() 
+
+    // -------------------------------------------------------------------------------------------------------------------------
+    // Este objeto forma parte de la colección de oRegFacAl que se adquiere en el When():Get() del principio del método Enviar
+    // Se actualiza aquí porque posteriormente se clona para el registro anterior y hace falta que tenga la huella, que aún no 
+    // la tiene porque al pillar la colección no se han asignado aún ya que no se han enviado los registros pendientes
+    // Al ser objetos, cuando se actualiza aquí, también se actualiza el correspondiente de la colección
+    oRegFacAl:HUELLA := cHuella
+    // -------------------------------------------------------------------------------------------------------------------------
+
+    If oRegFacAlUpdate:Fail()
+
+        ::oTVF_Verifactu:__oReturn:Success := .F.
+        ::oTVF_Verifactu:__oReturn:Log := 'Error al guardar la huella en el registro de alta: ' + nID:Str() + ' ' + oRegFacAlUpdate:DOCUMENTO + ' ' + oRegFacAlUpdate:SERIE:Str() + '-' + oRegFacAlUpdate:NUMERO:Str() + CRLF + CRLF + oRegFacAl:LogToString()
+
+        Return ( Self )
+
+    Endif
+
+Return ( Self )
+
+/* STATIC FUNCTION: SanitizeXmlText( cText )
+    Replaces non-printable control characters (except TAB, LF, CR) with spaces to keep XML valid
+    // creada íntegramente por IA
+    // Si hace falta, podría probarse con el stringbuilder de Chilkat pero con esta función se asegura más la cadena devuelta ya que sabemos exactamente lo que va a devolver
+*/
+Static Function SanitizeXmlText( cText )
+
+    LOCAL cOut := ""
+    LOCAL n := 0
+    LOCAL c := ""
+    LOCAL nAsc := 0
+
+    FOR n := 1 TO Len( cText )
+        c := SubStr( cText, n, 1 )
+        nAsc := Asc( c )
+        IF nAsc < 32 .AND. nAsc != 9 .AND. nAsc != 10 .AND. nAsc != 13
+            cOut += " "
+        ELSE
+            cOut += c
+        ENDIF
+    NEXT
+
+RETURN cOut
