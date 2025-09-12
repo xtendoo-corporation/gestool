@@ -2452,7 +2452,7 @@ STATIC FUNCTION EdtRec( aTmp, aGet, dbf, oBrw, hHash, bValid, nMode )
       aTmp[ _CMANOBR    ]  := padr( getConfigTraslation( "Gastos" ), 250 )
       aTmp[ _NIVAMAN    ]  := nIva( dbfIva, cDefIva() )
       aTmp[ _LRECC      ]  := lRECCEmpresa()
-      aTmp[ _TFECFAC    ]  := getSysTime()
+      //aTmp[ _TFECFAC    ]  := getSysTime()
       aTmp[ _LSNDDOC    ]  := .t.
       aTmp[ _CGUID ]  := win_uuidcreatestring()
 
@@ -2468,8 +2468,8 @@ STATIC FUNCTION EdtRec( aTmp, aGet, dbf, oBrw, hHash, bValid, nMode )
          Return .f.
       end if
 
-      aTmp[ _DFECFAC    ]  := GetSysDate()
-      aTmp[ _TFECFAC    ]  := getSysTime()
+      //aTmp[ _DFECFAC    ]  := GetSysDate()
+      //aTmp[ _TFECFAC    ]  := getSysTime()
       aTmp[ _CTURFAC    ]  := cCurSesion()
       aTmp[ _CNUMALB    ]  := ""
       aTmp[ _CNUMPED    ]  := ""
@@ -3679,9 +3679,10 @@ STATIC FUNCTION EdtRec( aTmp, aGet, dbf, oBrw, hHash, bValid, nMode )
       REDEFINE GET aGet[ _DFECFAC ] VAR aTmp[ _DFECFAC ] ;
          ID       130 ;
          SPINNER ;
-         ON HELP  aGet[ _DFECFAC ]:cText( Calendario( aTmp[ _DFECFAC ] ) ) ;
          WHEN     ( lWhen ) ;
          OF       fldGeneral
+
+         //ON HELP  aGet[ _DFECFAC ]:cText( Calendario( aTmp[ _DFECFAC ] ) ) ;
 
       REDEFINE GET aGet[ _TFECFAC ] VAR aTmp[ _TFECFAC ] ;
          ID       131 ;
@@ -10336,7 +10337,7 @@ Static Function VariableReport( oFr )
    oFr:AddVariable(     "Facturas",             "Total descuento",                     "GetHbVar('nTotDto')" )
    oFr:AddVariable(     "Facturas",             "Total descuento pronto pago",         "GetHbVar('nTotDpp')" )
    oFr:AddVariable(     "Facturas",             "Total descuentos",                    "GetHbVar('nTotalDto')" )
-   oFr:AddVariable(     "Facturas",             "Total descuento lineal",              "GetHbVar('nTotalDtoLineal')" )
+   oFr:AddVariable(     "Facturas",             "Total descuento lineal",              "GetHbVar('nTotalDtoLineal')" )     
    oFr:AddVariable(     "Facturas",             "Total neto",                          "GetHbVar('nTotNet')" )
    oFr:AddVariable(     "Facturas",             "Total primer descuento definible",    "GetHbVar('nTotUno')" )
    oFr:AddVariable(     "Facturas",             "Total segundo descuento definible",   "GetHbVar('nTotDos')" )
@@ -14729,13 +14730,16 @@ STATIC FUNCTION EndTrans( aTmp, aGet, oBrw, oBrwDet, oBrwPgo, aNumAlb, nMode, oD
 
       // Generar los pagos de las facturas-------------------------------------------
 
-      oMsgText( "Generamos los pagos" )
-      
-      if !empty( oMeter )
-         oMeter:Set( 8 )
-      end if   
+      /*if ( D():FacturasClientes( nView ) )->lValida
+         oMsgText( "Generamos los pagos" )
+         
+         if !empty( oMeter )
+            oMeter:Set( 8 )
+         end if   
 
-      genPgoFacCli( cSerFac + str( nNumFac, 9 ) + cSufFac, D():FacturasClientes( nView ), D():FacturasClientesLineas( nView ), D():FacturasClientesCobros( nView ), , D():Clientes( nView ), D():FormasPago( nView ), dbfDiv, dbfIva, nMode )
+         genPgoFacCli( cSerFac + str( nNumFac, 9 ) + cSufFac, D():FacturasClientes( nView ), D():FacturasClientesLineas( nView ), D():FacturasClientesCobros( nView ), , D():Clientes( nView ), D():FormasPago( nView ), dbfDiv, dbfIva, nMode )
+      
+      end if*/
 
       /*
       Comprobamos el estado de la factura-----------------------------------------
@@ -20155,7 +20159,7 @@ function aItmFacCli()
    aAdd( aItmFacCli, {"cSufFac"     ,"C",  2, 0, "Sufijo de la factura" ,                                      "Sufijo",                      "", "( cDbf )", {|| RetSufEmp() } } )
    aAdd( aItmFacCli, {"cGuid"       ,"C", 40, 0, "Guid de la factura" ,                                        "GUID",                        "", "( cDbf )", {|| win_uuidcreatestring() } } )
    aAdd( aItmFacCli, {"cTurFac"     ,"C",  6, 0, "Sesión de la factura" ,                                      "Turno",                       "", "( cDbf )", {|| cCurSesion( nil, .f.) } } )
-   aAdd( aItmFacCli, {"dFecFac"     ,"D",  8, 0, "Fecha de la factura" ,                                       "Fecha",                       "", "( cDbf )", {|| GetSysDate() } } )
+   aAdd( aItmFacCli, {"dFecFac"     ,"D",  8, 0, "Fecha de la factura" ,                                       "Fecha",                       "", "( cDbf )", nil  } )
    aAdd( aItmFacCli, {"cCodCli"     ,"C", 12, 0, "Código del cliente" ,                                        "Cliente",                     "", "( cDbf )", nil } )
    aAdd( aItmFacCli, {"cCodAlm"     ,"C", 16, 0, "Código de almacén" ,                                         "Almacen",                     "", "( cDbf )", {|| Application():codigoAlmacen() } } )
    aAdd( aItmFacCli, {"cCodCaj"     ,"C",  3, 0, "Código de caja" ,                                            "Caja",                        "", "( cDbf )", {|| Application():CodigoCaja() } } )
@@ -20495,11 +20499,15 @@ FUNCTION nTotFacCli( cFactura, cFacCliT, cFacCliL, cIva, cDiv, cFacCliP, aTmp, c
       nKgsTrn        := ( cFacCliT )->nKgsTrn
       lPntVer        := ( cFacCliT )->lOperPV
       nRegIva        := ( cFacCliT )->nRegIva
-      bCondition     := {|| ( cFacCliL )->cSerie + str( ( cFacCliL )->nNumFac ) + ( cFacCliL )->cSufFac == cFactura .and. !( cFacCliL )->( eof() ) }
-      ( cFacCliL )->( dbSeek( cFactura ) )
 
-      //bCondition     := {|| ( cFacCliL )->parUuid  == ( cFacCliT )->cGuid .and. !( cFacCliL )->( eof() ) }
-      //( cFacCliL )->( dbSeek( ( cFacCliT )->cGuid ) )
+      if ( cFacCliT )->nNumFac != 0 
+         bCondition     := {|| ( cFacCliL )->cSerie + str( ( cFacCliL )->nNumFac ) + ( cFacCliL )->cSufFac == cFactura .and. !( cFacCliL )->( eof() ) }
+         ( cFacCliL )->( dbSeek( cFactura ) )
+      else
+         bCondition     := {|| ( cFacCliL )->parUuid  == ( cFacCliT )->cGuid .and. !( cFacCliL )->( eof() ) }
+         ( cFacCliL )->( dbSeek( ( cFacCliT )->cGuid ) )
+      end if
+
    end if
 
    /*
@@ -23841,6 +23849,8 @@ Static Function PublicarFactura( aTmp )
       if aTmp[ _NNUMFAC ] == 0
          nNumFac                       := nNewDoc( aTmp[ _CSERIE ], D():FacturasClientes( nView ), "NFACCLI", , D():Contadores( nView ) )
          aTmp[ _NNUMFAC ]     := nNumFac
+         aTmp[ _DFECFAC ]        := GetSysDate()
+         aTmp[ _TFECFAC ]        := Time()
       end if 
 
       return .t.
@@ -23859,6 +23869,8 @@ Static Function PublicarFactura( aTmp )
 
       if dbLock( D():FacturasClientes( nView ) )
          ( D():FacturasClientes( nView ) )->nNumFac := nNumFac
+         ( D():FacturasClientes( nView ) )->dFecFac := GetSysDate()
+         ( D():FacturasClientes( nView ) )->tFecFac := Time()
 	    	( D():FacturasClientes( nView ) )->lValida := .t.
         	( D():FacturasClientes( nView ) )->( dbUnLock() )
     	end if
@@ -23875,6 +23887,7 @@ Static Function PublicarFactura( aTmp )
 
             if dbLock( D():FacturasClientesLineas( nView ) )
                ( D():FacturasClientesLineas( nView ) )->nNumFac := nNumFac
+                ( D():FacturasClientesLineas( nView ) )->dFecFac := GetSysDate()
                ( D():FacturasClientesLineas( nView ) )->( dbUnLock() )
             end if
 
@@ -24001,6 +24014,13 @@ Static Function PublicarFactura( aTmp )
       
       ( D():FacturasClientesSituaciones( nView ) )->( OrdSetFocus( nOrdAnt ) )
 
+      /*
+      Generamos los recibos de la factura-------------------------------------
+      */
+
+      MsgInfo( "2" )
+      genPgoFacCli( ( D():FacturasClientes( nView ) )->cSerie + Str( ( D():FacturasClientes( nView ) )->nNumFac ) + ( D():FacturasClientes( nView ) )->cSufFac, D():FacturasClientes( nView ), D():FacturasClientesLineas( nView ), D():FacturasClientesCobros( nView ), , D():Clientes( nView ), D():FormasPago( nView ), dbfDiv, dbfIva, APPD_MODE )
+
    end if
 
    /*
@@ -24051,7 +24071,7 @@ Static Function PublicarFactura( aTmp )
    hset( hFactura, "NumeroAnterior",  AllTrim( cNumAnt ) )
    hset( hFactura, "HuellaAnterior", AllTrim( cHuellaAnt ) )
 
-   if !Empty( oVeryfactu )
+ /*  if !Empty( oVeryfactu )
       
       //Pasamos los datos de la factura a oVeryfactu
       oVeryfactu:SetDatos( hFactura )
@@ -24073,7 +24093,7 @@ Static Function PublicarFactura( aTmp )
         	( D():FacturasClientes( nView ) )->( dbUnLock() )
     	end if
 
-   end if   
+   end if */
    
 Return ( .t. )
 

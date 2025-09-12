@@ -146,6 +146,7 @@ METHOD getArticulosToJson( cArea ) CLASS ArticulosModel
                      "Articulos.pVenta1, "                     + ;
                      "Articulos.pVtaIva1, "                    + ;
                      "Articulos.uuid, "                        + ;
+                     "Articulos.LDONATIV, "                 + ;
                      "CodigosBarras.cCodBar, "                 + ;
                      "TipoIva.TpIva "                          + ;
                   "FROM " + ::getTableName() + " Articulos "   + ;

@@ -235,6 +235,7 @@ METHOD buildArticuloJson( cArea )
    hset( hJson, "precio_venta",                 ( cArea )->pVenta1 )
    hset( hJson, "porcentaje_iva",               ( cArea )->tpIva )
    hset( hJson, "precio_impuestos_incluidos",   ( cArea )->pVtaIva1 )
+   hset( hJson, "donativo",   ( cArea )->LDONATIV )
 
    aadd( aCodebar, alltrim( ( cArea )->Codigo ) )
 

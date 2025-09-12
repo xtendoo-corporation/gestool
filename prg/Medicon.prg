@@ -474,6 +474,18 @@ RETURN ( cCurDir + "\" )
 
 //---------------------------------------------------------------------------//
 
+FUNCTION FullXmlDir()
+
+    local cCurDir   := FullCurDir() + "XML"
+
+    if !isDirectory( cCurDir )
+       Makedir( cCurDir )
+    end if
+
+RETURN ( cCurDir + "\" )
+
+//---------------------------------------------------------------------------//
+
 FUNCTION EaseQrFiles()
 
     EraseFilesInDirectory( FullQrDir() )

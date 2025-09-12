@@ -2045,7 +2045,7 @@ FUNCTION dbBlankRec( cAlias )
          case aStruct[ i, DBS_TYPE ] == "L"
             AAdd( aBlank, .F. )
          case aStruct[ i, DBS_TYPE ] == "D"
-            AAdd( aBlank, GetSysDate() )  // CtoD( "" ) )
+            AAdd( aBlank, CtoD( "" ) )  // GetSysDate() )
          case aStruct[ i, DBS_TYPE ] == "@"
             AAdd( aBlank, DateTime() )  
       end case
