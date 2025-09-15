@@ -167,6 +167,7 @@
 #define _HUELLAANT   137
 #define _CRUTJSON 	  138
 #define _CRUTQR 		   139
+#define _CRUTXML 		  140
 
 /*
 Definici-n de la base de datos de lineas de detalle
@@ -4410,6 +4411,11 @@ STATIC FUNCTION EdtRec( aTmp, aGet, dbf, oBrw, hHash, bValid, nMode )
 
    REDEFINE GET aGet[ _CRUTQR ] VAR aTmp[ _CRUTQR ] ;
       ID       130 ;
+      WHEN     (.f.) ;
+      OF       fldVeryfactu
+
+   REDEFINE GET aGet[ _CRUTXML ] VAR aTmp[ _CRUTXML ] ;
+      ID       140 ;
       WHEN     (.f.) ;
       OF       fldVeryfactu
 
@@ -20293,6 +20299,7 @@ function aItmFacCli()
    aAdd( aItmFacCli, { "huellaant"	,"C", 200,   0, "Huella Veryfactu Anterior" ,                    "HuellaVeryfactuAnterior",           	  	  "", "( cDbf )", nil  } )
    aAdd( aItmFacCli, { "cRutJson"  	,"C", 200,   0, "Ruta Json" ,                                              "RutaJSON",           	  	   "", "( cDbf )", nil } )
    aAdd( aItmFacCli, { "cRutQr"  	 ,"C", 200,   0, "Ruta QR" ,                                                "RutaQR",           	  	      "", "( cDbf )", nil } )
+   aAdd( aItmFacCli, { "cRutXml"  	 ,"C", 200,   0, "Ruta Xml" ,                                             "RutaXML",           	  	      "", "( cDbf )", nil } )
 
 RETURN ( aItmFacCli )
 
@@ -24071,7 +24078,7 @@ Static Function PublicarFactura( aTmp )
    hset( hFactura, "NumeroAnterior",  AllTrim( cNumAnt ) )
    hset( hFactura, "HuellaAnterior", AllTrim( cHuellaAnt ) )
 
- /*  if !Empty( oVeryfactu )
+   if !Empty( oVeryfactu )
       
       //Pasamos los datos de la factura a oVeryfactu
       oVeryfactu:SetDatos( hFactura )
@@ -24087,13 +24094,14 @@ Static Function PublicarFactura( aTmp )
       if dbLock( D():FacturasClientes( nView ) )
          ( D():FacturasClientes( nView ) )->cRutJson := oVeryfactu:cRutaJSON
          ( D():FacturasClientes( nView ) )->cRutQr   := oVeryfactu:cRutaQR
+          ( D():FacturasClientes( nView ) )->cRutXml := oVeryfactu:cRutaXml
          ( D():FacturasClientes( nView ) )->huella  := oVeryfactu:cHashActual
          ( D():FacturasClientes( nView ) )->huellaAnt  := cHuellaAnt
 
         	( D():FacturasClientes( nView ) )->( dbUnLock() )
     	end if
 
-   end if */
+   end if
    
 Return ( .t. )
 

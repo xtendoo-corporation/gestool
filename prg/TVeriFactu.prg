@@ -4,6 +4,8 @@
 #include "Font.ch"
 #include "Factu.ch" 
 #include "MesDbf.ch"
+#include "Chilkat.ch"
+
 
 // Constantes de WinHTTP para opciones de seguridad
 #define WINHTTP_OPTION_SECURITY_FLAGS                31
@@ -122,6 +124,7 @@ CLASS TVeriFactu
    METHOD FormatearFecha( dFecha )
    METHOD FormatearImporte( nImporte )
    METHOD LimpiarString( cTexto )
+   METHOD EnviarXmlAEAT()
 
 END CLASS
 
@@ -241,7 +244,7 @@ METHOD ConfigurarCertificado() CLASS TVeriFactu
    end if
    
    // Debug: Mostrar configuración
-   MsgInfo( "Entorno: " + ::cEntorno + Chr(13) + "URL: " + ::cURLAEAT, "Configuración AEAT" )     
+   //MsgInfo( "Entorno: " + ::cEntorno + Chr(13) + "URL: " + ::cURLAEAT, "Configuración AEAT" )     
 
 RETURN .t.
 
@@ -674,7 +677,6 @@ METHOD GenerarVeriFactu() CLASS TVeriFactu
 
          // Generar Xml
          cXML := ::GenerarXml()
-         MsgInfo( cXML, "XML Generado" )
 
          // Generar código QR si está habilitado
          if ::lGenerarQR
@@ -685,9 +687,10 @@ METHOD GenerarVeriFactu() CLASS TVeriFactu
          lExito := ::EscribirArchivos( cJSON, cXML )
 
          // Enviar a AEAT si está configurado
-         /*if lExito .and. ::lEnviarAEAT
-            ::EnviarAEAT() 
-         end if*/
+         if lExito .and. ::lEnviarAEAT
+            //::EnviarAEAT() 
+            ::EnviarXmlAEAT()
+         end if
 
       else
          lExito := .f.
@@ -1066,7 +1069,6 @@ METHOD CrearNombresArchivos() CLASS TVeriFactu
    cBase := "VeriFactu_" + ::cNIFEmisor + "_" + StrTran( ::cNumero, "/", "_" ) + "_" + cFecha + "_" + cHora
 
    ::cNombreArchivoJSON := cBase + ".json"
-   //::cNombreArchivoQR   := cBase + "_QR.txt"
    ::cNombreArchivoQR   := cBase + "_QR.bmp"
    ::cNombreArchivoXML  := cBase + ".xml"
    
@@ -1102,10 +1104,6 @@ METHOD EscribirArchivos( cJSON, cXml ) CLASS TVeriFactu
       lExito := .f.
    end try
 
-   MsgInfo( cXml, "XML a escribir" )
-   LogWrite( "Escribir XML en: " + ::cRutaXML )
-   LogWrite(cXml)
-
    try
       // Escribir archivo Xml
       hArchivo := FCreate( ::cRutaXml )
@@ -1130,52 +1128,22 @@ RETURN lExito
 METHOD EnviarAEAT() CLASS TVeriFactu
 
    local lExito := .f.
-   local cJSON := ""
-   local cRespuesta := ""
-   local cURL := ""
    local oAeatErr
 
-   MsgInfo( "Enviar a AEAT" )
-
    try
-      // Validar certificado
-      if ::ValidarCertificado()
-         // Autenticar con AEAT
-         Msginfo( "Certificado valido" )
-         if ::AutenticarAEAT()
-            Msginfo( "Autentica AEAT" )
-            // Preparar datos para envío
-            cJSON := ::GenerarJSON()
-            if !Empty( cJSON )
-               // URL del endpoint de facturas
-               cURL := ::cURLAEAT + "/facturas"
-               
-               // Enviar factura
-               cRespuesta := ::EnviarHTTPS( cURL, cJSON, "POST" )
-               
-               // Procesar respuesta
-               lExito := ::ProcesarRespuestaAEAT( cRespuesta )
-               
-               if lExito
-                  // Log de éxito
-                  //LogWrite( "VeriFactu enviado correctamente a AEAT: " + ::cNumero )
-               else
-                  // Log de errores
-                  //LogWrite( "Error enviando VeriFactu a AEAT: " + hb_ValToExp( ::aErrores ) )
-               end if
-            else
-               AAdd( ::aErrores, "Error al generar JSON para AEAT" )
-               lExito := .f.
-            end if
+      //if ::ValidarCertificado()
+         lExito := ::EnviarXmlAEAT()
+         if lExito
+            MsgInfo("Documento enviado correctamente a AEAT")
          else
-            AAdd( ::aErrores, "Error en autenticación con AEAT" )
-            lExito := .f.
-         end if
-      else
-         AAdd( ::aErrores, "Certificado digital no válido" )
-         lExito := .f.
-      end if
-      
+            if !Empty(::aErrores)
+               MsgStop("Error al enviar a AEAT: " + ::aErrores[1])
+            endif
+         endif
+      //else
+      //   AAdd( ::aErrores, "Certificado digital no válido" )
+      //endif
+
    catch oAeatErr
       ::lError := .t.
       AAdd( ::aErrores, "Error general en envío AEAT: " + oAeatErr:Description )
@@ -1321,9 +1289,109 @@ RETURN cResult
 //
 //---------------------------------------------------------------------------//
 
-#define _CSERIE              1
-#define _NNUMFAC             2  
-#define _CSUFFAC             3
-#define _DFECFAC             6
+METHOD EnviarXmlAEAT() CLASS TVeriFactu
+
+   local lExito        := .f.
+   local cXml          := ""
+   local cRespuesta    := ""
+   local oXmlErr
+   local oChilkat
+   local oerr  
+
+   MsgInfo( "EnviarXmlAEAT" )
+
+   try 
+      // Generar XML
+      cXml := ::GenerarXml()
+      Msginfo( "XML generado: " + cXml )
+      if !Empty(cXml)
+         /* 
+         // IMPLEMENTACIÓN CON CHILKAT (requiere DLL adicional)
+         // Descomentar si se prefiere usar Chilkat en lugar de WinHttp
+         
+         // Inicializar componente Chilkat para HTTPS
+         BEGIN SEQUENCE WITH {|oErr| Break(oErr) }
+            oChilkat := CreateObject( "Chilkat.Http" )
+            if oChilkat != nil
+               // Configurar certificado cliente
+               oChilkat:ClientCertificateFromPfx( ::cRutaCertificado, ::cPasswordCert )
+               if oChilkat:LastMethodSuccess
+                  // Configurar cabeceras
+                  oChilkat:RequestHeader["Content-Type"] := "application/xml"
+                  oChilkat:RequestHeader["Accept"] := "application/xml"
+
+                  // Enviar petición POST con XML
+                  cRespuesta := oChilkat:PostXml( ::cURLAEAT, cXml )
+                  
+                  if oChilkat:LastMethodSuccess
+                     // Procesar respuesta
+                     lExito := ::ProcesarRespuestaAEAT( cRespuesta )
+                  else
+                     AAdd( ::aErrores, "Error en envío HTTPS: " + oChilkat:LastErrorText )
+                  endif
+               else
+                  AAdd( ::aErrores, "Error al cargar certificado: " + oChilkat:LastErrorText )
+               endif
+            else
+               AAdd( ::aErrores, "Error al crear objeto Chilkat para HTTPS" )
+            endif
+         RECOVER USING oErr
+            AAdd( ::aErrores, "Error con Chilkat: " + oErr:description )
+         END
+         */
+
+         // IMPLEMENTACIÓN CON WINHTTP (incluido en Windows)
+         ?"Iniciando envío con WinHttp..."
+         BEGIN SEQUENCE WITH {|oErr| Break(oErr) }
+            oHttp := CreateObject( "WinHttp.WinHttpRequest.5.1" )
+            if oHttp != nil
+               // Configurar opciones de seguridad SSL
+               oHttp:Option[WINHTTP_OPTION_SECURITY_FLAGS] := ;
+                  SECURITY_FLAG_IGNORE_UNKNOWN_CA + ;
+                  SECURITY_FLAG_IGNORE_CERT_DATE_INVALID + ;
+                  SECURITY_FLAG_IGNORE_CERT_CN_INVALID + ;
+                  SECURITY_FLAG_IGNORE_CERT_WRONG_USAGE
+
+               // Configurar el certificado cliente
+               oHttp:SetClientCertificate( ::cRutaCertificado )
+
+               // Abrir la conexión
+               oHttp:Open( "POST", ::cURLAEAT, .f. )
+               
+               // Configurar cabeceras
+               oHttp:SetRequestHeader( "Content-Type", "application/xml" )
+               oHttp:SetRequestHeader( "Accept", "application/xml" )
+               
+               // Enviar el XML
+               oHttp:Send( cXml )
+               
+               // Obtener respuesta
+               if oHttp:Status == 200
+                  cRespuesta := oHttp:ResponseText
+                  lExito := ::ProcesarRespuestaAEAT( cRespuesta )
+               else
+                  AAdd( ::aErrores, "Error HTTP: " + AllTrim(Str(oHttp:Status)) + " - " + oHttp:StatusText )
+               endif
+            else
+               AAdd( ::aErrores, "Error al crear objeto WinHttp" )
+            endif
+         RECOVER USING oErr
+            AAdd( ::aErrores, "Error con WinHttp: " + oErr:description )
+         END
+         ?"WinHttp creado"
+      else
+         AAdd( ::aErrores, "Error al generar XML para envío a AEAT" )
+      endif
+
+   ?"8"
+
+   catch oXmlErr
+      ::lError := .t.
+      AAdd( ::aErrores, "Error general en envío XML AEAT: " + oXmlErr:Description )
+   end try
+
+   MsgInfo(  "Fin EnviarXmlAEAT" )
+
+RETURN lExito
 
 //---------------------------------------------------------------------------//
