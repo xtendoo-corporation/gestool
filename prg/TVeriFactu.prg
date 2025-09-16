@@ -1300,85 +1300,55 @@ METHOD EnviarXmlAEAT() CLASS TVeriFactu
 
    MsgInfo( "EnviarXmlAEAT" )
 
+   ?"1"
    try 
       // Generar XML
       cXml := ::GenerarXml()
-      Msginfo( "XML generado: " + cXml )
+      ?"2"
+      Msginfo(  "XML generado: " + cXml )
       if !Empty(cXml)
-         /* 
-         // IMPLEMENTACIÓN CON CHILKAT (requiere DLL adicional)
-         // Descomentar si se prefiere usar Chilkat en lugar de WinHttp
-         
          // Inicializar componente Chilkat para HTTPS
+         ?"antes del objeto chilkat"
          BEGIN SEQUENCE WITH {|oErr| Break(oErr) }
             oChilkat := CreateObject( "Chilkat.Http" )
-            if oChilkat != nil
-               // Configurar certificado cliente
-               oChilkat:ClientCertificateFromPfx( ::cRutaCertificado, ::cPasswordCert )
-               if oChilkat:LastMethodSuccess
-                  // Configurar cabeceras
-                  oChilkat:RequestHeader["Content-Type"] := "application/xml"
-                  oChilkat:RequestHeader["Accept"] := "application/xml"
-
-                  // Enviar petición POST con XML
-                  cRespuesta := oChilkat:PostXml( ::cURLAEAT, cXml )
-                  
-                  if oChilkat:LastMethodSuccess
-                     // Procesar respuesta
-                     lExito := ::ProcesarRespuestaAEAT( cRespuesta )
-                  else
-                     AAdd( ::aErrores, "Error en envío HTTPS: " + oChilkat:LastErrorText )
-                  endif
-               else
-                  AAdd( ::aErrores, "Error al cargar certificado: " + oChilkat:LastErrorText )
-               endif
-            else
-               AAdd( ::aErrores, "Error al crear objeto Chilkat para HTTPS" )
-            endif
          RECOVER USING oErr
-            AAdd( ::aErrores, "Error con Chilkat: " + oErr:description )
+            ? "Error al crear objeto Chilkat:"
+            ? "Descripción:", oErr:description
+            ? "SubCódigo:", oErr:subCode
+            ? "OS Error:", oErr:osCode
          END
-         */
-
-         // IMPLEMENTACIÓN CON WINHTTP (incluido en Windows)
-         ?"Iniciando envío con WinHttp..."
-         BEGIN SEQUENCE WITH {|oErr| Break(oErr) }
-            oHttp := CreateObject( "WinHttp.WinHttpRequest.5.1" )
-            if oHttp != nil
-               // Configurar opciones de seguridad SSL
-               oHttp:Option[WINHTTP_OPTION_SECURITY_FLAGS] := ;
-                  SECURITY_FLAG_IGNORE_UNKNOWN_CA + ;
-                  SECURITY_FLAG_IGNORE_CERT_DATE_INVALID + ;
-                  SECURITY_FLAG_IGNORE_CERT_CN_INVALID + ;
-                  SECURITY_FLAG_IGNORE_CERT_WRONG_USAGE
-
-               // Configurar el certificado cliente
-               oHttp:SetClientCertificate( ::cRutaCertificado )
-
-               // Abrir la conexión
-               oHttp:Open( "POST", ::cURLAEAT, .f. )
-               
+         ?oChilkat
+         ?"3"
+         if oChilkat != nil
+            // Configurar certificado cliente
+            oChilkat:ClientCertificateFromPfx( ::cRutaCertificado, ::cPasswordCert )  
+            ?"4"  
+            if oChilkat:LastMethodSuccess
                // Configurar cabeceras
-               oHttp:SetRequestHeader( "Content-Type", "application/xml" )
-               oHttp:SetRequestHeader( "Accept", "application/xml" )
+               ?"5"
+               oChilkat:RequestHeader["Content-Type"] := "application/xml"
+               oChilkat:RequestHeader["Accept"] := "application/xml"
+
+               // Enviar petición POST con XML
+               cRespuesta := oChilkat:PostXml( ::cURLAEAT, cXml )
+
+               ?"6"
+               MsgInfo( "Respuesta AEAT: " + cRespuesta )
                
-               // Enviar el XML
-               oHttp:Send( cXml )
-               
-               // Obtener respuesta
-               if oHttp:Status == 200
-                  cRespuesta := oHttp:ResponseText
+               if oChilkat:LastMethodSuccess
+                  // Procesar respuesta
                   lExito := ::ProcesarRespuestaAEAT( cRespuesta )
                else
-                  AAdd( ::aErrores, "Error HTTP: " + AllTrim(Str(oHttp:Status)) + " - " + oHttp:StatusText )
+                  AAdd( ::aErrores, "Error en envío HTTPS: " + oChilkat:LastErrorText )
                endif
+
+               ?"7"
             else
-               AAdd( ::aErrores, "Error al crear objeto WinHttp" )
+               AAdd( ::aErrores, "Error al cargar certificado: " + oChilkat:LastErrorText )
             endif
-         RECOVER USING oErr
-            AAdd( ::aErrores, "Error con WinHttp: " + oErr:description )
-         END
-         ?"WinHttp creado"
+         else
+            AAdd( ::aErrores, "Error al crear objeto Chilkat para HTTPS" )
+         endif
       else
          AAdd( ::aErrores, "Error al generar XML para envío a AEAT" )
       endif
