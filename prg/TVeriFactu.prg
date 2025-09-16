@@ -1291,12 +1291,22 @@ RETURN cResult
 
 METHOD EnviarXmlAEAT() CLASS TVeriFactu
 
-   local lExito        := .f.
-   local cXml          := ""
-   local cRespuesta    := ""
+   local lExito            := .f.
+   local cXml              := ""
+   local cRespuesta        := ""
+   local lCertificadoExiste:= .f.
    local oXmlErr
    local oChilkat
-   local oerr  
+   local oerr
+   local oCert
+   local cPrivateKey       := ""
+   local cCertPem         := ""
+   local hFile            := 0
+   local nFileSize        := 0
+   local nRead            := 0
+   local cCertData        := ""
+   local lnSuccess
+   local cError
 
    MsgInfo( "EnviarXmlAEAT" )
 
@@ -1310,45 +1320,169 @@ METHOD EnviarXmlAEAT() CLASS TVeriFactu
          // Inicializar componente Chilkat para HTTPS
          ?"antes del objeto chilkat"
          BEGIN SEQUENCE WITH {|oErr| Break(oErr) }
-            oChilkat := CreateObject( "Chilkat.Http" )
+            // Intentar crear el objeto con el nombre completo de la clase
+         oChilkat := CreateObject( "Chilkat_9_5_0.Http" )
          RECOVER USING oErr
             ? "Error al crear objeto Chilkat:"
             ? "Descripción:", oErr:description
             ? "SubCódigo:", oErr:subCode
             ? "OS Error:", oErr:osCode
          END
-         ?oChilkat
-         ?"3"
+         
+         ? "Objeto Chilkat creado:", oChilkat
+         
          if oChilkat != nil
-            // Configurar certificado cliente
-            oChilkat:ClientCertificateFromPfx( ::cRutaCertificado, ::cPasswordCert )  
-            ?"4"  
-            if oChilkat:LastMethodSuccess
-               // Configurar cabeceras
-               ?"5"
-               oChilkat:RequestHeader["Content-Type"] := "application/xml"
-               oChilkat:RequestHeader["Accept"] := "application/xml"
+            ? "Ruta del certificado:", ::cRutaCertificado
+            ? "Verificando si existe el archivo..."
+            
+            lCertificadoExiste := File(::cRutaCertificado)
+            if lCertificadoExiste
+               ? "El archivo del certificado existe"
+               ? "Intentando cargar el certificado..."
 
-               // Enviar petición POST con XML
-               cRespuesta := oChilkat:PostXml( ::cURLAEAT, cXml )
-
-               ?"6"
-               MsgInfo( "Respuesta AEAT: " + cRespuesta )
+               // Crear y cargar el certificado
+               oCert := CreateObject('Chilkat_9_5_0.Cert')
+               ? "Objeto Cert creado:", oCert
                
-               if oChilkat:LastMethodSuccess
-                  // Procesar respuesta
-                  lExito := ::ProcesarRespuestaAEAT( cRespuesta )
-               else
-                  AAdd( ::aErrores, "Error en envío HTTPS: " + oChilkat:LastErrorText )
-               endif
+               if oCert != nil
+                  lnSuccess := oCert:LoadPfxFile( ::cRutaCertificado, ::cPasswordCert )
+                  ? "Certificado cargado:", lnSuccess
 
-               ?"7"
+                  if lnSuccess == 1
+                     ? "Información del certificado:"
+                     ? "SubjectDN:" + oCert:SubjectDN
+                     ? "Common Name:" + oCert:SubjectCN
+                     ? "Issuer Common Name:" + oCert:IssuerCN
+                     ? "Serial Number:" + oCert:SerialNumber
+
+                     // Obtener PEM del certificado y clave privada
+                     cCertPem := oCert:ExportCertPem()
+                     cPrivateKey := oCert:GetPrivateKeyPem()
+                     ? "Certificado PEM:", cCertPem
+                     ? "Clave Privada PEM:", cPrivateKey
+                     
+                     if !Empty(cCertPem) .and. !Empty(cPrivateKey)
+                        ? "Verificando formato del certificado PEM..."
+                        
+                        // Verificar que el certificado PEM comienza y termina correctamente
+                        if "-----BEGIN CERTIFICATE-----" $ cCertPem .and. "-----END CERTIFICATE-----" $ cCertPem
+                           ? "Formato del certificado PEM válido"
+                           ? "Configurando certificado en HTTP..."
+                           
+                           // Configurar el certificado en el objeto HTTP
+                           oChilkat:SetSslClientCertPem(cCertPem)
+                           if oChilkat:LastMethodSuccess
+                              ? "Certificado PEM configurado"
+                              
+                              // Verificar formato de la clave privada
+                              if "-----BEGIN PRIVATE KEY-----" $ cPrivateKey .or. ;
+                                 "-----BEGIN RSA PRIVATE KEY-----" $ cPrivateKey
+                                 ? "Formato de clave privada válido"
+                                 oChilkat:SetSslClientCertPkcs8Pem(cPrivateKey)
+                                 if oChilkat:LastMethodSuccess
+                                    ? "Clave privada configurada"
+                                    lExito := .t.
+                                 else
+                                    ? "Error al configurar clave privada:", oChilkat:LastErrorText
+                                    AAdd( ::aErrores, "Error al configurar clave privada: " + oChilkat:LastErrorText )
+                                    lExito := .f.
+                                 endif
+                              else
+                                 ? "Error: Formato de clave privada inválido"
+                                 AAdd( ::aErrores, "Formato de clave privada PEM inválido" )
+                                 lExito := .f.
+                              endif
+                           else
+                              ? "Error al configurar certificado:", oChilkat:LastErrorText
+                              AAdd( ::aErrores, "Error al configurar certificado: " + oChilkat:LastErrorText )
+                              lExito := .f.
+                           endif
+                        else
+                           ? "Error: Formato del certificado PEM inválido"
+                           AAdd( ::aErrores, "Formato de certificado PEM inválido" )
+                           lExito := .f.
+                        endif
+                     else
+                        ? "Error: No se pudo exportar certificado o clave privada"
+                        AAdd( ::aErrores, "Error al exportar certificado o clave privada" )
+                        lExito := .f.
+                     endif
+                  else
+                     ? "Error al cargar certificado:", oCert:LastErrorText
+                     AAdd( ::aErrores, "Error al cargar certificado: " + oCert:LastErrorText )
+                     lExito := .f.
+                  endif
+               else
+                  ? "Error: No se pudo crear objeto Cert"
+                  AAdd( ::aErrores, "Error al crear objeto Cert" )
+                  lExito := .f.
+               endif
+               
             else
-               AAdd( ::aErrores, "Error al cargar certificado: " + oChilkat:LastErrorText )
+               ? "ERROR: No se encuentra el archivo del certificado"
+               AAdd( ::aErrores, "No se encuentra el certificado en: " + ::cRutaCertificado )
+               lExito := .f.
             endif
+            
+            if lExito
+                // Configuración de seguridad TLS
+                ? "Configurando seguridad TLS..."
+                oChilkat:Tls := .t.
+                oChilkat:RequireSsl := .t.
+                oChilkat:MinTlsVersion := "1.2"
+                
+                // Configuración general HTTP
+                ? "Configurando parámetros HTTP..."
+                oChilkat:AutoReconnect := .t.
+                oChilkat:ConnectTimeout := 30
+                oChilkat:ReadTimeout := 30
+                oChilkat:KeepResponseBody := .t.
+                
+                // Configurar cabeceras
+                ? "Configurando cabeceras..."
+                oChilkat:ClearRequestHeaders()
+                oChilkat:SetRequestHeader("Content-Type", "text/xml;charset=UTF-8")
+                oChilkat:SetRequestHeader("Accept", "text/xml")
+
+                // Enviar petición POST con XML
+                ? "Enviando XML a AEAT..."
+                cRespuesta := oChilkat:QuickPostStr( ::cURLAEAT, cXml )
+
+                ? "=== Resultado del envío ==="
+                ? "Estado de la operación:", oChilkat:LastMethodSuccess
+                ? "Código de respuesta HTTP:", oChilkat:ResponseStatus
+                ? "Cabeceras de respuesta:", oChilkat:ResponseHeader
+                ? "Cuerpo de la respuesta:", cRespuesta
+                ? "============================"
+
+                if oChilkat:LastMethodSuccess 
+                   if oChilkat:ResponseStatus >= 200 .and. oChilkat:ResponseStatus < 300
+                        ? "XML enviado exitosamente"
+                        lExito := .t.
+                        ::ProcesarRespuestaAEAT( cRespuesta )
+                   else
+                        cError := "Error HTTP " + AllTrim(Str(oChilkat:ResponseStatus))
+                        if !Empty(cRespuesta)
+                           cError += ": " + cRespuesta
+                        endif
+                        ? cError
+                        AAdd( ::aErrores, cError )
+                        lExito := .f.
+                   endif
+                else
+                   cError := "Error en la comunicación: " + oChilkat:LastErrorText
+                   ? cError
+                   AAdd( ::aErrores, cError )
+                   lExito := .f.
+                endif
+            else
+                ? "No se pudo proceder con el envío debido a errores previos"
+            endif
+
          else
             AAdd( ::aErrores, "Error al crear objeto Chilkat para HTTPS" )
          endif
+
       else
          AAdd( ::aErrores, "Error al generar XML para envío a AEAT" )
       endif
