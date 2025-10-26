@@ -852,7 +852,7 @@ METHOD ExportaArticulos() CLASS ExportOdoo
       cMemo                   += ::cConector
       cMemo                   += "False"                                                     //rental
       cMemo                   += ::cConector
-      cMemo                   += ::formatNumeric( ( cSql )->pVenta1 )                        //list_price
+      cMemo                   += ::formatNumeric( ( cSql )->pVenta3 )                        //list_price
       cMemo                   += ::cConector
       cMemo                   += ::formatNumeric( ( cSql )->pCosto )                         //standart_price
       cMemo                   += ::cConector

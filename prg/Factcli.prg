@@ -24045,15 +24045,24 @@ Static Function PublicarFactura( aTmp )
       
    nNumRec := ( D():FacturasClientes( nView ) )->( Recno() )
    nOrdAnt := ( D():FacturasClientes( nView ) )->( OrdSetFocus( "nNumFac" ) )
+   nNumFac := ( D():FacturasClientes( nView ) )->nNumFac
+
+   ( D():FacturasClientes( nView ) )->( dbSeek( nNumFac ) )
       
    ( D():FacturasClientes( nView ) )->( dbSkip( -1 ) )
    
-   cCifAnt  :=  ( D():FacturasClientes( nView ) )->cDniCli
-   cNumAnt :=  ( D():FacturasClientes( nView ) )->cSerie + Str( ( D():FacturasClientes( nView ) )->nNumFac ) + ( D():FacturasClientes( nView ) )->cSufFac
-   dFecAnt :=  ( D():FacturasClientes( nView ) )->dFecFac
-   cHuellaAnt :=  ( D():FacturasClientes( nView ) )->huella
+   if ( D():FacturasClientes( nView ) )->( Eof() ) .or. ( D():FacturasClientes( nView ) )->nNumFac == nNumFac
+      cCifAnt  :=  ""
+      cNumAnt := ""
+      dFecAnt :=  ctod( "" )
+      cHuellaAnt :=  ""
+   else
+      cCifAnt  :=  ( D():FacturasClientes( nView ) )->cDniCli
+      cNumAnt :=  ( D():FacturasClientes( nView ) )->cSerie + "/" + AllTrim( Str( ( D():FacturasClientes( nView ) )->nNumFac ) ) + "/" + AllTrim( ( D():FacturasClientes( nView ) )->cSufFac )
+      dFecAnt :=  ( D():FacturasClientes( nView ) )->dFecFac
+      cHuellaAnt :=  ( D():FacturasClientes( nView ) )->huella
+   end if
 
-      
    ( D():FacturasClientes( nView ) )->( OrdSetFocus( nOrdAnt ) )      
    ( D():FacturasClientes( nView ) )->( dbGoTo( nNumRec ) )      
                                  

@@ -102,6 +102,11 @@ Ficheros-----------------------------------------------------------------------
 #define _UUID                      72     //   C      40     0
 #define _CLDELETE                  73     //   C      40     0
 #define _CREFTIK                   74     //   C      40     0
+#define _HUELLA                    75     //   C      200    0
+#define _HUELLAANT                 76     //   C      200    0
+#define _CRUTJSON                  77     //   C      200    0
+#define _CRUTQR                    78     //   C      200    0
+#define _CRUTXML                   79     //   C      200    0
 
 #define _CSERTIL                   1      //   C      1      0
 #define _CNUMTIL                   2      //   C     10      0
@@ -334,6 +339,7 @@ static oBandera
 static oStock
 static oAuditoria
 static TComercio
+static oVeryFactu
 
 static oCaptura
 static oFideliza
@@ -844,6 +850,8 @@ STATIC FUNCTION OpenFiles( cPatEmp, lExt, lTactil )
 
       TComercio            := TComercio():New( nView, oStock )
 
+      oVeryFactu                    := TVeriFactu():New()      
+
       /*
       Creamos los botones para las formas de pago---------------------------------
       */
@@ -1070,6 +1078,10 @@ STATIC FUNCTION CloseFiles()
       oRestaurante:End()
    end if
 
+   if !empty( oVeryfactu )
+      oVeryfactu:End()
+   end if 
+
    TComercio:end()
 
    D():DeleteView( nView )
@@ -1144,6 +1156,8 @@ STATIC FUNCTION CloseFiles()
 
    dbfComentariosT   := nil
    dbfComentariosL   := nil
+
+   oVeryfactu       := nil
 
    lOpenFiles        := .f.
 
@@ -12674,6 +12688,15 @@ Static Function SavTik2Tik( aTmp, aGet, nMode, nSave, nNumDev )
 
    local nRec
    local aTotal
+   local nNumRec
+   local nOrdAnt
+   local cNumTik
+   local cCifAnt
+   local cNumAnt
+   local dFecAnt
+   local cHuellaAnt
+   local hTiket
+   local lExito
 
    /*
    Guardamos el tipo como tiket---------------------------------------
@@ -12789,7 +12812,6 @@ Static Function SavTik2Tik( aTmp, aGet, nMode, nSave, nNumDev )
    aTmp[ _NTOTIVA ]  := aTotal[2]
    aTmp[ _NTOTTIK ]  := aTotal[3]
 
-   
    /*
    Registramos las auditorias--------------------------------------------------
    */
@@ -12812,6 +12834,85 @@ Static Function SavTik2Tik( aTmp, aGet, nMode, nSave, nNumDev )
    */
 
    WinGather( aTmp, nil, D():Tikets( nView ), nil, nMode )
+
+   //--------------------------------------------------------------------------//
+   //Conectamos con veriFactu y creamos el QrCode ------------------------
+   //--------------------------------------------------------------------------//
+
+    /*
+   Llamada para conectar con VeryFactu-----------------------------------
+   */
+
+   // Buscamos las referencias anteriores--------------------------------
+      
+   nNumRec := ( D():Tikets( nView ) )->( Recno() )
+   nOrdAnt := ( D():Tikets( nView ) )->( OrdSetFocus( "CNUMTIK" ) )
+   cNumTik := ( D():Tikets( nView ) )->cNumTik
+
+   ( D():Tikets( nView ) )->( dbSeek( cNumTik ) )
+      
+   ( D():Tikets( nView ) )->( dbSkip( -1 ) )
+   
+   if ( D():Tikets( nView ) )->( Eof() ) .or. ( D():Tikets( nView ) )->cNumTik == cNumTik
+      cCifAnt  :=  ""
+      cNumAnt := ""
+      dFecAnt :=  ctod( "" )
+      cHuellaAnt :=  ""
+   else
+      cCifAnt  :=  ( D():Tikets( nView ) )->cDniCli
+      cNumAnt :=  ( D():Tikets( nView ) )->cSerTik + AllTrim( ( D():Tikets( nView ) )->cSufTik ) + AllTrim( Str( ( D():Tikets( nView ) )->cNumTik ) )
+      dFecAnt :=  ( D():Tikets( nView ) )->dFecTik
+      cHuellaAnt :=  ( D():Tikets( nView ) )->huella
+   end if
+
+   ( D():Tikets( nView ) )->( OrdSetFocus( nOrdAnt ) )      
+   ( D():Tikets( nView ) )->( dbGoTo( nNumRec ) )      
+                                 
+   hTiket          := {=>}
+   
+   hset( hTiket, "TipoDocumento", "factura_cliente" )
+   hset( hTiket, "Serie", ( D():Tikets( nView ) )->cSerTik )
+   hset( hTiket, "Numero", ( D():Tikets( nView ) )->cNumTik )
+   hset( hTiket, "Sufijo", ( D():Tikets( nView ) )->cSufTik )
+   hset( hTiket, "Uuid", ( D():Tikets( nView ) )->uuid )
+   hset( hTiket, "Fecha", ( D():Tikets( nView ) )->dFecTik )
+   hset( hTiket, "Hora", ( D():Tikets( nView ) )->tFecTik )
+   hset( hTiket, "Neto", ( D():Tikets( nView ) )->nTotNet )
+   hset( hTiket, "Impuesto", ( D():Tikets( nView ) )->nTotIva )
+   hset( hTiket, "Recargo", 0 )
+   hset( hTiket, "Total", ( D():Tikets( nView ) )->nTotTik )
+   hset( hTiket, "CifCliente", AllTrim( ( D():Tikets( nView ) )->cDniCli ) )
+   hset( hTiket, "NombreCliente", AllTrim( ( D():Tikets( nView ) )->cNomTik ) )
+   hset( hTiket, "aTotIva", aTotal )
+   hset( hTiket, "CifAnterior",  AllTrim( cCifAnt ) )
+   hset( hTiket, "FechaAnterior", dFecAnt )
+   hset( hTiket, "NumeroAnterior",  AllTrim( cNumAnt ) )
+   hset( hTiket, "HuellaAnterior", AllTrim( cHuellaAnt ) )
+
+   if !Empty( oVeryfactu )
+      
+      //Pasamos los datos del tiket a oVeryfactu
+      oVeryfactu:SetDatos( hTiket )
+      
+      //Generar oVeryfactu completo
+      lExito := oVeryfactu:GeneraQrCode()
+
+      // Log de errores si los hay
+      if !lExito .and. Len( oVeryfactu:aErrores ) > 0
+         LogWrite( "Errores oVeryfactu: " + hb_ValToExp( oVeryfactu:aErrores ) )
+      end if
+
+      if dbLock( D():Tikets( nView ) )
+         
+         ( D():Tikets( nView ) )->cRutQr   := oVeryfactu:cRutaQR
+         ( D():Tikets( nView ) )->huella  := oVeryfactu:cHashActual
+         ( D():Tikets( nView ) )->huellaAnt  := cHuellaAnt
+
+        	( D():Tikets( nView ) )->( dbUnLock() )
+
+    	end if
+
+   end if
 
 Return nil
 
@@ -17293,6 +17394,11 @@ function aItmTik()
    aAdd( aItmTik, { "uuid",     "C",     40,     0, "Uuui del tiket" }                                        )
    aAdd( aItmTik, { "lDelete",  "L",      1,     0, "Marca de ticket eliminado" }                             )
    aAdd( aItmTik, { "cRefTik",  "C",     40,     0, "Referencia simplificada" }                               )
+   aAdd( aItmTik, { "huella"  	,"C", 200,   0, "Huella Veryfactu"  } )
+   aAdd( aItmTik, { "huellaant"	,"C", 200,   0, "Huella Veryfactu Anterior" } )
+   aAdd( aItmTik, { "cRutJson"  	,"C", 200,   0, "Ruta Json"  } )
+   aAdd( aItmTik, { "cRutQr"  	 ,"C", 200,   0, "Ruta QR"  } )
+   aAdd( aItmTik, { "cRutXml"  	 ,"C", 200,   0, "Ruta Xml"  } )
 
 return ( aItmTik )
 
