@@ -4900,18 +4900,11 @@ FUNCTION genPgoFacCli( cNumFac, cFacCliT, cFacCliL, cFacCliP, cAntCliT, cClient,
 
    nTotCob           := nTotalRecibosGeneradosFacturasCliente( cNumFac, cFacCliT, cFacCliP, cIva, cDiv )
 
-   
-   
-   Msginfo( nTotal)
-   Msginfo( nTotCob)
-
    /*
    Ya nos viene sin los anticipos
    */
 
    if lDiferencia( nTotal, nTotCob, 0.001 )
-
-      Msginfo( "Entro a crear los recibos" )
 
       /*
       Si no hay recibos pagados eliminamos los recibos y se vuelven a generar

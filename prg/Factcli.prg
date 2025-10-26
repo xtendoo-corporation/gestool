@@ -24025,7 +24025,6 @@ Static Function PublicarFactura( aTmp )
       Generamos los recibos de la factura-------------------------------------
       */
 
-      MsgInfo( "2" )
       genPgoFacCli( ( D():FacturasClientes( nView ) )->cSerie + Str( ( D():FacturasClientes( nView ) )->nNumFac ) + ( D():FacturasClientes( nView ) )->cSufFac, D():FacturasClientes( nView ), D():FacturasClientesLineas( nView ), D():FacturasClientesCobros( nView ), , D():Clientes( nView ), D():FormasPago( nView ), dbfDiv, dbfIva, APPD_MODE )
 
    end if
@@ -24058,7 +24057,7 @@ Static Function PublicarFactura( aTmp )
       cHuellaAnt :=  ""
    else
       cCifAnt  :=  ( D():FacturasClientes( nView ) )->cDniCli
-      cNumAnt :=  ( D():FacturasClientes( nView ) )->cSerie + "/" + AllTrim( Str( ( D():FacturasClientes( nView ) )->nNumFac ) ) + "/" + AllTrim( ( D():FacturasClientes( nView ) )->cSufFac )
+      cNumAnt :=  ( D():FacturasClientes( nView ) )->cSerie + AllTrim( ( D():FacturasClientes( nView ) )->cSufFac ) + AllTrim( Str( ( D():FacturasClientes( nView ) )->nNumFac ) )
       dFecAnt :=  ( D():FacturasClientes( nView ) )->dFecFac
       cHuellaAnt :=  ( D():FacturasClientes( nView ) )->huella
    end if
@@ -24093,7 +24092,7 @@ Static Function PublicarFactura( aTmp )
       oVeryfactu:SetDatos( hFactura )
       
       //Generar oVeryfactu completo
-      lExito := oVeryfactu:GenerarVeriFactu()
+      lExito := oVeryfactu:GeneraQrCode()
       
       // Log de errores si los hay
       if !lExito .and. Len( oVeryfactu:aErrores ) > 0
