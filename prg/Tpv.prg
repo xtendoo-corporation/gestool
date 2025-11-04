@@ -12904,7 +12904,7 @@ Static Function SavTik2Tik( aTmp, aGet, nMode, nSave, nNumDev )
 
       if dbLock( D():Tikets( nView ) )
          
-         ( D():Tikets( nView ) )->cRutQr   := oVeryfactu:cRutaQR
+         ( D():Tikets( nView ) )->cRutQr   := oVeryfactu:cNombreArchivoQR
          ( D():Tikets( nView ) )->huella  := oVeryfactu:cHashActual
          ( D():Tikets( nView ) )->huellaAnt  := cHuellaAnt
 

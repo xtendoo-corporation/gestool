@@ -1152,12 +1152,6 @@ FUNCTION FactCli( oMenuItem, oWnd, hHash )
          TOOLTIP  "Publicar";
          MRU
 
-      DEFINE BTNSHELL RESOURCE "gc_clipboard_paste_" OF oWndBrw ;
-         NOBORDER ;
-         ACTION   ( RestablecerBorrador() );
-         TOOLTIP  "Restablecer a borrador";
-         MRU
-
       DEFINE BTNSHELL RESOURCE "gc_document_text_delete_" OF oWndBrw ;
          NOBORDER ;
          ACTION   ( MsgInfo( "Rectificar" ) );
@@ -4401,11 +4395,6 @@ STATIC FUNCTION EdtRec( aTmp, aGet, dbf, oBrw, hHash, bValid, nMode )
 
    REDEFINE GET aGet[ _HUELLAANT ] VAR aTmp[ _HUELLAANT ] ;
       ID       110 ;
-      WHEN     (.f.) ;
-      OF       fldVeryfactu
-
-   REDEFINE GET aGet[ _CRUTJSON ] VAR aTmp[ _CRUTJSON ] ;
-      ID       120 ;
       WHEN     (.f.) ;
       OF       fldVeryfactu
 
@@ -14396,9 +14385,9 @@ STATIC FUNCTION EndTrans( aTmp, aGet, oBrw, oBrwDet, oBrwPgo, aNumAlb, nMode, oD
    Comprobamos la fecha del documento------------------------------------------
    */
 
-   if !lValidaOperacion( aTmp[ _DFECFAC ] )
-      Return .f.
-   end if
+   //if !lValidaOperacion( aTmp[ _DFECFAC ] )
+   //   Return .f.
+   //end if
 
    if !lValidaSerie( aTmp[ _CSERIE ] )
       Return .f.
@@ -18855,8 +18844,8 @@ function SynFacCli( cPath )
 
    DEFAULT cPath        := cPatEmp()
 
-   oBlock               := ErrorBlock( { | oError | ApoloBreak( oError ) } )
-   BEGIN SEQUENCE
+   /*oBlock               := ErrorBlock( { | oError | ApoloBreak( oError ) } )
+   BEGIN SEQUENCE*/
 
    FacturasClientesModel():defaultSufijo()
 
@@ -18864,12 +18853,12 @@ function SynFacCli( cPath )
 
       // Cabeceras ------------------------------------------------------------
 
-      ( D():FacturasClientes( nView ) )->( OrdSetFocus( 0 ) )
+      ( D():FacturasClientes( nView ) )->( OrdSetFocus( 0 ) ) 
       ( D():FacturasClientes( nView ) )->( dbGoTop() )
 
       while !( D():FacturasClientes( nView ) )->( eof() )
 
-         if !empty( ( D():FacturasClientes( nView ) )->cNumPre ) .and. Len( AllTrim( ( D():FacturasClientes( nView ) )->cNumPre ) ) != 12
+         /*if !empty( ( D():FacturasClientes( nView ) )->cNumPre ) .and. Len( AllTrim( ( D():FacturasClientes( nView ) )->cNumPre ) ) != 12
             if ( D():FacturasClientes( nView ) )->( dbRLock() )
                ( D():FacturasClientes( nView ) )->cNumPre := AllTrim( ( D():FacturasClientes( nView ) )->cNumPre ) + "00"
                ( D():FacturasClientes( nView ) )->( dbUnLock() )
@@ -18923,20 +18912,20 @@ function SynFacCli( cPath )
                ( D():FacturasClientes( nView ) )->cNomCli := RetFld( ( D():FacturasClientes( nView ) )->cCodCli, D():Clientes( nView ), "Titulo" )
                ( D():FacturasClientes( nView ) )->( dbUnLock() )
             end if 
-         end if
+         end if*/
 
          /*
          Esto es para la Jaca para que todas las facturas tengan las comisiones de agente bien-------------------------------------
          */
 
-         if !empty( ( D():FacturasClientes( nView ) )->cCodAge )
+        /* if !empty( ( D():FacturasClientes( nView ) )->cCodAge )
 
             if ( D():FacturasClientes( nView ) )->( dbRLock() )
                ( D():FacturasClientes( nView ) )->nPctComAge := RetFld( ( D():FacturasClientes( nView ) )->cCodAge, D():Agentes( nView ), "nCom1" )
                ( D():FacturasClientes( nView ) )->( dbUnLock() )
             end if
 
-         end if
+         end if*/
 
          /*
          GUID localizadores universales para el registo------------------------
@@ -18947,9 +18936,9 @@ function SynFacCli( cPath )
             ( D():FacturasClientes( nView ) )->( dbUnLock() )
          end if
 
-         if !empty( ( D():FacturasClientes( nView ) )->cNumPed )
-            aAdd( aNumPed, ( D():FacturasClientes( nView ) )->cNumPed )
-         end if
+         //if !empty( ( D():FacturasClientes( nView ) )->cNumPed )
+         //   aAdd( aNumPed, ( D():FacturasClientes( nView ) )->cNumPed )
+         //end if
 
          ( D():FacturasClientes( nView ) )->( dbSkip() )
 
@@ -18978,12 +18967,17 @@ function SynFacCli( cPath )
             end if
          end if
 
+         if empty( ( D():FacturasClientesCobros( nView ) )->paruuid ) .and. ( D():FacturasClientesCobros( nView ) )->( dbRLock() )
+            ( D():FacturasClientesCobros( nView ) )->paruuid  := FacturasClientesModel():getField( ( D():FacturasClientesCobros( nView ) )->cSerie, ( D():FacturasClientesCobros( nView ) )->nNumFac, ( D():FacturasClientesCobros( nView ) )->cSufFac, "cGuid" )
+            ( D():FacturasClientesCobros( nView ) )->( dbUnLock() )
+         end if
+
          ( D():FacturasClientesCobros( nView ) )->( dbSkip() )
 
       end while
 
       ( D():FacturasClientesCobros( nView ) )->( OrdSetFocus( "fNumFac" ) )
-
+ 
       // Lineas ---------------------------------------------------------------
 
       ( D():FacturasClientesLineas( nView ) )->( OrdSetFocus( 0 ) )
@@ -19172,6 +19166,11 @@ function SynFacCli( cPath )
             end if
          end if         
 
+         if empty( ( D():FacturasClientesLineas( nView ) )->paruuid ) .and. ( D():FacturasClientesLineas( nView ) )->( dbRLock() )
+            ( D():FacturasClientesLineas( nView ) )->paruuid  := FacturasClientesModel():getField( ( D():FacturasClientesLineas( nView ) )->cSerie, ( D():FacturasClientesLineas( nView ) )->nNumFac, ( D():FacturasClientesLineas( nView ) )->cSufFac, "cGuid" )
+            ( D():FacturasClientesLineas( nView ) )->( dbUnLock() )
+         end if
+
          ( D():FacturasClientesLineas( nView ) )->( dbSkip() )
 
          SysRefresh()
@@ -19192,6 +19191,11 @@ function SynFacCli( cPath )
                ( dbfFacCliI )->cSufFac := "00"
                ( dbfFacCliI )->( dbUnLock() )
             end if 
+         end if
+
+         if empty( ( dbfFacCliI )->paruuid ) .and. ( dbfFacCliI )->( dbRLock() )
+            ( dbfFacCliI )->paruuid  := FacturasClientesModel():getField( ( dbfFacCliI )->cSerie, ( dbfFacCliI )->nNumFac, ( dbfFacCliI )->cSufFac, "cGuid" )
+            ( dbfFacCliI )->( dbUnLock() )
          end if
 
          ( dbfFacCliI )->( dbSkip() )
@@ -19221,6 +19225,11 @@ function SynFacCli( cPath )
                ( dbfFacCliS )->dFecFac := RetFld( ( dbfFacCliS )->cSerFac + str( ( dbfFacCliS )->nNumFac ) + ( dbfFacCliS )->cSufFac, D():FacturasClientes( nView ), "dFecFac" )
                ( dbfFacCliS )->( dbUnLock() )
             end if 
+         end if
+
+         if empty( ( dbfFacCliS )->paruuid ) .and. ( dbfFacCliS )->( dbRLock() )
+            ( dbfFacCliS )->paruuid  := FacturasClientesModel():getGuid( ( dbfFacCliS )->cSerFac + str( ( dbfFacCliS )->nNumFac ) + ( dbfFacCliS )->cSufFac, "cGuid" )
+            ( dbfFacCliS )->( dbUnLock() )
          end if
 
          ( dbfFacCliS )->( dbSkip() )
@@ -19328,13 +19337,13 @@ function SynFacCli( cPath )
 
    end if 
       
-   RECOVER USING oError
+   /*RECOVER USING oError
 
       msgStop( "Imposible abrir todas las bases de datos de facturas de clientes." + CRLF + ErrorMessage( oError ) )
 
    END SEQUENCE
 
-   ErrorBlock( oBlock )
+   ErrorBlock( oBlock )*/
 
 Return nil
 
@@ -22914,46 +22923,6 @@ RETURN ( aSucces )
 
 //---------------------------------------------------------------------------//
 
-Static Function lComprobacionesFactCli( aGet, aTmp )
-
-   local lReturn  := .t.
-
-   if !lValidaOperacion( aTmp[ _DFECFAC ] )
-      lReturn     := .f.
-   end if
-
-   if !lValidaSerie( aTmp[ _CSERIE ] )
-      Return .f.
-   end if
-
-   if lClienteBloqueado( aGet )
-      lReturn     := .f.
-   end if
-
-   if lNombreVacio( aGet, aTmp[ _CNOMCLI ] )
-      lReturn     := .f.
-   end if
-
-   if lAlmacenVacio( aGet, aTmp[ _CCODALM ] )
-      lReturn     := .f.
-   end if
-
-   if lFormaPagoVacia( aGet, aTmp[ _CCODPAGO ] )
-      lReturn     := .f.
-   end if
-
-   if lDivisaVacia( aGet, aTmp[ _CDIVFAC ] )
-      lReturn     := .f.
-   end if
-
-   if lLineasVacias()
-      lReturn     := .f.
-   end if
-
-Return ( lReturn )
-
-//------------------------------------------------------------------------//
-
 Static Function lClienteBloqueado( aGet, cCliente )
 
    if empty( cCliente ) .and. !empty( aGet[ _CCODCLI ] )
@@ -24046,10 +24015,8 @@ Static Function PublicarFactura( aTmp )
    nOrdAnt := ( D():FacturasClientes( nView ) )->( OrdSetFocus( "nNumFac" ) )
    nNumFac := ( D():FacturasClientes( nView ) )->nNumFac
 
-   ( D():FacturasClientes( nView ) )->( dbSeek( nNumFac ) )
-      
    ( D():FacturasClientes( nView ) )->( dbSkip( -1 ) )
-   
+
    if ( D():FacturasClientes( nView ) )->( Eof() ) .or. ( D():FacturasClientes( nView ) )->nNumFac == nNumFac
       cCifAnt  :=  ""
       cNumAnt := ""
@@ -24099,10 +24066,14 @@ Static Function PublicarFactura( aTmp )
          LogWrite( "Errores oVeryfactu: " + hb_ValToExp( oVeryfactu:aErrores ) )
       end if
 
+      // Enviar a AEAT si está configurado
+      if lExito .and. oVeryfactu:lEnviarAEAT
+         oVeryfactu:EnviarXmlAEAT()
+      end if
+
       if dbLock( D():FacturasClientes( nView ) )
-         ( D():FacturasClientes( nView ) )->cRutJson := oVeryfactu:cRutaJSON
-         ( D():FacturasClientes( nView ) )->cRutQr   := oVeryfactu:cRutaQR
-          ( D():FacturasClientes( nView ) )->cRutXml := oVeryfactu:cRutaXml
+         ( D():FacturasClientes( nView ) )->cRutQr   := oVeryfactu:cNombreArchivoQR 
+          ( D():FacturasClientes( nView ) )->cRutXml := oVeryfactu:cNombreArchivoXML
          ( D():FacturasClientes( nView ) )->huella  := oVeryfactu:cHashActual
          ( D():FacturasClientes( nView ) )->huellaAnt  := cHuellaAnt
 
@@ -24111,26 +24082,6 @@ Static Function PublicarFactura( aTmp )
 
    end if
    
-Return ( .t. )
-
-//---------------------------------------------------------------------------//
-
-function RestablecerBorrador( aTmp )
-
-   if !Empty( aTmp )
-      aTmp[ _LVALIDA ] := .f.
-      return .t.
-   end if
-
-   if ( D():FacturasClientes( nView ) )->lValida
-
-      if dbLock( D():FacturasClientes( nView ) )
-	    	( D():FacturasClientes( nView ) )->lValida := .f.
-        	( D():FacturasClientes( nView ) )->( dbUnLock() )
-    	end if
-
-   end if
-
 Return ( .t. )
 
 //---------------------------------------------------------------------------//

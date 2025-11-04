@@ -126,6 +126,7 @@ CLASS TVeriFactu
    
    // Métodos de utilidad
    METHOD FormatearFecha( dFecha )
+   METHOD FormatearFechaLeft( dFecha )
    METHOD FormatearImporte( nImporte )
    METHOD FormatearHora( cHora )
    METHOD LimpiarString( cTexto )
@@ -163,83 +164,75 @@ METHOD SetDatos( hDocumento ) CLASS TVeriFactu
    ::aErrores          := {}
    ::lEnable           := ConfiguracionesEmpresaModel():getLogic( 'lVeryFactu', .f. )
 
-   if ::lEnable
-
-      // Datos básicos del documento
-      ::cSerie  := AllTrim( hGet( ::hDocumento, "Serie" ) )
-      ::nNumero := hGet( ::hDocumento, "Numero" )
-      ::cSufijo := AllTrim( hGet( ::hDocumento, "Sufijo" ) )
-      ::dFecha  := hGet( ::hDocumento, "Fecha" )
-      ::cHora   := hGet( ::hDocumento, "Hora" )
-      
-      // Construir número completo
-      ::cNumero := ::cSerie + ::cSufijo
-      if ValType( ::nNumero ) == "N"
-         ::cNumero+= AllTrim( Str( ::nNumero ) )
-      else
-         ::cNumero+= AllTrim( ::nNumero )
-      end if
-
-      //atotIva
-      ::aTotIva := hGet( ::hDocumento, "aTotIva" )
-
-      // Importes (usar variables globales si están disponibles)
-      ::nBaseImponible := hGet( ::hDocumento, "Neto" )
-      ::nCuotaIVA      := hGet( ::hDocumento, "Impuesto" )
-      ::nTotal  := hGet( ::hDocumento, "Total" )
-      ::nImporteTotal  := ::nBaseImponible + ::nCuotaIVA
-
-      // Datos del emisor
-
-      ::cNIFEmisor         := ::LimpiarString( uFieldempresa( 'cNif' ) )
-      ::cNombreEmisor      := ::LimpiarString( uFieldempresa( 'cNombre' ) )
-      ::cDireccionEmisor   := ::NormalizarDireccionAEAT( uFieldempresa( 'cDomicilio' ) )
-      ::cCodigoPostalEmisor := ::LimpiarString( uFieldempresa( 'cCodPos' ) )
-      ::cPoblacionEmisor   := ::NormalizarMunicipioAEAT( uFieldempresa( 'cPoblacion' ) )
-      ::cProvinciaEmisor   := ::LimpiarString( uFieldempresa( 'cProvincia' ) )
-
-      // Validar y normalizar dirección según requisitos AEAT
-      if !::ValidarDireccionAEAT()
-         ::lError := .t.
-         AAdd( ::aErrores, "Error en validación de dirección para AEAT" )
-      endif
-
-      // Datos del receptor
-
-      ::cNIFReceptor     := ::LimpiarString( hGet( ::hDocumento, "CifCliente" ) )
-      ::cNombreReceptor  := ::LimpiarString( hGet( ::hDocumento, "NombreCliente" ) )  
-      ::cTipoIdReceptor  := "02"  // Tipos de receptores 02=NIF, 03=Pasaporte, etc.
-
-      // ID VeriFactu
-
-      ::GenerarIdVeriFactu()
-
-      //Factura anterior
-
-      ::cCifAnterior             := ::LimpiarString( uFieldempresa( 'cNif' ) )
-      ::cNumeroAnterior      := hget( ::hDocumento, "NumeroAnterior" )
-      ::dFechaAnterior       := hget( ::hDocumento, "FechaAnterior" )
-      ::cHashAnterior        :=  hget( ::hDocumento, "HuellaAnterior" )
-
-      //Certificado digital y configuración AEAT
-
-      ::ConfigurarCertificado()
-      ::lEnviarAEAT := ConfiguracionesEmpresaModel():getLogic( 'lVeryFactu', .f. ) // Activar envío a AEAT    //**//
-
-      else
-
-      AAdd( ::aErrores, "VeriFactu no está habilitado en la configuración de la empresa." )
-
-      RETURN Self
-
+   // Datos básicos del documento
+   ::cSerie  := AllTrim( hGet( ::hDocumento, "Serie" ) )
+   ::nNumero := hGet( ::hDocumento, "Numero" )
+   ::cSufijo := AllTrim( hGet( ::hDocumento, "Sufijo" ) )
+   ::dFecha  := hGet( ::hDocumento, "Fecha" )
+   ::cHora   := hGet( ::hDocumento, "Hora" )
+   
+   // Construir número completo
+   ::cNumero := ::cSerie + ::cSufijo
+   if ValType( ::nNumero ) == "N"
+      ::cNumero+= AllTrim( Str( ::nNumero ) )
+   else
+      ::cNumero+= AllTrim( ::nNumero )
    end if
+
+   //atotIva
+   ::aTotIva := hGet( ::hDocumento, "aTotIva" )
+
+   // Importes (usar variables globales si están disponibles)
+   ::nBaseImponible := hGet( ::hDocumento, "Neto" )
+   ::nCuotaIVA      := hGet( ::hDocumento, "Impuesto" )
+   ::nTotal  := hGet( ::hDocumento, "Total" )
+   ::nImporteTotal  := ::nBaseImponible + ::nCuotaIVA
+
+   // Datos del emisor
+
+   ::cNIFEmisor         := ::LimpiarString( uFieldempresa( 'cNif' ) )
+   ::cNombreEmisor      := ::LimpiarString( uFieldempresa( 'cNombre' ) )
+   ::cDireccionEmisor   := ::NormalizarDireccionAEAT( uFieldempresa( 'cDomicilio' ) )
+   ::cCodigoPostalEmisor := ::LimpiarString( uFieldempresa( 'cCodPos' ) )
+   ::cPoblacionEmisor   := ::NormalizarMunicipioAEAT( uFieldempresa( 'cPoblacion' ) )
+   ::cProvinciaEmisor   := ::LimpiarString( uFieldempresa( 'cProvincia' ) )
+
+   // Validar y normalizar dirección según requisitos AEAT
+   if !::ValidarDireccionAEAT()
+      ::lError := .t.
+      AAdd( ::aErrores, "Error en validación de dirección para AEAT" )
+   endif
+
+   // Datos del receptor
+
+   ::cNIFReceptor     := ::LimpiarString( hGet( ::hDocumento, "CifCliente" ) )
+   ::cNombreReceptor  := ::LimpiarString( hGet( ::hDocumento, "NombreCliente" ) )  
+   ::cTipoIdReceptor  := "02"  // Tipos de receptores 02=NIF, 03=Pasaporte, etc.
+
+   // ID VeriFactu
+
+   ::GenerarIdVeriFactu()
+
+   //Factura anterior
+
+   ::cCifAnterior             := ::LimpiarString( uFieldempresa( 'cNif' ) )
+   ::cNumeroAnterior      := hget( ::hDocumento, "NumeroAnterior" )
+   ::dFechaAnterior       := hget( ::hDocumento, "FechaAnterior" )
+   ::cHashAnterior        :=  hget( ::hDocumento, "HuellaAnterior" )
+
+   //Certificado digital y configuración AEAT
+
+   ::ConfigurarCertificado()
+   ::lEnviarAEAT := ConfiguracionesEmpresaModel():getLogic( 'lVeryFactu', .f. )
   
 RETURN Self
 
 //---------------------------------------------------------------------------//
 
-METHOD LimpiarString( cTexto ) CLASS TVeriFactu
+METHOD LimpiarString( cTexto, lUpper ) CLASS TVeriFactu
    local cResult := ""
+
+   default lUpper := .t.
    
    if ValType( cTexto ) != "C"
       RETURN ""
@@ -257,8 +250,10 @@ METHOD LimpiarString( cTexto ) CLASS TVeriFactu
    enddo
    
    // Convertir a mayúsculas para normalizar (AEAT espera mayúsculas)
-   cResult := Upper( cResult )
-   
+   if lUpper
+      cResult := Upper( cResult )
+   endif
+
    // Caracteres especiales que pueden causar problemas
    cResult := StrTran( cResult, "Ñ", "N" )
    cResult := StrTran( cResult, "Ç", "C" )
@@ -494,7 +489,7 @@ RETURN cResult
 METHOD ConfigurarCertificado() CLASS TVeriFactu
 
    ::cRutaCertificado    := ::LimpiarString( padr( ConfiguracionesEmpresaModel():getValue( 'cert_ruta', '' ), 200 ))
-   ::cPasswordCert       := ::LimpiarString( padr( ConfiguracionesEmpresaModel():getValue( 'cert_pass', '' ), 50 ))
+   ::cPasswordCert       := ::LimpiarString( padr( ConfiguracionesEmpresaModel():getValue( 'cert_pass', '' ), 50 ), .f.)
    ::cTipoCertificado   := "P12" // Por defecto P12, puede ser PFX o CER+KEY
    
    // Validar que el archivo existe
@@ -1108,168 +1103,6 @@ RETURN cJSON
 
 //---------------------------------------------------------------------------//
 
-METHOD GenerarXml() CLASS TVeriFactu
-
-   local cXML := ""
-   local hTotIva
-   local oXmlErr
-
-   try
-   // Inicio del documento XML con sobre SOAP
-   cXML += '<?xml version="1.0" encoding="utf-8"?>' + CRLF
-   cXML += '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"' + CRLF
-   cXML += '                  xmlns:sfLR="https://prewww2.aeat.es/static_files/common/internet/dep/aplicaciones/es/aeat/tikeV1.0/cont/ws/SuministroLR.xsd"' + CRLF
-   cXML += '                  xmlns:sf="https://prewww2.aeat.es/static_files/common/internet/dep/aplicaciones/es/aeat/tikeV1.0/cont/ws/SuministroInformacion.xsd"' + CRLF  
-   cXML += '                  xmlns:xd="http://www.w3.org/2000/09/xmldsig#">' + CRLF
-   cXML += '  <soapenv:Header/>' + CRLF
-   cXML += '  <soapenv:Body>' + CRLF
-   cXML += '    <sfLR:RegFactuSistemaFacturacion>' + CRLF
-      
-      // Registro de Alta
-      cXML += '      <sf:RegistroAlta>' + CRLF
-      cXML += '        <sf:IDVersion>1.0</sf:IDVersion>' + CRLF
-      
-      // Cabecera obligatoria
-      cXML += '        <sf:Cabecera>' + CRLF
-      cXML += '          <sf:ObligadoEmision>' + CRLF
-      cXML += '            <sf:NIF>' + ::cNIFEmisor + '</sf:NIF>' + CRLF
-      cXML += '            <sf:NombreRazon>' + ::EscapeXML(::cNombreEmisor) + '</sf:NombreRazon>' + CRLF
-      
-      // Añadir dirección si está disponible
-      if !Empty(::cDireccionEmisor) .or. !Empty(::cCodigoPostalEmisor) .or. !Empty(::cPoblacionEmisor) .or. !Empty(::cProvinciaEmisor)
-         cXML += '            <sf:Direccion>' + CRLF
-         if !Empty(::cDireccionEmisor)
-            cXML += '              <sf:Direccion>' + ::EscapeXML(::cDireccionEmisor) + '</sf:Direccion>' + CRLF
-         end if
-         if !Empty(::cCodigoPostalEmisor)
-            cXML += '              <sf:CodigoPostal>' + ::EscapeXML(::cCodigoPostalEmisor) + '</sf:CodigoPostal>' + CRLF
-         end if
-         if !Empty(::cPoblacionEmisor)
-            cXML += '              <sf:Municipio>' + ::EscapeXML(::cPoblacionEmisor) + '</sf:Municipio>' + CRLF
-         end if
-         if !Empty(::cProvinciaEmisor)
-            cXML += '              <sf:Provincia>' + ::EscapeXML(::cProvinciaEmisor) + '</sf:Provincia>' + CRLF
-         end if
-         cXML += '              <sf:CodigoPais>' + ::cPaisEmisor + '</sf:CodigoPais>' + CRLF
-         cXML += '            </sf:Direccion>' + CRLF
-      end if
-      
-      cXML += '          </sf:ObligadoEmision>' + CRLF
-      cXML += '          <sf:RemisionVoluntaria>S</sf:RemisionVoluntaria>' + CRLF
-      cXML += '        </sf:Cabecera>' + CRLF
-      
-      cXML += '        <sf:FechaHoraHusoGenRegistro>' + ::FormatearFecha( ::dFecha ) + 'T' + ::FormatearHora( ::cHora ) + '+02:00</sf:FechaHoraHusoGenRegistro>' + CRLF
-      cXML += '        <sf:NombreRazonEmisor>' + AllTrim(::cNombreEmisor) + '</sf:NombreRazonEmisor>' + CRLF
-      
-      // Identificación de la Factura
-      cXML += '        <sf:IDFactura>' + CRLF
-      cXML += '          <sf:IDEmisorFactura>' + ::cNIFEmisor + '</sf:IDEmisorFactura>' + CRLF
-      cXML += '          <sf:NumSerieFactura>' + AllTrim(::cNumero) + '</sf:NumSerieFactura>' + CRLF
-      cXML += '          <sf:FechaExpedicionFactura>' + ::FormatearFecha(::dFecha) + '</sf:FechaExpedicionFactura>' + CRLF
-      cXML += '        </sf:IDFactura>' + CRLF
-      
-      // Datos del Destinatario
-      if !Empty(::cNIFReceptor)
-         cXML += '        <sf:Destinatarios>' + CRLF
-         cXML += '          <sf:IDDestinatario>' + CRLF
-         cXML += '            <sf:NIF>' + ::cNIFReceptor + '</sf:NIF>' + CRLF
-         cXML += '            <sf:NombreRazon>' + ::cNombreReceptor + '</sf:NombreRazon>' + CRLF
-         cXML += '          </sf:IDDestinatario>' + CRLF
-         cXML += '        </sf:Destinatarios>' + CRLF
-      endif
-      
-      // Datos de la factura
-      cXML += '        <sf:TipoFactura>F1</sf:TipoFactura>' + CRLF
-      cXML += '        <sf:DescripcionOperacion>' + AllTrim(::cNombreEmisor) + '</sf:DescripcionOperacion>' + CRLF
-      cXML += '        <sf:Subsanacion>N</sf:Subsanacion>' + CRLF
-      
-      // Desglose del IVA
-      cXML += '        <sf:Desglose>' + CRLF
-      cXML += '          <sf:DetalleDesglose>' + CRLF
-      
-      for each hTotIva in ::aTotIva
-         cXML += '            <sf:LineaDesglose>' + CRLF
-         cXML += '              <sf:Impuesto>01</sf:Impuesto>' + CRLF
-         cXML += '              <sf:ClaveRegimen>20</sf:ClaveRegimen>' + CRLF
-         cXML += '              <sf:CalificacionOperacion>S1</sf:CalificacionOperacion>' + CRLF
-         cXML += '              <sf:TipoImpositivo>' + AllTrim( Str( hGet( hTotIva, "porcentajeiva" ) ) ) + '</sf:TipoImpositivo>' + CRLF
-         cXML += '              <sf:BaseImponibleOimporteNoSujeto>' + ::FormatearImporte( hGet( hTotIva, "neto" ) ) + '</sf:BaseImponibleOimporteNoSujeto>' + CRLF
-         cXML += '              <sf:CuotaRepercutida>' + ::FormatearImporte( hGet( hTotIva, "impiva" ) ) + '</sf:CuotaRepercutida>' + CRLF
-         cXML += '            </sf:LineaDesglose>' + CRLF
-      next
-      
-      cXML += '          </sf:DetalleDesglose>' + CRLF
-      cXML += '        </sf:Desglose>' + CRLF
-      
-      // Importes Totales
-      cXML += '        <sf:CuotaTotal>' + ::FormatearImporte(::nCuotaIVA) + '</sf:CuotaTotal>' + CRLF
-      cXML += '        <sf:ImporteTotal>' + ::FormatearImporte(::nImporteTotal) + '</sf:ImporteTotal>' + CRLF
-      
-      // Sistema Informático
-      cXML += '      <sf:SistemaInformatico>' + CRLF
-      cXML += '        <sf:NombreRazon>Xtendoo Software S.L.U.</sf:NombreRazon>' + CRLF
-      cXML += '        <sf:IDOtro>' + CRLF
-      cXML += '          <sf:CodigoPais>ES</sf:CodigoPais>' + CRLF
-      cXML += '          <sf:IDType>02</sf:IDType>' + CRLF
-      cXML += '          <sf:ID>ESB16890287</sf:ID>' + CRLF
-      cXML += '        </sf:IDOtro>' + CRLF
-      cXML += '        <sf:NombreSistemaInformatico>' + __GSTROTOR__ + '</sf:NombreSistemaInformatico>' + CRLF
-      cXML += '        <sf:IdSistemaInformatico>00</sf:IdSistemaInformatico>' + CRLF
-      cXML += '        <sf:Version>' + __GSTVERSION__ + '</sf:Version>' + CRLF
-      cXML += '        <sf:NumeroInstalacion>' + AllTrim( Str( Abs( nSerialHD() ) ) ) + '</sf:NumeroInstalacion>' + CRLF
-      cXML += '        <sf:TipoUsoPosibleSoloVerifactu>S</sf:TipoUsoPosibleSoloVerifactu>' + CRLF
-      cXML += '        <sf:TipoUsoPosibleMultiOT>S</sf:TipoUsoPosibleMultiOT>' + CRLF
-      cXML += '        <sf:IndicadorMultiplesOT>N</sf:IndicadorMultiplesOT>' + CRLF
-      cXML += '      </sf:SistemaInformatico>' + CRLF
-
-      // Sistema Informático
-      /*cXML += '        <sf:SistemaInformatico>' + CRLF
-      cXML += '          <sf:NombreRazon>Odoo SA</sf:NombreRazon>' + CRLF
-      cXML += '          <sf:IDOtro>' + CRLF
-      cXML += '            <sf:CodigoPais>BE</sf:CodigoPais>' + CRLF
-      cXML += '            <sf:IDType>02</sf:IDType>' + CRLF
-      cXML += '            <sf:ID>BE0477472701</sf:ID>' + CRLF
-      cXML += '          </sf:IDOtro>' + CRLF
-      cXML += '          <sf:NombreSistemaInformatico>Odoo</sf:NombreSistemaInformatico>' + CRLF
-      cXML += '          <sf:IdSistemaInformatico>00</sf:IdSistemaInformatico>' + CRLF
-      cXML += '          <sf:Version>18.0</sf:Version>' + CRLF
-      cXML += '          <sf:NumeroInstalacion>03A4B94EA35F5F5AC598EB96F15A98689387BDA7E2CFC048CE65F419D837F6ED</sf:NumeroInstalacion>' + CRLF
-      cXML += '          <sf:TipoUsoPosibleSoloVerifactu>S</sf:TipoUsoPosibleSoloVerifactu>' + CRLF
-      cXML += '          <sf:TipoUsoPosibleMultiOT>S</sf:TipoUsoPosibleMultiOT>' + CRLF
-      cXML += '          <sf:IndicadorMultiplesOT>N</sf:IndicadorMultiplesOT>' + CRLF
-      cXML += '        </sf:SistemaInformatico>' + CRLF*/
-      
-      // Encadenamiento con registro anterior
-      if !Empty(::cNumeroAnterior)
-         cXML += '        <sf:Encadenamiento>' + CRLF
-         cXML += '          <sf:RegistroAnterior>' + CRLF
-         cXML += '            <sf:IDEmisorFactura>'+ ::cCifAnterior + '</sf:IDEmisorFactura>' + CRLF
-         cXML += '            <sf:NumSerieFactura>' + ::cNumeroAnterior + '</sf:NumSerieFactura>' + CRLF
-         cXML += '            <sf:FechaExpedicionFactura>' + ::FormatearFecha( ::dFechaAnterior ) + '</sf:FechaExpedicionFactura>' + CRLF
-         cXML += '            <sf:Huella>' + ::cHashAnterior + '</sf:Huella>' + CRLF
-         cXML += '          </sf:RegistroAnterior>' + CRLF
-         cXML += '        </sf:Encadenamiento>' + CRLF
-      endif
-      
-      // Huella digital del registro
-      cXML += '        <sf:TipoHuella>01</sf:TipoHuella>' + CRLF
-      cXML += '        <sf:Huella>' + ::cHashActual + '</sf:Huella>' + CRLF
-      
-      cXML += '      </sf:RegistroAlta>' + CRLF
-      cXML += '    </sfLR:RegFactuSistemaFacturacion>' + CRLF
-      cXML += '  </soapenv:Body>' + CRLF
-      cXML += '</soapenv:Envelope>' + CRLF
-
-   catch oXmlErr
-      ::lError := .t.
-      AAdd( ::aErrores, "Error al generar XML: " + oXmlErr:Description )
-      RETURN ("")
-   end try
-
-RETURN cXML
-
-//---------------------------------------------------------------------------//
-
 METHOD GeneraQrCode() CLASS TVeriFactu
 
    local lExito := .f.
@@ -1288,9 +1121,9 @@ METHOD GeneraQrCode() CLASS TVeriFactu
          ::CrearNombresArchivos()
 
          // Generar código QR si está habilitado
-         if ::lGenerarQR
-            cQR := ::GenerarQR()
-         end if
+         cQR := ::GenerarQR()
+
+         lExito := .t.
 
       else
          lExito := .f.
@@ -1330,6 +1163,9 @@ METHOD GenerarQR() CLASS TVeriFactu
                 "&codigo=" + ::cCodigoSeguro
       
       cQR := cURL + cDatos
+
+      LogWrite( "Generando código QR con datos:" )
+      LogWrite( cQR )
       
       // Aquí se podría integrar una librería de generación de QR
       // Por ahora devolvemos la URL que debe codificarse en QR
@@ -1525,6 +1361,18 @@ METHOD FormatearFecha( dFecha ) CLASS TVeriFactu
    
    local cFec       := ""
 
+   cFec     += Padl( AllTrim( Str( Day( dFecha ) )), 2, "0" ) + "-"
+   cFec     += Padl( AllTrim( Str( Month( dFecha ) )), 2, "0" ) + "-"
+   cFec     += AllTrim( Str( Year( dFecha ) ) )
+
+RETURN ( cFec )
+
+//--------- ------------------------------------------------------------------//
+
+METHOD FormatearFechaLeft( dFecha ) CLASS TVeriFactu
+   
+   local cFec       := ""
+
    cFec     += AllTrim( Str( Year( dFecha ) ) ) + "-"
    cFec     += Padl( AllTrim( Str( Month( dFecha ) )), 2, "0" ) + "-"
    cFec     += Padl( AllTrim( Str( Day( dFecha ) )), 2, "0" )
@@ -1707,148 +1555,261 @@ METHOD EnviarXmlAEAT() CLASS TVeriFactu
    local cXml := ""
    local cRespuesta := ""
    local oChilkat
+
+   //MsgInfo( "Entro en EnviarXmlAEAT" )
    
    //try 
       // Generar XML
       cXml := ::GenerarXml()
+
+      //MsgInfo( "XML generado: " + cXml )  
+      Logwrite( cXml )  
       
       if Empty(cXml)
          AAdd( ::aErrores, "Error al generar XML" )
          lExito := .f.
       endif
 
-      ?"1"
+      //?"1"
 
       // Crear objeto Chilkat HTTP
       oChilkat := CreateObject( "Chilkat_9_5_0.Http" )
+       // Activar la biblioteca
+      oChilkat:UnlockComponent("XTENDO.CB1112026_MEQCIGeYxxz+b3c4HW83VMTPP2JU2/mbYrmNpbafHFAAJoYJAiAXYURxd0bGYX6sM6aEtf97ZG2SKkS+Pc5a/leaj/K7uQ==")
 
-      ?"2"
+     // ?"2"
       
       if oChilkat == nil
          AAdd( ::aErrores, "Error al crear objeto Chilkat" )
          lExito := .f.
       endif
+      
+      // Verificar versión de Chilkat y estado de licencia
+      //?"Versión Chilkat: " + oChilkat:Version
+      //?"Chilkat desbloqueado: " + iif(oChilkat:UnlockStatus, "Sí", "No")
+      
+      // Si tienes una licencia, descomenta y ajusta la siguiente línea:
+      // oChilkat:UnlockBundle("Tu_Código_de_Licencia_Aquí")
 
-      ?"3"
+      //?"3"
       
       // Configurar certificado
-      if !File(::cRutaCertificado)
+      if File(::cRutaCertificado)
+         oChilkat:SetSslClientCertPfx( ::cRutaCertificado, ::cPasswordCert )
+      else
          AAdd( ::aErrores, "Certificado no encontrado: " + ::cRutaCertificado )
          lExito := .f.
       endif
 
-      ?"4"
-      
-      if oChilkat:SetSslClientCertPfx( ::cRutaCertificado, ::cPasswordCert ) == 0
+      /*if oChilkat:LastMethodSuccess != .t.
+         Msginfo( oChilkat:LastErrorText )
          AAdd( ::aErrores, "Error al configurar certificado: " + oChilkat:LastErrorText )
          lExito := .f.
-      endif
+      endif*/
       
-      ?"5"
+      //?"5"
 
       // Configurar timeouts más largos
       oChilkat:ConnectTimeout := 30
       oChilkat:ReadTimeout := 30
       
-      ?"6 - Enviando con PostXml"
-      ?"URL: " + ::cURLAEAT
-      ?"XML size: " + AllTrim(Str(Len(cXml)))
-      ?"Timeout Connect: " + AllTrim(Str(oChilkat:ConnectTimeout))
-      ?"Timeout Read: " + AllTrim(Str(oChilkat:ReadTimeout))
+      //?"6 - Enviando con PostXml"
+      //?"URL: " + ::cURLAEAT
+      //?"XML size: " + AllTrim(Str(Len(cXml)))
+      //?"Timeout Connect: " + AllTrim(Str(oChilkat:ConnectTimeout))
+      //?"Timeout Read: " + AllTrim(Str(oChilkat:ReadTimeout))
       
-      // Limpiar errores anteriores
-      //oChilkat:ClearInMemoryData()
-      
-      ?"7 - Llamando a PostXml..."
-      
-      // Usar PostXml
-      cRespuesta := oChilkat:PostXml( ::cURLAEAT, cXml, "utf-8" )
-
-      ?"8 - PostXml completado"
-      ?"LastStatus: " + AllTrim(Str(oChilkat:LastStatus))
-      ?"LastErrorText: " + Left(oChilkat:LastErrorText, 200)
-      ?"Success: " + if(oChilkat:LastMethodSuccess, "TRUE", "FALSE")
-      ?"Respuesta length: " + AllTrim(Str(Len(cRespuesta)))
-      
-      if !Empty(cRespuesta)
-         ?"Primera línea respuesta: " + Left(cRespuesta, 100)
+      // Verificar que tenemos todos los datos necesarios
+      if Empty(::cURLAEAT)
+         AAdd( ::aErrores, "URL AEAT está vacía" )
+         lExito := .f.
       endif
       
-      // Verificar si el método falló completamente
-      if !oChilkat:LastMethodSuccess
-         ?"? FALLO COMPLETO del método PostXml"
-         ?"Error completo: " + oChilkat:LastErrorText
-         AAdd( ::aErrores, "Fallo del método PostXml: " + Left(oChilkat:LastErrorText, 200) )
+      if Empty(cXml)
+         AAdd( ::aErrores, "XML está vacío" )
          lExito := .f.
-      else
-         // Verificar código de estado HTTP
-         ?"9 - Verificando código HTTP: " + AllTrim(Str(oChilkat:LastStatus))
+      endif
       
-      do case
-         case oChilkat:LastStatus == 200 .or. oChilkat:LastStatus == 201
-            ?"? Éxito HTTP " + AllTrim(Str(oChilkat:LastStatus))
-            lExito := .t.
-            // Guardar respuesta para debug
-            hb_MemoWrit('c:/cer/response.xml', cRespuesta)
-            hb_MemoWrit('c:/cer/request.xml', cXml)
-            ?"Archivos guardados en c:/cer/"
-            
-         case oChilkat:LastStatus == 401
-            ?"? Error de autenticación HTTP 401 - Certificado o credenciales inválidas"
-            AAdd( ::aErrores, "Error 401: Certificado o autenticación inválida" )
-            lExito := .f.
-            
-         case oChilkat:LastStatus == 400
-            ?"? Error HTTP 400 - Petición mal formada"
-            AAdd( ::aErrores, "Error 400: XML mal formado o datos inválidos" )
-            lExito := .f.
-            
-         case oChilkat:LastStatus == 500
-            ?"? Error HTTP 500 - Error interno del servidor AEAT"
-            AAdd( ::aErrores, "Error 500: Error interno del servidor AEAT" )
-            lExito := .f.
-            
-         case oChilkat:LastStatus == 0
-            ?"? Sin respuesta del servidor (timeout o conexión fallida)"
-            ?"LastMethodSuccess: " + if(oChilkat:LastMethodSuccess, "TRUE", "FALSE")
-            ?"LastErrorText completo:"
-            ?oChilkat:LastErrorText
-            
-            // Guardar error para análisis
-            hb_MemoWrit('c:/cer/error_log.txt', ;
-                       "LastStatus: " + AllTrim(Str(oChilkat:LastStatus)) + CRLF + ;
-                       "LastMethodSuccess: " + if(oChilkat:LastMethodSuccess, "TRUE", "FALSE") + CRLF + ;
-                       "LastErrorText: " + oChilkat:LastErrorText + CRLF + ;
-                       "URL: " + ::cURLAEAT + CRLF + ;
-                       "ConnectTimeout: " + AllTrim(Str(oChilkat:ConnectTimeout)) + CRLF + ;
-                       "ReadTimeout: " + AllTrim(Str(oChilkat:ReadTimeout)))
-                       
-            AAdd( ::aErrores, "Sin respuesta del servidor - Ver error_log.txt para detalles" )
-            lExito := .f.
-            
-         otherwise
-            ?"? Código HTTP inesperado: " + AllTrim(Str(oChilkat:LastStatus))
-            AAdd( ::aErrores, "Código HTTP inesperado: " + AllTrim(Str(oChilkat:LastStatus)) )
-            
-            // Aunque sea código inesperado, si hay respuesta puede ser válida
-            if !Empty(cRespuesta)
-               hb_MemoWrit('c:/cer/response.xml', cRespuesta)
-               hb_MemoWrit('c:/cer/request.xml', cXml)
-               lExito := .t.
-            else
-               lExito := .f.
-            endif
-      endcase
-      endif  // Cierre del if !oChilkat:LastMethodSuccess
+      // Información de debug
+      //?"URL AEAT: " + ::cURLAEAT
+      //?"Tamaño XML: " + AllTrim(Str(Len(cXml)))
+      //?"Certificado configurado: " + iif(File(::cRutaCertificado), "Sí", "No")
+      
+      //?"7 - Llamando a PostXml..."
+      
+      // Usar PostXml
+      oChilkat:SetRequestHeader("Content-Type", "application/xml")
+      cRespuesta := oChilkat:PostXml( ::cURLAEAT, cXml, "utf-8" )
 
-      ?"9b"
+      //?"8 - PostXml completado"
+      
+      MsgInfo( cRespuesta, "cRespuesta" )
+      MsgInfo( ValType(cRespuesta), "cRespuesta" )
+      MsgInfo( hb_ValToExp( cRespuesta ), "cRespuesta"  )
+
+      MsgInfo( oChilkat:LastStatus, "LastStatus" )
+      MsgInfo( oChilkat:LastErrorText, "LastErrorText" )
+
+      LogWrite( oChilkat:LastErrorText )
 
    /*catch
       AAdd( ::aErrores, "Error general en envío XML" )
    end try*/
 
-   ?"10"
+   //?"10"
 
 RETURN lExito
 
 //---------------------------------------------------------------------------//
+
+METHOD GenerarXml() CLASS TVeriFactu
+
+   local cXML := ""
+   local hTotIva
+   local oXmlErr
+
+   // Inicio del documento XML con sobre SOAP
+   cXml += '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sum="https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/es/aeat/tike/cont/ws/SuministroLR.xsd" xmlns:sum1="https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/es/aeat/tike/cont/ws/SuministroInformacion.xsd" xmlns:xd="http://www.w3.org/2000/09/xmldsig#">' + CRLF
+
+   cXml += '  <soapenv:Header/>' + CRLF
+   cXml += '  <soapenv:Body>' + CRLF
+   cXml += '    <sum:RegFactuSistemaFacturacion>' + CRLF
+   cXml += '      <sum:Cabecera>' + CRLF
+   cXml += '        <sum1:ObligadoEmision>' + CRLF
+   cXml += '          <sum1:NombreRazon>' + ::EscapeXML(::cNombreEmisor) + '</sum1:NombreRazon>' + CRLF
+   cXml += '          <sum1:NIF>' + ::cNIFEmisor + '</sum1:NIF>' + CRLF
+   cXml += '        </sum1:ObligadoEmision>' + CRLF
+   cXml += '      </sum:Cabecera>' + CRLF
+   cXml += '      <sum:RegistroFactura>' + CRLF
+   cXml += '        <sum1:RegistroAlta>' + CRLF
+   cXml += '          <sum1:IDVersion>1.0</sum1:IDVersion>' + CRLF
+   cXml += '          <sum1:IDFactura>' + CRLF
+   cXml += '            <sum1:IDEmisorFactura>' + ::cNIFEmisor + '</sum1:IDEmisorFactura>' + CRLF
+   cXml += '            <sum1:NumSerieFactura>' + AllTrim(::cNumero) + '</sum1:NumSerieFactura>' + CRLF
+   cXml += '            <sum1:FechaExpedicionFactura>' + ::FormatearFecha(::dFecha) + '</sum1:FechaExpedicionFactura>' + CRLF
+   cXml += '          </sum1:IDFactura>' + CRLF
+   cXml += '          <sum1:NombreRazonEmisor>' + ::EscapeXML(::cNombreEmisor) + '</sum1:NombreRazonEmisor>' + CRLF
+   cXml += '          <sum1:TipoFactura>F1</sum1:TipoFactura>' + CRLF
+   cXml += '          <sum1:DescripcionOperacion>VENTA DE MERCADERIAS</sum1:DescripcionOperacion>' + CRLF
+   cXml += '          <sum1:Destinatarios>' + CRLF
+   cXml += '            <sum1:IDDestinatario>' + CRLF
+   cXml += '              <sum1:NombreRazon>' + ::cNombreReceptor + '</sum1:NombreRazon>' + CRLF
+   cXml += '              <sum1:NIF>' + ::cNIFReceptor + '</sum1:NIF>' + CRLF
+   cXml += '            </sum1:IDDestinatario>' + CRLF
+   cXml += '          </sum1:Destinatarios>' + CRLF
+   cXml += '          <sum1:Desglose>' + CRLF
+   cXml += '            <sum1:DetalleDesglose>' + CRLF
+   for each hTotIva in ::aTotIva
+   cXml += '              <sum1:ClaveRegimen>01</sum1:ClaveRegimen>' + CRLF
+   cXml += '              <sum1:CalificacionOperacion>S1</sum1:CalificacionOperacion>' + CRLF
+   cXml += '              <sum1:TipoImpositivo>' + AllTrim( Str( hGet( hTotIva, "porcentajeiva" ) ) ) + '</sum1:TipoImpositivo>' + CRLF
+   cXml += '              <sum1:BaseImponibleOimporteNoSujeto>' + ::FormatearImporte( hGet( hTotIva, "neto" ) ) + '</sum1:BaseImponibleOimporteNoSujeto>' + CRLF
+   cXml += '              <sum1:CuotaRepercutida>' + ::FormatearImporte( hGet( hTotIva, "impiva" ) ) + '</sum1:CuotaRepercutida>' + CRLF
+   next
+   cXml += '            </sum1:DetalleDesglose>' + CRLF
+   cXml += '          </sum1:Desglose>' + CRLF
+   cXml += '          <sum1:CuotaTotal>' + ::FormatearImporte(::nCuotaIVA) + '</sum1:CuotaTotal>' + CRLF
+   cXml += '          <sum1:ImporteTotal>' + ::FormatearImporte(::nImporteTotal) + '</sum1:ImporteTotal>' + CRLF
+
+   
+   /*cXml += '          <sum1:Encadenamiento>' + CRLF
+   cXml += '            <sum1:PrimerRegistro>S</sum1:PrimerRegistro>' + CRLF
+   cXml += '          </sum1:Encadenamiento>' + CRLF*/
+
+   cXml += '          <sum1:Encadenamiento>' + CRLF
+   cXml += '            <sum1:RegistroAnterior>' + CRLF
+   cXml += '              <sum1:IDEmisorFactura>'+ ::cCifAnterior + '</sum1:IDEmisorFactura>' + CRLF
+   cXml += '              <sum1:NumSerieFactura>' + ::cNumeroAnterior + '</sum1:NumSerieFactura>' + CRLF
+   cXml += '              <sum1:FechaExpedicionFactura>' + ::FormatearFecha( ::dFechaAnterior ) + '</sum1:FechaExpedicionFactura>' + CRLF
+   cXml += '              <sum1:Huella>' + ::cHashAnterior + '</sum1:Huella>' + CRLF
+   cXml += '            </sum1:RegistroAnterior>' + CRLF
+   cXml += '          </sum1:Encadenamiento>' + CRLF
+   cXml += '          <sum1:SistemaInformatico>' + CRLF
+   cXml += '            <sum1:NombreRazon>Xtendoo Software SL</sum1:NombreRazon>' + CRLF
+   cXml += '            <sum1:NIF>B16890287</sum1:NIF>' + CRLF
+   cXml += '            <sum1:NombreSistemaInformatico>Gestool</sum1:NombreSistemaInformatico>' + CRLF
+   cXml += '            <sum1:IdSistemaInformatico>77</sum1:IdSistemaInformatico>' + CRLF
+   cXml += '            <sum1:Version>' + __GSTVERSION__ + '</sum1:Version>' + CRLF
+   cXml += '            <sum1:NumeroInstalacion>' + AllTrim( Str( Abs( nSerialHD() ) ) ) + '</sum1:NumeroInstalacion>' + CRLF
+   cXml += '            <sum1:TipoUsoPosibleSoloVerifactu>N</sum1:TipoUsoPosibleSoloVerifactu>' + CRLF
+   cXml += '            <sum1:TipoUsoPosibleMultiOT>S</sum1:TipoUsoPosibleMultiOT>' + CRLF
+   cXml += '            <sum1:IndicadorMultiplesOT>S</sum1:IndicadorMultiplesOT>' + CRLF
+   cXml += '          </sum1:SistemaInformatico>' + CRLF
+   cXml += '          <sum1:FechaHoraHusoGenRegistro>' + ::FormatearFechaLeft( ::dFecha ) + 'T' + ::FormatearHora( ::cHora ) + '+01:00</sum1:FechaHoraHusoGenRegistro>' + CRLF
+   cXml += '          <sum1:TipoHuella>01</sum1:TipoHuella>' + CRLF
+   cXml += '          <sum1:Huella>' + ::cHashActual + '</sum1:Huella>' + CRLF
+   cXml += '        </sum1:RegistroAlta>' + CRLF
+   cXml += '      </sum:RegistroFactura>' + CRLF
+   cXml += '    </sum:RegFactuSistemaFacturacion>' + CRLF
+   cXml += '  </soapenv:Body>' + CRLF
+   cXml += '</soapenv:Envelope>' + CRLF
+   
+RETURN cXML
+
+//---------------------------------------------------------------------------//
+
+
+/* Ejemplo generado y entregado en postman
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sum="https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/es/aeat/tike/cont/ws/SuministroLR.xsd" xmlns:sum1="https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/es/aeat/tike/cont/ws/SuministroInformacion.xsd" xmlns:xd="http://www.w3.org/2000/09/xmldsig#">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <sum:RegFactuSistemaFacturacion>
+      <sum:Cabecera>
+        <sum1:ObligadoEmision>
+          <sum1:NombreRazon>DARIO CRUZ MAURO</sum1:NombreRazon>
+          <sum1:NIF>75558136P</sum1:NIF>
+        </sum1:ObligadoEmision>
+      </sum:Cabecera>
+      <sum:RegistroFactura>
+        <sum1:RegistroAlta>
+          <sum1:IDVersion>1.0</sum1:IDVersion>
+          <sum1:IDFactura>
+            <sum1:IDEmisorFactura>75558136P</sum1:IDEmisorFactura>
+            <sum1:NumSerieFactura>A100</sum1:NumSerieFactura>
+            <sum1:FechaExpedicionFactura>07-10-2025</sum1:FechaExpedicionFactura>
+          </sum1:IDFactura>
+          <sum1:NombreRazonEmisor>DARIO CRUZ MAURO</sum1:NombreRazonEmisor>
+          <sum1:TipoFactura>F1</sum1:TipoFactura>
+          <sum1:DescripcionOperacion>VENTA DE MERCADERIAS</sum1:DescripcionOperacion>
+          <sum1:Destinatarios>
+            <sum1:IDDestinatario>
+              <sum1:NombreRazon>SEVIRAMA</sum1:NombreRazon>
+              <sum1:NIF>B41414806</sum1:NIF>
+            </sum1:IDDestinatario>
+          </sum1:Destinatarios>
+          <sum1:Desglose>
+            <sum1:DetalleDesglose>
+              <sum1:ClaveRegimen>01</sum1:ClaveRegimen>
+              <sum1:CalificacionOperacion>S1</sum1:CalificacionOperacion>
+              <sum1:TipoImpositivo>21</sum1:TipoImpositivo>
+              <sum1:BaseImponibleOimporteNoSujeto>300</sum1:BaseImponibleOimporteNoSujeto>
+              <sum1:CuotaRepercutida>63.00</sum1:CuotaRepercutida>
+            </sum1:DetalleDesglose>
+          </sum1:Desglose>
+          <sum1:CuotaTotal>63.0</sum1:CuotaTotal>
+          <sum1:ImporteTotal>363.00</sum1:ImporteTotal>
+          <sum1:Encadenamiento>
+            <sum1:PrimerRegistro>S</sum1:PrimerRegistro>
+          </sum1:Encadenamiento>
+          <sum1:SistemaInformatico>
+            <sum1:NombreRazon>Xtendoo Software SL</sum1:NombreRazon>
+            <sum1:NIF>B16890287</sum1:NIF>
+            <sum1:NombreSistemaInformatico>Gestool</sum1:NombreSistemaInformatico>
+            <sum1:IdSistemaInformatico>77</sum1:IdSistemaInformatico>
+            <sum1:Version>2K25</sum1:Version>
+            <sum1:NumeroInstalacion>1747627586</sum1:NumeroInstalacion>
+            <sum1:TipoUsoPosibleSoloVerifactu>N</sum1:TipoUsoPosibleSoloVerifactu>
+            <sum1:TipoUsoPosibleMultiOT>S</sum1:TipoUsoPosibleMultiOT>
+            <sum1:IndicadorMultiplesOT>S</sum1:IndicadorMultiplesOT>
+          </sum1:SistemaInformatico>
+          <sum1:FechaHoraHusoGenRegistro>2025-10-07T06:34:00+01:00</sum1:FechaHoraHusoGenRegistro>
+          <sum1:TipoHuella>01</sum1:TipoHuella>
+          <sum1:Huella>9a4abf93de0ea77a6eff6de550c132c1a556948ea6b9b65e6e848098f04de451</sum1:Huella>
+        </sum1:RegistroAlta>
+      </sum:RegistroFactura>
+    </sum:RegFactuSistemaFacturacion>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+*/
