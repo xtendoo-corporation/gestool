@@ -2708,6 +2708,9 @@ return nil
 Function TASISTENCIAS
 return nil
 
+Function TLogVerifactu()
+return nil
+
 Function TPREPAREORDERQR
 return nil
 

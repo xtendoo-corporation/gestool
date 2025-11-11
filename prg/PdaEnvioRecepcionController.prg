@@ -19,7 +19,7 @@ CLASS PdaEnvioRecepcionController
 
    DATA oTimer
 
-   DATA oMsgAlarm
+   DATA oMsgAlarm 
 
    DATA oDialogView
 

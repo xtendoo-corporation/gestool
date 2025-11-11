@@ -4969,6 +4969,9 @@ STATIC FUNCTION ActDbfEmp( cCodEmp, aMsg, oAni, oDlg, oMsg, oMet, lActEmp, lSinc
          oMsg:SetText( "Añadiendo lineas orden de carga" )
          TDetOrdCar():Create():SyncAllDbf()
 
+         oMsg:SetText( "Log Verifactu" )
+         TLogVerifactu():Create():SyncAllDbf()
+
          oMsg:SetText( "Añadiendo movimientos de almacén" )
          ActDbf( cEmpOld, cEmpTmp, "RemMovT",   "Movimientos de almacén", oMet, oMsg, aMsg )
          ActDbf( cEmpOld, cEmpTmp, "HisMov",    "Lineas movimientos de almacén", oMet, oMsg, aMsg )

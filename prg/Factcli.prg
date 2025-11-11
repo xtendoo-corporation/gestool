@@ -168,6 +168,7 @@
 #define _CRUTJSON 	  138
 #define _CRUTQR 		   139
 #define _CRUTXML 		  140
+#define _NESTVERI 		  141
 
 /*
 Definici-n de la base de datos de lineas de detalle
@@ -821,6 +822,18 @@ FUNCTION FactCli( oMenuItem, oWnd, hHash )
          :AddResource( "gc_mail_earth_16" )
       end with
 
+      with object ( oWndBrw:AddXCol() )
+         :cHeader                := "Estado verifactu"
+         :nHeadBmpNo      := 4
+         :bBmpData            := {|| if( ( D():FacturasClientes( nView ) )->nEstVeri == 0, 1, ( D():FacturasClientes( nView ) )->nEstVeri ) }
+         :nWidth                  := 20
+         :AddResource( "GC_DELETE_12" )
+         :AddResource( "GC_SHAPE_SQUARE_12" )
+         :AddResource( "GC_CHECK_12" )
+         :AddResource( "GC_VERYFACTU_16" )
+         :bLDClickData     := {|| oWndBrw:RecEdit() }
+      end with
+      
       with object ( oWndBrw:AddXCol() )
          :cHeader          := "Publicado"
          :bEditValue       := {|| if( ( D():FacturasClientes( nView ) )->lValida, "Publicado", "Borrador" ) }
@@ -20170,7 +20183,7 @@ function aItmFacCli()
    local aItmFacCli  := {}
 
    aAdd( aItmFacCli, {"cSerie"      ,"C",  1, 0, "Serie de la factura" ,                                       "Serie",                       "", "( cDbf )", {|| "A" } } )
-   aAdd( aItmFacCli, {"nNumFac"     ,"N",  9, 0, "Número de la factura" ,                                      "Numero",                      "", "( cDbf )", nil } )
+   aAdd( aItmFacCli, {"nNumFac"     ,"N",  9, 0, "Número de la factura" ,                               "Numero",                      "", "( cDbf )", nil } )
    aAdd( aItmFacCli, {"cSufFac"     ,"C",  2, 0, "Sufijo de la factura" ,                                      "Sufijo",                      "", "( cDbf )", {|| RetSufEmp() } } )
    aAdd( aItmFacCli, {"cGuid"       ,"C", 40, 0, "Guid de la factura" ,                                        "GUID",                        "", "( cDbf )", {|| win_uuidcreatestring() } } )
    aAdd( aItmFacCli, {"cTurFac"     ,"C",  6, 0, "Sesión de la factura" ,                                      "Turno",                       "", "( cDbf )", {|| cCurSesion( nil, .f.) } } )
@@ -20309,6 +20322,7 @@ function aItmFacCli()
    aAdd( aItmFacCli, { "cRutJson"  	,"C", 200,   0, "Ruta Json" ,                                              "RutaJSON",           	  	   "", "( cDbf )", nil } )
    aAdd( aItmFacCli, { "cRutQr"  	 ,"C", 200,   0, "Ruta QR" ,                                                "RutaQR",           	  	      "", "( cDbf )", nil } )
    aAdd( aItmFacCli, { "cRutXml"  	 ,"C", 200,   0, "Ruta Xml" ,                                             "RutaXML",           	  	      "", "( cDbf )", nil } )
+   aAdd( aItmFacCli, { "nEstVeri"  	 ,"N", 1,   0, "Estado verifactu" ,                                       "EstadoVerifactu",           	  	      "", "( cDbf )", nil } )
 
 RETURN ( aItmFacCli )
 

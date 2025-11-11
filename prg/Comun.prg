@@ -2777,6 +2777,16 @@ FUNCTION CreateAcceso( oWnd )
    oItem:cBmpBig        := "WordPress_32"
    oItem:lShow          := .f.
 
+   oItem                := oItemHerramientas:Add()
+   oItem:oGroup         := oGrupo
+   oItem:cPrompt        := 'Log Verifactu'
+   oItem:cMessage       := 'Registros de conexiones con verifactu'
+   oItem:bAction        := {|| TLogVerifactu():New():Activate() }
+   oItem:cId            := "log verifactu"
+   oItem:cBmp           := "GC_VERYFACTU_16"
+   oItem:cBmpBig        := "GC_VERYFACTU_32"
+   oItem:lShow          := .f.
+
    if getPvProfString( "Gamma", "ViewGamma", ".F.", cIniAplication() ) == ".T."
    oItem                := oItemHerramientas:Add()
    oItem:oGroup         := oGrupo
@@ -2788,6 +2798,8 @@ FUNCTION CreateAcceso( oWnd )
    oItem:cBmpBig        := "gamma_32"
    oItem:lShow          := .f.
    end if
+
+   
 
    end if
 

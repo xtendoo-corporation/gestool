@@ -2461,6 +2461,13 @@ METHOD BuildEmpresa()
    oDataTable:bCreateFile  := {| cPath | TGrpCli():BuildFiles( cPath ) }
    ::AddEmpresaTable( oDataTable )
 
+   oDataTable              := TDataTable():New( "LOGVERI" )
+   oDataTable:cDataFile    := cPatEmp( , .t. ) + "LOGVERI.Dbf"
+   oDataTable:cIndexFile   := cPatEmp( , .t. ) + "LOGVERI.Cdx"
+   oDataTable:cDescription := "LOG VERIFACTU"
+   oDataTable:bCreateFile  := {| cPath | TLogVerifactu():BuildFiles( cPath ) } 
+   ::AddEmpresaTable( oDataTable )
+
    oDataTable              := TDataTable():New( "OrdCarP" )
    oDataTable:cDataFile    := cPatEmp( , .t. ) + "OrdCarP.Dbf"
    oDataTable:cIndexFile   := cPatEmp( , .t. ) + "OrdCarP.Cdx"

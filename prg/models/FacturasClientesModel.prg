@@ -14,12 +14,14 @@ CLASS FacturasClientesModel FROM ADSBaseModel
    METHOD getInsertStatement( hFields )
 
    METHOD getField( cSerie, nNumero, cSufijo, cField )
+      
+   METHOD SetEstadoVeriFactu( uuid, nEstado )
 
 END CLASS
 
 //---------------------------------------------------------------------------//
 
-METHOD getField( cSerie, nNumero, cSufijo, cField )
+METHOD getField( cSerie, nNumero, cSufijo, cField ) CLASS FacturasClientesModel
 
    local cStm  
    local cSql
@@ -36,7 +38,7 @@ RETURN ( nil )
 
 //---------------------------------------------------------------------------//
 
-METHOD UltimoDocumento( cCodigoCliente )
+METHOD UltimoDocumento( cCodigoCliente ) CLASS FacturasClientesModel
 
    local cStm
    local cSql  := "SELECT TOP 1 dFecFac " + ;
@@ -51,7 +53,7 @@ Return ( ctod( "" ) )
 
 //---------------------------------------------------------------------------//
 
-METHOD defaultSufijo()
+METHOD defaultSufijo() CLASS FacturasClientesModel
 
    local cStm
    local cSql  := "UPDATE " + ::getHeaderTableName() + ;
@@ -62,7 +64,18 @@ Return ( ::ExecuteSqlStatement( cSql, @cStm ) )
 
 //---------------------------------------------------------------------------//
 
-METHOD getInsertStatement( hFields )
+METHOD SetEstadoVeriFactu( uuid, nEstado ) CLASS FacturasClientesModel
+
+   local cStm
+   local cSql  :=   "UPDATE " + ::getHeaderTableName() + ;
+                           " SET nEstVeri = " + AllTrim( Str( nEstado ) ) + ;
+                           " WHERE cGuid = " + quoted( uuid )
+
+Return ( ::ExecuteSqlStatement( cSql, @cStm ) )
+
+//---------------------------------------------------------------------------//
+
+METHOD getInsertStatement( hFields ) CLASS FacturasClientesModel
 
    local cStatement  
 

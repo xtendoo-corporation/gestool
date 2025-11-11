@@ -41,7 +41,7 @@ PROCEDURE RddInit()
 
    REQUEST AdsKeyNo
    REQUEST AdsKeyCount
-   REQUEST AdsGetRelKeyPos 
+   REQUEST AdsGetRelKeyPos
    REQUEST AdsSetRelKeyPos
 
 RETURN

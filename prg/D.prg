@@ -638,6 +638,8 @@ CLASS D
 
    METHOD Asistencias( nView )                                    INLINE ( ::Get( "Asistencia", nView ) )
 
+   METHOD Logverifactu( nView )                                    INLINE ( ::Get( "LOGVERI", nView ) )
+
    METHOD UbicacionLineas( nView )                                INLINE ( ::Get( "UbiCal", nView ) )
 
    METHOD Delegaciones( nView )                                   INLINE ( ::Get( "Delega", nView ) )

@@ -730,6 +730,7 @@ TData.prg 																		\
 TEnumerationItem.prg 															\
 TRestriction.prg 															\
 TRestrictionItem.prg 														\
+logverifactu.prg 														\
 xsdtohb.prg
 
 C               =       	            									\
@@ -1449,6 +1450,7 @@ TData.obj 																		\
 TEnumerationItem.obj 															\
 TRestriction.obj 															\
 TRestrictionItem.obj 														\
+logverifactu.obj 														\
 xsdtohb.obj 		 														
 
 
@@ -2158,6 +2160,7 @@ $(OBJ)\TEnumerationItem.obj 											+
 $(OBJ)\TRestriction.obj 														+
 $(OBJ)\TRestrictionItem.obj 													+
 $(OBJ)\xsdtohb.obj   		                                                 +
+$(OBJ)\logverifactu.obj 														+
 $(OBJ)\Events.obj           
 $<,$*
 $(FWLIB)\FiveH.lib               											+

@@ -37,6 +37,7 @@ CLASS TVeriFactu
    DATA cSufijo    INIT ""
    DATA dFecha     INIT CToD("")
    DATA cHora      INIT ""
+   DATA UuidFactura INIT ""
    
    // Importes (según normativa AEAT)
    DATA nBaseImponible    INIT 0
@@ -123,6 +124,7 @@ CLASS TVeriFactu
    METHOD EnviarHTTPS( cURL, cDatos, cMetodo )
    METHOD PrepararCabeceras()
    METHOD ProcesarRespuestaAEAT( cRespuesta )
+   METHOD ProcesarRespuestaXMLAEAT( cRespuestaXML )
    
    // Métodos de utilidad
    METHOD FormatearFecha( dFecha )
@@ -136,6 +138,9 @@ CLASS TVeriFactu
    METHOD OverrideDireccionAEAT( cDireccion, cCP, cMunicipio, cProvincia, cPais )
    METHOD EscapeXML( cTexto )
    METHOD EnviarXmlAEAT()
+   METHOD ExplorarObjetoChilkat( oObjeto )  // Nuevo método para debug
+      METHOD ProbarMetodo( oObjeto, cProp )
+      METHOD ProbarPropiedad( oObjeto, cProp )
 
    METHOD GeneraQrCode()
       METHOD GenerarQR()
@@ -170,6 +175,7 @@ METHOD SetDatos( hDocumento ) CLASS TVeriFactu
    ::cSufijo := AllTrim( hGet( ::hDocumento, "Sufijo" ) )
    ::dFecha  := hGet( ::hDocumento, "Fecha" )
    ::cHora   := hGet( ::hDocumento, "Hora" )
+   ::UuidFactura := hGet( ::hDocumento, "Uuid" )
    
    // Construir número completo
    ::cNumero := ::cSerie + ::cSufijo
@@ -1189,24 +1195,58 @@ METHOD CalcularHash() CLASS TVeriFactu
    local oHashErr
 
    try
-      // Construir cadena para hash según normativa AEAT
-      cDatos := ::cNIFEmisor + ;
-                ::cNumero + ;
-                DToS( ::dFecha ) + ;
-                ::cHora + ;
-                AllTrim( Str( ::nImporteTotal, 12, 2 ) )
+      // Según la normativa oficial VeriFactu (Real Decreto 1007/2023)
+      // La huella se calcula con SHA-256 sobre la concatenación (SIN separadores) de:
+      // 1. IDEmisorFactura
+      // 2. NumSerieFactura  
+      // 3. FechaExpedicionFactura (formato DD-MM-AAAA)
+      // 4. TipoFactura
+      // 5. CuotaTotal (formato #.## sin separadores de miles)
+      // 6. ImporteTotal (formato #.## sin separadores de miles)
+      // 7. Huella del registro anterior (si existe)
+      // 8. FechaHoraHusoGenRegistro (formato AAAA-MM-DDTHH:MM:SS+HH:MM)
       
-      // Generar hash SHA-256 (requiere librería externa o función del sistema)
-      cHash := hb_SHA256( cDatos )
+      cDatos := "IDEmisorFactura=" + AllTrim(::cNIFEmisor)
+      cDatos += "&NumSerieFactura=" + AllTrim(::cNumero)
+      cDatos += "&FechaExpedicionFactura=" + ::FormatearFecha(::dFecha)  // DD-MM-AAAA
+      cDatos += "&TipoFactura=F1"
+      cDatos += "&CuotaTotal=" + ::FormatearImporte(::nCuotaIVA)    // Sin separadores de miles
+      cDatos += "&ImporteTotal=" + ::FormatearImporte(::nImporteTotal) // Sin separadores de miles
+      
+      // Si hay registro anterior, incluir su huella
+      if !Empty(::cHashAnterior)
+         cDatos += "&Huella=" + ::cHashAnterior
+      endif
+      
+      // Fecha y hora con formato ISO 8601 + huso horario
+      cDatos += "&FechaHoraHusoGenRegistro=" + ::FormatearFechaLeft(::dFecha) + "T" + ::FormatearHora(::cHora) + "+01:00"
+      
+      // Log de debug detallado
+      LogWrite("=== DEBUG VERIFACTU HASH ===")
+      LogWrite("1. IDEmisorFactura: [" + AllTrim(::cNIFEmisor) + "]")
+      LogWrite("2. NumSerieFactura: [" + AllTrim(::cNumero) + "]")
+      LogWrite("3. FechaExpedicionFactura: [" + ::FormatearFecha(::dFecha) + "]")
+      LogWrite("4. TipoFactura: [F1]")
+      LogWrite("5. CuotaTotal: [" + ::FormatearImporte(::nCuotaIVA) + "]")
+      LogWrite("6. ImporteTotal: [" + ::FormatearImporte(::nImporteTotal) + "]")
+      LogWrite("7. HuellaAnterior: [" + if(Empty(::cHashAnterior), "VACIO", ::cHashAnterior) + "]")
+      LogWrite("8. FechaHoraGen: [" + ::FormatearFechaLeft(::dFecha) + "T" + ::FormatearHora(::cHora) + "+01:00]")
+      LogWrite("CADENA COMPLETA: [" + cDatos + "]")
+      LogWrite("LONGITUD: " + AllTrim(Str(Len(cDatos))))
+      
+      // Calcular hash SHA-256 y convertir a minúsculas
+      cHash := Upper(hb_SHA256(cDatos))
       
       ::cHashActual := cHash
+      ::cCodigoSeguro := Left(cHash, 16)
       
-      // Generar código seguro (primeros 16 caracteres del hash)
-      ::cCodigoSeguro := Left( cHash, 16 )
+      LogWrite("HASH SHA-256: " + ::cHashActual)
+      LogWrite("=== FIN DEBUG ===")
       
    catch oHashErr
       ::lError := .t.
-      AAdd( ::aErrores, "Error al calcular hash: " + oHashErr:Description )
+      AAdd(::aErrores, "Error al calcular hash: " + oHashErr:Description)
+      LogWrite("ERROR en cálculo hash: " + oHashErr:Description)
    end try
 
 RETURN Self
@@ -1382,8 +1422,19 @@ RETURN ( cFec )
 //---------------------------------------------------------------------------//
 
 METHOD FormatearImporte( nImporte ) CLASS TVeriFactu
-   // Formato: sin separadores de miles, punto decimal
-RETURN AllTrim( Str( nImporte, 12, 2 ) )
+   // Formato AEAT: sin separadores de miles, punto decimal, sin espacios
+   local cImporte := AllTrim( Str( nImporte, 12, 2 ) )
+   
+   // Asegurar que el formato sea exacto (ej: "13.60", no " 13.60")
+   if At(".", cImporte) > 0
+      // Ya tiene decimales
+      RETURN cImporte
+   else
+      // Agregar .00 si es número entero
+      RETURN cImporte + ".00"
+   endif
+
+RETURN cImporte
 
 //---------------------------------------------------------------------------//
 
@@ -1555,43 +1606,23 @@ METHOD EnviarXmlAEAT() CLASS TVeriFactu
    local cXml := ""
    local cRespuesta := ""
    local oChilkat
+   local cTextoRespuesta := ""
 
-   //MsgInfo( "Entro en EnviarXmlAEAT" )
-   
-   //try 
+   try 
       // Generar XML
       cXml := ::GenerarXml()
+      LogWrite( "XML generado para envío a AEAT:" )
+      LogWrite( cXml )
 
-      //MsgInfo( "XML generado: " + cXml )  
-      Logwrite( cXml )  
       
-      if Empty(cXml)
-         AAdd( ::aErrores, "Error al generar XML" )
-         lExito := .f.
-      endif
-
-      //?"1"
-
       // Crear objeto Chilkat HTTP
       oChilkat := CreateObject( "Chilkat_9_5_0.Http" )
-       // Activar la biblioteca
       oChilkat:UnlockComponent("XTENDO.CB1112026_MEQCIGeYxxz+b3c4HW83VMTPP2JU2/mbYrmNpbafHFAAJoYJAiAXYURxd0bGYX6sM6aEtf97ZG2SKkS+Pc5a/leaj/K7uQ==")
 
-     // ?"2"
-      
       if oChilkat == nil
          AAdd( ::aErrores, "Error al crear objeto Chilkat" )
          lExito := .f.
       endif
-      
-      // Verificar versión de Chilkat y estado de licencia
-      //?"Versión Chilkat: " + oChilkat:Version
-      //?"Chilkat desbloqueado: " + iif(oChilkat:UnlockStatus, "Sí", "No")
-      
-      // Si tienes una licencia, descomenta y ajusta la siguiente línea:
-      // oChilkat:UnlockBundle("Tu_Código_de_Licencia_Aquí")
-
-      //?"3"
       
       // Configurar certificado
       if File(::cRutaCertificado)
@@ -1601,64 +1632,112 @@ METHOD EnviarXmlAEAT() CLASS TVeriFactu
          lExito := .f.
       endif
 
-      /*if oChilkat:LastMethodSuccess != .t.
-         Msginfo( oChilkat:LastErrorText )
-         AAdd( ::aErrores, "Error al configurar certificado: " + oChilkat:LastErrorText )
-         lExito := .f.
-      endif*/
-      
-      //?"5"
-
       // Configurar timeouts más largos
       oChilkat:ConnectTimeout := 30
       oChilkat:ReadTimeout := 30
       
-      //?"6 - Enviando con PostXml"
-      //?"URL: " + ::cURLAEAT
-      //?"XML size: " + AllTrim(Str(Len(cXml)))
-      //?"Timeout Connect: " + AllTrim(Str(oChilkat:ConnectTimeout))
-      //?"Timeout Read: " + AllTrim(Str(oChilkat:ReadTimeout))
-      
-      // Verificar que tenemos todos los datos necesarios
-      if Empty(::cURLAEAT)
-         AAdd( ::aErrores, "URL AEAT está vacía" )
-         lExito := .f.
-      endif
-      
-      if Empty(cXml)
-         AAdd( ::aErrores, "XML está vacío" )
-         lExito := .f.
-      endif
-      
-      // Información de debug
-      //?"URL AEAT: " + ::cURLAEAT
-      //?"Tamaño XML: " + AllTrim(Str(Len(cXml)))
-      //?"Certificado configurado: " + iif(File(::cRutaCertificado), "Sí", "No")
-      
-      //?"7 - Llamando a PostXml..."
-      
-      // Usar PostXml
+      // enviamos el contenido del XML
       oChilkat:SetRequestHeader("Content-Type", "application/xml")
       cRespuesta := oChilkat:PostXml( ::cURLAEAT, cXml, "utf-8" )
 
-      //?"8 - PostXml completado"
-      
-      MsgInfo( cRespuesta, "cRespuesta" )
-      MsgInfo( ValType(cRespuesta), "cRespuesta" )
-      MsgInfo( hb_ValToExp( cRespuesta ), "cRespuesta"  )
+     // Debug: Investigar tipo de objeto devuelto
 
-      MsgInfo( oChilkat:LastStatus, "LastStatus" )
-      MsgInfo( oChilkat:LastErrorText, "LastErrorText" )
+      oChilkat := nil
 
-      LogWrite( oChilkat:LastErrorText )
+      // Procesar respuesta de la AEAT
+      if !Empty( cRespuesta )
+         lExito := ::ProcesarRespuestaXMLAEAT( cRespuesta )
+      else
+         AAdd( ::aErrores, "No se recibió respuesta de la AEAT" )
+      endif
 
-   /*catch
+   catch
       AAdd( ::aErrores, "Error general en envío XML" )
-   end try*/
-
-   //?"10"
+   end try
 
 RETURN lExito
+
+//---------------------------------------------------------------------------//
+
+METHOD ProcesarRespuestaXMLAEAT( cRespuestaXML ) CLASS TVeriFactu
+
+   local oXml
+   local cEstado := ""
+   local nEstado := 0
+   local cDescripcion := ""
+   local cCodeError := ""
+   local oNodo
+   local cBodyString
+   local cStatusCode
+   local cStatusText
+
+   if Empty( cRespuestaXML )
+      RETURN .f.
+   end if
+
+   cBodyString := cRespuestaXML:BodyStr
+   cStatusCode := cRespuestaXML:StatusCode
+   cStatusText := cRespuestaXML:StatusText
+
+   // Crear objeto Chilkat XML
+   oXml := CreateObject( "Chilkat_9_5_0.Xml" )
+   oXml:LoadXml( cBodyString )
+
+   /*
+   REGISTRO CON ERRORES
+   Buscamos el nodo faultstring para obtener el mensaje de error
+   */
+   oNodo := oXml:ExtractChildByName("env:Body|env:Fault|faultstring","","")
+   
+   if oNodo != NIL .and. ValType(oNodo) == "O"
+      cCodeError := oNodo:Content()
+   end if   
+
+   /*
+   Aceptado con errores
+   Buscamos el nodo EstadoEnvio para obtener el mensaje de error
+   */
+   oNodo := oXml:ExtractChildByName("env:Body|tikR:RespuestaRegFactuSistemaFacturacion|tikR:EstadoEnvio","","")
+   
+   if oNodo != NIL .and. ValType(oNodo) == "O"
+      cEstado :=  oNodo:Content()
+   end if
+
+   /*
+   REGISTRO YA PRESENTADO
+   Buscamos el nodo DescripcionErrorRegistro para obtener el mensaje de error
+   */
+   oNodo := oXml:ExtractChildByName("env:Body|tikR:RespuestaRegFactuSistemaFacturacion|tikR:RespuestaLinea|tikR:DescripcionErrorRegistro","","")
+   
+   if oNodo != NIL .and. ValType(oNodo) == "O"
+      cDescripcion := oNodo:Content()
+   end if   
+
+   //Proceso el estado en verifactu para pasarselo a la factura----------------------------------
+   do case
+      case Empty( cEstado )
+         nEstado := 1
+
+      case cEstado == "Incorrecto"
+         nEstado := 1 
+
+      case cEstado == "Correcto"
+         nEstado := 3
+
+      otherwise
+         nEstado := 2
+
+   endcase
+
+   //Pasamos el estado de procesado a la factura----------------------------------------------
+
+   FacturasClientesModel():SetEstadoVeriFactu( ::UuidFactura, nEstado )
+   
+   //Escribimos en el log de verifactu-----------------------------------------------------------
+
+   LogverifactuModel():RegEntrada( ::UuidFactura, FAC_CLI, cEstado, cCodeError, cDescripcion, Str( cStatusCode ), cStatusText )
+         
+RETURN .t.
 
 //---------------------------------------------------------------------------//
 
@@ -1698,19 +1777,18 @@ METHOD GenerarXml() CLASS TVeriFactu
    cXml += '            </sum1:IDDestinatario>' + CRLF
    cXml += '          </sum1:Destinatarios>' + CRLF
    cXml += '          <sum1:Desglose>' + CRLF
-   cXml += '            <sum1:DetalleDesglose>' + CRLF
    for each hTotIva in ::aTotIva
+   cXml += '            <sum1:DetalleDesglose>' + CRLF
    cXml += '              <sum1:ClaveRegimen>01</sum1:ClaveRegimen>' + CRLF
    cXml += '              <sum1:CalificacionOperacion>S1</sum1:CalificacionOperacion>' + CRLF
    cXml += '              <sum1:TipoImpositivo>' + AllTrim( Str( hGet( hTotIva, "porcentajeiva" ) ) ) + '</sum1:TipoImpositivo>' + CRLF
    cXml += '              <sum1:BaseImponibleOimporteNoSujeto>' + ::FormatearImporte( hGet( hTotIva, "neto" ) ) + '</sum1:BaseImponibleOimporteNoSujeto>' + CRLF
    cXml += '              <sum1:CuotaRepercutida>' + ::FormatearImporte( hGet( hTotIva, "impiva" ) ) + '</sum1:CuotaRepercutida>' + CRLF
-   next
    cXml += '            </sum1:DetalleDesglose>' + CRLF
+   next
    cXml += '          </sum1:Desglose>' + CRLF
    cXml += '          <sum1:CuotaTotal>' + ::FormatearImporte(::nCuotaIVA) + '</sum1:CuotaTotal>' + CRLF
    cXml += '          <sum1:ImporteTotal>' + ::FormatearImporte(::nImporteTotal) + '</sum1:ImporteTotal>' + CRLF
-
    
    /*cXml += '          <sum1:Encadenamiento>' + CRLF
    cXml += '            <sum1:PrimerRegistro>S</sum1:PrimerRegistro>' + CRLF
@@ -1813,3 +1891,71 @@ RETURN cXML
 </soapenv:Envelope>
 
 */
+
+//---------------------------------------------------------------------------//
+// Método para explorar objeto TOLEAUTO devuelto por Chilkat
+METHOD ExplorarObjetoChilkat( oObjeto ) CLASS TVeriFactu
+
+   local aProps := {}
+   local i
+   
+   MsgInfo( "--- Explorando objeto TOLEAUTO ---" )
+   
+   // Lista de propiedades comunes que pueden tener los objetos Chilkat
+   aProps := { "BodyStr", "ResponseBody", "ResponseText", "StatusCode", "Status", ;
+               "StatusText", "ResponseHeader", "ContentType", "ContentLength", ;
+               "CharSet", "LastErrorText", "LastStatus", "LastHeader", ;
+               "SaveLastError", "VerboseLogging", "Version" }
+   
+   for i := 1 to Len( aProps )
+      ::ProbarPropiedad( oObjeto, aProps[i] )
+   next
+   
+   // Intentar métodos comunes
+   ::ProbarMetodo( oObjeto, "GetAsString" )
+   ::ProbarMetodo( oObjeto, "GetBodyStr" )
+   ::ProbarMetodo( oObjeto, "GetResponseText" )
+   ::ProbarMetodo( oObjeto, "ToString" )
+   
+   MsgInfo( "--- Fin exploración ---" )
+
+RETURN nil
+
+//---------------------------------------------------------------------------//
+// Método auxiliar para probar propiedades
+METHOD ProbarPropiedad( oObjeto, cProp ) CLASS TVeriFactu
+
+   local xValor
+
+   
+   try
+      xValor := oObjeto:&cProp
+      if xValor != nil
+         MsgInfo( "Propiedad " + cProp + ": " + hb_ValToExp( xValor ) )
+      else
+         MsgInfo( "Propiedad " + cProp + ": nil" )
+      endif
+   catch
+      MsgInfo( "Propiedad " + cProp + ": No existe o error" )
+   end try
+
+RETURN nil
+
+//---------------------------------------------------------------------------//
+// Método auxiliar para probar métodos
+METHOD ProbarMetodo( oObjeto, cMetodo ) CLASS TVeriFactu
+
+   local xResultado
+   
+   try
+      xResultado := oObjeto:&cMetodo()
+      if xResultado != nil
+         MsgInfo( "Método " + cMetodo + "(): " + hb_ValToExp( xResultado ) )
+      else
+         MsgInfo( "Método " + cMetodo + "(): nil" )
+      endif
+   catch
+      MsgInfo( "Método " + cMetodo + "(): No existe o error" )
+   end try
+
+RETURN nil
