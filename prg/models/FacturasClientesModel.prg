@@ -66,12 +66,25 @@ Return ( ::ExecuteSqlStatement( cSql, @cStm ) )
 
 METHOD SetEstadoVeriFactu( uuid, nEstado ) CLASS FacturasClientesModel
 
-   local cStm
-   local cSql  :=   "UPDATE " + ::getHeaderTableName() + ;
-                           " SET nEstVeri = " + AllTrim( Str( nEstado ) ) + ;
-                           " WHERE cGuid = " + quoted( uuid )
+   local cStm :=  "ActualVeriFactu"
+   local cStm2 :=  "CambioVeriFactu"
+   local cSql
 
-Return ( ::ExecuteSqlStatement( cSql, @cStm ) )
+   cSql  :=   "SELECT nEstVeri FROM " + ::getHeaderTableName() + " WHERE cGuid = " + quoted( uuid )
+
+   ::ExecuteSqlStatement( cSql, @cStm )
+   
+   if ( cStm )->nEstVeri != 3
+
+      cSql  :=   "UPDATE " + ::getHeaderTableName() + ;
+                           " SET nEstVeri = " + AllTrim( Str( nEstado ) ) + ;
+                           " WHERE cGuid = " + quoted( uuid )   
+      
+      ::ExecuteSqlStatement( cSql, @cStm2 )
+   
+   end if
+   
+Return ( .t. )
 
 //---------------------------------------------------------------------------//
 

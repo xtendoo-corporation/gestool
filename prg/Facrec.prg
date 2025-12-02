@@ -114,6 +114,13 @@
 #define _NDTOTARIFA 	      102
 #define _TFECFAC 		      103
 #define _CCENTROCOSTE	   104
+#define _LVALIDA 		    105
+#define _HUELLA 		    106
+#define _HUELLAANT   107
+#define _CRUTQR 		   108
+#define _CRUTXML 		  109
+#define _NESTVERI 		110
+#define _CURLQR 		    111
 
 /*
 Definici¢n de la base de datos de lineas de detalle
@@ -208,6 +215,8 @@ Definici¢n de la base de datos de lineas de detalle
 #define _CTERCTR                 87
 #define _ID_TIPO_V               88
 #define __NREGIVA                89
+#define _LVALIDADO              90
+#define _CPARUUID              91
 
 memvar cDbf
 memvar cDbfCol
@@ -408,6 +417,8 @@ static oGetTrn
 static nTotOld
 static cCodDiv
 static oBanco
+
+static oVeryFactu
 
 static lImpuestos
 static oImpuestos
@@ -829,6 +840,8 @@ STATIC FUNCTION OpenFiles( lExt )
      
       Counter           := TCounter():New( nView, "nFacRec" )
 
+      oVeryFactu         := TVeriFactu():New()      
+
       /*
       Declaración de variables publicas----------------------------------------
       */
@@ -1195,6 +1208,10 @@ STATIC FUNCTION CloseFiles()
 
    D():DeleteView( nView )
 
+   if !empty( oVeryfactu )
+      oVeryfactu:End()
+   end if 
+
    dbfIva      := nil
    dbfFPago    := nil
    dbfAgent    := nil
@@ -1255,6 +1272,8 @@ STATIC FUNCTION CloseFiles()
    oTrans 	   := nil
 
    oWndBrw     := nil
+
+   oVeryFactu   := nil
 
    lOpenFiles  := .f.
 
@@ -1407,6 +1426,24 @@ FUNCTION FacRec( oMenuItem, oWnd, cCodCli, cCodArt, cCodPed, aNumDoc )
          :lHide            := .t.
          :SetCheck( { "gc_printer2_12", "Nil16" } )
          :AddResource( "gc_printer2_16" )
+      end with
+
+      with object ( oWndBrw:AddXCol() )
+         :cHeader          := "Publicado"
+         :bEditValue       := {|| if( ( D():FacturasRectificativas( nView ) )->lValida, "Publicado", "Borrador" ) }
+         :nWidth           := 120
+      end with
+
+      with object ( oWndBrw:AddXCol() )
+         :cHeader                := "Estado verifactu"
+         :nHeadBmpNo      := 4
+         :bBmpData            := {|| if( ( D():FacturasRectificativas( nView ) )->nEstVeri == 0, 1, ( D():FacturasRectificativas( nView ) )->nEstVeri ) }
+         :nWidth                  := 20
+         :AddResource( "GC_DELETE_12" )
+         :AddResource( "GC_SHAPE_SQUARE_12" )
+         :AddResource( "GC_CHECK_12" )
+         :AddResource( "GC_VERYFACTU_16" )
+         :bLDClickData     := {|| oWndBrw:RecEdit() }
       end with
 
       with object ( oWndBrw:AddXCol() )
@@ -1647,6 +1684,12 @@ FUNCTION FacRec( oMenuItem, oWnd, cCodCli, cCodArt, cCodPed, aNumDoc )
       HOTKEY   "Z" ;
       MRU;
       LEVEL    ACC_ZOOM
+
+   DEFINE BTNSHELL RESOURCE "GC_CLIPBOARD_EMPTY_EARTH_" OF oWndBrw ;
+         NOBORDER ;
+         ACTION   ( PublicarFactura() );
+         TOOLTIP  "Publicar";
+         MRU
 
    DEFINE BTNSHELL oDel RESOURCE "DEL" OF oWndBrw ;
       NOBORDER ;
@@ -1939,6 +1982,7 @@ STATIC FUNCTION EdtRec( aTmp, aGet, dbf, oBrw, cCodCli, cCodArt, nMode, aNumDoc 
       aTmp[ _LIVAINC    ]  := uFieldEmpresa( "lIvaInc" )
       aTmp[ _CMANOBR    ]  := padr( getConfigTraslation( "Gastos" ), 250 )
       aTmp[ _TFECFAC    ]  := getSysTime()
+      aTmp[ _CGUID ]  := win_uuidcreatestring()
 
       if !empty( cCodCli )
          aTmp[ _CCODCLI ]  := cCodCli
@@ -1965,6 +2009,7 @@ STATIC FUNCTION EdtRec( aTmp, aGet, dbf, oBrw, cCodCli, cCodArt, nMode, aNumDoc 
       aTmp[ _LCONTAB  ]    := .f.
       aTmp[ _LSNDDOC  ]    := .t.
       aTmp[ _CCODUSR    ]  := Auth():Codigo()
+      aTmp[ _CGUID ]  := win_uuidcreatestring()
 
    case nMode == EDIT_MODE
 
@@ -7199,6 +7244,7 @@ STATIC FUNCTION BeginTrans( aTmp, nMode )
    local cDbfEst  := "FCliE"
    local nOrd
    local cFac     := aTmp[ _CSERIE ] + Str( aTmp[ _NNUMFAC ] ) + aTmp[ _CSUFFAC ]
+   local parUuid
 
    CursorWait()
 
@@ -7218,6 +7264,8 @@ STATIC FUNCTION BeginTrans( aTmp, nMode )
    */
 
    aNumAlb        := {}
+
+   parUuid      		:= aTmp[ _CGUID ]
 
    /*
    Actualizacion de riesgo
@@ -7446,6 +7494,7 @@ STATIC FUNCTION EndTrans( aTmp, aGet, oBrw, oBrwDet, oBrwPgo, aNumAlb, nMode, oD
    local oError
    local oBlock
    local cCodCli
+   local cParUuid 
 
    if empty( aTmp[ _CSERIE ] )
       aTmp[ _CSERIE ]   := "A"
@@ -7456,6 +7505,7 @@ STATIC FUNCTION EndTrans( aTmp, aGet, oBrw, oBrwDet, oBrwPgo, aNumAlb, nMode, oD
    cSufFac              := aTmp[ _CSUFFAC ]
    dFecFac              := aTmp[ _DFECFAC ]
    cCodCli              := aTmp[ _CCODCLI ]
+   cParUuid             := aTmp[ _CGUID ]
 
    if !lValidaOperacion( aTmp[ _DFECFAC ] )
       Return .f.
@@ -7688,6 +7738,8 @@ STATIC FUNCTION EndTrans( aTmp, aGet, oBrw, oBrwDet, oBrwPgo, aNumAlb, nMode, oD
 
       TComercio:appendProductsToUpadateStocks( ( dbfTmpLin )->cRef, nView )
 
+      ( dbfTmpLin )->cParUuid  := cParUuid 
+
       dbPass( dbfTmpLin, D():FacturasRectificativasLineas( nView ), .t., cSerFac, nNumFac, cSufFac )
 
       ( dbfTmpLin )->( dbSkip() )
@@ -7745,6 +7797,8 @@ STATIC FUNCTION EndTrans( aTmp, aGet, oBrw, oBrwDet, oBrwPgo, aNumAlb, nMode, oD
       if !empty( aTmp[ _CCENTROCOSTE ] )
          ( dbfTmpPgo )->cCtrCoste := aTmp[ _CCENTROCOSTE ]
       endif
+
+      ( dbfTmpPgo )->ParUuid  := cParUuid 
 
       dbPass( dbfTmpPgo, dbfFacCliP, .t., cSerFac, nNumFac, cSufFac )
 
@@ -9064,7 +9118,8 @@ STATIC FUNCTION cFacCli( aGet, aTmp, oBrw, oBrwiva, nMode )
 
       // Comprobamos si la factura tiene lineas de detalle---------------------
 
-      nOption           := nImportaLineas()
+      //nOption           := nImportaLineas()
+      nOption           := 1
 
       if nOption >= 1
 
@@ -12694,12 +12749,15 @@ function aItmFacRec()
    aAdd( aItmFacRec, { "nDtoTarifa"  ,"N",  6, 2, "Descuento de tarifa de cliente",                          "DescuentoTarifa",         "", "( cDbf )", nil } )
    aAdd( aItmFacRec, { "tFecFac"     ,"C",  9, 0, "Hora de la factura rectificativa",                        "HoraFactura",             "", "( cDbf )", nil } )
    aAdd( aItmFacRec, { "cCtrCoste"   ,"C",  9, 0, "Código del centro de coste",                              "CentroCoste",             "", "( cDbf )", nil } )
+   aAdd( aItmFacRec, { "lValida"  	,"L", 1,   0, "Factura validada" ,                                         "Validada",           	  	  "", "( cDbf )", .f. } )
+   aAdd( aItmFacRec, { "huella"  	,"C", 200,   0, "Huella Veryfactu" ,                                     "HuellaVeryfactu",           	  	  "", "( cDbf )", nil } )
+   aAdd( aItmFacRec, { "huellaant"	,"C", 200,   0, "Huella Veryfactu Anterior" ,                    "HuellaVeryfactuAnterior",           	  	  "", "( cDbf )", nil  } )
+   aAdd( aItmFacRec, { "cRutQr"  	 ,"C", 200,   0, "Ruta QR" ,                                                "RutaQR",           	  	      "", "( cDbf )", nil } )
+   aAdd( aItmFacRec, { "cRutXml"  	 ,"C", 200,   0, "Ruta Xml" ,                                             "RutaXML",           	  	      "", "( cDbf )", nil } )
+   aAdd( aItmFacRec, { "nEstVeri"  	 ,"N", 1,   0, "Estado verifactu" ,                                       "EstadoVerifactu",           	  	      "", "( cDbf )", nil } )
+   aAdd( aItmFacRec, { "cUrlQr"  	 ,"C", 200,   0, "Url Qr Code" ,                                           "UrlQrCode",           	  	      "", "( cDbf )", nil } )
 
 RETURN ( aItmFacRec )
-
-//---------------------------------------------------------------------------//
-
-
 
 //---------------------------------------------------------------------------//
 
@@ -12797,6 +12855,7 @@ function aColFacRec()
    aAdd( aColFacRec, { "id_tipo_v"   ,"N", 16, 0, "Identificador tipo de venta"           , "IdentificadorTipoVenta",      "", "( cDbfCol )", nil } )
    aAdd( aColFacRec, { "nRegIva"     ,"N",  1, 0, "Régimen de " + cImp()                  , "TipoImpuesto",                "", "( cDbfCol )", nil } ) 
    aAdd( aColFacRec, { "lValidado"   ,"L",  1, 0, "Lógico validado con consolidación" 	  , "LogicoValidado",              "", "( cDbfCol )", .f. } )
+   aAdd( aColFacRec, { "cParUuid"   ,"C", 40, 0, "ID de la cabecera" 	  , "IDCABECERA",              "", "( cDbfCol )", nil } )
 
 return ( aColFacRec )
 
@@ -14945,5 +15004,318 @@ Static Function LoadTrans( aTmp, oGetCod, oGetKgs, oSayTrn )
    RecalculaTotal( aTmp )
 
 Return .t.
+
+//---------------------------------------------------------------------------//
+
+Static Function PublicarFactura( aTmp )
+
+	local nNumFac
+   local cUuidparent
+   local nOrdAnt
+   local nNumRec
+   local hFactura          := {=>}
+   local hResultado     := {=>}
+   local lExito := .f.
+   local aTIva
+   local cCifAnt
+   local cNumAnt
+   local dFecAnt
+   local cHuellaAnt
+   local cFacturaRectificada := ""
+   local dFechaRectificada := ctod( "" )
+   local cSerieRectificada
+   local cNumeroRectificada
+   local cSufijoRectificada
+   local nNetoRectificada
+   local nIvaRectificada
+   local nTotalRectificada
+
+
+   /*if !Empty( aTmp )
+
+      aTmp[ _LVALIDA ] := .t.
+
+      if aTmp[ _NNUMFAC ] == 0
+         nNumFac                       := nNewDoc( aTmp[ _CSERIE ], D():FacturasClientes( nView ), "NFACCLI", , D():Contadores( nView ) )
+         aTmp[ _NNUMFAC ]     := nNumFac
+         aTmp[ _DFECFAC ]        := GetSysDate()
+         aTmp[ _TFECFAC ]        := Time()
+      end if 
+
+      return .t.
+
+   end if*/
+
+	if !( D():FacturasRectificativas( nView ) )->lValida
+
+		/*if ( D():FacturasRectificativas( nView ) )->nNumFac != 0
+         nNumFac              := ( D():FacturasRectificativas( nView ) )->nNumFac
+      else
+         nNumFac              := nNewDoc( ( D():FacturasRectificativas( nView ) )->cSerie, D():FacturasRectificativas( nView ), "NFACCLI", , D():Contadores( nView ) )
+      end if
+
+      cUuidparent         := ( D():FacturasRectificativas( nView ) )->cGuid
+
+      if dbLock( D():FacturasRectificativas( nView ) )
+         ( D():FacturasRectificativas( nView ) )->nNumFac := nNumFac
+         ( D():FacturasRectificativas( nView ) )->dFecFac := GetSysDate()
+         ( D():FacturasRectificativas( nView ) )->tFecFac := Time()
+	    	( D():FacturasRectificativas( nView ) )->lValida := .t.
+        	( D():FacturasRectificativas( nView ) )->( dbUnLock() )
+    	end if*/
+
+      /*
+      Anotamos en las lineas el número de la factura-----------------------
+      */
+
+      /*nOrdAnt := ( D():FacturasRectificativasLineas( nView ) )->( OrdSetFocus( "parUuid" ) )
+      
+      if  ( D():FacturasRectificativasLineas( nView ) )->( dbSeek( cUuidparent ) )
+
+         while ( D():FacturasRectificativasLineas( nView ) )->( !eof() ) .and. ( D():FacturasRectificativasLineas( nView ) )->parUuid == cUuidparent
+
+            if dbLock( D():FacturasRectificativasLineas( nView ) )
+               ( D():FacturasRectificativasLineas( nView ) )->nNumFac := nNumFac
+                ( D():FacturasRectificativasLineas( nView ) )->dFecFac := GetSysDate()
+               ( D():FacturasRectificativasLineas( nView ) )->( dbUnLock() )
+            end if
+
+            ( D():FacturasRectificativasLineas( nView ) )->( dbSkip() )
+
+         end while
+
+      end if
+      
+      ( D():FacturasRectificativasLineas( nView ) )->( OrdSetFocus( nOrdAnt ) )*/
+         
+      /*
+      Anotamos en los pagos el número de la factura-----------------------
+      */
+
+      /*nOrdAnt := ( D():FacturasClientesCobros( nView ) )->( OrdSetFocus( "parUuid" ) )
+      
+      if  ( D():FacturasClientesCobros( nView ) )->( dbSeek( cUuidparent ) )
+
+         while ( D():FacturasClientesCobros( nView ) )->( !eof() ) .and. ( D():FacturasClientesCobros( nView ) )->parUuid == cUuidparent
+
+            if dbLock( D():FacturasClientesCobros( nView ) )
+               ( D():FacturasClientesCobros( nView ) )->nNumFac := nNumFac
+               ( D():FacturasClientesCobros( nView ) )->( dbUnLock() )
+            end if
+
+            ( D():FacturasClientesCobros( nView ) )->( dbSkip() )
+
+         end while
+
+      end if
+      
+      ( D():FacturasClientesCobros( nView ) )->( OrdSetFocus( nOrdAnt ) )*/
+
+      /*
+      Anotamos en las incidencias el número de la factura-----------------------
+      */
+
+      /*nOrdAnt := ( dbfFacCliI )->( OrdSetFocus( "parUuid" ) )
+      
+      if  ( dbfFacCliI )->( dbSeek( cUuidparent ) )
+
+         while ( dbfFacCliI )->( !eof() ) .and. ( dbfFacCliI )->parUuid == cUuidparent
+
+            if dbLock( dbfFacCliI )
+               ( dbfFacCliI )->nNumFac := nNumFac
+               ( dbfFacCliI )->( dbUnLock() )
+            end if
+
+            ( dbfFacCliI )->( dbSkip() )
+
+         end while
+
+      end if
+      
+      ( dbfFacCliI )->( OrdSetFocus( nOrdAnt ) )*/
+
+      /*
+      Anotamos en las documentos el número de la factura-----------------------
+      */
+
+      /*nOrdAnt := ( dbfFacCliD )->( OrdSetFocus( "parUuid" ) )
+      
+      if  ( dbfFacCliD )->( dbSeek( cUuidparent ) )
+
+         while ( dbfFacCliD )->( !eof() ) .and. ( dbfFacCliD )->parUuid == cUuidparent
+
+            if dbLock( dbfFacCliD )
+               ( dbfFacCliD )->nNumFac := nNumFac
+               ( dbfFacCliD )->( dbUnLock() )
+            end if
+
+            ( dbfFacCliD )->( dbSkip() )
+
+         end while
+
+      end if
+      
+      ( dbfFacCliD )->( OrdSetFocus( nOrdAnt ) )*/
+
+      /*
+      Anotamos en las entidades el número de la factura-----------------------
+      */
+
+      /*nOrdAnt := ( D():FacturasClientesEntidades( nView ) )->( OrdSetFocus( "parUuid" ) )
+      
+      if  ( D():FacturasClientesEntidades( nView ) )->( dbSeek( cUuidparent ) )
+
+         while ( D():FacturasClientesEntidades( nView ) )->( !eof() ) .and. ( D():FacturasClientesEntidades( nView ) )->parUuid == cUuidparent
+
+            if dbLock( D():FacturasClientesEntidades( nView ) )
+               ( D():FacturasClientesEntidades( nView ) )->nNumFac := nNumFac
+               ( D():FacturasClientesEntidades( nView ) )->( dbUnLock() )
+            end if
+
+            ( D():FacturasClientesEntidades( nView ) )->( dbSkip() )
+
+         end while
+
+      end if
+      
+      ( D():FacturasClientesEntidades( nView ) )->( OrdSetFocus( nOrdAnt ) )*/
+
+      /*
+      Anotamos en las situaciones el número de la factura-----------------------
+      */
+
+      /*nOrdAnt := ( D():FacturasClientesSituaciones( nView ) )->( OrdSetFocus( "parUuid" ) )
+      
+      if  ( D():FacturasClientesSituaciones( nView ) )->( dbSeek( cUuidparent ) )
+
+         while ( D():FacturasClientesSituaciones( nView ) )->( !eof() ) .and. ( D():FacturasClientesSituaciones( nView ) )->parUuid == cUuidparent
+
+            if dbLock( D():FacturasClientesSituaciones( nView ) )
+               ( D():FacturasClientesSituaciones( nView ) )->nNumFac := nNumFac
+               ( D():FacturasClientesSituaciones( nView ) )->( dbUnLock() )
+            end if
+
+            ( D():FacturasClientesSituaciones( nView ) )->( dbSkip() )
+
+         end while
+
+      end if
+      
+      ( D():FacturasClientesSituaciones( nView ) )->( OrdSetFocus( nOrdAnt ) )*/
+
+      /*
+      Generamos los recibos de la factura-------------------------------------
+      */
+
+      //genPgoFacCli( ( D():FacturasClientes( nView ) )->cSerie + Str( ( D():FacturasClientes( nView ) )->nNumFac ) + ( D():FacturasClientes( nView ) )->cSufFac, D():FacturasClientes( nView ), D():FacturasClientesLineas( nView ), D():FacturasClientesCobros( nView ), , D():Clientes( nView ), D():FormasPago( nView ), dbfDiv, dbfIva, APPD_MODE )
+
+   end if
+
+   /*
+   Llamada para conectar con VeryFactu-----------------------------------
+   */
+
+   aTIva          := aTotFacRec( ( D():FacturasRectificativas( nView ) )->cSerie + Str( ( D():FacturasRectificativas( nView ) )->nNumFac ) + ( D():FacturasRectificativas( nView ) )->cSufFac,;
+   											D():FacturasRectificativas( nView ),;
+   		 									D():FacturasRectificativasLineas( nView ),; 
+   		 									dbfIva,; 
+   		 									dbfDiv )[8]
+
+   // Buscamos las referencias anteriores--------------------------------
+      
+   nNumRec := ( D():FacturasRectificativas( nView ) )->( Recno() )
+   nOrdAnt := ( D():FacturasRectificativas( nView ) )->( OrdSetFocus( "nNumFac" ) )
+   nNumFac := ( D():FacturasRectificativas( nView ) )->nNumFac
+
+   ( D():FacturasRectificativas( nView ) )->( dbSkip( -1 ) )
+
+   if ( D():FacturasRectificativas( nView ) )->( Eof() ) .or. ( D():FacturasRectificativas( nView ) )->nNumFac == nNumFac
+      cCifAnt  :=  ""
+      cNumAnt := ""
+      dFecAnt :=  ctod( "" )
+      cHuellaAnt :=  ""
+   else
+      cCifAnt  :=  ( D():FacturasRectificativas( nView ) )->cDniCli
+      cNumAnt :=  ( D():FacturasRectificativas( nView ) )->cSerie + AllTrim( ( D():FacturasRectificativas( nView ) )->cSufFac ) + AllTrim( Str( ( D():FacturasRectificativas( nView ) )->nNumFac ) )
+      dFecAnt :=  ( D():FacturasRectificativas( nView ) )->dFecFac
+      cHuellaAnt :=  ( D():FacturasRectificativas( nView ) )->huella
+   end if
+
+   ( D():FacturasRectificativas( nView ) )->( OrdSetFocus( nOrdAnt ) )      
+   ( D():FacturasRectificativas( nView ) )->( dbGoTo( nNumRec ) )      
+
+   // Datos de la factura rectificada------------------------------------
+   cSerieRectificada := SubStr( ( D():FacturasRectificativas( nView ) )->cNumFac, 1, 1 )
+   cNumeroRectificada := SubStr( ( D():FacturasRectificativas( nView ) )->cNumFac, 2, 9 )
+   cSufijoRectificada := SubStr( ( D():FacturasRectificativas( nView ) )->cNumFac, 11, 2 )
+
+   cFacturaRectificada := cSerieRectificada + cSufijoRectificada + AllTrim( cNumeroRectificada )
+   dFechaRectificada   := FacturasClientesModel():getField( cSerieRectificada, Val( cNumeroRectificada ), cSufijoRectificada, "dFecFac" )
+   nNetoRectificada  := ( D():FacturasRectificativas( nView ) )->nTotNet
+   nIvaRectificada  := ( D():FacturasRectificativas( nView ) )->nTotIva
+   nTotalRectificada  := ( D():FacturasRectificativas( nView ) )->nTotFac
+
+   hFactura          := {=>}
+   
+   hset( hFactura, "TipoDocumento", FAC_REC )
+   hset( hFactura, "Serie", ( D():FacturasRectificativas( nView ) )->cSerie )
+   hset( hFactura, "Numero", ( D():FacturasRectificativas( nView ) )->nNumFac )
+   hset( hFactura, "Sufijo", ( D():FacturasRectificativas( nView ) )->cSufFac )
+   hset( hFactura, "Uuid", ( D():FacturasRectificativas( nView ) )->cGuid )
+   hset( hFactura, "Fecha", ( D():FacturasRectificativas( nView ) )->dFecFac )
+   hset( hFactura, "Hora", ( D():FacturasRectificativas( nView ) )->tFecFac )
+   hset( hFactura, "Neto", ( D():FacturasRectificativas( nView ) )->nTotNet )
+   hset( hFactura, "Impuesto", ( D():FacturasRectificativas( nView ) )->nTotIva )
+   hset( hFactura, "Recargo", ( D():FacturasRectificativas( nView ) )->nTotReq )
+   hset( hFactura, "Total", ( D():FacturasRectificativas( nView ) )->nTotFac )
+   hset( hFactura, "CifCliente", AllTrim( ( D():FacturasRectificativas( nView ) )->cDniCli ) )
+   hset( hFactura, "NombreCliente", AllTrim( ( D():FacturasRectificativas( nView ) )->cNomCli ) )
+   hset( hFactura, "aTotIva", aTIva )
+   hset( hFactura, "CifAnterior",  AllTrim( cCifAnt ) )
+   hset( hFactura, "FechaAnterior", dFecAnt )
+   hset( hFactura, "NumeroAnterior",  AllTrim( cNumAnt ) )
+   hset( hFactura, "HuellaAnterior", AllTrim( cHuellaAnt ) )
+   hset( hFactura, "FacturaRectificada", AllTrim( cFacturaRectificada ) )
+   hset( hFactura, "FechaFacturaRectificada", dFechaRectificada )
+   hset( hFactura, "NetoFacturaRectificada", nNetoRectificada )
+   hset( hFactura, "IvaFacturaRectificada", nIvaRectificada )
+   hset( hFactura, "TotalFacturaRectificada", nTotalRectificada )
+   
+   if !Empty( oVeryfactu )
+
+      if ( D():FacturasRectificativas( nView ) )->nEstVeri < 3
+      
+         //Pasamos los datos de la factura a oVeryfactu
+         oVeryfactu:SetDatos( hFactura )
+         
+         //Generar oVeryfactu completo
+         lExito := oVeryfactu:GeneraQrCode()
+         
+         // Log de errores si los hay
+         if !lExito .and. Len( oVeryfactu:aErrores ) > 0
+            LogWrite( "Errores oVeryfactu: " + hb_ValToExp( oVeryfactu:aErrores ) )
+         end if
+
+         if dbLock( D():FacturasRectificativas( nView ) )
+            ( D():FacturasRectificativas( nView ) )->cRutQr   := oVeryfactu:cNombreArchivoQR 
+            ( D():FacturasRectificativas( nView ) )->cRutXml := oVeryfactu:cNombreArchivoXML
+            ( D():FacturasRectificativas( nView ) )->huella  := oVeryfactu:cHashActual
+            ( D():FacturasRectificativas( nView ) )->huellaAnt  := cHuellaAnt
+            ( D():FacturasRectificativas( nView ) )->cUrlQr  := oVeryfactu:QRCodeDirectory
+
+            ( D():FacturasRectificativas( nView ) )->( dbUnLock() )
+
+         end if
+
+         // Enviar a AEAT si está configurado
+         if lExito .and. oVeryfactu:lEnviarAEAT
+            oVeryfactu:EnviarXmlAEAT()
+         end if
+
+      end if
+
+   end if
+   
+Return ( .t. )
 
 //---------------------------------------------------------------------------//

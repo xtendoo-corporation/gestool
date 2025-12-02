@@ -107,6 +107,9 @@ Ficheros-----------------------------------------------------------------------
 #define _CRUTJSON                  77     //   C      200    0
 #define _CRUTQR                    78     //   C      200    0
 #define _CRUTXML                   79     //   C      200    0
+#define _LVALIDA                   80
+#define _NESTVERI                 81
+#define _CURLQR                   82
 
 #define _CSERTIL                   1      //   C      1      0
 #define _CNUMTIL                   2      //   C     10      0
@@ -1315,6 +1318,18 @@ FUNCTION FrontTpv( oMenuItem, oWnd, cCodCli, cCodArt, lEntCon, lExtTpv, hDocumen
       end with
 
       with object ( oWndBrw:AddXCol() )
+         :cHeader                := "Estado verifactu"
+         :nHeadBmpNo      := 4
+         :bBmpData            := {|| if( ( D():Tikets( nView ) )->nEstVeri == 0, 1, ( D():Tikets( nView ) )->nEstVeri ) }
+         :nWidth                  := 20
+         :AddResource( "GC_DELETE_12" )
+         :AddResource( "GC_SHAPE_SQUARE_12" )
+         :AddResource( "GC_CHECK_12" )
+         :AddResource( "GC_VERYFACTU_16" )
+         :bLDClickData     := {|| oWndBrw:RecEdit() }
+      end with
+
+      with object ( oWndBrw:AddXCol() )
          :cHeader          := "Número"
          :cSortOrder       := "cNumTik"
          :bEditValue       := {|| ( D():Tikets( nView ) )->cSerTik + "/" + lTrim( ( D():Tikets( nView ) )->cNumTik ) }
@@ -1537,6 +1552,12 @@ FUNCTION FrontTpv( oMenuItem, oWnd, cCodCli, cCodArt, lEntCon, lExtTpv, hDocumen
       TOOLTIP  "(Z)oom";
       HOTKEY   "Z";
       LEVEL    ACC_ZOOM
+
+   DEFINE BTNSHELL RESOURCE "GC_CLIPBOARD_EMPTY_EARTH_" OF oWndBrw ;
+      NOBORDER ;
+      ACTION   ( PublicarTicket() );
+      TOOLTIP  "Publicar";
+      MRU
 
    /*DEFINE BTNSHELL oDel RESOURCE "DEL" OF oWndBrw ;
       NOBORDER ;
@@ -4231,8 +4252,8 @@ Static Function NewTiket( aGet, aTmp, nMode, nSave, lBig, oBrw, oBrwDet )
 
       CursorWait()
 
-      oBlock                  := ErrorBlock( {| oError | ApoloBreak( oError ) } )
-      BEGIN SEQUENCE
+      //oBlock                  := ErrorBlock( {| oError | ApoloBreak( oError ) } )
+      //BEGIN SEQUENCE
 
          AutoMeterDialog( oDlgTpv )
          AutoTextDialog( oDlgTpv )   
@@ -4672,15 +4693,15 @@ Static Function NewTiket( aGet, aTmp, nMode, nSave, lBig, oBrw, oBrwDet )
 
          oDlgTpv:aEvalWhen()
 
-      RECOVER USING oError
+      /*RECOVER USING oError
 
-         RollBackTransaction()
+         RollBackTransaction()  
 
          msgStop( "Error en la grabación del ticket" + CRLF + ErrorMessage( oError ) )
 
       END SEQUENCE
 
-      ErrorBlock( oBlock )
+      ErrorBlock( oBlock )*/
 
       CursorWE()
 
@@ -12835,32 +12856,87 @@ Static Function SavTik2Tik( aTmp, aGet, nMode, nSave, nNumDev )
 
    WinGather( aTmp, nil, D():Tikets( nView ), nil, nMode )
 
+   /*
+   Publicamos el tiket en veriFactu si procede-------------------------------
+   */
+   
+   PublicarTicket()
+
+Return nil
+
+//---------------------------------------------------------------------------//
+
+Static Function PublicarTicket()
+
+   local nNumRec
+   local nOrdAnt
+   local cNumTik
+   local cCifAnt
+   local cNumAnt
+   local dFecAnt
+   local cHuellaAnt
+   local hTiket
+   local aTotalTik         := {}
+   local aTotalIva         := {}
+   local lExito
+   local aIvaTik
+   local aBasTik
+   local aImpTik
+   local hIva                  := {=>}
+   local n                    := 1
+
    //--------------------------------------------------------------------------//
    //Conectamos con veriFactu y creamos el QrCode ------------------------
    //--------------------------------------------------------------------------//
 
-    /*
-   Llamada para conectar con VeryFactu-----------------------------------
-   */
-
    // Buscamos las referencias anteriores--------------------------------
+
+   aTotalTik := aTotTik( ( D():Tikets( nView ) )->cSerTik + ( D():Tikets( nView ) )->cNumTik + ( D():Tikets( nView ) )->cSufTik, D():Tikets( nView ), dbfTikL, dbfDiv, nil, nil, .f. )
+
+   aIvaTik     :=  aTotalTik[5] 
+   aBasTik     :=  aTotalTik[6] 
+   aImpTik     :=  aTotalTik[7] 
+
+   for n := 1 to Len( aIvaTik )
+
+      if aIvaTik[n] != nil
       
+         hIva     := {  "porcentajeiva"   => aIvaTik[n],;
+                        "logrecargo"      => .f.,;
+                        "porcentajere"    => 0,;
+                        "bruto"           => aBasTik[n],;
+                        "neto"            => aBasTik[n],;
+                        "impiva"          => aImpTik[n],;
+                        "impre"           => 0,;
+                        "nivmh"           => 0,;
+                        "ntransporte"     => 0,;
+                        "npntver"         => 0 }
+
+         aAdd( aTotalIva, hIva )
+
+         hIva     := {=>}
+
+      end if
+
+   next
+
    nNumRec := ( D():Tikets( nView ) )->( Recno() )
    nOrdAnt := ( D():Tikets( nView ) )->( OrdSetFocus( "CNUMTIK" ) )
-   cNumTik := ( D():Tikets( nView ) )->cNumTik
+   cNumTik := ( D():Tikets( nView ) )->cSerTik + ( D():Tikets( nView ) )->cNumTik
 
    ( D():Tikets( nView ) )->( dbSeek( cNumTik ) )
       
    ( D():Tikets( nView ) )->( dbSkip( -1 ) )
    
-   if ( D():Tikets( nView ) )->( Eof() ) .or. ( D():Tikets( nView ) )->cNumTik == cNumTik
+   if ( D():Tikets( nView ) )->( Eof() ) .or. ( ( D():Tikets( nView ) )->cSerTik + ( D():Tikets( nView ) )->cNumTik == cNumTik  )
+
       cCifAnt  :=  ""
       cNumAnt := ""
       dFecAnt :=  ctod( "" )
       cHuellaAnt :=  ""
    else
       cCifAnt  :=  ( D():Tikets( nView ) )->cDniCli
-      cNumAnt :=  ( D():Tikets( nView ) )->cSerTik + AllTrim( ( D():Tikets( nView ) )->cSufTik ) + AllTrim( Str( ( D():Tikets( nView ) )->cNumTik ) )
+      cNumAnt :=  ( D():Tikets( nView ) )->cSerTik + AllTrim( ( D():Tikets( nView ) )->cSufTik ) + AllTrim( ( D():Tikets( nView ) )->cNumTik )
       dFecAnt :=  ( D():Tikets( nView ) )->dFecTik
       cHuellaAnt :=  ( D():Tikets( nView ) )->huella
    end if
@@ -12870,7 +12946,7 @@ Static Function SavTik2Tik( aTmp, aGet, nMode, nSave, nNumDev )
                                  
    hTiket          := {=>}
    
-   hset( hTiket, "TipoDocumento", "factura_cliente" )
+   hset( hTiket, "TipoDocumento", TIK_CLI )
    hset( hTiket, "Serie", ( D():Tikets( nView ) )->cSerTik )
    hset( hTiket, "Numero", ( D():Tikets( nView ) )->cNumTik )
    hset( hTiket, "Sufijo", ( D():Tikets( nView ) )->cSufTik )
@@ -12883,11 +12959,16 @@ Static Function SavTik2Tik( aTmp, aGet, nMode, nSave, nNumDev )
    hset( hTiket, "Total", ( D():Tikets( nView ) )->nTotTik )
    hset( hTiket, "CifCliente", AllTrim( ( D():Tikets( nView ) )->cDniCli ) )
    hset( hTiket, "NombreCliente", AllTrim( ( D():Tikets( nView ) )->cNomTik ) )
-   hset( hTiket, "aTotIva", aTotal )
+   hset( hTiket, "aTotIva", aTotalIva )
    hset( hTiket, "CifAnterior",  AllTrim( cCifAnt ) )
    hset( hTiket, "FechaAnterior", dFecAnt )
    hset( hTiket, "NumeroAnterior",  AllTrim( cNumAnt ) )
    hset( hTiket, "HuellaAnterior", AllTrim( cHuellaAnt ) )
+   hset( hTiket, "FacturaRectificada", "" )
+   hset( hTiket, "FechaFacturaRectificada", "" )
+   hset( hTiket, "NetoFacturaRectificada", 0 )
+   hset( hTiket, "IvaFacturaRectificada", 0 )
+   hset( hTiket, "TotalFacturaRectificada", 0 )
 
    if !Empty( oVeryfactu )
       
@@ -12907,10 +12988,17 @@ Static Function SavTik2Tik( aTmp, aGet, nMode, nSave, nNumDev )
          ( D():Tikets( nView ) )->cRutQr   := oVeryfactu:cNombreArchivoQR
          ( D():Tikets( nView ) )->huella  := oVeryfactu:cHashActual
          ( D():Tikets( nView ) )->huellaAnt  := cHuellaAnt
+         ( D():Tikets( nView ) )->cRutXml  := oVeryfactu:cNombreArchivoXML
+         ( D():Tikets( nView ) )->cUrlQr  := oVeryfactu:QRCodeDirectory
 
         	( D():Tikets( nView ) )->( dbUnLock() )
 
     	end if
+
+      // Enviar a AEAT si está configurado
+      if lExito .and. oVeryfactu:lEnviarAEAT
+         oVeryfactu:EnviarXmlAEAT()
+      end if
 
    end if
 
@@ -17399,6 +17487,9 @@ function aItmTik()
    aAdd( aItmTik, { "cRutJson"  	,"C", 200,   0, "Ruta Json"  } )
    aAdd( aItmTik, { "cRutQr"  	 ,"C", 200,   0, "Ruta QR"  } )
    aAdd( aItmTik, { "cRutXml"  	 ,"C", 200,   0, "Ruta Xml"  } )
+   aAdd( aItmTik, { "lValida"  	 ,"L", 1,   0, "Ticket validado"  } )
+   aAdd( aItmTik, { "nEstVeri"  	 ,"N", 1,   0, "Estado verifactu"  } )
+   aAdd( aItmTik, { "cUrlQr"  	 ,"C", 200,   0, "Url Qr Code"  } )
 
 return ( aItmTik )
 

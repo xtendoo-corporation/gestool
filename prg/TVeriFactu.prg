@@ -38,7 +38,17 @@ CLASS TVeriFactu
    DATA dFecha     INIT CToD("")
    DATA cHora      INIT ""
    DATA UuidFactura INIT ""
-   
+   DATA cTipoDocumento
+
+   DATA cFacturaRectificada   INIT ""
+   DATA dFechaRectificada    INIT CToD("")
+
+   DATA nNetoRectificado
+   DATA nIvaRectificado
+   DATA nTotalRectificado
+
+   DATA QRCodeDirectory INIT ""
+
    // Importes (según normativa AEAT)
    DATA nBaseImponible    INIT 0
    DATA nCuotaIVA         INIT 0
@@ -176,7 +186,15 @@ METHOD SetDatos( hDocumento ) CLASS TVeriFactu
    ::dFecha  := hGet( ::hDocumento, "Fecha" )
    ::cHora   := hGet( ::hDocumento, "Hora" )
    ::UuidFactura := hGet( ::hDocumento, "Uuid" )
-   
+   ::cTipoDocumento := hGet( ::hDocumento, "TipoDocumento" )
+
+   ::cFacturaRectificada := hGet( ::hDocumento, "FacturaRectificada" )
+   ::dFechaRectificada := hGet( ::hDocumento, "FechaFacturaRectificada" )
+
+   ::nNetoRectificado  := hGet( ::hDocumento, "NetoFacturaRectificada" )
+   ::nIvaRectificado   := hGet( ::hDocumento, "IvaFacturaRectificada" )
+   ::nTotalRectificado  := hGet( ::hDocumento, "TotalFacturaRectificada" )
+
    // Construir número completo
    ::cNumero := ::cSerie + ::cSufijo
    if ValType( ::nNumero ) == "N"
@@ -1170,9 +1188,11 @@ METHOD GenerarQR() CLASS TVeriFactu
       
       cQR := cURL + cDatos
 
-      LogWrite( "Generando código QR con datos:" )
-      LogWrite( cQR )
-      
+      ::QRCodeDirectory := cQR
+
+      LogWrite("Generando código QR con datos: " )
+      LogWrite(cQR)
+
       // Aquí se podría integrar una librería de generación de QR
       // Por ahora devolvemos la URL que debe codificarse en QR
 
@@ -1318,7 +1338,18 @@ METHOD CrearNombresArchivos() CLASS TVeriFactu
    // Rutas completas
    ::cRutaJSON := FullJsonDir() + ::cNombreArchivoJSON
    ::cRutaXML := FullXMLDir() + ::cNombreArchivoXML
-   ::cRutaQR   := FullQrDir() + ::cNombreArchivoQR
+
+   do case
+      case ::cTipoDocumento == FAC_CLI
+         ::cRutaQR   := FullQrDir() + ::cNombreArchivoQR
+
+      case ::cTipoDocumento == FAC_REC
+         ::cRutaQR   := FullQrFacRecDir() + ::cNombreArchivoQR
+
+      case ::cTipoDocumento == TIK_CLI
+         ::cRutaQR   := FullQrTikCliDir() + ::cNombreArchivoQR
+         
+   endcase
 
 RETURN Self
 
@@ -1608,12 +1639,15 @@ METHOD EnviarXmlAEAT() CLASS TVeriFactu
    local oChilkat
    local cTextoRespuesta := ""
 
-   try 
+   //MsgInfo( "Entro en EnviarXmlAEAT" )
+
+   //try 
       // Generar XML
       cXml := ::GenerarXml()
+      LogWrite( "---------------------------------------TIKCET-----------------------------------------------------------" )
       LogWrite( "XML generado para envío a AEAT:" )
       LogWrite( cXml )
-
+      //MsgInfo( cXml )
       
       // Crear objeto Chilkat HTTP
       oChilkat := CreateObject( "Chilkat_9_5_0.Http" )
@@ -1645,17 +1679,13 @@ METHOD EnviarXmlAEAT() CLASS TVeriFactu
       oChilkat := nil
 
       // Procesar respuesta de la AEAT
-      if !Empty( cRespuesta )
-         lExito := ::ProcesarRespuestaXMLAEAT( cRespuesta )
-      else
-         AAdd( ::aErrores, "No se recibió respuesta de la AEAT" )
-      endif
+      ::ProcesarRespuestaXMLAEAT( cRespuesta )
 
-   catch
-      AAdd( ::aErrores, "Error general en envío XML" )
-   end try
+   //catch
+   //   AAdd( ::aErrores, "Error general en envío XML" )
+   //end try
 
-RETURN lExito
+RETURN ( lExito )
 
 //---------------------------------------------------------------------------//
 
@@ -1678,6 +1708,10 @@ METHOD ProcesarRespuestaXMLAEAT( cRespuestaXML ) CLASS TVeriFactu
    cBodyString := cRespuestaXML:BodyStr
    cStatusCode := cRespuestaXML:StatusCode
    cStatusText := cRespuestaXML:StatusText
+
+   //MsgInfo( cBodyString )
+   //MsgInfo( cStatusCode )
+   //MsgInfo( cStatusText )
 
    // Crear objeto Chilkat XML
    oXml := CreateObject( "Chilkat_9_5_0.Xml" )
@@ -1731,11 +1765,26 @@ METHOD ProcesarRespuestaXMLAEAT( cRespuestaXML ) CLASS TVeriFactu
 
    //Pasamos el estado de procesado a la factura----------------------------------------------
 
-   FacturasClientesModel():SetEstadoVeriFactu( ::UuidFactura, nEstado )
+   do case
+      case ::cTipoDocumento == FAC_CLI
+         FacturasClientesModel():SetEstadoVeriFactu( ::UuidFactura, nEstado )
+
+      case ::cTipoDocumento == FAC_REC
+         RectificativasClientesModel():SetEstadoVeriFactu( ::UuidFactura, nEstado )
+
+      case ::cTipoDocumento == TIK_CLI
+         TicketsClientesModel():SetEstadoVeriFactu( ::UuidFactura, nEstado )
+         
+   endcase
    
    //Escribimos en el log de verifactu-----------------------------------------------------------
 
-   LogverifactuModel():RegEntrada( ::UuidFactura, FAC_CLI, cEstado, cCodeError, cDescripcion, Str( cStatusCode ), cStatusText )
+   cDescripcion := StrTran(  cDescripcion , "'", "" )
+   cDescripcion := StrTran(  cDescripcion , CRLF, "" )
+   cDescripcion := StrTran(  cDescripcion , CHR(10), "" )
+   cDescripcion := StrTran(  cDescripcion , CHR(13), "" )   
+
+   LogverifactuModel():RegEntrada( ::UuidFactura, ::cTipoDocumento, cEstado, cCodeError, cDescripcion, Str( cStatusCode ), cStatusText )
          
 RETURN .t.
 
@@ -1768,17 +1817,51 @@ METHOD GenerarXml() CLASS TVeriFactu
    cXml += '            <sum1:FechaExpedicionFactura>' + ::FormatearFecha(::dFecha) + '</sum1:FechaExpedicionFactura>' + CRLF
    cXml += '          </sum1:IDFactura>' + CRLF
    cXml += '          <sum1:NombreRazonEmisor>' + ::EscapeXML(::cNombreEmisor) + '</sum1:NombreRazonEmisor>' + CRLF
-   cXml += '          <sum1:TipoFactura>F1</sum1:TipoFactura>' + CRLF
-   cXml += '          <sum1:DescripcionOperacion>VENTA DE MERCADERIAS</sum1:DescripcionOperacion>' + CRLF
+   
+   do case
+      case ::cTipoDocumento == FAC_CLI
+         cXml += '          <sum1:TipoFactura>F1</sum1:TipoFactura>' + CRLF
+         cXml += '          <sum1:DescripcionOperacion>VENTA DE MERCADERIAS</sum1:DescripcionOperacion>' + CRLF
+
+      case ::cTipoDocumento == FAC_REC
+         cXml += '          <sum1:TipoFactura>R1</sum1:TipoFactura>' + CRLF
+         cXml += '          <sum1:TipoRectificativa>S</sum1:TipoRectificativa>' + CRLF
+
+      case ::cTipoDocumento == TIK_CLI
+         cXml += '          <sum1:TipoFactura>F2</sum1:TipoFactura>' + CRLF
+         cXml += '          <sum1:DescripcionOperacion>VENTA DE MERCADERIAS</sum1:DescripcionOperacion>' + CRLF
+         
+   endcase
+
+   if ::cTipoDocumento == FAC_REC
+         cXml += '          <sum1:FacturasRectificadas>' + CRLF
+         cXml += '              <sum1:IDFacturaRectificada>' + CRLF
+         cXml += '                <sum1:IDEmisorFactura>' + ::cNIFEmisor + '</sum1:IDEmisorFactura>' + CRLF
+         cXml += '                <sum1:NumSerieFactura>' + AllTrim( ::cFacturaRectificada ) + '</sum1:NumSerieFactura>' + CRLF
+         cXml += '                <sum1:FechaExpedicionFactura>' + ::FormatearFecha( ::dFechaRectificada ) + '</sum1:FechaExpedicionFactura>' + CRLF
+         cXml += '              </sum1:IDFacturaRectificada>' + CRLF
+         cXml += '          </sum1:FacturasRectificadas>' + CRLF
+         cXml += '          <sum1:ImporteRectificacion>' + CRLF
+         cXml += '            <sum1:BaseRectificada>' + ::FormatearImporte( ::nNetoRectificado ) + '</sum1:BaseRectificada>' + CRLF
+         cXml += '            <sum1:CuotaRectificada>' + ::FormatearImporte( ::nIvaRectificado ) + '</sum1:CuotaRectificada>' + CRLF
+         cXml += '          </sum1:ImporteRectificacion>' + CRLF
+         cXml += '          <sum1:FechaOperacion>' + ::FormatearFecha( ::dFechaRectificada ) + '</sum1:FechaOperacion>' + CRLF
+         cXml += '          <sum1:DescripcionOperacion>RECTIFICATIVA POR ERROR EN PRECIO</sum1:DescripcionOperacion>' + CRLF
+   end if
+   
+   if ::cTipoDocumento != TIK_CLI
    cXml += '          <sum1:Destinatarios>' + CRLF
    cXml += '            <sum1:IDDestinatario>' + CRLF
    cXml += '              <sum1:NombreRazon>' + ::cNombreReceptor + '</sum1:NombreRazon>' + CRLF
    cXml += '              <sum1:NIF>' + ::cNIFReceptor + '</sum1:NIF>' + CRLF
    cXml += '            </sum1:IDDestinatario>' + CRLF
    cXml += '          </sum1:Destinatarios>' + CRLF
+   end if
+
    cXml += '          <sum1:Desglose>' + CRLF
    for each hTotIva in ::aTotIva
    cXml += '            <sum1:DetalleDesglose>' + CRLF
+   cXml += '              <sum1:Impuesto>01</sum1:Impuesto>' + CRLF
    cXml += '              <sum1:ClaveRegimen>01</sum1:ClaveRegimen>' + CRLF
    cXml += '              <sum1:CalificacionOperacion>S1</sum1:CalificacionOperacion>' + CRLF
    cXml += '              <sum1:TipoImpositivo>' + AllTrim( Str( hGet( hTotIva, "porcentajeiva" ) ) ) + '</sum1:TipoImpositivo>' + CRLF
@@ -1790,10 +1873,11 @@ METHOD GenerarXml() CLASS TVeriFactu
    cXml += '          <sum1:CuotaTotal>' + ::FormatearImporte(::nCuotaIVA) + '</sum1:CuotaTotal>' + CRLF
    cXml += '          <sum1:ImporteTotal>' + ::FormatearImporte(::nImporteTotal) + '</sum1:ImporteTotal>' + CRLF
    
-   /*cXml += '          <sum1:Encadenamiento>' + CRLF
+   if LogverifactuModel():lPrimerRegistro( ::cTipoDocumento )
+   cXml += '          <sum1:Encadenamiento>' + CRLF
    cXml += '            <sum1:PrimerRegistro>S</sum1:PrimerRegistro>' + CRLF
-   cXml += '          </sum1:Encadenamiento>' + CRLF*/
-
+   cXml += '          </sum1:Encadenamiento>' + CRLF
+   else
    cXml += '          <sum1:Encadenamiento>' + CRLF
    cXml += '            <sum1:RegistroAnterior>' + CRLF
    cXml += '              <sum1:IDEmisorFactura>'+ ::cCifAnterior + '</sum1:IDEmisorFactura>' + CRLF
@@ -1802,6 +1886,8 @@ METHOD GenerarXml() CLASS TVeriFactu
    cXml += '              <sum1:Huella>' + ::cHashAnterior + '</sum1:Huella>' + CRLF
    cXml += '            </sum1:RegistroAnterior>' + CRLF
    cXml += '          </sum1:Encadenamiento>' + CRLF
+   end if
+
    cXml += '          <sum1:SistemaInformatico>' + CRLF
    cXml += '            <sum1:NombreRazon>Xtendoo Software SL</sum1:NombreRazon>' + CRLF
    cXml += '            <sum1:NIF>B16890287</sum1:NIF>' + CRLF
@@ -1828,7 +1914,6 @@ RETURN cXML
 
 
 /* Ejemplo generado y entregado en postman
-
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sum="https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/es/aeat/tike/cont/ws/SuministroLR.xsd" xmlns:sum1="https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/es/aeat/tike/cont/ws/SuministroInformacion.xsd" xmlns:xd="http://www.w3.org/2000/09/xmldsig#">
   <soapenv:Header/>
   <soapenv:Body>
@@ -1889,7 +1974,6 @@ RETURN cXML
     </sum:RegFactuSistemaFacturacion>
   </soapenv:Body>
 </soapenv:Envelope>
-
 */
 
 //---------------------------------------------------------------------------//

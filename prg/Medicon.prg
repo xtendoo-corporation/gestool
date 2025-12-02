@@ -462,6 +462,30 @@ RETURN ( cCurDir + "\" )
 
 //---------------------------------------------------------------------------//
 
+FUNCTION FullQrFacRecDir()
+
+    local cCurDir   := FullCurDir() + "QRFacRecBmp"
+
+    if !isDirectory( cCurDir )
+       Makedir( cCurDir )
+    end if
+
+RETURN ( cCurDir + "\" )
+
+//---------------------------------------------------------------------------//
+
+FUNCTION FullQrTikCliDir()
+
+    local cCurDir   := FullCurDir() + "QRTikCliBmp"
+
+    if !isDirectory( cCurDir )
+       Makedir( cCurDir )
+    end if
+
+RETURN ( cCurDir + "\" )
+
+//---------------------------------------------------------------------------//
+
 FUNCTION FullJsonDir()
 
     local cCurDir   := FullCurDir() + "JSON"

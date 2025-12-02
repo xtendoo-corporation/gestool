@@ -169,6 +169,7 @@
 #define _CRUTQR 		   139
 #define _CRUTXML 		  140
 #define _NESTVERI 		  141
+#define _CURLQR 		  142
 
 /*
 Definici-n de la base de datos de lineas de detalle
@@ -1165,11 +1166,11 @@ FUNCTION FactCli( oMenuItem, oWnd, hHash )
          TOOLTIP  "Publicar";
          MRU
 
-      DEFINE BTNSHELL RESOURCE "gc_document_text_delete_" OF oWndBrw ;
+      /*DEFINE BTNSHELL RESOURCE "gc_document_text_delete_" OF oWndBrw ;
          NOBORDER ;
          ACTION   ( MsgInfo( "Rectificar" ) );
          TOOLTIP  "Rectificar factura";
-         MRU
+         MRU*/
 
       DEFINE BTNSHELL oDel RESOURCE "DEL" OF oWndBrw ;
          NOBORDER ;
@@ -10935,7 +10936,7 @@ STATIC FUNCTION BeginTrans( aTmp, nMode )
       ( dbfTmpEntidades )->( dbGoTop() )
 
    else
-
+   
       lErrors     := .t.
 
    end if
@@ -19240,10 +19241,10 @@ function SynFacCli( cPath )
             end if 
          end if
 
-         if empty( ( dbfFacCliS )->paruuid ) .and. ( dbfFacCliS )->( dbRLock() )
-            ( dbfFacCliS )->paruuid  := FacturasClientesModel():getGuid( ( dbfFacCliS )->cSerFac + str( ( dbfFacCliS )->nNumFac ) + ( dbfFacCliS )->cSufFac, "cGuid" )
+         /*if empty( ( dbfFacCliS )->paruuid ) .and. ( dbfFacCliS )->( dbRLock() )
+            ( dbfFacCliS )->paruuid  := FacturasClientesModel():getField( ( dbfFacCliS )->cSerFac + str( ( dbfFacCliS )->nNumFac ) + ( dbfFacCliS )->cSufFac, "cGuid" )
             ( dbfFacCliS )->( dbUnLock() )
-         end if
+         end if*/
 
          ( dbfFacCliS )->( dbSkip() )
 
@@ -20323,6 +20324,7 @@ function aItmFacCli()
    aAdd( aItmFacCli, { "cRutQr"  	 ,"C", 200,   0, "Ruta QR" ,                                                "RutaQR",           	  	      "", "( cDbf )", nil } )
    aAdd( aItmFacCli, { "cRutXml"  	 ,"C", 200,   0, "Ruta Xml" ,                                             "RutaXML",           	  	      "", "( cDbf )", nil } )
    aAdd( aItmFacCli, { "nEstVeri"  	 ,"N", 1,   0, "Estado verifactu" ,                                       "EstadoVerifactu",           	  	      "", "( cDbf )", nil } )
+   aAdd( aItmFacCli, { "cUrlQr"  	 ,"C", 200,   0, "Url Qr Code" ,                                           "UrlQrCode",           	  	      "", "( cDbf )", nil } )
 
 RETURN ( aItmFacCli )
 
@@ -24048,7 +24050,7 @@ Static Function PublicarFactura( aTmp )
                                  
    hFactura          := {=>}
    
-   hset( hFactura, "TipoDocumento", "factura_cliente" )
+   hset( hFactura, "TipoDocumento", FAC_CLI )
    hset( hFactura, "Serie", ( D():FacturasClientes( nView ) )->cSerie )
    hset( hFactura, "Numero", ( D():FacturasClientes( nView ) )->nNumFac )
    hset( hFactura, "Sufijo", ( D():FacturasClientes( nView ) )->cSufFac )
@@ -24066,33 +24068,43 @@ Static Function PublicarFactura( aTmp )
    hset( hFactura, "FechaAnterior", dFecAnt )
    hset( hFactura, "NumeroAnterior",  AllTrim( cNumAnt ) )
    hset( hFactura, "HuellaAnterior", AllTrim( cHuellaAnt ) )
+   hset( hFactura, "FacturaRectificada", "" )
+   hset( hFactura, "FechaFacturaRectificada", "" )
+   hset( hFactura, "NetoFacturaRectificada", 0 )
+   hset( hFactura, "IvaFacturaRectificada", 0 )
+   hset( hFactura, "TotalFacturaRectificada", 0 )
 
    if !Empty( oVeryfactu )
+
+      if ( D():FacturasClientes( nView ) )->nEstVeri < 3
       
-      //Pasamos los datos de la factura a oVeryfactu
-      oVeryfactu:SetDatos( hFactura )
-      
-      //Generar oVeryfactu completo
-      lExito := oVeryfactu:GeneraQrCode()
-      
-      // Log de errores si los hay
-      if !lExito .and. Len( oVeryfactu:aErrores ) > 0
-         LogWrite( "Errores oVeryfactu: " + hb_ValToExp( oVeryfactu:aErrores ) )
+         //Pasamos los datos de la factura a oVeryfactu
+         oVeryfactu:SetDatos( hFactura )
+         
+         //Generar oVeryfactu completo
+         lExito := oVeryfactu:GeneraQrCode()
+         
+         // Log de errores si los hay
+         if !lExito .and. Len( oVeryfactu:aErrores ) > 0
+            LogWrite( "Errores oVeryfactu: " + hb_ValToExp( oVeryfactu:aErrores ) )
+         end if
+
+         if dbLock( D():FacturasClientes( nView ) )
+            ( D():FacturasClientes( nView ) )->cRutQr   := oVeryfactu:cNombreArchivoQR 
+            ( D():FacturasClientes( nView ) )->cRutXml := oVeryfactu:cNombreArchivoXML
+            ( D():FacturasClientes( nView ) )->huella  := oVeryfactu:cHashActual
+            ( D():FacturasClientes( nView ) )->huellaAnt  := cHuellaAnt
+            ( D():FacturasClientes( nView ) )->cUrlQr  := oVeryfactu:QRCodeDirectory
+
+            ( D():FacturasClientes( nView ) )->( dbUnLock() )
+         end if
+
+         // Enviar a AEAT si está configurado
+         if lExito .and. oVeryfactu:lEnviarAEAT
+            oVeryfactu:EnviarXmlAEAT()
+         end if
+
       end if
-
-      // Enviar a AEAT si está configurado
-      if lExito .and. oVeryfactu:lEnviarAEAT
-         oVeryfactu:EnviarXmlAEAT()
-      end if
-
-      if dbLock( D():FacturasClientes( nView ) )
-         ( D():FacturasClientes( nView ) )->cRutQr   := oVeryfactu:cNombreArchivoQR 
-          ( D():FacturasClientes( nView ) )->cRutXml := oVeryfactu:cNombreArchivoXML
-         ( D():FacturasClientes( nView ) )->huella  := oVeryfactu:cHashActual
-         ( D():FacturasClientes( nView ) )->huellaAnt  := cHuellaAnt
-
-        	( D():FacturasClientes( nView ) )->( dbUnLock() )
-    	end if
 
    end if
    

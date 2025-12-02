@@ -20,6 +20,8 @@ CLASS TLogVerifactu FROM TMant
 
    METHOD Activate()
 
+   METHOD NombreTipoDocumento( cCodTipDoc )
+
 END CLASS
 
 //----------------------------------------------------------------------------//
@@ -33,17 +35,19 @@ METHOD DefineFiles( cPath, cDriver ) CLASS TLogVerifactu
       
       FIELD NAME "uuid"       TYPE "C" LEN  40  DEC 0  COMMENT "Identificador"               HIDE                                            OF ::oDbf
       FIELD NAME "uuidFac"    TYPE "C" LEN  40  DEC 0  COMMENT "Identificador factura"       COLSIZE  200                             OF ::oDbf
-      FIELD NAME "cTipDoc"    TYPE "C" LEN   2  DEC 0  COMMENT "Tipo documento"        COLSIZE  80                                     OF ::oDbf
+      FIELD NAME "cTipDoc"    TYPE "C" LEN   2  DEC 0  COMMENT "Tipo documento"       HIDE                                     OF ::oDbf
+      FIELD CALCULATE NAME "cNomTipDoc"   LEN 100  DEC 0  COMMENT "Tipo Documento"  VAL ( ::NombreTipoDocumento( ::oDbf:cTipDoc ) )  COLSIZE 100   OF ::oDbf
       FIELD NAME "cCodUsr"    TYPE "C" LEN   3  DEC 0  COMMENT "Código"                      COLSIZE  50                                     OF ::oDbf
       FIELD CALCULATE NAME "cNomUsr"   LEN 100  DEC 0  COMMENT "Usuario"  VAL ( UsuariosModel():getNombre( ::oDbf:cCodUsr ) )  COLSIZE 250   OF ::oDbf
       FIELD NAME "dFecha"    TYPE "D" LEN   8  DEC 0  COMMENT "Fecha"               COLSIZE  80                                     OF ::oDbf
       FIELD NAME "cHora"    TYPE "C" LEN   8  DEC 0  COMMENT "Hora"                HIDE                                            OF ::oDbf
       FIELD CALCULATE NAME "cHoraLog"  LEN   8  DEC 0  COMMENT "Hora"  VAL ( Trans( ::oDbf:cHora, "@R 99:99:99" ) )  COLSIZE 80    OF ::oDbf
       FIELD NAME "cEstado"    TYPE "C" LEN   20  DEC 0  COMMENT "Estado"     COLSIZE  80                                            OF ::oDbf
-      FIELD NAME "cCodErr"    TYPE "C" LEN  200  DEC 0  COMMENT "Código error"     COLSIZE  150                                            OF ::oDbf
+      FIELD NAME "cCodErr"    TYPE "C" LEN  200  DEC 0  COMMENT "Código error"     HIDE                                            OF ::oDbf
       FIELD NAME "cDesErr"    TYPE "C" LEN  200  DEC 0  COMMENT "Descripción error"     COLSIZE  150                                            OF ::oDbf
       FIELD NAME "cStCode"    TYPE "C" LEN  200  DEC 0  COMMENT "Codigo estado"     COLSIZE  150                                            OF ::oDbf
       FIELD NAME "cStText"    TYPE "C" LEN  200  DEC 0  COMMENT "Texto estado"     COLSIZE  150                                            OF ::oDbf
+      FIELD NAME "mDesErr"    TYPE "M" LEN  10  DEC 0  COMMENT "Descripción error"     COLSIZE  250                                            OF ::oDbf
 
       INDEX TO "LOGVERI.CDX" TAG "cTipDoc" ON "cTipDoc" COMMENT "Documento" NODELETED OF ::oDbf
       INDEX TO "LOGVERI.CDX" TAG "cCodUsr" ON "cCodUsr" COMMENT "Usuario" NODELETED OF ::oDbf
@@ -133,6 +137,23 @@ METHOD Activate() CLASS TLogVerifactu
 RETURN ( Self )
 
 //---------------------------------------------------------------------------//
+
+METHOD NombreTipoDocumento( cCodTipDoc ) CLASS TLogVerifactu
+
+   local cNombre := ""
+
+   do case
+      case cCodTipDoc == FAC_CLI
+         cNombre := "Factura cliente"
+      case cCodTipDoc == TIK_CLI
+         cNombre := "Simplificada"
+      case cCodTipDoc == FAC_REC
+         cNombre := "Rectificativa"
+   endcase
+
+RETURN ( cNombre )
+
+//---------------------------------------------------------------------------//
 //---------------------------------------------------------------------------//
 //---------------------------------------------------------------------------//
 //---------------------------------------------------------------------------//
@@ -144,6 +165,8 @@ CLASS LogverifactuModel FROM ADSBaseModel
 
    METHOD RegEntrada()
 
+   METHOD lPrimerRegistro( cTipDoc )
+
 END CLASS
 
 //---------------------------------------------------------------------------//
@@ -154,7 +177,7 @@ METHOD RegEntrada( uuidDoc, cTipDoc, cEstado, cCodErr, cDesErr, cStCode, cStText
    local cSqlCount
 
    cSqlCount         := "INSERT INTO " + ::getTableName() 
-   cSqlCount         += " ( uuid, uuidFac, cTipDoc, cCodUsr, dFecha, cHora, cEstado, cCodErr, cDesErr, cStCode, cStText ) VALUES "
+   cSqlCount         += " ( uuid, uuidFac, cTipDoc, cCodUsr, dFecha, cHora, cEstado, cCodErr, cDesErr, cStCode, cStText, mDesErr ) VALUES "
    cSqlCount         += " ( " + quoted( win_uuidcreatestring() )
    cSqlCount         += ", " + quoted( uuidDoc )
    cSqlCount         += ", " + quoted( cTipDoc )
@@ -163,12 +186,32 @@ METHOD RegEntrada( uuidDoc, cTipDoc, cEstado, cCodErr, cDesErr, cStCode, cStText
    cSqlCount         += ", " + quoted( GetSysTime() )
    cSqlCount         += ", " + quoted( cEstado )
    cSqlCount         += ", " + quoted( cCodErr )
-   cSqlCount         += ", " + quoted( cDesErr )
+   cSqlCount         += ", " + "''"
    cSqlCount         += ", " + quoted( cStCode )
-   cSqlCount         += ", " + quoted( cStText ) + " )"
+   cSqlCount         += ", " + quoted( cStText )
+   cSqlCount         += ", " + quoted( cDesErr) + " )"
+
+   LogWrite(  "Log Verifactu------------------------------------------------------------------------------" )
+   LogWrite(  cSqlCount )
 
    ::ExecuteSqlStatement( cSqlCount, @cAreaCount )
 
 RETURN ( Self )
+
+//---------------------------------------------------------------------------//
+
+METHOD lPrimerRegistro( cTipDoc ) CLASS LogverifactuModel
+
+   local cStm    := "primerregistro"
+   local cSql
+
+   cSql              :=      "SELECT * FROM " + ::getTableName()
+   cSql              +=    " WHERE cTipDoc = " + quoted( cTipDoc )
+
+   if ::ExecuteSqlStatement( cSql, @cStm )
+      RETURN ( ( cStm )->( lastrec() ) == 0 )
+   end if 
+
+RETURN ( .f. )
 
 //---------------------------------------------------------------------------//

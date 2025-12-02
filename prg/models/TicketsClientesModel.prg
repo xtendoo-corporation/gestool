@@ -26,6 +26,8 @@ CLASS TicketsClientesModel FROM ADSBaseModel
 
    METHOD getToOdoo( cArea )
 
+   METHOD SetEstadoVeriFactu( uuid, nEstado )
+
 END CLASS
 
 //---------------------------------------------------------------------------//
@@ -189,5 +191,30 @@ METHOD getToOdoo( cArea ) CLASS TicketsClientesModel
    local cSql  := "SELECT * FROM " + ::getTableName() 
 
 RETURN ( ::ExecuteSqlStatement( cSql, @cArea ) )
+
+//---------------------------------------------------------------------------//
+
+METHOD SetEstadoVeriFactu( uuid, nEstado ) CLASS TicketsClientesModel
+
+   local cStm :=  "ActualVeriFactu"
+   local cStm2 :=  "CambioVeriFactu"
+   local cSql
+   local cSql2
+
+   cSql  :=   "SELECT nEstVeri FROM " + ::getTableName() + " WHERE uuid = " + quoted( uuid )
+
+   ::ExecuteSqlStatement( cSql, @cStm )
+   
+   if ( cStm )->nEstVeri != 3
+
+      cSql2  :=   "UPDATE " + ::getTableName() + ;
+                           " SET nEstVeri = " + AllTrim( Str( nEstado ) ) + ;
+                           " WHERE uuid = " + quoted( uuid )   
+
+      ::ExecuteSqlStatement( cSql2, @cStm2 )
+   
+   end if
+   
+Return ( .t. )
 
 //---------------------------------------------------------------------------//

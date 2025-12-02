@@ -7,7 +7,9 @@ CLASS RectificativasClientesModel   FROM TransaccionesComercialesLineasModel
 
    	METHOD getTableName()                  INLINE ::getEmpresaTableName( "FacRecT" )
 
-	METHOD getField( cSerie, nNumero, cSufijo, cField )
+	   METHOD getField( cSerie, nNumero, cSufijo, cField )
+
+      METHOD SetEstadoVeriFactu( uuid, nEstado )
 
 END CLASS
 
@@ -30,3 +32,26 @@ RETURN ( nil )
 
 //---------------------------------------------------------------------------//
 
+METHOD SetEstadoVeriFactu( uuid, nEstado ) CLASS RectificativasClientesModel
+
+   local cStm :=  "ActualVeriFactu"
+   local cStm2 :=  "CambioVeriFactu"
+   local cSql
+
+   cSql  :=   "SELECT nEstVeri FROM " + ::getTableName() + " WHERE cGuid = " + quoted( uuid )
+
+   ::ExecuteSqlStatement( cSql, @cStm )
+   
+   if ( cStm )->nEstVeri != 3
+
+      cSql  :=   "UPDATE " + ::getTableName() + ;
+                           " SET nEstVeri = " + AllTrim( Str( nEstado ) ) + ;
+                           " WHERE cGuid = " + quoted( uuid )   
+      
+      ::ExecuteSqlStatement( cSql, @cStm2 )
+   
+   end if
+   
+Return ( .t. )
+
+//---------------------------------------------------------------------------//
